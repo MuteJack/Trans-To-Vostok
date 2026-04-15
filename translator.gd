@@ -42,7 +42,7 @@ const SCORE_TYPE: int = 1
 
 const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text"]
 
-const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "loading", "container"]
+const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "loading", "container", "hint"]
 
 const NORMAL_BATCH_INTERVAL: float = 0.05
 const NORMAL_BATCH_SIZE: int = 20
