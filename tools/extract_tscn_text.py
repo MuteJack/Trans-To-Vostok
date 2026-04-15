@@ -1,7 +1,7 @@
 """
 .tscn 파일에서 텍스트를 추출해 TSV로 저장.
 
-컬럼 순서: name, type, parent, unique_id, text
+컬럼 순서: filename, filetype, location, parent, name, type, unique_id, text
 
 사용법:
     python extract_tscn_text.py                    # 기본 입력/출력 경로 사용
@@ -13,8 +13,18 @@
     output_dir = ../.tmp/extracted_text/
 
 출력:
-    입력 디렉토리의 .tscn 파일마다 동일한 구조로 .tsv 생성.
-    (예: pck_recovered/Scenes/Menu.tscn → extracted_text/Scenes/Menu.tsv)
+    입력 디렉토리의 .tscn 파일마다 .tscn.tsv (이중 확장자) 생성.
+    (예: pck_recovered/Scenes/Menu.tscn → extracted_text/Scenes/Menu.tscn.tsv)
+
+출력 필드:
+    filename   확장자 없는 상대 경로 (예: "Scenes/Menu")
+    filetype   "tscn"
+    location   매칭에 사용되는 씬 이름 — .tscn 엔트리는 filename과 동일
+    parent     씬 내 부모 노드 경로
+    name       노드 이름
+    type       노드 클래스
+    unique_id  .tscn 내부 식별자
+    text       추출된 원문
 """
 import csv
 import re
@@ -125,10 +135,14 @@ def parse_tscn(path: Path) -> list[dict]:
     return nodes
 
 
-def process_file(src_tscn: Path, out_tsv: Path, location: str) -> tuple[int, int]:
+OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
+
+
+def process_file(src_tscn: Path, out_tsv: Path, filename: str) -> tuple[int, int]:
     """
     파일 하나를 파싱해 TSV로 저장.
     텍스트가 있는 노드만 출력 (빈 노드는 스킵).
+    filename 은 확장자 없는 상대 경로. .tscn 엔트리에서는 location 도 동일값.
     반환: (전체 노드 수, 텍스트 있는 노드 수)
     """
     nodes = parse_tscn(src_tscn)
@@ -141,9 +155,18 @@ def process_file(src_tscn: Path, out_tsv: Path, location: str) -> tuple[int, int
     out_tsv.parent.mkdir(parents=True, exist_ok=True)
     with open(out_tsv, "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(["location", "name", "type", "parent", "unique_id", "text"])
+        writer.writerow(OUT_COLUMNS)
         for n in text_nodes:
-            writer.writerow([location, n["name"], n["type"], n["parent"], n["unique_id"], n["text"]])
+            writer.writerow([
+                filename,          # filename (확장자 없음)
+                "tscn",            # filetype
+                filename,          # location (.tscn 엔트리는 filename 과 동일)
+                n["parent"],
+                n["name"],
+                n["type"],
+                n["unique_id"],
+                n["text"],
+            ])
 
     return len(nodes), len(text_nodes)
 
@@ -188,21 +211,21 @@ def main():
 
     for tscn in tscn_files:
         rel_tscn = tscn.relative_to(src_dir)
-        # location = 원본 파일 경로 (확장자 포함, 예: "Scenes/Menu.tscn")
-        # 런타임 매칭에는 확장자가 필요 없지만, xlsx에서는 확장자를 포함해
-        # 파일을 명확히 특정한다. build_runtime_tsv.py 에서 확장자를 제거한다.
-        location = rel_tscn.as_posix()
-        out_path = out_dir / rel_tscn.with_suffix(".tsv")
+        # filename = 확장자 없는 상대 경로 (예: "Scenes/Menu")
+        # location = 매칭 키 — .tscn 엔트리는 filename 과 동일
+        filename = rel_tscn.with_suffix("").as_posix()
+        # 출력 파일: 원본 확장자 포함한 이중 확장자 (예: "Scenes/Menu.tscn.tsv")
+        out_path = out_dir / (rel_tscn.as_posix() + ".tsv")
         try:
-            n, t = process_file(tscn, out_path, location)
+            n, t = process_file(tscn, out_path, filename)
             total_nodes += n
             total_texts += t
             processed += 1
             if t > 0:
-                print(f"  [OK] {location}  ({t}개 텍스트 / {n}개 노드)")
+                print(f"  [OK] {rel_tscn.as_posix()}  ({t}개 텍스트 / {n}개 노드)")
         except Exception as e:
             failed += 1
-            print(f"  [FAIL] {location}: {e}")
+            print(f"  [FAIL] {rel_tscn.as_posix()}: {e}")
 
     print()
     print(f"완료: {processed}개 파일 처리 (실패 {failed}개)")

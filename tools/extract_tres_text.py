@@ -52,8 +52,10 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-# 출력 TSV 고정 컬럼
-OUT_COLUMNS = ["filetype", "location", "field", "text"]
+# 출력 TSV 고정 컬럼 (tscn 추출 도구와 통일)
+# .tres 엔트리는 노드 계층이 없으므로 location/parent/type/unique_id 를 빈 값으로 둔다.
+# name 컬럼에 tres의 필드 이름(예: "name", "description")을 넣는다.
+OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
 
 # 기본 경로
 DEFAULT_CONFIG_NAME = "tres_list.json"
@@ -62,6 +64,9 @@ DEFAULT_CONFIG_NAME = "tres_list.json"
 # ==========================================
 # .tres 파서
 # ==========================================
+
+_SUB_RESOURCE_RE = re.compile(r"^\[sub_resource\b", re.MULTILINE)
+
 
 def _find_resource_block(text: str) -> tuple[int, int]:
     """
@@ -72,6 +77,11 @@ def _find_resource_block(text: str) -> tuple[int, int]:
     if not m:
         return (-1, -1)
     return (m.end(), len(text))
+
+
+def _count_sub_resources(text: str) -> int:
+    """[sub_resource ...] 블록 개수를 센다. 경고 로그용."""
+    return len(_SUB_RESOURCE_RE.findall(text))
 
 
 def _extract_string_field(body: str, field_name: str) -> str | None:
@@ -120,12 +130,22 @@ def parse_tres(path: Path, fields: list[str]) -> dict | None:
     """
     한 개의 .tres 파일에서 지정한 필드 값들을 dict로 반환.
     파일이 리소스가 아니거나 필드가 하나도 추출되지 않으면 None.
+
+    주의: 현재는 [resource] 블록만 파싱한다. [sub_resource] 블록 안의 문자열은
+    추출되지 않으며, 발견 시 경고 로그만 출력한다.
     """
     try:
         text = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError) as e:
         print(f"[WARN] 읽기 실패: {path} ({e})", file=sys.stderr)
         return None
+
+    sub_count = _count_sub_resources(text)
+    if sub_count > 0:
+        print(
+            f"[WARN] {path.name}: [sub_resource] {sub_count}개 발견 — 현재 파서는 [resource] 블록만 처리하므로 이 내용은 스킵됩니다.",
+            file=sys.stderr,
+        )
 
     body_start, body_end = _find_resource_block(text)
     if body_start < 0:
@@ -194,24 +214,40 @@ def tres_to_rows(
 ) -> list[dict]:
     """
     한 개의 .tres 파일에서 행을 추출. 파일에 지정 필드가 하나도 없으면 빈 리스트.
+
+    각 행은 tscn 추출 도구와 동일한 8컬럼 구조로 반환된다.
+    .tres 는 Godot 노드 계층이 없으므로:
+      - filename  = 확장자 없는 상대 경로
+      - filetype  = "tres"
+      - location  = "" (비움, 전역 text 매칭 기본)
+      - parent    = ""
+      - name      = tres 필드명 (예: "description")
+      - type      = ""
+      - unique_id = ""
+      - text      = 필드 값
     """
     parsed = parse_tres(tres_path, fields)
     if parsed is None:
         return []
 
     try:
-        location = tres_path.resolve().relative_to(pck_root).as_posix()
+        rel = tres_path.resolve().relative_to(pck_root)
+        filename = rel.with_suffix("").as_posix()
     except ValueError:
-        location = str(tres_path.resolve())
+        filename = str(tres_path.resolve())
 
     rows: list[dict] = []
     for field in fields:
         if field not in parsed:
             continue
         rows.append({
+            "filename": filename,
             "filetype": "tres",
-            "location": location,
-            "field": field,
+            "location": "",
+            "parent": "",
+            "name": field,
+            "type": "",
+            "unique_id": "",
             "text": parsed[field],
         })
     return rows

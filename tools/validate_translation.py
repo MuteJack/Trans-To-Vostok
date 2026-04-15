@@ -94,11 +94,19 @@ def _preview(text: str, limit: int = 60) -> str:
 
 def load_tsv_index(tsv_dir: Path) -> dict:
     """
-    모든 TSV 파일에서 unique_id → [레코드 목록] 인덱스를 만든다.
-    (unique_id는 씬 내 고유지만 씬 간에는 중복 가능하므로 리스트)
+    추출된 TSV 파일에서 unique_id → [레코드 목록] 인덱스를 만든다.
+
+    대상 파일:
+        *.tscn.tsv  (extract_tscn_text.py 출력, unique_id 있음)
+        *.tres.tsv  (extract_tres_text.py 출력, unique_id 없음 → 자연 스킵)
+
+    tres 엔트리는 unique_id 가 비어 있어 인덱스에 들어가지 않는다.
+    이는 validate_translation.py 의 TSV 매칭 검증이 scn(unique_id 기반)
+    엔트리에만 적용되기 때문이다.
     """
     index = {}
-    for tsv_file in sorted(tsv_dir.rglob("*.tsv")):
+    tsv_files = sorted(tsv_dir.rglob("*.tscn.tsv")) + sorted(tsv_dir.rglob("*.tres.tsv"))
+    for tsv_file in tsv_files:
         try:
             with open(tsv_file, "r", encoding="utf-8", newline="") as f:
                 reader = csv.DictReader(f, delimiter="\t")

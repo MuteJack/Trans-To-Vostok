@@ -90,23 +90,39 @@ def compile_pattern(text: str) -> re.Pattern:
 # ==========================================
 
 def load_tsv_entries(tsv_dir: Path) -> list[dict]:
-    """extracted_text/ 의 모든 .tsv 파일을 로드."""
+    """
+    extracted_text/ 의 이중 확장자 TSV 파일을 로드.
+
+    대상:
+        *.tscn.tsv  — unique_id 있는 scn 엔트리
+        *.tres.tsv  — unique_id 없고 text 기반 매칭만 가능한 tres 엔트리
+
+    tres 엔트리는 unique_id 없이 반환되므로 분류 단계에서 text 만으로 판정한다.
+    """
     entries = []
-    for tsv_file in sorted(tsv_dir.rglob("*.tsv")):
+    tsv_files = sorted(tsv_dir.rglob("*.tscn.tsv")) + sorted(tsv_dir.rglob("*.tres.tsv"))
+    for tsv_file in tsv_files:
         try:
             with open(tsv_file, "r", encoding="utf-8", newline="") as f:
                 reader = csv.DictReader(f, delimiter="\t")
                 for row in reader:
+                    text = row.get("text") or ""
+                    if not text:
+                        continue
+                    filetype = (row.get("filetype") or "").strip()
                     uid = (row.get("unique_id") or "").strip()
-                    if not uid:
+                    # scn 엔트리는 uid 필수, tres 엔트리는 uid 없음을 허용
+                    if filetype == "tscn" and not uid:
                         continue
                     entries.append({
                         "unique_id": uid,
+                        "filename": (row.get("filename") or "").strip(),
+                        "filetype": filetype,
                         "location": (row.get("location") or "").strip(),
                         "parent": (row.get("parent") or "").strip(),
                         "name": (row.get("name") or "").strip(),
                         "type": (row.get("type") or "").strip(),
-                        "text": row.get("text") or "",
+                        "text": text,
                         "_tsv_file": tsv_file.name,
                     })
         except Exception as e:
@@ -188,19 +204,23 @@ def classify_entry(
     반환: (status, method)
         status: "direct" | "ignored" | "literal" | "expression" | "empty" | "missing"
         method: 추가 정보 (매칭 방법)
+
+    scn 엔트리 (unique_id 있음): 1차로 uid 기반 분류, 이후 text fallback
+    tres 엔트리 (unique_id 없음): text 기반만 사용
     """
     uid = entry["unique_id"]
     text = entry["text"]
 
-    # 1. ignored (의도적 제외)
-    if uid in ignored_uids:
-        return ("ignored", "")
+    # scn 엔트리: uid 기반 분류 우선
+    if uid:
+        # 1. ignored (의도적 제외)
+        if uid in ignored_uids:
+            return ("ignored", "")
+        # 2. 직접 매칭
+        if uid in direct_uids:
+            return ("direct", "")
 
-    # 2. 직접 매칭
-    if uid in direct_uids:
-        return ("direct", "")
-
-    # 3. #literal 매칭 (text 완전 일치)
+    # 3. #literal / tres 매칭 (text 완전 일치)
     if text in literal_map:
         return ("literal", "#literal")
 
@@ -209,11 +229,11 @@ def classify_entry(
         if regex.match(text):
             return ("expression", f"#expression: {regex.pattern}")
 
-    # 5. xlsx에는 있지만 translated 비어있음
-    if uid in empty_uids:
+    # 5. scn 엔트리: xlsx에는 있지만 translated 비어있음
+    if uid and uid in empty_uids:
         return ("empty", "")
 
-    # 6. xlsx에 전혀 없음
+    # 6. xlsx에 전혀 없음 (scn uid 매칭 실패 또는 tres text 매칭 실패)
     return ("missing", "")
 
 
