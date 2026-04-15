@@ -12,11 +12,13 @@ Trans To Vostok 모드를 .zip 파일로 패키징.
 동작:
 1. 지정된 로케일에 대해 build_runtime_tsv를 호출하여 TSV 생성 (검증 포함)
 2. 모드 파일 구조를 ZIP으로 압축하여 ../Trans To Vostok.zip 생성
-    - mod.txt                        (모드 메타데이터)
-    - Trans To Vostok/translator.gd  (런타임 엔진)
-    - Trans To Vostok/<locale>/translation.tsv
+    - mod.txt                                               (모드 메타데이터)
+    - Trans To Vostok/translator.gd                         (런타임 엔진)
+    - Trans To Vostok/<locale>/translation_static.tsv
+    - Trans To Vostok/<locale>/translation_literal_scoped.tsv
+    - Trans To Vostok/<locale>/translation_pattern_scoped.tsv
     - Trans To Vostok/<locale>/translation_literal.tsv
-    - Trans To Vostok/<locale>/translation_expression.tsv
+    - Trans To Vostok/<locale>/translation_pattern.tsv
 
 출력: mods/Trans To Vostok.zip
 """
@@ -38,9 +40,11 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 MOD_NAME = "Trans To Vostok"
 MOD_FILES = ["translator.gd"]  # 모드 루트에 배치되는 파일들
 LOCALE_FILES = [
-    "translation.tsv",
+    "translation_static.tsv",
+    "translation_literal_scoped.tsv",
+    "translation_pattern_scoped.tsv",
     "translation_literal.tsv",
-    "translation_expression.tsv",
+    "translation_pattern.tsv",
 ]
 
 

@@ -1,13 +1,13 @@
 """
-TSV와 xlsx를 비교해 번역 커버리지를 리포트한다.
+추출된 TSV 와 Translation.xlsx 를 비교해 번역 커버리지를 리포트한다.
 
 매칭 분류:
-- direct:      xlsx의 일반 행이 unique_id로 1:1 매칭 (번역 완료)
-- literal:     xlsx의 #literal 행이 text로 매칭 (fallback 번역)
-- expression:  xlsx의 #expression 행의 패턴이 text와 매칭 (fallback 번역)
-- ignored:     xlsx에 있고 ignore=1 (의도적 제외, 미번역 아님)
-- empty:       xlsx에 있지만 translated 비어있음 (번역 대기)
-- missing:     xlsx에 아예 없음 (새로 추가 필요)
+- direct:      xlsx 의 static 또는 scoped literal 행이 5-tuple 로 매칭 (번역 완료)
+- literal:     xlsx 의 전역 literal 행이 text 로 매칭 (fallback 번역)
+- expression:  xlsx 의 전역 pattern 행 정규식이 text 와 매칭 (fallback 번역)
+- ignored:     xlsx 에 있고 ignore=1 (의도적 제외, 미번역 아님)
+- empty:       xlsx 에 있지만 translation 비어있음 (번역 대기)
+- missing:     xlsx 에 아예 없음 (새로 추가 필요)
 
 사용법:
     python check_untranslated.py <locale>
@@ -26,12 +26,11 @@ from datetime import datetime
 from pathlib import Path
 
 try:
-    import openpyxl
+    import openpyxl  # noqa: F401
 except ImportError:
     print("ERROR: openpyxl이 필요합니다. pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
-# Windows 콘솔 한글 출력 지원
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -39,11 +38,11 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     except (AttributeError, Exception):
         pass
 
-# 같은 폴더 모듈 import
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from validate_translation import (
     _preview,
-    load_xlsx_main,
+    _effective_method,
+    load_all_translation_sheets,
     Tee,
 )
 
@@ -52,14 +51,11 @@ IGNORE_VALUES = {"1", "true"}
 
 
 # ==========================================
-# Pattern 컴파일 (translator.gd와 동일 로직)
+# 패턴 컴파일 (translator.gd 와 동일 로직)
 # ==========================================
 
 def compile_pattern(text: str) -> re.Pattern:
-    """
-    {name} 과 * 를 지원하는 패턴을 Python 정규식으로 컴파일.
-    translator.gd의 _compile_pattern 과 동작 일치.
-    """
+    """{name} 과 * 를 지원하는 패턴을 Python 정규식으로 컴파일."""
     placeholder_re = re.compile(r"\{(\w+)\}")
     result = []
     i = 0
@@ -76,7 +72,6 @@ def compile_pattern(text: str) -> re.Pattern:
             result.append("(?:.+?)")
             i += 1
             continue
-        # 정규식 특수 문자 이스케이프
         if c in r"\.^$+?()[]|{}":
             result.append("\\" + c)
         else:
@@ -86,7 +81,7 @@ def compile_pattern(text: str) -> re.Pattern:
 
 
 # ==========================================
-# TSV 로드
+# 추출 TSV 로드
 # ==========================================
 
 def load_tsv_entries(tsv_dir: Path) -> list[dict]:
@@ -95,9 +90,7 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
 
     대상:
         *.tscn.tsv  — unique_id 있는 scn 엔트리
-        *.tres.tsv  — unique_id 없고 text 기반 매칭만 가능한 tres 엔트리
-
-    tres 엔트리는 unique_id 없이 반환되므로 분류 단계에서 text 만으로 판정한다.
+        *.tres.tsv  — unique_id 없는 tres 엔트리
     """
     entries = []
     tsv_files = sorted(tsv_dir.rglob("*.tscn.tsv")) + sorted(tsv_dir.rglob("*.tres.tsv"))
@@ -111,7 +104,7 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
                         continue
                     filetype = (row.get("filetype") or "").strip()
                     uid = (row.get("unique_id") or "").strip()
-                    # scn 엔트리는 uid 필수, tres 엔트리는 uid 없음을 허용
+                    # tscn 엔트리는 uid 필수, tres 는 없음 허용
                     if filetype == "tscn" and not uid:
                         continue
                     entries.append({
@@ -131,109 +124,127 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
 
 
 # ==========================================
-# xlsx 분석
+# xlsx 분석 (새 스키마: method / translation)
 # ==========================================
 
-def analyze_xlsx(rows: list[dict]) -> tuple[set, set, set, dict, list]:
+def analyze_xlsx(rows: list[dict]) -> tuple[dict, dict, dict, dict, list]:
     """
-    xlsx를 분석하여:
-    - direct_uids: 직접 번역된 unique_id 집합 (일반 행, translated 있음, ignore 아님)
-    - ignored_uids: ignore=1 로 표시된 unique_id 집합 (의도적 제외)
-    - empty_uids: xlsx에 있지만 translated 비어있는 unique_id 집합
-    - literal_map: {text: translated} (#literal 행, ignore 아님)
-    - expression_list: [(compiled_regex, translated_template), ...] (#expression 행, ignore 아님)
+    xlsx 행을 런타임 매칭 모델에 맞춰 인덱싱.
+
+    반환:
+      - direct_keys:   { (location, parent, name, type, text): translation } — static + scoped literal
+      - ignored_keys:  set of 5-tuples (ignore=1 행)
+      - empty_keys:    set of 5-tuples (xlsx 에 있지만 translation 비어있음)
+      - literal_map:   {text: translation} — 전역 literal
+      - pattern_list:  [(compiled_regex, template), ...] — 전역 pattern
     """
-    direct_uids: set = set()
-    ignored_uids: set = set()
-    empty_uids: set = set()
+    direct_keys: dict = {}
+    ignored_keys: set = set()
+    empty_keys: set = set()
     literal_map: dict = {}
-    expression_list: list = []
+    pattern_list: list = []
 
     for row in rows:
-        uid = row.get("unique_id", "").strip()
-        filetype = row.get("filetype", "").strip()
         ignore = row.get("ignore", "").strip().lower()
-        translated = row.get("translated", "")
+        translation = row.get("translation", "")
         text = row.get("text", "")
+        location = row.get("location", "").strip()
+        parent = row.get("parent", "").strip()
+        name = row.get("name", "").strip()
+        type_ = row.get("type", "").strip()
+        effective = _effective_method(row)
 
-        # ignored는 일반/특수 구분 없이 "의도적 제외"로 기록
+        key_5 = (location, parent, name, type_, text)
+
         if ignore in IGNORE_VALUES:
-            if uid:
-                ignored_uids.add(uid)
+            # 전역 literal/pattern 은 5-tuple 이 무의미하므로 별도 기록 X
+            if effective in ("static",) or (effective == "literal" and location):
+                ignored_keys.add(key_5)
             continue
 
-        # 특수 태그 처리 (#literal, #expression)
-        # tres 도 런타임엔 literal과 동일하게 text-only 매칭
-        if filetype == "#literal" or filetype == "tres":
-            if translated:
-                literal_map[text] = translated
-            continue
-        if filetype == "#expression":
-            if translated:
-                try:
-                    regex = compile_pattern(text)
-                    expression_list.append((regex, translated))
-                except re.error:
-                    pass
-            continue
-
-        # 일반 행 (filetype='' or 'scn')
-        if uid:
-            if translated:
-                direct_uids.add(uid)
+        if effective == "static":
+            if translation:
+                direct_keys[key_5] = translation
             else:
-                empty_uids.add(uid)
+                empty_keys.add(key_5)
 
-    return direct_uids, ignored_uids, empty_uids, literal_map, expression_list
+        elif effective == "literal":
+            if location:
+                # scoped literal — direct 키 공간
+                if translation:
+                    direct_keys[key_5] = translation
+                else:
+                    empty_keys.add(key_5)
+            else:
+                # 전역 literal
+                if translation:
+                    literal_map[text] = translation
+
+        elif effective == "pattern":
+            if location:
+                # scoped pattern 은 현재 리포트 모델에서 전역 pattern 과 동일 취급
+                if translation:
+                    try:
+                        regex = compile_pattern(text)
+                        pattern_list.append((regex, translation))
+                    except re.error:
+                        pass
+            else:
+                if translation:
+                    try:
+                        regex = compile_pattern(text)
+                        pattern_list.append((regex, translation))
+                    except re.error:
+                        pass
+
+    return direct_keys, ignored_keys, empty_keys, literal_map, pattern_list
 
 
 # ==========================================
-# 매칭 분류
+# TSV 엔트리 분류
 # ==========================================
 
 def classify_entry(
     entry: dict,
-    direct_uids: set,
-    ignored_uids: set,
-    empty_uids: set,
+    direct_keys: dict,
+    ignored_keys: set,
+    empty_keys: set,
     literal_map: dict,
-    expression_list: list,
+    pattern_list: list,
 ) -> tuple[str, str]:
     """
     TSV 엔트리의 번역 상태를 분류.
     반환: (status, method)
         status: "direct" | "ignored" | "literal" | "expression" | "empty" | "missing"
-        method: 추가 정보 (매칭 방법)
-
-    scn 엔트리 (unique_id 있음): 1차로 uid 기반 분류, 이후 text fallback
-    tres 엔트리 (unique_id 없음): text 기반만 사용
     """
-    uid = entry["unique_id"]
     text = entry["text"]
+    filetype = entry.get("filetype", "")
 
-    # scn 엔트리: uid 기반 분류 우선
-    if uid:
-        # 1. ignored (의도적 제외)
-        if uid in ignored_uids:
+    # tscn 엔트리는 5-tuple 로 우선 조회
+    if filetype == "tscn":
+        key_5 = (
+            entry["location"],
+            entry["parent"],
+            entry["name"],
+            entry["type"],
+            text,
+        )
+        if key_5 in ignored_keys:
             return ("ignored", "")
-        # 2. 직접 매칭
-        if uid in direct_uids:
+        if key_5 in direct_keys:
             return ("direct", "")
+        if key_5 in empty_keys:
+            # text-only fallback 이 있으면 그걸 쓰지만, 리포트는 empty 우선
+            return ("empty", "")
 
-    # 3. #literal / tres 매칭 (text 완전 일치)
+    # tres 또는 5-tuple 매칭 실패 → text-only fallback
     if text in literal_map:
-        return ("literal", "#literal")
+        return ("literal", "literal")
 
-    # 4. #expression 매칭 (패턴)
-    for regex, _trans in expression_list:
+    for regex, _tmpl in pattern_list:
         if regex.match(text):
-            return ("expression", f"#expression: {regex.pattern}")
+            return ("expression", f"pattern: {regex.pattern}")
 
-    # 5. scn 엔트리: xlsx에는 있지만 translated 비어있음
-    if uid and uid in empty_uids:
-        return ("empty", "")
-
-    # 6. xlsx에 전혀 없음 (scn uid 매칭 실패 또는 tres text 매칭 실패)
     return ("missing", "")
 
 
@@ -267,7 +278,6 @@ def main() -> int:
         print(f"[ERROR] TSV 디렉토리가 없습니다: {tsv_dir}")
         return 1
 
-    # 로그 파일
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_path = locale_dir / ".log" / f"check_untranslated_{timestamp}.log"
     tee = Tee(log_path)
@@ -279,33 +289,37 @@ def main() -> int:
         tee.print(f"실행:   {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         tee.print()
 
-        # 1. xlsx 로드 및 분석
+        # 1. xlsx 로드 및 분석 (모든 번역 시트 병합)
         tee.print("xlsx 로드 중...")
-        _header, rows, sheet_name = load_xlsx_main(xlsx_path)
+        sheets = load_all_translation_sheets(xlsx_path)
+        all_rows: list[dict] = []
+        for sheet_name, _header, rows in sheets:
+            all_rows.extend(rows)
+        tee.print(f"  시트 {len(sheets)}개, 총 {len(all_rows)}행")
+
         (
-            direct_uids,
-            ignored_uids,
-            empty_uids,
+            direct_keys,
+            ignored_keys,
+            empty_keys,
             literal_map,
-            expression_list,
-        ) = analyze_xlsx(rows)
+            pattern_list,
+        ) = analyze_xlsx(all_rows)
         tee.print(
-            f"  {sheet_name} 시트, {len(rows)}행"
-            f" → 직접 {len(direct_uids)}개, "
-            f"ignored {len(ignored_uids)}개, "
-            f"empty {len(empty_uids)}개, "
-            f"#literal {len(literal_map)}개, "
-            f"#expression {len(expression_list)}개"
+            f"  → direct {len(direct_keys)}개, "
+            f"ignored {len(ignored_keys)}개, "
+            f"empty {len(empty_keys)}개, "
+            f"literal {len(literal_map)}개, "
+            f"pattern {len(pattern_list)}개"
         )
         tee.print()
 
-        # 2. TSV 로드
-        tee.print("TSV 로드 중...")
+        # 2. 추출 TSV 로드
+        tee.print("추출 TSV 로드 중...")
         tsv_entries = load_tsv_entries(tsv_dir)
         tee.print(f"  {len(tsv_entries)}개 엔트리")
         tee.print()
 
-        # 3. 분류: 파일별로 집계 및 상세
+        # 3. 분류
         per_file: dict = defaultdict(lambda: {
             "total": 0,
             "direct": 0,
@@ -322,12 +336,7 @@ def main() -> int:
         for entry in tsv_entries:
             fname = entry["_tsv_file"]
             status, method = classify_entry(
-                entry,
-                direct_uids,
-                ignored_uids,
-                empty_uids,
-                literal_map,
-                expression_list,
+                entry, direct_keys, ignored_keys, empty_keys, literal_map, pattern_list
             )
             bucket = per_file[fname]
             bucket["total"] += 1
@@ -344,7 +353,7 @@ def main() -> int:
             elif status == "empty":
                 bucket["empty"] += 1
                 bucket["empty_entries"].append(entry)
-            else:  # missing
+            else:
                 bucket["missing"] += 1
                 bucket["missing_entries"].append(entry)
 
@@ -357,7 +366,7 @@ def main() -> int:
         max_fname = max((len(n) for n in file_names), default=20)
 
         total_all = 0
-        effective_all = 0     # total - ignored
+        effective_all = 0
         direct_all = 0
         fallback_all = 0
         ignored_all = 0
@@ -373,8 +382,8 @@ def main() -> int:
             empty = b["empty"]
             missing = b["missing"]
 
-            effective = total - ignored            # 번역이 필요한 실제 엔트리
-            translated = direct + fallback
+            effective = total - ignored
+            translation_count = direct + fallback
 
             total_all += total
             effective_all += effective
@@ -386,7 +395,7 @@ def main() -> int:
 
             tee.print(
                 f"[{fname:<{max_fname}}] "
-                f"번역 {translated}/{effective} ({format_percent(translated, effective)}), "
+                f"번역 {translation_count}/{effective} ({format_percent(translation_count, effective)}), "
                 f"직접 {direct}/{effective} ({format_percent(direct, effective)}), "
                 f"fallback {fallback}, "
                 f"ignored {ignored}"
@@ -417,12 +426,11 @@ def main() -> int:
                 and b["empty"] == 0
                 and len(b["fallback_entries"]) == 0
             ):
-                continue  # 전부 직접/ignored인 파일은 상세 출력 생략
+                continue
 
             tee.print()
             tee.print(f"[{fname}]")
 
-            # 5-1. xlsx에 없음 (missing)
             if b["missing_entries"]:
                 tee.print(f"  missing - xlsx에 없음 ({b['missing']}개):")
                 for e in b["missing_entries"]:
@@ -433,7 +441,6 @@ def main() -> int:
                         f"text={_preview(e['text'], 50)}"
                     )
 
-            # 5-2. xlsx에 있지만 translated 비어있음 (empty)
             if b["empty_entries"]:
                 tee.print(f"  empty - xlsx에 있지만 미번역 ({b['empty']}개):")
                 for e in b["empty_entries"]:
@@ -444,10 +451,9 @@ def main() -> int:
                         f"text={_preview(e['text'], 50)}"
                     )
 
-            # 5-3. fallback 번역 (literal/expression)
             if b["fallback_entries"]:
                 tee.print(
-                    f"  fallback - Literal/Expression으로 매칭 "
+                    f"  fallback - literal/pattern 으로 매칭 "
                     f"({len(b['fallback_entries'])}개):"
                 )
                 for e, method in b["fallback_entries"]:

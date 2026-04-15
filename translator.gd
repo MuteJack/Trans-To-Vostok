@@ -1,23 +1,29 @@
-# Trans To Vostok - 런타임 번역 엔진
+# Trans To Vostok - 런타임 번역 엔진 (8층 fallback 체인)
 #
-# 설계 개요:
-#   1. translation.tsv            (일반 행, 점수 기반 매칭)
-#   2. translation_literal.tsv    (#literal, 텍스트 전역 매칭, fallback 1순위)
-#   3. translation_expression.tsv (#expression, 패턴/정규식, fallback 2순위)
+# 데이터 파일 (build_runtime_tsv.py 가 생성):
+#   translation_static.tsv           — static        (5필드 + text + translation)
+#   translation_literal_scoped.tsv   — scoped literal (5필드 + text + translation)
+#   translation_pattern_scoped.tsv   — scoped pattern (5필드 + text + translation)
+#   translation_literal.tsv          — global literal (text + translation)
+#   translation_pattern.tsv          — global pattern (text + translation)
 #
-# 매칭 점수:
-#   location + 8, parent + 4, name + 2, type + 1
+# 매칭 우선순위 (첫 히트에서 종료):
+#   1. static exact          — (location, parent, name, type, text) 완전 일치
+#   2. scoped literal exact  — 동일 구조, 동적 텍스트
+#   3. scoped pattern exact  — 컨텍스트 완전 일치 + 정규식 매칭
+#   4. literal global        — text 완전 일치 (컨텍스트 무시)
+#   5. pattern global        — 정규식 매칭 (컨텍스트 무시)
+#   6. static score          — 부분 컨텍스트 매칭 (+8/+4/+2/+1)
+#   7. scoped literal score  — 동적 텍스트 부분 컨텍스트 매칭
+#   8. scoped pattern score  — 정규식 + 부분 컨텍스트
 #
-# 매칭 우선순위:
-#   1) rows_by_text[text] 최고 점수 후보
-#   2) #literal fallback (same text)
-#   3) #expression 패턴 매칭
-#   4) 일반 행 점수 0 (암묵적 text-only fallback)
+# score 계산: location(+8), parent(+4), name(+2), type(+1)
+# score 동률은 첫 발견 우선 + push_warning 경고.
 #
 # 런타임 구조 (DIO-KAMI 패턴 참고):
 #   - 바인딩 테이블: 관심 노드만 등록, 트리 재순회 없음
-#   - last 값 비교: 변경 없으면 조회 전부 스킵 (대부분의 호출이 여기서 조기 리턴)
-#   - 결과/음성 캐시: 같은 (컨텍스트, text) 조합은 평생 1회만 매칭 체인 실행
+#   - last 값 비교: 변경 없으면 조회 전부 스킵
+#   - 결과/음성 캐시: 같은 (컨텍스트, text) 조합은 평생 1회만 매칭
 #   - Priority (_process, 매 프레임) / Normal (타이머 배치) 분리
 
 extends Node
@@ -34,13 +40,10 @@ const SCORE_PARENT: int = 4
 const SCORE_NAME: int = 2
 const SCORE_TYPE: int = 1
 
-# 번역 대상 속성
 const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text"]
 
-# 노드 이름에 이 키워드가 포함되면 priority 처리 (매 프레임 체크)
 const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "loading", "container"]
 
-# 일반 바인딩 배치 처리
 const NORMAL_BATCH_INTERVAL: float = 0.05
 const NORMAL_BATCH_SIZE: int = 20
 
@@ -49,7 +52,37 @@ const NORMAL_BATCH_SIZE: int = 20
 # 데이터 클래스
 # ==========================================
 
-class PatternEntry:
+# 컨텍스트 + text 행 (static / scoped literal).
+# 컨텍스트 필드는 score 계산용으로도 사용.
+class ExactEntry:
+	var location: String
+	var parent: String
+	var node_name: String
+	var node_type: String
+	var text: String
+	var translation: String
+
+
+# 컨텍스트 + 정규식 행 (scoped pattern).
+class ScopedPatternEntry:
+	var location: String
+	var parent: String
+	var node_name: String
+	var node_type: String
+	var regex: RegEx
+	var template: String
+	var placeholders: Array
+
+	func apply(m: RegExMatch) -> String:
+		var result: String = template
+		for ph_name in placeholders:
+			var value: String = m.get_string(ph_name)
+			result = result.replace("{" + ph_name + "}", value)
+		return result
+
+
+# 전역 정규식 행 (pattern global).
+class GlobalPatternEntry:
 	var regex: RegEx
 	var template: String
 	var placeholders: Array
@@ -66,10 +99,23 @@ class PatternEntry:
 # 상태
 # ==========================================
 
-# 매칭 데이터
-var rows_by_text: Dictionary = {}     # text → [row_dict, ...] (일반 행)
-var literal_index: Dictionary = {}    # text → translated (#literal)
-var patterns: Array = []              # [PatternEntry, ...] (#expression)
+# Tier 1+6: static
+var static_rows: Array = []                  # [ExactEntry] — score 순회용
+var static_exact_index: Dictionary = {}      # "loc\tpar\tnam\ttyp\ttext" → translation
+
+# Tier 2+7: scoped literal
+var literal_scoped_rows: Array = []
+var literal_scoped_exact_index: Dictionary = {}
+
+# Tier 3+8: scoped pattern
+var pattern_scoped_rows: Array = []          # [ScopedPatternEntry] — score 순회용
+var pattern_scoped_by_ctx: Dictionary = {}   # "loc\tpar\tnam\ttyp" → [ScopedPatternEntry]
+
+# Tier 4: literal global
+var literal_global: Dictionary = {}          # text → translation
+
+# Tier 5: pattern global
+var pattern_global: Array = []               # [GlobalPatternEntry]
 
 # 바인딩 테이블
 # 각 항목: {node: WeakRef, prop: String, last: String}
@@ -90,12 +136,9 @@ func _ready() -> void:
 	print("[TransToVostok] Initializing... locale=%s" % LOCALE)
 	_load_translations()
 
-	# 기존 트리 바인딩
 	_bind_tree(get_tree().root)
-	# 이후 추가되는 노드 자동 바인딩
 	get_tree().node_added.connect(_on_node_added)
 
-	# Normal 배치 타이머
 	var timer: Timer = Timer.new()
 	timer.name = "NormalBatchTimer"
 	timer.wait_time = NORMAL_BATCH_INTERVAL
@@ -114,20 +157,27 @@ func _ready() -> void:
 
 func _load_translations() -> void:
 	var base: String = DATA_BASE + "/" + LOCALE
-	_load_main_tsv(base + "/translation.tsv")
-	_load_literal_tsv(base + "/translation_literal.tsv")
-	_load_expression_tsv(base + "/translation_expression.tsv")
 
-	var main_count: int = 0
-	for arr in rows_by_text.values():
-		main_count += arr.size()
+	_load_exact_tsv(base + "/translation_static.tsv", static_rows, static_exact_index)
+	_load_exact_tsv(
+		base + "/translation_literal_scoped.tsv",
+		literal_scoped_rows,
+		literal_scoped_exact_index,
+	)
+	_load_pattern_scoped_tsv(base + "/translation_pattern_scoped.tsv")
+	_load_literal_global_tsv(base + "/translation_literal.tsv")
+	_load_pattern_global_tsv(base + "/translation_pattern.tsv")
 
-	print("[TransToVostok] Loaded: %d main + %d literal + %d pattern" % [
-		main_count, literal_index.size(), patterns.size()
+	print("[TransToVostok] Loaded: static=%d, literal_scoped=%d, pattern_scoped=%d, literal=%d, pattern=%d" % [
+		static_rows.size(),
+		literal_scoped_rows.size(),
+		pattern_scoped_rows.size(),
+		literal_global.size(),
+		pattern_global.size(),
 	])
 
 
-func _load_main_tsv(path: String) -> void:
+func _load_exact_tsv(path: String, out_rows: Array, out_index: Dictionary) -> void:
 	var f: FileAccess = FileAccess.open(path, FileAccess.READ)
 	if f == null:
 		push_warning("[TransToVostok] Cannot open: " + path)
@@ -138,22 +188,50 @@ func _load_main_tsv(path: String) -> void:
 		var line: PackedStringArray = f.get_csv_line("\t")
 		if line.size() < 6:
 			continue
-		var row: Dictionary = {
-			"location": line[0],
-			"parent": line[1],
-			"name": line[2],
-			"type": line[3],
-			"text": line[4],
-			"translated": line[5],
-		}
-		var text: String = row["text"]
-		if not rows_by_text.has(text):
-			rows_by_text[text] = []
-		rows_by_text[text].append(row)
+		var entry: ExactEntry = ExactEntry.new()
+		entry.location = line[0]
+		entry.parent = line[1]
+		entry.node_name = line[2]
+		entry.node_type = line[3]
+		entry.text = line[4]
+		entry.translation = line[5]
+		out_rows.append(entry)
+
+		var key: String = (entry.location + "\t" + entry.parent + "\t"
+			+ entry.node_name + "\t" + entry.node_type + "\t" + entry.text)
+		if out_index.has(key):
+			push_warning("[TransToVostok] duplicate exact key: " + key)
+		out_index[key] = entry.translation
 	f.close()
 
 
-func _load_literal_tsv(path: String) -> void:
+func _load_pattern_scoped_tsv(path: String) -> void:
+	var f: FileAccess = FileAccess.open(path, FileAccess.READ)
+	if f == null:
+		push_warning("[TransToVostok] Cannot open: " + path)
+		return
+
+	var _header: PackedStringArray = f.get_csv_line("\t")
+	while not f.eof_reached():
+		var line: PackedStringArray = f.get_csv_line("\t")
+		if line.size() < 6:
+			continue
+		var entry: ScopedPatternEntry = _compile_scoped_pattern(
+			line[0], line[1], line[2], line[3], line[4], line[5]
+		)
+		if entry == null:
+			continue
+		pattern_scoped_rows.append(entry)
+
+		var ctx_key: String = (entry.location + "\t" + entry.parent + "\t"
+			+ entry.node_name + "\t" + entry.node_type)
+		if not pattern_scoped_by_ctx.has(ctx_key):
+			pattern_scoped_by_ctx[ctx_key] = []
+		pattern_scoped_by_ctx[ctx_key].append(entry)
+	f.close()
+
+
+func _load_literal_global_tsv(path: String) -> void:
 	var f: FileAccess = FileAccess.open(path, FileAccess.READ)
 	if f == null:
 		push_warning("[TransToVostok] Cannot open: " + path)
@@ -164,11 +242,11 @@ func _load_literal_tsv(path: String) -> void:
 		var line: PackedStringArray = f.get_csv_line("\t")
 		if line.size() < 2:
 			continue
-		literal_index[line[0]] = line[1]
+		literal_global[line[0]] = line[1]
 	f.close()
 
 
-func _load_expression_tsv(path: String) -> void:
+func _load_pattern_global_tsv(path: String) -> void:
 	var f: FileAccess = FileAccess.open(path, FileAccess.READ)
 	if f == null:
 		push_warning("[TransToVostok] Cannot open: " + path)
@@ -179,39 +257,66 @@ func _load_expression_tsv(path: String) -> void:
 		var line: PackedStringArray = f.get_csv_line("\t")
 		if line.size() < 2:
 			continue
-		var entry: PatternEntry = _compile_pattern(line[0], line[1])
+		var entry: GlobalPatternEntry = _compile_global_pattern(line[0], line[1])
 		if entry != null:
-			patterns.append(entry)
+			pattern_global.append(entry)
 	f.close()
 
 
-func _compile_pattern(original: String, translated: String) -> PatternEntry:
-	var entry: PatternEntry = PatternEntry.new()
-	entry.template = translated
-	entry.placeholders = []
-
-	# 1. 정규식 메타 문자 이스케이프 ({, }, *는 별도 처리)
-	var pattern_str: String = original
+# 패턴 문자열(text)을 RegEx 로 컴파일. 실패 시 null.
+# 반환: {regex, template, placeholders} 정보를 담은 Dictionary
+func _compile_regex(pattern_text: String) -> Dictionary:
+	var pattern_str: String = pattern_text
 	var meta: Array = ["\\", ".", "^", "$", "+", "?", "(", ")", "[", "]", "|"]
 	for c in meta:
 		pattern_str = pattern_str.replace(c, "\\" + c)
 
-	# 2. {name} → named capture group
 	var name_re: RegEx = RegEx.new()
 	name_re.compile("\\{(\\w+)\\}")
+	var placeholders: Array = []
 	var matches: Array = name_re.search_all(pattern_str)
 	for m in matches:
-		entry.placeholders.append(m.get_string(1))
+		placeholders.append(m.get_string(1))
 	pattern_str = name_re.sub(pattern_str, "(?<$1>.+?)", true)
-
-	# 3. * → non-capturing wildcard
 	pattern_str = pattern_str.replace("*", "(?:.+?)")
 
-	entry.regex = RegEx.new()
-	var err: int = entry.regex.compile("^" + pattern_str + "$")
+	var regex: RegEx = RegEx.new()
+	var err: int = regex.compile("^" + pattern_str + "$")
 	if err != OK:
-		push_warning("[TransToVostok] Failed to compile pattern: " + original)
+		return {}
+	return {
+		"regex": regex,
+		"placeholders": placeholders,
+	}
+
+
+func _compile_scoped_pattern(
+		location: String, parent: String, node_name: String, node_type: String,
+		text: String, translation: String) -> ScopedPatternEntry:
+	var compiled: Dictionary = _compile_regex(text)
+	if compiled.is_empty():
+		push_warning("[TransToVostok] Failed to compile scoped pattern: " + text)
 		return null
+	var entry: ScopedPatternEntry = ScopedPatternEntry.new()
+	entry.location = location
+	entry.parent = parent
+	entry.node_name = node_name
+	entry.node_type = node_type
+	entry.regex = compiled["regex"]
+	entry.template = translation
+	entry.placeholders = compiled["placeholders"]
+	return entry
+
+
+func _compile_global_pattern(text: String, translation: String) -> GlobalPatternEntry:
+	var compiled: Dictionary = _compile_regex(text)
+	if compiled.is_empty():
+		push_warning("[TransToVostok] Failed to compile global pattern: " + text)
+		return null
+	var entry: GlobalPatternEntry = GlobalPatternEntry.new()
+	entry.regex = compiled["regex"]
+	entry.template = translation
+	entry.placeholders = compiled["placeholders"]
 	return entry
 
 
@@ -220,7 +325,6 @@ func _compile_pattern(original: String, translated: String) -> PatternEntry:
 # ==========================================
 
 func _bind_tree(root: Node) -> void:
-	# 트리 전체를 한 번 순회하며 바인딩 등록 (초기화용)
 	var stack: Array = [root]
 	while stack.size() > 0:
 		var n: Node = stack.pop_back()
@@ -230,13 +334,10 @@ func _bind_tree(root: Node) -> void:
 
 
 func _on_node_added(node: Node) -> void:
-	# node_added는 자식 노드마다 개별 발생 → 재귀 불필요
 	_bind_node(node)
 
 
 func _bind_node(node: Node) -> void:
-	# 노드의 TRANSLATABLE_PROPS 중 존재하는 것만 바인딩으로 등록.
-	# 이름에 priority 키워드가 포함되면 priority_bindings 에, 아니면 normal_bindings 에.
 	var name_lower: String = node.name.to_lower()
 	var is_priority: bool = false
 	for kw in PRIORITY_NAME_KEYWORDS:
@@ -256,7 +357,6 @@ func _bind_node(node: Node) -> void:
 			priority_bindings.append(b)
 		else:
 			normal_bindings.append(b)
-		# 바인딩 등록 직후 1회 즉시 처리
 		_apply_binding(b)
 
 
@@ -265,7 +365,6 @@ func _bind_node(node: Node) -> void:
 # ==========================================
 
 func _process(_delta: float) -> void:
-	# Priority 바인딩: 매 프레임 전수 체크 (역순 순회로 remove 안전)
 	var i: int = priority_bindings.size() - 1
 	while i >= 0:
 		var b: Dictionary = priority_bindings[i]
@@ -278,11 +377,9 @@ func _process(_delta: float) -> void:
 
 
 func _process_normal_batch() -> void:
-	# Normal 바인딩: 0.05초마다 NORMAL_BATCH_SIZE 개씩 라운드로빈
 	var size: int = normal_bindings.size()
 	if size == 0:
 		return
-
 	var processed: int = 0
 	while processed < NORMAL_BATCH_SIZE:
 		if _normal_cursor >= size:
@@ -300,11 +397,6 @@ func _process_normal_batch() -> void:
 
 
 func _apply_binding(b: Dictionary) -> void:
-	# 핵심 조기 리턴 로직:
-	#   1) 노드 유효성
-	#   2) 속성 존재 + string 타입
-	#   3) 빈 문자열 스킵
-	#   4) 지난 스캔과 동일하면 스킵  ← 대부분의 호출이 여기서 종료
 	var node = b["node"].get_ref()
 	if node == null or not is_instance_valid(node):
 		return
@@ -325,8 +417,6 @@ func _apply_binding(b: Dictionary) -> void:
 		node.set(prop, translated)
 		b["last"] = translated
 	else:
-		# 번역 결과가 없거나 원문과 같으면 last에 원문을 저장해
-		# 다음 스캔에 즉시 조기 리턴되도록 함
 		b["last"] = cur_str
 
 
@@ -335,71 +425,160 @@ func _apply_binding(b: Dictionary) -> void:
 # ==========================================
 
 func _lookup_cached(node: Node, text: String):
-	# 키 구성에 쓰이는 노드 컨텍스트. 캐시 히트 시 _find_translation_ctx 를 건너뛴다.
 	var scene: String = _get_scene_name(node)
 	var parent: String = _get_parent_path(node)
 	var node_name: String = node.name
 	var node_type: String = node.get_class()
-	var key: String = scene + "\t" + parent + "\t" + node_name + "\t" + node_type + "\t" + text
+	var cache_key: String = scene + "\t" + parent + "\t" + node_name + "\t" + node_type + "\t" + text
 
-	if miss_cache.has(key):
+	if miss_cache.has(cache_key):
 		return null
-	if translation_cache.has(key):
-		return translation_cache[key]
+	if translation_cache.has(cache_key):
+		return translation_cache[cache_key]
 
 	var result = _find_translation_ctx(scene, parent, node_name, node_type, text)
 	if result == null:
-		miss_cache[key] = true
+		miss_cache[cache_key] = true
 	else:
-		translation_cache[key] = result
+		translation_cache[cache_key] = result
 	return result
 
 
+# ==========================================
+# 8층 매칭 체인
+# ==========================================
+
 func _find_translation_ctx(scene: String, parent: String,
 		node_name: String, node_type: String, text: String):
-	# 매칭 우선순위:
-	#   1) 점수 > 0 (특정 컨텍스트 매칭)
-	#   2) #literal
-	#   3) #expression
-	#   4) 점수 = 0 (일반 행의 암묵적 fallback)
-	var best_score: int = 0
-	var best_trans_scored = null
-	var text_only_fallback = null
+	var exact_key: String = scene + "\t" + parent + "\t" + node_name + "\t" + node_type + "\t" + text
+	var ctx_key: String = scene + "\t" + parent + "\t" + node_name + "\t" + node_type
 
-	if rows_by_text.has(text):
-		var candidates: Array = rows_by_text[text]
-		for row in candidates:
-			var score: int = 0
-			if row["location"] == scene:
-				score += SCORE_LOCATION
-			if row["parent"] == parent:
-				score += SCORE_PARENT
-			if row["name"] == node_name:
-				score += SCORE_NAME
-			if row["type"] == node_type:
-				score += SCORE_TYPE
+	# --- Tier 1: static exact ---
+	if static_exact_index.has(exact_key):
+		return static_exact_index[exact_key]
 
-			if score > best_score:
-				best_score = score
-				best_trans_scored = row["translated"]
-			elif score == 0 and text_only_fallback == null:
-				text_only_fallback = row["translated"]
+	# --- Tier 2: scoped literal exact ---
+	if literal_scoped_exact_index.has(exact_key):
+		return literal_scoped_exact_index[exact_key]
 
-		if best_trans_scored != null:
-			return best_trans_scored
+	# --- Tier 3: scoped pattern exact (컨텍스트 완전 일치) ---
+	if pattern_scoped_by_ctx.has(ctx_key):
+		for entry in pattern_scoped_by_ctx[ctx_key]:
+			var m: RegExMatch = entry.regex.search(text)
+			if m != null:
+				return entry.apply(m)
 
-	if literal_index.has(text):
-		return literal_index[text]
+	# --- Tier 4: literal global ---
+	if literal_global.has(text):
+		return literal_global[text]
 
-	for p in patterns:
-		var m: RegExMatch = p.regex.search(text)
+	# --- Tier 5: pattern global ---
+	for entry in pattern_global:
+		var m: RegExMatch = entry.regex.search(text)
 		if m != null:
-			return p.apply(m)
+			return entry.apply(m)
 
-	if text_only_fallback != null:
-		return text_only_fallback
+	# --- Tier 6: static score (부분 컨텍스트 매칭) ---
+	var result = _score_match_exact_rows(
+		static_rows, scene, parent, node_name, node_type, text, "static")
+	if result != null:
+		return result
+
+	# --- Tier 7: scoped literal score ---
+	result = _score_match_exact_rows(
+		literal_scoped_rows, scene, parent, node_name, node_type, text, "scoped literal")
+	if result != null:
+		return result
+
+	# --- Tier 8: scoped pattern score ---
+	result = _score_match_pattern_rows(
+		pattern_scoped_rows, scene, parent, node_name, node_type, text)
+	if result != null:
+		return result
 
 	return null
+
+
+# text 가 완전 일치하는 행 중 가장 높은 score 를 고른다. score>0 필수.
+func _score_match_exact_rows(rows: Array, scene: String, parent: String,
+		node_name: String, node_type: String, text: String, tier_label: String):
+	var best_score: int = 0
+	var best_entry = null
+	var tie_count: int = 0
+
+	for entry in rows:
+		if entry.text != text:
+			continue
+		var score: int = _compute_score(entry.location, entry.parent, entry.node_name, entry.node_type,
+			scene, parent, node_name, node_type)
+		if score <= 0:
+			continue
+		if score > best_score:
+			best_score = score
+			best_entry = entry
+			tie_count = 1
+		elif score == best_score:
+			tie_count += 1
+
+	if best_entry == null:
+		return null
+
+	if tie_count > 1:
+		push_warning("[TransToVostok] score tie (%s tier, %d candidates) for text=%s" % [
+			tier_label, tie_count, text
+		])
+
+	return best_entry.translation
+
+
+# 정규식이 매칭되는 scoped pattern 행 중 가장 높은 score 를 고른다. score>0 필수.
+func _score_match_pattern_rows(rows: Array, scene: String, parent: String,
+		node_name: String, node_type: String, text: String):
+	var best_score: int = 0
+	var best_entry = null
+	var best_match: RegExMatch = null
+	var tie_count: int = 0
+
+	for entry in rows:
+		var m: RegExMatch = entry.regex.search(text)
+		if m == null:
+			continue
+		var score: int = _compute_score(entry.location, entry.parent, entry.node_name, entry.node_type,
+			scene, parent, node_name, node_type)
+		if score <= 0:
+			continue
+		if score > best_score:
+			best_score = score
+			best_entry = entry
+			best_match = m
+			tie_count = 1
+		elif score == best_score:
+			tie_count += 1
+
+	if best_entry == null:
+		return null
+
+	if tie_count > 1:
+		push_warning("[TransToVostok] score tie (scoped pattern tier, %d candidates) for text=%s" % [
+			tie_count, text
+		])
+
+	return best_entry.apply(best_match)
+
+
+static func _compute_score(
+		row_location: String, row_parent: String, row_name: String, row_type: String,
+		node_location: String, node_parent: String, node_name: String, node_type: String) -> int:
+	var s: int = 0
+	if row_location == node_location:
+		s += SCORE_LOCATION
+	if row_parent == node_parent:
+		s += SCORE_PARENT
+	if row_name == node_name:
+		s += SCORE_NAME
+	if row_type == node_type:
+		s += SCORE_TYPE
+	return s
 
 
 # ==========================================
@@ -407,7 +586,6 @@ func _find_translation_ctx(scene: String, parent: String,
 # ==========================================
 
 static func _get_scene_name(node: Node) -> String:
-	# 노드의 owner가 포함된 씬 파일 경로를 반환 (예: "Scenes/Menu")
 	var scene_owner: Node = node.owner if node.owner != null else node
 	var path: String = scene_owner.scene_file_path
 	if path == "":
@@ -421,8 +599,6 @@ static func _get_scene_name(node: Node) -> String:
 
 
 static func _get_parent_path(node: Node) -> String:
-	# node의 owner 기준 부모 경로 (예: "Main/Buttons")
-	# owner == node 자기자신이면 빈 문자열
 	var scene_owner: Node = node.owner if node.owner != null else null
 	if scene_owner == null or scene_owner == node:
 		return ""

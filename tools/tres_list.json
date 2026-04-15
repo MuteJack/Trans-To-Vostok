@@ -5,6 +5,16 @@
       "dir": "Events",
       "fields": ["name", "description"],
       "targets": ["List"]
+    },
+    {
+      "name": "Traders",
+      "dir": "Traders",
+      "fields": ["name"],
+      "targets": [
+        "Doctor/Doctor.tres",
+        "Generalist/Generalist.tres",
+        "Gunsmith/Gunsmith.tres"
+      ]
     }
   ]
 }
