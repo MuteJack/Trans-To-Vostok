@@ -1,0 +1,10 @@
+{
+  "groups": [
+    {
+      "name": "Events",
+      "dir": "Events",
+      "fields": ["name", "description"],
+      "targets": ["List"]
+    }
+  ]
+}

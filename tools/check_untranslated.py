@@ -135,7 +135,7 @@ def analyze_xlsx(rows: list[dict]) -> tuple[set, set, set, dict, list]:
 
     for row in rows:
         uid = row.get("unique_id", "").strip()
-        location = row.get("location", "").strip()
+        filetype = row.get("filetype", "").strip()
         ignore = row.get("ignore", "").strip().lower()
         translated = row.get("translated", "")
         text = row.get("text", "")
@@ -146,12 +146,13 @@ def analyze_xlsx(rows: list[dict]) -> tuple[set, set, set, dict, list]:
                 ignored_uids.add(uid)
             continue
 
-        # 특수 (#literal, #expression) 는 translated 비어있으면 스킵
-        if location == "#literal":
+        # 특수 태그 처리 (#literal, #expression)
+        # tres 도 런타임엔 literal과 동일하게 text-only 매칭
+        if filetype == "#literal" or filetype == "tres":
             if translated:
                 literal_map[text] = translated
             continue
-        if location == "#expression":
+        if filetype == "#expression":
             if translated:
                 try:
                     regex = compile_pattern(text)
@@ -160,7 +161,7 @@ def analyze_xlsx(rows: list[dict]) -> tuple[set, set, set, dict, list]:
                     pass
             continue
 
-        # 일반 행
+        # 일반 행 (filetype='' or 'scn')
         if uid:
             if translated:
                 direct_uids.add(uid)

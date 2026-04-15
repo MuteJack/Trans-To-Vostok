@@ -4,26 +4,41 @@ Godot .tres 파일에서 지정한 필드 값을 추출한다.
 [resource] 블록 내부의 `field = "value"` 패턴을 찾아 값을 TSV로 출력한다.
 여러 줄 문자열(개행 포함)과 이스케이프된 따옴표(\")를 정확히 처리한다.
 
-출력 파일 확장자는 `.tres.tsv` 로 `.tscn` 추출본(*.tsv)과 구분한다.
+원본 .tres 파일마다 하나의 .tres.tsv 파일이 생성되며, 출력 경로는
+원본의 pck_recovered 기준 상대 경로를 extracted_text 아래에 미러링한다.
+
+    pck_recovered/Events/List/D1_Generalist.tres
+        ↓
+    extracted_text/Events/List/D1_Generalist.tres.tsv
+
+출력 컬럼: filetype, location, field, text
+
+실행 모드:
+  1) 배치 (권장):  python extract_tres_text.py  또는 --config <path>
+     tres_list.json 을 읽어 여러 그룹을 한 번에 처리.
+     기본 경로: 이 스크립트 옆의 tres_list.json.
+  2) 단일 job:     python extract_tres_text.py --input <dir> --fields <list>
 
 사용법:
-    python extract_tres_text.py --fields <필드,목록> [옵션]
+    python extract_tres_text.py                       # 기본 tres_list.json 사용
+    python extract_tres_text.py --config other.json   # 다른 config 사용
+    python extract_tres_text.py --input Events/List --fields name,description
 
-옵션:
-    --input <DIR>       대상 디렉토리 (하위 재귀)
-    --fields <LIST>     추출할 필드 (콤마 구분). 예: name,description
-    --output <FILE>     출력 TSV 경로 (기본: stdout)
-    --class <NAME>      script_class 필터 (선택사항). 예: EventData
-
-예시:
-    # Events 디렉토리의 모든 .tres 에서 name/description 추출
-    python extract_tres_text.py \\
-        --input ../.tmp/pck_recovered/Events/List \\
-        --fields name,description \\
-        --output ../.tmp/extracted_text/Events.tres.tsv
+tres_list.json 스키마:
+    {
+      "groups": [
+        {
+          "name": "Events",                     # 선택사항 (진행 표시용)
+          "dir": "Events",                      # pck_recovered 기준 상대 경로
+          "fields": ["name", "description"],    # 추출할 필드
+          "targets": ["List"]                   # dir 기준 상대 경로 (파일/디렉토리)
+        }
+      ]
+    }
 """
 import argparse
 import csv
+import json
 import re
 import sys
 from pathlib import Path
@@ -37,6 +52,17 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
+# 출력 TSV 고정 컬럼
+OUT_COLUMNS = ["filetype", "location", "field", "text"]
+
+# 기본 경로
+DEFAULT_CONFIG_NAME = "tres_list.json"
+
+
+# ==========================================
+# .tres 파서
+# ==========================================
+
 def _find_resource_block(text: str) -> tuple[int, int]:
     """
     [resource] 블록의 본문 시작~끝 오프셋을 반환.
@@ -46,17 +72,6 @@ def _find_resource_block(text: str) -> tuple[int, int]:
     if not m:
         return (-1, -1)
     return (m.end(), len(text))
-
-
-def _find_script_class(text: str) -> str:
-    """[gd_resource ...] 헤더에서 script_class 추출."""
-    m = re.search(
-        r'\[gd_resource\b[^\]]*script_class\s*=\s*"([^"]*)"',
-        text,
-    )
-    if m:
-        return m.group(1)
-    return ""
 
 
 def _extract_string_field(body: str, field_name: str) -> str | None:
@@ -104,7 +119,7 @@ def _extract_string_field(body: str, field_name: str) -> str | None:
 def parse_tres(path: Path, fields: list[str]) -> dict | None:
     """
     한 개의 .tres 파일에서 지정한 필드 값들을 dict로 반환.
-    파일이 리소스가 아니거나 필드가 하나도 없으면 None 반환.
+    파일이 리소스가 아니거나 필드가 하나도 추출되지 않으면 None.
     """
     try:
         text = path.read_text(encoding="utf-8")
@@ -112,60 +127,225 @@ def parse_tres(path: Path, fields: list[str]) -> dict | None:
         print(f"[WARN] 읽기 실패: {path} ({e})", file=sys.stderr)
         return None
 
-    script_class = _find_script_class(text)
     body_start, body_end = _find_resource_block(text)
     if body_start < 0:
         return None
     body = text[body_start:body_end]
 
-    result = {"_script_class": script_class}
+    result: dict = {}
     found_any = False
     for field in fields:
         val = _extract_string_field(body, field)
-        if val is not None:
+        if val is not None and val != "":
             result[field] = val
             found_any = True
-        else:
-            result[field] = ""
     return result if found_any else None
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(
-        description=".tres 파일에서 필드 값 추출",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog=__doc__,
-    )
-    parser.add_argument(
-        "--input",
-        required=True,
-        help="대상 디렉토리 (하위 재귀)",
-    )
-    parser.add_argument(
-        "--fields",
-        required=True,
-        help="추출할 필드 (콤마 구분). 예: name,description",
-    )
-    parser.add_argument(
-        "--output",
-        help="출력 TSV 경로 (기본: stdout). 관례: .tres.tsv 확장자 권장",
-    )
-    parser.add_argument(
-        "--class",
-        dest="class_filter",
-        help="script_class 필터 (선택). 예: EventData",
-    )
-    args = parser.parse_args()
+# ==========================================
+# 추출 로직
+# ==========================================
 
-    input_dir = Path(args.input).resolve()
+def _collect_tres_files(target_path: Path) -> list[Path]:
+    """target이 파일이면 [파일], 디렉토리면 재귀 *.tres 리스트."""
+    if target_path.is_file():
+        if target_path.suffix == ".tres":
+            return [target_path]
+        return []
+    if target_path.is_dir():
+        return sorted(target_path.rglob("*.tres"))
+    return []
+
+
+def collect_target_files(
+    pck_root: Path,
+    dir_rel: str,
+    targets: list[str],
+) -> list[Path]:
+    """
+    한 그룹의 targets를 풀어 처리 대상 .tres 파일 경로 리스트 반환.
+    """
+    base = (pck_root / dir_rel).resolve() if dir_rel else pck_root
+    out: list[Path] = []
+    for target in targets:
+        target_path = (base / target).resolve() if target else base
+        if not target_path.exists():
+            print(
+                f"[WARN] target 경로 없음: {target_path} "
+                f"(dir={dir_rel!r}, target={target!r})",
+                file=sys.stderr,
+            )
+            continue
+        tres_files = _collect_tres_files(target_path)
+        if not tres_files:
+            print(
+                f"[WARN] .tres 파일 없음: {target_path}",
+                file=sys.stderr,
+            )
+            continue
+        out.extend(tres_files)
+    return out
+
+
+def tres_to_rows(
+    tres_path: Path,
+    fields: list[str],
+    pck_root: Path,
+) -> list[dict]:
+    """
+    한 개의 .tres 파일에서 행을 추출. 파일에 지정 필드가 하나도 없으면 빈 리스트.
+    """
+    parsed = parse_tres(tres_path, fields)
+    if parsed is None:
+        return []
+
+    try:
+        location = tres_path.resolve().relative_to(pck_root).as_posix()
+    except ValueError:
+        location = str(tres_path.resolve())
+
+    rows: list[dict] = []
+    for field in fields:
+        if field not in parsed:
+            continue
+        rows.append({
+            "filetype": "tres",
+            "location": location,
+            "field": field,
+            "text": parsed[field],
+        })
+    return rows
+
+
+def write_tsv(out_path: Path, rows: list[dict]) -> None:
+    """행 리스트를 TSV로 원자적 쓰기."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
+    try:
+        with open(tmp_path, "w", encoding="utf-8", newline="") as f:
+            writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
+            writer.writerow(OUT_COLUMNS)
+            for row in rows:
+                writer.writerow([row.get(c, "") for c in OUT_COLUMNS])
+        tmp_path.replace(out_path)
+    except Exception:
+        if tmp_path.exists():
+            try:
+                tmp_path.unlink()
+            except OSError:
+                pass
+        raise
+
+
+# ==========================================
+# 배치 모드 (tres_list.json)
+# ==========================================
+
+def run_batch(
+    config_path: Path,
+    pck_root: Path,
+    output_dir: Path,
+) -> int:
+    """tres_list.json 의 각 그룹을 실행. 반환: 에러 코드."""
+    try:
+        config = json.loads(config_path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        print(f"[ERROR] JSON 파싱 실패: {config_path} ({e})", file=sys.stderr)
+        return 1
+    except OSError as e:
+        print(f"[ERROR] config 읽기 실패: {config_path} ({e})", file=sys.stderr)
+        return 1
+
+    groups = config.get("groups")
+    if not isinstance(groups, list) or not groups:
+        print(f"[ERROR] config에 'groups' 배열이 없습니다: {config_path}", file=sys.stderr)
+        return 1
+
+    # 기본 무결성 체크 (name은 선택사항)
+    for i, g in enumerate(groups):
+        if not isinstance(g, dict):
+            print(f"[ERROR] groups[{i}] 가 object가 아닙니다", file=sys.stderr)
+            return 1
+        for required in ("dir", "fields", "targets"):
+            if required not in g:
+                print(f"[ERROR] groups[{i}] 에 '{required}' 누락", file=sys.stderr)
+                return 1
+        if not isinstance(g["fields"], list) or not g["fields"]:
+            print(f"[ERROR] groups[{i}].fields 가 비어있거나 배열이 아님", file=sys.stderr)
+            return 1
+        if not isinstance(g["targets"], list) or not g["targets"]:
+            print(f"[ERROR] groups[{i}].targets 가 비어있거나 배열이 아님", file=sys.stderr)
+            return 1
+
+    print(f"config: {config_path}")
+    print(f"pck_root: {pck_root}")
+    print(f"출력: {output_dir}")
+    print(f"그룹 수: {len(groups)}")
+    print()
+
+    total_files_written = 0
+    total_rows = 0
+    for idx, g in enumerate(groups, start=1):
+        name = g.get("name", f"group {idx}")
+        dir_rel = g["dir"]
+        fields = g["fields"]
+        targets = g["targets"]
+
+        print(f"[{idx}/{len(groups)}] {name}")
+        print(f"    dir:     {dir_rel}")
+        print(f"    targets: {targets}")
+        print(f"    fields:  {fields}")
+
+        tres_files = collect_target_files(pck_root, dir_rel, targets)
+        group_rows = 0
+        group_files = 0
+        for tres in tres_files:
+            rows = tres_to_rows(tres, fields, pck_root)
+            if not rows:
+                continue
+            # 출력 경로: extracted_text/<location>.tsv
+            # location 은 <pck_root 기준 상대>.tres 이므로
+            # 최종 파일명은 <location>.tsv  →  <...>.tres.tsv
+            try:
+                rel = tres.resolve().relative_to(pck_root)
+            except ValueError:
+                print(f"[WARN] pck_root 밖의 파일 스킵: {tres}", file=sys.stderr)
+                continue
+            out_path = output_dir / (rel.as_posix() + ".tsv")
+            write_tsv(out_path, rows)
+            group_rows += len(rows)
+            group_files += 1
+
+        print(f"    → {group_files}개 파일, {group_rows}개 엔트리")
+        print()
+        total_files_written += group_files
+        total_rows += group_rows
+
+    print("=" * 60)
+    print(f"완료: {len(groups)}개 그룹, {total_files_written}개 TSV 파일, {total_rows}개 엔트리")
+    return 0
+
+
+# ==========================================
+# 단일 job 모드 (--input / --fields)
+# ==========================================
+
+def run_single_job(
+    input_dir: Path,
+    fields: list[str],
+    pck_root: Path,
+    output_dir: Path,
+) -> int:
+    """
+    단일 디렉토리에서 필드 추출.
+    각 .tres 파일마다 미러링된 경로로 .tres.tsv 생성.
+    """
     if not input_dir.exists():
-        print(f"[ERROR] 입력 디렉토리가 없습니다: {input_dir}", file=sys.stderr)
+        print(f"[ERROR] 입력 경로가 없습니다: {input_dir}", file=sys.stderr)
         return 1
     if not input_dir.is_dir():
         print(f"[ERROR] 디렉토리가 아닙니다: {input_dir}", file=sys.stderr)
         return 1
-
-    fields = [f.strip() for f in args.fields.split(",") if f.strip()]
     if not fields:
         print("[ERROR] --fields 가 비어있습니다.", file=sys.stderr)
         return 1
@@ -175,50 +355,80 @@ def main() -> int:
         print(f"[ERROR] .tres 파일이 없습니다: {input_dir}", file=sys.stderr)
         return 1
 
-    # 결과 수집: (파일 상대경로, script_class, field, value)
-    rows: list[tuple[str, str, str, str]] = []
+    files_written = 0
+    total_rows = 0
     for tres in tres_files:
-        parsed = parse_tres(tres, fields)
-        if parsed is None:
+        rows = tres_to_rows(tres, fields, pck_root)
+        if not rows:
             continue
-        if args.class_filter and parsed["_script_class"] != args.class_filter:
+        try:
+            rel = tres.resolve().relative_to(pck_root)
+        except ValueError:
+            print(f"[WARN] pck_root 밖의 파일 스킵: {tres}", file=sys.stderr)
             continue
-        rel = tres.relative_to(input_dir).as_posix()
-        for field in fields:
-            value = parsed.get(field, "")
-            if value == "":
-                continue  # 빈 값은 스킵
-            rows.append((rel, parsed["_script_class"], field, value))
+        out_path = output_dir / (rel.as_posix() + ".tsv")
+        write_tsv(out_path, rows)
+        files_written += 1
+        total_rows += len(rows)
 
-    # 출력
-    if args.output:
-        out_path = Path(args.output).resolve()
-        if not out_path.name.endswith(".tres.tsv"):
-            print(
-                f"[WARN] 출력 파일 확장자는 '.tres.tsv' 를 권장합니다: {out_path.name}",
-                file=sys.stderr,
-            )
-        out_path.parent.mkdir(parents=True, exist_ok=True)
-        f = open(out_path, "w", encoding="utf-8", newline="")
-        close_on_done = True
-    else:
-        f = sys.stdout
-        close_on_done = False
-
-    try:
-        writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(["file", "class", "field", "text"])
-        for row in rows:
-            writer.writerow(row)
-    finally:
-        if close_on_done:
-            f.close()
-
-    if args.output:
-        print(f"\n완료: {len(rows)}개 엔트리 ({len(tres_files)}개 파일 스캔)")
-        print(f"출력: {out_path}")
-
+    print(f"\n완료: {files_written}개 TSV 파일, {total_rows}개 엔트리")
+    print(f"출력: {output_dir}")
     return 0
+
+
+# ==========================================
+# 엔트리 포인트
+# ==========================================
+
+def main() -> int:
+    parser = argparse.ArgumentParser(
+        description=".tres 파일에서 필드 값 추출",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=__doc__,
+    )
+    parser.add_argument("--config", help=f"tres_list.json 경로 (기본: tools/{DEFAULT_CONFIG_NAME})")
+    parser.add_argument("--input", help="단일 job 모드: 대상 디렉토리 (하위 재귀)")
+    parser.add_argument("--fields", help="단일 job 모드: 추출할 필드 (콤마 구분)")
+    args = parser.parse_args()
+
+    # 경로 기준
+    script_dir = Path(__file__).resolve().parent
+    mod_root = script_dir.parent              # mods/Trans To Vostok
+    pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
+    extracted_dir = (mod_root / ".tmp" / "extracted_text").resolve()
+
+    # --input 과 --config 동시 지정 금지
+    if args.input and args.config:
+        print("[ERROR] --input 과 --config 는 함께 사용할 수 없습니다.", file=sys.stderr)
+        return 1
+
+    # 단일 job 모드
+    if args.input:
+        if not args.fields:
+            print("[ERROR] --input 사용 시 --fields 도 지정해야 합니다.", file=sys.stderr)
+            return 1
+        fields = [f.strip() for f in args.fields.split(",") if f.strip()]
+        input_dir = Path(args.input).resolve()
+        return run_single_job(input_dir, fields, pck_root, extracted_dir)
+
+    # 배치 모드
+    if args.config:
+        config_path = Path(args.config).resolve()
+    else:
+        config_path = (script_dir / DEFAULT_CONFIG_NAME).resolve()
+
+    if not config_path.exists():
+        print(f"[ERROR] config 파일이 없습니다: {config_path}", file=sys.stderr)
+        print("  --config 로 경로를 지정하거나 --input / --fields 로 단일 job을 실행하세요.",
+              file=sys.stderr)
+        return 1
+
+    if not pck_root.exists():
+        print(f"[ERROR] pck_root가 없습니다: {pck_root}", file=sys.stderr)
+        print("  먼저 decompile_gdc.bat 를 실행하여 pck_recovered 를 생성하세요.", file=sys.stderr)
+        return 1
+
+    return run_batch(config_path, pck_root, extracted_dir)
 
 
 if __name__ == "__main__":

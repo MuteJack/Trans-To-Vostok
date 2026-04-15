@@ -44,9 +44,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from validate_translation import validate_xlsx, _normalize_cell
 
 
-# 분류 기준
-LOC_LITERAL = "#literal"
-LOC_EXPRESSION = "#expression"
+# filetype 분류 기준
+FILETYPE_LITERAL = "#literal"
+FILETYPE_EXPRESSION = "#expression"
+FILETYPE_TRES = "tres"
+FILETYPE_SCN = "scn"  # 빈 값도 scn으로 취급
+
+# 씬 파일 확장자 (런타임 TSV 출력 시 location에서 제거)
+SCENE_EXTENSIONS = (".tscn", ".scn")
 
 # 출력 TSV 컬럼
 COLUMNS_MAIN = ["location", "parent", "name", "type", "text", "translated"]
@@ -55,6 +60,14 @@ COLUMNS_EXPRESSION = ["text", "translated"]
 
 # ignore 값으로 간주할 문자열
 IGNORE_VALUES = {"1", "true"}
+
+
+def _strip_scene_extension(location: str) -> str:
+    """씬 파일 확장자(.tscn/.scn)를 제거. 다른 경우는 원본 유지."""
+    for ext in SCENE_EXTENSIONS:
+        if location.endswith(ext):
+            return location[: -len(ext)]
+    return location
 
 
 def load_all_sheets(xlsx_path: Path) -> list[dict]:
@@ -98,11 +111,11 @@ def load_all_sheets(xlsx_path: Path) -> list[dict]:
 
 def classify_rows(rows: list[dict]) -> tuple[list[dict], list[dict], list[dict], dict]:
     """
-    행을 분류한다:
-      - main: 일반 행 (location이 #로 시작하지 않음)
-      - literal: #literal 행
-      - expression: #expression 행
-      - stats: 제외/미번역 통계
+    행을 filetype 기준으로 분류한다:
+      - main:        filetype='' or 'scn' → translation.tsv (location 확장자 제거)
+      - literal:     filetype='#literal' or 'tres' → translation_literal.tsv (text-only)
+      - expression:  filetype='#expression' → translation_expression.tsv (정규식)
+      - stats:       제외/미번역 통계
 
     반환: (main, literal, expression, stats)
     """
@@ -116,6 +129,7 @@ def classify_rows(rows: list[dict]) -> tuple[list[dict], list[dict], list[dict],
         "main": 0,
         "literal": 0,
         "expression": 0,
+        "tres": 0,
     }
 
     for row in rows:
@@ -131,15 +145,26 @@ def classify_rows(rows: list[dict]) -> tuple[list[dict], list[dict], list[dict],
             stats["excluded_untranslated"] += 1
             continue
 
-        location = row.get("location", "").strip()
-        if location == LOC_LITERAL:
+        filetype = row.get("filetype", "").strip()
+
+        if filetype == FILETYPE_LITERAL:
             literal_rows.append(row)
             stats["literal"] += 1
-        elif location == LOC_EXPRESSION:
+        elif filetype == FILETYPE_EXPRESSION:
             expression_rows.append(row)
             stats["expression"] += 1
+        elif filetype == FILETYPE_TRES:
+            # tres도 런타임엔 text-only 매칭이라 literal과 동일 파일에 합침
+            literal_rows.append(row)
+            stats["tres"] += 1
         else:
-            main_rows.append(row)
+            # 빈 값 또는 'scn' → 일반 행
+            # location 확장자 제거 후 복사본 저장 (원본 보존)
+            new_row = dict(row)
+            new_row["location"] = _strip_scene_extension(
+                row.get("location", "").strip()
+            )
+            main_rows.append(new_row)
             stats["main"] += 1
 
     return main_rows, literal_rows, expression_rows, stats
@@ -221,11 +246,12 @@ def main() -> int:
     # 3. 행 분류
     print("[3/4] 행 분류 중...")
     main_rows, literal_rows, expression_rows, stats = classify_rows(all_rows)
-    print(f"  → 일반:      {stats['main']}행")
-    print(f"  → #literal:  {stats['literal']}행")
-    print(f"  → #expression: {stats['expression']}행")
-    print(f"  → 제외 (ignore=1):      {stats['excluded_ignore']}행")
-    print(f"  → 제외 (미번역):         {stats['excluded_untranslated']}행")
+    print(f"  → scn (일반):     {stats['main']}행")
+    print(f"  → #literal:       {stats['literal']}행")
+    print(f"  → tres:           {stats['tres']}행 (→ literal과 합침)")
+    print(f"  → #expression:    {stats['expression']}행")
+    print(f"  → 제외 (ignore):  {stats['excluded_ignore']}행")
+    print(f"  → 제외 (미번역):  {stats['excluded_untranslated']}행")
     print()
 
     # 4. TSV 작성

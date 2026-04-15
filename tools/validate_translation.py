@@ -4,13 +4,20 @@ Translation.xlsx 검증 도구.
 체크 항목:
 1. [ERROR] TSV 매칭: location/name/type/parent/unique_id/text가 .tmp/extracted_text/의 TSV와 일치
    - text는 앞뒤 공백/개행까지 완전 일치 (엄격)
-   - location이 '#'으로 시작하면 스킵 (예: #literal, #expression 등 예약어 겸 수동 추가)
+   - filetype이 '' 또는 'scn'이면 TSV 검증 대상 (location은 확장자 포함)
+   - filetype이 '#literal', '#expression', 'tres'이면 TSV 검증 스킵
 2. [WARNING] text ↔ translated 앞뒤 공백/개행이 일치하지 않으면 경고만 (에러 아님)
 3. [ERROR] Transliteration, Machine translated 플래그가 0/1/true/false인가 (빈 셀 금지)
 4. [ERROR] 중복 매칭 키:
    - 일반 행: (text, location, parent, name, type) 조합이 동일한 행 여러 개 → 에러
    - #literal: text가 중복된 #literal 행 여러 개 → 에러 (fallback 모호)
    - #expression: text가 중복된 #expression 행 여러 개 → 에러 (패턴 모호)
+   - tres: text가 중복된 tres 행 여러 개 → 에러 (런타임 동작 동일)
+5. [ERROR] filetype / location 조합 검증:
+   - '' 또는 'scn': location 필수, .tscn 또는 .scn 확장자여야 함
+   - '#literal', '#expression': location은 비어있어야 함
+   - 'tres': location 등의 필드는 제약 없음 (검증 완화)
+   - 그 외 값: 알 수 없는 filetype
 
 사용법:
     python validate_translation.py                # 기본: Korean/Translation.xlsx 검증
@@ -149,11 +156,13 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
     """체크 1 (ERROR): TSV 매칭. text는 앞뒤 공백/개행까지 엄격 비교."""
     errors = []
 
-    location = row.get("location", "").strip()
-    # '#' 접두사 = 예약어 또는 수동 추가 항목 → TSV 검증 스킵
-    if location.startswith("#"):
+    filetype = row.get("filetype", "").strip()
+    # #literal / #expression / tres 는 TSV 원본이 없거나 다른 방식이라 검증 스킵
+    if filetype.startswith("#") or filetype == "tres":
         return errors
+    # 빈 값이나 'scn' 만 TSV 검증 대상
 
+    location = row.get("location", "").strip()
     uid = row.get("unique_id", "").strip()
     if not uid:
         errors.append(f"unique_id 비어있음 (location='{location}')")
@@ -244,36 +253,87 @@ def check_flags(row: dict) -> list[str]:
     return errors
 
 
+def check_filetype_fields(row: dict) -> list[str]:
+    """
+    체크 5 (ERROR): filetype과 다른 필드의 조합 검증.
+    - '' 또는 'scn': location 필수, .tscn/.scn 확장자
+    - '#literal' / '#expression':
+        * location 비어있음 → 전역 매칭
+        * location 있음 → 스코프드 (씬 파일 경로여야 함, .tscn/.scn)
+    - 'tres': 제약 없음 (런타임엔 #literal처럼 동작)
+    """
+    errors = []
+    filetype = row.get("filetype", "").strip()
+    location = row.get("location", "").strip()
+
+    if filetype == "#literal" or filetype == "#expression":
+        # 빈값 → 전역, 값 있음 → 스코프드 (.tscn/.scn 필요)
+        if location != "" and not location.endswith((".tscn", ".scn")):
+            errors.append(
+                f"filetype={filetype!r} 의 scoped location은 "
+                f".tscn 또는 .scn 으로 끝나야 함 (현재: {location!r})"
+            )
+    elif filetype == "tres":
+        # tres는 검증 완화 — location 등 필드에 값이 있어도 OK
+        pass
+    elif filetype == "" or filetype == "scn":
+        if location == "":
+            errors.append(f"filetype={filetype!r} 는 location이 필수")
+        elif not location.endswith((".tscn", ".scn")):
+            errors.append(
+                f"filetype={filetype!r} 의 location은 .tscn 또는 .scn 로 끝나야 함 "
+                f"(현재: {location!r})"
+            )
+    else:
+        errors.append(f"알 수 없는 filetype: {filetype!r}")
+
+    return errors
+
+
 def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
     """
     체크 4 (ERROR): 런타임 매칭 키 중복.
-    - 일반 행: (text, location, parent, name, type) 조합이 동일하면 에러
-    - #literal 행: text가 동일하면 에러 (fallback 모호)
-    - #expression 행: text가 동일하면 에러 (패턴 모호)
+    - 일반 행 (filetype='' or 'scn'): (text, location, parent, name, type) 조합이 동일하면 에러
+    - #literal / tres (전역): text가 동일하면 에러 (런타임에 text-only 매칭이라 모호)
+    - #literal scoped: (location, text) 동일하면 에러
+    - #expression (전역): text가 동일하면 에러 (패턴 모호)
+    - #expression scoped: (location, text) 동일하면 에러
     ignore=1 행은 제외.
 
     반환: [(행번호, 메시지), ...]
     """
     errors = []
-    normal_keys = {}      # (text, loc, parent, name, type) → [(row_num, row), ...]
-    literal_keys = {}     # text → [(row_num, row), ...]
-    expression_keys = {}  # text → [(row_num, row), ...]
+    normal_keys = {}               # (text, loc, parent, name, type) → [(row_num, row), ...]
+    literal_global = {}            # text → [...] (#literal 전역 + tres)
+    literal_scoped = {}            # (location, text) → [...] (#literal scoped)
+    expression_global = {}         # text → [...]
+    expression_scoped = {}         # (location, text) → [...]
 
     for i, row in enumerate(rows, start=2):
         if row.get("ignore", "").strip() == "1":
             continue
 
         text = row.get("text", "")
+        filetype = row.get("filetype", "").strip()
         location = row.get("location", "").strip()
 
-        if location == "#literal":
-            literal_keys.setdefault(text, []).append((i, row))
-        elif location == "#expression":
-            expression_keys.setdefault(text, []).append((i, row))
+        if filetype == "tres":
+            literal_global.setdefault(text, []).append((i, row))
+        elif filetype == "#literal":
+            if location == "":
+                literal_global.setdefault(text, []).append((i, row))
+            else:
+                literal_scoped.setdefault((location, text), []).append((i, row))
+        elif filetype == "#expression":
+            if location == "":
+                expression_global.setdefault(text, []).append((i, row))
+            else:
+                expression_scoped.setdefault((location, text), []).append((i, row))
         else:
+            # 일반 (scn 또는 빈값) — location은 확장자 포함 상태로 비교
             key = (
                 text,
-                location,
+                row.get("location", "").strip(),
                 row.get("parent", "").strip(),
                 row.get("name", "").strip(),
                 row.get("type", "").strip(),
@@ -294,26 +354,50 @@ def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
             for row_num, _ in occurrences:
                 errors.append((row_num, msg))
 
-    # #literal 중복 검사 (text만 기준)
-    for text, occurrences in literal_keys.items():
+    # #literal / tres 전역 중복 검사 (text만 기준)
+    for text, occurrences in literal_global.items():
         if len(occurrences) > 1:
             row_nums = ", ".join(str(n) for n, _ in occurrences)
             text_preview = _preview(text, 40)
             msg = (
-                f"#literal text 중복 ({len(occurrences)}개): "
+                f"전역 text-only 매칭 중복 ({len(occurrences)}개, #literal/tres): "
                 f"text={text_preview} (행: {row_nums})"
             )
             for row_num, _ in occurrences:
                 errors.append((row_num, msg))
 
-    # #expression 중복 검사 (text만 기준)
-    for text, occurrences in expression_keys.items():
+    # #literal scoped 중복 검사 ((location, text) 기준)
+    for (loc, text), occurrences in literal_scoped.items():
         if len(occurrences) > 1:
             row_nums = ", ".join(str(n) for n, _ in occurrences)
             text_preview = _preview(text, 40)
             msg = (
-                f"#expression text 중복 ({len(occurrences)}개): "
+                f"scoped #literal 중복 ({len(occurrences)}개): "
+                f"location={loc!r}, text={text_preview} (행: {row_nums})"
+            )
+            for row_num, _ in occurrences:
+                errors.append((row_num, msg))
+
+    # #expression 전역 중복 검사 (text만 기준)
+    for text, occurrences in expression_global.items():
+        if len(occurrences) > 1:
+            row_nums = ", ".join(str(n) for n, _ in occurrences)
+            text_preview = _preview(text, 40)
+            msg = (
+                f"전역 #expression text 중복 ({len(occurrences)}개): "
                 f"text={text_preview} (행: {row_nums})"
+            )
+            for row_num, _ in occurrences:
+                errors.append((row_num, msg))
+
+    # #expression scoped 중복 검사 ((location, text) 기준)
+    for (loc, text), occurrences in expression_scoped.items():
+        if len(occurrences) > 1:
+            row_nums = ", ".join(str(n) for n, _ in occurrences)
+            text_preview = _preview(text, 40)
+            msg = (
+                f"scoped #expression 중복 ({len(occurrences)}개): "
+                f"location={loc!r}, text={text_preview} (행: {row_nums})"
             )
             for row_num, _ in occurrences:
                 errors.append((row_num, msg))
@@ -347,12 +431,18 @@ class ValidationResult:
         self.error_tsv = 0
         self.error_flags = 0
         self.error_dup = 0
+        self.error_filetype = 0
         self.warn_ws = 0
         self.log_path: Path | None = None
 
     @property
     def error_count(self) -> int:
-        return self.error_tsv + self.error_flags + self.error_dup
+        return (
+            self.error_tsv
+            + self.error_flags
+            + self.error_dup
+            + self.error_filetype
+        )
 
     @property
     def warning_count(self) -> int:
@@ -407,7 +497,8 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
         tee.print()
 
         # 컬럼 존재 체크
-        required = ["location", "name", "type", "parent", "unique_id", "text", "translated",
+        required = ["filetype", "location", "name", "type", "parent", "unique_id",
+                    "text", "translated",
                     "Transliteration", "Machine translated"]
         missing = [c for c in required if c not in header]
         if missing:
@@ -433,6 +524,10 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
                 local_issues.append(("ERROR", "플래그", msg))
                 result.error_flags += 1
 
+            for msg in check_filetype_fields(row):
+                local_issues.append(("ERROR", "filetype", msg))
+                result.error_filetype += 1
+
             if local_issues:
                 issues_by_row.setdefault(i, []).extend(local_issues)
 
@@ -454,7 +549,8 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
         tee.print(f"검증 완료: {len(rows)}행 검사")
         tee.print(
             f"  ERROR {result.error_count}개  "
-            f"(TSV 매칭 {result.error_tsv}, 플래그 {result.error_flags}, 중복 키 {result.error_dup})"
+            f"(TSV 매칭 {result.error_tsv}, 플래그 {result.error_flags}, "
+            f"중복 키 {result.error_dup}, filetype {result.error_filetype})"
         )
         tee.print(f"  WARN  {result.warning_count}개  (공백 {result.warn_ws})")
 

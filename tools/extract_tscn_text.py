@@ -188,8 +188,10 @@ def main():
 
     for tscn in tscn_files:
         rel_tscn = tscn.relative_to(src_dir)
-        # location = 확장자 제거 + 슬래시 통일 (예: "Scenes/Menu", "UI/Settings")
-        location = rel_tscn.with_suffix("").as_posix()
+        # location = 원본 파일 경로 (확장자 포함, 예: "Scenes/Menu.tscn")
+        # 런타임 매칭에는 확장자가 필요 없지만, xlsx에서는 확장자를 포함해
+        # 파일을 명확히 특정한다. build_runtime_tsv.py 에서 확장자를 제거한다.
+        location = rel_tscn.as_posix()
         out_path = out_dir / rel_tscn.with_suffix(".tsv")
         try:
             n, t = process_file(tscn, out_path, location)
