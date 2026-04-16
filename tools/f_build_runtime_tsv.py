@@ -83,6 +83,7 @@ def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
         "pattern_scoped": [],
         "literal_global": [],
         "pattern_global": [],
+        "substr": [],
     }
     stats = {
         "total": len(rows),
@@ -125,7 +126,9 @@ def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
             else:
                 buckets["pattern_global"].append(row)
                 stats["pattern_global"] += 1
-        # 알 수 없는 method 는 validate 에서 이미 걸러짐
+        elif effective == "substr":
+            buckets["substr"].append(row)
+            stats["substr"] += 1
 
     return buckets, stats
 
@@ -209,6 +212,7 @@ def main() -> int:
     print(f"  pattern_scoped         {stats['pattern_scoped']:4d}행")
     print(f"  literal (global)       {stats['literal_global']:4d}행")
     print(f"  pattern (global)       {stats['pattern_global']:4d}행")
+    print(f"  substr                 {stats['substr']:4d}행")
     print(f"  제외 (ignore)          {stats['excluded_ignore']:4d}행")
     print(f"  제외 (untranslatable)  {stats['excluded_untranslatable']:4d}행")
     print(f"  제외 (미번역)          {stats['excluded_untranslated']:4d}행")
@@ -236,6 +240,7 @@ def main() -> int:
         (locale_dir / "translation_pattern_scoped.tsv", COLUMNS_SCOPED, buckets["pattern_scoped"]),
         (locale_dir / "translation_literal.tsv",        COLUMNS_GLOBAL, buckets["literal_global"]),
         (locale_dir / "translation_pattern.tsv",        COLUMNS_GLOBAL, buckets["pattern_global"]),
+        (locale_dir / "translation_substr.tsv",         COLUMNS_GLOBAL, buckets["substr"]),
     ]
 
     for out_path, columns, rows in outputs:

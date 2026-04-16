@@ -46,6 +46,7 @@ LOCALE_FILES = [
     "translation_pattern_scoped.tsv",
     "translation_literal.tsv",
     "translation_pattern.tsv",
+    "translation_substr.tsv",
 ]
 
 

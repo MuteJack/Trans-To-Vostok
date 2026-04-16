@@ -117,6 +117,9 @@ var literal_global: Dictionary = {}          # text → translation
 # Tier 5: pattern global
 var pattern_global: Array = []               # [GlobalPatternEntry]
 
+# Tier 9: substr (부분 문자열 치환, 길이 내림차순 정렬)
+var substr_entries: Array = []               # [{text: String, translation: String}, ...]
+
 # 바인딩 테이블
 # 각 항목: {node: WeakRef, prop: String, last: String}
 var priority_bindings: Array = []
@@ -167,13 +170,15 @@ func _load_translations() -> void:
 	_load_pattern_scoped_tsv(base + "/translation_pattern_scoped.tsv")
 	_load_literal_global_tsv(base + "/translation_literal.tsv")
 	_load_pattern_global_tsv(base + "/translation_pattern.tsv")
+	_load_substr_tsv(base + "/translation_substr.tsv")
 
-	print("[TransToVostok] Loaded: static=%d, literal_scoped=%d, pattern_scoped=%d, literal=%d, pattern=%d" % [
+	print("[TransToVostok] Loaded: static=%d, literal_scoped=%d, pattern_scoped=%d, literal=%d, pattern=%d, substr=%d" % [
 		static_rows.size(),
 		literal_scoped_rows.size(),
 		pattern_scoped_rows.size(),
 		literal_global.size(),
 		pattern_global.size(),
+		substr_entries.size(),
 	])
 
 
@@ -261,6 +266,26 @@ func _load_pattern_global_tsv(path: String) -> void:
 		if entry != null:
 			pattern_global.append(entry)
 	f.close()
+
+
+func _load_substr_tsv(path: String) -> void:
+	var f: FileAccess = FileAccess.open(path, FileAccess.READ)
+	if f == null:
+		push_warning("[TransToVostok] Cannot open: " + path)
+		return
+
+	var _header: PackedStringArray = f.get_csv_line("\t")
+	while not f.eof_reached():
+		var line: PackedStringArray = f.get_csv_line("\t")
+		if line.size() < 2:
+			continue
+		if line[0] == "" or line[1] == "":
+			continue
+		substr_entries.append({"text": line[0], "translation": line[1]})
+	f.close()
+
+	# 길이 내림차순 정렬 — 긴 문자열이 먼저 치환되어야 오매칭 방지
+	substr_entries.sort_custom(func(a, b): return a["text"].length() > b["text"].length())
 
 
 # 패턴 문자열(text)을 RegEx 로 컴파일. 실패 시 null.
@@ -445,7 +470,7 @@ func _lookup_cached(node: Node, text: String):
 
 
 # ==========================================
-# 8층 매칭 체인
+# 9층 매칭 체인
 # ==========================================
 
 func _find_translation_ctx(scene: String, parent: String,
@@ -495,6 +520,17 @@ func _find_translation_ctx(scene: String, parent: String,
 		pattern_scoped_rows, scene, parent, node_name, node_type, text)
 	if result != null:
 		return result
+
+	# --- Tier 9: substr (부분 문자열 치환, 최후 fallback) ---
+	if substr_entries.size() > 0:
+		var modified: String = text
+		var any_hit: bool = false
+		for entry in substr_entries:
+			if entry["text"] in modified:
+				modified = modified.replace(entry["text"], entry["translation"])
+				any_hit = true
+		if any_hit and modified != text:
+			return modified
 
 	return null
 

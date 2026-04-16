@@ -78,7 +78,7 @@ VALID_FLAGS = {"", "0", "1", "true", "false"}
 FLAG_COLUMNS = ["Transliteration", "Machine translated", "Confused", "untranslatable"]
 
 # 유효한 method 값 (빈 문자열은 literal 로 기본 처리됨, ignore 는 제외 처리)
-VALID_METHODS = {"", "static", "literal", "pattern", "ignore"}
+VALID_METHODS = {"", "static", "literal", "pattern", "substr", "ignore"}
 
 # 씬 파일 확장자 (소스 타입)
 SCENE_FILETYPES = {"tscn", "scn"}
@@ -445,7 +445,7 @@ def check_method_fields(row: dict) -> list[str]:
     unique_id = row.get("unique_id", "").strip()
 
     if method not in VALID_METHODS:
-        errors.append(f"알 수 없는 method: {method!r} (허용: static/literal/pattern/ignore 또는 빈값)")
+        errors.append(f"알 수 없는 method: {method!r} (허용: static/literal/pattern/substr/ignore 또는 빈값)")
         return errors
 
     effective = method if method else "literal"
@@ -487,6 +487,10 @@ def check_method_fields(row: dict) -> list[str]:
                 errors.append("scoped pattern: type 필수 (pattern + location)")
         # 전역 pattern 은 text(정규식) 외 제약 없음
 
+    elif effective == "substr":
+        # substr 은 text + translation 만 필수. 전역 부분 문자열 치환.
+        pass
+
     return errors
 
 
@@ -518,6 +522,7 @@ def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
     literal_global: dict[str, list] = {}
     scoped_pattern_keys: dict[tuple, list] = {}
     pattern_global: dict[str, list] = {}
+    substr_global: dict[str, list] = {}
 
     for i, row in enumerate(rows, start=2):
         effective = _effective_method(row)
@@ -548,6 +553,8 @@ def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
                 scoped_pattern_keys.setdefault(key_5, []).append((i, row))
             else:
                 pattern_global.setdefault(text, []).append((i, row))
+        elif effective == "substr":
+            substr_global.setdefault(text, []).append((i, row))
 
     def _emit(label: str, store: dict, is_tuple_key: bool):
         for key, occurrences in store.items():
@@ -575,6 +582,7 @@ def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
     _emit("전역 literal 중복", literal_global, False)
     _emit("scoped pattern 중복", scoped_pattern_keys, True)
     _emit("전역 pattern 중복", pattern_global, False)
+    _emit("전역 substr 중복", substr_global, False)
 
     return errors
 
