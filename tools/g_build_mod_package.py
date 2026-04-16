@@ -40,6 +40,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 MOD_NAME = "Trans To Vostok"
 MOD_FILES = ["translator.gd"]  # 모드 루트에 배치되는 파일들
 LOCALE_FILES = [
+    "metadata.tsv",
     "translation_static.tsv",
     "translation_literal_scoped.tsv",
     "translation_pattern_scoped.tsv",
@@ -52,7 +53,7 @@ def build_locale(tools_dir: Path, locale: str) -> bool:
     """build_runtime_tsv.py를 호출하여 TSV 생성. 성공 여부 반환."""
     print(f"=== 로케일 빌드: {locale} ===")
     result = subprocess.run(
-        [sys.executable, "build_runtime_tsv.py", locale],
+        [sys.executable, "f_build_runtime_tsv.py", locale],
         cwd=tools_dir,
     )
     if result.returncode != 0:

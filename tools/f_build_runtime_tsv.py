@@ -48,7 +48,12 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from validate_translation import validate_xlsx, load_all_translation_sheets, _effective_method
+from e_validate_translation import (
+    validate_xlsx,
+    load_all_translation_sheets,
+    load_metadata,
+    _effective_method,
+)
 
 
 # 컨텍스트 포함 TSV (static / scoped literal / scoped pattern)
@@ -56,22 +61,21 @@ COLUMNS_SCOPED = ["location", "parent", "name", "type", "text", "translation"]
 # 전역 TSV (literal / pattern)
 COLUMNS_GLOBAL = ["text", "translation"]
 
-IGNORE_VALUES = {"1", "true"}
+BOOL_TRUE = {"1", "true"}
 
 
 def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
     """
     행을 5개 런타임 버킷으로 분류.
 
+    제외 조건:
+        - method=ignore               (운영적 제외)
+        - untranslatable=1             (번역 불가 텍스트)
+        - translation 비어있음          (미번역)
+
     반환:
-        buckets: {
-            "static":           [row, ...],
-            "literal_scoped":   [row, ...],
-            "pattern_scoped":   [row, ...],
-            "literal_global":   [row, ...],
-            "pattern_global":   [row, ...],
-        }
-        stats:   {bucket_name: count, ..., "excluded_ignore": N, "excluded_untranslated": N}
+        buckets: { bucket_name: [row, ...], ... }
+        stats:   { bucket_name: count, ..., "excluded_ignore": N, ... }
     """
     buckets: dict[str, list] = {
         "static": [],
@@ -83,21 +87,25 @@ def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
     stats = {
         "total": len(rows),
         "excluded_ignore": 0,
+        "excluded_untranslatable": 0,
         "excluded_untranslated": 0,
     }
     for name in buckets.keys():
         stats[name] = 0
 
     for row in rows:
-        if row.get("ignore", "").strip().lower() in IGNORE_VALUES:
+        effective = _effective_method(row)
+        if effective == "ignore":
             stats["excluded_ignore"] += 1
+            continue
+
+        if row.get("untranslatable", "").strip().lower() in BOOL_TRUE:
+            stats["excluded_untranslatable"] += 1
             continue
 
         if row.get("translation", "") == "":
             stats["excluded_untranslated"] += 1
             continue
-
-        effective = _effective_method(row)
         location = row.get("location", "").strip()
 
         if effective == "static":
@@ -202,11 +210,25 @@ def main() -> int:
     print(f"  literal (global)       {stats['literal_global']:4d}행")
     print(f"  pattern (global)       {stats['pattern_global']:4d}행")
     print(f"  제외 (ignore)          {stats['excluded_ignore']:4d}행")
+    print(f"  제외 (untranslatable)  {stats['excluded_untranslatable']:4d}행")
     print(f"  제외 (미번역)          {stats['excluded_untranslated']:4d}행")
     print()
 
-    # 4. TSV 작성
-    print("[4/4] TSV 작성 중...")
+    # 4. metadata.tsv 생성
+    print("[4/5] metadata.tsv 생성 중...")
+    meta = load_metadata(xlsx_path)
+    meta_path = locale_dir / "metadata.tsv"
+    meta_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(meta_path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
+        writer.writerow(["field", "value"])
+        for k, v in meta.items():
+            writer.writerow([k, v])
+    print(f"  → {meta_path.relative_to(mod_root)} ({len(meta)}개 필드)")
+    print()
+
+    # 5. TSV 작성
+    print("[5/5] TSV 작성 중...")
 
     outputs = [
         (locale_dir / "translation_static.tsv",         COLUMNS_SCOPED, buckets["static"]),

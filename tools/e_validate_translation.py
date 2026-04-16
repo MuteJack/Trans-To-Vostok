@@ -37,8 +37,10 @@ method 값:
    - 전역 pattern: text 공간
 
 사용법:
-    python validate_translation.py                # 기본: Korean/Translation.xlsx 검증
-    python validate_translation.py <xlsx_path>
+    python validate_translation.py <locale>
+
+예시:
+    python validate_translation.py Korean
 
 로그:
     <xlsx_부모_폴더>/.log/validate_translation_YYYYMMDD_HHMMSS.log
@@ -72,11 +74,11 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 # 플래그 허용 값 (빈 값도 허용됨 — 명시되지 않은 경우로 간주)
 VALID_FLAGS = {"", "0", "1", "true", "false"}
 
-# 플래그 컬럼
-FLAG_COLUMNS = ["Transliteration", "Machine translated", "Confused", "ignore"]
+# 플래그 컬럼 (ignore 는 method=ignore 로 대체됨)
+FLAG_COLUMNS = ["Transliteration", "Machine translated", "Confused", "untranslatable"]
 
-# 유효한 method 값 (빈 문자열은 literal 로 기본 처리됨)
-VALID_METHODS = {"", "static", "literal", "pattern"}
+# 유효한 method 값 (빈 문자열은 literal 로 기본 처리됨, ignore 는 제외 처리)
+VALID_METHODS = {"", "static", "literal", "pattern", "ignore"}
 
 # 씬 파일 확장자 (소스 타입)
 SCENE_FILETYPES = {"tscn", "scn"}
@@ -117,8 +119,10 @@ def _preview(text: str, limit: int = 60) -> str:
 
 
 def _effective_method(row: dict) -> str:
-    """빈 method 를 literal 로 기본 처리."""
+    """빈 method 를 literal 로 기본 처리. ignore 는 그대로 반환."""
     m = row.get("method", "").strip()
+    if m == "ignore":
+        return "ignore"
     return m if m else "literal"
 
 
@@ -158,6 +162,67 @@ def load_tsv_index(tsv_dir: Path) -> dict:
         except Exception as e:
             print(f"[WARN] TSV 읽기 실패: {tsv_file} ({e})")
     return index
+
+
+def load_tres_text_set(tsv_dir: Path) -> set:
+    """
+    추출된 *.tres.tsv 에서 모든 text 값을 set 으로 수집.
+    tres xlsx 행의 text 가 실제 .tres 소스에 존재하는지 검증하는 데 사용.
+    """
+    texts: set = set()
+    for tsv_file in sorted(tsv_dir.rglob("*.tres.tsv")):
+        try:
+            with open(tsv_file, "r", encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                for row in reader:
+                    text = row.get("text") or ""
+                    if text:
+                        texts.add(text)
+        except Exception as e:
+            print(f"[WARN] tres TSV 읽기 실패: {tsv_file} ({e})")
+    return texts
+
+
+# ==========================================
+# MetaData 로딩
+# ==========================================
+
+def load_metadata(xlsx_path: Path) -> dict:
+    """
+    MetaData 시트에서 Field → Value 딕셔너리를 반환.
+    MetaData 시트가 없으면 빈 dict.
+    """
+    wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
+    try:
+        if "MetaData" not in wb.sheetnames:
+            return {}
+        ws = wb["MetaData"]
+        rows_iter = ws.iter_rows(values_only=True)
+        header = next(rows_iter, None)
+        if header is None:
+            return {}
+        meta: dict = {}
+        for row in rows_iter:
+            if row is None or len(row) < 3:
+                continue
+            field = _normalize_cell(row[1])
+            value = _normalize_cell(row[2])
+            if field:
+                meta[field] = value
+        return meta
+    finally:
+        wb.close()
+
+
+def format_metadata_lines(meta: dict) -> list[str]:
+    """메타데이터를 로그 출력용 문자열 리스트로 반환."""
+    lines = []
+    for key in ("Game Version", "Game Updated Date", "Translation Updated Date",
+                "Translation Updated Time", "Translation UTC", "Translator"):
+        val = meta.get(key, "")
+        if val:
+            lines.append(f"  {key}: {val}")
+    return lines
 
 
 # ==========================================
@@ -306,6 +371,29 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
     return errors
 
 
+def check_tres_text(row: dict, tres_texts: set) -> list[str]:
+    """
+    체크 2b (ERROR): filetype=tres 행의 text 가 추출된 .tres.tsv 에 존재하는지 검증.
+    method=static 이 아닌 행 중 filetype=tres 인 것만 대상. 오타/유령 엔트리 방지.
+    """
+    errors = []
+    filetype = row.get("filetype", "").strip()
+    if filetype != "tres":
+        return errors
+    effective = _effective_method(row)
+    if effective == "ignore":
+        return errors
+
+    text = row.get("text", "")
+    if text and text not in tres_texts:
+        filename = row.get("filename", "").strip()
+        errors.append(
+            f"filetype=tres 의 text 가 추출된 .tres.tsv 에 없음: "
+            f"filename={filename!r}, text={_preview(text, 40)}"
+        )
+    return errors
+
+
 def check_whitespace(row: dict) -> list[str]:
     """체크 3 (WARNING): text ↔ translation 앞뒤 공백/개행 매칭."""
     warnings = []
@@ -357,10 +445,13 @@ def check_method_fields(row: dict) -> list[str]:
     unique_id = row.get("unique_id", "").strip()
 
     if method not in VALID_METHODS:
-        errors.append(f"알 수 없는 method: {method!r} (허용: static/literal/pattern 또는 빈값)")
+        errors.append(f"알 수 없는 method: {method!r} (허용: static/literal/pattern/ignore 또는 빈값)")
         return errors
 
     effective = method if method else "literal"
+
+    if effective == "ignore":
+        return errors  # ignore 행은 필드 조합 검증 스킵
 
     if effective == "static":
         if not location:
@@ -429,12 +520,13 @@ def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
     pattern_global: dict[str, list] = {}
 
     for i, row in enumerate(rows, start=2):
-        if row.get("ignore", "").strip().lower() in {"1", "true"}:
+        effective = _effective_method(row)
+        untranslatable = row.get("untranslatable", "").strip().lower() in {"1", "true"}
+        if effective == "ignore" or untranslatable:
             continue
 
         text = row.get("text", "")
         location = row.get("location", "").strip()
-        effective = _effective_method(row)
 
         key_5 = (
             location,
@@ -545,7 +637,7 @@ REQUIRED_COLUMNS = [
     "method", "filename", "filetype", "location",
     "parent", "name", "type", "unique_id",
     "text", "translation",
-    "Transliteration", "Machine translated", "Confused", "ignore",
+    "Transliteration", "Machine translated", "Confused", "untranslatable",
 ]
 
 
@@ -573,12 +665,18 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
         tee.print(f"TSV 소스:  {tsv_dir}")
         tee.print(f"로그 파일: {log_path}")
         tee.print(f"실행 시각: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        meta = load_metadata(xlsx_path)
+        for line in format_metadata_lines(meta):
+            tee.print(line)
         tee.print()
 
         tee.print("TSV 인덱스 빌드 중...")
         tsv_index = load_tsv_index(tsv_dir)
         total_tsv_entries = sum(len(v) for v in tsv_index.values())
         tee.print(f"  unique_id 수: {len(tsv_index)}, 총 레코드: {total_tsv_entries}")
+
+        tres_texts = load_tres_text_set(tsv_dir)
+        tee.print(f"  tres text 수: {len(tres_texts)}")
 
         tee.print("Translation.xlsx 로드 중...")
         sheets = load_all_translation_sheets(xlsx_path)
@@ -606,6 +704,10 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
 
                 for msg in check_tsv_match(row, tsv_index):
                     local_issues.append(("ERROR", "TSV 매칭", msg))
+                    result.error_tsv += 1
+
+                for msg in check_tres_text(row, tres_texts):
+                    local_issues.append(("ERROR", "tres 매칭", msg))
                     result.error_tsv += 1
 
                 for msg in check_whitespace(row):
@@ -660,12 +762,20 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
 
 
 def main() -> int:
-    script_dir = Path(__file__).resolve().parent
-    default_xlsx = (script_dir / "../Korean/Translation.xlsx").resolve()
-    default_tsv = (script_dir / "../.tmp/extracted_text").resolve()
+    if len(sys.argv) < 2:
+        print("사용법: python validate_translation.py <locale>")
+        print("예: python validate_translation.py Korean")
+        return 1
 
-    xlsx_path = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else default_xlsx
-    tsv_dir = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else default_tsv
+    locale = sys.argv[1]
+    script_dir = Path(__file__).resolve().parent
+    mod_root = script_dir.parent
+    xlsx_path = (mod_root / locale / "Translation.xlsx").resolve()
+    tsv_dir = (mod_root / ".tmp" / "extracted_text").resolve()
+
+    if not xlsx_path.exists():
+        print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")
+        return 1
 
     try:
         result = validate_xlsx(xlsx_path, tsv_dir)

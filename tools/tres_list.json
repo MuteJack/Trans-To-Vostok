@@ -4,7 +4,8 @@
       "name": "Events",
       "dir": "Events",
       "fields": ["name", "description"],
-      "targets": ["List"]
+      "targets": ["List"],
+      "join": "Events"
     },
     {
       "name": "Traders",
@@ -14,7 +15,32 @@
         "Doctor/Doctor.tres",
         "Generalist/Generalist.tres",
         "Gunsmith/Gunsmith.tres"
-      ]
+      ],
+      "join": "Traders"
+    },
+    {
+      "name": "Trader Tasks",
+      "dir": "Traders",
+      "fields": ["name", "difficulty", "description"],
+      "targets": [
+        "Doctor/Tasks",
+        "Generalist/Tasks",
+        "Generalist/Tutorial",
+        "Gunsmith/Tasks"
+      ],
+      "join": "Trader_Tasks"
+    },
+    {
+      "name": "Items",
+      "dir": "Items",
+      "fields": ["name", "inventory", "rotated", "equipment", "display", "phrase"],
+      "targets": [
+        "Ammo", "Armor", "Attachments", "Backpacks", "Belts", "Books",
+        "Clothing", "Consumables", "Electronics", "Fishing", "Grenades",
+        "Helmets", "Instruments", "Keys", "Knives", "Lore", "Medical",
+        "Misc", "Rigs", "Weapons"
+      ],
+      "join": "Items"
     }
   ]
 }

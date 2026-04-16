@@ -335,13 +335,11 @@ def run_batch(
         tres_files = collect_target_files(pck_root, dir_rel, targets)
         group_rows = 0
         group_files = 0
+        joined_rows: list[dict] = []
         for tres in tres_files:
             rows = tres_to_rows(tres, fields, pck_root)
             if not rows:
                 continue
-            # 출력 경로: extracted_text/<location>.tsv
-            # location 은 <pck_root 기준 상대>.tres 이므로
-            # 최종 파일명은 <location>.tsv  →  <...>.tres.tsv
             try:
                 rel = tres.resolve().relative_to(pck_root)
             except ValueError:
@@ -349,10 +347,19 @@ def run_batch(
                 continue
             out_path = output_dir / (rel.as_posix() + ".tsv")
             write_tsv(out_path, rows)
+            joined_rows.extend(rows)
             group_rows += len(rows)
             group_files += 1
 
-        print(f"    → {group_files}개 파일, {group_rows}개 엔트리")
+        # join 필드가 지정되면 그룹 전체를 합본 TSV 로 추가 출력
+        join_name = g.get("join")
+        if join_name and joined_rows:
+            join_path = output_dir / dir_rel / f"{join_name}.tres.joined.tsv"
+            write_tsv(join_path, joined_rows)
+            print(f"    → {group_files}개 파일, {group_rows}개 엔트리")
+            print(f"    → 합본: {join_path.relative_to(output_dir)}")
+        else:
+            print(f"    → {group_files}개 파일, {group_rows}개 엔트리")
         print()
         total_files_written += group_files
         total_rows += group_rows

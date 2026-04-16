@@ -5,7 +5,8 @@
 - direct:      xlsx 의 static 또는 scoped literal 행이 5-tuple 로 매칭 (번역 완료)
 - literal:     xlsx 의 전역 literal 행이 text 로 매칭 (fallback 번역)
 - expression:  xlsx 의 전역 pattern 행 정규식이 text 와 매칭 (fallback 번역)
-- ignored:     xlsx 에 있고 ignore=1 (의도적 제외, 미번역 아님)
+- ignored:     xlsx 에 있고 method=ignore (운영적 제외)
+- untranslatable: xlsx 에 있고 untranslatable=1 (번역 불가 텍스트)
 - empty:       xlsx 에 있지만 translation 비어있음 (번역 대기)
 - missing:     xlsx 에 아예 없음 (새로 추가 필요)
 
@@ -39,15 +40,17 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from validate_translation import (
+from e_validate_translation import (
     _preview,
     _effective_method,
     load_all_translation_sheets,
+    load_metadata,
+    format_metadata_lines,
     Tee,
 )
 
 
-IGNORE_VALUES = {"1", "true"}
+BOOL_TRUE = {"1", "true"}
 
 
 # ==========================================
@@ -127,25 +130,32 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
 # xlsx 분석 (새 스키마: method / translation)
 # ==========================================
 
-def analyze_xlsx(rows: list[dict]) -> tuple[dict, dict, dict, dict, list]:
+def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, list, list]:
     """
     xlsx 행을 런타임 매칭 모델에 맞춰 인덱싱.
 
     반환:
-      - direct_keys:   { (location, parent, name, type, text): translation } — static + scoped literal
-      - ignored_keys:  set of 5-tuples (ignore=1 행)
-      - empty_keys:    set of 5-tuples (xlsx 에 있지만 translation 비어있음)
-      - literal_map:   {text: translation} — 전역 literal
-      - pattern_list:  [(compiled_regex, template), ...] — 전역 pattern
+      - direct_keys:         { 5-tuple: translation } — static + scoped literal (tscn)
+      - ignored_keys:        set of 5-tuples (method=ignore)
+      - untranslatable_keys: set of 5-tuples (untranslatable=1)
+      - empty_keys:          set of 5-tuples (translation 비어있음)
+      - literal_map:         {text: translation} — 전역 literal
+      - tres_direct:         { (filename, filetype, text): translation } — tres 직접 매칭
+      - pattern_list:        [(compiled_regex, template), ...] — 전역 pattern
+      - ignore_rows:         [row, ...] — method=ignore 행 원본 (커버 검증용)
     """
     direct_keys: dict = {}
     ignored_keys: set = set()
+    untranslatable_keys: set = set()
+    tres_ignored: set = set()
+    tres_untranslatable: set = set()
     empty_keys: set = set()
     literal_map: dict = {}
+    tres_direct: dict = {}
     pattern_list: list = []
+    ignore_rows: list = []
 
     for row in rows:
-        ignore = row.get("ignore", "").strip().lower()
         translation = row.get("translation", "")
         text = row.get("text", "")
         location = row.get("location", "").strip()
@@ -153,13 +163,31 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, dict, dict, dict, list]:
         name = row.get("name", "").strip()
         type_ = row.get("type", "").strip()
         effective = _effective_method(row)
+        untranslatable = row.get("untranslatable", "").strip().lower() in BOOL_TRUE
 
         key_5 = (location, parent, name, type_, text)
 
-        if ignore in IGNORE_VALUES:
-            # 전역 literal/pattern 은 5-tuple 이 무의미하므로 별도 기록 X
-            if effective in ("static",) or (effective == "literal" and location):
+        if effective == "ignore":
+            if location:
                 ignored_keys.add(key_5)
+            fn = row.get("filename", "").strip()
+            ft = row.get("filetype", "").strip()
+            if fn and ft:
+                if untranslatable:
+                    tres_untranslatable.add((fn, ft, text))
+                else:
+                    tres_ignored.add((fn, ft, text))
+            if not untranslatable:
+                ignore_rows.append(row)
+            continue
+
+        if untranslatable:
+            if effective in ("static",) or (effective == "literal" and location):
+                untranslatable_keys.add(key_5)
+            fn = row.get("filename", "").strip()
+            ft = row.get("filetype", "").strip()
+            if fn and ft:
+                tres_untranslatable.add((fn, ft, text))
             continue
 
         if effective == "static":
@@ -179,6 +207,13 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, dict, dict, dict, list]:
                 # 전역 literal
                 if translation:
                     literal_map[text] = translation
+                # tres 직접 매칭: (filename, filetype, text) 키로 등록
+                fn = row.get("filename", "").strip()
+                ft = row.get("filetype", "").strip()
+                if fn and ft:
+                    tres_key = (fn, ft, text)
+                    if translation:
+                        tres_direct[tres_key] = translation
 
         elif effective == "pattern":
             if location:
@@ -197,7 +232,7 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, dict, dict, dict, list]:
                     except re.error:
                         pass
 
-    return direct_keys, ignored_keys, empty_keys, literal_map, pattern_list
+    return direct_keys, ignored_keys, untranslatable_keys, tres_ignored, tres_untranslatable, empty_keys, literal_map, tres_direct, pattern_list, ignore_rows
 
 
 # ==========================================
@@ -208,14 +243,18 @@ def classify_entry(
     entry: dict,
     direct_keys: dict,
     ignored_keys: set,
+    untranslatable_keys: set,
+    tres_ignored: set,
+    tres_untranslatable: set,
     empty_keys: set,
     literal_map: dict,
+    tres_direct: dict,
     pattern_list: list,
 ) -> tuple[str, str]:
     """
     TSV 엔트리의 번역 상태를 분류.
     반환: (status, method)
-        status: "direct" | "ignored" | "literal" | "expression" | "empty" | "missing"
+        status: "direct" | "ignored" | "untranslatable" | "literal" | "expression" | "empty" | "missing"
     """
     text = entry["text"]
     filetype = entry.get("filetype", "")
@@ -231,13 +270,24 @@ def classify_entry(
         )
         if key_5 in ignored_keys:
             return ("ignored", "")
+        if key_5 in untranslatable_keys:
+            return ("untranslatable", "")
         if key_5 in direct_keys:
             return ("direct", "")
         if key_5 in empty_keys:
-            # text-only fallback 이 있으면 그걸 쓰지만, 리포트는 empty 우선
             return ("empty", "")
 
-    # tres 또는 5-tuple 매칭 실패 → text-only fallback
+    # tres 엔트리는 (filename, filetype, text) 로 매칭
+    if filetype == "tres":
+        tres_key = (entry.get("filename", ""), filetype, text)
+        if tres_key in tres_ignored:
+            return ("ignored", "")
+        if tres_key in tres_untranslatable:
+            return ("untranslatable", "")
+        if tres_key in tres_direct:
+            return ("direct", "")
+
+    # text-only fallback (tscn 미스 또는 tres 미스)
     if text in literal_map:
         return ("literal", "literal")
 
@@ -287,6 +337,9 @@ def main() -> int:
         tee.print(f"TSV:    {tsv_dir}")
         tee.print(f"로그:   {log_path}")
         tee.print(f"실행:   {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        meta = load_metadata(xlsx_path)
+        for line in format_metadata_lines(meta):
+            tee.print(line)
         tee.print()
 
         # 1. xlsx 로드 및 분석 (모든 번역 시트 병합)
@@ -300,13 +353,22 @@ def main() -> int:
         (
             direct_keys,
             ignored_keys,
+            untranslatable_keys,
+            tres_ignored,
+            tres_untranslatable,
             empty_keys,
             literal_map,
+            tres_direct,
             pattern_list,
+            ignore_rows,
         ) = analyze_xlsx(all_rows)
+
+        scoped_count = sum(1 for k in direct_keys if k[0])
         tee.print(
-            f"  → direct {len(direct_keys)}개, "
-            f"ignored {len(ignored_keys)}개, "
+            f"  → direct {len(direct_keys)}개 (scoped {scoped_count}), "
+            f"tres_direct {len(tres_direct)}개, "
+            f"ignored {len(ignored_keys)}+{len(tres_ignored)}개, "
+            f"untranslatable {len(untranslatable_keys)}+{len(tres_untranslatable)}개, "
             f"empty {len(empty_keys)}개, "
             f"literal {len(literal_map)}개, "
             f"pattern {len(pattern_list)}개"
@@ -326,6 +388,7 @@ def main() -> int:
             "literal": 0,
             "expression": 0,
             "ignored": 0,
+            "untranslatable": 0,
             "empty": 0,
             "missing": 0,
             "empty_entries": [],
@@ -336,7 +399,9 @@ def main() -> int:
         for entry in tsv_entries:
             fname = entry["_tsv_file"]
             status, method = classify_entry(
-                entry, direct_keys, ignored_keys, empty_keys, literal_map, pattern_list
+                entry, direct_keys, ignored_keys, untranslatable_keys,
+                tres_ignored, tres_untranslatable, empty_keys,
+                literal_map, tres_direct, pattern_list,
             )
             bucket = per_file[fname]
             bucket["total"] += 1
@@ -350,6 +415,8 @@ def main() -> int:
                 bucket["fallback_entries"].append((entry, method))
             elif status == "ignored":
                 bucket["ignored"] += 1
+            elif status == "untranslatable":
+                bucket["untranslatable"] += 1
             elif status == "empty":
                 bucket["empty"] += 1
                 bucket["empty_entries"].append(entry)
@@ -357,77 +424,103 @@ def main() -> int:
                 bucket["missing"] += 1
                 bucket["missing_entries"].append(entry)
 
-        # 4. 파일별 요약
-        tee.print("=" * 80)
-        tee.print("파일별 요약 (ignored 제외 유효 엔트리 기준)")
-        tee.print("=" * 80)
-
-        file_names = sorted(per_file.keys())
-        max_fname = max((len(n) for n in file_names), default=20)
+        # 4. 파일별 요약 (tscn / tres 분리)
+        tscn_files = sorted(f for f in per_file if f.endswith(".tscn.tsv"))
+        tres_files = sorted(f for f in per_file if f.endswith(".tres.tsv"))
 
         total_all = 0
         effective_all = 0
         direct_all = 0
         fallback_all = 0
         ignored_all = 0
+        untranslatable_all = 0
         empty_all = 0
         missing_all = 0
 
-        for fname in file_names:
-            b = per_file[fname]
-            total = b["total"]
-            direct = b["direct"]
-            fallback = b["literal"] + b["expression"]
-            ignored = b["ignored"]
-            empty = b["empty"]
-            missing = b["missing"]
+        def _print_file_group(label: str, file_names: list):
+            nonlocal total_all, effective_all, direct_all, fallback_all
+            nonlocal ignored_all, untranslatable_all, empty_all, missing_all
 
-            effective = total - ignored
-            translation_count = direct + fallback
+            if not file_names:
+                return
+            tee.print("=" * 80)
+            tee.print(f"{label} (ignored/untranslatable 제외 유효 엔트리 기준)")
+            tee.print("=" * 80)
 
-            total_all += total
-            effective_all += effective
-            direct_all += direct
-            fallback_all += fallback
-            ignored_all += ignored
-            empty_all += empty
-            missing_all += missing
+            max_fname = max((len(n) for n in file_names), default=20)
+            for fname in file_names:
+                b = per_file[fname]
+                total = b["total"]
+                direct = b["direct"]
+                fallback = b["literal"] + b["expression"]
+                ignored = b["ignored"]
+                untranslatable = b["untranslatable"]
+                empty = b["empty"]
+                missing = b["missing"]
 
-            tee.print(
-                f"[{fname:<{max_fname}}] "
-                f"번역 {translation_count}/{effective} ({format_percent(translation_count, effective)}), "
-                f"직접 {direct}/{effective} ({format_percent(direct, effective)}), "
-                f"fallback {fallback}, "
-                f"ignored {ignored}"
-            )
+                excluded = ignored + untranslatable
+                effective = total - excluded
+                translation_count = direct + fallback
 
-        tee.print()
+                total_all += total
+                effective_all += effective
+                direct_all += direct
+                fallback_all += fallback
+                ignored_all += ignored
+                untranslatable_all += untranslatable
+                empty_all += empty
+                missing_all += missing
+
+                matched = translation_count + ignored + untranslatable
+                tee.print(
+                    f"[{fname:<{max_fname}}] "
+                    f"매칭 {matched}/{total}, "
+                    f"번역 {translation_count}/{effective} ({format_percent(translation_count, effective)}), "
+                    f"직접 {direct}, fallback {fallback}, "
+                    f"ignored {ignored}, untranslatable {untranslatable}, "
+                    f"translated {translation_count}"
+                )
+            tee.print()
+
+        _print_file_group("tscn 파일별 요약", tscn_files)
+        _print_file_group("tres 파일별 요약", tres_files)
+
+        matched_all = direct_all + fallback_all + ignored_all + untranslatable_all
+        translated_all = direct_all + fallback_all
         tee.print(
             f"[전체] "
-            f"번역 {direct_all + fallback_all}/{effective_all} "
-            f"({format_percent(direct_all + fallback_all, effective_all)}), "
-            f"직접 {direct_all}/{effective_all} ({format_percent(direct_all, effective_all)}), "
-            f"fallback {fallback_all}, "
-            f"ignored {ignored_all}, "
-            f"empty {empty_all}, "
-            f"missing {missing_all}"
+            f"매칭 {matched_all}/{total_all}, "
+            f"번역 {translated_all}/{effective_all} ({format_percent(translated_all, effective_all)}), "
+            f"직접 {direct_all}, fallback {fallback_all}, "
+            f"ignored {ignored_all}, untranslatable {untranslatable_all}, "
+            f"empty {empty_all}, missing {missing_all}"
         )
         tee.print()
 
-        # 5. 파일별 상세
-        tee.print("=" * 80)
-        tee.print("파일별 상세")
-        tee.print("=" * 80)
+        # 5. 파일별 상세 (tscn / tres 분리)
+        def _print_detail_group(label: str, file_list: list):
+            has_any = False
+            for fname in file_list:
+                b = per_file[fname]
+                if b["missing"] > 0 or b["empty"] > 0 or len(b["fallback_entries"]) > 0:
+                    has_any = True
+                    break
+            if not has_any:
+                return
+            tee.print("=" * 80)
+            tee.print(f"{label} 상세")
+            tee.print("=" * 80)
+            for fname in file_list:
+                _print_file_detail(fname)
 
-        for fname in file_names:
+        def _print_file_detail(fname: str):
             b = per_file[fname]
             if (
                 b["missing"] == 0
                 and b["empty"] == 0
                 and len(b["fallback_entries"]) == 0
             ):
-                continue
-
+                return
             tee.print()
             tee.print(f"[{fname}]")
 
@@ -464,15 +557,59 @@ def main() -> int:
                         f"← {method}"
                     )
 
+        _print_detail_group("tscn", tscn_files)
+        _print_detail_group("tres", tres_files)
+
+        # 6. suspicious ignore 검사
+        # method=ignore + untranslatable≠1 인 행 중 다른 행에서 커버되지 않는 것
+        covered_texts: set = set()
+        for key_5, _trans in direct_keys.items():
+            covered_texts.add(key_5[4])  # text 부분
+        covered_texts.update(literal_map.keys())
+
+        suspicious: list = []
+        for row in ignore_rows:
+            text = row.get("text", "")
+            if not text:
+                continue
+            if text in covered_texts:
+                continue
+            # pattern 매칭 체크
+            pattern_hit = False
+            for regex, _tmpl in pattern_list:
+                if regex.match(text):
+                    pattern_hit = True
+                    break
+            if pattern_hit:
+                continue
+            suspicious.append(row)
+
+        if suspicious:
+            tee.print()
+            tee.print("=" * 80)
+            tee.print(
+                f"ignore 검토 — method=ignore 이지만 다른 행에서 커버되지 않음 "
+                f"({len(suspicious)}개):"
+            )
+            tee.print("=" * 80)
+            for row in suspicious:
+                tee.print(
+                    f"  filename={row.get('filename', '')!r}  "
+                    f"text={_preview(row.get('text', ''), 50)}"
+                )
+
         tee.print()
         tee.print("=" * 80)
         tee.print(
             f"완료: 전체 {total_all}개 중 "
-            f"ignored {ignored_all} 제외 유효 {effective_all}개, "
+            f"ignored {ignored_all} + untranslatable {untranslatable_all} 제외 "
+            f"유효 {effective_all}개, "
             f"번역 {direct_all + fallback_all} "
             f"({format_percent(direct_all + fallback_all, effective_all)}), "
             f"empty {empty_all}, missing {missing_all}"
         )
+        if suspicious:
+            tee.print(f"  ⚠ 커버되지 않는 ignore 행: {len(suspicious)}개 (위 목록 확인)")
 
         return 0
     finally:

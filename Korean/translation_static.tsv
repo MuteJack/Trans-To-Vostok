@@ -403,7 +403,7 @@ Build type: Release
 [추가됨] 신규 레시피: KAR-21 업그레이드
 [추가됨] 신규 레시피: 조리대
 [추가됨] 신규 레시피: 민간인 침대
-[추가됨] 신규 레시피: 유목민 침대
+[추가됨] 신규 레시피: 방랑자 침대
 [추가됨] 새 게임 시작 시 게임 세계관 기반 인트로
 [추가됨] 4K/레티나 디스플레이용 고해상도 글꼴 렌더링
 [추가됨] 지도 가장자리가 보이지 않도록 추가 지도 경계 영역 추가
@@ -860,9 +860,11 @@ Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	인트로 스킵하기 [SPAC
 Scenes/Death	Main	Hint	Label	Character died	캐릭터가 사망했습니다
 Scenes/Death	Main/Buttons	Load	Button	Load game	불러오기
 Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
-"	메인 메뉴
+"	"메인 메뉴
+"
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
-"	나가기
+"	"나가기
+"
 UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	체력
 UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	기력
 UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	수분
@@ -884,10 +886,10 @@ UI/HUD	Placement/Margin/Elements	Place	Label	[G] = Grab / Drop Item	[G] = 아이
 UI/HUD	Placement/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[SCROLL] = 조정 / 회전
 UI/HUD	Placement/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 회전 모드
 UI/HUD	Placement/Margin/Elements	Orientation	Label	[MMB] = Change Orientation	[MMB] = 회전축 변경
+UI/HUD	Info	Map	Label	Shelter (Area 05)	쉘터 (05 구역)
 UI/HUD	Transition/Elements/Header	Destination	Label	Village	마을
 UI/HUD	Transition/Elements/Header	Zone	Label	Area 05	05 구역
 UI/HUD	Transition/Elements/Details	Hint	Label	Demo transition: Skips 2-3 maps	데모 버전: 2-3개의 맵을 스킵합니다
-UI/HUD	Info	Map	Label	Shelter (Area 05)	쉘터 (05 구역)
 UI/Interface	Inventory/Header	Label	Label	Inventory	인벤토리
 UI/Interface	Container/Header	Label	Label	Container	컨테이너
 UI/Interface	Equipment/Header	Label	Label	Equipment	장비
@@ -933,6 +935,7 @@ UI/Interface	Tools/Map	Hint	Label	Map not equipped	지도가 장착되지 않았
 UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
 Zoom = [SCROLL]"	"이동 = [LMB]
 확대 = [SCROLL]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	현재 위치
 UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	카세트 플레이어
 UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
 UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	이 카세트에는 저작권이 있는 음악이 포함되어 있습니다 (콘텐츠 경고)
@@ -947,46 +950,61 @@ UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	상인
 UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	세금:
 UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	의뢰:
 UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	재보급:
-UI/Interface	Supply/Header	Label	Label	Supply	물자
 UI/Interface	Deal/Header	Label	Label	Deal	거래
 UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	요구 가치 + 세금 (€)
 UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	제시 가격(€)
 UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	초기화
 UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	수락
+UI/Interface	Supply/Header	Label	Label	Supply	물자
 UI/Interface	Tasks/Header	Label	Label	Tasks	의뢰
 UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	가구 카탈로그
 UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.
 UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	사용
+"	"사용
+"
 UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	장비
+"	"장비
+"
 UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	해제
+"	"해제
+"
 UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	빼기
+"	"빼기
+"
 UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	나누기
+"	"나누기
+"
 UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	잡기
+"	"잡기
+"
 UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	수면
+"	"수면
+"
 UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	이동
+"	"이동
+"
 UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	버리기
+"	"버리기
+"
 UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	배치
+"	"배치
+"
 UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	파괴
+"	"파괴
+"
 UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	제거 [0]
+"	"제거 [0]
+"
 UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	제거 [1]
+"	"제거 [1]
+"
 UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	제거 [2]
+"	"제거 [2]
+"
 UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	제거 [3]
-UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	커피마스터
+"	"제거 [3]
+"
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	커피머신
 UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	소모품
 UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	레전더리
 UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.
