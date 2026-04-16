@@ -32,7 +32,7 @@ extends Node
 # 설정
 # ==========================================
 
-const LOCALE: String = "Korean"
+var _locale: String = "Korean"
 const DATA_BASE: String = "res://Trans To Vostok"
 
 const SCORE_LOCATION: int = 8
@@ -138,7 +138,16 @@ var miss_cache: Dictionary = {}
 # ==========================================
 
 func _ready() -> void:
-	print("[TransToVostok] Initializing... locale=%s" % LOCALE)
+	# translator_ui.gd 가 _locale 을 설정한 뒤 add_child 하므로
+	# _ready 시점에 _locale 이 세팅되어 있어야 함.
+	# 만약 비어있으면 대기 (안전장치).
+	if _locale == "" or _locale == "English":
+		return
+	_initialize()
+
+
+func _initialize() -> void:
+	print("[TransToVostok] Initializing... locale=%s" % _locale)
 	_load_translations()
 
 	_bind_tree(get_tree().root)
@@ -156,12 +165,25 @@ func _ready() -> void:
 	])
 
 
+func shutdown() -> void:
+	# 모든 바인딩의 텍스트를 원본으로 복원
+	for b in priority_bindings + normal_bindings:
+		if not b.has("original") or b["original"] == "":
+			continue
+		var node = b["node"].get_ref()
+		if node == null or not is_instance_valid(node):
+			continue
+		if b["prop"] in node:
+			node.set(b["prop"], b["original"])
+	print("[TransToVostok] Shutdown — %d bindings restored" % (priority_bindings.size() + normal_bindings.size()))
+
+
 # ==========================================
 # TSV 로딩
 # ==========================================
 
 func _load_translations() -> void:
-	var base: String = DATA_BASE + "/" + LOCALE
+	var base: String = DATA_BASE + "/" + _locale
 
 	_load_exact_tsv(base + "/translation_static.tsv", static_rows, static_exact_index, static_by_text)
 	_load_exact_tsv(
@@ -456,6 +478,8 @@ func _apply_binding(b: Dictionary) -> void:
 
 	var translated = _lookup_cached(node, cur_str)
 	if translated != null and translated != cur_str:
+		if not b.has("original") or b["original"] == "":
+			b["original"] = cur_str
 		node.set(prop, translated)
 		b["last"] = translated
 	else:

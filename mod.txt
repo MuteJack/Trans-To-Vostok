@@ -4,4 +4,4 @@ id="trans-to-vostok"
 version="0.1.0"
 
 [autoload]
-TransToVostok="res://Trans To Vostok/translator.gd"
+TransToVostok="res://Trans To Vostok/translator_ui.gd"

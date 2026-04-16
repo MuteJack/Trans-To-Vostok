@@ -22,6 +22,7 @@ Trans To Vostok 모드를 .zip 파일로 패키징.
 
 출력: mods/Trans To Vostok.zip
 """
+import json
 import shutil
 import subprocess
 import sys
@@ -38,7 +39,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 MOD_NAME = "Trans To Vostok"
-MOD_FILES = ["translator.gd"]  # 모드 루트에 배치되는 파일들
+MOD_FILES = ["translator_ui.gd", "translator.gd", "locale.json"]
 LOCALE_FILES = [
     "metadata.tsv",
     "translation_static.tsv",
@@ -114,22 +115,51 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> int:
     return count
 
 
-def main() -> int:
-    locales = sys.argv[1:] if len(sys.argv) > 1 else ["Korean"]
+def load_locale_config(mod_root: Path) -> list[dict]:
+    """locale.json 에서 enabled=true 인 로케일 목록을 반환."""
+    locale_json = mod_root / "locale.json"
+    if not locale_json.exists():
+        return []
+    try:
+        data = json.loads(locale_json.read_text(encoding="utf-8"))
+        return [loc for loc in data.get("locales", []) if loc.get("enabled", False)]
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"[WARN] locale.json 읽기 실패: {e}", file=sys.stderr)
+        return []
 
+
+def main() -> int:
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent                # mods/Trans To Vostok
+
+    # 커맨드라인 인자가 있으면 override, 없으면 locale.tsv 에서 읽기
+    if len(sys.argv) > 1:
+        locales = sys.argv[1:]
+        print(f"커맨드라인 로케일: {locales}")
+    else:
+        locale_config = load_locale_config(mod_root)
+        if locale_config:
+            locales = [lc["dir"] for lc in locale_config]
+            display = [f"{lc.get('display', lc['dir'])} ({lc['dir']})" for lc in locale_config]
+            print(f"locale.json 에서 로드: {', '.join(display)}")
+        else:
+            locales = ["Korean"]
+            print("locale.json 없음, 기본값: Korean")
     mods_parent = mod_root.parent                # mods/
     out_path = mods_parent / f"{MOD_NAME}.zip"
 
-    # 1. 각 로케일 빌드 (validate 포함)
+    # 1. 각 로케일 빌드 (validate 포함, 폴더 없는 locale 스킵)
+    build_locales = []
     for locale in locales:
         locale_dir = mod_root / locale
-        if not locale_dir.exists():
-            print(f"[ERROR] 로케일 폴더가 없습니다: {locale_dir}")
-            return 1
+        xlsx_path = locale_dir / "Translation.xlsx"
+        if not locale_dir.exists() or not xlsx_path.exists():
+            print(f"[SKIP] {locale} — 번역 폴더/xlsx 없음 (기본 언어)")
+            continue
         if not build_locale(script_dir, locale):
             return 1
+        build_locales.append(locale)
+    locales = build_locales
 
     # 2. 패키징
     print(f"=== 패키징 ===")
