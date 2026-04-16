@@ -42,7 +42,7 @@ const SCORE_TYPE: int = 1
 
 const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text"]
 
-const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "loading", "container", "hint", "event", "task", "recipe", "craft"]
+const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "hint"]
 
 const NORMAL_BATCH_INTERVAL: float = 0.01
 const NORMAL_BATCH_SIZE: int = 500
@@ -371,12 +371,7 @@ func _on_node_added(node: Node) -> void:
 
 
 func _bind_node(node: Node) -> void:
-	var name_lower: String = node.name.to_lower()
-	var is_priority: bool = false
-	for kw in PRIORITY_NAME_KEYWORDS:
-		if kw in name_lower:
-			is_priority = true
-			break
+	var is_priority: bool = _is_priority_node(node)
 
 	for prop in TRANSLATABLE_PROPS:
 		if not (prop in node):
@@ -391,6 +386,20 @@ func _bind_node(node: Node) -> void:
 		else:
 			normal_bindings.append(b)
 		_apply_binding(b)
+
+
+const PRIORITY_PATH_KEYWORDS: Array = ["tooltip"]
+
+func _is_priority_node(node: Node) -> bool:
+	var name_lower: String = node.name.to_lower()
+	for kw in PRIORITY_NAME_KEYWORDS:
+		if kw in name_lower:
+			return true
+	var node_path: String = str(node.get_path()).to_lower()
+	for kw in PRIORITY_PATH_KEYWORDS:
+		if kw in node_path:
+			return true
+	return false
 
 
 # ==========================================
