@@ -42,10 +42,10 @@ const SCORE_TYPE: int = 1
 
 const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text"]
 
-const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "loading", "container", "hint"]
+const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "loading", "container", "hint", "event", "task", "recipe", "craft"]
 
-const NORMAL_BATCH_INTERVAL: float = 0.05
-const NORMAL_BATCH_SIZE: int = 20
+const NORMAL_BATCH_INTERVAL: float = 0.01
+const NORMAL_BATCH_SIZE: int = 500
 
 
 # ==========================================
@@ -100,12 +100,14 @@ class GlobalPatternEntry:
 # ==========================================
 
 # Tier 1+6: static
-var static_rows: Array = []                  # [ExactEntry] — score 순회용
+var static_rows: Array = []                  # [ExactEntry] — 전체 리스트
 var static_exact_index: Dictionary = {}      # "loc\tpar\tnam\ttyp\ttext" → translation
+var static_by_text: Dictionary = {}          # text → [ExactEntry, ...] — score 용 인덱스
 
 # Tier 2+7: scoped literal
 var literal_scoped_rows: Array = []
 var literal_scoped_exact_index: Dictionary = {}
+var literal_scoped_by_text: Dictionary = {}  # text → [ExactEntry, ...]
 
 # Tier 3+8: scoped pattern
 var pattern_scoped_rows: Array = []          # [ScopedPatternEntry] — score 순회용
@@ -161,11 +163,12 @@ func _ready() -> void:
 func _load_translations() -> void:
 	var base: String = DATA_BASE + "/" + LOCALE
 
-	_load_exact_tsv(base + "/translation_static.tsv", static_rows, static_exact_index)
+	_load_exact_tsv(base + "/translation_static.tsv", static_rows, static_exact_index, static_by_text)
 	_load_exact_tsv(
 		base + "/translation_literal_scoped.tsv",
 		literal_scoped_rows,
 		literal_scoped_exact_index,
+		literal_scoped_by_text,
 	)
 	_load_pattern_scoped_tsv(base + "/translation_pattern_scoped.tsv")
 	_load_literal_global_tsv(base + "/translation_literal.tsv")
@@ -182,7 +185,7 @@ func _load_translations() -> void:
 	])
 
 
-func _load_exact_tsv(path: String, out_rows: Array, out_index: Dictionary) -> void:
+func _load_exact_tsv(path: String, out_rows: Array, out_index: Dictionary, out_by_text: Dictionary) -> void:
 	var f: FileAccess = FileAccess.open(path, FileAccess.READ)
 	if f == null:
 		push_warning("[TransToVostok] Cannot open: " + path)
@@ -207,6 +210,11 @@ func _load_exact_tsv(path: String, out_rows: Array, out_index: Dictionary) -> vo
 		if out_index.has(key):
 			push_warning("[TransToVostok] duplicate exact key: " + key)
 		out_index[key] = entry.translation
+
+		# score 용 text 별 인덱스
+		if not out_by_text.has(entry.text):
+			out_by_text[entry.text] = []
+		out_by_text[entry.text].append(entry)
 	f.close()
 
 
@@ -503,15 +511,15 @@ func _find_translation_ctx(scene: String, parent: String,
 		if m != null:
 			return entry.apply(m)
 
-	# --- Tier 6: static score (부분 컨텍스트 매칭) ---
-	var result = _score_match_exact_rows(
-		static_rows, scene, parent, node_name, node_type, text, "static")
+	# --- Tier 6: static score (부분 컨텍스트 매칭, text 인덱스 사용) ---
+	var result = _score_match_by_text_index(
+		static_by_text, scene, parent, node_name, node_type, text, "static")
 	if result != null:
 		return result
 
 	# --- Tier 7: scoped literal score ---
-	result = _score_match_exact_rows(
-		literal_scoped_rows, scene, parent, node_name, node_type, text, "scoped literal")
+	result = _score_match_by_text_index(
+		literal_scoped_by_text, scene, parent, node_name, node_type, text, "scoped literal")
 	if result != null:
 		return result
 
@@ -535,7 +543,36 @@ func _find_translation_ctx(scene: String, parent: String,
 	return null
 
 
-# text 가 완전 일치하는 행 중 가장 높은 score 를 고른다. score>0 필수.
+# text 인덱스를 사용한 score 매칭. O(1) 조회 + O(k) 스코어링.
+func _score_match_by_text_index(by_text: Dictionary, scene: String, parent: String,
+		node_name: String, node_type: String, text: String, tier_label: String):
+	if not by_text.has(text):
+		return null
+	var candidates: Array = by_text[text]
+	var best_score: int = 0
+	var best_entry = null
+	var tie_count: int = 0
+	for entry in candidates:
+		var score: int = _compute_score(entry.location, entry.parent, entry.node_name, entry.node_type,
+			scene, parent, node_name, node_type)
+		if score <= 0:
+			continue
+		if score > best_score:
+			best_score = score
+			best_entry = entry
+			tie_count = 1
+		elif score == best_score:
+			tie_count += 1
+	if best_entry == null:
+		return null
+	if tie_count > 1:
+		push_warning("[TransToVostok] score tie (%s tier, %d candidates) for text=%s" % [
+			tier_label, tie_count, text
+		])
+	return best_entry.translation
+
+
+# text 가 완전 일치하는 행 중 가장 높은 score 를 고른다. score>0 필수. (레거시, tier 8 용)
 func _score_match_exact_rows(rows: Array, scene: String, parent: String,
 		node_name: String, node_type: String, text: String, tier_label: String):
 	var best_score: int = 0
