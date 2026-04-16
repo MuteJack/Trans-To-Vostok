@@ -128,6 +128,21 @@ def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
                 stats["pattern_global"] += 1
         elif effective == "substr":
             buckets["substr"].append(row)
+            # substr → literal_global 에도 이중 출력 (정확 일치 시 tier 4 에서 빠르게 히트)
+            text = row.get("text", "")
+            translation = row.get("translation", "")
+            conflict = False
+            for existing in buckets["literal_global"]:
+                if existing.get("text", "") == text and existing.get("translation", "") != translation:
+                    conflict = True
+                    print(
+                        f"[WARN] substr/literal 번역 충돌: text={text!r} "
+                        f"(substr={translation!r} vs literal={existing.get('translation', '')!r})",
+                        file=sys.stderr,
+                    )
+                    break
+            if not conflict:
+                buckets["literal_global"].append(row)
             stats["substr"] += 1
 
     return buckets, stats
