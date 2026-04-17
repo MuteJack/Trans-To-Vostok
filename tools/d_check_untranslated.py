@@ -232,6 +232,15 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
                     except re.error:
                         pass
 
+        elif effective == "substr":
+            # substr → literal_map + tres_direct 에 이중 등록 (build 와 동일)
+            if translation:
+                literal_map[text] = translation
+                fn = row.get("filename", "").strip()
+                ft = row.get("filetype", "").strip()
+                if fn and ft:
+                    tres_direct[(fn, ft, text)] = translation
+
     return direct_keys, ignored_keys, untranslatable_keys, tres_ignored, tres_untranslatable, empty_keys, literal_map, tres_direct, pattern_list, ignore_rows
 
 
@@ -471,29 +480,32 @@ def main() -> int:
                 empty_all += empty
                 missing_all += missing
 
-                matched = translation_count + ignored + untranslatable
+                covered = translation_count + ignored + untranslatable
+                matched = total - missing
                 tee.print(
                     f"[{fname:<{max_fname}}] "
-                    f"매칭 {matched}/{total}, "
-                    f"번역 {translation_count}/{effective} ({format_percent(translation_count, effective)}), "
-                    f"직접 {direct}, fallback {fallback}, "
-                    f"ignored {ignored}, untranslatable {untranslatable}, "
-                    f"translated {translation_count}"
+                    f"매치 {matched}/{total} ({format_percent(matched, total)}), "
+                    f"번역 {covered}/{total} ({format_percent(covered, total)}), "
+                    f"직접 {direct}/{total} ({format_percent(direct, total)}) "
+                    f"[{direct}/{effective} ({format_percent(direct, effective)})], "
+                    f"fallback {fallback}, ignored {ignored}, "
+                    f"untranslatable {untranslatable}, empty {empty}, missing {missing}"
                 )
             tee.print()
 
         _print_file_group("tscn 파일별 요약", tscn_files)
         _print_file_group("tres 파일별 요약", tres_files)
 
-        matched_all = direct_all + fallback_all + ignored_all + untranslatable_all
-        translated_all = direct_all + fallback_all
+        covered_all = direct_all + fallback_all + ignored_all + untranslatable_all
+        matched_all = total_all - missing_all
         tee.print(
             f"[전체] "
-            f"매칭 {matched_all}/{total_all}, "
-            f"번역 {translated_all}/{effective_all} ({format_percent(translated_all, effective_all)}), "
-            f"직접 {direct_all}, fallback {fallback_all}, "
-            f"ignored {ignored_all}, untranslatable {untranslatable_all}, "
-            f"empty {empty_all}, missing {missing_all}"
+            f"매치 {matched_all}/{total_all} ({format_percent(matched_all, total_all)}), "
+            f"번역 {covered_all}/{total_all} ({format_percent(covered_all, total_all)}), "
+            f"직접 {direct_all}/{total_all} ({format_percent(direct_all, total_all)}) "
+            f"[{direct_all}/{effective_all} ({format_percent(direct_all, effective_all)})], "
+            f"fallback {fallback_all}, ignored {ignored_all}, "
+            f"untranslatable {untranslatable_all}, empty {empty_all}, missing {missing_all}"
         )
         tee.print()
 
