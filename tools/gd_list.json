@@ -3,5 +3,6 @@
   "functions": ["Loader.Message"],
   "units": ["kg", "mb", "px", "ms", "db", "hp", "rip", "str", "int", "var", "res"],
   "targets": ["Scripts"],
-  "dict_extract": true
+  "dict_extract": true,
+  "join": "Scripts"
 }

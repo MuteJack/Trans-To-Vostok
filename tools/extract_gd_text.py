@@ -339,9 +339,9 @@ def main():
         all_rows.extend(rows)
         print(f"  [OK] {gd.name}  ({len(rows)}개)")
 
-    # 합본 출력 (소스 디렉토리 기준)
-    if all_rows:
-        join_name = "_".join(config["targets"])
+    # 합본 출력 (join 필드가 있을 때만)
+    join_name = config.get("join", "")
+    if join_name and all_rows:
         joined_path = output_dir / f"{join_name}.gd.joined.tsv"
         write_tsv(joined_path, all_rows)
         print(f"\n  합본: {joined_path.relative_to(output_dir)}")
