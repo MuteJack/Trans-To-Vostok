@@ -41,6 +41,22 @@
         "Misc", "Rigs", "Weapons"
       ],
       "join": "Items"
+    },
+    {
+      "name": "Furniture",
+      "dir": "Assets",
+      "fields": ["name", "inventory", "rotated", "equipment", "display", "phrase"],
+      "targets": [
+        "Bed_Civilian", "Bed_Nomad", "Cabinet_Medical", "Cabinet_Office",
+        "Cabinet_Wood", "Carpet", "Chair_Office", "Chair_School", "Chair_Sun",
+        "Crate_Military", "Crate_Special", "Cupboard", "Curtains", "Dartboard",
+        "Freezer", "Fridge", "Locker", "Nightstand", "Painting", "Pallet",
+        "Posters", "Rack_Coat", "Rya", "Shelf_Metal", "Shelf_Wall", "Shelf_Wood",
+        "Sign_Border_Zone", "Sofa_Leather", "Stool_Military", "Stool_Padded",
+        "Stove", "Table_Cabin", "Table_Canteen", "Table_Kitchen", "Table_Office",
+        "Target_Stand", "Television", "Trolley", "Weapon_Display"
+      ],
+      "join": "Furniture"
     }
   ]
 }

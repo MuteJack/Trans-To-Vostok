@@ -1028,3 +1028,12 @@ UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	체온:
 UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	결합됨:
 UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	치료:
 UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	호환 아이템:
+UI/Elements/Item	Details	Abbreviation	Label	Item	아이템
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	보기
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1 일차
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	잡화상이 마을에 복귀
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10 일 후
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	상인 이벤트
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	이벤트 위치:
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	마을
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	발생 가능성:

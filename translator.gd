@@ -41,9 +41,9 @@ const SCORE_PARENT: int = 4
 const SCORE_NAME: int = 2
 const SCORE_TYPE: int = 1
 
-const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text"]
+const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text", "containerName"]
 
-const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "hint"]
+const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "hint", "container", "corpse"]
 
 const NORMAL_BATCH_INTERVAL: float = 0.01
 const NORMAL_BATCH_SIZE: int = 500
@@ -74,10 +74,12 @@ class ScopedPatternEntry:
 	var template: String
 	var placeholders: Array
 
-	func apply(m: RegExMatch) -> String:
+	func apply(m: RegExMatch, translate_func: Callable = Callable()) -> String:
 		var result: String = template
 		for ph_name in placeholders:
 			var value: String = m.get_string(ph_name)
+			if translate_func.is_valid():
+				value = translate_func.call(value)
 			result = result.replace("{" + ph_name + "}", value)
 		return result
 
@@ -88,10 +90,12 @@ class GlobalPatternEntry:
 	var template: String
 	var placeholders: Array
 
-	func apply(m: RegExMatch) -> String:
+	func apply(m: RegExMatch, translate_func: Callable = Callable()) -> String:
 		var result: String = template
 		for ph_name in placeholders:
 			var value: String = m.get_string(ph_name)
+			if translate_func.is_valid():
+				value = translate_func.call(value)
 			result = result.replace("{" + ph_name + "}", value)
 		return result
 
@@ -569,12 +573,16 @@ func _find_translation_ctx(scene: String, parent: String,
 	if literal_scoped_exact_index.has(exact_key):
 		return literal_scoped_exact_index[exact_key]
 
+	# 캡처 변수 번역용 콜백 (pattern 내 {변수}를 전체 fallback에서 조회하되 pattern은 스킵)
+	var _capture_translate: Callable = func(value: String) -> String:
+		return _translate_captured(scene, parent, node_name, node_type, value)
+
 	# --- Tier 3: scoped pattern exact (컨텍스트 완전 일치) ---
 	if pattern_scoped_by_ctx.has(ctx_key):
 		for entry in pattern_scoped_by_ctx[ctx_key]:
 			var m: RegExMatch = entry.regex.search(text)
 			if m != null:
-				return entry.apply(m)
+				return entry.apply(m, _capture_translate)
 
 	# --- Tier 4: literal global ---
 	if literal_global.has(text):
@@ -584,7 +592,7 @@ func _find_translation_ctx(scene: String, parent: String,
 	for entry in pattern_global:
 		var m: RegExMatch = entry.regex.search(text)
 		if m != null:
-			return entry.apply(m)
+			return entry.apply(m, _capture_translate)
 
 	# --- Tier 6: static score (부분 컨텍스트 매칭, text 인덱스 사용) ---
 	var result = _score_match_by_text_index(
@@ -600,20 +608,14 @@ func _find_translation_ctx(scene: String, parent: String,
 
 	# --- Tier 8: scoped pattern score ---
 	result = _score_match_pattern_rows(
-		pattern_scoped_rows, scene, parent, node_name, node_type, text)
+		pattern_scoped_rows, scene, parent, node_name, node_type, text, _capture_translate)
 	if result != null:
 		return result
 
 	# --- Tier 9: substr (부분 문자열 치환, 최후 fallback) ---
-	if substr_entries.size() > 0:
-		var modified: String = text
-		var any_hit: bool = false
-		for entry in substr_entries:
-			if entry["text"] in modified:
-				modified = modified.replace(entry["text"], entry["translation"])
-				any_hit = true
-		if any_hit and modified != text:
-			return modified
+	result = _apply_substr(text)
+	if result != text:
+		return result
 
 	return null
 
@@ -681,7 +683,8 @@ func _score_match_exact_rows(rows: Array, scene: String, parent: String,
 
 # 정규식이 매칭되는 scoped pattern 행 중 가장 높은 score 를 고른다. score>0 필수.
 func _score_match_pattern_rows(rows: Array, scene: String, parent: String,
-		node_name: String, node_type: String, text: String):
+		node_name: String, node_type: String, text: String,
+		translate_func: Callable = Callable()):
 	var best_score: int = 0
 	var best_entry = null
 	var best_match: RegExMatch = null
@@ -711,7 +714,63 @@ func _score_match_pattern_rows(rows: Array, scene: String, parent: String,
 			tie_count, text
 		])
 
-	return best_entry.apply(best_match)
+	return best_entry.apply(best_match, translate_func)
+
+
+# 캡처 변수 번역: pattern을 제외한 전체 fallback 조회
+func _translate_captured(scene: String, parent: String,
+		node_name: String, node_type: String, value: String) -> String:
+	if value.is_valid_int() or value.is_valid_float():
+		return value
+	var exact_key: String = scene + "\t" + parent + "\t" + node_name + "\t" + node_type + "\t" + value
+
+	# Tier 1: static exact
+	if static_exact_index.has(exact_key):
+		return static_exact_index[exact_key]
+
+	# Tier 2: scoped literal exact
+	if literal_scoped_exact_index.has(exact_key):
+		return literal_scoped_exact_index[exact_key]
+
+	# Tier 3: SKIP (scoped pattern — 재귀 방지)
+
+	# Tier 4: literal global
+	if literal_global.has(value):
+		return literal_global[value]
+
+	# Tier 5: SKIP (pattern global — 재귀 방지)
+
+	# Tier 6: static score
+	var result = _score_match_by_text_index(
+		static_by_text, scene, parent, node_name, node_type, value, "static-capture")
+	if result != null:
+		return result
+
+	# Tier 7: scoped literal score
+	result = _score_match_by_text_index(
+		literal_scoped_by_text, scene, parent, node_name, node_type, value, "scoped-literal-capture")
+	if result != null:
+		return result
+
+	# Tier 8: SKIP (scoped pattern score — 재귀 방지)
+
+	# Tier 9: substr
+	var substr_result: String = _apply_substr(value)
+	if substr_result != value:
+		return substr_result
+
+	return value
+
+
+# substr 부분 문자열 치환 (길이 내림차순 정렬 보장됨)
+func _apply_substr(text: String) -> String:
+	if substr_entries.size() == 0:
+		return text
+	var result: String = text
+	for entry in substr_entries:
+		if entry["text"] in result:
+			result = result.replace(entry["text"], entry["translation"])
+	return result
 
 
 static func _compute_score(

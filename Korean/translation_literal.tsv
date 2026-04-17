@@ -41,6 +41,12 @@ Fast Drop	빠른 버리기
 Doctor	의사
 Generalist	잡화상
 Gunsmith	총잡이
+Fire [Ignite]	불 [켜기]
+Fire [Matches not equipped]	불 [성냥이 장착되지 않았습니다]
+Fire [Extinguish]	불 [끄기]
+Heat required	열원 필요
+Workbench required	작업대 필요
+Shelter required	쉘터 필요
 Easy	쉬움
 Intermediate	보통
 Hard	어려움
@@ -466,6 +472,102 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 이 자식은 가끔씩 나타나서 자기가 빚진 돈을 갚으라고 독촉합니다. 보통 이런 놈들은 문 앞에서 쏴버리지만, 이 놈은 아주 끈질깁니다. 퍼니셔와 그의 부하들은 최근 경찰 밴을 훔쳐서 이제는 방탄 차량까지 갖추고 있습니다.
 
 누군가 이 꼴을 끝내야 하니, 청부 살인업자가 필요합니다. 그놈의 목을 가져오거나, 아니면 죽었다는 증거를 가져오면 제 창고 열쇠를 드리겠습니다."
+Generalist returns to Village	잡화상이 마을에 복귀
+"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
+
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"잡화상은 05구역 마을 차고 건물 안에 작은 가게를 운영하는 만능 재주꾼 상인으로, 주로 일반 생필품을 판매합니다.
+
+잠시 휴식을 취한 후, 잡화상은 다시 영업을 시작하여 단골 고객들에게 합리적인 가격으로 상품을 제공할 준비를 마쳤습니다."
+Doctor returns to School	의사가 학교에 복귀
+"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
+
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"의사는 의학을 전문으로 하는 상인으로, 05구역의 버려진 학교 건물 안에 임시 진료소를 운영하고 있습니다.
+
+할머니의 안부를 확인하러 다녀온 의사는 진료소로 돌아와 부상자들을 치료할 준비를 마쳤습니다."
+Fighter Jets	전투기
+"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
+
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"5구역 철수 및 국경지대 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 필요합니다.
+
+핀란드군은 전투기를 이용해 상공에 자주 나타나는 고위험 비살상 공중 시범 비행을 시작할 예정입니다."
+Missing Cat	잃어버린 고양이
+"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
+
+A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
+
+Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"할머니의 고양이가 전투기의 굉음에 놀라 도망친 후 사라졌습니다.
+
+며칠 전, 방랑자들이 전초기지에서 고양이를 발견하고 어떤 상자로 고양이를 잡았습니다. 유목민들이 고양이를 할머니에게 돌려주려던 순간, 산적들이 습격하여 상자를 빼앗아 갔습니다.
+
+마을 사람들은 밴디트들이 상자를 마구 던지다가 결국 어딘가에 버려두는 것을 목격했습니다."
+Punisher arrives to Area 05	퍼니셔가 05구역에 도착
+"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
+
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"퍼니셔는 핀란드 범죄 세계에서 악명 높은 산적 두목이자 채권 추심원입니다.
+
+퍼니셔와 그의 부하들은 지역 경찰차를 훔쳐 05구역 곳곳을 누비고 다니고 있습니다."
+Airdrops are delivered to Area 05	공중 보급품이 05구역에 투하됨
+"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
+
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"오랜 지연 끝에 핀란드군은 05구역에 대한 공중 구호품 투하를 재개했습니다.
+
+공중 구호품에는 일반적으로 의약품, 소모품 및 기타 생존 장비와 같은 인도적 지원 물품이 포함됩니다."
+BTR Patrols	BTR 순찰
+"The military faction has started to use armored vehicles in the Vostok area.
+
+Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"군 세력이 보스토크 지역에서 장갑차를 사용하기 시작했습니다.
+
+군용 BTR은 중기관총으로 무장하고 있으며, 주요 도로와 핵심 지역에서 순찰하는 모습이 목격되었습니다."
+Attack Helicopters	공격 헬리콥터
+"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
+
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"국경지대의 비무장화가 무너지기 시작했고, 기존의 규칙들이 더 이상 적용되지 않는다는 것이 명백해지고 있습니다.
+
+공식 소식통은 아무런 변화가 없다고 주장하지만, 공격 헬리콥터들이 국경지대 인근에서 빈번한 순찰과 영공 침범을 시작했습니다."
+Helicopter Crash Sites	헬리콥터 추락 현장
+"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
+
+Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"영공 침범 이후 공중전은 불가피했으며, 국경 양쪽에서 여러 대의 공격 헬리콥터가 격추되었습니다.
+
+헬리콥터 추락 지점은 여러 곳에 흩어져 있으며, 고가의 전리품이 발견되어 AI 활동의 주요 거점이 되고 있습니다."
+Gunsmith returns to Outpost	건스미스가 아웃포스트로 복귀
+"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
+
+Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"건스미스는 전초기지 벙커 중 한 곳에 무기 보관소를 운영하며 총기류 관련 모든 것을 전문적으로 취급하는 상인입니다.
+
+건스미스는 몇 달 동안 자취를 감췄지만, 소문에 따르면 국경 너머로 ""출장""을 갔다가 이제 05구역에 있는 그의 소중한 벙커로 돌아왔다고 합니다."
+Outpost gets compromised	전초기지 발각
+"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
+
+Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
+
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"최근 사건들로 인해 국경 지대의 상황은 급속도로 악화되고 있으며, 인근 지역들도 그 여파에 직면하고 있습니다.
+
+이제 군용 BTR이 전초기지 지도에 진입할 수 있게 되었고, 05구역은 더 이상 안전지대로 간주되지 않습니다.
+
+이 소식은 05구역 주민들과 상인들 사이에서 빠르게 퍼져나갔지만, 05구역 외부의 언론과 당국은 이를 단순한 루머로 여기고 있습니다."
+Traders leave Area 05	상인들이 05구역을 떠남
+"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
+
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"전초기지가 발각된 후, 모든 상인들은 준비를 마치고 05구역을 떠나기 시작했습니다.
+
+상인들이 이렇게 하는 것은 임시방편이며, 상황이 진정되면 돌아올 것으로 보입니다."
+Traders return to Area 05	상인들이 05구역으로 복귀
+"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
+
+All traders are returning back to Area 05."	"최근 사태의 악화세는 진정된 듯하며, 5구역은 완전한 혼란에 빠지지 않았습니다.
+
+모든 거래자들이 5구역으로 복귀하고 있습니다."
+Transmission	송신
+"The signal that started it all has suddenly reappeared.
+
+The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
+
+This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"모든 사태의 발단이 된 신호가 갑자기 다시 나타났습니다.
+
+이 신호는 라디오 방송을 방해하고 있으며, 모든 일반 주파수에서 수신 가능합니다.
+
+이것은 얼리 액세스 [빌드 1]의 마지막 이벤트입니다. 이벤트와 스토리는 향후 빌드에서 계속됩니다."
 Armor Plate	방탄판
 Armor	방어구
 Armor Plate {class}	방탄판 {class}
@@ -519,9 +621,9 @@ Mosquito Hat	모기장 모자
 M. Hat	모기장 모자
 Sauna Hat	사우나 모자
 S. Hat	사우나 모자
-Hoodie (Border Zone)	후드티 (접경 지대)
-Hoodie BZ.	후드티 (접경 지대)
-Hoodie B.	후드티 (접경 지대)
+Hoodie (Border Zone)	후드티 (국경 지대)
+Hoodie BZ.	후드티 (국경 지대)
+Hoodie B.	후드티 (국경 지대)
 Hoodie (Gray)	후드티 (그레이)
 Hoodie	후드티
 M62 Jacket	M62 재킷
@@ -758,9 +860,9 @@ KAR-21 Magazine (.308)	KAR-21 탄창 (.308)
 KAR-21 Barrel (.308)	KAR-21 총열 (.308)
 KAR-21 Barrel	KAR-21 총열
 Barrel	총열
-Drum	드럼 탄창
 STANAG Magazine	STANAG 탄창
 M78 Magazine	M78 탄창
+Karov	카로프
 Karov Magazine	Karov 탄창
 PM5 Magazine	PM5 탄창
 MP7 Magazine	MP7 탄창

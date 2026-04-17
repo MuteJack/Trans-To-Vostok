@@ -1,3 +1,5 @@
 text	translation
 Monitor: {idx}	모니터: {idx}
 Windows: {percent}%	창 크기: {percent}%
+Day {day}	{day} 일차
+In {day} days	{day} 일 후
