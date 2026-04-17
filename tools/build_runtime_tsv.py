@@ -48,7 +48,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from e_validate_translation import (
+from validate_translation import (
     validate_xlsx,
     load_all_translation_sheets,
     load_metadata,
@@ -174,10 +174,10 @@ def main() -> int:
     soft = "--soft" in flags
 
     if not args:
-        print("사용법: python f_build_runtime_tsv.py <locale> [--soft|--hard]")
+        print("사용법: python build_runtime_tsv.py <locale> [--soft|--hard]")
         print("  --hard (기본): TSV 매칭 실패 → ERROR (빌드 차단)")
         print("  --soft:        TSV 매칭 실패 → WARNING (빌드 계속)")
-        print("예: python f_build_runtime_tsv.py Korean --soft")
+        print("예: python build_runtime_tsv.py Korean --soft")
         return 1
 
     locale = args[0]

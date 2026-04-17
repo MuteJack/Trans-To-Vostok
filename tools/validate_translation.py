@@ -788,10 +788,10 @@ def main() -> int:
     soft = "--soft" in flags
 
     if not args:
-        print("사용법: python e_validate_translation.py <locale> [--soft|--hard]")
+        print("사용법: python validate_translation.py <locale> [--soft|--hard]")
         print("  --hard (기본): TSV 매칭 실패 → ERROR (빌드 차단)")
         print("  --soft:        TSV 매칭 실패 → WARNING (빌드 계속)")
-        print("예: python e_validate_translation.py Korean --soft")
+        print("예: python validate_translation.py Korean --soft")
         return 1
 
     locale = args[0]

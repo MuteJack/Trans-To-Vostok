@@ -54,7 +54,7 @@ LOCALE_FILES = [
 def build_locale(tools_dir: Path, locale: str, soft: bool = False) -> bool:
     """build_runtime_tsv.py를 호출하여 TSV 생성. 성공 여부 반환."""
     print(f"=== 로케일 빌드: {locale} ===")
-    cmd = [sys.executable, "f_build_runtime_tsv.py", locale]
+    cmd = [sys.executable, "build_runtime_tsv.py", locale]
     if soft:
         cmd.append("--soft")
     result = subprocess.run(cmd, cwd=tools_dir)

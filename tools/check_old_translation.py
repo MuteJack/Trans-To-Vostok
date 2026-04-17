@@ -2,7 +2,7 @@
 xlsx에 있지만 추출 TSV에는 없는 행을 찾는다 (역방향 검사).
 
 게임 업데이트로 삭제/변경된 노드나 텍스트의 xlsx 행을 감지.
-d_check_untranslated.py 의 역방향: TSV→xlsx 가 아니라 xlsx→TSV.
+check_untranslated.py 의 역방향: TSV→xlsx 가 아니라 xlsx→TSV.
 
 검사 대상:
     filetype=tscn/scn  → unique_id + text 로 TSV 인덱스 대조
@@ -14,10 +14,10 @@ d_check_untranslated.py 의 역방향: TSV→xlsx 가 아니라 xlsx→TSV.
     untranslatable=1               → 스킵
 
 사용법:
-    python d2_check_old_translation.py <locale>
+    python check_old_translation.py <locale>
 
 예시:
-    python d2_check_old_translation.py Korean
+    python check_old_translation.py Korean
 
 출력:
     화면 + <locale>/.log/check_old_translation_YYYYMMDD_HHMMSS.log
@@ -40,7 +40,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from e_validate_translation import (
+from validate_translation import (
     _preview,
     _effective_method,
     load_all_translation_sheets,
@@ -107,8 +107,8 @@ def check_old_translations(
 
 def main() -> int:
     if len(sys.argv) < 2:
-        print("사용법: python d2_check_old_translation.py <locale>")
-        print("예: python d2_check_old_translation.py Korean")
+        print("사용법: python check_old_translation.py <locale>")
+        print("예: python check_old_translation.py Korean")
         return 1
 
     locale = sys.argv[1]

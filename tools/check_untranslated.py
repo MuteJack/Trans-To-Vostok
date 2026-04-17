@@ -40,7 +40,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from e_validate_translation import (
+from validate_translation import (
     _preview,
     _effective_method,
     load_all_translation_sheets,
