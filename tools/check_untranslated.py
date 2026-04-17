@@ -251,6 +251,16 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
 # TSV 엔트리 분류
 # ==========================================
 
+def _check_fallback(text: str, literal_map: dict, pattern_list: list) -> tuple[str, str] | None:
+    """전역 literal/pattern fallback 매칭을 확인. 히트 시 (status, method) 반환, 미스 시 None."""
+    if text in literal_map:
+        return ("literal", "literal")
+    for regex, _tmpl in pattern_list:
+        if regex.match(text):
+            return ("expression", f"pattern: {regex.pattern}")
+    return None
+
+
 def classify_entry(
     entry: dict,
     direct_keys: dict,
@@ -266,7 +276,10 @@ def classify_entry(
     """
     TSV 엔트리의 번역 상태를 분류.
     반환: (status, method)
-        status: "direct" | "ignored" | "untranslatable" | "literal" | "expression" | "empty" | "missing"
+        status: "direct" | "ignored" | "delegated" | "untranslatable" | "literal" | "expression" | "empty" | "missing"
+
+    delegated: xlsx 에서 ignore/untranslatable 처리했지만 전역 literal/pattern 이 잡는 경우.
+               런타임에서는 실제로 번역되므로 ignored/untranslatable 과 구분 필요.
     """
     text = entry["text"]
     filetype = entry.get("filetype", "")
@@ -281,8 +294,14 @@ def classify_entry(
             text,
         )
         if key_5 in ignored_keys:
+            fb = _check_fallback(text, literal_map, pattern_list)
+            if fb:
+                return ("delegated", fb[1])
             return ("ignored", "")
         if key_5 in untranslatable_keys:
+            fb = _check_fallback(text, literal_map, pattern_list)
+            if fb:
+                return ("delegated", fb[1])
             return ("untranslatable", "")
         if key_5 in direct_keys:
             return ("direct", "")
@@ -293,19 +312,22 @@ def classify_entry(
     if filetype in ("tres", "gd"):
         src_key = (entry.get("filename", ""), filetype, text)
         if src_key in tres_ignored:
+            fb = _check_fallback(text, literal_map, pattern_list)
+            if fb:
+                return ("delegated", fb[1])
             return ("ignored", "")
         if src_key in tres_untranslatable:
+            fb = _check_fallback(text, literal_map, pattern_list)
+            if fb:
+                return ("delegated", fb[1])
             return ("untranslatable", "")
         if src_key in tres_direct:
             return ("direct", "")
 
     # text-only fallback (tscn/tres/gd 미스)
-    if text in literal_map:
-        return ("literal", "literal")
-
-    for regex, _tmpl in pattern_list:
-        if regex.match(text):
-            return ("expression", f"pattern: {regex.pattern}")
+    fb = _check_fallback(text, literal_map, pattern_list)
+    if fb:
+        return fb
 
     return ("missing", "")
 
@@ -399,6 +421,7 @@ def main() -> int:
             "direct": 0,
             "literal": 0,
             "expression": 0,
+            "delegated": 0,
             "ignored": 0,
             "untranslatable": 0,
             "empty": 0,
@@ -406,6 +429,7 @@ def main() -> int:
             "empty_entries": [],
             "missing_entries": [],
             "fallback_entries": [],
+            "delegated_entries": [],
         })
 
         for entry in tsv_entries:
@@ -425,6 +449,9 @@ def main() -> int:
             elif status == "expression":
                 bucket["expression"] += 1
                 bucket["fallback_entries"].append((entry, method))
+            elif status == "delegated":
+                bucket["delegated"] += 1
+                bucket["delegated_entries"].append((entry, method))
             elif status == "ignored":
                 bucket["ignored"] += 1
             elif status == "untranslatable":
@@ -444,13 +471,14 @@ def main() -> int:
         effective_all = 0
         direct_all = 0
         fallback_all = 0
+        delegated_all = 0
         ignored_all = 0
         untranslatable_all = 0
         empty_all = 0
         missing_all = 0
 
         def _print_file_group(label: str, file_names: list):
-            nonlocal total_all, effective_all, direct_all, fallback_all
+            nonlocal total_all, effective_all, direct_all, fallback_all, delegated_all
             nonlocal ignored_all, untranslatable_all, empty_all, missing_all
 
             if not file_names:
@@ -465,6 +493,7 @@ def main() -> int:
                 total = b["total"]
                 direct = b["direct"]
                 fallback = b["literal"] + b["expression"]
+                delegated = b["delegated"]
                 ignored = b["ignored"]
                 untranslatable = b["untranslatable"]
                 empty = b["empty"]
@@ -472,27 +501,28 @@ def main() -> int:
 
                 excluded = ignored + untranslatable
                 effective = total - excluded
-                translation_count = direct + fallback
+                translation_count = direct + fallback + delegated
 
                 total_all += total
                 effective_all += effective
                 direct_all += direct
                 fallback_all += fallback
+                delegated_all += delegated
                 ignored_all += ignored
                 untranslatable_all += untranslatable
                 empty_all += empty
                 missing_all += missing
 
                 covered = translation_count + ignored + untranslatable
-                matched = total - missing
+                matched = direct + delegated + ignored + untranslatable + empty
                 tee.print(
                     f"[{fname:<{max_fname}}] "
                     f"매치 {matched}/{total} ({format_percent(matched, total)}), "
                     f"번역 {covered}/{total} ({format_percent(covered, total)}), "
-                    f"직접 {direct}/{total} ({format_percent(direct, total)}) "
-                    f"[{direct}/{effective} ({format_percent(direct, effective)})], "
-                    f"fallback {fallback}, ignored {ignored}, "
-                    f"untranslatable {untranslatable}, empty {empty}, missing {missing}"
+                    f"직접 {direct}/{total} ({format_percent(direct, total)}), "
+                    f"fallback {fallback}, delegated {delegated}, "
+                    f"ignored {ignored}, untranslatable {untranslatable}, "
+                    f"empty {empty}, missing {missing}"
                 )
             tee.print()
 
@@ -502,16 +532,16 @@ def main() -> int:
         _print_file_group("tres 파일별 요약", tres_files)
         _print_file_group("gd 파일별 요약", gd_files)
 
-        covered_all = direct_all + fallback_all + ignored_all + untranslatable_all
-        matched_all = total_all - missing_all
+        covered_all = direct_all + fallback_all + delegated_all + ignored_all + untranslatable_all
+        matched_all = direct_all + ignored_all + untranslatable_all + empty_all
         tee.print(
             f"[전체] "
             f"매치 {matched_all}/{total_all} ({format_percent(matched_all, total_all)}), "
             f"번역 {covered_all}/{total_all} ({format_percent(covered_all, total_all)}), "
-            f"직접 {direct_all}/{total_all} ({format_percent(direct_all, total_all)}) "
-            f"[{direct_all}/{effective_all} ({format_percent(direct_all, effective_all)})], "
-            f"fallback {fallback_all}, ignored {ignored_all}, "
-            f"untranslatable {untranslatable_all}, empty {empty_all}, missing {missing_all}"
+            f"직접 {direct_all}/{total_all} ({format_percent(direct_all, total_all)}), "
+            f"fallback {fallback_all}, delegated {delegated_all}, "
+            f"ignored {ignored_all}, untranslatable {untranslatable_all}, "
+            f"empty {empty_all}, missing {missing_all}"
         )
         tee.print()
 
@@ -578,6 +608,37 @@ def main() -> int:
         _print_detail_group("tscn", tscn_files)
         _print_detail_group("tres", tres_files)
         _print_detail_group("gd", gd_files)
+
+        # delegated 로그를 별도 파일로 출력
+        delegated_log_path = locale_dir / ".log" / f"check_delegated_{timestamp}.log"
+        has_delegated = any(
+            len(per_file[f]["delegated_entries"]) > 0 for f in per_file
+        )
+        if has_delegated:
+            delegated_tee = Tee(delegated_log_path)
+            try:
+                delegated_tee.print(f"delegated 상세 — ignore/untranslatable 이지만 전역 매칭됨")
+                delegated_tee.print(f"실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+                delegated_tee.print()
+                for fname in sorted(per_file.keys()):
+                    b = per_file[fname]
+                    if not b["delegated_entries"]:
+                        continue
+                    delegated_tee.print(f"[{fname}]")
+                    for e, method in b["delegated_entries"]:
+                        delegated_tee.print(
+                            f"  uid={e['unique_id']}  "
+                            f"name={e['name']}  "
+                            f"text={_preview(e['text'], 50)}  "
+                            f"← {method}"
+                        )
+                delegated_tee.print()
+                delegated_tee.print(f"총 {delegated_all}개")
+            finally:
+                delegated_tee.close()
+            tee.print(f"delegated 로그: {delegated_log_path}")
+        else:
+            tee.print("delegated: 없음")
 
         # 6. suspicious ignore 검사
         # method=ignore + untranslatable≠1 인 행 중 다른 행에서 커버되지 않는 것
