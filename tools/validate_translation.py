@@ -183,6 +183,25 @@ def load_tres_text_set(tsv_dir: Path) -> set:
     return texts
 
 
+def load_gd_text_set(tsv_dir: Path) -> set:
+    """
+    추출된 *.gd.tsv 에서 모든 text 값을 set 으로 수집.
+    filetype=gd xlsx 행의 text 가 실제 .gd 소스에 존재하는지 검증하는 데 사용.
+    """
+    texts: set = set()
+    for tsv_file in sorted(tsv_dir.rglob("*.gd.tsv")):
+        try:
+            with open(tsv_file, "r", encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                for row in reader:
+                    text = row.get("text") or ""
+                    if text:
+                        texts.add(text)
+        except Exception as e:
+            print(f"[WARN] gd TSV 읽기 실패: {tsv_file} ({e})")
+    return texts
+
+
 # ==========================================
 # MetaData 로딩
 # ==========================================
@@ -392,6 +411,29 @@ def check_tres_text(row: dict, tres_texts: set) -> list[str]:
             f"filename={filename!r}, text={_preview(text, 40)}"
         )
     return errors
+
+
+def check_gd_text(row: dict, gd_texts: set) -> list[str]:
+    """
+    체크 2c (WARNING): filetype=gd 행의 text 가 추출된 .gd.tsv 에 존재하는지 검증.
+    GD 추출은 휴리스틱 기반이라 ERROR 가 아닌 WARNING.
+    """
+    warnings = []
+    filetype = row.get("filetype", "").strip()
+    if filetype != "gd":
+        return warnings
+    effective = _effective_method(row)
+    if effective == "ignore":
+        return warnings
+
+    text = row.get("text", "")
+    if text and text not in gd_texts:
+        filename = row.get("filename", "").strip()
+        warnings.append(
+            f"filetype=gd 의 text 가 추출된 .gd.tsv 에 없음 (변경/삭제?): "
+            f"filename={filename!r}, text={_preview(text, 40)}"
+        )
+    return warnings
 
 
 def check_whitespace(row: dict) -> list[str]:
@@ -687,7 +729,8 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
         tee.print(f"  unique_id 수: {len(tsv_index)}, 총 레코드: {total_tsv_entries}")
 
         tres_texts = load_tres_text_set(tsv_dir)
-        tee.print(f"  tres text 수: {len(tres_texts)}")
+        gd_texts = load_gd_text_set(tsv_dir)
+        tee.print(f"  tres text 수: {len(tres_texts)}, gd text 수: {len(gd_texts)}")
 
         tee.print("Translation.xlsx 로드 중...")
         sheets = load_all_translation_sheets(xlsx_path)
@@ -728,6 +771,10 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
                     else:
                         local_issues.append(("ERROR", "tres 매칭", msg))
                         result.error_tsv += 1
+
+                for msg in check_gd_text(row, gd_texts):
+                    local_issues.append(("WARN", "gd 매칭", msg))
+                    result.warn_tsv_soft += 1
 
                 for msg in check_whitespace(row):
                     local_issues.append(("WARN", "공백", msg))

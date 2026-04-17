@@ -46,6 +46,7 @@ from validate_translation import (
     load_all_translation_sheets,
     load_tsv_index,
     load_tres_text_set,
+    load_gd_text_set,
     load_metadata,
     format_metadata_lines,
     Tee,
@@ -60,16 +61,19 @@ def check_old_translations(
     rows: list[dict],
     tsv_index: dict,
     tres_texts: set,
-) -> tuple[list[dict], list[dict]]:
+    gd_texts: set,
+) -> tuple[list[dict], list[dict], list[dict]]:
     """
     xlsx 행 중 추출 TSV에 대응이 없는 행을 찾는다.
 
     반환:
         old_tscn: [row, ...]  — filetype=tscn/scn 인데 TSV에 없는 행
         old_tres: [row, ...]  — filetype=tres 인데 TSV에 없는 행
+        old_gd:   [row, ...]  — filetype=gd 인데 TSV에 없는 행
     """
     old_tscn: list[dict] = []
     old_tres: list[dict] = []
+    old_gd: list[dict] = []
 
     for row in rows:
         effective = _effective_method(row)
@@ -102,7 +106,13 @@ def check_old_translations(
             if text not in tres_texts:
                 old_tres.append(row)
 
-    return old_tscn, old_tres
+        elif filetype == "gd":
+            if not text:
+                continue
+            if text not in gd_texts:
+                old_gd.append(row)
+
+    return old_tscn, old_tres, old_gd
 
 
 def main() -> int:
@@ -143,9 +153,10 @@ def main() -> int:
         tee.print("TSV 인덱스 빌드 중...")
         tsv_index = load_tsv_index(tsv_dir)
         tres_texts = load_tres_text_set(tsv_dir)
+        gd_texts = load_gd_text_set(tsv_dir)
         total_tsv = sum(len(v) for v in tsv_index.values())
         tee.print(f"  tscn unique_id: {len(tsv_index)}개, 레코드: {total_tsv}")
-        tee.print(f"  tres text: {len(tres_texts)}개")
+        tee.print(f"  tres text: {len(tres_texts)}개, gd text: {len(gd_texts)}개")
         tee.print()
 
         # 2. xlsx 로드
@@ -158,7 +169,7 @@ def main() -> int:
         tee.print()
 
         # 3. old translation 검사
-        old_tscn, old_tres = check_old_translations(all_rows, tsv_index, tres_texts)
+        old_tscn, old_tres, old_gd = check_old_translations(all_rows, tsv_index, tres_texts, gd_texts)
 
         # 4. 리포트
         if old_tscn:
@@ -185,15 +196,27 @@ def main() -> int:
                 )
             tee.print()
 
+        if old_gd:
+            tee.print("=" * 80)
+            tee.print(f"gd — TSV에 없는 xlsx 행 ({len(old_gd)}개, 휴리스틱 추출 한계 가능)")
+            tee.print("=" * 80)
+            for row in old_gd:
+                tee.print(
+                    f"  filename={row.get('filename', '')!r}  "
+                    f"name={row.get('name', '')!r}  "
+                    f"text={_preview(row.get('text', ''), 50)}"
+                )
+            tee.print()
+
         # 5. 요약
         tee.print("=" * 80)
-        total_old = len(old_tscn) + len(old_tres)
+        total_old = len(old_tscn) + len(old_tres) + len(old_gd)
         if total_old == 0:
             tee.print("완료: old translation 없음 — 모든 xlsx 행이 추출 TSV와 일치합니다.")
         else:
             tee.print(
                 f"완료: old translation {total_old}개 발견 "
-                f"(tscn {len(old_tscn)}, tres {len(old_tres)})"
+                f"(tscn {len(old_tscn)}, tres {len(old_tres)}, gd {len(old_gd)})"
             )
             tee.print("  이 행들은 게임 업데이트로 삭제/변경된 텍스트일 수 있습니다.")
             tee.print("  xlsx에서 제거하거나 method=ignore 로 변경하세요.")

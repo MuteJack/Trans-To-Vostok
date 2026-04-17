@@ -289,7 +289,7 @@ def main():
     print()
 
     pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
-    output_dir = (mod_root / ".tmp" / "_extracted_text").resolve()
+    output_dir = (mod_root / ".tmp" / "extracted_text").resolve()
 
     # targets 에서 소스 디렉토리 수집
     if len(sys.argv) > 1:

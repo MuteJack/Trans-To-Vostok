@@ -94,9 +94,12 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
     대상:
         *.tscn.tsv  — unique_id 있는 scn 엔트리
         *.tres.tsv  — unique_id 없는 tres 엔트리
+        *.gd.tsv    — gd 스크립트 리터럴/패턴
     """
     entries = []
-    tsv_files = sorted(tsv_dir.rglob("*.tscn.tsv")) + sorted(tsv_dir.rglob("*.tres.tsv"))
+    tsv_files = (sorted(tsv_dir.rglob("*.tscn.tsv"))
+                 + sorted(tsv_dir.rglob("*.tres.tsv"))
+                 + sorted(tsv_dir.rglob("*.gd.tsv")))
     for tsv_file in tsv_files:
         try:
             with open(tsv_file, "r", encoding="utf-8", newline="") as f:
@@ -286,17 +289,17 @@ def classify_entry(
         if key_5 in empty_keys:
             return ("empty", "")
 
-    # tres 엔트리는 (filename, filetype, text) 로 매칭
-    if filetype == "tres":
-        tres_key = (entry.get("filename", ""), filetype, text)
-        if tres_key in tres_ignored:
+    # tres / gd 엔트리는 (filename, filetype, text) 로 매칭
+    if filetype in ("tres", "gd"):
+        src_key = (entry.get("filename", ""), filetype, text)
+        if src_key in tres_ignored:
             return ("ignored", "")
-        if tres_key in tres_untranslatable:
+        if src_key in tres_untranslatable:
             return ("untranslatable", "")
-        if tres_key in tres_direct:
+        if src_key in tres_direct:
             return ("direct", "")
 
-    # text-only fallback (tscn 미스 또는 tres 미스)
+    # text-only fallback (tscn/tres/gd 미스)
     if text in literal_map:
         return ("literal", "literal")
 
@@ -493,8 +496,11 @@ def main() -> int:
                 )
             tee.print()
 
+        gd_files = sorted(f for f in per_file if f.endswith(".gd.tsv"))
+
         _print_file_group("tscn 파일별 요약", tscn_files)
         _print_file_group("tres 파일별 요약", tres_files)
+        _print_file_group("gd 파일별 요약", gd_files)
 
         covered_all = direct_all + fallback_all + ignored_all + untranslatable_all
         matched_all = total_all - missing_all
@@ -571,6 +577,7 @@ def main() -> int:
 
         _print_detail_group("tscn", tscn_files)
         _print_detail_group("tres", tres_files)
+        _print_detail_group("gd", gd_files)
 
         # 6. suspicious ignore 검사
         # method=ignore + untranslatable≠1 인 행 중 다른 행에서 커버되지 않는 것
