@@ -33,7 +33,7 @@
     {
       "name": "Items",
       "dir": "Items",
-      "fields": ["name", "inventory", "rotated", "equipment", "display", "phrase"],
+      "fields": ["name", "inventory", "rotated", "equipment", "display", "phrase", "type"],
       "targets": [
         "Ammo", "Armor", "Attachments", "Backpacks", "Belts", "Books",
         "Clothing", "Consumables", "Electronics", "Fishing", "Grenades",
