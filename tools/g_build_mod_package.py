@@ -51,13 +51,13 @@ LOCALE_FILES = [
 ]
 
 
-def build_locale(tools_dir: Path, locale: str) -> bool:
+def build_locale(tools_dir: Path, locale: str, soft: bool = False) -> bool:
     """build_runtime_tsv.py를 호출하여 TSV 생성. 성공 여부 반환."""
     print(f"=== 로케일 빌드: {locale} ===")
-    result = subprocess.run(
-        [sys.executable, "f_build_runtime_tsv.py", locale],
-        cwd=tools_dir,
-    )
+    cmd = [sys.executable, "f_build_runtime_tsv.py", locale]
+    if soft:
+        cmd.append("--soft")
+    result = subprocess.run(cmd, cwd=tools_dir)
     if result.returncode != 0:
         print(f"[ERROR] {locale} 빌드 실패")
         return False
@@ -132,9 +132,14 @@ def main() -> int:
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent                # mods/Trans To Vostok
 
-    # 커맨드라인 인자가 있으면 override, 없으면 locale.tsv 에서 읽기
-    if len(sys.argv) > 1:
-        locales = sys.argv[1:]
+    # --soft / --hard 파싱
+    cli_args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    cli_flags = [a for a in sys.argv[1:] if a.startswith("--")]
+    soft = "--soft" in cli_flags
+
+    # 커맨드라인 인자가 있으면 override, 없으면 locale.json 에서 읽기
+    if cli_args:
+        locales = cli_args
         print(f"커맨드라인 로케일: {locales}")
     else:
         locale_config = load_locale_config(mod_root)
@@ -156,7 +161,7 @@ def main() -> int:
         if not locale_dir.exists() or not xlsx_path.exists():
             print(f"[SKIP] {locale} — 번역 폴더/xlsx 없음 (기본 언어)")
             continue
-        if not build_locale(script_dir, locale):
+        if not build_locale(script_dir, locale, soft=soft):
             return 1
         build_locales.append(locale)
     locales = build_locales

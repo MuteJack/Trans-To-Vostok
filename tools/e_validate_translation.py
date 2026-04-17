@@ -620,6 +620,7 @@ class ValidationResult:
         self.error_method = 0
         self.warn_ws = 0
         self.warn_empty_method = 0
+        self.warn_tsv_soft = 0
         self.log_path: Path | None = None
 
     @property
@@ -630,7 +631,7 @@ class ValidationResult:
 
     @property
     def warning_count(self) -> int:
-        return self.warn_ws + self.warn_empty_method
+        return self.warn_ws + self.warn_empty_method + self.warn_tsv_soft
 
     @property
     def ok(self) -> bool:
@@ -649,10 +650,12 @@ REQUIRED_COLUMNS = [
 ]
 
 
-def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
+def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> ValidationResult:
     """
     Translation.xlsx 의 모든 번역 시트 (MetaData 제외) 를 검증.
-    로그 파일은 <xlsx 부모>/.log/ 에 자동 생성.
+
+    soft=False (--hard, 기본): TSV 매칭 실패 → ERROR (빌드 차단)
+    soft=True  (--soft):       TSV 매칭 실패 → WARNING (빌드 계속, 해당 행 제외)
     """
     result = ValidationResult()
 
@@ -711,12 +714,20 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
                 local_issues = []
 
                 for msg in check_tsv_match(row, tsv_index):
-                    local_issues.append(("ERROR", "TSV 매칭", msg))
-                    result.error_tsv += 1
+                    if soft:
+                        local_issues.append(("WARN", "TSV 매칭 (soft)", msg))
+                        result.warn_tsv_soft += 1
+                    else:
+                        local_issues.append(("ERROR", "TSV 매칭", msg))
+                        result.error_tsv += 1
 
                 for msg in check_tres_text(row, tres_texts):
-                    local_issues.append(("ERROR", "tres 매칭", msg))
-                    result.error_tsv += 1
+                    if soft:
+                        local_issues.append(("WARN", "tres 매칭 (soft)", msg))
+                        result.warn_tsv_soft += 1
+                    else:
+                        local_issues.append(("ERROR", "tres 매칭", msg))
+                        result.error_tsv += 1
 
                 for msg in check_whitespace(row):
                     local_issues.append(("WARN", "공백", msg))
@@ -753,7 +764,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
                 tee.print()
 
         tee.print("=" * 60)
-        tee.print(f"검증 완료: {total_row_count}행 검사")
+        tee.print(f"검증 완료: {total_row_count}행 검사 (mode={'soft' if soft else 'hard'})")
         tee.print(
             f"  ERROR {result.error_count}개  "
             f"(TSV 매칭 {result.error_tsv}, 플래그 {result.error_flags}, "
@@ -761,7 +772,8 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
         )
         tee.print(
             f"  WARN  {result.warning_count}개  "
-            f"(공백 {result.warn_ws}, 빈 method {result.warn_empty_method})"
+            f"(공백 {result.warn_ws}, 빈 method {result.warn_empty_method}"
+            f"{f', TSV soft {result.warn_tsv_soft}' if result.warn_tsv_soft else ''})"
         )
 
         return result
@@ -770,12 +782,19 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path) -> ValidationResult:
 
 
 def main() -> int:
-    if len(sys.argv) < 2:
-        print("사용법: python validate_translation.py <locale>")
-        print("예: python validate_translation.py Korean")
+    # --soft / --hard 파싱
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    flags = [a for a in sys.argv[1:] if a.startswith("--")]
+    soft = "--soft" in flags
+
+    if not args:
+        print("사용법: python e_validate_translation.py <locale> [--soft|--hard]")
+        print("  --hard (기본): TSV 매칭 실패 → ERROR (빌드 차단)")
+        print("  --soft:        TSV 매칭 실패 → WARNING (빌드 계속)")
+        print("예: python e_validate_translation.py Korean --soft")
         return 1
 
-    locale = sys.argv[1]
+    locale = args[0]
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent
     xlsx_path = (mod_root / locale / "Translation.xlsx").resolve()
@@ -786,7 +805,7 @@ def main() -> int:
         return 1
 
     try:
-        result = validate_xlsx(xlsx_path, tsv_dir)
+        result = validate_xlsx(xlsx_path, tsv_dir, soft=soft)
     except (FileNotFoundError, ValueError) as e:
         print(f"[ERROR] {e}")
         return 1

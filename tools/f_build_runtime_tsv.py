@@ -169,12 +169,18 @@ def write_tsv(out_path: Path, columns: list[str], rows: list[dict]) -> None:
 
 
 def main() -> int:
-    if len(sys.argv) < 2:
-        print("사용법: python build_runtime_tsv.py <locale>")
-        print("예: python build_runtime_tsv.py Korean")
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    flags = [a for a in sys.argv[1:] if a.startswith("--")]
+    soft = "--soft" in flags
+
+    if not args:
+        print("사용법: python f_build_runtime_tsv.py <locale> [--soft|--hard]")
+        print("  --hard (기본): TSV 매칭 실패 → ERROR (빌드 차단)")
+        print("  --soft:        TSV 매칭 실패 → WARNING (빌드 계속)")
+        print("예: python f_build_runtime_tsv.py Korean --soft")
         return 1
 
-    locale = sys.argv[1]
+    locale = args[0]
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent
     locale_dir = mod_root / locale
@@ -189,9 +195,9 @@ def main() -> int:
         return 1
 
     # 1. 검증
-    print(f"[1/4] 검증 중... ({locale})")
+    print(f"[1/4] 검증 중... ({locale}, {'soft' if soft else 'hard'})")
     try:
-        result = validate_xlsx(xlsx_path, tsv_dir)
+        result = validate_xlsx(xlsx_path, tsv_dir, soft=soft)
     except (FileNotFoundError, ValueError) as e:
         print(f"[ERROR] 검증 실패: {e}")
         return 1
