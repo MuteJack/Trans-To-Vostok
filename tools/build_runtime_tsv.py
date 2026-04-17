@@ -170,13 +170,15 @@ def write_tsv(out_path: Path, columns: list[str], rows: list[dict]) -> None:
 
 def main() -> int:
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    flags = [a for a in sys.argv[1:] if a.startswith("--")]
+    flags = {a for a in sys.argv[1:] if a.startswith("--")}
     soft = "--soft" in flags
+    ignore_validation = "--ignore" in flags
 
     if not args:
-        print("사용법: python build_runtime_tsv.py <locale> [--soft|--hard]")
+        print("사용법: python build_runtime_tsv.py <locale> [--soft|--hard|--ignore]")
         print("  --hard (기본): TSV 매칭 실패 → ERROR (빌드 차단)")
         print("  --soft:        TSV 매칭 실패 → WARNING (빌드 계속)")
+        print("  --ignore:      검증 단계 스킵 (즉시 빌드)")
         print("예: python build_runtime_tsv.py Korean --soft")
         return 1
 
@@ -195,26 +197,31 @@ def main() -> int:
         return 1
 
     # 1. 검증
-    print(f"[1/4] 검증 중... ({locale}, {'soft' if soft else 'hard'})")
-    try:
-        result = validate_xlsx(xlsx_path, tsv_dir, soft=soft)
-    except (FileNotFoundError, ValueError) as e:
-        print(f"[ERROR] 검증 실패: {e}")
-        return 1
+    if ignore_validation:
+        print(f"[1/5] 검증 스킵 (--ignore)")
+        print()
+    else:
+        mode = "soft" if soft else "hard"
+        print(f"[1/5] 검증 중... ({locale}, {mode})")
+        try:
+            result = validate_xlsx(xlsx_path, tsv_dir, soft=soft)
+        except (FileNotFoundError, ValueError) as e:
+            print(f"[ERROR] 검증 실패: {e}")
+            return 1
 
-    print(f"  → 로그: {result.log_path}")
-    if not result.ok:
-        print(
-            f"[ERROR] 검증 실패: {result.error_count}개 에러 "
-            f"(TSV {result.error_tsv}, 플래그 {result.error_flags}, "
-            f"중복 {result.error_dup}, method {result.error_method})"
-        )
-        print("빌드를 중단합니다. 위 로그를 확인하세요.")
-        raise SystemExit(1)
+        print(f"  → 로그: {result.log_path}")
+        if not result.ok:
+            print(
+                f"[ERROR] 검증 실패: {result.error_count}개 에러 "
+                f"(TSV {result.error_tsv}, 플래그 {result.error_flags}, "
+                f"중복 {result.error_dup}, method {result.error_method})"
+            )
+            print("빌드를 중단합니다. 위 로그를 확인하세요.")
+            raise SystemExit(1)
 
-    if result.warning_count > 0:
-        print(f"  경고 {result.warning_count}개 (진행 계속)")
-    print()
+        if result.warning_count > 0:
+            print(f"  경고 {result.warning_count}개 (진행 계속)")
+        print()
 
     # 2. xlsx 로드 (모든 번역 시트 병합)
     print("[2/4] xlsx 로드 중...")
