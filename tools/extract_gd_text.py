@@ -34,9 +34,59 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 STRING_LIT = re.compile(r'"((?:[^"\\]|\\.)*)"')
-SET_TEXT_RE = re.compile(r'(?P<target>[^\s]+?)\s*\.\s*set_text\s*\(\s*(?P<value>.+?)\s*\)')
-MESSAGE_RE = re.compile(r'(?P<target>[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*)\s*\(\s*(?P<value>"[^"]*"(?:\s*\+\s*.+?)?)\s*[,)]')
 DICT_ENTRY_RE = re.compile(r'^\s*"(?P<key>[^"]+)"\s*:\s*"(?P<value>[^"]*)"')
+
+
+def extract_func_first_arg(line: str, func_name: str) -> str | None:
+    """함수 호출에서 첫 번째 인자를 괄호 카운팅으로 추출.
+    중첩 괄호 str(int(x)) 를 정확히 처리."""
+    idx = line.find(func_name + "(")
+    if idx < 0:
+        idx = line.find(func_name + " (")
+        if idx < 0:
+            return None
+        idx += len(func_name) + 1
+    else:
+        idx += len(func_name)
+
+    # func_name 뒤의 여는 괄호 위치
+    paren_start = line.find("(", idx)
+    if paren_start < 0:
+        return None
+
+    depth = 0
+    in_str = False
+    escape = False
+    arg_start = paren_start + 1
+    i = arg_start
+
+    while i < len(line):
+        c = line[i]
+        if escape:
+            escape = False
+            i += 1
+            continue
+        if c == "\\":
+            escape = True
+            i += 1
+            continue
+        if c == '"':
+            in_str = not in_str
+            i += 1
+            continue
+        if in_str:
+            i += 1
+            continue
+        if c == "(":
+            depth += 1
+        elif c == ")":
+            if depth == 0:
+                return line[arg_start:i].strip()
+            depth -= 1
+        elif c == "," and depth == 0:
+            return line[arg_start:i].strip()
+        i += 1
+    return None
 
 # gd_list.json 에서 로드되는 설정 (기본값)
 DEFAULT_CONFIG = {
@@ -69,11 +119,20 @@ def build_assign_re(properties: list) -> re.Pattern:
     """properties 목록으로 ASSIGN_RE 컴파일."""
     prop_alt = "|".join(re.escape(p) for p in properties)
     return re.compile(
-        rf'(?P<target>[^\s=]+?)\s*\.\s*(?P<prop>{prop_alt})\s*=\s*(?P<value>.+)$'
+        rf'(?P<target>[^\s=]+?)\s*\.\s*(?P<prop>{prop_alt})\s*(?<!=)=(?!=)\s*(?P<value>.+)$'
     )
 
+
+def build_compare_re(properties: list) -> re.Pattern:
+    """xxx.text == "..." 비교문 감지."""
+    prop_alt = "|".join(re.escape(p) for p in properties)
+    return re.compile(
+        rf'(?P<target>[^\s=]+?)\s*\.\s*(?P<prop>{prop_alt})\s*==\s*(?P<value>"(?:[^"\\]|\\.)*")'
+    )
+
+
 # 통일 출력 컬럼 (tscn/tres 와 동일)
-OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
+OUT_COLUMNS = ["method", "filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
 
 
 def strip_comment(line: str) -> str:
@@ -143,6 +202,7 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
     if config is None:
         config = DEFAULT_CONFIG
     assign_re = build_assign_re(config["properties"])
+    compare_re = build_compare_re(config["properties"])
     message_funcs = set(config["functions"])
     units = set(config["units"])
     do_dict = config.get("dict_extract", True)
@@ -176,23 +236,45 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
         # 매칭 시도 1: .text = ... / gameData.tooltip = ...
         m = assign_re.search(line)
         if not m:
-            m2 = SET_TEXT_RE.search(line)
-            if m2:
-                target = m2.group("target") + ".set_text"
-                value = m2.group("value").strip()
-            else:
-                # 매칭 시도 1b: Loader.Message("...", ...) 등
+            # set_text() — 괄호 카운팅으로 인자 추출
+            st_target_m = re.search(r'([^\s]+?)\s*\.\s*set_text\s*\(', line)
+            if st_target_m:
+                arg = extract_func_first_arg(line, "set_text")
+                if arg is not None:
+                    target = st_target_m.group(1) + ".set_text"
+                    value = arg
+                else:
+                    st_target_m = None
+            if not st_target_m:
+                # 매칭 시도 1b: Loader.Message("...", ...) 등 — 괄호 카운팅
                 msg_found = False
                 for func_name in message_funcs:
                     if func_name in line:
-                        mm = MESSAGE_RE.search(line)
-                        if mm and mm.group("target") == func_name:
+                        arg = extract_func_first_arg(line, func_name)
+                        if arg is not None:
                             target = func_name
-                            value = mm.group("value").strip()
+                            value = arg
                             msg_found = True
                             break
                 if not msg_found:
-                    # 매칭 시도 2: 딕셔너리 "key": "value" (블록 안에서만)
+                    # 매칭 시도 2: xxx.text == "..." 비교문 (표시되는 값의 증거)
+                    cm = compare_re.search(line)
+                    if cm:
+                        lit = STRING_LIT.search(cm.group("value"))
+                        if lit and is_translatable(lit.group(1), units):
+                            results.append({
+                                "method": "substr",
+                                "filename": rel_path,
+                                "filetype": "gd",
+                                "location": "",
+                                "parent": "",
+                                "name": cm.group("target") + "." + cm.group("prop"),
+                                "type": "compare",
+                                "unique_id": str(lineno),
+                                "text": lit.group(1),
+                            })
+                            continue
+                    # 매칭 시도 3: 딕셔너리 "key": "value" (블록 안에서만)
                     if do_dict and current_dict_var:
                         dm = DICT_ENTRY_RE.search(line)
                         if dm:
@@ -200,6 +282,7 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
                             dict_val = dm.group("value")
                             if dict_val and is_translatable(dict_val, units):
                                 results.append({
+                                    "method": "substr",
                                     "filename": rel_path,
                                     "filetype": "gd",
                                     "location": "",
@@ -227,13 +310,14 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
                 if not is_translatable(lit, units):
                     continue
                 results.append({
+                    "method": "substr",
                     "filename": rel_path,
                     "filetype": "gd",
                     "location": "",
                     "parent": "",
-                    "name": target,     # 변수명 (메타데이터)
-                    "type": kind,       # literal/concat/format
-                    "unique_id": str(lineno),  # 줄 번호 (참고용)
+                    "name": target,
+                    "type": kind,
+                    "unique_id": str(lineno),
                     "text": lit,
                 })
         elif kind in ("concat", "format", "literal-multi"):
@@ -241,7 +325,11 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
             if not any(is_translatable(lit, units) for lit in literals):
                 continue
             pattern = build_pattern_hint(value)
+            # 플레이스홀더만으로 구성된 패턴은 번역 대상 아님
+            if not re.sub(r'\{[^}]*\}', '', pattern).strip():
+                continue
             results.append({
+                "method": "pattern",
                 "filename": rel_path,
                 "filetype": "gd",
                 "location": "",
