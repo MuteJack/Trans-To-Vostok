@@ -3,8 +3,9 @@
     {
       "locale": "English",
       "dir": "English",
-      "display": "English",
+      "display": "Default",
       "message": "Select Language",
+      "compatible": "Compatible Mode (Use if some texts are not translated)",
       "enabled": true
     },
     {
@@ -12,6 +13,7 @@
       "dir": "Korean",
       "display": "한국어",
       "message": "언어를 선택하세요",
+      "compatible": "호환 모드 (일부 텍스트가 번역되지 않을 경우 사용)",
       "enabled": true
     }
   ]

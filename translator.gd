@@ -33,6 +33,7 @@ extends Node
 # ==========================================
 
 var _locale: String = "Korean"
+var _compatible_mode: bool = false
 const DATA_BASE: String = "res://Trans To Vostok"
 
 const SCORE_LOCATION: int = 8
@@ -147,8 +148,11 @@ func _ready() -> void:
 
 
 func _initialize() -> void:
-	print("[TransToVostok] Initializing... locale=%s" % _locale)
+	print("[TransToVostok] Initializing... locale=%s, compatible=%s" % [_locale, _compatible_mode])
 	_load_translations()
+
+	if _compatible_mode:
+		_apply_compatible_mode()
 
 	_bind_tree(get_tree().root)
 	get_tree().node_added.connect(_on_node_added)
@@ -165,7 +169,40 @@ func _initialize() -> void:
 	])
 
 
+func _apply_compatible_mode() -> void:
+	# 호환 모드: 모든 literal + static 번역을 substr 에도 추가
+	# → 부분 문자열 매칭이 전체 번역 데이터로 확장됨
+	var added: int = 0
+	var existing_texts: Dictionary = {}
+	for entry in substr_entries:
+		existing_texts[entry["text"]] = true
+
+	# literal_global → substr
+	for text in literal_global:
+		if not existing_texts.has(text):
+			substr_entries.append({"text": text, "translation": literal_global[text]})
+			added += 1
+
+	# static exact → substr (번역값만)
+	for entry in static_rows:
+		if not existing_texts.has(entry.text):
+			substr_entries.append({"text": entry.text, "translation": entry.translation})
+			existing_texts[entry.text] = true
+			added += 1
+
+	# 길이 내림차순 재정렬
+	substr_entries.sort_custom(func(a, b): return a["text"].length() > b["text"].length())
+	print("[TransToVostok] Compatible mode: %d entries added to substr (total %d)" % [added, substr_entries.size()])
+
+
 func shutdown() -> void:
+	# 타이머 정지 + 프로세스 비활성 (queue_free 전 추가 실행 방지)
+	set_process(false)
+	for child in get_children():
+		if child is Timer:
+			child.stop()
+	get_tree().node_added.disconnect(_on_node_added)
+
 	# 모든 바인딩의 텍스트를 원본으로 복원
 	for b in priority_bindings + normal_bindings:
 		if not b.has("original") or b["original"] == "":
@@ -393,11 +430,16 @@ func _on_node_added(node: Node) -> void:
 
 
 func _bind_node(node: Node) -> void:
+	var props_found: Array = []
+	for prop in TRANSLATABLE_PROPS:
+		if prop in node:
+			props_found.append(prop)
+	if props_found.is_empty():
+		return
+
 	var is_priority: bool = _is_priority_node(node)
 
-	for prop in TRANSLATABLE_PROPS:
-		if not (prop in node):
-			continue
+	for prop in props_found:
 		var b: Dictionary = {
 			"node": weakref(node),
 			"prop": prop,

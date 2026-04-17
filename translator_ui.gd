@@ -15,6 +15,7 @@ const DEFAULT_LOCALE: String = "English"
 
 var _locale_data: Dictionary = {}
 var _current_locale: String = DEFAULT_LOCALE
+var _compatible_mode: bool = false
 var _translator_node: Node = null
 var _language_window: Window = null
 var _ok_button: Button = null
@@ -66,6 +67,7 @@ func _load_locale_json() -> Dictionary:
 func _save_config() -> void:
 	var config: ConfigFile = ConfigFile.new()
 	config.set_value("translation", "locale", _current_locale)
+	config.set_value("translation", "compatible_mode", _compatible_mode)
 	config.save(CONFIG_PATH)
 
 
@@ -73,6 +75,7 @@ func _load_config() -> void:
 	var config: ConfigFile = ConfigFile.new()
 	if config.load(CONFIG_PATH) == OK:
 		_current_locale = config.get_value("translation", "locale", DEFAULT_LOCALE)
+		_compatible_mode = config.get_value("translation", "compatible_mode", false)
 
 
 # ==========================================
@@ -230,6 +233,25 @@ func _show_language_ui(is_startup: bool) -> void:
 	item_list.ensure_current_is_visible()
 	root.add_child(item_list)
 
+	# 호환 모드 체크박스 (선택된 locale 의 compatible 텍스트 사용)
+	var compat_check: CheckBox = CheckBox.new()
+	var compat_default: String = "Compatible Mode"
+	var _compat_texts: Array = []
+	for loc in enabled_locales:
+		_compat_texts.append(loc.get("compatible", compat_default))
+
+	# 현재 선택 locale 의 텍스트로 초기화
+	compat_check.text = "  " + _compat_texts[pre_select] if pre_select < _compat_texts.size() else compat_default
+	compat_check.button_pressed = _compatible_mode
+	compat_check.add_theme_font_size_override("font_size", 12)
+	root.add_child(compat_check)
+
+	# 언어 선택 변경 시 체크박스 텍스트 갱신
+	item_list.item_selected.connect(func(idx):
+		if idx < _compat_texts.size():
+			compat_check.text = "  " + _compat_texts[idx]
+	)
+
 	# 구분선
 	root.add_child(HSeparator.new())
 
@@ -270,12 +292,16 @@ func _show_language_ui(is_startup: bool) -> void:
 	Input.set_mouse_mode(_prev_mouse_mode)
 
 	# 선택 결과 처리
+	var prev_compatible: bool = _compatible_mode
+	_compatible_mode = compat_check.button_pressed
 	var selected_items: PackedInt32Array = item_list.get_selected_items()
 	if selected_items.size() > 0:
 		var sel_idx: int = selected_items[0]
 		if sel_idx >= 0 and sel_idx < enabled_locales.size():
 			var selected_locale: String = enabled_locales[sel_idx].get("locale", DEFAULT_LOCALE)
-			if selected_locale != _current_locale or is_startup:
+			var locale_changed: bool = selected_locale != _current_locale
+			var compat_changed: bool = _compatible_mode != prev_compatible
+			if locale_changed or compat_changed or is_startup:
 				_current_locale = selected_locale
 				_save_config()
 				if not is_startup:
@@ -295,6 +321,8 @@ func _apply_locale() -> void:
 		_translator_node.shutdown()
 		_translator_node.queue_free()
 		_translator_node = null
+		# 게임이 텍스트를 원본으로 재설정할 시간 확보
+		await get_tree().create_timer(0.5).timeout
 
 	if _current_locale == DEFAULT_LOCALE:
 		print("[TransToVostok UI] Locale: %s (no translation)" % _current_locale)
@@ -309,6 +337,7 @@ func _apply_locale() -> void:
 	node.name = "Translator"
 	node.set_script(script)
 	node._locale = _current_locale
+	node._compatible_mode = _compatible_mode
 	add_child(node)
 	node._initialize()
 	_translator_node = node
