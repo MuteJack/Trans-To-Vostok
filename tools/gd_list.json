@@ -1,0 +1,7 @@
+{
+  "properties": ["text", "tooltip_text", "placeholder_text", "hint_tooltip", "tooltip"],
+  "functions": ["Loader.Message"],
+  "units": ["kg", "mb", "px", "ms", "db", "hp", "rip", "str", "int", "var", "res"],
+  "targets": ["Scripts"],
+  "dict_extract": true
+}

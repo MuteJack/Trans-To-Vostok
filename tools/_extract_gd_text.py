@@ -1,5 +1,5 @@
 """
-[테스트] .gd 파일에서 UI 텍스트 할당을 찾아 분류.
+[테스트] .gd 파일에서 UI 텍스트 할당을 찾아 통일 포맷 TSV 로 출력.
 
 감지 패턴:
     xxx.text = "..."                → .text 속성 할당
@@ -8,24 +8,19 @@
     gameData.tooltip = "..."        → 인터랙트 텍스트 (커스텀)
     xxx.set_text("...")             → 함수 호출
 
-분류:
-    literal     — 순수 문자열 리터럴 (번역 대상 후보)
-    concat      — 문자열 + 변수 결합 (패턴 후보)
-    format      — 포맷 문자열 (패턴/숫자)
-    literal-multi — 여러 리터럴 포함
-
 자동 판정:
     TRANSLATE   — 2글자 이상 영어 단어 포함 → 번역 대상
     SKIP        — 기호/단위/숫자만 → 번역 불필요
 
+출력:
+    .tmp/_extracted_text/Scripts/{파일명}.gd.tsv
+    통일 컬럼: filename, filetype, location, parent, name, type, unique_id, text
+
 사용법:
     python _extract_gd_text.py [source_dir]
-
-기본값:
-    source_dir = ../.tmp/pck_recovered/Scripts/
-    출력: ../.tmp/extracted_text/gd_dynamic_strings.tsv
 """
 import csv
+import json
 import re
 import sys
 from pathlib import Path
@@ -38,10 +33,49 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-# 문자열 리터럴 추출 (이스케이프 인식)
 STRING_LIT = re.compile(r'"((?:[^"\\]|\\.)*)"')
+SET_TEXT_RE = re.compile(r'(?P<target>[^\s]+?)\s*\.\s*set_text\s*\(\s*(?P<value>.+?)\s*\)')
+MESSAGE_RE = re.compile(r'(?P<target>[A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*)\s*\(\s*(?P<value>"[^"]*"(?:\s*\+\s*.+?)?)\s*[,)]')
+DICT_ENTRY_RE = re.compile(r'^\s*"(?P<key>[^"]+)"\s*:\s*"(?P<value>[^"]*)"')
 
-# 주석 제거
+# gd_list.json 에서 로드되는 설정 (기본값)
+DEFAULT_CONFIG = {
+    "properties": ["text", "tooltip_text", "placeholder_text", "hint_tooltip", "tooltip"],
+    "functions": ["Loader.Message"],
+    "units": ["kg", "mb", "px", "ms", "db", "hp", "rip", "str", "int", "var", "res"],
+    "targets": ["Scripts"],
+    "dict_extract": True,
+}
+
+
+def load_gd_config(config_path: Path) -> dict:
+    """gd_list.json 을 로드. 없으면 기본값 반환."""
+    if not config_path.exists():
+        print(f"[INFO] gd_list.json 없음, 기본 설정 사용")
+        return dict(DEFAULT_CONFIG)
+    try:
+        data = json.loads(config_path.read_text(encoding="utf-8"))
+        # 기본값 병합
+        for key, default in DEFAULT_CONFIG.items():
+            if key not in data:
+                data[key] = default
+        return data
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"[WARN] gd_list.json 읽기 실패: {e}, 기본 설정 사용")
+        return dict(DEFAULT_CONFIG)
+
+
+def build_assign_re(properties: list) -> re.Pattern:
+    """properties 목록으로 ASSIGN_RE 컴파일."""
+    prop_alt = "|".join(re.escape(p) for p in properties)
+    return re.compile(
+        rf'(?P<target>[^\s=]+?)\s*\.\s*(?P<prop>{prop_alt})\s*=\s*(?P<value>.+)$'
+    )
+
+# 통일 출력 컬럼 (tscn/tres 와 동일)
+OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
+
+
 def strip_comment(line: str) -> str:
     in_str = False
     escape = False
@@ -60,21 +94,14 @@ def strip_comment(line: str) -> str:
     return line
 
 
-# 텍스트 할당 패턴
-ASSIGN_PROPS = ["text", "tooltip_text", "placeholder_text", "hint_tooltip", "tooltip"]
-PROP_ALT = "|".join(ASSIGN_PROPS)
+def is_translatable(lit: str, units: set) -> bool:
+    words = re.findall(r'[A-Za-z]{2,}', lit)
+    meaningful = [w for w in words if w.lower() not in units]
 
-ASSIGN_RE = re.compile(
-    rf'(?P<target>[^\s=]+?)\s*\.\s*(?P<prop>{PROP_ALT})\s*=\s*(?P<value>.+)$'
-)
-
-SET_TEXT_RE = re.compile(r'(?P<target>[^\s]+?)\s*\.\s*set_text\s*\(\s*(?P<value>.+?)\s*\)')
-
-# 번역 판정용
-UNITS = {"kg", "mb", "px", "ms", "db", "hp", "rip", "str", "int", "var", "res"}
+    return len(meaningful) > 0
 
 
-def classify(value: str, literals: list[str]) -> str:
+def classify_kind(value: str, literals: list[str]) -> str:
     if not literals:
         return "none"
     v = value.strip()
@@ -89,182 +116,244 @@ def classify(value: str, literals: list[str]) -> str:
     return "literal-multi"
 
 
-def is_translatable(lit: str) -> bool:
-    """2글자 이상 영어 단어가 있고 단위가 아니면 번역 대상."""
-    words = re.findall(r'[A-Za-z]{2,}', lit)
-    meaningful = [w for w in words if w.lower() not in UNITS]
-    return len(meaningful) > 0
-
-
 def build_pattern_hint(value: str) -> str:
-    """concat 표현식에서 패턴 힌트를 생성. 변수를 {var}로 치환."""
-    parts = []
-    i = 0
-    in_str = False
-    current = ""
-
     tokens = re.split(r'\s*\+\s*', value)
+    parts = []
     for token in tokens:
         token = token.strip()
         m = STRING_LIT.match(token)
         if m:
             parts.append(m.group(1))
         else:
-            # 변수명 추출
-            var_name = re.sub(r'str\(|int\(|float\(|\)', '', token)
-            var_name = var_name.strip().split(".")[-1].split("[")[0]
-            if var_name:
-                parts.append("{" + var_name + "}")
+            # 함수 호출 "Func(...)" → 함수명만 추출
+            func_m = re.match(r'([A-Za-z_]\w*)\s*\(', token)
+            if func_m:
+                parts.append("{" + func_m.group(1) + "}")
             else:
-                parts.append("{?}")
-
+                # str(x), int(x) 래퍼 제거 후 변수명 추출
+                var_name = re.sub(r'^(?:str|int|float)\s*\(\s*', '', token)
+                var_name = re.sub(r'\s*\)\s*$', '', var_name)
+                var_name = var_name.strip().split(".")[-1].split("[")[0]
+                parts.append("{" + (var_name or "?") + "}")
     return "".join(parts)
 
 
-def parse_gd(path: Path) -> list[dict]:
+def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
+    """하나의 .gd 파일을 파싱해 번역 대상 행 리스트 반환."""
+    if config is None:
+        config = DEFAULT_CONFIG
+    assign_re = build_assign_re(config["properties"])
+    message_funcs = set(config["functions"])
+    units = set(config["units"])
+    do_dict = config.get("dict_extract", True)
     results = []
     try:
         content = path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
         content = path.read_text(encoding="utf-8", errors="replace")
 
+    # rel_path: pck_recovered 기준 상대 경로 (확장자 제외, e.g. "Scripts/Fire")
+    if not rel_path:
+        rel_path = "Scripts/" + path.stem
+
+    # 딕셔너리 블록 추적: "var name = {" 로 시작 → "}" 로 끝날 때까지
+    current_dict_var: str = ""
+    DICT_START_RE = re.compile(r'(?:var|const)\s+(?P<name>\w+)\s*=\s*\{')
+
     for lineno, raw_line in enumerate(content.splitlines(), 1):
         line = strip_comment(raw_line).rstrip()
         if not line:
             continue
 
-        m = ASSIGN_RE.search(line)
-        if m:
-            target = m.group("target")
-            prop = m.group("prop")
-            value = m.group("value").strip()
-            literals = STRING_LIT.findall(value)
-            if literals:
-                kind = classify(value, literals)
-                pattern_hint = build_pattern_hint(value) if kind in ("concat", "format") else ""
-                translatable = any(is_translatable(lit) for lit in literals)
-                for lit in literals:
-                    results.append({
-                        "file": path.name,
-                        "line": lineno,
-                        "target": f"{target}.{prop}",
-                        "kind": kind,
-                        "translatable": "TRANSLATE" if translatable else "SKIP",
-                        "literal": lit,
-                        "pattern_hint": pattern_hint,
-                        "expression": value[:120],
-                    })
+        # 딕셔너리 블록 시작/끝 추적
+        ds = DICT_START_RE.search(line)
+        if ds:
+            current_dict_var = ds.group("name")
+        if current_dict_var and "}" in line and "{" not in line:
+            current_dict_var = ""
             continue
 
-        m = SET_TEXT_RE.search(line)
-        if m:
-            target = m.group("target")
+        # 매칭 시도 1: .text = ... / gameData.tooltip = ...
+        m = assign_re.search(line)
+        if not m:
+            m2 = SET_TEXT_RE.search(line)
+            if m2:
+                target = m2.group("target") + ".set_text"
+                value = m2.group("value").strip()
+            else:
+                # 매칭 시도 1b: Loader.Message("...", ...) 등
+                msg_found = False
+                for func_name in message_funcs:
+                    if func_name in line:
+                        mm = MESSAGE_RE.search(line)
+                        if mm and mm.group("target") == func_name:
+                            target = func_name
+                            value = mm.group("value").strip()
+                            msg_found = True
+                            break
+                if not msg_found:
+                    # 매칭 시도 2: 딕셔너리 "key": "value" (블록 안에서만)
+                    if do_dict and current_dict_var:
+                        dm = DICT_ENTRY_RE.search(line)
+                        if dm:
+                            dict_key = dm.group("key")
+                            dict_val = dm.group("value")
+                            if dict_val and is_translatable(dict_val, units):
+                                results.append({
+                                    "filename": rel_path,
+                                    "filetype": "gd",
+                                    "location": "",
+                                    "parent": "",
+                                    "name": f"{current_dict_var}.{dict_key}",
+                                    "type": "dict",
+                                    "unique_id": str(lineno),
+                                    "text": dict_val,
+                                })
+                    continue
+        else:
+            target = m.group("target") + "." + m.group("prop")
             value = m.group("value").strip()
-            literals = STRING_LIT.findall(value)
-            if literals:
-                kind = classify(value, literals)
-                pattern_hint = build_pattern_hint(value) if kind in ("concat", "format") else ""
-                translatable = any(is_translatable(lit) for lit in literals)
-                for lit in literals:
-                    results.append({
-                        "file": path.name,
-                        "line": lineno,
-                        "target": f"{target}.set_text",
-                        "kind": kind,
-                        "translatable": "TRANSLATE" if translatable else "SKIP",
-                        "literal": lit,
-                        "pattern_hint": pattern_hint,
-                        "expression": value[:120],
-                    })
+
+        literals = STRING_LIT.findall(value)
+        if not literals:
+            continue
+
+        kind = classify_kind(value, literals)
+
+        # literal: 각 리터럴을 개별 행으로
+        # concat/format: 패턴 힌트를 text로 (1행)
+        if kind == "literal":
+            for lit in literals:
+                if not is_translatable(lit, units):
+                    continue
+                results.append({
+                    "filename": rel_path,
+                    "filetype": "gd",
+                    "location": "",
+                    "parent": "",
+                    "name": target,     # 변수명 (메타데이터)
+                    "type": kind,       # literal/concat/format
+                    "unique_id": str(lineno),  # 줄 번호 (참고용)
+                    "text": lit,
+                })
+        elif kind in ("concat", "format", "literal-multi"):
+            # 번역 대상 리터럴이 있는 경우만
+            if not any(is_translatable(lit, units) for lit in literals):
+                continue
+            pattern = build_pattern_hint(value)
+            results.append({
+                "filename": rel_path,
+                "filetype": "gd",
+                "location": "",
+                "parent": "",
+                "name": target,
+                "type": kind,
+                "unique_id": str(lineno),
+                "text": pattern,
+            })
 
     return results
 
 
-OUT_COLUMNS = ["file", "line", "target", "kind", "translatable", "literal", "pattern_hint", "expression"]
+def write_tsv(out_path: Path, rows: list[dict]) -> None:
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
+    try:
+        with open(tmp_path, "w", encoding="utf-8", newline="") as f:
+            writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
+            writer.writerow(OUT_COLUMNS)
+            for row in rows:
+                writer.writerow([row.get(c, "") for c in OUT_COLUMNS])
+        tmp_path.replace(out_path)
+    except Exception:
+        if tmp_path.exists():
+            try:
+                tmp_path.unlink()
+            except OSError:
+                pass
+        raise
 
 
 def main():
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent
-    default_src = (mod_root / ".tmp" / "pck_recovered" / "Scripts").resolve()
-    default_out = (mod_root / ".tmp" / "extracted_text" / "gd_dynamic_strings.tsv").resolve()
 
-    src_arg = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else default_src
-    out_arg = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else default_out
+    # gd_list.json 로드
+    config_path = script_dir / "gd_list.json"
+    config = load_gd_config(config_path)
+    print(f"설정: {config_path.name}")
+    print(f"  properties: {config['properties']}")
+    print(f"  functions:  {config['functions']}")
+    print(f"  targets:    {config['targets']}")
+    print(f"  dict:       {config['dict_extract']}")
+    print()
 
-    if not src_arg.exists():
-        print(f"[ERROR] 입력 경로가 없습니다: {src_arg}")
-        return 1
+    pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
+    output_dir = (mod_root / ".tmp" / "_extracted_text").resolve()
 
-    if src_arg.is_file():
-        gd_files = [src_arg] if src_arg.suffix == ".gd" else []
+    # targets 에서 소스 디렉토리 수집
+    if len(sys.argv) > 1:
+        src_dirs = [Path(sys.argv[1]).resolve()]
     else:
-        gd_files = sorted(src_arg.rglob("*.gd"))
+        src_dirs = [(pck_root / t).resolve() for t in config["targets"]]
+
+    gd_files = []
+    for src in src_dirs:
+        if not src.exists():
+            print(f"[WARN] 경로 없음: {src}")
+            continue
+        if src.is_file():
+            if src.suffix == ".gd":
+                gd_files.append(src)
+        else:
+            gd_files.extend(sorted(src.rglob("*.gd")))
 
     if not gd_files:
-        print(f"[ERROR] .gd 파일이 없습니다: {src_arg}")
+        print("[ERROR] .gd 파일이 없습니다")
         return 1
 
-    print(f"입력: {src_arg}")
-    print(f"출력: {out_arg}")
+    print(f"출력: {output_dir}")
     print(f"대상: {len(gd_files)}개 .gd 파일")
     print()
 
-    all_results = []
+    total_files = 0
+    total_rows = 0
+    all_rows: list[dict] = []
+
     for gd in gd_files:
-        all_results.extend(parse_gd(gd))
+        # pck_recovered 기준 상대 경로 (확장자 제외)
+        try:
+            rel = gd.resolve().relative_to(pck_root)
+        except ValueError:
+            rel = Path(gd.name)
+        rel_no_ext = rel.with_suffix("").as_posix()  # e.g., "Scripts/Fire"
 
-    all_results.sort(key=lambda r: (r["file"], r["line"]))
+        rows = parse_gd(gd, rel_no_ext, config)
+        if not rows:
+            continue
+        # 파일별 .gd.tsv 출력 (디렉토리 구조 유지)
+        out_path = output_dir / (rel.as_posix() + ".tsv")  # Scripts/Fire.gd.tsv
+        write_tsv(out_path, rows)
+        total_files += 1
+        total_rows += len(rows)
+        all_rows.extend(rows)
+        print(f"  [OK] {gd.name}  ({len(rows)}개)")
 
-    # TSV 저장
-    out_arg.parent.mkdir(parents=True, exist_ok=True)
-    with open(out_arg, "w", encoding="utf-8", newline="") as f:
-        writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(OUT_COLUMNS)
-        for r in all_results:
-            writer.writerow([r.get(c, "") for c in OUT_COLUMNS])
+    # 합본 출력 (소스 디렉토리 기준)
+    if all_rows:
+        join_name = "_".join(config["targets"])
+        joined_path = output_dir / f"{join_name}.gd.joined.tsv"
+        write_tsv(joined_path, all_rows)
+        print(f"\n  합본: {joined_path.relative_to(output_dir)}")
+
+    print()
+    print(f"완료: {total_files}개 파일, {total_rows}개 엔트리")
 
     # 통계
-    translate_count = sum(1 for r in all_results if r["translatable"] == "TRANSLATE")
-    skip_count = sum(1 for r in all_results if r["translatable"] == "SKIP")
-
-    kind_counts = {}
-    for r in all_results:
-        kind_counts[r["kind"]] = kind_counts.get(r["kind"], 0) + 1
-
-    print(f"추출 결과: {len(all_results)}개")
-    print()
-    print("== Kind 분포 ==")
-    for k, v in sorted(kind_counts.items(), key=lambda x: -x[1]):
-        print(f"  {k:15s}: {v}")
-    print()
-    print(f"== 판정 ==")
-    print(f"  TRANSLATE: {translate_count}")
-    print(f"  SKIP:      {skip_count}")
-    print()
-
-    # 번역 대상만 요약
-    unique_translate = set()
-    for r in all_results:
-        if r["translatable"] == "TRANSLATE":
-            if r["kind"] == "literal":
-                unique_translate.add(("literal", r["literal"]))
-            elif r["pattern_hint"]:
-                unique_translate.add(("pattern", r["pattern_hint"]))
-
-    print(f"== 고유 번역 대상 (중복 제거) ==")
-    literals = sorted(v for t, v in unique_translate if t == "literal")
-    patterns = sorted(v for t, v in unique_translate if t == "pattern")
-
-    if literals:
-        print(f"\n  리터럴 ({len(literals)}개):")
-        for lit in literals:
-            print(f"    {lit!r}")
-
-    if patterns:
-        print(f"\n  패턴 후보 ({len(patterns)}개):")
-        for pat in patterns:
-            print(f"    {pat!r}")
+    literals = [r for r in all_rows if r["type"] == "literal"]
+    dicts = [r for r in all_rows if r["type"] == "dict"]
+    patterns = [r for r in all_rows if r["type"] in ("concat", "format", "literal-multi")]
+    print(f"  literal: {len(literals)}개, dict: {len(dicts)}개, pattern 후보: {len(patterns)}개")
 
     return 0
 
