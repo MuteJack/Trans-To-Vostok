@@ -6,7 +6,7 @@ Level {no}	레벨 {no}
 Day {str}	{str} 일차
 In {str} Days	{str}일 후
 {type} Event	{type} 이벤트
-~{str}% / map instance	~{str}% / 맵 인스턴스
+~{str}% / map instance	~{str}% / 해당 지역
 You slept {str} hours	{time} 시간동안 잤습니다
 Cat Fed {item}	고양이에게 먹이기 {item}
 Task Completed: {name}	의뢰 완료됨: {name}

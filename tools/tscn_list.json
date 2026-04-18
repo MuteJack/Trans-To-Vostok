@@ -1,3 +1,10 @@
 {
-  "extra_properties": ["containerName"]
+  "extra_properties": ["title", "info", "containerName"],
+  "groups": [
+    {
+      "name": "Interface Stats",
+      "targets": ["UI/Interface.tscn"],
+      "extra_properties": ["type"]
+    }
+  ]
 }

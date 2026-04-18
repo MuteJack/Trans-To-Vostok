@@ -148,7 +148,7 @@ def parse_tscn(path: Path, extra_properties: list[str] | None = None) -> list[di
     return nodes
 
 
-OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
+OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "property", "unique_id", "text"]
 
 
 def process_file(src_tscn: Path, out_tsv: Path, filename: str,
@@ -178,6 +178,7 @@ def process_file(src_tscn: Path, out_tsv: Path, filename: str,
                 n["parent"],
                 n["name"],
                 n["type"],
+                n.get("_prop", "text"),  # property (text / containerName / title / info 등)
                 n["unique_id"],
                 n["text"],
             ])
@@ -186,8 +187,20 @@ def process_file(src_tscn: Path, out_tsv: Path, filename: str,
 
 
 def load_tscn_config(config_path: Path) -> dict:
-    """tscn_list.json 로드. 없으면 기본값 반환."""
-    default = {"extra_properties": []}
+    """
+    tscn_list.json 로드. 없으면 기본값 반환.
+
+    스키마:
+        extra_properties: [str]   — 전체 .tscn 에 적용할 추가 프로퍼티
+        groups: [                 — 특정 파일에만 적용할 추가 프로퍼티
+            {
+                "name": "...",            (선택, 표시용)
+                "targets": ["UI/Interface.tscn", ...],
+                "extra_properties": ["type", ...]
+            }
+        ]
+    """
+    default = {"extra_properties": [], "groups": []}
     if not config_path.exists():
         print(f"[INFO] tscn_list.json 없음, 기본 설정 사용")
         return default
@@ -200,6 +213,25 @@ def load_tscn_config(config_path: Path) -> dict:
     except (json.JSONDecodeError, OSError) as e:
         print(f"[WARN] tscn_list.json 읽기 실패: {e}, 기본 설정 사용")
         return default
+
+
+def _build_per_file_extras(config: dict) -> dict:
+    """
+    config 의 groups 를 파일 상대경로 → 추가 프로퍼티 리스트 매핑으로 변환.
+    targets 에 지정된 파일 경로(예: "UI/Interface.tscn")를 키로 사용.
+    """
+    per_file: dict[str, list[str]] = {}
+    for g in config.get("groups", []):
+        props = g.get("extra_properties", [])
+        if not props:
+            continue
+        for target in g.get("targets", []):
+            target_posix = target.replace("\\", "/")
+            if target_posix in per_file:
+                per_file[target_posix].extend(props)
+            else:
+                per_file[target_posix] = list(props)
+    return per_file
 
 
 def main():
@@ -215,9 +247,12 @@ def main():
     # tscn_list.json 로드
     config_path = script_dir / "tscn_list.json"
     config = load_tscn_config(config_path)
-    extra_props = config.get("extra_properties", [])
+    global_extra = config.get("extra_properties", [])
+    per_file_extras = _build_per_file_extras(config)
     print(f"설정: {config_path.name}")
-    print(f"  extra_properties: {extra_props}")
+    print(f"  전역 extra_properties: {global_extra}")
+    if per_file_extras:
+        print(f"  파일별 extra_properties: {len(per_file_extras)}개 파일")
     print()
 
     if not src_arg.exists():
@@ -250,13 +285,17 @@ def main():
 
     for tscn in tscn_files:
         rel_tscn = tscn.relative_to(src_dir)
+        rel_posix = rel_tscn.as_posix()
         # filename = 확장자 없는 상대 경로 (예: "Scenes/Menu")
         # location = 매칭 키 — .tscn 엔트리는 filename 과 동일
         filename = rel_tscn.with_suffix("").as_posix()
         # 출력 파일: 원본 확장자 포함한 이중 확장자 (예: "Scenes/Menu.tscn.tsv")
-        out_path = out_dir / (rel_tscn.as_posix() + ".tsv")
+        out_path = out_dir / (rel_posix + ".tsv")
+        # 전역 + 파일별 extra_properties 병합
+        file_extra = per_file_extras.get(rel_posix, [])
+        combined_extra = list(global_extra) + file_extra if (global_extra or file_extra) else None
         try:
-            n, t = process_file(tscn, out_path, filename, extra_props or None)
+            n, t = process_file(tscn, out_path, filename, combined_extra)
             total_nodes += n
             total_texts += t
             processed += 1

@@ -38,6 +38,11 @@ Rotate Item	아이템 회전
 Fast Transfer	빠른 옮기기
 Fast Equip	빠른 장착
 Fast Drop	빠른 버리기
+Left Mouse Button	마우스 좌클릭
+Right Mouse Button	마우스 우클릭
+Middle Mouse Button	마우스 휠클릭
+Mouse Wheel Up	마우스 휠 위로
+Mouse Wheel Down	마우스 휠 아래로
 Loading...	로딩중...
 All save files deleted	모든 세이브 파일이 삭제되었습니다
 Character died	캐릭터가 사망했습니다
@@ -81,14 +86,14 @@ Casette Player power 0%, recharge player	카세트 플레이어의 전력이 0% 
 Casette Player empty, insert casette	카세트 플레이어가 비어있습니다, 카세트를 넣어주세요.
 Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
 Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
-Sleep	잠자기
+Sleep	수면
 Level 2	레벨 2
 Level 3	레벨 3
 Level 4	레벨 4
 Level 5	레벨 5
 Heat required	열원 필요
 Workbench required	작업대 필요
-Shelter required	쉘터 필요
+Shelter required	은신처 필요
 Start Input	투입 시작
 Stop Input	투입 정지
 Reset Input	투입 초기화
@@ -96,6 +101,11 @@ Press key to bind...	키를 입력하세요...
 Start Delivery	배달 시작
 Stop Delivery	배달 종료
 Delivered	배달됨
+CBRN	화생방
+Overweight	중량 초과
+Explosion	폭발
+Fall	낙하
+Day	일
 Easy	쉬움
 Intermediate	보통
 Hard	어려움
@@ -243,7 +253,7 @@ T. Soup (Cooked)	토마토 스프 (조리됨)
 T. Soup	토마토 스프
 Crackers	크래커
 Energy Drink	에너지 드링크
-E. Drink	에너지
+E. Drink	에너지.
 Energy Powder	에너지 파우더
 E. Powder	에너지파우더
 Field Ration	전투식량
@@ -351,7 +361,7 @@ C. Med.	감기약
 Deodorant	데오드란트
 Deodora.	데오드란트
 Lotion	로션
-Medkit	의료 키트
+Medkit	구급상자
 Melatonin	멜라토닌
 Melaton.	멜라토닌
 Painkill.	진통제
@@ -445,6 +455,26 @@ Cat Rescued	고양이 구조됨
 Cat Vital Activated	고양이 상태 활성화됨
 Cat Died	고양이가 사망했습니다
 You have been spotted!	적발되었습니다!
+Airdrop	보급품
+Tutorial Crate	튜토리얼 상자
+Electric Box	배전함
+Medical Cabinet	의료 수납장
+Office Cabinet	사무용 수납장
+Cabinet	수납장
+Bandit Corpse	밴디트 시체
+Crate Military	군용 상자
+Crate Special	특수 상자
+Wooden Crate	나무 상자
+Garbage	쓰레기
+Fireplace	화로
+Freezer	냉동고
+Fridge	냉장고
+Fusebox	퓨즈박스
+Locker	사물함
+Mailbox	우편함
+Nightstand	협탁
+Boxes	박스
+Stove	스토브
 Bed (Civilian)	침대 (민간용)
 Bed C.	침대 민간.
 Bed (Nomad)	침대 (방랑자)
@@ -477,10 +507,6 @@ Curtain (Mini)	커튼 (소형)
 Curtain M.	커튼 소형.
 Dartboard	다트판
 D. Board	다트판
-Freezer	냉동고
-Fridge	냉장고
-Locker	사물함
-Nightstand	협탁
 N. Stand	협탁
 Painting (Lake)	그림 (호수)
 Painting L.	그림 호수.
@@ -504,7 +530,6 @@ Stool (Military)	의자 (군용)
 Stool M.	의자 (군용)
 Stool (Padded)	의자 (쿠션)
 Stool P.	의자 (쿠션)
-Stove	스토브
 Table (Cabin)	테이블 (오두막)
 Table C.	테이블 (오두막)
 Table (Canteen)	테이블 (식당)
@@ -522,6 +547,7 @@ Trolley (Tall)	트롤리 (대형)
 Trolley T.	트롤리 (대형)
 Weapon Display	무기 진열대
 Weapon D.	무기 진열대
+Bandit	밴디트
 Unload	탄 꺼내기
 Show	보기
 Hide	숨기기
@@ -556,20 +582,9 @@ Add to Notes	노트에 추가
 Television [Turn Off]	텔레비전 [끄기]
 Television [Turn On]	텔레비전 [끄기]
 Corpse	시체
-Airdrop	보급품
-Tutorial Crate	튜토리얼 상자
-Electric Box	배전함
-Medical Cabinet	의료 수납장
-Office Cabinet	사무용 수납장
-Cabinet	수납장
-Bandit Corpse	밴디트 시체
-Crate Military	군용 상자
-Crate Special	특수 상자
-Wooden Crate	나무 상자
-Garbage	쓰레기
-Fireplace	난로
-Fusebox	퓨즈함
-Mailbox	우편함
-Boxes	박스
-Stove	스토브
-Tent	텐트
+Bandit	밴디트
+Vital	바이탈
+Indoors	실내
+Indoor	실내
+Mine	지뢰
+Lure	루어

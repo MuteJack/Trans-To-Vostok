@@ -1,3 +1,605 @@
 location	parent	name	type	text	translation
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	수류탄1
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	수류탄2
+UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	소지 한도
+UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	모든 장비 아이템의 소지 용량(kg) 한계입니다.
+UI/Interface	Inventory/Header/Capacity	Info		Inventory Stat	인벤토리 통계
+UI/Interface	Inventory/Header/Weight	Info		Inventory Weight	인벤토리 무게
+UI/Interface	Inventory/Header/Weight	Info		A weight value (kg) of all inventory items.	인벤토리 내 모든 아이템의 무게(kg) 입니다.
+UI/Interface	Inventory/Header/Weight	Info		Inventory Stat	인벤토리 통계
+UI/Interface	Inventory/Header/Value	Info		Inventory Value	인벤토리 가치
+UI/Interface	Inventory/Header/Value	Info		A price value (€) of all inventory items.	인벤토리 내 모든 아이템의 가치(€) 합계입니다.
+UI/Interface	Inventory/Header/Value	Info		Inventory Stat	인벤토리 통계
+UI/Interface	Container/Header/Weight	Info		Container Weight	보관함 무게
+UI/Interface	Container/Header/Weight	Info		A weight value (kg) of all container items.	보관함 내 모든 아이템의 무게(kg) 합계입니다.
+UI/Interface	Container/Header/Weight	Info		Container Stat	보관함 통계
+UI/Interface	Container/Header/Value	Info		Container Value	보관함 가치
+UI/Interface	Container/Header/Value	Info		A price value (€) of all container items.	보관함 내 모든 아이템의 가치(€) 합계입니다.
+UI/Interface	Container/Header/Value	Info		Container Stat	보관함 통계
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Carry Capacity	소지 한도
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		"A weight capacity value (kg) of how much inventory weight you can carry.
+
+Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
+
+Carry Capacity by default is 10kg"	"소지품 최대 무게(kg)를 나타내는 값입니다.
+
+배낭, 장비, 의류 등 소지량 증가 효과가 있는 아이템을 장착하면 소지품 최대 무게가 증가합니다.
+
+기본 소지품 최대 무게는 10kg입니다."
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	장비 통계
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	장비 가치
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	장착중인 모든 장비 아이템의 가치((€)) 합계입니다.
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	장비 통계
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	보온성
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
+
+Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
+
+Insulation increases when you equip clothing items with a positive insulation stat.
+
+Insulation examples:
+[100] = B. Temp decrease fully stopped
+[50] = B. Temp decrease slowed by 50%
+[0] = B. Temp decreases at default rate"	"옷을 통해 얻을 수 있는 추위에 대한 보온성 수치입니다.
+
+보온성은 체온과 밀접한 관련이 있으며, 겨울철 체온 감소 속도를 늦춰줍니다.
+
+보온성이 높은 옷을 착용하면 보온성이 증가합니다.
+
+보온성 예시:
+[100] = 체온 감소 완전 정지
+[50] = 체온 감소 50% 감소
+[0] = 체온 정상 속도 유지"
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Equipment Stat	장비 통계
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Dexterity	민첩성
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		"An inertia-based value of how quickly you can move and do certain actions.
+
+Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
+
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	"민첩성은 관성에 기반한 값으로, 이동 속도와 특정 동작 수행 속도를 나타냅니다.
+
+민첩성은 이동 속도 및 무기 조작(조준, 재장전 등)과 관련이 있습니다.
+
+민첩성 수치가 마이너스인 무겁거나 인체공학적이지 않은 아이템을 장착하면 민첩성이 감소합니다."
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	장비 통계
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Menace	위협 수치
+UI/Interface	Equipment/Stats/Elements/Menace	Info		"An intimidation value of how threatening AI sees your character and equipment.
+
+When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
+
+Menace increases when you equip items such as special clothing with a positive Menace stat.
+
+Menace only affects low-tier AI (Bandits)."	"AI가 당신의 캐릭터와 장비를 얼마나 위협적으로 인식하는지를 나타내는 위협 수치입니다.
+
+위협 수치가 높을수록 AI는 공격적인 행동을 덜 보입니다.
+
+위협 수치는 특수 의상과 같이 위협 수치가 높은 아이템을 장착하면 증가합니다.
+
+위협은 하위 등급 AI(산적 등)에게만 영향을 미칩니다."
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	장비 통계
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		CBRN	화생방 수치
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		"A protection value against chemical, biological, radiological and nuclear threats.
+
+CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
+
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	"화학, 생물학, 방사능 및 핵 위협으로부터의 보호 수치입니다.
+
+CBRN은 건강(Health)과 연관되어 있으며, 위험 지역이나 물질에 노출될 때 건강 감소 속도를 줄여줍니다.
+
+CBRN은 특수 의복이나 보호 마스크와 같이 CBRN 수치가 높은 아이템을 착용하면 증가합니다."
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		Equipment Stat	장비 통계
+UI/Interface	Character/Vitals/Elements/Health	Info		Health	체력
+UI/Interface	Character/Vitals/Elements/Health	Info		"Your main vital for staying alive.
+
+Health decreases with damages and active medical conditions.
+
+Health increases with certain medical items such as Bandages and Medkits.
+
+Health [0] -> Character dies"	"생존을 위한 가장 중요한 요소입니다.
+
+체력은 피해를 입거나 질병이 발생하면 감소합니다.
+
+붕대나 구급상자 같은 특정 의료 아이템을 사용하면 체력이 증가합니다.
+
+체력 [0] -> 캐릭터 사망"
+UI/Interface	Character/Vitals/Elements/Health	Info		Vital	바이탈
+UI/Interface	Character/Vitals/Elements/Energy	Info		Energy	기력
+UI/Interface	Character/Vitals/Elements/Energy	Info		"Your hunger and energy level.
+
+Energy decreases over time and using map transitions with Energy Cost.
+
+Energy increases with certain consumables such as food.
+
+Energy [0] -> Starvation (Condition)"	"Your hunger and energy level.
+
+Energy decreases over time and using map transitions with Energy Cost.
+
+Energy increases with certain consumables such as food.
+
+Energy [0] -> Starvation (Condition)"
+UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	바이탈
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	수분
+UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
+
+Hydration decreases over time and using map transitions with Hydration Cost. 
+
+Certain dry or salty consumables may also decrease Hydration.
+
+Hydration increases with certain consumables such as drinks.
+
+Hydration [0] -> Dehydration (Condition)"	"수분량 (목마름)에 대한 수치입니다.
+
+수분량은 시간이 지남에 따라 감소하며, 수분 소모가 있는 맵 이동을 할 경우에도 감소합니다.
+
+일부 건조하거나 짠 소모품은 수분량을 감소시킬 수 있습니다.
+
+음료와 같은 특정 소모품을 섭취하면 수분량이 증가합니다.
+
+수분량 [0] -> 탈수 (상태)"
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	바이탈
+UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	정신력
+UI/Interface	Character/Vitals/Elements/Mental	Info		"Your happiness and sanity level.
+
+Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
+
+Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
+
+Mental [0] -> Insanity (Condition)"	"행복도와 정신 건강 수준.
+
+정신 건강은 시간이 지남에 따라 감소하며, 해로운 음식을 섭취할 때도 감소합니다. 현재 질병이 있는 경우 감소 속도가 두 배로 빨라집니다.
+
+정신 건강은 간식, 따뜻한 식사, 술이나 니코틴 제품 같은 기호품과 같은 위안이 되는 것들을 섭취하면 증가합니다.
+
+정신 건강 [0] -> 광기 (상태)"
+UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	바이탈
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	체온
+UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
+
+Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
+
+Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
+
+Body Temp [0] -> Frostbite (Condition)"	"체온 및 보온 수준.
+
+겨울에는 체온이 시간이 지남에 따라 감소합니다. 실내에 머물거나 단열 효과가 있는 옷을 착용하면 체온 감소 속도를 줄일 수 있습니다.
+
+대피소에 있거나 모닥불과 같은 열원 주변에 있으면 체온이 올라갑니다. 히트팩이나 우주 담요와 같은 특정 열 관련 아이템도 체온을 높여줍니다.
+
+체온 [0] -> 동상 (상태)"
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	바이탈
+UI/Interface	Character/Vitals/Elements/Cat	Info		Cat	고양이
+UI/Interface	Character/Vitals/Elements/Cat	Info		"Grandma's cat health level.
+
+Cat health activates if you decide to rescue the Cat and bring her to your shelter.
+
+Cat health decreases over time.
+
+Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
+
+Cat [0] -> Cat dies"	"할머니 고양이의 건강 상태.
+
+고양이를 구조하여 보호소로 데려오면 건강 상태가 표시됩니다.
+
+고양이의 건강은 시간이 지남에 따라 감소합니다.
+
+고양이 사료나 참치캔과 같은 소모품을 주면 건강이 증가합니다.
+
+고양이 [0] -> 고양이 사망"
+UI/Interface	Character/Vitals/Elements/Cat	Info		Vital	바이탈
+UI/Interface	Character/Medical/Elements/Overweight	Info		"A condition where you are carrying too much weight and movement becomes unsustainable.
+
+Causes:
+- Inventory Weight > Carry Capacity
+
+Symptoms
+- All stamina consumption [+50%]
+- All stamina regeneration [Blocked]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures:
+- Inventory Weight < Carry Capacity"	"소지품 무게가 너무 무거워 움직임이 불가능해지는 상태입니다.
+
+원인:
+- 소지품 무게 > 소지 한도
+
+증상:
+- 모든 스태미나 소모량 [+50%]
+- 모든 스태미나 회복 [차단]
+- 이동 속도 [-50%]
+- 점프 높이 [-50%]
+
+해결 방법:
+- 소지품 무게 < 소지 한도"
+UI/Interface	Character/Medical/Elements/Overweight	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Starvation	Info		Starvation	기아
+UI/Interface	Character/Medical/Elements/Starvation	Info		"A condition where you have a lack of calories and essential nutrients.
+
+Causes:
+- Energy [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- Stamina consumption [+50%]
+- Stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"칼로리와 필수 영양소가 부족한 상태입니다.
+
+원인:
+- 에너지 [0]
+
+증상:
+- 체력 [-1 unit / 10초]
+- 스태미나 소모량 [+50%]
+- 스태미나 회복량 [-50%]
+
+치료법:
+- 소모품"
+UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	탈수
+UI/Interface	Character/Medical/Elements/Dehydration	Info		"A condition where your body doesn't have enough fluids to function normally.
+
+Causes:
+- Hydration [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- All stamina consumption [+50%]
+- All stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"체내에 정상적인 기능을 수행하는 데 필요한 수분이 부족한 상태입니다.
+
+원인:
+- 탈수 [0]
+
+증상:
+- 체력 [-1 unit / 10초]
+- 모든 스태미나 소모량 [+50%]
+- 모든 스태미나 회복량 [-50%]
+
+치료법:
+- 소모품"
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Bleeding	출혈
+UI/Interface	Character/Medical/Elements/Bleeding	Info		"A condion where you have a minor bleeding from small cuts or scrapes.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+- Razor wire
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures: 
+- Bandage
+- Tourniquet
+- Medkit
+- IFAK / AFAK"	"작은 베인 상처나 찰과상으로 인해 약간의 출혈이 발생하는 증상입니다.
+
+원인:
+- 무기 공격
+- 폭발 피해
+- 낙하 피해
+- 철조망
+
+증상:
+- 체력 [-1 unit / 5초]
+
+치료법:
+- 붕대
+- 지혈대
+- 구급상자
+- 응급처치 키트/자립 응급처치 키트"
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Fracture	Info		Fracture	골절
+UI/Interface	Character/Medical/Elements/Fracture	Info		"A condition where you have a partial or complete break in the bone.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures: 
+- Splint
+- Medkit
+- IFAK / AFAK"	"뼈가 부분적으로 또는 완전히 부러진 상태입니다.
+
+원인:
+- 무기로 인한 피해
+- 폭발로 인한 피해
+- 낙하로 인한 피해
+
+증상:
+- 체력 [-1 unit / 5초]
+- 이동 속도 [-50%]
+- 점프 높이 [-50%]
+
+치료법:
+- 부목
+- 구급상자
+- 응급처치 키트/자립 응급처치 키트"
+UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Burn	Info		Burn	화상
+UI/Interface	Character/Medical/Elements/Burn	Info		"A condition where you have a tissue damage from intense heat or high-voltage electric current.
+
+Causes:
+- Fire damage
+- Electrical damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Balm
+- Lotion
+- Medkit
+- IFAK / AFAK"	"고온이나 고전압 전류로 인해 조직이 손상된 상태입니다.
+
+원인:
+- 화재 피해
+- 전기 피해
+
+증상:
+- 체력 [-1 unit / 5초]
+
+치료법:
+- 연고
+- 로션
+- 구급상자
+- 응급처치 키트/자립 응급처치 키트"
+UI/Interface	Character/Medical/Elements/Burn	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Frostbite	동상
+UI/Interface	Character/Medical/Elements/Frostbite	Info		"A condition where you have hypothermia or body part freezes from cold exposure.
+
+Causes: 
+- Body temperature [0]
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Fire sources
+- Sleeping Bag
+- Thermal Blanket"	"저체온증은 추위에 노출되어 신체 일부가 얼어붙는 상태를 말합니다.
+
+원인:
+- 체온 [0]
+
+증상:
+- 체력 [-1 unit / 5초]
+
+치료법:
+- 불
+- 침낭
+- 보온 담요"
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Insanity	Info		Insanity	정신병
+UI/Interface	Character/Medical/Elements/Insanity	Info		"A condition where your sanity breaks and you start having dark thoughts.
+
+Causes: 
+- Mental [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+
+Cures:
+- Consumables
+- Sleeping
+- Fire sources
+- Instruments"	"정신이 무너져 어두운 생각에 사로잡히는 상태.
+
+원인:
+- 정신력 [0]
+
+증상:
+- 체력 [-1 unit / 10초]
+
+치료법:
+- 소모품
+- 잠자기
+- 광원
+- 악기"
+UI/Interface	Character/Medical/Elements/Insanity	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Poisoning	중독
+UI/Interface	Character/Medical/Elements/Poisoning	Info		"A condition where toxic substance entered your digestion or lungs.
+
+Causes:
+- Chemical damage
+- Toxic consumables
+
+Symptoms:
+- Health [-1 unit / 2 sec]
+
+Cures:
+- Medkit
+- AFAK"	"독성 물질이 소화기관이나 폐에 침투하여 발생하는 질환입니다.
+
+원인:
+- 화학적 손상
+- 독성 물질 섭취
+
+증상:
+- 체력 [-1 unit / 2초]
+
+치료법:
+- 구급상자
+- AFAK"
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Rupture	Info		Rupture	파열
+UI/Interface	Character/Medical/Elements/Rupture	Info		"A critical condition where you have a catastrofal bleeding or major internal wound.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"심각한 출혈이나 심각한 내부 장기 손상이 발생한 위급한 상태입니다.
+
+원인:
+- 무기 공격
+- 폭발 피해
+
+증상:
+- 체력 [-1 단위/1초]
+
+치료법:
+- 구급상자
+- 응급처치 키트/자립 응급처치 키트"
+UI/Interface	Character/Medical/Elements/Rupture	Info		Medical Condition	질병
+UI/Interface	Character/Medical/Elements/Headshot	Info		Headshot	헤드샷
+UI/Interface	Character/Medical/Elements/Headshot	Info		"A critical condition where you have a major head related wound.
+
+Causes: 
+- Weapon damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"심각한 머리 부상을 입은, 매우 위독한 상태입니다.
+
+원인:
+- 무기 공격
+
+증상:
+- 체력 [-1/1초]
+
+치료법:
+- 구급상자
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Headshot	Info		Medical Condition	질병
+UI/Interface	Character/Stats/Elements/Day	Info		Day	생존일
+UI/Interface	Character/Stats/Elements/Day	Info		"Number of Days survived.
+
+New day begins at 00:00 midnight and certain amount of days will unlock new game events.
+
+Upcoming events can be displayed by using the Events tool."	"당신이 생존한 일 수 입니다.
+
+하루는 자정(00:00)에 시작되며, 일정 일수가 지나면 새로운 게임 이벤트가 잠금 해제됩니다.
+
+다가오는 이벤트는 이벤트 도구를 사용하여 확인할 수 있습니다."
+UI/Interface	Character/Stats/Elements/Day	Info		Progression Stat	진행도
+UI/Interface	Character/Stats/Elements/Shelters	Info		Shelters	은신처
+UI/Interface	Character/Stats/Elements/Shelters	Info		"Number of Shelters unlocked.
+
+Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
+
+New game starts with two unlocked Shelters called Cabin and Tent.
+
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	"잠금 해제된 은신처의 개수입니다.
+
+은신처는 진행 상황과 전리품을 저장하는 안전 지대입니다. 게임 세계에는 다양한 은신처가 있으며, 테마, 크기, 꾸미기 기능이 각기 다릅니다.
+
+새 게임은 오두막과 텐트라는 두 개의 은신처가 잠금 해제된 상태로 시작합니다.
+
+추가 은신처는 여러 상인에게서 임무를 완료하여 얻는 열쇠로 잠금 해제할 수 있습니다."
+UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	진행도
+UI/Interface	Character/Stats/Elements/Tasks	Info		Tasks	의뢰 수
+UI/Interface	Character/Stats/Elements/Tasks	Info		"Number of Tasks completed.
+
+Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
+
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"완료된 의뢰의 수 입니다.
+
+의뢰는 상인에게서 받는 아이템 기반 작업입니다. 임무는 여러 상인 간에 연결될 수 있으며, 제작을 통해 얻을 수 없는 아이템을 필요로 할 수도 있습니다.
+
+의뢰는 거래 가격 인하(상인세) 및 새로운 은신처와 특수 방을 잠금 해제하는 열쇠 획득과 관련이 있습니다."
+UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	진행도
+UI/Interface	Character/Stats/Elements/Quests	Info		Quests	퀘스트 수
+UI/Interface	Character/Stats/Elements/Quests	Info		"Number of Quests completed.
+
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"완료한 퀘스트 수.
+
+퀘스트는 상인들이 제공하는 스토리 기반 임무입니다. 퀘스트는 여러 상인의 퀘스트와 연관될 수 있으며, 특정 이벤트 발생 후에 활성화될 수도 있습니다."
+UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	진행도
+UI/Interface	Character/Stats/Elements/CDS	Info		Civil Defence Shelters	민방위 대피소
+UI/Interface	Character/Stats/Elements/CDS	Info		"Number of CDS completed.
+
+Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
+
+After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
+
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	"완료된 민방위 대피소(CDS) 수 입니다.
+
+민방위 대피소(CDS)는 군사적 위협으로부터 보호하기 위해 설계된 콘크리트 벙커 및 지하 공간입니다.
+
+5구역 대피 이후, 이 CDS들은 적에게 점령당했고 내부에 있던 생존 장비 대부분이 도난당했습니다.
+
+CDS를 완료하려면 적을 소탕하고 CDS 비상 방송 라디오를 다시 연결해야 합니다."
+UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	진행도
+UI/Interface	Character/Stats/Elements/?	Info		Silent Night	고요한 밤
+UI/Interface	Character/Stats/Elements/?	Info		"There will be a silent night when all fades away.
+
+When you look up, you see the North Star, your only light in the darkness.
+
+This light reminds you of home, a place where you came from and where you will return.
+
+You feel safe, a peaceful moment that feels like the ending you wanted.
+
+Then your last light disappears, the sky turns red and the silence breaks."	"모든 것이 사라지는 고요한 밤이 찾아올 것입니다.
+
+하늘을 올려다보면 북극성이 보일 것이며, 그겅시 어둠 속에서 유일한 빛일 겁니다.
+
+그 빛은 고향, 당신이 온 곳이자 돌아갈 곳을 떠올리게 합니다.
+
+당신은 안전하다고 느낍니다. 마치 당신이 원하던 결말과 같이, 평화로운 순간을.
+
+마침내 마지막 빛이 사라지고, 하늘은 붉게 물들며, 고요한 침묵이 깨집니다."
+UI/Interface	Character/Stats/Elements/?	Info		Special Event	특별 이벤트
+UI/Interface	Supply/Header/Value	Info		Supply Value	보급품 가치
+UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	모든 보급품의 상품 가치(€) 입니다.
+UI/Interface	Supply/Header/Value	Info		Trader Stat	상인 통계
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	열원
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	일부 요리 관련 레시피에 필요한 제작 시설입니다.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	요구 시설 (근접)
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	작업대
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	일부 건설 관련 레시피에 필요한 제작 시설입니다.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	요구 시설 (근접)
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	테스트벤치
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	일부 전자 관련 레시피에 필요한 제작 시설입니다.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	요구 시설 (근접)
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	은신처
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	일부 가구 관련 레시피에 필요한 제작 시설입니다.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	요구 시설 (근접)
+UI/Interface	Trader/Panel	Info		Trader	상인 통계
+UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
+
+Name: Commonly known name among locals.
+Tax: Price multiplier for supply items.
+Tasks: Number of completed tasks.
+Resupply: Time when supply resets."	"물품 거래, 의뢰 제공 및 전문 서비스를 제공하는 우호적인 NPC입니다.
+
+이름: 지역 주민들이 일반적으로 부르는 이름입니다.
+세금: 물품 가격에 적용되는 배율입니다.
+임무 수: 완료한 의뢰의 개수입니다.
+재보급: 물품 재고가 초기화되는 시간입니다."
+UI/Interface	Trader/Panel	Info		Trader Info	상인 통계
+UI/Interface	Deal/Panel	Info		Deal	거래
+UI/Interface	Deal/Panel	Info		"A deal balance meter which compares selected item values.
+
+Requsted Value (€) is calculated from selected Supply items with Tax added.
+
+Offer Value (€) is calculated from selected Inventory items.
+
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	"선택한 품목의 가격을 비교하는 거래 잔액 표시기입니다.
+
+요구 가격(€)은 상인에게서 선택한 보급품의 가치에 세금이 더해진 금액으로 계산됩니다.
+
+제안 가격(€)은 본인의 인벤토리에서 선택한 아이템의 가치로 계산됩니다.
+
+거래 잔액 표시기가 녹색 영역에 있을 때 거래를 수락할 수 있습니다. 녹색 영역은 제안 가격이 요청 가격 + 세금과 같거나 그 이상임을 의미합니다."
+UI/Interface	Deal/Panel	Info		Deal Meter	거래 게이지

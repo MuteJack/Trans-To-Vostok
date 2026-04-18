@@ -507,26 +507,22 @@ def check_method_fields(row: dict) -> list[str]:
             pass
         if not name:
             errors.append("static: name 필수")
-        if not type_:
-            errors.append("static: type 필수")
+        # type 은 instance 노드(.tscn 에 type= 미기록)에선 빈값이 정상. TSV 일치로 검증됨.
         if not unique_id:
             errors.append("static: unique_id 필수")
 
     elif effective == "literal":
         if location:
-            # scoped literal: 컨텍스트 필드 필수
+            # scoped literal: 컨텍스트 필드 필수 (type 제외, instance 노드 대응)
             if not name:
                 errors.append("scoped literal: name 필수 (literal + location)")
-            if not type_:
-                errors.append("scoped literal: type 필수 (literal + location)")
         # 전역 literal 은 text 외 제약 없음
 
     elif effective == "pattern":
         if location:
+            # scoped pattern: 컨텍스트 필드 필수 (type 제외)
             if not name:
                 errors.append("scoped pattern: name 필수 (pattern + location)")
-            if not type_:
-                errors.append("scoped pattern: type 필수 (pattern + location)")
         # 전역 pattern 은 text(정규식) 외 제약 없음
 
     elif effective == "substr":

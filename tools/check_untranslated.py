@@ -121,6 +121,7 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
                         "parent": (row.get("parent") or "").strip(),
                         "name": (row.get("name") or "").strip(),
                         "type": (row.get("type") or "").strip(),
+                        "property": (row.get("property") or "").strip(),
                         "text": text,
                         "_tsv_file": tsv_file.name,
                     })
@@ -313,6 +314,10 @@ def classify_entry(
             return ("direct", "")
         if key_5 in empty_keys:
             return ("empty", "")
+        # tscn + substr/pattern 이 tres_direct 에 등록되었는지 확인
+        tscn_src_key = (entry.get("filename", ""), "tscn", text)
+        if tscn_src_key in tres_direct:
+            return ("direct", "")
 
     # tres / gd 엔트리는 (filename, filetype, text) 로 매칭
     if filetype in ("tres", "gd"):
@@ -539,7 +544,7 @@ def main() -> int:
         _print_file_group("gd 파일별 요약", gd_files)
 
         covered_all = direct_all + fallback_all + delegated_all + ignored_all + untranslatable_all
-        matched_all = direct_all + ignored_all + untranslatable_all + empty_all
+        matched_all = direct_all + delegated_all + ignored_all + untranslatable_all + empty_all
         tee.print(
             f"[전체] "
             f"매치 {matched_all}/{total_all} ({format_percent(matched_all, total_all)}), "
@@ -585,6 +590,7 @@ def main() -> int:
                         f"    uid={e['unique_id']}  "
                         f"name={e['name']}  "
                         f"type={e['type']}  "
+                        f"property={e.get('property', '')}  "
                         f"text={_preview(e['text'], 50)}"
                     )
 
@@ -595,6 +601,7 @@ def main() -> int:
                         f"    uid={e['unique_id']}  "
                         f"name={e['name']}  "
                         f"type={e['type']}  "
+                        f"property={e.get('property', '')}  "
                         f"text={_preview(e['text'], 50)}"
                     )
 
@@ -607,6 +614,7 @@ def main() -> int:
                     tee.print(
                         f"    uid={e['unique_id']}  "
                         f"name={e['name']}  "
+                        f"property={e.get('property', '')}  "
                         f"text={_preview(e['text'], 50)}  "
                         f"← {method}"
                     )
@@ -615,33 +623,30 @@ def main() -> int:
         _print_detail_group("tres", tres_files)
         _print_detail_group("gd", gd_files)
 
-        # delegated 로그를 별도 파일로 출력
+        # delegated 로그를 별도 파일로 출력 (화면에는 상세 미출력)
         delegated_log_path = locale_dir / ".log" / f"check_delegated_{timestamp}.log"
         has_delegated = any(
             len(per_file[f]["delegated_entries"]) > 0 for f in per_file
         )
         if has_delegated:
-            delegated_tee = Tee(delegated_log_path)
-            try:
-                delegated_tee.print(f"delegated 상세 — ignore/untranslatable 이지만 전역 매칭됨")
-                delegated_tee.print(f"실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-                delegated_tee.print()
+            delegated_log_path.parent.mkdir(parents=True, exist_ok=True)
+            with open(delegated_log_path, "w", encoding="utf-8") as df:
+                df.write("delegated 상세 — ignore/untranslatable 이지만 전역 매칭됨\n")
+                df.write(f"실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
                 for fname in sorted(per_file.keys()):
                     b = per_file[fname]
                     if not b["delegated_entries"]:
                         continue
-                    delegated_tee.print(f"[{fname}]")
+                    df.write(f"[{fname}]\n")
                     for e, method in b["delegated_entries"]:
-                        delegated_tee.print(
+                        df.write(
                             f"  uid={e['unique_id']}  "
                             f"name={e['name']}  "
+                            f"property={e.get('property', '')}  "
                             f"text={_preview(e['text'], 50)}  "
-                            f"← {method}"
+                            f"← {method}\n"
                         )
-                delegated_tee.print()
-                delegated_tee.print(f"총 {delegated_all}개")
-            finally:
-                delegated_tee.close()
+                df.write(f"\n총 {delegated_all}개\n")
             tee.print(f"delegated 로그: {delegated_log_path}")
         else:
             tee.print("delegated: 없음")

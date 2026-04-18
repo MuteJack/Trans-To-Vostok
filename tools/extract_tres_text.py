@@ -54,8 +54,8 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 # 출력 TSV 고정 컬럼 (tscn 추출 도구와 통일)
 # .tres 엔트리는 노드 계층이 없으므로 location/parent/type/unique_id 를 빈 값으로 둔다.
-# name 컬럼에 tres의 필드 이름(예: "name", "description")을 넣는다.
-OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
+# prop 컬럼에 tres의 필드 이름(예: "name", "description")을 넣는다.
+OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "property", "unique_id", "text"]
 
 # 기본 경로
 DEFAULT_CONFIG_NAME = "tres_list.json"
@@ -221,9 +221,10 @@ def tres_to_rows(
       - filetype  = "tres"
       - location  = "" (비움, 전역 text 매칭 기본)
       - parent    = ""
-      - name      = tres 필드명 (예: "description")
+      - name      = ""
       - type      = ""
       - unique_id = ""
+      - property  = tres 필드명 (예: "description")
       - text      = 필드 값
     """
     parsed = parse_tres(tres_path, fields)
@@ -245,9 +246,10 @@ def tres_to_rows(
             "filetype": "tres",
             "location": "",
             "parent": "",
-            "name": field,
+            "name": "",
             "type": "",
             "unique_id": "",
+            "property": field,
             "text": parsed[field],
         })
     return rows
