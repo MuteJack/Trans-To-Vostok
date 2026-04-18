@@ -43,8 +43,7 @@ Scenes/Menu	Music/Buttons	Music_On	Button	"On
 "	"켜기
 "
 Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
-접경
- 지대를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."
+접경 지대를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."
 Scenes/Menu	.	Version	Label	Version: 0.1.0.0	버전: 0.1.0.0
 Scenes/Menu	Changelog/Header	Label	Label	Changelog	변경사항
 Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	"Following changes were made from:
@@ -798,9 +797,8 @@ Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	"•  Full questline
 •  새로운 맵 & 은신처"
 Scenes/Menu	About	About_Return	Button	← Return	← 돌아가기
 Scenes/Menu	About/Game	Info	Label	"Road to Vostok ® is a hardcore single-player survival game set 
-in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
-접경 지대
-를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."
+in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 접경 지대를
+배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."
 Scenes/Menu	About	Developer	Label	Developer	개발사
 Scenes/Menu	About	Country	Label	Country of origin	개발국
 Scenes/Menu	About/Country	Info	Label	Finland	핀란드
@@ -846,17 +844,20 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."	"이 게임은 Godot 엔진을 사용하며, Godot 엔진은 다음 라이선스에 따라 사용 가능합니다.
 
-저작권(c) 2014-현재 Godot 엔진 기여자.
-저작권(c) 2007-2014 Juan Linietsky, Ariel Manzur.
+Copyright(c) 2014-현재 Godot 엔진 기여자.
+Copyright(c) 2007-2014 Juan Linietsky, Ariel Manzur.
 
-본 소프트웨어 및 관련 문서 파일(""소프트웨어"")의 사본을 입수하는 모든 사람에게 다음 조건을 준수하는 한, 소프트웨어를 제한 없이 사용할 수 있는 권한이 무료로 부여됩니다.
-소프트웨어의 사용, 복사, 수정, 병합, 게시, 배포, 서브라이선스 및/또는 판매 권한을 포함하되 이에 국한되지 않습니다.
+본 소프트웨어 및 관련 문서 파일(""소프트웨어"")의 사본을 입수하는 모든 사람에게 다음 조건을 준수하는 한, 
+소프트웨어를 제한 없이 사용할 수 있는 권한이 무료로 부여됩니다. 소프트웨어의 사용, 복사, 수정, 병합, 게시, 
+배포, 서브라이선스 및/또는 판매 권한을 포함하되 이에 국한되지 않습니다.
 
 위 저작권 고지 및 본 사용 허가 고지는 소프트웨어의 모든 사본 또는 상당 부분에 포함되어야 합니다.
 
 본 소프트웨어는 어떠한 종류의 명시적 또는 묵시적 보증 없이 ""있는 그대로"" 제공됩니다.
-상품성, 특정 목적에의 적합성 및 비침해에 대한 보증을 포함하되 이에 국한되지 않습니다. 어떠한 경우에도 저작자 또는 저작권 보유자는 계약, 불법 행위 또는 기타 사유로 인해 발생하는 모든 청구, 손해 또는 기타 책임에 대해 책임을 지지 않습니다.
-소프트웨어 또는 소프트웨어의 사용 또는 기타 거래와 관련하여 발생하는 모든 책임에 대해서도 책임을 지지 않습니다."
+상품성, 특정 목적에의 적합성 및 비침해에 대한 보증을 포함하되 이에 국한되지 않습니다. 
+어떠한 경우에도 저작자 또는 저작권 보유자는 계약, 불법 행위 또는 기타 사유로 인해 발생하는 
+모든 청구, 손해 또는 기타 책임에 대해 책임을 지지 않습니다. 소프트웨어 또는 소프트웨어의 사용 
+또는 기타 거래와 관련하여 발생하는 모든 책임에 대해서도 책임을 지지 않습니다."
 Resources/Loader	Screen	Label	Label	Loading...	로딩중...
 Resources/Loader	Screen	Label	Label	Loading Intro...	인트로 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Cabin...	오두막 로딩중...
