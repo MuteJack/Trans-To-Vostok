@@ -43,6 +43,8 @@ Right Mouse Button	마우스 우클릭
 Middle Mouse Button	마우스 휠클릭
 Mouse Wheel Up	마우스 휠 위로
 Mouse Wheel Down	마우스 휠 아래로
+Mouse Thumb Button 1	마우스 엄지 버튼 1
+Mouse Thumb Button 2	마우스 엄지 버튼 2
 Loading...	로딩중...
 All save files deleted	모든 세이브 파일이 삭제되었습니다
 Character died	캐릭터가 사망했습니다
@@ -133,6 +135,7 @@ Kobra	코브라
 Leopard	레오파드
 Micro	마이크로
 Monster	몬스터
+Thor	토르
 Backpack	가방
 Jääkäri Backpack (Black)	야카리 배낭 (블랙)
 Jääkäri BP.	야카리 배낭
@@ -173,7 +176,7 @@ L. Gloves	가죽 장갑
 Work Gloves	작업용 장갑
 W. Gloves	작업 장갑
 Mosquito Hat	모기장 모자
-M. Hat	모기장 모자
+M. Hat	모기 모자.
 Sauna Hat	사우나 모자
 S. Hat	사우나 모자
 Hoodie (Border Zone)	"후드티 (접경 지대
@@ -257,7 +260,7 @@ Crackers	크래커
 Energy Drink	에너지 드링크
 E. Drink	에너지.
 Energy Powder	에너지 파우더
-E. Powder	에너지파우더
+E. Powder	E.파우더
 Field Ration	전투식량
 F. Ration	전투식량
 Juice	주스
@@ -442,6 +445,7 @@ STANAG Magazine	STANAG 탄창
 M78 Magazine	M78 탄창
 Karov	카로프
 Karov Magazine	Karov 탄창
+Mosin	모신
 PM5 Magazine	PM5 탄창
 MP7 Magazine	MP7 탄창
 P3 Magazine	P3 탄창

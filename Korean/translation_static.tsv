@@ -110,13 +110,13 @@ Energy decreases over time and using map transitions with Energy Cost.
 
 Energy increases with certain consumables such as food.
 
-Energy [0] -> Starvation (Condition)"	"Your hunger and energy level.
+Energy [0] -> Starvation (Condition)"	"배고픔과 기력 수준.
 
-Energy decreases over time and using map transitions with Energy Cost.
+기력은 시간이 지남에 따라 감소하며, 기력 소모를 요구하는 맵으로 이동을 하는 경우에도 감소합니다.
 
-Energy increases with certain consumables such as food.
+기력은 음식과 같은 특정 소모품을 섭취하면 증가합니다.
 
-Energy [0] -> Starvation (Condition)"
+기력 [0] -> 기아 (상태)"
 UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	바이탈
 UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	수분
 UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
@@ -227,7 +227,7 @@ Cures:
 - Consumables"	"칼로리와 필수 영양소가 부족한 상태입니다.
 
 원인:
-- 에너지 [0]
+- 기력 [0]
 
 증상:
 - 체력 [-1 unit / 10초]
