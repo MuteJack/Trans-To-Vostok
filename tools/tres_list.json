@@ -3,7 +3,7 @@
     {
       "name": "Events",
       "dir": "Events",
-      "fields": ["name", "description"],
+      "fields": ["name", "type", "description"],
       "targets": ["List"],
       "join": "Events"
     },
