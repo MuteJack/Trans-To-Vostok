@@ -234,6 +234,12 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
                         pattern_list.append((regex, translation))
                     except re.error:
                         pass
+                # filename/filetype 있으면 tres_direct 에 raw 패턴 텍스트로도 등록
+                # → classify 에서 패턴 원문이 정확 일치로 "direct" 분류됨
+                fn = row.get("filename", "").strip()
+                ft = row.get("filetype", "").strip()
+                if fn and ft and translation:
+                    tres_direct[(fn, ft, text)] = translation
 
         elif effective == "substr":
             # substr → literal_map + tres_direct 에 이중 등록 (build 와 동일)
@@ -689,7 +695,7 @@ def main() -> int:
             f"empty {empty_all}, missing {missing_all}"
         )
         if suspicious:
-            tee.print(f"  ⚠ 커버되지 않는 ignore 행: {len(suspicious)}개 (위 목록 확인)")
+            tee.print(f"경고: 커버되지 않는 ignore 행: {len(suspicious)}개 (위 목록 확인)")
 
         return 0
     finally:
