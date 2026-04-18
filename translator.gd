@@ -205,17 +205,25 @@ func shutdown() -> void:
 	for child in get_children():
 		if child is Timer:
 			child.stop()
-	get_tree().node_added.disconnect(_on_node_added)
+	if get_tree().node_added.is_connected(_on_node_added):
+		get_tree().node_added.disconnect(_on_node_added)
 
-	# 모든 바인딩의 텍스트를 원본으로 복원
+	# 모든 바인딩의 텍스트를 원본으로 복원 + Value 자식 offset 복원
 	for b in priority_bindings + normal_bindings:
-		if not b.has("original") or b["original"] == "":
-			continue
 		var node = b["node"].get_ref()
 		if node == null or not is_instance_valid(node):
 			continue
-		if b["prop"] in node:
+		# 1. 텍스트 원본 복원
+		if b.has("original") and b["original"] != "" and b["prop"] in node:
 			node.set(b["prop"], b["original"])
+		# 2. _adjust_value_child_offset 이 수정한 Value 자식의 offset 복원
+		if b["prop"] == "text" and node is Label:
+			var value = node.get_node_or_null("Value")
+			if value != null and value.has_meta("_ttv_orig_offset_left"):
+				value.offset_left = value.get_meta("_ttv_orig_offset_left")
+				value.offset_right = value.get_meta("_ttv_orig_offset_right")
+				value.remove_meta("_ttv_orig_offset_left")
+				value.remove_meta("_ttv_orig_offset_right")
 	print("[TransToVostok] Shutdown — %d bindings restored" % (priority_bindings.size() + normal_bindings.size()))
 
 
@@ -456,7 +464,7 @@ func _bind_node(node: Node) -> void:
 		_apply_binding(b)
 
 
-const PRIORITY_PATH_KEYWORDS: Array = ["tooltip"]
+const PRIORITY_PATH_KEYWORDS: Array = ["tooltip", "transition", "door", "hint", "notification", "message"]
 
 func _is_priority_node(node: Node) -> bool:
 	var name_lower: String = node.name.to_lower()
@@ -528,8 +536,52 @@ func _apply_binding(b: Dictionary) -> void:
 			b["original"] = cur_str
 		node.set(prop, translated)
 		b["last"] = translated
+		# 수동 위치 Value 자식이 있으면 새 text 너비에 맞춰 offset 재조정
+		if prop == "text":
+			_adjust_value_child_offset(node)
 	else:
 		b["last"] = cur_str
+
+
+# Label 의 자식 "Value" 가 layout_mode=0 (수동 위치) 인 경우,
+# Label 의 새 text 너비에 맞춰 Value 의 offset_left/offset_right 를 재계산.
+# Tooltip.tscn 같이 "라벨: [값]" 패턴에서 번역된 라벨 너비와 값 위치를 자연스럽게 맞춤.
+#
+# 호환성 모드 (_compatible_mode) 에서는 레이아웃 변경을 건너뛴다.
+# substr 전용 호환성 모드는 최소 간섭 원칙 — 게임 씬의 offset 등 구조 변경 금지.
+func _adjust_value_child_offset(label_node) -> void:
+	if _compatible_mode:
+		return
+	if not (label_node is Label):
+		return
+	var value = label_node.get_node_or_null("Value")
+	if value == null or not (value is Control):
+		return
+	# layout_mode=0 (LAYOUT_MODE_POSITION, 수동 위치) 만 대상
+	if value.layout_mode != 0:
+		return
+
+	# 폰트/크기 조회 (theme_override 우선, 없으면 기본)
+	var font: Font = label_node.get_theme_font("font")
+	if font == null:
+		return
+	var font_size: int = label_node.get_theme_font_size("font_size")
+	if font_size <= 0:
+		font_size = 16
+
+	# 최초 조정 전에 원본 offset 을 메타데이터로 보존 (shutdown 복원용)
+	if not value.has_meta("_ttv_orig_offset_left"):
+		value.set_meta("_ttv_orig_offset_left", value.offset_left)
+		value.set_meta("_ttv_orig_offset_right", value.offset_right)
+
+	var text_width: float = font.get_string_size(
+		label_node.text, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size
+	).x
+
+	var current_width: float = value.offset_right - value.offset_left
+	const PADDING: float = 4.0
+	value.offset_left = text_width + PADDING
+	value.offset_right = value.offset_left + current_width
 
 
 # ==========================================
