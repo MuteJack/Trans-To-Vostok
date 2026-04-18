@@ -38,15 +38,70 @@ Rotate Item	아이템 회전
 Fast Transfer	빠른 옮기기
 Fast Equip	빠른 장착
 Fast Drop	빠른 버리기
+Loading...	로딩중...
+All save files deleted	모든 세이브 파일이 삭제되었습니다
+Character died	캐릭터가 사망했습니다
+Intro	인트로
+Cabin	오두막
+Tutorial	튜토리얼
+Menu	메뉴
+Attic	다락방
+Death	죽음
+Classroom	교실
+Tent	텐트
+Bunker	벙커
+Village	마을
+Highway	고속도로
+School	학교
+Outpost	전초기지
+Minefield	지뢰지대
+Apartments	아파트
+Terminal	터미널
+Template	템플릿
+shaders	셰이더
+Neutral	보통
+Overcast	흐림
+Rain	비
+Storm	폭풍
+Generic	일반
+Wood	나무
+Metal	금속
+Concrete	콘크리트
+Rock	돌
+Inventory	인벤토리
+Primary	주무기
+Secondary	보조무기
+Knife	칼
+Task Notes empty	의뢰 노트가 비어있습니다
+Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
+Map not equipped	지도가 장착되지 않았습니다
+Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)
+Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
+Casette Player power 0%, recharge player	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.
+Casette Player empty, insert casette	카세트 플레이어가 비어있습니다, 카세트를 넣어주세요.
+Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
+Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
 Doctor	의사
 Generalist	잡화상
 Gunsmith	총잡이
+Sleep	잠자기
+Level 2	레벨 2
+Level 3	레벨 3
+Level 4	레벨 4
+Level 5	레벨 5
 Fire [Ignite]	불 [켜기]
 Fire [Matches not equipped]	불 [성냥이 장착되지 않았습니다]
 Fire [Extinguish]	불 [끄기]
 Heat required	열원 필요
 Workbench required	작업대 필요
 Shelter required	쉘터 필요
+Start Input	투입 시작
+Stop Input	투입 정지
+Reset Input	투입 초기화
+Press key to bind...	키를 입력하세요...
+Start Delivery	배달 시작
+Stop Delivery	배달 종료
+Delivered	배달됨
 Easy	쉬움
 Intermediate	보통
 Hard	어려움
@@ -56,7 +111,7 @@ Tutorial Task 1 (Simple)	튜토리얼 의뢰 1 (간단함)
 Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
 1. Press Start Delivery
 2. Select Canned Pea Soup
-3. Press Complete"	"=간단한 것부터 시작해 볼까요?
+3. Press Complete"	"간단한 것부터 시작해 볼까요?
 
 아이템 게시판으로 가서 통조림 완두콩 수프를 선택하세요. 배달 아이템을 인벤토리에 넣었으면 다음 단계를 따르세요.
 1. 배달 시작을 누르세요.
@@ -183,7 +238,8 @@ Handyman	수리공
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
 
-I'm getting tired of being her handyman, but I promised to help this one last time."	"국경 지대 근처에 사시는 할머니 아시죠? 그분은 앞을 못 보시는데, 제가 아무리 전자제품 조심하라고 말씀드려도 자꾸만 버튼을 만지작거리셔서 결국 모든 게 고장 나버려요!
+I'm getting tired of being her handyman, but I promised to help this one last time."	"접경 지대
+ 근처에 사시는 할머니 아시죠? 그분은 앞을 못 보시는데, 제가 아무리 전자제품 조심하라고 말씀드려도 자꾸만 버튼을 만지작거리셔서 결국 모든 게 고장 나버려요!
 
 지금은 가스레인지가 고장 났고, 냉동고는 녹아내렸고, 라디오는 또 말썽을 부리네요. 게다가 지난주 폭풍우가 몰아치면서 나무가 현관 지붕에 쓰러져서 지붕이 무너져 내렸어요. 정말 난장판이에요.
 
@@ -455,11 +511,13 @@ In Finland, we have Everyman’s Rights, which grant us the right to use nature 
 
 However, I have to admit that sometimes I step into a grey area and collect stuff that isn't just mushrooms. For example, a few months ago, I found a fallen Border Zone sign in a ditch. Since it was covered in leaves and dirt, I figured it belonged to nature which makes it part of Everyman’s Rights in my mind.
 
-Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	"최근에 국경지대에 하이킹을 가서 버섯을 좀 따 왔습니다.
+Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	"최근에 접경 지대
+에 하이킹을 가서 버섯을 좀 따 왔습니다.
 
 핀란드에는 누구나 자연을 이용할 권리가 있다는 '모두의 권리'라는 제도가 있습니다. 이는 해당 지역의 소유권이나 점유권에 관계없이 누구나 자연을 이용할 수 있도록 보장하는 법입니다. 아마도 핀란드에서 가장 훌륭한 법일 겁니다.
 
-하지만 솔직히 말해서 가끔은 애매한 영역에 발을 들여 버섯이 아닌 다른 것들을 채집하기도 합니다. 예를 들어 몇 달 전에는 도랑에서 쓰러진 국경지대 표지판을 발견했습니다. 나뭇잎과 흙으로 덮여 있어서 자연의 일부라고 생각했고, 제 생각에는 이것도 '모두의 권리'에 해당한다고 여겼습니다.
+하지만 솔직히 말해서 가끔은 애매한 영역에 발을 들여 버섯이 아닌 다른 것들을 채집하기도 합니다. 예를 들어 몇 달 전에는 도랑에서 쓰러진 접경 지대
+ 표지판을 발견했습니다. 나뭇잎과 흙으로 덮여 있어서 자연의 일부라고 생각했고, 제 생각에는 이것도 '모두의 권리'에 해당한다고 여겼습니다.
 
 이 표지판은 장식용으로도 좋지만, 제 취향에는 색깔이 좀 과하네요. 당신이라면 좋아하실 것 같은데, 혹시 작은 교환이라도 할 수 있을까요? 하지만 헐값에 팔 생각은 없습니다."
 Hitman	암살자
@@ -472,6 +530,13 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 이 자식은 가끔씩 나타나서 자기가 빚진 돈을 갚으라고 독촉합니다. 보통 이런 놈들은 문 앞에서 쏴버리지만, 이 놈은 아주 끈질깁니다. 퍼니셔와 그의 부하들은 최근 경찰 밴을 훔쳐서 이제는 방탄 차량까지 갖추고 있습니다.
 
 누군가 이 꼴을 끝내야 하니, 청부 살인업자가 필요합니다. 그놈의 목을 가져오거나, 아니면 죽었다는 증거를 가져오면 제 창고 열쇠를 드리겠습니다."
+Trader Event	상인 이벤트
+Dynamic Event	동적 이벤트
+Special Event	특별 이벤트
+Trader	상인
+Dynamic	동적
+Special	특별
+Guaranteed	보장됨
 Generalist returns to Village	잡화상이 마을에 복귀
 "Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
 
@@ -487,7 +552,8 @@ After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and
 Fighter Jets	전투기
 "After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
 
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"5구역 철수 및 국경지대 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 필요합니다.
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"5구역 철수 및 접경 지대
+ 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 필요합니다.
 
 핀란드군은 전투기를 이용해 상공에 자주 나타나는 고위험 비살상 공중 시범 비행을 시작할 예정입니다."
 Missing Cat	잃어버린 고양이
@@ -521,9 +587,11 @@ Military BTR's are equipped with heavy machine guns and patrols have been seen a
 Attack Helicopters	공격 헬리콥터
 "The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
 
-While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"국경지대의 비무장화가 무너지기 시작했고, 기존의 규칙들이 더 이상 적용되지 않는다는 것이 명백해지고 있습니다.
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"접경 지대
+의 비무장화가 무너지기 시작했고, 기존의 규칙들이 더 이상 적용되지 않는다는 것이 명백해지고 있습니다.
 
-공식 소식통은 아무런 변화가 없다고 주장하지만, 공격 헬리콥터들이 국경지대 인근에서 빈번한 순찰과 영공 침범을 시작했습니다."
+공식 소식통은 아무런 변화가 없다고 주장하지만, 공격 헬리콥터들이 접경 지대
+ 인근에서 빈번한 순찰과 영공 침범을 시작했습니다."
 Helicopter Crash Sites	헬리콥터 추락 현장
 "After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
 
@@ -541,7 +609,8 @@ Outpost gets compromised	전초기지 발각
 
 Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
 
-News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"최근 사건들로 인해 국경 지대의 상황은 급속도로 악화되고 있으며, 인근 지역들도 그 여파에 직면하고 있습니다.
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"최근 사건들로 인해 접경 지대
+의 상황은 급속도로 악화되고 있으며, 인근 지역들도 그 여파에 직면하고 있습니다.
 
 이제 군용 BTR이 전초기지 지도에 진입할 수 있게 되었고, 05구역은 더 이상 안전지대로 간주되지 않습니다.
 
@@ -568,6 +637,7 @@ This is the last event of Early Access [Build 1]. The events and story will cont
 이 신호는 라디오 방송을 방해하고 있으며, 모든 일반 주파수에서 수신 가능합니다.
 
 이것은 얼리 액세스 [빌드 1]의 마지막 이벤트입니다. 이벤트와 스토리는 향후 빌드에서 계속됩니다."
+Ammo	탄약
 Armor Plate	방탄판
 Armor	방어구
 Armor Plate {class}	방탄판 {class}
@@ -576,11 +646,13 @@ Armor Plate (III+)	방탄판 (III+)
 Armor Plate (III)	방탄판 (III)
 Armor Plate (IIIA)	방탄판 (IIIA)
 Armor Plate (IV)	방탄판 (IV)
+Attachment	부착물
 Hybrid	하이브리드
 Kobra	코브라
 Leopard	레오파드
 Micro	마이크로
 Monster	몬스터
+Backpack	가방
 Jääkäri Backpack (Black)	야카리 배낭 (블랙)
 Jääkäri BP.	야카리 배낭
 Jääkäri Backpack (Brown)	야카리 배낭 (브라운)
@@ -592,19 +664,21 @@ Patrol Backpack	패트롤 배낭
 Patrol BP.	패트롤 배낭
 Duffel (Retro)	더플백 (레트로)
 R. Duffel	더플백
+Belt Pouch	벨트 파우치
 Kukkaro (Black)	쿠카로 (블랙)
 Kukkaro	쿠카로
 Kukkaro (Brown)	쿠카로 (브라운)
 Kukkaro (Green)	쿠카로 (그린)
 Kukkaro (M05)	쿠카로 (M05)
+Literature	서적
 Book (Children)	책 (아동용)
 Children	아동
 Book (Cooking)	책 (요리)
 Cooking	요리
 Book (Fishing)	책 (낚시)
-Fishing	낚시
 Book (Religion)	책 (종교)
 Religion	종교
+Clothing	의류
 Flame Beanie	플레임 비니
 F. Beanie	플레임 비니
 Combat Boots	전투화
@@ -621,9 +695,12 @@ Mosquito Hat	모기장 모자
 M. Hat	모기장 모자
 Sauna Hat	사우나 모자
 S. Hat	사우나 모자
-Hoodie (Border Zone)	후드티 (국경 지대)
-Hoodie BZ.	후드티 (국경 지대)
-Hoodie B.	후드티 (국경 지대)
+Hoodie (Border Zone)	"후드티 (접경 지대
+)"
+Hoodie BZ.	"후드티 (접경 지대
+)"
+Hoodie B.	"후드티 (접경 지대
+)"
 Hoodie (Gray)	후드티 (그레이)
 Hoodie	후드티
 M62 Jacket	M62 재킷
@@ -635,13 +712,16 @@ Winter Jacket	겨울 재킷
 Winter Jacket (Red)	겨울 재킷 (레드)
 Winter J.	겨울 재킷
 Jeans (Black)	청바지 (블랙)
-Jeans	청바지 (블랙)
+Jeans	"청바지
+(블랙)"
 Hiking Pants	등산 바지
 Hiking P.	등산 바지
 Windbreaker (Black)	바람막이 (블랙)
 Windbreaker	바람막이
 Windbr.	바람막이
 Windbreaker (Green)	바람막이 (그린)
+Consumables	소모품
+Consumable	소모품
 Drink	마시기
 Eat	먹기
 Eat Raw	먹기 (날것)
@@ -657,7 +737,8 @@ Meat	고기
 Canned Meatballs	미트볼 통조림
 Meatballs	미트볼
 Canned Pea Soup	완두콩 스프 통조림
-Pea Soup	완두콩 스프
+Pea Soup	"완두콩
+스프"
 Canned Peaches	복숭아 통조림
 Peaches	복숭아
 Canned Pear	배 통조림
@@ -720,6 +801,7 @@ Sugar	설탕
 Water Bottle	물병
 Water	물
 Yeast	이스트
+Electronics	전자제품
 Alarm Clock	알람 시계
 A. Clock	알람시계
 Batteries	배터리
@@ -743,35 +825,43 @@ Hotplate	핫플레이트
 Inverter	인버터
 Narva	나르바
 Polaris	폴라리스
+Fish	생선
+Fishing	낚시
 Bream	도미
 Fishing Rod	낚싯대
 F. Rod	낚싯대
 Perch	농어
 Pike	민물고기
 Roach	잉어
+Grenade	수류탄
+Helmet	헬멧
 Police Helmet (IIIA)	경찰 헬멧 (IIIA)
 Police Helmet	경찰 헬멧
 P. Helmet	경찰 헬멧
+Instrument	악기
 Guitar	기타
 Harmonica	하모니카
 Harmo.	하모니카
+Key	열쇠
 Attic Key	다락방 열쇠
-Attic K.	다락방 키
+Attic K.	다락방 열쇠
 Bunker Key	벙커 열쇠
-Bunker K.	벙커 키
+Bunker K.	벙커 열쇠
 Cellar Key	지하실 열쇠
-Cellar K.	지하실 키
+Cellar K.	지하실 열쇠
 Classroom Key	교실 열쇠
-Class. K.	교실 키
+Class. K.	교실 열쇠
 Gymnasium Key	체육관 열쇠
-Gym. K.	체육관 키
+Gym. K.	체육관 열쇠
 Tunnel Key	터널 열쇠
-Tunnel K.	터널 키
+Tunnel K.	터널 열쇠
+Knife	칼
 Jaeger 140	예거 140
 Jaeger	예거
 Skrama 200	스크라마 200
 Skrama	스크라마
 Skrama 240	스크라마 240
+Lore	스토리
 Cat	고양이
 Oil Sample	기름 샘플
 Oil S.	기름 샘플
@@ -779,6 +869,7 @@ Patient Report	환자 보고서
 P. Report	보고서
 Heal	치료
 Spray	뿌리기
+Medical	의료
 Antibiotics	항생제
 Antibio.	항생제
 Antiseptic	소독약
@@ -807,6 +898,8 @@ Tourni.	지혈대
 Tourniquet (Improvised)	지혈대 (급조)
 Wipes	물티슈
 Wipe	닦기
+Misc	기타
+ Misc	 기타
 Blanket	담요
 Board Game	보드게임
 B. Game	보드게임
@@ -832,6 +925,7 @@ Oil Filter	오일 필터
 O. Filter	오일 필터
 Pillow	배게
 Rags	헝겊
+Sleeping_Bag	침낭
 Sleeping Bag	침낭
 S. Bag	침낭
 Sticks	나뭇가지
@@ -844,11 +938,12 @@ Water Lock	발효 마개
 W. Lock	발효 마개
 Weapon Repair Kit	무기 수리 키트
 Repair Kit	수리 키트
+Rig	조끼
 LVPC (Green)	LVPC (그린)
-LVPC (M05)	LVPC (Green)
-LVPC (Winter)	LVPC (Green)
+LVPC (Winter)	LVPC (겨울)
 Fishing Vest	낚시 조끼
 F. Vest	낚시 조끼
+Weapon	무기
 Mag.	탄창
 KA-12 Magazine	KA-12 탄창
 KA-M Magazine	KA-M 탄창
@@ -860,6 +955,8 @@ KAR-21 Magazine (.308)	KAR-21 탄창 (.308)
 KAR-21 Barrel (.308)	KAR-21 총열 (.308)
 KAR-21 Barrel	KAR-21 총열
 Barrel	총열
+KP-31 Drum	KP-31 드럼 탄창
+Drum	드럼 탄창
 STANAG Magazine	STANAG 탄창
 M78 Magazine	M78 탄창
 Karov	카로프
@@ -870,3 +967,141 @@ P3 Magazine	P3 탄창
 RK Magazine	RK 탄창
 VSD Magazine	VSD 탄창
 SS Magazine	SS 탄창
+Common	일반
+Rare	희귀
+Legendary	전설
+New Furniture Added [Catalog]	새 가구 추가됨 [카탈로그]
+Boss Killed	보스 처치됨
+Cat Rescued	고양이 구조됨
+Cat Vital Activated	고양이 상태 활성화됨
+Cat Died	고양이가 사망했습니다
+You have been spotted!	적발되었습니다!
+Bed (Civilian)	침대 (민간용)
+Bed C.	침대 민간.
+Bed (Nomad)	침대 (방랑자)
+Bed N.	침대 방랑.
+Cabinet (Medical)	수납장 (의료용)
+Cabinet M.	수납장 의료.
+Cabinet (Office)	수납장 (사무용)
+Cabinet. 0	수납장 사무.
+Cabinet (Wood)	수납장 (나무)
+Cabinet W.	수납장 나무.
+Carpet (Persian)	카펫 (페르시안)
+Carpet P.	카펫 페르.
+Carpet (Rag)	카펫 (누더기)
+Carpet R.	카펫 누더기.
+Chair (Office)	의자 (사무용)
+Chair O.	의자 사무.
+Chair (School)	의자 (학교용)
+Chair S.	의자 학교.
+Sun Chair	선베드
+S. Chair	선베드
+Crate (Military)	상자 (군용)
+Crate M.	상자 군용.
+Crate (Special)	상자 (특수)
+Crate S.	상자 특수.
+Cupboard	찬장
+C. Board	찬장
+Curtain (Long)	커튼 (대형)
+Curtain L.	커튼 대형.
+Curtain (Mini)	커튼 (소형)
+Curtain M.	커튼 소형.
+Dartboard	다트판
+D. Board	다트판
+Freezer	냉동고
+Fridge	냉장고
+Locker	사물함
+Nightstand	협탁
+N. Stand	협탁
+Painting (Lake)	그림 (호수)
+Painting L.	그림 호수.
+Pallet	팔레트
+Poster (Posture)	포스터 (바른자세)
+Poster P.	포스터 자세.
+Rack (Coat)	옷걸이 (코트)
+Rack C.	옷걸이
+Rya (Maria)	융단 (마리아)
+Rya M.	융단 마리아.
+Shelf (Metal)	선반 (철제)
+Shelf M.	선반 (철제)
+Shelf (Wall)	선반 (벽면)
+Shelf W.	선반
+Shelf (Wood)	선반 (나무)
+Sign (Border Zone)	표지판 (접경 지대)
+Sign BZ.	표지판 (접경 지대)
+Sofa (Leather)	소파 (가죽)
+Sofa L.	소파 (가죽)
+Stool (Military)	의자 (군용)
+Stool M.	의자 (군용)
+Stool (Padded)	의자 (쿠션)
+Stool P.	의자 (쿠션)
+Stove	스토브
+Table (Cabin)	테이블 (오두막)
+Table C.	테이블 (오두막)
+Table (Canteen)	테이블 (식당)
+Table (Kitchen)	테이블 (주방)
+Table K.	테이블 (주방)
+Table (Office)	테이블 (사무용)
+Table. O	테이블 (사무용)
+Target Stand	표적 거치대
+Target S.	표적 거치대
+Television	텔레비전
+TV	TV
+Trolley (Short)	트롤리 (소형)
+Trolley S.	트롤리 (소형)
+Trolley (Tall)	트롤리 (대형)
+Trolley T.	트롤리 (대형)
+Weapon Display	무기 진열대
+Weapon D.	무기 진열대
+Unload	탄 꺼내기
+Show	보기
+Hide	숨기기
+Added	추가됨
+Unequip	해제
+Equip	장비
+Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)
+Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
+Feed cat:	고양이에게 먹이 주기:
+Rescue Cat	고양이 구출
+Frozen	냉동됨
+Clear Chamber	약실 비우기
+Door [Jammed]	문 [막힘]
+Door [Occupied]	문 [사용중]
+Door [Close]	문 [닫기]
+Door [Open]	문 [열기]
+All maps & zones	모든 지역 및 구역
+Activated	활성화됨
+Not active	활성화되지 않음
+Active	활성화
+Fuel Tank [89%]	연료 탱크 [89%]
+Permadeath Zone	퍼마데스 구역 (부활 불가)
+Radio [Turn Off]	라디오 [켜기]
+Radio [Turn On]	라디오 [끄기]
+Repair	수리
+Craft	제작
+Turn Off	끄기
+Turn On	켜기
+Remove	제거
+Completed	완료됨
+Add to Notes	노트에 추가
+Television [Turn Off]	텔레비전 [끄기]
+Television [Turn On]	텔레비전 [끄기]
+Corpse	시체
+Airdrop	보급품
+Tutorial Crate	튜토리얼 상자
+Electric Box	배전함
+Medical Cabinet	의료 수납장
+Office Cabinet	사무용 수납장
+Cabinet	수납장
+Bandit Corpse	밴디트 시체
+Crate Military	군용 상자
+Crate Special	특수 상자
+Wooden Crate	나무 상자
+Garbage	쓰레기
+Fireplace	난로
+Fusebox	퓨즈함
+Mailbox	우편함
+Boxes	박스
+Stove	스토브
+Tent	텐트
+Bandit	밴디트

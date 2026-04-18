@@ -1,4 +1,863 @@
 location	parent	name	type	text	translation
+Scenes/Menu	Main/Buttons	New	Button	New game	새 게임
+Scenes/Menu	Main/Buttons	Load	Button	Load game	불러오기
+Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	튜토리얼
+Scenes/Menu	Main/Buttons	Settings	Button	"Settings
+"	"설정
+"
+Scenes/Menu	Main/Buttons	Roadmap	Button	"Roadmap
+"	"로드맵
+"
+Scenes/Menu	Main/Buttons	About	Button	"About
+"	"정보
+"
+Scenes/Menu	Main/Buttons	Quit	Button	"Quit
+"	"종료
+"
+Scenes/Menu	Log	Header	Label	Changelog	변경사항
+Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
+"	"끄기
+"
+Scenes/Menu	Log/Buttons	Log_On	Button	"On
+"	"켜기
+"
+Scenes/Menu	Hardware	Header	Label	Hardware Check	하드웨어 확인
+Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
+"	"켜기
+"
+Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
+"	"끄기
+"
+Scenes/Menu	Intro	Header	Label	Watch Intro	인트로 보기
+Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
+"	"켜기
+"
+Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
+"	"끄기
+"
+Scenes/Menu	Music	Header	Label	Menu Music	메뉴 음악
+Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
+"	"켜기
+"
+Scenes/Menu	Music/Buttons	Music_On	Button	"On
+"	"끄기
+"
+Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
+접경
+ 지대를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."
+Scenes/Menu	.	Version	Label	Version: 0.1.0.0	버전: 0.1.0.0
+Scenes/Menu	Changelog/Header	Label	Label	Changelog	변경사항
+Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	"Following changes were made from:
+Demo [0.0.1.0] -> Early Access [0.1.0.0]
+----------------------------------------
+Build name: Road - Build 1
+Build version: 0.1.0.0
+Build type: Release
+----------------------------------------
+[ADDED] Event system
+[ADDED] Multi-shelter support
+[ADDED] Keys and locked doors
+[ADDED] PIP-scopes and scope options
+[ADDED] Native DirectX support
+[ADDED] Native shader caching
+[ADDED] Tools UI (Interface)
+[ADDED] Event calendar (Tools)
+[ADDED] Crafting menu (Tools)
+[ADDED] Task notes (Tools)
+[ADDED] World map (Tools)
+[ADDED] Casette player (Tools)
+[ADDED] New game mode: Darkness
+[ADDED] New game mode: Ironman
+[ADDED] New map: School (Area 05)
+[ADDED] New map: Highway (Area 05)
+[ADDED] New map: Outpost (Area 05)
+[ADDED] New map: Terminal (Vostok)
+[ADDED] New shelter: Attic
+[ADDED] New shelter: Bunker
+[ADDED] New shelter: Tent
+[ADDED] New shelter: Classroom
+[ADDED] New trader: Doctor
+[ADDED] New trader: Gunsmith
+[ADDED] New boss: Punisher
+[ADDED] New character: Cat
+[ADDED] New event: Trader Return
+[ADDED] New event: Fighter Jets
+[ADDED] New event: Missing Cat
+[ADDED] New event: Bandit Boss
+[ADDED] New event: Airdrops
+[ADDED] New event: BTR
+[ADDED] New event: Attack Helicopters
+[ADDED] New event: Crash Sites
+[ADDED] New event: Outpost Compromised
+[ADDED] New event: Trader Escape
+[ADDED] New event: Transmission
+[ADDED] New task: Prime Time
+[ADDED] New task: Coffee Reserve
+[ADDED] New task: Sweaty Business
+[ADDED] New task: Homemade
+[ADDED] New task: Nasty Draft
+[ADDED] New task: Steady Hands
+[ADDED] New task: Bookworm
+[ADDED] New task: Dice Master
+[ADDED] New task: Night Surgery
+[ADDED] New task: Infections
+[ADDED] New task: Hypovolemia
+[ADDED] New task: Mouth Organ
+[ADDED] New task: Patient Report
+[ADDED] New task: Substance
+[ADDED] New task: Bloodsuckers
+[ADDED] New task: Warm Meal
+[ADDED] New task: Nordic Trade
+[ADDED] New task: Big Blades
+[ADDED] New task: Ammo Delivery
+[ADDED] New task: Weapon Delivery
+[ADDED] New task: Medic
+[ADDED] New task: Home Collection
+[ADDED] New task: Everyman's Rights
+[ADDED] New task: Hitman
+[ADDED] New weapon: RK-62
+[ADDED] New weapon: RK-62M
+[ADDED] New weapon: M4A1
+[ADDED] New weapon: K416
+[ADDED] New weapon: P3
+[ADDED] New attachment: AN-15
+[ADDED] New item: KAR-21 Barrel
+[ADDED] New item: Flame Beanie
+[ADDED] New item: M62 Cap
+[ADDED] New item: Water Bottle
+[ADDED] New item: AFAK
+[ADDED] New item: Thermal Blanket
+[ADDED] New item: Saline
+[ADDED] New item: Antiseptic
+[ADDED] New item: Wipes
+[ADDED] New item: Tissues
+[ADDED] New item: Deodorant
+[ADDED] New item: Map
+[ADDED] New item: Map (Tactical)
+[ADDED] New item: Weapon Repair Kit
+[ADDED] New item: Tackle Box
+[ADDED] New item: Oil Filter
+[ADDED] New item: Coffee Filters
+[ADDED] New item: Water Lock
+[ADDED] New item: Lumber
+[ADDED] New item: Pillow
+[ADDED] New item: Blanket
+[ADDED] New item: Sticks
+[ADDED] New item: Rags
+[ADDED] New item: Casette (OST)
+[ADDED] New item: Casette (Electrofolk)
+[ADDED] New item: Casette (Symphony)
+[ADDED] New item: Casette (Radio Hits)
+[ADDED] New item: Attic Key
+[ADDED] New item: Bunker Key
+[ADDED] New item: Classroom Key
+[ADDED] New item: Cellar Key
+[ADDED] New item: Gymnasium Key
+[ADDED] New item: Tunnel Key
+[ADDED] New furniture: Pallet
+[ADDED] New furniture: Television
+[ADDED] New furniture: Metal Shelf
+[ADDED] New furniture: Target Stand
+[ADDED] New furniture: Sign (Border Zone)
+[ADDED] New furniture: Poster (Posture)
+[ADDED] New furniture: Trolley (Small)
+[ADDED] New furniture: Trolley (Tall)
+[ADDED] New furniture: Chair (School)
+[ADDED] New furniture: Cabinet (Office)
+[ADDED] New furniture: Desk (Office)
+[ADDED] New recipe: Energy Drink
+[ADDED] New recipe: Brewed Coffee
+[ADDED] New recipe: Cooked Pea Soup
+[ADDED] New recipe: Cooked Tomato Soup
+[ADDED] New recipe: Cooked Fish Soup
+[ADDED] New recipe: Cooked Meatballs
+[ADDED] New recipe: Kompot
+[ADDED] New recipe: Kilju
+[ADDED] New recipe: Improvised Bandage
+[ADDED] New recipe: Improvised Tourniquet
+[ADDED] New recipe: Improvised Splint
+[ADDED] New recipe: Weapon Repair
+[ADDED] New recipe: KAR-21 Upgrade
+[ADDED] New recipe: Cooking Station
+[ADDED] New recipe: Civilian Bed
+[ADDED] New recipe: Nomad Bed
+[ADDED] Lore-based game intro when starting a new game
+[ADDED] High-DPI font rendering for 4K/Retina displays
+[ADDED] Extra map border areas to prevent seeing visible map edges
+[ADDED] Different traders have varying base tax levels [100-300%]
+[ADDED] Firing weapons will reduce weapon condition over time
+[ADDED] Low weapon condition can now cause malfunctions
+[ADDED] Weapons can be repaired with Weapon Repair Kit (Crafting)
+[ADDED] Modular magazine support (STANAG) for M4A1 / KM18 / K416
+[ADDED] Modular magazine support (RK) for RK-95 / RK-62 / RK-62M
+[ADDED] AI Hotspots where AI will react to events like Airdrops
+[ADDED] AI can now patrol in Apartment rooms (not just staircases)
+[ADDED] AI Helicopter can now fire rockets at certain scenarios
+[ADDED] AI death sounds will end immediately with ""out of misery"" headshot
+[ADDED] Mines now use runtime spawning and are randomly spawned for each map instance
+[ADDED] Mines can now spawn also directly to map border and slightly beyond
+[ADDED] Liquid-based items can now freeze (Winter)
+[ADDED] Going into water boosts item freezing (Winter)
+[ADDED] Frozen items can be melted with heat sources or shelters (Winter)
+[ADDED] Traders don't accept malfunctioned or frozen items
+[ADDED] Crafting recipes don't accept malfunctioned or frozen items
+[ADDED] Playing music instruments slowly increases Mental over time
+[ADDED] Sleeping now consumes both energy and hydration [-20]
+[ADDED] Sleeping now increases mental [+20]
+[ADDED] Sleeping bags increases Body Temp [+50]
+[ADDED] Blankets, Pillows and Melatonin can now also be used for sleeping
+[ADDED] Using sleeping items other than sleeping bags outside decreases Body Temp [-100] (Winter)
+[ADDED] Outdoor fire sources like firepots can be used for heat based crafting
+[ADDED] Crafting supports reusable tools which are not consumed by recipes
+[ADDED] Separated tutorial tasks which also cover crafting and furniture items
+[ADDED] Furnitures now supports stacking and placing furniture on top each other
+[ADDED] Furnitures now supports magnet mode (Surface Magnet) for snapping to surfaces
+[ADDED] Loot simulations and containers can now use ""Industrial"" spawn types and locations
+[ADDED] Radio audio is now using high-pass filter and more distorted sound
+[ADDED] Changelog and hardware check buttons are added to the main menu
+[ADDED] 3D door handles and interaction handle animations
+[ADDED] If player falls through terrain, fallback system returns player back to the game world
+[ADDED] If item falls through terrain, fallback system prevents item taking CPU resources
+[ADDED] If item falls through shelter, fallback system spawns item directly to inventory
+----------------------------------------
+[FIXED] Ammo check UI frozed when going into water while performing ammo check
+[FIXED] Matches value calculation was not amount-based and could be exploited
+[FIXED] Reloading while loading ammo could cause ammo duplication and exceed ammo limits
+[FIXED] Full item stacks could cause duplication when using fast transfer
+[FIXED] Full item stacks could cause duplication when using context transfer
+[FIXED] Swithing from Trader Tasks to Supply during item delivery kept items selected
+[FIXED] Double clicking Trader Tasks during item delivery kept items selected
+[FIXED] Tetris-grids could cause ghost items and errors at certain screen resolutions
+[FIXED] Simulation time could get stuck 00:00 on certain hardware during loading
+[FIXED] Simulation season could reset from winter to summer on certain hardware during loading
+[FIXED] Equipping weapon directly after grenade throw unequipped the weapon
+[FIXED] Equipping weapon directly after grenade throw could hide the magazine
+[FIXED] Interface context menu size didn't reset horizontally between items
+[FIXED] Player controller could get stuck on Apartments bathtubs
+[FIXED] AI pathfinding could get stuck in multi-floor buildings (Apartments)
+[FIXED] AI pathfinding could clip through staircases (Apartments)
+[FIXED] AI backpacks didn't render at far distances (+100m)
+[FIXED] Weapon audio had distortions / clipping when using full-auto
+[FIXED] Ambient volume didn't affect dynamic ambient SFX
+[FIXED] Summer dynamic ambient SFX could activate on Winter (like mosquitos)
+[FIXED] Auto-stack SFX could trigger when using fast transfer with already max stacks
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Generalist trader lights caused artifacts and leaked outdoor
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Campfire and fire elements clipped though firepots and fire barrels
+[FIXED] Fire VFX dind't render through Non-PIP scopes
+[FIXED] Tree billboard inconsistencies and exposure levels
+[FIXED] Environment fog was slightly visible inside shelters
+[FIXED] Bullet decals were unstable, flickered and disappeared beyond 25m
+[FIXED] Shooting a scaled nature elements like rocks also scaled to bullet decals
+[FIXED] Generalist trader lights caused artifacts and leaked through a wall
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Multiple ALT-TAB issues where game might not response
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+----------------------------------------
+[CHANGED] Common and Uncommon rarity levels are now merged to Common
+[CHANGED] Legendary item spawn changes changed from 1% to 0.1%
+[CHANGED] Armor plates will now spawn always at full item conditions
+[CHANGED] Random sleep time changed from 4-8 to 6-12
+[CHANGED] Lasers can only be attached to weapons with suitable side/top rails
+[CHANGED] Guards can now also use M4A1 as their default weapon
+[CHANGED] All project and save files now exists directly in AppData/Roaming/[GameName]
+[CHANGED] All exe.files and builds use industry-standard versioning (e.g 0.1.0.0)
+[CHANGED] Certain weapon and attachment names are switched to use pseudo-names
+[CHANGED] Weapon audio uses more realistic tail / echo volumes after firing
+[CHANGED] Multiple changes for AI weapon audio to improve directional and flyby audio
+[CHANGED] Candles no longer cause Burn medical condition when walked on
+[CHANGED] Helicopter model type changed from Mi-8 to Mi-24 (Hind)"	"다음과 같은 변경 사항이 적용되었습니다.
+데모 [0.0.1.0] -> 얼리 액세스 [0.1.0.0]
+----------------------------------------
+빌드 이름: Road - 빌드 1
+빌드 버전: 0.1.0.0
+빌드 유형: 릴리스
+----------------------------------------
+[추가됨] 이벤트 시스템
+[추가됨] 다중 쉘터 지원
+[추가됨] 열쇠 ​​및 잠긴 문
+[추가됨] PIP 스코프 및 스코프 옵션
+[추가됨] 네이티브 DirectX 지원
+[추가됨] 네이티브 셰이더 캐싱
+[추가됨] 도구 UI(인터페이스)
+[추가됨] 이벤트 캘린더(도구)
+[추가됨] 제작 메뉴(도구)
+[추가됨] 작업 메모(도구)
+[추가됨] 세계 지도(도구)
+[추가됨] 카세트 플레이어(도구)
+[추가됨] 새로운 게임 모드: 어둠
+[추가됨] 새로운 게임 모드: 아이언맨
+[추가됨] 새로운 맵: 학교(지역) 05)
+[추가됨] 새 지도: 고속도로 (5번 지역)
+[추가됨] 새 지도: 전초기지 (5번 지역)
+[추가됨] 새 지도: 터미널 (보스토크)
+[추가됨] 새 은신처: 다락방
+[추가됨] 새 은신처: 벙커
+[추가됨] 새 은신처: 텐트
+[추가됨] 새 은신처: 교실
+[추가됨] 새 상인: 의사
+[추가됨] 새 상인: 총포상
+[추가됨] 새 보스: 처벌자
+[추가됨] 새 캐릭터: 고양이
+[추가됨] 새 이벤트: 상인 귀환
+[추가됨] 새 이벤트: 전투기
+[추가됨] 새 이벤트: 고양이 실종
+[추가됨] 새 이벤트: 산적 두목
+[추가됨] 새 이벤트: 공중 투하
+[추가됨] 새 이벤트: BTR
+[추가됨] 새 이벤트: 공격 헬리콥터
+[추가됨] 새 이벤트: 추락 사이트
+[추가됨] 새 이벤트: 전초기지 공격
+[추가됨] 새 이벤트: 상인 탈출
+[추가됨] 새 이벤트: 전송
+[추가됨] 새 임무: 황금 시간
+[추가됨] 새 임무: 커피 비축
+[추가됨] 새 임무: 땀투성이 사업
+[추가됨] 새 임무: 수제
+[추가됨] 새 임무: 불쾌한 초안
+[추가됨] 새 임무: 흔들림 없는 손
+[추가됨] 새 임무: 책벌레
+[추가됨] 새 임무: 주사위 마스터
+[추가됨] 새 임무: 야간 수술
+[추가됨] 새 임무: 감염
+[추가됨] 새 임무: 저혈량증
+[추가됨] 새 임무: 구강 기관
+[추가됨] 새 임무: 환자 보고서
+[추가됨] 새 임무: 물질
+[추가됨] 새 임무: 흡혈귀
+[추가됨] 새 임무: 따뜻한 식사
+[추가됨] 새 임무: 북유럽 거래
+[추가됨] 새로운 임무: 빅 블레이드
+[추가됨] 새로운 임무: 탄약 배달
+[추가됨] 새로운 임무: 무기 배달
+[추가됨] 새로운 임무: 의무병
+[추가됨] 새로운 임무: 집 수거
+[추가됨] 새로운 임무: 모두의 권리
+[추가됨] 새로운 임무: 암살자
+[추가됨] 새로운 무기: RK-62
+[추가됨] 새로운 무기: RK-62M
+[추가됨] 새로운 무기: M4A1
+[추가됨] 새로운 무기: K416
+[추가됨] 새로운 무기: P3
+[추가됨] 새로운 부착물: AN-15
+[추가됨] 새로운 아이템: KAR-21 총열
+[추가됨] 새로운 아이템: 화염 비니
+[추가됨] 새로운 아이템: M62 모자
+[추가됨] 새로운 아이템: 물병
+[추가됨] 새로운 아이템: AFAK
+[추가됨] 새로운 아이템: 보온 담요
+[추가됨] 새로운 아이템: 생리식염수
+[추가됨] 신규 아이템: 소독제
+[추가됨] 신규 아이템: 물티슈
+[추가됨] 신규 아이템: 티슈
+[추가됨] 신규 아이템: 데오도란트
+[추가됨] 신규 아이템: 지도
+[추가됨] 신규 아이템: 전술 지도
+[추가됨] 신규 아이템: 무기 수리 키트
+[추가됨] 신규 아이템: 낚시 도구 상자
+[추가됨] 신규 아이템: 오일 필터
+[추가됨] 신규 아이템: 커피 필터
+[추가됨] 신규 아이템: 워터락
+[추가됨] 신규 아이템: 목재
+[추가됨] 신규 아이템: 베개
+[추가됨] 신규 아이템: 담요
+[추가됨] 신규 아이템: 막대기
+[추가됨] 신규 아이템: 걸레
+[추가됨] 신규 아이템: 카세트 (OST)
+[추가됨] 신규 아이템: 카세트 (일렉트로포크)
+[추가됨] 신규 아이템: 카세트 (심포니)
+[추가됨] 신규 아이템: 카세트 (라디오 히트곡)
+[추가됨] 신규 아이템: 다락방 열쇠
+[추가됨] 신규 아이템: 벙커 열쇠
+[추가됨] 신규 아이템: 교실 열쇠
+[추가됨] 신규 아이템: 지하실 열쇠
+[추가됨] 신규 아이템: 체육관 열쇠
+[추가됨] 신규 아이템: 터널 열쇠
+[추가됨] 새 가구: 팔레트
+[추가됨] 새 가구: 텔레비전
+[추가됨] 새 가구: 금속 선반
+[추가됨] 새 가구: 표적 스탠드
+[추가됨] 새 가구: 표지판 (접경
+ 지대)
+[추가됨] 새 가구: 포스터 (자세)
+[추가됨] 새 가구: 작은 카트
+[추가됨] 새 가구: 큰 카트
+[추가됨] 새 가구: 의자 (학교용)
+[추가됨] 새 가구: 캐비닛 (사무실용)
+[추가됨] 새 가구: 책상 (사무실용)
+[추가됨] 새 레시피: 에너지 드링크
+[추가됨] 새 레시피: 브루드 커피
+[추가됨] 새 레시피: 완두콩 수프
+[추가됨] 새 레시피: 토마토 수프
+[추가됨] 새 레시피: 생선 수프
+[추가됨] 새 레시피: 미트볼
+[추가됨] 새 레시피: 콤폿
+[추가됨] 새 레시피: 킬주
+[추가됨] 신규 레시피: 즉석 붕대
+[추가됨] 신규 레시피: 즉석 지혈대
+[추가됨] 신규 레시피: 즉석 부목
+[추가됨] 신규 레시피: 무기 수리
+[추가됨] 신규 레시피: KAR-21 업그레이드
+[추가됨] 신규 레시피: 조리대
+[추가됨] 신규 레시피: 민간인 침대
+[추가됨] 신규 레시피: 방랑자 침대
+[추가됨] 새 게임 시작 시 게임 세계관 기반 인트로
+[추가됨] 4K/레티나 디스플레이용 고해상도 글꼴 렌더링
+[추가됨] 지도 가장자리가 보이지 않도록 추가 지도 경계 영역 추가
+[추가됨] 상인마다 기본 세금 수준(100~300%)이 다름
+[추가됨] 무기를 발사하면 시간이 지남에 따라 무기 내구도가 감소합니다.
+[추가됨] 무기 내구도가 낮으면 오작동이 발생할 수 있습니다.
+[추가됨] 무기 수리 키트로 무기를 수리할 수 있습니다. (제작)
+[추가됨] M4A1 / KM18 / K416에 모듈식 탄창(STANAG) 지원
+[추가됨] RK-95 / RK-62 / RK-62M에 모듈식 탄창(RK) 지원
+[추가됨] AI가 보급품 투하와 같은 이벤트에 반응하는 AI 핫스팟 추가
+[추가됨] AI가 아파트 내부(계단뿐 아니라)에서도 순찰 가능
+[추가됨] AI 헬리콥터가 특정 상황에서 로켓 발사 가능
+[추가됨] ""비참함에서"" 헤드샷으로 AI 사망 효과음 즉시 종료
+[추가됨] 지뢰가 런타임 생성 방식으로 맵 인스턴스마다 무작위로 생성됨
+[추가됨] 지뢰가 맵 경계선 바로 앞이나 경계선 바로 너머에도 생성 가능
+[추가됨] 액체 아이템이 얼 수 있음 (겨울)
+[추가됨] 물속에 들어가면 아이템이 더 빨리 얼어붙음 (겨울)
+[추가됨] 얼어붙은 아이템은 열원으로 녹일 수 있음 또는 대피소(겨울)
+[추가됨] 상인은 고장 나거나 얼어붙은 아이템을 받지 않습니다.
+[추가됨] 제작 레시피는 고장 나거나 얼어붙은 아이템을 사용할 수 없습니다.
+[추가됨] 악기를 연주하면 시간이 지남에 따라 정신력이 서서히 증가합니다.
+[추가됨] 잠을 자면 에너지와 수분이 모두 소모됩니다[-20].
+[추가됨] 잠을 자면 정신력이 증가합니다[+20].
+[추가됨] 침낭을 사용하면 체온이 증가합니다[+50].
+[추가됨] 담요, 베개, 멜라토닌도 잠을 잘 때 사용할 수 있습니다.
+[추가됨] 침낭 이외의 수면 용품을 야외에서 사용하면 체온이 감소합니다[-100](겨울).
+[추가됨] 화로와 같은 야외 화로를 열 기반 제작에 사용할 수 있습니다.
+[추가됨] 제작 시 소모되지 않는 재사용 가능한 도구를 사용할 수 있습니다.
+[추가됨] 제작 및 가구 아이템을 다루는 별도의 튜토리얼 과제가 추가되었습니다.
+[추가됨] 가구를 쌓거나 위에 배치할 수 있습니다.
+[추가됨] 가구에 이제 자석 모드(표면 자석)를 지원하여 표면에 부착할 수 있습니다.
+[추가됨] 전리품 시뮬레이션 및 컨테이너에서 이제 ""산업용"" 생성 유형과 위치를 사용할 수 있습니다.
+[추가됨] 라디오 오디오에 이제 고역 통과 필터가 적용되어 더욱 왜곡된 사운드가 제공됩니다.
+[추가됨] 메인 메뉴에 변경 로그 및 하드웨어 점검 버튼이 추가되었습니다.
+[추가됨] 3D 문 손잡이 및 상호 작용 손잡이 애니메이션이 추가되었습니다.
+[추가됨] 플레이어가 지형을 뚫고 떨어질 경우, 대체 시스템이 플레이어를 게임 세계로 되돌려줍니다.
+[추가됨] 아이템이 지형을 뚫고 떨어질 경우, 대체 시스템이 아이템이 CPU 리소스를 사용하는 것을 방지합니다.
+[추가됨] 아이템이 은신처를 뚫고 떨어질 경우, 대체 시스템이 아이템을 인벤토리에 직접 생성합니다.
+----------------------------------------
+[수정됨] 탄약 확인 중 물속으로 들어가면 탄약 확인 UI가 멈추는 문제
+[수정됨] 성냥 가치 계산이 수량 기반이 아니어서 악용될 수 있었던 문제
+[수정됨] 탄약 장전 중 재장전 시 탄약이 중복되어 탄약 제한을 초과할 수 있었던 문제
+[수정됨] 아이템 스택이 가득 차 있을 때 빠른 전송을 사용하면 중복되는 문제
+[수정됨] 아이템 스택이 가득 차 있을 때 상황별 전송을 사용하면 중복되는 문제
+[수정됨] 아이템 배송 중 상인 임무에서 보급으로 전환해도 아이템이 선택된 상태로 유지되는 문제
+[수정됨] 아이템 배송 중 상인 임무를 두 번 클릭하면 아이템이 선택된 상태로 유지되는 문제
+[수정됨] 특정 화면 해상도에서 테트리스 격자로 인해 유령 아이템이 나타나거나 오류가 발생하는 문제
+[수정됨] 특정 하드웨어에서 로딩 중 시뮬레이션 시간이 00:00에 멈추는 문제
+[수정됨] 특정 하드웨어에서 로딩 중 시뮬레이션 계절이 겨울에서 여름으로 초기화되는 문제
+[수정됨] 수류탄 투척 직후 무기를 장착하면 무기가 해제되는 문제
+[수정됨] 수류탄 투척 직후 무기를 장착하는 문제 잡지를 숨길 수 있었던 문제
+[수정됨] 인터페이스 컨텍스트 메뉴 크기가 항목 간 가로 방향으로 재설정되지 않던 문제
+[수정됨] 플레이어 컨트롤러가 아파트 욕조에서 끼이던 문제
+[수정됨] AI 경로 탐색이 다층 건물(아파트)에서 멈추던 문제
+[수정됨] AI 경로 탐색이 계단(아파트)을 통과하던 문제
+[수정됨] AI 배낭이 먼 거리(100m 이상)에서 렌더링되지 않던 문제
+[수정됨] 완전 자동 사격 시 무기 오디오에 왜곡/겹침 현상이 있던 문제
+[수정됨] 주변 볼륨이 동적 주변 효과음에 영향을 주지 않던 문제
+[수정됨] 여름 동적 주변 효과음이 겨울에 활성화되던 문제(예: 모기 소리)
+[수정됨] 이미 최대 스택을 보유한 상태에서 빠른 전송을 사용할 때 자동 스택 효과음이 발생하던 문제
+[수정됨] 단일 모니터 설정에서 창 모드 크기 조정이 제대로 작동하지 않던 문제
+[수정됨] 다중 모니터 설정에서 로딩 화면 중 선택 모니터가 전환되던 문제
+[수정됨] 쉘터 저장 허용 아이템 위치 오류로 인한 빛 깜빡임 현상 수정
+[수정됨] 여러 HUD 메시지가 동시에 겹쳐 표시되던 문제 수정
+[수정됨] 일반 상인 조명으로 인해 화면 깨짐 및 외부로 빛샘 현상 발생 수정
+[수정됨] 은신처 저장 시 아이템 위치 오류로 인한 빛 깜빡임 현상 수정
+[수정됨] 모닥불 및 화염 요소가 화로와 화염통을 뚫고 나오던 문제 수정
+[수정됨] 화염 VFX가 PIP가 아닌 조준경을 통해 렌더링되지 않던 문제 수정
+[수정됨] 나무 빌보드의 불일치 및 노출 수준 수정
+[수정됨] 은신처 내부에서 환경 안개가 약간 보이던 문제 수정
+[수정됨] 총알 데칼이 불안정하고 깜빡이며 25m 이상 거리에서 사라지던 문제 수정
+[수정됨] 바위와 같은 크기가 조정된 자연 요소를 쏘면 총알 데칼도 함께 크기가 조정되던 문제 수정
+[수정됨] 일반 상인 조명으로 인해 화면 깨짐 및 벽을 뚫고 나오던 문제 수정
+[수정됨] 여러 HUD 메시지가 동시에 겹쳐 표시되던 문제 수정
+[수정됨] ALT-TAB 시 게임이 제대로 실행되지 않던 여러 문제 수정 응답
+[수정됨] 단일 모니터 설정에서 창 모드 크기 조정이 안정적으로 작동하지 않던 문제
+[수정됨] 다중 모니터 설정에서 로딩 화면 중 모니터 선택기가 전환될 수 있던 문제
+----------------------------------------
+[변경됨] 일반 및 희귀 등급이 이제 일반으로 통합되었습니다.
+[변경됨] 전설 아이템 생성 확률이 1%에서 0.1%로 변경되었습니다.
+[변경됨] 방어구는 이제 항상 최대 상태로 생성됩니다.
+[변경됨] 무작위 수면 시간이 4-8에서 6-12로 변경되었습니다.
+[변경됨] 레이저는 적합한 측면/상단 레일이 있는 무기에만 장착할 수 있습니다.
+[변경됨] 경비병도 이제 M4A1을 기본 무기로 사용할 수 있습니다.
+[변경됨] 모든 프로젝트 및 저장 파일이 이제 AppData/Roaming/[게임 이름]에 직접 저장됩니다.
+[변경됨] 모든 실행 파일과 빌드는 업계 표준 버전(예: 0.1.0.0)을 사용합니다.
+[변경됨] 일부 무기 및 부착물 이름이 가명으로 변경되었습니다.
+[변경됨] 무기 발사 후 잔향/메아리 소리가 더욱 사실적으로 변경되었습니다.
+[변경됨] AI 무기 오디오의 방향 및 비행 오디오가 개선되었습니다.
+[변경됨] 양초를 밟아도 화상을 입는 질병이 더 이상 발생하지 않습니다.
+[변경됨] 헬리콥터 기종이 Mi-8에서 Mi-24(힌드)로 변경되었습니다."
+Scenes/Menu	Modes	Warning	Label	Warning!	경고!
+Scenes/Menu	Modes/Warning	Detail	Label	Existing save files will be deleted	기존 저장 파일이 삭제될 것입니다.
+Scenes/Menu	Modes/Buttons	Modes_Enter	Button	Enter the Road	도로 진입하기
+Scenes/Menu	Modes/Buttons	Modes_Return	Button	← Return	← 돌아가기
+Scenes/Menu	Modes/Difficulty	Header	Label	Difficulty	난이도
+Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	Gameplay mode	게임플레이 모드
+Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	Recommended for new players	초보자에게 권장됨
+Scenes/Menu	Modes/Difficulty/Standard	Name	Label	Standard	표준
+Scenes/Menu	Modes/Difficulty/Standard	Details	Label	"- Random start kit
+- Shelter spawn
+- Starts 08:00 with neutral weather
+- All character vitals 100
+- Permadeath in Vostok"	"- 시작 장비 무작위 지급
+- 쉘터에서 스폰
+- 오전 8:00시, 보통 날씨에서 시작
+- 캐릭터의 모든 상태 100
+- 보스토크에서의 죽음은 돌이킬 수 없습니다"
+Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	Darkness	다크니스
+Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Permadeath in Vostok"	"- 시작 장비 없음
+- 무작위 장소에서 스폰
+- 무작위 시간 & 날씨에서 시작
+- 무작위의 캐릭터 상태로 시작
+- 보스토크에서의 죽음은 돌이킬 수 없습니다"
+Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	Select	선택
+Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	Ironman	아이언맨
+Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Always permadeath"	"- 시작 장비 없음
+- 무작위 장소에서 스폰
+- 무작위 시간 & 날씨에서 시작
+- 무작위의 캐릭터 상태로 시작
+- 모든 죽음은 돌이킬 수 없습니다"
+Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	Select	선택
+Scenes/Menu	Modes/Season	Header	Label	Season	계절
+Scenes/Menu	Modes/Season/Header	Subheader	Label	Seasonal mode	계절별 모드
+Scenes/Menu	Modes/Season/Summer	Hint	Label	Recommended for new players	초보자에게 권장됨
+Scenes/Menu	Modes/Season/Summer	Name	Label	Summer	여름
+Scenes/Menu	Modes/Season/Summer	Details	Label	"- Summer (365 days)
+- No winter
+- Day & night cycle (2.4h IRL)"	"- 여름 (365일)
+- 겨울 없음
+- 낮/밤 주기 (현실시간 기준 2.4시간)"
+Scenes/Menu	Modes/Season/Summer	Select	Button	Select	선택
+Scenes/Menu	Modes/Season/Winter	Name	Label	Winter	겨울
+Scenes/Menu	Modes/Season/Winter	Details	Label	"- No summer
+- Winter (365 days)
+- Day & night cycle (2.4h IRL)"	"- 여름 없음
+- 겨울 (365일)
+- 낮/밤 주기 (현실시간 기준 2.4시간)"
+Scenes/Menu	Modes/Season/Winter	Select	Button	Select	선택
+Scenes/Menu	Modes/Season/Dynamic	Name	Label	Dynamic	동적
+Scenes/Menu	Modes/Season/Dynamic	Details	Label	"- Summer / Autumn / Winter / Spring
+- Dynamic season cycle (365 days)
+- Day & night cycle (2.4h IRL)"	"- 여름 / 가을 / 겨울 / 봄
+- 동적인 계절 주기 (365일)
+- 낮/밤 주기 (현실시간 기준 2.4시간)"
+Scenes/Menu	Modes/Season/Dynamic	Select	Button	Locked	잠김
+Scenes/Menu	Settings	Header	Label	Settings	설정
+Scenes/Menu	Settings/Header	Subheader	Label	Game options	게임 옵션
+UI/Settings	.	Pause	Label	Game Paused	게임 일시중지됨
+Scenes/Menu	Settings	Settings_Return	Button	← Return	← 돌아가기
+UI/Settings	Warning/Buttons	Exit_Return	Button	← Return	← 돌아가기
+UI/Settings	Warning	Warning	Label	Warning!	경고!
+UI/Settings	Warning/Buttons	Exit_Menu	Button	Continue to Main Menu	메인 메뉴로 이동
+UI/Settings	Warning/Buttons	Exit_Quit	Button	Quit Game	게임 종료
+UI/Settings	Warning/Warning	Detail	Label	"You are exiting the game outside of the shelter
+Current inventory & equipment will be deleted"	"대피소 밖에서 게임을 종료하려 합니다
+현재 소지품 및 장비가 삭제될 것입니다."
+Resources/Inputs	.	Header	Label	Input Settings	입력 설정
+Resources/Inputs	Modes/Settings	Mouse	Label	Mouse	마우스
+Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	"Normal
+"	"일반
+"
+Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	"Inverted
+"	"반전
+"
+Resources/Inputs	Modes/Settings	Sprint	Label	Sprint	전력 질주
+Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	"Hold
+"	"유지
+"
+Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	"Toggle
+"	"토글
+"
+Resources/Inputs	Modes/Settings	Lean	Label	Lean	기울이기
+Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
+"	"유지
+"
+Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
+"	"토글
+"
+Resources/Inputs	Modes/Settings	Aim	Label	Aim	조준
+Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
+"	"유지
+"
+Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
+"	"토글
+"
+Resources/Inputs	.	Reset	Button	Reset to defaults	기본값으로 초기화
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	입력 예시
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	Input Key	키 입력
+UI/Settings	Settings/Row_01/Audio	Audio	Label	Audio Settings	오디오 설정
+UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	Master Volume	마스터 볼륨
+UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	Ambient Volume	환경음 볼륨
+UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	Music Volume	음악 볼륨
+UI/Settings	Settings/Row_01/Music/Elements	Music	Label	Music Preset	음악 프리셋
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	"Off
+"	"끄기
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	"Dynamic
+"	"다이내믹
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	"Shelter
+"	"은신처
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 05
+"	"05 구역
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
+"	"국경
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
+"	"보스토크
+"
+UI/Settings	Settings/Row_01/Camera	Camera	Label	Camera Settings	카메라 설정
+UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	Interpolate	보간
+UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	Field of View	시야각 (FOV)
+UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	Headbob	화면 흔들림
+UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	"Off
+"	"끄기
+"
+UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	"On
+"	"켜기
+"
+UI/Settings	Settings/Row_01/Mouse	Mouse	Label	Mouse Settings	마우스 설정
+UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	시점 감도
+UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	조준 감도
+UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	Scope Sensitivity	조준경 감도
+UI/Settings	Settings/Row_01/Color	Color	Label	Color Settings	색상 설정
+UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	Exposure	노출
+UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	Contrast	대비
+UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	Saturation	채도
+UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	이미지 설정
+UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	선명도
+UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
+UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
+"	"지도
+"
+UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	FPS
+UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	상태
+UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	의료
+UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	배치
+UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	장식
+UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	UI Tooltip	UI 툴팁
+UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	"On
+"	"켜기
+"
+UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	Off	끄기
+UI/Settings	Settings/Row_02/PIP	PIP	Label	PIP Scopes	PIP 조준경
+UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	"On
+"	"켜기
+"
+UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	"Off
+"	"끄기
+"
+UI/Settings	Settings/Row_02/Shadows	Shadows	Label	Detail Shadows	세부 그림자
+UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	On	켜기
+UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	"Off
+"	"끄기
+"
+UI/Settings	Settings/Row_02/Water	Header	Label	Water Reflections	수면 반사
+UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	On	켜기
+UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
+"	"끄기
+"
+UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	앰비언트 오클루전
+UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	켜기
+UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
+"	"끄기
+"
+UI/Settings	Settings/Row_03/Display	Display	Label	Display	디스플레이
+UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	전체 화면
+UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	창 모드
+UI/Settings	Settings/Row_03/Frames	Frames	Label	Frames	프레임
+UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	Vsync	수직동기화
+UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	Unlimited	무제한
+UI/Settings	Settings/Row_03/Rendering	Rendering	Label	Render Resolution	렌더링 해상도
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	Low	낮음
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	Medium	보통
+UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	High	높음
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	Ultra	울트라
+UI/Settings	Settings/Row_03/Lighting	Lighting	Label	Lighting Quality	조명 품질
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	Low	낮음
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	Medium	보통
+UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	High	높음
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	Ultra	울트라
+UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	Anti-aliasing	안티 앨리어싱
+UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	Off	끄기
+UI/Settings	Settings/Row_03/Exit	Exit	Label	Exit	나가기
+UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	Main Menu	메인 메뉴
+UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
+"	"게임 종료
+"
+Scenes/Menu	Roadmap	Header	Label	Roadmap	로드맵
+Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	출시 예정 빌드
+Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← 돌아가기
+Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	Build 1 | Road	빌드 1 | 도로
+Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	Completed	완료됨
+Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	"•  Early access launch
+•  Gameplay loop
+•  Expanded maps
+•  Dynamic elements
+•  Multi-shelter support"	"•  얼리엑세스 출시
+•  반복적인 게임 플레이
+•  확장된 맵
+•  동적 요소
+•  멀티- 쉘터 지원"
+Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	Build 2 | Nomads	빌드 2 | 방랑자
+Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	Q3/2026	Q3/2026
+Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	"•  Friendly faction
+•  AI vs. AI combat
+•  AI variants
+•  Driver (Trader)
+•  New map & shelter"	"•  우호 세력
+•  AI vs AI 전투
+•  AI 변화
+•  운전사 (상인)
+•  새로운 맵 & 쉘터"
+Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	Build 3 | Signal	빌드 3 | 신호
+Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	Q4/2026	Q4/2026
+Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	"•  Quest system
+•  Lore elements
+•  Civil defence shelters
+•  Grandma (Trader)
+•  New map & shelter"	"•  퀘스트 시스템
+•  스토리 요소
+•  민방위 대피소
+•  할머니 (상인)
+•  새로운 맵 & 쉘터"
+Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	Build 4 | Gunslinger	빌드 4 | 총잡이
+Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	TBA	발표 예정
+Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	"•  Weapon overhaul
+•  Bullet penetration
+•  Modding kits
+•  Trader services
+•  New map & shelter"	"•  무기 개편
+•  탄도 관통
+•  개조 키트
+•  상인 서비스
+•  새로운 맵 & 쉘터"
+Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	Build 5 | North	빌드 5 | 북부
+Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	TBA	발표 예정
+Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	"•  Dynamic season
+•  Train system
+•  Hunting & wildlife
+•  Shaman (Trader)
+•  New map & shelter"	"•  동적인 계절
+•  기차 시스템
+•  야생 & 사냥
+•  샤먼 (상인)
+•  새로운 맵 & 쉘터"
+Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	Build 6 | Abyss	빌드 6 | 어비스
+Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	TBA	발표 예정
+Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	"•  Sea system
+•  Patrol boats
+•  Scuba gear
+•  Fisherman (Trader)
+•  New map & shelter"	"•  바다 시스템
+•  순찰선
+•  잠수 장비
+•  어부 (상인)
+•  새로운 맵 & 쉘터"
+Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	Build 7 | Enigma	빌드 7 | 에니그마
+Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	TBA	발표 예정
+Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	"•  Dialogue system
+•  SIGINT tools
+•  Transmissions
+•  Scientist (Trader)
+•  Vostok shelter"	"•  대화 시스템
+•  SIGINT 도구
+•  전송
+•  과학자 (상인)
+•  보스토크 쉘터"
+Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	Build 8 | Silent Night	빌드 8 | 고요한 밤
+Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	TBA	발표 예정
+Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	"•  Full questline
+•  World options
+•  Destruction system
+•  FINSOF faction
+•  New map & shelter"	"•  완전한 퀘스트 라인
+•  월드 옵션
+•  파괴 시스템
+•  FINSOF 시스템
+•  새로운 맵 & 쉘터"
+Scenes/Menu	About	About_Return	Button	← Return	← 돌아가기
+Scenes/Menu	About/Game	Info	Label	"Road to Vostok ® is a hardcore single-player survival game set 
+in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
+접경 지대
+를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."
+Scenes/Menu	About	Developer	Label	Developer	개발사
+Scenes/Menu	About	Country	Label	Country of origin	개발국
+Scenes/Menu	About/Country	Info	Label	Finland	핀란드
+Scenes/Menu	About	Founding	Label	Founding date	설립일
+Scenes/Menu	About/Founding	Info	Label	Feb. 2022	2022년 2월
+Scenes/Menu	About	Copyright	Label	Copyright & Legal	저작권 & 법률
+Scenes/Menu	About/Copyright	Info	Label	"1. Game Content
+Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
+
+2. Trademarks
+Road to Vostok ® is registered trademark of Road to Vostok Ltd.
+
+3. Engine
+Road to Vostok ® is powered by open source Godot Engine"	"1. 게임 콘텐츠
+Road to Vostok © 2026 Road to Vostok Ltd. 모든 권리 보유.
+
+2. 상표
+Road to Vostok ®은 Road to Vostok Ltd.의 등록 상표입니다.
+
+3. 게임 엔진
+Road to Vostok ®은 오픈 소스 Godot 엔진으로 구동됩니다."
+Scenes/Menu	About	License	Label	Engine License (MIT)	게임 엔진 라이센스 (MIT License)
+Scenes/Menu	About/License	MIT	Label	"This game uses Godot Engine, available under the following license:
+
+Copyright © 2014-present Godot Engine contributors.
+Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the ""Software""), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE."	"이 게임은 Godot 엔진을 사용하며, Godot 엔진은 다음 라이선스에 따라 사용 가능합니다.
+
+저작권(c) 2014-현재 Godot 엔진 기여자.
+저작권(c) 2007-2014 Juan Linietsky, Ariel Manzur.
+
+본 소프트웨어 및 관련 문서 파일(""소프트웨어"")의 사본을 입수하는 모든 사람에게 다음 조건을 준수하는 한, 소프트웨어를 제한 없이 사용할 수 있는 권한이 무료로 부여됩니다.
+소프트웨어의 사용, 복사, 수정, 병합, 게시, 배포, 서브라이선스 및/또는 판매 권한을 포함하되 이에 국한되지 않습니다.
+
+위 저작권 고지 및 본 사용 허가 고지는 소프트웨어의 모든 사본 또는 상당 부분에 포함되어야 합니다.
+
+본 소프트웨어는 어떠한 종류의 명시적 또는 묵시적 보증 없이 ""있는 그대로"" 제공됩니다.
+상품성, 특정 목적에의 적합성 및 비침해에 대한 보증을 포함하되 이에 국한되지 않습니다. 어떠한 경우에도 저작자 또는 저작권 보유자는 계약, 불법 행위 또는 기타 사유로 인해 발생하는 모든 청구, 손해 또는 기타 책임에 대해 책임을 지지 않습니다.
+소프트웨어 또는 소프트웨어의 사용 또는 기타 거래와 관련하여 발생하는 모든 책임에 대해서도 책임을 지지 않습니다."
+Resources/Loader	Screen	Label	Label	Loading...	로딩중...
 Resources/Loader	Screen	Label	Label	Loading Intro...	인트로 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Cabin...	오두막 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Tutorial...	튜토리얼 로딩중...
@@ -16,6 +875,249 @@ Resources/Loader	Screen	Label	Label	Loading Minefield...	지뢰지대 로딩중.
 Resources/Loader	Screen	Label	Label	Loading Apartments...	아파트 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Terminal...	터미널 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Template...	템플릿 로딩중...
+UI/Loading	Screen	Label	Label	Loading shaders...	셰이더 로딩중...
+Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]
+Scenes/Death	Main	Hint	Label	Character died	캐릭터가 사망했습니다
+Scenes/Death	Main/Buttons	Load	Button	Load game	불러오기
+Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
+"	"메인 메뉴
+"
+Scenes/Death	Main/Buttons	Quit	Button	"Quit
+"	"나가기
+"
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	체력
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	기력
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	수분
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	정신력
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	체온
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	산소
+UI/HUD	Tooltip	Label	Label	Interaction	상호작용
+UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	총기 기능 고장 | [재장전] 버튼을 누르세요
+UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 회전 모드
+UI/HUD	Decor/Margin/Elements	Add	Label	[MMB] = Add to Catalog	[MMB] = 카탈로그에 추가
+UI/HUD	Decor/Margin/Elements	Catalog	Label	[TAB] = Furniture Catalog	[TAB] = 가구 카탈로그
+UI/HUD	Decor/Margin/Elements	Close	Label	[F1] = Close Decor Mode	[F1] = 장식 모드 종료
+UI/HUD	Decor/Margin/Elements/Header	Label	Label	Decor Mode	장식 모드
+UI/HUD	Decor/Margin/Elements	Place	Label	[G] = Place Furniture	[G] = 가구 배치
+UI/HUD	Decor/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[SCROLL] = 조정 / 회전
+UI/HUD	Decor/Margin/Elements	Magnet	Label	[LMB] = Surface Magnet	[LMB] = 표면에 붙이기 (스냅)
+UI/HUD	Placement/Margin/Elements/Header	Label	Label	Item Placement	아이템 배치
+UI/HUD	Placement/Margin/Elements	Place	Label	[G] = Grab / Drop Item	[G] = 아이템 잡기 / 내려놓기
+UI/HUD	Placement/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[SCROLL] = 조정 / 회전
+UI/HUD	Placement/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 회전 모드
+UI/HUD	Placement/Margin/Elements	Orientation	Label	[MMB] = Change Orientation	[MMB] = 회전축 변경
+UI/HUD	Info	Map	Label	Shelter (Area 05)	쉘터 (05 구역)
+UI/HUD	Transition/Elements/Header	Destination	Label	Village	마을
+UI/HUD	Transition/Elements/Header	Zone	Label	Area 05	05 구역
+UI/HUD	Transition/Elements/Details	Hint	Label	Demo transition: Skips 2-3 maps	데모 버전: 2-3개의 맵을 스킵합니다
+UI/Interface	Container/Header	Label	Label	Container	컨테이너
+UI/Interface	Equipment/Header	Label	Label	Equipment	장비
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	배낭
+UI/Interface	Equipment/Hints	Rig	Label	Rig	조끼
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	헬멧
+UI/Interface	Equipment/Hints	Head	Label	Head	모자
+UI/Interface	Equipment/Hints	Torso	Label	Torso	외투
+UI/Interface	Equipment/Hints	Legs	Label	Legs	바지
+UI/Interface	Equipment/Hints	Belt	Label	Belt	벨트
+UI/Interface	Equipment/Hints	Feet	Label	Feet	신발
+UI/Interface	Equipment/Hints	Hands	Label	Hands	장갑
+UI/Interface	Equipment/Hints	Matches	Label	Matches	성냥
+UI/Interface	Equipment/Hints	Light	Label	Light	손전등
+UI/Interface	Equipment/Hints	NVG	Label	NVG	야투경
+UI/Interface	Equipment/Hints	Time	Label	Time	시계
+UI/Interface	Equipment/Hints	Map	Label	Map	지도
+UI/Interface	Equipment/Hints	Player	Label	Player	음악
+UI/Interface	Character/Header	Label	Label	Character	캐릭터
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	체력
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	기력
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	수분
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	정신력
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	체온
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	고양이
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	생존일
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	쉘터
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	의뢰
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	퀘스트
+UI/Interface	Tools/Header	Label	Label	Tools	도구
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	이벤트
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	제작
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	근접 시설
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	의뢰 노트
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	의뢰 노트가 비어있습니다
 UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	월드맵
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	지도가 장착되지 않았습니다
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"이동 = [LMB]
+확대 = [SCROLL]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	현재 위치
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	카세트 플레이어
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
+UI/Interface	Tools/Casette	Hint	Label	Casette Player power 0%, recharge player	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.
+UI/Interface	Tools/Casette	Hint	Label	Casette Player empty, insert casette	카세트 플레이어가 비어있습니다, 카세트를 넣어주세요.
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	이 카세트에는 저작권이 있는 음악이 포함되어 있습니다 (콘텐츠 경고)
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	카세트 이름
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
 UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	방랑자
+UI/Interface	Trader/Header	Label	Label	Trader	상인
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	물자
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	의뢰
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	이름:
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	상인
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	세금:
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	의뢰:
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	재보급:
+UI/Interface	Deal/Header	Label	Label	Deal	거래
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	요구 가치 + 세금 (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	제시 가격(€)
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	초기화
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	수락
+UI/Interface	Supply/Header	Label	Label	Supply	물자
+UI/Interface	Tasks/Header	Label	Label	Tasks	의뢰
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	가구 카탈로그
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	"사용
+"
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	"장비
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	"해제
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	"탄 꺼내기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	"나누기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	"잡기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	"수면
+"
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	"이동
+"
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	"버리기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	"배치
+"
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	"파괴
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	"제거 [0]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	"제거 [1]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	"제거 [2]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	"제거 [3]
+"
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	커피머신
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	소모품
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	전설
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	장비:
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	주무기
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	상태:
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	무게:
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	가치:
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	구경
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	데미지
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	관통 등급:
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	레벨 1
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	레벨 2
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	레벨 3
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	레벨 4
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	레벨 5
 UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	방어 등급:
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	레벨 1
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	용량:
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	방한:
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	체력:
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	기력:
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	수분:
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	정신력:
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	체온:
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	결합됨:
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	치료:
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	호환 아이템:
+UI/Elements/Item	Details	Abbreviation	Label	Item	아이템
+UI/Profiler	Panel/Margin	Label	Label	Profiler	프로파일러
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	보기
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	레시피 명
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	입력:
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	출력:
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	투입 시작
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	제작
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	입력 예시
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Input Key	키 입력
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	국가의 부름
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	노트에 추가
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	제거
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	난이도:
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	쉬움
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"지난주에 근처 버려진 학교 건물에 있는 의사를 찾아갔어. 그는 내 ""나쁜 습관""들을 다 끊으라고 했지만, 그 늙은이는 담배도 피우니까 신경 안 써!
+
+넌 아마 힘든 일이 있을 때만 민트 사탕을 핥아먹는 현대판 히피 중 하나겠지. 하지만 혹시라도 이런 사탕을 발견하면 한두 갑이랑 성냥도 챙겨가."
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	배달:
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	보상:
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ 이 임무를 완료하면 쉼터용 가구를 획득하게 됩니다.
+→ 획득한 가구는 가구 카탈로그 [장식 모드]에서 확인할 수 있습니다."
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	배달 시작
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	배달 종료
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	배달됨
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	완료
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	보기
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1 일차
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	잡화상이 마을에 복귀
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10 일 후
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	상인 이벤트
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	이벤트 위치:
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	마을
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	발생 가능성:
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / map instance
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"의사는 약을 전문으로 하는 상인으로, 05구역의 버려진 학교 건물 안에 임시 진료소를 운영하고 있습니다.
+
+할머니의 안부를 확인하러 다녀온 의사는 이 진료소로 돌아와 부상자들을 치료할 준비를 하고 있습니다."
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	Item	아이템
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Common)	유형 (흔함)
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Rare)	유형 (희귀)
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Legendary)	유형 (전설)
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	An item is an object within the game world that can be collected by a player.	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	Condition:	상태:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	100%	100%
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	Weight:	무게:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	100kg	100kg
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	Value:	가치:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	Use time:	사용 시간:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	Damage:	데미지:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	Caliber:	구경:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	Magazine:	탄창:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	Capacity:	용량:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	최대 중첩 수:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	방어등급:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	체력:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
+"	"기력:
+"
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	수분:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	체온:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	치료:
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	호환성:
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  새 가구 추가됨 [카탈로그]

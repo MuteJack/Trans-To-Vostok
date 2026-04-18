@@ -1,5 +1,22 @@
 text	translation
 Monitor: {idx}	모니터: {idx}
 Windows: {percent}%	창 크기: {percent}%
-Day {day}	{day} 일차
-In {day} days	{day} 일 후
+Loading {scene}...	{scene} 로딩중...
+Level {no}	레벨 {no}
+Day {str}	{str} 일차
+In {str} Days	{str}일 후
+{type} Event	{type} 이벤트
+~{str}% / map instance	~{str}% / 맵 인스턴스
+You slept {str} hours	{time} 시간동안 잤습니다
+Cat Fed {item}	고양이에게 먹이기 {item}
+Task Completed: {name}	의뢰 완료됨: {name}
+Take ({str})	집기 ({str})
+Level {str}	레벨 {str}
+Cat Fed ({name})	고양이에게 먹이를 줬습니다 ({name})
+Remove ({display})	제거 ({display})
+Open with {name}	문 열기 ({name})
+Fuel Tank [{percent}%]	연료 탱크 [{percent}%]
+Unlock with {name}	{name}으로 열기
+Items: {str}	아이템: {str}
+{containerName} [Locked]	{containerName} [잠김]
+{containerName} [Open]	{containerName} [열기]
