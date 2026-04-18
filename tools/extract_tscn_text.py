@@ -27,6 +27,7 @@
     text       추출된 원문
 """
 import csv
+import json
 import re
 import sys
 from pathlib import Path
@@ -55,13 +56,12 @@ def _decode_attrs(header: str) -> dict:
     return attrs
 
 
-def _extract_text_property(body: str) -> str | None:
+def _extract_string_property(body: str, prop_name: str) -> str | None:
     """
-    노드 본문에서 'text = "..."' 를 찾아 값을 반환.
+    노드 본문에서 'prop_name = "..."' 를 찾아 값을 반환.
     여러 줄 문자열과 이스케이프 처리 지원.
     """
-    # "text = " 시작 위치 찾기 (라인 시작 기준)
-    m = re.search(r'^text\s*=\s*"', body, re.MULTILINE)
+    m = re.search(rf'^{re.escape(prop_name)}\s*=\s*"', body, re.MULTILINE)
     if not m:
         return None
 
@@ -86,16 +86,15 @@ def _extract_text_property(body: str) -> str | None:
             i += 2
             continue
         if c == '"':
-            # 닫는 따옴표 발견
             return "".join(result)
         result.append(c)
         i += 1
-    # 닫는 따옴표를 못 찾았으면 파싱 실패
     return None
 
 
-def parse_tscn(path: Path) -> list[dict]:
-    """하나의 .tscn 파일을 파싱해 노드 리스트 반환."""
+def parse_tscn(path: Path, extra_properties: list[str] | None = None) -> list[dict]:
+    """하나의 .tscn 파일을 파싱해 노드 리스트 반환.
+    extra_properties가 있으면 해당 속성도 별도 행으로 추출."""
     try:
         text = path.read_text(encoding="utf-8")
     except UnicodeDecodeError:
@@ -122,7 +121,7 @@ def parse_tscn(path: Path) -> list[dict]:
         body_end = section_m.start() if section_m else search_end
 
         body = text[body_start:body_end]
-        text_val = _extract_text_property(body)
+        text_val = _extract_string_property(body, "text")
 
         nodes.append({
             "name": attrs.get("name", ""),
@@ -130,7 +129,21 @@ def parse_tscn(path: Path) -> list[dict]:
             "parent": attrs.get("parent", ""),
             "unique_id": attrs.get("unique_id", ""),
             "text": text_val if text_val is not None else "",
+            "_prop": "text",
         })
+
+        if extra_properties:
+            for prop in extra_properties:
+                val = _extract_string_property(body, prop)
+                if val:
+                    nodes.append({
+                        "name": attrs.get("name", ""),
+                        "type": attrs.get("type", ""),
+                        "parent": attrs.get("parent", ""),
+                        "unique_id": attrs.get("unique_id", ""),
+                        "text": val,
+                        "_prop": prop,
+                    })
 
     return nodes
 
@@ -138,14 +151,15 @@ def parse_tscn(path: Path) -> list[dict]:
 OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
 
 
-def process_file(src_tscn: Path, out_tsv: Path, filename: str) -> tuple[int, int]:
+def process_file(src_tscn: Path, out_tsv: Path, filename: str,
+                  extra_properties: list[str] | None = None) -> tuple[int, int]:
     """
     파일 하나를 파싱해 TSV로 저장.
     텍스트가 있는 노드만 출력 (빈 노드는 스킵).
     filename 은 확장자 없는 상대 경로. .tscn 엔트리에서는 location 도 동일값.
     반환: (전체 노드 수, 텍스트 있는 노드 수)
     """
-    nodes = parse_tscn(src_tscn)
+    nodes = parse_tscn(src_tscn, extra_properties)
     text_nodes = [n for n in nodes if n["text"]]
 
     # 텍스트가 하나도 없으면 파일 생성 안 함
@@ -171,6 +185,23 @@ def process_file(src_tscn: Path, out_tsv: Path, filename: str) -> tuple[int, int
     return len(nodes), len(text_nodes)
 
 
+def load_tscn_config(config_path: Path) -> dict:
+    """tscn_list.json 로드. 없으면 기본값 반환."""
+    default = {"extra_properties": []}
+    if not config_path.exists():
+        print(f"[INFO] tscn_list.json 없음, 기본 설정 사용")
+        return default
+    try:
+        data = json.loads(config_path.read_text(encoding="utf-8"))
+        for key, val in default.items():
+            if key not in data:
+                data[key] = val
+        return data
+    except (json.JSONDecodeError, OSError) as e:
+        print(f"[WARN] tscn_list.json 읽기 실패: {e}, 기본 설정 사용")
+        return default
+
+
 def main():
     script_dir = Path(__file__).resolve().parent
     # script_dir = mods/Trans To Vostok/tools
@@ -180,6 +211,14 @@ def main():
 
     src_arg = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else default_src
     out_dir = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else default_out
+
+    # tscn_list.json 로드
+    config_path = script_dir / "tscn_list.json"
+    config = load_tscn_config(config_path)
+    extra_props = config.get("extra_properties", [])
+    print(f"설정: {config_path.name}")
+    print(f"  extra_properties: {extra_props}")
+    print()
 
     if not src_arg.exists():
         print(f"[ERROR] 입력 경로가 없습니다: {src_arg}")
@@ -217,7 +256,7 @@ def main():
         # 출력 파일: 원본 확장자 포함한 이중 확장자 (예: "Scenes/Menu.tscn.tsv")
         out_path = out_dir / (rel_tscn.as_posix() + ".tsv")
         try:
-            n, t = process_file(tscn, out_path, filename)
+            n, t = process_file(tscn, out_path, filename, extra_props or None)
             total_nodes += n
             total_texts += t
             processed += 1
