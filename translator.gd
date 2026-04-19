@@ -34,6 +34,7 @@ extends Node
 
 var _locale: String = "Korean"
 var _compatible_mode: bool = false
+var _initialized: bool = false
 const DATA_BASE: String = "res://Trans To Vostok"
 
 const SCORE_LOCATION: int = 8
@@ -46,7 +47,11 @@ const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text", "
 const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "hint", "container", "corpse"]
 
 const NORMAL_BATCH_INTERVAL: float = 0.01
-const NORMAL_BATCH_SIZE: int = 500
+const NORMAL_BATCH_SIZE: int = 512
+
+# 성능 통계 수집 (개발용). 배포 시 false 로 설정할 것.
+const DEBUG_STATS: bool = false
+const DEBUG_STATS_INTERVAL: float = 10.0
 
 
 # ==========================================
@@ -137,6 +142,17 @@ var _normal_cursor: int = 0
 var translation_cache: Dictionary = {}
 var miss_cache: Dictionary = {}
 
+# 성능 통계 (DEBUG_STATS=true 일 때만 사용)
+var _stats: Dictionary = {
+	"apply_calls": 0,          # _apply_binding 호출 수
+	"early_returns": 0,        # last == cur 조기 리턴
+	"cache_hits": 0,           # translation_cache 또는 miss_cache 히트
+	"cache_misses": 0,         # _find_translation_ctx 실행
+	"translations_applied": 0, # node.set(prop, translated) 실제 호출
+	"regex_tries": 0,          # pattern 정규식 시도 수
+}
+var _stats_last: Dictionary = {}
+
 
 # ==========================================
 # 초기화
@@ -152,6 +168,9 @@ func _ready() -> void:
 
 
 func _initialize() -> void:
+	if _initialized:
+		return
+	_initialized = true
 	print("[TransToVostok] Initializing... locale=%s, compatible=%s" % [_locale, _compatible_mode])
 	_load_translations()
 
@@ -168,8 +187,40 @@ func _initialize() -> void:
 	timer.timeout.connect(_process_normal_batch)
 	add_child(timer)
 
+	# DEBUG_STATS 모드: 10초 주기로 통계 덤프
+	if DEBUG_STATS:
+		var stats_timer: Timer = Timer.new()
+		stats_timer.name = "StatsDumpTimer"
+		stats_timer.wait_time = DEBUG_STATS_INTERVAL
+		stats_timer.autostart = true
+		stats_timer.timeout.connect(_dump_stats)
+		add_child(stats_timer)
+
 	print("[TransToVostok] Ready. priority=%d normal=%d" % [
 		priority_bindings.size(), normal_bindings.size()
+	])
+
+
+func _dump_stats() -> void:
+	var delta: Dictionary = {}
+	for k in _stats:
+		delta[k] = _stats[k] - _stats_last.get(k, 0)
+		_stats_last[k] = _stats[k]
+
+	var apply: int = delta["apply_calls"]
+	var early_pct: float = 0.0 if apply == 0 else delta["early_returns"] * 100.0 / apply
+	var total_lookups: int = delta["cache_hits"] + delta["cache_misses"]
+	var hit_pct: float = 0.0 if total_lookups == 0 else delta["cache_hits"] * 100.0 / total_lookups
+
+	print("[TransToVostok][stats] %.0fs Δ:" % DEBUG_STATS_INTERVAL)
+	print("  apply=%d  early=%d(%.1f%%)  cache hit/miss=%d/%d(%.1f%%)  regex_tries=%d  applied=%d" % [
+		apply, delta["early_returns"], early_pct,
+		delta["cache_hits"], delta["cache_misses"], hit_pct,
+		delta["regex_tries"], delta["translations_applied"]
+	])
+	print("  bindings: priority=%d normal=%d  cache_size: trans=%d miss=%d" % [
+		priority_bindings.size(), normal_bindings.size(),
+		translation_cache.size(), miss_cache.size()
 	])
 
 
@@ -205,13 +256,29 @@ func shutdown() -> void:
 	for child in get_children():
 		if child is Timer:
 			child.stop()
+			child.queue_free()
 	if get_tree().node_added.is_connected(_on_node_added):
 		get_tree().node_added.disconnect(_on_node_added)
+
+	var total_bindings: int = priority_bindings.size() + normal_bindings.size()
 
 	# 모든 바인딩의 텍스트를 원본으로 복원 + Value 자식 offset 복원
 	for b in priority_bindings + normal_bindings:
 		var node = b["node"].get_ref()
 		if node == null or not is_instance_valid(node):
+			continue
+		# 0. OptionButton / PopupMenu 항목 복원
+		if b["prop"] == "_popup_items":
+			var popup: PopupMenu = null
+			if node is PopupMenu:
+				popup = node
+			elif node is OptionButton:
+				popup = node.get_popup()
+			if popup != null and popup.has_meta("_ttv_popup_originals"):
+				var originals: Array = popup.get_meta("_ttv_popup_originals")
+				for i in range(min(originals.size(), popup.item_count)):
+					popup.set_item_text(i, originals[i])
+				popup.remove_meta("_ttv_popup_originals")
 			continue
 		# 1. 텍스트 원본 복원
 		if b.has("original") and b["original"] != "" and b["prop"] in node:
@@ -224,7 +291,35 @@ func shutdown() -> void:
 				value.offset_right = value.get_meta("_ttv_orig_offset_right")
 				value.remove_meta("_ttv_orig_offset_left")
 				value.remove_meta("_ttv_orig_offset_right")
-	print("[TransToVostok] Shutdown — %d bindings restored" % (priority_bindings.size() + normal_bindings.size()))
+
+	# 모든 상태 초기화 (재초기화 시 중복 적재 방지)
+	_reset_state()
+	_initialized = false
+	print("[TransToVostok] Shutdown — %d bindings restored" % total_bindings)
+
+
+# 번역 인덱스/캐시/바인딩을 전부 비운다. shutdown 또는 재초기화 전에 호출.
+func _reset_state() -> void:
+	static_rows.clear()
+	static_exact_index.clear()
+	static_by_text.clear()
+	literal_scoped_rows.clear()
+	literal_scoped_exact_index.clear()
+	literal_scoped_by_text.clear()
+	pattern_scoped_rows.clear()
+	pattern_scoped_by_ctx.clear()
+	literal_global.clear()
+	pattern_global.clear()
+	substr_entries.clear()
+	priority_bindings.clear()
+	normal_bindings.clear()
+	_normal_cursor = 0
+	translation_cache.clear()
+	miss_cache.clear()
+	if DEBUG_STATS:
+		for k in _stats:
+			_stats[k] = 0
+		_stats_last.clear()
 
 
 # ==========================================
@@ -446,7 +541,11 @@ func _bind_node(node: Node) -> void:
 	for prop in TRANSLATABLE_PROPS:
 		if prop in node:
 			props_found.append(prop)
-	if props_found.is_empty():
+
+	# OptionButton / PopupMenu 는 item_text 배열을 따로 번역
+	var popup_target: bool = (node is OptionButton) or (node is PopupMenu)
+
+	if props_found.is_empty() and not popup_target:
 		return
 
 	var is_priority: bool = _is_priority_node(node)
@@ -455,6 +554,18 @@ func _bind_node(node: Node) -> void:
 		var b: Dictionary = {
 			"node": weakref(node),
 			"prop": prop,
+			"last": "",
+		}
+		if is_priority:
+			priority_bindings.append(b)
+		else:
+			normal_bindings.append(b)
+		_apply_binding(b)
+
+	if popup_target:
+		var b: Dictionary = {
+			"node": weakref(node),
+			"prop": "_popup_items",
 			"last": "",
 		}
 		if is_priority:
@@ -515,10 +626,15 @@ func _process_normal_batch() -> void:
 
 
 func _apply_binding(b: Dictionary) -> void:
+	if DEBUG_STATS:
+		_stats["apply_calls"] += 1
 	var node = b["node"].get_ref()
 	if node == null or not is_instance_valid(node):
 		return
 	var prop: String = b["prop"]
+	if prop == "_popup_items":
+		_apply_popup_items(b, node)
+		return
 	if not (prop in node):
 		return
 	var cur = node.get(prop)
@@ -528,6 +644,8 @@ func _apply_binding(b: Dictionary) -> void:
 	if cur_str == "":
 		return
 	if b["last"] == cur_str:
+		if DEBUG_STATS:
+			_stats["early_returns"] += 1
 		return
 
 	var translated = _lookup_cached(node, cur_str)
@@ -536,11 +654,64 @@ func _apply_binding(b: Dictionary) -> void:
 			b["original"] = cur_str
 		node.set(prop, translated)
 		b["last"] = translated
+		if DEBUG_STATS:
+			_stats["translations_applied"] += 1
 		# 수동 위치 Value 자식이 있으면 새 text 너비에 맞춰 offset 재조정
 		if prop == "text":
 			_adjust_value_child_offset(node)
 	else:
 		b["last"] = cur_str
+
+
+# OptionButton / PopupMenu 의 항목 텍스트를 번역.
+# 항목은 Node property 가 아니라 내부 배열이라 _lookup_cached 를 직접 호출한다.
+# 원본은 PopupMenu 에 meta 로 저장하여 shutdown 시 복원.
+func _apply_popup_items(b: Dictionary, node) -> void:
+	var popup: PopupMenu = null
+	if node is PopupMenu:
+		popup = node
+	elif node is OptionButton:
+		popup = node.get_popup()
+	if popup == null:
+		return
+
+	var count: int = popup.item_count
+	# 변경 감지용 시그니처 (항목 수 + 현재 텍스트 조인)
+	var sig: String = str(count)
+	for i in range(count):
+		sig += "\t" + popup.get_item_text(i)
+	if b["last"] == sig:
+		if DEBUG_STATS:
+			_stats["early_returns"] += 1
+		return
+
+	# 원본 보존 (최초 1회)
+	if not popup.has_meta("_ttv_popup_originals"):
+		var originals: Array = []
+		for i in range(count):
+			originals.append(popup.get_item_text(i))
+		popup.set_meta("_ttv_popup_originals", originals)
+
+	var any_applied: bool = false
+	var host: Node = node  # OptionButton 이면 node, PopupMenu 면 popup — scene 컨텍스트는 node 기준
+	for i in range(count):
+		var cur: String = popup.get_item_text(i)
+		if cur == "":
+			continue
+		var translated = _lookup_cached(host, cur)
+		if translated != null and translated != cur:
+			popup.set_item_text(i, translated)
+			any_applied = true
+			if DEBUG_STATS:
+				_stats["translations_applied"] += 1
+
+	# 새 시그니처 재계산 (번역 반영 후 텍스트 기준)
+	var new_sig: String = str(popup.item_count)
+	for i in range(popup.item_count):
+		new_sig += "\t" + popup.get_item_text(i)
+	b["last"] = new_sig
+	if not any_applied:
+		return
 
 
 # Label 의 자식 "Value" 가 layout_mode=0 (수동 위치) 인 경우,
@@ -596,10 +767,16 @@ func _lookup_cached(node: Node, text: String):
 	var cache_key: String = scene + "\t" + parent + "\t" + node_name + "\t" + node_type + "\t" + text
 
 	if miss_cache.has(cache_key):
+		if DEBUG_STATS:
+			_stats["cache_hits"] += 1
 		return null
 	if translation_cache.has(cache_key):
+		if DEBUG_STATS:
+			_stats["cache_hits"] += 1
 		return translation_cache[cache_key]
 
+	if DEBUG_STATS:
+		_stats["cache_misses"] += 1
 	var result = _find_translation_ctx(scene, parent, node_name, node_type, text)
 	if result == null:
 		miss_cache[cache_key] = true
@@ -632,6 +809,8 @@ func _find_translation_ctx(scene: String, parent: String,
 	# --- Tier 3: scoped pattern exact (컨텍스트 완전 일치) ---
 	if pattern_scoped_by_ctx.has(ctx_key):
 		for entry in pattern_scoped_by_ctx[ctx_key]:
+			if DEBUG_STATS:
+				_stats["regex_tries"] += 1
 			var m: RegExMatch = entry.regex.search(text)
 			if m != null:
 				return entry.apply(m, _capture_translate)
@@ -642,6 +821,8 @@ func _find_translation_ctx(scene: String, parent: String,
 
 	# --- Tier 5: pattern global ---
 	for entry in pattern_global:
+		if DEBUG_STATS:
+			_stats["regex_tries"] += 1
 		var m: RegExMatch = entry.regex.search(text)
 		if m != null:
 			return entry.apply(m, _capture_translate)
