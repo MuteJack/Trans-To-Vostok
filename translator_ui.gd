@@ -13,9 +13,14 @@ const TRANSLATOR_SCRIPT: String = DATA_BASE + "/translator.gd"
 const CONFIG_PATH: String = "user://trans_to_vostok.cfg"
 const DEFAULT_LOCALE: String = "English"
 
+const DEFAULT_BATCH_SIZE: int = 512
+const DEFAULT_BATCH_INTERVAL: float = 0.01
+
 var _locale_data: Dictionary = {}
 var _current_locale: String = DEFAULT_LOCALE
 var _compatible_mode: bool = false
+var _batch_size: int = DEFAULT_BATCH_SIZE
+var _batch_interval: float = DEFAULT_BATCH_INTERVAL
 var _translator_node: Node = null
 var _language_window: Window = null
 var _ok_button: Button = null
@@ -68,6 +73,8 @@ func _save_config() -> void:
 	var config: ConfigFile = ConfigFile.new()
 	config.set_value("translation", "locale", _current_locale)
 	config.set_value("translation", "compatible_mode", _compatible_mode)
+	config.set_value("performance", "batch_size", _batch_size)
+	config.set_value("performance", "batch_interval", _batch_interval)
 	config.save(CONFIG_PATH)
 
 
@@ -76,6 +83,8 @@ func _load_config() -> void:
 	if config.load(CONFIG_PATH) == OK:
 		_current_locale = config.get_value("translation", "locale", DEFAULT_LOCALE)
 		_compatible_mode = config.get_value("translation", "compatible_mode", false)
+		_batch_size = config.get_value("performance", "batch_size", DEFAULT_BATCH_SIZE)
+		_batch_interval = config.get_value("performance", "batch_interval", DEFAULT_BATCH_INTERVAL)
 
 
 # ==========================================
@@ -160,8 +169,8 @@ func _show_language_ui(is_startup: bool) -> void:
 	# --- Window ---
 	var win: Window = Window.new()
 	win.title = "Select Language"
-	win.size = Vector2i(480, 320)
-	win.min_size = Vector2i(320, 220)
+	win.size = Vector2i(720, 500)
+	win.min_size = Vector2i(560, 440)
 	win.always_on_top = true
 	win.transparent = true
 	win.transparent_bg = true
@@ -209,6 +218,24 @@ func _show_language_ui(is_startup: bool) -> void:
 	# 구분선
 	root.add_child(HSeparator.new())
 
+	# --- 본문 좌/우 분할 ---
+	var body: HBoxContainer = HBoxContainer.new()
+	body.add_theme_constant_override("separation", 12)
+	body.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	root.add_child(body)
+
+	# 왼쪽: 언어 목록 + 호환 모드
+	var left: VBoxContainer = VBoxContainer.new()
+	left.add_theme_constant_override("separation", 8)
+	left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	left.size_flags_stretch_ratio = 2.0
+	body.add_child(left)
+
+	var lang_title: Label = Label.new()
+	lang_title.text = "Languages"
+	lang_title.add_theme_font_size_override("font_size", 14)
+	left.add_child(lang_title)
+
 	# 언어 목록 (ItemList, 스크롤 가능)
 	var item_list: ItemList = ItemList.new()
 	item_list.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -231,7 +258,7 @@ func _show_language_ui(is_startup: bool) -> void:
 
 	item_list.select(pre_select)
 	item_list.ensure_current_is_visible()
-	root.add_child(item_list)
+	left.add_child(item_list)
 
 	# 호환 모드 체크박스 (선택된 locale 의 compatible 텍스트 사용)
 	var compat_check: CheckBox = CheckBox.new()
@@ -244,13 +271,119 @@ func _show_language_ui(is_startup: bool) -> void:
 	compat_check.text = "  " + _compat_texts[pre_select] if pre_select < _compat_texts.size() else compat_default
 	compat_check.button_pressed = _compatible_mode
 	compat_check.add_theme_font_size_override("font_size", 12)
-	root.add_child(compat_check)
+	left.add_child(compat_check)
 
 	# 언어 선택 변경 시 체크박스 텍스트 갱신
 	item_list.item_selected.connect(func(idx):
 		if idx < _compat_texts.size():
 			compat_check.text = "  " + _compat_texts[idx]
 	)
+
+	# 세로 구분선
+	body.add_child(VSeparator.new())
+
+	# 오른쪽: 성능 설정 패널
+	var right: VBoxContainer = VBoxContainer.new()
+	right.add_theme_constant_override("separation", 8)
+	right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	right.size_flags_stretch_ratio = 1.0
+	right.custom_minimum_size = Vector2(200, 0)
+	body.add_child(right)
+
+	var perf_title: Label = Label.new()
+	perf_title.text = "Performance"
+	perf_title.add_theme_font_size_override("font_size", 14)
+	right.add_child(perf_title)
+
+	# Batch Size
+	var size_label: Label = Label.new()
+	size_label.text = "Batch Size"
+	size_label.add_theme_font_size_override("font_size", 11)
+	size_label.modulate = Color(0.7, 0.7, 0.7)
+	right.add_child(size_label)
+
+	var size_row: HBoxContainer = HBoxContainer.new()
+	size_row.add_theme_constant_override("separation", 8)
+	right.add_child(size_row)
+
+	var size_spin: SpinBox = SpinBox.new()
+	size_spin.min_value = 1
+	size_spin.max_value = 4096
+	size_spin.step = 1
+	size_spin.value = _batch_size
+	size_spin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	size_row.add_child(size_spin)
+
+	var size_rec: Label = Label.new()
+	size_rec.text = "Default: %d" % DEFAULT_BATCH_SIZE
+	size_rec.add_theme_font_size_override("font_size", 10)
+	size_rec.modulate = Color(0.5, 0.5, 0.5)
+	size_rec.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	size_row.add_child(size_rec)
+
+	var size_desc: Label = Label.new()
+	size_desc.text = " - Number of Properties checked per tick.\n"
+	size_desc.add_theme_font_size_override("font_size", 10)
+	size_desc.modulate = Color(0.45, 0.45, 0.45)
+	size_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	right.add_child(size_desc)
+
+	# Intervals [s]
+	var interval_label: Label = Label.new()
+	interval_label.text = "Intervals [s]"
+	interval_label.add_theme_font_size_override("font_size", 11)
+	interval_label.modulate = Color(0.7, 0.7, 0.7)
+	right.add_child(interval_label)
+
+	var interval_row: HBoxContainer = HBoxContainer.new()
+	interval_row.add_theme_constant_override("separation", 8)
+	right.add_child(interval_row)
+
+	var interval_spin: SpinBox = SpinBox.new()
+	interval_spin.min_value = 0.005
+	interval_spin.max_value = 1.0
+	interval_spin.step = 0.005
+	interval_spin.value = _batch_interval
+	interval_spin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	interval_row.add_child(interval_spin)
+
+	var interval_rec: Label = Label.new()
+	interval_rec.text = "Default: %.2f" % DEFAULT_BATCH_INTERVAL
+	interval_rec.add_theme_font_size_override("font_size", 10)
+	interval_rec.modulate = Color(0.5, 0.5, 0.5)
+	interval_rec.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	interval_row.add_child(interval_rec)
+
+	var interval_desc: Label = Label.new()
+	interval_desc.text = "  - Delay between each tick.\n"
+	interval_desc.add_theme_font_size_override("font_size", 10)
+	interval_desc.modulate = Color(0.45, 0.45, 0.45)
+	interval_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	right.add_child(interval_desc)
+
+	# 가로줄 + 종합 설명
+	right.add_child(HSeparator.new())
+
+	var perf_hint: Label = Label.new()
+	perf_hint.text = "Larger Batch Size, Smaller Interval will make translation faster, but may cause performance issue."
+	perf_hint.add_theme_font_size_override("font_size", 10)
+	perf_hint.modulate = Color(0.45, 0.45, 0.45)
+	perf_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	right.add_child(perf_hint)
+
+	# 기본값 복원 버튼
+	var spacer: Control = Control.new()
+	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	right.add_child(spacer)
+
+	var reset_btn: Button = Button.new()
+	reset_btn.text = "Reset Defaults"
+	reset_btn.add_theme_font_size_override("font_size", 11)
+	reset_btn.pressed.connect(func():
+		size_spin.value = DEFAULT_BATCH_SIZE
+		interval_spin.value = DEFAULT_BATCH_INTERVAL
+	)
+	right.add_child(reset_btn)
 
 	# 구분선
 	root.add_child(HSeparator.new())
@@ -293,7 +426,14 @@ func _show_language_ui(is_startup: bool) -> void:
 
 	# 선택 결과 처리
 	var prev_compatible: bool = _compatible_mode
+	var prev_batch_size: int = _batch_size
+	var prev_batch_interval: float = _batch_interval
 	_compatible_mode = compat_check.button_pressed
+	_batch_size = int(size_spin.value)
+	_batch_interval = float(interval_spin.value)
+	var batch_changed: bool = (_batch_size != prev_batch_size
+		or not is_equal_approx(_batch_interval, prev_batch_interval))
+
 	var selected_items: PackedInt32Array = item_list.get_selected_items()
 	if selected_items.size() > 0:
 		var sel_idx: int = selected_items[0]
@@ -301,11 +441,16 @@ func _show_language_ui(is_startup: bool) -> void:
 			var selected_locale: String = enabled_locales[sel_idx].get("locale", DEFAULT_LOCALE)
 			var locale_changed: bool = selected_locale != _current_locale
 			var compat_changed: bool = _compatible_mode != prev_compatible
-			if locale_changed or compat_changed or is_startup:
+			if locale_changed or compat_changed or batch_changed or is_startup:
 				_current_locale = selected_locale
 				_save_config()
 				if not is_startup:
-					_apply_locale()
+					# 배치 파라미터만 바뀌었으면 재초기화 없이 즉시 반영
+					if batch_changed and not locale_changed and not compat_changed:
+						if _translator_node != null and _translator_node.has_method("set_batch_params"):
+							_translator_node.set_batch_params(_batch_size, _batch_interval)
+					else:
+						_apply_locale()
 
 	win.queue_free()
 	_language_window = null
@@ -338,6 +483,8 @@ func _apply_locale() -> void:
 	node.set_script(script)
 	node._locale = _current_locale
 	node._compatible_mode = _compatible_mode
+	node.normal_batch_size = _batch_size
+	node.normal_batch_interval = _batch_interval
 	add_child(node)
 	node._initialize()
 	_translator_node = node

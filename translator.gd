@@ -46,8 +46,9 @@ const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text", "
 
 const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "hint", "container", "corpse"]
 
-const NORMAL_BATCH_INTERVAL: float = 0.01
-const NORMAL_BATCH_SIZE: int = 512
+# 배치 처리 파라미터 (UI 에서 런타임 조정 가능)
+var normal_batch_interval: float = 0.01
+var normal_batch_size: int = 512
 
 # 성능 통계 수집 (개발용). 배포 시 false 로 설정할 것.
 const DEBUG_STATS: bool = false
@@ -182,7 +183,7 @@ func _initialize() -> void:
 
 	var timer: Timer = Timer.new()
 	timer.name = "NormalBatchTimer"
-	timer.wait_time = NORMAL_BATCH_INTERVAL
+	timer.wait_time = normal_batch_interval
 	timer.autostart = true
 	timer.timeout.connect(_process_normal_batch)
 	add_child(timer)
@@ -222,6 +223,15 @@ func _dump_stats() -> void:
 		priority_bindings.size(), normal_bindings.size(),
 		translation_cache.size(), miss_cache.size()
 	])
+
+
+# UI 에서 런타임에 배치 파라미터를 변경. 재초기화 없이 즉시 반영.
+func set_batch_params(size: int, interval: float) -> void:
+	normal_batch_size = max(1, size)
+	normal_batch_interval = max(0.005, interval)
+	var timer: Node = get_node_or_null("NormalBatchTimer")
+	if timer is Timer:
+		timer.wait_time = normal_batch_interval
 
 
 func _apply_compatible_mode() -> void:
@@ -610,7 +620,7 @@ func _process_normal_batch() -> void:
 	if size == 0:
 		return
 	var processed: int = 0
-	while processed < NORMAL_BATCH_SIZE:
+	while processed < normal_batch_size:
 		if _normal_cursor >= size:
 			_normal_cursor = 0
 			break
