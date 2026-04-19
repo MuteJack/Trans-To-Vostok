@@ -625,6 +625,87 @@ def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
     return errors
 
 
+def check_duplicates_cross_sheet(
+    sheets: list[tuple[str, list, list[dict]]],
+) -> list[tuple[str, int, str]]:
+    """
+    체크 7b (ERROR): 시트 간 중복 키 검사.
+    시트 내 중복은 check_duplicates 가 담당. 이 함수는 서로 다른 시트에
+    걸쳐 같은 런타임 키가 등장할 때만 보고한다.
+    반환: [(sheet_name, row_num, msg), ...]
+    """
+    errors: list[tuple[str, int, str]] = []
+    exact_keys: dict[tuple, list] = {}
+    literal_global: dict[str, list] = {}
+    scoped_pattern_keys: dict[tuple, list] = {}
+    pattern_global: dict[str, list] = {}
+    substr_global: dict[str, list] = {}
+
+    for sheet_name, _header, rows in sheets:
+        for i, row in enumerate(rows, start=2):
+            effective = _effective_method(row)
+            untranslatable = row.get("untranslatable", "").strip().lower() in {"1", "true"}
+            if effective == "ignore" or untranslatable:
+                continue
+
+            text = row.get("text", "")
+            location = row.get("location", "").strip()
+            key_5 = (
+                location,
+                row.get("parent", "").strip(),
+                row.get("name", "").strip(),
+                row.get("type", "").strip(),
+                text,
+            )
+
+            if effective == "static":
+                exact_keys.setdefault(key_5, []).append((sheet_name, i, row))
+            elif effective == "literal":
+                if location:
+                    exact_keys.setdefault(key_5, []).append((sheet_name, i, row))
+                else:
+                    literal_global.setdefault(text, []).append((sheet_name, i, row))
+            elif effective == "pattern":
+                if location:
+                    scoped_pattern_keys.setdefault(key_5, []).append((sheet_name, i, row))
+                else:
+                    pattern_global.setdefault(text, []).append((sheet_name, i, row))
+            elif effective == "substr":
+                substr_global.setdefault(text, []).append((sheet_name, i, row))
+
+    def _emit(label: str, store: dict, is_tuple_key: bool):
+        for key, occurrences in store.items():
+            sheet_set = {sn for sn, _, _ in occurrences}
+            if len(occurrences) <= 1 or len(sheet_set) <= 1:
+                # 시트 내 중복은 check_duplicates 가 처리
+                continue
+            locs = ", ".join(f"{sn}:{n}" for sn, n, _ in occurrences)
+            if is_tuple_key:
+                loc, parent, name, type_, text = key
+                text_preview = _preview(text, 40)
+                msg = (
+                    f"{label} (시트간, {len(occurrences)}개): "
+                    f"location={loc!r}, parent={parent!r}, name={name!r}, type={type_!r}, "
+                    f"text={text_preview} [{locs}]"
+                )
+            else:
+                text_preview = _preview(key, 40)
+                msg = (
+                    f"{label} (시트간, {len(occurrences)}개): "
+                    f"text={text_preview} [{locs}]"
+                )
+            for sn, row_num, _ in occurrences:
+                errors.append((sn, row_num, msg))
+
+    _emit("exact 매칭 중복 (static/scoped literal)", exact_keys, True)
+    _emit("전역 literal 중복", literal_global, False)
+    _emit("scoped pattern 중복", scoped_pattern_keys, True)
+    _emit("전역 pattern 중복", pattern_global, False)
+    _emit("전역 substr 중복", substr_global, False)
+
+    return errors
+
+
 # ==========================================
 # 출력 (Tee)
 # ==========================================
@@ -805,6 +886,24 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
                     for level, label, msg in issues_by_row[i]:
                         tee.print(f"    [{level}] {label}: {msg}")
                 tee.print()
+
+        # 시트 간 중복 키 검사 (같은 런타임 키가 여러 시트에 걸쳐 존재)
+        cross_dup_by_sheet: dict = {}
+        for sn, row_num, msg in check_duplicates_cross_sheet(sheets):
+            cross_dup_by_sheet.setdefault(sn, {}).setdefault(row_num, []).append(msg)
+            result.error_dup += 1
+        if cross_dup_by_sheet:
+            tee.print("[시트간 중복]")
+            sheet_rows_map = {sn: rows for sn, _, rows in sheets}
+            for sn in sorted(cross_dup_by_sheet.keys()):
+                tee.print(f"  [{sn}]")
+                for i in sorted(cross_dup_by_sheet[sn].keys()):
+                    row = sheet_rows_map[sn][i - 2]
+                    text_preview = _preview(row.get("text", ""), 60)
+                    tee.print(f"    Row {i}: text={text_preview}")
+                    for msg in cross_dup_by_sheet[sn][i]:
+                        tee.print(f"      [ERROR] 중복 키: {msg}")
+            tee.print()
 
         tee.print("=" * 60)
         tee.print(f"검증 완료: {total_row_count}행 검사 (mode={'soft' if soft else 'hard'})")
