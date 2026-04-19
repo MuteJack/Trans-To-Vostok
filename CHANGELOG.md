@@ -4,6 +4,19 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.2.1] — 2026-04-20 (Hotfix)
+
+### Fixed
+
+- **Cassette tape music titles partially translated** — Track names (e.g., `OST - Daybreak`, `Junna - Haavakko`) were previously registered with `method=ignore`, which excluded them from the runtime TSV entirely. As a result they fell through to Tier 9 substr matching, causing fragments like "Day" to be partially translated inside proper nouns. Re-registered as pass-through literals (translation equals source) so Tier 4 (literal global) hits first and substr matching never runs for these titles.
+
+### Internal
+
+- Bumped `mod.txt` version `0.2.0 → 0.2.1`.
+- TODO noted: consider introducing a dedicated `preserve` / `ban` method for intentional pass-through rows to make intent explicit in xlsx.
+
+---
+
 ## [0.2.0] — 2026-04-20
 
 ### Added
@@ -62,11 +75,25 @@ First public test version.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
 
+## [0.2.1] — 2026-04-20 (핫픽스)
+
+### 수정
+
+- **카세트 테이프 수록곡 이름 부분 번역** — `OST - Daybreak`, `Junna - Haavakko` 같은 곡명이 xlsx 에 `method=ignore` 로 등록되어 런타임 TSV 에서 제외되어 있었고, 그 결과 Tier 9 substr 에까지 도달해 "Day" 같은 부분 문자열이 고유명사 안에서 번역되는 문제가 있었음. 원문과 동일한 값을 번역으로 두는 **pass-through literal** 로 재등록하여 Tier 4 (literal global) 에서 먼저 hit → substr 이 아예 도달하지 않도록 수정.
+
+### 내부
+
+- `mod.txt` 버전 `0.2.0 → 0.2.1`.
+- TODO: 명시적 pass-through 용 `preserve` / `ban` method 도입 검토 (xlsx 에서 의도를 명확히 표시하기 위함).
+
+---
+
 ## [0.2.0] — 2026-04-20
 
 ### 추가
 
 - **F9 UI 성능 옵션 패널** — `Batch Size` / `Batch Interval` 을 런타임에 조정 가능. `user://trans_to_vostok.cfg` 에 저장됨.
+- **OptionButton / PopupMenu 드롭다운 항목 번역** — 설정 창 등의 드롭다운 항목(예: 창 크기)을 `get_item_text` / `set_item_text` 로 번역. 원본은 PopupMenu meta 에 보존되어 shutdown 시 복원.
 - **DEBUG_STATS 성능 계측** — 10초 주기로 apply 호출 수, 캐시 히트율, 정규식 시도 수, 바인딩 개수를 덤프 (기본 비활성).
 - **`check_duplicate.py`** — 빌드 전 중복 키 사전 검사 도구. TSV 추출 없이 xlsx 만으로 빠르게 검사.
 - **시트 간 중복 검사** — `validate_translation.py` 가 서로 다른 시트에 걸쳐 같은 런타임 키가 존재하는 경우를 탐지 (예: Main ↔ Interface).
@@ -74,7 +101,6 @@ First public test version.
 
 ### 수정
 
-- **OptionButton / PopupMenu 드롭다운 항목이 번역되지 않던 문제** — 드롭다운 항목(예: 설정 → 창 크기)은 일반 Node property 가 아니라 그동안 번역 대상에서 누락되어 있었음. `get_item_text` / `set_item_text` 로 번역하고, 원본은 PopupMenu meta 에 보존되어 shutdown 시 복원.
 - **언어 전환 시 signal 중복 연결 에러** — `_initialized` 가드 추가로 `node_added` 시그널 이중 연결 방지.
 - **언어 전환 시 상태 초기화 누락** — shutdown 에서 `_reset_state()` 호출로 인덱스/캐시/바인딩 전부 비움, 누적 방지.
 - **번역 누락 항목** — Trader Event Descriptions 등 몇몇 누락되어 있던 한국어 번역.
