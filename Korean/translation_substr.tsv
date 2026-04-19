@@ -1,5 +1,6 @@
 text	translation
 Selected	선택됨
+Press key to bind...	키를 입력하세요...
 Forward	앞으로
 Backward	뒤로
 Left	왼쪽으로
@@ -80,7 +81,6 @@ Rock	돌
 Inventory	인벤토리
 Primary	주무기
 Secondary	보조무기
-Knife	칼
 Task Notes empty	의뢰 노트가 비어있습니다
 Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
 Map not equipped	지도가 장착되지 않았습니다
@@ -101,7 +101,6 @@ Shelter required	은신처 필요
 Start Input	투입 시작
 Stop Input	투입 정지
 Reset Input	투입 초기화
-Press key to bind...	키를 입력하세요...
 Start Delivery	배달 시작
 Stop Delivery	배달 종료
 Delivered	배달됨
@@ -467,6 +466,7 @@ Electric Box	배전함
 Medical Cabinet	의료 수납장
 Office Cabinet	사무용 수납장
 Cabinet	수납장
+Bandit	밴디트
 Bandit Corpse	밴디트 시체
 Crate Military	군용 상자
 Crate Special	특수 상자
@@ -553,7 +553,6 @@ Trolley (Tall)	트롤리 (대형)
 Trolley T.	트롤리 (대형)
 Weapon Display	무기 진열대
 Weapon D.	무기 진열대
-Bandit	밴디트
 Unload	탄 꺼내기
 Show	보기
 Hide	숨기기
@@ -588,7 +587,6 @@ Add to Notes	노트에 추가
 Television [Turn Off]	텔레비전 [끄기]
 Television [Turn On]	텔레비전 [끄기]
 Corpse	시체
-Bandit	밴디트
 Vital	바이탈
 Indoors	실내
 Indoor	실내

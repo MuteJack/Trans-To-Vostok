@@ -1,6 +1,6 @@
 text	translation
 Monitor: {idx}	모니터: {idx}
-Windows: {percent}%	창 크기: {percent}%
+Window: {percent}%	창 크기: {percent}%
 Loading {scene}...	{scene} 로딩중...
 Level {no}	레벨 {no}
 Day {str}	{str} 일차

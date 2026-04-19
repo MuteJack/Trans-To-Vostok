@@ -1,4 +1,5 @@
 location	parent	name	type	text	translation
+UI/Interface	Equipment/Hints	Knife	Label	Knife	칼
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	수류탄1
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	수류탄2
 UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	소지 한도
