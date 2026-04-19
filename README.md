@@ -2,7 +2,7 @@
 
 A multilingual translation mod for Road to Vostok.
 
-> **NOTE:** *This is a test version.*
+> **NOTE:** *This mode is currently under development. .*
 
 - Currently supported languages: **English** (game default), **Korean** (in development)
 - Development is focused on Korean translation and the ToolBox first.
@@ -40,18 +40,17 @@ It aims to deliver **complete, non-missing translation** across all translatable
 5. **N-Tier Fallback Matching**
    - Looks up translations through 9 tiers, from specific context to generic substitution:
    - Current implementation (subject to change):
-
-     | Tier | Match Method                              | Notes                              |
-     | ---- | ----------------------------------------- | ---------------------------------- |
-     | 1    | **static exact** — all 5 fields match     | All fields match exactly           |
-     | 2    | **scoped literal exact**                  | Dynamic text (runtime assignment)  |
-     | 3    | **scoped pattern exact**                  | Regex + scene context              |
-     | 4    | **literal global**                        | Full text match (global)           |
-     | 5    | **pattern global**                        | Regex (global)                     |
-     | 6    | **static score**                          | Partial context match (+8/+4/+2/+1)|
-     | 7    | **scoped literal score**                  | Dynamic text, partial context      |
-     | 8    | **scoped pattern score**                  | Regex + partial context            |
-     | 9    | **substr**                                | Substring substitution (last resort)|
+     | Tier | Match Method                                 | Notes                                |
+     | ---- | -------------------------------------------- | ------------------------------------ |
+     | 1    | **static exact** — all 5 fields match | All fields match exactly             |
+     | 2    | **scoped literal exact**               | Dynamic text (runtime assignment)    |
+     | 3    | **scoped pattern exact**               | Regex + scene context                |
+     | 4    | **literal global**                     | Full text match (global)             |
+     | 5    | **pattern global**                     | Regex (global)                       |
+     | 6    | **static score**                       | Partial context match (+8/+4/+2/+1)  |
+     | 7    | **scoped literal score**               | Dynamic text, partial context        |
+     | 8    | **scoped pattern score**               | Regex + partial context              |
+     | 9    | **substr**                             | Substring substitution (last resort) |
 6. **Compatibility Mode**
    - **Temporary fallback when game updates break matching structure.**
    - Treats all translation data as **sub-strings (dictionary)** via substring substitution.
@@ -81,18 +80,21 @@ To request additional languages, please submit a GitHub issue (to be published).
 ## 5. TODO (Roadmap)
 
 ### 5.1. Feature Implementation
+
 * [X] Runtime translation engine prototype (N-tier fallback)
 * [X] Prototype development targeting game version 1.0.0
 * [X] Language selection UI added
 * [X] Text position realignment added
 * [X] Compatibility mode added
+* [X] Performance options added to UI (added in v0.2.0)
 * [ ] Testing current mod build against game 1.0.0 (in progress)
 * [ ] Partial image replacement support (e.g., Tutorial billboards)
 * [ ] Translator optimization
 * [ ] Debug mode (planned)
 
 ### 5.2. Translation Support
-* [ ] Complete translation template based on Korean
+
+* [X] Complete translation template based on Korean
 * [ ] After template cleanup, provide temporary machine-translated support for other languages
 * [ ] Publish translation ToolBox prototype on GitHub
 * [ ] Recruit translators or collaborate via GitHub
@@ -101,21 +103,21 @@ To request additional languages, please submit a GitHub issue (to be published).
 
 ---
 
-## Developer ToolBox
+## Developer/Translator's ToolBox (Not released yet)
 
 The mod repository includes **Python tools** for the translation pipeline:
 
-| Tool                          | Role                                                |
-| ----------------------------- | --------------------------------------------------- |
-| `a_decompile_pck.py`          | Decompile the game PCK file                         |
-| `b_extract_tscn_text.py`      | Extract translatable text from `.tscn` scene files  |
-| `c_extract_tres_text.py`      | Extract text from `.tres` resource files            |
-| `d_check_untranslated.py`     | Translation gap / coverage report                   |
-| `e_validate_translation.py`   | xlsx schema / duplicate / match validation          |
-| `f_build_runtime_tsv.py`      | Build runtime TSV from xlsx                         |
-| `g_build_mod_package.py`      | Build final mod zip package                         |
-| `check_conflict.py`           | Conflict check (same source text, different translations) |
-| `check_old_translation.py`    | Detect stale translations from removed game content |
+| Tool                          | Role                                                      |
+| ----------------------------- | --------------------------------------------------------- |
+| `a_decompile_pck.py`        | Decompile the game PCK file                               |
+| `b_extract_tscn_text.py`    | Extract translatable text from `.tscn` scene files      |
+| `c_extract_tres_text.py`    | Extract text from `.tres` resource files                |
+| `d_check_untranslated.py`   | Translation gap / coverage report                         |
+| `e_validate_translation.py` | xlsx schema / duplicate / match validation                |
+| `f_build_runtime_tsv.py`    | Build runtime TSV from xlsx                               |
+| `g_build_mod_package.py`    | Build final mod zip package                               |
+| `check_conflict.py`         | Conflict check (same source text, different translations) |
+| `check_old_translation.py`  | Detect stale translations from removed game content       |
 
 **Detailed ToolBox manual will be published on GitHub after development is complete.**
 
@@ -136,13 +138,13 @@ To be specified upon GitHub publication.
 
 Please reach out via GitHub issues (to be published) or the mod distribution channel.
 
-
 ========================================
+
 # Trans To Vostok
 
 Road to Vostok의 다국어 번역 지원 모드.
 
-> **NOTE:** *해당 버전은 테스트 버전입니다.*
+> **NOTE:** *해당 모드는 현재 개발중에 있습니다.*
 
 - 현재 지원 언어: **English** (게임 기본언어), **Korean** (개발 중)
 - 한국어를 대상으로 개발 및 ToolBox를 우선 개발 중입니다.
@@ -181,7 +183,7 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
    - 구체적인 컨텍스트부터 일반 치환까지 9단계로 조회합니다:
    - 현재 구현 방식 (수정될 수 있음)| Tier | 매칭 방식                                 | 비고                             |
      | ---- | ----------------------------------------- | -------------------------------- |
-     | 1    | **static exact** — 5필드 완전 일치 | 모든 필드가 완벽하게 일치        |
+     | 1    | **static exact** — 5개 필드 완전 일치 | 모든 필드가 완벽하게 일치        |
      | 2    | **scoped literal exact**            | 동적 텍스트 (코드 할당)          |
      | 3    | **scoped pattern exact**            | 정규식 + 씬 컨텍스트             |
      | 4    | **literal global**                  | 텍스트 완전 일치 (전역)          |
@@ -217,19 +219,23 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 추가 언어 지원을 원하시면 GitHub 이슈로 요청해 주세요. (차후 공개 예정)
 
 ## 5. TODO (로드맵)
+
 ### 5.1. 기능 구현
+
 * [X] 런타임 번역 엔진 프로토타입 임시 구현 (N-tier fallback)
 * [X] 1.0.0 버전을 대상으로 번역 모드 Prototype 개발
 * [X] 언어 선택 UI 추가
 * [X] 문자 위치 재정렬 기능 추가
 * [X] 호환성 모드 추가
-* [ ] 현재 개발된 모드의 1.0.0 버전에 대한 테스트 (진행 중)
+* [X] UI에 성능 옵션 추가 (v0.2.0에 추가됨)
+* [ ] 현재 개발된 모드를 게임 1.0.0 버전에 대한 테스트 (진행 중)
 * [ ] 일부 이미지 교체기능 추가 (예: Tutorial의 BillBoard 등)
 * [ ] 번역기 최적화
 * [ ] 디버그 모드 추가 (예상)
 
 ### 5.2. 번역 지원
-* [ ] Korean 번역을 기준으로 번역 템플릿 완성
+
+* [X] Korean 번역을 기준으로 번역 템플릿 완성
 * [ ] 번역 Template 정리 후, 기계번역 등을 이용해 다른 언어에 대한 임시 지원 추가
 * [ ] 번역 ToolBox 프로토타입 GitHub 공개 및 관리
 * [ ] 번역가 모집 또는 GitHub를 통한 협업
@@ -238,7 +244,7 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 
 ---
 
-## 개발자용 ToolBox
+## 개발자/번역가용 ToolBox (아직 공개 안됨)
 
 모드 저장소에는 번역 파이프라인 구축용 **Python 도구**가 포함되어 있습니다:
 
