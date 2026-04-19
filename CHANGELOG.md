@@ -4,6 +4,18 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.2.2] — 2026-04-20 (Hotfix)
+
+### Added
+
+- **ModWorkshop update integration** — Added `[updates] modworkshop=56214` to `mod.txt`. The MetroModLoader "Check for Updates" tab can now detect newer versions published on ModWorkshop and download the latest zip directly.
+
+### Internal
+
+- Bumped `mod.txt` version `0.2.1 → 0.2.2`.
+
+---
+
 ## [0.2.1] — 2026-04-20 (Hotfix)
 
 ### Fixed
@@ -74,6 +86,18 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.2.2] — 2026-04-20 (핫픽스)
+
+### 추가
+
+- **ModWorkshop 업데이트 연동** — `mod.txt` 에 `[updates] modworkshop=56214` 섹션 추가. MetroModLoader 의 "Check for Updates" 탭에서 ModWorkshop 에 올라간 최신 버전을 감지하고 최신 zip 을 바로 다운로드 받을 수 있게 됨.
+
+### 내부
+
+- `mod.txt` 버전 `0.2.1 → 0.2.2`.
+
+---
 
 ## [0.2.1] — 2026-04-20 (핫픽스)
 
