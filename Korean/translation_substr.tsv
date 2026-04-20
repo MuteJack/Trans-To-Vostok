@@ -64,8 +64,9 @@ Area 05	05 구역
 Highway	고속도로
 School	학교
 Outpost	전초기지
+Border Zone	접경지대
 Minefield	지뢰지대
-Apartments	아파트
+Apartments	아파트 단지
 Terminal	터미널
 Template	템플릿
 shaders	셰이더
@@ -119,6 +120,9 @@ Trader	상인
 Dynamic	동적
 Special	특별
 Guaranteed	보장됨
+Common	일반
+Rare	희귀
+Legendary	전설
 Ammo	탄약
 Armor Plate	방탄판
 Armor	방어구
@@ -141,8 +145,8 @@ Jääkäri BP.	야카리 배낭
 Jääkäri Backpack (Brown)	야카리 배낭 (브라운)
 Jääkäri Backpack (Green)	야카리 배낭 (그린)
 Jääkäri Backpack (M05)	야카리 배낭 (M05)
-Nomad Backpack	노마드 배낭
-Nomad BP.	노마드 배낭
+Nomad Backpack	방랑자 배낭
+Nomad BP.	방랑자 배낭
 Patrol Backpack	패트롤 배낭
 Patrol BP.	패트롤 배낭
 Duffel (Retro)	더플백 (레트로)
@@ -269,7 +273,7 @@ Juice (Pear)	주스 (배)
 Juice P.	배
 Juice (Raspberry)	주스 (라즈베리)
 Juice R.	라즈베리
-Kilju	밀주
+Kilju	킬유
 Kompot	과일조림
 Mustard	머스타드
 Peanuts	땅콩
@@ -467,9 +471,6 @@ P3 Magazine	P3 탄창
 RK Magazine	RK 탄창
 VSD Magazine	VSD 탄창
 SS Magazine	SS 탄창
-Common	일반
-Rare	희귀
-Legendary	전설
 New Furniture Added [Catalog]	새 가구 추가됨 [카탈로그]
 Boss Killed	보스 처치됨
 Cat Rescued	고양이 구조됨

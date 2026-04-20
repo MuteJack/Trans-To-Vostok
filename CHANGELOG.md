@@ -4,6 +4,19 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.2.3] — 2026-04-21
+
+### Changed (Language: Korean)
+
+- **`Kilju` translation refined** — Previously rendered as 밀주 (generic Korean word for homemade liquor). Now kept as 킬유 (direct phonetic transliteration of the original Finnish term) to preserve the cultural/geographic flavor of the name. An in-line explanation (“킬유라고 내가 젊던 시절에 집에서 담궈먹던 밀주인데…”) was added to the Generalist quest dialogue so Korean players understand what Kilju is without losing the original proper noun.
+- **Dialogue polish** — Minor tone/phrasing fixes across trader quest descriptions and event texts for more natural Korean.
+
+### Internal
+
+- Bumped `mod.txt` version `0.2.2 → 0.2.3`.
+
+---
+
 ## [0.2.2] — 2026-04-20 (Hotfix)
 
 ### Added
@@ -86,6 +99,19 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.2.3] — 2026-04-21
+
+### 변경 (언어: 한국어)
+
+- **`Kilju` 번역 조정** — 기존에는 이해를 쉽게 하기 위해 킬유(Kilju) **밀주** 로 옮겼으나, 고유 명사로서의 뉘앙스를 살리기 위해 핀란드어 원어의 음차인 **킬유** 로 변경. 대신 제너럴리스트 트레이더의 의뢰 대사에 "킬유라고 내가 젊던 시절에 집에서 담궈먹던 밀주인데…" 라는 설명을 추가하여 한국 플레이어가 "킬유" 가 어떤 술인지 맥락에서 바로 이해할 수 있도록 함. (Kilju: 핀란드식 술)
+- **대사 다듬기** — 트레이더 의뢰 설명 및 이벤트 텍스트 몇 곳의 어조/표현을 자연스럽게 보정.
+
+### 내부
+
+- `mod.txt` 버전 `0.2.2 → 0.2.3`.
+
+---
 
 ## [0.2.2] — 2026-04-20 (핫픽스)
 
