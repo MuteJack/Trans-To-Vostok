@@ -10,6 +10,7 @@ extends Node
 const DATA_BASE: String = "res://Trans To Vostok"
 const LOCALE_JSON: String = DATA_BASE + "/locale.json"
 const TRANSLATOR_SCRIPT: String = DATA_BASE + "/translator.gd"
+const TEXTURE_LOADER_SCRIPT: String = DATA_BASE + "/texture_loader.gd"
 const CONFIG_PATH: String = "user://trans_to_vostok.cfg"
 const DEFAULT_LOCALE: String = "English"
 
@@ -22,6 +23,7 @@ var _compatible_mode: bool = false
 var _batch_size: int = DEFAULT_BATCH_SIZE
 var _batch_interval: float = DEFAULT_BATCH_INTERVAL
 var _translator_node: Node = null
+var _texture_loader_node: Node = null
 var _language_window: Window = null
 var _ok_button: Button = null
 var _prev_mouse_mode: int = Input.MOUSE_MODE_VISIBLE
@@ -462,6 +464,11 @@ func _show_language_ui(is_startup: bool) -> void:
 # ==========================================
 
 func _apply_locale() -> void:
+	# 기존 엔진 정리 (텍스트 + 텍스처 둘 다)
+	if _texture_loader_node != null:
+		_texture_loader_node.shutdown()
+		_texture_loader_node.queue_free()
+		_texture_loader_node = null
 	if _translator_node != null:
 		_translator_node.shutdown()
 		_translator_node.queue_free()
@@ -473,6 +480,7 @@ func _apply_locale() -> void:
 		print("[TransToVostok UI] Locale: %s (no translation)" % _current_locale)
 		return
 
+	# 1. 텍스트 번역 엔진
 	var script: GDScript = load(TRANSLATOR_SCRIPT) as GDScript
 	if script == null:
 		push_warning("[TransToVostok UI] Cannot load: " + TRANSLATOR_SCRIPT)
@@ -489,3 +497,17 @@ func _apply_locale() -> void:
 	node._initialize()
 	_translator_node = node
 	print("[TransToVostok UI] Locale: %s — translator loaded" % _current_locale)
+
+	# 2. 텍스처 교체 엔진 (이미지 폴더가 있는 로케일만 동작)
+	var tex_script: GDScript = load(TEXTURE_LOADER_SCRIPT) as GDScript
+	if tex_script == null:
+		push_warning("[TransToVostok UI] Cannot load: " + TEXTURE_LOADER_SCRIPT)
+		return
+
+	var tex_node: Node = Node.new()
+	tex_node.name = "TextureLoader"
+	tex_node.set_script(tex_script)
+	tex_node._locale = _current_locale
+	add_child(tex_node)
+	tex_node._initialize()
+	_texture_loader_node = tex_node
