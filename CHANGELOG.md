@@ -4,6 +4,34 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.3.0] — 2026-04-22
+
+This release introduces **image / texture translation** — the mod can now ship localized replacements for in-game textures (sprites, Sprite3D, MeshInstance3D shader parameters) alongside the existing text translation pipeline. The first shipped set covers the Tutorial Billboards in Korean.
+
+### Added (Language: Korean)
+
+- **Tutorial Billboard textures** (17 images) — translated Korean versions of `TX_Tutorial_AI / Ammo / Armor / Attachments / Equipment / Grenades / Interface / Items / Maps / Medical / Settings / Shelters / Traders / Vostok / Weapons / World` + a re-exported pass with corrected typography. Original copyrighted game images are **not** bundled — only the translated layers.
+- **`Korean/Images.xlsx`** — new metadata workbook tracking translated image assets (path, source, translator, notes).
+
+### Added (Engine)
+
+- **`texture_loader.gd`** — new runtime texture replacement engine (~287 lines). Scans `res://Trans To Vostok/<locale>/textures/` recursively, walks the scene tree + listens to `node_added`, and swaps:
+  - `TextureRect` / `Sprite2D` / `Sprite3D` `.texture`
+  - `MeshInstance3D` ShaderMaterial `sampler2D` parameters (`shader_parameter/*`)
+  
+  Original references are kept in `_bindings` so `shutdown()` restores them cleanly on language switch. Missing files are silently skipped — no crash, original texture stays.
+- **`translator_ui.gd` lifecycle integration** — language switch now also shuts down and re-instantiates the texture loader for the new locale, mirroring the translator handling.
+
+### Added (Tooling)
+
+- **`build_mod_package.py`** — now includes each locale's `textures/` folder in the packaged mod zip. (Validation + texture metadata list generation flagged as TODO for a future release.)
+
+### Internal
+
+- Bumped `mod.txt` version `0.2.3 → 0.3.0`.
+
+---
+
 ## [0.2.3] — 2026-04-21
 
 ### Changed (Language: Korean)
@@ -99,6 +127,34 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.3.0] — 2026-04-22
+
+이번 릴리스는 **이미지 / 텍스처 번역** 파이프라인을 도입함. 기존 텍스트 번역 파이프라인과 별개로, 게임 내 텍스처(스프라이트, Sprite3D, MeshInstance3D 셰이더 파라미터)를 로케일별 번역본으로 교체 가능. 첫 번째 적용 대상은 한국어 튜토리얼 빌보드.
+
+### 추가 (언어: 한국어)
+
+- **튜토리얼 빌보드 텍스처** (17장) — `TX_Tutorial_AI / Ammo / Armor / Attachments / Equipment / Grenades / Interface / Items / Maps / Medical / Settings / Shelters / Traders / Vostok / Weapons / World` 의 한글 번역본 추가 + 타이포그래피 보정 패스. 원본 저작권 이미지는 **포함하지 않음** — 번역 레이어만 포함.
+- **`Korean/Images.xlsx`** — 번역 이미지 자산 메타데이터 워크북 신규 (경로 / 출처 / 번역자 / 메모).
+
+### 추가 (엔진)
+
+- **`texture_loader.gd`** — 런타임 텍스처 교체 엔진 신규 (~287 줄). `res://Trans To Vostok/<locale>/textures/` 재귀 스캔 후 씬 트리 순회 + `node_added` 시그널로 다음 노드들을 교체:
+  - `TextureRect` / `Sprite2D` / `Sprite3D` 의 `.texture`
+  - `MeshInstance3D` ShaderMaterial 의 `sampler2D` 파라미터 (`shader_parameter/*`)
+  
+  원본 참조는 `_bindings` 에 보관되어 `shutdown()` 시 언어 전환 전 텍스처로 복원. 번역 파일이 없으면 조용히 스킵 — 크래시 없이 원본 유지.
+- **`translator_ui.gd` 라이프사이클 연동** — 언어 전환 시 텍스처 로더도 shutdown → 새 로케일로 재초기화 (기존 translator 처리 방식과 동일).
+
+### 추가 (도구)
+
+- **`build_mod_package.py`** — 각 로케일의 `textures/` 폴더를 모드 zip 에 포함하도록 확장. (텍스처 검증 / 메타데이터 리스트 생성은 TODO 로 남겨 다음 릴리스 예정.)
+
+### 내부
+
+- `mod.txt` 버전 `0.2.3 → 0.3.0`.
+
+---
 
 ## [0.2.3] — 2026-04-21
 
