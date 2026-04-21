@@ -13,12 +13,13 @@ Trans To Vostok 모드를 .zip 파일로 패키징.
 1. 지정된 로케일에 대해 build_runtime_tsv를 호출하여 TSV 생성 (검증 포함)
 2. 모드 파일 구조를 ZIP으로 압축하여 ../Trans To Vostok.zip 생성
     - mod.txt                                               (모드 메타데이터)
-    - Trans To Vostok/translator.gd                         (런타임 엔진)
-    - Trans To Vostok/<locale>/translation_static.tsv
-    - Trans To Vostok/<locale>/translation_literal_scoped.tsv
-    - Trans To Vostok/<locale>/translation_pattern_scoped.tsv
-    - Trans To Vostok/<locale>/translation_literal.tsv
-    - Trans To Vostok/<locale>/translation_pattern.tsv
+    - Trans To Vostok/translator_ui.gd                      (UI + 엔진 관리)
+    - Trans To Vostok/translator.gd                         (텍스트 번역 엔진)
+    - Trans To Vostok/texture_loader.gd                     (텍스처 교체 엔진)
+    - Trans To Vostok/locale.json                           (로케일 설정)
+    - Trans To Vostok/<locale>/translation_*.tsv            (런타임 TSV)
+    - Trans To Vostok/<locale>/metadata.tsv
+    - Trans To Vostok/<locale>/textures/**                   (번역 이미지, 있으면 포함)
 
 출력: mods/Trans To Vostok.zip
 """
@@ -39,7 +40,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 MOD_NAME = "Trans To Vostok"
-MOD_FILES = ["translator_ui.gd", "translator.gd", "locale.json"]
+MOD_FILES = ["translator_ui.gd", "translator.gd", "texture_loader.gd", "locale.json"]
 LOCALE_FILES = [
     "metadata.tsv",
     "translation_static.tsv",
@@ -49,6 +50,8 @@ LOCALE_FILES = [
     "translation_pattern.tsv",
     "translation_substr.tsv",
 ]
+TEXTURE_DIR = "textures"
+TEXTURE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
 
 
 def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool = False) -> bool:
@@ -67,12 +70,13 @@ def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool 
     return True
 
 
-def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> int:
+def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int, int]:
     """
     모드를 .vmz (ZIP)으로 패키징.
-    반환: 패키징된 파일 개수
+    반환: (전체 파일 개수, 텍스처 파일 개수)
     """
     count = 0
+    texture_count = 0
 
     # 원자적 쓰기
     tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
@@ -104,6 +108,20 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> int:
                     zf.write(src, f"{MOD_NAME}/{locale}/{fname}")
                     count += 1
 
+                # 4. 텍스처 폴더 → Trans To Vostok/<locale>/textures/**
+                # 폴더가 없으면 스킵 (로케일별 선택 사항)
+                textures_dir = locale_dir / TEXTURE_DIR
+                if textures_dir.exists() and textures_dir.is_dir():
+                    for tex_file in sorted(textures_dir.rglob("*")):
+                        if not tex_file.is_file():
+                            continue
+                        if tex_file.suffix.lower() not in TEXTURE_EXTENSIONS:
+                            continue
+                        rel = tex_file.relative_to(locale_dir).as_posix()
+                        zf.write(tex_file, f"{MOD_NAME}/{locale}/{rel}")
+                        count += 1
+                        texture_count += 1
+
         # 성공 시 원본 덮어쓰기
         tmp_path.replace(out_path)
     except Exception:
@@ -114,7 +132,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> int:
                 pass
         raise
 
-    return count
+    return count, texture_count
 
 
 def load_locale_config(mod_root: Path) -> list[dict]:
@@ -174,7 +192,7 @@ def main() -> int:
     print(f"대상 로케일: {', '.join(locales)}")
     print(f"출력 파일: {out_path}")
     try:
-        file_count = package_mod(mod_root, locales, out_path)
+        file_count, texture_count = package_mod(mod_root, locales, out_path)
     except FileNotFoundError as e:
         print(f"[ERROR] {e}")
         return 1
@@ -183,9 +201,9 @@ def main() -> int:
     print()
     print("=" * 60)
     print(f"빌드 완료: {out_path.name}")
-    print(f"  파일 수: {file_count}")
-    print(f"  크기:    {size_kb:.1f} KB")
-    print(f"  로케일:  {', '.join(locales)}")
+    print(f"  파일 수:  {file_count}  (텍스처 {texture_count}개 포함)")
+    print(f"  크기:     {size_kb:.1f} KB")
+    print(f"  로케일:   {', '.join(locales)}")
     return 0
 
 
