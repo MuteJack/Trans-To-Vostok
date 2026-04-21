@@ -46,6 +46,57 @@ const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text", "
 
 const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "hint", "container", "corpse"]
 
+# 추가 whitelist 프리셋 — translator_ui 가 enabled_whitelist 로 on/off 전달.
+# key = 노드 경로 키워드 (to_lower 후 비교). 값은 UI 표시용 메타데이터.
+# 기본값은 모두 OFF — 사용자가 필요할 때만 on.
+const WHITELIST_PRESETS: Dictionary = {
+	"hud/info": {
+		"nickname": "HUD Info Area (Broad)",
+		"description": "Entire HUD info area (map + FPS etc.)",
+		"mod_list": [],
+		"default": false,
+	},
+	"hud/info/map": {
+		"nickname": "HUD Map Label",
+		"description": "Top-left HUD map name label",
+		"mod_list": ["ImmersiveXP (v3.0.3)"],
+		"default": false,
+	},
+	"interface/context": {
+		"nickname": "Context Menu (Right-click)",
+		"description": "Right-click menu on inventory (Use/Drop/Take etc.)",
+		"mod_list": [],
+		"default": false,
+	},
+	"interface/container": {
+		"nickname": "Container UI",
+		"description": "Container window",
+		"mod_list": [],
+		"default": false,
+	},
+	"interface/inventory": {
+		"nickname": "Inventory UI",
+		"description": "Inventory window",
+		"mod_list": [],
+		"default": false,
+	},
+	"interface/equipment": {
+		"nickname": "Equipment UI",
+		"description": "Equipment window",
+		"mod_list": [],
+		"default": false,
+	},
+	"interface/trader": {
+		"nickname": "Trader UI",
+		"description": "Trader window",
+		"mod_list": [],
+		"default": false,
+	},
+}
+
+# UI/_apply_locale 가 세팅. key → bool.
+var enabled_whitelist: Dictionary = {}
+
 # 배치 처리 파라미터 (UI 에서 런타임 조정 가능)
 var normal_batch_interval: float = 0.01
 var normal_batch_size: int = 512
@@ -595,6 +646,10 @@ func _is_priority_node(node: Node) -> bool:
 	var node_path: String = str(node.get_path()).to_lower()
 	for kw in PRIORITY_PATH_KEYWORDS:
 		if kw in node_path:
+			return true
+	# 사용자 활성화 whitelist 프리셋 추가 체크
+	for kw in enabled_whitelist:
+		if enabled_whitelist[kw] and kw in node_path:
 			return true
 	return false
 

@@ -24,6 +24,7 @@ var _batch_size: int = DEFAULT_BATCH_SIZE
 var _batch_interval: float = DEFAULT_BATCH_INTERVAL
 var _translator_node: Node = null
 var _texture_loader_node: Node = null
+var _enabled_whitelist: Dictionary = {}   # {"hud/info/map": true, ...}
 var _language_window: Window = null
 var _ok_button: Button = null
 var _prev_mouse_mode: int = Input.MOUSE_MODE_VISIBLE
@@ -77,16 +78,36 @@ func _save_config() -> void:
 	config.set_value("translation", "compatible_mode", _compatible_mode)
 	config.set_value("performance", "batch_size", _batch_size)
 	config.set_value("performance", "batch_interval", _batch_interval)
+	for key in _enabled_whitelist:
+		config.set_value("whitelist", key, _enabled_whitelist[key])
 	config.save(CONFIG_PATH)
 
 
 func _load_config() -> void:
 	var config: ConfigFile = ConfigFile.new()
-	if config.load(CONFIG_PATH) == OK:
+	var loaded: bool = (config.load(CONFIG_PATH) == OK)
+	if loaded:
 		_current_locale = config.get_value("translation", "locale", DEFAULT_LOCALE)
 		_compatible_mode = config.get_value("translation", "compatible_mode", false)
 		_batch_size = config.get_value("performance", "batch_size", DEFAULT_BATCH_SIZE)
 		_batch_interval = config.get_value("performance", "batch_interval", DEFAULT_BATCH_INTERVAL)
+	# whitelist: translator.gd 의 WHITELIST_PRESETS 를 순회, config 값이 없으면 preset default 사용
+	_enabled_whitelist.clear()
+	var presets: Dictionary = _load_whitelist_presets()
+	for key in presets:
+		var default_val: bool = presets[key].get("default", false)
+		var saved = config.get_value("whitelist", key, default_val) if loaded else default_val
+		_enabled_whitelist[key] = bool(saved)
+
+
+# WHITELIST_PRESETS 정의는 translator.gd 에 있으므로 스크립트 상수로 읽어옴.
+# 언어/번역 엔진이 로드되기 전에도 UI 에서 프리셋 목록이 필요하므로 여기서 정적 로드.
+func _load_whitelist_presets() -> Dictionary:
+	var script: GDScript = load(TRANSLATOR_SCRIPT) as GDScript
+	if script == null:
+		return {}
+	var constants: Dictionary = script.get_script_constant_map()
+	return constants.get("WHITELIST_PRESETS", {})
 
 
 # ==========================================
@@ -220,11 +241,18 @@ func _show_language_ui(is_startup: bool) -> void:
 	# 구분선
 	root.add_child(HSeparator.new())
 
-	# --- 본문 좌/우 분할 ---
+	# --- 탭 컨테이너 ---
+	var tabs: TabContainer = TabContainer.new()
+	tabs.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	tabs.tab_alignment = TabBar.ALIGNMENT_LEFT
+	root.add_child(tabs)
+
+	# ============ General 탭 ============
 	var body: HBoxContainer = HBoxContainer.new()
+	body.name = "General"
 	body.add_theme_constant_override("separation", 12)
 	body.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	root.add_child(body)
+	tabs.add_child(body)
 
 	# 왼쪽: 언어 목록 + 호환 모드
 	var left: VBoxContainer = VBoxContainer.new()
@@ -387,6 +415,9 @@ func _show_language_ui(is_startup: bool) -> void:
 	)
 	right.add_child(reset_btn)
 
+	# ============ Whitelist 탭 ============
+	var wl_checks: Dictionary = _build_whitelist_tab(tabs)
+
 	# 구분선
 	root.add_child(HSeparator.new())
 
@@ -430,11 +461,16 @@ func _show_language_ui(is_startup: bool) -> void:
 	var prev_compatible: bool = _compatible_mode
 	var prev_batch_size: int = _batch_size
 	var prev_batch_interval: float = _batch_interval
+	var prev_whitelist: Dictionary = _enabled_whitelist.duplicate()
 	_compatible_mode = compat_check.button_pressed
 	_batch_size = int(size_spin.value)
 	_batch_interval = float(interval_spin.value)
+	# whitelist 체크박스 상태 수집
+	for key in wl_checks:
+		_enabled_whitelist[key] = (wl_checks[key] as CheckBox).button_pressed
 	var batch_changed: bool = (_batch_size != prev_batch_size
 		or not is_equal_approx(_batch_interval, prev_batch_interval))
+	var whitelist_changed: bool = (_enabled_whitelist.hash() != prev_whitelist.hash())
 
 	var selected_items: PackedInt32Array = item_list.get_selected_items()
 	if selected_items.size() > 0:
@@ -443,12 +479,12 @@ func _show_language_ui(is_startup: bool) -> void:
 			var selected_locale: String = enabled_locales[sel_idx].get("locale", DEFAULT_LOCALE)
 			var locale_changed: bool = selected_locale != _current_locale
 			var compat_changed: bool = _compatible_mode != prev_compatible
-			if locale_changed or compat_changed or batch_changed or is_startup:
+			if locale_changed or compat_changed or batch_changed or whitelist_changed or is_startup:
 				_current_locale = selected_locale
 				_save_config()
 				if not is_startup:
 					# 배치 파라미터만 바뀌었으면 재초기화 없이 즉시 반영
-					if batch_changed and not locale_changed and not compat_changed:
+					if batch_changed and not locale_changed and not compat_changed and not whitelist_changed:
 						if _translator_node != null and _translator_node.has_method("set_batch_params"):
 							_translator_node.set_batch_params(_batch_size, _batch_interval)
 					else:
@@ -457,6 +493,122 @@ func _show_language_ui(is_startup: bool) -> void:
 	win.queue_free()
 	_language_window = null
 	_ok_button = null
+
+
+# ==========================================
+# Whitelist 탭 빌더
+# ==========================================
+
+# translator.gd 의 WHITELIST_PRESETS 를 읽어 좌측 패널에 체크박스 목록 생성.
+# 반환값: {key: CheckBox} — OK 버튼 처리 시 상태를 수집하기 위함.
+# 우측 패널은 향후 "사용자 커스텀 키워드" 용으로 예약 (지금은 placeholder).
+func _build_whitelist_tab(tabs: TabContainer) -> Dictionary:
+	var checks: Dictionary = {}
+
+	var tab_body: HBoxContainer = HBoxContainer.new()
+	tab_body.name = "Whitelist"
+	tab_body.add_theme_constant_override("separation", 12)
+	tab_body.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	tabs.add_child(tab_body)
+
+	# --- 왼쪽: 프리셋 체크박스 리스트 ---
+	var wl_left: VBoxContainer = VBoxContainer.new()
+	wl_left.add_theme_constant_override("separation", 8)
+	wl_left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	wl_left.size_flags_stretch_ratio = 1.0
+	tab_body.add_child(wl_left)
+
+	var wl_title: Label = Label.new()
+	wl_title.text = "Additional Priority Whitelist"
+	wl_title.add_theme_font_size_override("font_size", 14)
+	wl_left.add_child(wl_title)
+
+	var wl_hint: Label = Label.new()
+	wl_hint.text = "Enable if another mod overwrites in-game text periodically (e.g. HUD map name flicker with ImmersiveXP)."
+	wl_hint.add_theme_font_size_override("font_size", 10)
+	wl_hint.modulate = Color(0.55, 0.55, 0.55)
+	wl_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	wl_left.add_child(wl_hint)
+
+	wl_left.add_child(HSeparator.new())
+
+	# 스크롤 컨테이너 (프리셋 많아질 경우 대비)
+	var wl_scroll: ScrollContainer = ScrollContainer.new()
+	wl_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	wl_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	wl_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	wl_left.add_child(wl_scroll)
+
+	var wl_list: VBoxContainer = VBoxContainer.new()
+	wl_list.add_theme_constant_override("separation", 10)
+	wl_list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	wl_scroll.add_child(wl_list)
+
+	var presets: Dictionary = _load_whitelist_presets()
+	if presets.is_empty():
+		var empty_label: Label = Label.new()
+		empty_label.text = "(No whitelist presets defined)"
+		empty_label.add_theme_font_size_override("font_size", 11)
+		empty_label.modulate = Color(0.45, 0.45, 0.45)
+		wl_list.add_child(empty_label)
+	else:
+		for key in presets:
+			var meta: Dictionary = presets[key]
+			var nick: String = meta.get("nickname", key)
+			var desc: String = meta.get("description", "")
+			var row: VBoxContainer = VBoxContainer.new()
+			row.add_theme_constant_override("separation", 2)
+			wl_list.add_child(row)
+
+			var check: CheckBox = CheckBox.new()
+			check.text = "  %s" % nick
+			check.add_theme_font_size_override("font_size", 12)
+			check.button_pressed = _enabled_whitelist.get(key, false)
+			row.add_child(check)
+			checks[key] = check
+
+			if desc != "":
+				var desc_label: Label = Label.new()
+				desc_label.text = "     " + desc
+				desc_label.add_theme_font_size_override("font_size", 10)
+				desc_label.modulate = Color(0.45, 0.45, 0.45)
+				desc_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+				row.add_child(desc_label)
+
+			var mod_list: Array = meta.get("mod_list", [])
+			if mod_list.size() > 0:
+				var mod_label: Label = Label.new()
+				mod_label.text = "     Used with: " + ", ".join(mod_list)
+				mod_label.add_theme_font_size_override("font_size", 10)
+				mod_label.modulate = Color(0.55, 0.7, 0.55)
+				row.add_child(mod_label)
+
+			var key_label: Label = Label.new()
+			key_label.text = "     keyword: " + key
+			key_label.add_theme_font_size_override("font_size", 9)
+			key_label.modulate = Color(0.35, 0.35, 0.35)
+			row.add_child(key_label)
+
+	# --- 세로 구분선 ---
+	tab_body.add_child(VSeparator.new())
+
+	# --- 오른쪽: 예약 (향후 사용자 커스텀 키워드 입력 영역) ---
+	var wl_right: VBoxContainer = VBoxContainer.new()
+	wl_right.add_theme_constant_override("separation", 8)
+	wl_right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	wl_right.size_flags_stretch_ratio = 1.0
+	tab_body.add_child(wl_right)
+
+	var placeholder_label: Label = Label.new()
+	placeholder_label.text = "Reserved for future use"
+	placeholder_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	placeholder_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	placeholder_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	placeholder_label.add_theme_font_size_override("font_size", 11)
+	placeholder_label.modulate = Color(0.35, 0.35, 0.35)
+	wl_right.add_child(placeholder_label)
+
+	return checks
 
 
 # ==========================================
@@ -493,6 +645,7 @@ func _apply_locale() -> void:
 	node._compatible_mode = _compatible_mode
 	node.normal_batch_size = _batch_size
 	node.normal_batch_interval = _batch_interval
+	node.enabled_whitelist = _enabled_whitelist.duplicate()
 	add_child(node)
 	node._initialize()
 	_translator_node = node

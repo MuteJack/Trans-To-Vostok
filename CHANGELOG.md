@@ -4,6 +4,39 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.3.1] — 2026-04-22
+
+Adds a user-toggleable **priority whitelist** — a new F9 UI tab lets players opt specific UI areas (HUD map label, inventory, trader, etc.) into per-frame priority translation to counter flicker caused by other mods periodically rewriting in-game text (e.g., ImmersiveXP overriding HUD.gd `_physics_process`).
+
+### Added (Engine)
+
+- **`WHITELIST_PRESETS` in `translator.gd`** — const Dictionary of toggleable path-keyword presets, each with `nickname`, `description`, `mod_list`, `default` metadata. `_is_priority_node` now checks enabled presets in addition to the hardcoded base keywords. Seven initial presets shipped: HUD Info Area (Broad), HUD Map Label, Context Menu, Container / Inventory / Equipment / Trader UIs — all default OFF.
+- **`enabled_whitelist` runtime field** passed from `translator_ui.gd` to `translator.gd` on init.
+
+### Added (UI)
+
+- **New F9 "Whitelist" tab** — `TabContainer` wraps existing settings into a "General" tab and introduces a second "Whitelist" tab. Left panel shows a scrollable list of preset checkboxes with descriptions, associated mod names (e.g., "Used with: ImmersiveXP"), and the underlying path keyword. Right panel reserved for future user-custom keyword input.
+- **`[whitelist]` section in `user://trans_to_vostok.cfg`** — per-preset `true/false` state persists across sessions. Renamed or removed keys in older configs are safely ignored (falls back to preset default, no crash).
+
+### Added (Language: Korean)
+
+- **`[Open]` / `[Locked]` substr entries** — added as independent substr so the status tags still translate when other mods prepend a prefix to tooltip text (e.g., ImmersiveXP's `\n.\n` aim indicator breaks the `{containerName} [Open]` pattern match).
+
+### Fixed (Language: Korean)
+
+- **`Outpost` mistranslation in Task descriptions** — previously transliterated as 아웃포스트; corrected to the semantic translation 전초기지 for consistency with the term's meaning and other usages across the game.
+
+### Fixed
+
+- **HUD map name flicker with ImmersiveXP** — root-caused: `ImmersiveXP/HUD.gd._physics_process` overwrites `map.text` every 10 physics frames via `UpdateMap()`, racing with the translator's normal batch. Addressed by shipping the `hud/info/map` whitelist preset (default OFF; enable from F9 → Whitelist for affected players).
+
+### Internal
+
+- Bumped `mod.txt` version `0.3.0 → 0.3.1`.
+- TODO: user-custom whitelist keyword input to cover unverified mods (right panel of the Whitelist tab).
+
+---
+
 ## [0.3.0] — 2026-04-22
 
 This release introduces **image / texture translation** — the mod can now ship localized replacements for in-game textures (sprites, Sprite3D, MeshInstance3D shader parameters) alongside the existing text translation pipeline. The first shipped set covers the Tutorial Billboards in Korean.
@@ -128,6 +161,39 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.3.1] — 2026-04-22
+
+사용자가 토글할 수 있는 **우선 순위 화이트리스트** 도입. 새로운 F9 UI 탭에서 특정 UI 영역(HUD 맵 이름, 인벤토리, 트레이더 등)을 매 프레임 번역으로 승격할지 선택 가능 — 다른 모드가 게임 텍스트를 주기적으로 덮어쓰는 경우(예: ImmersiveXP 의 HUD.gd `_physics_process` 오버라이드)에 발생하는 깜빡임에 대응.
+
+### 추가 (엔진)
+
+- **`translator.gd` 의 `WHITELIST_PRESETS` 시스템** — 경로 키워드 프리셋을 정의하는 const Dictionary. 각 프리셋은 `nickname`, `description`, `mod_list`, `default` 메타데이터 포함. `_is_priority_node` 가 기본 하드코딩 키워드에 더해 활성화된 프리셋도 체크. 초기 프리셋 7개: HUD Info Area (Broad), HUD Map Label, Context Menu, Container / Inventory / Equipment / Trader UI — 모두 기본 OFF.
+- **런타임 필드 `enabled_whitelist`** — `translator_ui.gd` 가 초기화 시 `translator.gd` 에 전달.
+
+### 추가 (UI)
+
+- **F9 신규 "Whitelist" 탭** — `TabContainer` 로 기존 설정을 "General" 탭으로 래핑하고 두 번째 "Whitelist" 탭 추가. 왼쪽은 스크롤 가능한 프리셋 체크박스 리스트(설명, 연관 모드 이름(예: "Used with: ImmersiveXP"), 내부 키워드 표시). 오른쪽은 향후 사용자 커스텀 키워드 입력용으로 예약.
+- **`user://trans_to_vostok.cfg` 의 `[whitelist]` 섹션** — 프리셋별 `true/false` 상태 저장. 구 버전 config 에 이름이 바뀌거나 제거된 키가 있으면 안전하게 무시(프리셋 기본값으로 복귀, crash 없음).
+
+### 추가 (언어: 한국어)
+
+- **`[Open]` / `[Locked]` substr 엔트리** — 다른 모드가 툴팁 텍스트 앞에 prefix 를 붙이는 경우(예: ImmersiveXP 의 `\n.\n` aim 표시로 `{containerName} [Open]` 패턴 매치 실패)에도 상태 태그가 번역되도록 독립 substr 로 추가.
+
+### 수정 (언어: 한국어)
+
+- **Task 설명의 `Outpost` 오역 수정** — 기존에는 음역인 "아웃포스트"로 번역되어 있었음. 게임 내 용어 의미 및 다른 등장 위치들과의 일관성을 위해 의역 "전초기지" 로 정정.
+
+### 수정
+
+- **ImmersiveXP 환경에서 HUD 맵 이름 깜빡임** — 원인 규명: `ImmersiveXP/HUD.gd._physics_process` 가 10 물리 프레임마다 `UpdateMap()` 호출하여 `map.text` 를 덮어씌워 translator 의 normal 배치와 경쟁. 대응: `hud/info/map` 화이트리스트 프리셋 추가(기본 OFF; 영향 받는 플레이어는 F9 → Whitelist 에서 활성화).
+
+### 내부
+
+- `mod.txt` 버전 `0.3.0 → 0.3.1`.
+- TODO: 확인되지 않은 모드에 대응할 수 있도록 사용자 커스텀 whitelist 키워드 입력 지원 (Whitelist 탭의 오른쪽 패널).
+
+---
 
 ## [0.3.0] — 2026-04-22
 
