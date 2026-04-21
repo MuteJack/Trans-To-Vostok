@@ -11,6 +11,7 @@ This release introduces **image / texture translation** — the mod can now ship
 ### Added (Language: Korean)
 
 - **Tutorial Billboard textures** (17 images) — translated Korean versions of `TX_Tutorial_AI / Ammo / Armor / Attachments / Equipment / Grenades / Interface / Items / Maps / Medical / Settings / Shelters / Traders / Vostok / Weapons / World` + a re-exported pass with corrected typography. Original copyrighted game images are **not** bundled — only the translated layers.
+  - **Note**: Translated textures were hand-crafted (reconstructed), and may include hand-drawn work and/or copyright-free assets, so some icons may differ slightly from the originals (e.g., Performance icon, Permadeath skull icon on the Tutorial Billboards).
 - **`Korean/Images.xlsx`** — new metadata workbook tracking translated image assets (path, source, translator, notes).
 
 ### Added (Engine)
@@ -135,6 +136,7 @@ First public test version.
 ### 추가 (언어: 한국어)
 
 - **튜토리얼 빌보드 텍스처** (17장) — `TX_Tutorial_AI / Ammo / Armor / Attachments / Equipment / Grenades / Interface / Items / Maps / Medical / Settings / Shelters / Traders / Vostok / Weapons / World` 의 한글 번역본 추가 + 타이포그래피 보정 패스. 원본 저작권 이미지는 **포함하지 않음** — 번역 레이어만 포함.
+  - **참고**: 번역 텍스처는 수작업으로 재구성(hand-crafted)되었으며, 직접 그린 작업물(hand-drawing) 또는 저작권이 없는 애셋이 포함될 수 있어 일부 아이콘이 원본과 조금 다를 수 있음 (예: 튜토리얼 빌보드의 Performance 아이콘, Permadeath 해골 아이콘 등).
 - **`Korean/Images.xlsx`** — 번역 이미지 자산 메타데이터 워크북 신규 (경로 / 출처 / 번역자 / 메모).
 
 ### 추가 (엔진)
