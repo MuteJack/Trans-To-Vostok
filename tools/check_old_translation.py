@@ -126,7 +126,7 @@ def main() -> int:
     mod_root = script_dir.parent
     locale_dir = mod_root / locale
     xlsx_path = locale_dir / "Translation.xlsx"
-    tsv_dir = mod_root / ".tmp" / "extracted_text"
+    tsv_dir = mod_root / ".tmp" / "parsed_text"
 
     if not xlsx_path.exists():
         print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")

@@ -1,5 +1,5 @@
 """
-[테스트] .gd 파일에서 UI 텍스트 할당을 찾아 통일 포맷 TSV 로 출력.
+.gd 파일을 파싱해 UI 텍스트 할당을 찾아 통일 포맷 TSV 로 출력.
 
 감지 패턴:
     xxx.text = "..."                → .text 속성 할당
@@ -13,11 +13,11 @@
     SKIP        — 기호/단위/숫자만 → 번역 불필요
 
 출력:
-    .tmp/_extracted_text/Scripts/{파일명}.gd.tsv
+    .tmp/parsed_text/Scripts/{파일명}.gd.tsv
     통일 컬럼: filename, filetype, location, parent, name, type, unique_id, text
 
 사용법:
-    python _extract_gd_text.py [source_dir]
+    python parse_gd_text.py [source_dir]
 """
 import csv
 import json
@@ -377,7 +377,7 @@ def main():
     print()
 
     pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
-    output_dir = (mod_root / ".tmp" / "extracted_text").resolve()
+    output_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
     # targets 에서 소스 디렉토리 수집
     if len(sys.argv) > 1:

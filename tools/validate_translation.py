@@ -135,8 +135,8 @@ def load_tsv_index(tsv_dir: Path) -> dict:
     추출된 TSV 파일에서 unique_id → [레코드 목록] 인덱스를 만든다.
 
     대상 파일:
-        *.tscn.tsv  (extract_tscn_text.py 출력, unique_id 있음)
-        *.tres.tsv  (extract_tres_text.py 출력, unique_id 없음 → 자연 스킵)
+        *.tscn.tsv  (parse_tscn_text.py 출력, unique_id 있음)
+        *.tres.tsv  (parse_tres_text.py 출력, unique_id 없음 → 자연 스킵)
     """
     index = {}
     tsv_files = sorted(tsv_dir.rglob("*.tscn.tsv")) + sorted(tsv_dir.rglob("*.tres.tsv"))
@@ -782,7 +782,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
         raise FileNotFoundError(f"xlsx 파일이 없습니다: {xlsx_path}")
     if not tsv_dir.exists():
         raise FileNotFoundError(
-            f"TSV 디렉토리가 없습니다: {tsv_dir}\n먼저 extract_tscn_text.py 를 실행하세요."
+            f"TSV 디렉토리가 없습니다: {tsv_dir}\n먼저 parse_tscn_text.py 를 실행하세요."
         )
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -940,7 +940,7 @@ def main() -> int:
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent
     xlsx_path = (mod_root / locale / "Translation.xlsx").resolve()
-    tsv_dir = (mod_root / ".tmp" / "extracted_text").resolve()
+    tsv_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
     if not xlsx_path.exists():
         print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")

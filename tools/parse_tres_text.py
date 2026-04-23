@@ -1,28 +1,28 @@
 """
-Godot .tres 파일에서 지정한 필드 값을 추출한다.
+Godot .tres 파일을 파싱해 지정한 필드 값을 추출한다.
 
 [resource] 블록 내부의 `field = "value"` 패턴을 찾아 값을 TSV로 출력한다.
 여러 줄 문자열(개행 포함)과 이스케이프된 따옴표(\")를 정확히 처리한다.
 
 원본 .tres 파일마다 하나의 .tres.tsv 파일이 생성되며, 출력 경로는
-원본의 pck_recovered 기준 상대 경로를 extracted_text 아래에 미러링한다.
+원본의 pck_recovered 기준 상대 경로를 parsed_text 아래에 미러링한다.
 
     pck_recovered/Events/List/D1_Generalist.tres
         ↓
-    extracted_text/Events/List/D1_Generalist.tres.tsv
+    parsed_text/Events/List/D1_Generalist.tres.tsv
 
 출력 컬럼: filetype, location, field, text
 
 실행 모드:
-  1) 배치 (권장):  python extract_tres_text.py  또는 --config <path>
+  1) 배치 (권장):  python parse_tres_text.py  또는 --config <path>
      tres_list.json 을 읽어 여러 그룹을 한 번에 처리.
      기본 경로: 이 스크립트 옆의 tres_list.json.
-  2) 단일 job:     python extract_tres_text.py --input <dir> --fields <list>
+  2) 단일 job:     python parse_tres_text.py --input <dir> --fields <list>
 
 사용법:
-    python extract_tres_text.py                       # 기본 tres_list.json 사용
-    python extract_tres_text.py --config other.json   # 다른 config 사용
-    python extract_tres_text.py --input Events/List --fields name,description
+    python parse_tres_text.py                       # 기본 tres_list.json 사용
+    python parse_tres_text.py --config other.json   # 다른 config 사용
+    python parse_tres_text.py --input Events/List --fields name,description
 
 tres_list.json 스키마:
     {
@@ -440,7 +440,7 @@ def main() -> int:
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent              # mods/Trans To Vostok
     pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
-    extracted_dir = (mod_root / ".tmp" / "extracted_text").resolve()
+    parsed_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
     # --input 과 --config 동시 지정 금지
     if args.input and args.config:
@@ -454,7 +454,7 @@ def main() -> int:
             return 1
         fields = [f.strip() for f in args.fields.split(",") if f.strip()]
         input_dir = Path(args.input).resolve()
-        return run_single_job(input_dir, fields, pck_root, extracted_dir)
+        return run_single_job(input_dir, fields, pck_root, parsed_dir)
 
     # 배치 모드
     if args.config:
@@ -473,7 +473,7 @@ def main() -> int:
         print("  먼저 decompile_gdc.bat 를 실행하여 pck_recovered 를 생성하세요.", file=sys.stderr)
         return 1
 
-    return run_batch(config_path, pck_root, extracted_dir)
+    return run_batch(config_path, pck_root, parsed_dir)
 
 
 if __name__ == "__main__":

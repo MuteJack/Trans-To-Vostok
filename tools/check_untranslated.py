@@ -89,7 +89,7 @@ def compile_pattern(text: str) -> re.Pattern:
 
 def load_tsv_entries(tsv_dir: Path) -> list[dict]:
     """
-    extracted_text/ 의 이중 확장자 TSV 파일을 로드.
+    parsed_text/ 의 이중 확장자 TSV 파일을 로드.
 
     대상:
         *.tscn.tsv  — unique_id 있는 scn 엔트리
@@ -364,7 +364,7 @@ def main() -> int:
     mod_root = script_dir.parent
     locale_dir = mod_root / locale
     xlsx_path = locale_dir / "Translation.xlsx"
-    tsv_dir = mod_root / ".tmp" / "extracted_text"
+    tsv_dir = mod_root / ".tmp" / "parsed_text"
 
     if not xlsx_path.exists():
         print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")

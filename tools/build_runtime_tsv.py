@@ -187,7 +187,7 @@ def main() -> int:
     mod_root = script_dir.parent
     locale_dir = mod_root / locale
     xlsx_path = locale_dir / "Translation.xlsx"
-    tsv_dir = mod_root / ".tmp" / "extracted_text"
+    tsv_dir = mod_root / ".tmp" / "parsed_text"
 
     if not locale_dir.exists():
         print(f"[ERROR] 로케일 폴더가 없습니다: {locale_dir}")

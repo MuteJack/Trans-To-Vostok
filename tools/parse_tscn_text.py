@@ -1,20 +1,20 @@
 """
-.tscn 파일에서 텍스트를 추출해 TSV로 저장.
+.tscn 파일을 파싱해 번역 대상 텍스트를 TSV로 저장.
 
 컬럼 순서: filename, filetype, location, parent, name, type, unique_id, text
 
 사용법:
-    python extract_tscn_text.py                    # 기본 입력/출력 경로 사용
-    python extract_tscn_text.py <source_dir>       # 입력 디렉토리 지정
-    python extract_tscn_text.py <src> <out>        # 입력 + 출력 지정
+    python parse_tscn_text.py                    # 기본 입력/출력 경로 사용
+    python parse_tscn_text.py <source_dir>       # 입력 디렉토리 지정
+    python parse_tscn_text.py <src> <out>        # 입력 + 출력 지정
 
 기본값 (tools/ 기준):
     source_dir = ../.tmp/pck_recovered/
-    output_dir = ../.tmp/extracted_text/
+    output_dir = ../.tmp/parsed_text/
 
 출력:
     입력 디렉토리의 .tscn 파일마다 .tscn.tsv (이중 확장자) 생성.
-    (예: pck_recovered/Scenes/Menu.tscn → extracted_text/Scenes/Menu.tscn.tsv)
+    (예: pck_recovered/Scenes/Menu.tscn → parsed_text/Scenes/Menu.tscn.tsv)
 
 출력 필드:
     filename   확장자 없는 상대 경로 (예: "Scenes/Menu")
@@ -239,7 +239,7 @@ def main():
     # script_dir = mods/Trans To Vostok/tools
     # ../.tmp = mods/Trans To Vostok/.tmp
     default_src = (script_dir / "../.tmp/pck_recovered").resolve()
-    default_out = (script_dir / "../.tmp/extracted_text").resolve()
+    default_out = (script_dir / "../.tmp/parsed_text").resolve()
 
     src_arg = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else default_src
     out_dir = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else default_out
