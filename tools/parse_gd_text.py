@@ -131,8 +131,8 @@ def build_compare_re(properties: list) -> re.Pattern:
     )
 
 
-# 통일 출력 컬럼 (tscn/tres 와 동일)
-OUT_COLUMNS = ["method", "filename", "filetype", "location", "parent", "name", "type", "unique_id", "text"]
+# 통일 출력 컬럼 (tscn/tres 와 동일 — property 는 빈값으로 출력, xlsx 스키마 정렬용)
+OUT_COLUMNS = ["method", "filename", "filetype", "location", "parent", "name", "type", "property", "unique_id", "text"]
 
 
 def strip_comment(line: str) -> str:
