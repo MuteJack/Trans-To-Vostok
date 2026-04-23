@@ -20,3 +20,4 @@ Unlock with {name}	열기 ({name} 사용)
 Items: {str}	아이템: {str}
 {containerName} [Locked]	{containerName} [잠김]
 {containerName} [Open]	{containerName} [열기]
+Item Returned: {name}	아이템 회수됨: {name}

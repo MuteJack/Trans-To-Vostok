@@ -4,6 +4,37 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.3.2] — 2026-04-24
+
+Translation update for the game's rendering-pipeline rework (game build v0.1.1.3).
+
+### Added (Common)
+
+- **Settings (Rendering) entries registered** — new render-resolution buttons (`Low` / `Native`), `Image Sharpness` label, and `SMAA Off / On` antialiasing toggle added to the xlsx as new translatable rows.
+- **Main menu Compatibility warning registered** — the hidden red label shown when launching with the Compatibility renderer added as a translatable row.
+- **Killbox messages registered** — newly added in the game's v0.1.1.3 update.
+
+### Fixed (Common)
+
+- **UI property updates** — refreshed xlsx entries for UI nodes whose properties changed in the game update.
+
+### Added (Language: Korean)
+
+- Korean translations filled in for all of the newly registered entries above (e.g., `Native` → 네이티브, `Image Sharpness` → 이미지 선명도, Compatibility warning → 호환 모드, `Item Returned: {name}` → 아이템 회수, `Player Returned` → 플레이어 복귀).
+
+### Fixed (Language: Korean)
+
+- **Mistranslation fixes** — e.g., `Border` in the Settings / Music preset refers to the border-area BGM, so the translation was corrected from 국경 → 접경지대 (and similar context-based fixes).
+
+### Internal
+
+- Bumped `mod.txt` version `0.3.1 → 0.3.2`.
+- **In progress: image translation template** — standardizing the xlsx / texture-swap workflow so other languages can contribute translated textures.
+- **In progress: toolbox refactor for public release** — removing potentially sensitive parts of the toolbox in preparation for publishing the translation-toolbox repository on GitHub.
+- **In progress: Korean map translation** — localized world-map texture (place names, legends) under development.
+
+---
+
 ## [0.3.1] — 2026-04-22
 
 Adds a user-toggleable **priority whitelist** — a new F9 UI tab lets players opt specific UI areas (HUD map label, inventory, trader, etc.) into per-frame priority translation to counter flicker caused by other mods periodically rewriting in-game text (e.g., ImmersiveXP overriding HUD.gd `_physics_process`).
@@ -161,6 +192,37 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.3.2] — 2026-04-24
+
+게임의 렌더링 파이프라인 개편(게임 빌드 v0.1.1.3)에 대응한 번역 업데이트.
+
+### 추가 (공통)
+
+- **Settings (Rendering) 엔트리 등록** — 새 렌더 해상도 버튼(`Low` / `Native`), `Image Sharpness` 라벨, `SMAA Off / On` 안티앨리어싱 토글을 xlsx 에 번역 대상 행으로 추가.
+- **메인 메뉴 Compatibility 경고 등록** — Compatibility 렌더러로 실행 시 표시되는 빨간 숨김 라벨을 번역 대상 행으로 추가.
+- **Killbox 메시지 번역 대상 추가** — 게임의 v0.1.1.3 업데이트에서 추가됨.
+
+### 수정 (공통)
+
+- **UI 속성 갱신** — 게임 업데이트로 속성이 바뀐 UI 노드의 xlsx 엔트리 갱신.
+
+### 추가 (언어: 한국어)
+
+- 위에서 새로 등록된 엔트리들에 대한 한국어 번역 채움 (예: `Native` → 네이티브, `Image Sharpness` → 이미지 선명도, Compatibility 경고 → 호환 모드, `Item Returned: {name}` → 아이템 회수, `Player Returned` → 플레이어 복귀).
+
+### 수정 (언어: 한국어)
+
+- **일부 오역 수정** — 예: 설정 / 음악 프리셋의 `Border` 는 접경 지역 BGM 을 가리키므로 국경 → 접경지대 로 수정 (그 외 문맥 기반 보정).
+
+### 내부
+
+- `mod.txt` 버전 `0.3.1 → 0.3.2`.
+- **진행 중: 이미지 번역 템플릿 준비** — 다른 언어 기여자들이 번역 텍스처를 추가할 수 있도록 xlsx / 텍스처 교체 워크플로우 표준화 작업.
+- **진행 중: 번역 toolbox 공개용 리팩토링** — 번역 toolbox 저장소 GitHub 공개를 위해 문제가 될 수 있는 부분 제거 중.
+- **진행 중: 지도 한국어 번역** — 월드맵 텍스처(지명 · 범례)의 한국어 번역본 제작 중.
+
+---
 
 ## [0.3.1] — 2026-04-22
 

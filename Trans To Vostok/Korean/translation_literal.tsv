@@ -1,4 +1,5 @@
 text	translation
+Compatibility	호환성
 Selected	선택됨
 Press key to bind...	키를 입력하세요...
 Forward	앞으로
@@ -46,6 +47,7 @@ Mouse Wheel Up	마우스 휠 위로
 Mouse Wheel Down	마우스 휠 아래로
 Mouse Thumb Button 1	마우스 엄지 버튼 1
 Mouse Thumb Button 2	마우스 엄지 버튼 2
+UI Scaling	UI 스케일링
 Loading...	로딩중...
 All save files deleted	모든 세이브 파일이 삭제되었습니다
 Character died	캐릭터가 사망했습니다
@@ -914,6 +916,7 @@ Cold Medicine	감기약
 C. Med.	감기약
 Deodorant	데오드란트
 Deodora.	데오드란트
+Gum	껌
 Lotion	로션
 Medkit	구급상자
 Melatonin	멜라토닌
@@ -1137,6 +1140,7 @@ Completed	완료됨
 Add to Notes	노트에 추가
 Television [Turn Off]	텔레비전 [끄기]
 Television [Turn On]	텔레비전 [끄기]
+Player Returned	플레이어 복귀 됨
 Corpse	시체
 Vital	바이탈
 Indoors	실내
