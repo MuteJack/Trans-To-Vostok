@@ -185,7 +185,8 @@ def main() -> int:
     locale = args[0]
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent
-    locale_dir = mod_root / locale
+    pkg_root = mod_root / "Trans To Vostok"
+    locale_dir = pkg_root / locale
     xlsx_path = locale_dir / "Translation.xlsx"
     tsv_dir = mod_root / ".tmp" / "parsed_text"
 

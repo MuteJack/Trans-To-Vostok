@@ -75,6 +75,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
     모드를 .vmz (ZIP)으로 패키징.
     반환: (전체 파일 개수, 텍스처 파일 개수)
     """
+    pkg_root = mod_root / MOD_NAME
     count = 0
     texture_count = 0
 
@@ -83,16 +84,16 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
 
     try:
         with zipfile.ZipFile(tmp_path, "w", zipfile.ZIP_DEFLATED) as zf:
-            # 1. mod.txt → ZIP 루트
+            # 1. mod.txt → ZIP 루트 (outer/repo root)
             mod_txt = mod_root / "mod.txt"
             if not mod_txt.exists():
                 raise FileNotFoundError(f"mod.txt가 없습니다: {mod_txt}")
             zf.write(mod_txt, "mod.txt")
             count += 1
 
-            # 2. 모드 파일들 → Trans To Vostok/
+            # 2. 모드 파일들 (pkg_root) → Trans To Vostok/
             for fname in MOD_FILES:
-                src = mod_root / fname
+                src = pkg_root / fname
                 if not src.exists():
                     raise FileNotFoundError(f"모드 파일이 없습니다: {src}")
                 zf.write(src, f"{MOD_NAME}/{fname}")
@@ -100,7 +101,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
 
             # 3. 로케일 파일들 → Trans To Vostok/<locale>/
             for locale in locales:
-                locale_dir = mod_root / locale
+                locale_dir = pkg_root / locale
                 for fname in LOCALE_FILES:
                     src = locale_dir / fname
                     if not src.exists():
@@ -137,7 +138,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
 
 def load_locale_config(mod_root: Path) -> list[dict]:
     """locale.json 에서 enabled=true 인 로케일 목록을 반환."""
-    locale_json = mod_root / "locale.json"
+    locale_json = mod_root / MOD_NAME / "locale.json"
     if not locale_json.exists():
         return []
     try:
@@ -175,9 +176,10 @@ def main() -> int:
     out_path = mods_parent / f"{MOD_NAME}.zip"
 
     # 1. 각 로케일 빌드 (validate 포함, 폴더 없는 locale 스킵)
+    pkg_root = mod_root / MOD_NAME
     build_locales = []
     for locale in locales:
-        locale_dir = mod_root / locale
+        locale_dir = pkg_root / locale
         xlsx_path = locale_dir / "Translation.xlsx"
         if not locale_dir.exists() or not xlsx_path.exists():
             print(f"[SKIP] {locale} — 번역 폴더/xlsx 없음 (기본 언어)")

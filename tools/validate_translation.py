@@ -939,7 +939,8 @@ def main() -> int:
     locale = args[0]
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent
-    xlsx_path = (mod_root / locale / "Translation.xlsx").resolve()
+    pkg_root = mod_root / "Trans To Vostok"
+    xlsx_path = (pkg_root / locale / "Translation.xlsx").resolve()
     tsv_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
     if not xlsx_path.exists():
