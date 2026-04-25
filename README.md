@@ -321,21 +321,23 @@ GitHub 이슈(추후 공개) 또는 모드 배포 채널을 통해 문의해 주
 # ScreenShots
 
 **Trans to Vostok**
-![1776508455196](README/image/3_Trans2Vostok_Main_Korean.png)
+![3_Trans2Vostok_Main_Korean.png](README/image/3_Trans2Vostok_Main_Korean.png)
 
-![1776508352445](README/image/2_Trans2Vostok_Lang_Sel.png)
+![2_Trans2Vostok_Lang_Sel.png](README/image/2_Trans2Vostok_Lang_Sel.png)
 
-![1776508495450](README/image/4_Trans2Vostok_New_Korean.png)
+![4_Trans2Vostok_New_Korean.png](README/image/4_Trans2Vostok_New_Korean.png)
 
-![1776508536327](README/image/5_Trans2Vostok_Cabin_Korean.png)
+![5_Trans2Vostok_Cabin_Korean.png](README/image/5_Trans2Vostok_Cabin_Korean.png)
 
-![1776508589318](README/image/6_Trans2Vostok_Settings_Korean.png)
+![6_Trans2Vostok_Settings_Korean.png](README/image/6_Trans2Vostok_Settings_Korean.png)
 
-![1776508751998](README/image/7_Trans2Vostok_Tutorial_Crate.png)
+![7_Trans2Vostok_Tutorial_Crate.png](README/image/7_Trans2Vostok_Tutorial_Crate.png)
 
-![1776785949926](README/image/8_Trans2Vostok_Texture_TutorialBillBoard1.png)
+![8_Trans2Vostok_Texture_TutorialBillBoard1.png](README/image/8_Trans2Vostok_Texture_TutorialBillBoard1.png)
 
-![1776785966635](README/image/9_Trans2Vostok_Texture_TutorialBillBoard2.png)
+![9_Trans2Vostok_Texture_TutorialBillBoard2.png](README/image/9_Trans2Vostok_Texture_TutorialBillBoard2.png)
+
+![10_Trans2Vostok_UI_WorldMap_Korean.png](10_Trans2Vostok_UI_WorldMap_Korean.png)
 
 **MetroModLoaderUI**
 ![1776508272457](README/image/1.Metro_MoadLoader.png)
