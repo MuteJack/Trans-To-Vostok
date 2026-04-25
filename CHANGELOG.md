@@ -4,6 +4,28 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.3.3] — 2026-04-26
+
+World map texture translation added. Build pipeline now auto-generates a per-locale Attribution document.
+
+### Added (Language: Korean)
+
+- **World map texture translation** — Korean version of the in-game world map (place names, decorative overlays). Base imagery: modified Copernicus Sentinel-2 data. Full per-asset credits at `Trans To Vostok/Korean/Attribution.md`.
+
+### Notes
+
+- **Public repository preparation for other-language support / contributions** — planned to begin from v0.4.x onwards (may take a while).
+
+### Internal
+
+- **`build_attributions.py`** — new tool. Reads `<locale>/Images.xlsx` (`File Name`, `Reworked by`, `Attribution` columns) and generates `<locale>/Attribution.md` summarizing per-image source credits.
+- **`build_mod_package.py` integration** — automatically runs attribution generation for each locale; the resulting `Attribution.md` is included inside the mod zip.
+- **README** — added Section 6 "Attribution" pointing users to the bundled `Attribution.md`.
+- **In progress (carried from v0.3.2)**: public toolbox refactor.
+- Bumped `mod.txt` version `0.3.2 → 0.3.3`.
+
+---
+
 ## [0.3.2] — 2026-04-24
 
 Translation update for the game's rendering-pipeline rework (game build v0.1.1.3).
@@ -192,6 +214,28 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.3.3] — 2026-04-26
+
+WorldMap 텍스처 번역 추가. 빌드 파이프라인에서 로케일별 출처 표기 문서를 자동 생성하도록 보강.
+
+### 추가 (언어: 한국어)
+
+- **WorldMap 텍스처 번역** — 게임 내 월드맵의 한국어 버전 (지명, 장식 오버레이 포함). 기반 이미지: 가공된 Copernicus Sentinel-2 데이터. 자산별 전체 출처는 모드 zip 의 `Trans To Vostok/Korean/Attribution.md` 위치.
+
+### 추가사항
+
+- **0.4.x 부터 다른 언어 지원 / 참가를 위한 레포지터리 배포 준비 중** (조금 걸릴 수도 있음).
+
+### 내부
+
+- **`build_attributions.py`** — `<locale>/Images.xlsx` (`File Name`, `Reworked by`, `Attribution` 컬럼) 를 읽어 `<locale>/Attribution.md` 를 생성하는 신규 도구. 이미지별 출처를 자동 정리.
+- **`build_mod_package.py` 연동** — 각 로케일에 대해 attribution 생성을 자동 실행. 생성된 `Attribution.md` 가 모드 zip 안에 포함됨.
+- **README** — 6번 "출처 표기 (Attribution)" 섹션 추가. 동봉된 `Attribution.md` 위치 안내.
+- **진행 중 (v0.3.2 에서 이월)**: 공개 toolbox 리팩토링.
+- `mod.txt` 버전 `0.3.2 → 0.3.3`.
+
+---
 
 ## [0.3.2] — 2026-04-24
 
