@@ -4,6 +4,18 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.3.4] — 2026-04-26 (Hotfix)
+
+### Fixed (Language: Korean)
+
+- **WorldMap texture** — corrected wrongly drawn road guidelines.
+
+### Internal
+
+- Bumped `mod.txt` version `0.3.3 → 0.3.4`.
+
+---
+
 ## [0.3.3] — 2026-04-26
 
 World map texture translation added. Build pipeline now auto-generates a per-locale Attribution document.
@@ -214,6 +226,18 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.3.4] — 2026-04-26 (핫픽스)
+
+### 수정 (언어: 한국어)
+
+- **WorldMap 텍스처** — 잘못 그린 도로 가이드라인 수정.
+
+### 내부
+
+- `mod.txt` 버전 `0.3.3 → 0.3.4`.
+
+---
 
 ## [0.3.3] — 2026-04-26
 

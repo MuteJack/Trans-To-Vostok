@@ -1,7 +1,7 @@
 [mod]
 name="Trans To Vostok"
 id="trans-to-vostok"
-version="0.3.3"
+version="0.3.4"
 
 [autoload]
 TransToVostok="res://Trans To Vostok/translator_ui.gd"
