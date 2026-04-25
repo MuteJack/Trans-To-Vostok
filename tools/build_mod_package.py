@@ -70,6 +70,19 @@ def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool 
     return True
 
 
+def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
+    """build_attributions.py를 호출. Images.xlsx 가 없으면 skip 처리.
+    출력은 build_attributions.py 의 기본 경로 (<pkg_root>/<locale>/Attribution.md)."""
+    print(f"=== 어트리뷰션 빌드: {locale} ===")
+    cmd = [sys.executable, "build_attributions.py", "--locale", locale]
+    result = subprocess.run(cmd, cwd=tools_dir)
+    if result.returncode != 0:
+        print(f"[ERROR] {locale} attribution 빌드 실패")
+        return False
+    print()
+    return True
+
+
 def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int, int]:
     """
     모드를 .vmz (ZIP)으로 패키징.
@@ -122,6 +135,13 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                         zf.write(tex_file, f"{MOD_NAME}/{locale}/{rel}")
                         count += 1
                         texture_count += 1
+
+                # 5. Attribution.md → Trans To Vostok/<locale>/Attribution.md
+                # build_attributions.py 가 생성. Images.xlsx 없는 로케일은 파일 자체가 없음 → 스킵
+                attribution_path = locale_dir / "Attribution.md"
+                if attribution_path.exists() and attribution_path.is_file():
+                    zf.write(attribution_path, f"{MOD_NAME}/{locale}/Attribution.md")
+                    count += 1
 
         # 성공 시 원본 덮어쓰기
         tmp_path.replace(out_path)
@@ -189,7 +209,12 @@ def main() -> int:
         build_locales.append(locale)
     locales = build_locales
 
-    # 2. 패키징
+    # 2. 어트리뷰션 빌드 (Images.xlsx 있는 로케일만 출력)
+    for locale in locales:
+        if not build_attributions_for_locale(script_dir, locale):
+            return 1
+
+    # 3. 패키징
     print(f"=== 패키징 ===")
     print(f"대상 로케일: {', '.join(locales)}")
     print(f"출력 파일: {out_path}")
