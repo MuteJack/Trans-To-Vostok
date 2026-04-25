@@ -115,6 +115,10 @@ To request additional languages, please submit a GitHub issue (to be published).
 * [ ] Create branches for additional languages (French, Japanese, Chinese, German, etc.)
 * [ ] Design translation workflow for stable / beta game branches (version-specific diffs, release tagging, side-by-side maintenance)
 
+## 6. Attribution
+
+Translated texture assets (images) are made from a mix of hand-crafted work, license-free assets, and third-party data sources. Per-file source credits are listed in **`Trans To Vostok/<locale>/Attribution.md`** inside the mod zip — auto-generated from the translation workbook each build.
+
 ---
 
 ## Developer/Translator's ToolBox (Not released yet)
@@ -275,6 +279,10 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 * [ ] ToolBox 및 메뉴얼 Prototype 완성 후 GitHub 공개
 * [ ] 추가 언어 지원  Branch 생성 (프랑스어, 일본어, 중국어, 독일어 등)
 * [ ] 정식 / 베타 버전에 대한 번역 workflow 설계 (버전별 diff, 릴리스 태깅, 양쪽 동시 유지)
+
+## 6. 출처 표기 (Attribution)
+
+번역된 텍스처(이미지) 에셋은 직접 작업물 / 라이선스-프리 애셋 / 제3자 데이터 출처가 혼합되어 있습니다. 각 파일별 출처는 모드 zip 안의 **`Trans To Vostok/<locale>/Attribution.md`** 에 정리되어 있으며, 빌드 시 번역 워크북에서 자동 생성됩니다.
 
 ---
 
