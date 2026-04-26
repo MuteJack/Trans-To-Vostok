@@ -19,7 +19,7 @@ from pathlib import Path
 try:
     import openpyxl
 except ImportError:
-    print("ERROR: openpyxl이 필요합니다. pip install openpyxl", file=sys.stderr)
+    print("ERROR: openpyxl is required. pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -44,7 +44,7 @@ def collect_rows(xlsx_path: Path) -> list[dict]:
         try:
             idx = {col: header.index(col) for col in REQUIRED_COLUMNS}
         except ValueError as e:
-            print(f"[WARN] '{ws.title}' 시트에 필수 컬럼 누락 ({e}), 스킵",
+            print(f"[WARN] '{ws.title}' sheet missing required column ({e}), skipping",
                   file=sys.stderr)
             continue
 
@@ -153,7 +153,7 @@ def main() -> int:
 
     if not xlsx_path.exists():
         # When called from the build pipeline, locales without Images.xlsx are normal (no texture translation)
-        print(f"[SKIP] Images.xlsx 가 없습니다: {xlsx_path} — 출력 안 함")
+        print(f"[SKIP] Images.xlsx not found: {xlsx_path} - no output")
         return 0
 
     print(f"Input:  {xlsx_path}")

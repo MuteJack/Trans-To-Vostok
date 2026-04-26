@@ -202,7 +202,7 @@ def load_tscn_config(config_path: Path) -> dict:
     """
     default = {"extra_properties": [], "groups": []}
     if not config_path.exists():
-        print(f"[INFO] tscn_list.json 없음, 기본 설정 사용")
+        print(f"[INFO] tscn_list.json not found, using default config")
         return default
     try:
         data = json.loads(config_path.read_text(encoding="utf-8"))
@@ -211,7 +211,7 @@ def load_tscn_config(config_path: Path) -> dict:
                 data[key] = val
         return data
     except (json.JSONDecodeError, OSError) as e:
-        print(f"[WARN] tscn_list.json 읽기 실패: {e}, 기본 설정 사용")
+        print(f"[WARN] Failed to read tscn_list.json: {e}, using default config")
         return default
 
 
@@ -249,20 +249,20 @@ def main():
     config = load_tscn_config(config_path)
     global_extra = config.get("extra_properties", [])
     per_file_extras = _build_per_file_extras(config)
-    print(f"설정: {config_path.name}")
-    print(f"  전역 extra_properties: {global_extra}")
+    print(f"Config: {config_path.name}")
+    print(f"  global extra_properties: {global_extra}")
     if per_file_extras:
-        print(f"  파일별 extra_properties: {len(per_file_extras)}개 파일")
+        print(f"  per-file extra_properties: {len(per_file_extras)} files")
     print()
 
     if not src_arg.exists():
-        print(f"[ERROR] 입력 경로가 없습니다: {src_arg}")
+        print(f"[ERROR] Input path not found: {src_arg}")
         return 1
 
     # supports both a single file and a directory
     if src_arg.is_file():
         if src_arg.suffix.lower() != ".tscn":
-            print(f"[ERROR] .tscn 파일이 아닙니다: {src_arg}")
+            print(f"[ERROR] Not a .tscn file: {src_arg}")
             return 1
         tscn_files = [src_arg]
         src_dir = src_arg.parent
@@ -270,12 +270,12 @@ def main():
         src_dir = src_arg
         tscn_files = sorted(src_arg.rglob("*.tscn"))
         if not tscn_files:
-            print(f"[ERROR] .tscn 파일을 찾을 수 없습니다: {src_arg}")
+            print(f"[ERROR] No .tscn files found: {src_arg}")
             return 1
 
-    print(f"입력: {src_dir}")
-    print(f"출력: {out_dir}")
-    print(f"대상 파일: {len(tscn_files)}개")
+    print(f"Input:  {src_dir}")
+    print(f"Output: {out_dir}")
+    print(f"Target files: {len(tscn_files)}")
     print()
 
     total_nodes = 0
@@ -300,15 +300,15 @@ def main():
             total_texts += t
             processed += 1
             if t > 0:
-                print(f"  [OK] {rel_tscn.as_posix()}  ({t}개 텍스트 / {n}개 노드)")
+                print(f"  [OK] {rel_tscn.as_posix()}  ({t} texts / {n} nodes)")
         except Exception as e:
             failed += 1
             print(f"  [FAIL] {rel_tscn.as_posix()}: {e}")
 
     print()
-    print(f"완료: {processed}개 파일 처리 (실패 {failed}개)")
-    print(f"  총 노드: {total_nodes}")
-    print(f"  텍스트 있는 노드: {total_texts}")
+    print(f"Done: {processed} files processed ({failed} failed)")
+    print(f"  Total nodes: {total_nodes}")
+    print(f"  Nodes with text: {total_texts}")
     return 0
 
 

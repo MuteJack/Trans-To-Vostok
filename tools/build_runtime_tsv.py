@@ -37,7 +37,7 @@ from pathlib import Path
 try:
     import openpyxl  # noqa: F401
 except ImportError:
-    print("ERROR: openpyxl이 필요합니다. pip install openpyxl", file=sys.stderr)
+    print("ERROR: openpyxl is required. pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -136,7 +136,7 @@ def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
                 if existing.get("text", "") == text and existing.get("translation", "") != translation:
                     conflict = True
                     print(
-                        f"[WARN] substr/literal 번역 충돌: text={text!r} "
+                        f"[WARN] substr/literal translation conflict: text={text!r} "
                         f"(substr={translation!r} vs literal={existing.get('translation', '')!r})",
                         file=sys.stderr,
                     )
@@ -175,11 +175,11 @@ def main() -> int:
     ignore_validation = "--ignore" in flags
 
     if not args:
-        print("사용법: python build_runtime_tsv.py <locale> [--soft|--hard|--ignore]")
-        print("  --hard (기본): TSV 매칭 실패 → ERROR (빌드 차단)")
-        print("  --soft:        TSV 매칭 실패 → WARNING (빌드 계속)")
-        print("  --ignore:      검증 단계 스킵 (즉시 빌드)")
-        print("예: python build_runtime_tsv.py Korean --soft")
+        print("Usage: python build_runtime_tsv.py <locale> [--soft|--hard|--ignore]")
+        print("  --hard (default): TSV match failure -> ERROR (block build)")
+        print("  --soft:           TSV match failure -> WARNING (continue build)")
+        print("  --ignore:         skip validation step (build immediately)")
+        print("Example: python build_runtime_tsv.py Korean --soft")
         return 1
 
     locale = args[0]
@@ -191,64 +191,64 @@ def main() -> int:
     tsv_dir = mod_root / ".tmp" / "parsed_text"
 
     if not locale_dir.exists():
-        print(f"[ERROR] 로케일 폴더가 없습니다: {locale_dir}")
+        print(f"[ERROR] Locale folder not found: {locale_dir}")
         return 1
     if not xlsx_path.exists():
-        print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")
+        print(f"[ERROR] xlsx file not found: {xlsx_path}")
         return 1
 
     # 1. validation
     if ignore_validation:
-        print(f"[1/5] 검증 스킵 (--ignore)")
+        print(f"[1/5] Validation skipped (--ignore)")
         print()
     else:
         mode = "soft" if soft else "hard"
-        print(f"[1/5] 검증 중... ({locale}, {mode})")
+        print(f"[1/5] Validating... ({locale}, {mode})")
         try:
             result = validate_xlsx(xlsx_path, tsv_dir, soft=soft)
         except (FileNotFoundError, ValueError) as e:
-            print(f"[ERROR] 검증 실패: {e}")
+            print(f"[ERROR] Validation failed: {e}")
             return 1
 
-        print(f"  → 로그: {result.log_path}")
+        print(f"  -> log: {result.log_path}")
         if not result.ok:
             print(
-                f"[ERROR] 검증 실패: {result.error_count}개 에러 "
-                f"(TSV {result.error_tsv}, 플래그 {result.error_flags}, "
-                f"중복 {result.error_dup}, method {result.error_method})"
+                f"[ERROR] Validation failed: {result.error_count} errors "
+                f"(TSV {result.error_tsv}, flags {result.error_flags}, "
+                f"duplicates {result.error_dup}, method {result.error_method})"
             )
-            print("빌드를 중단합니다. 위 로그를 확인하세요.")
+            print("Aborting build. Check the log above.")
             raise SystemExit(1)
 
         if result.warning_count > 0:
-            print(f"  경고 {result.warning_count}개 (진행 계속)")
+            print(f"  {result.warning_count} warnings (continuing)")
         print()
 
     # 2. load xlsx (merge all translation sheets)
-    print("[2/4] xlsx 로드 중...")
+    print("[2/4] Loading xlsx...")
     sheets = load_all_translation_sheets(xlsx_path)
     all_rows: list[dict] = []
     for _sheet_name, _header, rows in sheets:
         all_rows.extend(rows)
-    print(f"  → 시트 {len(sheets)}개, 총 {len(all_rows)}행 로드")
+    print(f"  -> {len(sheets)} sheets, {len(all_rows)} rows loaded")
     print()
 
     # 3. classify
-    print("[3/4] 행 분류 중...")
+    print("[3/4] Classifying rows...")
     buckets, stats = classify_rows(all_rows)
-    print(f"  static                 {stats['static']:4d}행")
-    print(f"  literal_scoped         {stats['literal_scoped']:4d}행")
-    print(f"  pattern_scoped         {stats['pattern_scoped']:4d}행")
-    print(f"  literal (global)       {stats['literal_global']:4d}행")
-    print(f"  pattern (global)       {stats['pattern_global']:4d}행")
-    print(f"  substr                 {stats['substr']:4d}행")
-    print(f"  제외 (ignore)          {stats['excluded_ignore']:4d}행")
-    print(f"  제외 (untranslatable)  {stats['excluded_untranslatable']:4d}행")
-    print(f"  제외 (미번역)          {stats['excluded_untranslated']:4d}행")
+    print(f"  static                 {stats['static']:4d} rows")
+    print(f"  literal_scoped         {stats['literal_scoped']:4d} rows")
+    print(f"  pattern_scoped         {stats['pattern_scoped']:4d} rows")
+    print(f"  literal (global)       {stats['literal_global']:4d} rows")
+    print(f"  pattern (global)       {stats['pattern_global']:4d} rows")
+    print(f"  substr                 {stats['substr']:4d} rows")
+    print(f"  excluded (ignore)      {stats['excluded_ignore']:4d} rows")
+    print(f"  excluded (untranslatable) {stats['excluded_untranslatable']:4d} rows")
+    print(f"  excluded (untranslated)   {stats['excluded_untranslated']:4d} rows")
     print()
 
     # 4. generate metadata.tsv
-    print("[4/5] metadata.tsv 생성 중...")
+    print("[4/5] Generating metadata.tsv...")
     meta = load_metadata(xlsx_path)
     meta_path = locale_dir / "metadata.tsv"
     meta_path.parent.mkdir(parents=True, exist_ok=True)
@@ -257,11 +257,11 @@ def main() -> int:
         writer.writerow(["field", "value"])
         for k, v in meta.items():
             writer.writerow([k, v])
-    print(f"  → {meta_path.relative_to(mod_root)} ({len(meta)}개 필드)")
+    print(f"  -> {meta_path.relative_to(mod_root)} ({len(meta)} fields)")
     print()
 
     # 5. write TSV
-    print("[5/5] TSV 작성 중...")
+    print("[5/5] Writing TSV...")
 
     outputs = [
         (locale_dir / "translation_static.tsv",         COLUMNS_SCOPED, buckets["static"]),
@@ -274,7 +274,7 @@ def main() -> int:
 
     for out_path, columns, rows in outputs:
         write_tsv(out_path, columns, rows)
-        print(f"  → {out_path.relative_to(mod_root)} ({len(rows)}행)")
+        print(f"  -> {out_path.relative_to(mod_root)} ({len(rows)} rows)")
 
     # cleanup legacy files: translation.tsv, translation_expression.tsv are no longer used
     for legacy_name in ("translation.tsv", "translation_expression.tsv"):
@@ -282,13 +282,13 @@ def main() -> int:
         if legacy_path.exists():
             try:
                 legacy_path.unlink()
-                print(f"  × {legacy_path.relative_to(mod_root)} (구 포맷 삭제)")
+                print(f"  x {legacy_path.relative_to(mod_root)} (legacy format removed)")
             except OSError as e:
-                print(f"  [WARN] 구 파일 삭제 실패: {legacy_path} ({e})")
+                print(f"  [WARN] Failed to remove legacy file: {legacy_path} ({e})")
 
     print()
     print("=" * 60)
-    print(f"빌드 완료: {locale}")
+    print(f"Build complete: {locale}")
     return 0
 
 

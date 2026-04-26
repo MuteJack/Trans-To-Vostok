@@ -29,7 +29,7 @@ from pathlib import Path
 try:
     import openpyxl  # noqa: F401
 except ImportError:
-    print("ERROR: openpyxl이 필요합니다. pip install openpyxl", file=sys.stderr)
+    print("ERROR: openpyxl is required. pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -126,7 +126,7 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
                         "_tsv_file": tsv_file.name,
                     })
         except Exception as e:
-            print(f"[WARN] TSV 읽기 실패: {tsv_file} ({e})")
+            print(f"[WARN] Failed to read TSV: {tsv_file} ({e})")
     return entries
 
 
@@ -355,8 +355,8 @@ def format_percent(n: int, total: int) -> str:
 
 def main() -> int:
     if len(sys.argv) < 2:
-        print("사용법: python check_untranslated.py <locale>")
-        print("예: python check_untranslated.py Korean")
+        print("Usage: python check_untranslated.py <locale>")
+        print("Example: python check_untranslated.py Korean")
         return 1
 
     locale = sys.argv[1]
@@ -368,10 +368,10 @@ def main() -> int:
     tsv_dir = mod_root / ".tmp" / "parsed_text"
 
     if not xlsx_path.exists():
-        print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")
+        print(f"[ERROR] xlsx file not found: {xlsx_path}")
         return 1
     if not tsv_dir.exists():
-        print(f"[ERROR] TSV 디렉토리가 없습니다: {tsv_dir}")
+        print(f"[ERROR] TSV directory not found: {tsv_dir}")
         return 1
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -381,20 +381,20 @@ def main() -> int:
     try:
         tee.print(f"xlsx:   {xlsx_path}")
         tee.print(f"TSV:    {tsv_dir}")
-        tee.print(f"로그:   {log_path}")
-        tee.print(f"실행:   {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        tee.print(f"Log:    {log_path}")
+        tee.print(f"Run:    {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         meta = load_metadata(xlsx_path)
         for line in format_metadata_lines(meta):
             tee.print(line)
         tee.print()
 
         # 1. load xlsx and analyze (merge all translation sheets)
-        tee.print("xlsx 로드 중...")
+        tee.print("Loading xlsx...")
         sheets = load_all_translation_sheets(xlsx_path)
         all_rows: list[dict] = []
         for sheet_name, _header, rows in sheets:
             all_rows.extend(rows)
-        tee.print(f"  시트 {len(sheets)}개, 총 {len(all_rows)}행")
+        tee.print(f"  {len(sheets)} sheets, {len(all_rows)} rows")
 
         (
             direct_keys,
@@ -411,20 +411,20 @@ def main() -> int:
 
         scoped_count = sum(1 for k in direct_keys if k[0])
         tee.print(
-            f"  → direct {len(direct_keys)}개 (scoped {scoped_count}), "
-            f"tres_direct {len(tres_direct)}개, "
-            f"ignored {len(ignored_keys)}+{len(tres_ignored)}개, "
-            f"untranslatable {len(untranslatable_keys)}+{len(tres_untranslatable)}개, "
-            f"empty {len(empty_keys)}개, "
-            f"literal {len(literal_map)}개, "
-            f"pattern {len(pattern_list)}개"
+            f"  -> direct {len(direct_keys)} (scoped {scoped_count}), "
+            f"tres_direct {len(tres_direct)}, "
+            f"ignored {len(ignored_keys)}+{len(tres_ignored)}, "
+            f"untranslatable {len(untranslatable_keys)}+{len(tres_untranslatable)}, "
+            f"empty {len(empty_keys)}, "
+            f"literal {len(literal_map)}, "
+            f"pattern {len(pattern_list)}"
         )
         tee.print()
 
         # 2. load extracted TSV
-        tee.print("추출 TSV 로드 중...")
+        tee.print("Loading extracted TSV...")
         tsv_entries = load_tsv_entries(tsv_dir)
-        tee.print(f"  {len(tsv_entries)}개 엔트리")
+        tee.print(f"  {len(tsv_entries)} entries")
         tee.print()
 
         # 3. classify
@@ -496,7 +496,7 @@ def main() -> int:
             if not file_names:
                 return
             tee.print("=" * 80)
-            tee.print(f"{label} (ignored/untranslatable 제외 유효 엔트리 기준)")
+            tee.print(f"{label} (effective entries, excluding ignored/untranslatable)")
             tee.print("=" * 80)
 
             max_fname = max((len(n) for n in file_names), default=20)
@@ -529,9 +529,9 @@ def main() -> int:
                 matched = direct + delegated + ignored + untranslatable + empty
                 tee.print(
                     f"[{fname:<{max_fname}}] "
-                    f"매치 {matched}/{total} ({format_percent(matched, total)}), "
-                    f"번역 {covered}/{total} ({format_percent(covered, total)}), "
-                    f"직접 {direct}/{total} ({format_percent(direct, total)}), "
+                    f"matched {matched}/{total} ({format_percent(matched, total)}), "
+                    f"translated {covered}/{total} ({format_percent(covered, total)}), "
+                    f"direct {direct}/{total} ({format_percent(direct, total)}), "
                     f"fallback {fallback}, delegated {delegated}, "
                     f"ignored {ignored}, untranslatable {untranslatable}, "
                     f"empty {empty}, missing {missing}"
@@ -540,17 +540,17 @@ def main() -> int:
 
         gd_files = sorted(f for f in per_file if f.endswith(".gd.tsv"))
 
-        _print_file_group("tscn 파일별 요약", tscn_files)
-        _print_file_group("tres 파일별 요약", tres_files)
-        _print_file_group("gd 파일별 요약", gd_files)
+        _print_file_group("tscn per-file summary", tscn_files)
+        _print_file_group("tres per-file summary", tres_files)
+        _print_file_group("gd per-file summary", gd_files)
 
         covered_all = direct_all + fallback_all + delegated_all + ignored_all + untranslatable_all
         matched_all = direct_all + delegated_all + ignored_all + untranslatable_all + empty_all
         tee.print(
-            f"[전체] "
-            f"매치 {matched_all}/{total_all} ({format_percent(matched_all, total_all)}), "
-            f"번역 {covered_all}/{total_all} ({format_percent(covered_all, total_all)}), "
-            f"직접 {direct_all}/{total_all} ({format_percent(direct_all, total_all)}), "
+            f"[Total] "
+            f"matched {matched_all}/{total_all} ({format_percent(matched_all, total_all)}), "
+            f"translated {covered_all}/{total_all} ({format_percent(covered_all, total_all)}), "
+            f"direct {direct_all}/{total_all} ({format_percent(direct_all, total_all)}), "
             f"fallback {fallback_all}, delegated {delegated_all}, "
             f"ignored {ignored_all}, untranslatable {untranslatable_all}, "
             f"empty {empty_all}, missing {missing_all}"
@@ -568,7 +568,7 @@ def main() -> int:
             if not has_any:
                 return
             tee.print("=" * 80)
-            tee.print(f"{label} 상세")
+            tee.print(f"{label} details")
             tee.print("=" * 80)
             for fname in file_list:
                 _print_file_detail(fname)
@@ -585,7 +585,7 @@ def main() -> int:
             tee.print(f"[{fname}]")
 
             if b["missing_entries"]:
-                tee.print(f"  missing - xlsx에 없음 ({b['missing']}개):")
+                tee.print(f"  missing - not in xlsx ({b['missing']}):")
                 for e in b["missing_entries"]:
                     tee.print(
                         f"    uid={e['unique_id']}  "
@@ -596,7 +596,7 @@ def main() -> int:
                     )
 
             if b["empty_entries"]:
-                tee.print(f"  empty - xlsx에 있지만 미번역 ({b['empty']}개):")
+                tee.print(f"  empty - in xlsx but untranslated ({b['empty']}):")
                 for e in b["empty_entries"]:
                     tee.print(
                         f"    uid={e['unique_id']}  "
@@ -608,8 +608,8 @@ def main() -> int:
 
             if b["fallback_entries"]:
                 tee.print(
-                    f"  fallback - literal/pattern 으로 매칭 "
-                    f"({len(b['fallback_entries'])}개):"
+                    f"  fallback - matched via literal/pattern "
+                    f"({len(b['fallback_entries'])}):"
                 )
                 for e, method in b["fallback_entries"]:
                     tee.print(
@@ -632,8 +632,8 @@ def main() -> int:
         if has_delegated:
             delegated_log_path.parent.mkdir(parents=True, exist_ok=True)
             with open(delegated_log_path, "w", encoding="utf-8") as df:
-                df.write("delegated 상세 — ignore/untranslatable 이지만 전역 매칭됨\n")
-                df.write(f"실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+                df.write("delegated details - ignore/untranslatable but matched globally\n")
+                df.write(f"Run: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
                 for fname in sorted(per_file.keys()):
                     b = per_file[fname]
                     if not b["delegated_entries"]:
@@ -647,10 +647,10 @@ def main() -> int:
                             f"text={_preview(e['text'], 50)}  "
                             f"← {method}\n"
                         )
-                df.write(f"\n총 {delegated_all}개\n")
-            tee.print(f"delegated 로그: {delegated_log_path}")
+                df.write(f"\nTotal {delegated_all}\n")
+            tee.print(f"delegated log: {delegated_log_path}")
         else:
-            tee.print("delegated: 없음")
+            tee.print("delegated: none")
 
         # 6. suspicious ignore check
         # rows with method=ignore + untranslatable≠1 that are not covered by any other row
@@ -680,8 +680,8 @@ def main() -> int:
             tee.print()
             tee.print("=" * 80)
             tee.print(
-                f"ignore 검토 — method=ignore 이지만 다른 행에서 커버되지 않음 "
-                f"({len(suspicious)}개):"
+                f"ignore review - method=ignore but not covered by any other row "
+                f"({len(suspicious)}):"
             )
             tee.print("=" * 80)
             for row in suspicious:
@@ -693,15 +693,15 @@ def main() -> int:
         tee.print()
         tee.print("=" * 80)
         tee.print(
-            f"완료: 전체 {total_all}개 중 "
-            f"ignored {ignored_all} + untranslatable {untranslatable_all} 제외 "
-            f"유효 {effective_all}개, "
-            f"번역 {direct_all + fallback_all} "
+            f"Done: out of {total_all} total, "
+            f"excluding ignored {ignored_all} + untranslatable {untranslatable_all}, "
+            f"effective {effective_all}, "
+            f"translated {direct_all + fallback_all} "
             f"({format_percent(direct_all + fallback_all, effective_all)}), "
             f"empty {empty_all}, missing {missing_all}"
         )
         if suspicious:
-            tee.print(f"경고: 커버되지 않는 ignore 행: {len(suspicious)}개 (위 목록 확인)")
+            tee.print(f"Warning: uncovered ignore rows: {len(suspicious)} (see list above)")
 
         return 0
     finally:

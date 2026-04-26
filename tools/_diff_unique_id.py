@@ -41,27 +41,27 @@ def load_index(tsv_dir: Path) -> dict:
 
 def main() -> int:
     if len(sys.argv) < 3:
-        print("사용법: python _diff_unique_id.py <old_dir> <new_dir>")
+        print("Usage: python _diff_unique_id.py <old_dir> <new_dir>")
         return 1
 
     old_dir = Path(sys.argv[1]).resolve()
     new_dir = Path(sys.argv[2]).resolve()
 
     if not old_dir.exists():
-        print(f"[ERROR] 옛 디렉토리 없음: {old_dir}")
+        print(f"[ERROR] Old directory not found: {old_dir}")
         return 1
     if not new_dir.exists():
-        print(f"[ERROR] 새 디렉토리 없음: {new_dir}")
+        print(f"[ERROR] New directory not found: {new_dir}")
         return 1
 
-    print(f"옛: {old_dir}")
-    print(f"새: {new_dir}")
+    print(f"Old: {old_dir}")
+    print(f"New: {new_dir}")
     print()
 
     old_idx = load_index(old_dir)
     new_idx = load_index(new_dir)
-    print(f"옛 엔트리: {len(old_idx)}")
-    print(f"새 엔트리: {len(new_idx)}")
+    print(f"Old entries: {len(old_idx)}")
+    print(f"New entries: {len(new_idx)}")
     print()
 
     same = 0
@@ -84,15 +84,15 @@ def main() -> int:
             only_new.append((key, new_uid))
 
     print("=" * 80)
-    print(f"동일 unique_id 유지:  {same}")
-    print(f"unique_id 변경:       {len(changed)}")
-    print(f"옛에만 존재 (제거):   {len(only_old)}")
-    print(f"새에만 존재 (추가):   {len(only_new)}")
+    print(f"unique_id unchanged:    {same}")
+    print(f"unique_id changed:      {len(changed)}")
+    print(f"only in old (removed):  {len(only_old)}")
+    print(f"only in new (added):    {len(only_new)}")
     print("=" * 80)
 
     if changed:
         print()
-        print("[unique_id 변경] — xlsx 의 unique_id 업데이트 필요")
+        print("[unique_id changed] - xlsx unique_id needs update")
         print("-" * 80)
         for (filename, parent, name, type_, text), old_uid, new_uid in changed:
             preview = text.replace("\n", "\\n")

@@ -56,7 +56,7 @@ TEXTURE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
 
 def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool = False) -> bool:
     """Call build_runtime_tsv.py to generate TSVs. Returns whether it succeeded."""
-    print(f"=== 로케일 빌드: {locale} ===")
+    print(f"=== Building locale: {locale} ===")
     cmd = [sys.executable, "build_runtime_tsv.py", locale]
     if ignore:
         cmd.append("--ignore")
@@ -64,7 +64,7 @@ def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool 
         cmd.append("--soft")
     result = subprocess.run(cmd, cwd=tools_dir)
     if result.returncode != 0:
-        print(f"[ERROR] {locale} 빌드 실패")
+        print(f"[ERROR] {locale} build failed")
         return False
     print()
     return True
@@ -73,11 +73,11 @@ def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool 
 def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
     """Call build_attributions.py. Skipped if Images.xlsx is absent.
     Output goes to the default path of build_attributions.py (<pkg_root>/<locale>/Attribution.md)."""
-    print(f"=== 어트리뷰션 빌드: {locale} ===")
+    print(f"=== Building attribution: {locale} ===")
     cmd = [sys.executable, "build_attributions.py", "--locale", locale]
     result = subprocess.run(cmd, cwd=tools_dir)
     if result.returncode != 0:
-        print(f"[ERROR] {locale} attribution 빌드 실패")
+        print(f"[ERROR] {locale} attribution build failed")
         return False
     print()
     return True
@@ -100,7 +100,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
             # 1. mod.txt → ZIP root (outer/repo root)
             mod_txt = mod_root / "mod.txt"
             if not mod_txt.exists():
-                raise FileNotFoundError(f"mod.txt가 없습니다: {mod_txt}")
+                raise FileNotFoundError(f"mod.txt not found: {mod_txt}")
             zf.write(mod_txt, "mod.txt")
             count += 1
 
@@ -108,7 +108,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
             for fname in MOD_FILES:
                 src = pkg_root / fname
                 if not src.exists():
-                    raise FileNotFoundError(f"모드 파일이 없습니다: {src}")
+                    raise FileNotFoundError(f"Mod file not found: {src}")
                 zf.write(src, f"{MOD_NAME}/{fname}")
                 count += 1
 
@@ -118,7 +118,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                 for fname in LOCALE_FILES:
                     src = locale_dir / fname
                     if not src.exists():
-                        raise FileNotFoundError(f"로케일 파일이 없습니다: {src}")
+                        raise FileNotFoundError(f"Locale file not found: {src}")
                     zf.write(src, f"{MOD_NAME}/{locale}/{fname}")
                     count += 1
 
@@ -165,7 +165,7 @@ def load_locale_config(mod_root: Path) -> list[dict]:
         data = json.loads(locale_json.read_text(encoding="utf-8"))
         return [loc for loc in data.get("locales", []) if loc.get("enabled", False)]
     except (json.JSONDecodeError, OSError) as e:
-        print(f"[WARN] locale.json 읽기 실패: {e}", file=sys.stderr)
+        print(f"[WARN] Failed to read locale.json: {e}", file=sys.stderr)
         return []
 
 
@@ -182,16 +182,16 @@ def main() -> int:
     # if command-line args provided, override; otherwise read from locale.json
     if cli_args:
         locales = cli_args
-        print(f"커맨드라인 로케일: {locales}")
+        print(f"Command-line locales: {locales}")
     else:
         locale_config = load_locale_config(mod_root)
         if locale_config:
             locales = [lc["dir"] for lc in locale_config]
             display = [f"{lc.get('display', lc['dir'])} ({lc['dir']})" for lc in locale_config]
-            print(f"locale.json 에서 로드: {', '.join(display)}")
+            print(f"Loaded from locale.json: {', '.join(display)}")
         else:
             locales = ["Korean"]
-            print("locale.json 없음, 기본값: Korean")
+            print("locale.json not found, default: Korean")
     mods_parent = mod_root.parent                # mods/
     out_path = mods_parent / f"{MOD_NAME}.zip"
 
@@ -202,7 +202,7 @@ def main() -> int:
         locale_dir = pkg_root / locale
         xlsx_path = locale_dir / "Translation.xlsx"
         if not locale_dir.exists() or not xlsx_path.exists():
-            print(f"[SKIP] {locale} — 번역 폴더/xlsx 없음 (기본 언어)")
+            print(f"[SKIP] {locale} - translation folder/xlsx not found (default language)")
             continue
         if not build_locale(script_dir, locale, soft=soft, ignore=ignore):
             return 1
@@ -215,9 +215,9 @@ def main() -> int:
             return 1
 
     # 3. packaging
-    print(f"=== 패키징 ===")
-    print(f"대상 로케일: {', '.join(locales)}")
-    print(f"출력 파일: {out_path}")
+    print(f"=== Packaging ===")
+    print(f"Target locales: {', '.join(locales)}")
+    print(f"Output file: {out_path}")
     try:
         file_count, texture_count = package_mod(mod_root, locales, out_path)
     except FileNotFoundError as e:
@@ -227,10 +227,10 @@ def main() -> int:
     size_kb = out_path.stat().st_size / 1024.0
     print()
     print("=" * 60)
-    print(f"빌드 완료: {out_path.name}")
-    print(f"  파일 수:  {file_count}  (텍스처 {texture_count}개 포함)")
-    print(f"  크기:     {size_kb:.1f} KB")
-    print(f"  로케일:   {', '.join(locales)}")
+    print(f"Build complete: {out_path.name}")
+    print(f"  Files:    {file_count}  (including {texture_count} textures)")
+    print(f"  Size:     {size_kb:.1f} KB")
+    print(f"  Locales:  {', '.join(locales)}")
     return 0
 
 

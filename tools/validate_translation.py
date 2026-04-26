@@ -58,7 +58,7 @@ from pathlib import Path
 try:
     import openpyxl
 except ImportError:
-    print("ERROR: openpyxl이 필요합니다. 아래 명령어를 입력해주세요.\n"
+    print("ERROR: openpyxl is required. Please run the following command.\n"
           " >> pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
@@ -160,7 +160,7 @@ def load_tsv_index(tsv_dir: Path) -> dict:
                     }
                     index.setdefault(uid, []).append(record)
         except Exception as e:
-            print(f"[WARN] TSV 읽기 실패: {tsv_file} ({e})")
+            print(f"[WARN] Failed to read TSV: {tsv_file} ({e})")
     return index
 
 
@@ -179,7 +179,7 @@ def load_tres_text_set(tsv_dir: Path) -> set:
                     if text:
                         texts.add(text)
         except Exception as e:
-            print(f"[WARN] tres TSV 읽기 실패: {tsv_file} ({e})")
+            print(f"[WARN] Failed to read tres TSV: {tsv_file} ({e})")
     return texts
 
 
@@ -198,7 +198,7 @@ def load_gd_text_set(tsv_dir: Path) -> set:
                     if text:
                         texts.add(text)
         except Exception as e:
-            print(f"[WARN] gd TSV 읽기 실패: {tsv_file} ({e})")
+            print(f"[WARN] Failed to read gd TSV: {tsv_file} ({e})")
     return texts
 
 
@@ -254,7 +254,7 @@ def load_xlsx_main(xlsx_path: Path, sheet_name: str = "Main") -> tuple[list[str]
     """
     wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
     if sheet_name not in wb.sheetnames:
-        raise ValueError(f"'{sheet_name}' 시트가 없습니다: {wb.sheetnames}")
+        raise ValueError(f"'{sheet_name}' sheet not found: {wb.sheetnames}")
     ws = wb[sheet_name]
 
     rows_iter = ws.iter_rows(values_only=True)
@@ -340,12 +340,12 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
 
     uid = row.get("unique_id", "").strip()
     if not uid:
-        errors.append("static: unique_id 비어있음")
+        errors.append("static: unique_id is empty")
         return errors
 
     candidates = tsv_index.get(uid)
     if not candidates:
-        errors.append(f"static: unique_id={uid} 가 추출 TSV 에 없음")
+        errors.append(f"static: unique_id={uid} not found in extracted TSV")
         return errors
 
     # if there are multiple candidates, prefer the one whose text matches (handles uid duplication across scenes)
@@ -384,7 +384,7 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
 
     if mismatches:
         errors.append(
-            f"unique_id={uid} ({best['_tsv_file']}) 필드 불일치: " + "; ".join(mismatches)
+            f"unique_id={uid} ({best['_tsv_file']}) field mismatch: " + "; ".join(mismatches)
         )
 
     return errors
@@ -407,7 +407,7 @@ def check_tres_text(row: dict, tres_texts: set) -> list[str]:
     if text and text not in tres_texts:
         filename = row.get("filename", "").strip()
         errors.append(
-            f"filetype=tres 의 text 가 추출된 .tres.tsv 에 없음: "
+            f"filetype=tres text not found in extracted .tres.tsv: "
             f"filename={filename!r}, text={_preview(text, 40)}"
         )
     return errors
@@ -430,7 +430,7 @@ def check_gd_text(row: dict, gd_texts: set) -> list[str]:
     if text and text not in gd_texts:
         filename = row.get("filename", "").strip()
         warnings.append(
-            f"filetype=gd 의 text 가 추출된 .gd.tsv 에 없음 (변경/삭제?): "
+            f"filetype=gd text not found in extracted .gd.tsv (changed/removed?): "
             f"filename={filename!r}, text={_preview(text, 40)}"
         )
     return warnings
@@ -449,14 +449,14 @@ def check_whitespace(row: dict) -> list[str]:
     trans_lead = _leading_ws(translation)
     if text_lead != trans_lead:
         warnings.append(
-            f"앞 공백 불일치: text={_preview(text_lead)} / translation={_preview(trans_lead)}"
+            f"Leading whitespace mismatch: text={_preview(text_lead)} / translation={_preview(trans_lead)}"
         )
 
     text_trail = _trailing_ws(text)
     trans_trail = _trailing_ws(translation)
     if text_trail != trans_trail:
         warnings.append(
-            f"뒤 공백 불일치: text={_preview(text_trail)} / translation={_preview(trans_trail)}"
+            f"Trailing whitespace mismatch: text={_preview(text_trail)} / translation={_preview(trans_trail)}"
         )
 
     return warnings
@@ -469,7 +469,7 @@ def check_flags(row: dict) -> list[str]:
         val = row.get(col, "")
         normalized = val.strip().lower()
         if normalized not in VALID_FLAGS:
-            errors.append(f"{col} 값이 잘못됨: {val!r} (허용: 0/1/true/false 또는 빈값)")
+            errors.append(f"{col} has invalid value: {val!r} (allowed: 0/1/true/false or empty)")
     return errors
 
 
@@ -487,7 +487,7 @@ def check_method_fields(row: dict) -> list[str]:
     unique_id = row.get("unique_id", "").strip()
 
     if method not in VALID_METHODS:
-        errors.append(f"알 수 없는 method: {method!r} (허용: static/literal/pattern/substr/ignore 또는 빈값)")
+        errors.append(f"Unknown method: {method!r} (allowed: static/literal/pattern/substr/ignore or empty)")
         return errors
 
     effective = method if method else "literal"
@@ -497,32 +497,32 @@ def check_method_fields(row: dict) -> list[str]:
 
     if effective == "static":
         if not location:
-            errors.append("static: location 필수")
+            errors.append("static: location required")
         if filetype not in SCENE_FILETYPES:
             errors.append(
-                f"static: filetype 은 'tscn' 또는 'scn' 이어야 함 (현재: {filetype!r})"
+                f"static: filetype must be 'tscn' or 'scn' (current: {filetype!r})"
             )
         if not parent and not name:
             # empty parent is OK for root nodes. but both parent+name being empty is suspicious.
             pass
         if not name:
-            errors.append("static: name 필수")
+            errors.append("static: name required")
         # type can legitimately be empty for instance nodes (no type= in .tscn). validated by TSV match.
         if not unique_id:
-            errors.append("static: unique_id 필수")
+            errors.append("static: unique_id required")
 
     elif effective == "literal":
         if location:
             # scoped literal: context fields required (except type, to support instance nodes)
             if not name:
-                errors.append("scoped literal: name 필수 (literal + location)")
+                errors.append("scoped literal: name required (literal + location)")
         # global literal: no constraint other than text
 
     elif effective == "pattern":
         if location:
             # scoped pattern: context fields required (except type)
             if not name:
-                errors.append("scoped pattern: name 필수 (pattern + location)")
+                errors.append("scoped pattern: name required (pattern + location)")
         # global pattern: no constraint other than text (regex)
 
     elif effective == "substr":
@@ -541,7 +541,7 @@ def check_empty_method(row: dict) -> list[str]:
     uid = row.get("unique_id", "").strip()
     if uid:
         warnings.append(
-            "method 가 비어있는데 unique_id 가 채워져 있음 — static 을 명시하세요"
+            "method is empty but unique_id is filled - please specify static explicitly"
         )
     return warnings
 
@@ -603,24 +603,24 @@ def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
                 loc, parent, name, type_, text = key
                 text_preview = _preview(text, 40)
                 msg = (
-                    f"{label} ({len(occurrences)}개): "
+                    f"{label} ({len(occurrences)} occurrences): "
                     f"location={loc!r}, parent={parent!r}, name={name!r}, type={type_!r}, "
-                    f"text={text_preview} (행: {row_nums})"
+                    f"text={text_preview} (rows: {row_nums})"
                 )
             else:
                 text_preview = _preview(key, 40)
                 msg = (
-                    f"{label} ({len(occurrences)}개): "
-                    f"text={text_preview} (행: {row_nums})"
+                    f"{label} ({len(occurrences)} occurrences): "
+                    f"text={text_preview} (rows: {row_nums})"
                 )
             for row_num, _ in occurrences:
                 errors.append((row_num, msg))
 
-    _emit("exact 매칭 중복 (static/scoped literal)", exact_keys, True)
-    _emit("전역 literal 중복", literal_global, False)
-    _emit("scoped pattern 중복", scoped_pattern_keys, True)
-    _emit("전역 pattern 중복", pattern_global, False)
-    _emit("전역 substr 중복", substr_global, False)
+    _emit("exact match duplicate (static/scoped literal)", exact_keys, True)
+    _emit("global literal duplicate", literal_global, False)
+    _emit("scoped pattern duplicate", scoped_pattern_keys, True)
+    _emit("global pattern duplicate", pattern_global, False)
+    _emit("global substr duplicate", substr_global, False)
 
     return errors
 
@@ -684,24 +684,24 @@ def check_duplicates_cross_sheet(
                 loc, parent, name, type_, text = key
                 text_preview = _preview(text, 40)
                 msg = (
-                    f"{label} (시트간, {len(occurrences)}개): "
+                    f"{label} (cross-sheet, {len(occurrences)} occurrences): "
                     f"location={loc!r}, parent={parent!r}, name={name!r}, type={type_!r}, "
                     f"text={text_preview} [{locs}]"
                 )
             else:
                 text_preview = _preview(key, 40)
                 msg = (
-                    f"{label} (시트간, {len(occurrences)}개): "
+                    f"{label} (cross-sheet, {len(occurrences)} occurrences): "
                     f"text={text_preview} [{locs}]"
                 )
             for sn, row_num, _ in occurrences:
                 errors.append((sn, row_num, msg))
 
-    _emit("exact 매칭 중복 (static/scoped literal)", exact_keys, True)
-    _emit("전역 literal 중복", literal_global, False)
-    _emit("scoped pattern 중복", scoped_pattern_keys, True)
-    _emit("전역 pattern 중복", pattern_global, False)
-    _emit("전역 substr 중복", substr_global, False)
+    _emit("exact match duplicate (static/scoped literal)", exact_keys, True)
+    _emit("global literal duplicate", literal_global, False)
+    _emit("scoped pattern duplicate", scoped_pattern_keys, True)
+    _emit("global pattern duplicate", pattern_global, False)
+    _emit("global substr duplicate", substr_global, False)
 
     return errors
 
@@ -779,10 +779,10 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
     result = ValidationResult()
 
     if not xlsx_path.exists():
-        raise FileNotFoundError(f"xlsx 파일이 없습니다: {xlsx_path}")
+        raise FileNotFoundError(f"xlsx file not found: {xlsx_path}")
     if not tsv_dir.exists():
         raise FileNotFoundError(
-            f"TSV 디렉토리가 없습니다: {tsv_dir}\n먼저 parse_tscn_text.py 를 실행하세요."
+            f"TSV directory not found: {tsv_dir}\nRun parse_tscn_text.py first."
         )
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -791,41 +791,41 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
     tee = Tee(log_path)
 
     try:
-        tee.print(f"검증 대상: {xlsx_path}")
-        tee.print(f"TSV 소스:  {tsv_dir}")
-        tee.print(f"로그 파일: {log_path}")
-        tee.print(f"실행 시각: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        tee.print(f"Target:    {xlsx_path}")
+        tee.print(f"TSV source: {tsv_dir}")
+        tee.print(f"Log file:  {log_path}")
+        tee.print(f"Run time:  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         meta = load_metadata(xlsx_path)
         for line in format_metadata_lines(meta):
             tee.print(line)
         tee.print()
 
-        tee.print("TSV 인덱스 빌드 중...")
+        tee.print("Building TSV index...")
         tsv_index = load_tsv_index(tsv_dir)
         total_tsv_entries = sum(len(v) for v in tsv_index.values())
-        tee.print(f"  unique_id 수: {len(tsv_index)}, 총 레코드: {total_tsv_entries}")
+        tee.print(f"  unique_id count: {len(tsv_index)}, total records: {total_tsv_entries}")
 
         tres_texts = load_tres_text_set(tsv_dir)
         gd_texts = load_gd_text_set(tsv_dir)
-        tee.print(f"  tres text 수: {len(tres_texts)}, gd text 수: {len(gd_texts)}")
+        tee.print(f"  tres text count: {len(tres_texts)}, gd text count: {len(gd_texts)}")
 
-        tee.print("Translation.xlsx 로드 중...")
+        tee.print("Loading Translation.xlsx...")
         sheets = load_all_translation_sheets(xlsx_path)
         if not sheets:
-            tee.print("[ERROR] 번역 시트가 없습니다 (MetaData 외 시트 없음)")
-            raise ValueError("번역 시트 없음")
+            tee.print("[ERROR] No translation sheets (no sheets other than MetaData)")
+            raise ValueError("No translation sheets")
         total_row_count = sum(len(rows) for _, _, rows in sheets)
-        tee.print(f"  시트 {len(sheets)}개, 총 데이터 행 {total_row_count}개")
+        tee.print(f"  {len(sheets)} sheets, {total_row_count} data rows")
         for sheet_name, _, rows in sheets:
-            tee.print(f"    {sheet_name}: {len(rows)}행")
+            tee.print(f"    {sheet_name}: {len(rows)} rows")
         tee.print()
 
         for sheet_name, header, rows in sheets:
             missing = [c for c in REQUIRED_COLUMNS if c not in header]
             if missing:
-                tee.print(f"[ERROR] [{sheet_name}] 필수 컬럼 누락: {missing}")
-                tee.print(f"  실제 헤더: {header}")
-                raise ValueError(f"[{sheet_name}] 필수 컬럼 누락: {missing}")
+                tee.print(f"[ERROR] [{sheet_name}] missing required columns: {missing}")
+                tee.print(f"  Actual header: {header}")
+                raise ValueError(f"[{sheet_name}] missing required columns: {missing}")
 
             # collect rows for per-sheet duplicate key check
             issues_by_row: dict = {}
@@ -835,30 +835,30 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
 
                 for msg in check_tsv_match(row, tsv_index):
                     if soft:
-                        local_issues.append(("WARN", "TSV 매칭 (soft)", msg))
+                        local_issues.append(("WARN", "TSV match (soft)", msg))
                         result.warn_tsv_soft += 1
                     else:
-                        local_issues.append(("ERROR", "TSV 매칭", msg))
+                        local_issues.append(("ERROR", "TSV match", msg))
                         result.error_tsv += 1
 
                 for msg in check_tres_text(row, tres_texts):
                     if soft:
-                        local_issues.append(("WARN", "tres 매칭 (soft)", msg))
+                        local_issues.append(("WARN", "tres match (soft)", msg))
                         result.warn_tsv_soft += 1
                     else:
-                        local_issues.append(("ERROR", "tres 매칭", msg))
+                        local_issues.append(("ERROR", "tres match", msg))
                         result.error_tsv += 1
 
                 for msg in check_gd_text(row, gd_texts):
-                    local_issues.append(("WARN", "gd 매칭", msg))
+                    local_issues.append(("WARN", "gd match", msg))
                     result.warn_tsv_soft += 1
 
                 for msg in check_whitespace(row):
-                    local_issues.append(("WARN", "공백", msg))
+                    local_issues.append(("WARN", "whitespace", msg))
                     result.warn_ws += 1
 
                 for msg in check_flags(row):
-                    local_issues.append(("ERROR", "플래그", msg))
+                    local_issues.append(("ERROR", "flag", msg))
                     result.error_flags += 1
 
                 for msg in check_method_fields(row):
@@ -866,7 +866,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
                     result.error_method += 1
 
                 for msg in check_empty_method(row):
-                    local_issues.append(("WARN", "빈 method", msg))
+                    local_issues.append(("WARN", "empty method", msg))
                     result.warn_empty_method += 1
 
                 if local_issues:
@@ -874,7 +874,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
 
             # intra-sheet duplicate key check
             for row_num, msg in check_duplicates(rows):
-                issues_by_row.setdefault(row_num, []).append(("ERROR", "중복 키", msg))
+                issues_by_row.setdefault(row_num, []).append(("ERROR", "duplicate key", msg))
                 result.error_dup += 1
 
             if issues_by_row:
@@ -893,7 +893,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
             cross_dup_by_sheet.setdefault(sn, {}).setdefault(row_num, []).append(msg)
             result.error_dup += 1
         if cross_dup_by_sheet:
-            tee.print("[시트간 중복]")
+            tee.print("[Cross-sheet duplicates]")
             sheet_rows_map = {sn: rows for sn, _, rows in sheets}
             for sn in sorted(cross_dup_by_sheet.keys()):
                 tee.print(f"  [{sn}]")
@@ -902,19 +902,19 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
                     text_preview = _preview(row.get("text", ""), 60)
                     tee.print(f"    Row {i}: text={text_preview}")
                     for msg in cross_dup_by_sheet[sn][i]:
-                        tee.print(f"      [ERROR] 중복 키: {msg}")
+                        tee.print(f"      [ERROR] duplicate key: {msg}")
             tee.print()
 
         tee.print("=" * 60)
-        tee.print(f"검증 완료: {total_row_count}행 검사 (mode={'soft' if soft else 'hard'})")
+        tee.print(f"Validation complete: {total_row_count} rows checked (mode={'soft' if soft else 'hard'})")
         tee.print(
-            f"  ERROR {result.error_count}개  "
-            f"(TSV 매칭 {result.error_tsv}, 플래그 {result.error_flags}, "
-            f"중복 키 {result.error_dup}, method {result.error_method})"
+            f"  ERROR {result.error_count}  "
+            f"(TSV match {result.error_tsv}, flags {result.error_flags}, "
+            f"duplicate keys {result.error_dup}, method {result.error_method})"
         )
         tee.print(
-            f"  WARN  {result.warning_count}개  "
-            f"(공백 {result.warn_ws}, 빈 method {result.warn_empty_method}"
+            f"  WARN  {result.warning_count}  "
+            f"(whitespace {result.warn_ws}, empty method {result.warn_empty_method}"
             f"{f', TSV soft {result.warn_tsv_soft}' if result.warn_tsv_soft else ''})"
         )
 
@@ -930,10 +930,10 @@ def main() -> int:
     soft = "--soft" in flags
 
     if not args:
-        print("사용법: python validate_translation.py <locale> [--soft|--hard]")
-        print("  --hard (기본): TSV 매칭 실패 → ERROR (빌드 차단)")
-        print("  --soft:        TSV 매칭 실패 → WARNING (빌드 계속)")
-        print("예: python validate_translation.py Korean --soft")
+        print("Usage: python validate_translation.py <locale> [--soft|--hard]")
+        print("  --hard (default): TSV match failure -> ERROR (block build)")
+        print("  --soft:           TSV match failure -> WARNING (continue build)")
+        print("Example: python validate_translation.py Korean --soft")
         return 1
 
     locale = args[0]
@@ -944,7 +944,7 @@ def main() -> int:
     tsv_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
     if not xlsx_path.exists():
-        print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")
+        print(f"[ERROR] xlsx file not found: {xlsx_path}")
         return 1
 
     try:

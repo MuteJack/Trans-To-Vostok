@@ -101,7 +101,7 @@ DEFAULT_CONFIG = {
 def load_gd_config(config_path: Path) -> dict:
     """Load gd_list.json. Returns defaults if absent."""
     if not config_path.exists():
-        print(f"[INFO] gd_list.json 없음, 기본 설정 사용")
+        print(f"[INFO] gd_list.json not found, using default config")
         return dict(DEFAULT_CONFIG)
     try:
         data = json.loads(config_path.read_text(encoding="utf-8"))
@@ -111,7 +111,7 @@ def load_gd_config(config_path: Path) -> dict:
                 data[key] = default
         return data
     except (json.JSONDecodeError, OSError) as e:
-        print(f"[WARN] gd_list.json 읽기 실패: {e}, 기본 설정 사용")
+        print(f"[WARN] Failed to read gd_list.json: {e}, using default config")
         return dict(DEFAULT_CONFIG)
 
 
@@ -369,7 +369,7 @@ def main():
     # load gd_list.json
     config_path = script_dir / "gd_list.json"
     config = load_gd_config(config_path)
-    print(f"설정: {config_path.name}")
+    print(f"Config: {config_path.name}")
     print(f"  properties: {config['properties']}")
     print(f"  functions:  {config['functions']}")
     print(f"  targets:    {config['targets']}")
@@ -388,7 +388,7 @@ def main():
     gd_files = []
     for src in src_dirs:
         if not src.exists():
-            print(f"[WARN] 경로 없음: {src}")
+            print(f"[WARN] Path not found: {src}")
             continue
         if src.is_file():
             if src.suffix == ".gd":
@@ -397,11 +397,11 @@ def main():
             gd_files.extend(sorted(src.rglob("*.gd")))
 
     if not gd_files:
-        print("[ERROR] .gd 파일이 없습니다")
+        print("[ERROR] No .gd files found")
         return 1
 
-    print(f"출력: {output_dir}")
-    print(f"대상: {len(gd_files)}개 .gd 파일")
+    print(f"Output: {output_dir}")
+    print(f"Target: {len(gd_files)} .gd files")
     print()
 
     total_files = 0
@@ -425,23 +425,23 @@ def main():
         total_files += 1
         total_rows += len(rows)
         all_rows.extend(rows)
-        print(f"  [OK] {gd.name}  ({len(rows)}개)")
+        print(f"  [OK] {gd.name}  ({len(rows)} entries)")
 
     # combined output (only when join field is set)
     join_name = config.get("join", "")
     if join_name and all_rows:
         joined_path = output_dir / f"{join_name}.gd.joined.tsv"
         write_tsv(joined_path, all_rows)
-        print(f"\n  합본: {joined_path.relative_to(output_dir)}")
+        print(f"\n  Joined: {joined_path.relative_to(output_dir)}")
 
     print()
-    print(f"완료: {total_files}개 파일, {total_rows}개 엔트리")
+    print(f"Done: {total_files} files, {total_rows} entries")
 
     # statistics
     literals = [r for r in all_rows if r["type"] == "literal"]
     dicts = [r for r in all_rows if r["type"] == "dict"]
     patterns = [r for r in all_rows if r["type"] in ("concat", "format", "literal-multi")]
-    print(f"  literal: {len(literals)}개, dict: {len(dicts)}개, pattern 후보: {len(patterns)}개")
+    print(f"  literal: {len(literals)}, dict: {len(dicts)}, pattern candidates: {len(patterns)}")
 
     return 0
 

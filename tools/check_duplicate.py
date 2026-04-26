@@ -33,7 +33,7 @@ from pathlib import Path
 try:
     import openpyxl  # noqa: F401
 except ImportError:
-    print("ERROR: openpyxl이 필요합니다. pip install openpyxl", file=sys.stderr)
+    print("ERROR: openpyxl is required. pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -55,8 +55,8 @@ from validate_translation import (
 
 def main() -> int:
     if len(sys.argv) < 2:
-        print("사용법: python check_duplicate.py <locale>")
-        print("예: python check_duplicate.py Korean")
+        print("Usage: python check_duplicate.py <locale>")
+        print("Example: python check_duplicate.py Korean")
         return 1
 
     locale = sys.argv[1]
@@ -67,7 +67,7 @@ def main() -> int:
     xlsx_path = locale_dir / "Translation.xlsx"
 
     if not xlsx_path.exists():
-        print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")
+        print(f"[ERROR] xlsx file not found: {xlsx_path}")
         return 1
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -76,23 +76,23 @@ def main() -> int:
 
     try:
         tee.print(f"xlsx: {xlsx_path}")
-        tee.print(f"로그: {log_path}")
-        tee.print(f"실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        tee.print(f"Log:  {log_path}")
+        tee.print(f"Run:  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         tee.print()
 
-        tee.print("xlsx 로드 중...")
+        tee.print("Loading xlsx...")
         sheets = load_all_translation_sheets(xlsx_path)
         total_rows = sum(len(rows) for _, _, rows in sheets)
-        tee.print(f"  시트 {len(sheets)}개, 총 {total_rows}행")
+        tee.print(f"  {len(sheets)} sheets, {total_rows} rows")
         for sheet_name, _, rows in sheets:
-            tee.print(f"    {sheet_name}: {len(rows)}행")
+            tee.print(f"    {sheet_name}: {len(rows)} rows")
         tee.print()
 
         intra_count = 0
         cross_count = 0
 
         # intra-sheet duplicates
-        tee.print("[시트 내 중복]")
+        tee.print("[Intra-sheet duplicates]")
         any_intra = False
         for sheet_name, _header, rows in sheets:
             intra: dict = {}
@@ -110,11 +110,11 @@ def main() -> int:
                 for msg in intra[i]:
                     tee.print(f"      {msg}")
         if not any_intra:
-            tee.print("  없음.")
+            tee.print("  none.")
         tee.print()
 
         # cross-sheet duplicates
-        tee.print("[시트 간 중복]")
+        tee.print("[Cross-sheet duplicates]")
         cross: dict = {}
         for sn, row_num, msg in check_duplicates_cross_sheet(sheets):
             cross.setdefault(sn, {}).setdefault(row_num, []).append(msg)
@@ -130,12 +130,12 @@ def main() -> int:
                     for msg in cross[sn][i]:
                         tee.print(f"      {msg}")
         else:
-            tee.print("  없음.")
+            tee.print("  none.")
         tee.print()
 
         tee.print("=" * 60)
         total = intra_count + cross_count
-        tee.print(f"요약: 시트 내 {intra_count}건 + 시트 간 {cross_count}건 = 총 {total}건")
+        tee.print(f"Summary: intra-sheet {intra_count} + cross-sheet {cross_count} = {total} total")
         return 0 if total == 0 else 1
     finally:
         tee.close()

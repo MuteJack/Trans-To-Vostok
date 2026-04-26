@@ -29,7 +29,7 @@ from pathlib import Path
 try:
     import openpyxl  # noqa: F401
 except ImportError:
-    print("ERROR: openpyxl이 필요합니다. pip install openpyxl", file=sys.stderr)
+    print("ERROR: openpyxl is required. pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -120,8 +120,8 @@ def collect_conflicts(sheets: list) -> list[dict]:
 
 def main() -> int:
     if len(sys.argv) < 2:
-        print("사용법: python check_conflict.py <locale>")
-        print("예: python check_conflict.py Korean")
+        print("Usage: python check_conflict.py <locale>")
+        print("Example: python check_conflict.py Korean")
         return 1
 
     locale = sys.argv[1]
@@ -132,7 +132,7 @@ def main() -> int:
     xlsx_path = locale_dir / "Translation.xlsx"
 
     if not xlsx_path.exists():
-        print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")
+        print(f"[ERROR] xlsx file not found: {xlsx_path}")
         return 1
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -141,37 +141,37 @@ def main() -> int:
 
     try:
         tee.print(f"xlsx: {xlsx_path}")
-        tee.print(f"로그: {log_path}")
-        tee.print(f"실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        tee.print(f"Log:  {log_path}")
+        tee.print(f"Run:  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         tee.print()
 
-        tee.print("xlsx 로드 중...")
+        tee.print("Loading xlsx...")
         sheets = load_all_translation_sheets(xlsx_path)
-        tee.print(f"  시트 {len(sheets)}개")
+        tee.print(f"  {len(sheets)} sheets")
         tee.print()
 
-        tee.print("충돌 검사 중... (공백 제거한 text 기준)")
+        tee.print("Checking conflicts... (based on whitespace-stripped text)")
         conflicts, total_eligible = collect_conflicts(sheets)
-        tee.print(f"  검사 대상 행: {total_eligible}개")
-        tee.print(f"  충돌 그룹: {len(conflicts)}개")
+        tee.print(f"  Rows checked: {total_eligible}")
+        tee.print(f"  Conflict groups: {len(conflicts)}")
         tee.print()
 
         if not conflicts:
-            tee.print("충돌 없음.")
+            tee.print("No conflicts.")
             return 0
 
         # sort conflict groups by entry count, descending
         conflicts.sort(key=lambda c: len(c["entries"]), reverse=True)
 
         tee.print("=" * 80)
-        tee.print(f"[WARNING] 번역 충돌 {len(conflicts)}건")
+        tee.print(f"[WARNING] {len(conflicts)} translation conflicts")
         tee.print("=" * 80)
 
         for idx, c in enumerate(conflicts, 1):
             tee.print()
             tee.print(
-                f"#{idx}  원문(공백제거): {_preview(c['key'], 50)}  "
-                f"— {len(c['entries'])}개 엔트리, {c['distinct_count']}종 번역"
+                f"#{idx}  text(stripped): {_preview(c['key'], 50)}  "
+                f"- {len(c['entries'])} entries, {c['distinct_count']} distinct translations"
             )
             # display group per translation
             by_trans: dict[str, list[dict]] = defaultdict(list)
@@ -198,7 +198,7 @@ def main() -> int:
 
         tee.print()
         tee.print("=" * 80)
-        tee.print(f"요약: {len(conflicts)}개 충돌 그룹, 총 검사 대상 {total_eligible}개 행")
+        tee.print(f"Summary: {len(conflicts)} conflict groups, {total_eligible} rows checked")
         return 0
     finally:
         tee.close()

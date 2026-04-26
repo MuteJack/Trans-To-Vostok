@@ -137,13 +137,13 @@ def parse_tres(path: Path, fields: list[str]) -> dict | None:
     try:
         text = path.read_text(encoding="utf-8")
     except (OSError, UnicodeDecodeError) as e:
-        print(f"[WARN] 읽기 실패: {path} ({e})", file=sys.stderr)
+        print(f"[WARN] Failed to read: {path} ({e})", file=sys.stderr)
         return None
 
     sub_count = _count_sub_resources(text)
     if sub_count > 0:
         print(
-            f"[WARN] {path.name}: [sub_resource] {sub_count}개 발견 — 현재 파서는 [resource] 블록만 처리하므로 이 내용은 스킵됩니다.",
+            f"[WARN] {path.name}: found {sub_count} [sub_resource] blocks - current parser only handles [resource] blocks, so these are skipped.",
             file=sys.stderr,
         )
 
@@ -191,7 +191,7 @@ def collect_target_files(
         target_path = (base / target).resolve() if target else base
         if not target_path.exists():
             print(
-                f"[WARN] target 경로 없음: {target_path} "
+                f"[WARN] target path not found: {target_path} "
                 f"(dir={dir_rel!r}, target={target!r})",
                 file=sys.stderr,
             )
@@ -199,7 +199,7 @@ def collect_target_files(
         tres_files = _collect_tres_files(target_path)
         if not tres_files:
             print(
-                f"[WARN] .tres 파일 없음: {target_path}",
+                f"[WARN] no .tres files: {target_path}",
                 file=sys.stderr,
             )
             continue
@@ -288,37 +288,37 @@ def run_batch(
     try:
         config = json.loads(config_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
-        print(f"[ERROR] JSON 파싱 실패: {config_path} ({e})", file=sys.stderr)
+        print(f"[ERROR] JSON parse failed: {config_path} ({e})", file=sys.stderr)
         return 1
     except OSError as e:
-        print(f"[ERROR] config 읽기 실패: {config_path} ({e})", file=sys.stderr)
+        print(f"[ERROR] Failed to read config: {config_path} ({e})", file=sys.stderr)
         return 1
 
     groups = config.get("groups")
     if not isinstance(groups, list) or not groups:
-        print(f"[ERROR] config에 'groups' 배열이 없습니다: {config_path}", file=sys.stderr)
+        print(f"[ERROR] config missing 'groups' array: {config_path}", file=sys.stderr)
         return 1
 
     # basic integrity check (name is optional)
     for i, g in enumerate(groups):
         if not isinstance(g, dict):
-            print(f"[ERROR] groups[{i}] 가 object가 아닙니다", file=sys.stderr)
+            print(f"[ERROR] groups[{i}] is not an object", file=sys.stderr)
             return 1
         for required in ("dir", "fields", "targets"):
             if required not in g:
-                print(f"[ERROR] groups[{i}] 에 '{required}' 누락", file=sys.stderr)
+                print(f"[ERROR] groups[{i}] missing '{required}'", file=sys.stderr)
                 return 1
         if not isinstance(g["fields"], list) or not g["fields"]:
-            print(f"[ERROR] groups[{i}].fields 가 비어있거나 배열이 아님", file=sys.stderr)
+            print(f"[ERROR] groups[{i}].fields is empty or not an array", file=sys.stderr)
             return 1
         if not isinstance(g["targets"], list) or not g["targets"]:
-            print(f"[ERROR] groups[{i}].targets 가 비어있거나 배열이 아님", file=sys.stderr)
+            print(f"[ERROR] groups[{i}].targets is empty or not an array", file=sys.stderr)
             return 1
 
     print(f"config: {config_path}")
     print(f"pck_root: {pck_root}")
-    print(f"출력: {output_dir}")
-    print(f"그룹 수: {len(groups)}")
+    print(f"Output: {output_dir}")
+    print(f"Group count: {len(groups)}")
     print()
 
     total_files_written = 0
@@ -345,7 +345,7 @@ def run_batch(
             try:
                 rel = tres.resolve().relative_to(pck_root)
             except ValueError:
-                print(f"[WARN] pck_root 밖의 파일 스킵: {tres}", file=sys.stderr)
+                print(f"[WARN] Skipping file outside pck_root: {tres}", file=sys.stderr)
                 continue
             out_path = output_dir / (rel.as_posix() + ".tsv")
             write_tsv(out_path, rows)
@@ -358,16 +358,16 @@ def run_batch(
         if join_name and joined_rows:
             join_path = output_dir / dir_rel / f"{join_name}.tres.joined.tsv"
             write_tsv(join_path, joined_rows)
-            print(f"    → {group_files}개 파일, {group_rows}개 엔트리")
-            print(f"    → 합본: {join_path.relative_to(output_dir)}")
+            print(f"    -> {group_files} files, {group_rows} entries")
+            print(f"    -> joined: {join_path.relative_to(output_dir)}")
         else:
-            print(f"    → {group_files}개 파일, {group_rows}개 엔트리")
+            print(f"    -> {group_files} files, {group_rows} entries")
         print()
         total_files_written += group_files
         total_rows += group_rows
 
     print("=" * 60)
-    print(f"완료: {len(groups)}개 그룹, {total_files_written}개 TSV 파일, {total_rows}개 엔트리")
+    print(f"Done: {len(groups)} groups, {total_files_written} TSV files, {total_rows} entries")
     return 0
 
 
@@ -386,18 +386,18 @@ def run_single_job(
     Generates a .tres.tsv at the mirrored path for each .tres file.
     """
     if not input_dir.exists():
-        print(f"[ERROR] 입력 경로가 없습니다: {input_dir}", file=sys.stderr)
+        print(f"[ERROR] Input path not found: {input_dir}", file=sys.stderr)
         return 1
     if not input_dir.is_dir():
-        print(f"[ERROR] 디렉토리가 아닙니다: {input_dir}", file=sys.stderr)
+        print(f"[ERROR] Not a directory: {input_dir}", file=sys.stderr)
         return 1
     if not fields:
-        print("[ERROR] --fields 가 비어있습니다.", file=sys.stderr)
+        print("[ERROR] --fields is empty.", file=sys.stderr)
         return 1
 
     tres_files = sorted(input_dir.rglob("*.tres"))
     if not tres_files:
-        print(f"[ERROR] .tres 파일이 없습니다: {input_dir}", file=sys.stderr)
+        print(f"[ERROR] No .tres files: {input_dir}", file=sys.stderr)
         return 1
 
     files_written = 0
@@ -409,15 +409,15 @@ def run_single_job(
         try:
             rel = tres.resolve().relative_to(pck_root)
         except ValueError:
-            print(f"[WARN] pck_root 밖의 파일 스킵: {tres}", file=sys.stderr)
+            print(f"[WARN] Skipping file outside pck_root: {tres}", file=sys.stderr)
             continue
         out_path = output_dir / (rel.as_posix() + ".tsv")
         write_tsv(out_path, rows)
         files_written += 1
         total_rows += len(rows)
 
-    print(f"\n완료: {files_written}개 TSV 파일, {total_rows}개 엔트리")
-    print(f"출력: {output_dir}")
+    print(f"\nDone: {files_written} TSV files, {total_rows} entries")
+    print(f"Output: {output_dir}")
     return 0
 
 
@@ -427,13 +427,13 @@ def run_single_job(
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description=".tres 파일에서 필드 값 추출",
+        description="Extract field values from .tres files",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    parser.add_argument("--config", help=f"tres_list.json 경로 (기본: tools/{DEFAULT_CONFIG_NAME})")
-    parser.add_argument("--input", help="단일 job 모드: 대상 디렉토리 (하위 재귀)")
-    parser.add_argument("--fields", help="단일 job 모드: 추출할 필드 (콤마 구분)")
+    parser.add_argument("--config", help=f"Path to tres_list.json (default: tools/{DEFAULT_CONFIG_NAME})")
+    parser.add_argument("--input", help="Single job mode: target directory (recursive)")
+    parser.add_argument("--fields", help="Single job mode: fields to extract (comma-separated)")
     args = parser.parse_args()
 
     # path basis
@@ -444,13 +444,13 @@ def main() -> int:
 
     # cannot specify both --input and --config
     if args.input and args.config:
-        print("[ERROR] --input 과 --config 는 함께 사용할 수 없습니다.", file=sys.stderr)
+        print("[ERROR] --input and --config cannot be used together.", file=sys.stderr)
         return 1
 
     # single job mode
     if args.input:
         if not args.fields:
-            print("[ERROR] --input 사용 시 --fields 도 지정해야 합니다.", file=sys.stderr)
+            print("[ERROR] --fields must also be specified when using --input.", file=sys.stderr)
             return 1
         fields = [f.strip() for f in args.fields.split(",") if f.strip()]
         input_dir = Path(args.input).resolve()
@@ -463,14 +463,14 @@ def main() -> int:
         config_path = (script_dir / DEFAULT_CONFIG_NAME).resolve()
 
     if not config_path.exists():
-        print(f"[ERROR] config 파일이 없습니다: {config_path}", file=sys.stderr)
-        print("  --config 로 경로를 지정하거나 --input / --fields 로 단일 job을 실행하세요.",
+        print(f"[ERROR] Config file not found: {config_path}", file=sys.stderr)
+        print("  Specify a path with --config, or run a single job with --input / --fields.",
               file=sys.stderr)
         return 1
 
     if not pck_root.exists():
-        print(f"[ERROR] pck_root가 없습니다: {pck_root}", file=sys.stderr)
-        print("  먼저 decompile_gdc.bat 를 실행하여 pck_recovered 를 생성하세요.", file=sys.stderr)
+        print(f"[ERROR] pck_root not found: {pck_root}", file=sys.stderr)
+        print("  Run decompile_gdc.bat first to generate pck_recovered.", file=sys.stderr)
         return 1
 
     return run_batch(config_path, pck_root, parsed_dir)
