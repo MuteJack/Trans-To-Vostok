@@ -1,13 +1,13 @@
 """
-Images.xlsx → Attribution.md 자동 생성.
+Auto-generate Attribution.md from Images.xlsx.
 
-각 시트의 다음 컬럼을 읽어 Markdown 으로 출력:
+Reads the following columns from each sheet and outputs as Markdown:
     - File Name
     - Reworked by
     - Attribution
 
-사용법:
-    python tools/build_attributions.py                       # 기본 (Korean → Attribution.md)
+Usage:
+    python tools/build_attributions.py                       # default (Korean → Attribution.md)
     python tools/build_attributions.py --locale Korean
     python tools/build_attributions.py --output custom.md
 """
@@ -36,7 +36,7 @@ REQUIRED_COLUMNS = ["File Name", "Reworked by", "Attribution"]
 
 
 def collect_rows(xlsx_path: Path) -> list[dict]:
-    """모든 시트에서 (sheet, file_name, reworked_by, attribution) 행 수집."""
+    """Collect (sheet, file_name, reworked_by, attribution) rows from all sheets."""
     wb = openpyxl.load_workbook(xlsx_path, read_only=True)
     rows: list[dict] = []
     for ws in wb.worksheets:
@@ -57,7 +57,7 @@ def collect_rows(xlsx_path: Path) -> list[dict]:
 
             file_name = cell("File Name")
             if not file_name:
-                continue  # 빈 행 스킵
+                continue  # skip empty row
 
             rows.append({
                 "sheet": ws.title,
@@ -69,7 +69,7 @@ def collect_rows(xlsx_path: Path) -> list[dict]:
 
 
 def linkify(text: str) -> str:
-    """텍스트 내부의 URL 을 markdown auto-link 로 변환."""
+    """Convert URLs inside text to markdown auto-links."""
     return URL_RE.sub(lambda m: f"<{m.group(0)}>", text)
 
 
@@ -113,7 +113,7 @@ def render_markdown(rows: list[dict], locale: str) -> str:
             "Created by the listed translator(s) without using third-party sources."
         )
         lines.append("")
-        # 시트별 그룹
+        # group by sheet
         by_sheet: dict[str, list[dict]] = {}
         for r in without_attr:
             by_sheet.setdefault(r["sheet"], []).append(r)
@@ -152,7 +152,7 @@ def main() -> int:
     xlsx_path = pkg_root / args.locale / "Images.xlsx"
 
     if not xlsx_path.exists():
-        # 빌드 파이프라인에서 호출될 때 Images.xlsx 없는 로케일은 정상 (텍스처 번역 안 함)
+        # When called from the build pipeline, locales without Images.xlsx are normal (no texture translation)
         print(f"[SKIP] Images.xlsx 가 없습니다: {xlsx_path} — 출력 안 함")
         return 0
 

@@ -1,29 +1,29 @@
 """
-xlsx 내 런타임 키 중복 사전 체크.
+Pre-check for runtime key duplicates within xlsx.
 
-validate_translation.py 가 수행하는 중복 검사와 동일한 로직을 실행해
-시트 내 / 시트 간 중복을 모두 보고한다. TSV 추출이나 다른 검증 없이
-빠르게 중복만 확인할 때 사용.
+Runs the same duplicate-check logic as validate_translation.py to report
+both intra-sheet and cross-sheet duplicates. Use to quickly verify duplicates
+without TSV extraction or other validation.
 
-검사 대상:
-    - ignore / untranslatable=1 행은 제외
-    - static + scoped literal  → 5-tuple 키 공간 공유
-    - 전역 literal             → text 키
-    - scoped pattern           → 5-tuple 키
-    - 전역 pattern             → text 키
-    - 전역 substr              → text 키
+Targets:
+    - exclude rows with ignore / untranslatable=1
+    - static + scoped literal  → share 5-tuple key space
+    - global literal           → text key
+    - scoped pattern           → 5-tuple key
+    - global pattern           → text key
+    - global substr            → text key
 
-사용법:
+Usage:
     python check_duplicate.py <locale>
 
-예:
+Example:
     python check_duplicate.py Korean
 
-종료 코드:
-    0 — 중복 없음
-    1 — 중복 있음 또는 xlsx 누락
+Exit codes:
+    0 — no duplicates
+    1 — duplicates found or xlsx missing
 
-로그:
+Log:
     <locale>/.log/check_duplicate_YYYYMMDD_HHMMSS.log
 """
 import sys
@@ -91,7 +91,7 @@ def main() -> int:
         intra_count = 0
         cross_count = 0
 
-        # 시트 내 중복
+        # intra-sheet duplicates
         tee.print("[시트 내 중복]")
         any_intra = False
         for sheet_name, _header, rows in sheets:
@@ -113,7 +113,7 @@ def main() -> int:
             tee.print("  없음.")
         tee.print()
 
-        # 시트 간 중복
+        # cross-sheet duplicates
         tee.print("[시트 간 중복]")
         cross: dict = {}
         for sn, row_num, msg in check_duplicates_cross_sheet(sheets):

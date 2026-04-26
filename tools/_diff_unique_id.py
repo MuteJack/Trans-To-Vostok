@@ -1,11 +1,11 @@
 """
-[임시] 두 parsed_text 디렉토리의 *.tscn.tsv 를 비교해 unique_id 변경을 찾는다.
+[Temporary] Compare *.tscn.tsv files in two parsed_text directories to find unique_id changes.
 
-사용법:
+Usage:
     python _diff_unique_id.py <old_dir> <new_dir>
 
-비교 키: (filename, parent, name, type, text)
-같은 키 → 다른 unique_id 인 경우를 보고.
+Comparison key: (filename, parent, name, type, text)
+Reports cases where same key has different unique_id.
 """
 import csv
 import sys
@@ -65,9 +65,9 @@ def main() -> int:
     print()
 
     same = 0
-    changed: list = []       # unique_id 변경
-    only_old: list = []      # 제거됨
-    only_new: list = []      # 추가됨
+    changed: list = []       # unique_id changed
+    only_old: list = []      # removed
+    only_new: list = []      # added
 
     all_keys = set(old_idx.keys()) | set(new_idx.keys())
     for key in all_keys:

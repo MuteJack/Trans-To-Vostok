@@ -1,23 +1,23 @@
 """
-추출된 TSV 와 Translation.xlsx 를 비교해 번역 커버리지를 리포트한다.
+Compare extracted TSV with Translation.xlsx and report translation coverage.
 
-매칭 분류:
-- direct:      xlsx 의 static 또는 scoped literal 행이 5-tuple 로 매칭 (번역 완료)
-- literal:     xlsx 의 전역 literal 행이 text 로 매칭 (fallback 번역)
-- expression:  xlsx 의 전역 pattern 행 정규식이 text 와 매칭 (fallback 번역)
-- ignored:     xlsx 에 있고 method=ignore (운영적 제외)
-- untranslatable: xlsx 에 있고 untranslatable=1 (번역 불가 텍스트)
-- empty:       xlsx 에 있지만 translation 비어있음 (번역 대기)
-- missing:     xlsx 에 아예 없음 (새로 추가 필요)
+Match classification:
+- direct:      xlsx static or scoped literal row matched by 5-tuple (translation complete)
+- literal:     xlsx global literal row matched by text (fallback translation)
+- expression:  xlsx global pattern row regex matched text (fallback translation)
+- ignored:     present in xlsx with method=ignore (operational exclusion)
+- untranslatable: present in xlsx with untranslatable=1 (untranslatable text)
+- empty:       present in xlsx but translation is empty (awaiting translation)
+- missing:     not present in xlsx at all (needs to be added)
 
-사용법:
+Usage:
     python check_untranslated.py <locale>
 
-예시:
+Example:
     python check_untranslated.py Korean
 
-출력:
-    화면 + <locale>/.log/check_untranslated_YYYYMMDD_HHMMSS.log
+Output:
+    screen + <locale>/.log/check_untranslated_YYYYMMDD_HHMMSS.log
 """
 import csv
 import re
@@ -54,11 +54,11 @@ BOOL_TRUE = {"1", "true"}
 
 
 # ==========================================
-# 패턴 컴파일 (translator.gd 와 동일 로직)
+# pattern compilation (same logic as translator.gd)
 # ==========================================
 
 def compile_pattern(text: str) -> re.Pattern:
-    """{name} 과 * 를 지원하는 패턴을 Python 정규식으로 컴파일."""
+    """Compile pattern supporting {name} and * into a Python regex."""
     placeholder_re = re.compile(r"\{(\w+)\}")
     result = []
     i = 0
@@ -84,17 +84,17 @@ def compile_pattern(text: str) -> re.Pattern:
 
 
 # ==========================================
-# 추출 TSV 로드
+# load extracted TSV
 # ==========================================
 
 def load_tsv_entries(tsv_dir: Path) -> list[dict]:
     """
-    parsed_text/ 의 이중 확장자 TSV 파일을 로드.
+    Load double-extension TSV files from parsed_text/.
 
-    대상:
-        *.tscn.tsv  — unique_id 있는 scn 엔트리
-        *.tres.tsv  — unique_id 없는 tres 엔트리
-        *.gd.tsv    — gd 스크립트 리터럴/패턴
+    Targets:
+        *.tscn.tsv  — scn entries with unique_id
+        *.tres.tsv  — tres entries without unique_id
+        *.gd.tsv    — gd script literals/patterns
     """
     entries = []
     tsv_files = (sorted(tsv_dir.rglob("*.tscn.tsv"))
@@ -110,7 +110,7 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
                         continue
                     filetype = (row.get("filetype") or "").strip()
                     uid = (row.get("unique_id") or "").strip()
-                    # tscn 엔트리는 uid 필수, tres 는 없음 허용
+                    # tscn entries require uid; tres allows missing uid
                     if filetype == "tscn" and not uid:
                         continue
                     entries.append({
@@ -131,22 +131,22 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
 
 
 # ==========================================
-# xlsx 분석 (새 스키마: method / translation)
+# xlsx analysis (new schema: method / translation)
 # ==========================================
 
 def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, list, list]:
     """
-    xlsx 행을 런타임 매칭 모델에 맞춰 인덱싱.
+    Index xlsx rows against the runtime matching model.
 
-    반환:
+    Returns:
       - direct_keys:         { 5-tuple: translation } — static + scoped literal (tscn)
       - ignored_keys:        set of 5-tuples (method=ignore)
       - untranslatable_keys: set of 5-tuples (untranslatable=1)
-      - empty_keys:          set of 5-tuples (translation 비어있음)
-      - literal_map:         {text: translation} — 전역 literal
-      - tres_direct:         { (filename, filetype, text): translation } — tres 직접 매칭
-      - pattern_list:        [(compiled_regex, template), ...] — 전역 pattern
-      - ignore_rows:         [row, ...] — method=ignore 행 원본 (커버 검증용)
+      - empty_keys:          set of 5-tuples (empty translation)
+      - literal_map:         {text: translation} — global literal
+      - tres_direct:         { (filename, filetype, text): translation } — tres direct match
+      - pattern_list:        [(compiled_regex, template), ...] — global pattern
+      - ignore_rows:         [row, ...] — original method=ignore rows (for coverage check)
     """
     direct_keys: dict = {}
     ignored_keys: set = set()
@@ -202,16 +202,16 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
 
         elif effective == "literal":
             if location:
-                # scoped literal — direct 키 공간
+                # scoped literal — direct key space
                 if translation:
                     direct_keys[key_5] = translation
                 else:
                     empty_keys.add(key_5)
             else:
-                # 전역 literal
+                # global literal
                 if translation:
                     literal_map[text] = translation
-                # tres 직접 매칭: (filename, filetype, text) 키로 등록
+                # tres direct match: register by (filename, filetype, text) key
                 fn = row.get("filename", "").strip()
                 ft = row.get("filetype", "").strip()
                 if fn and ft:
@@ -221,7 +221,7 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
 
         elif effective == "pattern":
             if location:
-                # scoped pattern 은 현재 리포트 모델에서 전역 pattern 과 동일 취급
+                # scoped pattern is currently treated the same as global pattern in the report model
                 if translation:
                     try:
                         regex = compile_pattern(text)
@@ -235,15 +235,15 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
                         pattern_list.append((regex, translation))
                     except re.error:
                         pass
-                # filename/filetype 있으면 tres_direct 에 raw 패턴 텍스트로도 등록
-                # → classify 에서 패턴 원문이 정확 일치로 "direct" 분류됨
+                # if filename/filetype is set, also register the raw pattern text in tres_direct
+                # → classify treats exact pattern text as "direct"
                 fn = row.get("filename", "").strip()
                 ft = row.get("filetype", "").strip()
                 if fn and ft and translation:
                     tres_direct[(fn, ft, text)] = translation
 
         elif effective == "substr":
-            # substr → literal_map + tres_direct 에 이중 등록 (build 와 동일)
+            # substr → register in both literal_map and tres_direct (same as build)
             if translation:
                 literal_map[text] = translation
                 fn = row.get("filename", "").strip()
@@ -255,11 +255,11 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
 
 
 # ==========================================
-# TSV 엔트리 분류
+# classify TSV entries
 # ==========================================
 
 def _check_fallback(text: str, literal_map: dict, pattern_list: list) -> tuple[str, str] | None:
-    """전역 literal/pattern fallback 매칭을 확인. 히트 시 (status, method) 반환, 미스 시 None."""
+    """Check global literal/pattern fallback match. Returns (status, method) on hit, None on miss."""
     if text in literal_map:
         return ("literal", "literal")
     for regex, _tmpl in pattern_list:
@@ -281,17 +281,17 @@ def classify_entry(
     pattern_list: list,
 ) -> tuple[str, str]:
     """
-    TSV 엔트리의 번역 상태를 분류.
-    반환: (status, method)
+    Classify the translation status of a TSV entry.
+    Returns: (status, method)
         status: "direct" | "ignored" | "delegated" | "untranslatable" | "literal" | "expression" | "empty" | "missing"
 
-    delegated: xlsx 에서 ignore/untranslatable 처리했지만 전역 literal/pattern 이 잡는 경우.
-               런타임에서는 실제로 번역되므로 ignored/untranslatable 과 구분 필요.
+    delegated: row was treated as ignore/untranslatable in xlsx, but a global literal/pattern catches it.
+               Since it is actually translated at runtime, must be distinguished from ignored/untranslatable.
     """
     text = entry["text"]
     filetype = entry.get("filetype", "")
 
-    # tscn 엔트리는 5-tuple 로 우선 조회
+    # tscn entries are first looked up by 5-tuple
     if filetype == "tscn":
         key_5 = (
             entry["location"],
@@ -314,12 +314,12 @@ def classify_entry(
             return ("direct", "")
         if key_5 in empty_keys:
             return ("empty", "")
-        # tscn + substr/pattern 이 tres_direct 에 등록되었는지 확인
+        # check whether tscn + substr/pattern was registered in tres_direct
         tscn_src_key = (entry.get("filename", ""), "tscn", text)
         if tscn_src_key in tres_direct:
             return ("direct", "")
 
-    # tres / gd 엔트리는 (filename, filetype, text) 로 매칭
+    # tres / gd entries match on (filename, filetype, text)
     if filetype in ("tres", "gd"):
         src_key = (entry.get("filename", ""), filetype, text)
         if src_key in tres_ignored:
@@ -335,7 +335,7 @@ def classify_entry(
         if src_key in tres_direct:
             return ("direct", "")
 
-    # text-only fallback (tscn/tres/gd 미스)
+    # text-only fallback (tscn/tres/gd miss)
     fb = _check_fallback(text, literal_map, pattern_list)
     if fb:
         return fb
@@ -344,7 +344,7 @@ def classify_entry(
 
 
 # ==========================================
-# 메인
+# main
 # ==========================================
 
 def format_percent(n: int, total: int) -> str:
@@ -388,7 +388,7 @@ def main() -> int:
             tee.print(line)
         tee.print()
 
-        # 1. xlsx 로드 및 분석 (모든 번역 시트 병합)
+        # 1. load xlsx and analyze (merge all translation sheets)
         tee.print("xlsx 로드 중...")
         sheets = load_all_translation_sheets(xlsx_path)
         all_rows: list[dict] = []
@@ -421,13 +421,13 @@ def main() -> int:
         )
         tee.print()
 
-        # 2. 추출 TSV 로드
+        # 2. load extracted TSV
         tee.print("추출 TSV 로드 중...")
         tsv_entries = load_tsv_entries(tsv_dir)
         tee.print(f"  {len(tsv_entries)}개 엔트리")
         tee.print()
 
-        # 3. 분류
+        # 3. classify
         per_file: dict = defaultdict(lambda: {
             "total": 0,
             "direct": 0,
@@ -475,7 +475,7 @@ def main() -> int:
                 bucket["missing"] += 1
                 bucket["missing_entries"].append(entry)
 
-        # 4. 파일별 요약 (tscn / tres 분리)
+        # 4. per-file summary (split tscn / tres)
         tscn_files = sorted(f for f in per_file if f.endswith(".tscn.tsv"))
         tres_files = sorted(f for f in per_file if f.endswith(".tres.tsv"))
 
@@ -557,7 +557,7 @@ def main() -> int:
         )
         tee.print()
 
-        # 5. 파일별 상세 (tscn / tres 분리)
+        # 5. per-file detail (split tscn / tres)
         def _print_detail_group(label: str, file_list: list):
             has_any = False
             for fname in file_list:
@@ -624,7 +624,7 @@ def main() -> int:
         _print_detail_group("tres", tres_files)
         _print_detail_group("gd", gd_files)
 
-        # delegated 로그를 별도 파일로 출력 (화면에는 상세 미출력)
+        # write delegated log to a separate file (no detail on screen)
         delegated_log_path = locale_dir / ".log" / f"check_delegated_{timestamp}.log"
         has_delegated = any(
             len(per_file[f]["delegated_entries"]) > 0 for f in per_file
@@ -652,11 +652,11 @@ def main() -> int:
         else:
             tee.print("delegated: 없음")
 
-        # 6. suspicious ignore 검사
-        # method=ignore + untranslatable≠1 인 행 중 다른 행에서 커버되지 않는 것
+        # 6. suspicious ignore check
+        # rows with method=ignore + untranslatable≠1 that are not covered by any other row
         covered_texts: set = set()
         for key_5, _trans in direct_keys.items():
-            covered_texts.add(key_5[4])  # text 부분
+            covered_texts.add(key_5[4])  # text part
         covered_texts.update(literal_map.keys())
 
         suspicious: list = []
@@ -666,7 +666,7 @@ def main() -> int:
                 continue
             if text in covered_texts:
                 continue
-            # pattern 매칭 체크
+            # check pattern match
             pattern_hit = False
             for regex, _tmpl in pattern_list:
                 if regex.match(text):

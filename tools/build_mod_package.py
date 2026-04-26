@@ -1,27 +1,27 @@
 """
-Trans To Vostok 모드를 .zip 파일로 패키징.
+Package the Trans To Vostok mod into a .zip file.
 
-사용법:
+Usage:
     python build_mod_package.py [locale...]
 
-예시:
+Examples:
     python build_mod_package.py Korean
-    python build_mod_package.py Korean Japanese  (다국어 지원 시)
-    python build_mod_package.py                   (기본: Korean)
+    python build_mod_package.py Korean Japanese  (when multi-locale supported)
+    python build_mod_package.py                   (default: Korean)
 
-동작:
-1. 지정된 로케일에 대해 build_runtime_tsv를 호출하여 TSV 생성 (검증 포함)
-2. 모드 파일 구조를 ZIP으로 압축하여 ../Trans To Vostok.zip 생성
-    - mod.txt                                               (모드 메타데이터)
-    - Trans To Vostok/translator_ui.gd                      (UI + 엔진 관리)
-    - Trans To Vostok/translator.gd                         (텍스트 번역 엔진)
-    - Trans To Vostok/texture_loader.gd                     (텍스처 교체 엔진)
-    - Trans To Vostok/locale.json                           (로케일 설정)
-    - Trans To Vostok/<locale>/translation_*.tsv            (런타임 TSV)
+Behavior:
+1. Call build_runtime_tsv for the specified locale to generate TSVs (including validation)
+2. Compress the mod file structure into ZIP, producing ../Trans To Vostok.zip
+    - mod.txt                                               (mod metadata)
+    - Trans To Vostok/translator_ui.gd                      (UI + engine management)
+    - Trans To Vostok/translator.gd                         (text translation engine)
+    - Trans To Vostok/texture_loader.gd                     (texture replacement engine)
+    - Trans To Vostok/locale.json                           (locale configuration)
+    - Trans To Vostok/<locale>/translation_*.tsv            (runtime TSVs)
     - Trans To Vostok/<locale>/metadata.tsv
-    - Trans To Vostok/<locale>/textures/**                   (번역 이미지, 있으면 포함)
+    - Trans To Vostok/<locale>/textures/**                   (translated images, included if present)
 
-출력: mods/Trans To Vostok.zip
+Output: mods/Trans To Vostok.zip
 """
 import json
 import shutil
@@ -30,7 +30,7 @@ import sys
 import zipfile
 from pathlib import Path
 
-# Windows 콘솔 한글 출력 지원
+# Windows console Korean output support
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -55,7 +55,7 @@ TEXTURE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
 
 
 def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool = False) -> bool:
-    """build_runtime_tsv.py를 호출하여 TSV 생성. 성공 여부 반환."""
+    """Call build_runtime_tsv.py to generate TSVs. Returns whether it succeeded."""
     print(f"=== 로케일 빌드: {locale} ===")
     cmd = [sys.executable, "build_runtime_tsv.py", locale]
     if ignore:
@@ -71,8 +71,8 @@ def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool 
 
 
 def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
-    """build_attributions.py를 호출. Images.xlsx 가 없으면 skip 처리.
-    출력은 build_attributions.py 의 기본 경로 (<pkg_root>/<locale>/Attribution.md)."""
+    """Call build_attributions.py. Skipped if Images.xlsx is absent.
+    Output goes to the default path of build_attributions.py (<pkg_root>/<locale>/Attribution.md)."""
     print(f"=== 어트리뷰션 빌드: {locale} ===")
     cmd = [sys.executable, "build_attributions.py", "--locale", locale]
     result = subprocess.run(cmd, cwd=tools_dir)
@@ -85,26 +85,26 @@ def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
 
 def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int, int]:
     """
-    모드를 .vmz (ZIP)으로 패키징.
-    반환: (전체 파일 개수, 텍스처 파일 개수)
+    Package the mod as .vmz (ZIP).
+    Returns: (total file count, texture file count)
     """
     pkg_root = mod_root / MOD_NAME
     count = 0
     texture_count = 0
 
-    # 원자적 쓰기
+    # atomic write
     tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
 
     try:
         with zipfile.ZipFile(tmp_path, "w", zipfile.ZIP_DEFLATED) as zf:
-            # 1. mod.txt → ZIP 루트 (outer/repo root)
+            # 1. mod.txt → ZIP root (outer/repo root)
             mod_txt = mod_root / "mod.txt"
             if not mod_txt.exists():
                 raise FileNotFoundError(f"mod.txt가 없습니다: {mod_txt}")
             zf.write(mod_txt, "mod.txt")
             count += 1
 
-            # 2. 모드 파일들 (pkg_root) → Trans To Vostok/
+            # 2. mod files (pkg_root) → Trans To Vostok/
             for fname in MOD_FILES:
                 src = pkg_root / fname
                 if not src.exists():
@@ -112,7 +112,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                 zf.write(src, f"{MOD_NAME}/{fname}")
                 count += 1
 
-            # 3. 로케일 파일들 → Trans To Vostok/<locale>/
+            # 3. locale files → Trans To Vostok/<locale>/
             for locale in locales:
                 locale_dir = pkg_root / locale
                 for fname in LOCALE_FILES:
@@ -122,8 +122,8 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                     zf.write(src, f"{MOD_NAME}/{locale}/{fname}")
                     count += 1
 
-                # 4. 텍스처 폴더 → Trans To Vostok/<locale>/textures/**
-                # 폴더가 없으면 스킵 (로케일별 선택 사항)
+                # 4. texture folder → Trans To Vostok/<locale>/textures/**
+                # skipped if folder is absent (per-locale optional)
                 textures_dir = locale_dir / TEXTURE_DIR
                 if textures_dir.exists() and textures_dir.is_dir():
                     for tex_file in sorted(textures_dir.rglob("*")):
@@ -137,13 +137,13 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                         texture_count += 1
 
                 # 5. Attribution.md → Trans To Vostok/<locale>/Attribution.md
-                # build_attributions.py 가 생성. Images.xlsx 없는 로케일은 파일 자체가 없음 → 스킵
+                # generated by build_attributions.py. Locales without Images.xlsx have no file → skip
                 attribution_path = locale_dir / "Attribution.md"
                 if attribution_path.exists() and attribution_path.is_file():
                     zf.write(attribution_path, f"{MOD_NAME}/{locale}/Attribution.md")
                     count += 1
 
-        # 성공 시 원본 덮어쓰기
+        # overwrite original on success
         tmp_path.replace(out_path)
     except Exception:
         if tmp_path.exists():
@@ -157,7 +157,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
 
 
 def load_locale_config(mod_root: Path) -> list[dict]:
-    """locale.json 에서 enabled=true 인 로케일 목록을 반환."""
+    """Return list of locales with enabled=true from locale.json."""
     locale_json = mod_root / MOD_NAME / "locale.json"
     if not locale_json.exists():
         return []
@@ -173,13 +173,13 @@ def main() -> int:
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent                # mods/Trans To Vostok
 
-    # --soft / --hard / --ignore 파싱
+    # parse --soft / --hard / --ignore
     cli_args = [a for a in sys.argv[1:] if not a.startswith("--")]
     cli_flags = {a for a in sys.argv[1:] if a.startswith("--")}
     soft = "--soft" in cli_flags
     ignore = "--ignore" in cli_flags
 
-    # 커맨드라인 인자가 있으면 override, 없으면 locale.json 에서 읽기
+    # if command-line args provided, override; otherwise read from locale.json
     if cli_args:
         locales = cli_args
         print(f"커맨드라인 로케일: {locales}")
@@ -195,7 +195,7 @@ def main() -> int:
     mods_parent = mod_root.parent                # mods/
     out_path = mods_parent / f"{MOD_NAME}.zip"
 
-    # 1. 각 로케일 빌드 (validate 포함, 폴더 없는 locale 스킵)
+    # 1. build each locale (includes validate, skip locales without folder)
     pkg_root = mod_root / MOD_NAME
     build_locales = []
     for locale in locales:
@@ -209,12 +209,12 @@ def main() -> int:
         build_locales.append(locale)
     locales = build_locales
 
-    # 2. 어트리뷰션 빌드 (Images.xlsx 있는 로케일만 출력)
+    # 2. build attributions (only for locales with Images.xlsx)
     for locale in locales:
         if not build_attributions_for_locale(script_dir, locale):
             return 1
 
-    # 3. 패키징
+    # 3. packaging
     print(f"=== 패키징 ===")
     print(f"대상 로케일: {', '.join(locales)}")
     print(f"출력 파일: {out_path}")

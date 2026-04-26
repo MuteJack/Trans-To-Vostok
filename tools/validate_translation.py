@@ -1,53 +1,53 @@
 """
-Translation.xlsx 검증 도구.
+Translation.xlsx validation tool.
 
-스키마 (18컬럼):
-    A. 메타 (도구 미사용): WHERE, SUB, KIND
-    B. 상태 플래그 (검증만): Transliteration, Machine translated, Confused, ignore
-    C. 매칭: method, filename, filetype, location, parent, name, type, unique_id
-    D. 내용: text, translation
-    E. 메모 (도구 미사용): DESCRIPTION
+Schema (18 columns):
+    A. Meta (not used by tool): WHERE, SUB, KIND
+    B. Status flags (validation only): Transliteration, Machine translated, Confused, ignore
+    C. Matching: method, filename, filetype, location, parent, name, type, unique_id
+    D. Content: text, translation
+    E. Notes (not used by tool): DESCRIPTION
 
-method 값:
-    static   — (location, parent, name, type, text) 완전 일치 1:1 매칭 (TSV 검증됨)
-    literal  — text 완전 일치 (location 있으면 scoped, 없으면 전역)
-    pattern  — 정규식 매칭 (location 있으면 scoped, 없으면 전역)
-    ""       — 빈값은 literal 로 기본 처리 (수동 입력 편의)
+method values:
+    static   — (location, parent, name, type, text) exact 1:1 match (TSV-validated)
+    literal  — exact text match (scoped if location set, otherwise global)
+    pattern  — regex match (scoped if location set, otherwise global)
+    ""       — empty value defaults to literal (manual-entry convenience)
 
-체크 항목:
-1. [ERROR] 필수 컬럼 누락
-2. [ERROR] TSV 매칭 (method=static 전용):
-   - filetype in {tscn, scn} 에서 unique_id 기반 TSV 대조
-   - text 는 앞뒤 공백/개행까지 완전 일치 (엄격)
-3. [WARNING] text ↔ translation 앞뒤 공백/개행 불일치
-4. [ERROR] 플래그 값 검증: Transliteration, Machine translated, Confused, ignore
-   - 허용: 0/1/true/false/""
-5. [ERROR] method / 필드 조합 검증:
-   - static: location/parent/name/type/unique_id 필수, filetype∈{tscn,scn}
-   - literal + location: parent/name/type 필수 (scoped)
-   - literal + no location: 컨텍스트 자유 (전역)
-   - pattern + location: parent/name/type 필수 (scoped)
-   - pattern + no location: 컨텍스트 자유 (전역)
-   - "": literal 로 취급
-6. [WARNING] 빈 method + unique_id 채워짐 → static 명시 권장
-7. [ERROR] 중복 매칭 키:
-   - static + scoped literal: (location, parent, name, type, text) 통합 공간
-   - 전역 literal: text 공간
-   - scoped pattern: (location, parent, name, type, text) 공간
-   - 전역 pattern: text 공간
+Checks:
+1. [ERROR] required columns missing
+2. [ERROR] TSV match (method=static only):
+   - For filetype in {tscn, scn}, match against TSV by unique_id
+   - text must match exactly including leading/trailing whitespace/newlines (strict)
+3. [WARNING] text ↔ translation leading/trailing whitespace/newline mismatch
+4. [ERROR] flag value validation: Transliteration, Machine translated, Confused, ignore
+   - allowed: 0/1/true/false/""
+5. [ERROR] method / field combination validation:
+   - static: location/parent/name/type/unique_id required, filetype∈{tscn,scn}
+   - literal + location: parent/name/type required (scoped)
+   - literal + no location: free context (global)
+   - pattern + location: parent/name/type required (scoped)
+   - pattern + no location: free context (global)
+   - "": treated as literal
+6. [WARNING] empty method + unique_id filled → recommend explicitly setting static
+7. [ERROR] duplicate matching keys:
+   - static + scoped literal: shared (location, parent, name, type, text) space
+   - global literal: text space
+   - scoped pattern: (location, parent, name, type, text) space
+   - global pattern: text space
 
-사용법:
+Usage:
     python validate_translation.py <locale>
 
-예시:
+Example:
     python validate_translation.py Korean
 
-로그:
-    <xlsx_부모_폴더>/.log/validate_translation_YYYYMMDD_HHMMSS.log
+Log:
+    <xlsx_parent_folder>/.log/validate_translation_YYYYMMDD_HHMMSS.log
 
-종료 코드:
-    0 = 에러 없음 (경고 무시)
-    1 = 에러 있음
+Exit codes:
+    0 = no errors (warnings ignored)
+    1 = errors found
 """
 import csv
 import re
@@ -62,7 +62,7 @@ except ImportError:
           " >> pip install openpyxl", file=sys.stderr)
     sys.exit(1)
 
-# Windows 콘솔 한글 출력 지원
+# Windows console Korean output support
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -71,31 +71,31 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-# 플래그 허용 값 (빈 값도 허용됨 — 명시되지 않은 경우로 간주)
+# allowed flag values (empty value also allowed — treated as unspecified)
 VALID_FLAGS = {"", "0", "1", "true", "false"}
 
-# 플래그 컬럼 (ignore 는 method=ignore 로 대체됨)
+# flag columns (ignore is replaced by method=ignore)
 FLAG_COLUMNS = ["Transliteration", "Machine translated", "Confused", "untranslatable"]
 
-# 유효한 method 값 (빈 문자열은 literal 로 기본 처리됨, ignore 는 제외 처리)
+# valid method values (empty string defaults to literal; ignore is treated as exclusion)
 VALID_METHODS = {"", "static", "literal", "pattern", "substr", "ignore"}
 
-# 씬 파일 확장자 (소스 타입)
+# scene file extensions (source types)
 SCENE_FILETYPES = {"tscn", "scn"}
 
-# MetaData 시트 제외 (번역 데이터 아님)
+# exclude MetaData sheet (not translation data)
 SKIP_SHEETS = {"MetaData"}
 
-# 엑셀 아티팩트 _x000D_ 제거용
+# for stripping the Excel _x000D_ artifact
 _X000D_RE = re.compile(r"_x000[dD]_")
 
 
 # ==========================================
-# 유틸
+# utilities
 # ==========================================
 
 def _normalize_cell(value) -> str:
-    """엑셀 셀 값을 문자열로 정규화. _x000d_ / _x000D_ 아티팩트 제거."""
+    """Normalize an Excel cell value to a string. Strips _x000d_ / _x000D_ artifacts."""
     if value is None:
         return ""
     s = str(value)
@@ -119,7 +119,7 @@ def _preview(text: str, limit: int = 60) -> str:
 
 
 def _effective_method(row: dict) -> str:
-    """빈 method 를 literal 로 기본 처리. ignore 는 그대로 반환."""
+    """Treat empty method as literal by default. ignore is returned as-is."""
     m = row.get("method", "").strip()
     if m == "ignore":
         return "ignore"
@@ -127,16 +127,16 @@ def _effective_method(row: dict) -> str:
 
 
 # ==========================================
-# TSV 인덱스 (추출된 .tscn.tsv / .tres.tsv 에서 unique_id 기반)
+# TSV index (built from extracted .tscn.tsv / .tres.tsv by unique_id)
 # ==========================================
 
 def load_tsv_index(tsv_dir: Path) -> dict:
     """
-    추출된 TSV 파일에서 unique_id → [레코드 목록] 인덱스를 만든다.
+    Build a unique_id → [list of records] index from extracted TSV files.
 
-    대상 파일:
-        *.tscn.tsv  (parse_tscn_text.py 출력, unique_id 있음)
-        *.tres.tsv  (parse_tres_text.py 출력, unique_id 없음 → 자연 스킵)
+    Target files:
+        *.tscn.tsv  (output of parse_tscn_text.py, has unique_id)
+        *.tres.tsv  (output of parse_tres_text.py, no unique_id → naturally skipped)
     """
     index = {}
     tsv_files = sorted(tsv_dir.rglob("*.tscn.tsv")) + sorted(tsv_dir.rglob("*.tres.tsv"))
@@ -166,8 +166,8 @@ def load_tsv_index(tsv_dir: Path) -> dict:
 
 def load_tres_text_set(tsv_dir: Path) -> set:
     """
-    추출된 *.tres.tsv 에서 모든 text 값을 set 으로 수집.
-    tres xlsx 행의 text 가 실제 .tres 소스에 존재하는지 검증하는 데 사용.
+    Collect all text values from extracted *.tres.tsv files into a set.
+    Used to verify that tres xlsx row texts exist in the actual .tres source.
     """
     texts: set = set()
     for tsv_file in sorted(tsv_dir.rglob("*.tres.tsv")):
@@ -185,8 +185,8 @@ def load_tres_text_set(tsv_dir: Path) -> set:
 
 def load_gd_text_set(tsv_dir: Path) -> set:
     """
-    추출된 *.gd.tsv 에서 모든 text 값을 set 으로 수집.
-    filetype=gd xlsx 행의 text 가 실제 .gd 소스에 존재하는지 검증하는 데 사용.
+    Collect all text values from extracted *.gd.tsv files into a set.
+    Used to verify that filetype=gd xlsx row texts exist in the actual .gd source.
     """
     texts: set = set()
     for tsv_file in sorted(tsv_dir.rglob("*.gd.tsv")):
@@ -203,13 +203,13 @@ def load_gd_text_set(tsv_dir: Path) -> set:
 
 
 # ==========================================
-# MetaData 로딩
+# MetaData loading
 # ==========================================
 
 def load_metadata(xlsx_path: Path) -> dict:
     """
-    MetaData 시트에서 Field → Value 딕셔너리를 반환.
-    MetaData 시트가 없으면 빈 dict.
+    Return a Field → Value dict from the MetaData sheet.
+    Returns an empty dict if MetaData sheet is absent.
     """
     wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
     try:
@@ -234,7 +234,7 @@ def load_metadata(xlsx_path: Path) -> dict:
 
 
 def format_metadata_lines(meta: dict) -> list[str]:
-    """메타데이터를 로그 출력용 문자열 리스트로 반환."""
+    """Return metadata as a list of strings for log output."""
     lines = []
     for key in ("Game Version", "Game Updated Date", "Translation Updated Date",
                 "Translation Updated Time", "Translation UTC", "Translator"):
@@ -245,12 +245,12 @@ def format_metadata_lines(meta: dict) -> list[str]:
 
 
 # ==========================================
-# xlsx 로딩
+# xlsx loading
 # ==========================================
 
 def load_xlsx_main(xlsx_path: Path, sheet_name: str = "Main") -> tuple[list[str], list[dict], str]:
     """
-    Translation.xlsx 의 지정 시트를 읽어 (헤더, 행 리스트, 시트 이름) 반환.
+    Read the specified sheet from Translation.xlsx and return (header, list of rows, sheet name).
     """
     wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
     if sheet_name not in wb.sheetnames:
@@ -272,7 +272,7 @@ def load_xlsx_main(xlsx_path: Path, sheet_name: str = "Main") -> tuple[list[str]
         row_dict = {}
         for i, key in enumerate(header):
             val = row_values[i] if i < len(row_values) else None
-            # 동일 컬럼명이 여러 번이면 첫 번째만 사용 (뒤는 버림)
+            # if the same column name occurs multiple times, only the first is used (rest discarded)
             if key not in row_dict:
                 row_dict[key] = _normalize_cell(val)
         rows.append(row_dict)
@@ -283,7 +283,7 @@ def load_xlsx_main(xlsx_path: Path, sheet_name: str = "Main") -> tuple[list[str]
 
 def load_all_translation_sheets(xlsx_path: Path) -> list[tuple[str, list[str], list[dict]]]:
     """
-    MetaData 를 제외한 모든 시트를 로드해 (sheet_name, header, rows) 튜플 리스트로 반환.
+    Load all sheets except MetaData and return as a list of (sheet_name, header, rows) tuples.
     """
     wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
     try:
@@ -320,23 +320,23 @@ def load_all_translation_sheets(xlsx_path: Path) -> list[tuple[str, list[str], l
 
 
 # ==========================================
-# 개별 체크
+# individual checks
 # ==========================================
 
 def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
     """
-    체크 2 (ERROR): method=static 행에 한해 TSV 매칭.
-    filetype in {tscn, scn} 이어야 하며 unique_id 로 추출 인덱스에서 대조.
-    text 는 앞뒤 공백/개행까지 완전 일치 (엄격).
+    Check 2 (ERROR): TSV match for method=static rows only.
+    Requires filetype in {tscn, scn}; matched against the extracted index by unique_id.
+    text must match exactly including leading/trailing whitespace/newlines (strict).
     """
     errors = []
     method = _effective_method(row)
     if method != "static":
-        return errors  # static 만 TSV 검증 대상
+        return errors  # only static is subject to TSV validation
 
     filetype = row.get("filetype", "").strip()
     if filetype not in SCENE_FILETYPES:
-        return errors  # 검증 불가 (소스가 tscn/scn 이 아님)
+        return errors  # cannot validate (source is not tscn/scn)
 
     uid = row.get("unique_id", "").strip()
     if not uid:
@@ -348,7 +348,7 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
         errors.append(f"static: unique_id={uid} 가 추출 TSV 에 없음")
         return errors
 
-    # 후보가 여러 개면 text 일치 우선 선택 (씬 간 uid 중복 대비)
+    # if there are multiple candidates, prefer the one whose text matches (handles uid duplication across scenes)
     xlsx_text = row.get("text", "")
     best = None
     for cand in candidates:
@@ -359,7 +359,7 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
         best = candidates[0]
 
     mismatches = []
-    # 비교 대상 필드 (xlsx → TSV 필드명)
+    # fields to compare (xlsx → TSV field names)
     field_map = [
         ("filename", "filename"),
         ("filetype", "filetype"),
@@ -376,7 +376,7 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
                 f"{xlsx_key}: xlsx={_preview(xlsx_val)} / tsv={_preview(tsv_val)}"
             )
 
-    # text 는 엄격 비교 (공백/개행 포함)
+    # text uses strict comparison (whitespace/newline included)
     if xlsx_text != best["text"]:
         mismatches.append(
             f"text: xlsx={_preview(xlsx_text)} / tsv={_preview(best['text'])}"
@@ -392,8 +392,8 @@ def check_tsv_match(row: dict, tsv_index: dict) -> list[str]:
 
 def check_tres_text(row: dict, tres_texts: set) -> list[str]:
     """
-    체크 2b (ERROR): filetype=tres 행의 text 가 추출된 .tres.tsv 에 존재하는지 검증.
-    method=static 이 아닌 행 중 filetype=tres 인 것만 대상. 오타/유령 엔트리 방지.
+    Check 2b (ERROR): verify that text in filetype=tres rows exists in extracted .tres.tsv.
+    Targets rows with filetype=tres that are not method=static. Prevents typos / phantom entries.
     """
     errors = []
     filetype = row.get("filetype", "").strip()
@@ -415,8 +415,8 @@ def check_tres_text(row: dict, tres_texts: set) -> list[str]:
 
 def check_gd_text(row: dict, gd_texts: set) -> list[str]:
     """
-    체크 2c (WARNING): filetype=gd 행의 text 가 추출된 .gd.tsv 에 존재하는지 검증.
-    GD 추출은 휴리스틱 기반이라 ERROR 가 아닌 WARNING.
+    Check 2c (WARNING): verify that text in filetype=gd rows exists in extracted .gd.tsv.
+    Since GD extraction is heuristic-based, this is a WARNING rather than ERROR.
     """
     warnings = []
     filetype = row.get("filetype", "").strip()
@@ -437,7 +437,7 @@ def check_gd_text(row: dict, gd_texts: set) -> list[str]:
 
 
 def check_whitespace(row: dict) -> list[str]:
-    """체크 3 (WARNING): text ↔ translation 앞뒤 공백/개행 매칭."""
+    """Check 3 (WARNING): text ↔ translation leading/trailing whitespace/newline match."""
     warnings = []
     text = row.get("text", "")
     translation = row.get("translation", "")
@@ -463,7 +463,7 @@ def check_whitespace(row: dict) -> list[str]:
 
 
 def check_flags(row: dict) -> list[str]:
-    """체크 4 (ERROR): 플래그 컬럼 값 검증. 빈 값 허용."""
+    """Check 4 (ERROR): flag column value validation. Empty values allowed."""
     errors = []
     for col in FLAG_COLUMNS:
         val = row.get(col, "")
@@ -475,7 +475,7 @@ def check_flags(row: dict) -> list[str]:
 
 def check_method_fields(row: dict) -> list[str]:
     """
-    체크 5 (ERROR): method 값과 관련 필드 조합 검증.
+    Check 5 (ERROR): validate method value combined with related fields.
     """
     errors = []
     method = row.get("method", "").strip()
@@ -493,7 +493,7 @@ def check_method_fields(row: dict) -> list[str]:
     effective = method if method else "literal"
 
     if effective == "ignore":
-        return errors  # ignore 행은 필드 조합 검증 스킵
+        return errors  # skip field combination validation for ignore rows
 
     if effective == "static":
         if not location:
@@ -503,37 +503,37 @@ def check_method_fields(row: dict) -> list[str]:
                 f"static: filetype 은 'tscn' 또는 'scn' 이어야 함 (현재: {filetype!r})"
             )
         if not parent and not name:
-            # parent 가 비어도 루트 노드면 OK. 다만 parent+name 둘 다 비면 이상.
+            # empty parent is OK for root nodes. but both parent+name being empty is suspicious.
             pass
         if not name:
             errors.append("static: name 필수")
-        # type 은 instance 노드(.tscn 에 type= 미기록)에선 빈값이 정상. TSV 일치로 검증됨.
+        # type can legitimately be empty for instance nodes (no type= in .tscn). validated by TSV match.
         if not unique_id:
             errors.append("static: unique_id 필수")
 
     elif effective == "literal":
         if location:
-            # scoped literal: 컨텍스트 필드 필수 (type 제외, instance 노드 대응)
+            # scoped literal: context fields required (except type, to support instance nodes)
             if not name:
                 errors.append("scoped literal: name 필수 (literal + location)")
-        # 전역 literal 은 text 외 제약 없음
+        # global literal: no constraint other than text
 
     elif effective == "pattern":
         if location:
-            # scoped pattern: 컨텍스트 필드 필수 (type 제외)
+            # scoped pattern: context fields required (except type)
             if not name:
                 errors.append("scoped pattern: name 필수 (pattern + location)")
-        # 전역 pattern 은 text(정규식) 외 제약 없음
+        # global pattern: no constraint other than text (regex)
 
     elif effective == "substr":
-        # substr 은 text + translation 만 필수. 전역 부분 문자열 치환.
+        # substr requires only text + translation. Global substring replacement.
         pass
 
     return errors
 
 
 def check_empty_method(row: dict) -> list[str]:
-    """체크 6 (WARNING): 빈 method + unique_id 채워짐 → static 명시 권장."""
+    """Check 6 (WARNING): empty method + unique_id filled → recommend explicitly setting static."""
     warnings = []
     method = row.get("method", "").strip()
     if method:
@@ -548,12 +548,12 @@ def check_empty_method(row: dict) -> list[str]:
 
 def check_duplicates(rows: list[dict]) -> list[tuple[int, str]]:
     """
-    체크 7 (ERROR): 런타임 매칭 키 중복.
-    - static 과 scoped literal 은 동일한 5-tuple 키 공간에서 충돌 (런타임 동작 동일)
-    - 전역 literal: text
+    Check 7 (ERROR): runtime matching key duplicates.
+    - static and scoped literal share the same 5-tuple key space (same runtime behavior)
+    - global literal: text
     - scoped pattern: 5-tuple
-    - 전역 pattern: text
-    ignore=1 은 제외.
+    - global pattern: text
+    ignore=1 is excluded.
     """
     errors = []
     exact_keys: dict[tuple, list] = {}         # static + scoped literal
@@ -629,10 +629,10 @@ def check_duplicates_cross_sheet(
     sheets: list[tuple[str, list, list[dict]]],
 ) -> list[tuple[str, int, str]]:
     """
-    체크 7b (ERROR): 시트 간 중복 키 검사.
-    시트 내 중복은 check_duplicates 가 담당. 이 함수는 서로 다른 시트에
-    걸쳐 같은 런타임 키가 등장할 때만 보고한다.
-    반환: [(sheet_name, row_num, msg), ...]
+    Check 7b (ERROR): cross-sheet duplicate key check.
+    Intra-sheet duplicates are handled by check_duplicates. This function only
+    reports cases where the same runtime key appears across different sheets.
+    Returns: [(sheet_name, row_num, msg), ...]
     """
     errors: list[tuple[str, int, str]] = []
     exact_keys: dict[tuple, list] = {}
@@ -677,7 +677,7 @@ def check_duplicates_cross_sheet(
         for key, occurrences in store.items():
             sheet_set = {sn for sn, _, _ in occurrences}
             if len(occurrences) <= 1 or len(sheet_set) <= 1:
-                # 시트 내 중복은 check_duplicates 가 처리
+                # intra-sheet duplicates are handled by check_duplicates
                 continue
             locs = ", ".join(f"{sn}:{n}" for sn, n, _ in occurrences)
             if is_tuple_key:
@@ -707,11 +707,11 @@ def check_duplicates_cross_sheet(
 
 
 # ==========================================
-# 출력 (Tee)
+# output (Tee)
 # ==========================================
 
 class Tee:
-    """print 출력을 화면과 파일에 동시 기록."""
+    """Write print output to both screen and file."""
 
     def __init__(self, log_path: Path):
         self._log_path = log_path
@@ -730,7 +730,7 @@ class Tee:
 
 
 class ValidationResult:
-    """검증 결과. error_count 가 0 이면 통과."""
+    """Validation result. Passes when error_count is 0."""
 
     def __init__(self):
         self.error_tsv = 0
@@ -758,7 +758,7 @@ class ValidationResult:
 
 
 # ==========================================
-# 검증 실행
+# run validation
 # ==========================================
 
 REQUIRED_COLUMNS = [
@@ -771,10 +771,10 @@ REQUIRED_COLUMNS = [
 
 def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> ValidationResult:
     """
-    Translation.xlsx 의 모든 번역 시트 (MetaData 제외) 를 검증.
+    Validate all translation sheets (excluding MetaData) in Translation.xlsx.
 
-    soft=False (--hard, 기본): TSV 매칭 실패 → ERROR (빌드 차단)
-    soft=True  (--soft):       TSV 매칭 실패 → WARNING (빌드 계속, 해당 행 제외)
+    soft=False (--hard, default): TSV match failure → ERROR (block build)
+    soft=True  (--soft):          TSV match failure → WARNING (continue build, exclude that row)
     """
     result = ValidationResult()
 
@@ -827,7 +827,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
                 tee.print(f"  실제 헤더: {header}")
                 raise ValueError(f"[{sheet_name}] 필수 컬럼 누락: {missing}")
 
-            # 시트별 중복 키 검사를 위해 행 수집
+            # collect rows for per-sheet duplicate key check
             issues_by_row: dict = {}
 
             for i, row in enumerate(rows, start=2):
@@ -872,7 +872,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
                 if local_issues:
                     issues_by_row.setdefault(i, []).extend(local_issues)
 
-            # 시트 내 중복 키 검사
+            # intra-sheet duplicate key check
             for row_num, msg in check_duplicates(rows):
                 issues_by_row.setdefault(row_num, []).append(("ERROR", "중복 키", msg))
                 result.error_dup += 1
@@ -887,7 +887,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
                         tee.print(f"    [{level}] {label}: {msg}")
                 tee.print()
 
-        # 시트 간 중복 키 검사 (같은 런타임 키가 여러 시트에 걸쳐 존재)
+        # cross-sheet duplicate key check (same runtime key spans multiple sheets)
         cross_dup_by_sheet: dict = {}
         for sn, row_num, msg in check_duplicates_cross_sheet(sheets):
             cross_dup_by_sheet.setdefault(sn, {}).setdefault(row_num, []).append(msg)
@@ -924,7 +924,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
 
 
 def main() -> int:
-    # --soft / --hard 파싱
+    # parse --soft / --hard
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     flags = [a for a in sys.argv[1:] if a.startswith("--")]
     soft = "--soft" in flags

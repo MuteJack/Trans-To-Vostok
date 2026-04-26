@@ -1,22 +1,22 @@
 """
-.gd 파일을 파싱해 UI 텍스트 할당을 찾아 통일 포맷 TSV 로 출력.
+Parse .gd files to find UI text assignments and output as unified-format TSV.
 
-감지 패턴:
-    xxx.text = "..."                → .text 속성 할당
-    xxx.tooltip_text = "..."        → 툴팁
-    xxx.placeholder_text = "..."    → 플레이스홀더
-    gameData.tooltip = "..."        → 인터랙트 텍스트 (커스텀)
-    xxx.set_text("...")             → 함수 호출
+Detected patterns:
+    xxx.text = "..."                → .text property assignment
+    xxx.tooltip_text = "..."        → tooltip
+    xxx.placeholder_text = "..."    → placeholder
+    gameData.tooltip = "..."        → interact text (custom)
+    xxx.set_text("...")             → function call
 
-자동 판정:
-    TRANSLATE   — 2글자 이상 영어 단어 포함 → 번역 대상
-    SKIP        — 기호/단위/숫자만 → 번역 불필요
+Auto-classification:
+    TRANSLATE   — contains English word of 2+ chars → translation target
+    SKIP        — only symbols/units/numbers → no translation needed
 
-출력:
-    .tmp/parsed_text/Scripts/{파일명}.gd.tsv
-    통일 컬럼: filename, filetype, location, parent, name, type, unique_id, text
+Output:
+    .tmp/parsed_text/Scripts/{filename}.gd.tsv
+    unified columns: filename, filetype, location, parent, name, type, unique_id, text
 
-사용법:
+Usage:
     python parse_gd_text.py [source_dir]
 """
 import csv
@@ -38,8 +38,8 @@ DICT_ENTRY_RE = re.compile(r'^\s*"(?P<key>[^"]+)"\s*:\s*"(?P<value>[^"]*)"')
 
 
 def extract_func_first_arg(line: str, func_name: str) -> str | None:
-    """함수 호출에서 첫 번째 인자를 괄호 카운팅으로 추출.
-    중첩 괄호 str(int(x)) 를 정확히 처리."""
+    """Extract the first argument of a function call by paren counting.
+    Correctly handles nested parens like str(int(x))."""
     idx = line.find(func_name + "(")
     if idx < 0:
         idx = line.find(func_name + " (")
@@ -49,7 +49,7 @@ def extract_func_first_arg(line: str, func_name: str) -> str | None:
     else:
         idx += len(func_name)
 
-    # func_name 뒤의 여는 괄호 위치
+    # position of opening paren after func_name
     paren_start = line.find("(", idx)
     if paren_start < 0:
         return None
@@ -88,7 +88,7 @@ def extract_func_first_arg(line: str, func_name: str) -> str | None:
         i += 1
     return None
 
-# gd_list.json 에서 로드되는 설정 (기본값)
+# config loaded from gd_list.json (defaults)
 DEFAULT_CONFIG = {
     "properties": ["text", "tooltip_text", "placeholder_text", "hint_tooltip", "tooltip"],
     "functions": ["Loader.Message"],
@@ -99,13 +99,13 @@ DEFAULT_CONFIG = {
 
 
 def load_gd_config(config_path: Path) -> dict:
-    """gd_list.json 을 로드. 없으면 기본값 반환."""
+    """Load gd_list.json. Returns defaults if absent."""
     if not config_path.exists():
         print(f"[INFO] gd_list.json 없음, 기본 설정 사용")
         return dict(DEFAULT_CONFIG)
     try:
         data = json.loads(config_path.read_text(encoding="utf-8"))
-        # 기본값 병합
+        # merge defaults
         for key, default in DEFAULT_CONFIG.items():
             if key not in data:
                 data[key] = default
@@ -116,7 +116,7 @@ def load_gd_config(config_path: Path) -> dict:
 
 
 def build_assign_re(properties: list) -> re.Pattern:
-    """properties 목록으로 ASSIGN_RE 컴파일."""
+    """Compile ASSIGN_RE from the properties list."""
     prop_alt = "|".join(re.escape(p) for p in properties)
     return re.compile(
         rf'(?P<target>[^\s=]+?)\s*\.\s*(?P<prop>{prop_alt})\s*(?<!=)=(?!=)\s*(?P<value>.+)$'
@@ -124,14 +124,14 @@ def build_assign_re(properties: list) -> re.Pattern:
 
 
 def build_compare_re(properties: list) -> re.Pattern:
-    """xxx.text == "..." 비교문 감지."""
+    """Detect comparison expressions like xxx.text == "...". """
     prop_alt = "|".join(re.escape(p) for p in properties)
     return re.compile(
         rf'(?P<target>[^\s=]+?)\s*\.\s*(?P<prop>{prop_alt})\s*==\s*(?P<value>"(?:[^"\\]|\\.)*")'
     )
 
 
-# 통일 출력 컬럼 (tscn/tres 와 동일 — property 는 빈값으로 출력, xlsx 스키마 정렬용)
+# unified output columns (same as tscn/tres — property is left blank, for alignment with xlsx schema)
 OUT_COLUMNS = ["method", "filename", "filetype", "location", "parent", "name", "type", "property", "unique_id", "text"]
 
 
@@ -184,12 +184,12 @@ def build_pattern_hint(value: str) -> str:
         if m:
             parts.append(m.group(1))
         else:
-            # 함수 호출 "Func(...)" → 함수명만 추출
+            # function call "Func(...)" → extract only function name
             func_m = re.match(r'([A-Za-z_]\w*)\s*\(', token)
             if func_m:
                 parts.append("{" + func_m.group(1) + "}")
             else:
-                # str(x), int(x) 래퍼 제거 후 변수명 추출
+                # strip str(x)/int(x) wrappers, then extract variable name
                 var_name = re.sub(r'^(?:str|int|float)\s*\(\s*', '', token)
                 var_name = re.sub(r'\s*\)\s*$', '', var_name)
                 var_name = var_name.strip().split(".")[-1].split("[")[0]
@@ -198,7 +198,7 @@ def build_pattern_hint(value: str) -> str:
 
 
 def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
-    """하나의 .gd 파일을 파싱해 번역 대상 행 리스트 반환."""
+    """Parse one .gd file and return a list of translation-target rows."""
     if config is None:
         config = DEFAULT_CONFIG
     assign_re = build_assign_re(config["properties"])
@@ -212,11 +212,11 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
     except UnicodeDecodeError:
         content = path.read_text(encoding="utf-8", errors="replace")
 
-    # rel_path: pck_recovered 기준 상대 경로 (확장자 제외, e.g. "Scripts/Fire")
+    # rel_path: relative path from pck_recovered (without extension, e.g. "Scripts/Fire")
     if not rel_path:
         rel_path = "Scripts/" + path.stem
 
-    # 딕셔너리 블록 추적: "var name = {" 로 시작 → "}" 로 끝날 때까지
+    # track dictionary blocks: starting at "var name = {" → ending at "}"
     current_dict_var: str = ""
     DICT_START_RE = re.compile(r'(?:var|const)\s+(?P<name>\w+)\s*=\s*\{')
 
@@ -225,7 +225,7 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
         if not line:
             continue
 
-        # 딕셔너리 블록 시작/끝 추적
+        # track dictionary block start/end
         ds = DICT_START_RE.search(line)
         if ds:
             current_dict_var = ds.group("name")
@@ -233,10 +233,10 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
             current_dict_var = ""
             continue
 
-        # 매칭 시도 1: .text = ... / gameData.tooltip = ...
+        # match attempt 1: .text = ... / gameData.tooltip = ...
         m = assign_re.search(line)
         if not m:
-            # set_text() — 괄호 카운팅으로 인자 추출
+            # set_text() — extract argument by paren counting
             st_target_m = re.search(r'([^\s]+?)\s*\.\s*set_text\s*\(', line)
             if st_target_m:
                 arg = extract_func_first_arg(line, "set_text")
@@ -246,7 +246,7 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
                 else:
                     st_target_m = None
             if not st_target_m:
-                # 매칭 시도 1b: Loader.Message("...", ...) 등 — 괄호 카운팅
+                # match attempt 1b: Loader.Message("...", ...) etc. — paren counting
                 msg_found = False
                 for func_name in message_funcs:
                     if func_name in line:
@@ -257,7 +257,7 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
                             msg_found = True
                             break
                 if not msg_found:
-                    # 매칭 시도 2: xxx.text == "..." 비교문 (표시되는 값의 증거)
+                    # match attempt 2: xxx.text == "..." comparison (evidence of a displayed value)
                     cm = compare_re.search(line)
                     if cm:
                         lit = STRING_LIT.search(cm.group("value"))
@@ -274,7 +274,7 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
                                 "text": lit.group(1),
                             })
                             continue
-                    # 매칭 시도 3: 딕셔너리 "key": "value" (블록 안에서만)
+                    # match attempt 3: dictionary "key": "value" (inside block only)
                     if do_dict and current_dict_var:
                         dm = DICT_ENTRY_RE.search(line)
                         if dm:
@@ -303,8 +303,8 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
 
         kind = classify_kind(value, literals)
 
-        # literal: 각 리터럴을 개별 행으로
-        # concat/format: 패턴 힌트를 text로 (1행)
+        # literal: emit each literal as its own row
+        # concat/format: emit one row with the pattern hint as text
         if kind == "literal":
             for lit in literals:
                 if not is_translatable(lit, units):
@@ -321,11 +321,11 @@ def parse_gd(path: Path, rel_path: str = "", config: dict = None) -> list[dict]:
                     "text": lit,
                 })
         elif kind in ("concat", "format", "literal-multi"):
-            # 번역 대상 리터럴이 있는 경우만
+            # only when at least one literal is a translation target
             if not any(is_translatable(lit, units) for lit in literals):
                 continue
             pattern = build_pattern_hint(value)
-            # 플레이스홀더만으로 구성된 패턴은 번역 대상 아님
+            # patterns made up only of placeholders are not translation targets
             if not re.sub(r'\{[^}]*\}', '', pattern).strip():
                 continue
             results.append({
@@ -366,7 +366,7 @@ def main():
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent
 
-    # gd_list.json 로드
+    # load gd_list.json
     config_path = script_dir / "gd_list.json"
     config = load_gd_config(config_path)
     print(f"설정: {config_path.name}")
@@ -379,7 +379,7 @@ def main():
     pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
     output_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
-    # targets 에서 소스 디렉토리 수집
+    # collect source directories from targets
     if len(sys.argv) > 1:
         src_dirs = [Path(sys.argv[1]).resolve()]
     else:
@@ -409,7 +409,7 @@ def main():
     all_rows: list[dict] = []
 
     for gd in gd_files:
-        # pck_recovered 기준 상대 경로 (확장자 제외)
+        # relative path from pck_recovered (without extension)
         try:
             rel = gd.resolve().relative_to(pck_root)
         except ValueError:
@@ -419,7 +419,7 @@ def main():
         rows = parse_gd(gd, rel_no_ext, config)
         if not rows:
             continue
-        # 파일별 .gd.tsv 출력 (디렉토리 구조 유지)
+        # write per-file .gd.tsv (preserve directory structure)
         out_path = output_dir / (rel.as_posix() + ".tsv")  # Scripts/Fire.gd.tsv
         write_tsv(out_path, rows)
         total_files += 1
@@ -427,7 +427,7 @@ def main():
         all_rows.extend(rows)
         print(f"  [OK] {gd.name}  ({len(rows)}개)")
 
-    # 합본 출력 (join 필드가 있을 때만)
+    # combined output (only when join field is set)
     join_name = config.get("join", "")
     if join_name and all_rows:
         joined_path = output_dir / f"{join_name}.gd.joined.tsv"
@@ -437,7 +437,7 @@ def main():
     print()
     print(f"완료: {total_files}개 파일, {total_rows}개 엔트리")
 
-    # 통계
+    # statistics
     literals = [r for r in all_rows if r["type"] == "literal"]
     dicts = [r for r in all_rows if r["type"] == "dict"]
     patterns = [r for r in all_rows if r["type"] in ("concat", "format", "literal-multi")]

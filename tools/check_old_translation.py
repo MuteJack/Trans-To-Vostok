@@ -1,26 +1,26 @@
 """
-xlsx에 있지만 추출 TSV에는 없는 행을 찾는다 (역방향 검사).
+Find rows that exist in xlsx but are absent in extracted TSV (reverse check).
 
-게임 업데이트로 삭제/변경된 노드나 텍스트의 xlsx 행을 감지.
-check_untranslated.py 의 역방향: TSV→xlsx 가 아니라 xlsx→TSV.
+Detects xlsx rows for nodes or texts deleted/changed by game updates.
+Reverse of check_untranslated.py: xlsx→TSV instead of TSV→xlsx.
 
-검사 대상:
-    filetype=tscn/scn  → unique_id + text 로 TSV 인덱스 대조
-    filetype=tres       → text 가 tres_text_set 에 존재하는지
+Targets:
+    filetype=tscn/scn  → match against TSV index by unique_id + text
+    filetype=tres       → check if text is in tres_text_set
 
-제외:
-    method=ignore/pattern/substr  → TSV 소스 대조 불가
-    filetype 비어있음              → 수동 입력 행
-    untranslatable=1               → 스킵
+Exclusions:
+    method=ignore/pattern/substr  → cannot match against TSV source
+    empty filetype                → manually entered row
+    untranslatable=1               → skip
 
-사용법:
+Usage:
     python check_old_translation.py <locale>
 
-예시:
+Example:
     python check_old_translation.py Korean
 
-출력:
-    화면 + <locale>/.log/check_old_translation_YYYYMMDD_HHMMSS.log
+Output:
+    screen + <locale>/.log/check_old_translation_YYYYMMDD_HHMMSS.log
 """
 import sys
 from datetime import datetime
@@ -64,12 +64,12 @@ def check_old_translations(
     gd_texts: set,
 ) -> tuple[list[dict], list[dict], list[dict]]:
     """
-    xlsx 행 중 추출 TSV에 대응이 없는 행을 찾는다.
+    Find xlsx rows that have no counterpart in the extracted TSV.
 
-    반환:
-        old_tscn: [row, ...]  — filetype=tscn/scn 인데 TSV에 없는 행
-        old_tres: [row, ...]  — filetype=tres 인데 TSV에 없는 행
-        old_gd:   [row, ...]  — filetype=gd 인데 TSV에 없는 행
+    Returns:
+        old_tscn: [row, ...]  — filetype=tscn/scn rows missing from TSV
+        old_tres: [row, ...]  — filetype=tres rows missing from TSV
+        old_gd:   [row, ...]  — filetype=gd rows missing from TSV
     """
     old_tscn: list[dict] = []
     old_tres: list[dict] = []
@@ -77,10 +77,10 @@ def check_old_translations(
 
     for row in rows:
         effective = _effective_method(row)
-        # 대조 불가 method 스킵
+        # skip methods that cannot be matched
         if effective in ("ignore", "pattern", "substr"):
             continue
-        # untranslatable 스킵
+        # skip untranslatable
         if row.get("untranslatable", "").strip().lower() in BOOL_TRUE:
             continue
 
@@ -91,12 +91,12 @@ def check_old_translations(
             uid = row.get("unique_id", "").strip()
             if not uid:
                 continue
-            # TSV 인덱스에서 (unique_id, text) 매칭
+            # match (unique_id, text) in TSV index
             candidates = tsv_index.get(uid)
             if candidates is None:
                 old_tscn.append(row)
                 continue
-            # uid 는 있지만 text 가 일치하는 후보가 없으면 old
+            # uid exists but no candidate matches text → old
             if not any(c["text"] == text for c in candidates):
                 old_tscn.append(row)
 
@@ -150,7 +150,7 @@ def main() -> int:
             tee.print(line)
         tee.print()
 
-        # 1. TSV 인덱스 로드
+        # 1. load TSV index
         tee.print("TSV 인덱스 빌드 중...")
         tsv_index = load_tsv_index(tsv_dir)
         tres_texts = load_tres_text_set(tsv_dir)
@@ -160,7 +160,7 @@ def main() -> int:
         tee.print(f"  tres text: {len(tres_texts)}개, gd text: {len(gd_texts)}개")
         tee.print()
 
-        # 2. xlsx 로드
+        # 2. load xlsx
         tee.print("xlsx 로드 중...")
         sheets = load_all_translation_sheets(xlsx_path)
         all_rows: list[dict] = []
@@ -169,10 +169,10 @@ def main() -> int:
         tee.print(f"  시트 {len(sheets)}개, 총 {len(all_rows)}행")
         tee.print()
 
-        # 3. old translation 검사
+        # 3. check old translations
         old_tscn, old_tres, old_gd = check_old_translations(all_rows, tsv_index, tres_texts, gd_texts)
 
-        # 4. 리포트
+        # 4. report
         if old_tscn:
             tee.print("=" * 80)
             tee.print(f"tscn — TSV에 없는 xlsx 행 ({len(old_tscn)}개)")
@@ -209,7 +209,7 @@ def main() -> int:
                 )
             tee.print()
 
-        # 5. 요약
+        # 5. summary
         tee.print("=" * 80)
         total_old = len(old_tscn) + len(old_tres) + len(old_gd)
         if total_old == 0:

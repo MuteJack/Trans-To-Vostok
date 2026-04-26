@@ -1,23 +1,24 @@
 """
-xlsx 내 번역 충돌 검사.
+Translation conflict check within xlsx.
 
-공백을 제거한 text 기준으로, 같은 원문에 **다른 번역**이 등록된 경우를 경고한다.
-같은 원문이 여러 method/context 에 걸쳐 다르게 번역되면 일관성이 깨지므로 리뷰 대상.
+Based on text with whitespace stripped, warns when the same source text has
+**different translations** registered. If the same source text is translated
+differently across multiple methods/contexts, consistency is broken — flagged for review.
 
-검사 대상:
-    - ignore / untranslatable=1 행은 제외
-    - translation 이 비어있는 행은 제외
-    - 공백 제거 후 text 가 같고 translation 이 다르면 충돌
+Targets:
+    - exclude rows with ignore / untranslatable=1
+    - exclude rows with empty translation
+    - if text matches after whitespace removal but translation differs → conflict
 
-현재는 WARNING 만 출력 (ERROR 아님, 종료 코드 0).
+Currently only outputs WARNING (not ERROR, exit code 0).
 
-사용법:
+Usage:
     python check_conflict.py <locale>
 
-예시:
+Example:
     python check_conflict.py Korean
 
-로그:
+Log:
     <locale>/.log/check_conflict_YYYYMMDD_HHMMSS.log
 """
 import sys
@@ -51,14 +52,14 @@ BOOL_TRUE = {"1", "true"}
 
 
 def _normalize_text(s: str) -> str:
-    """공백/탭/개행을 모두 제거한 비교용 키."""
+    """Comparison key with all whitespace/tabs/newlines removed."""
     return "".join(s.split())
 
 
 def collect_conflicts(sheets: list) -> list[dict]:
     """
-    시트별 행을 돌며 (stripped_text → [entry, ...]) 로 그룹핑.
-    translation 이 다르면 충돌로 판정.
+    Iterate rows per sheet, grouping by (stripped_text → [entry, ...]).
+    Conflict is detected if translations differ.
 
     entry: {sheet, row_idx, method, filename, filetype, location,
             parent, name, property, text, translation}
@@ -67,7 +68,7 @@ def collect_conflicts(sheets: list) -> list[dict]:
     total_eligible = 0
 
     for sheet_name, _header, rows in sheets:
-        for i, row in enumerate(rows, start=2):  # 2 = 헤더 제외 첫 행
+        for i, row in enumerate(rows, start=2):  # 2 = first row excluding header
             text = row.get("text", "") or ""
             translation = row.get("translation", "") or ""
             if not text or not translation:
@@ -98,12 +99,12 @@ def collect_conflicts(sheets: list) -> list[dict]:
             })
             total_eligible += 1
 
-    # 번역이 서로 다른 그룹만 충돌로 추출
+    # extract only groups with differing translations as conflicts
     conflicts: list[dict] = []
     for key, entries in groups.items():
         if len(entries) < 2:
             continue
-        # 공백 제거한 translation 도 비교 (화이트스페이스 차이는 충돌 아님)
+        # also compare translations with whitespace stripped (whitespace differences are not conflicts)
         distinct_translations = set()
         for e in entries:
             distinct_translations.add(_normalize_text(e["translation"]))
@@ -159,7 +160,7 @@ def main() -> int:
             tee.print("충돌 없음.")
             return 0
 
-        # 충돌 그룹을 엔트리 수 내림차순으로 정렬
+        # sort conflict groups by entry count, descending
         conflicts.sort(key=lambda c: len(c["entries"]), reverse=True)
 
         tee.print("=" * 80)
@@ -172,7 +173,7 @@ def main() -> int:
                 f"#{idx}  원문(공백제거): {_preview(c['key'], 50)}  "
                 f"— {len(c['entries'])}개 엔트리, {c['distinct_count']}종 번역"
             )
-            # translation 별 그룹 표시
+            # display group per translation
             by_trans: dict[str, list[dict]] = defaultdict(list)
             for e in c["entries"]:
                 by_trans[e["translation"]].append(e)

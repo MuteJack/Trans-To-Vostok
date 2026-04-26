@@ -1,37 +1,37 @@
 """
-Godot .tres 파일을 파싱해 지정한 필드 값을 추출한다.
+Parse Godot .tres files and extract specified field values.
 
-[resource] 블록 내부의 `field = "value"` 패턴을 찾아 값을 TSV로 출력한다.
-여러 줄 문자열(개행 포함)과 이스케이프된 따옴표(\")를 정확히 처리한다.
+Finds `field = "value"` patterns inside [resource] blocks and outputs the values to TSV.
+Correctly handles multi-line strings (including newlines) and escaped quotes (\").
 
-원본 .tres 파일마다 하나의 .tres.tsv 파일이 생성되며, 출력 경로는
-원본의 pck_recovered 기준 상대 경로를 parsed_text 아래에 미러링한다.
+For each source .tres file, one .tres.tsv file is generated. The output path mirrors
+the source's pck_recovered-relative path under parsed_text.
 
     pck_recovered/Events/List/D1_Generalist.tres
         ↓
     parsed_text/Events/List/D1_Generalist.tres.tsv
 
-출력 컬럼: filetype, location, field, text
+Output columns: filetype, location, field, text
 
-실행 모드:
-  1) 배치 (권장):  python parse_tres_text.py  또는 --config <path>
-     tres_list.json 을 읽어 여러 그룹을 한 번에 처리.
-     기본 경로: 이 스크립트 옆의 tres_list.json.
-  2) 단일 job:     python parse_tres_text.py --input <dir> --fields <list>
+Run modes:
+  1) batch (recommended): python parse_tres_text.py  or --config <path>
+     Reads tres_list.json and processes multiple groups at once.
+     Default path: tres_list.json next to this script.
+  2) single job:           python parse_tres_text.py --input <dir> --fields <list>
 
-사용법:
-    python parse_tres_text.py                       # 기본 tres_list.json 사용
-    python parse_tres_text.py --config other.json   # 다른 config 사용
+Usage:
+    python parse_tres_text.py                       # use default tres_list.json
+    python parse_tres_text.py --config other.json   # use a different config
     python parse_tres_text.py --input Events/List --fields name,description
 
-tres_list.json 스키마:
+tres_list.json schema:
     {
       "groups": [
         {
-          "name": "Events",                     # 선택사항 (진행 표시용)
-          "dir": "Events",                      # pck_recovered 기준 상대 경로
-          "fields": ["name", "description"],    # 추출할 필드
-          "targets": ["List"]                   # dir 기준 상대 경로 (파일/디렉토리)
+          "name": "Events",                     # optional (for progress display)
+          "dir": "Events",                      # path relative to pck_recovered
+          "fields": ["name", "description"],    # fields to extract
+          "targets": ["List"]                   # paths relative to dir (file/directory)
         }
       ]
     }
@@ -43,7 +43,7 @@ import re
 import sys
 from pathlib import Path
 
-# Windows 콘솔 한글 출력 지원
+# Windows console Korean output support
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -52,17 +52,17 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-# 출력 TSV 고정 컬럼 (tscn 추출 도구와 통일)
-# .tres 엔트리는 노드 계층이 없으므로 location/parent/type/unique_id 를 빈 값으로 둔다.
-# prop 컬럼에 tres의 필드 이름(예: "name", "description")을 넣는다.
+# Fixed output TSV columns (unified with the tscn extraction tool)
+# .tres entries have no node hierarchy, so location/parent/type/unique_id are left blank.
+# The prop column holds the tres field name (e.g. "name", "description").
 OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "property", "unique_id", "text"]
 
-# 기본 경로
+# default path
 DEFAULT_CONFIG_NAME = "tres_list.json"
 
 
 # ==========================================
-# .tres 파서
+# .tres parser
 # ==========================================
 
 _SUB_RESOURCE_RE = re.compile(r"^\[sub_resource\b", re.MULTILINE)
@@ -70,8 +70,8 @@ _SUB_RESOURCE_RE = re.compile(r"^\[sub_resource\b", re.MULTILINE)
 
 def _find_resource_block(text: str) -> tuple[int, int]:
     """
-    [resource] 블록의 본문 시작~끝 오프셋을 반환.
-    [resource] 라인 다음부터 파일 끝까지가 블록 본문.
+    Return the start/end offsets of the [resource] block body.
+    The block body spans from the line after [resource] to the end of file.
     """
     m = re.search(r"^\[resource\]\s*$", text, re.MULTILINE)
     if not m:
@@ -80,15 +80,15 @@ def _find_resource_block(text: str) -> tuple[int, int]:
 
 
 def _count_sub_resources(text: str) -> int:
-    """[sub_resource ...] 블록 개수를 센다. 경고 로그용."""
+    """Count [sub_resource ...] blocks. For warning logs."""
     return len(_SUB_RESOURCE_RE.findall(text))
 
 
 def _extract_string_field(body: str, field_name: str) -> str | None:
     """
-    [resource] 블록 안에서 `field_name = "값"` 을 찾아 값을 반환.
-    이스케이프된 따옴표(\")와 여러 줄 문자열을 처리한다.
-    찾지 못하면 None 반환.
+    Find `field_name = "value"` inside the [resource] block and return the value.
+    Handles escaped quotes (\") and multi-line strings.
+    Returns None if not found.
     """
     pattern = re.compile(
         rf'^{re.escape(field_name)}\s*=\s*"', re.MULTILINE
@@ -97,12 +97,12 @@ def _extract_string_field(body: str, field_name: str) -> str | None:
     if not m:
         return None
 
-    i = m.end()  # 여는 따옴표 다음 위치
+    i = m.end()  # position after opening quote
     chars = []
     while i < len(body):
         c = body[i]
         if c == "\\" and i + 1 < len(body):
-            # 이스케이프 시퀀스 처리
+            # handle escape sequences
             nxt = body[i + 1]
             if nxt == "n":
                 chars.append("\n")
@@ -119,20 +119,20 @@ def _extract_string_field(body: str, field_name: str) -> str | None:
             i += 2
             continue
         if c == '"':
-            # 닫는 따옴표 발견
+            # closing quote found
             return "".join(chars)
         chars.append(c)
         i += 1
-    return None  # 닫는 따옴표를 못 찾음
+    return None  # closing quote not found
 
 
 def parse_tres(path: Path, fields: list[str]) -> dict | None:
     """
-    한 개의 .tres 파일에서 지정한 필드 값들을 dict로 반환.
-    파일이 리소스가 아니거나 필드가 하나도 추출되지 않으면 None.
+    Return the specified field values from one .tres file as a dict.
+    Returns None if the file is not a resource or if no fields are extracted.
 
-    주의: 현재는 [resource] 블록만 파싱한다. [sub_resource] 블록 안의 문자열은
-    추출되지 않으며, 발견 시 경고 로그만 출력한다.
+    Note: Currently only the [resource] block is parsed. Strings inside
+    [sub_resource] blocks are not extracted; only a warning is logged when found.
     """
     try:
         text = path.read_text(encoding="utf-8")
@@ -163,11 +163,11 @@ def parse_tres(path: Path, fields: list[str]) -> dict | None:
 
 
 # ==========================================
-# 추출 로직
+# extraction logic
 # ==========================================
 
 def _collect_tres_files(target_path: Path) -> list[Path]:
-    """target이 파일이면 [파일], 디렉토리면 재귀 *.tres 리스트."""
+    """If target is a file, return [file]; if a directory, return recursive *.tres list."""
     if target_path.is_file():
         if target_path.suffix == ".tres":
             return [target_path]
@@ -183,7 +183,7 @@ def collect_target_files(
     targets: list[str],
 ) -> list[Path]:
     """
-    한 그룹의 targets를 풀어 처리 대상 .tres 파일 경로 리스트 반환.
+    Resolve a group's targets and return the list of .tres file paths to process.
     """
     base = (pck_root / dir_rel).resolve() if dir_rel else pck_root
     out: list[Path] = []
@@ -213,19 +213,19 @@ def tres_to_rows(
     pck_root: Path,
 ) -> list[dict]:
     """
-    한 개의 .tres 파일에서 행을 추출. 파일에 지정 필드가 하나도 없으면 빈 리스트.
+    Extract rows from one .tres file. Returns an empty list if none of the specified fields are found.
 
-    각 행은 tscn 추출 도구와 동일한 8컬럼 구조로 반환된다.
-    .tres 는 Godot 노드 계층이 없으므로:
-      - filename  = 확장자 없는 상대 경로
+    Each row uses the same 8-column structure as the tscn extraction tool.
+    Since .tres has no Godot node hierarchy:
+      - filename  = relative path without extension
       - filetype  = "tres"
-      - location  = "" (비움, 전역 text 매칭 기본)
+      - location  = "" (blank; defaults to global text matching)
       - parent    = ""
       - name      = ""
       - type      = ""
       - unique_id = ""
-      - property  = tres 필드명 (예: "description")
-      - text      = 필드 값
+      - property  = tres field name (e.g. "description")
+      - text      = field value
     """
     parsed = parse_tres(tres_path, fields)
     if parsed is None:
@@ -256,7 +256,7 @@ def tres_to_rows(
 
 
 def write_tsv(out_path: Path, rows: list[dict]) -> None:
-    """행 리스트를 TSV로 원자적 쓰기."""
+    """Atomically write a list of rows as TSV."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
     tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
     try:
@@ -276,7 +276,7 @@ def write_tsv(out_path: Path, rows: list[dict]) -> None:
 
 
 # ==========================================
-# 배치 모드 (tres_list.json)
+# batch mode (tres_list.json)
 # ==========================================
 
 def run_batch(
@@ -284,7 +284,7 @@ def run_batch(
     pck_root: Path,
     output_dir: Path,
 ) -> int:
-    """tres_list.json 의 각 그룹을 실행. 반환: 에러 코드."""
+    """Run each group from tres_list.json. Returns: error code."""
     try:
         config = json.loads(config_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
@@ -299,7 +299,7 @@ def run_batch(
         print(f"[ERROR] config에 'groups' 배열이 없습니다: {config_path}", file=sys.stderr)
         return 1
 
-    # 기본 무결성 체크 (name은 선택사항)
+    # basic integrity check (name is optional)
     for i, g in enumerate(groups):
         if not isinstance(g, dict):
             print(f"[ERROR] groups[{i}] 가 object가 아닙니다", file=sys.stderr)
@@ -353,7 +353,7 @@ def run_batch(
             group_rows += len(rows)
             group_files += 1
 
-        # join 필드가 지정되면 그룹 전체를 합본 TSV 로 추가 출력
+        # if a join field is specified, also output the whole group as a combined TSV
         join_name = g.get("join")
         if join_name and joined_rows:
             join_path = output_dir / dir_rel / f"{join_name}.tres.joined.tsv"
@@ -372,7 +372,7 @@ def run_batch(
 
 
 # ==========================================
-# 단일 job 모드 (--input / --fields)
+# single job mode (--input / --fields)
 # ==========================================
 
 def run_single_job(
@@ -382,8 +382,8 @@ def run_single_job(
     output_dir: Path,
 ) -> int:
     """
-    단일 디렉토리에서 필드 추출.
-    각 .tres 파일마다 미러링된 경로로 .tres.tsv 생성.
+    Extract fields from a single directory.
+    Generates a .tres.tsv at the mirrored path for each .tres file.
     """
     if not input_dir.exists():
         print(f"[ERROR] 입력 경로가 없습니다: {input_dir}", file=sys.stderr)
@@ -422,7 +422,7 @@ def run_single_job(
 
 
 # ==========================================
-# 엔트리 포인트
+# entry point
 # ==========================================
 
 def main() -> int:
@@ -436,18 +436,18 @@ def main() -> int:
     parser.add_argument("--fields", help="단일 job 모드: 추출할 필드 (콤마 구분)")
     args = parser.parse_args()
 
-    # 경로 기준
+    # path basis
     script_dir = Path(__file__).resolve().parent
     mod_root = script_dir.parent              # mods/Trans To Vostok
     pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
     parsed_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
-    # --input 과 --config 동시 지정 금지
+    # cannot specify both --input and --config
     if args.input and args.config:
         print("[ERROR] --input 과 --config 는 함께 사용할 수 없습니다.", file=sys.stderr)
         return 1
 
-    # 단일 job 모드
+    # single job mode
     if args.input:
         if not args.fields:
             print("[ERROR] --input 사용 시 --fields 도 지정해야 합니다.", file=sys.stderr)
@@ -456,7 +456,7 @@ def main() -> int:
         input_dir = Path(args.input).resolve()
         return run_single_job(input_dir, fields, pck_root, parsed_dir)
 
-    # 배치 모드
+    # batch mode
     if args.config:
         config_path = Path(args.config).resolve()
     else:

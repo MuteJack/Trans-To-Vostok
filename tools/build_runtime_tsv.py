@@ -1,33 +1,33 @@
 """
-Translation.xlsx → 런타임 TSV 빌드 스크립트.
+Translation.xlsx → runtime TSV build script.
 
-동작:
-1. <locale>/Translation.xlsx 를 validate_xlsx() 로 검증 (에러면 빌드 실패)
-2. MetaData 를 제외한 모든 시트의 행 수집
-3. ignore=1 인 행 제외
-4. translation 비어있는 행 제외
-5. method + location 기준으로 5 개 런타임 TSV 로 분류:
-       translation_static.tsv           — method=static                      (5필드 + text + translation)
-       translation_literal_scoped.tsv   — method=literal/"" + location        (5필드 + text + translation)
-       translation_pattern_scoped.tsv   — method=pattern + location           (5필드 + text + translation)
+Behavior:
+1. Validate <locale>/Translation.xlsx via validate_xlsx() (build fails on error)
+2. Collect rows from all sheets except MetaData
+3. Exclude rows with ignore=1
+4. Exclude rows with empty translation
+5. Classify by method + location into 5 runtime TSVs:
+       translation_static.tsv           — method=static                      (5 fields + text + translation)
+       translation_literal_scoped.tsv   — method=literal/"" + location        (5 fields + text + translation)
+       translation_pattern_scoped.tsv   — method=pattern + location           (5 fields + text + translation)
        translation_literal.tsv          — method=literal/"" + no location     (text + translation)
        translation_pattern.tsv          — method=pattern + no location        (text + translation)
-6. 원자적 쓰기 (.tmp → rename)
+6. Atomic write (.tmp → rename)
 
-런타임 매칭 우선순위 (translator.gd 가 이 순서로 시도):
-    1. static exact          (exact 5-tuple, TSV 검증됨)
-    2. scoped literal exact  (exact 5-tuple, 동적 텍스트)
-    3. scoped pattern exact  (컨텍스트 완전 일치 + 정규식)
+Runtime matching priority (translator.gd attempts in this order):
+    1. static exact          (exact 5-tuple, TSV-validated)
+    2. scoped literal exact  (exact 5-tuple, dynamic text)
+    3. scoped pattern exact  (full context match + regex)
     4. literal global        (text-only)
-    5. pattern global        (정규식 전역)
-    6. static score          (부분 컨텍스트 점수 매칭, 게임 업데이트 fallback)
-    7. scoped literal score  (동적 텍스트 부분 컨텍스트 매칭)
-    8. scoped pattern score  (정규식 + 부분 컨텍스트)
+    5. pattern global        (global regex)
+    6. static score          (partial context score matching, game-update fallback)
+    7. scoped literal score  (dynamic text partial context match)
+    8. scoped pattern score  (regex + partial context)
 
-사용법:
+Usage:
     python build_runtime_tsv.py <locale>
 
-예시:
+Example:
     python build_runtime_tsv.py Korean
 """
 import csv
@@ -56,9 +56,9 @@ from validate_translation import (
 )
 
 
-# 컨텍스트 포함 TSV (static / scoped literal / scoped pattern)
+# TSV with context (static / scoped literal / scoped pattern)
 COLUMNS_SCOPED = ["location", "parent", "name", "type", "text", "translation"]
-# 전역 TSV (literal / pattern)
+# Global TSV (literal / pattern)
 COLUMNS_GLOBAL = ["text", "translation"]
 
 BOOL_TRUE = {"1", "true"}
@@ -66,14 +66,14 @@ BOOL_TRUE = {"1", "true"}
 
 def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
     """
-    행을 5개 런타임 버킷으로 분류.
+    Classify rows into 5 runtime buckets.
 
-    제외 조건:
-        - method=ignore               (운영적 제외)
-        - untranslatable=1             (번역 불가 텍스트)
-        - translation 비어있음          (미번역)
+    Exclusion conditions:
+        - method=ignore               (operational exclusion)
+        - untranslatable=1             (untranslatable text)
+        - empty translation            (untranslated)
 
-    반환:
+    Returns:
         buckets: { bucket_name: [row, ...], ... }
         stats:   { bucket_name: count, ..., "excluded_ignore": N, ... }
     """
@@ -128,7 +128,7 @@ def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
                 stats["pattern_global"] += 1
         elif effective == "substr":
             buckets["substr"].append(row)
-            # substr → literal_global 에도 이중 출력 (정확 일치 시 tier 4 에서 빠르게 히트)
+            # substr → also write to literal_global (fast hit at tier 4 on exact match)
             text = row.get("text", "")
             translation = row.get("translation", "")
             conflict = False
@@ -149,7 +149,7 @@ def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
 
 
 def write_tsv(out_path: Path, columns: list[str], rows: list[dict]) -> None:
-    """TSV 를 원자적으로 쓴다."""
+    """Write TSV atomically."""
     out_path.parent.mkdir(parents=True, exist_ok=True)
     tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
     try:
@@ -197,7 +197,7 @@ def main() -> int:
         print(f"[ERROR] xlsx 파일이 없습니다: {xlsx_path}")
         return 1
 
-    # 1. 검증
+    # 1. validation
     if ignore_validation:
         print(f"[1/5] 검증 스킵 (--ignore)")
         print()
@@ -224,7 +224,7 @@ def main() -> int:
             print(f"  경고 {result.warning_count}개 (진행 계속)")
         print()
 
-    # 2. xlsx 로드 (모든 번역 시트 병합)
+    # 2. load xlsx (merge all translation sheets)
     print("[2/4] xlsx 로드 중...")
     sheets = load_all_translation_sheets(xlsx_path)
     all_rows: list[dict] = []
@@ -233,7 +233,7 @@ def main() -> int:
     print(f"  → 시트 {len(sheets)}개, 총 {len(all_rows)}행 로드")
     print()
 
-    # 3. 분류
+    # 3. classify
     print("[3/4] 행 분류 중...")
     buckets, stats = classify_rows(all_rows)
     print(f"  static                 {stats['static']:4d}행")
@@ -247,7 +247,7 @@ def main() -> int:
     print(f"  제외 (미번역)          {stats['excluded_untranslated']:4d}행")
     print()
 
-    # 4. metadata.tsv 생성
+    # 4. generate metadata.tsv
     print("[4/5] metadata.tsv 생성 중...")
     meta = load_metadata(xlsx_path)
     meta_path = locale_dir / "metadata.tsv"
@@ -260,7 +260,7 @@ def main() -> int:
     print(f"  → {meta_path.relative_to(mod_root)} ({len(meta)}개 필드)")
     print()
 
-    # 5. TSV 작성
+    # 5. write TSV
     print("[5/5] TSV 작성 중...")
 
     outputs = [
@@ -276,7 +276,7 @@ def main() -> int:
         write_tsv(out_path, columns, rows)
         print(f"  → {out_path.relative_to(mod_root)} ({len(rows)}행)")
 
-    # 구 파일 정리: translation.tsv, translation_expression.tsv 는 더 이상 사용 안 함
+    # cleanup legacy files: translation.tsv, translation_expression.tsv are no longer used
     for legacy_name in ("translation.tsv", "translation_expression.tsv"):
         legacy_path = locale_dir / legacy_name
         if legacy_path.exists():
