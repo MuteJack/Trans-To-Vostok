@@ -1,0 +1,1461 @@
+# === SHORT ENTRIES (direct mapping candidates) ===
+en	ko	freq	ko_consistency	variants	sheets
+Off	끄기	12	12/12		Main
+Medical Condition	질병	11	11/11		Interface
+On	켜기	10	10/10		Main
+Vital	바이탈	7	7/7		Interface
+Equipment Stat	장비 통계	6	6/6		Interface
+Progression Stat	진행도	5	5/5		Interface
+TBA	발표 예정	5	5/5		Main
+← Return	← 돌아가기	5	5/5		Main
+Proximity Requirement	요구 시설 (근접)	4	4/4		Interface
+Select	선택	4	4/4		Main
+Tasks	의뢰 수	4	2/4	의뢰 (2)	Interface
+Trader	상인	4	3/4	상인 통계 (1)	Interface, Events
+Area 05	05 구역	3	3/3		Main, Interface
+Body Temp	체온	3	3/3		Interface
+Cat	고양이	3	3/3		Interface, Items
+Day	생존일	3	2/3	일 (1)	Interface
+Dynamic	동적	3	3/3		Main, Events
+Energy	기력	3	3/3		Interface
+Grenade	수류탄1	3	1/3	수류탄2 (1); 수류탄 (1)	Interface, Items
+Health	체력	3	3/3		Interface
+Hold	유지	3	3/3		Main
+Hydration	수분	3	3/3		Interface
+Inventory Stat	인벤토리 통계	3	3/3		Interface
+Map	지도	3	3/3		Main, Interface, Items
+Mental	정신력	3	3/3		Interface
+Shelter	은신처	3	2/3	피신처 (1)	Main, Interface
+Show	보기	3	3/3		Interface, Events, Scripts (etc)
+Toggle	토글	3	3/3		Main
+Village	마을	3	3/3		Main, Interface, Events
+[RMB] = Rotation Mode	[RMB] = 회전 모드	2	2/2		Interface
+[SCROLL] = Adjust / Rotate	[SCROLL] = 조정 / 회전	2	2/2		Interface
+Add to Notes	노트에 추가	2	2/2		Interface, Scripts (etc)
+Aim	조준	2	2/2		Main
+Backpack	배낭	2	1/2	가방 (1)	Interface, Items
+Body Temp:	체온:	2	2/2		Interface, ToolTips
+Caliber:	구경:	2	2/2		Interface, ToolTips
+Capacity:	용량:	2	2/2		Interface, ToolTips
+Carry Capacity	소지 한도	2	2/2		Interface
+Casette Player	카세트 플레이어	2	2/2		Interface, Items
+Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다	2	2/2		Interface
+CBRN	화생방 수치	2	1/2	화생방 (1)	Interface
+Changelog	변경사항	2	2/2		Main
+Character died	캐릭터가 사망했습니다	2	2/2		Main
+Coffeemaster	커피머신	2	2/2		Interface, Items
+Compatibility	호환 모드	2	1/2	호환성 (1)	Main
+Completed	완료됨	2	2/2		Main, Scripts (etc)
+Condition:	상태:	2	2/2		Interface, ToolTips
+Consumable	소모품	2	2/2		Interface, Items
+Container Stat	보관함 통계	2	2/2		Interface
+Craft	제작	2	2/2		Interface, Scripts (etc)
+Cures:	치료:	2	2/2		Interface, ToolTips
+Damage:	데미지:	2	2/2		Interface, ToolTips
+Deal	거래	2	2/2		Interface
+Decor Mode	장식 모드	2	2/2		Main, Interface
+Delivered	배달됨	2	2/2		Interface
+Easy	쉬움	2	2/2		Interface, Tasks
+Energy:	기력:	2	2/2		Interface, ToolTips
+Equip	장비	2	2/2		Interface, Scripts (etc)
+Generalist returns to Village	잡화상이 마을에 복귀	2	2/2		Events
+Health:	체력:	2	2/2		Interface, ToolTips
+Helmet	헬멧	2	2/2		Interface, Items
+High	높음	2	2/2		Main
+Hydration:	수분:	2	2/2		Interface, ToolTips
+Item	아이템	2	2/2		Interface, ToolTips
+Knife	칼	2	2/2		Interface, Items
+Legendary	전설	2	2/2		Interface, Items
+Level 1	레벨 1	2	2/2		Interface
+Level 2	레벨 2	2	2/2		Interface
+Level 3	레벨 3	2	2/2		Interface
+Level 4	레벨 4	2	2/2		Interface
+Level 5	레벨 5	2	2/2		Interface
+Load game	불러오기	2	2/2		Main
+Loading...	로딩중...	2	2/2		Main
+Low	낮음	2	2/2		Main
+Main Menu	메인 메뉴	2	2/2		Main
+Map not equipped	지도가 장착되지 않았습니다	2	2/2		Interface
+Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)	2	2/2		Interface
+Matches	성냥	2	2/2		Interface, Items
+Medical	의료	2	2/2		Main, Items
+Medium	보통	2	2/2		Main
+Misc	기타	2	2/2		Items
+NVG	야간투시경	2	1/2	야투경 (1)	Main, Interface
+Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]	2	2/2		Interface
+Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]	2	2/2		Interface
+Patient Report	환자 보고서	2	2/2		Tasks, Items
+Place	배치	2	2/2		Main, Interface
+Primary	주무기	2	2/2		Interface
+Quests	퀘스트	2	1/2	퀘스트 수 (1)	Interface
+Quit	나가기	2	2/2		Main
+Quit Game	게임 종료	2	2/2		Main
+Recommended for new players	초보자에게 권장됨	2	2/2		Main
+Remove	제거	2	2/2		Interface, Scripts (etc)
+Rig	조끼	2	2/2		Interface, Items
+Roadmap	로드맵	2	2/2		Main
+Settings	설정	2	2/2		Main
+Shelters	은신처	2	2/2		Interface
+Sleep	수면	2	2/2		Interface
+Special Event	특별 이벤트	2	2/2		Interface, Events
+Sprint	달리기	2	2/2		Main
+Start Delivery	배달 시작	2	2/2		Interface
+Start Input	투입 시작	2	2/2		Interface
+Stop Delivery	배달 종료	2	2/2		Interface
+Supply	물자	2	2/2		Interface
+Task Notes empty	의뢰 노트가 비어있습니다	2	2/2		Interface
+Trader Event	상인 이벤트	2	2/2		Events
+Tutorial	튜토리얼	2	2/2		Main
+Ultra	울트라	2	2/2		Main
+Unequip	해제	2	2/2		Interface, Scripts (etc)
+Unload	탄 꺼내기	2	2/2		Interface, Scripts (etc)
+Use	사용	2	2/2		Interface, Items
+Value:	가치:	2	2/2		Interface, ToolTips
+Vostok	보스토크	2	2/2		Main
+Warning!	경고!	2	2/2		Main
+Weight:	무게:	2	2/2		Interface, ToolTips
+100kg	100kg	1	1/1		ToolTips
+[F1] = Close Decor Mode	[F1] = 장식 모드 종료	1	1/1		Interface
+[G] = Grab / Drop Item	[G] = 아이템 잡기 / 내려놓기	1	1/1		Interface
+[G] = Place Furniture	[G] = 가구 배치	1	1/1		Interface
+[LMB] = Surface Magnet	[LMB] = 표면에 붙이기 (스냅)	1	1/1		Interface
+[MMB] = Add to Catalog	[MMB] = 카탈로그에 추가	1	1/1		Interface
+[MMB] = Change Orientation	[MMB] = 회전축 변경	1	1/1		Interface
+[Open]	[열기]	1	1/1		Scripts (etc)
+[TAB] = Furniture Catalog	[TAB] = 가구 카탈로그	1	1/1		Interface
+A. Clock	알람시계	1	1/1		Items
+A. Septic	소독약	1	1/1		Items
+About	정보	1	1/1		Main
+Accept	수락	1	1/1		Interface
+Activated	활성화됨	1	1/1		Scripts (etc)
+Active	활성화	1	1/1		Scripts (etc)
+Added	추가됨	1	1/1		Scripts (etc)
+Aim Sensitivity	조준 감도	1	1/1		Main
+Airdrop	보급품	1	1/1		Assets(Furniture)
+Alarm Clock	알람 시계	1	1/1		Items
+All maps & zones	모든 지역 및 구역	1	1/1		Scripts (etc)
+All save files deleted	모든 세이브 파일이 삭제되었습니다	1	1/1		Main
+Ambient Occlusion	앰비언트 오클루전	1	1/1		Main
+Ambient Volume	환경음 볼륨	1	1/1		Main
+Ammo	탄약	1	1/1		Items
+Ammo Check	잔탄 확인	1	1/1		Main
+Ammo Delivery	탄약 배달	1	1/1		Tasks
+Anti-aliasing	안티 앨리어싱	1	1/1		Main
+Antibio.	항생제	1	1/1		Items
+Antibiotics	항생제	1	1/1		Items
+Antiseptic	소독약	1	1/1		Items
+Apartments	아파트 단지	1	1/1		Main
+Armor	방어구	1	1/1		Items
+Armor Plate	방탄판	1	1/1		Items
+Armor Plate (II)	방탄판 (II)	1	1/1		Items
+Armor Plate (III)	방탄판 (III)	1	1/1		Items
+Armor Plate (III+)	방탄판 (III+)	1	1/1		Items
+Armor Plate (IIIA)	방탄판 (IIIA)	1	1/1		Items
+Armor Plate (IV)	방탄판 (IV)	1	1/1		Items
+Armor Plate {class}	방탄판 {class}	1	1/1		Items
+Armor:	방어등급:	1	1/1		ToolTips
+Attachment	부착물	1	1/1		Items
+Attack Helicopters	공격 헬리콥터	1	1/1		Events
+Attic	다락방	1	1/1		Main
+Attic K.	다락방 열쇠	1	1/1		Items
+Attic Key	다락방 열쇠	1	1/1		Items
+Audio Settings	오디오 설정	1	1/1		Main
+B. Cables	배터리 선	1	1/1		Items
+B. Game	보드게임	1	1/1		Items
+Backpains	허리 통증	1	1/1		Tasks
+Backward	뒤로	1	1/1		Main
+Bad Habits	나쁜 습관	1	1/1		Tasks
+Balm	연고	1	1/1		Items
+Bandage	붕대	1	1/1		Items
+Bandage (Improvised)	붕대 (급조)	1	1/1		Items
+Bandit	밴디트	1	1/1		Assets(Furniture)
+Bandit Corpse	밴디트 시체	1	1/1		Assets(Furniture)
+Barrel	총열	1	1/1		Items
+Batteries	배터리	1	1/1		Items
+Battery	배터리	1	1/1		Items
+Battery Cables	배터리 케이블	1	1/1		Items
+Bed (Civilian)	침대 (민간용)	1	1/1		Assets(Furniture)
+Bed (Nomad)	침대 (방랑자)	1	1/1		Assets(Furniture)
+Bed C.	침대 민간.	1	1/1		Assets(Furniture)
+Bed N.	침대 방랑.	1	1/1		Assets(Furniture)
+Beer	맥주	1	1/1		Items
+Belt	벨트	1	1/1		Interface
+Belt Pouch	벨트 파우치	1	1/1		Items
+Big Blades	커다란 칼날	1	1/1		Tasks
+Blanket	담요	1	1/1		Items
+Bleeding	출혈	1	1/1		Interface
+Bloodsuckers	흡혈귀	1	1/1		Tasks
+Board Game	보드게임	1	1/1		Items
+Book (Children)	책 (아동용)	1	1/1		Items
+Book (Cooking)	책 (요리)	1	1/1		Items
+Book (Fishing)	책 (낚시)	1	1/1		Items
+Book (Religion)	책 (종교)	1	1/1		Items
+Bookworm	책벌레	1	1/1		Tasks
+Border	접경지대	1	1/1		Main
+Border Zone	접경지대	1	1/1		Main
+Boss Killed	보스 처치됨	1	1/1		Messages
+Boxes	박스	1	1/1		Assets(Furniture)
+Bream	도미	1	1/1		Items
+BTR Patrols	BTR 순찰	1	1/1		Events
+Bucket	양동이	1	1/1		Items
+Build 1 | Road	빌드 1 | 도로	1	1/1		Main
+Build 2 | Nomads	빌드 2 | 방랑자	1	1/1		Main
+Build 3 | Signal	빌드 3 | 신호	1	1/1		Main
+Build 4 | Gunslinger	빌드 4 | 총잡이	1	1/1		Main
+Build 5 | North	빌드 5 | 북부	1	1/1		Main
+Build 6 | Abyss	빌드 6 | 어비스	1	1/1		Main
+Build 7 | Enigma	빌드 7 | 에니그마	1	1/1		Main
+Build 8 | Silent Night	빌드 8 | 고요한 밤	1	1/1		Main
+Bunker	벙커	1	1/1		Main
+Bunker K.	벙커 열쇠	1	1/1		Items
+Bunker Key	벙커 열쇠	1	1/1		Items
+Burn	화상	1	1/1		Interface
+C. Board	찬장	1	1/1		Assets(Furniture)
+C. Boots	전투화	1	1/1		Items
+C. Brewed	커피 (끓임)	1	1/1		Items
+C. Filter	커피필터	1	1/1		Items
+C. Master	커피머신	1	1/1		Items
+C. Med.	감기약	1	1/1		Items
+C. Player	플레이어	1	1/1		Items
+C. Station	조리대	1	1/1		Items
+C1911 Magazine	C1911 탄창	1	1/1		Items
+Cabin	오두막	1	1/1		Main
+Cabinet	수납장	1	1/1		Assets(Furniture)
+Cabinet (Medical)	수납장 (의료용)	1	1/1		Assets(Furniture)
+Cabinet (Office)	수납장 (사무용)	1	1/1		Assets(Furniture)
+Cabinet (Wood)	수납장 (나무)	1	1/1		Assets(Furniture)
+Cabinet M.	수납장 의료.	1	1/1		Assets(Furniture)
+Cabinet W.	수납장 나무.	1	1/1		Assets(Furniture)
+Cabinet. 0	수납장 사무.	1	1/1		Assets(Furniture)
+Camera Settings	카메라 설정	1	1/1		Main
+Can	캔	1	1/1		Items
+Canned Meat	고기 통조림	1	1/1		Items
+Canned Meatballs	미트볼 통조림	1	1/1		Items
+Canned Pea Soup	완두콩 스프 통조림	1	1/1		Items
+Canned Peaches	복숭아 통조림	1	1/1		Items
+Canned Pear	배 통조림	1	1/1		Items
+Canned Peas	완두콩 통조림	1	1/1		Items
+Canned Pineapple	파인애플 통조림	1	1/1		Items
+Canned Tomatoes	토마토 통조림	1	1/1		Items
+Canned Tuna	참치 통조림	1	1/1		Items
+Canted Aim	기울여 조준	1	1/1		Main
+Carpet (Persian)	카펫 (페르시안)	1	1/1		Assets(Furniture)
+Carpet (Rag)	카펫 (누더기)	1	1/1		Assets(Furniture)
+Carpet P.	카펫 페르.	1	1/1		Assets(Furniture)
+Carpet R.	카펫 누더기.	1	1/1		Assets(Furniture)
+Casette	카세트	1	1/1		Items
+Casette (Electrofolk)	Casette (일렉트로포크)	1	1/1		Items
+Casette (Nomad)	카세트 (방랑자)	1	1/1		Items
+Casette (OST)	카세트 (OST)	1	1/1		Items
+Casette (Radio Hits)	카세트 (히트곡)	1	1/1		Items
+Casette (Symphony)	카세트 (교향곡)	1	1/1		Items
+Casette Name	카세트 이름	1	1/1		Interface
+Cat Died	고양이가 사망했습니다	1	1/1		Messages
+Cat Fed ({name})	고양이에게 먹이를 줬습니다 ({name})	1	1/1		Messages
+Cat Food	고양이 사료	1	1/1		Items
+Cat Rescued	고양이 구조됨	1	1/1		Messages
+Cat Vital Activated	고양이 상태 활성화됨	1	1/1		Messages
+Cellar K.	지하실 열쇠	1	1/1		Items
+Cellar Key	지하실 열쇠	1	1/1		Items
+Chair (Office)	의자 (사무용)	1	1/1		Assets(Furniture)
+Chair (School)	의자 (학교용)	1	1/1		Assets(Furniture)
+Chair O.	의자 사무.	1	1/1		Assets(Furniture)
+Chair S.	의자 학교.	1	1/1		Assets(Furniture)
+Character	캐릭터	1	1/1		Interface
+Chew	씹기	1	1/1		Items
+Children	아동	1	1/1		Items
+Cigarettes	담배	1	1/1		Items
+Cigars	시가	1	1/1		Items
+Cigs	담배	1	1/1		Items
+Civil Defence Shelters	민방위 대피소	1	1/1		Interface
+Class. K.	교실 열쇠	1	1/1		Items
+Classroom	교실	1	1/1		Main
+Classroom Key	교실 열쇠	1	1/1		Items
+Clear Chamber	약실 비우기	1	1/1		Scripts (etc)
+Clothing	의류	1	1/1		Items
+Coffee	커피	1	1/1		Items
+Coffee (Brewed)	커피 (끓임)	1	1/1		Items
+Coffee Filter	커피 필터	1	1/1		Items
+Coffee Reserve	커피 비축	1	1/1		Tasks
+Cold Medicine	감기약	1	1/1		Items
+Color Settings	색상 설정	1	1/1		Main
+Combat Boots	전투화	1	1/1		Items
+Common	일반	1	1/1		Items
+Compatibility:	호환성:	1	1/1		ToolTips
+Compatible Items:	호환 아이템:	1	1/1		Interface
+Complete	완료	1	1/1		Interface
+Concrete	콘크리트	1	1/1		Main
+Consumables	소모품	1	1/1		Items
+Container	컨테이너	1	1/1		Interface
+Container Value	보관함 가치	1	1/1		Interface
+Container Weight	보관함 무게	1	1/1		Interface
+Continue to Main Menu	메인 메뉴로 이동	1	1/1		Main
+Contrast	대비	1	1/1		Main
+Cooking	요리	1	1/1		Items
+Cooking Station	조리대	1	1/1		Items
+Copyright & Legal	저작권 & 법률	1	1/1		Main
+Corpse	시체	1	1/1		NotChecked
+Country of origin	개발국	1	1/1		Main
+Crackers	크래커	1	1/1		Items
+Crafting	제작	1	1/1		Interface
+Crate (Military)	상자 (군용)	1	1/1		Assets(Furniture)
+Crate (Special)	상자 (특수)	1	1/1		Assets(Furniture)
+Crate M.	상자 군용.	1	1/1		Assets(Furniture)
+Crate Military	군용 상자	1	1/1		Assets(Furniture)
+Crate S.	상자 특수.	1	1/1		Assets(Furniture)
+Crate Special	특수 상자	1	1/1		Assets(Furniture)
+Crouch	웅크리기	1	1/1		Main
+Cupboard	찬장	1	1/1		Assets(Furniture)
+Curtain (Long)	커튼 (대형)	1	1/1		Assets(Furniture)
+Curtain (Mini)	커튼 (소형)	1	1/1		Assets(Furniture)
+Curtain L.	커튼 대형.	1	1/1		Assets(Furniture)
+Curtain M.	커튼 소형.	1	1/1		Assets(Furniture)
+D. Board	다트판	1	1/1		Assets(Furniture)
+D. Tape	덕테이프	1	1/1		Items
+Darkness	다크니스	1	1/1		Main
+Dartboard	다트판	1	1/1		Assets(Furniture)
+Day 1	1 일차	1	1/1		Events
+Day {str}	{str} 일차	1	1/1		Events
+Deal Meter	거래 게이지	1	1/1		Interface
+Death	죽음	1	1/1		Main
+Decor	장식	1	1/1		Main
+Dehydration	탈수	1	1/1		Interface
+Deliver:	배달:	1	1/1		Interface
+Demo transition: Skips 2-3 maps	데모 버전: 2-3개의 맵을 스킵합니다	1	1/1		Interface
+Deodora.	데오드란트	1	1/1		Items
+Deodorant	데오드란트	1	1/1		Items
+Destroy	파괴	1	1/1		Interface
+Detail Shadows	세부 그림자	1	1/1		Main
+Developer	개발사	1	1/1		Main
+Dexterity	민첩성	1	1/1		Interface
+Dice Master	주사위 마스터	1	1/1		Tasks
+Difficulty	난이도	1	1/1		Main
+Difficulty:	난이도:	1	1/1		Interface
+Display	디스플레이	1	1/1		Main
+Doctor	의사	1	1/1		Interface
+Doctor returns to School	의사가 학교에 복귀	1	1/1		Events
+Door [Close]	문 [닫기]	1	1/1		Scripts (etc)
+Door [Jammed]	문 [막힘]	1	1/1		Scripts (etc)
+Door [Occupied]	문 [사용중]	1	1/1		Scripts (etc)
+Door [Open]	문 [열기]	1	1/1		Scripts (etc)
+Draw Grenade 1	수류탄 꺼내기 1	1	1/1		Main
+Draw Grenade 2	수류탄 꺼내기 2	1	1/1		Main
+Draw Knife	칼 꺼내기	1	1/1		Main
+Draw Primary	주무기 꺼내기	1	1/1		Main
+Draw Secondary	보조무기 꺼내기	1	1/1		Main
+Drink	마시기	1	1/1		Items
+Drop	버리기	1	1/1		Interface
+Drum	드럼 탄창	1	1/1		Items
+Duct Tape	덕트 테이프	1	1/1		Items
+Duffel (Retro)	더플백 (레트로)	1	1/1		Items
+Duty Calls	국가의 부름	1	1/1		Interface
+Dynamic Event	동적 이벤트	1	1/1		Events
+E. Drink	에너지.	1	1/1		Items
+E. Powder	E.파우더	1	1/1		Items
+Eat	먹기	1	1/1		Items
+Eat (Raw)	먹기 (날것)	1	1/1		Items
+Eat Raw	먹기 (날것)	1	1/1		Items
+Electric Box	배전함	1	1/1		Assets(Furniture)
+Electronics	전자제품	1	1/1		Items
+Empty Can	빈 캔	1	1/1		Items
+Energy Drink	에너지 드링크	1	1/1		Items
+Energy Powder	에너지 파우더	1	1/1		Items
+Engine License (MIT)	게임 엔진 라이센스 (MIT License)	1	1/1		Main
+Enter the Road	도로 진입하기	1	1/1		Main
+Equipment	장비	1	1/1		Interface
+Equipment Value	장비 가치	1	1/1		Interface
+Equipment:	장비:	1	1/1		Interface
+Event location:	이벤트 위치:	1	1/1		Events
+Event possibility:	발생 가능성:	1	1/1		Events
+Events	이벤트	1	1/1		Interface
+Everyman's Right	모두의 권리	1	1/1		Tasks
+Example Input	입력 예시	1	1/1		Main
+Exit	나가기	1	1/1		Main
+Explosion	폭발	1	1/1		Interface
+Exposure	노출	1	1/1		Main
+F. Beanie	플레임 비니	1	1/1		Items
+F. Ration	전투식량	1	1/1		Items
+F. Rod	낚싯대	1	1/1		Items
+F. Soup	생선 스프	1	1/1		Items
+F. Soup (Cooked)	생선 스프 (조리됨)	1	1/1		Items
+F. Vest	낚시 조끼	1	1/1		Items
+Fall	낙하	1	1/1		Interface
+Fast Drop	빠른 버리기	1	1/1		Main
+Fast Equip	빠른 장착	1	1/1		Main
+Fast Transfer	빠른 옮기기	1	1/1		Main
+Feb. 2022	2022년 2월	1	1/1		Main
+Feed cat:	고양이에게 먹이 주기:	1	1/1		Scripts (etc)
+Feet	신발	1	1/1		Interface
+Field of View	시야각 (FOV)	1	1/1		Main
+Field Ration	전투식량	1	1/1		Items
+Fighter Jets	전투기	1	1/1		Events
+Finland	핀란드	1	1/1		Main
+Fire	발사	1	1/1		Main
+Fire [Extinguish]	불 [끄기]	1	1/1		Interface
+Fire [Ignite]	불 [켜기]	1	1/1		Interface
+Fire [Matches not equipped]	불 [성냥이 장착되지 않았습니다]	1	1/1		Interface
+Firemode	조정간 (사격 방식)	1	1/1		Main
+Fireplace	화로	1	1/1		Assets(Furniture)
+Fish	생선	1	1/1		Items
+Fish Soup (Cooked)	생선 스프 (조리됨)	1	1/1		Items
+Fishing	낚시	1	1/1		Items
+Fishing Rod	낚싯대	1	1/1		Items
+Fishing Vest	낚시 조끼	1	1/1		Items
+Flame Beanie	플레임 비니	1	1/1		Items
+Flashlight	손전등	1	1/1		Main
+Focus map	현재 위치	1	1/1		Interface
+Font Scale	폰트 크기	1	1/1		Main
+Forward	앞으로	1	1/1		Main
+Founding date	설립일	1	1/1		Main
+FPS	FPS	1	1/1		Main
+Fracture	골절	1	1/1		Interface
+Frames	프레임	1	1/1		Main
+Freezer	냉동고	1	1/1		Assets(Furniture)
+Fridge	냉장고	1	1/1		Assets(Furniture)
+Frostbite	동상	1	1/1		Interface
+Frozen	냉동됨	1	1/1		Scripts (etc)
+Fuel Tank [89%]	연료 탱크 [89%]	1	1/1		Scripts (etc)
+Fuel Tank [{percent}%]	연료 탱크 [{percent}%]	1	1/1		Scripts (etc)
+Fullscreen	전체 화면	1	1/1		Main
+Furniture	가구	1	1/1		Assets(Furniture)
+Furniture Catalog	가구 카탈로그	1	1/1		Interface
+Furnitures	가구	1	1/1		Assets(Furniture)
+Fusebox	퓨즈박스	1	1/1		Assets(Furniture)
+G7 Magazine	G7 탄창	1	1/1		Items
+Game options	게임 옵션	1	1/1		Main
+Game Paused	게임 일시중지됨	1	1/1		Main
+Gameplay mode	게임플레이 모드	1	1/1		Main
+Garbage	쓰레기	1	1/1		Assets(Furniture)
+Generalist	잡화상	1	1/1		Interface
+Generic	일반	1	1/1		Main
+Guaranteed	보장됨	1	1/1		Events
+Guitar	기타	1	1/1		Items
+Gum	껌	1	1/1		Items
+Gunsmith	총잡이	1	1/1		Interface
+Gunsmith returns to Outpost	건스미스가 전초기지로 복귀	1	1/1		Events
+Gym. K.	체육관 열쇠	1	1/1		Items
+Gymnasium Key	체육관 열쇠	1	1/1		Items
+H. Stove	화로	1	1/1		Items
+Hands	장갑	1	1/1		Interface
+Handyman	수리공	1	1/1		Tasks
+Happy Stove	화로	1	1/1		Items
+Hard	어려움	1	1/1		Tasks
+Hardware Check	하드웨어 확인	1	1/1		Main
+Harmo.	하모니카	1	1/1		Items
+Harmonica	하모니카	1	1/1		Items
+Head	모자	1	1/1		Interface
+Headbob	화면 흔들림	1	1/1		Main
+Headshot	헤드샷	1	1/1		Interface
+Heal	치료	1	1/1		Items
+Heat	열원	1	1/1		Interface
+Heat required	열원 필요	1	1/1		Interface
+Helicopter Crash Sites	헬리콥터 추락 현장	1	1/1		Events
+Hide	숨기기	1	1/1		Scripts (etc)
+Highway	고속도로	1	1/1		Main
+Hiking P.	등산 바지	1	1/1		Items
+Hiking Pants	등산 바지	1	1/1		Items
+Hitman	암살자	1	1/1		Tasks
+Home Collection	소장품	1	1/1		Tasks
+Homemade	홈메이드	1	1/1		Tasks
+Hoodie	후드티	1	1/1		Items
+Hoodie (Border Zone)	"후드티 (접경 지대
+)"	1	1/1		Items
+Hoodie (Gray)	후드티 (그레이)	1	1/1		Items
+Hoodie B.	"후드티 (접경 지대
+)"	1	1/1		Items
+Hoodie BZ.	"후드티 (접경 지대
+)"	1	1/1		Items
+Hotplate	핫플레이트	1	1/1		Items
+HUD	HUD	1	1/1		Main
+HUD Scale	HUD 크기	1	1/1		Main
+Hybrid	하이브리드	1	1/1		Items
+Hypovolemia	저혈량증	1	1/1		Tasks
+Image Settings	이미지 설정	1	1/1		Main
+Image Sharpness	이미지 선명도	1	1/1		Main
+In 10 days	10 일 후	1	1/1		Events
+In {str} Days	{str}일 후	1	1/1		Events
+Indoor	실내	1	1/1		NotChecked
+Indoors	실내	1	1/1		NotChecked
+Infections	감염	1	1/1		Tasks
+Input Key	키 입력	1	1/1		Main
+Input Settings	입력 설정	1	1/1		Main
+Input:	입력:	1	1/1		Interface
+Insanity	정신병	1	1/1		Interface
+Insert Cartridge	탄창 삽입	1	1/1		Main
+Inspect Weapon	무기 살펴보기	1	1/1		Main
+Instrument	악기	1	1/1		Items
+Insulation	보온성	1	1/1		Interface
+Insulation:	방한:	1	1/1		Interface
+Interact	상호작용	1	1/1		Main
+Interaction	상호작용	1	1/1		Interface
+Interface	인터페이스	1	1/1		Main
+Interface Scale	인터페이스 크기	1	1/1		Main
+Intermediate	보통	1	1/1		Tasks
+Interpolate	보간	1	1/1		Main
+Intro	인트로	1	1/1		Main
+Inventory	인벤토리	1	1/1		Interface
+Inventory Value	인벤토리 가치	1	1/1		Interface
+Inventory Weight	인벤토리 무게	1	1/1		Interface
+Inverted	반전	1	1/1		Main
+Inverter	인버터	1	1/1		Items
+Ironman	아이언맨	1	1/1		Main
+Item Placement	아이템 배치	1	1/1		Interface
+Item Returned: {name}	아이템 회수됨: {name}	1	1/1		Messages
+Items: {str}	아이템: {str}	1	1/1		Scripts (etc)
+Jaeger	예거	1	1/1		Items
+Jaeger 140	예거 140	1	1/1		Items
+Jeans	"청바지
+(블랙)"	1	1/1		Items
+Jeans (Black)	청바지 (블랙)	1	1/1		Items
+Jerry C.	기름통	1	1/1		Items
+Jerry Can	기름통	1	1/1		Items
+Juice	주스	1	1/1		Items
+Juice (Orange)	주스 (오렌지)	1	1/1		Items
+Juice (Pear)	주스 (배)	1	1/1		Items
+Juice (Raspberry)	주스 (라즈베리)	1	1/1		Items
+Juice O.	오렌지	1	1/1		Items
+Juice P.	배	1	1/1		Items
+Juice R.	라즈베리	1	1/1		Items
+Jump	점프	1	1/1		Main
+Junna - Haavakko	Junna - Haavakko	1	1/1		Items
+Junna - Lempi	Junna - Lempi	1	1/1		Items
+Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla	1	1/1		Items
+Junna - Mukula	Junna - Mukula	1	1/1		Items
+Junna - Rautahepo	Junna - Rautahepo	1	1/1		Items
+Junna - Ruslana	Junna - Ruslana	1	1/1		Items
+Junna - Vandringsman	Junna - Vandringsman	1	1/1		Items
+Jääkäri Backpack (Black)	야카리 배낭 (블랙)	1	1/1		Items
+Jääkäri Backpack (Brown)	야카리 배낭 (브라운)	1	1/1		Items
+Jääkäri Backpack (Green)	야카리 배낭 (그린)	1	1/1		Items
+Jääkäri Backpack (M05)	야카리 배낭 (M05)	1	1/1		Items
+Jääkäri BP.	야카리 배낭	1	1/1		Items
+KA-12 Magazine	KA-12 탄창	1	1/1		Items
+KA-M Magazine	KA-M 탄창	1	1/1		Items
+KAR-21 Barrel	KAR-21 총열	1	1/1		Items
+KAR-21 Barrel (.308)	KAR-21 총열 (.308)	1	1/1		Items
+KAR-21 Magazine (.223)	KAR-21 탄창 (.223)	1	1/1		Items
+KAR-21 Magazine (.308)	KAR-21 탄창 (.308)	1	1/1		Items
+Karov	카로프	1	1/1		Items
+Karov Magazine	Karov 탄창	1	1/1		Items
+KAS-74U Magazine	KAS-74U 탄창	1	1/1		Items
+Key	열쇠	1	1/1		Items
+Kilju	킬유	1	1/1		Items
+Kobra	코브라	1	1/1		Items
+Kompot	과일조림	1	1/1		Items
+KP-31 Drum	KP-31 드럼 탄창	1	1/1		Items
+Kukkaro	쿠카로	1	1/1		Items
+Kukkaro (Black)	쿠카로 (블랙)	1	1/1		Items
+Kukkaro (Brown)	쿠카로 (브라운)	1	1/1		Items
+Kukkaro (Green)	쿠카로 (그린)	1	1/1		Items
+Kukkaro (M05)	쿠카로 (M05)	1	1/1		Items
+L. Gloves	가죽 장갑	1	1/1		Items
+Laser	레이저	1	1/1		Main
+Lean	기울이기	1	1/1		Main
+Lean Left	왼쪽으로 기울이기	1	1/1		Main
+Lean Right	오른쪽으로 기울이기	1	1/1		Main
+Leather Gloves	가죽 장갑	1	1/1		Items
+Left	왼쪽으로	1	1/1		Main
+Left Mouse Button	마우스 좌클릭	1	1/1		Main
+Legs	바지	1	1/1		Interface
+Leopard	레오파드	1	1/1		Items
+Level {no}	레벨 {no}	1	1/1		Interface
+Level {str}	레벨 {str}	1	1/1		Scripts (etc)
+Light	손전등	1	1/1		Interface
+Lighting Quality	조명 품질	1	1/1		Main
+Literature	서적	1	1/1		Items
+Loading Apartments...	아파트 로딩중...	1	1/1		Main
+Loading Attic...	다락방 로딩중...	1	1/1		Main
+Loading Bunker...	벙커 로딩중...	1	1/1		Main
+Loading Cabin...	오두막 로딩중...	1	1/1		Main
+Loading Classroom...	교실 로딩중...	1	1/1		Main
+Loading Death...	죽음 로딩중...	1	1/1		Main
+Loading Highway...	고속도로 로딩중...	1	1/1		Main
+Loading Intro...	인트로 로딩중...	1	1/1		Main
+Loading Menu...	메뉴 로딩중...	1	1/1		Main
+Loading Minefield...	지뢰지대 로딩중...	1	1/1		Main
+Loading Outpost...	전초기지 로딩중...	1	1/1		Main
+Loading School...	학교 로딩중...	1	1/1		Main
+Loading shaders...	셰이더 로딩중...	1	1/1		Main
+Loading Template...	템플릿 로딩중...	1	1/1		Main
+Loading Tent...	텐트 로딩중...	1	1/1		Main
+Loading Terminal...	터미널 로딩중...	1	1/1		Main
+Loading Tutorial...	튜토리얼 로딩중...	1	1/1		Main
+Loading Village...	마을 로딩중...	1	1/1		Main
+Loading {scene}...	{scene} 로딩중...	1	1/1		Main
+Locked	잠김	1	1/1		Main
+Locker	사물함	1	1/1		Assets(Furniture)
+Look Sensitivity	시점 감도	1	1/1		Main
+Lore	스토리	1	1/1		Items
+Lotion	로션	1	1/1		Items
+Lower Weapon	무기 내리기	1	1/1		Main
+Lumber	목재	1	1/1		Items
+Lure	루어	1	1/1		NotChecked
+LVPC (Green)	LVPC (그린)	1	1/1		Items
+LVPC (Winter)	LVPC (겨울)	1	1/1		Items
+M. Balls	미트볼	1	1/1		Items
+M. Balls (Cooked)	미트볼 (조리됨)	1	1/1		Items
+M. Hat	모기 모자.	1	1/1		Items
+M62 Cap	M62 캡	1	1/1		Items
+M62 Jacket	M62 재킷	1	1/1		Items
+M78 Magazine	M78 탄창	1	1/1		Items
+Mag.	탄창	1	1/1		Items
+Magazine:	탄창:	1	1/1		ToolTips
+Mailbox	우편함	1	1/1		Assets(Furniture)
+Map (Tactical)	전술 지도	1	1/1		Items
+Master Volume	마스터 볼륨	1	1/1		Main
+Mat.	성냥	1	1/1		Items
+Mattress	매트리스	1	1/1		Items
+Max stack:	최대 중첩 수:	1	1/1		ToolTips
+Meat	고기	1	1/1		Items
+Meatballs	미트볼	1	1/1		Items
+Meatballs (Cooked)	미트볼 (조리됨)	1	1/1		Items
+Medic	의무병	1	1/1		Tasks
+Medical Cabinet	의료 수납장	1	1/1		Assets(Furniture)
+Medkit	구급상자	1	1/1		Items
+Melaton.	멜라토닌	1	1/1		Items
+Melatonin	멜라토닌	1	1/1		Items
+Menace	위협 수치	1	1/1		Interface
+Mental:	정신력:	1	1/1		Interface
+Menu	메뉴	1	1/1		Main
+Menu Music	메뉴 음악	1	1/1		Main
+Mess Kit	반합	1	1/1		Items
+Metal	금속	1	1/1		Main
+Micro	마이크로	1	1/1		Items
+Middle Mouse Button	마우스 휠클릭	1	1/1		Main
+Mine	지뢰	1	1/1		NotChecked
+Minefield	지뢰지대	1	1/1		Main
+Missing Cat	잃어버린 고양이	1	1/1		Events
+Monitor: {idx}	모니터: {idx}	1	1/1		Main
+Monster	몬스터	1	1/1		Items
+Mosin	모신	1	1/1		Items
+Mosquito Hat	모기장 모자	1	1/1		Items
+Mouse	마우스	1	1/1		Main
+Mouse Settings	마우스 설정	1	1/1		Main
+Mouse Thumb Button 1	마우스 엄지 버튼 1	1	1/1		Main
+Mouse Thumb Button 2	마우스 엄지 버튼 2	1	1/1		Main
+Mouse Wheel Down	마우스 휠 아래로	1	1/1		Main
+Mouse Wheel Up	마우스 휠 위로	1	1/1		Main
+Mouth Organ	하모니카	1	1/1		Tasks
+MP7 Magazine	MP7 탄창	1	1/1		Items
+Music Preset	음악 프리셋	1	1/1		Main
+Music Volume	음악 볼륨	1	1/1		Main
+Mustard	머스타드	1	1/1		Items
+N. Stand	협탁	1	1/1		Assets(Furniture)
+Nails	못	1	1/1		Items
+Name:	이름:	1	1/1		Interface
+Narva	나르바	1	1/1		Items
+Nasty Draft	지독한 외풍	1	1/1		Tasks
+Native	네이티브	1	1/1		Main
+Nested:	결합됨:	1	1/1		Interface
+Neutral	보통	1	1/1		Main
+New Furniture Added [Catalog]	새 가구 추가됨 [카탈로그]	1	1/1		Messages
+New game	새 게임	1	1/1		Main
+Night Surgery	야간 수술	1	1/1		Tasks
+Nightstand	협탁	1	1/1		Assets(Furniture)
+Nomad Backpack	방랑자 배낭	1	1/1		Items
+Nomad BP.	방랑자 배낭	1	1/1		Items
+Nomads	방랑자	1	1/1		Interface
+Nordic Trade	북유럽 무역	1	1/1		Tasks
+Normal	일반	1	1/1		Main
+Not active	활성화되지 않음	1	1/1		Scripts (etc)
+O. Filter	오일 필터	1	1/1		Items
+Offer Value (€)	제안 가격(€)	1	1/1		Interface
+Office Cabinet	사무용 수납장	1	1/1		Assets(Furniture)
+Oil Filter	오일 필터	1	1/1		Items
+Oil S.	기름 샘플	1	1/1		Items
+Oil Sample	기름 샘플	1	1/1		Items
+Old Friend	오랜 친구	1	1/1		Tasks
+Open with {name}	문 열기 ({name})	1	1/1		Scripts (etc)
+OST - Alive	OST - Alive	1	1/1		Items
+OST - Daybreak	OST - Daybreak	1	1/1		Items
+OST - Far	OST - Far	1	1/1		Items
+OST - Lost	OST - Lost	1	1/1		Items
+OST - Rain	OST - Rain	1	1/1		Items
+OST - Road	OST - Road	1	1/1		Items
+OST - Trailer	OST - Trailer	1	1/1		Items
+OST - Winds	OST - Winds	1	1/1		Items
+Outpost	전초기지	1	1/1		Main
+Outpost gets compromised	전초기지 발각	1	1/1		Events
+Output:	출력:	1	1/1		Interface
+Overcast	흐림	1	1/1		Main
+Overweight	중량 초과	1	1/1		Interface
+Oxygen	산소	1	1/1		Interface
+P. Helmet	경찰 헬멧	1	1/1		Items
+P. Report	보고서	1	1/1		Items
+P. Soup	콩 스프	1	1/1		Items
+P. Soup (Cooked)	콩 스프 (조리됨)	1	1/1		Items
+P3 Magazine	P3 탄창	1	1/1		Items
+Painkill.	진통제	1	1/1		Items
+Painting (Lake)	그림 (호수)	1	1/1		Assets(Furniture)
+Painting L.	그림 호수.	1	1/1		Assets(Furniture)
+Pallet	팔레트	1	1/1		Assets(Furniture)
+"Pan = [LMB]
+Zoom = [SCROLL]"	"이동 = [LMB]
+확대 = [SCROLL]"	1	1/1		Interface
+Patrol Backpack	패트롤 배낭	1	1/1		Items
+Patrol BP.	패트롤 배낭	1	1/1		Items
+Pea Soup	"완두콩
+스프"	1	1/1		Items
+Pea Soup (Cooked)	완두콩 스프 (조리됨)	1	1/1		Items
+Peaches	복숭아	1	1/1		Items
+Peanuts	땅콩	1	1/1		Items
+Pear	배	1	1/1		Items
+Peas	완두콩	1	1/1		Items
+Penetration:	관통 등급:	1	1/1		Interface
+Perch	농어	1	1/1		Items
+Permadeath Zone	퍼마데스 구역 (부활 불가)	1	1/1		Scripts (etc)
+Pike	민물고기	1	1/1		Items
+Pillow	배게	1	1/1		Items
+Pineapple	파인애플	1	1/1		Items
+PIP Scopes	PIP 조준경	1	1/1		Main
+Placement	배치	1	1/1		Main
+Player	음악	1	1/1		Interface
+Player Returned	플레이어 복귀 됨	1	1/1		Messages
+PM5 Magazine	PM5 탄창	1	1/1		Items
+Poisoning	중독	1	1/1		Interface
+Polaris	폴라리스	1	1/1		Items
+Police Helmet	경찰 헬멧	1	1/1		Items
+Police Helmet (IIIA)	경찰 헬멧 (IIIA)	1	1/1		Items
+Poster (Posture)	포스터 (바른자세)	1	1/1		Assets(Furniture)
+Poster P.	"포스터
+바른자세"	1	1/1		Assets(Furniture)
+Potato	감자	1	1/1		Items
+Prepare Insert	삽입 준비	1	1/1		Main
+Press key to bind...	키를 입력하세요...	1	1/1		Main
+Prime Time	본방사수	1	1/1		Tasks
+Profiler	프로파일러	1	1/1		Interface
+Protection:	방어 등급:	1	1/1		Interface
+Proximity	근접 시설	1	1/1		Interface
+Punisher arrives to Area 05	퍼니셔가 05구역에 도착	1	1/1		Events
+R. Duffel	더플백	1	1/1		Items
+Rack (Coat)	옷걸이 (코트)	1	1/1		Assets(Furniture)
+Rack C.	옷걸이	1	1/1		Assets(Furniture)
+Radio [Turn Off]	라디오 [켜기]	1	1/1		Scripts (etc)
+Radio [Turn On]	라디오 [끄기]	1	1/1		Scripts (etc)
+Rags	헝겊	1	1/1		Items
+Rail Movement	레일 이동	1	1/1		Main
+Rain	비	1	1/1		Main
+Raise Weapon	무기 올리기	1	1/1		Main
+Rare	희귀	1	1/1		Items
+Receive:	보상:	1	1/1		Interface
+Recipe Name	레시피 명	1	1/1		Interface
+Religion	종교	1	1/1		Items
+Reload	재장전	1	1/1		Main
+Remove ({display})	제거 ({display})	1	1/1		Scripts (etc)
+Remove [0]	제거 [0]	1	1/1		Interface
+Remove [1]	제거 [1]	1	1/1		Interface
+Remove [2]	제거 [2]	1	1/1		Interface
+Remove [3]	제거 [3]	1	1/1		Interface
+Remove {name}	{name} 제거	1	1/1		Interface
+Render Resolution	렌더링 해상도	1	1/1		Main
+Repair	수리	1	1/1		Scripts (etc)
+Repair Kit	수리 키트	1	1/1		Items
+Request Value + Tax (€)	요구 가격 + 세금 (€)	1	1/1		Interface
+Rescue Cat	고양이 구출	1	1/1		Scripts (etc)
+Reset	초기화	1	1/1		Interface
+Reset Input	투입 초기화	1	1/1		Interface
+Reset to defaults	기본값으로 초기화	1	1/1		Main
+Resupply:	재보급:	1	1/1		Interface
+Right	오른쪽으로	1	1/1		Main
+Right Mouse Button	마우스 우클릭	1	1/1		Main
+RK Magazine	RK 탄창	1	1/1		Items
+Roach	잉어	1	1/1		Items
+Road Trip	장거리 여행	1	1/1		Tasks
+Rock	돌	1	1/1		Main
+Rotate Item	아이템 회전	1	1/1		Main
+Rupture	파열	1	1/1		Interface
+Rya (Maria)	융단 (마리아)	1	1/1		Assets(Furniture)
+Rya M.	융단 마리아.	1	1/1		Assets(Furniture)
+S. Bag	침낭	1	1/1		Items
+S. Chair	선베드	1	1/1		Assets(Furniture)
+S. Hat	사우나 모자	1	1/1		Items
+Saline	식염수	1	1/1		Items
+Salty Liq.	감초사탕	1	1/1		Items
+Salty Liquorice	감초사탕	1	1/1		Items
+Santa J.	산타 재킷	1	1/1		Items
+Santa Jacket	산타 재킷	1	1/1		Items
+Saturation	채도	1	1/1		Main
+Sauna Hat	사우나 모자	1	1/1		Items
+School	학교	1	1/1		Main
+Scope Sensitivity	조준경 감도	1	1/1		Main
+Season	계절	1	1/1		Main
+Seasonal mode	계절별 모드	1	1/1		Main
+Secondary	보조무기	1	1/1		Interface
+Secondary Optic	보조 조준경	1	1/1		Main
+Selected	선택됨	1	1/1		Main
+shaders	셰이더	1	1/1		Main
+Sharpness	선명도	1	1/1		Main
+Shelf (Metal)	선반 (철제)	1	1/1		Assets(Furniture)
+Shelf (Wall)	선반 (벽면)	1	1/1		Assets(Furniture)
+Shelf (Wood)	선반 (나무)	1	1/1		Assets(Furniture)
+Shelf M.	선반 (철제)	1	1/1		Assets(Furniture)
+Shelf W.	선반	1	1/1		Assets(Furniture)
+Shelter (Area 05)	은신처 (05 구역)	1	1/1		Interface
+Shelter required	은신처 필요	1	1/1		Interface
+Sign (Border Zone)	표지판 (접경 지대)	1	1/1		Assets(Furniture)
+Sign BZ.	표지판 (접경 지대)	1	1/1		Assets(Furniture)
+Silent Night	고요한 밤	1	1/1		Interface
+Six Pack	맥주 여섯 캔	1	1/1		Tasks
+Skip Intro [SPACE]	인트로 스킵하기 [SPACE]	1	1/1		Main
+Skrama	스크라마	1	1/1		Items
+Skrama 200	스크라마 200	1	1/1		Items
+Skrama 240	스크라마 240	1	1/1		Items
+Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)	1	1/1		Scripts (etc)
+Sleeping Bag	침낭	1	1/1		Items
+Sleeping_Bag	침낭	1	1/1		Items
+SMAA Off	SMAA 끄기	1	1/1		Main
+SMAA On	SMAA 켜기	1	1/1		Main
+Smoke	피우기	1	1/1		Items
+Sneeze	코풀기	1	1/1		Items
+Snus	씹는 담배	1	1/1		Items
+Soda	소다	1	1/1		Items
+Soda (Lemon)	소다 (레몬)	1	1/1		Items
+Soda L.	레몬소다	1	1/1		Items
+Sofa (Leather)	소파 (가죽)	1	1/1		Assets(Furniture)
+Sofa L.	소파 (가죽)	1	1/1		Assets(Furniture)
+Special	특별	1	1/1		Events
+Splint	부목	1	1/1		Items
+Splint (Improvised)	부목 (급조)	1	1/1		Items
+Split	나누기	1	1/1		Interface
+Spray	뿌리기	1	1/1		Items
+SS Magazine	SS 탄창	1	1/1		Items
+STANAG Magazine	STANAG 탄창	1	1/1		Items
+Standard	표준	1	1/1		Main
+Starvation	기아	1	1/1		Interface
+Steady Hands	손떨림 방지	1	1/1		Tasks
+Sticks	나뭇가지	1	1/1		Items
+Stool (Military)	의자 (군용)	1	1/1		Assets(Furniture)
+Stool (Padded)	의자 (쿠션)	1	1/1		Assets(Furniture)
+Stool M.	의자 (군용)	1	1/1		Assets(Furniture)
+Stool P.	의자 (쿠션)	1	1/1		Assets(Furniture)
+Stop Input	투입 정지	1	1/1		Interface
+Storm	폭풍	1	1/1		Main
+Stove	스토브	1	1/1		Assets(Furniture)
+Substance	원인 물질	1	1/1		Tasks
+Sugar	설탕	1	1/1		Items
+Summer	여름	1	1/1		Main
+Sun Chair	선베드	1	1/1		Assets(Furniture)
+Supply Value	보급품 가치	1	1/1		Interface
+Sweaty Business	땀내나는 일	1	1/1		Tasks
+T. Fleece	전술 후리스	1	1/1		Items
+T. Map	전술 지도	1	1/1		Items
+T. Paper	화장지	1	1/1		Items
+T. Soup	토마토 스프	1	1/1		Items
+T. Soup (Cooked)	토마토 스프 (조리됨)	1	1/1		Items
+Table (Cabin)	테이블 (오두막)	1	1/1		Assets(Furniture)
+Table (Canteen)	테이블 (식당)	1	1/1		Assets(Furniture)
+Table (Kitchen)	테이블 (주방)	1	1/1		Assets(Furniture)
+Table (Office)	테이블 (사무용)	1	1/1		Assets(Furniture)
+Table C.	테이블 (오두막)	1	1/1		Assets(Furniture)
+Table K.	테이블 (주방)	1	1/1		Assets(Furniture)
+Table. O	테이블 (사무용)	1	1/1		Assets(Furniture)
+Tackle B.	낚시 도구함	1	1/1		Items
+Tackle Box	낚시 도구함	1	1/1		Items
+Tactical Fleece (Brown)	전술 후리스 (브라운)	1	1/1		Items
+Tactical Fleece (Green)	전술 후리스 (그린)	1	1/1		Items
+Take	잡기	1	1/1		Interface
+Take ({str})	집기 ({str})	1	1/1		Scripts (etc)
+Target S.	표적 거치대	1	1/1		Assets(Furniture)
+Target Stand	표적 거치대	1	1/1		Assets(Furniture)
+Task Completed: {name}	의뢰 완료됨: {name}	1	1/1		Messages
+Task Notes	의뢰 노트	1	1/1		Interface
+Tasks:	의뢰:	1	1/1		Interface
+Tax:	세금:	1	1/1		Interface
+Television	텔레비전	1	1/1		Assets(Furniture)
+Television [Turn Off]	텔레비전 [끄기]	1	1/1		Scripts (etc)
+Television [Turn On]	텔레비전 [끄기]	1	1/1		Scripts (etc)
+Template	템플릿	1	1/1		Main
+Tent	텐트	1	1/1		Main
+Terminal	터미널	1	1/1		Main
+Testbench	테스트벤치	1	1/1		Interface
+Thermal	보온 담요	1	1/1		Items
+Thermal Blanket	보온 담요	1	1/1		Items
+Thor	토르	1	1/1		Items
+Time	시계	1	1/1		Interface
+Tissues	티슈	1	1/1		Items
+Toilet Paper	화장지	1	1/1		Items
+Tomato Soup (Cooked)	토마토 스프 (조리됨)	1	1/1		Items
+Tomatoes	토마토	1	1/1		Items
+Toolbox	공구함	1	1/1		Items
+Tools	도구	1	1/1		Interface
+Torso	외투	1	1/1		Interface
+Tourni.	지혈대	1	1/1		Items
+Tourniquet	지혈대	1	1/1		Items
+Tourniquet (Improvised)	지혈대 (급조)	1	1/1		Items
+Trader Info	상인 통계	1	1/1		Interface
+Trader Stat	상인 통계	1	1/1		Interface
+Traders leave Area 05	상인들이 05구역을 떠남	1	1/1		Events
+Traders return to Area 05	상인들이 05구역으로 복귀	1	1/1		Events
+Transfer	이동	1	1/1		Interface
+Transmission	송신	1	1/1		Events
+Trolley (Short)	트롤리 (소형)	1	1/1		Assets(Furniture)
+Trolley (Tall)	트롤리 (대형)	1	1/1		Assets(Furniture)
+Trolley S.	트롤리 (소형)	1	1/1		Assets(Furniture)
+Trolley T.	트롤리 (대형)	1	1/1		Assets(Furniture)
+Tuna	참치	1	1/1		Items
+Tunnel K.	터널 열쇠	1	1/1		Items
+Tunnel Key	터널 열쇠	1	1/1		Items
+Turn Off	끄기	1	1/1		Scripts (etc)
+Turn On	켜기	1	1/1		Scripts (etc)
+Tutorial Crate	튜토리얼 상자	1	1/1		Assets(Furniture)
+Tutorial Task 1 (Simple)	튜토리얼 의뢰 1 (간단함)	1	1/1		Tasks
+Tutorial Task 2 (Complex)	튜토리얼 의뢰 2 (복잡함)	1	1/1		Tasks
+Tutorial Task 3 (Furniture)	튜토리얼 의뢰 (가구)	1	1/1		Tasks
+TV	TV	1	1/1		Assets(Furniture)
+Type (Common)	유형 (흔함)	1	1/1		ToolTips
+Type (Legendary)	유형 (전설)	1	1/1		ToolTips
+Type (Rare)	유형 (희귀)	1	1/1		ToolTips
+UI Scaling	UI 스케일링	1	1/1		Main
+UI Scaling [Coming Soon]	UI 스케일링 [추가 예정]	1	1/1		Main
+UI Tooltip	UI 툴팁	1	1/1		Main
+Unlimited	무제한	1	1/1		Main
+Unlock with {name}	열기 ({name} 사용)	1	1/1		Scripts (etc)
+Upcoming builds	출시 예정 빌드	1	1/1		Main
+Use time:	사용 시간:	1	1/1		ToolTips
+Version: 0.1.1.3	버전: 0.1.1.3	1	1/1		Main
+Vitals	상태	1	1/1		Main
+Vostok Symphony	보스토크 교향곡	1	1/1		Items
+VSD Magazine	VSD 탄창	1	1/1		Items
+Vsync	수직동기화	1	1/1		Main
+W. Choco	군용 초콜릿	1	1/1		Items
+W. Gloves	작업 장갑	1	1/1		Items
+W. Lock	발효 마개	1	1/1		Items
+War Chocolate	군용 초콜릿	1	1/1		Items
+Warm Meal	따듯한 식사	1	1/1		Tasks
+Watch Intro	인트로 보기	1	1/1		Main
+Water	물	1	1/1		Items
+Water Bottle	물병	1	1/1		Items
+Water Lock	발효 마개	1	1/1		Items
+Water Reflections	수면 반사	1	1/1		Main
+Weapon	무기	1	1/1		Items
+Weapon D.	무기 진열대	1	1/1		Assets(Furniture)
+Weapon Delivery	무기 배달	1	1/1		Tasks
+Weapon Display	무기 진열대	1	1/1		Assets(Furniture)
+Weapon Jammed | Press [Reload]	총기 기능 고장 | [재장전] 버튼을 누르세요	1	1/1		Interface
+Weapon Repair Kit	무기 수리 키트	1	1/1		Items
+Windbr.	바람막이	1	1/1		Items
+Windbreaker	바람막이	1	1/1		Items
+Windbreaker (Black)	바람막이 (블랙)	1	1/1		Items
+Windbreaker (Green)	바람막이 (그린)	1	1/1		Items
+Window: {percent}%	창 크기: {percent}%	1	1/1		Main
+Windowed	창 모드	1	1/1		Main
+Winter	겨울	1	1/1		Main
+Winter J.	겨울 재킷	1	1/1		Items
+Winter Jacket	겨울 재킷	1	1/1		Items
+Winter Jacket (Blue)	겨울 재킷 (블루)	1	1/1		Items
+Winter Jacket (Red)	겨울 재킷 (레드)	1	1/1		Items
+Wipe	닦기	1	1/1		Items
+Wipes	물티슈	1	1/1		Items
+Wood	나무	1	1/1		Main
+Wooden Crate	나무 상자	1	1/1		Assets(Furniture)
+Work Gloves	작업용 장갑	1	1/1		Items
+Workbench	작업대	1	1/1		Interface
+Workbench required	작업대 필요	1	1/1		Interface
+World Map	월드맵	1	1/1		Interface
+Yeast	이스트	1	1/1		Items
+You have been spotted!	적발되었습니다!	1	1/1		Messages
+You slept {str} hours	{str} 시간 동안 잤습니다	1	1/1		Messages
+{containerName} [Locked]	{containerName} [잠김]	1	1/1		Scripts (etc)
+{containerName} [Open]	{containerName} [열기]	1	1/1		Scripts (etc)
+{type} Event	{type} 이벤트	1	1/1		Events
+~5% / map instance	~5% / 해당 지역	1	1/1		Events
+~{str}% / map instance	~{str}% / 해당 지역	1	1/1		Events
+✓  New Furniture Added [Catalog]	✓  새 가구 추가됨 [카탈로그]	1	1/1		Messages
+
+# === WORD FREQUENCY (long-text vocabulary) ===
+word	freq	type
+added	186	proper
+new	135	proper
+fixed	67	proper
+item	54	common
+items	46	proper
+task	35	proper
+changed	28	proper
+weapon	28	proper
+furniture	26	proper
+time	26	proper
+area	26	proper
+get	24	common
+shelter	23	proper
+trader	22	proper
+map	21	proper
+ai	21	proper
+condition	21	proper
+recipe	21	common
+like	20	proper
+health	20	proper
+cat	18	proper
+certain	18	proper
+value	18	proper
+find	18	proper
+start	17	proper
+event	16	proper
+since	16	proper
+stuck	15	common
+game	15	proper
+body	15	proper
+after	15	proper
+something	15	common
+few	15	common
+use	14	proper
+crafting	14	proper
+border	14	proper
+winter	14	proper
+other	14	proper
+such	14	common
+damage	14	common
+road	13	proper
+vostok	13	proper
+shelters	13	proper
+multiple	13	proper
+increases	13	common
+tasks	13	proper
+symptoms	13	proper
+inventory	12	proper
+don	12	proper
+always	12	proper
+using	11	proper
+school	11	proper
+speed	11	common
+traders	11	proper
+temp	11	proper
+back	11	proper
+days	11	proper
+around	11	common
+causes	11	proper
+cures	11	proper
+need	11	common
+still	11	common
+context	10	proper
+ammo	10	proper
+random	10	proper
+controller	10	proper
+military	10	proper
+didn	10	proper
+doctor	10	proper
+medical	10	common
+hydration	10	proper
+decrease	10	proper
+player	10	proper
+delivery	10	proper
+water	10	proper
+fire	10	proper
+going	10	proper
+old	10	common
+consumables	10	proper
+unit	10	common
+sec	10	common
+once	10	proper
+maybe	10	proper
+started	10	common
+build	9	proper
+loot	9	proper
+spawn	9	common
+through	9	common
+key	9	proper
+system	9	common
+tools	9	proper
+casette	9	proper
+zone	9	proper
+small	9	proper
+heat	9	proper
+used	9	common
+decreases	9	common
+software	9	proper
+catalog	9	proper
+re	9	common
+bring	9	proper
+cause	8	common
+support	8	common
+during	8	common
+building	8	common
+mental	8	proper
+coffee	8	proper
+kit	8	proper
+energy	8	proper
+cooked	8	proper
+events	8	proper
+sleeping	8	proper
+inside	8	common
+things	8	common
+bit	8	common
+know	8	common
+think	8	common
+even	8	proper
+same	7	common
+airdrops	7	proper
+night	7	proper
+punisher	7	proper
+check	7	common
+improvised	7	proper
+character	7	proper
+world	7	proper
+mode	7	proper
+warm	7	proper
+afak	7	proper
+meatballs	7	proper
+directly	7	common
+sources	7	common
+supply	7	proper
+light	7	common
+day	7	proper
+deal	7	proper
+last	7	common
+nearby	7	common
+probably	7	common
+capacity	7	proper
+weight	7	proper
+insulation	7	proper
+sure	7	proper
+man	7	common
+keep	7	proper
+good	7	common
+rights	6	proper
+interface	6	proper
+place	6	proper
+loading	6	common
+oil	6	proper
+special	6	proper
+while	6	proper
+attack	6	proper
+outpost	6	proper
+collection	6	proper
+soup	6	proper
+recipes	6	common
+matches	6	proper
+summer	6	proper
+between	6	common
+generalist	6	proper
+common	6	proper
+grandma	6	proper
+available	6	common
+happen	6	common
+well	6	proper
+equip	6	common
+stat	6	common
+canned	6	proper
+stamina	6	proper
+medkit	6	proper
+number	6	proper
+let	6	proper
+simple	6	common
+go	6	proper
+press	6	proper
+found	6	common
+sometimes	6	proper
+ago	6	common
+every	6	proper
+seen	6	common
+actually	6	common
+really	6	common
+finnish	6	proper
+following	5	common
+early	5	proper
+access	5	proper
+actions	5	common
+issues	5	common
+engine	5	proper
+areas	5	common
+menu	5	common
+highway	5	proper
+without	5	proper
+tutorial	5	proper
+often	5	common
+business	5	proper
+nasty	5	proper
+dice	5	proper
+patient	5	proper
+big	5	proper
+rk-	5	proper
+box	5	proper
+radio	5	proper
+tax	5	proper
+each	5	common
+audio	5	common
+taking	5	common
+full	5	proper
+selected	5	common
+far	5	common
+dynamic	5	proper
+already	5	common
+elements	5	common
+though	5	common
+billboard	5	common
+nature	5	common
+side	5	common
+longer	5	common
+equipment	5	proper
+linked	5	common
+kg	5	common
+price	5	proper
+carry	5	proper
+clothing	5	common
+positive	5	common
+level	5	common
+ifak	5	proper
+complete	5	proper
+require	5	common
+cds	5	proper
+look	5	common
+see	5	common
+required	5	common
+thing	5	common
+about	5	common
+guy	5	common
+nomads	5	proper
+play	5	common
+everything	5	common
+want	5	common
+especially	5	proper
+again	5	common
+best	5	common
+take	5	common
+trip	5	common
+quite	5	proper
+clinic	5	common
+way	5	common
+changes	4	common
+name	4	proper
+death	4	common
+closing	4	common
+option	4	common
+hardware	4	common
+godot	4	proper
+possibility	4	common
+terminal	4	proper
+active	4	proper
+frozen	4	proper
+return	4	proper
+low	4	proper
+crash	4	proper
+darkness	4	proper
+village	4	proper
+apartments	4	proper
+btr	4	proper
+gunsmith	4	proper
+contain	4	common
+critical	4	proper
+slowed	4	common
+vital	4	common
+makes	4	common
+end	4	proper
+options	4	common
+keys	4	proper
+bunker	4	proper
+prime	4	proper
+mouth	4	proper
+trade	4	proper
+blades	4	proper
+medic	4	proper
+repair	4	proper
+pea	4	proper
+starting	4	common
+weapons	4	proper
+both	4	common
+top	4	common
+sound	4	common
+main	4	common
+setups	4	common
+caused	4	common
+suitable	4	common
+default	4	common
+files	4	common
+cycle	4	common
+services	4	common
+copyright	4	proper
+notice	4	proper
+within	4	common
+week	4	common
+abandoned	4	common
+bad	4	common
+receive	4	common
+against	4	common
+movement	4	proper
+menace	4	proper
+bandits	4	proper
+cbrn	4	proper
+food	4	proper
+consumption	4	common
+explosion	4	proper
+toxic	4	proper
+related	4	common
+completed	4	common
+before	4	proper
+away	4	common
+north	4	proper
+moment	4	common
+element	4	common
+mess	4	proper
+next	4	proper
+situation	4	common
+ready	4	common
+cars	4	common
+long	4	common
+help	4	common
+matter	4	common
+keeps	4	common
+comes	4	common
+right	4	common
+definitely	4	common
+nowadays	4	proper
+ll	4	common
+ones	4	common
+ltd	3	proper
+version	3	common
+type	3	common
+frame	3	common
+memory	3	common
+stability	3	common
+uses	3	common
+green	3	common
+tables	3	common
+industrial	3	proper
+spawns	3	common
+filter	3	proper
+crates	3	common
+flickering	3	proper
+lights	3	common
+corrupted	3	common
+colliders	3	common
+firing	3	proper
+toilet	3	common
+door	3	common
+staircases	3	common
+head	3	common
+fast	3	common
+splint	3	proper
+save	3	common
+render	3	proper
+native	3	proper
+ui	3	proper
+notes	3	proper
+attic	3	proper
+boss	3	proper
+fighter	3	proper
+missing	3	proper
+helicopters	3	proper
+sweaty	3	proper
+homemade	3	proper
+infections	3	proper
+hypovolemia	3	proper
+report	3	proper
+substance	3	proper
+home	3	proper
+everyman	3	proper
+bottle	3	proper
+thermal	3	proper
+blanket	3	proper
+saline	3	proper
+gymnasium	3	proper
+sign	3	proper
+extra	3	proper
+different	3	proper
+levels	3	common
+magazine	3	common
+helicopter	3	proper
+beyond	3	common
+music	3	common
+instruments	3	proper
+outside	3	common
+outdoor	3	proper
+supports	3	common
+locations	3	common
+falls	3	common
+fallback	3	common
+returns	3	common
+duplication	3	common
+stacks	3	common
+transfer	3	common
+season	3	common
+equipping	3	proper
+ambient	3	proper
+sfx	3	proper
+work	3	common
+saving	3	common
+allowed	3	common
+bullet	3	proper
+conditions	3	common
+starts	3	proper
+weather	3	common
+vitals	3	common
+permadeath	3	proper
+irl	3	proper
+current	3	proper
+faction	3	common
+hunting	3	proper
+gear	3	common
+survival	3	common
+content	3	proper
+source	3	common
+kind	3	proper
+whether	3	proper
+collected	3	common
+visited	3	common
+told	3	common
+protection	3	common
+cold	3	common
+fully	3	common
+quickly	3	common
+dexterity	3	proper
+staying	3	common
+products	3	common
+regeneration	3	common
+part	3	common
+breaks	3	common
+major	3	common
+unlock	3	common
+unlocked	3	common
+safe	3	common
+called	3	common
+cabin	3	proper
+trading	3	common
+quests	3	proper
+bunkers	3	common
+offer	3	proper
+stolen	3	common
+emergency	3	common
+specialized	3	common
+locals	3	proper
+select	3	proper
+add	3	common
+learn	3	common
+getting	3	common
+pretty	3	common
+ve	3	common
+tv	3	proper
+working	3	common
+usually	3	proper
+morning	3	common
+highly	3	common
+basically	3	common
+personal	3	common
+tell	3	common
+times	3	common
+gets	3	common
+cheap	3	common
+lot	3	common
+got	3	common
+turn	3	common
+damn	3	proper
+ever	3	common
+nothing	3	common
+batch	3	common
+left	3	common
+smoking	3	common
+cigars	3	common
+somewhere	3	common
+stop	3	common
+extremely	3	common
+however	3	proper
+myself	3	common
+call	3	common
+across	3	common
+acrylonitrile	3	proper
+theory	3	common
+rations	3	common
+proper	3	common
+wrong	3	common
+stock	3	common
+making	3	common
+debt	3	common
+specializes	3	common
