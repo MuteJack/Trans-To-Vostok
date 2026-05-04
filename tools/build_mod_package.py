@@ -84,6 +84,19 @@ def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
     return True
 
 
+def build_translation_tsv_for_locale(tools_dir: Path, locale: str) -> bool:
+    """Call build_translation_tsv.py for the given locale.
+    Refreshes the diff-friendly TSV shadow under Translation_TSV/<locale>/."""
+    print(f"=== Building Translation_TSV: {locale} ===")
+    cmd = [sys.executable, "utils/build_translation_tsv.py", locale]
+    result = subprocess.run(cmd, cwd=tools_dir)
+    if result.returncode != 0:
+        print(f"[ERROR] {locale} Translation_TSV build failed")
+        return False
+    print()
+    return True
+
+
 def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int, int]:
     """
     Package the mod as .vmz (ZIP).
@@ -216,7 +229,12 @@ def main() -> int:
         if not build_attributions_for_locale(script_dir, locale):
             return 1
 
-    # 3. packaging
+    # 3. refresh Translation_TSV/ shadow (xlsx -> TSV for git diff visibility)
+    for locale in locales:
+        if not build_translation_tsv_for_locale(script_dir, locale):
+            return 1
+
+    # 4. packaging
     print(f"=== Packaging ===")
     print(f"Target locales: {', '.join(locales)}")
     print(f"Output file: {out_path}")

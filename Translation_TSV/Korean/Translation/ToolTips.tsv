@@ -1,0 +1,39 @@
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	text	988715662	Item	아이템	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	text	284423885	Type (Common)	유형 (흔함)	
+			0	0	0	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Rare)	유형 (희귀)	
+			0	0	0	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Legendary)	유형 (전설)	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	text	344439182	An item is an object within the game world that can be collected by a player.	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	text	1418802616	Condition:	상태:	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%	100%	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	text	1575206874	Weight:	무게:	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg	100kg	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	text	913881262	Value:	가치:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Value	Value	Label	text	1314691776	100€	100€	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	text	1393351409	Use time:	사용 시간:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Use	Value	Label	text	1111351186	10s	10s	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	text	1563649886	Damage:	데미지:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Damage	Value	Label	text	252494766	100	100	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	text	340357805	Caliber:	구경:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Caliber	Value	Label	text	1709584114	9x19	9x19	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	text	2089057817	Magazine:	탄창:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Magazine	Value	Label	text	1286269279	100	100	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	text	1317579651	Capacity:	용량:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Capacity	Value	Label	text	15745248	+20kg	+20kg	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	text	1264056674	Max stack:	최대 중첩 수:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Stack	Value	Label	text	1203542639	x30	x30	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	text	2078401087	Armor:	방어등급:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Armor	Value	Label	text	134288100	NIJ III	NIJ III	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	text	973316326	Health:	체력:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Health	Value	Label	text	553960291	+100	+100	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	text	1764317690	"Energy:
+"	"기력:
+"	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100	+100	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:	수분:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100	+100	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:	체온:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100	+100	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:	치료:	
+			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:	호환성:	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U	AK-12, AKM, AKS-74U	Dynamically changed by gd script (I can't find what script file is, but must be somewhere)

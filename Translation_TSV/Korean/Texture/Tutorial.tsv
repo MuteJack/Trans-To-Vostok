@@ -1,0 +1,438 @@
+Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Attribution
+Tutorial	Billboard	1. Settings	"1. Settings
+
+Welcome to Road to Vostok Tutorial
+
+This Tutorial will guide you through the most
+important game mechanics and controls
+
+Let's start with settings
+
+You can access Settings with [ESC]
+
+Through these settings you can change inputs,
+different system values and performance options
+
+?? = Performance options"	"1. 게임 설정
+
+Road to Vostok 튜토리얼에 오신 것을 환영합니다
+
+이 튜토리얼에서는 가장 중요한 조작법과 
+게임의 메커니즘에 대해 안내해 드립니다.
+
+먼저 설정부터 살펴보겠습니다.
+
+[ESC] 키를 누르면 설정에 접근할 수 있습니다.
+
+설정에서 입력 방식,
+다양한 시스템 값 및 성능 옵션을 변경할 수 있습니다.
+
+?? = 성능 옵션 관련"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	MuteJack	Performance Icon: Hand-crafted (Reconstruction)
+Tutorial	Billboard	2. Interface	"2. Interface
+
+Interface is your main UI which contains elements
+such as inventory, equipment, vitals and stats
+
+You can access Interfae with [TAB]
+
+If you want more information about an item, icon
+or specific value, you can use Tooltip
+
+Try Tooltip by opening Interface
+and point the character health value"	"2. 인터페이스
+
+인터페이스는 인벤토리, 장비, 생명력 및 통계와 같은 
+요소들을 포함하는 주요 사용자 인터페이스입니다.
+
+[TAB] 키를 눌러 인터페이스에 접근할 수 있습니다.
+
+아이템, 아이콘 또는 특정 값에 대한 자세한 정보를 
+원한다면 툴팁을 통해 확인할 수 있습니다.
+
+인터페이스를 열고 캐릭터의 상태값 위에 
+마우스 커서를 올려 툴팁을 표시해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	MuteJack	
+Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
+
+All objects that logically have storage space are 
+interactable loot containers
+
+Loot is generated to these containers and items 
+are also physically scattered to the game world
+
+
+You can open, pick and interact with [MMB]
+
+When you have items available in Interface, you can 
+choose item actions with Context Menu [RMB]
+
+Open container and try Context Menu with items"	"3. 전리품 & 아이템
+
+저장 공간을 가진 모든 오브젝트는 
+모두 상호작용 가능한 전리품 상자입니다.
+
+전리품은 이러한 상자에서 생성되며, 아이템은 
+월드 곳곳에 물리적으로 흩어져 있습니다. (바닥 등)
+
+[마우스 휠 버튼]을 눌러 상자를 열고, 
+아이템을 집거나, 상호작용할 수 있습니다.
+
+인터페이스에 아이템이 표시되면 [마우스 오른쪽 버튼] 을 눌러 
+사용, 획득, 장착 등 아이템 관련 동작을 선택할 수 있습니다.
+
+상자를 열고 아이템을 사용하거나 획득해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	MuteJack	
+Tutorial	Billboard	4. Equipment	"4. Equipment
+
+Equipment are dedicated items slots 
+and linked to several important character stats
+
+Equipment can increase your Carry Capacity [CC] 
+and give you abilities like flashlight and fire making
+
+
+You can find equipment slots in Interface
+You can activate equipment slots by 
+moving compatible items to them
+
+Open container and try equipping items"	"4. 장비 아이템
+
+장비는 전용 아이템 슬릇에 장착하는 아이템이며,
+여러 중요한 캐릭터 능력치와 연관되어 있습니다.
+
+장비를 착용하면 소지 한도 [CC]가 증가하거나, 
+손전등, 불 피우기와 같은 기능을 사용할 수 있습니다.
+
+장비 슬롯은 인터페이스에서 확인할 수 있습니다.
+
+장비를 사용하려면 각 장비 슬롯에 
+호환되는 아이템을 옮겨 장착하면 활성화됩니다.
+
+컨테이너를 열고 아이템을 장착해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	MuteJack	
+Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
+
+Medical system is based on conditions that 
+negatively affect your character's vital stats
+
+These conditions are presented as medical icons 
+and you can find them in Interface and HUD
+
+
+When a medical icon turns red, the condition is 
+active and needs to be cured using a medical item
+
+You can see causes, symptoms and cures with Tooltip
+
+Open container and try using some medical items"	"5. 의료 및 상태
+
+의료 시스템은 캐릭터의 능력치에 
+부정적인 영향을 미치는 상태들을 기반으로 합니다.
+
+이러한 상태들은 의료 아이콘으로 표시되며, 
+인터페이스와 HUD를 확인할 수 있습니다.
+
+의료 아이콘이 빨간색으로 변하면 해당 상태가 활성화된 것이며, 
+부정적인 영향을 미치므로, 의료 아이템을 사용하여 치료해야 합니다.
+
+툴팁을 통해 원인, 증상 및 치료법을 확인할 수 있습니다.
+
+물품 보관함을 열고 의료 아이템을 사용해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	MuteJack	
+Tutorial	Billboard	6. Weapons	"6. Weapons
+
+Weapons are equipment and they use 
+Primary, Secondary, Knife and Grenade slots
+
+When a weapon is equipped you can draw 
+and holster from slots with keys [1] [2] [3] [4] [5]
+
+
+Every firearm can use Primary slot but only 
+pistols and SMG's can utilize Secondary slot
+
+Open container, equip a weapon and draw it
+| [RMB] = Aim (ADS) | [F] = Firemode |
+| [MMB] = Canted aim | [X]=Inspect weapon |
+| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. 무기 아이템
+
+무기는 장비의 일종으로, 
+주무기, 보조무기, 나이프, 수류탄 슬롯을 사용합니다.
+
+무기를 장착하면 [1] [2] [3] [4] [5] 키를 사용하여 
+슬롯에서 무기를 손에 들거나 넣을 수 있습니다.
+
+모든 화기는 주무기 슬롯을 사용할 수 있지만, 
+보조무기 슬롯은 권총과 기관단총만을 사용할 수 있습니다.
+
+컨테이너를 열고 무기를 장착한 다음, 무기를 들어보세요.
+
+| [우클릭] = 조준 (ADS) | [F] = 사격 모드 변경 (단발, 연발) |
+| [휠버튼] = 기울여 조준 | [X] = 무기 살펴보기 |
+| [스크롤] = 무기 위치 | [X] → [스크롤] = 무기 회전 |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	MuteJack	
+Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
+
+Weapon system uses seperated magazines
+and caliber-based ammo types
+
+You can load a magazine by moving a compatible
+ammo type to the magazine with Interface
+
+You can unload a magazine with Context Menu [RMB]
+
+Magazines can be attached to weapons manually
+or with [R] which fetches a loaded magazine for you
+
+Open container, use Tooltip to identify the ammo
+and magazine compatibility, Load -> Attach -> Fire
+
+[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. 탄약 & 탄창
+
+무기 시스템은 무기에 따라 다른 구경의 탄약과 탄창을 요구합니다.
+(예: PM5 기관단총은 PM5 탄창과 9x19 구경 탄약을 사용)
+
+인터페이스를 통해 탄창에 호환되는 탄약을 
+넣고, 무기를 장전할 수 있습니다.
+
+탄창이나 무기를 [우클릭] 해, 탄창이나 약실 안의 탄약을 빼낼 수 있습니다.
+
+탄창은 수동으로 장착하거나, [R] 키를 눌러
+탄창을 장착(재장전)할 수 있습니다.
+
+상자나 인벤토리를 열고 툴팁을 통해 탄약과 탄창의 
+호환성을 확인한 후, 장전 → 장착 → 발사할 수 있습니다.
+
+[좌클릭] = 사격,  [V] = 잔탄 확인,  [CTRL] → [LMB] = 탄약 삽입 (볼트 액션 & 산탄총)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	MuteJack	
+Tutorial	Billboard	8. Attachments	"8. Attachements
+
+You can customize weapons by attaching 
+suppressors, optics and lasers to them
+
+You can add/swap attachments like magazines 
+with Interface and remove using Context Menu
+
+
+Open container, use Tooltip or item hover colors to 
+identify attachment compatibility and try customizing
+[HOLD CTRL] + [SCROLL] = Optic rail position
+[SCROLL] = LPVO zoom level
+[ALT] = Secondary optic
+[T] = Laser toggle"	"8. 총기 부착물
+
+소음기, 조준경, 레이저 등을 무기에 부착하여 무기를 커스터마이즈할 수 있습니다.
+
+인터페이스를 통해 탄창과 같은 부착물을 추가/교체하고, 상황 메뉴를 사용하여 제거할 수 있습니다.
+
+컨테이너를 열고 툴팁이나 아이템 마우스 오버 시 색상을 확인하여 부착물 호환성을 파악하고 커스터마이즈를 시도해 보세요.
+
+[CTRL 키를 누른 상태에서 마우스 휠을 스크롤] = 조준경 레일 위치 변경
+[스크롤] = LPVO 줌 레벨 변경
+[ALT] = 보조 조준경 활성화/비활성화
+[T] = 레이저 활성화/비활성화"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	MuteJack	
+Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
+
+When a knife is equipped, you can draw it with key [3]
+
+You can use slash attack with [LMB] 
+and stab attack with [RMB]
+
+
+You have two grenades slots and you can draw 
+grenades with keys [4] and [5]
+
+You can prepare high throw with [LMB] 
+and low throw with [RMB]
+
+Second press executes and opposite button resets the throw"	"9. 칼 & 수류탄
+
+나이프를 장착하면 [3]키로 꺼낼 수 있습니다.
+
+[좌클릭]으로 베기 공격을,
+[우클릭]으로 찌르기 공격을 할 수 있습니다.
+
+수류탄 슬롯은 두 개이며, [4]키와 
+[5]키로 손에 들 수 있습니다.
+
+[좌클릭]으로 높이 던지기를,
+[우클릭]으로 낮게 던지기를 준비할 수 있습니다.
+
+두 번 누르면 수류탄을 투척하며, 반대쪽 버튼을 누르면 던지기 준비가 초기화됩니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	MuteJack	
+Tutorial	Billboard	10. Armor	"10. Armor
+
+Armor system is based on NIJ-rated (II-IV)
+helmets, armor plates, and plate carriers (rigs)
+
+Armor protection level is directly linked
+to ammo/weapon penetration level which
+both can be checked using Tooltip
+
+
+Open container, equip helmet and plate carrier and
+try attaching armor plate to the rig like attachments
+
+|NIJ II = Level 1| 1. If protection matches penetration, armor can take 3-4 shots|
+|NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
+|NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
+|NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
+|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. 방어구
+
+방어구 시스템은 NIJ 등급(II-IV)의 
+헬멧, 방탄판, 플레이트 캐리어(리그)를 기반으로 합니다.
+
+방어구 보호 수준은 탄약/무기 관통력과 직접적으로
+연관되어 있으며, 툴팁을 통해 확인할 수 있습니다.
+
+상자를 열고 헬멧과 방탄 조끼를 장착한 후,
+총기 부착물과 같이 조끼에 방탄판을 부착해 보세요.
+
+NIJ II 	= 레벨 1	1. 보호 수준과 관통력이 같으면 3~4발의 사격을 견딜 수 있습니다
+|NIJ IIA	= 레벨 2	2. 피격 시 방어력이 감소하며, 0%가 되면 방어구가 파손됩니다
+|NIJ III 	= 레벨 3	3. 관통력이 높을수록 방어구가 즉시 파손됩니다
+|NIJ III+ = 레벨 4	4. 헬멧은 치명적인 부상(헤드샷)을 방지합니다
+|NIJ IV 	= 레벨 5 	5. 방탄판은 치명적인 부상(파열)을 방지합니다"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	MuteJack	
+Tutorial	Billboard	11. Traders	"11. Traders
+
+Traders are in-game characters that allow 
+you to trade items and complete lore related tasks
+
+Trading system is based on bartering where your goal 
+is to make a deal that is as balanced as possible.
+Deal is calculated between request item values, trader tax and offer item values
+
+Completing tasks will lower Trader Tax and provide 
+you reward items and keys for unlocking new Shelters
+
+Interact with trader Generalist and try 
+trading something and completing a task"	"11. 상인
+
+상인은 게임 내 캐릭터로,
+아이템을 거래하고 스토리 관련 임무를 완료할 수 있도록 도와줍니다.
+
+거래 시스템은 물물교환을 기반으로 하며, 목표는
+가능한 한 균형 잡힌 거래를 성사시키는 것입니다.
+거래 가격은 요청 아이템 가격, 상인 세금, 제안 아이템 가격을 기준으로 계산됩니다.
+
+임무를 완료하면 상인 세금이 줄어들고,
+보상 아이템과 새로운 은신처를 열 수 있는 열쇠를 얻을 수 있습니다.
+
+상인 일반주의자와 상호작용하여
+물건을 거래하고 임무를 완료해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	MuteJack	
+Tutorial	Billboard	12. AI	"12. AI
+
+AI is divided into three hostile factions which
+ocupy different areas of the game world
+
+|Area05|Border Zone| Vostok|
+|Bandits|Guards|Military|
+|Easy AI|Medium AI|Hard AI|
+
+Each AI faction has different abilities and
+faction bosses with rare spawn changes
+
+Map instances can spawn maximum of 10 AI's
+once you have eliminated all, you will have peace"	"12. AI
+
+AI는 게임 세계의 서로 다른 지역을 점령하고 있는 세 개의 적대적인 세력으로 나뉩니다.
+
+|Area05|국경 지대| 보스토크|
+
+|산적|경비병|군대|
+
+|쉬운 AI|중간 AI|어려운 AI|
+
+각 AI 세력은 서로 다른 능력을 가지고 있으며, 세력 보스는 출현 빈도가 낮습니다.
+
+맵 인스턴스당 최대 10개의 AI가 생성되며, 모든 AI를 제거하면 평화가 찾아옵니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	MuteJack	
+Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
+
+Like AI, game world is divided into three zones which have different maps and loot pools
+
+|Starting zone | Divider zone | Permadeath zone |
+|Area 05 | Border Zone | Vostok |
+|Low-tier loot | Medium-tier loot | High-tier loot|
+
+
+You can travel through these zones and maps 
+through Transitions which have certain travel costs 
+related to character vitals and World Simulation
+
+Transitions are marked with Transition Flags"	"13. 맵 & 이동
+
+AI와 마찬가지로 게임 세계는 서로 다른 지도와 전리품 풀을 가진 세 구역으로 나뉩니다.
+
+|시작 구역 | 경계 구역 | 영구 사망 구역 |
+|5구역 | 국경 구역 | 보스토크 |
+|저등급 전리품 | 중간 등급 전리품 | 고급 전리품|
+
+이러한 구역과 지도를 이동하는 데에는 캐릭터의 생명력과 월드 시뮬레이션에 따른 이동 비용이 발생합니다.
+
+이동 경로는 이동 플래그로 표시됩니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	MuteJack	
+Tutorial	Billboard	14. World Simulation	"14. World Simulation
+
+Game uses World Simulation which creates 
+day & night cycles, dynamic weather, 
+seasons and randomized events
+
+Simulation rate
+Day & night cycle (24h) = 2.4h IRL
+
+
+World Simulation is linked to sleeping and 
+map transitions which increases simulation time
+
+You can see current time with time related items 
+Pick a time item (Alarm Clock) and equip it
+*Simulation time stays locked during Tutorial"	"14. 월드 시뮬레이션
+
+게임은 월드 시뮬레이션을 사용하여 낮과 밤 주기, 역동적인 날씨, 계절 변화, 그리고 무작위 이벤트를 구현합니다.
+
+시뮬레이션 주기
+낮과 밤 주기(24시간) = 실제 시간 2.4시간
+
+월드 시뮬레이션은 수면 및 맵 전환과 연동되어 시뮬레이션 시간이 증가합니다.
+
+시간 관련 아이템을 통해 현재 시간을 확인할 수 있습니다.
+시간 관련 아이템(예: 알람 시계)을 선택하여 장착하세요.
+*튜토리얼 중에는 시뮬레이션 시간이 고정됩니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	MuteJack	
+Tutorial	Billboard	15. Shelters	"15. Shelters
+
+Shelters are safe areas that allows you to save 
+simulation time, character progress and loot
+
+Shelters can be unlocked with keys 
+which you acquire by completing tasks
+
+
+All Shelters can be customized with 
+Item Placement and Decor Mode
+
+You can use Item Placement with [G] and move 
+furniture by activating Decor Mode with [F1]"	"15. 은신처
+
+은신처는 시뮬레이션 시간, 캐릭터 성장, 그리고 전리품을 저장할 수 있는 안전한 공간입니다.
+
+은신처는 임무를 완료하여 획득한 열쇠로 열 수 있습니다.
+
+모든 은신처는 아이템 배치와 장식 모드를 통해 꾸밀 수 있습니다.
+
+[G] 키를 눌러 아이템을 배치하고, [F1] 키를 눌러 장식 모드를 활성화하면 가구를 이동할 수 있습니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	MuteJack	
+Tutorial	Billboard	16. Vostok	"16. Vostok
+
+Vostok is a high-risk, high-reward Permadeath zone 
+where death results losing all existing progression
+
+Permadeath in this game deletes all save files, 
+so you lose absolutely everything
+
+
+When you travel towards Vostok maps,
+ you are warned before the Transition
+
+When you enter Vostok maps a red 
+Permadeath Skull will also appear 
+in the upper corner of the screen"	"16. 보스토크
+
+보스토크는 위험 부담이 크지만 보상도 큰 영구 사망 지역입니다. 사망 시 모든 진행 상황이 초기화됩니다.
+
+이 게임에서 영구 사망은 모든 저장 파일을 삭제하므로, 모든 것을 잃게 됩니다.
+
+보스토크 지역으로 이동하기 전에 경고 메시지가 표시됩니다.
+
+보스토크 지역에 진입하면 화면 상단 모서리에 붉은색의
+영구 사망 해골 아이콘이 나타납니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	MuteJack	Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/
