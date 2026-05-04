@@ -4,6 +4,40 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.1] — 2026-05-05 (Hotfix)
+
+### Fixed (Engine)
+
+- **`translator.gd`: substr translation accumulation bug.** When a substr
+  entry's translation contains the source text as a substring (e.g.
+  English `Hybrid` → French `Hybride`), repeated applications compounded
+  the result indefinitely (`Hybride` → `Hybridee` → `Hybrideee` → ...).
+  Triggered on first appearance of an item card containing the affected
+  text, because Godot's `node_added` signal fires multiple times per node
+  during inventory layout (reparent / re-attach), and `_bind_node` had no
+  duplicate guard — multiple bindings on the same `(node, prop)` each
+  re-applied substr while bypassing the input-text-keyed translation
+  cache. Two layers of fix:
+  - **`_bind_node` dedupe** — refuses to register a new binding if the
+    same `(node, prop)` is already bound. Stops binding accumulation
+    regardless of how many times `node_added` fires.
+  - **`_apply_substr` idempotency guard** — when `entry.text` is a
+    substring of `entry.translation`, refuses to re-apply if the result
+    has already been produced (detected by stripping the translation
+    occurrence and checking whether the source still appears).
+
+### Fixed (Language: French)
+
+- **Intro paragraph line wrapping** — `se déroulant` → `situé` to keep
+  the line break aligned with the Korean / English intro panels (7
+  characters shorter; meaning unchanged).
+
+### Internal
+
+- Bumped `mod.txt` version `0.4.0 → 0.4.1`.
+
+---
+
 ## [0.4.0] — 2026-05-05
 
 This release adds **French language support** as the first non-Korean
@@ -364,6 +398,39 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.4.1] — 2026-05-05 (핫픽스)
+
+### 수정 (엔진)
+
+- **`translator.gd`: substr 번역 누적 버그.** substr 엔트리의 번역어가
+  원어를 substring 으로 포함하는 경우 (예: 영어 `Hybrid` → 프랑스어
+  `Hybride`), 같은 노드에 변환이 반복 적용되면서 결과가 무한 누적됨
+  (`Hybride` → `Hybridee` → `Hybrideee` → …). 인벤토리에서 영향받는
+  텍스트가 들어 있는 아이템 카드가 처음 등장하는 시점에 발생 — Godot
+  의 `node_added` 시그널이 인벤토리 레이아웃 단계에서 reparent /
+  re-attach 로 같은 노드에 대해 여러 번 fire 되며, `_bind_node` 에
+  중복 가드가 없어 같은 `(node, prop)` 에 binding 이 여러 개 등록됨.
+  각 binding 이 독립적으로 substr 를 재적용하면서 입력 텍스트 키
+  기반 캐시를 우회한 것이 직접 원인. 두 단계로 차단:
+  - **`_bind_node` dedupe** — 같은 `(node, prop)` 이 이미 등록되어
+    있으면 새 binding 추가를 거부. `node_added` 가 몇 번 fire 되든
+    binding 중복이 누적되지 않음.
+  - **`_apply_substr` idempotency 가드** — `entry.text` 가
+    `entry.translation` 의 substring 인 경우, 결과 안에 이미 변환된
+    형태가 있는지 검사 (해당 occurrence 를 제거했을 때 원어가 더 이상
+    안 남으면 이미 적용된 것으로 판단) 후 재적용을 거부.
+
+### 수정 (언어: 프랑스어)
+
+- **인트로 문단 줄바꿈 정렬** — `se déroulant` → `situé`. 한국어 / 영어
+  인트로 패널과 줄바꿈을 맞추기 위해 7 자 단축 (의미는 동일).
+
+### 내부
+
+- `mod.txt` 버전 `0.4.0 → 0.4.1` 업데이트.
+
+---
 
 ## [0.4.0] — 2026-05-05
 
