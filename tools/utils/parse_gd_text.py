@@ -88,7 +88,7 @@ def extract_func_first_arg(line: str, func_name: str) -> str | None:
         i += 1
     return None
 
-# config loaded from gd_list.json (defaults)
+# config loaded from parse_list_gd.json (defaults)
 DEFAULT_CONFIG = {
     "properties": ["text", "tooltip_text", "placeholder_text", "hint_tooltip", "tooltip"],
     "functions": ["Loader.Message"],
@@ -99,9 +99,9 @@ DEFAULT_CONFIG = {
 
 
 def load_gd_config(config_path: Path) -> dict:
-    """Load gd_list.json. Returns defaults if absent."""
+    """Load parse_list_gd.json. Returns defaults if absent."""
     if not config_path.exists():
-        print(f"[INFO] gd_list.json not found, using default config")
+        print(f"[INFO] parse_list_gd.json not found, using default config")
         return dict(DEFAULT_CONFIG)
     try:
         data = json.loads(config_path.read_text(encoding="utf-8"))
@@ -111,7 +111,7 @@ def load_gd_config(config_path: Path) -> dict:
                 data[key] = default
         return data
     except (json.JSONDecodeError, OSError) as e:
-        print(f"[WARN] Failed to read gd_list.json: {e}, using default config")
+        print(f"[WARN] Failed to read parse_list_gd.json: {e}, using default config")
         return dict(DEFAULT_CONFIG)
 
 
@@ -364,10 +364,11 @@ def write_tsv(out_path: Path, rows: list[dict]) -> None:
 
 def main():
     script_dir = Path(__file__).resolve().parent
-    mod_root = script_dir.parent
+    # script_dir = mods/Trans To Vostok/tools/utils
+    mod_root = script_dir.parent.parent
 
-    # load gd_list.json
-    config_path = script_dir / "gd_list.json"
+    # load parse_list_gd.json (located in tools/, one level up from utils/)
+    config_path = script_dir.parent / "parse_list_gd.json"
     config = load_gd_config(config_path)
     print(f"Config: {config_path.name}")
     print(f"  properties: {config['properties']}")

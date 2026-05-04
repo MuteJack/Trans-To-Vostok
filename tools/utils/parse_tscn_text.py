@@ -8,9 +8,9 @@ Usage:
     python parse_tscn_text.py <source_dir>       # specify input directory
     python parse_tscn_text.py <src> <out>        # specify input + output
 
-Defaults (relative to tools/):
-    source_dir = ../.tmp/pck_recovered/
-    output_dir = ../.tmp/parsed_text/
+Defaults:
+    source_dir = <mod_root>/.tmp/pck_recovered/
+    output_dir = <mod_root>/.tmp/parsed_text/
 
 Output:
     For each .tscn file under the input directory, generate a .tscn.tsv (double extension).
@@ -188,7 +188,7 @@ def process_file(src_tscn: Path, out_tsv: Path, filename: str,
 
 def load_tscn_config(config_path: Path) -> dict:
     """
-    Load tscn_list.json. Returns defaults if absent.
+    Load parse_list_tscn.json. Returns defaults if absent.
 
     Schema:
         extra_properties: [str]   — extra properties applied to all .tscn files
@@ -202,7 +202,7 @@ def load_tscn_config(config_path: Path) -> dict:
     """
     default = {"extra_properties": [], "groups": []}
     if not config_path.exists():
-        print(f"[INFO] tscn_list.json not found, using default config")
+        print(f"[INFO] parse_list_tscn.json not found, using default config")
         return default
     try:
         data = json.loads(config_path.read_text(encoding="utf-8"))
@@ -211,7 +211,7 @@ def load_tscn_config(config_path: Path) -> dict:
                 data[key] = val
         return data
     except (json.JSONDecodeError, OSError) as e:
-        print(f"[WARN] Failed to read tscn_list.json: {e}, using default config")
+        print(f"[WARN] Failed to read parse_list_tscn.json: {e}, using default config")
         return default
 
 
@@ -236,16 +236,16 @@ def _build_per_file_extras(config: dict) -> dict:
 
 def main():
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools
-    # ../.tmp = mods/Trans To Vostok/.tmp
-    default_src = (script_dir / "../.tmp/pck_recovered").resolve()
-    default_out = (script_dir / "../.tmp/parsed_text").resolve()
+    # script_dir = mods/Trans To Vostok/tools/utils
+    mod_root = script_dir.parent.parent
+    default_src = (mod_root / ".tmp" / "pck_recovered").resolve()
+    default_out = (mod_root / ".tmp" / "parsed_text").resolve()
 
     src_arg = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else default_src
     out_dir = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else default_out
 
-    # load tscn_list.json
-    config_path = script_dir / "tscn_list.json"
+    # load parse_list_tscn.json (located in tools/, one level up from utils/)
+    config_path = script_dir.parent / "parse_list_tscn.json"
     config = load_tscn_config(config_path)
     global_extra = config.get("extra_properties", [])
     per_file_extras = _build_per_file_extras(config)

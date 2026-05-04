@@ -15,16 +15,16 @@ Output columns: filetype, location, field, text
 
 Run modes:
   1) batch (recommended): python parse_tres_text.py  or --config <path>
-     Reads tres_list.json and processes multiple groups at once.
-     Default path: tres_list.json next to this script.
+     Reads parse_list_tres.json and processes multiple groups at once.
+     Default path: parse_list_tres.json next to this script.
   2) single job:           python parse_tres_text.py --input <dir> --fields <list>
 
 Usage:
-    python parse_tres_text.py                       # use default tres_list.json
+    python parse_tres_text.py                       # use default parse_list_tres.json
     python parse_tres_text.py --config other.json   # use a different config
     python parse_tres_text.py --input Events/List --fields name,description
 
-tres_list.json schema:
+parse_list_tres.json schema:
     {
       "groups": [
         {
@@ -58,7 +58,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 OUT_COLUMNS = ["filename", "filetype", "location", "parent", "name", "type", "property", "unique_id", "text"]
 
 # default path
-DEFAULT_CONFIG_NAME = "tres_list.json"
+DEFAULT_CONFIG_NAME = "parse_list_tres.json"
 
 
 # ==========================================
@@ -276,7 +276,7 @@ def write_tsv(out_path: Path, rows: list[dict]) -> None:
 
 
 # ==========================================
-# batch mode (tres_list.json)
+# batch mode (parse_list_tres.json)
 # ==========================================
 
 def run_batch(
@@ -284,7 +284,7 @@ def run_batch(
     pck_root: Path,
     output_dir: Path,
 ) -> int:
-    """Run each group from tres_list.json. Returns: error code."""
+    """Run each group from parse_list_tres.json. Returns: error code."""
     try:
         config = json.loads(config_path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
@@ -431,14 +431,15 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
-    parser.add_argument("--config", help=f"Path to tres_list.json (default: tools/{DEFAULT_CONFIG_NAME})")
+    parser.add_argument("--config", help=f"Path to parse_list_tres.json (default: tools/{DEFAULT_CONFIG_NAME})")
     parser.add_argument("--input", help="Single job mode: target directory (recursive)")
     parser.add_argument("--fields", help="Single job mode: fields to extract (comma-separated)")
     args = parser.parse_args()
 
     # path basis
     script_dir = Path(__file__).resolve().parent
-    mod_root = script_dir.parent              # mods/Trans To Vostok
+    # script_dir = mods/Trans To Vostok/tools/utils
+    mod_root = script_dir.parent.parent       # mods/Trans To Vostok
     pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
     parsed_dir = (mod_root / ".tmp" / "parsed_text").resolve()
 
@@ -460,7 +461,8 @@ def main() -> int:
     if args.config:
         config_path = Path(args.config).resolve()
     else:
-        config_path = (script_dir / DEFAULT_CONFIG_NAME).resolve()
+        # default config (parse_list_tres.json) lives in tools/, one level up from utils/
+        config_path = (script_dir.parent / DEFAULT_CONFIG_NAME).resolve()
 
     if not config_path.exists():
         print(f"[ERROR] Config file not found: {config_path}", file=sys.stderr)

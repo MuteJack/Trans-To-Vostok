@@ -135,8 +135,8 @@ def load_tsv_index(tsv_dir: Path) -> dict:
     Build a unique_id → [list of records] index from extracted TSV files.
 
     Target files:
-        *.tscn.tsv  (output of parse_tscn_text.py, has unique_id)
-        *.tres.tsv  (output of parse_tres_text.py, no unique_id → naturally skipped)
+        *.tscn.tsv  (output of utils/parse_tscn_text.py, has unique_id)
+        *.tres.tsv  (output of utils/parse_tres_text.py, no unique_id → naturally skipped)
     """
     index = {}
     tsv_files = sorted(tsv_dir.rglob("*.tscn.tsv")) + sorted(tsv_dir.rglob("*.tres.tsv"))
@@ -782,7 +782,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
         raise FileNotFoundError(f"xlsx file not found: {xlsx_path}")
     if not tsv_dir.exists():
         raise FileNotFoundError(
-            f"TSV directory not found: {tsv_dir}\nRun parse_tscn_text.py first."
+            f"TSV directory not found: {tsv_dir}\nRun parse_translatables.py first."
         )
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
