@@ -62,32 +62,52 @@ PROTECTED_RE = re.compile(r"<x>(\{[a-zA-Z_][a-zA-Z0-9_]*\})</x>")
 BATCH_SIZE = 50  # DeepL accepts up to 50 texts per API call
 
 
-def load_api_key(script_dir: Path) -> str | None:
-    """Load DeepL API key from env var or .deepl_key file."""
+def load_api_key(tools_dir: Path) -> str | None:
+    """Load DeepL API key from env var or tools/.deepl_key file."""
     key = os.environ.get("DEEPL_AUTH_KEY")
     if key:
         return key.strip()
-    key_file = script_dir / ".deepl_key"
+    key_file = tools_dir / ".deepl_key"
     if key_file.exists():
         return key_file.read_text(encoding="utf-8").strip()
     return None
 
 
 def wrap_placeholders(text: str) -> list[str]:
-    """Wrap {name} as <x>{name}</x>. Returns (wrapped_text, list of original placeholders)."""
+    """XML-escape special chars (& < >), then wrap {name} as <x>{name}</x>.
+
+    Required because tag_handling="xml" makes DeepL parse input as XML;
+    bare '&' or '<' would cause "Tag handling parsing failed" errors.
+
+    Returns (wrapped_text, list of original placeholders before wrap).
+    """
     placeholders: list[str] = []
 
+    # 1. XML-escape special characters first
+    escaped = (text
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;"))
+
+    # 2. Wrap placeholders. {name} survives escape (braces aren't XML-special)
     def repl(m: "re.Match[str]") -> str:
         placeholders.append(m.group(0))
         return f"<x>{m.group(0)}</x>"
 
-    wrapped = PLACEHOLDER_RE.sub(repl, text)
+    wrapped = PLACEHOLDER_RE.sub(repl, escaped)
     return wrapped, placeholders
 
 
 def unwrap_placeholders(text: str) -> str:
-    """Remove <x>...</x> wrappers, leaving the inner placeholder."""
-    return PROTECTED_RE.sub(r"\1", text)
+    """Reverse wrap_placeholders: unwrap <x>...</x> then unescape XML entities."""
+    # 1. Unwrap <x>{name}</x> -> {name}
+    out = PROTECTED_RE.sub(r"\1", text)
+    # 2. Reverse XML escapes (order: &amp; LAST to avoid double-decoding)
+    out = (out
+        .replace("&lt;", "<")
+        .replace("&gt;", ">")
+        .replace("&amp;", "&"))
+    return out
 
 
 def verify_placeholders(source: str, translation: str) -> bool:
@@ -105,14 +125,26 @@ def load_unique(unique_path: Path) -> list[dict]:
 
 
 def load_existing(translated_path: Path) -> dict:
+    """Load existing translations keyed by SOURCE TEXT (not unique_id).
+
+    Keying by text makes resume robust to unique.tsv re-generation: when
+    export_unique_text.py re-runs and assigns different unique_ids, we still
+    correctly recognize already-translated texts.
+
+    Error rows are NOT counted as 'done' so they will be retried.
+    """
     if not translated_path.exists():
         return {}
-    existing = {}
+    latest: dict = {}
     with open(translated_path, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f, delimiter="\t")
         for row in reader:
-            existing[row["unique_id"]] = row
-    return existing
+            text = row.get("source", "")
+            if text:
+                # last occurrence wins (in case of duplicates from prior runs)
+                latest[text] = row
+    # only return rows that succeeded; error rows will be retried
+    return {text: row for text, row in latest.items() if row.get("status") != "error"}
 
 
 def append_rows(translated_path: Path, header: list[str], rows: list[dict]) -> None:
@@ -229,21 +261,23 @@ def main() -> int:
     target_lang, source_locale, limit, dry_run = parsed
 
     script_dir = Path(__file__).resolve().parent
-    mod_root = script_dir.parent
+    # script_dir = mods/Trans To Vostok/tools/utils
+    tools_dir = script_dir.parent
+    mod_root = tools_dir.parent
     base = mod_root / ".tmp" / "unique_text" / source_locale
     unique_path = base / "unique.tsv"
     translated_path = base / f"translated_{target_lang}.tsv"
 
     if not unique_path.exists():
         print(f"[ERROR] unique.tsv not found: {unique_path}")
-        print(f"Run first: python tools/export_unique_text.py {source_locale}")
+        print(f"Run first: python tools/utils/export_unique_text.py {source_locale}")
         return 1
 
-    api_key = load_api_key(script_dir)
+    api_key = load_api_key(tools_dir)
     if api_key is None and not dry_run:
         print("[ERROR] DeepL API key not found.")
         print("  - Set env var: DEEPL_AUTH_KEY=<key>")
-        print(f"  - Or write to: {script_dir / '.deepl_key'}")
+        print(f"  - Or write to: {tools_dir / '.deepl_key'}")
         return 1
 
     print(f"Source unique.tsv  : {unique_path}")
@@ -260,7 +294,7 @@ def main() -> int:
         print(f"Limited to first {limit} rows")
 
     existing = load_existing(translated_path)
-    todo = [r for r in rows if r["unique_id"] not in existing]
+    todo = [r for r in rows if r["text"] not in existing]
     skipped = len(rows) - len(todo)
     print(f"Total rows         : {len(rows)}")
     print(f"Already translated : {skipped}")

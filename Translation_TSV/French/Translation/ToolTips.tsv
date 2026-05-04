@@ -1,0 +1,39 @@
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	text	988715662	Item	Article	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	text	284423885	Type (Common)	Type (courant)	
+			0	0	1	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Rare)	Type (Rare)	
+			0	0	1	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Legendary)	Type (Légendaire)	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	text	344439182	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	text	1418802616	Condition:	État :	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%	100 %	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	text	1575206874	Weight:	Poids :	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg	100 kg	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	text	913881262	Value:	Valeur :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Value	Value	Label	text	1314691776	100€	100€	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	text	1393351409	Use time:	Durée d'utilisation :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Use	Value	Label	text	1111351186	10s	10s	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	text	1563649886	Damage:	Dommages :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Damage	Value	Label	text	252494766	100	100	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	text	340357805	Caliber:	Calibre :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Caliber	Value	Label	text	1709584114	9x19	9x19	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	text	2089057817	Magazine:	Magazine :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Magazine	Value	Label	text	1286269279	100	100	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	text	1317579651	Capacity:	Capacité :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Capacity	Value	Label	text	15745248	+20kg	+20kg	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	text	1264056674	Max stack:	Nombre maximal de cartes :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Stack	Value	Label	text	1203542639	x30	x30	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	text	2078401087	Armor:	Armure :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Armor	Value	Label	text	134288100	NIJ III	NIJ III	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	text	973316326	Health:	Santé :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Health	Value	Label	text	553960291	+100	+100	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	text	1764317690	"Energy:
+"	"Énergie :
+"	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100	+100	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:	Hydratation :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100	+100	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:	Température corporelle :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100	+100	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:	Remèdes :	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:	Compatibilité :	
+			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U	AK-12, AKM, AKS-74U	Dynamically changed by gd script (I can't find what script file is, but must be somewhere)

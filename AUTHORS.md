@@ -31,6 +31,18 @@ auto-generated section below.)_
 
 _Auto-generated from each locale's `Translation.xlsx` MetaData (`Translator`, `Contributor (Translate)`) and `Texture.xlsx` (`Reworked by`, `Contributors`) by `tools/utils/build_authors.py`. Update the source xlsx files to change this list._
 
+### French (`Trans To Vostok/French/`)
+
+**Lead Translator(s):** _(none yet)_
+
+**Translation Contributors:**
+- MuteJack
+
+**Texture Reworkers:**
+- MuteJack
+
+**Texture Contributors:** _(none yet)_
+
 ### Korean (`Trans To Vostok/Korean/`)
 
 **Lead Translator(s):**

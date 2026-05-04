@@ -1,0 +1,1617 @@
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
+Items	Rarity		0	0	1	0	0	substr									Common	Courant	"Defined as enum at ItemData.gd.
+Dynamically changed on Tooltip.gd"
+Items	Rarity		0	0	1	0	0	substr									Rare	Rare	"Defined as enum at ItemData.gd.
+Dynamically changed on Tooltip.gd"
+Items	Rarity		0	0	1	0	0	substr									Legendary	Légendaire	"Defined as enum at ItemData.gd.
+Dynamically changed on Tooltip.gd"
+Items	Weapon/Ammo		0	0	1	0	0	substr									Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_12x70/Ammo_12x70	tres					name		12/70	12/70	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_12x70/Ammo_12x70	tres					inventory		12/70	12/70	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_12x70/Ammo_12x70	tres					rotated		12/70	12/70	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_12x70/Ammo_12x70	tres					equipment		12/70	12/70	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_12x70/Ammo_12x70	tres					display		12/70	12/70	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_12x70/Ammo_12x70	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_223/Ammo_223	tres					name		.223	.223	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_223/Ammo_223	tres					inventory		.223	.223	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_223/Ammo_223	tres					rotated		.223	.223	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_223/Ammo_223	tres					equipment		.223	.223	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_223/Ammo_223	tres					display		.223	.223	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_223/Ammo_223	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_308/Ammo_308	tres					name		.308	.308	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_308/Ammo_308	tres					inventory		.308	.308	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_308/Ammo_308	tres					rotated		.308	.308	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_308/Ammo_308	tres					equipment		.308	.308	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_308/Ammo_308	tres					display		.308	.308	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_308/Ammo_308	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_45ACP/Ammo_45ACP	tres					name		.45 ACP	.45 ACP	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_45ACP/Ammo_45ACP	tres					inventory		.45	.45	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_45ACP/Ammo_45ACP	tres					rotated		.45	.45	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_45ACP/Ammo_45ACP	tres					equipment		.45	.45	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_45ACP/Ammo_45ACP	tres					display		.45	.45	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_45ACP/Ammo_45ACP	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_46x30/Ammo_46x30	tres					name		4.6x30	4.6x30	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_46x30/Ammo_46x30	tres					inventory		4.6	4.6	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_46x30/Ammo_46x30	tres					rotated		4.6	4.6	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_46x30/Ammo_46x30	tres					equipment		4.6	4.6	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_46x30/Ammo_46x30	tres					display		4.6	4.6	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_46x30/Ammo_46x30	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_545x39/Ammo_545x39	tres					name		5.45x39	5.45x39	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_545x39/Ammo_545x39	tres					inventory		5.45	5.45	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_545x39/Ammo_545x39	tres					rotated		5.45	5.45	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_545x39/Ammo_545x39	tres					equipment		5.45	5.45	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_545x39/Ammo_545x39	tres					display		5.45	5.45	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_545x39/Ammo_545x39	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_762x39/Ammo_762x39	tres					name		7.62x39	7.62x39	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_762x39/Ammo_762x39	tres					inventory		7.62	7.62	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_762x39/Ammo_762x39	tres					rotated		7.62	7.62	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_762x39/Ammo_762x39	tres					equipment		7.62	7.62	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_762x39/Ammo_762x39	tres					display		7.62	7.62	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_762x39/Ammo_762x39	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_762x54R/Ammo_762x54R	tres					name		7.62x54R	7.62x54R	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_762x54R/Ammo_762x54R	tres					inventory		7.62R	7.62R	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_762x54R/Ammo_762x54R	tres					rotated		7.62R	7.62R	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_762x54R/Ammo_762x54R	tres					equipment		7.62R	7.62R	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_762x54R/Ammo_762x54R	tres					display		7.62R	7.62R	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_762x54R/Ammo_762x54R	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_9x18/Ammo_9x18	tres					name		9x18	9x18	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x18/Ammo_9x18	tres					inventory		9x18	9x18	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x18/Ammo_9x18	tres					rotated		9x18	9x18	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x18/Ammo_9x18	tres					equipment		9x18	9x18	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x18/Ammo_9x18	tres					display		9x18	9x18	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_9x18/Ammo_9x18	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_9x19/Ammo_9x19	tres					name		9x19	9x19	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x19/Ammo_9x19	tres					inventory		9x19	9x19	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x19/Ammo_9x19	tres					rotated		9x19	9x19	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x19/Ammo_9x19	tres					equipment		9x19	9x19	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x19/Ammo_9x19	tres					display		9x19	9x19	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_9x19/Ammo_9x19	tres					type		Ammo	Munitions	
+Items	Weapon/Ammo		0	0	0	0	1	substr	Items/Ammo/Ammo_9x39/Ammo_9x39	tres					name		9x39	9x39	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x39/Ammo_9x39	tres					inventory		9x39	9x39	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x39/Ammo_9x39	tres					rotated		9x39	9x39	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x39/Ammo_9x39	tres					equipment		9x39	9x39	
+Items	Weapon/Ammo		0	0	0	0	1	ignore	Items/Ammo/Ammo_9x39/Ammo_9x39	tres					display		9x39	9x39	
+Items	Weapon/Ammo		0	0	1	0	0	ignore	Items/Ammo/Ammo_9x39/Ammo_9x39	tres					type		Ammo	Munitions	
+Items	Armor		0	0	1	0	0	substr									Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	substr									Armor	Armure	
+Items	Armor		0	0	1	0	0	substr									Armor Plate {class}	Plaque de blindage {class}	
+Items	Armor		0	0	1	0	0	substr	Items/Armor/Armor_Plate_II	tres					name		Armor Plate (II)	Plaque de blindage (II)	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_II	tres					inventory		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_II	tres					rotated		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_II	tres					equipment		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_II	tres					display		Armor	Armure	
+Items	Armor		0	0	1	0	0	substr	Items/Armor/Armor_Plate_III+	tres					name		Armor Plate (III+)	Plaque de blindage (III+)	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III+	tres					inventory		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III+	tres					rotated		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III+	tres					equipment		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III+	tres					display		Armor	Armure	
+Items	Armor		0	0	1	0	0	substr	Items/Armor/Armor_Plate_III	tres					name		Armor Plate (III)	Plaque de blindage (III)	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III	tres					inventory		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III	tres					rotated		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III	tres					equipment		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_III	tres					display		Armor	Armure	
+Items	Armor		0	0	1	0	0	substr	Items/Armor/Armor_Plate_IIIA	tres					name		Armor Plate (IIIA)	Plaque de blindage (IIIA)	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IIIA	tres					inventory		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IIIA	tres					rotated		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IIIA	tres					equipment		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IIIA	tres					display		Armor	Armure	
+Items	Armor		0	0	1	0	0	substr	Items/Armor/Armor_Plate_IV	tres					name		Armor Plate (IV)	Plaque de blindage (IV)	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IV	tres					inventory		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IV	tres					rotated		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IV	tres					equipment		Armor Plate	Plaque de blindage	
+Items	Armor		0	0	1	0	0	ignore	Items/Armor/Armor_Plate_IV	tres					display		Armor	Armure	
+Items	Weapon/Attachments		0	0	1	0	0	substr									Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/ACOG/ACOG	tres					name		ATOG	ATOG	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ACOG/ACOG	tres					inventory		ATOG	ATOG	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ACOG/ACOG	tres					rotated		ATOG	ATOG	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ACOG/ACOG	tres					equipment		ATOG	ATOG	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ACOG/ACOG	tres					display		ATOG	ATOG	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/ACOG/ACOG	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/ANPEQ/ANPEQ	tres					name		AN-15	AN-15	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ANPEQ/ANPEQ	tres					inventory		AN-15	AN-15	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ANPEQ/ANPEQ	tres					rotated		AN-15	AN-15	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ANPEQ/ANPEQ	tres					equipment		AN-15	AN-15	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/ANPEQ/ANPEQ	tres					display		AN-15	AN-15	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/ANPEQ/ANPEQ	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/EXPS/EXPS	tres					name		EXP	EXP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/EXPS/EXPS	tres					inventory		EXP	EXP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/EXPS/EXPS	tres					rotated		EXP	EXP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/EXPS/EXPS	tres					equipment		EXP	EXP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/EXPS/EXPS	tres					display		EXP	EXP	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/EXPS/EXPS	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/HMR/HMR	tres					name		HMR	HMR	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/HMR/HMR	tres					inventory		HMR	HMR	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/HMR/HMR	tres					rotated		HMR	HMR	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/HMR/HMR	tres					equipment		HMR	HMR	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/HMR/HMR	tres					display		HMR	HMR	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/HMR/HMR	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	1	0	0	substr	Items/Attachments/Hybrid/Hybrid	tres					name		Hybrid	Hybride	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Hybrid/Hybrid	tres					inventory		Hybrid	Hybride	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Hybrid/Hybrid	tres					rotated		Hybrid	Hybride	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Hybrid/Hybrid	tres					equipment		Hybrid	Hybride	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Hybrid/Hybrid	tres					display		Hybrid	Hybride	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Hybrid/Hybrid	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	1	0	0	substr	Items/Attachments/Kobra/Kobra	tres					name		Kobra	Kobra	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Kobra/Kobra	tres					inventory		Kobra	Kobra	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Kobra/Kobra	tres					rotated		Kobra	Kobra	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Kobra/Kobra	tres					equipment		Kobra	Kobra	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Kobra/Kobra	tres					display		Kobra	Kobra	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Kobra/Kobra	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	1	0	0	substr	Items/Attachments/Leopard/Leopard	tres					name		Leopard	Léopard	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Leopard/Leopard	tres					inventory		Leopard	Léopard	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Leopard/Leopard	tres					rotated		Leopard	Léopard	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Leopard/Leopard	tres					equipment		Leopard	Léopard	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Leopard/Leopard	tres					display		Leopard	Léopard	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Leopard/Leopard	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	1	0	0	substr	Items/Attachments/Micro/Micro	tres					name		Micro	Micro	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Micro/Micro	tres					inventory		Micro	Micro	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Micro/Micro	tres					rotated		Micro	Micro	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Micro/Micro	tres					equipment		Micro	Micro	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Micro/Micro	tres					display		Micro	Micro	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Micro/Micro	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	1	0	0	substr	Items/Attachments/Monster/Monster	tres					name		Monster	Monstre	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Monster/Monster	tres					inventory		Monster	Monstre	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Monster/Monster	tres					rotated		Monster	Monstre	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Monster/Monster	tres					equipment		Monster	Monstre	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Monster/Monster	tres					display		Monster	Monstre	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Monster/Monster	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/MRO/MRO	tres					name		RMO	RMO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/MRO/MRO	tres					inventory		RMO	RMO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/MRO/MRO	tres					rotated		RMO	RMO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/MRO/MRO	tres					equipment		RMO	RMO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/MRO/MRO	tres					display		RMO	RMO	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/MRO/MRO	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/Navy/Navy	tres					name		Navy	Navy	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Navy/Navy	tres					inventory		Navy	Navy	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Navy/Navy	tres					rotated		Navy	Navy	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Navy/Navy	tres					equipment		Navy	Navy	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Navy/Navy	tres					display		Navy	Navy	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Navy/Navy	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/OZ5/OZ5	tres					name		OZ5	OZ5	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/OZ5/OZ5	tres					inventory		OZ5	OZ5	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/OZ5/OZ5	tres					rotated		OZ5	OZ5	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/OZ5/OZ5	tres					equipment		OZ5	OZ5	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/OZ5/OZ5	tres					display		OZ5	OZ5	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/OZ5/OZ5	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/PBS/PBS	tres					name		PBS	PBS	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PBS/PBS	tres					inventory		PBS	PBS	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PBS/PBS	tres					rotated		PBS	PBS	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PBS/PBS	tres					equipment		PBS	PBS	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PBS/PBS	tres					display		PBS	PBS	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/PBS/PBS	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/POSP/POSP	tres					name		POSP	POSP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/POSP/POSP	tres					inventory		POSP	POSP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/POSP/POSP	tres					rotated		POSP	POSP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/POSP/POSP	tres					equipment		POSP	POSP	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/POSP/POSP	tres					display		POSP	POSP	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/POSP/POSP	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/PRO/PRO	tres					name		PRO	PRO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PRO/PRO	tres					inventory		PRO	PRO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PRO/PRO	tres					rotated		PRO	PRO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PRO/PRO	tres					equipment		PRO	PRO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PRO/PRO	tres					display		PRO	PRO	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/PRO/PRO	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/PTN/PTN	tres					name		PTN	PTN	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PTN/PTN	tres					inventory		PTN	PTN	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PTN/PTN	tres					rotated		PTN	PTN	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PTN/PTN	tres					equipment		PTN	PTN	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PTN/PTN	tres					display		PTN	PTN	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/PTN/PTN	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/PU/PU	tres					name		PU Scope	PU Scope	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PU/PU	tres					inventory		PU Scope	PU Scope	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PU/PU	tres					rotated		PU Scope	PU Scope	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PU/PU	tres					equipment		PU Scope	PU Scope	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/PU/PU	tres					display		PU Scope	PU Scope	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/PU/PU	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/Rider/Rider	tres					name		Rider	Rider	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Rider/Rider	tres					inventory		Rider	Rider	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Rider/Rider	tres					rotated		Rider	Rider	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Rider/Rider	tres					equipment		Rider	Rider	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Rider/Rider	tres					display		Rider	Rider	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Rider/Rider	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/RMR/RMR	tres					name		MRM	MRM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/RMR/RMR	tres					inventory		MRM	MRM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/RMR/RMR	tres					rotated		MRM	MRM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/RMR/RMR	tres					equipment		MRM	MRM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/RMR/RMR	tres					display		MRM	MRM	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/RMR/RMR	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/Salvo/Salvo	tres					name		SLV	SLV	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Salvo/Salvo	tres					inventory		SLV	SLV	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Salvo/Salvo	tres					rotated		SLV	SLV	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Salvo/Salvo	tres					equipment		SLV	SLV	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Salvo/Salvo	tres					display		SLV	SLV	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Salvo/Salvo	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/SOCOM/SOCOM	tres					name		SOCOM	SOCOM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SOCOM/SOCOM	tres					inventory		SOCOM	SOCOM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SOCOM/SOCOM	tres					rotated		SOCOM	SOCOM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SOCOM/SOCOM	tres					equipment		SOCOM	SOCOM	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SOCOM/SOCOM	tres					display		SOCOM	SOCOM	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/SOCOM/SOCOM	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/SRO/SRO	tres					name		RSO	RSO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SRO/SRO	tres					inventory		RSO	RSO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SRO/SRO	tres					rotated		RSO	RSO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SRO/SRO	tres					equipment		RSO	RSO	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/SRO/SRO	tres					display		RSO	RSO	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/SRO/SRO	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	1	0	0	substr	Items/Attachments/Thor/Thor	tres					name		Thor	Thor	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Thor/Thor	tres					inventory		Thor	Thor	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Thor/Thor	tres					rotated		Thor	Thor	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Thor/Thor	tres					equipment		Thor	Thor	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Thor/Thor	tres					display		Thor	Thor	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Thor/Thor	tres					type		Attachment	Pièce jointe	
+Items	Weapon/Attachments		0	0	0	0	1	substr	Items/Attachments/Vudu/Vudu	tres					name		VDU	VDU	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Vudu/Vudu	tres					inventory		VDU	VDU	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Vudu/Vudu	tres					rotated		VDU	VDU	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Vudu/Vudu	tres					equipment		VDU	VDU	
+Items	Weapon/Attachments		0	0	0	0	1	ignore	Items/Attachments/Vudu/Vudu	tres					display		VDU	VDU	
+Items	Weapon/Attachments		0	0	1	0	0	ignore	Items/Attachments/Vudu/Vudu	tres					type		Attachment	Pièce jointe	
+Items	Backpacks		0	0	1	0	0	substr									Backpack	Sac à dos	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					name		Jääkäri Backpack (Black)	Sac à dos Jääkäri (noir)	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					inventory		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					rotated		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					equipment		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					display		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					type		Backpack	Sac à dos	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					name		Jääkäri Backpack (Brown)	Sac à dos Jääkäri (marron)	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					inventory		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					rotated		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					equipment		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					display		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					type		Backpack	Sac à dos	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					name		Jääkäri Backpack (Green)	Sac à dos Jääkäri (vert)	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					inventory		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					rotated		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					equipment		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					display		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					type		Backpack	Sac à dos	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					name		Jääkäri Backpack (M05)	Sac à dos Jääkäri (M05)	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					inventory		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					rotated		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					equipment		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					display		Jääkäri BP.	Jääkäri BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					type		Backpack	Sac à dos	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					name		Nomad Backpack	Sac à dos Nomad	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					inventory		Nomad BP.	Nomad BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					rotated		Nomad BP.	Nomad BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					equipment		Nomad BP.	Nomad BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					display		Nomad BP.	Nomad BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					type		Backpack	Sac à dos	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					name		Patrol Backpack	Sac à dos de patrouille	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					inventory		Patrol BP.	Patrouille BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					rotated		Patrol BP.	Patrouille BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					equipment		Patrol BP.	Patrouille BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					display		Patrol BP.	Patrouille BP.	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					type		Backpack	Sac à dos	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					name		Duffel (Retro)	Sac de voyage (rétro)	
+Items	Backpacks		0	0	1	0	0	substr	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					inventory		R. Duffel	R. Duffel	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					rotated		R. Duffel	R. Duffel	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					equipment		R. Duffel	R. Duffel	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					display		R. Duffel	R. Duffel	
+Items	Backpacks		0	0	1	0	0	ignore	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					type		Backpack	Sac à dos	
+Items	Belts		0	0	1	0	0	substr									Belt Pouch	Pochette de ceinture	
+Items	Belts		0	0	1	0	0	substr	Items/Belts/Kukkaro/Kukkaro_Black	tres					name		Kukkaro (Black)	Kukkaro (noir)	
+Items	Belts		0	0	1	0	0	substr	Items/Belts/Kukkaro/Kukkaro_Black	tres					inventory		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Black	tres					rotated		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Black	tres					equipment		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Black	tres					display		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Black	tres					type		Belt Pouch	Pochette de ceinture	
+Items	Belts		0	0	1	0	0	substr	Items/Belts/Kukkaro/Kukkaro_Brown	tres					name		Kukkaro (Brown)	Kukkaro (marron)	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Brown	tres					inventory		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Brown	tres					rotated		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Brown	tres					equipment		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Brown	tres					display		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Brown	tres					type		Belt Pouch	Pochette de ceinture	
+Items	Belts		0	0	1	0	0	substr	Items/Belts/Kukkaro/Kukkaro_Green	tres					name		Kukkaro (Green)	Kukkaro (Vert)	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Green	tres					inventory		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Green	tres					rotated		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Green	tres					equipment		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Green	tres					display		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_Green	tres					type		Belt Pouch	Pochette de ceinture	
+Items	Belts		0	0	1	0	0	substr	Items/Belts/Kukkaro/Kukkaro_M05	tres					name		Kukkaro (M05)	Kukkaro (M05)	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_M05	tres					inventory		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_M05	tres					rotated		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_M05	tres					equipment		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_M05	tres					display		Kukkaro	Kukkaro	
+Items	Belts		0	0	1	0	0	ignore	Items/Belts/Kukkaro/Kukkaro_M05	tres					type		Belt Pouch	Pochette de ceinture	
+Items	Book		0	0	1	0	0	substr									Literature	Littérature	
+Items	Book		0	0	1	0	0	substr	Items/Books/Book_Children	tres					name		Book (Children)	Livre (pour enfants)	
+Items	Book		0	0	1	0	0	substr	Items/Books/Book_Children	tres					inventory		Children	Enfants	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Children	tres					rotated		Children	Enfants	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Children	tres					equipment		Children	Enfants	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Children	tres					display		Children	Enfants	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Children	tres					type		Literature	Littérature	
+Items	Book		0	0	1	0	0	substr	Items/Books/Book_Cooking	tres					name		Book (Cooking)	Livre (de cuisine)	
+Items	Book		0	0	1	0	0	substr	Items/Books/Book_Cooking	tres					inventory		Cooking	Cuisine	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Cooking	tres					rotated		Cooking	Cuisine	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Cooking	tres					equipment		Cooking	Cuisine	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Cooking	tres					display		Cooking	Cuisine	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Cooking	tres					type		Literature	Littérature	
+Items	Book		0	0	1	0	0	substr	Items/Books/Book_Fishing	tres					name		Book (Fishing)	Livre (Pêche)	
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Fishing	tres					inventory		Fishing	Pêche	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Fishing	tres					rotated		Fishing	Pêche	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Fishing	tres					equipment		Fishing	Pêche	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Fishing	tres					display		Fishing	Pêche	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Fishing	tres					type		Literature	Littérature	
+Items	Book		0	0	1	0	0	substr	Items/Books/Book_Religion	tres					name		Book (Religion)	Livre (Religion)	
+Items	Book		0	0	1	0	0	substr	Items/Books/Book_Religion	tres					inventory		Religion	Religion	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Religion	tres					rotated		Religion	Religion	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Religion	tres					equipment		Religion	Religion	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Religion	tres					display		Religion	Religion	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)
+Items	Book		0	0	1	0	0	ignore	Items/Books/Book_Religion	tres					type		Literature	Littérature	
+Items	Clothing		0	0	1	0	0	substr									Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Beanie_Flame/Beanie_Flame	tres					name		Flame Beanie	Bonnet Flame	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Beanie_Flame/Beanie_Flame	tres					inventory		Flame Beanie	Bonnet Flame	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Beanie_Flame/Beanie_Flame	tres					rotated		Flame Beanie	Bonnet Flame	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Beanie_Flame/Beanie_Flame	tres					equipment		F. Beanie	F. Bonnet	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Beanie_Flame/Beanie_Flame	tres					display		F. Beanie	F. Bonnet	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Beanie_Flame/Beanie_Flame	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Boots_Combat/Boots_Combat	tres					name		Combat Boots	Bottes de combat	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Boots_Combat/Boots_Combat	tres					inventory		Combat Boots	Bottes de combat	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Boots_Combat/Boots_Combat	tres					rotated		Combat Boots	Bottes de combat	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Boots_Combat/Boots_Combat	tres					equipment		C. Boots	C. Bottes	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Boots_Combat/Boots_Combat	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Cap_M62/Cap_M62	tres					name		M62 Cap	Casquette M62	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Cap_M62/Cap_M62	tres					inventory		M62 Cap	Casquette M62	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Cap_M62/Cap_M62	tres					rotated		M62 Cap	Casquette M62	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Cap_M62/Cap_M62	tres					equipment		M62 Cap	Casquette M62	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Cap_M62/Cap_M62	tres					display		M62 Cap	Casquette M62	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Cap_M62/Cap_M62	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Fleece_Tactical_Brown/Fleece_Tactical_Brown	tres					name		Tactical Fleece (Brown)	Polaire tactique (marron)	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Fleece_Tactical_Brown/Fleece_Tactical_Brown	tres					inventory		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Brown/Fleece_Tactical_Brown	tres					rotated		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Brown/Fleece_Tactical_Brown	tres					equipment		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Brown/Fleece_Tactical_Brown	tres					display		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Brown/Fleece_Tactical_Brown	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					name		Tactical Fleece (Green)	Polaire tactique (verte)	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					inventory		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					rotated		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					equipment		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					display		T. Fleece	T. Polaire	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					name		Leather Gloves	Gants en cuir	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					inventory		L. Gloves	L. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					rotated		L. Gloves	L. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					equipment		L. Gloves	L. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					display		L. Gloves	L. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Gloves_Work/Gloves_Work	tres					name		Work Gloves	Gants de travail	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Gloves_Work/Gloves_Work	tres					inventory		W. Gloves	W. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Work/Gloves_Work	tres					rotated		W. Gloves	W. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Work/Gloves_Work	tres					equipment		W. Gloves	W. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Work/Gloves_Work	tres					display		W. Gloves	W. Gants	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Gloves_Work/Gloves_Work	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hat_Mosquito/Hat_Mosquito	tres					name		Mosquito Hat	Chapeau anti-moustiques	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Mosquito/Hat_Mosquito	tres					inventory		Mosquito Hat	Chapeau anti-moustiques	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Mosquito/Hat_Mosquito	tres					rotated		Mosquito Hat	Chapeau anti-moustiques	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hat_Mosquito/Hat_Mosquito	tres					equipment		M. Hat	M. Hat	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Mosquito/Hat_Mosquito	tres					display		M. Hat	M. Hat	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Mosquito/Hat_Mosquito	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					name		Sauna Hat	Bonnet de sauna	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					inventory		Sauna Hat	Bonnet de sauna	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					rotated		Sauna Hat	Bonnet de sauna	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					equipment		S. Hat	S. Hat	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					display		S. Hat	S. Hat	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					name		Hoodie (Border Zone)	Sweat à capuche (Border Zone)	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	Sweat à capuche BZ.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					rotated		Hoodie BZ.	Sweat à capuche BZ.	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	Hoodie B.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					display		Hoodie B.	Hoodie B.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					name		Hoodie (Gray)	Sweat à capuche (gris)	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					inventory		Hoodie	Sweat à capuche	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					rotated		Hoodie	Sweat à capuche	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					equipment		Hoodie	Sweat à capuche	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					display		Hoodie	Sweat à capuche	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_M62/Jacket_M62	tres					name		M62 Jacket	Veste M62	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_M62/Jacket_M62	tres					inventory		M62 Jacket	Veste M62	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_M62/Jacket_M62	tres					rotated		M62 Jacket	Veste M62	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_M62/Jacket_M62	tres					equipment		M62 J.	M62 J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_M62/Jacket_M62	tres					display		M62 J.	M62 J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_M62/Jacket_M62	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_Santa/Jacket_Santa	tres					name		Santa Jacket	Veste du Père Noël	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Santa/Jacket_Santa	tres					inventory		Santa Jacket	Veste du Père Noël	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Santa/Jacket_Santa	tres					rotated		Santa Jacket	Veste du Père Noël	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_Santa/Jacket_Santa	tres					equipment		Santa J.	Père Noël J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Santa/Jacket_Santa	tres					display		Santa J.	Père Noël J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Santa/Jacket_Santa	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_Winter_Blue/Jacket_Winter_Blue	tres					name		Winter Jacket (Blue)	Veste d'hiver (bleue)	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_Winter_Blue/Jacket_Winter_Blue	tres					inventory		Winter Jacket	Veste d'hiver	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Blue/Jacket_Winter_Blue	tres					rotated		Winter Jacket	Veste d'hiver	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Blue/Jacket_Winter_Blue	tres					equipment		Winter J.	Winter J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Blue/Jacket_Winter_Blue	tres					display		Winter J.	Winter J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Blue/Jacket_Winter_Blue	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					name		Winter Jacket (Red)	Veste d'hiver (rouge)	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					inventory		Winter Jacket	Veste d'hiver	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					rotated		Winter Jacket	Veste d'hiver	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					equipment		Winter J.	Winter J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					display		Winter J.	Winter J.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jeans_Black/Jeans_Black	tres					name		Jeans (Black)	Jean (noir)	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Jeans_Black/Jeans_Black	tres					inventory		Jeans	Jeans	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jeans_Black/Jeans_Black	tres					rotated		Jeans	Jeans	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jeans_Black/Jeans_Black	tres					equipment		Jeans	Jeans	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jeans_Black/Jeans_Black	tres					display		Jeans	Jeans	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Jeans_Black/Jeans_Black	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Pants_Hiking/Pants_Hiking	tres					name		Hiking Pants	Pantalon de randonnée	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Pants_Hiking/Pants_Hiking	tres					inventory		Hiking P.	Randonnée P.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Pants_Hiking/Pants_Hiking	tres					rotated		Hiking P.	Randonnée P.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Pants_Hiking/Pants_Hiking	tres					equipment		Hiking P.	Randonnée P.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Pants_Hiking/Pants_Hiking	tres					display		Hiking P.	Randonnée P.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Pants_Hiking/Pants_Hiking	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					name		Windbreaker (Black)	Veste coupe-vent (noire)	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					inventory		Windbreaker	Veste coupe-vent	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					rotated		Windbreaker	Veste coupe-vent	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					equipment		Windbr.	Windbr.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					display		Windbr.	Windbr.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					type		Clothing	Vêtements	
+Items	Clothing		0	0	1	0	0	substr	Items/Clothing/Windbreaker_Green/Windbreaker_Green	tres					name		Windbreaker (Green)	Veste coupe-vent (verte)	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Green/Windbreaker_Green	tres					inventory		Windbreaker	Veste coupe-vent	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Green/Windbreaker_Green	tres					rotated		Windbreaker	Veste coupe-vent	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Green/Windbreaker_Green	tres					equipment		Windbr.	Windbr.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Green/Windbreaker_Green	tres					display		Windbr.	Windbr.	
+Items	Clothing		0	0	1	0	0	ignore	Items/Clothing/Windbreaker_Green/Windbreaker_Green	tres					type		Clothing	Vêtements	
+Items	Consumables	type	0	0	1	0	0	substr									Consumables	Consommables	
+Items	Consumables	type	0	0	1	0	0	substr									Consumable	Consommable	
+Items	Consumables	action	0	0	1	0	0	substr									Drink	Boire	
+Items	Consumables	action	0	0	1	0	0	substr									Eat	Manger	
+Items	Consumables	action	0	0	1	0	0	substr									Eat Raw	Mangez cru	
+Items	Consumables	action	0	0	1	0	0	substr									Eat (Raw)	Manger (cru)	
+Items	Consumables	action	0	0	1	0	0	substr									Chew	Mâcher	
+Items	Consumables	action	0	0	1	0	0	substr									Smoke	Fumée	
+Items	Consumables	action	0	0	1	0	0	substr									Use	Utilisation	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Beer/Beer	tres					name		Beer	Bière	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Beer/Beer	tres					inventory		Beer	Bière	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Beer/Beer	tres					rotated		Beer	Bière	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Beer/Beer	tres					equipment		Beer	Bière	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Beer/Beer	tres					display		Beer	Bière	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Beer/Beer	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Beer/Beer	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Can_Empty/Can_Empty	tres					name		Empty Can	Boîte vide	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Can_Empty/Can_Empty	tres					inventory		Can	Peut	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Can_Empty/Can_Empty	tres					rotated		Can	Peut	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Can_Empty/Can_Empty	tres					equipment		Can	Peut	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Can_Empty/Can_Empty	tres					display		Can	Peut	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Can_Empty/Can_Empty	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Meat/Canned_Meat	tres					name		Canned Meat	Viande en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Meat/Canned_Meat	tres					inventory		Meat	Viande	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Meat/Canned_Meat	tres					rotated		Meat	Viande	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Meat/Canned_Meat	tres					equipment		Meat	Viande	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Meat/Canned_Meat	tres					display		Meat	Viande	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Meat/Canned_Meat	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Meat/Canned_Meat	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Meatballs/Canned_Meatballs	tres					name		Canned Meatballs	Boulettes de viande en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Meatballs/Canned_Meatballs	tres					inventory		Meatballs	Boulettes de viande	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Meatballs/Canned_Meatballs	tres					rotated		Meatballs	Boulettes de viande	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Meatballs/Canned_Meatballs	tres					equipment		Meatballs	Boulettes de viande	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Meatballs/Canned_Meatballs	tres					display		Meatballs	Boulettes de viande	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Meatballs/Canned_Meatballs	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Meatballs/Canned_Meatballs	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					name		Canned Pea Soup	Soupe aux petits pois en conserve	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					inventory		Pea Soup	Soupe aux petits pois	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					rotated		Pea Soup	Soupe aux petits pois	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					equipment		Pea Soup	Soupe aux petits pois	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					display		Pea Soup	Soupe aux petits pois	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					name		Canned Peaches	Pêches en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					inventory		Peaches	Pêches	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					rotated		Peaches	Pêches	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					equipment		Peaches	Pêches	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					display		Peaches	Pêches	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Pear/Canned_Pear	tres					name		Canned Pear	Poire en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Pear/Canned_Pear	tres					inventory		Pear	Poire	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pear/Canned_Pear	tres					rotated		Pear	Poire	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pear/Canned_Pear	tres					equipment		Pear	Poire	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pear/Canned_Pear	tres					display		Pear	Poire	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Pear/Canned_Pear	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Pear/Canned_Pear	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Peas/Canned_Peas	tres					name		Canned Peas	Pois en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Peas/Canned_Peas	tres					inventory		Peas	Pois	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Peas/Canned_Peas	tres					rotated		Peas	Pois	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Peas/Canned_Peas	tres					equipment		Peas	Pois	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Peas/Canned_Peas	tres					display		Peas	Pois	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Peas/Canned_Peas	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Peas/Canned_Peas	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Pineapple/Canned_Pineapple	tres					name		Canned Pineapple	Ananas en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Pineapple/Canned_Pineapple	tres					inventory		Pineapple	Ananas	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pineapple/Canned_Pineapple	tres					rotated		Pineapple	Ananas	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pineapple/Canned_Pineapple	tres					equipment		Pineapple	Ananas	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Pineapple/Canned_Pineapple	tres					display		Pineapple	Ananas	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Pineapple/Canned_Pineapple	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Pineapple/Canned_Pineapple	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Tomatoes/Canned_Tomatoes	tres					name		Canned Tomatoes	Tomates en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Tomatoes/Canned_Tomatoes	tres					inventory		Tomatoes	Tomates	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Tomatoes/Canned_Tomatoes	tres					rotated		Tomatoes	Tomates	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Tomatoes/Canned_Tomatoes	tres					equipment		Tomatoes	Tomates	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Tomatoes/Canned_Tomatoes	tres					display		Tomatoes	Tomates	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Tomatoes/Canned_Tomatoes	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Tomatoes/Canned_Tomatoes	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Tuna/Canned_Tuna	tres					name		Canned Tuna	Thon en conserve	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Canned_Tuna/Canned_Tuna	tres					inventory		Tuna	Thon	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Tuna/Canned_Tuna	tres					rotated		Tuna	Thon	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Tuna/Canned_Tuna	tres					equipment		Tuna	Thon	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Canned_Tuna/Canned_Tuna	tres					display		Tuna	Thon	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Canned_Tuna/Canned_Tuna	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Canned_Tuna/Canned_Tuna	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cat_Food/Cat_Food	tres					name		Cat Food	Nourriture pour chats	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					inventory		Cat Food	Nourriture pour chats	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					rotated		Cat Food	Nourriture pour chats	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					equipment		Cat Food	Nourriture pour chats	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					display		Cat Food	Nourriture pour chats	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Chocolate_War/Chocolate_War	tres					name		War Chocolate	Chocolat de guerre	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Chocolate_War/Chocolate_War	tres					inventory		W. Choco	W. Choco	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					rotated		W. Choco	W. Choco	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					equipment		W. Choco	W. Choco	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					display		W. Choco	W. Choco	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cigarettes/Cigarettes	tres					name		Cigarettes	Cigarettes	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cigarettes/Cigarettes	tres					inventory		Cigs	Cigares	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cigarettes/Cigarettes	tres					rotated		Cigs	Cigares	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cigarettes/Cigarettes	tres					equipment		Cigs	Cigares	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cigarettes/Cigarettes	tres					display		Cigs	Cigares	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Cigarettes/Cigarettes	tres					phrase		Smoke	Fumée	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Cigarettes/Cigarettes	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cigars/Cigars	tres					name		Cigars	Cigares	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cigars/Cigars	tres					inventory		Cigars	Cigares	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cigars/Cigars	tres					rotated		Cigars	Cigares	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cigars/Cigars	tres					equipment		Cigars	Cigares	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cigars/Cigars	tres					display		Cigars	Cigares	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Cigars/Cigars	tres					phrase		Smoke	Fumée	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Cigars/Cigars	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Coffee/Coffee	tres					name		Coffee	Café	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Coffee/Coffee	tres					inventory		Coffee	Café	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Coffee/Coffee	tres					rotated		Coffee	Café	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Coffee/Coffee	tres					equipment		Coffee	Café	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Coffee/Coffee	tres					display		Coffee	Café	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Coffee/Coffee	tres					phrase		Chew	Mâcher	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Coffee/Coffee	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					name		Coffee (Brewed)	Café (filtre)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					inventory		Coffee (Brewed)	Café (filtre)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					rotated		Coffee (Brewed)	Café (filtre)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					equipment		Coffee (Brewed)	Café (filtre)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					display		C. Brewed	C. Infusé	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					name		Fish Soup (Cooked)	Soupe de poisson (cuite)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					inventory		F. Soup (Cooked)	F. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					rotated		F. Soup (Cooked)	F. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					equipment		F. Soup (Cooked)	F. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					display		F. Soup	F. Soupe	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Meatballs/Cooked_Meatballs	tres					name		Meatballs (Cooked)	Boulettes de viande (cuites)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Meatballs/Cooked_Meatballs	tres					inventory		M. Balls (Cooked)	M. Balls (cuit)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Meatballs/Cooked_Meatballs	tres					rotated		M. Balls (Cooked)	M. Balls (cuit)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Meatballs/Cooked_Meatballs	tres					equipment		M. Balls (Cooked)	M. Balls (cuit)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Meatballs/Cooked_Meatballs	tres					display		M. Balls	M. Balls	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Cooked_Meatballs/Cooked_Meatballs	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Cooked_Meatballs/Cooked_Meatballs	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Pea_Soup/Cooked_Pea_Soup	tres					name		Pea Soup (Cooked)	Soupe aux petits pois (cuite)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Pea_Soup/Cooked_Pea_Soup	tres					inventory		P. Soup (Cooked)	P. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Pea_Soup/Cooked_Pea_Soup	tres					rotated		P. Soup (Cooked)	P. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Pea_Soup/Cooked_Pea_Soup	tres					equipment		P. Soup (Cooked)	P. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Pea_Soup/Cooked_Pea_Soup	tres					display		P. Soup	P. Soup	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Cooked_Pea_Soup/Cooked_Pea_Soup	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Cooked_Pea_Soup/Cooked_Pea_Soup	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Tomato_Soup/Cooked_Tomato_Soup	tres					name		Tomato Soup (Cooked)	Soupe à la tomate (cuite)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Tomato_Soup/Cooked_Tomato_Soup	tres					inventory		T. Soup (Cooked)	T. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Tomato_Soup/Cooked_Tomato_Soup	tres					rotated		T. Soup (Cooked)	T. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Cooked_Tomato_Soup/Cooked_Tomato_Soup	tres					equipment		T. Soup (Cooked)	T. Soupe (cuite)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Cooked_Tomato_Soup/Cooked_Tomato_Soup	tres					display		T. Soup	T. Soup	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Cooked_Tomato_Soup/Cooked_Tomato_Soup	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Cooked_Tomato_Soup/Cooked_Tomato_Soup	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Crackers/Crackers	tres					name		Crackers	Crackers	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Crackers/Crackers	tres					inventory		Crackers	Crackers	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Crackers/Crackers	tres					rotated		Crackers	Crackers	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Crackers/Crackers	tres					equipment		Crackers	Crackers	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Crackers/Crackers	tres					display		Crackers	Crackers	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Crackers/Crackers	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Crackers/Crackers	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Energy_Drink/Energy_Drink	tres					name		Energy Drink	Boisson énergisante	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Energy_Drink/Energy_Drink	tres					inventory		E. Drink	E. Boisson	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Energy_Drink/Energy_Drink	tres					rotated		E. Drink	E. Boisson	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Energy_Drink/Energy_Drink	tres					equipment		E. Drink	E. Boisson	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Energy_Drink/Energy_Drink	tres					display		E. Drink	E. Boisson	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Energy_Drink/Energy_Drink	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Energy_Drink/Energy_Drink	tres					type		Consumable	Consommable	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Energy_Powder/Energy_Powder	tres					name		Energy Powder	Poudre énergétique	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Energy_Powder/Energy_Powder	tres					inventory		E. Powder	E. Poudre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					rotated		E. Powder	E. Poudre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					equipment		E. Powder	E. Poudre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					display		E. Powder	E. Poudre	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					phrase		Chew	Mâcher	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Field_Ration/Field_Ration	tres					name		Field Ration	Ration de campagne	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					inventory		Field Ration	Ration de campagne	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					rotated		Field Ration	Ration de campagne	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					equipment		Field Ration	Ration de campagne	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Field_Ration/Field_Ration	tres					display		F. Ration	F. Ration	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					type		Consumables	Consommables	
+Items	Consumables/Juices	name	0	0	1	0	0	substr									Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Juice_Orange/Juice_Orange	tres					name		Juice (Orange)	Jus (d'orange)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Orange/Juice_Orange	tres					inventory		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Orange/Juice_Orange	tres					rotated		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Orange/Juice_Orange	tres					equipment		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Juice_Orange/Juice_Orange	tres					display		Juice O.	Juice O.	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Juice_Orange/Juice_Orange	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Juice_Orange/Juice_Orange	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Juice_Pear/Juice_Pear	tres					name		Juice (Pear)	Jus (de poire)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Pear/Juice_Pear	tres					inventory		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Pear/Juice_Pear	tres					rotated		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Pear/Juice_Pear	tres					equipment		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Juice_Pear/Juice_Pear	tres					display		Juice P.	Juice P.	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Juice_Pear/Juice_Pear	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Juice_Pear/Juice_Pear	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Juice_Raspberry/Juice_Raspberry	tres					name		Juice (Raspberry)	Jus (de framboise)	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Raspberry/Juice_Raspberry	tres					inventory		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Raspberry/Juice_Raspberry	tres					rotated		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Juice_Raspberry/Juice_Raspberry	tres					equipment		Juice	Jus	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Juice_Raspberry/Juice_Raspberry	tres					display		Juice R.	Juice R.	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Juice_Raspberry/Juice_Raspberry	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Juice_Raspberry/Juice_Raspberry	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Kilju/Kilju	tres					name		Kilju	Kilju	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kilju/Kilju	tres					inventory		Kilju	Kilju	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kilju/Kilju	tres					rotated		Kilju	Kilju	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kilju/Kilju	tres					equipment		Kilju	Kilju	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kilju/Kilju	tres					display		Kilju	Kilju	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Kilju/Kilju	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Kilju/Kilju	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Kompot/Kompot	tres					name		Kompot	Kompot	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kompot/Kompot	tres					inventory		Kompot	Kompot	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kompot/Kompot	tres					rotated		Kompot	Kompot	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kompot/Kompot	tres					equipment		Kompot	Kompot	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Kompot/Kompot	tres					display		Kompot	Kompot	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Kompot/Kompot	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Kompot/Kompot	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Mustard/Mustard	tres					name		Mustard	Moutarde	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Mustard/Mustard	tres					inventory		Mustard	Moutarde	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Mustard/Mustard	tres					rotated		Mustard	Moutarde	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Mustard/Mustard	tres					equipment		Mustard	Moutarde	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Mustard/Mustard	tres					display		Mustard	Moutarde	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Mustard/Mustard	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Mustard/Mustard	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Peanuts/Peanuts	tres					name		Peanuts	Cacahuètes	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Peanuts/Peanuts	tres					inventory		Peanuts	Cacahuètes	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Peanuts/Peanuts	tres					rotated		Peanuts	Cacahuètes	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Peanuts/Peanuts	tres					equipment		Peanuts	Cacahuètes	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Peanuts/Peanuts	tres					display		Peanuts	Cacahuètes	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Peanuts/Peanuts	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Peanuts/Peanuts	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Potato/Potato	tres					name		Potato	Pomme de terre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Potato/Potato	tres					inventory		Potato	Pomme de terre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Potato/Potato	tres					rotated		Potato	Pomme de terre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Potato/Potato	tres					equipment		Potato	Pomme de terre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Potato/Potato	tres					display		Potato	Pomme de terre	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Potato/Potato	tres					phrase		Eat (Raw)	Manger (cru)	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Potato/Potato	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					name		Salty Liquorice	Réglisse salée	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					inventory		Salty Liq.	Salty Liq.	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					rotated		Salty Liq.	Salty Liq.	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					equipment		Salty Liq.	Salty Liq.	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					display		Salty Liq.	Salty Liq.	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Snus/Snus	tres					name		Snus	Snus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Snus/Snus	tres					inventory		Snus	Snus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Snus/Snus	tres					rotated		Snus	Snus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Snus/Snus	tres					equipment		Snus	Snus	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Snus/Snus	tres					display		Snus	Snus	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Snus/Snus	tres					phrase		Use	Utilisation	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Snus/Snus	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					name		Soda (Lemon)	Soda (citron)	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					inventory		Soda	Soda	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					rotated		Soda	Soda	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					equipment		Soda	Soda	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					display		Soda L.	Soda L.	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Sugar/Sugar	tres					name		Sugar	Sucre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Sugar/Sugar	tres					inventory		Sugar	Sucre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Sugar/Sugar	tres					rotated		Sugar	Sucre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Sugar/Sugar	tres					equipment		Sugar	Sucre	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Sugar/Sugar	tres					display		Sugar	Sucre	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Sugar/Sugar	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Sugar/Sugar	tres					type		Consumables	Consommables	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Water_Bottle/Water_Bottle	tres					name		Water Bottle	Bouteille d'eau	
+Items	Consumables	name	0	0	1	0	0	substr	Items/Consumables/Water_Bottle/Water_Bottle	tres					inventory		Water	Eau	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Water_Bottle/Water_Bottle	tres					rotated		Water	Eau	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Water_Bottle/Water_Bottle	tres					equipment		Water	Eau	
+Items	Consumables	name	0	0	1	0	0	ignore	Items/Consumables/Water_Bottle/Water_Bottle	tres					display		Water	Eau	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Water_Bottle/Water_Bottle	tres					phrase		Drink	Boire	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Water_Bottle/Water_Bottle	tres					type		Consumable	Consommable	
+Items	Consumables		0	0	1	0	0	substr	Items/Consumables/Yeast/Yeast	tres					name		Yeast	Levure	
+Items	Consumables		0	0	1	0	0	ignore	Items/Consumables/Yeast/Yeast	tres					inventory		Yeast	Levure	
+Items	Consumables		0	0	1	0	0	ignore	Items/Consumables/Yeast/Yeast	tres					rotated		Yeast	Levure	
+Items	Consumables		0	0	1	0	0	ignore	Items/Consumables/Yeast/Yeast	tres					equipment		Yeast	Levure	
+Items	Consumables		0	0	1	0	0	ignore	Items/Consumables/Yeast/Yeast	tres					display		Yeast	Levure	
+Items	Consumables	action	0	0	1	0	0	ignore	Items/Consumables/Yeast/Yeast	tres					phrase		Eat	Manger	
+Items	Consumables	type	0	0	1	0	0	ignore	Items/Consumables/Yeast/Yeast	tres					type		Consumables	Consommables	
+Items	Electronics		0	0	1	0	0	substr									Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Alarm_Clock/Alarm_Clock	tres					name		Alarm Clock	Réveil	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Alarm_Clock/Alarm_Clock	tres					inventory		A. Clock	A. Horloge	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Alarm_Clock/Alarm_Clock	tres					rotated		A. Clock	A. Horloge	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Alarm_Clock/Alarm_Clock	tres					equipment		A. Clock	A. Horloge	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Alarm_Clock/Alarm_Clock	tres					display		A. Clock	A. Horloge	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Alarm_Clock/Alarm_Clock	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Batteries/Batteries	tres					name		Batteries	Piles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Batteries/Batteries	tres					inventory		Batteries	Piles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Batteries/Batteries	tres					rotated		Batteries	Piles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Batteries/Batteries	tres					equipment		Batteries	Piles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Batteries/Batteries	tres					display		Batteries	Piles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Batteries/Batteries	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Battery/Battery	tres					name		Battery	Batterie	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery/Battery	tres					inventory		Battery	Batterie	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery/Battery	tres					rotated		Battery	Batterie	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery/Battery	tres					equipment		Battery	Batterie	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery/Battery	tres					display		Battery	Batterie	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery/Battery	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Battery_Cables/Battery_Cables	tres					name		Battery Cables	Câbles de batterie	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Battery_Cables/Battery_Cables	tres					inventory		B. Cables	B. Câbles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery_Cables/Battery_Cables	tres					rotated		B. Cables	B. Câbles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery_Cables/Battery_Cables	tres					equipment		B. Cables	B. Câbles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery_Cables/Battery_Cables	tres					display		B. Cables	B. Câbles	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Battery_Cables/Battery_Cables	tres					type		Electronics	Électronique	
+Items	Electronics	Casette	0	0	1	0	0	substr									Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					name		Casette (Electrofolk)	Casette (électro-folk)	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					inventory		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					rotated		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					equipment		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					display		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Haavakko	tres					name		Junna - Haavakko	Junna - Haavakko	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Lempi	tres					name		Junna - Lempi	Junna - Lempi	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Mistä_Sä_Tiesit_Tulla	tres					name		Junna - Mistä Sä Tiesit Tulla	Junna - Comment as-tu su que tu viendrais ?	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Mukula	tres					name		Junna - Mukula	Junna - Mukula	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Pappa_Se_Antoi_Hevosen	tres					name		Junna - Pappa Se Antoi Hevosen	Junna - Papa m'a offert un cheval	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Rautahepo	tres					name		Junna - Rautahepo	Junna - Rautahepo	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Ruslana	tres					name		Junna - Ruslana	Junna - Ruslana	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Electrofolk/Tracks/Junna_Vandringsman	tres					name		Junna - Vandringsman	Junna - Le vagabond	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					type		Electronics	Électronique	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Nomad/Casette_Nomad	tres					name		Casette (Nomad)	Casette (Nomad)	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Nomad/Casette_Nomad	tres					inventory		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Nomad/Casette_Nomad	tres					rotated		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Nomad/Casette_Nomad	tres					equipment		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Nomad/Casette_Nomad	tres					display		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Nomad/Casette_Nomad	tres					type		Electronics	Électronique	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Casette_OST	tres					name		Casette (OST)	Casette (bande originale)	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_OST/Casette_OST	tres					inventory		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_OST/Casette_OST	tres					rotated		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_OST/Casette_OST	tres					equipment		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_OST/Casette_OST	tres					display		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Alive	tres					name		OST - Alive	OST - Alive	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Daybreak	tres					name		OST - Daybreak	OST - L'aube	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Far	tres					name		OST - Far	OST - Far	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Lost	tres					name		OST - Lost	Bande originale - Lost	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Rain	tres					name		OST - Rain	OST - Rain	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Road	tres					name		OST - Road	OST - Route	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Trailer	tres					name		OST - Trailer	OST - Bande-annonce	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_OST/Tracks/OST_Winds	tres					name		OST - Winds	OST - Instruments à vent	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_OST/Casette_OST	tres					type		Electronics	Électronique	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Radio/Casette_Radio	tres					name		Casette (Radio Hits)	Casette (Tubes radio)	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Radio/Casette_Radio	tres					inventory		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Radio/Casette_Radio	tres					rotated		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Radio/Casette_Radio	tres					equipment		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Radio/Casette_Radio	tres					display		Casette	Cassettes	
+Items	Electronics	Casette	0	0	0	0	1	substr	Items/Electronics/Casette_Radio/Tracks/Radio_Kun_Jalat_Vielä_Kantaa	tres					name		Radio Hits - Kun Jalat Vielä Kantaa	Radio Hits - Kun Jalat Vielä Kantaa	
+Items	Electronics	Casette	0	0	0	0	1	substr	Items/Electronics/Casette_Radio/Tracks/Radio_Rakkaus_On_Kuollut	tres					name		Radio Hits - Rakkaus On Kuollut	Radio Hits - Rakkaus On Kuollut	
+Items	Electronics	Casette	0	0	0	0	1	substr	Items/Electronics/Casette_Radio/Tracks/Radio_Viimeinen_Ruusu	tres					name		Radio Hits - Viimeinen Ruusu	Radio Hits - Viimeinen Ruusu	
+Items	Electronics	Casette	0	0	0	0	1	substr	Items/Electronics/Casette_Radio/Tracks/Radio_Vostok_Tango	tres					name		Radio Hits - Vostok Tango	Radio Hits - Vostok Tango	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Radio/Casette_Radio	tres					type		Electronics	Électronique	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Symphony/Casette_Symphony	tres					name		Casette (Symphony)	Casette (Symphonie)	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Symphony/Casette_Symphony	tres					inventory		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Symphony/Casette_Symphony	tres					rotated		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Symphony/Casette_Symphony	tres					equipment		Casette	Cassettes	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Symphony/Casette_Symphony	tres					display		Casette (Symphony)	Casette (Symphonie)	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Symphony/Tracks/Vostok_Symphony	tres					name		Vostok Symphony	Symphonie de Vostok	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Symphony/Casette_Symphony	tres					type		Electronics	Électronique	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Player/Casette_Player	tres					name		Casette Player	Lecteur de cassettes	
+Items	Electronics	Casette	0	0	1	0	0	substr	Items/Electronics/Casette_Player/Casette_Player	tres					inventory		C. Player	C. Joueur	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Player/Casette_Player	tres					rotated		C. Player	C. Joueur	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Player/Casette_Player	tres					equipment		C. Player	C. Joueur	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Player/Casette_Player	tres					display		C. Player	C. Joueur	
+Items	Electronics	Casette	0	0	1	0	0	ignore	Items/Electronics/Casette_Player/Casette_Player	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Coffeemaster/Coffeemaster	tres					name		Coffeemaster	Maître du café	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					inventory		Coffeemaster	Maître du café	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					rotated		Coffeemaster	Maître du café	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					equipment		Coffeemaster	Maître du café	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Coffeemaster/Coffeemaster	tres					display		C. Master	C. Master	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Cooking_Station/Cooking_Station	tres					name		Cooking Station	Coin cuisine	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					inventory		Cooking Station	Coin cuisine	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					rotated		Cooking Station	Coin cuisine	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					equipment		Cooking Station	Coin cuisine	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Cooking_Station/Cooking_Station	tres					display		C. Station	C. Station	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Hotplate/Hotplate	tres					name		Hotplate	Plaque chauffante	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Hotplate/Hotplate	tres					inventory		Hotplate	Plaque chauffante	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Hotplate/Hotplate	tres					rotated		Hotplate	Plaque chauffante	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Hotplate/Hotplate	tres					equipment		Hotplate	Plaque chauffante	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Hotplate/Hotplate	tres					display		Hotplate	Plaque chauffante	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Hotplate/Hotplate	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Inverter/Inverter	tres					name		Inverter	Onduleur	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Inverter/Inverter	tres					inventory		Inverter	Onduleur	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Inverter/Inverter	tres					rotated		Inverter	Onduleur	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Inverter/Inverter	tres					equipment		Inverter	Onduleur	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Inverter/Inverter	tres					display		Inverter	Onduleur	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Inverter/Inverter	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Narva/Narva	tres					name		Narva	Narva	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Narva/Narva	tres					inventory		Narva	Narva	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Narva/Narva	tres					rotated		Narva	Narva	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Narva/Narva	tres					equipment		Narva	Narva	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Narva/Narva	tres					display		Narva	Narva	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Narva/Narva	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	1	0	0	substr	Items/Electronics/Polaris/Polaris	tres					name		Polaris	Polaris	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Polaris/Polaris	tres					inventory		Polaris	Polaris	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Polaris/Polaris	tres					rotated		Polaris	Polaris	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Polaris/Polaris	tres					equipment		Polaris	Polaris	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Polaris/Polaris	tres					display		Polaris	Polaris	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/Polaris/Polaris	tres					type		Electronics	Électronique	
+Items	Electronics		0	0	0	0	1	substr	Items/Electronics/PV7/PV7	tres					name		PV7	PV7	
+Items	Electronics		0	0	0	0	1	ignore	Items/Electronics/PV7/PV7	tres					inventory		PV7	PV7	
+Items	Electronics		0	0	0	0	1	ignore	Items/Electronics/PV7/PV7	tres					rotated		PV7	PV7	
+Items	Electronics		0	0	0	0	1	ignore	Items/Electronics/PV7/PV7	tres					equipment		PV7	PV7	
+Items	Electronics		0	0	0	0	1	ignore	Items/Electronics/PV7/PV7	tres					display		PV7	PV7	
+Items	Electronics		0	0	1	0	0	ignore	Items/Electronics/PV7/PV7	tres					type		Electronics	Électronique	
+Items	Fishing		0	0	1	0	0	substr									Fish	Poisson	
+Items	Fishing		0	0	1	0	0	substr									Fishing	Pêche	
+Items	Fishing		0	0	1	0	0	substr	Items/Fishing/Bream/Bream	tres					name		Bream	Brème	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Bream/Bream	tres					inventory		Bream	Brème	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Bream/Bream	tres					rotated		Bream	Brème	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Bream/Bream	tres					equipment		Bream	Brème	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Bream/Bream	tres					display		Bream	Brème	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Bream/Bream	tres					phrase		Eat Raw	Mangez cru	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Bream/Bream	tres					type		Fish	Poisson	
+Items	Fishing		0	0	1	0	0	substr	Items/Fishing/Fishing_Rod/Fishing_Rod	tres					name		Fishing Rod	Canne à pêche	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Fishing_Rod/Fishing_Rod	tres					inventory		Fishing Rod	Canne à pêche	
+Items	Fishing		0	0	1	0	0	substr	Items/Fishing/Fishing_Rod/Fishing_Rod	tres					rotated		F. Rod	F. Rod	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Fishing_Rod/Fishing_Rod	tres					equipment		Fishing Rod	Canne à pêche	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Fishing_Rod/Fishing_Rod	tres					display		F. Rod	F. Rod	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Fishing_Rod/Fishing_Rod	tres					type		Fishing	Pêche	
+Items	Fishing		0	0	1	0	0	substr	Items/Fishing/Perch/Perch	tres					name		Perch	Perche	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Perch/Perch	tres					inventory		Perch	Perche	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Perch/Perch	tres					rotated		Perch	Perche	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Perch/Perch	tres					equipment		Perch	Perche	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Perch/Perch	tres					display		Perch	Perche	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Perch/Perch	tres					phrase		Eat Raw	Mangez cru	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Perch/Perch	tres					type		Fish	Poisson	
+Items	Fishing		0	0	1	0	0	substr	Items/Fishing/Pike/Pike	tres					name		Pike	Brochet	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Pike/Pike	tres					inventory		Pike	Brochet	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Pike/Pike	tres					rotated		Pike	Brochet	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Pike/Pike	tres					equipment		Pike	Brochet	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Pike/Pike	tres					display		Pike	Brochet	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Pike/Pike	tres					phrase		Eat Raw	Mangez cru	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Pike/Pike	tres					type		Fish	Poisson	
+Items	Fishing		0	0	1	0	0	substr	Items/Fishing/Roach/Roach	tres					name		Roach	Blatt	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Roach/Roach	tres					inventory		Roach	Blatt	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Roach/Roach	tres					rotated		Roach	Blatt	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Roach/Roach	tres					equipment		Roach	Blatt	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Roach/Roach	tres					display		Roach	Blatt	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Roach/Roach	tres					phrase		Eat Raw	Mangez cru	
+Items	Fishing		0	0	1	0	0	ignore	Items/Fishing/Roach/Roach	tres					type		Fish	Poisson	
+Items	Grenades		0	0	1	0	0	substr									Grenade	Grenade	
+Items	Grenades		0	0	0	0	1	substr	Items/Grenades/F1/F1	tres					name		F1	F1	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/F1/F1	tres					inventory		F1	F1	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/F1/F1	tres					rotated		F1	F1	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/F1/F1	tres					equipment		F1	F1	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/F1/F1	tres					display		F1	F1	
+Items	Grenades		0	0	1	0	0	ignore	Items/Grenades/F1/F1	tres					type		Grenade	Grenade	
+Items	Grenades		0	0	0	0	1	substr	Items/Grenades/M43/M43	tres					name		M43	M43	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M43/M43	tres					inventory		M43	M43	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M43/M43	tres					rotated		M43	M43	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M43/M43	tres					equipment		M43	M43	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M43/M43	tres					display		M43	M43	
+Items	Grenades		0	0	1	0	0	ignore	Items/Grenades/M43/M43	tres					type		Grenade	Grenade	
+Items	Grenades		0	0	0	0	1	substr	Items/Grenades/M50/M50	tres					name		M50	M50	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M50/M50	tres					inventory		M50	M50	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M50/M50	tres					rotated		M50	M50	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M50/M50	tres					equipment		M50	M50	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/M50/M50	tres					display		M50	M50	
+Items	Grenades		0	0	1	0	0	ignore	Items/Grenades/M50/M50	tres					type		Grenade	Grenade	
+Items	Grenades		0	0	0	0	1	substr	Items/Grenades/RGD-5/RGD-5	tres					name		RGD-5	RGD-5	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/RGD-5/RGD-5	tres					inventory		RGD-5	RGD-5	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/RGD-5/RGD-5	tres					rotated		RGD-5	RGD-5	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/RGD-5/RGD-5	tres					equipment		RGD-5	RGD-5	
+Items	Grenades		0	0	0	0	1	ignore	Items/Grenades/RGD-5/RGD-5	tres					display		RGD-5	RGD-5	
+Items	Grenades		0	0	1	0	0	ignore	Items/Grenades/RGD-5/RGD-5	tres					type		Grenade	Grenade	
+Items	Helmet		0	0	1	0	0	substr									Helmet	Casque	
+Items	Helmet		0	0	1	0	0	substr	Items/Helmets/Helmet_Police/Helmet_Police	tres					name		Police Helmet (IIIA)	Casque de police (IIIA)	
+Items	Helmet		0	0	1	0	0	substr	Items/Helmets/Helmet_Police/Helmet_Police	tres					inventory		Police Helmet	Casque de police	
+Items	Helmet		0	0	1	0	0	ignore	Items/Helmets/Helmet_Police/Helmet_Police	tres					rotated		Police Helmet	Casque de police	
+Items	Helmet		0	0	1	0	0	substr	Items/Helmets/Helmet_Police/Helmet_Police	tres					equipment		P. Helmet	P. Helmet	
+Items	Helmet		0	0	1	0	0	ignore	Items/Helmets/Helmet_Police/Helmet_Police	tres					display		P. Helmet	P. Helmet	
+Items	Helmet		0	0	1	0	0	ignore	Items/Helmets/Helmet_Police/Helmet_Police	tres					type		Helmet	Casque	
+Items	Helmet		0	0	0	0	1	substr	Items/Helmets/SSh-39/SSh-39	tres					name		SSh-39 (II)	SSh-39 (II)	
+Items	Helmet		0	0	0	0	1	substr	Items/Helmets/SSh-39/SSh-39	tres					inventory		SSh-39	SSh-39	
+Items	Helmet		0	0	0	0	1	ignore	Items/Helmets/SSh-39/SSh-39	tres					rotated		SSh-39	SSh-39	
+Items	Helmet		0	0	0	0	1	ignore	Items/Helmets/SSh-39/SSh-39	tres					equipment		SSh-39	SSh-39	
+Items	Helmet		0	0	0	0	1	ignore	Items/Helmets/SSh-39/SSh-39	tres					display		SSh-39	SSh-39	
+Items	Helmet		0	0	0	0	1	ignore	Items/Helmets/SSh-39/SSh-39	tres					type		Helmet	Helmet	
+Items	Instruments		0	0	1	0	0	substr									Instrument	Instrument	
+Items	Instruments		0	0	1	0	0	substr	Items/Instruments/Guitar/Guitar	tres					name		Guitar	Guitare	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Guitar/Guitar	tres					inventory		Guitar	Guitare	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Guitar/Guitar	tres					rotated		Guitar	Guitare	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Guitar/Guitar	tres					equipment		Guitar	Guitare	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Guitar/Guitar	tres					display		Guitar	Guitare	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Guitar/Guitar	tres					type		Instrument	Instrument	
+Items	Instruments		0	0	1	0	0	substr	Items/Instruments/Harmonica/Harmonica	tres					name		Harmonica	Harmonica	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					inventory		Harmonica	Harmonica	
+Items	Instruments		0	0	1	0	0	substr	Items/Instruments/Harmonica/Harmonica	tres					rotated		Harmo.	Harmo.	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					equipment		Harmonica	Harmonica	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					display		Harmo.	Harmo.	
+Items	Instruments		0	0	1	0	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					type		Instrument	Instrument	
+Items	Key		0	0	1	0	0	substr									Key	Clé	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Attic	tres					name		Attic Key	Clé du grenier	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Attic	tres					inventory		Attic K.	Attic K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Attic	tres					rotated		Attic K.	Attic K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Attic	tres					equipment		Attic K.	Attic K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Attic	tres					display		Attic K.	Attic K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Attic	tres					type		Key	Clé	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Bunker	tres					name		Bunker Key	Clé du bunker	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Bunker	tres					inventory		Bunker K.	Bunker K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Bunker	tres					rotated		Bunker K.	Bunker K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Bunker	tres					equipment		Bunker K.	Bunker K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Bunker	tres					display		Bunker K.	Bunker K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Bunker	tres					type		Key	Clé	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Cellar	tres					name		Cellar Key	La clé de la cave	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Cellar	tres					inventory		Cellar K.	Cave K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Cellar	tres					rotated		Cellar K.	Cave K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Cellar	tres					equipment		Cellar K.	Cave K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Cellar	tres					display		Cellar K.	Cave K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Cellar	tres					type		Key	Clé	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Classroom	tres					name		Classroom Key	Clé de la salle de classe	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Classroom	tres					inventory		Class. K.	Classe K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Classroom	tres					rotated		Class. K.	Classe K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Classroom	tres					equipment		Class. K.	Classe K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Classroom	tres					display		Class. K.	Classe K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Classroom	tres					type		Key	Clé	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Gymnasium	tres					name		Gymnasium Key	Clé du gymnase	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Gymnasium	tres					inventory		Gym. K.	Gym. K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Gymnasium	tres					rotated		Gym. K.	Gym. K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Gymnasium	tres					equipment		Gym. K.	Gym. K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Gymnasium	tres					display		Gym. K.	Gym. K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Gymnasium	tres					type		Key	Clé	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Tunnel	tres					name		Tunnel Key	Clé du tunnel	
+Items	Key		0	0	1	0	0	substr	Items/Keys/Key_Tunnel	tres					inventory		Tunnel K.	Tunnel K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Tunnel	tres					rotated		Tunnel K.	Tunnel K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Tunnel	tres					equipment		Tunnel K.	Tunnel K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Tunnel	tres					display		Tunnel K.	Tunnel K.	
+Items	Key		0	0	1	0	0	ignore	Items/Keys/Key_Tunnel	tres					type		Key	Clé	
+Items	Kives		0	0	1	0	0	substr									Knife	Couteau	
+Items	Kives		0	0	1	0	0	substr	Items/Knives/Jaeger_140/Jaeger_140	tres					name		Jaeger 140	Jaeger 140	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Jaeger_140/Jaeger_140	tres					inventory		Jaeger 140	Jaeger 140	
+Items	Kives		0	0	1	0	0	substr	Items/Knives/Jaeger_140/Jaeger_140	tres					rotated		Jaeger	Jaeger	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Jaeger_140/Jaeger_140	tres					equipment		Jaeger 140	Jaeger 140	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Jaeger_140/Jaeger_140	tres					display		Jaeger	Jaeger	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Jaeger_140/Jaeger_140	tres					type		Knife	Couteau	
+Items	Kives		0	0	1	0	0	substr	Items/Knives/Skrama_200/Skrama_200	tres					name		Skrama 200	Skrama 200	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_200/Skrama_200	tres					inventory		Skrama 200	Skrama 200	
+Items	Kives		0	0	1	0	0	substr	Items/Knives/Skrama_200/Skrama_200	tres					rotated		Skrama	Skrama	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_200/Skrama_200	tres					equipment		Skrama 200	Skrama 200	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_200/Skrama_200	tres					display		Skrama	Skrama	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_200/Skrama_200	tres					type		Knife	Couteau	
+Items	Kives		0	0	1	0	0	substr	Items/Knives/Skrama_240/Skrama_240	tres					name		Skrama 240	Skrama 240	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					inventory		Skrama 240	Skrama 240	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					rotated		Skrama	Skrama	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					equipment		Skrama 240	Skrama 240	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					display		Skrama	Skrama	
+Items	Kives		0	0	1	0	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					type		Knife	Couteau	
+Items	Medical		0	0	1	0	0	substr									Lore	Lore	
+Items	Medical		0	0	0	0	0	ignore									#ignore	#ignore	
+Items	Medical		0	0	1	0	0	substr	Items/Lore/Cat/Cat	tres					name		Cat	Chat	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Cat/Cat	tres					inventory		Cat	Chat	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Cat/Cat	tres					rotated		Cat	Chat	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Cat/Cat	tres					equipment		Cat	Chat	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Cat/Cat	tres					display		Cat	Chat	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Cat/Cat	tres					type		Lore	Lore	
+Items	Medical		0	0	1	0	0	substr	Items/Lore/Oil_Sample/Oil_Sample	tres					name		Oil Sample	Échantillon d'huile	
+Items	Medical		0	0	1	0	0	substr	Items/Lore/Oil_Sample/Oil_Sample	tres					inventory		Oil S.	Oil S.	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Oil_Sample/Oil_Sample	tres					rotated		Oil Sample	Échantillon d'huile	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Oil_Sample/Oil_Sample	tres					equipment		Oil S.	Oil S.	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Oil_Sample/Oil_Sample	tres					display		Oil S.	Oil S.	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Oil_Sample/Oil_Sample	tres					type		Lore	Lore	
+Items	Medical		0	0	1	0	0	substr	Items/Lore/Patient_Report/Patient_Report	tres					name		Patient Report	Rapport du patient	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Patient_Report/Patient_Report	tres					inventory		Patient Report	Rapport du patient	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Patient_Report/Patient_Report	tres					rotated		Patient Report	Rapport du patient	
+Items	Medical		0	0	1	0	0	substr	Items/Lore/Patient_Report/Patient_Report	tres					equipment		P. Report	P. Rapport	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Patient_Report/Patient_Report	tres					display		P. Report	P. Rapport	
+Items	Medical		0	0	1	0	0	ignore	Items/Lore/Patient_Report/Patient_Report	tres					type		Lore	Lore	
+Items	Medical		0	0	1	0	0	substr									Heal	Guérir	
+Items	Medical		0	0	1	0	0	substr									Spray	Spray	
+Items	Medical		0	0	1	0	0	substr									Medical	Médical	
+Items	Medical		0	0	0	0	1	substr	Items/Medical/AFAK/AFAK	tres					name		AFAK	AFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/AFAK/AFAK	tres					inventory		AFAK	AFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/AFAK/AFAK	tres					rotated		AFAK	AFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/AFAK/AFAK	tres					equipment		AFAK	AFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/AFAK/AFAK	tres					display		AFAK	AFAK	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/AFAK/AFAK	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/AFAK/AFAK	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Antibiotics/Antibiotics	tres					name		Antibiotics	Antibiotiques	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Antibiotics/Antibiotics	tres					inventory		Antibio.	Antibio.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antibiotics/Antibiotics	tres					rotated		Antibio.	Antibio.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antibiotics/Antibiotics	tres					equipment		Antibio.	Antibio.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antibiotics/Antibiotics	tres					display		Antibio.	Antibio.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antibiotics/Antibiotics	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antibiotics/Antibiotics	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Antiseptic/Antiseptic	tres					name		Antiseptic	Antiseptique	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Antiseptic/Antiseptic	tres					inventory		A. Septic	A. Fosse septique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antiseptic/Antiseptic	tres					rotated		A. Septic	A. Fosse septique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antiseptic/Antiseptic	tres					equipment		A. Septic	A. Fosse septique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antiseptic/Antiseptic	tres					display		A. Septic	A. Fosse septique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Antiseptic/Antiseptic	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Balm/Balm	tres					name		Balm	Baume	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Balm/Balm	tres					inventory		Balm	Baume	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Balm/Balm	tres					rotated		Balm	Baume	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Balm/Balm	tres					equipment		Balm	Baume	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Balm/Balm	tres					display		Balm	Baume	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Balm/Balm	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Balm/Balm	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Bandage/Bandage	tres					name		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage/Bandage	tres					inventory		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage/Bandage	tres					rotated		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage/Bandage	tres					equipment		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage/Bandage	tres					display		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage/Bandage	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage/Bandage	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					name		Bandage (Improvised)	Bandage (de fortune)	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					inventory		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					rotated		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					equipment		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					display		Bandage	Bandage	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Cold_Medicine/Cold_Medicine	tres					name		Cold Medicine	Médicaments contre le rhume	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Cold_Medicine/Cold_Medicine	tres					inventory		C. Med.	Maîtrise en médecine	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					rotated		C. Med.	Maîtrise en médecine	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					equipment		C. Med.	Maîtrise en médecine	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					display		C. Med.	Maîtrise en médecine	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Deodorant/Deodorant	tres					name		Deodorant	Déodorant	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Deodorant/Deodorant	tres					inventory		Deodora.	Déodora.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Deodorant/Deodorant	tres					rotated		Deodorant	Déodorant	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Deodorant/Deodorant	tres					equipment		Deodorant	Déodorant	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Deodorant/Deodorant	tres					display		Deodora.	Déodora.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Deodorant/Deodorant	tres					phrase		Spray	Spray	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Deodorant/Deodorant	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Gum/Gum	tres					name		Gum	Gomme	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Gum/Gum	tres					inventory		Gum	Gomme	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Gum/Gum	tres					rotated		Gum	Gomme	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Gum/Gum	tres					equipment		Gum	Gomme	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Gum/Gum	tres					display		Gum	Gomme	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Gum/Gum	tres					phrase		Chew	Mâcher	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Gum/Gum	tres					type		Medical	Médical	
+Items	Medical		0	0	0	0	1	substr	Items/Medical/IFAK/IFAK	tres					name		IFAK	IFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/IFAK/IFAK	tres					inventory		IFAK	IFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/IFAK/IFAK	tres					rotated		IFAK	IFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/IFAK/IFAK	tres					equipment		IFAK	IFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/IFAK/IFAK	tres					display		IFAK	IFAK	
+Items	Medical		0	0	0	0	1	ignore	Items/Medical/IFAK/IFAK	tres					phrase		Heal	Heal	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/IFAK/IFAK	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Lotion/Lotion	tres					name		Lotion	Lotion	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Lotion/Lotion	tres					inventory		Lotion	Lotion	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Lotion/Lotion	tres					rotated		Lotion	Lotion	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Lotion/Lotion	tres					equipment		Lotion	Lotion	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Lotion/Lotion	tres					display		Lotion	Lotion	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Lotion/Lotion	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Lotion/Lotion	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Medkit/Medkit	tres					name		Medkit	Trousse de premiers secours	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Medkit/Medkit	tres					inventory		Medkit	Trousse de premiers secours	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Medkit/Medkit	tres					rotated		Medkit	Trousse de premiers secours	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Medkit/Medkit	tres					equipment		Medkit	Trousse de premiers secours	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Medkit/Medkit	tres					display		Medkit	Trousse de premiers secours	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Medkit/Medkit	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Medkit/Medkit	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Melatonin/Melatonin	tres					name		Melatonin	Mélatonine	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Melatonin/Melatonin	tres					inventory		Melaton.	Mélatonine.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Melatonin/Melatonin	tres					rotated		Melaton.	Mélatonine.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Melatonin/Melatonin	tres					equipment		Melaton.	Mélatonine.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Melatonin/Melatonin	tres					display		Melaton.	Mélatonine.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Melatonin/Melatonin	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Painkillers/Painkillers	tres					name		Painkill.	Analgésique.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Painkillers/Painkillers	tres					inventory		Painkill.	Analgésique.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Painkillers/Painkillers	tres					rotated		Painkill.	Analgésique.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Painkillers/Painkillers	tres					equipment		Painkill.	Analgésique.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Painkillers/Painkillers	tres					display		Painkill.	Analgésique.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Painkillers/Painkillers	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Painkillers/Painkillers	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Saline/Saline	tres					name		Saline	Solution saline	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Saline/Saline	tres					inventory		Saline	Solution saline	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Saline/Saline	tres					rotated		Saline	Solution saline	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Saline/Saline	tres					equipment		Saline	Solution saline	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Saline/Saline	tres					display		Saline	Solution saline	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Saline/Saline	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Splint/Splint	tres					name		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint/Splint	tres					inventory		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint/Splint	tres					rotated		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint/Splint	tres					equipment		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint/Splint	tres					display		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint/Splint	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint/Splint	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Splint_Improvised/Splint_Improvised	tres					name		Splint (Improvised)	Attelle (de fortune)	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint_Improvised/Splint_Improvised	tres					inventory		Splint (Improvised)	Attelle (de fortune)	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint_Improvised/Splint_Improvised	tres					rotated		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint_Improvised/Splint_Improvised	tres					equipment		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint_Improvised/Splint_Improvised	tres					display		Splint	Attelle	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint_Improvised/Splint_Improvised	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Splint_Improvised/Splint_Improvised	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					name		Thermal Blanket	Couverture thermique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					inventory		Thermal Blanket	Couverture thermique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					rotated		Thermal Blanket	Couverture thermique	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					equipment		Thermal	Thermique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					display		Thermal	Thermique	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					phrase		Use	Utilisation	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Tissues/Tissues	tres					name		Tissues	Mouchoirs	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tissues/Tissues	tres					inventory		Tissues	Mouchoirs	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tissues/Tissues	tres					rotated		Tissues	Mouchoirs	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tissues/Tissues	tres					equipment		Tissues	Mouchoirs	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tissues/Tissues	tres					display		Tissues	Mouchoirs	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Tissues/Tissues	tres					phrase		Sneeze	Éternuement	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tissues/Tissues	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Tourniquet/Tourniquet	tres					name		Tourniquet	Garrot	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Tourniquet/Tourniquet	tres					inventory		Tourni.	Tourni.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet/Tourniquet	tres					rotated		Tourni.	Tourni.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet/Tourniquet	tres					equipment		Tourni.	Tourni.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet/Tourniquet	tres					display		Tourni.	Tourni.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet/Tourniquet	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet/Tourniquet	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Tourniquet_Improvised/Tourniquet_Improvised	tres					name		Tourniquet (Improvised)	Garrot (improvisé)	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet_Improvised/Tourniquet_Improvised	tres					inventory		Tourniquet	Garrot	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet_Improvised/Tourniquet_Improvised	tres					rotated		Tourni.	Tourni.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet_Improvised/Tourniquet_Improvised	tres					equipment		Tourni.	Tourni.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet_Improvised/Tourniquet_Improvised	tres					display		Tourni.	Tourni.	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet_Improvised/Tourniquet_Improvised	tres					phrase		Heal	Guérir	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Tourniquet_Improvised/Tourniquet_Improvised	tres					type		Medical	Médical	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Wipes/Wipes	tres					name		Wipes	Lingettes	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Wipes/Wipes	tres					inventory		Wipes	Lingettes	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Wipes/Wipes	tres					rotated		Wipes	Lingettes	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Wipes/Wipes	tres					equipment		Wipes	Lingettes	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Wipes/Wipes	tres					display		Wipes	Lingettes	
+Items	Medical		0	0	1	0	0	substr	Items/Medical/Wipes/Wipes	tres					phrase		Wipe	Essuyer	
+Items	Medical		0	0	1	0	0	ignore	Items/Medical/Wipes/Wipes	tres					type		Medical	Médical	
+Items	Misc		0	0	1	0	0	substr									Misc	Divers	
+Items	Misc		0	0	1	0	0	substr									 Misc	 Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Blanket/Blanket	tres					name		Blanket	Couverture	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Blanket/Blanket	tres					inventory		Blanket	Couverture	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Blanket/Blanket	tres					rotated		Blanket	Couverture	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Blanket/Blanket	tres					equipment		Blanket	Couverture	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Blanket/Blanket	tres					display		Blanket	Couverture	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Blanket/Blanket	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Board_Game/Board_Game	tres					name		Board Game	Jeu de société	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Board_Game/Board_Game	tres					inventory		Board Game	Jeu de société	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Board_Game/Board_Game	tres					rotated		Board Game	Jeu de société	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Board_Game/Board_Game	tres					equipment		Board Game	Jeu de société	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Board_Game/Board_Game	tres					display		B. Game	B. Jeu	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Board_Game/Board_Game	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Bucket/Bucket	tres					name		Bucket	Seau	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Bucket/Bucket	tres					inventory		Bucket	Seau	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Bucket/Bucket	tres					rotated		Bucket	Seau	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Bucket/Bucket	tres					equipment		Bucket	Seau	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Bucket/Bucket	tres					display		Bucket	Seau	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Bucket/Bucket	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Coffee_Filter/Coffee_Filter	tres					name		Coffee Filter	Filtre à café	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Coffee_Filter/Coffee_Filter	tres					inventory		Coffee Filter	Filtre à café	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Coffee_Filter/Coffee_Filter	tres					rotated		Coffee Filter	Filtre à café	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Coffee_Filter/Coffee_Filter	tres					equipment		Coffee Filter	Filtre à café	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Coffee_Filter/Coffee_Filter	tres					display		C. Filter	C. Filtre	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Coffee_Filter/Coffee_Filter	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Duct_Tape/Duct_Tape	tres					name		Duct Tape	Ruban adhésif	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Duct_Tape/Duct_Tape	tres					inventory		D. Tape	D. Ruban adhésif	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					rotated		D. Tape	D. Ruban adhésif	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					equipment		D. Tape	D. Ruban adhésif	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					display		D. Tape	D. Ruban adhésif	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Happy_Stove/Happy_Stove	tres					name		Happy Stove	Happy Stove	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					inventory		Happy Stove	Happy Stove	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					rotated		Happy Stove	Happy Stove	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					equipment		Happy Stove	Happy Stove	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Happy_Stove/Happy_Stove	tres					display		H. Stove	H. Stove	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Jerry_Can/Jerry_Can	tres					name		Jerry Can	Jerrican	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					inventory		Jerry Can	Jerrican	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					rotated		Jerry Can	Jerrican	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					equipment		Jerry Can	Jerrican	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Jerry_Can/Jerry_Can	tres					display		Jerry C.	Jerry C.	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Lumber/Lumber	tres					name		Lumber	Bois	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Lumber/Lumber	tres					inventory		Lumber	Bois	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Lumber/Lumber	tres					rotated		Lumber	Bois	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Lumber/Lumber	tres					equipment		Lumber	Bois	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Lumber/Lumber	tres					display		Lumber	Bois	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Lumber/Lumber	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Map/Map	tres					name		Map	Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map/Map	tres					inventory		Map	Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map/Map	tres					rotated		Map	Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map/Map	tres					equipment		Map	Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map/Map	tres					display		Map	Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map/Map	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Map_Tactical/Map_Tactical	tres					name		Map (Tactical)	Carte (tactique)	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Map_Tactical/Map_Tactical	tres					inventory		T. Map	T. Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					rotated		T. Map	T. Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					equipment		T. Map	T. Carte	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					display		Map (Tactical)	Carte (tactique)	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Matches/Matches	tres					name		Matches	Rencontres	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Matches/Matches	tres					inventory		Mat.	Mat.	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Matches/Matches	tres					rotated		Mat.	Mat.	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Matches/Matches	tres					equipment		Mat.	Mat.	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Matches/Matches	tres					display		Mat.	Mat.	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Matches/Matches	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Mattress/Mattress	tres					name		Mattress	Matelas	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mattress/Mattress	tres					inventory		Mattress	Matelas	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mattress/Mattress	tres					rotated		Mattress	Matelas	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mattress/Mattress	tres					equipment		Mattress	Matelas	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mattress/Mattress	tres					display		Mattress	Matelas	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mattress/Mattress	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Mess_Kit/Mess_Kit	tres					name		Mess Kit	Garniture de cuisine	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					inventory		Mess Kit	Garniture de cuisine	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					rotated		Mess Kit	Garniture de cuisine	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					equipment		Mess Kit	Garniture de cuisine	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					display		Mess Kit	Garniture de cuisine	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Nails/Nails	tres					name		Nails	Ongles	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Nails/Nails	tres					inventory		Nails	Ongles	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Nails/Nails	tres					rotated		Nails	Ongles	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Nails/Nails	tres					equipment		Nails	Ongles	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Nails/Nails	tres					display		Nails	Ongles	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Nails/Nails	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Oil_Filter/Oil_Filter	tres					name		Oil Filter	Filtre à huile	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Oil_Filter/Oil_Filter	tres					inventory		O. Filter	O. Filtre	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Oil_Filter/Oil_Filter	tres					rotated		Oil Filter	Filtre à huile	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Oil_Filter/Oil_Filter	tres					equipment		O. Filter	O. Filtre	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Oil_Filter/Oil_Filter	tres					display		O. Filter	O. Filtre	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Oil_Filter/Oil_Filter	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Pillow/Pillow	tres					name		Pillow	Oreiller	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Pillow/Pillow	tres					inventory		Pillow	Oreiller	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Pillow/Pillow	tres					rotated		Pillow	Oreiller	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Pillow/Pillow	tres					equipment		Pillow	Oreiller	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Pillow/Pillow	tres					display		Pillow	Oreiller	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Pillow/Pillow	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Rags/Rags	tres					name		Rags	Chiffons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Rags/Rags	tres					inventory		Rags	Chiffons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Rags/Rags	tres					rotated		Rags	Chiffons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Rags/Rags	tres					equipment		Rags	Chiffons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Rags/Rags	tres					display		Rags	Chiffons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Rags/Rags	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr									Sleeping_Bag	Sac de couchage	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Sleeping_Bag/Sleeping_Bag	tres					name		Sleeping Bag	Sac de couchage	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sleeping_Bag/Sleeping_Bag	tres					inventory		Sleeping Bag	Sac de couchage	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sleeping_Bag/Sleeping_Bag	tres					rotated		Sleeping Bag	Sac de couchage	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sleeping_Bag/Sleeping_Bag	tres					equipment		Sleeping Bag	Sac de couchage	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Sleeping_Bag/Sleeping_Bag	tres					display		S. Bag	S. Bag	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sleeping_Bag/Sleeping_Bag	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Sticks/Sticks	tres					name		Sticks	Bâtons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sticks/Sticks	tres					inventory		Sticks	Bâtons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sticks/Sticks	tres					rotated		Sticks	Bâtons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sticks/Sticks	tres					equipment		Sticks	Bâtons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sticks/Sticks	tres					display		Sticks	Bâtons	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Sticks/Sticks	tres					type		 Misc	 Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Tackle_Box/Tackle_Box	tres					name		Tackle Box	Boîte à pêche	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					inventory		Tackle Box	Boîte à pêche	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					rotated		Tackle Box	Boîte à pêche	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					equipment		Tackle Box	Boîte à pêche	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Tackle_Box/Tackle_Box	tres					display		Tackle B.	Tackle B.	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Toilet_Paper/Toilet_Paper	tres					name		Toilet Paper	Papier hygiénique	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Toilet_Paper/Toilet_Paper	tres					inventory		T. Paper	T. Paper	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres					rotated		T. Paper	T. Paper	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres					equipment		T. Paper	T. Paper	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres					display		T. Paper	T. Paper	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Toolbox/Toolbox	tres					name		Toolbox	Boîte à outils	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toolbox/Toolbox	tres					inventory		Toolbox	Boîte à outils	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toolbox/Toolbox	tres					rotated		Toolbox	Boîte à outils	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toolbox/Toolbox	tres					equipment		Toolbox	Boîte à outils	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toolbox/Toolbox	tres					display		Toolbox	Boîte à outils	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Toolbox/Toolbox	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Water_Lock/Water_Lock	tres					name		Water Lock	Siphon	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Water_Lock/Water_Lock	tres					inventory		W. Lock	W. Lock	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Water_Lock/Water_Lock	tres					rotated		W. Lock	W. Lock	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Water_Lock/Water_Lock	tres					equipment		W. Lock	W. Lock	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Water_Lock/Water_Lock	tres					display		W. Lock	W. Lock	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Water_Lock/Water_Lock	tres					type		Misc	Divers	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Weapon_Repair_Kit/Weapon_Repair_Kit	tres					name		Weapon Repair Kit	Kit de réparation d'armes	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Weapon_Repair_Kit/Weapon_Repair_Kit	tres					inventory		Weapon Repair Kit	Kit de réparation d'armes	
+Items	Misc		0	0	1	0	0	substr	Items/Misc/Weapon_Repair_Kit/Weapon_Repair_Kit	tres					rotated		Repair Kit	Kit de réparation	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Weapon_Repair_Kit/Weapon_Repair_Kit	tres					equipment		Repair Kit	Kit de réparation	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Weapon_Repair_Kit/Weapon_Repair_Kit	tres					display		Repair Kit	Kit de réparation	
+Items	Misc		0	0	1	0	0	ignore	Items/Misc/Weapon_Repair_Kit/Weapon_Repair_Kit	tres					type		Misc	Divers	
+Items	Rigs		0	0	1	0	0	substr									Rig	Plateforme	
+Items	Rigs		0	0	0	0	1	substr	Items/Rigs/K19/K19	tres					name		K19	K19	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/K19/K19	tres					inventory		K19	K19	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/K19/K19	tres					rotated		K19	K19	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/K19/K19	tres					equipment		K19	K19	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/K19/K19	tres					display		K19	K19	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/K19/K19	tres					type		Rig	Plateforme	
+Items	Rigs		0	0	1	0	0	substr	Items/Rigs/LVPC/LVPC_Green	tres					name		LVPC (Green)	LVPC (Vert)	
+Items	Rigs		0	0	0	0	1	substr	Items/Rigs/LVPC/LVPC_Green	tres					inventory		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_Green	tres					rotated		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_Green	tres					equipment		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_Green	tres					display		LVPC	LVPC	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/LVPC/LVPC_Green	tres					type		Rig	Plateforme	
+Items	Rigs		0	0	0	0	1	substr	Items/Rigs/LVPC/LVPC_M05	tres					name		LVPC (M05)	LVPC (M05)	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_M05	tres					inventory		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_M05	tres					rotated		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_M05	tres					equipment		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_M05	tres					display		LVPC	LVPC	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/LVPC/LVPC_M05	tres					type		Rig	Plateforme	
+Items	Rigs		0	0	1	0	0	substr	Items/Rigs/LVPC/LVPC_Winter	tres					name		LVPC (Winter)	LVPC (hiver)	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_Winter	tres					inventory		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_Winter	tres					rotated		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_Winter	tres					equipment		LVPC	LVPC	
+Items	Rigs		0	0	0	0	1	ignore	Items/Rigs/LVPC/LVPC_Winter	tres					display		LVPC	LVPC	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/LVPC/LVPC_Winter	tres					type		Rig	Plateforme	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					name		Rig	Plateforme	
+Items	Rigs		0	0	1	0	0	substr	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					inventory		Fishing Vest	Gilet de pêche	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					rotated		Fishing Vest	Gilet de pêche	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					equipment		Fishing Vest	Gilet de pêche	
+Items	Rigs		0	0	1	0	0	substr	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					display		F. Vest	F. Vest	
+Items	Rigs		0	0	1	0	0	ignore	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					type		Rig	Plateforme	
+Items	Weapons		0	0	1	0	0	substr									Weapon	Arme	
+Items	Weapons		0	0	1	0	0	substr									Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore									Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/AK-12/AK-12	:			name				KA-12	KA-12	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AK-12/AK-12	tres					inventory		KA-12	KA-12	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AK-12/AK-12	tres					rotated		KA-12	KA-12	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AK-12/AK-12	tres					equipment		KA-12	KA-12	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AK-12/AK-12	tres					display		KA-12	KA-12	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AK-12/AK-12	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/AK-12/AK-12_Magazine	tres					name		KA-12 Magazine	Magazine KA-12	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AK-12/AK-12_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AK-12/AK-12_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AK-12/AK-12_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AK-12/AK-12_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AK-12/AK-12_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/AKM/AKM	tres					name		KA-M	KA-M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKM/AKM	tres					inventory		KA-M	KA-M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKM/AKM	tres					rotated		KA-M	KA-M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKM/AKM	tres					equipment		KA-M	KA-M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKM/AKM	tres					display		KA-M	KA-M	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKM/AKM	tres					type		Weapon	Arme	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/AKM/AKM_Magazine	tres					name		KA-M Magazine	Magazine KA-M	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKM/AKM_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKM/AKM_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKM/AKM_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKM/AKM_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKM/AKM_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/AKS-74U/AKS-74U	tres					name		KAS-74U	KAS-74U	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					inventory		KAS-74U	KAS-74U	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					rotated		KAS-74U	KAS-74U	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					equipment		KAS-74U	KAS-74U	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					display		KAS-74U	KAS-74U	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					name		KAS-74U Magazine	Chargeur KAS-74U	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/Colt_1911/Colt_1911	tres					name		C1911	C1911	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Colt_1911/Colt_1911	tres					inventory		C1911	C1911	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Colt_1911/Colt_1911	tres					rotated		C1911	C1911	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Colt_1911/Colt_1911	tres					equipment		C1911	C1911	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Colt_1911/Colt_1911	tres					display		C1911	C1911	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Colt_1911/Colt_1911	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/Colt_1911/Colt_1911_Magazine	tres					name		C1911 Magazine	Magazine C1911	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Colt_1911/Colt_1911_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Colt_1911/Colt_1911_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Colt_1911/Colt_1911_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Colt_1911/Colt_1911_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Colt_1911/Colt_1911_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/Glock_17/Glock_17	tres					name		G7	G7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					inventory		G7	G7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					rotated		G7	G7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					equipment		G7	G7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					display		G7	G7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/Glock_17/Glock_17_Magazine	tres					name		G7 Magazine	Magazine G7	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/HK416/HK416	tres					name		K416	K416	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/HK416/HK416	tres					inventory		K416	K416	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/HK416/HK416	tres					rotated		K416	K416	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/HK416/HK416	tres					equipment		K416	K416	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/HK416/HK416	tres					display		K416	K416	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/HK416/HK416	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/KAR-21/KAR-21_223	tres					name		KAR-21 (.223)	KAR-21 (.223)	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					inventory		KAR-21 (.223)	KAR-21 (.223)	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					rotated		KAR-21 (.223)	KAR-21 (.223)	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					equipment		KAR-21 (.223)	KAR-21 (.223)	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					display		KAR-21	KAR-21	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					name		KAR-21 Magazine (.223)	Chargeur KAR-21 (.223)	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/KAR-21/KAR-21_308	tres					name		KAR-21 (.308)	KAR-21 (.308)	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_308	tres					inventory		KAR-21 (.308)	KAR-21 (.308)	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_308	tres					rotated		KAR-21 (.308)	KAR-21 (.308)	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_308	tres					equipment		KAR-21 (.308)	KAR-21 (.308)	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/KAR-21/KAR-21_308	tres					display		KAR-21	KAR-21	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KAR-21/KAR-21_308	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/KAR-21/KAR-21_308_Magazine	tres					name		KAR-21 Magazine (.308)	Chargeur KAR-21 (.308)	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_308_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_308_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_308_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_308_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_308_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/KAR-21/KAR-21_Barrel	tres					name		KAR-21 Barrel (.308)	Canon KAR-21 (.308)	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/KAR-21/KAR-21_Barrel	tres					inventory		KAR-21 Barrel	Canon du KAR-21	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/KAR-21/KAR-21_Barrel	tres					rotated		Barrel	Fût	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_Barrel	tres					equipment		Barrel	Fût	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_Barrel	tres					display		Barrel	Fût	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KAR-21/KAR-21_Barrel	tres					display		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/KP-31/KP-31	tres					name		KP-31	KP-31	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KP-31/KP-31	tres					inventory		KP-31	KP-31	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KP-31/KP-31	tres					rotated		KP-31	KP-31	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KP-31/KP-31	tres					equipment		KP-31	KP-31	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KP-31/KP-31	tres					display		KP-31	KP-31	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/KP-31/KP-31	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/KP-31/KP-31_Drum	tres					name		KP-31 Drum	Fût KP-31	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KP-31/KP-31_Drum	tres					inventory		KP-31 Drum	Fût KP-31	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KP-31/KP-31_Drum	tres					rotated		KP-31 Drum	Fût KP-31	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KP-31/KP-31_Drum	tres					equipment		KP-31 Drum	Fût KP-31	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/KP-31/KP-31_Drum	tres					display		Drum	Tambour	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/KP-31/KP-31_Drum	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/M4A1/M4A1	tres					name		M4A1	M4A1	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M4A1/M4A1	tres					inventory		M4A1	M4A1	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M4A1/M4A1	tres					rotated		M4A1	M4A1	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M4A1/M4A1	tres					equipment		M4A1	M4A1	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M4A1/M4A1	tres					display		M4A1	M4A1	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M4A1/M4A1	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/M4A1/STANAG_Magazine	tres					name		STANAG Magazine	Magazine STANAG	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M4A1/STANAG_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M4A1/STANAG_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M4A1/STANAG_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M4A1/STANAG_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M4A1/STANAG_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/M78/M78	tres					name		M78	M78	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M78/M78	tres					inventory		M78	M78	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M78/M78	tres					rotated		M78	M78	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M78/M78	tres					equipment		M78	M78	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M78/M78	tres					display		M78	M78	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/M78/M78	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/M78/M78_Magazine	tres					name		M78 Magazine	Magazine M78	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M78/M78_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M78/M78_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M78/M78_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M78/M78_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/M78/M78_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/Makarov/Makarov	tres					name		Karov	Karov	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov	tres					inventory		Karov	Karov	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov	tres					rotated		Karov	Karov	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov	tres					equipment		Karov	Karov	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov	tres					display		Karov	Karov	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov	tres					type		Weapon	Arme	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/Makarov/Makarov_Magazine	tres					name		Karov Magazine	Magazine Karov	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/Makarov/Makarov_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/MK18/MK18	tres					name		KM18	KM18	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MK18/MK18	tres					inventory		KM18	KM18	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MK18/MK18	tres					rotated		KM18	KM18	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MK18/MK18	tres					equipment		KM18	KM18	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MK18/MK18	tres					display		KM18	KM18	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MK18/MK18	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/Mosin/Mosin	tres					name		Mosin	Mosin	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Mosin/Mosin	tres					inventory		Mosin	Mosin	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Mosin/Mosin	tres					rotated		Mosin	Mosin	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Mosin/Mosin	tres					equipment		Mosin	Mosin	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Mosin/Mosin	tres					display		Mosin	Mosin	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Mosin/Mosin	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/MP5/MP5	tres					name		PM5	PM5	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5/MP5	tres					inventory		PM5	PM5	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5/MP5	tres					rotated		PM5	PM5	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5/MP5	tres					equipment		PM5	PM5	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5/MP5	tres					display		PM5	PM5	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5/MP5	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/MP5/MP5_Magazine	tres					name		PM5 Magazine	Magazine PM5	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP5/MP5_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP5/MP5_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP5/MP5_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP5/MP5_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP5/MP5_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/MP5K/MP5K	tres					name		PM5-K	PM5-K	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5K/MP5K	tres					inventory		PM5-K	PM5-K	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5K/MP5K	tres					rotated		PM5-K	PM5-K	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5K/MP5K	tres					equipment		PM5-K	PM5-K	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5K/MP5K	tres					display		PM5-K	PM5-K	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5K/MP5K	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/MP5SD/MP5SD	tres					name		PM5-SD	PM5-SD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5SD/MP5SD	tres					inventory		PM5-SD	PM5-SD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5SD/MP5SD	tres					rotated		PM5-SD	PM5-SD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5SD/MP5SD	tres					equipment		PM5-SD	PM5-SD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5SD/MP5SD	tres					display		PM5-SD	PM5-SD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP5SD/MP5SD	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/MP7/MP7	tres					name		PM7	PM7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP7/MP7	tres					inventory		PM7	PM7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP7/MP7	tres					rotated		PM7	PM7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP7/MP7	tres					equipment		PM7	PM7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP7/MP7	tres					display		PM7	PM7	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/MP7/MP7	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/MP7/MP7_Magazine	tres					name		MP7 Magazine	Chargeur MP7	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP7/MP7_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP7/MP7_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP7/MP7_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP7/MP7_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/MP7/MP7_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/P320/P320	tres					name		P3	P3	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/P320/P320	tres					inventory		P3	P3	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/P320/P320	tres					rotated		P3	P3	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/P320/P320	tres					equipment		P3	P3	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/P320/P320	tres					display		P3	P3	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/P320/P320	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/P320/P320_Magazine	tres					name		P3 Magazine	Magazine P3	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/P320/P320_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/P320/P320_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/P320/P320_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/P320/P320_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/P320/P320_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/Remington_870/Remington_870	tres					name		RM-870	RM-870	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Remington_870/Remington_870	tres					inventory		RM-870	RM-870	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Remington_870/Remington_870	tres					rotated		RM-870	RM-870	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Remington_870/Remington_870	tres					equipment		RM-870	RM-870	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Remington_870/Remington_870	tres					display		RM-870	RM-870	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/Remington_870/Remington_870	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/RK-62/RK-62	tres					name		RK-62	RK-62	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62	tres					inventory		RK-62	RK-62	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62	tres					rotated		RK-62	RK-62	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62	tres					equipment		RK-62	RK-62	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62	tres					display		RK-62	RK-62	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/RK-62/RK-62M	tres					name		RK-62M	RK-62M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62M	tres					inventory		RK-62M	RK-62M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62M	tres					rotated		RK-62M	RK-62M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62M	tres					equipment		RK-62M	RK-62M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62M	tres					display		RK-62M	RK-62M	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-62/RK-62M	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/RK-62/RK_Magazine	tres					name		RK Magazine	Magazine RK	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/RK-62/RK_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/RK-62/RK_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/RK-62/RK_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/RK-62/RK_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/RK-62/RK_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/RK-95/RK-95	tres					name		RK-95	RK-95	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-95/RK-95	tres					inventory		RK-95	RK-95	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-95/RK-95	tres					rotated		RK-95	RK-95	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-95/RK-95	tres					equipment		RK-95	RK-95	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-95/RK-95	tres					display		RK-95	RK-95	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/RK-95/RK-95	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/SVD/SVD	tres					name		VSD	VSD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/SVD/SVD	tres					inventory		VSD	VSD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/SVD/SVD	tres					rotated		VSD	VSD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/SVD/SVD	tres					equipment		VSD	VSD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/SVD/SVD	tres					display		VSD	VSD	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/SVD/SVD	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/SVD/SVD_Magazine	tres					name		VSD Magazine	Magazine VSD	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					type		Attachment	Pièce jointe	
+Items	Weapons		0	0	0	0	1	substr	Items/Weapons/VSS/VSS	tres					name		SSV	SSV	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/VSS/VSS	tres					inventory		SSV	SSV	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/VSS/VSS	tres					rotated		SSV	SSV	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/VSS/VSS	tres					equipment		SSV	SSV	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/VSS/VSS	tres					display		SSV	SSV	
+Items	Weapons		0	0	0	0	1	ignore	Items/Weapons/VSS/VSS	tres					type		Weapon	Weapon	
+Items	Weapons		0	0	1	0	0	substr	Items/Weapons/VSS/VSS_Magazine	tres					name		SS Magazine	Magazine SS	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/VSS/VSS_Magazine	tres					inventory		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/VSS/VSS_Magazine	tres					rotated		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/VSS/VSS_Magazine	tres					equipment		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/VSS/VSS_Magazine	tres					display		Mag.	Mag.	
+Items	Weapons		0	0	1	0	0	ignore	Items/Weapons/VSS/VSS_Magazine	tres					type		Attachment	Pièce jointe	

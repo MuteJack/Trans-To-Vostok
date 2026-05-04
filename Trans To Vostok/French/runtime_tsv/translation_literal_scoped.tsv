@@ -1,0 +1,1266 @@
+location	parent	name	type	text	translation
+Scenes/Menu	Main/Buttons	New	Button	New game	Nouveau jeu
+Scenes/Menu	Main/Buttons	Load	Button	Load game	Charger la partie
+Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	Tutoriel
+Scenes/Menu	Main/Buttons	Settings	Button	"Settings
+"	"Paramètres
+"
+Scenes/Menu	Main/Buttons	Roadmap	Button	"Roadmap
+"	"Feuille de route
+"
+Scenes/Menu	Main/Buttons	About	Button	"About
+"	"À propos
+"
+Scenes/Menu	Main/Buttons	Quit	Button	"Quit
+"	"Quitter
+"
+Scenes/Menu	Log	Header	Label	Changelog	Journal des modifications
+Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
+"	"Désactivé
+"
+Scenes/Menu	Log/Buttons	Log_On	Button	"On
+"	"Le
+"
+Scenes/Menu	Hardware	Header	Label	Hardware Check	Vérification du matériel
+Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
+"	"Désactivé
+"
+Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
+"	"Le
+"
+Scenes/Menu	Intro	Header	Label	Watch Intro	Regarder l'intro
+Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
+"	"Désactivé
+"
+Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
+"	"Le
+"
+Scenes/Menu	Music	Header	Label	Menu Music	Menu Musique
+Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
+"	"Désactivé
+"
+Scenes/Menu	Music/Buttons	Music_On	Button	"On
+"	"Le
+"
+Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	Road to Vostok ® est une marque déposée de Road to Vostok Ltd. Tous droits réservés © 2026
+Scenes/Menu	.	Version	Label	Version: 0.1.1.3	Version : 0.1.1.3
+Scenes/Menu	Changelog/Header	Label	Label	Changelog	Journal des modifications
+Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	"Following changes were made from:
+Early Access [0.1.0.0] -> Early Access [0.1.1.3]
+----------------------------------------
+Build name: Road - Build 1
+Build version: 0.1.1.3
+Build type: Release
+----------------------------------------
+Hotfix [0.1.1.3]
+[FIXED] Context actions could cause death when closing Interface at the same frame (Context Use)
+[FIXED] Context actions could corrupt items when closing Interface at the same frame (Context Unload)
+[FIXED] Context actions could corrupt furniture when closing Interface at the same frame (Context Place)
+----------------------------------------
+[ADDED] Compatibility launch option for hardware issues
+[ADDED] Increased buffer memory for GPU stalls/timeouts
+[ADDED] CPU-load distribution when loading into a map
+[ADDED] Engine version switched to Godot 4.6.2 for stability
+[ADDED] Added SMAA anti-aliasing option (Settings)
+[ADDED] Reworked image sharpness shader for stability (Settings)
+[ADDED] Furniture destroy uses safeguard (LMB hold) for misclicks
+[ADDED] Airdrops use green chemlights for night time visibility
+[ADDED] Airdrops now support variable loot tables [x3]
+[ADDED] Punisher now support variable loot tables [x3]
+[ADDED] Punisher loot tables improved with more items
+[ADDED] Killed AI corpse loot possibility increased [25%->75%]
+[ADDED] Additional industrial loot spawns [Oil Filter]
+[ADDED] Terminal has more special crates and loot spawns
+[ADDED] Special crates can also spawn Legendary items
+[ADDED] New item: Chewing Gum
+----------------------------------------
+[FIXED] Flickering lights/shadows in shelters and trader areas
+[FIXED] Active context menu could freeze when closing the Interface
+[FIXED] Frozen context menu could lead to corrupted/floating items
+[FIXED] Shelter item return while using items could cause death
+[FIXED] Cartridges during ammo check were glowing in low lighting
+[FIXED] AI could navigate/attack through airdrop colliders
+[FIXED] AI could navigate/attack through heli crash colliders
+[FIXED] AI could get stuck on heli crash colliders
+[FIXED] Blocked Highway tunnel could be exploited without a key
+[FIXED] Darkness/Ironman random spawn teleported to transition (School/Highway)
+[FIXED] AI firing accuracy inconsistency and miscalculations
+[FIXED] Controller could get stuck on Village building (toilet door)
+[FIXED] Controller could get stuck on Village tractor (barn)
+[FIXED] Controller could get stuck on Village garage (cardboard boxes)
+[FIXED] Controller could get stuck on School building (trader table)
+[FIXED] Controller could get stuck on School building (multiple chairs)
+[FIXED] Controller could get stuck on Highway market (shelf gaps)
+[FIXED] Controller could get stuck on Highway market (shopping carts)
+[FIXED] Controller could get stuck on Apartments staircases (corpse head)
+[FIXED] Controller could get stuck on Terminal ramps (trainyard area)
+[FIXED] Military BTR could stuck driving in circles at fast speed
+[FIXED] Improvised splint didn't heal Fracture condition
+[FIXED] Doctor sold own task items [Antiseptic]
+[FIXED] Gunsmith sold own task items [Skrama 200]
+[FIXED] MSAA 8x option didn't save to preferences
+[FIXED] Tutorial crates didn't contain M78 magazines
+----------------------------------------
+[CHANGED] Critical medical condition [Rupture] possibility lowered [5%->3%]
+[CHANGED] Critical medical condition [Headshot] possibility lowered [5%->3%]
+[CHANGED] Character hydration decrease speed slowed by [10%]
+[CHANGED] Character mental decrease speed slowed by [10%]
+[CHANGED] Cat vital decrease speed slowed by [20%]
+[CHANGED] Cat meows and makes noises less often
+[CHANGED] Trader (Start/End/Idle) voices activate less often
+[CHANGED] Render resolution options changed to Low/Native (less confusion)
+[CHANGED] Fallen items drop front of the player vs. inventory (Shelter)
+----------------------------------------
+[REMOVED] All third-party/obsolete AMD FSR references for stability
+----------------------------------------"	"Les modifications suivantes ont été apportées entre :
+Accès anticipé [0.1.0.0] -> Accès anticipé [0.1.1.3]
+----------------------------------------
+Nom de la version : Road - Build 1
+Version : 0.1.1.3
+Type de version : Release
+----------------------------------------
+Correctif [0.1.1.3]
+[CORRIGÉ] Les actions contextuelles pouvaient entraîner la mort lors de la fermeture de l'interface au cours de la même image (Utilisation du contexte)
+[CORRIGÉ] Les actions contextuelles pouvaient corrompre des objets lors de la fermeture de l'interface au même cadre (Déchargement du contexte)
+[CORRIGÉ] Les actions contextuelles pouvaient corrompre le mobilier lors de la fermeture de l'interface au même cadre (Placement du contexte)
+----------------------------------------
+[AJOUTÉ] Option de lancement de compatibilité pour les problèmes matériels
+[AJOUTÉ] Augmentation de la mémoire tampon pour les blocages/délais d'attente du GPU
+[AJOUTÉ] Répartition de la charge CPU lors du chargement d'une carte
+[AJOUTÉ] Passage à la version 4.6.2 du moteur Godot pour plus de stabilité
+[AJOUTÉ] Ajout de l'option d'anti-aliasing SMAA (Paramètres)
+[AJOUTÉ] Refonte du shader de netteté d'image pour plus de stabilité (Paramètres)
+[AJOUTÉ] La destruction de meubles utilise une protection (maintenir le bouton gauche enfoncé) contre les clics accidentels
+[AJOUTÉ] Les largages aériens utilisent des balises chimiques vertes pour une meilleure visibilité de nuit
+[AJOUTÉ] Les largages aériens prennent désormais en charge les tables de butin variables [x3]
+[AJOUTÉ] Le Punisher prend désormais en charge les tables de butin variables [x3]
+[AJOUTÉ] Amélioration des tables de butin du Punisher avec davantage d'objets
+[AJOUTÉ] Augmentation de la probabilité de butin sur les cadavres d'IA tués [25 % -> 75 %]
+[AJOUTÉ] Apparition de butin industriel supplémentaire [Filtre à huile]
+[AJOUTÉ] Le terminal dispose de plus de caisses spéciales et d'apparitions de butin
+[AJOUTÉ] Les caisses spéciales peuvent également contenir des objets légendaires
+[AJOUTÉ] Nouvel objet : Chewing-gum
+----------------------------------------
+[CORRIGÉ] Scintillement des lumières/ombres dans les abris et les zones de commerce
+[CORRIGÉ] Le menu contextuel actif pouvait se figer lors de la fermeture de l'interface
+[CORRIGÉ] Un menu contextuel figé pouvait entraîner la corruption ou la flottation d'objets
+[CORRIGÉ] Le retour d'un objet dans l'abri lors de l'utilisation d'objets pouvait entraîner la mort
+[CORRIGÉ] Les cartouches brillaient dans la pénombre lors de la vérification des munitions
+[CORRIGÉ] L'IA pouvait se déplacer/attaquer à travers les colliders des largages aériens
+[CORRIGÉ] L'IA pouvait se déplacer/attaquer à travers les colliders des crashs d'hélicoptères
+[CORRIGÉ] L'IA pouvait rester coincée sur les colliders des crashs d'hélicoptères
+[CORRIGÉ] Le tunnel bloqué de l'autoroute pouvait être exploité sans clé
+[CORRIGÉ] Les apparitions aléatoires de Darkness/Ironman étaient téléportées vers la zone de transition (École/Autoroute)
+[CORRIGÉ] Incohérences et erreurs de calcul dans la précision de tir de l'IA
+[CORRIGÉ] Le contrôleur pouvait rester coincé sur un bâtiment du Village (porte des toilettes)
+[CORRIGÉ] Le contrôleur pouvait rester coincé sur le tracteur du Village (grange)
+[CORRIGÉ] La manette pouvait rester coincée sur le garage du village (boîtes en carton)
+[CORRIGÉ] La manette pouvait rester coincée sur le bâtiment de l'école (table du marchand)
+[CORRIGÉ] La manette pouvait rester coincée sur le bâtiment de l'école (plusieurs chaises)
+[CORRIGÉ] La manette pouvait rester coincée sur le marché de l'autoroute (espaces entre les étagères)
+[CORRIGÉ] La manette pouvait rester coincée sur le marché de l'autoroute (chariots de supermarché)
+[CORRIGÉ] La manette pouvait rester bloquée sur les escaliers des appartements (tête de cadavre)
+[CORRIGÉ] La manette pouvait rester bloquée sur les rampes du terminal (zone de la gare de triage)
+[CORRIGÉ] Le BTR militaire pouvait rester bloqué en tournant en rond à grande vitesse
+[CORRIGÉ] L'attelle de fortune ne soignait pas l'état « Fracture »
+[CORRIGÉ] Le médecin vendait ses propres objets de quête [Antiseptique]
+[CORRIGÉ] L'armurier vendait ses propres objets de quête [Skrama 200]
+[CORRIGÉ] L'option MSAA 8x ne s'enregistrait pas dans les préférences
+[CORRIGÉ] Les caisses du didacticiel ne contenaient pas de chargeurs M78
+----------------------------------------
+[MODIFIÉ] Probabilité de l'état médical critique [Rupture] réduite [5 % -> 3 %]
+[MODIFIÉ] Probabilité de l'état médical critique [Tir à la tête] réduite [5 % -> 3 %]
+[MODIFIÉ] Vitesse de diminution de l'hydratation du personnage ralentie de [10 %]
+[MODIFIÉ] Vitesse de diminution de la santé mentale du personnage ralentie de [10 %]
+[MODIFIÉ] La vitesse de diminution des points de vie du chat a été ralentie de [20 %]
+[MODIFIÉ] Le chat miaule et fait moins souvent du bruit
+[MODIFIÉ] Les voix du marchand (Début/Fin/Inactivité) s'activent moins souvent
+[MODIFIÉ] Les options de résolution de rendu ont été modifiées en Faible/Native (moins de confusion)
+[MODIFIÉ] Les objets tombés apparaissent devant le joueur plutôt que dans l'inventaire (Abri)
+----------------------------------------
+[SUPPRIMÉ] Toutes les références tierces/obsolètes à AMD FSR pour plus de stabilité
+----------------------------------------"
+Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	"Following changes were made from:
+Demo [0.0.1.0] -> Early Access [0.1.0.0]
+----------------------------------------
+Build name: Road - Build 1
+Build version: 0.1.0.0
+Build type: Release
+----------------------------------------
+[ADDED] Event system
+[ADDED] Multi-shelter support
+[ADDED] Keys and locked doors
+[ADDED] PIP-scopes and scope options
+[ADDED] Native DirectX support
+[ADDED] Native shader caching
+[ADDED] Tools UI (Interface)
+[ADDED] Event calendar (Tools)
+[ADDED] Crafting menu (Tools)
+[ADDED] Task notes (Tools)
+[ADDED] World map (Tools)
+[ADDED] Casette player (Tools)
+[ADDED] New game mode: Darkness
+[ADDED] New game mode: Ironman
+[ADDED] New map: School (Area 05)
+[ADDED] New map: Highway (Area 05)
+[ADDED] New map: Outpost (Area 05)
+[ADDED] New map: Terminal (Vostok)
+[ADDED] New shelter: Attic
+[ADDED] New shelter: Bunker
+[ADDED] New shelter: Tent
+[ADDED] New shelter: Classroom
+[ADDED] New trader: Doctor
+[ADDED] New trader: Gunsmith
+[ADDED] New boss: Punisher
+[ADDED] New character: Cat
+[ADDED] New event: Trader Return
+[ADDED] New event: Fighter Jets
+[ADDED] New event: Missing Cat
+[ADDED] New event: Bandit Boss
+[ADDED] New event: Airdrops
+[ADDED] New event: BTR
+[ADDED] New event: Attack Helicopters
+[ADDED] New event: Crash Sites
+[ADDED] New event: Outpost Compromised
+[ADDED] New event: Trader Escape
+[ADDED] New event: Transmission
+[ADDED] New task: Prime Time
+[ADDED] New task: Coffee Reserve
+[ADDED] New task: Sweaty Business
+[ADDED] New task: Homemade
+[ADDED] New task: Nasty Draft
+[ADDED] New task: Steady Hands
+[ADDED] New task: Bookworm
+[ADDED] New task: Dice Master
+[ADDED] New task: Night Surgery
+[ADDED] New task: Infections
+[ADDED] New task: Hypovolemia
+[ADDED] New task: Mouth Organ
+[ADDED] New task: Patient Report
+[ADDED] New task: Substance
+[ADDED] New task: Bloodsuckers
+[ADDED] New task: Warm Meal
+[ADDED] New task: Nordic Trade
+[ADDED] New task: Big Blades
+[ADDED] New task: Ammo Delivery
+[ADDED] New task: Weapon Delivery
+[ADDED] New task: Medic
+[ADDED] New task: Home Collection
+[ADDED] New task: Everyman's Rights
+[ADDED] New task: Hitman
+[ADDED] New weapon: RK-62
+[ADDED] New weapon: RK-62M
+[ADDED] New weapon: M4A1
+[ADDED] New weapon: K416
+[ADDED] New weapon: P3
+[ADDED] New attachment: AN-15
+[ADDED] New item: KAR-21 Barrel
+[ADDED] New item: Flame Beanie
+[ADDED] New item: M62 Cap
+[ADDED] New item: Water Bottle
+[ADDED] New item: AFAK
+[ADDED] New item: Thermal Blanket
+[ADDED] New item: Saline
+[ADDED] New item: Antiseptic
+[ADDED] New item: Wipes
+[ADDED] New item: Tissues
+[ADDED] New item: Deodorant
+[ADDED] New item: Map
+[ADDED] New item: Map (Tactical)
+[ADDED] New item: Weapon Repair Kit
+[ADDED] New item: Tackle Box
+[ADDED] New item: Oil Filter
+[ADDED] New item: Coffee Filters
+[ADDED] New item: Water Lock
+[ADDED] New item: Lumber
+[ADDED] New item: Pillow
+[ADDED] New item: Blanket
+[ADDED] New item: Sticks
+[ADDED] New item: Rags
+[ADDED] New item: Casette (OST)
+[ADDED] New item: Casette (Electrofolk)
+[ADDED] New item: Casette (Symphony)
+[ADDED] New item: Casette (Radio Hits)
+[ADDED] New item: Attic Key
+[ADDED] New item: Bunker Key
+[ADDED] New item: Classroom Key
+[ADDED] New item: Cellar Key
+[ADDED] New item: Gymnasium Key
+[ADDED] New item: Tunnel Key
+[ADDED] New furniture: Pallet
+[ADDED] New furniture: Television
+[ADDED] New furniture: Metal Shelf
+[ADDED] New furniture: Target Stand
+[ADDED] New furniture: Sign (Border Zone)
+[ADDED] New furniture: Poster (Posture)
+[ADDED] New furniture: Trolley (Small)
+[ADDED] New furniture: Trolley (Tall)
+[ADDED] New furniture: Chair (School)
+[ADDED] New furniture: Cabinet (Office)
+[ADDED] New furniture: Desk (Office)
+[ADDED] New recipe: Energy Drink
+[ADDED] New recipe: Brewed Coffee
+[ADDED] New recipe: Cooked Pea Soup
+[ADDED] New recipe: Cooked Tomato Soup
+[ADDED] New recipe: Cooked Fish Soup
+[ADDED] New recipe: Cooked Meatballs
+[ADDED] New recipe: Kompot
+[ADDED] New recipe: Kilju
+[ADDED] New recipe: Improvised Bandage
+[ADDED] New recipe: Improvised Tourniquet
+[ADDED] New recipe: Improvised Splint
+[ADDED] New recipe: Weapon Repair
+[ADDED] New recipe: KAR-21 Upgrade
+[ADDED] New recipe: Cooking Station
+[ADDED] New recipe: Civilian Bed
+[ADDED] New recipe: Nomad Bed
+[ADDED] Lore-based game intro when starting a new game
+[ADDED] High-DPI font rendering for 4K/Retina displays
+[ADDED] Extra map border areas to prevent seeing visible map edges
+[ADDED] Different traders have varying base tax levels [100-300%]
+[ADDED] Firing weapons will reduce weapon condition over time
+[ADDED] Low weapon condition can now cause malfunctions
+[ADDED] Weapons can be repaired with Weapon Repair Kit (Crafting)
+[ADDED] Modular magazine support (STANAG) for M4A1 / KM18 / K416
+[ADDED] Modular magazine support (RK) for RK-95 / RK-62 / RK-62M
+[ADDED] AI Hotspots where AI will react to events like Airdrops
+[ADDED] AI can now patrol in Apartment rooms (not just staircases)
+[ADDED] AI Helicopter can now fire rockets at certain scenarios
+[ADDED] AI death sounds will end immediately with ""out of misery"" headshot
+[ADDED] Mines now use runtime spawning and are randomly spawned for each map instance
+[ADDED] Mines can now spawn also directly to map border and slightly beyond
+[ADDED] Liquid-based items can now freeze (Winter)
+[ADDED] Going into water boosts item freezing (Winter)
+[ADDED] Frozen items can be melted with heat sources or shelters (Winter)
+[ADDED] Traders don't accept malfunctioned or frozen items
+[ADDED] Crafting recipes don't accept malfunctioned or frozen items
+[ADDED] Playing music instruments slowly increases Mental over time
+[ADDED] Sleeping now consumes both energy and hydration [-20]
+[ADDED] Sleeping now increases mental [+20]
+[ADDED] Sleeping bags increases Body Temp [+50]
+[ADDED] Blankets, Pillows and Melatonin can now also be used for sleeping
+[ADDED] Using sleeping items other than sleeping bags outside decreases Body Temp [-100] (Winter)
+[ADDED] Outdoor fire sources like firepots can be used for heat based crafting
+[ADDED] Crafting supports reusable tools which are not consumed by recipes
+[ADDED] Separated tutorial tasks which also cover crafting and furniture items
+[ADDED] Furnitures now supports stacking and placing furniture on top each other
+[ADDED] Furnitures now supports magnet mode (Surface Magnet) for snapping to surfaces
+[ADDED] Loot simulations and containers can now use ""Industrial"" spawn types and locations
+[ADDED] Radio audio is now using high-pass filter and more distorted sound
+[ADDED] Changelog and hardware check buttons are added to the main menu
+[ADDED] 3D door handles and interaction handle animations
+[ADDED] If player falls through terrain, fallback system returns player back to the game world
+[ADDED] If item falls through terrain, fallback system prevents item taking CPU resources
+[ADDED] If item falls through shelter, fallback system spawns item directly to inventory
+----------------------------------------
+[FIXED] Ammo check UI frozed when going into water while performing ammo check
+[FIXED] Matches value calculation was not amount-based and could be exploited
+[FIXED] Reloading while loading ammo could cause ammo duplication and exceed ammo limits
+[FIXED] Full item stacks could cause duplication when using fast transfer
+[FIXED] Full item stacks could cause duplication when using context transfer
+[FIXED] Swithing from Trader Tasks to Supply during item delivery kept items selected
+[FIXED] Double clicking Trader Tasks during item delivery kept items selected
+[FIXED] Tetris-grids could cause ghost items and errors at certain screen resolutions
+[FIXED] Simulation time could get stuck 00:00 on certain hardware during loading
+[FIXED] Simulation season could reset from winter to summer on certain hardware during loading
+[FIXED] Equipping weapon directly after grenade throw unequipped the weapon
+[FIXED] Equipping weapon directly after grenade throw could hide the magazine
+[FIXED] Interface context menu size didn't reset horizontally between items
+[FIXED] Player controller could get stuck on Apartments bathtubs
+[FIXED] AI pathfinding could get stuck in multi-floor buildings (Apartments)
+[FIXED] AI pathfinding could clip through staircases (Apartments)
+[FIXED] AI backpacks didn't render at far distances (+100m)
+[FIXED] Weapon audio had distortions / clipping when using full-auto
+[FIXED] Ambient volume didn't affect dynamic ambient SFX
+[FIXED] Summer dynamic ambient SFX could activate on Winter (like mosquitos)
+[FIXED] Auto-stack SFX could trigger when using fast transfer with already max stacks
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Generalist trader lights caused artifacts and leaked outdoor
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Campfire and fire elements clipped though firepots and fire barrels
+[FIXED] Fire VFX dind't render through Non-PIP scopes
+[FIXED] Tree billboard inconsistencies and exposure levels
+[FIXED] Environment fog was slightly visible inside shelters
+[FIXED] Bullet decals were unstable, flickered and disappeared beyond 25m
+[FIXED] Shooting a scaled nature elements like rocks also scaled to bullet decals
+[FIXED] Generalist trader lights caused artifacts and leaked through a wall
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Multiple ALT-TAB issues where game might not response
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+----------------------------------------
+[CHANGED] Common and Uncommon rarity levels are now merged to Common
+[CHANGED] Legendary item spawn changes changed from 1% to 0.1%
+[CHANGED] Armor plates will now spawn always at full item conditions
+[CHANGED] Random sleep time changed from 4-8 to 6-12
+[CHANGED] Lasers can only be attached to weapons with suitable side/top rails
+[CHANGED] Guards can now also use M4A1 as their default weapon
+[CHANGED] All project and save files now exists directly in AppData/Roaming/[GameName]
+[CHANGED] All exe.files and builds use industry-standard versioning (e.g 0.1.0.0)
+[CHANGED] Certain weapon and attachment names are switched to use pseudo-names
+[CHANGED] Weapon audio uses more realistic tail / echo volumes after firing
+[CHANGED] Multiple changes for AI weapon audio to improve directional and flyby audio
+[CHANGED] Candles no longer cause Burn medical condition when walked on
+[CHANGED] Helicopter model type changed from Mi-8 to Mi-24 (Hind)"	"Les modifications suivantes ont été apportées entre :
+Démo [0.0.1.0] -> Accès anticipé [0.1.0.0]
+----------------------------------------
+Nom de la version : Road - Build 1
+Version : 0.1.0.0
+Type de build : Version finale
+----------------------------------------
+[AJOUTÉ] Système d'événements
+[AJOUTÉ] Prise en charge de plusieurs abris
+[AJOUTÉ] Clés et portes verrouillées
+[AJOUTÉ] Lunettes de visée et options de visée
+[AJOUTÉ] Prise en charge native de DirectX
+[AJOUTÉ] Mise en cache native des shaders
+[AJOUTÉ] Interface utilisateur des outils (Interface)
+[AJOUTÉ] Calendrier des événements (Outils)
+[AJOUTÉ] Menu de fabrication (Outils)
+[AJOUTÉ] Notes de mission (Outils)
+[AJOUTÉ] Carte du monde (Outils)
+[AJOUTÉ] Lecteur de cassettes (Outils)
+[AJOUTÉ] Nouveau mode de jeu : Darkness
+[AJOUTÉ] Nouveau mode de jeu : Ironman
+[AJOUTÉ] Nouvelle carte : École (Zone 05)
+[AJOUTÉ] Nouvelle carte : Autoroute (Zone 05)
+[AJOUTÉ] Nouvelle carte : Avant-poste (Zone 05)
+[AJOUTÉ] Nouvelle carte : Terminal (Vostok)
+[AJOUTÉ] Nouvel abri : Grenier
+[AJOUTÉ] Nouvel abri : Bunker
+[AJOUTÉ] Nouvel abri : Tente
+[AJOUTÉ] Nouvel abri : Salle de classe
+[AJOUTÉ] Nouveau marchand : Docteur
+[AJOUTÉ] Nouveau marchand : Armurier
+[AJOUTÉ] Nouveau boss : Punisher
+[AJOUTÉ] Nouveau personnage : Cat
+[AJOUTÉ] Nouvel événement : Retour du marchand
+[AJOUTÉ] Nouvel événement : Avions de chasse
+[AJOUTÉ] Nouvel événement : Chat disparu
+[AJOUTÉ] Nouvel événement : Chef des bandits
+[AJOUTÉ] Nouvel événement : Largages aériens
+[AJOUTÉ] Nouvel événement : BTR
+[AJOUTÉ] Nouvel événement : Hélicoptères d'attaque
+[AJOUTÉ] Nouvel événement : Sites de crash
+[AJOUTÉ] Nouvel événement : Avant-poste compromis
+[AJOUTÉ] Nouvel événement : Évasion du marchand
+[AJOUTÉ] Nouvel événement : Transmission
+[AJOUTÉ] Nouvelle mission : Prime Time
+[AJOUTÉ] Nouvelle mission : Réserve de café
+[AJOUTÉ] Nouvelle mission : Une affaire qui fait transpirer
+[AJOUTÉ] Nouvelle mission : Fait maison
+[AJOUTÉ] Nouvelle mission : Un courant d'air désagréable
+[AJOUTÉ] Nouvelle mission : Mains sûres
+[AJOUTÉ] Nouvelle mission : Rat de bibliothèque
+[AJOUTÉ] Nouvelle mission : Maître des dés
+[AJOUTÉ] Nouvelle mission : Chirurgie nocturne
+[AJOUTÉ] Nouvelle mission : Infections
+[AJOUTÉ] Nouvelle mission : Hypovolémie
+[AJOUTÉ] Nouvelle mission : Harmonica
+[AJOUTÉ] Nouvelle mission : Rapport du patient
+[AJOUTÉ] Nouvelle mission : Substance
+[AJOUTÉ] Nouvelle mission : Suceurs de sang
+[AJOUTÉ] Nouvelle mission : Repas chaud
+[AJOUTÉ] Nouvelle mission : Commerce nordique
+[AJOUTÉ] Nouvelle mission : Grandes lames
+[AJOUTÉ] Nouvelle mission : Livraison de munitions
+[AJOUTÉ] Nouvelle mission : Livraison d'armes
+[AJOUTÉ] Nouvelle mission : Médecin
+[AJOUTÉ] Nouvelle mission : Collecte à domicile
+[AJOUTÉ] Nouvelle mission : Les droits de tout un chacun
+[AJOUTÉ] Nouvelle mission : Tueur à gages
+[AJOUTÉ] Nouvelle arme : RK-62
+[AJOUTÉ] Nouvelle arme : RK-62M
+[AJOUTÉ] Nouvelle arme : M4A1
+[AJOUTÉ] Nouvelle arme : K416
+[AJOUTÉ] Nouvelle arme : P3
+[AJOUTÉ] Nouvel accessoire : AN-15
+[AJOUTÉ] Nouvel objet : Canon KAR-21
+[AJOUTÉ] Nouvel objet : Bonnet Flame
+[AJOUTÉ] Nouvel objet : Casquette M62
+[AJOUTÉ] Nouvel objet : Gourde
+[AJOUTÉ] Nouvel objet : AFAK
+[AJOUTÉ] Nouvel objet : Couverture thermique
+[AJOUTÉ] Nouvel objet : Solution saline
+[AJOUTÉ] Nouvel objet : Antiseptique
+[AJOUTÉ] Nouvel objet : Lingettes
+[AJOUTÉ] Nouvel objet : Mouchoirs
+[AJOUTÉ] Nouvel objet : Déodorant
+[AJOUTÉ] Nouvel objet : Carte
+[AJOUTÉ] Nouvel objet : Carte (tactique)
+[AJOUTÉ] Nouvel objet : Kit de réparation d'armes
+[AJOUTÉ] Nouvel objet : Boîte à pêche
+[AJOUTÉ] Nouvel objet : Filtre à huile
+[AJOUTÉ] Nouvel objet : Filtres à café
+[AJOUTÉ] Nouvel objet : Siphons
+[AJOUTÉ] Nouvel objet : Bois
+[AJOUTÉ] Nouvel objet : Oreiller
+[AJOUTÉ] Nouvel objet : Couverture
+[AJOUTÉ] Nouvel objet : Bâtons
+[AJOUTÉ] Nouvel objet : Chiffons
+[AJOUTÉ] Nouvel objet : Cassette (Bande originale)
+[AJOUTÉ] Nouvel objet : Cassette (Electrofolk)
+[AJOUTÉ] Nouvel objet : Cassette (Symphonie)
+[AJOUTÉ] Nouvel objet : Cassette (Tubes radio)
+[AJOUTÉ] Nouvel objet : Clé du grenier
+[AJOUTÉ] Nouvel objet : Clé du bunker
+[AJOUTÉ] Nouvel objet : Clé de la salle de classe
+[AJOUTÉ] Nouvel objet : Clé de la cave
+[AJOUTÉ] Nouvel objet : Clé du gymnase
+[AJOUTÉ] Nouvel objet : Clé du tunnel
+[AJOUTÉ] Nouveau meuble : Palette
+[AJOUTÉ] Nouveau meuble : Télévision
+[AJOUTÉ] Nouveau meuble : Étagère métallique
+[AJOUTÉ] Nouveau meuble : Support de cible
+[AJOUTÉ] Nouveau meuble : Panneau (Zone frontalière)
+[AJOUTÉ] Nouveau meuble : Affiche (Posture)
+[AJOUTÉ] Nouveau meuble : Chariot (petit)
+[AJOUTÉ] Nouveau meuble : Chariot (haut)
+[AJOUTÉ] Nouveau meuble : Chaise (école)
+[AJOUTÉ] Nouveau meuble : Armoire (bureau)
+[AJOUTÉ] Nouveau meuble : Bureau (bureau)
+[AJOUTÉ] Nouvelle recette : Boisson énergisante
+[AJOUTÉ] Nouvelle recette : Café filtre
+[AJOUTÉ] Nouvelle recette : Soupe de petits pois
+[AJOUTÉ] Nouvelle recette : Soupe de tomates
+[AJOUTÉ] Nouvelle recette : Soupe de poisson
+[AJOUTÉ] Nouvelle recette : Boulettes de viande
+[AJOUTÉ] Nouvelle recette : Kompot
+[AJOUTÉ] Nouvelle recette : Kilju
+[AJOUTÉ] Nouvelle recette : Bandage de fortune
+[AJOUTÉ] Nouvelle recette : Garrot de fortune
+[AJOUTÉ] Nouvelle recette : Attelle de fortune
+[AJOUTÉ] Nouvelle recette : Réparation d'arme
+[AJOUTÉ] Nouvelle recette : Amélioration du KAR-21
+[AJOUTÉ] Nouvelle recette : Station de cuisine
+[AJOUTÉ] Nouvelle recette : Lit civil
+[AJOUTÉ] Nouvelle recette : Lit nomade
+[AJOUTÉ] Intro du jeu basée sur l'univers au démarrage d'une nouvelle partie
+[AJOUTÉ] Rendu des polices haute résolution pour les écrans 4K/Retina
+[AJOUTÉ] Zones de bordure supplémentaires sur la carte pour empêcher les bords de la carte d'être visibles
+[AJOUTÉ] Les différents marchands ont des taux d'imposition de base variables [100-300 %]
+[AJOUTÉ] L'utilisation des armes réduit leur état au fil du temps
+[AJOUTÉ] Un état de l'arme trop bas peut désormais entraîner des dysfonctionnements
+[AJOUTÉ] Les armes peuvent être réparées à l'aide d'un kit de réparation d'armes (fabrication)
+[AJOUTÉ] Prise en charge des chargeurs modulaires (STANAG) pour les M4A1 / KM18 / K416
+[AJOUTÉ] Prise en charge des chargeurs modulaires (RK) pour les RK-95 / RK-62 / RK-62M
+[AJOUTÉ] Zones sensibles de l'IA où celle-ci réagira à des événements tels que les largages aériens
+[AJOUTÉ] L'IA peut désormais patrouiller dans les pièces des appartements (et pas seulement dans les cages d'escalier)
+[AJOUTÉ] L'hélicoptère de l'IA peut désormais tirer des roquettes dans certains scénarios
+[AJOUTÉ] Les sons de mort de l'IA s'arrêtent immédiatement en cas de tir à la tête « hors de souffrance »
+[AJOUTÉ] Les mines utilisent désormais un système de génération à la volée et apparaissent de manière aléatoire pour chaque instance de carte
+[AJOUTÉ] Les mines peuvent désormais apparaître directement à la limite de la carte et légèrement au-delà
+[AJOUTÉ] Les objets à base de liquide peuvent désormais geler (Hiver)
+[AJOUTÉ] Entrer dans l'eau accélère le gel des objets (Hiver)
+[AJOUTÉ] Les objets gelés peuvent être dégelés à l'aide de sources de chaleur ou d'abris (Hiver)
+[AJOUTÉ] Les marchands n'acceptent pas les objets défectueux ou gelés
+[AJOUTÉ] Les recettes d'artisanat n'acceptent pas les objets défectueux ou gelés
+[AJOUTÉ] Jouer d'un instrument de musique augmente lentement la santé mentale au fil du temps
+[AJOUTÉ] Dormir consomme désormais à la fois de l'énergie et de l'hydratation [-20]
+[AJOUTÉ] Dormir augmente désormais la santé mentale [+20]
+[AJOUTÉ] Les sacs de couchage augmentent la température corporelle [+50]
+[AJOUTÉ] Les couvertures, oreillers et la mélatonine peuvent désormais également être utilisés pour dormir
+[AJOUTÉ] Utiliser des articles de couchage autres que des sacs de couchage à l'extérieur diminue la température corporelle [-100] (Hiver)
+[AJOUTÉ] Les sources de feu en extérieur, comme les braseros, peuvent être utilisées pour l'artisanat nécessitant de la chaleur
+[AJOUTÉ] L'artisanat prend en charge les outils réutilisables qui ne sont pas consommés par les recettes
+[AJOUTÉ] Tâches du didacticiel séparées qui couvrent également l'artisanat et les meubles
+[AJOUTÉ] Les meubles peuvent désormais être empilés et placés les uns sur les autres
+[AJOUTÉ] Les meubles prennent désormais en charge le mode aimant (Surface Magnet) pour s'aligner sur les surfaces
+[AJOUTÉ] Les simulations de butin et les conteneurs peuvent désormais utiliser des types et emplacements d'apparition « Industriels »
+[AJOUTÉ] Le son de la radio utilise désormais un filtre passe-haut et un son plus déformé
+[AJOUTÉ] Des boutons « Journal des modifications » et « Vérification du matériel » ont été ajoutés au menu principal
+[AJOUTÉ] Poignées de porte en 3D et animations d'interaction avec les poignées
+[AJOUTÉ] Si le joueur tombe à travers le terrain, le système de repli le ramène dans le monde du jeu
+[AJOUTÉ] Si un objet tombe à travers le terrain, le système de secours empêche l'objet de consommer des ressources CPU
+[AJOUTÉ] Si un objet tombe à travers un abri, le système de secours génère l'objet directement dans l'inventaire
+----------------------------------------
+[CORRIGÉ] L'interface de vérification des munitions se figeait lorsque l'on entrait dans l'eau tout en effectuant une vérification des munitions
+[CORRIGÉ] Le calcul de la valeur des allumettes n'était pas basé sur la quantité et pouvait être exploité
+[CORRIGÉ] Le rechargement pendant le chargement des munitions pouvait entraîner la duplication des munitions et dépasser les limites de munitions
+[CORRIGÉ] Les piles d'objets pleines pouvaient entraîner une duplication lors de l'utilisation du transfert rapide
+[CORRIGÉ] Les piles d'objets pleines pouvaient entraîner une duplication lors de l'utilisation du transfert contextuel
+[CORRIGÉ] Le passage des tâches du marchand à l'approvisionnement pendant la livraison d'objets conservait les objets sélectionnés
+[CORRIGÉ] Un double-clic sur les tâches du marchand pendant la livraison d'objets conservait les objets sélectionnés
+[CORRIGÉ] Les grilles de Tetris pouvaient provoquer l'apparition d'objets fantômes et des erreurs à certaines résolutions d'écran
+[CORRIGÉ] Le temps de simulation pouvait rester bloqué à 00:00 sur certains matériels pendant le chargement
+[CORRIGÉ] La saison de simulation pouvait passer de l'hiver à l'été sur certains matériels pendant le chargement
+[CORRIGÉ] Équiper une arme directement après avoir lancé une grenade déséquipait l'arme
+[CORRIGÉ] Équiper une arme directement après avoir lancé une grenade pouvait masquer le chargeur
+[CORRIGÉ] La taille du menu contextuel de l'interface ne se réinitialisait pas horizontalement entre les objets
+[CORRIGÉ] Le contrôleur du joueur pouvait rester bloqué sur les baignoires des appartements
+[CORRIGÉ] Le cheminement de l'IA pouvait rester bloqué dans les bâtiments à plusieurs étages (appartements)
+[CORRIGÉ] Le cheminement de l'IA pouvait traverser les escaliers (Appartements)
+[CORRIGÉ] Les sacs à dos de l'IA ne s'affichaient pas à grande distance (+100 m)
+[CORRIGÉ] Le son des armes présentait des distorsions / coupures lors de l'utilisation du mode automatique
+[CORRIGÉ] Le volume ambiant n'affectait pas les effets sonores ambiants dynamiques
+[CORRIGÉ] Les effets sonores ambiants dynamiques d'été pouvaient s'activer en hiver (comme les moustiques)
+[CORRIGÉ] Les effets sonores d'empilement automatique pouvaient se déclencher lors d'un transfert rapide alors que les piles étaient déjà pleines
+[CORRIGÉ] Le redimensionnement en mode fenêtré ne fonctionnait pas de manière fiable sur les configurations à un seul écran
+[CORRIGÉ] Le moniteur sélectionné pouvait changer pendant les écrans de chargement sur les configurations à plusieurs écrans
+[CORRIGÉ] La sauvegarde dans un abri permettait des positions d'objets corrompues, ce qui provoquait un scintillement de la lumière
+[CORRIGÉ] Plusieurs messages du HUD s'affichaient simultanément et se chevauchaient
+[CORRIGÉ] Les lumières du marchand généraliste provoquaient des artefacts et des fuites de lumière à l'extérieur
+[CORRIGÉ] La sauvegarde de l'abri permettait des positions d'objets corrompues, ce qui provoquait un scintillement de la lumière
+[CORRIGÉ] Les éléments de feu de camp et de feu traversaient les braseros et les barils de feu
+[CORRIGÉ] Les effets visuels de feu ne s'affichaient pas à travers les lunettes de visée non-PIP
+[CORRIGÉ] Incohérences au niveau des billboards des arbres et des niveaux d'exposition
+[CORRIGÉ] Le brouillard d'environnement était légèrement visible à l'intérieur des abris
+[CORRIGÉ] Les décalcomanies de balles étaient instables, scintillaient et disparaissaient au-delà de 25 m
+[CORRIGÉ] Tirer sur des éléments naturels à l'échelle, comme des rochers, entraînait également une mise à l'échelle des décalcomanies de balles
+[CORRIGÉ] Les lumières des marchands généralistes provoquaient des artefacts et transparaissaient à travers les murs
+[CORRIGÉ] Plusieurs messages du HUD s'affichaient simultanément et se chevauchaient
+[CORRIGÉ] Plusieurs problèmes avec ALT-TAB pouvant entraîner une absence de réponse du jeu
+[CORRIGÉ] Le redimensionnement en mode fenêtré ne fonctionnait pas correctement sur les configurations à un seul écran
+[CORRIGÉ] Le moniteur sélectionné pouvait changer pendant les écrans de chargement sur les configurations multi-écrans
+----------------------------------------
+[MODIFIÉ] Les niveaux de rareté « Commun » et « Peu commun » ont été fusionnés en « Commun »
+[MODIFIÉ] La probabilité d'apparition des objets légendaires est passée de 1 % à 0,1 %
+[MODIFIÉ] Les plaques d'armure apparaissent désormais toujours en parfait état
+[MODIFIÉ] La durée aléatoire du sommeil est passée de 4-8 à 6-12
+[MODIFIÉ] Les lasers ne peuvent être fixés qu'aux armes dotées de rails latéraux/supérieurs adaptés
+[MODIFIÉ] Les gardes peuvent désormais également utiliser le M4A1 comme arme par défaut
+[MODIFIÉ] Tous les fichiers de projet et de sauvegarde se trouvent désormais directement dans AppData/Roaming/[NomDuJeu]
+[MODIFIÉ] Tous les fichiers exe et toutes les versions utilisent la numérotation standard de l'industrie (par exemple 0.1.0.0)
+[MODIFIÉ] Certains noms d'armes et d'accessoires ont été remplacés par des pseudonymes
+[MODIFIÉ] Le son des armes utilise des volumes de réverbération et d'écho plus réalistes après le tir
+[MODIFIÉ] Plusieurs modifications ont été apportées au son des armes de l'IA afin d'améliorer le son directionnel et de passage
+[MODIFIÉ] Les bougies ne provoquent plus de brûlure lorsqu'on marche dessus
+[MODIFIÉ] Le modèle d'hélicoptère est passé du Mi-8 au Mi-24 (Hind)"
+Scenes/Menu	Modes	Warning	Label	Warning!	Attention !
+Scenes/Menu	Modes/Warning	Detail	Label	Existing save files will be deleted	Les fichiers de sauvegarde existants seront supprimés
+Scenes/Menu	Modes/Buttons	Modes_Enter	Button	Enter the Road	Prends la route
+Scenes/Menu	Modes/Buttons	Modes_Return	Button	← Return	← Retour
+Scenes/Menu	Modes/Difficulty	Header	Label	Difficulty	Difficulté
+Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	Gameplay mode	Mode de jeu
+Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	Recommended for new players	Recommandé pour les nouveaux joueurs
+Scenes/Menu	Modes/Difficulty/Standard	Name	Label	Standard	Standard
+Scenes/Menu	Modes/Difficulty/Standard	Details	Label	"- Random start kit
+- Shelter spawn
+- Starts 08:00 with neutral weather
+- All character vitals 100
+- Permadeath in Vostok"	"- Kit de départ aléatoire
+- Apparition dans un abri
+- Début à 8 h avec des conditions météo neutres
+- Tous les paramètres vitaux des personnages à 100
+- Mort définitive à Vostok"
+Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	Darkness	Les ténèbres
+Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Permadeath in Vostok"	"- Pas de kit de départ
+- Apparition aléatoire
+- Heure de départ et conditions météo aléatoires
+- Paramètres vitaux de départ aléatoires
+- Mort définitive à Vostok"
+Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	Select	Sélectionner
+Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	Ironman	Ironman
+Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Always permadeath"	"- Pas de kit de départ
+- Apparition aléatoire
+- Heure de départ et conditions météo aléatoires
+- Paramètres de santé de départ aléatoires
+- Mort définitive à chaque échec"
+Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	Select	Sélectionner
+Scenes/Menu	Modes/Season	Header	Label	Season	Saison
+Scenes/Menu	Modes/Season/Header	Subheader	Label	Seasonal mode	Mode saisonnier
+Scenes/Menu	Modes/Season/Summer	Hint	Label	Recommended for new players	Recommandé pour les nouveaux joueurs
+Scenes/Menu	Modes/Season/Summer	Name	Label	Summer	L'été
+Scenes/Menu	Modes/Season/Summer	Details	Label	"- Summer (365 days)
+- No winter
+- Day & night cycle (2.4h IRL)"	"- Été (365 jours)
+- Pas d'hiver
+- Cycle jour/nuit (2,4 h dans la réalité)"
+Scenes/Menu	Modes/Season/Summer	Select	Button	Select	Sélectionner
+Scenes/Menu	Modes/Season/Winter	Name	Label	Winter	Hiver
+Scenes/Menu	Modes/Season/Winter	Details	Label	"- No summer
+- Winter (365 days)
+- Day & night cycle (2.4h IRL)"	"- Pas d'été
+- Hiver (365 jours)
+- Cycle jour/nuit (2,4 h dans la réalité)"
+Scenes/Menu	Modes/Season/Winter	Select	Button	Select	Sélectionner
+Scenes/Menu	Modes/Season/Dynamic	Name	Label	Dynamic	Dynamique
+Scenes/Menu	Modes/Season/Dynamic	Details	Label	"- Summer / Autumn / Winter / Spring
+- Dynamic season cycle (365 days)
+- Day & night cycle (2.4h IRL)"	"- Été / Automne / Hiver / Printemps
+- Cycle saisonnier dynamique (365 jours)
+- Cycle jour/nuit (2,4 h dans la réalité)"
+Scenes/Menu	Modes/Season/Dynamic	Select	Button	Locked	Verrouillé
+Scenes/Menu	Settings	Header	Label	Settings	Paramètres
+Scenes/Menu	Settings/Header	Subheader	Label	Game options	Options de jeu
+UI/Settings	.	Pause	Label	Game Paused	Jeu en pause
+Scenes/Menu	Settings	Settings_Return	Button	← Return	← Retour
+UI/Settings	Warning/Buttons	Exit_Return	Button	← Return	← Retour
+UI/Settings	Warning	Warning	Label	Warning!	Attention !
+UI/Settings	Warning/Buttons	Exit_Menu	Button	Continue to Main Menu	Retour au menu principal
+UI/Settings	Warning/Buttons	Exit_Quit	Button	Quit Game	Quitter le jeu
+UI/Settings	Warning/Warning	Detail	Label	"You are exiting the game outside of the shelter
+Current inventory & equipment will be deleted"	"Vous quittez le jeu depuis l'extérieur de l'abri.
+Votre inventaire et votre équipement actuels seront supprimés."
+Resources/Inputs	.	Header	Label	Input Settings	Paramètres de saisie
+Resources/Inputs	Modes/Settings	Mouse	Label	Mouse	Souris
+Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	"Normal
+"	"Normal
+"
+Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	"Inverted
+"	"À l'envers
+"
+Resources/Inputs	Modes/Settings	Sprint	Label	Sprint	Sprint
+Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	"Hold
+"	"Attendez
+"
+Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	"Toggle
+"	"Basculer
+"
+Resources/Inputs	Modes/Settings	Lean	Label	Lean	Lean
+Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
+"	"Attendez
+"
+Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
+"	"Basculer
+"
+Resources/Inputs	Modes/Settings	Aim	Label	Aim	Objectif
+Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
+"	"Attendez
+"
+Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
+"	"Basculer
+"
+Resources/Inputs	.	Reset	Button	Reset to defaults	Rétablir les paramètres par défaut
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	Exemple de saisie
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	Input Key	Touche de saisie
+UI/Settings	Settings/Row_01/Audio	Audio	Label	Audio Settings	Paramètres audio
+UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	Master Volume	Volume principal
+UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	Ambient Volume	Volume ambiant
+UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	Music Volume	Volume de la musique
+UI/Settings	Settings/Row_01/Music/Elements	Music	Label	Music Preset	Préréglage musical
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	"Off
+"	"Désactivé
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	"Dynamic
+"	"Dynamique
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	"Shelter
+"	"Refuge
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 05
+"	"Zone 05
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
+"	"Frontière
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
+"	"Vostok
+"
+UI/Settings	Settings/Row_01/Camera	Camera	Label	Camera Settings	Paramètres de l'appareil photo
+UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	Interpolate	Interpoler
+UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	Field of View	Champ de vision
+UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	Headbob	Hochement de tête
+UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	"Off
+"	"Désactivé
+"
+UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	"On
+"	"Le
+"
+UI/Settings	Settings/Row_01/Mouse	Mouse	Label	Mouse Settings	Paramètres de la souris
+UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	Sensibilité de la vision
+UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	Sensibilité de la visée
+UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	Scope Sensitivity	Sensibilité de la lunette
+UI/Settings	Settings/Row_01/Color	Color	Label	Color Settings	Paramètres de couleur
+UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	Interface Scale	Échelle d'interface
+UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	HUD Scale	Échelle HUD
+UI/Settings	Settings/Row_01/Image/Elements	Font	Label	Font Scale	Taille de la police
+UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	Exposure	Exposition
+UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	Contrast	Contraste
+UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	Saturation	Saturation
+UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	Paramètres d'image
+UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	Netteté
+UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
+UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
+"	"Carte
+"
+UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	FPS
+UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	Signes vitaux
+UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	Médical
+UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	Placement
+UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	Décoration
+UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	UI Tooltip	Info-bulle de l'interface utilisateur
+UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	"On
+"	"Le
+"
+UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	Off	Désactivé
+UI/Settings	Settings/Row_02/PIP	PIP	Label	PIP Scopes	Lunettes PIP
+UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	"On
+"	"Le
+"
+UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	"Off
+"	"Désactivé
+"
+UI/Settings	Settings/Row_02/Shadows	Shadows	Label	Detail Shadows	Détails des ombres
+UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	On	Le
+UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	"Off
+"	"Désactivé
+"
+UI/Settings	Settings/Row_02/Water	Header	Label	Water Reflections	Reflets sur l'eau
+UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	On	Le
+UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
+"	"Désactivé
+"
+UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	Occlusion ambiante
+UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	Le
+UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
+"	"Désactivé
+"
+UI/Settings	Settings/Row_03/Display	Display	Label	Display	Affichage
+UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	Plein écran
+UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	En mode fenêtré
+UI/Settings	Settings/Row_03/Frames	Frames	Label	Frames	Cadres
+UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	Vsync	Vsync
+UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	Unlimited	Illimité
+UI/Settings	Settings/Row_03/Rendering	Rendering	Label	Render Resolution	Résolution du rendu
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	Low	Faible
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	Medium	Moyen
+UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	High	Élevé
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	Ultra	Ultra
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	Native	Natif
+UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	Image Sharpness	Netteté de l'image
+UI/Settings	Settings/Row_03/Lighting	Lighting	Label	Lighting Quality	Qualité de l'éclairage
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	Low	Faible
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	Medium	Moyen
+UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	High	Élevé
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	Ultra	Ultra
+UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	Anti-aliasing	Lissage
+UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	Off	Désactivé
+UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	SMAA Off	SMAA désactivé
+UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	SMAA On	SMAA activé
+UI/Settings	Settings/Row_03/Exit	Exit	Label	Exit	Sortie
+UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	Main Menu	Menu principal
+UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
+"	"Quitter le jeu
+"
+Scenes/Menu	Roadmap	Header	Label	Roadmap	Feuille de route
+Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	Prochaines versions
+Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← Retour
+Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	Build 1 | Road	Version 1 | Route
+Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	Completed	Terminé
+Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	"•  Early access launch
+•  Gameplay loop
+•  Expanded maps
+•  Dynamic elements
+•  Multi-shelter support"	"•  Lancement en accès anticipé
+•  Mécanique de jeu
+•  Cartes étendues
+•  Éléments dynamiques
+•  Prise en charge de plusieurs abris"
+Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	Build 2 | Nomads	Version 2 | Nomads
+Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	Q3/2026	3e trimestre 2026
+Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	"•  Friendly faction
+•  AI vs. AI combat
+•  AI variants
+•  Driver (Trader)
+•  New map & shelter"	"•  Faction alliée
+•  Combat IA contre IA
+•  Variantes d'IA
+•  Pilote (Négociant)
+•  Nouvelle carte et abri"
+Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	Build 3 | Signal	Version 3 | Signal
+Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	Q4/2026	4e trimestre 2026
+Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	"•  Quest system
+•  Lore elements
+•  Civil defence shelters
+•  Grandma (Trader)
+•  New map & shelter"	"•  Système de quêtes
+•  Éléments de l'univers
+•  Abris de la protection civile
+•  Grand-mère (commerçante)
+•  Nouvelle carte et nouvel abri"
+Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	Build 4 | Gunslinger	Configuration 4 | Pistolero
+Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	"•  Weapon overhaul
+•  Bullet penetration
+•  Modding kits
+•  Trader services
+•  New map & shelter"	"•  Révision des armes
+•  Pénétration des balles
+•  Kits de modification
+•  Services des marchands
+•  Nouvelle carte et refuge"
+Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	Build 5 | North	Version 5 | Nord
+Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	"•  Dynamic season
+•  Train system
+•  Hunting & wildlife
+•  Shaman (Trader)
+•  New map & shelter"	"•  Saisons dynamiques
+•  Système de train
+•  Chasse et faune sauvage
+•  Chaman (commerçant)
+•  Nouvelle carte et abri"
+Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	Build 6 | Abyss	Version 6 | Abyss
+Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	"•  Sea system
+•  Patrol boats
+•  Scuba gear
+•  Fisherman (Trader)
+•  New map & shelter"	"•  Système maritime
+•  Bateaux de patrouille
+•  Équipement de plongée
+•  Pêcheur (commerçant)
+•  Nouvelle carte et refuge"
+Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	Build 7 | Enigma	Version 7 | Enigma
+Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	"•  Dialogue system
+•  SIGINT tools
+•  Transmissions
+•  Scientist (Trader)
+•  Vostok shelter"	"•  Système de dialogue
+•  Outils SIGINT
+•  Transmissions
+•  Scientifique (Négociant)
+•  Abri Vostok"
+Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	Build 8 | Silent Night	Version 8 | Douce nuit
+Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	"•  Full questline
+•  World options
+•  Destruction system
+•  FINSOF faction
+•  New map & shelter"	"•  Série complète de quêtes
+•  Options du monde
+•  Système de destruction
+•  Faction FINSOF
+•  Nouvelle carte et nouvel abri"
+Scenes/Menu	About	About_Return	Button	← Return	← Retour
+Scenes/Menu	About/Game	Info	Label	"Road to Vostok ® is a hardcore single-player survival game set 
+in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ® est un jeu de survie solo hardcore qui se déroule 
+dans une zone frontalière post-apocalyptique entre la Finlande et la Russie"
+Scenes/Menu	About	Developer	Label	Developer	Développeur
+Scenes/Menu	About	Country	Label	Country of origin	Pays d'origine
+Scenes/Menu	About/Country	Info	Label	Finland	Finlande
+Scenes/Menu	About	Founding	Label	Founding date	Date de création
+Scenes/Menu	About/Founding	Info	Label	Feb. 2022	Février 2022
+Scenes/Menu	About	Copyright	Label	Copyright & Legal	Droits d'auteur et mentions légales
+Scenes/Menu	About/Copyright	Info	Label	"1. Game Content
+Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
+
+2. Trademarks
+Road to Vostok ® is registered trademark of Road to Vostok Ltd.
+
+3. Engine
+Road to Vostok ® is powered by open source Godot Engine"	"1. Contenu du jeu
+Road to Vostok © 2026 Road to Vostok Ltd. Tous droits réservés.
+
+2. Marques commerciales
+Road to Vostok ® est une marque déposée de Road to Vostok Ltd.
+
+3. Moteur
+Road to Vostok ® utilise le moteur open source Godot Engine"
+Scenes/Menu	About	License	Label	Engine License (MIT)	Licence du moteur (MIT)
+Scenes/Menu	About/License	MIT	Label	"This game uses Godot Engine, available under the following license:
+
+Copyright © 2014-present Godot Engine contributors.
+Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the ""Software""), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE."	"Ce jeu utilise le moteur Godot, disponible sous la licence suivante :
+
+Copyright © 2014-présent Contributeurs du moteur Godot.
+Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
+
+L'autorisation est par la présente accordée, à titre gratuit, à toute personne obtenant une copie
+de ce logiciel et des fichiers de documentation associés (le « Logiciel »), d'utiliser
+le Logiciel sans restriction, y compris, sans limitation, les droits
+d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de concéder en sous-licence et/ou de vendre
+des copies du Logiciel, et de permettre aux personnes à qui le Logiciel est
+fourni de faire de même, sous réserve des conditions suivantes :
+
+La mention de copyright ci-dessus et la présente autorisation doivent figurer sur toutes les
+copies ou parties substantielles du Logiciel.
+
+LE LOGICIEL EST FOURNI « TEL QUEL », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU
+IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES DE QUALITÉ MARCHANDE,
+D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON. EN AUCUN CAS LES
+AUTEURS OU LES TITULAIRES DES DROITS D'AUTEUR NE POURRONT ÊTRE TENUS RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGE OU AUTRE
+RESPONSABILITÉ, QUE CE SOIT DANS LE CADRE D'UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
+LIÉE À OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU TOUTE AUTRE OPÉRATION CONCERNANT LE
+LOGICIEL."
+Resources/Loader	Screen	Label	Label	Loading...	Chargement en cours...
+Resources/Loader	Screen	Label	Label	Loading Intro...	Chargement de l'introduction...
+Resources/Loader	Screen	Label	Label	Loading Cabin...	Chargement de la cabine...
+Resources/Loader	Screen	Label	Label	Loading Tutorial...	Chargement du tutoriel...
+Resources/Loader	Screen	Label	Label	Loading Menu...	Chargement du menu...
+Resources/Loader	Screen	Label	Label	Loading Attic...	Chargement de l'espace de stockage...
+Resources/Loader	Screen	Label	Label	Loading Death...	Chargement de Death...
+Resources/Loader	Screen	Label	Label	Loading Classroom...	Chargement de la salle de classe...
+Resources/Loader	Screen	Label	Label	Loading Tent...	Chargement de la tente...
+Resources/Loader	Screen	Label	Label	Loading Bunker...	Chargement du silo...
+Resources/Loader	Screen	Label	Label	Loading Village...	Chargement du village...
+Resources/Loader	Screen	Label	Label	Loading Highway...	Chargement de l'autoroute...
+Resources/Loader	Screen	Label	Label	Loading School...	Chargement de l'école...
+Resources/Loader	Screen	Label	Label	Loading Outpost...	Chargement de l'avant-poste...
+Resources/Loader	Screen	Label	Label	Loading Minefield...	Chargement de Minefield...
+Resources/Loader	Screen	Label	Label	Loading Apartments...	Chargement des appartements...
+Resources/Loader	Screen	Label	Label	Loading Terminal...	Chargement du terminal...
+Resources/Loader	Screen	Label	Label	Loading Template...	Chargement du modèle...
+UI/Loading	Screen	Label	Label	Loading shaders...	Chargement des shaders...
+Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	Passer l'introduction [ESPACE]
+Scenes/Death	Main	Hint	Label	Character died	Le personnage est mort
+Scenes/Death	Main/Buttons	Load	Button	Load game	Charger la partie
+Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
+"	"Menu principal
+"
+Scenes/Death	Main/Buttons	Quit	Button	"Quit
+"	"Quitter
+"
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Santé
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Énergie
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Hydratation
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Psychologique
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Température corporelle
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Oxygène
+UI/HUD	Tooltip	Label	Label	Interaction	Interaction
+UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	Arme enrayée | Appuyez sur [Recharger]
+UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Mode rotation
+UI/HUD	Decor/Margin/Elements	Add	Label	[MMB] = Add to Catalog	[MMB] = Ajouter au catalogue
+UI/HUD	Decor/Margin/Elements	Catalog	Label	[TAB] = Furniture Catalog	[TAB] = Catalogue de mobilier
+UI/HUD	Decor/Margin/Elements	Close	Label	[F1] = Close Decor Mode	[F1] = Quitter le mode Décoration
+UI/HUD	Decor/Margin/Elements/Header	Label	Label	Decor Mode	Mode Décoration
+UI/HUD	Decor/Margin/Elements	Place	Label	[G] = Place Furniture	[G] = Placer des meubles
+UI/HUD	Decor/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter
+UI/HUD	Decor/Margin/Elements	Magnet	Label	[LMB] = Surface Magnet	[LMB] = Aimant de surface
+UI/HUD	Placement/Margin/Elements/Header	Label	Label	Item Placement	Emplacement des éléments
+UI/HUD	Placement/Margin/Elements	Place	Label	[G] = Grab / Drop Item	[G] = Prendre / Lâcher un objet
+UI/HUD	Placement/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter
+UI/HUD	Placement/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Mode rotation
+UI/HUD	Placement/Margin/Elements	Orientation	Label	[MMB] = Change Orientation	[MMB] = Changer l'orientation
+UI/HUD	Info	Map	Label	Shelter (Area 05)	Refuge (Zone 05)
+UI/HUD	Transition/Elements/Header	Destination	Label	Village	Village
+UI/HUD	Transition/Elements/Header	Zone	Label	Area 05	Zone 05
+UI/HUD	Transition/Elements/Details	Hint	Label	Demo transition: Skips 2-3 maps	Transition de la démo : saute 2 à 3 niveaux
+UI/Interface	Container/Header	Label	Label	Container	Conteneur
+UI/Interface	Equipment/Header	Label	Label	Equipment	Équipement
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Sac à dos
+UI/Interface	Equipment/Hints	Rig	Label	Rig	Plateforme
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	Casque
+UI/Interface	Equipment/Hints	Head	Label	Head	Tête
+UI/Interface	Equipment/Hints	Torso	Label	Torso	Torse
+UI/Interface	Equipment/Hints	Legs	Label	Legs	Jambes
+UI/Interface	Equipment/Hints	Belt	Label	Belt	Ceinture
+UI/Interface	Equipment/Hints	Feet	Label	Feet	Pieds
+UI/Interface	Equipment/Hints	Hands	Label	Hands	Les mains
+UI/Interface	Equipment/Hints	Matches	Label	Matches	Rencontres
+UI/Interface	Equipment/Hints	Light	Label	Light	Lumière
+UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
+UI/Interface	Equipment/Hints	Time	Label	Time	Heure
+UI/Interface	Equipment/Hints	Map	Label	Map	Carte
+UI/Interface	Equipment/Hints	Player	Label	Player	Joueur
+UI/Interface	Character/Header	Label	Label	Character	Personnage
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Santé
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Énergie
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Hydratation
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Psychologique
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Température corporelle
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Chat
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	Jour
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Refuges
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	Tâches
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	Quêtes
+UI/Interface	Tools/Header	Label	Label	Tools	Outils
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	Événements
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	Artisanat
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	Proximité
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	Notes sur la tâche
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	Notes sur la tâche : vide
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	Notes sur la tâche non disponibles (Tutoriel)
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	Carte du monde
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	Carte non fournie
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	Carte inutilisable (Vostok)
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"Panoramique = [Clic gauche]
+Zoom = [Molette]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	Carte de focalisation
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	Lecteur de cassettes
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	Lecteur de cassettes non disponible
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	Cette cassette contient de la musique sous licence (Avertissement concernant le contenu)
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	Nom de la cassette
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	Ignorer la musique d'ambiance [DÉSACTIVÉ]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	Nomades
+UI/Interface	Trader/Header	Label	Label	Trader	Trader
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	Approvisionnement
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	Tâches
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	Nom :
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	Trader
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	Fiscalité :
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	Tâches :
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	Réapprovisionnement :
+UI/Interface	Deal/Header	Label	Label	Deal	Offre
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	Montant de la demande + taxes (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	Valeur de l'offre (€)
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	Réinitialiser
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	Accepter
+UI/Interface	Supply/Header	Label	Label	Supply	Approvisionnement
+UI/Interface	Tasks/Header	Label	Label	Tasks	Tâches
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Catalogue de mobilier
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	Le catalogue est lié à votre personnage ; si vous mourez, les objets de votre catalogue seront également détruits
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	"Utilisation
+"
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	"Équiper
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	"Déséquiper
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	"Décharger
+"
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	"Diviser
+"
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	"Prends
+"
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	"Sommeil
+"
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	"Transfert
+"
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	"Lâcher
+"
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	"Lieu
+"
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	"Détruire
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	"Supprimer [0]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	"Supprimer [1]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	"Supprimer [2]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	"Supprimer [3]
+"
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Maître du café
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Consommable
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Légendaire
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	Matériel :
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	Primaire
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	État :
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	Poids :
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	Valeur :
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	Calibre :
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	Dommages :
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	Pénétration :
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	Niveau 1
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	Niveau 2
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	Niveau 3
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	Niveau 4
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	Niveau 5
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	Protection :
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	Niveau 1
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Capacité :
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Isolation :
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Santé :
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Énergie :
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Hydratation :
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Psychologique :
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Température corporelle :
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Imbriqué :
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Remèdes :
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Articles compatibles :
+UI/Elements/Item	Details	Abbreviation	Label	Item	Article
+UI/Profiler	Panel/Margin	Label	Label	Profiler	Profilage
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	Afficher
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	Nom de la recette
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	Entrée :
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	Résultat :
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	Commencer la saisie
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	Artisanat
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	Le devoir m'appelle
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	Ajouter aux notes
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	Supprimer
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	Niveau de difficulté :
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	Facile
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"La semaine dernière, je suis allé voir le médecin dans cette école abandonnée du coin. Il m'a dit que je devrais arrêter toutes mes « mauvaises habitudes », mais ce vieux connard fume lui-même, alors qu'il aille se faire voir !
+
+Tu es sûrement juste un de ces hippies des temps modernes qui ne font que sucer des pastilles à la menthe quand ça va mal, mais si jamais tu tombes sur un de ces endroits, apporte un paquet ou deux et des allumettes aussi."
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	Livrer :
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	Recevoir :
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ Vous recevrez des meubles pour votre abri à l'issue de cette mission
+→ Vos meubles se trouvent dans le catalogue de meubles [Mode Décoration]"
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Lancer la livraison
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Suspendre la livraison
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Livré
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Terminer
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Afficher
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	Jour 1
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	Le généraliste revient au Village
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	Dans 10 jours
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Événement destiné aux traders
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Lieu de l'événement :
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Village
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Possibilité d'événement :
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	environ 5 % / instance de carte
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Le Docteur est un marchand spécialisé dans le domaine médical qui tient un dispensaire de fortune dans un bâtiment scolaire abandonné de la Zone 05.
+
+Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	Item	Article
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Common)	Type (courant)
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Rare)	Type (Rare)
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Legendary)	Type (Légendaire)
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	Condition:	État :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	100%	100 %
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	Weight:	Poids :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	100kg	100 kg
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	Value:	Valeur :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	Use time:	Durée d'utilisation :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	Damage:	Dommages :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	Caliber:	Calibre :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	Magazine:	Magazine :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	Capacity:	Capacité :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	Nombre maximal de cartes :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	Armure :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	Santé :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
+"	"Énergie :
+"
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Hydratation :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Température corporelle :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Remèdes :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	Compatibilité :
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Nouveaux meubles ajoutés [Catalogue]

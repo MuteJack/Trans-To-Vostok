@@ -1,0 +1,462 @@
+Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution
+Tutorial	Billboard	1. Settings	"1. Settings
+
+Welcome to Road to Vostok Tutorial
+
+This Tutorial will guide you through the most
+important game mechanics and controls
+
+Let's start with settings
+
+You can access Settings with [ESC]
+
+Through these settings you can change inputs,
+different system values and performance options
+
+?? = Performance options"	"1. Paramètres
+
+Bienvenue dans le didacticiel de Road to Vostok
+
+Ce didacticiel vous guidera à travers les
+mécaniques de jeu et les commandes les plus importantes
+
+Commençons par les paramètres
+
+Vous pouvez accéder aux paramètres à l'aide de la touche [ESC]
+
+Ces paramètres vous permettent de modifier les commandes,
+diverses valeurs système et les options de performances
+
+?? = Options de performances"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	MuteJack		Performance Icon: Hand-crafted (Reconstruction)
+Tutorial	Billboard	2. Interface	"2. Interface
+
+Interface is your main UI which contains elements
+such as inventory, equipment, vitals and stats
+
+You can access Interfae with [TAB]
+
+If you want more information about an item, icon
+or specific value, you can use Tooltip
+
+Try Tooltip by opening Interface
+and point the character health value"	"2. Interface
+
+L'interface est votre interface utilisateur principale, qui contient des éléments
+tels que l'inventaire, l'équipement, les paramètres vitaux et les statistiques
+
+Vous pouvez accéder à l'interface à l'aide de la touche [TAB]
+
+Si vous souhaitez obtenir plus d'informations sur un objet, une icône
+ou une valeur spécifique, vous pouvez utiliser l'info-bulle
+
+Essayez l'info-bulle en ouvrant l'interface
+et en survolant la valeur de santé du personnage"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	MuteJack		
+Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
+
+All objects that logically have storage space are 
+interactable loot containers
+
+Loot is generated to these containers and items 
+are also physically scattered to the game world
+
+
+You can open, pick and interact with [MMB]
+
+When you have items available in Interface, you can 
+choose item actions with Context Menu [RMB]
+
+Open container and try Context Menu with items"	"3. Butin et objets
+
+Tous les objets qui disposent logiquement d'un espace de stockage sont 
+des conteneurs de butin avec lesquels on peut interagir
+
+Le butin est généré dans ces conteneurs et les objets 
+sont également dispersés physiquement dans l'univers du jeu
+
+
+Vous pouvez ouvrir, ramasser et interagir avec [bouton central de la souris]
+
+Lorsque vous avez des objets disponibles dans l'interface, vous pouvez 
+choisir des actions sur les objets via le menu contextuel [bouton droit de la souris]
+
+Ouvrez un conteneur et essayez le menu contextuel avec les objets"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	MuteJack		
+Tutorial	Billboard	4. Equipment	"4. Equipment
+
+Equipment are dedicated items slots 
+and linked to several important character stats
+
+Equipment can increase your Carry Capacity [CC] 
+and give you abilities like flashlight and fire making
+
+
+You can find equipment slots in Interface
+You can activate equipment slots by 
+moving compatible items to them
+
+Open container and try equipping items"	"4. Équipement
+
+Les emplacements d'équipement sont des emplacements dédiés 
+et sont liés à plusieurs statistiques importantes du personnage
+
+L'équipement peut augmenter votre capacité de charge [CC] 
+et vous conférer des capacités telles que la lampe torche et la préparation d'un feu
+
+
+Vous trouverez les emplacements d'équipement dans l'interface
+Vous pouvez activer les emplacements d'équipement en 
+y plaçant des objets compatibles
+
+Ouvrez votre sac et essayez d'équiper des objets"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	MuteJack		
+Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
+
+Medical system is based on conditions that 
+negatively affect your character's vital stats
+
+These conditions are presented as medical icons 
+and you can find them in Interface and HUD
+
+
+When a medical icon turns red, the condition is 
+active and needs to be cured using a medical item
+
+You can see causes, symptoms and cures with Tooltip
+
+Open container and try using some medical items"	"5. Soins et altérations
+
+Le système de soins repose sur des altérations qui 
+affectent négativement les caractéristiques vitales de votre personnage
+
+Ces altérations sont représentées par des icônes de soins 
+et vous pouvez les trouver dans l'interface et le HUD
+
+
+Lorsqu'une icône de soins devient rouge, l'altération est 
+active et doit être soignée à l'aide d'un objet de soins
+
+Vous pouvez consulter les causes, les symptômes et les remèdes grâce à l'infobulle
+
+Ouvrez votre inventaire et essayez d'utiliser quelques objets de soins"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	MuteJack		
+Tutorial	Billboard	6. Weapons	"6. Weapons
+
+Weapons are equipment and they use 
+Primary, Secondary, Knife and Grenade slots
+
+When a weapon is equipped you can draw 
+and holster from slots with keys [1] [2] [3] [4] [5]
+
+
+Every firearm can use Primary slot but only 
+pistols and SMG's can utilize Secondary slot
+
+Open container, equip a weapon and draw it
+| [RMB] = Aim (ADS) | [F] = Firemode |
+| [MMB] = Canted aim | [X]=Inspect weapon |
+| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. Armes
+
+Les armes font partie de l'équipement et occupent 
+les emplacements Principal, Secondaire, Couteau et Grenade
+
+Lorsqu'une arme est équipée, vous pouvez la dégainer 
+et la ranger à l'aide des touches [1] [2] [3] [4] [5]
+
+
+Toutes les armes à feu peuvent occuper l'emplacement Principal, mais seuls 
+les pistolets et les mitraillettes peuvent occuper l'emplacement Secondaire
+
+Ouvrez le conteneur, équipez-vous d'une arme et dégainer
+| [Clic droit] = Viser (ADS) | [F] = Mode de tir |
+| [Clic central] = Viser en inclinaison | [X] = Inspecter l'arme |
+| [MOUSE] = Position de l'arme | [MOUSE] = Inspecter la rotation |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	MuteJack		
+Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
+
+Weapon system uses seperated magazines
+and caliber-based ammo types
+
+You can load a magazine by moving a compatible
+ammo type to the magazine with Interface
+
+You can unload a magazine with Context Menu [RMB]
+
+Magazines can be attached to weapons manually
+or with [R] which fetches a loaded magazine for you
+
+Open container, use Tooltip to identify the ammo
+and magazine compatibility, Load -> Attach -> Fire
+
+[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. Munitions et chargeurs
+
+Le système d'armes utilise des chargeurs séparés
+et des types de munitions spécifiques à chaque calibre
+
+Vous pouvez charger un chargeur en déplaçant un type de munition compatible
+vers le chargeur via l'interface
+
+Vous pouvez décharger un chargeur via le menu contextuel [Clic droit]
+
+Les chargeurs peuvent être fixés aux armes manuellement
+ou à l'aide de [R], qui va chercher un chargeur chargé pour vous
+
+Ouvrez le conteneur, utilisez l'info-bulle pour vérifier la compatibilité
+des munitions et du chargeur, puis Chargez -> Fixez -> Tirez
+
+[Clic gauche] = Tirer [V] = Vérifier les munitions [CTRL] -> [Clic gauche] = Insérer une balle (fusils à verrou et fusils de chasse)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	MuteJack		
+Tutorial	Billboard	8. Attachments	"8. Attachements
+
+You can customize weapons by attaching 
+suppressors, optics and lasers to them
+
+You can add/swap attachments like magazines 
+with Interface and remove using Context Menu
+
+
+Open container, use Tooltip or item hover colors to 
+identify attachment compatibility and try customizing
+[HOLD CTRL] + [SCROLL] = Optic rail position
+[SCROLL] = LPVO zoom level
+[ALT] = Secondary optic
+[T] = Laser toggle"	"8. Accessoires
+
+Vous pouvez personnaliser vos armes en y ajoutant 
+des silencieux, des optiques et des lasers
+
+Vous pouvez ajouter ou changer d'accessoires, comme les chargeurs, 
+via l'interface, et les retirer à l'aide du menu contextuel
+
+
+Ouvrez le conteneur, utilisez l'info-bulle ou les couleurs d'affichage au survol des objets pour 
+vérifier la compatibilité des accessoires et essayez de personnaliser votre arme
+[MAINTENIR CTRL] + [MOUSETTE] = Position du rail optique
+[MOUSETTE] = Niveau de zoom du LPVO
+[ALT] = Optique secondaire
+[T] = Activer/désactiver le laser"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	MuteJack		
+Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
+
+When a knife is equipped, you can draw it with key [3]
+
+You can use slash attack with [LMB] 
+and stab attack with [RMB]
+
+
+You have two grenades slots and you can draw 
+grenades with keys [4] and [5]
+
+You can prepare high throw with [LMB] 
+and low throw with [RMB]
+
+Second press executes and opposite button resets the throw"	"9. Couteaux et grenades
+
+Lorsqu'un couteau est équipé, vous pouvez le dégainer à l'aide de la touche [3]
+
+Vous pouvez effectuer une attaque tranchante avec [Clic gauche] 
+et une attaque enfoncée avec [Clic droit]
+
+
+Vous disposez de deux emplacements pour les grenades et vous pouvez les dégainer 
+à l'aide des touches [4] et [5]
+
+Vous pouvez préparer un lancer haut avec [Bouton gauche de la souris] 
+et un lancer bas avec [Bouton droit de la souris]
+
+Une deuxième pression exécute le lancer et le bouton opposé le réinitialise"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	MuteJack		
+Tutorial	Billboard	10. Armor	"10. Armor
+
+Armor system is based on NIJ-rated (II-IV)
+helmets, armor plates, and plate carriers (rigs)
+
+Armor protection level is directly linked
+to ammo/weapon penetration level which
+both can be checked using Tooltip
+
+
+Open container, equip helmet and plate carrier and
+try attaching armor plate to the rig like attachments
+
+|NIJ II = Level 1| 1. If protection matches penetration, armor can take 3-4 shots|
+|NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
+|NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
+|NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
+|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. Armure
+
+Le système d'armure repose sur des casques, des plaques de protection et des gilets pare-balles (rigs) certifiés NIJ (niveaux II à IV)
+
+Le niveau de protection de l'armure est directement lié
+au niveau de pénétration des munitions/armes, qui
+peuvent tous deux être vérifiés à l'aide de l'infobulle
+
+
+Ouvrez le conteneur, équipez-vous du casque et du gilet pare-balles, puis
+essayez de fixer la plaque de blindage au gilet comme des accessoires
+
+|NIJ II = Niveau 1| 1. Si la protection correspond à la pénétration, l'armure peut encaisser 3 à 4 tirs|
+|NIJ IIA = Niveau 2| 2. Chaque impact réduit l'état de l'armure, celle-ci se brise à 0 %|
+|NIJ III = Niveau 3| 3. Une pénétration de niveau supérieur brise l'armure immédiatement|
+|NIJ III+ = Niveau 4| 4. Les casques préviennent l'état médical critique « Coup à la tête »|
+|NIJ IV = Niveau 5| 5. Les plaques de blindage préviennent l'état médical critique « Rupture »|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	MuteJack		
+Tutorial	Billboard	11. Traders	"11. Traders
+
+Traders are in-game characters that allow 
+you to trade items and complete lore related tasks
+
+Trading system is based on bartering where your goal 
+is to make a deal that is as balanced as possible.
+Deal is calculated between request item values, trader tax and offer item values
+
+Completing tasks will lower Trader Tax and provide 
+you reward items and keys for unlocking new Shelters
+
+Interact with trader Generalist and try 
+trading something and completing a task"	"11. Les marchands
+
+Les marchands sont des personnages du jeu qui vous permettent 
+d'échanger des objets et d'accomplir des quêtes liées à l'univers du jeu
+
+Le système d'échange repose sur le troc, votre objectif 
+étant de conclure un accord aussi équilibré que possible.
+La transaction est calculée en fonction de la valeur des objets demandés, de la taxe du marchand et de la valeur des objets proposés.
+
+Accomplir des quêtes réduira la taxe du marchand et vous permettra d'obtenir 
+des objets de récompense ainsi que des clés pour débloquer de nouveaux abris.
+
+Interagissez avec le marchand généraliste et essayez d'
+échanger quelque chose et d'accomplir une quête."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	MuteJack		
+Tutorial	Billboard	12. AI	"12. AI
+
+AI is divided into three hostile factions which
+ocupy different areas of the game world
+
+|Area05|Border Zone| Vostok|
+|Bandits|Guards|Military|
+|Easy AI|Medium AI|Hard AI|
+
+Each AI faction has different abilities and
+faction bosses with rare spawn changes
+
+Map instances can spawn maximum of 10 AI's
+once you have eliminated all, you will have peace"	"12. IA
+
+L'IA est divisée en trois factions hostiles qui
+occupent différentes zones du monde du jeu
+
+|Zone 05|Zone frontalière| Vostok|
+|Bandits|Gardes|Militaires|
+|IA facile|IA moyenne|IA difficile|
+
+Chaque faction IA possède des capacités différentes et
+des chefs de faction dont l'apparition varie
+
+Les instances de carte peuvent générer jusqu'à 10 IA
+une fois que vous les aurez toutes éliminées, vous aurez la paix"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	MuteJack		
+Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
+
+Like AI, game world is divided into three zones which have different maps and loot pools
+
+|Starting zone | Divider zone | Permadeath zone |
+|Area 05 | Border Zone | Vostok |
+|Low-tier loot | Medium-tier loot | High-tier loot|
+
+
+You can travel through these zones and maps 
+through Transitions which have certain travel costs 
+related to character vitals and World Simulation
+
+Transitions are marked with Transition Flags"	"13. Cartes et transitions
+
+Tout comme l'IA, l'univers du jeu est divisé en trois zones qui comportent des cartes et des pools de butin différents
+
+|Zone de départ | Zone de transition | Zone de mort permanente |
+|Zone 05 | Zone frontalière | Vostok |
+|Butin de bas niveau | Butin de niveau intermédiaire | Butin de haut niveau|
+
+
+Vous pouvez vous déplacer à travers ces zones et ces cartes 
+grâce à des transitions qui impliquent certains coûts de déplacement 
+liés aux caractéristiques du personnage et à la simulation du monde.
+
+Les transitions sont signalées par des drapeaux de transition."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	MuteJack		
+Tutorial	Billboard	14. World Simulation	"14. World Simulation
+
+Game uses World Simulation which creates 
+day & night cycles, dynamic weather, 
+seasons and randomized events
+
+Simulation rate
+Day & night cycle (24h) = 2.4h IRL
+
+
+World Simulation is linked to sleeping and 
+map transitions which increases simulation time
+
+You can see current time with time related items 
+Pick a time item (Alarm Clock) and equip it
+*Simulation time stays locked during Tutorial"	"14. Simulation du monde
+
+Le jeu utilise une simulation du monde qui génère 
+des cycles jour/nuit, une météo dynamique, 
+des saisons et des événements aléatoires
+
+Taux de simulation
+Cycle jour/nuit (24 h) = 2,4 h dans la réalité
+
+
+La simulation du monde est liée au sommeil et 
+aux transitions entre les zones, ce qui augmente la durée de simulation
+
+Vous pouvez voir l'heure actuelle grâce aux objets liés au temps
+Choisissez un objet lié au temps (réveil) et équipez-le
+*Le temps de simulation reste verrouillé pendant le didacticiel"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	MuteJack		
+Tutorial	Billboard	15. Shelters	"15. Shelters
+
+Shelters are safe areas that allows you to save 
+simulation time, character progress and loot
+
+Shelters can be unlocked with keys 
+which you acquire by completing tasks
+
+
+All Shelters can be customized with 
+Item Placement and Decor Mode
+
+You can use Item Placement with [G] and move 
+furniture by activating Decor Mode with [F1]"	"15. Abris
+
+Les abris sont des zones sécurisées qui vous permettent de sauvegarder 
+votre progression dans la simulation, celle de votre personnage et votre butin
+
+Les abris peuvent être déverrouillés à l'aide de clés 
+que vous obtenez en accomplissant des tâches
+
+
+Tous les abris peuvent être personnalisés grâce au 
+mode « Placement d'objets » et au mode « Décoration »
+
+Vous pouvez utiliser le mode « Placement d'objets » avec la touche [G] et déplacer 
+les meubles en activant le mode « Décoration » avec la touche [F1]"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	MuteJack		
+Tutorial	Billboard	16. Vostok	"16. Vostok
+
+Vostok is a high-risk, high-reward Permadeath zone 
+where death results losing all existing progression
+
+Permadeath in this game deletes all save files, 
+so you lose absolutely everything
+
+
+When you travel towards Vostok maps,
+ you are warned before the Transition
+
+When you enter Vostok maps a red 
+Permadeath Skull will also appear 
+in the upper corner of the screen"	"16. Vostok
+
+Vostok est une zone Permadeath à haut risque et à haut rendement 
+où la mort entraîne la perte de toute progression
+
+Dans ce jeu, le Permadeath supprime tous les fichiers de sauvegarde, 
+vous perdez donc absolument tout
+
+
+Lorsque vous vous dirigez vers les cartes de Vostok,
+ vous recevez un avertissement avant la transition
+
+Lorsque vous entrez dans les cartes de Vostok, un 
+crâne Permadeath rouge apparaît également 
+dans le coin supérieur de l'écran"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	MuteJack		Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/
