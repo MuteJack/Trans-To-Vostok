@@ -17,8 +17,8 @@ Behavior:
     - Trans To Vostok/translator.gd                         (text translation engine)
     - Trans To Vostok/texture_loader.gd                     (texture replacement engine)
     - Trans To Vostok/locale.json                           (locale configuration)
-    - Trans To Vostok/<locale>/translation_*.tsv            (runtime TSVs)
-    - Trans To Vostok/<locale>/metadata.tsv
+    - Trans To Vostok/<locale>/runtime_tsv/translation_*.tsv (runtime TSVs)
+    - Trans To Vostok/<locale>/runtime_tsv/metadata.tsv
     - Trans To Vostok/<locale>/textures/**                   (translated images, included if present)
 
 Output: mods/Trans To Vostok.zip
@@ -41,7 +41,8 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 MOD_NAME = "Trans To Vostok"
 MOD_FILES = ["translator_ui.gd", "translator.gd", "texture_loader.gd", "locale.json"]
-LOCALE_FILES = [
+RUNTIME_TSV_DIR = "runtime_tsv"
+RUNTIME_TSV_FILES = [
     "metadata.tsv",
     "translation_static.tsv",
     "translation_literal_scoped.tsv",
@@ -112,14 +113,15 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                 zf.write(src, f"{MOD_NAME}/{fname}")
                 count += 1
 
-            # 3. locale files → Trans To Vostok/<locale>/
+            # 3. locale runtime TSVs → Trans To Vostok/<locale>/runtime_tsv/
             for locale in locales:
                 locale_dir = pkg_root / locale
-                for fname in LOCALE_FILES:
-                    src = locale_dir / fname
+                runtime_dir = locale_dir / RUNTIME_TSV_DIR
+                for fname in RUNTIME_TSV_FILES:
+                    src = runtime_dir / fname
                     if not src.exists():
-                        raise FileNotFoundError(f"Locale file not found: {src}")
-                    zf.write(src, f"{MOD_NAME}/{locale}/{fname}")
+                        raise FileNotFoundError(f"Runtime TSV not found: {src}")
+                    zf.write(src, f"{MOD_NAME}/{locale}/{RUNTIME_TSV_DIR}/{fname}")
                     count += 1
 
                 # 4. texture folder → Trans To Vostok/<locale>/textures/**

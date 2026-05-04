@@ -755,7 +755,8 @@ UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 0
 "	"05 구역
 "
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
-"	접경지대
+"	"접경지대
+"
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
 "	"보스토크
 "
@@ -787,7 +788,7 @@ UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
 "	"지도
 "
 UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	FPS
-UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	상태
+UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	바이탈
 UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	의료
 UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	배치
 UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	장식
@@ -1015,7 +1016,7 @@ Resources/Loader	Screen	Label	Label	Loading Highway...	고속도로 로딩중...
 Resources/Loader	Screen	Label	Label	Loading School...	학교 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Outpost...	전초기지 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Minefield...	지뢰지대 로딩중...
-Resources/Loader	Screen	Label	Label	Loading Apartments...	아파트 로딩중...
+Resources/Loader	Screen	Label	Label	Loading Apartments...	아파트 단지 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Terminal...	터미널 로딩중...
 Resources/Loader	Screen	Label	Label	Loading Template...	템플릿 로딩중...
 UI/Loading	Screen	Label	Label	Loading shaders...	셰이더 로딩중...
@@ -1184,7 +1185,7 @@ UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	레�
 UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	방어 등급:
 UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	레벨 1
 UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	용량:
-UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	방한:
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	보온:
 UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	체력:
 UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	기력:
 UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	수분:

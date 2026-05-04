@@ -1,6 +1,6 @@
 # Trans To Vostok - 런타임 번역 엔진 (8층 fallback 체인)
 #
-# 데이터 파일 (build_runtime_tsv.py 가 생성):
+# 데이터 파일 (build_runtime_tsv.py 가 생성, <locale>/runtime_tsv/ 아래):
 #   translation_static.tsv           — static        (5필드 + text + translation)
 #   translation_literal_scoped.tsv   — scoped literal (5필드 + text + translation)
 #   translation_pattern_scoped.tsv   — scoped pattern (5필드 + text + translation)
@@ -388,7 +388,7 @@ func _reset_state() -> void:
 # ==========================================
 
 func _load_translations() -> void:
-	var base: String = DATA_BASE + "/" + _locale
+	var base: String = DATA_BASE + "/" + _locale + "/runtime_tsv"
 
 	_load_exact_tsv(base + "/translation_static.tsv", static_rows, static_exact_index, static_by_text)
 	_load_exact_tsv(

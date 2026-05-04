@@ -53,7 +53,7 @@ All save files deleted	모든 세이브 파일이 삭제되었습니다
 Character died	캐릭터가 사망했습니다
 Intro	인트로
 Cabin	오두막
-Shelter	피신처
+Shelter	은신처
 Tutorial	튜토리얼
 Menu	메뉴
 Attic	다락방
@@ -81,9 +81,11 @@ Wood	나무
 Metal	금속
 Concrete	콘크리트
 Rock	돌
+Vostok	보스토크
 Inventory	인벤토리
 Primary	주무기
 Secondary	보조무기
+Vital	바이탈
 Task Notes empty	의뢰 노트가 비어있습니다
 Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
 Map not equipped	지도가 장착되지 않았습니다
@@ -480,6 +482,7 @@ Cat Rescued	고양이 구조됨
 Cat Vital Activated	고양이 상태 활성화됨
 Cat Died	고양이가 사망했습니다
 You have been spotted!	적발되었습니다!
+Player Returned	플레이어 복귀 됨
 Airdrop	보급품
 Tutorial Crate	튜토리얼 상자
 Electric Box	배전함
@@ -577,42 +580,40 @@ Trolley T.	트롤리 (대형)
 Weapon Display	무기 진열대
 Weapon D.	무기 진열대
 Unload	탄 꺼내기
-Show	보기
-Hide	숨기기
-Added	추가됨
+Clear Chamber	약실 비우기
 Unequip	해제
 Equip	장비
-Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)
-Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
-Feed cat:	고양이에게 먹이 주기:
-Rescue Cat	고양이 구출
+Show	보기
+Hide	숨기기
+Activated	활성화됨
+Not active	활성화되지 않음
+All maps & zones	모든 지역 및 구역
+Active	활성화
+Repair	수리
+Craft	제작
+Added	추가됨
+Remove	제거
+Completed	완료됨
+Add to Notes	노트에 추가
 Frozen	냉동됨
-Clear Chamber	약실 비우기
+Permadeath Zone	퍼마데스 구역 (부활 불가)
+[Open]	[열기]
 Door [Jammed]	문 [막힘]
 Door [Occupied]	문 [사용중]
 Door [Close]	문 [닫기]
 Door [Open]	문 [열기]
-All maps & zones	모든 지역 및 구역
-Activated	활성화됨
-Not active	활성화되지 않음
-Active	활성화
-Fuel Tank [89%]	연료 탱크 [89%]
-Permadeath Zone	퍼마데스 구역 (부활 불가)
-[Open]	[열기]
-Radio [Turn Off]	라디오 [켜기]
-Radio [Turn On]	라디오 [끄기]
-Repair	수리
-Craft	제작
+Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)
 Turn Off	끄기
 Turn On	켜기
-Remove	제거
-Completed	완료됨
-Add to Notes	노트에 추가
+Radio [Turn Off]	라디오 [켜기]
+Radio [Turn On]	라디오 [끄기]
 Television [Turn Off]	텔레비전 [끄기]
 Television [Turn On]	텔레비전 [끄기]
-Player Returned	플레이어 복귀 됨
+Rescue Cat	고양이 구출
+Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
+Fuel Tank [89%]	연료 탱크 [89%]
+Feed cat:	고양이에게 먹이 주기:
 Corpse	시체
-Vital	바이탈
 Indoors	실내
 Indoor	실내
 Mine	지뢰

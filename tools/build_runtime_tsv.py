@@ -6,7 +6,7 @@ Behavior:
 2. Collect rows from all sheets except MetaData
 3. Exclude rows with ignore=1
 4. Exclude rows with empty translation
-5. Classify by method + location into 5 runtime TSVs:
+5. Classify by method + location into 5 runtime TSVs (output goes to <locale>/runtime_tsv/):
        translation_static.tsv           — method=static                      (5 fields + text + translation)
        translation_literal_scoped.tsv   — method=literal/"" + location        (5 fields + text + translation)
        translation_pattern_scoped.tsv   — method=pattern + location           (5 fields + text + translation)
@@ -247,10 +247,12 @@ def main() -> int:
     print(f"  excluded (untranslated)   {stats['excluded_untranslated']:4d} rows")
     print()
 
+    runtime_dir = locale_dir / "runtime_tsv"
+
     # 4. generate metadata.tsv
     print("[4/5] Generating metadata.tsv...")
     meta = load_metadata(xlsx_path)
-    meta_path = locale_dir / "metadata.tsv"
+    meta_path = runtime_dir / "metadata.tsv"
     meta_path.parent.mkdir(parents=True, exist_ok=True)
     with open(meta_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
@@ -264,25 +266,36 @@ def main() -> int:
     print("[5/5] Writing TSV...")
 
     outputs = [
-        (locale_dir / "translation_static.tsv",         COLUMNS_SCOPED, buckets["static"]),
-        (locale_dir / "translation_literal_scoped.tsv", COLUMNS_SCOPED, buckets["literal_scoped"]),
-        (locale_dir / "translation_pattern_scoped.tsv", COLUMNS_SCOPED, buckets["pattern_scoped"]),
-        (locale_dir / "translation_literal.tsv",        COLUMNS_GLOBAL, buckets["literal_global"]),
-        (locale_dir / "translation_pattern.tsv",        COLUMNS_GLOBAL, buckets["pattern_global"]),
-        (locale_dir / "translation_substr.tsv",         COLUMNS_GLOBAL, buckets["substr"]),
+        (runtime_dir / "translation_static.tsv",         COLUMNS_SCOPED, buckets["static"]),
+        (runtime_dir / "translation_literal_scoped.tsv", COLUMNS_SCOPED, buckets["literal_scoped"]),
+        (runtime_dir / "translation_pattern_scoped.tsv", COLUMNS_SCOPED, buckets["pattern_scoped"]),
+        (runtime_dir / "translation_literal.tsv",        COLUMNS_GLOBAL, buckets["literal_global"]),
+        (runtime_dir / "translation_pattern.tsv",        COLUMNS_GLOBAL, buckets["pattern_global"]),
+        (runtime_dir / "translation_substr.tsv",         COLUMNS_GLOBAL, buckets["substr"]),
     ]
 
     for out_path, columns, rows in outputs:
         write_tsv(out_path, columns, rows)
         print(f"  -> {out_path.relative_to(mod_root)} ({len(rows)} rows)")
 
-    # cleanup legacy files: translation.tsv, translation_expression.tsv are no longer used
-    for legacy_name in ("translation.tsv", "translation_expression.tsv"):
+    # cleanup legacy files at locale root (moved to runtime_tsv/ subfolder, plus older formats)
+    legacy_names = (
+        "translation.tsv",
+        "translation_expression.tsv",
+        "translation_static.tsv",
+        "translation_literal_scoped.tsv",
+        "translation_pattern_scoped.tsv",
+        "translation_literal.tsv",
+        "translation_pattern.tsv",
+        "translation_substr.tsv",
+        "metadata.tsv",
+    )
+    for legacy_name in legacy_names:
         legacy_path = locale_dir / legacy_name
         if legacy_path.exists():
             try:
                 legacy_path.unlink()
-                print(f"  x {legacy_path.relative_to(mod_root)} (legacy format removed)")
+                print(f"  x {legacy_path.relative_to(mod_root)} (moved to runtime_tsv/)")
             except OSError as e:
                 print(f"  [WARN] Failed to remove legacy file: {legacy_path} ({e})")
 

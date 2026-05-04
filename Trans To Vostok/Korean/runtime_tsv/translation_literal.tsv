@@ -53,7 +53,7 @@ All save files deleted	모든 세이브 파일이 삭제되었습니다
 Character died	캐릭터가 사망했습니다
 Intro	인트로
 Cabin	오두막
-Shelter	피신처
+Shelter	은신처
 Tutorial	튜토리얼
 Menu	메뉴
 Attic	다락방
@@ -85,6 +85,7 @@ Vostok	보스토크
 Inventory	인벤토리
 Primary	주무기
 Secondary	보조무기
+Vital	바이탈
 Task Notes empty	의뢰 노트가 비어있습니다
 Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
 Map not equipped	지도가 장착되지 않았습니다
@@ -98,7 +99,6 @@ Doctor	의사
 Generalist	잡화상
 Gunsmith	총잡이
 Sleep	수면
-Remove {name}	{name} 제거
 Level 2	레벨 2
 Level 3	레벨 3
 Level 4	레벨 4
@@ -568,8 +568,7 @@ After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and
 Fighter Jets	전투기
 "After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
 
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"5구역 철수 및 접경 지대
- 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 필요합니다.
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"05구역 철수 및 접경 지대 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 필요합니다.
 
 핀란드군은 전투기를 이용해 상공에 자주 나타나는 고위험 비살상 공중 시범 비행을 시작할 예정입니다."
 Missing Cat	잃어버린 고양이
@@ -605,8 +604,7 @@ Attack Helicopters	공격 헬리콥터
 
 While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"접경 지대의 비무장화가 무너지기 시작했고, 기존의 규칙들이 더 이상 적용되지 않는다는 것이 명백해지고 있습니다.
 
-공식 소식통은 아무런 변화가 없다고 주장하지만, 공격 헬리콥터들이 접경 지대
- 인근에서 빈번한 순찰과 영공 침범을 시작했습니다."
+공식 소식통은 아무런 변화가 없다고 주장하지만, 공격 헬리콥터들이 접경 지대 인근에서 빈번한 순찰과 영공 침범을 시작했습니다."
 Helicopter Crash Sites	헬리콥터 추락 현장
 "After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
 
@@ -627,7 +625,7 @@ Military BTR's can now enter the Outpost map and Area 05 is no longer considered
 News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"최근 사건들로 인해 접경 지대
 의 상황은 급속도로 악화되고 있으며, 인근 지역들도 그 여파에 직면하고 있습니다.
 
-이제 군용 BTR이 전초기지 지도에 진입할 수 있게 되었고, 05구역은 더 이상 안전지대로 간주되지 않습니다.
+이제 군용 BTR이 전초기지 지역에 진입할 수 있게 되었고, 05구역은 더 이상 안전지대로 간주되지 않습니다.
 
 이 소식은 05구역 주민들과 상인들 사이에서 빠르게 퍼져나갔지만, 05구역 외부의 언론과 당국은 이를 단순한 루머로 여기고 있습니다."
 Traders leave Area 05	상인들이 05구역을 떠남
@@ -641,7 +639,7 @@ Traders return to Area 05	상인들이 05구역으로 복귀
 
 All traders are returning back to Area 05."	"최근 사태의 악화세는 진정된 듯하며, 5구역은 완전한 혼란에 빠지지 않았습니다.
 
-모든 거래자들이 5구역으로 복귀하고 있습니다."
+모든 상인들이 05구역으로 복귀하고 있습니다."
 Transmission	송신
 "The signal that started it all has suddenly reappeared.
 
@@ -1010,6 +1008,7 @@ Cat Rescued	고양이 구조됨
 Cat Vital Activated	고양이 상태 활성화됨
 Cat Died	고양이가 사망했습니다
 You have been spotted!	적발되었습니다!
+Player Returned	플레이어 복귀 됨
 Airdrop	보급품
 Tutorial Crate	튜토리얼 상자
 Electric Box	배전함
@@ -1107,42 +1106,40 @@ Trolley T.	트롤리 (대형)
 Weapon Display	무기 진열대
 Weapon D.	무기 진열대
 Unload	탄 꺼내기
-Show	보기
-Hide	숨기기
-Added	추가됨
+Clear Chamber	약실 비우기
 Unequip	해제
 Equip	장비
-Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)
-Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
-Feed cat:	고양이에게 먹이 주기:
-Rescue Cat	고양이 구출
+Show	보기
+Hide	숨기기
+Activated	활성화됨
+Not active	활성화되지 않음
+All maps & zones	모든 지역 및 구역
+Active	활성화
+Repair	수리
+Craft	제작
+Added	추가됨
+Remove	제거
+Completed	완료됨
+Add to Notes	노트에 추가
 Frozen	냉동됨
-Clear Chamber	약실 비우기
+Permadeath Zone	퍼마데스 구역 (부활 불가)
+[Open]	[열기]
 Door [Jammed]	문 [막힘]
 Door [Occupied]	문 [사용중]
 Door [Close]	문 [닫기]
 Door [Open]	문 [열기]
-All maps & zones	모든 지역 및 구역
-Activated	활성화됨
-Not active	활성화되지 않음
-Active	활성화
-Fuel Tank [89%]	연료 탱크 [89%]
-Permadeath Zone	퍼마데스 구역 (부활 불가)
-[Open]	[열기]
-Radio [Turn Off]	라디오 [켜기]
-Radio [Turn On]	라디오 [끄기]
-Repair	수리
-Craft	제작
+Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)
 Turn Off	끄기
 Turn On	켜기
-Remove	제거
-Completed	완료됨
-Add to Notes	노트에 추가
+Radio [Turn Off]	라디오 [켜기]
+Radio [Turn On]	라디오 [끄기]
 Television [Turn Off]	텔레비전 [끄기]
 Television [Turn On]	텔레비전 [끄기]
-Player Returned	플레이어 복귀 됨
+Rescue Cat	고양이 구출
+Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
+Fuel Tank [89%]	연료 탱크 [89%]
+Feed cat:	고양이에게 먹이 주기:
 Corpse	시체
-Vital	바이탈
 Indoors	실내
 Indoor	실내
 Mine	지뢰
