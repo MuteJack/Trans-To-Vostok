@@ -3,6 +3,8 @@ Compare extracted TSV with Translation.xlsx and report translation coverage.
 
 Match classification:
 - direct:      xlsx static or scoped literal row matched by 5-tuple (translation complete)
+- drifted:     content matched but xlsx unique_id is stale (xlsx unique_id needs update —
+               otherwise build/validate_translation will fail for static rows)
 - literal:     xlsx global literal row matched by text (fallback translation)
 - expression:  xlsx global pattern row regex matched text (fallback translation)
 - ignored:     present in xlsx with method=ignore (operational exclusion)
@@ -134,12 +136,14 @@ def load_tsv_entries(tsv_dir: Path) -> list[dict]:
 # xlsx analysis (new schema: method / translation)
 # ==========================================
 
-def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, list, list]:
+def analyze_xlsx(rows: list[dict]) -> tuple[dict, dict, set, set, set, set, set, dict, dict, list, list]:
     """
     Index xlsx rows against the runtime matching model.
 
     Returns:
       - direct_keys:         { 5-tuple: translation } — static + scoped literal (tscn)
+      - direct_unique_ids:   { 5-tuple: xlsx_unique_id } — for drift detection (tscn rows
+                             whose xlsx row carries a unique_id)
       - ignored_keys:        set of 5-tuples (method=ignore)
       - untranslatable_keys: set of 5-tuples (untranslatable=1)
       - empty_keys:          set of 5-tuples (empty translation)
@@ -149,6 +153,7 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
       - ignore_rows:         [row, ...] — original method=ignore rows (for coverage check)
     """
     direct_keys: dict = {}
+    direct_unique_ids: dict = {}
     ignored_keys: set = set()
     untranslatable_keys: set = set()
     tres_ignored: set = set()
@@ -197,6 +202,9 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
         if effective == "static":
             if translation:
                 direct_keys[key_5] = translation
+                xlsx_uid = row.get("unique_id", "").strip()
+                if xlsx_uid:
+                    direct_unique_ids[key_5] = xlsx_uid
             else:
                 empty_keys.add(key_5)
 
@@ -205,6 +213,9 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
                 # scoped literal — direct key space
                 if translation:
                     direct_keys[key_5] = translation
+                    xlsx_uid = row.get("unique_id", "").strip()
+                    if xlsx_uid:
+                        direct_unique_ids[key_5] = xlsx_uid
                 else:
                     empty_keys.add(key_5)
             else:
@@ -251,7 +262,7 @@ def analyze_xlsx(rows: list[dict]) -> tuple[dict, set, set, set, dict, dict, lis
                 if fn and ft:
                     tres_direct[(fn, ft, text)] = translation
 
-    return direct_keys, ignored_keys, untranslatable_keys, tres_ignored, tres_untranslatable, empty_keys, literal_map, tres_direct, pattern_list, ignore_rows
+    return direct_keys, direct_unique_ids, ignored_keys, untranslatable_keys, tres_ignored, tres_untranslatable, empty_keys, literal_map, tres_direct, pattern_list, ignore_rows
 
 
 # ==========================================
@@ -271,6 +282,7 @@ def _check_fallback(text: str, literal_map: dict, pattern_list: list) -> tuple[s
 def classify_entry(
     entry: dict,
     direct_keys: dict,
+    direct_unique_ids: dict,
     ignored_keys: set,
     untranslatable_keys: set,
     tres_ignored: set,
@@ -283,10 +295,13 @@ def classify_entry(
     """
     Classify the translation status of a TSV entry.
     Returns: (status, method)
-        status: "direct" | "ignored" | "delegated" | "untranslatable" | "literal" | "expression" | "empty" | "missing"
+        status: "direct" | "drifted" | "ignored" | "delegated" | "untranslatable" | "literal" | "expression" | "empty" | "missing"
 
     delegated: row was treated as ignore/untranslatable in xlsx, but a global literal/pattern catches it.
                Since it is actually translated at runtime, must be distinguished from ignored/untranslatable.
+    drifted:   row matched by 5-tuple content but xlsx unique_id differs from TSV unique_id.
+               Translation will work at runtime, but build-time validate_translation will reject
+               static rows with stale unique_id.
     """
     text = entry["text"]
     filetype = entry.get("filetype", "")
@@ -311,6 +326,11 @@ def classify_entry(
                 return ("delegated", fb[1])
             return ("untranslatable", "")
         if key_5 in direct_keys:
+            # drift detection: xlsx unique_id (if recorded) vs TSV unique_id
+            xlsx_uid = direct_unique_ids.get(key_5, "")
+            tsv_uid = entry.get("unique_id", "")
+            if xlsx_uid and tsv_uid and xlsx_uid != tsv_uid:
+                return ("drifted", f"{xlsx_uid} -> {tsv_uid}")
             return ("direct", "")
         if key_5 in empty_keys:
             return ("empty", "")
@@ -398,6 +418,7 @@ def main() -> int:
 
         (
             direct_keys,
+            direct_unique_ids,
             ignored_keys,
             untranslatable_keys,
             tres_ignored,
@@ -431,6 +452,7 @@ def main() -> int:
         per_file: dict = defaultdict(lambda: {
             "total": 0,
             "direct": 0,
+            "drifted": 0,
             "literal": 0,
             "expression": 0,
             "delegated": 0,
@@ -442,12 +464,14 @@ def main() -> int:
             "missing_entries": [],
             "fallback_entries": [],
             "delegated_entries": [],
+            "drifted_entries": [],
         })
 
         for entry in tsv_entries:
             fname = entry["_tsv_file"]
             status, method = classify_entry(
-                entry, direct_keys, ignored_keys, untranslatable_keys,
+                entry, direct_keys, direct_unique_ids,
+                ignored_keys, untranslatable_keys,
                 tres_ignored, tres_untranslatable, empty_keys,
                 literal_map, tres_direct, pattern_list,
             )
@@ -455,6 +479,9 @@ def main() -> int:
             bucket["total"] += 1
             if status == "direct":
                 bucket["direct"] += 1
+            elif status == "drifted":
+                bucket["drifted"] += 1
+                bucket["drifted_entries"].append((entry, method))
             elif status == "literal":
                 bucket["literal"] += 1
                 bucket["fallback_entries"].append((entry, method))
@@ -482,6 +509,7 @@ def main() -> int:
         total_all = 0
         effective_all = 0
         direct_all = 0
+        drifted_all = 0
         fallback_all = 0
         delegated_all = 0
         ignored_all = 0
@@ -490,7 +518,7 @@ def main() -> int:
         missing_all = 0
 
         def _print_file_group(label: str, file_names: list):
-            nonlocal total_all, effective_all, direct_all, fallback_all, delegated_all
+            nonlocal total_all, effective_all, direct_all, drifted_all, fallback_all, delegated_all
             nonlocal ignored_all, untranslatable_all, empty_all, missing_all
 
             if not file_names:
@@ -504,6 +532,7 @@ def main() -> int:
                 b = per_file[fname]
                 total = b["total"]
                 direct = b["direct"]
+                drifted = b["drifted"]
                 fallback = b["literal"] + b["expression"]
                 delegated = b["delegated"]
                 ignored = b["ignored"]
@@ -513,11 +542,13 @@ def main() -> int:
 
                 excluded = ignored + untranslatable
                 effective = total - excluded
-                translation_count = direct + fallback + delegated
+                # drifted rows are translated at runtime — count as covered
+                translation_count = direct + drifted + fallback + delegated
 
                 total_all += total
                 effective_all += effective
                 direct_all += direct
+                drifted_all += drifted
                 fallback_all += fallback
                 delegated_all += delegated
                 ignored_all += ignored
@@ -526,12 +557,14 @@ def main() -> int:
                 missing_all += missing
 
                 covered = translation_count + ignored + untranslatable
-                matched = direct + delegated + ignored + untranslatable + empty
+                matched = direct + drifted + delegated + ignored + untranslatable + empty
+                drifted_part = f"drifted {drifted}, " if drifted else ""
                 tee.print(
                     f"[{fname:<{max_fname}}] "
                     f"matched {matched}/{total} ({format_percent(matched, total)}), "
                     f"translated {covered}/{total} ({format_percent(covered, total)}), "
                     f"direct {direct}/{total} ({format_percent(direct, total)}), "
+                    f"{drifted_part}"
                     f"fallback {fallback}, delegated {delegated}, "
                     f"ignored {ignored}, untranslatable {untranslatable}, "
                     f"empty {empty}, missing {missing}"
@@ -544,13 +577,15 @@ def main() -> int:
         _print_file_group("tres per-file summary", tres_files)
         _print_file_group("gd per-file summary", gd_files)
 
-        covered_all = direct_all + fallback_all + delegated_all + ignored_all + untranslatable_all
-        matched_all = direct_all + delegated_all + ignored_all + untranslatable_all + empty_all
+        covered_all = direct_all + drifted_all + fallback_all + delegated_all + ignored_all + untranslatable_all
+        matched_all = direct_all + drifted_all + delegated_all + ignored_all + untranslatable_all + empty_all
+        drifted_part = f"drifted {drifted_all}, " if drifted_all else ""
         tee.print(
             f"[Total] "
             f"matched {matched_all}/{total_all} ({format_percent(matched_all, total_all)}), "
             f"translated {covered_all}/{total_all} ({format_percent(covered_all, total_all)}), "
             f"direct {direct_all}/{total_all} ({format_percent(direct_all, total_all)}), "
+            f"{drifted_part}"
             f"fallback {fallback_all}, delegated {delegated_all}, "
             f"ignored {ignored_all}, untranslatable {untranslatable_all}, "
             f"empty {empty_all}, missing {missing_all}"
@@ -562,7 +597,9 @@ def main() -> int:
             has_any = False
             for fname in file_list:
                 b = per_file[fname]
-                if b["missing"] > 0 or b["empty"] > 0 or len(b["fallback_entries"]) > 0:
+                if (b["missing"] > 0 or b["empty"] > 0
+                        or len(b["fallback_entries"]) > 0
+                        or len(b["drifted_entries"]) > 0):
                     has_any = True
                     break
             if not has_any:
@@ -579,10 +616,25 @@ def main() -> int:
                 b["missing"] == 0
                 and b["empty"] == 0
                 and len(b["fallback_entries"]) == 0
+                and len(b["drifted_entries"]) == 0
             ):
                 return
             tee.print()
             tee.print(f"[{fname}]")
+
+            if b["drifted_entries"]:
+                tee.print(
+                    f"  drifted - content matches but xlsx unique_id is stale "
+                    f"({b['drifted']}, update xlsx to avoid build failure):"
+                )
+                for e, uid_diff in b["drifted_entries"]:
+                    tee.print(
+                        f"    uid: {uid_diff}  "
+                        f"name={e['name']}  "
+                        f"type={e['type']}  "
+                        f"property={e.get('property', '')}  "
+                        f"text={_preview(e['text'], 50)}"
+                    )
 
             if b["missing_entries"]:
                 tee.print(f"  missing - not in xlsx ({b['missing']}):")
@@ -692,14 +744,21 @@ def main() -> int:
 
         tee.print()
         tee.print("=" * 80)
+        translated_count = direct_all + drifted_all + fallback_all
+        drifted_summary = f", drifted {drifted_all}" if drifted_all else ""
         tee.print(
             f"Done: out of {total_all} total, "
             f"excluding ignored {ignored_all} + untranslatable {untranslatable_all}, "
             f"effective {effective_all}, "
-            f"translated {direct_all + fallback_all} "
-            f"({format_percent(direct_all + fallback_all, effective_all)}), "
-            f"empty {empty_all}, missing {missing_all}"
+            f"translated {translated_count} "
+            f"({format_percent(translated_count, effective_all)}), "
+            f"empty {empty_all}, missing {missing_all}{drifted_summary}"
         )
+        if drifted_all:
+            tee.print(
+                f"Warning: {drifted_all} row(s) have stale xlsx unique_id — "
+                f"update xlsx before build (validate_translation will fail otherwise)"
+            )
         if suspicious:
             tee.print(f"Warning: uncovered ignore rows: {len(suspicious)} (see list above)")
 
