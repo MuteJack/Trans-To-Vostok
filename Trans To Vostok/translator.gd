@@ -611,6 +611,27 @@ func _bind_node(node: Node) -> void:
 
 	var is_priority: bool = _is_priority_node(node)
 
+	# [TT-DBG] Hybrid 누적 진단: 같은 노드 bind 횟수 + 현재 텍스트
+	var _dbg_hit: bool = false
+	for prop in props_found:
+		var v = node.get(prop)
+		if typeof(v) == TYPE_STRING and "Hybri" in v:
+			_dbg_hit = true
+			break
+	if _dbg_hit:
+		var _dup: int = 0
+		for bb in priority_bindings:
+			var n2 = bb["node"].get_ref()
+			if n2 == node:
+				_dup += 1
+		for bb in normal_bindings:
+			var n2 = bb["node"].get_ref()
+			if n2 == node:
+				_dup += 1
+		print("[TT-DBG bind] path=", node.get_path(), " props=", props_found,
+			" prio=", is_priority, " existing_bindings_for_node=", _dup,
+			" text=", node.get(props_found[0]))
+
 	for prop in props_found:
 		var b: Dictionary = {
 			"node": weakref(node),
@@ -714,6 +735,10 @@ func _apply_binding(b: Dictionary) -> void:
 		return
 
 	var translated = _lookup_cached(node, cur_str)
+	# [TT-DBG] Hybrid 누적 진단: 변환 호출 추적
+	if "Hybri" in cur_str:
+		print("[TT-DBG apply] path=", node.get_path(), " prop=", prop,
+			" cur=", cur_str, " last=", b["last"], " -> translated=", translated)
 	if translated != null and translated != cur_str:
 		if not b.has("original") or b["original"] == "":
 			b["original"] = cur_str
@@ -1072,6 +1097,9 @@ func _apply_substr(text: String) -> String:
 	for entry in substr_entries:
 		if entry["text"] in result:
 			result = result.replace(entry["text"], entry["translation"])
+	# [TT-DBG] Hybrid 누적 진단: substr 진입 추적
+	if "Hybri" in text:
+		print("[TT-DBG substr] in=", text, " out=", result)
 	return result
 
 
