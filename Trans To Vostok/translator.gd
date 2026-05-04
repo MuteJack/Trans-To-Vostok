@@ -609,6 +609,18 @@ func _bind_node(node: Node) -> void:
 	if props_found.is_empty() and not popup_target:
 		return
 
+	# 같은 (node, prop) 에 이미 binding 이 등록돼 있으면 새 binding 추가 금지.
+	# node_added 시그널이 reparent 등으로 한 노드에 대해 여러 번 fire 되면
+	# binding 이 중복 누적되어 substr 결과가 매 프레임 다시 입력으로 쌓임 ("Hybrid → Hybride → Hybridee...").
+	var _has_binding := func(prop: String) -> bool:
+		for bb in priority_bindings:
+			if bb["node"].get_ref() == node and bb["prop"] == prop:
+				return true
+		for bb in normal_bindings:
+			if bb["node"].get_ref() == node and bb["prop"] == prop:
+				return true
+		return false
+
 	var is_priority: bool = _is_priority_node(node)
 
 	# [TT-DBG] Hybrid 누적 진단: 같은 노드 bind 횟수 + 현재 텍스트
@@ -633,6 +645,8 @@ func _bind_node(node: Node) -> void:
 			" text=", node.get(props_found[0]))
 
 	for prop in props_found:
+		if _has_binding.call(prop):
+			continue
 		var b: Dictionary = {
 			"node": weakref(node),
 			"prop": prop,
@@ -644,7 +658,7 @@ func _bind_node(node: Node) -> void:
 			normal_bindings.append(b)
 		_apply_binding(b)
 
-	if popup_target:
+	if popup_target and not _has_binding.call("_popup_items"):
 		var b: Dictionary = {
 			"node": weakref(node),
 			"prop": "_popup_items",
@@ -1095,8 +1109,18 @@ func _apply_substr(text: String) -> String:
 		return text
 	var result: String = text
 	for entry in substr_entries:
-		if entry["text"] in result:
-			result = result.replace(entry["text"], entry["translation"])
+		var src: String = entry["text"]
+		var dst: String = entry["translation"]
+		if not (src in result):
+			continue
+		# Idempotency 가드: src 가 dst 의 substring 이면 변환 결과를 다시 입력해도 또 매치된다.
+		# 예: "Hybrid" → "Hybride". 이 entry 를 적용하기 전 result 가 이미 변환된 형태인지 검사:
+		# dst 가 result 안에 있고, 그 위치를 마스킹했을 때 src 가 더 이상 안 남으면 이미 적용됨 → 스킵.
+		if src in dst:
+			var stripped: String = result.replace(dst, "")
+			if not (src in stripped):
+				continue  # 이미 적용된 결과 — 재적용 금지
+		result = result.replace(src, dst)
 	# [TT-DBG] Hybrid 누적 진단: substr 진입 추적
 	if "Hybri" in text:
 		print("[TT-DBG substr] in=", text, " out=", result)
