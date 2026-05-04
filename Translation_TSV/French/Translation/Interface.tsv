@@ -3,11 +3,11 @@ HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	H
 HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100	100	
 HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	Énergie	
 HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	Hydratation	
+HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	Eau	
 HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	Psychologique	
+HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	Mental	
 HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	Température corporelle	
+HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	Temp.	
 HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100	100	
 HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	Oxygène	
 HUD	HUD	Name	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:	FPS:	
@@ -76,11 +76,11 @@ Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Charact
 Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100	100	
 Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	Énergie	Player's Status about Energy
 Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	Hydratation	Player's Status about Hydration (Water)
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	Eau	Player's Status about Hydration (Water)
 Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	Psychologique	Player's Status about Mental
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	Mental	Player's Status about Mental
 Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	Température corporelle	Player's Status about Body Temparature
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	Temp.	Player's Status about Body Temparature
 Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100	100	
 Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	Chat	Cat's Status
 Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100	100	
@@ -242,9 +242,9 @@ Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/P
 Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10	+10	
 Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	Énergie :	
 Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10	+10	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	Hydratation :	
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	Eau :	
 Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10	+10	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	Psychologique :	
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	Mental :	
 Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10	+10	
 Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	Température corporelle :	
 Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10	+10	
@@ -424,7 +424,7 @@ L'énergie augmente grâce à certains consommables, comme la nourriture.
 
 Énergie [0] -> Famine (État)"	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	Hydratation	
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	Eau	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		info	1778216863	"Your thirst and hydration level.
 
 Hydration decreases over time and using map transitions with Hydration Cost. 
@@ -433,17 +433,17 @@ Certain dry or salty consumables may also decrease Hydration.
 
 Hydration increases with certain consumables such as drinks.
 
-Hydration [0] -> Dehydration (Condition)"	"Votre soif et votre niveau d'hydratation.
+Hydration [0] -> Dehydration (Condition)"	"Votre soif et votre niveau d'Eau.
 
-L'hydratation diminue avec le temps et lors des transitions de carte impliquant un coût d'hydratation.
+L'Eau diminue avec le temps et lors des transitions de carte impliquant un coût d'Eau.
 
-Certains consommables secs ou salés peuvent également réduire l'hydratation.
+Certains consommables secs ou salés peuvent également réduire l'Eau.
 
-L'hydratation augmente grâce à certains consommables, tels que les boissons.
+L'Eau augmente grâce à certains consommables, tels que les boissons.
 
-Hydratation [0] -> Déshydratation (état)"	
+Eau [0] -> DésEau (état)"	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	Psychologique	
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	Mental	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		info	1524485513	"Your happiness and sanity level.
 
 Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
@@ -458,7 +458,7 @@ La santé mentale augmente grâce à des objets réconfortants tels que des coll
 
 Santé mentale [0] -> Folie (Affection)"	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	Température corporelle	
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	Temp.	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
 
 Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
@@ -544,7 +544,7 @@ Symptômes :
 Remèdes :
 - Consommables"	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	Déshydratation	
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	DésEau	
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		info	986386791	"A condition where your body doesn't have enough fluids to function normally.
 
 Causes:
@@ -559,7 +559,7 @@ Cures:
 - Consumables"	"État dans lequel votre corps ne dispose pas de suffisamment de liquide pour fonctionner normalement.
 
 Causes :
-- Hydratation [0]
+- Eau [0]
 
 Symptômes :
 - Santé [-1 point / 10 sec]

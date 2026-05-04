@@ -30,9 +30,9 @@ WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untrans
 "	"Énergie :
 "	
 			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100	+100	
-			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:	Hydratation :	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:	Eau :	
 			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100	+100	
-			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:	Température corporelle :	
+			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:	Temp. :	
 			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100	+100	
 			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:	Remèdes :	
 			0	0	1	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:	Compatibilité :	

@@ -177,7 +177,7 @@ Correctif [0.1.1.3]
 ----------------------------------------
 [MODIFIÉ] Probabilité de l'état médical critique [Rupture] réduite [5 % -> 3 %]
 [MODIFIÉ] Probabilité de l'état médical critique [Tir à la tête] réduite [5 % -> 3 %]
-[MODIFIÉ] Vitesse de diminution de l'hydratation du personnage ralentie de [10 %]
+[MODIFIÉ] Vitesse de diminution de l'Eau du personnage ralentie de [10 %]
 [MODIFIÉ] Vitesse de diminution de la santé mentale du personnage ralentie de [10 %]
 [MODIFIÉ] La vitesse de diminution des points de vie du chat a été ralentie de [20 %]
 [MODIFIÉ] Le chat miaule et fait moins souvent du bruit
@@ -566,7 +566,7 @@ Type de build : Version finale
 [AJOUTÉ] Les marchands n'acceptent pas les objets défectueux ou gelés
 [AJOUTÉ] Les recettes d'artisanat n'acceptent pas les objets défectueux ou gelés
 [AJOUTÉ] Jouer d'un instrument de musique augmente lentement la santé mentale au fil du temps
-[AJOUTÉ] Dormir consomme désormais à la fois de l'énergie et de l'hydratation [-20]
+[AJOUTÉ] Dormir consomme désormais à la fois de l'énergie et de l'Eau [-20]
 [AJOUTÉ] Dormir augmente désormais la santé mentale [+20]
 [AJOUTÉ] Les sacs de couchage augmentent la température corporelle [+50]
 [AJOUTÉ] Les couvertures, oreillers et la mélatonine peuvent désormais également être utilisés pour dormir

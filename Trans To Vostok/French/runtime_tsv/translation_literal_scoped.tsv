@@ -170,7 +170,7 @@ Correctif [0.1.1.3]
 ----------------------------------------
 [MODIFIÉ] Probabilité de l'état médical critique [Rupture] réduite [5 % -> 3 %]
 [MODIFIÉ] Probabilité de l'état médical critique [Tir à la tête] réduite [5 % -> 3 %]
-[MODIFIÉ] Vitesse de diminution de l'hydratation du personnage ralentie de [10 %]
+[MODIFIÉ] Vitesse de diminution de l'Eau du personnage ralentie de [10 %]
 [MODIFIÉ] Vitesse de diminution de la santé mentale du personnage ralentie de [10 %]
 [MODIFIÉ] La vitesse de diminution des points de vie du chat a été ralentie de [20 %]
 [MODIFIÉ] Le chat miaule et fait moins souvent du bruit
@@ -559,7 +559,7 @@ Type de build : Version finale
 [AJOUTÉ] Les marchands n'acceptent pas les objets défectueux ou gelés
 [AJOUTÉ] Les recettes d'artisanat n'acceptent pas les objets défectueux ou gelés
 [AJOUTÉ] Jouer d'un instrument de musique augmente lentement la santé mentale au fil du temps
-[AJOUTÉ] Dormir consomme désormais à la fois de l'énergie et de l'hydratation [-20]
+[AJOUTÉ] Dormir consomme désormais à la fois de l'énergie et de l'Eau [-20]
 [AJOUTÉ] Dormir augmente désormais la santé mentale [+20]
 [AJOUTÉ] Les sacs de couchage augmentent la température corporelle [+50]
 [AJOUTÉ] Les couvertures, oreillers et la mélatonine peuvent désormais également être utilisés pour dormir
@@ -1034,9 +1034,9 @@ Scenes/Death	Main/Buttons	Quit	Button	"Quit
 "
 UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Santé
 UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Énergie
-UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Hydratation
-UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Psychologique
-UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Température corporelle
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Mental
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Temp.
 UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Oxygène
 UI/HUD	Tooltip	Label	Label	Interaction	Interaction
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	Arme enrayée | Appuyez sur [Recharger]
@@ -1077,9 +1077,9 @@ UI/Interface	Equipment/Hints	Player	Label	Player	Joueur
 UI/Interface	Character/Header	Label	Label	Character	Personnage
 UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Santé
 UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Énergie
-UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Hydratation
-UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Psychologique
-UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Température corporelle
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Mental
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Temp.
 UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Chat
 UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	Jour
 UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Refuges
@@ -1191,8 +1191,8 @@ UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Capacité :
 UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Isolation :
 UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Santé :
 UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Énergie :
-UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Hydratation :
-UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Psychologique :
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Eau :
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Mental :
 UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Température corporelle :
 UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Imbriqué :
 UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Remèdes :
@@ -1259,8 +1259,8 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	Santé :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
 "	"Énergie :
 "
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Hydratation :
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Température corporelle :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Eau :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Temp. :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Remèdes :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	Compatibilité :
 UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Nouveaux meubles ajoutés [Catalogue]

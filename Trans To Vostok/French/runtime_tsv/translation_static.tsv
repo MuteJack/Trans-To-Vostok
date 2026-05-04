@@ -121,7 +121,7 @@ L'énergie augmente grâce à certains consommables, comme la nourriture.
 
 Énergie [0] -> Famine (État)"
 UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	Essentiel
-UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	Hydratation
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	Eau
 UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
 
 Hydration decreases over time and using map transitions with Hydration Cost. 
@@ -130,17 +130,17 @@ Certain dry or salty consumables may also decrease Hydration.
 
 Hydration increases with certain consumables such as drinks.
 
-Hydration [0] -> Dehydration (Condition)"	"Votre soif et votre niveau d'hydratation.
+Hydration [0] -> Dehydration (Condition)"	"Votre soif et votre niveau d'Eau.
 
-L'hydratation diminue avec le temps et lors des transitions de carte impliquant un coût d'hydratation.
+L'Eau diminue avec le temps et lors des transitions de carte impliquant un coût d'Eau.
 
-Certains consommables secs ou salés peuvent également réduire l'hydratation.
+Certains consommables secs ou salés peuvent également réduire l'Eau.
 
-L'hydratation augmente grâce à certains consommables, tels que les boissons.
+L'Eau augmente grâce à certains consommables, tels que les boissons.
 
-Hydratation [0] -> Déshydratation (état)"
+Eau [0] -> DésEau (état)"
 UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	Essentiel
-UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	Psychologique
+UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	Mental
 UI/Interface	Character/Vitals/Elements/Mental	Info		"Your happiness and sanity level.
 
 Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
@@ -155,7 +155,7 @@ La santé mentale augmente grâce à des objets réconfortants tels que des coll
 
 Santé mentale [0] -> Folie (Affection)"
 UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	Essentiel
-UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	Température corporelle
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	Temp.
 UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
 
 Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
@@ -240,7 +240,7 @@ Symptômes :
 Remèdes :
 - Consommables"
 UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	Problème de santé
-UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	Déshydratation
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	DésEau
 UI/Interface	Character/Medical/Elements/Dehydration	Info		"A condition where your body doesn't have enough fluids to function normally.
 
 Causes:
@@ -255,7 +255,7 @@ Cures:
 - Consumables"	"État dans lequel votre corps ne dispose pas de suffisamment de liquide pour fonctionner normalement.
 
 Causes :
-- Hydratation [0]
+- Eau [0]
 
 Symptômes :
 - Santé [-1 point / 10 sec]

@@ -166,7 +166,7 @@ les pistolets et les mitraillettes peuvent occuper l'emplacement Secondaire
 Ouvrez le conteneur, équipez-vous d'une arme et dégainer
 | [Clic droit] = Viser (ADS) | [F] = Mode de tir |
 | [Clic central] = Viser en inclinaison | [X] = Inspecter l'arme |
-| [MOUSE] = Position de l'arme | [MOUSE] = Inspecter la rotation |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	MuteJack		
+| [SCROLL] = Position de l'arme | [SCROLL] = Inspecter la rotation |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	MuteJack		
 Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -243,7 +243,7 @@ grenades with keys [4] and [5]
 You can prepare high throw with [LMB] 
 and low throw with [RMB]
 
-Second press executes and opposite button resets the throw"	"9. Couteaux et grenades
+Second press executes and opposite button resets the throw"	"9. Couteaux & Grenades
 
 Lorsqu'un couteau est équipé, vous pouvez le dégainer à l'aide de la touche [3]
 
@@ -359,7 +359,7 @@ You can travel through these zones and maps
 through Transitions which have certain travel costs 
 related to character vitals and World Simulation
 
-Transitions are marked with Transition Flags"	"13. Cartes et transitions
+Transitions are marked with Transition Flags"	"13. Cartes & transitions
 
 Tout comme l'IA, l'univers du jeu est divisé en trois zones qui comportent des cartes et des pools de butin différents
 

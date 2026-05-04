@@ -43,9 +43,9 @@ Transliteration	Transcreation	Machine translated	Confused	untranslatable	Categor
 0	0	1	0	0	Status	Vital	HUD Setting	Vitals	Signes vitaux	HUD Setting
 0	0	1	0	0	Status	Vital	Vital	Health	Santé	Vital of Health (HP)
 0	0	1	0	0	Status	Vital	Vital	Energy	Énergie	Vital of stamina (Hunger)
-0	0	1	0	0	Status	Vital	Vital	Hydration	Hydratation	Vital of Thirst
-0	0	1	0	0	Status	Vital	Vital	Mental	Psychologique	Vital of Mental health
-0	0	1	0	0	Status	Vital	Vital	Body Temp	Température corporelle	Vital of Body Temperature
+0	0	0	0	0	Status	Vital	Vital	Hydration	Eau	Vital of Thirst
+0	0	0	0	0	Status	Vital	Vital	Mental	Mental	Vital of Mental health
+0	0	0	0	0	Status	Vital	Vital	Body Temp	Temp.	Vital of Body Temperature
 0	0	1	0	0	Status	Vital	Vital	Cat	Chat	Vital of Cat (HP)
 0	0	1	0	0	Status	Medical	Type	Medical Condition	Problème de santé	
 0	0	1	0	0	Status	Medical	Medical	Overweight	Surpoids	
