@@ -12,7 +12,7 @@ HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temper
 HUD	HUD	Name	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	산소		
 HUD	HUD	Name	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:	FPS:		
 HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100	100		
-HUD	HUD	String	0	0	0			literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction	상호작용		
+HUD	HUD	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction	상호작용		
 HUD	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Magazine/Panel	Count	Label	text	1565790634	0	0		
 HUD	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Chamber/Panel	Count	Label	text	343236737	0	0		
 HUD	Weapon	String	0	0	0	1	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]	총기 기능 고장 | [재장전] 버튼을 누르세요		
@@ -105,13 +105,13 @@ Inventory	Tools/Task Note	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interfac
 It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	0	0	0	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
 Dynamically changed by Scripts/Interface.gd: notesHint.text"	
-								substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	의뢰 노트가 비어있습니다		
-								substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)		
+			0	0	0	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	의뢰 노트가 비어있습니다		
+			0	0	0	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)		
 Inventory	Tools/Map	Button	1	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	월드맵		
-Inventory	Tools/Map	String	0	0	0			literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	지도가 장착되지 않았습니다		
-Inventory	Tools/Map	String	0	0	0			literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)		
-								substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	지도가 장착되지 않았습니다		
-								substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)		
+Inventory	Tools/Map	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	지도가 장착되지 않았습니다		
+Inventory	Tools/Map	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)		
+			0	0	0	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	지도가 장착되지 않았습니다		
+			0	0	0	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)		
 Inventory	Tools/Map	String	0	0	0	1	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
 Zoom = [SCROLL]"	"이동 = [LMB]
 확대 = [SCROLL]"		
@@ -131,7 +131,7 @@ Dynamically changed by Scripts/Audio.gd"
 			0	0	0	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]		
 			0	0	0	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]		
 Inventory	Tools	Button	0	0	0	1	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	방랑자		
-Traders	Traders	Title	0	0	0		0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	상인		
+Traders	Traders	Title	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	상인		
 Traders	Traders	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	물자		
 Traders	Traders	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	의뢰		
 Traders	Traders	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	이름:		

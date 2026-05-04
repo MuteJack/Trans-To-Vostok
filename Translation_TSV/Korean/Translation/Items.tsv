@@ -892,8 +892,8 @@ Items	Fishing		0	1	0	0	0	ignore	Items/Fishing/Perch/Perch	tres					inventory		Pe
 Items	Fishing		0	1	0	0	0	ignore	Items/Fishing/Perch/Perch	tres					rotated		Perch	농어	
 Items	Fishing		0	1	0	0	0	ignore	Items/Fishing/Perch/Perch	tres					equipment		Perch	농어	
 Items	Fishing		0	1	0	0	0	ignore	Items/Fishing/Perch/Perch	tres					display		Perch	농어	
-Items	Fishing		0		0	0	0	ignore	Items/Fishing/Perch/Perch	tres					phrase		Eat Raw	먹기 (생식)	
-Items	Fishing		0		0	0	0	ignore	Items/Fishing/Perch/Perch	tres					type		Fish	생선	
+Items	Fishing		0	0	0	0	0	ignore	Items/Fishing/Perch/Perch	tres					phrase		Eat Raw	먹기 (생식)	
+Items	Fishing		0	0	0	0	0	ignore	Items/Fishing/Perch/Perch	tres					type		Fish	생선	
 Items	Fishing		0	1	0	0	0	substr	Items/Fishing/Pike/Pike	tres					name		Pike	민물고기	
 Items	Fishing		0	1	0	0	0	ignore	Items/Fishing/Pike/Pike	tres					inventory		Pike	민물고기	
 Items	Fishing		0	1	0	0	0	ignore	Items/Fishing/Pike/Pike	tres					rotated		Pike	민물고기	

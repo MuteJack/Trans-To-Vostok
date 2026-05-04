@@ -43,6 +43,18 @@ _Auto-generated from each locale's `Translation.xlsx` MetaData (`Translator`, `C
 
 **Texture Contributors:** _(none yet)_
 
+### Template (`Trans To Vostok/Template/`)
+
+**Lead Translator(s):** _(none yet)_
+
+**Translation Contributors:**
+- MuteJack
+
+**Texture Reworkers:**
+- MuteJack
+
+**Texture Contributors:** _(none yet)_
+
 
 <!-- END AUTO-GENERATED: Translators -->
 
