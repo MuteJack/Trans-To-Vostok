@@ -1,8 +1,0 @@
-{
-  "gdre_tools": {
-    "repo": "bruvzg/gdsdecomp",
-    "version": "2.4.0",
-    "asset_pattern": "windows"
-  },
-  "pip": ["openpyxl", "deepl"]
-}
