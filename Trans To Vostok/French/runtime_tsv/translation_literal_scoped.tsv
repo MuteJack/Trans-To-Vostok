@@ -1195,7 +1195,7 @@ UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Eau :
 UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Mental :
 UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Température corporelle :
 UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Imbriqué :
-UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Remèdes :
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Soins :
 UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Articles compatibles :
 UI/Elements/Item	Details	Abbreviation	Label	Item	Article
 UI/Profiler	Panel/Margin	Label	Label	Profiler	Profilage
@@ -1261,6 +1261,6 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
 "
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Eau :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Temp. :
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Remèdes :
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Soins :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	Compatibilité :
 UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Nouveaux meubles ajoutés [Catalogue]

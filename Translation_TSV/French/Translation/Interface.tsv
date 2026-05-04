@@ -250,7 +250,7 @@ Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/P
 Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10	+10	
 Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	Imbriqué :	
 Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine	Hybrid, OZ5, Leopard, Magazine	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	Remèdes :	
+Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	Soins :	
 Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	Articles compatibles :	
 Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG	
 HUD	Fire	String	0	0	1	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]	Feu [Allumer]	
