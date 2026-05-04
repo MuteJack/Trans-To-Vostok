@@ -4,6 +4,26 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.2] — 2026-05-05 (Hotfix)
+
+### Fixed (Engine)
+
+- **`translator.gd`: performance regression from 0.4.1 dedupe guard.**
+  The `_bind_node` duplicate guard introduced in 0.4.1 walked both
+  `priority_bindings` and `normal_bindings` linearly on every call
+  (~1030 entries at startup). Inventory / Trader UIs add many nodes in
+  a short window, making the cost effectively O(N²) and causing
+  noticeable hitches when opening crates or interacting with traders.
+  Replaced with a per-node `_ttv_bound_props` meta lookup — O(1)
+  membership check, and the meta is automatically discarded when the
+  node is freed (no cleanup pass needed). Dedupe behavior unchanged.
+
+### Internal
+
+- Bumped `mod.txt` version `0.4.1 → 0.4.2`.
+
+---
+
 ## [0.4.1] — 2026-05-05 (Hotfix)
 
 ### Fixed (Engine)
@@ -398,6 +418,25 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.4.2] — 2026-05-05 (핫픽스)
+
+### 수정 (엔진)
+
+- **`translator.gd`: 0.4.1 dedupe 가드의 성능 회귀.** 0.4.1 에서 도입한
+  `_bind_node` 중복 가드가 매 호출마다 `priority_bindings` 와
+  `normal_bindings` 를 선형 순회 (시작 시점 약 1030 개) 하면서, 인벤토리
+  / Trader UI 처럼 짧은 시간에 노드가 다수 추가되는 상황에서 실질
+  O(N²) 가 되어 상자 열기 / Trader 상호작용 시 명확한 hitch 가
+  발생했음. 노드별 `_ttv_bound_props` meta 조회로 교체 — O(1) 멤버십
+  검사, meta 는 노드가 free 되면 자동으로 사라지므로 별도 cleanup 불필요.
+  Dedupe 동작 자체는 동일.
+
+### 내부
+
+- `mod.txt` 버전 `0.4.1 → 0.4.2` 업데이트.
+
+---
 
 ## [0.4.1] — 2026-05-05 (핫픽스)
 

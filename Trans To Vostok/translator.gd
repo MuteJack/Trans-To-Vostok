@@ -597,6 +597,8 @@ func _on_node_added(node: Node) -> void:
 	_bind_node(node)
 
 
+const META_BOUND_PROPS := "_ttv_bound_props"
+
 func _bind_node(node: Node) -> void:
 	var props_found: Array = []
 	for prop in TRANSLATABLE_PROPS:
@@ -612,20 +614,15 @@ func _bind_node(node: Node) -> void:
 	# 같은 (node, prop) 에 이미 binding 이 등록돼 있으면 새 binding 추가 금지.
 	# node_added 시그널이 reparent 등으로 한 노드에 대해 여러 번 fire 되면
 	# binding 이 중복 누적되어 substr 결과가 매 프레임 다시 입력으로 쌓임 ("Hybrid → Hybride → Hybridee...").
-	var _has_binding := func(prop: String) -> bool:
-		for bb in priority_bindings:
-			if bb["node"].get_ref() == node and bb["prop"] == prop:
-				return true
-		for bb in normal_bindings:
-			if bb["node"].get_ref() == node and bb["prop"] == prop:
-				return true
-		return false
+	# meta 로 추적 — 노드 free 시 meta 도 같이 사라지므로 cleanup 불필요. O(1) 조회.
+	var bound: Array = node.get_meta(META_BOUND_PROPS, [])
 
 	var is_priority: bool = _is_priority_node(node)
 
 	for prop in props_found:
-		if _has_binding.call(prop):
+		if prop in bound:
 			continue
+		bound.append(prop)
 		var b: Dictionary = {
 			"node": weakref(node),
 			"prop": prop,
@@ -637,7 +634,8 @@ func _bind_node(node: Node) -> void:
 			normal_bindings.append(b)
 		_apply_binding(b)
 
-	if popup_target and not _has_binding.call("_popup_items"):
+	if popup_target and not ("_popup_items" in bound):
+		bound.append("_popup_items")
 		var b: Dictionary = {
 			"node": weakref(node),
 			"prop": "_popup_items",
@@ -648,6 +646,9 @@ func _bind_node(node: Node) -> void:
 		else:
 			normal_bindings.append(b)
 		_apply_binding(b)
+
+	if bound.size() > 0:
+		node.set_meta(META_BOUND_PROPS, bound)
 
 
 const PRIORITY_PATH_KEYWORDS: Array = ["tooltip", "transition", "door", "hint", "notification", "message"]
