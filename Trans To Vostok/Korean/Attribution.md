@@ -2,7 +2,7 @@
 
 This document lists attributions for translated image assets in this mod.
 
-_Auto-generated from `Korean/Images.xlsx` by `tools/build_attributions.py`. Do not edit manually — update the xlsx instead._
+_Auto-generated from `Korean/Texture.xlsx` by `tools/build_attributions.py`. Do not edit manually — update the xlsx instead._
 
 ## Files with third-party attribution
 

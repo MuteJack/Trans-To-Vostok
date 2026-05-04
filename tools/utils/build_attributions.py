@@ -1,5 +1,5 @@
 """
-Auto-generate Attribution.md from Images.xlsx.
+Auto-generate Attribution.md from Texture.xlsx.
 
 Reads the following columns from each sheet and outputs as Markdown:
     - File Name
@@ -85,7 +85,7 @@ def render_markdown(rows: list[dict], locale: str) -> str:
     )
     lines.append("")
     lines.append(
-        f"_Auto-generated from `{locale}/Images.xlsx` by "
+        f"_Auto-generated from `{locale}/Texture.xlsx` by "
         "`tools/build_attributions.py`. Do not edit manually — "
         "update the xlsx instead._"
     )
@@ -134,7 +134,7 @@ def render_markdown(rows: list[dict], locale: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Generate Attribution.md from Images.xlsx"
+        description="Generate Attribution.md from Texture.xlsx"
     )
     parser.add_argument(
         "--locale", default="Korean",
@@ -150,11 +150,11 @@ def main() -> int:
     # script_dir = mods/Trans To Vostok/tools/utils
     mod_root = script_dir.parent.parent
     pkg_root = mod_root / "Trans To Vostok"
-    xlsx_path = pkg_root / args.locale / "Images.xlsx"
+    xlsx_path = pkg_root / args.locale / "Texture.xlsx"
 
     if not xlsx_path.exists():
-        # When called from the build pipeline, locales without Images.xlsx are normal (no texture translation)
-        print(f"[SKIP] Images.xlsx not found: {xlsx_path} - no output")
+        # When called from the build pipeline, locales without Texture.xlsx are normal (no texture translation)
+        print(f"[SKIP] Texture.xlsx not found: {xlsx_path} - no output")
         return 0
 
     print(f"Input:  {xlsx_path}")
