@@ -147,7 +147,8 @@ def main() -> int:
     args = parser.parse_args()
 
     script_dir = Path(__file__).resolve().parent
-    mod_root = script_dir.parent
+    # script_dir = mods/Trans To Vostok/tools/utils
+    mod_root = script_dir.parent.parent
     pkg_root = mod_root / "Trans To Vostok"
     xlsx_path = pkg_root / args.locale / "Images.xlsx"
 

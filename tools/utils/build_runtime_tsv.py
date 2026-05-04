@@ -47,7 +47,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     except (AttributeError, Exception):
         pass
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))  # tools/
 from validate_translation import (
     validate_xlsx,
     load_all_translation_sheets,
@@ -184,7 +184,8 @@ def main() -> int:
 
     locale = args[0]
     script_dir = Path(__file__).resolve().parent
-    mod_root = script_dir.parent
+    # script_dir = mods/Trans To Vostok/tools/utils
+    mod_root = script_dir.parent.parent
     pkg_root = mod_root / "Trans To Vostok"
     locale_dir = pkg_root / locale
     xlsx_path = locale_dir / "Translation.xlsx"

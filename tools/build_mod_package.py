@@ -58,7 +58,7 @@ TEXTURE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".webp"}
 def build_locale(tools_dir: Path, locale: str, soft: bool = False, ignore: bool = False) -> bool:
     """Call build_runtime_tsv.py to generate TSVs. Returns whether it succeeded."""
     print(f"=== Building locale: {locale} ===")
-    cmd = [sys.executable, "build_runtime_tsv.py", locale]
+    cmd = [sys.executable, "utils/build_runtime_tsv.py", locale]
     if ignore:
         cmd.append("--ignore")
     elif soft:
@@ -75,7 +75,7 @@ def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
     """Call build_attributions.py. Skipped if Images.xlsx is absent.
     Output goes to the default path of build_attributions.py (<pkg_root>/<locale>/Attribution.md)."""
     print(f"=== Building attribution: {locale} ===")
-    cmd = [sys.executable, "build_attributions.py", "--locale", locale]
+    cmd = [sys.executable, "utils/build_attributions.py", "--locale", locale]
     result = subprocess.run(cmd, cwd=tools_dir)
     if result.returncode != 0:
         print(f"[ERROR] {locale} attribution build failed")
