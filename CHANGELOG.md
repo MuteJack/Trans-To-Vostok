@@ -4,6 +4,144 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.0] — 2026-05-05
+
+This release adds **French language support** as the first non-Korean
+locale. Behind the scenes, the public-release license / contribution
+structure and a DeepL-based machine-translation pipeline for
+bootstrapping additional languages are being prepared and tested.
+
+### Added (Language: French)
+
+- **French translation** — initial pass machine-translated via DeepL.
+  Covers `Translation.xlsx` (game text), `Texture.xlsx` (image labels),
+  and `Glossary.xlsx` (translator reference). _The translation is
+  currently maintained internally; the public repository and
+  contribution flow for community refinement are still being prepared
+  (see Notes below)._
+- French entry registered in `Trans To Vostok/locale.json` for in-game
+  language selection.
+
+### Fixed (Language: Korean)
+
+- Minor mistranslation fixes across the text translation.
+- **Tutorial billboard texture typo** — corrected 접격지대 → 접경지대
+  (the misspelled label was visible on the billboard image; the texture
+  has been re-exported with the corrected spelling).
+
+### Fixed (Engine)
+
+- **`_adjust_value_child_offset` (translator.gd): regression from game
+  build 0.1.1.3.** The function had `if value.layout_mode != 0: return`,
+  which silently skipped any Value node with `layout_mode=1` (ANCHORS)
+  — including Trader-panel labels (`Tax:`, `Tasks:`, `Resupply:`) and
+  other anchored Values across the game. This had been working in game
+  builds **0.1.0.0** and **0.1.1.1 beta**, where the same Values were
+  emitted with `layout_mode=0`, so the function ran normally. From game
+  build **0.1.1.3** onward, those Values are emitted with `layout_mode=1`
+  and were being silently skipped — meaning position adjustment was
+  broken on 0.1.1.3 for Korean, French, and any locale that hits these
+  nodes. The guard now accepts both `layout_mode=0` (POSITION) and `1`
+  (ANCHORS); only `2` (CONTAINER) is excluded.
+
+### Notes
+
+- **Public repository preparation in progress** — license, NOTICE,
+  AUTHORS, CONTRIBUTING, LICENSE-* files are in place. Additional
+  housekeeping is still ongoing before the repository is made public.
+
+### Internal
+
+#### Licensing & contribution scaffolding (repo-only, not shipped in mod zip)
+
+- **`LICENSE.md`** — master licensing overview with derivative-work
+  preservation guide ("what to keep when forking / redistributing").
+- **`LICENSE-CODE`** — Apache License 2.0 for code (Python tools,
+  GDScript, batch).
+- **`LICENSE-TRANSLATION`** — CC BY 4.0 for translation text content,
+  with explicit notes that the original Road to Vostok English text
+  remains the game developers' copyright.
+- **`LICENSE-TEXTURE`** — CC BY 4.0 for texture/image assets, with
+  upstream third-party attribution preservation requirements
+  (Copernicus Sentinel-2, MML, Pixabay, Texturelabs, etc.) and
+  warranty disclaimer.
+- **`NOTICE`** — Apache 2.0 attribution notice (legally required to
+  preserve in derivatives).
+- **`AUTHORS.md`** — author / translator / contributor list. Translators
+  section auto-generated from each locale's xlsx; manual sections
+  preserved across regenerations via BEGIN/END markers.
+- **`CONTRIBUTING.md`** — contribution guide with the DeepL pipeline
+  walkthrough and per-role (translator / texture worker / code
+  contributor) credit-registration steps.
+
+#### Tooling — DeepL machine-translation pipeline
+
+- **`tools/machine_translation_deepl.py`** — single-command DeepL
+  pipeline orchestrator (export → translate → import). Supports
+  `--limit`, `--dry-run`, and `--deepl-lang` override.
+- **`tools/utils/export_unique_text.py`** — extracts deduplicated
+  source texts from `Translation.xlsx`, `Texture.xlsx`, and
+  `Glossary.xlsx`, filtered to "needs translation" status (already-
+  translated rows skipped to save quota).
+- **`tools/utils/translate_with_deepl.py`** — DeepL API caller with
+  placeholder protection (`{name}` → `<x>{name}</x>`), XML escape
+  (`&`/`<`/`>`), text-keyed resume, and error-row retry.
+- **`tools/utils/import_translations.py`** — writes translations back
+  into all three locale xlsx files. Per-row logic handles
+  `untranslatable=1` (copy source), `method=ignore` (text-lookup with
+  source-copy fallback), and `Machine translated=1` flag.
+
+#### Tooling — credits & metadata generation
+
+- **`tools/utils/build_translation_credit.py`** — auto-generates
+  `<locale>/Translation_Credit.md` from MetaData (`Translator`,
+  `Contributor (Translate)`) and Texture.xlsx (`Reworked by`,
+  `Contributors`) columns.
+- **`tools/utils/build_authors.py`** — auto-updates the Translators
+  section of project-root `AUTHORS.md` (marker-bracketed regeneration).
+- **`tools/utils/build_translation_tsv.py`** — exports each locale
+  xlsx to per-sheet TSV under
+  `Translation_TSV/<locale>/<xlsx>/<sheet>.tsv` for git-diff visibility.
+
+#### Tooling — parser merge
+
+- **`tools/parse_translatables.py`** — runs `parse_tscn_text.py`,
+  `parse_tres_text.py`, and `parse_gd_text.py` in sequence (single
+  command).
+
+#### Tooling — diagnostic merge
+
+- **`check_untranslated.py`** absorbs **`_diff_unique_id.py`** (deleted)
+  — now reports `DRIFTED` rows where xlsx `unique_id` is stale relative
+  to current parsed TSV; previously this required a separate tool run.
+
+#### Repo structure & file moves
+
+- **Tools reorganized** — `tools/` root holds user-facing entry points
+  only (`build_mod_package.py`, `machine_translation_deepl.py`,
+  `parse_translatables.py`, `validate_translation.py`, `check_*.py`).
+  Helpers moved to `tools/utils/`.
+- **`Images.xlsx` → `Texture.xlsx`** — singular-noun naming consistent
+  with other workbooks (`Translation.xlsx`, `Glossary.xlsx`).
+- **`Attribution.md` → `Texture_Attribution.md`** — clarifies scope
+  (texture-source attribution only); person credit moved to
+  `Translation_Credit.md`.
+- **`<locale>/runtime_tsv/`** — runtime TSVs (translation_*.tsv,
+  metadata.tsv) consolidated under a per-locale subfolder.
+- **Glossary** — moved from single curated `glossary.tsv` to per-locale
+  `Glossary.xlsx` for Excel-friendly editing; canonical TSVs auto-
+  exported under `Translation_TSV/<locale>/Glossary/`.
+- **`requirements.json` → `requirements.txt`** — standard pip format.
+- **`set_requirements.py` and `unpack_and_decompile_pck.bat` removed**
+  for public-release legal clarity. README documents the manual
+  `gdre_tools` install path instead.
+
+#### Version
+
+- Bumped `mod.txt` version `0.3.4 → 0.4.0`.
+
+---
+
 ## [0.3.4] — 2026-04-26 (Hotfix)
 
 ### Fixed (Language: Korean)
@@ -226,6 +364,134 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.4.0] — 2026-05-05
+
+이번 릴리스는 **첫 한국어 외 로케일로 프랑스어 지원**을 추가함.
+내부적으로는 공개 저장소용 라이선스 / 기여 구조와 추가 언어
+부트스트랩용 DeepL 기반 기계번역 파이프라인이 준비 / 테스트 중.
+
+### 추가 (언어: 프랑스어)
+
+- **프랑스어 번역** — DeepL 로 1차 기계번역 적용. `Translation.xlsx`
+  (게임 텍스트), `Texture.xlsx` (이미지 라벨), `Glossary.xlsx`
+  (번역자 참조) 모두 커버. _현재는 내부에서 관리 중이며, 커뮤니티
+  검수/보정을 받기 위한 공개 저장소 및 기여 흐름은 준비 중 (아래
+  추가사항 참조)._
+- `Trans To Vostok/locale.json` 에 프랑스어 항목 등록 (게임 내
+  언어 선택 메뉴에 노출).
+
+### 수정 (언어: 한국어)
+
+- 텍스트 번역의 일부 오번역 수정.
+- **튜토리얼 빌보드 텍스처 오타 수정** — 접격지대 → 접경지대
+  (빌보드 이미지에 표시되던 오타 라벨; 수정된 표기로 텍스처
+  재출력).
+
+### 수정 (엔진)
+
+- **`_adjust_value_child_offset` (translator.gd): 게임 빌드 0.1.1.3
+  부터 발생한 regression.** 함수가 `if value.layout_mode != 0: return`
+  조건이라 `layout_mode=1` (ANCHORS) 인 Value 노드는 위치 조정 대상에서
+  silently 제외되어 있었음 — Trader 패널 라벨 (`Tax:`, `Tasks:`,
+  `Resupply:`) 및 게임 곳곳의 anchored Value 들 포함. 게임 빌드
+  **0.1.0.0** 및 **0.1.1.1 beta** 에서는 이 Value 들이 `layout_mode=0`
+  으로 출력되어 함수가 정상 동작했음. 빌드 **0.1.1.3** 부터 동일
+  Value 들이 `layout_mode=1` 로 출력되며 가드에 막혀 silently 제외 —
+  즉 0.1.1.3 환경에서 한국어, 프랑스어, 그리고 이 노드를 사용하는
+  모든 로케일에서 위치 조정이 깨진 상태였음. 가드를 `layout_mode=0`
+  (POSITION) 과 `1` (ANCHORS) 모두 허용하도록 수정 — `2` (CONTAINER)
+  만 제외.
+
+### 추가사항
+
+- **공개 저장소 준비 진행 중** — license, NOTICE, AUTHORS, CONTRIBUTING,
+  LICENSE-* 파일은 정리되었으나, 공개까지는 추가  작업 필요.
+
+### 내부
+
+#### 라이선스 & 기여 구조 (저장소 전용, 모드 zip 미포함)
+
+- **`LICENSE.md`** — 마스터 라이선스 개요. 파생물(derivative)
+  작성 시 보존해야 할 자료에 대한 가이드 ("fork / 재배포 시 유지할 것").
+- **`LICENSE-CODE`** — 코드 (Python tools, GDScript, batch) 에 대한
+  Apache License 2.0.
+- **`LICENSE-TRANSLATION`** — 번역 텍스트 콘텐츠에 대한 CC BY 4.0.
+  원작 영문 텍스트는 Road to Vostok 게임 개발자의 저작권으로
+  남는다는 점 명시.
+- **`LICENSE-TEXTURE`** — 텍스처/이미지 자산에 대한 CC BY 4.0.
+  외부 데이터 출처 보존 의무 (Copernicus Sentinel-2, MML, Pixabay,
+  Texturelabs 등) 와 무보증 면책 조항 포함.
+- **`NOTICE`** — Apache 2.0 attribution notice (파생물에서 보존 의무).
+- **`AUTHORS.md`** — 저자 / 번역자 / 기여자 명단. Translators
+  섹션은 각 로케일의 xlsx 에서 자동 생성, 수동 섹션은 BEGIN/END
+  마커로 보존.
+- **`CONTRIBUTING.md`** — 기여 가이드. DeepL 파이프라인 워크스루,
+  역할별 (번역자 / 텍스처 작업자 / 코드 기여자) credit 등록 절차 포함.
+
+#### 도구 — DeepL 기계번역 파이프라인
+
+- **`tools/machine_translation_deepl.py`** — DeepL 파이프라인 단일
+  명령 오케스트레이터 (export → translate → import). `--limit`,
+  `--dry-run`, `--deepl-lang` 옵션 지원.
+- **`tools/utils/export_unique_text.py`** — `Translation.xlsx`,
+  `Texture.xlsx`, `Glossary.xlsx` 에서 dedup 된 source 텍스트 추출.
+  "번역 필요" 행만 (이미 번역된 행 자동 스킵 → quota 절약).
+- **`tools/utils/translate_with_deepl.py`** — DeepL API 호출 도구.
+  플레이스홀더 보호 (`{name}` → `<x>{name}</x>`), XML escape
+  (`&`/`<`/`>`), text 기반 resume, error-row 재시도.
+- **`tools/utils/import_translations.py`** — 번역 결과를 3개 로케일
+  xlsx 모두에 반영. 각 행 처리: `untranslatable=1` (원문 복사),
+  `method=ignore` (text 검색 + 폴백 복사), `Machine translated=1`
+  플래그 세팅.
+
+#### 도구 — credit / 메타 데이터 자동 생성
+
+- **`tools/utils/build_translation_credit.py`** — `<locale>/Translation_Credit.md`
+  자동 생성. MetaData (`Translator`, `Contributor (Translate)`) +
+  Texture.xlsx (`Reworked by`, `Contributors`) 컬럼에서 집계.
+- **`tools/utils/build_authors.py`** — 프로젝트 루트 `AUTHORS.md` 의
+  Translators 섹션을 마커 기반으로 자동 갱신.
+- **`tools/utils/build_translation_tsv.py`** — 각 로케일 xlsx 를 시트별
+  TSV (`Translation_TSV/<locale>/<xlsx>/<sheet>.tsv`) 로 export. git
+  diff 가독성 향상.
+
+#### 도구 — 파서 통합
+
+- **`tools/parse_translatables.py`** — `parse_tscn_text.py`,
+  `parse_tres_text.py`, `parse_gd_text.py` 를 한 명령으로 순차 실행.
+
+#### 도구 — 진단 통합
+
+- **`check_untranslated.py`** 가 **`_diff_unique_id.py`** (삭제됨)
+  기능 흡수 — 이제 xlsx 의 `unique_id` 가 현재 파싱된 TSV 와
+  어긋난 행을 `DRIFTED` 로 보고. 이전에는 별도 도구 실행 필요했음.
+
+#### 저장소 구조 & 파일 이동
+
+- **도구 재배치** — `tools/` 루트는 사용자 진입점만 (`build_mod_package.py`,
+  `machine_translation_deepl.py`, `parse_translatables.py`,
+  `validate_translation.py`, `check_*.py`). 헬퍼는 `tools/utils/` 로 이동.
+- **`Images.xlsx` → `Texture.xlsx`** — 다른 워크북(`Translation.xlsx`,
+  `Glossary.xlsx`)과 일관된 단수 명사 명명.
+- **`Attribution.md` → `Texture_Attribution.md`** — 범위 명확화
+  (텍스처 소스 attribution 전용); 사람 credit 은 `Translation_Credit.md` 로
+  분리.
+- **`<locale>/runtime_tsv/`** — 런타임 TSV (translation_*.tsv,
+  metadata.tsv) 를 로케일별 서브폴더로 통합.
+- **Glossary** — 단일 `glossary.tsv` 큐레이션에서 로케일별
+  `Glossary.xlsx` 로 이동 (Excel 친화적 편집). canonical TSV 는
+  `Translation_TSV/<locale>/Glossary/` 로 자동 export.
+- **`requirements.json` → `requirements.txt`** — 표준 pip 형식.
+- **`set_requirements.py` 와 `unpack_and_decompile_pck.bat` 제거** —
+  공개 배포 시 법적 명확성을 위함. `gdre_tools` 수동 설치 경로는
+  README 에 안내.
+
+#### 버전
+
+- `mod.txt` 버전 `0.3.4 → 0.4.0`.
+
+---
 
 ## [0.3.4] — 2026-04-26 (핫픽스)
 
