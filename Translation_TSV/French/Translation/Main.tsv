@@ -786,13 +786,13 @@ Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inpu
 Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	Transfert rapide	
 Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	Équipement rapide	
 Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	Chute rapide	
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Left Mouse Button	Bouton gauche de la souris	I can't find those texts. Maybe dependent on Godot Engine.
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Right Mouse Button	Bouton droit de la souris	I can't find those texts. Maybe dependent on Godot Engine.
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Middle Mouse Button	Bouton central de la souris	I can't find those texts. Maybe dependent on Godot Engine.
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Up	Molette de souris vers le haut	I can't find those texts. Maybe dependent on Godot Engine.
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Down	Roulette de la souris vers le bas	I can't find those texts. Maybe dependent on Godot Engine.
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 1	Bouton 1 de la souris (bouton du pouce)	I can't find those texts. Maybe dependent on Godot Engine.
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 2	Bouton 2 de la souris (pouce)	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Left Mouse Button	Clic gauche	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Right Mouse Button	Clic droit	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Middle Mouse Button	Clic molette	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Up	Molette vers le haut	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Down	Molette vers le bas	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 1	Clic gauche 1	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 2	Clic droit 2	I can't find those texts. Maybe dependent on Godot Engine.
 Settings	Audio Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	Paramètres audio	
 Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	Volume principal	
 Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	Volume ambiant	
@@ -917,7 +917,7 @@ Settings	Exit	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row
 Roadmap	/	Page Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	Feuille de route	
 Roadmap	/	Page Subtitle	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	Prochaines versions	
 Roadmap	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	← Retour	
-Roadmap	Build 1	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	Version 1 | Route	
+Roadmap	Build 1	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	Build 1 | Route	
 Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed	Terminé	
 Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	text	744617097	"•  Early access launch
 •  Gameplay loop
@@ -928,7 +928,7 @@ Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Cartes étendues
 •  Éléments dynamiques
 •  Prise en charge de plusieurs abris"	
-Roadmap	Build 2	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	Version 2 | Nomads	
+Roadmap	Build 2	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	Build 2 | Nomads	
 Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026	3e trimestre 2026	
 Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	text	1826473906	"•  Friendly faction
 •  AI vs. AI combat
@@ -939,7 +939,7 @@ Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Variantes d'IA
 •  Pilote (Négociant)
 •  Nouvelle carte et abri"	
-Roadmap	Build 3	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	Version 3 | Signal	
+Roadmap	Build 3	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	Build 3 | Signal	
 Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026	4e trimestre 2026	
 Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	text	1971995323	"•  Quest system
 •  Lore elements
@@ -950,8 +950,8 @@ Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Abris de la protection civile
 •  Grand-mère (commerçante)
 •  Nouvelle carte et nouvel abri"	
-Roadmap	Build 4	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	Configuration 4 | Pistolero	
-Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	À confirmer	
+Roadmap	Build 4	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	Build 4 | Pistolero	
+Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	TBA	
 Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
 •  Bullet penetration
 •  Modding kits
@@ -961,8 +961,8 @@ Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Kits de modification
 •  Services des marchands
 •  Nouvelle carte et refuge"	
-Roadmap	Build 5	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	Version 5 | Nord	
-Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	À confirmer	
+Roadmap	Build 5	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	Build 5 | Nord	
+Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	TBA	
 Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	text	1603967771	"•  Dynamic season
 •  Train system
 •  Hunting & wildlife
@@ -972,8 +972,8 @@ Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Chasse et faune sauvage
 •  Chaman (commerçant)
 •  Nouvelle carte et abri"	
-Roadmap	Build 6	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	Version 6 | Abyss	
-Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	À confirmer	
+Roadmap	Build 6	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	Build 6 | Abyss	
+Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	TBA	
 Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
 •  Patrol boats
 •  Scuba gear
@@ -983,8 +983,8 @@ Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Équipement de plongée
 •  Pêcheur (commerçant)
 •  Nouvelle carte et refuge"	
-Roadmap	Build 7	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	Version 7 | Enigma	
-Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	À confirmer	
+Roadmap	Build 7	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	Build 7 | Enigma	
+Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	TBA	
 Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
 •  SIGINT tools
 •  Transmissions
@@ -994,8 +994,8 @@ Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Transmissions
 •  Scientifique (Négociant)
 •  Abri Vostok"	
-Roadmap	Build 8	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	Version 8 | Douce nuit	
-Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	À confirmer	
+Roadmap	Build 8	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	Build 8 | Douce nuit	
+Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	TBA	
 Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
 •  World options
 •  Destruction system
@@ -1008,8 +1008,8 @@ Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 About	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	← Retour	
 About	Road to Vostok	Section Title	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok	Road to Vostok	
 About	Road to Vostok	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
-in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ® est un jeu de survie solo hardcore qui se déroule 
-dans une zone frontalière post-apocalyptique entre la Finlande et la Russie"	
+in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok® est un jeu de survie solo exigeant situé dans une 
+zone frontalière post-apocalyptique entre la Finlande et la Russie."	
 About	Developer	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	Développeur	
 About	Developer	String	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.	Road to Vostok Ltd.	
 About	Country of origin	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	Pays d'origine	
@@ -1059,23 +1059,25 @@ SOFTWARE."	"Ce jeu utilise le moteur Godot, disponible sous la licence suivante 
 Copyright © 2014-présent Contributeurs du moteur Godot.
 Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
 
-L'autorisation est par la présente accordée, à titre gratuit, à toute personne obtenant une copie
-de ce logiciel et des fichiers de documentation associés (le « Logiciel »), d'utiliser
-le Logiciel sans restriction, y compris, sans limitation, les droits
-d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de concéder en sous-licence et/ou de vendre
-des copies du Logiciel, et de permettre aux personnes à qui le Logiciel est
-fourni de faire de même, sous réserve des conditions suivantes :
+Permission is hereby granted, free of charge, to any person obtaining a copy L'autorisation 
+est par la présente accordée, à titre gratuit, à toute personne obtenant une copie de ce 
+logiciel et des fichiers de documentation associés (le « Logiciel »), d'utiliser le Logiciel sans 
+restriction, y compris, sans limitation, les droits d'utiliser, de copier, de modifier, de fusionner, 
+de publier, de distribuer, de concéder en sous-licence et/ou de vendre des copies du Logiciel, 
+et de permettre aux personnes à qui le Logiciel est fourni de faire de même, sous réserve des 
+conditions suivantes :
 
-La mention de copyright ci-dessus et la présente autorisation doivent figurer sur toutes les
+La mention de copyright ci-dessus et la présente autorisation doivent figurer sur toutes les 
 copies ou parties substantielles du Logiciel.
 
-LE LOGICIEL EST FOURNI « TEL QUEL », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU
-IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES DE QUALITÉ MARCHANDE,
-D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON. EN AUCUN CAS LES
-AUTEURS OU LES TITULAIRES DES DROITS D'AUTEUR NE POURRONT ÊTRE TENUS RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGE OU AUTRE
-RESPONSABILITÉ, QUE CE SOIT DANS LE CADRE D'UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
-LIÉE À OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU TOUTE AUTRE OPÉRATION CONCERNANT LE
-LOGICIEL."	
+LE LOGICIEL EST FOURNI « TEL QUEL », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU 
+IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES DE QUALITÉ MARCHANDE, 
+D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON. EN AUCUN CAS LES 
+AUTEURS OU LES TITULAIRES DES DROITS D'AUTEUR NE POURRONT ÊTRE TENUS 
+RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGE OU AUTRE RESPONSABILITÉ, QUE CE 
+SOIT DANS LE CADRE D'UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT 
+DE, LIÉE À OU EN RELATION  AVEC LE LOGICIEL OU L'UTILISATION OU TOUTE AUTRE OPÉRATION 
+CONCERNANT LE LOGICIEL."	
 Loading	/	String	0	0	1	0	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	Chargement en cours...	
 			0	0	1	0	0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	Chargement en cours...	
 Loading	/	String	0	0	0	0	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String

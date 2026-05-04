@@ -847,7 +847,7 @@ UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
 Scenes/Menu	Roadmap	Header	Label	Roadmap	Feuille de route
 Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	Prochaines versions
 Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← Retour
-Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	Build 1 | Road	Version 1 | Route
+Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	Build 1 | Road	Build 1 | Route
 Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	Completed	Terminé
 Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	"•  Early access launch
 •  Gameplay loop
@@ -858,7 +858,7 @@ Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	"•  Early access launch
 •  Cartes étendues
 •  Éléments dynamiques
 •  Prise en charge de plusieurs abris"
-Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	Build 2 | Nomads	Version 2 | Nomads
+Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	Build 2 | Nomads	Build 2 | Nomads
 Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	Q3/2026	3e trimestre 2026
 Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	"•  Friendly faction
 •  AI vs. AI combat
@@ -869,7 +869,7 @@ Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	"•  Friendly faction
 •  Variantes d'IA
 •  Pilote (Négociant)
 •  Nouvelle carte et abri"
-Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	Build 3 | Signal	Version 3 | Signal
+Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	Build 3 | Signal	Build 3 | Signal
 Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	Q4/2026	4e trimestre 2026
 Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	"•  Quest system
 •  Lore elements
@@ -880,8 +880,8 @@ Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	"•  Quest system
 •  Abris de la protection civile
 •  Grand-mère (commerçante)
 •  Nouvelle carte et nouvel abri"
-Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	Build 4 | Gunslinger	Configuration 4 | Pistolero
-Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	Build 4 | Gunslinger	Build 4 | Pistolero
+Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	TBA	TBA
 Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	"•  Weapon overhaul
 •  Bullet penetration
 •  Modding kits
@@ -891,8 +891,8 @@ Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	"•  Weapon overhaul
 •  Kits de modification
 •  Services des marchands
 •  Nouvelle carte et refuge"
-Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	Build 5 | North	Version 5 | Nord
-Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	Build 5 | North	Build 5 | Nord
+Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	TBA	TBA
 Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	"•  Dynamic season
 •  Train system
 •  Hunting & wildlife
@@ -902,8 +902,8 @@ Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	"•  Dynamic season
 •  Chasse et faune sauvage
 •  Chaman (commerçant)
 •  Nouvelle carte et abri"
-Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	Build 6 | Abyss	Version 6 | Abyss
-Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	Build 6 | Abyss	Build 6 | Abyss
+Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	TBA	TBA
 Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	"•  Sea system
 •  Patrol boats
 •  Scuba gear
@@ -913,8 +913,8 @@ Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	"•  Sea system
 •  Équipement de plongée
 •  Pêcheur (commerçant)
 •  Nouvelle carte et refuge"
-Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	Build 7 | Enigma	Version 7 | Enigma
-Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	Build 7 | Enigma	Build 7 | Enigma
+Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	TBA	TBA
 Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	"•  Dialogue system
 •  SIGINT tools
 •  Transmissions
@@ -924,8 +924,8 @@ Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	"•  Dialogue system
 •  Transmissions
 •  Scientifique (Négociant)
 •  Abri Vostok"
-Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	Build 8 | Silent Night	Version 8 | Douce nuit
-Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	TBA	À confirmer
+Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	Build 8 | Silent Night	Build 8 | Douce nuit
+Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	TBA	TBA
 Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	"•  Full questline
 •  World options
 •  Destruction system
@@ -937,8 +937,8 @@ Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	"•  Full questline
 •  Nouvelle carte et nouvel abri"
 Scenes/Menu	About	About_Return	Button	← Return	← Retour
 Scenes/Menu	About/Game	Info	Label	"Road to Vostok ® is a hardcore single-player survival game set 
-in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ® est un jeu de survie solo hardcore qui se déroule 
-dans une zone frontalière post-apocalyptique entre la Finlande et la Russie"
+in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok® est un jeu de survie solo exigeant situé dans une 
+zone frontalière post-apocalyptique entre la Finlande et la Russie."
 Scenes/Menu	About	Developer	Label	Developer	Développeur
 Scenes/Menu	About	Country	Label	Country of origin	Pays d'origine
 Scenes/Menu	About/Country	Info	Label	Finland	Finlande
@@ -987,23 +987,25 @@ SOFTWARE."	"Ce jeu utilise le moteur Godot, disponible sous la licence suivante 
 Copyright © 2014-présent Contributeurs du moteur Godot.
 Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
 
-L'autorisation est par la présente accordée, à titre gratuit, à toute personne obtenant une copie
-de ce logiciel et des fichiers de documentation associés (le « Logiciel »), d'utiliser
-le Logiciel sans restriction, y compris, sans limitation, les droits
-d'utiliser, de copier, de modifier, de fusionner, de publier, de distribuer, de concéder en sous-licence et/ou de vendre
-des copies du Logiciel, et de permettre aux personnes à qui le Logiciel est
-fourni de faire de même, sous réserve des conditions suivantes :
+Permission is hereby granted, free of charge, to any person obtaining a copy L'autorisation 
+est par la présente accordée, à titre gratuit, à toute personne obtenant une copie de ce 
+logiciel et des fichiers de documentation associés (le « Logiciel »), d'utiliser le Logiciel sans 
+restriction, y compris, sans limitation, les droits d'utiliser, de copier, de modifier, de fusionner, 
+de publier, de distribuer, de concéder en sous-licence et/ou de vendre des copies du Logiciel, 
+et de permettre aux personnes à qui le Logiciel est fourni de faire de même, sous réserve des 
+conditions suivantes :
 
-La mention de copyright ci-dessus et la présente autorisation doivent figurer sur toutes les
+La mention de copyright ci-dessus et la présente autorisation doivent figurer sur toutes les 
 copies ou parties substantielles du Logiciel.
 
-LE LOGICIEL EST FOURNI « TEL QUEL », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU
-IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES DE QUALITÉ MARCHANDE,
-D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON. EN AUCUN CAS LES
-AUTEURS OU LES TITULAIRES DES DROITS D'AUTEUR NE POURRONT ÊTRE TENUS RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGE OU AUTRE
-RESPONSABILITÉ, QUE CE SOIT DANS LE CADRE D'UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT DE,
-LIÉE À OU EN RELATION AVEC LE LOGICIEL OU L'UTILISATION OU TOUTE AUTRE OPÉRATION CONCERNANT LE
-LOGICIEL."
+LE LOGICIEL EST FOURNI « TEL QUEL », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU 
+IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES DE QUALITÉ MARCHANDE, 
+D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON. EN AUCUN CAS LES 
+AUTEURS OU LES TITULAIRES DES DROITS D'AUTEUR NE POURRONT ÊTRE TENUS 
+RESPONSABLES DE TOUTE RÉCLAMATION, DOMMAGE OU AUTRE RESPONSABILITÉ, QUE CE 
+SOIT DANS LE CADRE D'UNE ACTION CONTRACTUELLE, DÉLICTUELLE OU AUTRE, DÉCOULANT 
+DE, LIÉE À OU EN RELATION  AVEC LE LOGICIEL OU L'UTILISATION OU TOUTE AUTRE OPÉRATION 
+CONCERNANT LE LOGICIEL."
 Resources/Loader	Screen	Label	Label	Loading...	Chargement en cours...
 Resources/Loader	Screen	Label	Label	Loading Intro...	Chargement de l'introduction...
 Resources/Loader	Screen	Label	Label	Loading Cabin...	Chargement de la cabine...
