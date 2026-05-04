@@ -1,13 +1,17 @@
 """
-Auto-generate Attribution.md from Texture.xlsx.
+Auto-generate Texture_Attribution.md from Texture.xlsx.
 
-Reads the following columns from each sheet and outputs as Markdown:
-    - File Name
-    - Reworked by
-    - Attribution
+This file lists ONLY third-party data source attributions for image assets.
+Person-level credit (Reworked by, Contributors) is handled separately by
+build_translation_credit.py -> Translation_Credit.md.
+
+Reads the following columns from each sheet:
+    Required:
+        - File Name
+        - Attribution
 
 Usage:
-    python tools/build_attributions.py                       # default (Korean → Attribution.md)
+    python tools/build_attributions.py                       # default (Korean → Texture_Attribution.md)
     python tools/build_attributions.py --locale Korean
     python tools/build_attributions.py --output custom.md
 """
@@ -32,11 +36,11 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 URL_RE = re.compile(r'https?://[^\s)\]]+')
 
-REQUIRED_COLUMNS = ["File Name", "Reworked by", "Attribution"]
+REQUIRED_COLUMNS = ["File Name", "Attribution"]
 
 
 def collect_rows(xlsx_path: Path) -> list[dict]:
-    """Collect (sheet, file_name, reworked_by, attribution) rows from all sheets."""
+    """Collect (sheet, file_name, attribution) rows from all sheets."""
     wb = openpyxl.load_workbook(xlsx_path, read_only=True)
     rows: list[dict] = []
     for ws in wb.worksheets:
@@ -62,7 +66,6 @@ def collect_rows(xlsx_path: Path) -> list[dict]:
             rows.append({
                 "sheet": ws.title,
                 "file_name": file_name,
-                "reworked_by": cell("Reworked by"),
                 "attribution": cell("Attribution"),
             })
     return rows
@@ -97,7 +100,6 @@ def render_markdown(rows: list[dict], locale: str) -> str:
         for r in with_attr:
             lines.append(f"### `{r['file_name']}` _({r['sheet']})_")
             lines.append("")
-            lines.append(f"- **Reworked by**: {r['reworked_by'] or '(unknown)'}")
             lines.append("- **Sources**:")
             for src_line in r["attribution"].splitlines():
                 src_line = src_line.strip()
@@ -110,7 +112,8 @@ def render_markdown(rows: list[dict], locale: str) -> str:
         lines.append("## Files without third-party attribution")
         lines.append("")
         lines.append(
-            "Created by the listed translator(s) without using third-party sources."
+            "Original work without third-party sources. "
+            "For per-language contributor credit, see `Translation_Credit.md`."
         )
         lines.append("")
         # group by sheet
@@ -121,8 +124,7 @@ def render_markdown(rows: list[dict], locale: str) -> str:
             lines.append(f"### {sheet_name}")
             lines.append("")
             for r in by_sheet[sheet_name]:
-                rework = r["reworked_by"] or "(unknown)"
-                lines.append(f"- `{r['file_name']}` — {rework}")
+                lines.append(f"- `{r['file_name']}`")
             lines.append("")
 
     if not rows:
@@ -134,7 +136,7 @@ def render_markdown(rows: list[dict], locale: str) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Generate Attribution.md from Texture.xlsx"
+        description="Generate Texture_Attribution.md from Texture.xlsx"
     )
     parser.add_argument(
         "--locale", default="Korean",
@@ -142,7 +144,7 @@ def main() -> int:
     )
     parser.add_argument(
         "--output", default=None,
-        help="Output file path (default: <pkg_root>/<locale>/Attribution.md)",
+        help="Output file path (default: <pkg_root>/<locale>/Texture_Attribution.md)",
     )
     args = parser.parse_args()
 
@@ -167,7 +169,7 @@ def main() -> int:
     out_path = (
         Path(args.output).resolve()
         if args.output
-        else (pkg_root / args.locale / "Attribution.md")
+        else (pkg_root / args.locale / "Texture_Attribution.md")
     )
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(md, encoding="utf-8")
