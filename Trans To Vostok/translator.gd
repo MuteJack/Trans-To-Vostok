@@ -793,8 +793,11 @@ func _adjust_value_child_offset(label_node) -> void:
 	var value = label_node.get_node_or_null("Value")
 	if value == null or not (value is Control):
 		return
-	# layout_mode=0 (LAYOUT_MODE_POSITION, 수동 위치) 만 대상
-	if value.layout_mode != 0:
+	# layout_mode 0 (POSITION) 또는 1 (ANCHORS) 만 대상.
+	# 2 (CONTAINER) 인 경우는 부모 Container 가 위치 관리하므로 건드리지 않음.
+	# (이전에는 0만 허용했는데, 게임의 Trader/HUD 등 다수 Value 노드가
+	#  layout_mode=1 로 설정되어 있어 함수가 silently 동작 안 하던 문제 수정.)
+	if value.layout_mode != 0 and value.layout_mode != 1:
 		return
 
 	# 폰트/크기 조회 (theme_override 우선, 없으면 기본)
@@ -815,6 +818,7 @@ func _adjust_value_child_offset(label_node) -> void:
 	).x
 
 	var current_width: float = value.offset_right - value.offset_left
+	# Visual gap between Label text end and Value start (in pixels).
 	const PADDING: float = 4.0
 	value.offset_left = text_width + PADDING
 	value.offset_right = value.offset_left + current_width
