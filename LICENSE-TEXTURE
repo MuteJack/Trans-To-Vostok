@@ -1,0 +1,129 @@
+Trans To Vostok — Texture / Image License
+=========================================
+
+The texture and image assets of this repository (files under
+`Trans To Vostok/<locale>/textures/`, files referenced by
+`Trans To Vostok/<locale>/Texture.xlsx`, and any other graphical
+assets produced by this project) are licensed under the **Creative
+Commons Attribution 4.0 International License (CC BY 4.0)**, with
+additional notes regarding upstream third-party data sources.
+
+Copyright (c) 2026 MuteJack, translators, and contributors.
+
+To view a copy of the CC BY 4.0 license, visit
+https://creativecommons.org/licenses/by/4.0/
+
+== Attribution Requirement ==
+
+When you Share or Adapt these texture/image assets (in any medium or
+format), you must give appropriate credit to:
+
+  - **MuteJack** (mod author and image translator)
+  - **Translators** (see `AUTHORS.md` — credit only those whose work
+    remains in your distribution)
+  - **Contributors** (see `AUTHORS.md` — credit only those whose work
+    remains in your distribution)
+
+You must indicate if you have made changes, and retain a reference to
+this license.
+
+== Upstream Third-Party Data Sources (IMPORTANT) ==
+
+Many of the texture assets incorporate data from third-party sources,
+including but not limited to:
+
+  - **Copernicus Sentinel-2** satellite imagery
+    (Contains modified Copernicus Sentinel data [year])
+  - **National Land Survey of Finland (Maanmittauslaitos / MML)**
+    map data (CC BY 4.0)
+  - Other sources as documented per-file
+
+These upstream sources retain their own license terms and attribution
+requirements that are SEPARATE FROM and IN ADDITION TO this license.
+
+When you redistribute or modify these images, you MUST:
+
+  1. Preserve all upstream attributions documented in the file
+     `Trans To Vostok/<locale>/Attribution.md`.
+
+  2. Comply with the original terms of each upstream data source. For
+     example, Copernicus Sentinel data requires the attribution
+     "Contains modified Copernicus Sentinel data [year]".
+
+  3. If you distribute only a subset of the images, ensure the
+     attribution file is updated to reflect only the images included
+     in your distribution — but do NOT remove attributions that still
+     apply.
+
+Failure to preserve upstream attributions may constitute a violation
+of the upstream license, regardless of compliance with this CC BY 4.0
+license.
+
+== Warranty Disclaimer (No Liability for Image Use) ==
+
+THE IMAGE ASSETS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT,
+OR ACCURACY OF THE INCORPORATED DATA.
+
+The mod author, translators, and contributors are NOT RESPONSIBLE for
+any consequences arising from the use, modification, or redistribution
+of these image assets, including but not limited to:
+
+  - Disputes over upstream data licensing or attribution chains
+  - Conflicts with third-party copyright, trademark, or moral rights
+  - Issues caused by integration into another project, game, or mod
+  - Inaccuracies, errors, or omissions in the depicted geographical,
+    cartographic, or visual data
+
+You assume ALL RISKS associated with your use of these image assets.
+
+USE AT YOUR OWN RISK.
+
+== Removal of Attribution ==
+
+Per CC BY 4.0 Section 3(a)(1)(A), attribution is required only for
+parts of the Licensed Material that you Share. If you remove a
+specific contributor's image work entirely from your derivative, you
+may correspondingly remove that contributor's attribution.
+
+Per CC BY 4.0 Section 3(a)(3), if a contributor requests in writing
+that their attribution be removed, you must remove it to the extent
+reasonably practicable.
+
+Note: This applies ONLY to attributions of THIS project's authors and
+contributors. Upstream third-party attributions (Copernicus, MML, etc.)
+must be preserved as long as the corresponding upstream data is
+present in your derivative.
+
+== Standard CC BY 4.0 Terms ==
+
+For the full legal text of the Creative Commons Attribution 4.0
+International License, see:
+
+  https://creativecommons.org/licenses/by/4.0/legalcode
+
+A summary (informational, not a substitute for the legal text):
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+  for any purpose, even commercially.
+
+Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to
+    the license, and indicate if changes were made. You may do so in
+    any reasonable manner, but not in any way that suggests the
+    licensor endorses you or your use.
+  - No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+Notices:
+  - You do not have to comply with the license for elements of the
+    material in the public domain or where your use is permitted by
+    an applicable exception or limitation.
+  - No warranties are given. The license may not give you all of the
+    permissions necessary for your intended use. For example, other
+    rights such as publicity, privacy, or moral rights may limit how
+    you use the material.
