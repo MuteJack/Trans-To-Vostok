@@ -1095,12 +1095,54 @@ func _apply_substr(text: String) -> String:
 		# Idempotency 가드: src 가 dst 의 substring 이면 변환 결과를 다시 입력해도 또 매치된다.
 		# 예: "Hybrid" → "Hybride". 이 entry 를 적용하기 전 result 가 이미 변환된 형태인지 검사:
 		# dst 가 result 안에 있고, 그 위치를 마스킹했을 때 src 가 더 이상 안 남으면 이미 적용됨 → 스킵.
+		# (대부분 케이스는 word-boundary 가드가 흡수하지만, 괄호로 둘러싸인 약어 등 일부 사각지대용 backup.)
 		if src in dst:
 			var stripped: String = result.replace(dst, "")
 			if not (src in stripped):
 				continue  # 이미 적용된 결과 — 재적용 금지
-		result = result.replace(src, dst)
+		# Word-boundary 가드: src 가 다른 영어 단어 안에 박혀 있는 매치는 거부.
+		# 예: "Cat" → "고양이" 일 때 입력이 "Catalog" 라면 "고양이alog" 가 되는 걸 차단.
+		# 콤마/공백 구분의 결합 라벨 (예: "Hybrid, OZ5, Leopard") 은 boundary 가 콤마/공백/시작/끝이라 정상 변환됨.
+		result = _replace_at_word_boundaries(result, src, dst)
 	return result
+
+
+# 단어 경계 (word boundary) 에서만 src 를 dst 로 치환.
+# "단어 문자" = [A-Za-z0-9_]. 그 외 (공백, 구두점, 한글/Cyrillic/한자 등 비-ASCII) 는 boundary 로 인정.
+static func _replace_at_word_boundaries(text: String, src: String, dst: String) -> String:
+	var src_len: int = src.length()
+	var text_len: int = text.length()
+	if src_len == 0 or text_len < src_len:
+		return text
+	var out: String = ""
+	var i: int = 0
+	while i < text_len:
+		var j: int = text.find(src, i)
+		if j < 0:
+			out += text.substr(i)
+			break
+		var before_ok: bool = (j == 0) or not _is_word_char(text.substr(j - 1, 1))
+		var after_idx: int = j + src_len
+		var after_ok: bool = (after_idx >= text_len) or not _is_word_char(text.substr(after_idx, 1))
+		if before_ok and after_ok:
+			out += text.substr(i, j - i) + dst
+			i = after_idx
+		else:
+			out += text.substr(i, j + 1 - i)
+			i = j + 1
+	return out
+
+
+# 단일 char 가 ASCII word char ([A-Za-z0-9_]) 인지 검사.
+# ASCII 외 글리프 (한글/Cyrillic/한자/공백/구두점) 는 모두 비-word → boundary 인정.
+static func _is_word_char(c: String) -> bool:
+	if c.length() != 1:
+		return false
+	var code: int = c.unicode_at(0)
+	return (code >= 65 and code <= 90) \
+		or (code >= 97 and code <= 122) \
+		or (code >= 48 and code <= 57) \
+		or code == 95
 
 
 static func _compute_score(
