@@ -4,6 +4,26 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.3] — 2026-05-05 (Hotfix)
+
+### Fixed (Engine)
+
+- **`translator.gd`: in-game language switch failed to refresh
+  inventory / settings / other already-instantiated UI.** The
+  `_ttv_bound_props` meta introduced by the 0.4.1/0.4.2 dedupe guard
+  was not cleared in `shutdown()`, so after a language change the
+  rebuild step (`_bind_tree`) skipped every node that already carried
+  the meta — leaving the entire UI in the previous locale until those
+  nodes were freed and re-instantiated. `shutdown()` now removes the
+  meta in the same binding-restore loop that already cleans up
+  `_ttv_popup_originals` and `_ttv_orig_offset_*`.
+
+### Internal
+
+- Bumped `mod.txt` version `0.4.2 → 0.4.3`.
+
+---
+
 ## [0.4.2] — 2026-05-05 (Hotfix)
 
 ### Fixed (Engine)
@@ -418,6 +438,25 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.4.3] — 2026-05-05 (핫픽스)
+
+### 수정 (엔진)
+
+- **`translator.gd`: 게임 내 언어 전환 시 인벤토리 / 설정 / 이미
+  생성되어 있던 UI 가 새 로케일로 갱신되지 않던 버그.** 0.4.1 / 0.4.2
+  의 dedupe 가드가 도입한 `_ttv_bound_props` meta 가 `shutdown()` 에서
+  제거되지 않아, 언어 전환 후 재구축 단계(`_bind_tree`) 가 meta 가
+  남아 있는 모든 노드를 skip — 결과적으로 노드가 free 되고 다시
+  생성될 때까지 UI 가 이전 로케일 상태로 남았음. `shutdown()` 이
+  기존에 `_ttv_popup_originals` 및 `_ttv_orig_offset_*` 를 정리하던
+  binding 복원 루프에서 함께 meta 를 제거하도록 수정.
+
+### 내부
+
+- `mod.txt` 버전 `0.4.2 → 0.4.3` 업데이트.
+
+---
 
 ## [0.4.2] — 2026-05-05 (핫픽스)
 

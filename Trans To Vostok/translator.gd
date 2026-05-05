@@ -352,6 +352,9 @@ func shutdown() -> void:
 				value.offset_right = value.get_meta("_ttv_orig_offset_right")
 				value.remove_meta("_ttv_orig_offset_left")
 				value.remove_meta("_ttv_orig_offset_right")
+		# 3. _bind_node dedupe 추적 meta 제거 — 언어 전환 등 재초기화 시 재-bind 허용
+		if node.has_meta(META_BOUND_PROPS):
+			node.remove_meta(META_BOUND_PROPS)
 
 	# 모든 상태 초기화 (재초기화 시 중복 적재 방지)
 	_reset_state()
