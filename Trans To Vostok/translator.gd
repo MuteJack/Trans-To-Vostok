@@ -42,7 +42,10 @@ const SCORE_PARENT: int = 4
 const SCORE_NAME: int = 2
 const SCORE_TYPE: int = 1
 
-const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text", "containerName"]
+# 게임의 데이터 속성 (예: container.containerName) 은 게임 로직이 영어로 비교하는 경우가 많아
+# 직접 변환 시 게임 동작이 깨진다 (예: LargerContainers 가 `if container.containerName in [...]`
+# 로 영어 비교하므로 한국어로 set 되면 resize 안 됨). 표시 전용 prop 만 변환 대상.
+const TRANSLATABLE_PROPS: Array = ["text", "placeholder_text", "tooltip_text"]
 
 const PRIORITY_NAME_KEYWORDS: Array = ["interact", "tooltip", "hint", "container", "corpse"]
 
