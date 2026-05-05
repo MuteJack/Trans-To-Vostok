@@ -19,7 +19,7 @@ const DEFAULT_BATCH_INTERVAL: float = 0.01
 
 var _locale_data: Dictionary = {}
 var _current_locale: String = DEFAULT_LOCALE
-var _compatible_mode: bool = false
+var _substr_mode: bool = false
 var _batch_size: int = DEFAULT_BATCH_SIZE
 var _batch_interval: float = DEFAULT_BATCH_INTERVAL
 var _translator_node: Node = null
@@ -75,7 +75,7 @@ func _load_locale_json() -> Dictionary:
 func _save_config() -> void:
 	var config: ConfigFile = ConfigFile.new()
 	config.set_value("translation", "locale", _current_locale)
-	config.set_value("translation", "compatible_mode", _compatible_mode)
+	config.set_value("translation", "substr_mode", _substr_mode)
 	config.set_value("performance", "batch_size", _batch_size)
 	config.set_value("performance", "batch_interval", _batch_interval)
 	for key in _enabled_whitelist:
@@ -88,7 +88,14 @@ func _load_config() -> void:
 	var loaded: bool = (config.load(CONFIG_PATH) == OK)
 	if loaded:
 		_current_locale = config.get_value("translation", "locale", DEFAULT_LOCALE)
-		_compatible_mode = config.get_value("translation", "compatible_mode", false)
+		# 0.4.5: compatible_mode → substr_mode 로 키 이름 변경. 옛 설정 1회 마이그레이션.
+		if config.has_section_key("translation", "compatible_mode"):
+			_substr_mode = bool(config.get_value("translation", "compatible_mode"))
+			config.set_value("translation", "substr_mode", _substr_mode)
+			config.erase_section_key("translation", "compatible_mode")
+			config.save(CONFIG_PATH)
+		else:
+			_substr_mode = config.get_value("translation", "substr_mode", false)
 		_batch_size = config.get_value("performance", "batch_size", DEFAULT_BATCH_SIZE)
 		_batch_interval = config.get_value("performance", "batch_interval", DEFAULT_BATCH_INTERVAL)
 	# whitelist: translator.gd 의 WHITELIST_PRESETS 를 순회, config 값이 없으면 preset default 사용
@@ -192,8 +199,8 @@ func _show_language_ui(is_startup: bool) -> void:
 	# --- Window ---
 	var win: Window = Window.new()
 	win.title = "Select Language"
-	win.size = Vector2i(720, 500)
-	win.min_size = Vector2i(560, 440)
+	win.size = Vector2i(880, 540)
+	win.min_size = Vector2i(720, 460)
 	win.always_on_top = true
 	win.transparent = true
 	win.transparent_bg = true
@@ -254,7 +261,7 @@ func _show_language_ui(is_startup: bool) -> void:
 	body.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	tabs.add_child(body)
 
-	# 왼쪽: 언어 목록 + 호환 모드
+	# 왼쪽: 언어 목록 + Substr 모드
 	var left: VBoxContainer = VBoxContainer.new()
 	left.add_theme_constant_override("separation", 8)
 	left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
@@ -290,23 +297,24 @@ func _show_language_ui(is_startup: bool) -> void:
 	item_list.ensure_current_is_visible()
 	left.add_child(item_list)
 
-	# 호환 모드 체크박스 (선택된 locale 의 compatible 텍스트 사용)
-	var compat_check: CheckBox = CheckBox.new()
-	var compat_default: String = "Compatible Mode"
-	var _compat_texts: Array = []
+	# Substr 모드 체크박스 (선택된 locale 의 substr_mode_label 텍스트 사용)
+	var substr_check: CheckBox = CheckBox.new()
+	var substr_default: String = "Substr Mode"
+	var _substr_texts: Array = []
 	for loc in enabled_locales:
-		_compat_texts.append(loc.get("compatible", compat_default))
+		# locale.json 의 새 키 substr_mode_label 우선, 옛 키 compatible 도 fallback (구 locale.json 호환)
+		_substr_texts.append(loc.get("substr_mode_label", loc.get("compatible", substr_default)))
 
 	# 현재 선택 locale 의 텍스트로 초기화
-	compat_check.text = "  " + _compat_texts[pre_select] if pre_select < _compat_texts.size() else compat_default
-	compat_check.button_pressed = _compatible_mode
-	compat_check.add_theme_font_size_override("font_size", 12)
-	left.add_child(compat_check)
+	substr_check.text = "  " + _substr_texts[pre_select] if pre_select < _substr_texts.size() else substr_default
+	substr_check.button_pressed = _substr_mode
+	substr_check.add_theme_font_size_override("font_size", 12)
+	left.add_child(substr_check)
 
 	# 언어 선택 변경 시 체크박스 텍스트 갱신
 	item_list.item_selected.connect(func(idx):
-		if idx < _compat_texts.size():
-			compat_check.text = "  " + _compat_texts[idx]
+		if idx < _substr_texts.size():
+			substr_check.text = "  " + _substr_texts[idx]
 	)
 
 	# 세로 구분선
@@ -458,11 +466,11 @@ func _show_language_ui(is_startup: bool) -> void:
 	Input.set_mouse_mode(_prev_mouse_mode)
 
 	# 선택 결과 처리
-	var prev_compatible: bool = _compatible_mode
+	var prev_substr: bool = _substr_mode
 	var prev_batch_size: int = _batch_size
 	var prev_batch_interval: float = _batch_interval
 	var prev_whitelist: Dictionary = _enabled_whitelist.duplicate()
-	_compatible_mode = compat_check.button_pressed
+	_substr_mode = substr_check.button_pressed
 	_batch_size = int(size_spin.value)
 	_batch_interval = float(interval_spin.value)
 	# whitelist 체크박스 상태 수집
@@ -478,13 +486,13 @@ func _show_language_ui(is_startup: bool) -> void:
 		if sel_idx >= 0 and sel_idx < enabled_locales.size():
 			var selected_locale: String = enabled_locales[sel_idx].get("locale", DEFAULT_LOCALE)
 			var locale_changed: bool = selected_locale != _current_locale
-			var compat_changed: bool = _compatible_mode != prev_compatible
-			if locale_changed or compat_changed or batch_changed or whitelist_changed or is_startup:
+			var substr_changed: bool = _substr_mode != prev_substr
+			if locale_changed or substr_changed or batch_changed or whitelist_changed or is_startup:
 				_current_locale = selected_locale
 				_save_config()
 				if not is_startup:
 					# 배치 파라미터만 바뀌었으면 재초기화 없이 즉시 반영
-					if batch_changed and not locale_changed and not compat_changed and not whitelist_changed:
+					if batch_changed and not locale_changed and not substr_changed and not whitelist_changed:
 						if _translator_node != null and _translator_node.has_method("set_batch_params"):
 							_translator_node.set_batch_params(_batch_size, _batch_interval)
 					else:
@@ -592,21 +600,70 @@ func _build_whitelist_tab(tabs: TabContainer) -> Dictionary:
 	# --- 세로 구분선 ---
 	tab_body.add_child(VSeparator.new())
 
-	# --- 오른쪽: 예약 (향후 사용자 커스텀 키워드 입력 영역) ---
+	# --- 오른쪽: 일괄 제어 패널 ---
 	var wl_right: VBoxContainer = VBoxContainer.new()
 	wl_right.add_theme_constant_override("separation", 8)
 	wl_right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	wl_right.size_flags_stretch_ratio = 1.0
 	tab_body.add_child(wl_right)
 
-	var placeholder_label: Label = Label.new()
-	placeholder_label.text = "Reserved for future use"
-	placeholder_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	placeholder_label.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	placeholder_label.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	placeholder_label.add_theme_font_size_override("font_size", 11)
-	placeholder_label.modulate = Color(0.35, 0.35, 0.35)
-	wl_right.add_child(placeholder_label)
+	var actions_title: Label = Label.new()
+	actions_title.text = "Bulk Actions"
+	actions_title.add_theme_font_size_override("font_size", 14)
+	wl_right.add_child(actions_title)
+
+	var actions_hint: Label = Label.new()
+	actions_hint.text = "Toggle all whitelist presets at once."
+	actions_hint.add_theme_font_size_override("font_size", 10)
+	actions_hint.modulate = Color(0.55, 0.55, 0.55)
+	actions_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	wl_right.add_child(actions_hint)
+
+	wl_right.add_child(HSeparator.new())
+
+	# Activate All — 모든 preset 켜기
+	var btn_all: Button = Button.new()
+	btn_all.text = "Activate All"
+	btn_all.add_theme_font_size_override("font_size", 12)
+	btn_all.pressed.connect(func():
+		for key in checks:
+			(checks[key] as CheckBox).button_pressed = true
+	)
+	wl_right.add_child(btn_all)
+
+	# Deactivate All — 모든 preset 끄기
+	var btn_none: Button = Button.new()
+	btn_none.text = "Deactivate All"
+	btn_none.add_theme_font_size_override("font_size", 12)
+	btn_none.pressed.connect(func():
+		for key in checks:
+			(checks[key] as CheckBox).button_pressed = false
+	)
+	wl_right.add_child(btn_none)
+
+	# Reset to Defaults — 각 preset 의 default 값으로 복원
+	var btn_reset: Button = Button.new()
+	btn_reset.text = "Reset to Defaults"
+	btn_reset.add_theme_font_size_override("font_size", 12)
+	btn_reset.pressed.connect(func():
+		for key in checks:
+			var default_val: bool = presets[key].get("default", false)
+			(checks[key] as CheckBox).button_pressed = default_val
+	)
+	wl_right.add_child(btn_reset)
+
+	# 하단 — 향후 사용자 커스텀 키워드 입력 영역 placeholder
+	var spacer: Control = Control.new()
+	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	wl_right.add_child(spacer)
+
+	var future_label: Label = Label.new()
+	future_label.text = "Custom keyword input — planned for a future version"
+	future_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	future_label.add_theme_font_size_override("font_size", 10)
+	future_label.modulate = Color(0.35, 0.35, 0.35)
+	future_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	wl_right.add_child(future_label)
 
 	return checks
 
@@ -642,7 +699,7 @@ func _apply_locale() -> void:
 	node.name = "Translator"
 	node.set_script(script)
 	node._locale = _current_locale
-	node._compatible_mode = _compatible_mode
+	node._substr_mode = _substr_mode
 	node.normal_batch_size = _batch_size
 	node.normal_batch_interval = _batch_interval
 	node.enabled_whitelist = _enabled_whitelist.duplicate()

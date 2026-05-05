@@ -41,6 +41,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Internal
 
+- **Renamed `compatible_mode` → `substr_mode`** across the codebase. The
+  flag's actual behavior is "extend substr_entries with all literal +
+  static translations so substr fallback covers more cases" — unrelated
+  to mod-compatibility. New name reflects what it actually does.
+  Affected: `translator.gd` (var `_compatible_mode` → `_substr_mode`,
+  func `_apply_compatible_mode` → `_apply_substr_mode`),
+  `translator_ui.gd` (vars + UI checkbox label + config key),
+  `locale.json` (key `compatible` → `substr_mode_label`, label text
+  rewritten to "Substr Mode" wording for en/ko/fr).
+  **One-time migration**: existing `user://trans_to_vostok.cfg` with the
+  old `compatible_mode` key is auto-copied to `substr_mode` on next
+  load, then the old key is erased. Old `locale.json` `compatible` key
+  is read as fallback. No user action required.
 - Bumped `mod.txt` version `0.4.4 → 0.4.5`.
 
 ---
@@ -529,6 +542,19 @@ First public test version.
 
 ### 내부
 
+- **`compatible_mode` → `substr_mode` 일괄 rename.** 이 플래그의 실제
+  동작은 "literal + static 번역을 substr_entries 에도 추가해 substr
+  fallback 매칭 범위를 넓힘" — 모드 호환성과는 무관. 동작에 맞게
+  이름 정정.
+  변경 범위: `translator.gd` (변수 `_compatible_mode` → `_substr_mode`,
+  함수 `_apply_compatible_mode` → `_apply_substr_mode`),
+  `translator_ui.gd` (변수 + UI 체크박스 라벨 + config 키),
+  `locale.json` (키 `compatible` → `substr_mode_label`, 라벨 텍스트도
+  한/영/프 모두 "Substr Mode" 표현으로 정비).
+  **1회 마이그레이션**: 기존 `user://trans_to_vostok.cfg` 의 옛 키
+  `compatible_mode` 는 다음 로드 시 자동으로 `substr_mode` 로 복사되고
+  옛 키는 삭제됨. 옛 `locale.json` 의 `compatible` 키는 fallback 으로
+  읽음. 사용자 측 조치 불필요.
 - `mod.txt` 버전 `0.4.4 → 0.4.5` 업데이트.
 
 ---

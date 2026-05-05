@@ -33,7 +33,7 @@ extends Node
 # ==========================================
 
 var _locale: String = "Korean"
-var _compatible_mode: bool = false
+var _substr_mode: bool = false
 var _initialized: bool = false
 const DATA_BASE: String = "res://Trans To Vostok"
 
@@ -226,11 +226,11 @@ func _initialize() -> void:
 	if _initialized:
 		return
 	_initialized = true
-	print("[TransToVostok] Initializing... locale=%s, compatible=%s" % [_locale, _compatible_mode])
+	print("[TransToVostok] Initializing... locale=%s, substr_mode=%s" % [_locale, _substr_mode])
 	_load_translations()
 
-	if _compatible_mode:
-		_apply_compatible_mode()
+	if _substr_mode:
+		_apply_substr_mode()
 
 	_bind_tree(get_tree().root)
 	get_tree().node_added.connect(_on_node_added)
@@ -288,9 +288,9 @@ func set_batch_params(size: int, interval: float) -> void:
 		timer.wait_time = normal_batch_interval
 
 
-func _apply_compatible_mode() -> void:
-	# 호환 모드: 모든 literal + static 번역을 substr 에도 추가
-	# → 부분 문자열 매칭이 전체 번역 데이터로 확장됨
+func _apply_substr_mode() -> void:
+	# Substr 모드: 모든 literal + static 번역을 substr 에도 추가
+	# → 노드 컨텍스트 매칭에 미스가 나도 substr fallback 으로 부분 매칭이 시도됨
 	var added: int = 0
 	var existing_texts: Dictionary = {}
 	for entry in substr_entries:
@@ -311,7 +311,7 @@ func _apply_compatible_mode() -> void:
 
 	# 길이 내림차순 재정렬
 	substr_entries.sort_custom(func(a, b): return a["text"].length() > b["text"].length())
-	print("[TransToVostok] Compatible mode: %d entries added to substr (total %d)" % [added, substr_entries.size()])
+	print("[TransToVostok] Substr mode: %d entries added to substr (total %d)" % [added, substr_entries.size()])
 
 
 func shutdown() -> void:
@@ -804,10 +804,10 @@ func _apply_popup_items(b: Dictionary, node) -> void:
 # Label 의 새 text 너비에 맞춰 Value 의 offset_left/offset_right 를 재계산.
 # Tooltip.tscn 같이 "라벨: [값]" 패턴에서 번역된 라벨 너비와 값 위치를 자연스럽게 맞춤.
 #
-# 호환성 모드 (_compatible_mode) 에서는 레이아웃 변경을 건너뛴다.
-# substr 전용 호환성 모드는 최소 간섭 원칙 — 게임 씬의 offset 등 구조 변경 금지.
+# Substr 모드 (_substr_mode) 에서는 레이아웃 변경을 건너뛴다.
+# substr fallback 을 광범위하게 적용하는 모드라 게임 씬의 offset 등 구조 변경은 최소화.
 func _adjust_value_child_offset(label_node) -> void:
-	if _compatible_mode:
+	if _substr_mode:
 		return
 	if not (label_node is Label):
 		return
