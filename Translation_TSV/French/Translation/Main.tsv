@@ -1132,6 +1132,7 @@ Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Qui
 /	Scene	Dictionary	0	0	1	0	0	substr									Minefield	Champ de mines	
 /	Scene	Dictionary	0	0	1	0	0	substr									Apartments	Appartements	
 /	Scene	Dictionary	0	0	1	0	0	substr									Terminal	Terminal	
+/	Scene	ToolTip	0	0	0	0	0	substr									Tutorial Exit	Sortie du tutoriel	
 /	Scene	Dictionary	0	0	1	0	0	substr									Template	Modèle	
 /	Scene	Dictionary	0	0	1	0	0	substr									shaders	shaders	
 /	Weather	Dictionary	0	0	1	0	0	substr									Neutral	Neutre	

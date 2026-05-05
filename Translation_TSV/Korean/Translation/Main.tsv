@@ -1127,6 +1127,7 @@ Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Qui
 /	Scene	Dictionary	0	0	0	0	0	substr									Minefield	지뢰지대	
 /	Scene	Dictionary	1	0	0	0	0	substr									Apartments	아파트 단지	
 /	Scene	Dictionary	1	0	0	0	0	substr									Terminal	터미널	
+/	Scene	ToolTip	0	0	0	0	0	substr									Tutorial Exit	튜토리얼 나가기	
 /	Scene	Dictionary	1	0	0	0	0	substr									Template	템플릿	
 /	Scene	Dictionary	1	0	0	0	0	substr									shaders	셰이더	
 /	Weather	Dictionary	0	0	0	0	0	substr									Neutral	보통	
