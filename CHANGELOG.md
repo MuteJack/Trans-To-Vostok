@@ -4,6 +4,22 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.4.4] — 2026-05-05 (Minor Fix)
+
+### Added (Common)
+
+- **Tutorial Exit** — registered the `nextZone = "Tutorial Exit"`
+  string from `Modular/Doors/Transitions/Door_Tutorial_Exit`,
+  which the HUD transition overlay (`Scripts/HUD.gd:94 — zone.text =
+  transitionData.nextZone`) displays when leaving the tutorial map.
+  Was previously shown in English regardless of locale.
+
+### Internal
+
+- Bumped `mod.txt` version `0.4.3 → 0.4.4`.
+
+---
+
 ## [0.4.3] — 2026-05-05 (Hotfix)
 
 ### Fixed (Engine)
@@ -438,6 +454,22 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.4.4] — 2026-05-05 (Minor Fix)
+
+### 추가 (공통)
+
+- **Tutorial Exit** — `Modular/Doors/Transitions/Door_Tutorial_Exit`
+  의 `nextZone = "Tutorial Exit"` 문자열을 등록. HUD 전환 오버레이
+  (`Scripts/HUD.gd:94 — zone.text = transitionData.nextZone`) 가
+  튜토리얼 맵 퇴장 시 표시하는 텍스트로, 그동안 로케일과 무관하게
+  영어 그대로 노출되고 있었음.
+
+### 내부
+
+- `mod.txt` 버전 `0.4.3 → 0.4.4` 업데이트.
+
+---
 
 ## [0.4.3] — 2026-05-05 (핫픽스)
 
