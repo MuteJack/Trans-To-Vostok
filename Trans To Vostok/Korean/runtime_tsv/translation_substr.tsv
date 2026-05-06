@@ -83,6 +83,19 @@ Metal	금속
 Concrete	콘크리트
 Rock	돌
 Vostok	보스토크
+Trader	상인
+Generalist	잡화상
+Doctor	의사
+Gunsmith	총잡이
+Driver	운전사
+Grandma	할머니
+Shaman	샤먼
+Fisherman	어부
+Scientist	과학자
+Bandit	밴디트
+Guards	경비병
+Military	군대
+Punisher	퍼니셔
 Inventory	인벤토리
 Primary	주무기
 Secondary	보조무기
@@ -121,7 +134,6 @@ Hard	어려움
 Trader Event	상인 이벤트
 Dynamic Event	동적 이벤트
 Special Event	특별 이벤트
-Trader	상인
 Dynamic	동적
 Special	특별
 Guaranteed	보장됨
@@ -490,7 +502,7 @@ Electric Box	배전함
 Medical Cabinet	의료 수납장
 Office Cabinet	사무용 수납장
 Cabinet	수납장
-Bandit	밴디트
+Corpse	시체
 Bandit Corpse	밴디트 시체
 Crate Military	군용 상자
 Crate Special	특수 상자
@@ -614,8 +626,8 @@ Rescue Cat	고양이 구출
 Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
 Fuel Tank [89%]	연료 탱크 [89%]
 Feed cat:	고양이에게 먹이 주기:
-Corpse	시체
 Indoors	실내
 Indoor	실내
 Mine	지뢰
 Lure	루어
+(Military)	(군용)

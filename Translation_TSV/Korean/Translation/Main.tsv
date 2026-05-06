@@ -1140,3 +1140,16 @@ Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Qui
 /	Material	Dictionary	1	0	0	0	0	substr									Concrete	콘크리트	
 /	Material	Dictionary	0	0	0	0	0	substr									Rock	돌	
 /	Material	Dictionary	1	0	0	0	0	substr									Vostok	보스토크	
+Traders	Traders	Name	0	0	0	0	0	substr									Trader	상인	
+Traders	Traders	Name	0	0	0	1	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	잡화상	
+Traders	Traders	Name	0	0	0	0	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	의사	
+Traders	Traders	Name	0	0	0	0	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	총잡이	
+Traders	Traders	Name	0	0	0	0	0	substr									Driver	운전사	
+Traders	Traders	Name	0	0	0	0	0	substr									Grandma	할머니	
+Traders	Traders	Name	0	0	0	0	0	substr									Shaman	샤먼	
+Traders	Traders	Name	0	0	0	0	0	substr									Fisherman	어부	
+Traders	Traders	Name	0	0	0	0	0	substr									Scientist	과학자	
+Faction	Hostile	Name	1	0	0	0	0	substr									Bandit	밴디트	Hostile NPC faction spawned in Area 05;
+Faction	Hostile	Name	0	0	0	0	0	substr									Guards	경비병	Hostile NPC faction spawned in Border Zone;
+Faction	Hostile	Name	0	0	0	0	0	substr									Military	군대	Hostile NPC faction spawned in Vostok;
+Faction	Elite	Name	1	0	0	0	0	substr									Punisher	퍼니셔	Hostile Elite(Boss) NPC spawned in Area 05;

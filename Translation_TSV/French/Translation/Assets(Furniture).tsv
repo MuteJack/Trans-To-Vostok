@@ -13,7 +13,7 @@ Assets	Containers		0	0	1	0	0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	As
 Assets	Containers		0	0	1	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet	Armoire de bureau	
 Assets	Containers		0	0	1	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet	Armoire	
 Assets	Containers		0	0	1	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet	Armoire	
-			0	0	1	0	0	substr									Bandit	Bandit	
+			0	0	1	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	Cadavre	
 Assets	Containers		0	0	1	0	0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse	Cadavre de bandit	
 Assets	Containers		0	0	1	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_B	tscn	Assets/Corpse/Corpse_Bandit_Flat_B		Corpse_Bandit_Flat_B	Node3D	containerName	1269584548	Bandit Corpse	Cadavre de bandit	
 Assets	Containers		0	0	1	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_C	tscn	Assets/Corpse/Corpse_Bandit_Flat_C		Corpse_Bandit_Flat_C	Node3D	containerName	1419056794	Bandit Corpse	Cadavre de bandit	

@@ -9,7 +9,7 @@ WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untrans
 			0	0	0	0	0	substr									Trader Event	상인 이벤트	
 			0	0	0	0	0	substr									Dynamic Event	동적 이벤트	
 			0	0	0	0	0	substr									Special Event	특별 이벤트	
-			0	0	0	0	0	substr									Trader	상인	
+			0	0	0	0	0	ignore									Trader	상인	
 			0	0	0	0	0	substr									Dynamic	동적	
 			0	0	0	0	0	substr									Special	특별	
 			0	0	0	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	상인 이벤트	

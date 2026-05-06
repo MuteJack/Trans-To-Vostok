@@ -9,7 +9,7 @@ WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untrans
 			0	0	1	0	0	substr									Trader Event	Événement destiné aux traders	
 			0	0	1	0	0	substr									Dynamic Event	Événement dynamique	
 			0	0	1	0	0	substr									Special Event	Événement spécial	
-			0	0	1	0	0	substr									Trader	Trader	
+			0	0	1	0	0	ignore									Trader	Trader	
 			0	0	1	0	0	substr									Dynamic	Dynamique	
 			0	0	1	0	0	substr									Special	Spécial	
 			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	Événement destiné aux traders	

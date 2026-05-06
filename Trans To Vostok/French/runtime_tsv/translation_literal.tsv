@@ -84,6 +84,19 @@ Metal	Métal
 Concrete	Béton
 Rock	Rock
 Vostok	Vostok
+Trader	Trader
+Generalist	Généraliste
+Doctor	Médecin
+Gunsmith	Armurier
+Driver	Conducteur
+Grandma	Grand-mère
+Shaman	Chaman
+Fisherman	Pêcheur
+Scientist	Chercheur
+Bandit	Bandit
+Guards	Gardes
+Military	Militaire
+Punisher	Le Punisher
 Inventory	Stock
 Primary	Primaire
 Secondary	Secondaire
@@ -97,9 +110,6 @@ Casette Player power 0%, recharge player	Lecteur de cassettes : batterie à 0 %,
 Casette Player empty, insert casette	Le lecteur de cassettes est vide, insérez une cassette
 Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]
 Override Ambient Music [OFF]	Ignorer la musique d'ambiance [DÉSACTIVÉ]
-Doctor	Médecin
-Generalist	Généraliste
-Gunsmith	Armurier
 Sleep	Sommeil
 Level 2	Niveau 2
 Level 3	Niveau 3
@@ -550,7 +560,6 @@ Il faut que quelqu'un mette fin à ce cirque, donc j'ai besoin d'un tueur à gag
 Trader Event	Événement destiné aux traders
 Dynamic Event	Événement dynamique
 Special Event	Événement spécial
-Trader	Trader
 Dynamic	Dynamique
 Special	Spécial
 Guaranteed	Garanti
@@ -1010,7 +1019,7 @@ Electric Box	Boîtier électrique
 Medical Cabinet	Armoire à pharmacie
 Office Cabinet	Armoire de bureau
 Cabinet	Armoire
-Bandit	Bandit
+Corpse	Cadavre
 Bandit Corpse	Cadavre de bandit
 Crate Military	Crate Military
 Crate Special	Offre spéciale sur les caisses
@@ -1133,8 +1142,8 @@ Rescue Cat	Chat sauvé
 Cat is eating, do not disturb	Le chat est en train de manger, ne le dérangez pas
 Fuel Tank [89%]	Réservoir de carburant [89 %]
 Feed cat:	Nourrir le chat :
-Corpse	Cadavre
 Indoors	À l'intérieur
 Indoor	En intérieur
 Mine	Le mien
 Lure	Leurre
+(Military)	(Militaire)

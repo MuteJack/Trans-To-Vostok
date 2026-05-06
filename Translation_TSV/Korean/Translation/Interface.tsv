@@ -137,9 +137,6 @@ Traders	Traders	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/P
 Traders	Traders	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	이름:		
 Traders	Traders	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Name	Value	Label	text	191837597	Trader	상인	"Dynamically Changed as Traders/{name}/{name}.tres file's name field
 by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"	
-Traders	Traders	String	0	0	0	0	0	literal	Traders/Doctor/Doctor	tres				name			Doctor	의사		
-Traders	Traders	String	0	0	0	1	0	literal	Traders/Generalist/Generalist	tres				name			Generalist	잡화상		
-Traders	Traders	String	0	0	0	0	0	literal	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	총잡이		
 Traders	Traders/Stat	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	세금:		
 Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%	100%		
 Traders	Traders/Stat	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	의뢰:		

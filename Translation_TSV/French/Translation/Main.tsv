@@ -1144,4 +1144,17 @@ Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Qui
 /	Material	Dictionary	0	0	1	0	0	substr									Metal	Métal	
 /	Material	Dictionary	0	0	1	0	0	substr									Concrete	Béton	
 /	Material	Dictionary	0	0	1	0	0	substr									Rock	Rock	
-/	Material	Dictionary	0	0	1	0	0	substr									Vostok	Vostok	
+/	Material	Dictionary	1	0	0	0	0	substr									Vostok	Vostok	
+Traders	Traders	Name	0	0	1	0	0	substr									Trader	Trader	
+Traders	Traders	Name	0	0	1	0	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	Généraliste	
+Traders	Traders	Name	0	0	1	0	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	Médecin	
+Traders	Traders	Name	0	0	1	0	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	Armurier	
+Traders	Traders	Name	0	0	1	0	0	substr									Driver	Conducteur	
+Traders	Traders	Name	0	0	1	0	0	substr									Grandma	Grand-mère	
+Traders	Traders	Name	0	0	1	0	0	substr									Shaman	Chaman	
+Traders	Traders	Name	0	0	1	0	0	substr									Fisherman	Pêcheur	
+Traders	Traders	Name	0	0	1	0	0	substr									Scientist	Chercheur	
+Faction	Hostile	Name	0	0	1	0	0	substr									Bandit	Bandit	Hostile NPC faction spawned in Area 05;
+Faction	Hostile	Name	0	0	1	0	0	substr									Guards	Gardes	Hostile NPC faction spawned in Border Zone;
+Faction	Hostile	Name	0	0	1	0	0	substr									Military	Militaire	Hostile NPC faction spawned in Vostok;
+Faction	Elite	Name	0	0	1	0	0	substr									Punisher	Le Punisher	Hostile Elite(Boss) NPC spawned in Area 05;

@@ -14,8 +14,8 @@ WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untrans
 			0	0	0	0	1	ignore	Loot/Simulations/LS_Civilian	tscn	Loot/Simulations/LS_Civilian	.	Label	Label3D	text	10457625	LS_CIVILIAN	LS_CIVILIAN	For Debug Only
 			0	0	0	0	1	ignore	Loot/Simulations/LS_Industrial	tscn	Loot/Simulations/LS_Industrial	.	Label	Label3D	text	10457625	LS_INDUSTRIAL	LS_INDUSTRIAL	For Debug Only
 			0	0	0	0	1	ignore	Loot/Simulations/LS_Military	tscn	Loot/Simulations/LS_Military	.	Label	Label3D	text	796229169	LS_MILITARY	LS_MILITARY	For Debug Only
-			0	0	1	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	Cadavre	
 			0	0	1	0	0	substr									Indoors	À l'intérieur	
 			0	0	1	0	0	substr									Indoor	En intérieur	
 			0	0	1	0	0	substr									Mine	Le mien	
 			0	0	1	0	0	substr									Lure	Leurre	
+			0	0	0	0	0	substr									(Military)	(Militaire)	

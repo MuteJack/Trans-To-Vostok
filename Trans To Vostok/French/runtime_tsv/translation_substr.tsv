@@ -84,6 +84,19 @@ Metal	Métal
 Concrete	Béton
 Rock	Rock
 Vostok	Vostok
+Trader	Trader
+Generalist	Généraliste
+Doctor	Médecin
+Gunsmith	Armurier
+Driver	Conducteur
+Grandma	Grand-mère
+Shaman	Chaman
+Fisherman	Pêcheur
+Scientist	Chercheur
+Bandit	Bandit
+Guards	Gardes
+Military	Militaire
+Punisher	Le Punisher
 Inventory	Stock
 Primary	Primaire
 Secondary	Secondaire
@@ -122,7 +135,6 @@ Hard	Difficile
 Trader Event	Événement destiné aux traders
 Dynamic Event	Événement dynamique
 Special Event	Événement spécial
-Trader	Trader
 Dynamic	Dynamique
 Special	Spécial
 Guaranteed	Garanti
@@ -486,7 +498,7 @@ Electric Box	Boîtier électrique
 Medical Cabinet	Armoire à pharmacie
 Office Cabinet	Armoire de bureau
 Cabinet	Armoire
-Bandit	Bandit
+Corpse	Cadavre
 Bandit Corpse	Cadavre de bandit
 Crate Military	Crate Military
 Crate Special	Offre spéciale sur les caisses
@@ -609,8 +621,8 @@ Rescue Cat	Chat sauvé
 Cat is eating, do not disturb	Le chat est en train de manger, ne le dérangez pas
 Fuel Tank [89%]	Réservoir de carburant [89 %]
 Feed cat:	Nourrir le chat :
-Corpse	Cadavre
 Indoors	À l'intérieur
 Indoor	En intérieur
 Mine	Le mien
 Lure	Leurre
+(Military)	(Militaire)
