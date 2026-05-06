@@ -4,6 +4,86 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.0] — 2026-05-06 (Minor Release)
+
+This release introduces a **mod compatibility addon system** — per-mod
+runtime helpers wired into the translation engine, with a new "Addons"
+tab in the language UI to toggle them. First addon implements
+ImmersiveXP tooltip-prefix handling.
+
+### Added
+
+- **Mod compatibility addon system (`mod_addon.gd`)** — runtime helper
+  module invoked from `translator.gd._apply_binding`. Loaded
+  dynamically via `load("res://Trans To Vostok/mod_addon.gd")` because
+  ModLoader-mounted mods are not registered in Godot's compile-time
+  class cache (so `preload` and `class_name` don't work — both must
+  be resolved at runtime after the mod's zip is mounted).
+
+  First addon implemented: **ImmersiveXP prefix handling**. Oldman's
+  Immersive Overhaul (modworkshop/50811) prepends one of the following
+  prefixes to tooltip labels every 10 physics frames
+  (`ImmersiveXP/HUD.gd:30,32`, `interactDot` feature):
+    - `"\n\n"` (when aiming)
+    - `"\n.\n"` (default, interact-dot mode)
+
+  When the addon is enabled, `mod_addon.strip_immersivexp_prefix(text)`
+  detects and strips these prefixes (including accumulated forms like
+  `"\n.\n\n.\nFire …"`) before lookup, so all 9 match tiers (static /
+  literal_scoped / pattern_scoped / literal_global / pattern_global /
+  static-score / scoped-literal-score / scoped-pattern-score / substr)
+  hit the inner text. The prefix is reattached to the translated
+  result and written back to the node.
+
+- **UI: "Addons" tab** in the language window (F9). Layout follows the
+  Whitelist tab — left: per-addon checkbox + description + `Used
+  with: <mod>` hint; right: `Activate All` / `Deactivate All` bulk
+  buttons. Default is all OFF — the user only enables an addon for a
+  mod they actually have installed. Addon state is persisted under
+  the new `[addons]` section of `user://trans_to_vostok.cfg`.
+
+- **`CHANGELOG_user.md`** — user-facing short changelog (English +
+  Korean), covering only what users notice in-game. Internal
+  refactors / build pipeline / license details remain in the
+  developer-facing `CHANGELOG.md`. Top-level **Known Issues** section
+  added (currently lists: the Select Language UI itself being
+  partially translated when it shouldn't be — fix planned).
+
+### Changed
+
+- **CHANGELOG (developer)**: 0.4.5 substr boundary entry retoned. The
+  earlier wording implied this was the main cause of the "0.4 이후
+  번역이 제대로 안 된다" user reports — that was speculation, not
+  measured. Reframed as a defensive safeguard: "could in theory
+  produce garbled output like `Catalog → 고양이alog`". The 77-corpus
+  simulation result is kept as factual evidence.
+
+### Removed
+
+- **Whitelist tab "Reset to Defaults" button** removed. All preset
+  defaults are `false`, so the reset button produced the same result
+  as `Deactivate All` — redundant. (Same decision applied
+  preemptively to the new Addons tab.)
+
+### Internal
+
+- `build_mod_package.py`: `MOD_FILES` extended with `mod_addon.gd`.
+  Without this, the new module is not in the packaged zip and
+  runtime `load()` fails with `File not found`.
+- `translator_ui.gd`: new `_enabled_addons` dictionary, persisted
+  under `[addons]` in `user://trans_to_vostok.cfg`. New
+  `_build_addons_tab(tabs)` function. Addon state passed to
+  `translator_node.addon_*` variables on `_apply_locale`.
+- `translator.gd`: new `MOD_ADDON_SCRIPT` constant + `_mod_addon:
+  GDScript` reference + `addon_immersivexp_prefix: bool` flag.
+  `_initialize()` runtime-loads the addon module. `_apply_binding()`
+  strips the prefix before `_lookup_cached()` and reattaches it to
+  the result — tier chain itself is unchanged; addon processing
+  happens **outside** the tier chain at the binding apply level.
+- Bumped `mod.txt` version `0.4.5 → 0.5.0`.
+
+---
+
 ## [0.4.5] — 2026-05-05 (Hotfix)
 
 ### Fixed (Engine)
@@ -527,6 +607,78 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.5.0] — 2026-05-06 (마이너 릴리스)
+
+이번 릴리스는 **모드 호환성 addon 시스템** 을 도입한다 — 다른 모드의
+라벨 패턴을 처리하는 mod 별 런타임 helper 가 번역 엔진에 통합되며,
+언어 UI 에 새 "Addons" 탭에서 ON/OFF 가능. 첫 addon 으로 ImmersiveXP
+의 tooltip prefix 처리 구현.
+
+### 추가
+
+- **모드 호환성 addon 시스템 (`mod_addon.gd`)** — `translator.gd._apply_binding`
+  에서 호출되는 런타임 helper. ModLoader 가 mount 한 mod 의 res:// 는
+  Godot 의 컴파일 타임 class cache 에 등록 안 되어 `preload` / `class_name`
+  사용 불가 — 따라서 mod zip 이 mount 된 후 `load("res://...")` 로 런타임
+  동적 로드.
+
+  첫 addon 으로 **ImmersiveXP prefix 처리** 구현. Oldman's Immersive
+  Overhaul (modworkshop/50811) 의 `ImmersiveXP/HUD.gd:30,32` 가 매 10
+  physics frame 마다 tooltip 라벨에 다음 중 하나를 prepend
+  (`interactDot` 기능):
+    - `"\n\n"` (조준 중)
+    - `"\n.\n"` (기본, interact-dot 모드)
+
+  Addon ON 시 `strip_immersivexp_prefix(text)` 가 prefix 를 (누적된
+  형태 `"\n.\n\n.\nFire …"` 까지 포함) 모두 strip → inner text 로 9
+  tier 매칭 (static / literal_scoped / pattern_scoped / literal_global
+  / pattern_global / static-score / scoped-literal-score /
+  scoped-pattern-score / substr) → 결과에 prefix 재부착해서 노드에 set.
+
+- **UI Addons 탭** (F9 언어 창에 신규). Whitelist 탭과 같은 레이아웃
+  — 좌측: addon 별 체크박스 + 설명 + `Used with: <mod>`, 우측:
+  `Activate All` / `Deactivate All` 일괄 제어 버튼. 기본값은 모두 OFF
+  — 사용자가 해당 mod 를 실제로 사용 중일 때만 활성화. addon 상태는
+  `user://trans_to_vostok.cfg` 의 새 `[addons]` 섹션에 저장됨.
+
+- **`CHANGELOG_user.md`** — 사용자용 간략 changelog (영어 + 한국어).
+  사용자가 게임에서 직접 체감하는 변경만 담음. 내부 리팩터링 / 빌드
+  파이프라인 / 라이선스 등은 개발자용 `CHANGELOG.md` 에만 유지. 상단
+  **Known Issues** 섹션 추가 (현재: Select Language UI 자체가 일부
+  번역되는 문제 — 수정 예정).
+
+### 변경
+
+- **개발자 CHANGELOG**: 0.4.5 substr boundary 항목 톤 정정. 이전
+  표현은 "0.4 이후 번역 안 됨" 사용자 보고의 주요 원인으로 추정한 것
+  — 측정 데이터 아닌 추정이었음. "안전장치 추가, 이론상 `Catalog →
+  고양이alog` 같은 깨짐 발생 가능" 으로 재구성. 시뮬레이션 77 건
+  결과는 실측 데이터로 유지.
+
+### 제거
+
+- **Whitelist 탭 "Reset to Defaults" 버튼** 제거. 모든 preset 기본값이
+  `false` 라 reset 결과가 `Deactivate All` 과 동일 — redundant. 새
+  Addons 탭에는 같은 판단으로 처음부터 안 둠.
+
+### 내부
+
+- `build_mod_package.py`: `MOD_FILES` 에 `mod_addon.gd` 추가. 그렇지
+  않으면 새 모듈이 packaged mod zip 에 포함 안 되어 런타임 `load()`
+  가 `File not found` 로 실패.
+- `translator_ui.gd`: 신규 `_enabled_addons` 사전 + config `[addons]`
+  섹션 + `_build_addons_tab(tabs)` 함수. addon 상태가 `_apply_locale`
+  시점에 `translator_node.addon_*` 변수로 전달.
+- `translator.gd`: 신규 `MOD_ADDON_SCRIPT` 상수 + `_mod_addon:
+  GDScript` 참조 + `addon_immersivexp_prefix: bool` 플래그.
+  `_initialize()` 가 addon 모듈을 런타임 로드. `_apply_binding()`
+  이 `_lookup_cached()` 호출 전 prefix strip 후, 결과에 prefix
+  재부착. Tier chain 자체는 변경 없음 — addon 처리는 chain **외부**
+  (binding apply 레벨) 에서 발생.
+- `mod.txt` 버전 `0.4.5 → 0.5.0` 업데이트.
+
+---
 
 ## [0.4.5] — 2026-05-05 (핫픽스)
 

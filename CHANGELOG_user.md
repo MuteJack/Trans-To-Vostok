@@ -14,6 +14,20 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.5.0] — 2026-05-06
+
+- **Added**: New "Addons" tab in the language window (F9). Toggle
+  per-mod compatibility helpers. First entry: **ImmersiveXP**
+  (Oldman's Immersive Overhaul). When enabled, tooltip labels that
+  ImmersiveXP prepends with `\n.\n` or `\n\n` (interact-dot mode) are
+  translated through all match stages, not just word-level fallback.
+- **Added**: User-facing changelog (`CHANGELOG_user.md`, this file)
+  with a Known Issues section.
+- **Removed**: "Reset to Defaults" button on the Whitelist tab — was
+  identical to "Deactivate All" since all defaults are off.
+
+---
+
 ## [0.4.5] — 2026-05-05
 
 - **Safeguard**: Added a guard against accidental partial-word
@@ -137,6 +151,20 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 - **Select Language UI (F9)** — 언어 선택 창의 일부 라벨이 의도와
   다르게 번역됨 (해당 UI 는 항상 원본 텍스트로 유지되어야 함).
   수정 예정.
+
+---
+
+## [0.5.0] — 2026-05-06
+
+- **추가**: 언어 창 (F9) 에 새 "Addons" 탭. mod 별 호환성 헬퍼 ON/OFF.
+  첫 항목: **ImmersiveXP** (Oldman's Immersive Overhaul). 활성화 시
+  ImmersiveXP 가 라벨 앞에 prepend 하는 `\n.\n` 또는 `\n\n` prefix
+  (interact-dot 모드) 가 적용된 tooltip 라벨이 단어 단위 폴백뿐 아니라
+  **모든 매칭 단계** 에서 변환됨.
+- **추가**: 사용자용 changelog (`CHANGELOG_user.md`, 이 문서) + Known
+  Issues 섹션.
+- **제거**: Whitelist 탭의 "Reset to Defaults" 버튼 — 모든 기본값이
+  OFF 라 "Deactivate All" 과 동일한 결과를 내던 redundant 버튼.
 
 ---
 
