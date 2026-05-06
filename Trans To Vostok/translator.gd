@@ -37,6 +37,15 @@ var _substr_mode: bool = false
 var _initialized: bool = false
 const DATA_BASE: String = "res://Trans To Vostok"
 
+# Mod compatibility addon helpers — runtime-loaded.
+# ModLoader-mounted mods 는 컴파일 타임 preload 가 작동하지 않아 _initialize
+# 시점에 load 한다. const ModAddon 도, class_name 도 사용 불가.
+const MOD_ADDON_SCRIPT: String = "res://Trans To Vostok/mod_addon.gd"
+var _mod_addon: GDScript = null
+
+# Mod compatibility addons — translator_ui 가 _apply_locale 시 set.
+var addon_immersivexp_prefix: bool = false
+
 const SCORE_LOCATION: int = 8
 const SCORE_PARENT: int = 4
 const SCORE_NAME: int = 2
@@ -227,6 +236,10 @@ func _initialize() -> void:
 		return
 	_initialized = true
 	print("[TransToVostok] Initializing... locale=%s, substr_mode=%s" % [_locale, _substr_mode])
+	# Mod addon 헬퍼 동적 로드 (preload 가 ModLoader 모드의 res:// 를 컴파일 타임에 못 찾음)
+	_mod_addon = load(MOD_ADDON_SCRIPT) as GDScript
+	if _mod_addon == null:
+		push_warning("[TransToVostok] Cannot load mod addon helper: " + MOD_ADDON_SCRIPT)
 	_load_translations()
 
 	if _substr_mode:
@@ -734,12 +747,41 @@ func _apply_binding(b: Dictionary) -> void:
 			_stats["early_returns"] += 1
 		return
 
-	var translated = _lookup_cached(node, cur_str)
-	if translated != null and translated != cur_str:
+	# Mod addon: 다른 mod 가 라벨에 prepend 한 prefix 가 있으면 strip 해서 inner text 만으로
+	# 모든 tier (literal/static/scoped/pattern/substr) 가 매칭되도록.
+	# 매칭 결과에 prefix 를 다시 붙여 노드에 set.
+	var search_text: String = cur_str
+	var addon_prefix: String = ""
+	if addon_immersivexp_prefix and _mod_addon != null:
+		var info: Dictionary = _mod_addon.strip_immersivexp_prefix(cur_str)
+		search_text = info["stripped"]
+		addon_prefix = info["prefix"]
+
+	var translated = _lookup_cached(node, search_text)
+	# [TT-DBG] Fire [Matches not equipped] lookup 진단
+	if "Matches" in cur_str or "Fire [" in cur_str:
+		var cur_bytes = cur_str.to_utf8_buffer()
+		var search_bytes = search_text.to_utf8_buffer()
+		print("[TT-DBG fire] cur=%s (len=%d, bytes=%d) search=%s (len=%d, bytes=%d) prefix=%s translated=%s" % [
+			cur_str.replace("\n", "\\n"), cur_str.length(), cur_bytes.size(),
+			search_text.replace("\n", "\\n"), search_text.length(), search_bytes.size(),
+			addon_prefix.replace("\n", "\\n"), translated])
+		print("  literal_global.has(search): ", literal_global.has(search_text))
+		# 등록된 key 중 search_text 와 비슷한 것
+		for k in literal_global:
+			if "Matches not" in k:
+				var k_bytes = k.to_utf8_buffer()
+				print("  registered key=%s (len=%d, bytes=%d), equal=%s" % [
+					k, k.length(), k_bytes.size(), k == search_text])
+				break
+	var final_text = translated
+	if translated != null and addon_prefix != "":
+		final_text = addon_prefix + translated
+	if final_text != null and final_text != cur_str:
 		if not b.has("original") or b["original"] == "":
 			b["original"] = cur_str
-		node.set(prop, translated)
-		b["last"] = translated
+		node.set(prop, final_text)
+		b["last"] = final_text
 		if DEBUG_STATS:
 			_stats["translations_applied"] += 1
 		# 수동 위치 Value 자식이 있으면 새 text 너비에 맞춰 offset 재조정

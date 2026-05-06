@@ -25,6 +25,9 @@ var _batch_interval: float = DEFAULT_BATCH_INTERVAL
 var _translator_node: Node = null
 var _texture_loader_node: Node = null
 var _enabled_whitelist: Dictionary = {}   # {"hud/info/map": true, ...}
+var _enabled_addons: Dictionary = {       # mod compatibility addons (default OFF)
+	"immersivexp_prefix": false,
+}
 var _language_window: Window = null
 var _ok_button: Button = null
 var _prev_mouse_mode: int = Input.MOUSE_MODE_VISIBLE
@@ -80,6 +83,8 @@ func _save_config() -> void:
 	config.set_value("performance", "batch_interval", _batch_interval)
 	for key in _enabled_whitelist:
 		config.set_value("whitelist", key, _enabled_whitelist[key])
+	for key in _enabled_addons:
+		config.set_value("addons", key, _enabled_addons[key])
 	config.save(CONFIG_PATH)
 
 
@@ -105,6 +110,10 @@ func _load_config() -> void:
 		var default_val: bool = presets[key].get("default", false)
 		var saved = config.get_value("whitelist", key, default_val) if loaded else default_val
 		_enabled_whitelist[key] = bool(saved)
+	# addons: 기본값은 모두 false. 저장된 값이 있으면 그걸 사용.
+	for key in _enabled_addons.keys():
+		var saved_addon = config.get_value("addons", key, false) if loaded else false
+		_enabled_addons[key] = bool(saved_addon)
 
 
 # WHITELIST_PRESETS 정의는 translator.gd 에 있으므로 스크립트 상수로 읽어옴.
@@ -426,6 +435,9 @@ func _show_language_ui(is_startup: bool) -> void:
 	# ============ Whitelist 탭 ============
 	var wl_checks: Dictionary = _build_whitelist_tab(tabs)
 
+	# ============ Addons 탭 ============
+	var addon_checks: Dictionary = _build_addons_tab(tabs)
+
 	# 구분선
 	root.add_child(HSeparator.new())
 
@@ -470,15 +482,20 @@ func _show_language_ui(is_startup: bool) -> void:
 	var prev_batch_size: int = _batch_size
 	var prev_batch_interval: float = _batch_interval
 	var prev_whitelist: Dictionary = _enabled_whitelist.duplicate()
+	var prev_addons: Dictionary = _enabled_addons.duplicate()
 	_substr_mode = substr_check.button_pressed
 	_batch_size = int(size_spin.value)
 	_batch_interval = float(interval_spin.value)
 	# whitelist 체크박스 상태 수집
 	for key in wl_checks:
 		_enabled_whitelist[key] = (wl_checks[key] as CheckBox).button_pressed
+	# addon 체크박스 상태 수집
+	for key in addon_checks:
+		_enabled_addons[key] = (addon_checks[key] as CheckBox).button_pressed
 	var batch_changed: bool = (_batch_size != prev_batch_size
 		or not is_equal_approx(_batch_interval, prev_batch_interval))
 	var whitelist_changed: bool = (_enabled_whitelist.hash() != prev_whitelist.hash())
+	var addons_changed: bool = (_enabled_addons.hash() != prev_addons.hash())
 
 	var selected_items: PackedInt32Array = item_list.get_selected_items()
 	if selected_items.size() > 0:
@@ -487,12 +504,12 @@ func _show_language_ui(is_startup: bool) -> void:
 			var selected_locale: String = enabled_locales[sel_idx].get("locale", DEFAULT_LOCALE)
 			var locale_changed: bool = selected_locale != _current_locale
 			var substr_changed: bool = _substr_mode != prev_substr
-			if locale_changed or substr_changed or batch_changed or whitelist_changed or is_startup:
+			if locale_changed or substr_changed or batch_changed or whitelist_changed or addons_changed or is_startup:
 				_current_locale = selected_locale
 				_save_config()
 				if not is_startup:
 					# 배치 파라미터만 바뀌었으면 재초기화 없이 즉시 반영
-					if batch_changed and not locale_changed and not substr_changed and not whitelist_changed:
+					if batch_changed and not locale_changed and not substr_changed and not whitelist_changed and not addons_changed:
 						if _translator_node != null and _translator_node.has_method("set_batch_params"):
 							_translator_node.set_batch_params(_batch_size, _batch_interval)
 					else:
@@ -641,17 +658,6 @@ func _build_whitelist_tab(tabs: TabContainer) -> Dictionary:
 	)
 	wl_right.add_child(btn_none)
 
-	# Reset to Defaults — 각 preset 의 default 값으로 복원
-	var btn_reset: Button = Button.new()
-	btn_reset.text = "Reset to Defaults"
-	btn_reset.add_theme_font_size_override("font_size", 12)
-	btn_reset.pressed.connect(func():
-		for key in checks:
-			var default_val: bool = presets[key].get("default", false)
-			(checks[key] as CheckBox).button_pressed = default_val
-	)
-	wl_right.add_child(btn_reset)
-
 	# 하단 — 향후 사용자 커스텀 키워드 입력 영역 placeholder
 	var spacer: Control = Control.new()
 	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
@@ -664,6 +670,128 @@ func _build_whitelist_tab(tabs: TabContainer) -> Dictionary:
 	future_label.modulate = Color(0.35, 0.35, 0.35)
 	future_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	wl_right.add_child(future_label)
+
+	return checks
+
+
+# ==========================================
+# Addons 탭 빌더
+# ==========================================
+#
+# 각 mod 호환성 addon 의 on/off 체크박스 + 우측 Bulk Actions.
+# 좌측: 알려진 mod 별 addon 항목 (현재는 ImmersiveXP prefix 처리만).
+# 우측: Activate All / Deactivate All (Whitelist 탭과 동일한 패턴).
+# 기본값은 모두 OFF — 사용자가 해당 mod 를 실제로 사용 중일 때만 활성화.
+func _build_addons_tab(tabs: TabContainer) -> Dictionary:
+	var checks: Dictionary = {}
+
+	var tab_body: HBoxContainer = HBoxContainer.new()
+	tab_body.name = "Addons"
+	tab_body.add_theme_constant_override("separation", 12)
+	tab_body.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	tabs.add_child(tab_body)
+
+	# --- 왼쪽: addon 체크박스 리스트 ---
+	var ad_left: VBoxContainer = VBoxContainer.new()
+	ad_left.add_theme_constant_override("separation", 8)
+	ad_left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	ad_left.size_flags_stretch_ratio = 1.0
+	tab_body.add_child(ad_left)
+
+	var ad_title: Label = Label.new()
+	ad_title.text = "Mod Compatibility Addons"
+	ad_title.add_theme_font_size_override("font_size", 14)
+	ad_left.add_child(ad_title)
+
+	var ad_hint: Label = Label.new()
+	ad_hint.text = "Enable an addon only if you have the corresponding mod installed. Default: all OFF."
+	ad_hint.add_theme_font_size_override("font_size", 10)
+	ad_hint.modulate = Color(0.55, 0.55, 0.55)
+	ad_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	ad_left.add_child(ad_hint)
+
+	ad_left.add_child(HSeparator.new())
+
+	# 스크롤 컨테이너 (향후 addon 항목 늘어날 경우 대비)
+	var ad_scroll: ScrollContainer = ScrollContainer.new()
+	ad_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	ad_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	ad_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	ad_left.add_child(ad_scroll)
+
+	var ad_list: VBoxContainer = VBoxContainer.new()
+	ad_list.add_theme_constant_override("separation", 10)
+	ad_list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	ad_scroll.add_child(ad_list)
+
+	# --- ImmersiveXP prefix 처리 addon ---
+	var imxp_row: VBoxContainer = VBoxContainer.new()
+	imxp_row.add_theme_constant_override("separation", 2)
+	ad_list.add_child(imxp_row)
+
+	var imxp_check: CheckBox = CheckBox.new()
+	imxp_check.text = "  ImmersiveXP — Tooltip prefix handling"
+	imxp_check.add_theme_font_size_override("font_size", 12)
+	imxp_check.button_pressed = _enabled_addons.get("immersivexp_prefix", false)
+	imxp_row.add_child(imxp_check)
+	checks["immersivexp_prefix"] = imxp_check
+
+	var imxp_desc: Label = Label.new()
+	imxp_desc.text = "     Strip the `\\n.\\n` / `\\n\\n` prefix that Oldman's Immersive Overhaul (ImmersiveXP/HUD.gd) prepends to tooltip labels, so the inner text is translated through all match tiers (literal/static/scoped/pattern/substr). Reattaches the prefix afterward."
+	imxp_desc.add_theme_font_size_override("font_size", 10)
+	imxp_desc.modulate = Color(0.45, 0.45, 0.45)
+	imxp_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	imxp_row.add_child(imxp_desc)
+
+	var imxp_mod: Label = Label.new()
+	imxp_mod.text = "     Used with: Oldman's Immersive Overhaul (modworkshop/50811)"
+	imxp_mod.add_theme_font_size_override("font_size", 10)
+	imxp_mod.modulate = Color(0.55, 0.7, 0.55)
+	ad_list.add_child(imxp_mod)
+
+	# --- 세로 구분선 ---
+	tab_body.add_child(VSeparator.new())
+
+	# --- 오른쪽: 일괄 제어 패널 ---
+	var ad_right: VBoxContainer = VBoxContainer.new()
+	ad_right.add_theme_constant_override("separation", 8)
+	ad_right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	ad_right.size_flags_stretch_ratio = 1.0
+	tab_body.add_child(ad_right)
+
+	var actions_title: Label = Label.new()
+	actions_title.text = "Bulk Actions"
+	actions_title.add_theme_font_size_override("font_size", 14)
+	ad_right.add_child(actions_title)
+
+	var actions_hint: Label = Label.new()
+	actions_hint.text = "Toggle all mod compatibility addons at once."
+	actions_hint.add_theme_font_size_override("font_size", 10)
+	actions_hint.modulate = Color(0.55, 0.55, 0.55)
+	actions_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	ad_right.add_child(actions_hint)
+
+	ad_right.add_child(HSeparator.new())
+
+	# Activate All
+	var btn_all: Button = Button.new()
+	btn_all.text = "Activate All"
+	btn_all.add_theme_font_size_override("font_size", 12)
+	btn_all.pressed.connect(func():
+		for key in checks:
+			(checks[key] as CheckBox).button_pressed = true
+	)
+	ad_right.add_child(btn_all)
+
+	# Deactivate All
+	var btn_none: Button = Button.new()
+	btn_none.text = "Deactivate All"
+	btn_none.add_theme_font_size_override("font_size", 12)
+	btn_none.pressed.connect(func():
+		for key in checks:
+			(checks[key] as CheckBox).button_pressed = false
+	)
+	ad_right.add_child(btn_none)
 
 	return checks
 
@@ -703,6 +831,8 @@ func _apply_locale() -> void:
 	node.normal_batch_size = _batch_size
 	node.normal_batch_interval = _batch_interval
 	node.enabled_whitelist = _enabled_whitelist.duplicate()
+	# Mod compatibility addons (default OFF)
+	node.addon_immersivexp_prefix = _enabled_addons.get("immersivexp_prefix", false)
 	add_child(node)
 	node._initialize()
 	_translator_node = node

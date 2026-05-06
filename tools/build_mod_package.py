@@ -16,6 +16,7 @@ Behavior:
     - Trans To Vostok/translator_ui.gd                      (UI + engine management)
     - Trans To Vostok/translator.gd                         (text translation engine)
     - Trans To Vostok/texture_loader.gd                     (texture replacement engine)
+    - Trans To Vostok/mod_addon.gd                          (mod compatibility addon helpers)
     - Trans To Vostok/locale.json                           (locale configuration)
     - Trans To Vostok/<locale>/runtime_tsv/translation_*.tsv (runtime TSVs)
     - Trans To Vostok/<locale>/runtime_tsv/metadata.tsv
@@ -40,7 +41,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 MOD_NAME = "Trans To Vostok"
-MOD_FILES = ["translator_ui.gd", "translator.gd", "texture_loader.gd", "locale.json"]
+MOD_FILES = ["translator_ui.gd", "translator.gd", "texture_loader.gd", "mod_addon.gd", "locale.json"]
 RUNTIME_TSV_DIR = "runtime_tsv"
 RUNTIME_TSV_FILES = [
     "metadata.tsv",
