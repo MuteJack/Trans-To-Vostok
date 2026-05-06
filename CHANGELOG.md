@@ -8,29 +8,31 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Fixed (Engine)
 
-- **`translator.gd`: substr partial-word matches break unrelated English
-  text.** With 614 substr entries (many short tokens like `Use`, `Cat`,
-  `Day`, `Map`, `Rig`, `Can`), `String.replace` was matching anywhere a
-  src appeared as a substring — so `Catalog` became `고양이alog`,
-  `Canned Tuna` became `캔ned Tuna`, `Daybreak` became `일break`,
-  `Right` became `조끼ht`, `Fireplace` became `발사place`, `Hardware`
-  became `어려움ware`, etc. Likely main cause of the "0.4 이후 번역이
-  제대로 안 된다" user reports.
-  Added a word-boundary guard in `_apply_substr` / `_replace_at_word_boundaries`:
-  a substr match is now applied only when the position is flanked by
-  non-word chars (= non `[A-Za-z0-9_]`). Comma- or space-separated
-  combined labels (e.g. `Hybrid, OZ5, Leopard, Magazine`) still
-  translate fully (boundaries are commas/spaces). Simulation against
-  the literal/static/scoped corpus showed 77 corpus texts where current
-  behavior breaks vs. boundary behavior — **all 77 are blocked broken
-  matches**, **0 are valid matches accidentally blocked**.
-  The 0.4.1 idempotency guard is kept as a backup for the rare case
-  where boundary alone doesn't catch accumulation (e.g. French
-  `NVG → "Vision Nocturne (NVG)"` with parenthesis-flanked NVG).
+- **`translator.gd`: word-boundary safeguard for substr matches.**
+  With 614 substr entries (many short tokens like `Use`, `Cat`, `Day`,
+  `Map`, `Rig`, `Can`), `String.replace` would match anywhere a src
+  appeared as a substring — including inside unrelated English words
+  (e.g. `Cat` inside `Catalog`, `Day` inside `Daybreak`, `Fire` inside
+  `Fireplace`, `Hard` inside `Hardware`). In theory this could produce
+  garbled output like `Catalog` → `고양이alog`, `Daybreak` → `일break`.
+  Added a word-boundary guard in `_apply_substr` /
+  `_replace_at_word_boundaries`: a substr match is now applied only
+  when the position is flanked by non-word chars (= non
+  `[A-Za-z0-9_]`). Comma- or space-separated combined labels (e.g.
+  `Hybrid, OZ5, Leopard, Magazine`) still translate fully (boundaries
+  are commas/spaces). Simulation against the literal/static/scoped
+  corpus identified 77 corpus texts where the unguarded behavior would
+  differ from the boundary behavior — **all 77 are partial-word
+  matches inside unrelated English words; 0 valid matches accidentally
+  blocked**. The 0.4.1 idempotency guard is kept as a backup for the
+  rare case where boundary alone doesn't catch accumulation (e.g.
+  French `NVG → "Vision Nocturne (NVG)"` with parenthesis-flanked
+  NVG).
 
 - **`translator.gd`: `containerName` removed from `TRANSLATABLE_PROPS`.**
   `containerName` is a game-data field used by game logic for English
-  string comparisons (e.g. LargerContainers's
+  string comparisons (e.g. **Expanded Storage**
+  [modworkshop/56126](https://modworkshop.net/mod/56126)'s
   `if container.containerName in ["Fridge", "Cabinet", ...]`); writing
   a translated value into it broke that comparison and silently
   disabled the other mod's effect. Display labels still get translated
@@ -38,6 +40,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
   longer needed because the game writes the same source text into a
   Label.text downstream (e.g. `Interface.gd:408 — containerName.text =
   container.containerName`), which our binding catches.
+
+### Added (Common)
+
+- **Trader / NPC-faction name entries (substr)** — Trader, Generalist,
+  Doctor, Gunsmith, Driver, Grandma, Shaman, Fisherman, Scientist
+  (traders); Bandit, Guards, Military (hostile NPC factions);
+  Punisher (elite NPC). Registered in the Main sheet with
+  `method=substr` so they translate even when other mods prepend a
+  prefix to the label text (e.g. ImmersiveXP's `.\n\n{name}` pattern
+  on Trader UI).
+- The previous Interface-sheet `literal` entries for Doctor /
+  Generalist / Gunsmith were folded into the Main-sheet substr
+  entries to consolidate (avoid duplicate registration across
+  sheets).
+- The generic `Trader` row in the Events sheet is now `method=ignore`
+  to prevent it from re-registering and conflicting with the
+  Main-sheet entry above.
 
 ### Internal
 
@@ -513,32 +532,46 @@ First public test version.
 
 ### 수정 (엔진)
 
-- **`translator.gd`: substr 부분 매치로 무관한 영어 텍스트가 깨지는
-  문제.** substr entry 614 개 중 짧은 토큰 (`Use`, `Cat`, `Day`, `Map`,
-  `Rig`, `Can` 등) 다수가 `String.replace` 로 단어 한가운데에서도
-  매치되어 `Catalog` → `고양이alog`, `Canned Tuna` → `캔ned Tuna`,
-  `Daybreak` → `일break`, `Right` → `조끼ht`, `Fireplace` → `발사place`,
-  `Hardware` → `어려움ware` 같은 깨짐을 일으켰음. "0.4 이후 번역이
-  제대로 안 된다" 라는 사용자 보고의 주요 원인으로 추정.
-  `_apply_substr` / `_replace_at_word_boundaries` 에 단어 경계 가드 추가:
-  매치 위치 양 옆이 단어 문자 (`[A-Za-z0-9_]`) 가 아닐 때만 변환.
-  콤마/공백으로 구분된 결합 라벨 (예: `Hybrid, OZ5, Leopard, Magazine`)
-  은 boundary 가 콤마/공백이라 정상 변환됨. literal/static/scoped corpus
-  대상 시뮬레이션 결과 — 현재 동작과 boundary 동작이 다른 케이스 77 건
-  중 **77 건 모두 잘못된 부분 매치를 차단**, 정상 매치를 잘못 차단한
-  케이스 **0 건**.
-  0.4.1 idempotency 가드는 boundary 만으로 못 잡는 일부 사각지대용
-  backup 으로 유지 (예: 프랑스어 `NVG → "Vision Nocturne (NVG)"` 처럼
-  괄호로 감싸진 약어 케이스).
+- **`translator.gd`: substr 매칭에 단어 경계 안전장치 추가.**
+  substr entry 614 개 중 짧은 토큰 (`Use`, `Cat`, `Day`, `Map`, `Rig`,
+  `Can` 등) 다수가 `String.replace` 로 단어 한가운데에서도 매치되는
+  구조 — `Catalog` 안의 `Cat`, `Daybreak` 안의 `Day`, `Fireplace`
+  안의 `Fire`, `Hardware` 안의 `Hard` 같이 무관한 영어 단어 안에
+  박힌 경우까지 매치 가능. 이론상 `Catalog` → `고양이alog`,
+  `Daybreak` → `일break` 같은 깨진 출력 발생 가능.
+  `_apply_substr` / `_replace_at_word_boundaries` 에 단어 경계 가드
+  추가: 매치 위치 양 옆이 단어 문자 (`[A-Za-z0-9_]`) 가 아닐 때만
+  변환. 콤마/공백으로 구분된 결합 라벨 (예:
+  `Hybrid, OZ5, Leopard, Magazine`) 은 boundary 가 콤마/공백이라
+  정상 변환됨. literal/static/scoped corpus 대상 시뮬레이션 결과 —
+  가드 없는 동작과 가드 있는 동작이 다른 케이스 77 건 식별, **77 건
+  모두 무관한 영어 단어 한가운데서 발생하는 부분 매치, 정상 매치를
+  잘못 차단한 케이스 0 건**. 0.4.1 idempotency 가드는 boundary
+  만으로 못 잡는 일부 사각지대용 backup 으로 유지 (예: 프랑스어
+  `NVG → "Vision Nocturne (NVG)"` 처럼 괄호로 감싸진 약어 케이스).
 
 - **`translator.gd`: `containerName` 을 `TRANSLATABLE_PROPS` 에서 제거.**
   `containerName` 은 게임 로직이 영어 문자열로 비교에 쓰는 데이터
-  필드 (예: LargerContainers 의 `if container.containerName in
-  ["Fridge", "Cabinet", ...]`). 번역된 값을 set 하면 비교가 실패해
-  다른 모드의 효과가 silently 무력화됨. 표시용 라벨은 일반 `text`
-  속성 변환으로 그대로 잡히므로 (예: `Interface.gd:408 —
-  containerName.text = container.containerName` 시점에 우리 binding
-  이 캐치) `containerName` 직접 변환이 불필요.
+  필드 (예: **Expanded Storage**
+  [modworkshop/56126](https://modworkshop.net/mod/56126) 의
+  `if container.containerName in ["Fridge", "Cabinet", ...]`). 번역된
+  값을 set 하면 비교가 실패해 다른 모드의 효과가 silently 무력화됨.
+  표시용 라벨은 일반 `text` 속성 변환으로 그대로 잡히므로 (예:
+  `Interface.gd:408 — containerName.text = container.containerName`
+  시점에 우리 binding 이 캐치) `containerName` 직접 변환이 불필요.
+
+### 추가 (공통)
+
+- **Trader / NPC 진영 이름 entry 등록 (substr)** — Trader, Generalist,
+  Doctor, Gunsmith, Driver, Grandma, Shaman, Fisherman, Scientist
+  (상인); Bandit, Guards, Military (적대 NPC 진영); Punisher (Elite
+  NPC). Main 시트에 `method=substr` 로 등록 — 다른 모드가 라벨 앞에
+  prefix 를 붙이는 경우에도 (예: ImmersiveXP 의 Trader UI
+  `.\n\n{name}` 패턴) 변환되도록.
+- Interface 시트에 있던 Doctor / Generalist / Gunsmith `literal`
+  entry 는 Main 시트 substr entry 와 통합됨 (시트 간 중복 등록 제거).
+- Events 시트의 일반 `Trader` 행은 `method=ignore` 로 변경 — 위 Main
+  entry 와 충돌하지 않도록.
 
 ### 내부
 
