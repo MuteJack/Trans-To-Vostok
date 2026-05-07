@@ -13,7 +13,7 @@ Assets	Containers		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	As
 Assets	Containers		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet	사무용 수납장		
 Assets	Containers		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet	수납장		
 Assets	Containers		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet	수납장		
-			0	0	0	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	시체		
+Assets	Containers		0	0	0	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	시체		
 Assets	Containers		0	0	0	0	0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse	밴디트 시체		
 Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_B	tscn	Assets/Corpse/Corpse_Bandit_Flat_B		Corpse_Bandit_Flat_B	Node3D	containerName	1269584548	Bandit Corpse	밴디트 시체		
 Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_C	tscn	Assets/Corpse/Corpse_Bandit_Flat_C		Corpse_Bandit_Flat_C	Node3D	containerName	1419056794	Bandit Corpse	밴디트 시체		
@@ -57,8 +57,8 @@ Assets	Containers		1	0	0	0	0	substr	Assets/Stove/Stove	tscn	Assets/Stove/Stove		
 Assets	Containers		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tscn	Assets/Stove/Stove_F		Stove_F	Node3D	containerName	83268940	Stove	스토브		
 Assets	Containers		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_F	tscn	Assets/Tent_Civilian/Tent_Civilian_F		Tent_Civilian_F	Node3D	containerName	1397422008	Tent	텐트	"Duplicated with SceneName ""Tent"""	
 Assets	Containers		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_R	tscn	Assets/Tent_Civilian/Tent_Civilian_R		Tent_Civilian_R	Node3D	containerName	177370949	Tent	텐트	"Duplicated with SceneName ""Tent"""	
-			0	0	0	0	0	substr									Furniture	가구		
-			0	0	0	0	0	substr									Furnitures	가구		
+Assets	Furnitures	type	0	0	0	0	0	substr									Furniture	가구		
+Assets	Furnitures	type	0	0	0	0	0	substr									Furnitures	가구		
 Assets	Furnitures		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					name		Bed (Civilian)	침대 (민간용)		
 Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					inventory		Bed (Civilian)	침대 (민간용)		
 Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					rotated		Bed (Civilian)	침대 (민간용)		

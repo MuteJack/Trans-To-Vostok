@@ -29,7 +29,7 @@ Inventory	Item/Armor	ToolTip	0	0	0	0	0	ignore	Scripts/Tooltip	gd			protection.ge
 Inventory	Item/Food	Button	0	0	0	0	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen	냉동됨	Use button will be replaced for frozen consumable items (instead use button)
 Inventory	Weapon	Button	0	0	0	0	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})	제거 ({display})	Remove Attachments
 HUD	Transition	String	0	0	0	0	0	substr	Scripts/HUD	gd			detailsHint.text	literal		107	Permadeath Zone	퍼마데스 구역 (부활 불가)	
-HUD	/	String	0	0	0	0	0	substr									[Open]	[열기]	
+HUD	Door	String	0	0	0	0	0	substr									[Open]	[열기]	
 HUD	Door	String	0	0	0	0	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}	열기 ({name} 사용)	
 HUD	Door	String	0	0	0	0	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}	문 열기 ({name})	
 HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]	문 [막힘]	

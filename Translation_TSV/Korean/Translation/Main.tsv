@@ -1,59 +1,59 @@
 WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
 Main_Menu	/	Game Title	1	0	0	0	0	ignore									Road to Vostok	로드 투 보스토크	Subtitle(?) of the Game, that Displayed on Main Menu
 Main_Menu	/	Game Subtitle	1	0	0	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access	얼리 엑세스	Subtitle(?) of the Game, that Displayed on Main Menu
-			0	0	0	0	0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	호환 모드	Text that notice user is running the game as 'Compatibility Mode'
-			0	0	0	0	0	substr									Compatibility	호환성	
-			0	0	0	0	0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility	호환 모드	
-			0	0	0	0	0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility	호환 모드	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	새 게임	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	불러오기	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	튜토리얼	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
+Main_Menu	Compatibility		0	0	0	0	0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	호환 모드	Text that notice user is running the game as 'Compatibility Mode'
+Main_Menu	Compatibility		0	0	0	0	0	substr									Compatibility	호환성	
+Main_Menu	Compatibility		0	0	0	0	0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility	호환 모드	
+Main_Menu	Compatibility		0	0	0	0	0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility	호환 모드	
+Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	새 게임	
+Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	불러오기	
+Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	튜토리얼	
+Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
 "	"설정
 "	
-Main_Menu	/	Button	1	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
+Main_Menu	Main Button	Button	1	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
 "	"로드맵
 "	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
+Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
 "	"정보
 "	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
+Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
 "	"나가기
 "	
-Main_Menu	/	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	변경사항	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
+Main_Menu	ChangeLog	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	변경사항	
+Main_Menu	ChangeLog	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
 "	"끄기
 "	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
+Main_Menu	ChangeLog	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
 "	"켜기
 "	
-Main_Menu	/	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	하드웨어 확인	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
+Main_Menu	Hardware Check	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	하드웨어 확인	
+Main_Menu	Hardware Check	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
 "	"끄기
 "	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
+Main_Menu	Hardware Check	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
 "	"켜기
 "	
-Main_Menu	/	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	인트로 보기	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
+Main_Menu	Watch Intro	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	인트로 보기	
+Main_Menu	Watch Intro	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
 "	"끄기
 "	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
+Main_Menu	Watch Intro	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
 "	"켜기
 "	
-Main_Menu	/	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	메뉴 음악	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
+Main_Menu	Menu Music	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	메뉴 음악	
+Main_Menu	Menu Music	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
 "	"끄기
 "	
-Main_Menu	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
+Main_Menu	Menu Music	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
 "	"켜기
 "	
-Main_Menu	/	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
+Main_Menu	Bottom	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
 접경 지대를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."	
-Main_Menu	/	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	버전: 0.1.1.3	"Will not use pattern matching. 
+Main_Menu	Bottom	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	버전: 0.1.1.3	"Will not use pattern matching. 
 It will act as the ""canaria (bird)"" for the outdated translation."
-Main_Menu	/	UI_Label	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	변경사항	
-Main_Menu	/	Scrollable String	0	0	1	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
+Main_Menu	ChangeLog	UI_Label	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	변경사항	
+Main_Menu	ChangeLog	Scrollable String	0	0	1	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
 Early Access [0.1.0.0] -> Early Access [0.1.1.3]
 ----------------------------------------
 Build name: Road - Build 1
@@ -188,7 +188,7 @@ Hotfix [0.1.1.3]
 ----------------------------------------
 [제거됨] 안정성 향상을 위해 모든 타사/구형 AMD FSR 참조 제거
 ----------------------------------------"	
-Main_Menu	/	Scrollable String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
+Main_Menu	ChangeLog	Scrollable String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
 Build name: Road - Build 1
@@ -1095,12 +1095,12 @@ Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loadi
 Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	템플릿 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
 Loading	/	#Not Checked	0	0	0	0	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	셰이더 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
 Intro	/	String	0	0	0	0	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]	
-Intro	/	String	0	0	0	0	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]		
-Intro	/	String	0	0	0	0	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]		
-	/	String	0	0	0	0	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]		
+Intro	/	String	0	0	0	0	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]	
+Intro	/	String	0	0	0	0	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]	
+Intro	/	String	0	0	0	0	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]	
 Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	캐릭터가 사망했습니다	
-	/	String	0	0	0	0	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	모든 세이브 파일이 삭제되었습니다	
-	/	String	0	0	0	0	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	캐릭터가 사망했습니다	
+Death	/	String	0	0	0	0	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	모든 세이브 파일이 삭제되었습니다	
+Death	/	String	0	0	0	0	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	캐릭터가 사망했습니다	
 Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	불러오기	
 Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
 "	"메인 메뉴
@@ -1108,28 +1108,41 @@ Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Men
 Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
 "	"나가기
 "	
-/	Scene	Dictionary	1	0	0	0	0	substr									Intro	인트로	
-/	Scene	Dictionary	0	0	0	0	0	substr									Cabin	오두막	Defined at Loader.gd: const shelters
-/	Scene	Dictionary	0	0	0	0	0	substr									Shelter	은신처	
-/	Scene	Dictionary	1	0	0	0	0	substr									Tutorial	튜토리얼	
-/	Scene	Dictionary	1	0	0	0	0	substr									Menu	메뉴	
-/	Scene	Dictionary	0	0	0	0	0	substr									Attic	다락방	Defined at Loader.gd: const shelters
-/	Scene	Dictionary	0	0	0	0	0	substr									Death	죽음	
-/	Scene	Dictionary	0	0	0	0	0	substr									Classroom	교실	Defined at Loader.gd: const shelters
-/	Scene	Dictionary	0	0	0	0	0	substr									Tent	텐트	Defined at Loader.gd: const shelters
-/	Scene	Dictionary	1	0	0	0	0	substr									Bunker	벙커	Defined at Loader.gd: const shelters
-/	Scene	Dictionary	0	0	0	0	0	substr									Village	마을	
-/	Scene	Dictionary	0	0	0	0	0	substr									Area 05	05 구역	
-/	Scene	Dictionary	0	0	0	0	0	substr									Highway	고속도로	
-/	Scene	Dictionary	0	0	0	0	0	substr									School	학교	
-/	Scene	Dictionary	0	0	0	0	0	substr									Outpost	전초기지	
-/	Scene	Dictionary	0	0	0	0	0	substr									Border Zone	접경지대	
-/	Scene	Dictionary	0	0	0	0	0	substr									Minefield	지뢰지대	
-/	Scene	Dictionary	1	0	0	0	0	substr									Apartments	아파트 단지	
-/	Scene	Dictionary	1	0	0	0	0	substr									Terminal	터미널	
+/	Scene	Name	1	0	0	0	0	substr									Intro	인트로	
+/	Scene	Name	0	0	0	0	0	substr									Cabin	오두막	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	0	0	0	substr									Shelter	은신처	
+/	Scene	Name	1	0	0	0	0	substr									Tutorial	튜토리얼	
+/	Scene	Name	1	0	0	0	0	substr									Menu	메뉴	
+/	Scene	Name	0	0	0	0	0	substr									Attic	다락방	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	0	0	0	substr									Death	죽음	
+/	Scene	Name	0	0	0	0	0	substr									Classroom	교실	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	0	0	0	substr									Tent	텐트	Defined at Loader.gd: const shelters
+/	Scene	Name	1	0	0	0	0	substr									Bunker	벙커	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	0	0	0	substr									Village	마을	
+/	Scene	Name	0	0	0	0	0	substr									Area 05	05 구역	
+/	Scene	Name	0	0	0	0	0	substr									Highway	고속도로	
+/	Scene	Name	0	0	0	0	0	substr									School	학교	
+/	Scene	Name	0	0	0	0	0	substr									Outpost	전초기지	
+/	Scene	Name	0	0	0	0	0	substr									Border Zone	접경지대	
+/	Scene	Name	0	0	0	0	0	substr									Minefield	지뢰지대	
+/	Scene	Name	1	0	0	0	0	substr									Apartments	아파트 단지	
+/	Scene	Name	1	0	0	0	0	substr									Terminal	터미널	
 /	Scene	ToolTip	0	0	0	0	0	substr									Tutorial Exit	튜토리얼 나가기	
-/	Scene	Dictionary	1	0	0	0	0	substr									Template	템플릿	
-/	Scene	Dictionary	1	0	0	0	0	substr									shaders	셰이더	
+/	Scene	Name	1	0	0	0	0	substr									Template	템플릿	
+/	Scene	#Not Checked	1	0	0	0	0	substr									shaders	셰이더	
+NPC	Traders	Name	0	0	0	0	0	substr									Trader	상인	
+NPC	Traders	Name	0	0	0	1	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	잡화상	
+NPC	Traders	Name	0	0	0	0	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	의사	
+NPC	Traders	Name	0	0	0	0	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	총잡이	
+NPC	Traders	Name	0	0	0	0	0	substr									Driver	운전사	
+NPC	Traders	Name	0	0	0	0	0	substr									Grandma	할머니	
+NPC	Traders	Name	0	0	0	0	0	substr									Shaman	샤먼	
+NPC	Traders	Name	0	0	0	0	0	substr									Fisherman	어부	
+NPC	Traders	Name	0	0	0	0	0	substr									Scientist	과학자	
+NPC	Hostile	Name	1	0	0	0	0	substr									Bandit	밴디트	Hostile NPC faction spawned in Area 05;
+NPC	Hostile	Name	0	0	0	0	0	substr									Guards	경비병	Hostile NPC faction spawned in Border Zone;
+NPC	Hostile	Name	0	0	0	0	0	substr									Military	군대	Hostile NPC faction spawned in Vostok;
+NPC	Elite	Name	1	0	0	0	0	substr									Punisher	퍼니셔	Hostile Elite(Boss) NPC spawned in Area 05;
 /	Weather	Dictionary	0	0	0	0	0	substr									Neutral	보통	
 /	Weather	Dictionary	0	0	0	0	0	substr									Overcast	흐림	
 /	Weather	Dictionary	0	0	0	0	0	substr									Rain	비	
@@ -1140,16 +1153,3 @@ Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Qui
 /	Material	Dictionary	1	0	0	0	0	substr									Concrete	콘크리트	
 /	Material	Dictionary	0	0	0	0	0	substr									Rock	돌	
 /	Material	Dictionary	1	0	0	0	0	substr									Vostok	보스토크	
-Traders	Traders	Name	0	0	0	0	0	substr									Trader	상인	
-Traders	Traders	Name	0	0	0	1	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	잡화상	
-Traders	Traders	Name	0	0	0	0	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	의사	
-Traders	Traders	Name	0	0	0	0	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	총잡이	
-Traders	Traders	Name	0	0	0	0	0	substr									Driver	운전사	
-Traders	Traders	Name	0	0	0	0	0	substr									Grandma	할머니	
-Traders	Traders	Name	0	0	0	0	0	substr									Shaman	샤먼	
-Traders	Traders	Name	0	0	0	0	0	substr									Fisherman	어부	
-Traders	Traders	Name	0	0	0	0	0	substr									Scientist	과학자	
-Faction	Hostile	Name	1	0	0	0	0	substr									Bandit	밴디트	Hostile NPC faction spawned in Area 05;
-Faction	Hostile	Name	0	0	0	0	0	substr									Guards	경비병	Hostile NPC faction spawned in Border Zone;
-Faction	Hostile	Name	0	0	0	0	0	substr									Military	군대	Hostile NPC faction spawned in Vostok;
-Faction	Elite	Name	1	0	0	0	0	substr									Punisher	퍼니셔	Hostile Elite(Boss) NPC spawned in Area 05;

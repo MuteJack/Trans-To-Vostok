@@ -49,6 +49,7 @@ Mouse Thumb Button 1	마우스 엄지 버튼 1
 Mouse Thumb Button 2	마우스 엄지 버튼 2
 UI Scaling	UI 스케일링
 Loading...	로딩중...
+Skip Intro [SPACE]	인트로 스킵하기 [SPACE]
 All save files deleted	모든 세이브 파일이 삭제되었습니다
 Character died	캐릭터가 사망했습니다
 Intro	인트로
@@ -73,16 +74,6 @@ Terminal	터미널
 Tutorial Exit	튜토리얼 나가기
 Template	템플릿
 shaders	셰이더
-Neutral	보통
-Overcast	흐림
-Rain	비
-Storm	폭풍
-Generic	일반
-Wood	나무
-Metal	금속
-Concrete	콘크리트
-Rock	돌
-Vostok	보스토크
 Trader	상인
 Generalist	잡화상
 Doctor	의사
@@ -96,6 +87,16 @@ Bandit	밴디트
 Guards	경비병
 Military	군대
 Punisher	퍼니셔
+Neutral	보통
+Overcast	흐림
+Rain	비
+Storm	폭풍
+Generic	일반
+Wood	나무
+Metal	금속
+Concrete	콘크리트
+Rock	돌
+Vostok	보스토크
 Inventory	인벤토리
 Primary	주무기
 Secondary	보조무기
@@ -140,7 +141,6 @@ Guaranteed	보장됨
 Common	일반
 Rare	희귀
 Legendary	전설
-Ammo	탄약
 Armor Plate	방탄판
 Armor	방어구
 Armor Plate {class}	방탄판 {class}
@@ -149,13 +149,6 @@ Armor Plate (III+)	방탄판 (III+)
 Armor Plate (III)	방탄판 (III)
 Armor Plate (IIIA)	방탄판 (IIIA)
 Armor Plate (IV)	방탄판 (IV)
-Attachment	부착물
-Hybrid	하이브리드
-Kobra	코브라
-Leopard	레오파드
-Micro	마이크로
-Monster	몬스터
-Thor	토르
 Backpack	가방
 Jääkäri Backpack (Black)	야카리 배낭 (블랙)
 Jääkäri BP.	야카리 배낭
@@ -420,7 +413,6 @@ Tourniquet (Improvised)	지혈대 (급조)
 Wipes	물티슈
 Wipe	닦기
 Misc	기타
- Misc	 기타
 Blanket	담요
 Board Game	보드게임
 B. Game	보드게임
@@ -489,6 +481,14 @@ P3 Magazine	P3 탄창
 RK Magazine	RK 탄창
 VSD Magazine	VSD 탄창
 SS Magazine	SS 탄창
+Ammo	탄약
+Attachment	부착물
+Hybrid	하이브리드
+Kobra	코브라
+Leopard	레오파드
+Micro	마이크로
+Monster	몬스터
+Thor	토르
 New Furniture Added [Catalog]	새 가구 추가됨 [카탈로그]
 Boss Killed	보스 처치됨
 Cat Rescued	고양이 구조됨
