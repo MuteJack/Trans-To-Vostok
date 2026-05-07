@@ -19,6 +19,9 @@ Behavior:
     - Atomic write per file (.tmp + rename)
     - Stale TSVs (sheets that no longer exist in xlsx) are removed from output
     - Excel temp files ("~$..." lock files) are skipped
+    - `_sheet_order.txt` is written alongside the per-sheet TSVs, listing
+      the sheets in their original xlsx order (one name per line). This
+      lets downstream tools (e.g. TSV -> xlsx rebuild) preserve sheet order.
 
 Usage:
     python tools/utils/build_translation_tsv.py             # all locales
@@ -110,6 +113,23 @@ def export_xlsx(xlsx_path: Path, out_dir: Path) -> tuple[int, int]:
                     print(f"    x removed stale: {stale.name}")
                 except OSError as e:
                     print(f"    [WARN] Failed to remove stale: {stale.name} ({e})")
+
+        # write sheet-order metadata so TSV -> xlsx rebuild preserves order
+        order_path = out_dir / "_sheet_order.txt"
+        order_tmp = order_path.with_suffix(order_path.suffix + ".tmp")
+        try:
+            with open(order_tmp, "w", encoding="utf-8", newline="\n") as f:
+                for name in wb.sheetnames:
+                    f.write(name + "\n")
+            order_tmp.replace(order_path)
+            print(f"    -> _sheet_order.txt ({len(wb.sheetnames)} sheets)")
+        except Exception:
+            if order_tmp.exists():
+                try:
+                    order_tmp.unlink()
+                except OSError:
+                    pass
+            raise
 
         return sheet_count, total_rows
     finally:

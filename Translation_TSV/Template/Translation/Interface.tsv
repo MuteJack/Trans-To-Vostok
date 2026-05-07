@@ -1,0 +1,653 @@
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	
+HUD	HUD	Name	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health			
+HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100			
+HUD	HUD	Name	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy			
+HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100			
+HUD	HUD	Name	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration			
+HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100			
+HUD	HUD	Name	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental			
+HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100			
+HUD	HUD	Name	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp			
+HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100			
+HUD	HUD	Name	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen			
+HUD	HUD	Name	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:			
+HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			
+HUD	HUD	String	0	0	0	0		literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction			
+HUD	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Magazine/Panel	Count	Label	text	1565790634	0			
+HUD	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Chamber/Panel	Count	Label	text	343236737	0			
+HUD	Weapon	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Add	Label	text	1516803336	[MMB] = Add to Catalog			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Catalog	Label	text	945705906	[TAB] = Furniture Catalog			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Close	Label	text	299252101	[F1] = Close Decor Mode			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements/Header	Label	Label	text	865843283	Decor Mode			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Place	Label	text	1770403458	[G] = Place Furniture			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Scroll	Label	text	431027796	[SCROLL] = Adjust / Rotate			
+HUD	Decoration	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Magnet	Label	text	813263933	[LMB] = Surface Magnet			
+HUD	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements/Header	Label	Label	text	1550753811	Item Placement			
+HUD	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Place	Label	text	652634587	[G] = Grab / Drop Item			
+HUD	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Scroll	Label	text	734941771	[SCROLL] = Adjust / Rotate			
+HUD	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Switch	Label	text	1302393483	[RMB] = Rotation Mode			
+HUD	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Orientation	Label	text	14073674	[MMB] = Change Orientation			
+HUD	Map	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)			
+Transition	Scene	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Destination	Label	text	1760777710	Village			
+Transition	Scene	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Zone	Label	text	1044890688	Area 05			
+Transition	Scene	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Time	Value	Label	text	1758081540	+4h			
+Transition	Scene	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Energy	Value	Label	text	1436272038	-8			
+Transition	Scene	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Hydration	Value	Label	text	1947628226	-16			
+Transition	Scene	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Details	Hint	Label	text	958640207	Demo transition: Skips 2-3 maps		Deprecated String. Maybe only for DEMO Version.	
+Inventory	Inventory	Name	0	0	0	0	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory			
+Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			
+Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			
+Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000			
+Inventory	#Not Checked	Name	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container			
+Inventory	#Not Checked	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0			
+Inventory	#Not Checked	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000			
+Inventory	Equipment	Name	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment			
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg			
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000			
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100			
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A			
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A			
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A			
+Inventory	Equipment	String	0	0	0	0	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary		Inventory Slot for Primary Weapon	
+Inventory	Equipment	String	0	0	0	0	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary		Inventory Slot for Secondory Weapon	
+Inventory	Equipment	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife		Inventory Slot for Knife	
+Inventory	Equipment	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade		Inventory Slot for Grenade1	
+Inventory	Equipment	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade		Inventory Slot for Grenade2	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack		Inventory Slot for Backpack	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig		Inventory Slot for Rig(Vest)	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet		Inventory Slot for Helmet	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head		Inventory Slot for Hat/Cap	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso		Inventory Slot for Jacket	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs		Inventory Slot for Pants	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt		Inventory Slot for Belt	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet		Inventory Slot for Shoes	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands		Inventory Slot for Gloves	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches		Inventory Slot for Matches(lighter)	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light		Inventory Slot for FlashLight	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG		Inventory Slot for Night Vision Goggle (NVG)	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time		Inventory Slot for Clock(Time)	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map		Inventory Slot for Map	
+Inventory	Equipment	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player		"Inventory Slot for Carest/MP3 ""Player"""	
+Inventory	Vitals	Dictionary	0	0	0	0	0	substr									Vital		allow conflict	
+Inventory	Vitals	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character			
+Inventory	Vitals	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health		Player's Status about Health Point (HP)	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100			
+Inventory	Vitals	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy		Player's Status about Energy	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100			
+Inventory	Vitals	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration		Player's Status about Hydration (Water)	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100			
+Inventory	Vitals	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental		Player's Status about Mental	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100			
+Inventory	Vitals	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp		Player's Status about Body Temparature	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100			
+Inventory	Vitals	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat		Cat's Status	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100			
+Inventory	Stats	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day		Number of days the player survived	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00			
+Inventory	Stats	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters		Number of Shelters that unlocked	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00			
+Inventory	Stats	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks		Number of Tasks that cleared	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00			
+Inventory	Stats	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests		Number of Quests that cleard	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00			
+Inventory	Stats	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS		Number of Civil Defence Shelters (Not Updated yet)	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00			
+Inventory	Stats	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?		Wating for Update	
+Inventory	Stats	Number	0	0	0	0	1	ignore									?		Wating for Update	
+Inventory	Tools	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools			
+Inventory	Tools	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events			
+Inventory	Tools	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting			
+Inventory	Tools/Crafting	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity			
+Inventory	Tools/Task Note	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes			
+Inventory	Tools/Task Note	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty		"Task Note will only display this Strings when there's any task added in the Task Note.
+It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
+Inventory	Tools/Task Note	String	0	0	0	0	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)		"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
+Dynamically changed by Scripts/Interface.gd: notesHint.text"	
+			0	0	0	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty			
+			0	0	0	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)			
+Inventory	Tools/Map	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map			
+Inventory	Tools/Map	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped			
+Inventory	Tools/Map	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)			
+			0	0	0	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped			
+			0	0	0	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)			
+Inventory	Tools/Map	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
+Zoom = [SCROLL]"			
+Inventory	Tools/Map	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map		Focuse the Map to Player's Location	
+Inventory	Tools/Casette	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player			
+Inventory	Tools/Casette	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped			
+			0	0	0	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped			
+			0	0	0	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player			
+			0	0	0	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette			
+Inventory	Tools/Casette	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)			
+Inventory	Tools/Casette	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name			
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%			
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪			
+Inventory	Tools/Casette	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]		Casette will Overide the Ambient Music when it's ON	
+Inventory	Tools/Casette	Button	0	0	0	0	0	literal			UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button			Override Ambient Music [OFF]		"Casette will Overide the Ambient Music when it's ON.
+Dynamically changed by Scripts/Audio.gd"	
+			0	0	0	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]			
+			0	0	0	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]			
+Inventory	Tools	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads			
+Traders	Traders	Title	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader			
+Traders	Traders	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply			
+Traders	Traders	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks			
+Traders	Traders	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:			
+Traders	Traders	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Name	Value	Label	text	191837597	Trader		"Dynamically Changed as Traders/{name}/{name}.tres file's name field
+by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"	
+Traders	Traders/Stat	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:			
+Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%			
+Traders	Traders/Stat	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:			
+Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10			
+Traders	Traders/Stat	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:			
+Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00			
+Traders	Deal	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal			
+Traders	Deal	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)			
+Traders	Deal	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0			
+Traders	Deal	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)			
+Traders	Deal	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0			
+Traders	Deal	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset			
+Traders	Deal	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept			
+Traders	Supply	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply			
+Traders	Supply	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000			
+Traders	Tasks	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks			
+Inventory	Furniture Catalog	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog			
+Inventory	Furniture Catalog	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
+"			
+Inventory	Item/Equipments	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
+"			
+Inventory	Item/Equipments	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
+"			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
+"			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
+"			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
+"			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
+"			
+	Item	Button	0	0	0	0	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
+"			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
+"			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
+"			
+Inventory	Item	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
+"			
+Inventory	Item/Weapon/Attachment	Button	0	0	0	0	0	pattern									Remove {name}			
+Inventory	Item/Weapon/Attachment	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
+"			
+Inventory	Item/Weapon/Attachment	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
+"			
+Inventory	Item/Weapon/Attachment	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
+"			
+Inventory	Item/Weapon/Attachment	Button	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
+"			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:			
+Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:			
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:			
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:			
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:			
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1			
+Inventory	Item	String	0	0	0	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 2			
+Inventory	Item	String	0	0	0	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 3			
+Inventory	Item	String	0	0	0	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 4			
+Inventory	Item	String	0	0	0	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 5			
+Inventory	Item	String	0	0	0	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label		1220649414	Protection:			
+Inventory	Item	String	0	0	0	0	0	pattern									Level {no}			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1			
+Inventory	Item	String	0	0	0	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 2			
+Inventory	Item	String	0	0	0	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 3			
+Inventory	Item	String	0	0	0	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 4			
+Inventory	Item	String	0	0	0	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 5			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:			
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:			
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:			
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:			
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:			
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:			
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10			
+Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:			
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:			
+Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:			
+Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG			
+HUD	Fire	String	0	0	0	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]			
+HUD	Fire	String	0	0	0	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]			
+HUD	Fire	String	0	0	0	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		93	Fire [Extinguish]			
+Inventory	Tools/Craft	String	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required			
+Inventory	Tools/Craft	String	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required			
+Inventory	Tools/Craft	String	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required			
+Inventory	Tools/Craft	String	0	0	0	0	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item			
+Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%			
+Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1			
+Inventory	#Not Checked	String	0	0	0	0	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler		Developer Only	
+Inventory	Tools/Craft	Button	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show			
+Inventory	Tools/Craft	String	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name			
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00			
+Inventory	Tools/Craft	String	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:			
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item		PlaceHolder	
+Inventory	Tools/Craft	String	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:			
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item		PlaceHolder	
+Inventory	Tools/Craft	Button	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input			
+Inventory	Tools/Craft	Button	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input			
+Inventory	Tools/Craft	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input			
+Inventory	Tools/Craft	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input			
+Inventory	Tools/Craft	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input			
+Inventory	Tools/Craft	Button	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input			
+Inventory	Tools/Craft	Button	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input			
+Inventory	Tools/Craft	Button	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft			
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls		PlaceHolder	
+Inventory	Task	Button	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes			
+Inventory	Task	Button	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove			
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:			
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy			
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Description	Label	text	1563024386	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."			
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:			
+Inventory	Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item		PlaceHolder	
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:			
+Inventory	Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item		PlaceHolder	
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"			
+Inventory	Task	Button	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery			
+Inventory	Task	Button	0	0	0	0	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery			
+Inventory	Task	Button	0	0	0	0	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery			
+Inventory	Task	Button	0	0	0	0	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery			
+Inventory	Task	Button	0	0	0	0	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery			
+Inventory	Task	Button	0	0	0	0	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered			
+Inventory	Task	Button	0	0	0	0	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered			
+Inventory	Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete			
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶			
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen			
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		info	825286726	"A weight capacity value (kg) of how much inventory weight you can carry.
+
+Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
+
+Carry Capacity by default is 10kg"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		info	1800952039	"A clothing-based thermal protection value against cold.
+
+Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
+
+Insulation increases when you equip clothing items with a positive insulation stat.
+
+Insulation examples:
+[100] = B. Temp decrease fully stopped
+[50] = B. Temp decrease slowed by 50%
+[0] = B. Temp decreases at default rate"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		info	550854834	"An inertia-based value of how quickly you can move and do certain actions.
+
+Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
+
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		info	1925451931	"An intimidation value of how threatening AI sees your character and equipment.
+
+When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
+
+Menace increases when you equip items such as special clothing with a positive Menace stat.
+
+Menace only affects low-tier AI (Bandits)."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN			
+Inventory	Stats	String	0	0	0	0	0	substr									CBRN			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		info	215856199	"A protection value against chemical, biological, radiological and nuclear threats.
+
+CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
+
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		info	2025955860	"Your main vital for staying alive.
+
+Health decreases with damages and active medical conditions.
+
+Health increases with certain medical items such as Bandages and Medkits.
+
+Health [0] -> Character dies"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		info	256184	"Your hunger and energy level.
+
+Energy decreases over time and using map transitions with Energy Cost.
+
+Energy increases with certain consumables such as food.
+
+Energy [0] -> Starvation (Condition)"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		info	1778216863	"Your thirst and hydration level.
+
+Hydration decreases over time and using map transitions with Hydration Cost. 
+
+Certain dry or salty consumables may also decrease Hydration.
+
+Hydration increases with certain consumables such as drinks.
+
+Hydration [0] -> Dehydration (Condition)"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		info	1524485513	"Your happiness and sanity level.
+
+Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
+
+Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
+
+Mental [0] -> Insanity (Condition)"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
+
+Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
+
+Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
+
+Body Temp [0] -> Frostbite (Condition)"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		info	2119249152	"Grandma's cat health level.
+
+Cat health activates if you decide to rescue the Cat and bring her to your shelter.
+
+Cat health decreases over time.
+
+Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
+
+Cat [0] -> Cat dies"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital			
+Inventory	Stats	String	0	0	0	0	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		info	1472180750	"A condition where you are carrying too much weight and movement becomes unsustainable.
+
+Causes:
+- Inventory Weight > Carry Capacity
+
+Symptoms
+- All stamina consumption [+50%]
+- All stamina regeneration [Blocked]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures:
+- Inventory Weight < Carry Capacity"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		info	1549426522	"A condition where you have a lack of calories and essential nutrients.
+
+Causes:
+- Energy [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- Stamina consumption [+50%]
+- Stamina regeneration [-50%]
+
+Cures:
+- Consumables"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		info	986386791	"A condition where your body doesn't have enough fluids to function normally.
+
+Causes:
+- Hydration [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- All stamina consumption [+50%]
+- All stamina regeneration [-50%]
+
+Cures:
+- Consumables"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		info	1768354194	"A condion where you have a minor bleeding from small cuts or scrapes.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+- Razor wire
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures: 
+- Bandage
+- Tourniquet
+- Medkit
+- IFAK / AFAK"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		info	139365606	"A condition where you have a partial or complete break in the bone.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures: 
+- Splint
+- Medkit
+- IFAK / AFAK"			
+Inventory	Stats	String	0	0	0	0	0	substr									Explosion			
+Inventory	Stats	String	0	0	0	0	0	substr									Fall			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		info	275854551	"A condition where you have a tissue damage from intense heat or high-voltage electric current.
+
+Causes:
+- Fire damage
+- Electrical damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Balm
+- Lotion
+- Medkit
+- IFAK / AFAK"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		info	24250462	"A condition where you have hypothermia or body part freezes from cold exposure.
+
+Causes: 
+- Body temperature [0]
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Fire sources
+- Sleeping Bag
+- Thermal Blanket"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		info	1233339607	"A condition where your sanity breaks and you start having dark thoughts.
+
+Causes: 
+- Mental [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+
+Cures:
+- Consumables
+- Sleeping
+- Fire sources
+- Instruments"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		info	379297031	"A condition where toxic substance entered your digestion or lungs.
+
+Causes:
+- Chemical damage
+- Toxic consumables
+
+Symptoms:
+- Health [-1 unit / 2 sec]
+
+Cures:
+- Medkit
+- AFAK"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		info	71304217	"A critical condition where you have a catastrofal bleeding or major internal wound.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		info	1309688651	"A critical condition where you have a major head related wound.
+
+Causes: 
+- Weapon damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day			
+Inventory	Stats	String	0	0	0	0	0	substr									Day			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		info	1507600508	"Number of Days survived.
+
+New day begins at 00:00 midnight and certain amount of days will unlock new game events.
+
+Upcoming events can be displayed by using the Events tool."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		info	821447952	"Number of Shelters unlocked.
+
+Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
+
+New game starts with two unlocked Shelters called Cabin and Tent.
+
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		info	1384285326	"Number of Tasks completed.
+
+Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
+
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		info	1702334479	"Number of Quests completed.
+
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		info	2004804582	"Number of CDS completed.
+
+Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
+
+After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
+
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night			
+Inventory	Stats	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		info	1661761957	"There will be a silent night when all fades away.
+
+When you look up, you see the North Star, your only light in the darkness.
+
+This light reminds you of home, a place where you came from and where you will return.
+
+You feel safe, a peaceful moment that feels like the ending you wanted.
+
+Then your last light disappears, the sky turns red and the silence breaks."			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench		I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.		I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement		I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement			
+Inventory	Tools/Crafting	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		info	844527464	"A friendly NPC with trading supply, tasks and specialized services.
+
+Name: Commonly known name among locals.
+Tax: Price multiplier for supply items.
+Tasks: Number of completed tasks.
+Resupply: Time when supply resets."			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		info	1021981031	"A deal balance meter which compares selected item values.
+
+Requsted Value (€) is calculated from selected Supply items with Tax added.
+
+Offer Value (€) is calculated from selected Inventory items.
+
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."			
+Inventory	Trader	String	0	0	0	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter			
