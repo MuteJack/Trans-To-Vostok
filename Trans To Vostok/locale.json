@@ -23,6 +23,14 @@
       "message": "Sélectionnez une langue",
       "substr_mode_label": "Mode Substr (non recommandé — pour textes non traduits après une MAJ du jeu)",
       "enabled": true
+    },
+    {
+      "locale": "Portuguese",
+      "dir": "Portuguese_BR",
+      "display": "Português",
+      "message": "SSelecione um idioma (Brasil)",
+      "substr_mode_label": "Modo Substr (não recomendado — ative apenas se muitos textos não forem traduzidos após uma atualização do jogo)",
+      "enabled": true
     }
   ]
 }

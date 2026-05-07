@@ -1,0 +1,1158 @@
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
+Main_Menu	/	Game Title	0	0	0	0	0	ignore									Road to Vostok	Road to Vostok	Subtitle(?) of the Game, that Displayed on Main Menu
+Main_Menu	/	Game Subtitle	0	0	0	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access	Early Access	Subtitle(?) of the Game, that Displayed on Main Menu
+Main_Menu	Compatibility		0	0	1	0	0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	Compatibilidade	Text that notice user is running the game as 'Compatibility Mode'
+Main_Menu	Compatibility		0	0	1	0	0	substr									Compatibility	Compatibilidade	
+Main_Menu	Compatibility		0	0	1	0	0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility	Compatibilidade	
+Main_Menu	Compatibility		0	0	1	0	0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility	Compatibilidade	
+Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	Novo jogo	
+Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	Carregar jogo	
+Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	Tutorial	
+Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
+"	"Configurações
+"	
+Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
+"	"Roteiro
+"	
+Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
+"	"Sobre
+"	
+Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
+"	"Sair
+"	
+Main_Menu	ChangeLog	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	Registro de alterações	
+Main_Menu	ChangeLog	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
+"	"Desligado
+"	
+Main_Menu	ChangeLog	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
+"	"Em
+"	
+Main_Menu	Hardware Check	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	Verificação de hardware	
+Main_Menu	Hardware Check	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
+"	"Desligado
+"	
+Main_Menu	Hardware Check	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
+"	"Em
+"	
+Main_Menu	Watch Intro	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	Assista à introdução	
+Main_Menu	Watch Intro	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
+"	"Desligado
+"	
+Main_Menu	Watch Intro	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
+"	"Em
+"	
+Main_Menu	Menu Music	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	Menu Música	
+Main_Menu	Menu Music	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
+"	"Desligado
+"	
+Main_Menu	Menu Music	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
+"	"Em
+"	
+Main_Menu	Bottom	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	Road to Vostok ® é uma marca registrada da Road to Vostok Ltd. Todos os direitos reservados © 2026	
+Main_Menu	Bottom	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	Versão: 0.1.1.3	"Will not use pattern matching. 
+It will act as the ""canaria (bird)"" for the outdated translation."
+Main_Menu	ChangeLog	UI_Label	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	Registro de alterações	
+Main_Menu	ChangeLog	Scrollable String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
+Early Access [0.1.0.0] -> Early Access [0.1.1.3]
+----------------------------------------
+Build name: Road - Build 1
+Build version: 0.1.1.3
+Build type: Release
+----------------------------------------
+Hotfix [0.1.1.3]
+[FIXED] Context actions could cause death when closing Interface at the same frame (Context Use)
+[FIXED] Context actions could corrupt items when closing Interface at the same frame (Context Unload)
+[FIXED] Context actions could corrupt furniture when closing Interface at the same frame (Context Place)
+----------------------------------------
+[ADDED] Compatibility launch option for hardware issues
+[ADDED] Increased buffer memory for GPU stalls/timeouts
+[ADDED] CPU-load distribution when loading into a map
+[ADDED] Engine version switched to Godot 4.6.2 for stability
+[ADDED] Added SMAA anti-aliasing option (Settings)
+[ADDED] Reworked image sharpness shader for stability (Settings)
+[ADDED] Furniture destroy uses safeguard (LMB hold) for misclicks
+[ADDED] Airdrops use green chemlights for night time visibility
+[ADDED] Airdrops now support variable loot tables [x3]
+[ADDED] Punisher now support variable loot tables [x3]
+[ADDED] Punisher loot tables improved with more items
+[ADDED] Killed AI corpse loot possibility increased [25%->75%]
+[ADDED] Additional industrial loot spawns [Oil Filter]
+[ADDED] Terminal has more special crates and loot spawns
+[ADDED] Special crates can also spawn Legendary items
+[ADDED] New item: Chewing Gum
+----------------------------------------
+[FIXED] Flickering lights/shadows in shelters and trader areas
+[FIXED] Active context menu could freeze when closing the Interface
+[FIXED] Frozen context menu could lead to corrupted/floating items
+[FIXED] Shelter item return while using items could cause death
+[FIXED] Cartridges during ammo check were glowing in low lighting
+[FIXED] AI could navigate/attack through airdrop colliders
+[FIXED] AI could navigate/attack through heli crash colliders
+[FIXED] AI could get stuck on heli crash colliders
+[FIXED] Blocked Highway tunnel could be exploited without a key
+[FIXED] Darkness/Ironman random spawn teleported to transition (School/Highway)
+[FIXED] AI firing accuracy inconsistency and miscalculations
+[FIXED] Controller could get stuck on Village building (toilet door)
+[FIXED] Controller could get stuck on Village tractor (barn)
+[FIXED] Controller could get stuck on Village garage (cardboard boxes)
+[FIXED] Controller could get stuck on School building (trader table)
+[FIXED] Controller could get stuck on School building (multiple chairs)
+[FIXED] Controller could get stuck on Highway market (shelf gaps)
+[FIXED] Controller could get stuck on Highway market (shopping carts)
+[FIXED] Controller could get stuck on Apartments staircases (corpse head)
+[FIXED] Controller could get stuck on Terminal ramps (trainyard area)
+[FIXED] Military BTR could stuck driving in circles at fast speed
+[FIXED] Improvised splint didn't heal Fracture condition
+[FIXED] Doctor sold own task items [Antiseptic]
+[FIXED] Gunsmith sold own task items [Skrama 200]
+[FIXED] MSAA 8x option didn't save to preferences
+[FIXED] Tutorial crates didn't contain M78 magazines
+----------------------------------------
+[CHANGED] Critical medical condition [Rupture] possibility lowered [5%->3%]
+[CHANGED] Critical medical condition [Headshot] possibility lowered [5%->3%]
+[CHANGED] Character hydration decrease speed slowed by [10%]
+[CHANGED] Character mental decrease speed slowed by [10%]
+[CHANGED] Cat vital decrease speed slowed by [20%]
+[CHANGED] Cat meows and makes noises less often
+[CHANGED] Trader (Start/End/Idle) voices activate less often
+[CHANGED] Render resolution options changed to Low/Native (less confusion)
+[CHANGED] Fallen items drop front of the player vs. inventory (Shelter)
+----------------------------------------
+[REMOVED] All third-party/obsolete AMD FSR references for stability
+----------------------------------------"	"Foram feitas as seguintes alterações:
+Acesso Antecipado [0.1.0.0] -> Acesso Antecipado [0.1.1.3]
+----------------------------------------
+Nome da compilação: Road - Compilação 1
+Versão da compilação: 0.1.1.3
+Tipo de compilação: Lançamento
+----------------------------------------
+Correção [0.1.1.3]
+[CORRIGIDO] As ações de contexto podiam causar a morte ao fechar a interface no mesmo quadro (Uso de Contexto)
+[CORRIGIDO] Ações de contexto podiam corromper itens ao fechar a interface no mesmo quadro (Descarregar Contexto)
+[CORRIGIDO] Ações de contexto podiam corromper móveis ao fechar a interface no mesmo quadro (Colocar Contexto)
+----------------------------------------
+[ADICIONADO] Opção de inicialização de compatibilidade para problemas de hardware
+[ADICIONADO] Aumento da memória de buffer para travamentos/timeouts da GPU
+[ADICIONADO] Distribuição da carga da CPU ao carregar em um mapa
+[ADICIONADO] Versão do motor alterada para Godot 4.6.2 para maior estabilidade
+[ADICIONADO] Adicionada opção de anti-aliasing SMAA (Configurações)
+[ADICIONADO] Shader de nitidez de imagem reformulado para maior estabilidade (Configurações)
+[ADICIONADO] A destruição de móveis usa proteção (manter LMB pressionado) contra cliques acidentais
+[ADICIONADO] Os lançamentos aéreos usam luzes químicas verdes para visibilidade noturna
+[ADICIONADO] Os lançamentos aéreos agora suportam tabelas de saque variáveis [x3]
+[ADICIONADO] O Punisher agora suporta tabelas de saque variáveis [x3]
+[ADICIONADO] Tabelas de saque do Punisher melhoradas com mais itens
+[ADICIONADO] Aumentada a chance de saque de cadáveres de IA mortos [25%->75%]
+[ADICIONADO] Geradas itens de saque industriais adicionais [Filtro de Óleo]
+[ADICIONADO] O Terminal tem mais caixas especiais e geras de saque
+[ADICIONADO] Caixas especiais também podem gerar itens Lendários
+[ADICIONADO] Novo item: Chiclete
+----------------------------------------
+[CORRIGIDO] Luzes/sombras piscando em abrigos e áreas de comerciantes
+[CORRIGIDO] O menu de contexto ativo podia travar ao fechar a interface
+[CORRIGIDO] O menu de contexto travado podia causar itens corrompidos/flutuantes
+[CORRIGIDO] A devolução de itens do abrigo durante o uso de itens podia causar a morte
+[CORRIGIDO] Os cartuchos durante a verificação de munição brilhavam em condições de pouca iluminação
+[CORRIGIDO] A IA podia navegar/atacar através de coliders de lançamento aéreo
+[CORRIGIDO] A IA podia navegar/atacar através de coliders de acidente de helicóptero
+[CORRIGIDO] A IA podia ficar presa em coliders de acidente de helicóptero
+[CORRIGIDO] O túnel bloqueado da rodovia podia ser explorado sem uma chave
+[CORRIGIDO] O spawn aleatório do modo Darkness/Ironman era teletransportado para a transição (Escola/Rodovia)
+[CORRIGIDO] Inconsistência na precisão de tiro da IA e erros de cálculo
+[CORRIGIDO] O controle podia ficar preso no prédio da Vila (porta do banheiro)
+[CORRIGIDO] O controle podia ficar preso no trator da Vila (celeiro)
+[CORRIGIDO] O controle podia ficar preso na garagem da Vila (caixas de papelão)
+[CORRIGIDO] O controle podia ficar preso no prédio da Escola (mesa do comerciante)
+[CORRIGIDO] O controle podia ficar preso no prédio da Escola (várias cadeiras)
+[CORRIGIDO] O controle podia ficar preso no mercado da Rodovia (espaços entre prateleiras)
+[CORRIGIDO] O controle podia ficar preso no mercado da Rodovia (carrinhos de compras)
+[CORRIGIDO] O controle podia ficar preso nas escadas dos apartamentos (cabeça de cadáver)
+[CORRIGIDO] O controle podia ficar preso nas rampas do terminal (área do pátio ferroviário)
+[CORRIGIDO] O BTR militar podia ficar preso dirigindo em círculos em alta velocidade
+[CORRIGIDO] A tala improvisada não curava a condição de fratura
+[CORRIGIDO] O médico vendia itens de tarefas próprias [Antisséptico]
+[CORRIGIDO] O armeiro vendia itens de tarefa próprios [Skrama 200]
+[CORRIGIDO] A opção MSAA 8x não era salva nas preferências
+[CORRIGIDO] As caixas do tutorial não continham carregadores de M78
+----------------------------------------
+[ALTERADO] Probabilidade da condição médica crítica [Ruptura] reduzida [5%->3%]
+[ALTERADO] Probabilidade da condição médica crítica [Tiro na cabeça] reduzida [5%->3%]
+[ALTERADO] Velocidade de diminuição da hidratação do personagem reduzida em [10%]
+[ALTERADO] Velocidade de diminuição da sanidade mental do personagem reduzida em [10%]
+[ALTERADO] A velocidade de diminuição dos sinais vitais do gato foi reduzida em [20%]
+[ALTERADO] O gato mia e faz barulhos com menos frequência
+[ALTERADO] As vozes do comerciante (Início/Fim/Inatividade) são ativadas com menos frequência
+[ALTERADO] As opções de resolução de renderização foram alteradas para Baixa/Nativa (menos confusão)
+[ALTERADO] Itens caídos agora aparecem na frente do jogador em vez de no inventário (Abrigo)
+----------------------------------------
+[REMOVIDO] Todas as referências a AMD FSR de terceiros/obsoletas para garantir a estabilidade
+----------------------------------------"	
+Main_Menu	ChangeLog	Scrollable String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
+Demo [0.0.1.0] -> Early Access [0.1.0.0]
+----------------------------------------
+Build name: Road - Build 1
+Build version: 0.1.0.0
+Build type: Release
+----------------------------------------
+[ADDED] Event system
+[ADDED] Multi-shelter support
+[ADDED] Keys and locked doors
+[ADDED] PIP-scopes and scope options
+[ADDED] Native DirectX support
+[ADDED] Native shader caching
+[ADDED] Tools UI (Interface)
+[ADDED] Event calendar (Tools)
+[ADDED] Crafting menu (Tools)
+[ADDED] Task notes (Tools)
+[ADDED] World map (Tools)
+[ADDED] Casette player (Tools)
+[ADDED] New game mode: Darkness
+[ADDED] New game mode: Ironman
+[ADDED] New map: School (Area 05)
+[ADDED] New map: Highway (Area 05)
+[ADDED] New map: Outpost (Area 05)
+[ADDED] New map: Terminal (Vostok)
+[ADDED] New shelter: Attic
+[ADDED] New shelter: Bunker
+[ADDED] New shelter: Tent
+[ADDED] New shelter: Classroom
+[ADDED] New trader: Doctor
+[ADDED] New trader: Gunsmith
+[ADDED] New boss: Punisher
+[ADDED] New character: Cat
+[ADDED] New event: Trader Return
+[ADDED] New event: Fighter Jets
+[ADDED] New event: Missing Cat
+[ADDED] New event: Bandit Boss
+[ADDED] New event: Airdrops
+[ADDED] New event: BTR
+[ADDED] New event: Attack Helicopters
+[ADDED] New event: Crash Sites
+[ADDED] New event: Outpost Compromised
+[ADDED] New event: Trader Escape
+[ADDED] New event: Transmission
+[ADDED] New task: Prime Time
+[ADDED] New task: Coffee Reserve
+[ADDED] New task: Sweaty Business
+[ADDED] New task: Homemade
+[ADDED] New task: Nasty Draft
+[ADDED] New task: Steady Hands
+[ADDED] New task: Bookworm
+[ADDED] New task: Dice Master
+[ADDED] New task: Night Surgery
+[ADDED] New task: Infections
+[ADDED] New task: Hypovolemia
+[ADDED] New task: Mouth Organ
+[ADDED] New task: Patient Report
+[ADDED] New task: Substance
+[ADDED] New task: Bloodsuckers
+[ADDED] New task: Warm Meal
+[ADDED] New task: Nordic Trade
+[ADDED] New task: Big Blades
+[ADDED] New task: Ammo Delivery
+[ADDED] New task: Weapon Delivery
+[ADDED] New task: Medic
+[ADDED] New task: Home Collection
+[ADDED] New task: Everyman's Rights
+[ADDED] New task: Hitman
+[ADDED] New weapon: RK-62
+[ADDED] New weapon: RK-62M
+[ADDED] New weapon: M4A1
+[ADDED] New weapon: K416
+[ADDED] New weapon: P3
+[ADDED] New attachment: AN-15
+[ADDED] New item: KAR-21 Barrel
+[ADDED] New item: Flame Beanie
+[ADDED] New item: M62 Cap
+[ADDED] New item: Water Bottle
+[ADDED] New item: AFAK
+[ADDED] New item: Thermal Blanket
+[ADDED] New item: Saline
+[ADDED] New item: Antiseptic
+[ADDED] New item: Wipes
+[ADDED] New item: Tissues
+[ADDED] New item: Deodorant
+[ADDED] New item: Map
+[ADDED] New item: Map (Tactical)
+[ADDED] New item: Weapon Repair Kit
+[ADDED] New item: Tackle Box
+[ADDED] New item: Oil Filter
+[ADDED] New item: Coffee Filters
+[ADDED] New item: Water Lock
+[ADDED] New item: Lumber
+[ADDED] New item: Pillow
+[ADDED] New item: Blanket
+[ADDED] New item: Sticks
+[ADDED] New item: Rags
+[ADDED] New item: Casette (OST)
+[ADDED] New item: Casette (Electrofolk)
+[ADDED] New item: Casette (Symphony)
+[ADDED] New item: Casette (Radio Hits)
+[ADDED] New item: Attic Key
+[ADDED] New item: Bunker Key
+[ADDED] New item: Classroom Key
+[ADDED] New item: Cellar Key
+[ADDED] New item: Gymnasium Key
+[ADDED] New item: Tunnel Key
+[ADDED] New furniture: Pallet
+[ADDED] New furniture: Television
+[ADDED] New furniture: Metal Shelf
+[ADDED] New furniture: Target Stand
+[ADDED] New furniture: Sign (Border Zone)
+[ADDED] New furniture: Poster (Posture)
+[ADDED] New furniture: Trolley (Small)
+[ADDED] New furniture: Trolley (Tall)
+[ADDED] New furniture: Chair (School)
+[ADDED] New furniture: Cabinet (Office)
+[ADDED] New furniture: Desk (Office)
+[ADDED] New recipe: Energy Drink
+[ADDED] New recipe: Brewed Coffee
+[ADDED] New recipe: Cooked Pea Soup
+[ADDED] New recipe: Cooked Tomato Soup
+[ADDED] New recipe: Cooked Fish Soup
+[ADDED] New recipe: Cooked Meatballs
+[ADDED] New recipe: Kompot
+[ADDED] New recipe: Kilju
+[ADDED] New recipe: Improvised Bandage
+[ADDED] New recipe: Improvised Tourniquet
+[ADDED] New recipe: Improvised Splint
+[ADDED] New recipe: Weapon Repair
+[ADDED] New recipe: KAR-21 Upgrade
+[ADDED] New recipe: Cooking Station
+[ADDED] New recipe: Civilian Bed
+[ADDED] New recipe: Nomad Bed
+[ADDED] Lore-based game intro when starting a new game
+[ADDED] High-DPI font rendering for 4K/Retina displays
+[ADDED] Extra map border areas to prevent seeing visible map edges
+[ADDED] Different traders have varying base tax levels [100-300%]
+[ADDED] Firing weapons will reduce weapon condition over time
+[ADDED] Low weapon condition can now cause malfunctions
+[ADDED] Weapons can be repaired with Weapon Repair Kit (Crafting)
+[ADDED] Modular magazine support (STANAG) for M4A1 / KM18 / K416
+[ADDED] Modular magazine support (RK) for RK-95 / RK-62 / RK-62M
+[ADDED] AI Hotspots where AI will react to events like Airdrops
+[ADDED] AI can now patrol in Apartment rooms (not just staircases)
+[ADDED] AI Helicopter can now fire rockets at certain scenarios
+[ADDED] AI death sounds will end immediately with ""out of misery"" headshot
+[ADDED] Mines now use runtime spawning and are randomly spawned for each map instance
+[ADDED] Mines can now spawn also directly to map border and slightly beyond
+[ADDED] Liquid-based items can now freeze (Winter)
+[ADDED] Going into water boosts item freezing (Winter)
+[ADDED] Frozen items can be melted with heat sources or shelters (Winter)
+[ADDED] Traders don't accept malfunctioned or frozen items
+[ADDED] Crafting recipes don't accept malfunctioned or frozen items
+[ADDED] Playing music instruments slowly increases Mental over time
+[ADDED] Sleeping now consumes both energy and hydration [-20]
+[ADDED] Sleeping now increases mental [+20]
+[ADDED] Sleeping bags increases Body Temp [+50]
+[ADDED] Blankets, Pillows and Melatonin can now also be used for sleeping
+[ADDED] Using sleeping items other than sleeping bags outside decreases Body Temp [-100] (Winter)
+[ADDED] Outdoor fire sources like firepots can be used for heat based crafting
+[ADDED] Crafting supports reusable tools which are not consumed by recipes
+[ADDED] Separated tutorial tasks which also cover crafting and furniture items
+[ADDED] Furnitures now supports stacking and placing furniture on top each other
+[ADDED] Furnitures now supports magnet mode (Surface Magnet) for snapping to surfaces
+[ADDED] Loot simulations and containers can now use ""Industrial"" spawn types and locations
+[ADDED] Radio audio is now using high-pass filter and more distorted sound
+[ADDED] Changelog and hardware check buttons are added to the main menu
+[ADDED] 3D door handles and interaction handle animations
+[ADDED] If player falls through terrain, fallback system returns player back to the game world
+[ADDED] If item falls through terrain, fallback system prevents item taking CPU resources
+[ADDED] If item falls through shelter, fallback system spawns item directly to inventory
+----------------------------------------
+[FIXED] Ammo check UI frozed when going into water while performing ammo check
+[FIXED] Matches value calculation was not amount-based and could be exploited
+[FIXED] Reloading while loading ammo could cause ammo duplication and exceed ammo limits
+[FIXED] Full item stacks could cause duplication when using fast transfer
+[FIXED] Full item stacks could cause duplication when using context transfer
+[FIXED] Swithing from Trader Tasks to Supply during item delivery kept items selected
+[FIXED] Double clicking Trader Tasks during item delivery kept items selected
+[FIXED] Tetris-grids could cause ghost items and errors at certain screen resolutions
+[FIXED] Simulation time could get stuck 00:00 on certain hardware during loading
+[FIXED] Simulation season could reset from winter to summer on certain hardware during loading
+[FIXED] Equipping weapon directly after grenade throw unequipped the weapon
+[FIXED] Equipping weapon directly after grenade throw could hide the magazine
+[FIXED] Interface context menu size didn't reset horizontally between items
+[FIXED] Player controller could get stuck on Apartments bathtubs
+[FIXED] AI pathfinding could get stuck in multi-floor buildings (Apartments)
+[FIXED] AI pathfinding could clip through staircases (Apartments)
+[FIXED] AI backpacks didn't render at far distances (+100m)
+[FIXED] Weapon audio had distortions / clipping when using full-auto
+[FIXED] Ambient volume didn't affect dynamic ambient SFX
+[FIXED] Summer dynamic ambient SFX could activate on Winter (like mosquitos)
+[FIXED] Auto-stack SFX could trigger when using fast transfer with already max stacks
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Generalist trader lights caused artifacts and leaked outdoor
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Campfire and fire elements clipped though firepots and fire barrels
+[FIXED] Fire VFX dind't render through Non-PIP scopes
+[FIXED] Tree billboard inconsistencies and exposure levels
+[FIXED] Environment fog was slightly visible inside shelters
+[FIXED] Bullet decals were unstable, flickered and disappeared beyond 25m
+[FIXED] Shooting a scaled nature elements like rocks also scaled to bullet decals
+[FIXED] Generalist trader lights caused artifacts and leaked through a wall
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Multiple ALT-TAB issues where game might not response
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+----------------------------------------
+[CHANGED] Common and Uncommon rarity levels are now merged to Common
+[CHANGED] Legendary item spawn changes changed from 1% to 0.1%
+[CHANGED] Armor plates will now spawn always at full item conditions
+[CHANGED] Random sleep time changed from 4-8 to 6-12
+[CHANGED] Lasers can only be attached to weapons with suitable side/top rails
+[CHANGED] Guards can now also use M4A1 as their default weapon
+[CHANGED] All project and save files now exists directly in AppData/Roaming/[GameName]
+[CHANGED] All exe.files and builds use industry-standard versioning (e.g 0.1.0.0)
+[CHANGED] Certain weapon and attachment names are switched to use pseudo-names
+[CHANGED] Weapon audio uses more realistic tail / echo volumes after firing
+[CHANGED] Multiple changes for AI weapon audio to improve directional and flyby audio
+[CHANGED] Candles no longer cause Burn medical condition when walked on
+[CHANGED] Helicopter model type changed from Mi-8 to Mi-24 (Hind)"	"As seguintes alterações foram feitas na transição de:
+Demo [0.0.1.0] -> Acesso Antecipado [0.1.0.0]
+----------------------------------------
+Nome da compilação: Road - Compilação 1
+Versão da compilação: 0.1.0.0
+Tipo de compilação: Lançamento
+----------------------------------------
+[ADICIONADO] Sistema de eventos
+[ADICIONADO] Suporte a múltiplos abrigos
+[ADICIONADO] Chaves e portas trancadas
+[ADICIONADO] Miras PIP e opções de mira
+[ADICIONADO] Suporte nativo ao DirectX
+[ADICIONADO] Cache de shaders nativo
+[ADICIONADO] IU (Interface) de Ferramentas
+[ADICIONADO] Calendário de eventos (Ferramentas)
+[ADICIONADO] Menu de criação (Ferramentas)
+[ADICIONADO] Notas de tarefas (Ferramentas)
+[ADICIONADO] Mapa do mundo (Ferramentas)
+[ADICIONADO] Reprodutor de cassetes (Ferramentas)
+[ADICIONADO] Novo modo de jogo: Darkness
+[ADICIONADO] Novo modo de jogo: Ironman
+[ADICIONADO] Novo mapa: Escola (Área 05)
+[ADICIONADO] Novo mapa: Rodovia (Área 05)
+[ADICIONADO] Novo mapa: Posto Avançado (Área 05)
+[ADICIONADO] Novo mapa: Terminal (Vostok)
+[ADICIONADO] Novo abrigo: Sótão
+[ADICIONADO] Novo abrigo: Bunker
+[ADICIONADO] Novo abrigo: Barraca
+[ADICIONADO] Novo abrigo: Sala de aula
+[ADICIONADO] Novo comerciante: Médico
+[ADICIONADO] Novo comerciante: Armeiro
+[ADICIONADO] Novo chefe: Punisher
+[ADICIONADO] Nova personagem: Gata
+[ADICIONADO] Novo evento: Retorno do comerciante
+[ADICIONADO] Novo evento: Caças a jato
+[ADICIONADO] Novo evento: Gata desaparecida
+[ADICIONADO] Novo evento: Chefe dos bandidos
+[ADICIONADO] Novo evento: Lançamentos aéreos
+[ADICIONADO] Novo evento: BTR
+[ADICIONADO] Novo evento: Helicópteros de ataque
+[ADICIONADO] Novo evento: Locais de acidente
+[ADICIONADO] Novo evento: Posto avançado comprometido
+[ADICIONADO] Novo evento: Fuga do comerciante
+[ADICIONADO] Novo evento: Transmissão
+[ADICIONADO] Nova tarefa: Hora do Prime Time
+[ADICIONADO] Nova tarefa: Reserva de Café
+[ADICIONADO] Nova tarefa: Negócio Suado
+[ADICIONADO] Nova tarefa: Caseiro
+[ADICIONADO] Nova tarefa: Corrente de Ar Desagradável
+[ADICIONADO] Nova tarefa: Mãos Firmes
+[ADICIONADO] Nova tarefa: Leitor Ávido
+[ADICIONADO] Nova tarefa: Mestre dos Dados
+[ADICIONADO] Nova tarefa: Cirurgia Noturna
+[ADICIONADO] Nova tarefa: Infecções
+[ADICIONADO] Nova tarefa: Hipovolemia
+[ADICIONADO] Nova tarefa: Gaita
+[ADICIONADO] Nova tarefa: Relatório do Paciente
+[ADICIONADO] Nova tarefa: Substância
+[ADICIONADO] Nova tarefa: Sanguessugas
+[ADICIONADO] Nova tarefa: Refeição Quente
+[ADICIONADO] Nova tarefa: Comércio Nórdico
+[ADICIONADO] Nova tarefa: Lâminas Grandes
+[ADICIONADO] Nova tarefa: Entrega de Munição
+[ADICIONADO] Nova tarefa: Entrega de Armas
+[ADICIONADO] Nova tarefa: Médico
+[ADICIONADO] Nova tarefa: Coleta Domiciliar
+[ADICIONADO] Nova tarefa: Direitos de Todos
+[ADICIONADO] Nova tarefa: Assassino
+[ADICIONADO] Nova arma: RK-62
+[ADICIONADO] Nova arma: RK-62M
+[ADICIONADO] Nova arma: M4A1
+[ADICIONADO] Nova arma: K416
+[ADICIONADO] Nova arma: P3
+[ADICIONADO] Novo acessório: AN-15
+[ADICIONADO] Novo item: Cano KAR-21
+[ADICIONADO] Novo item: Gorro Flame
+[ADICIONADO] Novo item: Boné M62
+[ADICIONADO] Novo item: Garrafa de água
+[ADICIONADO] Novo item: AFAK
+[ADICIONADO] Novo item: Manta térmica
+[ADICIONADO] Novo item: Soro fisiológico
+[ADICIONADO] Novo item: Antisséptico
+[ADICIONADO] Novo item: Toalhinhas umedecidas
+[ADICIONADO] Novo item: Lenços de papel
+[ADICIONADO] Novo item: Desodorante
+[ADICIONADO] Novo item: Mapa
+[ADICIONADO] Novo item: Mapa (Tático)
+[ADICIONADO] Novo item: Kit de reparo de armas
+[ADICIONADO] Novo item: Caixa de pesca
+[ADICIONADO] Novo item: Filtro de óleo
+[ADICIONADO] Novo item: Filtros de café
+[ADICIONADO] Novo item: Válvula de retenção de água
+[ADICIONADO] Novo item: Madeira
+[ADICIONADO] Novo item: Travesseiro
+[ADICIONADO] Novo item: Manta
+[ADICIONADO] Novo item: Varas
+[ADICIONADO] Novo item: Trapos
+[ADICIONADO] Novo item: Cassete (OST)
+[ADICIONADO] Novo item: Cassete (Electrofolk)
+[ADICIONADO] Novo item: Cassete (Sinfonia)
+[ADICIONADO] Novo item: Cassete (Sucessos do Rádio)
+[ADICIONADO] Novo item: Chave do sótão
+[ADICIONADO] Novo item: Chave do bunker
+[ADICIONADO] Novo item: Chave da sala de aula
+[ADICIONADO] Novo item: Chave do Porão
+[ADICIONADO] Novo item: Chave do Ginásio
+[ADICIONADO] Novo item: Chave do Túnel
+[ADICIONADO] Novo móvel: Palete
+[ADICIONADO] Novo móvel: Televisão
+[ADICIONADO] Novo móvel: Prateleira de Metal
+[ADICIONADO] Novo móvel: Alvo
+[ADICIONADO] Novo móvel: Placa (Zona de Fronteira)
+[ADICIONADO] Novo móvel: Pôster (Postura)
+[ADICIONADO] Novo móvel: Carrinho (Pequeno)
+[ADICIONADO] Novo móvel: Carrinho (Alto)
+[ADICIONADO] Novo móvel: Cadeira (Escola)
+[ADICIONADO] Novo móvel: Armário (Escritório)
+[ADICIONADO] Novo móvel: Mesa (Escritório)
+[ADICIONADO] Nova receita: Bebida Energética
+[ADICIONADO] Nova receita: Café Coado
+[ADICIONADO] Nova receita: Sopa de Ervilha Cozida
+[ADICIONADO] Nova receita: Sopa de Tomate Cozida
+[ADICIONADO] Nova receita: Sopa de Peixe Cozida
+[ADICIONADO] Nova receita: Almôndegas Cozidas
+[ADICIONADO] Nova receita: Kompot
+[ADICIONADO] Nova receita: Kilju
+[ADICIONADO] Nova receita: Atadura improvisada
+[ADICIONADO] Nova receita: Torniquete improvisado
+[ADICIONADO] Nova receita: Tala improvisada
+[ADICIONADO] Nova receita: Reparo de arma
+[ADICIONADO] Nova receita: Melhoria para KAR-21
+[ADICIONADO] Nova receita: Estação de cozinha
+[ADICIONADO] Nova receita: Cama Civil
+[ADICIONADO] Nova receita: Cama Nômade
+[ADICIONADO] Introdução ao jogo baseada na história ao iniciar uma nova partida
+[ADICIONADO] Renderização de fonte com alta resolução (DPI) para telas 4K/Retina
+[ADICIONADO] Áreas de borda extras no mapa para evitar que as bordas fiquem visíveis
+[ADICIONADO] Comerciantes diferentes têm níveis básicos de impostos variáveis [100-300%]
+[ADICIONADO] Disparar armas reduzirá o estado da arma com o tempo
+[ADICIONADO] O estado ruim da arma agora pode causar mau funcionamento
+[ADICIONADO] As armas podem ser reparadas com o Kit de Reparo de Armas (Fabricação)
+[ADICIONADO] Suporte a carregadores modulares (STANAG) para M4A1 / KM18 / K416
+[ADICIONADO] Suporte a carregadores modulares (RK) para RK-95 / RK-62 / RK-62M
+[ADICIONADO] Pontos de interesse da IA onde a IA reagirá a eventos como lançamentos aéreos
+[ADICIONADO] A IA agora pode patrulhar em quartos de apartamentos (não apenas em escadas)
+[ADICIONADO] O helicóptero da IA agora pode disparar foguetes em certos cenários
+[ADICIONADO] Os sons de morte da IA cessarão imediatamente com um tiro na cabeça ""out of misery""
+[ADICIONADO] As minas agora usam geração em tempo de execução e são geradas aleatoriamente para cada instância do mapa
+[ADICIONADO] As minas agora podem ser geradas diretamente na borda do mapa e um pouco além dela
+[ADICIONADO] Itens à base de líquido agora podem congelar (Inverno)
+[ADICIONADO] Entrar na água acelera o congelamento de itens (Inverno)
+[ADICIONADO] Itens congelados podem ser derretidos com fontes de calor ou abrigos (Inverno)
+[ADICIONADO] Comerciantes não aceitam itens com defeito ou congelados
+[ADICIONADO] Receitas de criação não aceitam itens com defeito ou congelados
+[ADICIONADO] Tocar instrumentos musicais aumenta lentamente a Saúde Mental ao longo do tempo
+[ADICIONADO] Dormir agora consome tanto energia quanto hidratação [-20]
+[ADICIONADO] Dormir agora aumenta a Saúde Mental [+20]
+[ADICIONADO] Sacos de dormir aumentam a Temperatura Corporal [+50]
+[ADICIONADO] Cobertores, travesseiros e melatonina agora também podem ser usados para dormir
+[ADICIONADO] Usar itens para dormir que não sejam sacos de dormir ao ar livre diminui a Temperatura Corporal [-100] (Inverno)
+[ADICIONADO] Fontes de fogo ao ar livre, como fogueiras, podem ser usadas para criação baseada em calor
+[ADICIONADO] A criação agora suporta ferramentas reutilizáveis que não são consumidas pelas receitas
+[ADICIONADO] Tarefas do tutorial separadas que também abrangem itens de criação e móveis
+[ADICIONADO] Os móveis agora suportam empilhamento e colocação uns sobre os outros
+[ADICIONADO] Os móveis agora suportam o modo ímã (Ímã de Superfície) para fixação em superfícies
+[ADICIONADO] Simulações de saque e contêineres agora podem usar tipos e locais de spawn “Industrial”
+[ADICIONADO] O áudio do rádio agora usa filtro passa-alta e som mais distorcido
+[ADICIONADO] Botões de registro de alterações e verificação de hardware foram adicionados ao menu principal
+[ADICIONADO] Maçanetas 3D e animações de interação com maçanetas
+[ADICIONADO] Se o jogador cair através do terreno, o sistema de fallback retorna o jogador ao mundo do jogo
+[ADICIONADO] Se um item cair através do terreno, o sistema de fallback impede que o item consuma recursos da CPU
+[ADICIONADO] Se um item cair através do abrigo, o sistema de fallback gera o item diretamente no inventário
+----------------------------------------
+[CORRIGIDO] A interface de verificação de munição travava ao entrar na água enquanto se realizava a verificação de munição
+[CORRIGIDO] O cálculo do valor das partidas não era baseado na quantidade e podia ser explorado
+[CORRIGIDO] Recarregar enquanto carregava munição podia causar duplicação de munição e exceder os limites de munição
+[CORRIGIDO] Pilhas cheias de itens podiam causar duplicação ao usar a transferência rápida
+[CORRIGIDO] Pilhas cheias de itens podiam causar duplicação ao usar a transferência de contexto
+[CORRIGIDO] Alternar de Tarefas do Comerciante para Abastecimento durante a entrega de itens mantinha os itens selecionados
+[CORRIGIDO] Clicar duas vezes em Tarefas do Comerciante durante a entrega de itens mantinha os itens selecionados
+[CORRIGIDO] As grades de Tetris podiam causar itens fantasmas e erros em determinadas resoluções de tela
+[CORRIGIDO] O tempo de simulação podia ficar travado em 00:00 em determinados hardwares durante o carregamento
+[CORRIGIDO] A estação da simulação podia ser reiniciada do inverno para o verão em determinados hardwares durante o carregamento
+[CORRIGIDO] Equipar uma arma diretamente após o lançamento de uma granada desequipava a arma
+[CORRIGIDO] Equipar uma arma diretamente após o lançamento de uma granada podia ocultar o carregador
+[CORRIGIDO] O tamanho do menu de contexto da interface não se reiniciava horizontalmente entre os itens
+[CORRIGIDO] O controlador do jogador podia ficar preso nas banheiras dos Apartamentos
+[CORRIGIDO] O pathfinding da IA podia ficar preso em edifícios de vários andares (Apartamentos)
+[CORRIGIDO] O pathfinding da IA podia atravessar escadas (Apartamentos)
+[CORRIGIDO] As mochilas da IA não eram renderizadas a longas distâncias (+100 m)
+[CORRIGIDO] O áudio da arma apresentava distorções/clipping ao usar o modo automático
+[CORRIGIDO] O volume ambiente não afetava os efeitos sonoros ambientais dinâmicos
+[CORRIGIDO] Os efeitos sonoros ambientais dinâmicos de verão podiam ser ativados no inverno (como mosquitos)
+[CORRIGIDO] O efeito sonoro de empilhamento automático podia ser acionado ao usar a transferência rápida com pilhas já no máximo
+[CORRIGIDO] O redimensionamento no modo janela não funcionava de forma confiável em configurações com um único monitor
+[CORRIGIDO] O monitor selecionado podia mudar durante as telas de carregamento em configurações com vários monitores
+[CORRIGIDO] O salvamento no abrigo permitia posições de itens corrompidas, o que causava oscilação de luz
+[CORRIGIDO] Várias mensagens do HUD ao mesmo tempo se sobrepunham
+[CORRIGIDO] As luzes do comerciante generalista causavam artefatos e vazavam para o exterior
+[CORRIGIDO] O salvamento do abrigo permitia posições de itens corrompidas, o que causava oscilação de luz
+[CORRIGIDO] A fogueira e os elementos de fogo atravessavam os potes de fogo e os barris de fogo
+[CORRIGIDO] Os efeitos visuais de fogo não eram renderizados através de miras não-PIP
+[CORRIGIDO] Inconsistências nos billboards das árvores e nos níveis de exposição
+[CORRIGIDO] A névoa do ambiente era ligeiramente visível dentro dos abrigos
+[CORRIGIDO] Os decals de balas eram instáveis, piscavam e desapareciam além de 25 m
+[CORRIGIDO] Atirar em elementos naturais em escala, como rochas, também escalava os decals de balas
+[CORRIGIDO] As luzes do comerciante generalista causavam artefatos e vazavam através de uma parede
+[CORRIGIDO] Várias mensagens do HUD ao mesmo tempo se sobrepunham
+[CORRIGIDO] Vários problemas com ALT-TAB em que o jogo poderia não responder
+[CORRIGIDO] O redimensionamento no modo janela não funcionava de forma confiável em configurações com um único monitor
+[CORRIGIDO] O monitor selecionado podia mudar durante as telas de carregamento em configurações com vários monitores
+----------------------------------------
+[ALTERADO] Os níveis de raridade Comum e Incomum foram agora unificados em Comum
+[ALTERADO] A taxa de spawn de itens Lendários foi alterada de 1% para 0,1%
+[ALTERADO] As placas de armadura agora sempre aparecerão em condições perfeitas
+[ALTERADO] O tempo de sono aleatório foi alterado de 4-8 para 6-12
+[ALTERADO] Lasers só podem ser acoplados a armas com trilhos laterais/superiores adequados
+[ALTERADO] Os guardas agora também podem usar a M4A1 como arma padrão
+[ALTERADO] Todos os arquivos de projeto e salvamento agora estão diretamente em AppData/Roaming/[NomeDoJogo]
+[ALTERADO] Todos os arquivos exe e compilações usam numeração de versão padrão da indústria (por exemplo, 0.1.0.0)
+[ALTERADO] Certos nomes de armas e acessórios foram alterados para usar pseudônimos
+[ALTERADO] O áudio das armas usa volumes de eco/ressonância mais realistas após o disparo
+[ALTERADO] Várias alterações no áudio das armas da IA para melhorar o áudio direcional e de passagem
+[ALTERADO] Velas não causam mais a condição médica “Queimadura” quando pisadas
+[ALTERADO] O modelo do helicóptero foi alterado de Mi-8 para Mi-24 (Hind)"	Version 0.1.0.0 (Will be deleted)
+New Game	Difficulty/Standard	String	0	0	1	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select	Selecionar	
+New Game	/	Button	0	0	1	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected	Selecionado	
+New Game	/	Button	0	0	1	0	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	Selecionado	
+New Game	/	Button	0	0	1	0	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected	Selecionado	
+New Game	/	Button	0	0	1	0	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select	Selecionar	
+New Game	/	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	Atenção!	
+New Game	/	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	Os arquivos de salvamento existentes serão excluídos	
+New Game	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	Entre na estrada	
+New Game	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	← Voltar	
+New Game	Difficulty	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	Dificuldade	
+New Game	Difficulty	Section Info	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode	Modo de jogo	
+New Game	Difficulty	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	text	1115798198	Recommended for new players	Recomendado para jogadores novatos	
+New Game	Difficulty/Standard	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Name	Label	text	1943781324	Standard	Padrão	
+New Game	Difficulty/Standard	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Details	Label	text	1979679371	"- Random start kit
+- Shelter spawn
+- Starts 08:00 with neutral weather
+- All character vitals 100
+- Permadeath in Vostok"	"- Kit inicial aleatório
+- Aparição no abrigo
+- Começa às 08:00 com clima neutro
+- Todos os parâmetros vitais dos personagens em 100
+- Morte permanente em Vostok"	
+New Game	Difficulty/Darkness	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	Escuridão	
+New Game	Difficulty/Darkness	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	text	113876474	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Permadeath in Vostok"	"- Sem kit inicial
+- Aparição aleatória
+- Hora de início e condições meteorológicas aleatórias
+- Parâmetros vitais iniciais aleatórios
+- Morte definitiva em Vostok"	
+New Game	Difficulty/Darkness	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	text	1533099300	Select	Selecionar	
+New Game	Difficulty/Ironman	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	text	688804211	Ironman	Ironman	
+New Game	Difficulty/Ironman	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	text	35357242	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Always permadeath"	"- Sem kit inicial
+- Aparição aleatória
+- Hora de início e condições meteorológicas aleatórias
+- Parâmetros vitais iniciais aleatórios
+- Morte permanente"	
+New Game	Difficulty/Ironman	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select	Selecionar	
+New Game	Season	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	Temporada	
+New Game	Season	Section Info	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	Modo sazonal	
+New Game	Season/Summer	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players	Recomendado para jogadores novatos	
+New Game	Season/Summer	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer	Verão	
+New Game	Season/Summer	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Details	Label	text	745148717	"- Summer (365 days)
+- No winter
+- Day & night cycle (2.4h IRL)"	"- Verão (365 dias)
+- Sem inverno
+- Ciclo de dia e noite (2,4 horas na vida real)"	
+New Game	Season/Summer	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Select	Button	text	762513593	Select	Selecionar	
+New Game	Season/Winter	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Name	Label	text	1225530918	Winter	Inverno	
+New Game	Season/Winter	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Details	Label	text	1238633642	"- No summer
+- Winter (365 days)
+- Day & night cycle (2.4h IRL)"	"- Sem verão
+- Inverno (365 dias)
+- Ciclo dia e noite (2,4 h na vida real)"	
+New Game	Season/Winter	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Select	Button	text	1694427365	Select	Selecionar	
+New Game	Season/Dynamic	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Name	Label	text	1253705311	Dynamic	Dinâmico	
+New Game	Season/Dynamic	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Details	Label	text	32667996	"- Summer / Autumn / Winter / Spring
+- Dynamic season cycle (365 days)
+- Day & night cycle (2.4h IRL)"	"- Verão / Outono / Inverno / Primavera
+- Ciclo dinâmico das estações (365 dias)
+- Ciclo dia e noite (2,4 horas no mundo real)"	
+New Game	Season/Dynamic	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Select	Button	text	338862948	Locked	Bloqueado	
+Settings	/	Page Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Header	Label	text	610266802	Settings	Configurações	
+Settings	/	Page Subtitle	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings/Header	Subheader	Label	text	1190483174	Game options	Opções do jogo	
+Settings	/	String	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	.	Pause	Label	text	1032650120	Game Paused	Jogo em pausa	
+Settings	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Settings_Return	Button	text	1591782435	← Return	← Voltar	
+Settings	/	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Return	Button	text	1846128635	← Return	← Voltar	
+Settings	/	String	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning	Warning	Label	text	942708465	Warning!	Atenção!	
+Settings	/	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Menu	Button	text	46679138	Continue to Main Menu	Continuar para o menu principal	
+Settings	/	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game	Sair do jogo	
+Settings	/	String	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Warning	Detail	Label	text	2090207802	"You are exiting the game outside of the shelter
+Current inventory & equipment will be deleted"	"Você está saindo do jogo fora do abrigo
+O inventário e o equipamento atuais serão apagados"	
+Settings	Input Settings	Section Title	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings	Configurações de entrada	
+Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse	Rato	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	text	907110992	"Normal
+"	"Normal
+"	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	text	1620747805	"Inverted
+"	"Invertido
+"	
+Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint	Sprint	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	text	547331103	"Hold
+"	"Aguarde
+"	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	text	503096142	"Toggle
+"	"Alternar
+"	
+Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean	Lean	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	text	2100503869	"Hold
+"	"Aguarde
+"	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
+"	"Alternar
+"	
+Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	Objetivo	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
+"	"Aguarde
+"	
+Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
+"	"Alternar
+"	
+Settings	Input Settings	Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults	Redefinir para os padrões	
+Settings	#Not Checked	String	0	0	1	0	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input	Exemplo de entrada	
+Settings	#Not Checked	String	0	0	1	0	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key	Tecla de entrada	Dynamically Changed on Inputs.gd
+Settings	#Not Checked	String	0	0	1	0	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	Pressione a tecla para atribuir...	Dynamically Changed on Inputs.gd
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward	Avançar	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward	Para trás	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left	Esquerda	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.right	dict		33	Right	Certo	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.crouch	dict		34	Crouch	Agachar-se	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.jump	dict		35	Jump	Ir para	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.sprint	dict		36	Sprint	Sprint	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left	Inclinar para a esquerda	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right	Inclinar para a direita	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary	Empate na primeira fase	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	Empate na repescagem	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife	Faca de desbaste	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1	Pegar a granada 1	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2	Sacar Granada 2	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.weapon_high	dict		44	Raise Weapon	Levantar a arma	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon	Baixar a arma	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim	Objetivo	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim	Mira inclinada	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	Incêndio	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload	Atualizar	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check	Verificação de munição	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	Modo de Fogo	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon	Inspecionar arma	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert	Preparar inserção	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge	Insira o cartucho	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.interact	dict		55	Interact	Interagir	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	Local	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	Modo Decoração	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	Lanterna	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	NVG	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	Laser	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	Movimentação ferroviária	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	Ótica secundária	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.interface	dict		63	Interface	Interface	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_rotate	dict		64	Rotate Item	Girar item	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	Transferência rápida	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	Equipamento Rápido	
+Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	Queda rápida	
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Left Mouse Button	Botão esquerdo do mouse	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Right Mouse Button	Botão direito do mouse	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Middle Mouse Button	Botão do meio do mouse	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Up	Roda do mouse para cima	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Down	Roda do mouse para baixo	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 1	Botão 1 do polegar do mouse	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 2	Botão 2 do polegar do mouse	I can't find those texts. Maybe dependent on Godot Engine.
+Settings	Audio Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	Configurações de áudio	
+Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	Volume principal	
+Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	Volume ambiente	
+Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume	Volume da música	
+Settings	Audio Settings/Music Preset	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset	Predefinição de música	
+Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	text	1157664360	"Off
+"	"Desligado
+"	
+Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	text	145862675	"Dynamic
+"	"Dinâmico
+"	
+Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
+"	"Abrigo
+"	
+Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
+"	"Área 05
+"	
+Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
+"	"Fronteira
+"	"다음 사항에 대해서 번역에 주의하세요:
+해당 버튼의 'Border'은 'Border Zone'을 의미합니다"
+Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
+"	"Vostok
+"	
+Settings	Camera Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	Configurações da câmera	
+Settings	Camera Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	Interpolar	
+Settings	Camera Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	Campo de visão	
+Settings	Camera Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob	Movimento da cabeça	
+Settings	Camera Settings	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	text	1097446784	"Off
+"	"Desligado
+"	
+Settings	Camera Settings	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	text	875405842	"On
+"	"Em
+"	
+Settings	Mouse Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings	Configurações do mouse	
+Settings	Mouse Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity	Sensibilidade do olhar	
+Settings	Mouse Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity	Sensibilidade da mira	
+Settings	Mouse Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity	Sensibilidade do osciloscópio	
+Settings	Color Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings	Configurações de cor	
+Settings	UI Scaling	Section Title	0	0	1	0	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]	Escalonamento da interface do usuário [Em breve]	
+Settings	UI Scaling	Section Title	0	0	1	0	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	Escalonamento da interface do usuário	
+Settings	UI Scaling	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale	Escala da interface	
+Settings	UI Scaling	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale	Escala HUD	
+Settings	UI Scaling	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Font	Label	text	1601276621	Font Scale	Escala da fonte	
+Settings	Color Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	text	1627739783	Exposure	Exposição	
+Settings	Color Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	text	1493783365	Contrast	Contraste	
+Settings	Color Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation	Saturação	
+Settings	Image Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	Image Settings	Configurações de imagem	
+Settings	Image Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text	924067924	Sharpness	Nitidez	
+Settings	HUD	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD	HUD	
+Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	text	384487481	"Map
+"	"Mapa
+"	
+Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS	FPS	
+Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals	Dados vitais	
+Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical	Médico	
+Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	text	1947205630	Placement	Colocação	
+Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor	Decoração	
+Settings	UI Tooltip	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip	Dica de interface do usuário	
+Settings	UI Tooltip	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	text	218441862	"On
+"	"Em
+"	
+Settings	UI Tooltip	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off	Desligado	
+Settings	PIP Scopes	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes	Âmbitos do PIP	
+Settings	PIP Scopes	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	text	1683999774	"On
+"	"Em
+"	
+Settings	PIP Scopes	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	text	1913543227	"Off
+"	"Desligado
+"	
+Settings	Detail Shadows	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows	Sombras detalhadas	
+Settings	Detail Shadows	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On	Em	
+Settings	Detail Shadows	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	text	509666701	"Off
+"	"Desligado
+"	
+Settings	Water Reflections	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections	Reflexos na água	
+Settings	Water Reflections	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On	Em	
+Settings	Water Reflections	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	text	1217670336	"Off
+"	"Desligado
+"	
+Settings	Ambient Occlusion	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	Oclusão ambiental	
+Settings	Ambient Occlusion	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	Em	
+Settings	Ambient Occlusion	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
+"	"Desligado
+"	
+Settings	Display	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	Exibir	
+Settings	Display	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	Tela inteira	
+Settings	Display	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	Em janela	
+Settings	Display	Element	0	0	0	0	0	pattern									Monitor: {idx}		
+Settings	Display	Element	0	0	0	0	0	pattern									Window: {percent}%		
+Settings	Frames	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames	Molduras	
+Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_60	Button	text	137610325	60	60	
+Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_120	Button	text	1049440983	120	120	
+Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_200	Button	text	1243526225	200	200	
+Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_300	Button	text	2062662255	300	300	
+Settings	Frames	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	text	1956572514	Vsync	Vsync	
+Settings	Frames	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	Ilimitado	
+Settings	Render Resolution	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	Resolução da renderização	
+Settings	Render Resolution	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	Baixo	
+Settings	Render Resolution	Button	0	0	1	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	Médio	Depricated in 0.1.1.3, will be deleted
+Settings	Render Resolution	Button	0	0	1	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	Alto	Depricated in 0.1.1.3, will be deleted
+Settings	Render Resolution	Button	0	0	1	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	Ultra	Depricated in 0.1.1.3, will be deleted
+Settings	Render Resolution	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	Nativo	
+Settings	Render Resolution	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	Nitidez da imagem	
+Settings	Lighting Quality	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	Qualidade da iluminação	
+Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	text	1856829880	Low	Baixo	
+Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	text	1240839901	Medium	Médio	
+Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	text	1338458648	High	Alto	
+Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	text	1687334721	Ultra	Ultra	
+Settings	Anti-aliasing	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	text	2029165260	Anti-aliasing	Suavização de bordas	
+Settings	Anti-aliasing	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	text	1644486263	Off	Desligado	
+Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x	MSAA 2x	
+Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x	MSAA 4x	
+Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x	MSAA 8x	
+Settings	Anti-aliasing	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	SMAA desativado	
+Settings	Anti-aliasing	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	SMAA ativado	
+Settings	Exit	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	Sair	
+Settings	Exit	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	Menu principal	
+Settings	Exit	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
+"	"Sair do jogo
+"	
+Roadmap	/	Page Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	Roteiro	
+Roadmap	/	Page Subtitle	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	Próximas versões	
+Roadmap	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	← Voltar	
+Roadmap	Build 1	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	Versão 1 | Estrada	
+Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed	Concluído	
+Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	text	744617097	"•  Early access launch
+•  Gameplay loop
+•  Expanded maps
+•  Dynamic elements
+•  Multi-shelter support"	"•  Lançamento em acesso antecipado
+•  Ciclo de jogabilidade
+•  Mapas ampliados
+•  Elementos dinâmicos
+•  Suporte a múltiplos abrigos"	
+Roadmap	Build 2	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	Versão 2 | Nômades	
+Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026	3º trimestre de 2026	
+Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	text	1826473906	"•  Friendly faction
+•  AI vs. AI combat
+•  AI variants
+•  Driver (Trader)
+•  New map & shelter"	"•  Facção aliada
+•  Combate IA x IA
+•  Variantes de IA
+•  Motorista (Comerciante)
+•  Novo mapa e abrigo"	
+Roadmap	Build 3	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	Versão 3 | Signal	
+Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026	4º trimestre de 2026	
+Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	text	1971995323	"•  Quest system
+•  Lore elements
+•  Civil defence shelters
+•  Grandma (Trader)
+•  New map & shelter"	"•  Sistema de missões
+•  Elementos da história
+•  Abrigos de defesa civil
+•  Vovó (Comerciante)
+•  Novo mapa e abrigo"	
+Roadmap	Build 4	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	Versão 4 | Pistoleiro	
+Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	A definir	
+Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
+•  Bullet penetration
+•  Modding kits
+•  Trader services
+•  New map & shelter"	"•  Revisão de armas
+•  Penetração de balas
+•  Kits de modificação
+•  Serviços de comerciantes
+•  Novo mapa e abrigo"	
+Roadmap	Build 5	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	Versão 5 | Norte	
+Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	A definir	
+Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	text	1603967771	"•  Dynamic season
+•  Train system
+•  Hunting & wildlife
+•  Shaman (Trader)
+•  New map & shelter"	"•  Estação dinâmica
+•  Sistema de trens
+•  Caça e vida selvagem
+•  Xamã (Comerciante)
+•  Novo mapa e abrigo"	
+Roadmap	Build 6	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	Versão 6 | Abyss	
+Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	A definir	
+Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
+•  Patrol boats
+•  Scuba gear
+•  Fisherman (Trader)
+•  New map & shelter"	"•  Sistema marítimo
+•  Barcos de patrulha
+•  Equipamento de mergulho
+•  Pescador (Comerciante)
+•  Novo mapa e abrigo"	
+Roadmap	Build 7	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	Versão 7 | Enigma	
+Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	A definir	
+Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
+•  SIGINT tools
+•  Transmissions
+•  Scientist (Trader)
+•  Vostok shelter"	"•  Sistema de diálogo
+•  Ferramentas SIGINT
+•  Transmissões
+•  Cientista (Comerciante)
+•  Abrigo Vostok"	
+Roadmap	Build 8	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	Versão 8 | Noite Silenciosa	
+Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	A definir	
+Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
+•  World options
+•  Destruction system
+•  FINSOF faction
+•  New map & shelter"	"•  Série completa de missões
+•  Opções do mundo
+•  Sistema de destruição
+•  Facção FINSOF
+•  Novo mapa e abrigo"	
+About	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	← Voltar	
+About	Road to Vostok	Section Title	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok	Road to Vostok	
+About	Road to Vostok	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
+in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ® é um jogo hardcore de sobrevivência para um jogador ambientado 
+em uma zona fronteiriça pós-apocalíptica entre a Finlândia e a Rússia"	
+About	Developer	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	Desenvolvedor	
+About	Developer	String	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.	Road to Vostok Ltd.	
+About	Country of origin	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	País de origem	
+About	Country of origin	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	Finlândia	
+About	Founding date	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	Data de fundação	
+About	Founding date	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	Fevereiro de 2022	
+About	Copyright & Legal	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	Direitos autorais e informações legais	
+About	Copyright & Legal	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
+Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
+
+2. Trademarks
+Road to Vostok ® is registered trademark of Road to Vostok Ltd.
+
+3. Engine
+Road to Vostok ® is powered by open source Godot Engine"	"1. Conteúdo do jogo
+Road to Vostok © 2026 Road to Vostok Ltd. Todos os direitos reservados.
+
+2. Marcas registradas
+Road to Vostok ® é uma marca registrada da Road to Vostok Ltd.
+
+3. Motor gráfico
+Road to Vostok ® é desenvolvido com o motor gráfico de código aberto Godot"	
+About	Engine License (MIT)	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	Licença do Engine (MIT)	
+About	Engine License (MIT)	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/License	MIT	Label	text	921896888	"This game uses Godot Engine, available under the following license:
+
+Copyright © 2014-present Godot Engine contributors.
+Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the ""Software""), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE."	"Este jogo utiliza o Godot Engine, disponível sob a seguinte licença:
+
+Copyright © 2014-presente Colaboradores do Godot Engine.
+Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Fica concedida, gratuitamente, permissão a qualquer pessoa que obtenha uma cópia
+deste software e dos arquivos de documentação associados (o “Software”) para utilizar
+o Software sem restrições, incluindo, sem limitação, os direitos
+de usar, copiar, modificar, mesclar, publicar, distribuir, sublicenciar e/ou vender
+cópias do Software, e de permitir que as pessoas a quem o Software for
+fornecido façam o mesmo, sujeito às seguintes condições:
+
+O aviso de direitos autorais acima e este aviso de permissão devem ser incluídos em todas as
+cópias ou partes substanciais do Software.
+
+O SOFTWARE É FORNECIDO ""NO ESTADO EM QUE SE ENCONTRA"", SEM QUALQUER TIPO DE GARANTIA, EXPRESSA OU
+IMPLÍCITA, INCLUINDO, ENTRE OUTROS, AS GARANTIAS DE COMERCIALIZAÇÃO,
+ADEQUAÇÃO A UM DETERMINADO FIM E NÃO VIOLAÇÃO. EM NENHUMA CIRCUNSTÂNCIA OS
+AUTORES OU TITULARES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA
+RESPONSABILIDADE, SEJA EM AÇÃO CONTRATUAL, DELITUAL OU DE OUTRA NATUREZA, DECORRENTE DE,
+EM RELAÇÃO A OU CONEXA COM O SOFTWARE OU COM O USO OU OUTRAS TRANSAÇÕES RELACIONADAS AO
+SOFTWARE."	
+Loading	/	String	0	0	1	0	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	Carregando...	
+			0	0	1	0	0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	Carregando...	
+Loading	/	String	0	0	0	0	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	Carregando a introdução...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	Carregando a cabine...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	Carregando o tutorial...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	Carregando o menu...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	Carregando o sótão...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	Carregando Morte...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	Carregando a sala de aula...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	Carregando a tenda...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	Carregando o bunker...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	Carregando Village...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	Carregando a rodovia...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	Carregando a escola...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	Carregando o Posto Avançado...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	Carregando Minefield...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	Carregando apartamentos...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	Carregando o terminal...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	Carregando modelo...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Loading	/	#Not Checked	0	0	1	0	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	Carregando shaders...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String
+Intro	/	String	0	0	1	0	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]	
+Intro	/	String	0	0	1	0	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]	
+Intro	/	String	0	0	1	0	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]	
+Intro	/	String	0	0	1	0	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]	
+Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	O personagem morreu	
+Death	/	String	0	0	1	0	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	Todos os arquivos salvos foram excluídos	
+Death	/	String	0	0	1	0	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	O personagem morreu	
+Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	Carregar jogo	
+Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
+"	"Menu principal
+"	
+Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
+"	"Sair
+"	
+/	Scene	Name	0	0	1	0	0	substr									Intro	Introdução	
+/	Scene	Name	0	0	1	0	0	substr									Cabin	Cabine	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	1	0	0	substr									Shelter	Abrigo	
+/	Scene	Name	0	0	1	0	0	substr									Tutorial	Tutorial	
+/	Scene	Name	0	0	1	0	0	substr									Menu	Menu	
+/	Scene	Name	0	0	1	0	0	substr									Attic	Sótão	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	1	0	0	substr									Death	Morte	
+/	Scene	Name	0	0	1	0	0	substr									Classroom	Sala de aula	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	1	0	0	substr									Tent	Tenda	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	1	0	0	substr									Bunker	Bunker	Defined at Loader.gd: const shelters
+/	Scene	Name	0	0	1	0	0	substr									Village	Aldeia	
+/	Scene	Name	0	0	1	0	0	substr									Area 05	Área 05	
+/	Scene	Name	0	0	1	0	0	substr									Highway	Rodovia	
+/	Scene	Name	0	0	1	0	0	substr									School	Escola	
+/	Scene	Name	0	0	1	0	0	substr									Outpost	Posto avançado	
+/	Scene	Name	0	0	1	0	0	substr									Border Zone	Zona de Fronteira	
+/	Scene	Name	0	0	1	0	0	substr									Minefield	Campo minado	
+/	Scene	Name	0	0	1	0	0	substr									Apartments	Apartamentos	
+/	Scene	Name	0	0	1	0	0	substr									Terminal	Terminal	
+/	Scene	ToolTip	0	0	1	0	0	substr									Tutorial Exit	Sair do tutorial	
+/	Scene	Name	0	0	1	0	0	substr									Template	Modelo	
+/	Scene	#Not Checked	0	0	1	0	0	substr									shaders	shaders	
+NPC	Traders	Name	0	0	1	0	0	substr									Trader	Operador	
+NPC	Traders	Name	0	0	1	0	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	Generalista	
+NPC	Traders	Name	0	0	1	0	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	Médico	
+NPC	Traders	Name	0	0	1	0	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	Armeiro	
+NPC	Traders	Name	0	0	1	0	0	substr									Driver	Motorista	
+NPC	Traders	Name	0	0	1	0	0	substr									Grandma	Vovó	
+NPC	Traders	Name	0	0	1	0	0	substr									Shaman	Xamã	
+NPC	Traders	Name	0	0	1	0	0	substr									Fisherman	Pescador	
+NPC	Traders	Name	0	0	1	0	0	substr									Scientist	Cientista	
+NPC	Hostile	Name	0	0	1	0	0	substr									Bandit	Bandido	Hostile NPC faction spawned in Area 05;
+NPC	Hostile	Name	0	0	1	0	0	substr									Guards	Guarda	Hostile NPC faction spawned in Border Zone;
+NPC	Hostile	Name	0	0	1	0	0	substr									Military	Militar	Hostile NPC faction spawned in Vostok;
+NPC	Elite	Name	0	0	1	0	0	substr									Punisher	O Castigador	Hostile Elite(Boss) NPC spawned in Area 05;
+/	Weather	Dictionary	0	0	1	0	0	substr									Neutral	Neutro	
+/	Weather	Dictionary	0	0	1	0	0	substr									Overcast	Céu nublado	
+/	Weather	Dictionary	0	0	1	0	0	substr									Rain	Chuva	
+/	Weather	Dictionary	0	0	1	0	0	substr									Storm	Tempestade	
+/	Material	Dictionary	0	0	1	0	0	substr									Generic	Genérico	
+/	Material	Dictionary	0	0	1	0	0	substr									Wood	Madeira	
+/	Material	Dictionary	0	0	1	0	0	substr									Metal	Metal	
+/	Material	Dictionary	0	0	1	0	0	substr									Concrete	Concreto	
+/	Material	Dictionary	0	0	1	0	0	substr									Rock	Rock	
+/	Material	Dictionary	0	0	1	0	0	substr									Vostok	Vostok	

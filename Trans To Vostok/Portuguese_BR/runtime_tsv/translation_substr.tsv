@@ -1,0 +1,627 @@
+text	translation
+Compatibility	Compatibilidade
+Selected	Selecionado
+Press key to bind...	Pressione a tecla para atribuir...
+Forward	Avançar
+Backward	Para trás
+Left	Esquerda
+Right	Certo
+Crouch	Agachar-se
+Jump	Ir para
+Sprint	Sprint
+Lean Left	Inclinar para a esquerda
+Lean Right	Inclinar para a direita
+Draw Primary	Empate na primeira fase
+Draw Secondary	Empate na repescagem
+Draw Knife	Faca de desbaste
+Draw Grenade 1	Pegar a granada 1
+Draw Grenade 2	Sacar Granada 2
+Raise Weapon	Levantar a arma
+Lower Weapon	Baixar a arma
+Aim	Objetivo
+Canted Aim	Mira inclinada
+Fire	Incêndio
+Reload	Atualizar
+Ammo Check	Verificação de munição
+Firemode	Modo de Fogo
+Inspect Weapon	Inspecionar arma
+Prepare Insert	Preparar inserção
+Insert Cartridge	Insira o cartucho
+Interact	Interagir
+Place	Local
+Decor Mode	Modo Decoração
+Flashlight	Lanterna
+NVG	NVG
+Laser	Laser
+Rail Movement	Movimentação ferroviária
+Secondary Optic	Ótica secundária
+Interface	Interface
+Rotate Item	Girar item
+Fast Transfer	Transferência rápida
+Fast Equip	Equipamento Rápido
+Fast Drop	Queda rápida
+Left Mouse Button	Botão esquerdo do mouse
+Right Mouse Button	Botão direito do mouse
+Middle Mouse Button	Botão do meio do mouse
+Mouse Wheel Up	Roda do mouse para cima
+Mouse Wheel Down	Roda do mouse para baixo
+Mouse Thumb Button 1	Botão 1 do polegar do mouse
+Mouse Thumb Button 2	Botão 2 do polegar do mouse
+UI Scaling	Escalonamento da interface do usuário
+Loading...	Carregando...
+Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]
+All save files deleted	Todos os arquivos salvos foram excluídos
+Character died	O personagem morreu
+Intro	Introdução
+Cabin	Cabine
+Shelter	Abrigo
+Tutorial	Tutorial
+Menu	Menu
+Attic	Sótão
+Death	Morte
+Classroom	Sala de aula
+Tent	Tenda
+Bunker	Bunker
+Village	Aldeia
+Area 05	Área 05
+Highway	Rodovia
+School	Escola
+Outpost	Posto avançado
+Border Zone	Zona de Fronteira
+Minefield	Campo minado
+Apartments	Apartamentos
+Terminal	Terminal
+Tutorial Exit	Sair do tutorial
+Template	Modelo
+shaders	shaders
+Trader	Operador
+Generalist	Generalista
+Doctor	Médico
+Gunsmith	Armeiro
+Driver	Motorista
+Grandma	Vovó
+Shaman	Xamã
+Fisherman	Pescador
+Scientist	Cientista
+Bandit	Bandido
+Guards	Guarda
+Military	Militar
+Punisher	O Castigador
+Neutral	Neutro
+Overcast	Céu nublado
+Rain	Chuva
+Storm	Tempestade
+Generic	Genérico
+Wood	Madeira
+Metal	Metal
+Concrete	Concreto
+Rock	Rock
+Vostok	Vostok
+Inventory	Estoque
+Primary	Primário
+Secondary	Secundário
+Vital	Essencial
+Task Notes empty	Notas da tarefa: vazio
+Task Notes not available (Tutorial)	Notas da tarefa indisponíveis (Tutorial)
+Map not equipped	Mapa não disponível
+Map not usable (Vostok)	Mapa indisponível (Vostok)
+Casette Player not equipped	Não possui leitor de cassetes
+Casette Player power 0%, recharge player	Bateria do reprodutor de cassetes em 0%, recarregar o reprodutor
+Casette Player empty, insert casette	O leitor de fitas está vazio, insira uma fita
+Override Ambient Music [ON]	Substituir música ambiente [LIGADO]
+Override Ambient Music [OFF]	Substituir música ambiente [DESLIGADO]
+Sleep	Sono
+Level 2	Nível 2
+Level 3	Nível 3
+Level 4	Nível 4
+Level 5	Nível 5
+Heat required	É necessário aquecimento
+Workbench required	É necessário uma bancada
+Shelter required	É necessário um abrigo
+Start Input	Iniciar entrada
+Stop Input	Interromper a entrada
+Reset Input	Redefinir entrada
+Start Delivery	Iniciar entrega
+Stop Delivery	Suspender a entrega
+Delivered	Entregue
+CBRN	CBRN
+Overweight	Excesso de peso
+Explosion	Explosão
+Fall	Outono
+Day	Dia
+Easy	Fácil
+Intermediate	Intermediário
+Hard	Difícil
+Trader Event	Evento para traders
+Dynamic Event	Evento dinâmico
+Special Event	Evento especial
+Dynamic	Dinâmico
+Special	Especial
+Guaranteed	Garantido
+Common	Comum
+Rare	Raro
+Legendary	Lendário
+Armor Plate	Placa de blindagem
+Armor	Armadura
+Armor Plate {class}	Placa de blindagem {class}
+Armor Plate (II)	Placa de blindagem (II)
+Armor Plate (III+)	Placa de blindagem (III+)
+Armor Plate (III)	Placa de blindagem (III)
+Armor Plate (IIIA)	Placa de blindagem (IIIA)
+Armor Plate (IV)	Placa de blindagem (IV)
+Backpack	Mochila
+Jääkäri Backpack (Black)	Mochila Jääkäri (Preta)
+Jääkäri BP.	Jääkäri BP.
+Jääkäri Backpack (Brown)	Mochila Jääkäri (Castanha)
+Jääkäri Backpack (Green)	Mochila Jääkäri (verde)
+Jääkäri Backpack (M05)	Mochila Jääkäri (M05)
+Nomad Backpack	Mochila Nomad
+Nomad BP.	Nomad BP.
+Patrol Backpack	Mochila de patrulha
+Patrol BP.	Patrulha BP.
+Duffel (Retro)	Mochila (Retro)
+R. Duffel	R. Duffel
+Belt Pouch	Bolsa de cinto
+Kukkaro (Black)	Kukkaro (Preto)
+Kukkaro	Kukkaro
+Kukkaro (Brown)	Kukkaro (Marrom)
+Kukkaro (Green)	Kukkaro (Verde)
+Kukkaro (M05)	Kukkaro (M05)
+Literature	Literatura
+Book (Children)	Livro (infantil)
+Children	Crianças
+Book (Cooking)	Livro (Culinária)
+Cooking	Culinária
+Book (Fishing)	Livro (Pesca)
+Book (Religion)	Livro (Religião)
+Religion	Religião
+Clothing	Roupas
+Flame Beanie	Gorro Flame
+F. Beanie	F. Gorro
+Combat Boots	Botas militares
+C. Boots	C. Botas
+M62 Cap	Boné M62
+Tactical Fleece (Brown)	Polar Tático (Castanho)
+T. Fleece	T. Fleece
+Tactical Fleece (Green)	Polar Tático (Verde)
+Leather Gloves	Luvas de couro
+L. Gloves	L. Luvas
+Work Gloves	Luvas de trabalho
+W. Gloves	W. Luvas
+Mosquito Hat	Chapéu contra mosquitos
+M. Hat	M. Hat
+Sauna Hat	Chapéu de sauna
+S. Hat	S. Hat
+Hoodie (Border Zone)	Moletom com capuz (Border Zone)
+Hoodie BZ.	Moletom com capuz BZ.
+Hoodie B.	Hoodie B.
+Hoodie (Gray)	Moletom com capuz (cinza)
+Hoodie	Moletom com capuz
+M62 Jacket	Jaqueta M62
+M62 J.	M62 J.
+Santa Jacket	Jaqueta de Papai Noel
+Santa J.	Papai Noel J.
+Winter Jacket (Blue)	Jaqueta de inverno (azul)
+Winter Jacket	Jaqueta de inverno
+Winter Jacket (Red)	Jaqueta de inverno (vermelha)
+Winter J.	Winter J.
+Jeans (Black)	Jeans (preto)
+Jeans	Jeans
+Hiking Pants	Calças de caminhada
+Hiking P.	Caminhada P.
+Windbreaker (Black)	Jaqueta corta-vento (preta)
+Windbreaker	Jaqueta corta-vento
+Windbr.	Windbr.
+Windbreaker (Green)	Jaqueta corta-vento (verde)
+Consumables	Consumíveis
+Consumable	Consumível
+Drink	Bebida
+Eat	Comer
+Eat Raw	Coma alimentos crus
+Eat (Raw)	Coma (cru)
+Chew	Mastigar
+Smoke	Fumaça
+Use	Usar
+Beer	Cerveja
+Empty Can	Lata vazia
+Can	Pode
+Canned Meat	Carne enlatada
+Meat	Carne
+Canned Meatballs	Almôndegas enlatadas
+Meatballs	Almôndegas
+Canned Pea Soup	Sopa de ervilha enlatada
+Pea Soup	Sopa de ervilha
+Canned Peaches	Pêssegos em lata
+Peaches	Pêssegos
+Canned Pear	Pêra em lata
+Pear	Pêra
+Canned Peas	Ervilhas enlatadas
+Peas	Ervilhas
+Canned Pineapple	Abacaxi em lata
+Pineapple	Abacaxi
+Canned Tomatoes	Tomates enlatados
+Tomatoes	Tomates
+Canned Tuna	Atum enlatado
+Tuna	Atum
+Cat Food	Ração para gatos
+War Chocolate	Chocolate de Guerra
+W. Choco	W. Choco
+Cigarettes	Cigarros
+Cigs	Cigarros
+Cigars	Charutos
+Coffee	Café
+Coffee (Brewed)	Café (preparado)
+C. Brewed	C. Fabricado
+Fish Soup (Cooked)	Sopa de peixe (cozida)
+F. Soup (Cooked)	F. Sopa (cozida)
+F. Soup	F. Sopa
+Meatballs (Cooked)	Almôndegas (cozidas)
+M. Balls (Cooked)	M. Bolinhos (cozidos)
+M. Balls	M. Balls
+Pea Soup (Cooked)	Sopa de ervilha (cozida)
+P. Soup (Cooked)	Sopa (cozida)
+P. Soup	P. Sopa
+Tomato Soup (Cooked)	Sopa de tomate (cozida)
+T. Soup (Cooked)	Sopa (cozida)
+T. Soup	T. Sopa
+Crackers	Bolachas salgadas
+Energy Drink	Bebida energética
+E. Drink	E. Bebida
+Energy Powder	Pó Energético
+E. Powder	E. Pó
+Field Ration	Ração de campo
+F. Ration	F. Ração
+Juice	Suco
+Juice (Orange)	Suco (de laranja)
+Juice O.	Juice O.
+Juice (Pear)	Suco (de pêra)
+Juice P.	Juice P.
+Juice (Raspberry)	Suco (de framboesa)
+Juice R.	Juice R.
+Kilju	Kilju
+Kompot	Kompot
+Mustard	Mostarda
+Peanuts	Amendoim
+Potato	Batata
+Salty Liquorice	Alcaçuz salgado
+Salty Liq.	Líquido salgado
+Snus	Snus
+Soda (Lemon)	Refrigerante (limão)
+Soda	Refrigerante
+Soda L.	Soda L.
+Sugar	Açúcar
+Water Bottle	Garrafa de água
+Water	Água
+Yeast	Levedura
+Electronics	Eletrônicos
+Alarm Clock	Despertador
+A. Clock	A. Relógio
+Batteries	Baterias
+Battery	Bateria
+Battery Cables	Cabos de bateria
+B. Cables	B. Cabos
+Casette	Cassete
+Casette (Electrofolk)	Casette (Electrofolk)
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - De onde você sabia que viria
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - O papai deu um cavalo
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	Junna - Ruslana
+Junna - Vandringsman	Junna - O Viajante
+Casette (Nomad)	Casette (Nomad)
+Casette (OST)	Casette (Trilha Sonora Original)
+OST - Alive	OST - Alive
+OST - Daybreak	OST - Amanhecer
+OST - Far	OST - Longe
+OST - Lost	Trilha sonora - Lost
+OST - Rain	Trilha sonora - Rain
+OST - Road	OST - Estrada
+OST - Trailer	OST - Trailer
+OST - Winds	Trilha Sonora - Instrumentos de sopro
+Casette (Radio Hits)	Casete (Sucessos do Rádio)
+Casette (Symphony)	Casette (Sinfonia)
+Vostok Symphony	Sinfonia Vostok
+Casette Player	Leitor de fitas
+C. Player	C. Jogador
+Coffeemaster	Mestre do Café
+C. Master	C. Mestrado
+Cooking Station	Estação de cozinha
+C. Station	C. Estação
+Hotplate	Placa de aquecimento
+Inverter	Inversor
+Narva	Narva
+Polaris	Polaris
+Fish	Peixe
+Fishing	Pesca
+Bream	Sargo
+Fishing Rod	Vara de pesca
+F. Rod	F. Rod
+Perch	Perca
+Pike	Lúcio
+Roach	Barata
+Grenade	Granada
+Helmet	Capacete
+Police Helmet (IIIA)	Capacete policial (IIIA)
+Police Helmet	Capacete policial
+P. Helmet	P. Capacete
+Instrument	Instrumento
+Guitar	Guitarra
+Harmonica	Gaita
+Harmo.	Harmo.
+Key	Chave
+Attic Key	Chave do sótão
+Attic K.	Attic K.
+Bunker Key	Chave do Bunker
+Bunker K.	Bunker K.
+Cellar Key	Chave da Adega
+Cellar K.	Adega K.
+Classroom Key	Chave da sala de aula
+Class. K.	Classe K.
+Gymnasium Key	Chave do ginásio
+Gym. K.	Academia. K.
+Tunnel Key	Chave do túnel
+Tunnel K.	Túnel K.
+Knife	Faca
+Jaeger 140	Jaeger 140
+Jaeger	Jaeger
+Skrama 200	Skrama 200
+Skrama	Skrama
+Skrama 240	Skrama 240
+Lore	Tradição
+Cat	Gato
+Oil Sample	Amostra de óleo
+Oil S.	Oil S.
+Patient Report	Relatório do paciente
+P. Report	P. Relatório
+Heal	Curar
+Spray	Spray
+Medical	Médico
+Antibiotics	Antibióticos
+Antibio.	Antibio.
+Antiseptic	Antisséptico
+A. Septic	A. Fossa séptica
+Balm	Bálsamo
+Bandage	Curativo
+Bandage (Improvised)	Atadinho (improvisado)
+Cold Medicine	Remédio para resfriado
+C. Med.	Médico
+Deodorant	Desodorante
+Deodora.	Deodora.
+Gum	Chiclete
+Lotion	Loção
+Medkit	Kit de primeiros socorros
+Melatonin	Melatonina
+Melaton.	Melatonina.
+Painkill.	Analgésico.
+Saline	Solução salina
+Splint	Tala
+Splint (Improvised)	Tala (improvisada)
+Thermal Blanket	Manta térmica
+Thermal	Térmico
+Tissues	Lenços de papel
+Sneeze	Espirro
+Tourniquet	Torniquete
+Tourni.	Tourni.
+Tourniquet (Improvised)	Torniquete (improvisado)
+Wipes	Toalhinhas
+Wipe	Limpar
+Misc	Diversos
+Blanket	Cobertor
+Board Game	Jogo de tabuleiro
+B. Game	B. Jogo
+Bucket	Balde
+Coffee Filter	Filtro de café
+C. Filter	C. Filtro
+Duct Tape	Fita adesiva
+D. Tape	D. Fita adesiva
+Happy Stove	Fogão Feliz
+H. Stove	H. Fogão
+Jerry Can	Galão
+Jerry C.	Jerry C.
+Lumber	Madeira
+Map	Mapa
+Map (Tactical)	Mapa (tático)
+T. Map	T. Mapa
+Matches	Partidas
+Mat.	Mat.
+Mattress	Colchão
+Mess Kit	Conjunto de talheres
+Nails	Unhas
+Oil Filter	Filtro de óleo
+O. Filter	O. Filtro
+Pillow	Almofada
+Rags	Trapos
+Sleeping_Bag	Saco de dormir
+Sleeping Bag	Saco de dormir
+S. Bag	S. Bag
+Sticks	Paus
+Tackle Box	Caixa de iscas
+Tackle B.	Tackle B.
+Toilet Paper	Papel higiênico
+T. Paper	T. Papel
+Toolbox	Caixa de ferramentas
+Water Lock	Barreira de água
+W. Lock	W. Lock
+Weapon Repair Kit	Kit de reparo de armas
+Repair Kit	Kit de reparo
+Rig	Plataforma
+LVPC (Green)	LVPC (Verde)
+LVPC (Winter)	LVPC (Inverno)
+Fishing Vest	Colete de pesca
+F. Vest	F. Vest
+Weapon	Arma
+Mag.	Mag.
+KA-12 Magazine	Revista KA-12
+KA-M Magazine	Revista KA-M
+KAS-74U Magazine	Carregador KAS-74U
+C1911 Magazine	Revista C1911
+G7 Magazine	Revista G7
+KAR-21 Magazine (.223)	Carregador KAR-21 (.223)
+KAR-21 Magazine (.308)	Carregador KAR-21 (.308)
+KAR-21 Barrel (.308)	Cano KAR-21 (.308)
+KAR-21 Barrel	Canho do KAR-21
+Barrel	Cano
+KP-31 Drum	Tambor KP-31
+Drum	Tambor
+STANAG Magazine	Revista STANAG
+M78 Magazine	Revista M78
+Karov	Karov
+Karov Magazine	Revista Karov
+Mosin	Mosin
+PM5 Magazine	Revista PM5
+MP7 Magazine	Revista MP7
+P3 Magazine	Revista P3
+RK Magazine	Revista RK
+VSD Magazine	Revista VSD
+SS Magazine	Revista SS
+Ammo	Munição
+Attachment	Anexo
+Hybrid	Híbrido
+Kobra	Kobra
+Leopard	Leopardo
+Micro	Micro
+Monster	Monstro
+Thor	Thor
+New Furniture Added [Catalog]	Novos móveis adicionados [Catálogo]
+Boss Killed	Chefe morto
+Cat Rescued	Gato resgatado
+Cat Vital Activated	Cat Vital Ativado
+Cat Died	O gato morreu
+You have been spotted!	Você foi visto!
+Player Returned	Jogador retornou
+Airdrop	Distribuição aérea
+Tutorial Crate	Caixa de tutoriais
+Electric Box	Caixa elétrica
+Medical Cabinet	Armário de remédios
+Office Cabinet	Armário de escritório
+Cabinet	Gabinete
+Corpse	Cadáver
+Bandit Corpse	Cadáver de bandido
+Crate Military	Crate Military
+Crate Special	Promoção de caixas
+Wooden Crate	Caixa de madeira
+Garbage	Lixo
+Fireplace	Lareira
+Freezer	Congelador
+Fridge	Geladeira
+Fusebox	Caixa de fusíveis
+Locker	Armário
+Mailbox	Caixa de correio
+Nightstand	Mesinha de cabeceira
+Boxes	Caixas
+Stove	Fogão
+Furniture	Móveis
+Furnitures	Móveis
+Bed (Civilian)	Cama (civil)
+Bed C.	Cama C.
+Bed (Nomad)	Cama (Nomad)
+Bed N.	Cama N.
+Cabinet (Medical)	Armário (médico)
+Cabinet M.	Gabinete M.
+Cabinet (Office)	Gabinete
+Cabinet. 0	Gabinete. 0
+Cabinet (Wood)	Armário (de madeira)
+Cabinet W.	Armário W.
+Carpet (Persian)	Tapete (persa)
+Carpet P.	Carpet P.
+Carpet (Rag)	Tapete (de retalhos)
+Carpet R.	Carpet R.
+Chair (Office)	Cadeira (de escritório)
+Chair O.	Presidente O.
+Chair (School)	Coordenador (Faculdade)
+Chair S.	Presidente S.
+Sun Chair	Cadeira Sun
+S. Chair	Presidente
+Crate (Military)	Caixa (militar)
+Crate M.	Crate M.
+Crate (Special)	Caixa (Especial)
+Crate S.	Crate S.
+Cupboard	Armário
+C. Board	C. Conselho
+Curtain (Long)	Cortina (longa)
+Curtain L.	Cortina L.
+Curtain (Mini)	Cortina (Mini)
+Curtain M.	Cortina M.
+Dartboard	Alvo de dardos
+D. Board	D. Conselho
+N. Stand	N. Stand
+Painting (Lake)	Pintura (Lago)
+Painting L.	Pintura L.
+Pallet	Palete
+Poster (Posture)	Cartaz (Postura)
+Poster P.	Cartaz P.
+Rack (Coat)	Cabideiro (para casacos)
+Rack C.	Rack C.
+Rya (Maria)	Rya (Maria)
+Rya M.	Rya M.
+Shelf (Metal)	Prateleira (de metal)
+Shelf M.	Prateleira M.
+Shelf (Wall)	Prateleira (de parede)
+Shelf W.	Prateleira W.
+Shelf (Wood)	Prateleira (de madeira)
+Sign (Border Zone)	Placa (Zona de Fronteira)
+Sign BZ.	Assine BZ.
+Sofa (Leather)	Sofá (couro)
+Sofa L.	Sofá L.
+Stool (Military)	Banco (militar)
+Stool M.	M. Stool
+Stool (Padded)	Banqueta (acolchoada)
+Stool P.	Fezes P.
+Table (Cabin)	Mesa (cabine)
+Table C.	Tabela C.
+Table (Canteen)	Mesa (refeitório)
+Table (Kitchen)	Mesa (de cozinha)
+Table K.	Tabela K.
+Table (Office)	Mesa (de escritório)
+Table. O	Tabela. O
+Target Stand	Suporte para alvo
+Target S.	Destino S.
+Television	Televisão
+TV	TV
+Trolley (Short)	Carrinho (curto)
+Trolley S.	Trolley S.
+Trolley (Tall)	Carrinho (alto)
+Trolley T.	Carrinho T.
+Weapon Display	Exposição de armas
+Weapon D.	Arma D.
+Unload	Descarregar
+Clear Chamber	Câmara transparente
+Unequip	Retirar
+Equip	Equipar
+Show	Mostrar
+Hide	Ocultar
+Activated	Ativado
+Not active	Não está ativo
+All maps & zones	Todos os mapas e zonas
+Active	Ativo
+Repair	Reparação
+Craft	Artesanato
+Added	Adicionado
+Remove	Remover
+Completed	Concluído
+Add to Notes	Adicionar às notas
+Frozen	Congelado
+Permadeath Zone	Zona de Morte Permanente
+[Open]	[Abrir]
+Door [Jammed]	Porta [Encravada]
+Door [Occupied]	Porta [Ocupada]
+Door [Close]	Porta [Fechar]
+Door [Open]	Porta [Aberta]
+Sleep (Random sleep: 6-12h)	Sono (duração aleatória: 6 a 12 horas)
+Turn Off	Desligar
+Turn On	Ligar
+Radio [Turn Off]	Rádio [Desligar]
+Radio [Turn On]	Rádio [Ligar]
+Television [Turn Off]	Televisão [Desligar]
+Television [Turn On]	Televisão [Ligar]
+Rescue Cat	Gato resgatado
+Cat is eating, do not disturb	O gato está comendo, não incomodem
+Fuel Tank [89%]	Tanque de combustível [89%]
+Feed cat:	Alimentar o gato:
+Indoors	Em ambientes fechados
+Indoor	Interno
+Mine	Meu
+Lure	Isca
+(Military)	(Militar)
