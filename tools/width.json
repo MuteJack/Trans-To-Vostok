@@ -1,0 +1,54 @@
+{
+  "_comment": "Unified column widths applied by the TSV->xlsx rebuild tools. Keys are header names (not column letters), so policies survive column reordering. Sheet name 'MetaData' uses the MetaData policy; every other sheet uses the policy of its containing xlsx (Translation / Glossary / Texture). Header names not listed default to Excel's standard width.",
+  "MetaData": {
+    "IDX": 6.0,
+    "Field": 25.0,
+    "Value": 15.0,
+    "Description": 60.0
+  },
+  "Translation": {
+    "WHERE": 12.0,
+    "SUB": 26.0,
+    "KIND": 15.0,
+    "Transliteration": 10.0,
+    "Transcreation": 10.0,
+    "Machine translated": 10.0,
+    "Confused": 10.0,
+    "untranslatable": 10.0,
+    "method": 17.0,
+    "filename": 30.0,
+    "filetype": 17.0,
+    "location": 17.0,
+    "parent": 35.0,
+    "name": 16.0,
+    "type": 7.0,
+    "property": 7.0,
+    "unique_id": 12.0,
+    "text": 84.0,
+    "translation": 84.0,
+    "DESCRIPTION": 150.0
+  },
+  "Glossary": {
+    "Transliteration": 12.0,
+    "Transcreation": 12.0,
+    "Machine translated": 10.0,
+    "Confused": 10.0,
+    "untranslatable": 10.0,
+    "Category": 11.0,
+    "Sub-Category": 14.0,
+    "Class": 17.0,
+    "text": 23.0,
+    "translation": 24.0,
+    "DESCRIPTION": 100.0
+  },
+  "Texture": {
+    "Where": 9.0,
+    "Type": 13.0,
+    "Text": 56.0,
+    "Translation": 66.0,
+    "File Directory": 58.0,
+    "File Name": 69.0,
+    "Reworked by": 14.0,
+    "Attribution": 53.0
+  }
+}

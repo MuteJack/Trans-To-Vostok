@@ -22,12 +22,17 @@ Behavior:
     - `_sheet_order.txt` is written alongside the per-sheet TSVs, listing
       the sheets in their original xlsx order (one name per line). This
       lets downstream tools (e.g. TSV -> xlsx rebuild) preserve sheet order.
+    - Column widths are NOT written per-locale; the unified policy lives
+      in `tools/width.json` keyed by category (MetaData / Translation /
+      Glossary / Texture). Any pre-existing `_column_widths.json` here
+      is treated as stale and removed.
 
 Usage:
     python tools/utils/build_translation_tsv.py             # all locales
     python tools/utils/build_translation_tsv.py Korean      # one locale only
 """
 import csv
+import json
 import sys
 from pathlib import Path
 
@@ -130,6 +135,16 @@ def export_xlsx(xlsx_path: Path, out_dir: Path) -> tuple[int, int]:
                 except OSError:
                     pass
             raise
+
+        # column-width policy is unified in tools/width.json (not per-locale).
+        # Any pre-existing _column_widths.json here is stale.
+        stale_widths = out_dir / "_column_widths.json"
+        if stale_widths.exists():
+            try:
+                stale_widths.unlink()
+                print(f"    x removed stale: _column_widths.json")
+            except OSError as e:
+                print(f"    [WARN] Failed to remove stale: _column_widths.json ({e})")
 
         return sheet_count, total_rows
     finally:
