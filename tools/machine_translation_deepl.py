@@ -35,19 +35,65 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-# locale folder name -> DeepL language code (kept in sync with import_translations.py)
+# locale folder name -> DeepL language code (kept in sync with import_translations.py).
+# DeepL target language list: https://developers.deepl.com/docs/getting-started/supported-languages
+# For variants (EN-GB/US, PT-BR/PT, ES/ES-419, ZH-HANS/HANT), both the
+# camelCase name (e.g., BrazilianPortuguese, EnglishGB) and the
+# underscore-suffixed alias (e.g., Portuguese_BR, English_GB) map to the
+# same code so folder naming conventions can vary across contributors.
+# Languages marked "(next-gen)" require DeepL's next-gen model — may fall
+# back or error on the classic model.
 DEFAULT_DEEPL_LANG = {
-    "Korean": "KO",
-    "Japanese": "JA",
+    # --- Western Europe (Latin) ---
+    "Danish": "DA",
+    "Dutch": "NL",
+    "EnglishGB": "EN-GB",
+    "English_GB": "EN-GB",
+    "EnglishUS": "EN-US",
+    "English_US": "EN-US",
+    "Finnish": "FI",
     "French": "FR",
     "German": "DE",
-    "Spanish": "ES",
     "Italian": "IT",
+    "Norwegian": "NB",                    # Bokmål
+    "Spanish": "ES",                      # Castilian (default)
+    "Spanish_ES": "ES",
+    "SpanishLatAm": "ES-419",
+    "Spanish_419": "ES-419",
+    "Swedish": "SV",
     "Portuguese": "PT-PT",
+    "Portuguese_PT": "PT-PT",
     "BrazilianPortuguese": "PT-BR",
-    "ChineseSimplified": "ZH-HANS",
-    "ChineseTraditional": "ZH-HANT",
+    "Portuguese_BR": "PT-BR",
+    # --- Central / Eastern Europe (Latin) ---
+    "Czech": "CS",
+    "Estonian": "ET",
+    "Hungarian": "HU",
+    "Latvian": "LV",
+    "Lithuanian": "LT",
+    "Polish": "PL",
+    "Romanian": "RO",
+    "Slovak": "SK",
+    "Slovenian": "SL",
+    # --- Other Latin ---
+    "Indonesian": "ID",
+    "Turkish": "TR",
+    "Vietnamese": "VI",                   # (next-gen)
+    # --- Cyrillic / Greek ---
+    "Bulgarian": "BG",
+    "Greek": "EL",
     "Russian": "RU",
+    "Ukrainian": "UK",
+    # --- Asian / Other scripts ---
+    "Arabic": "AR",
+    "ChineseSimplified": "ZH-HANS",
+    "Chinese_HANS": "ZH-HANS",
+    "ChineseTraditional": "ZH-HANT",
+    "Chinese_HANT": "ZH-HANT",
+    "Hebrew": "HE",                       # (next-gen)
+    "Japanese": "JA",
+    "Korean": "KO",
+    "Thai": "TH",                         # (next-gen)
 }
 
 
