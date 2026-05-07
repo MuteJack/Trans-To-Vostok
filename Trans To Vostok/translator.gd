@@ -617,8 +617,27 @@ func _on_node_added(node: Node) -> void:
 
 
 const META_BOUND_PROPS := "_ttv_bound_props"
+const META_SKIP_TRANSLATE := "_ttv_skip_translate"
+
+
+func _is_under_skip_root(node: Node) -> bool:
+	# Walk ancestors. If any ancestor (or the node itself) has the
+	# META_SKIP_TRANSLATE meta, this subtree is exempt from translation.
+	# Used to keep the mod's own F9 UI un-translated.
+	var p: Node = node
+	while p != null:
+		if p.has_meta(META_SKIP_TRANSLATE):
+			return true
+		p = p.get_parent()
+	return false
+
 
 func _bind_node(node: Node) -> void:
+	# Skip our own F9 UI — translator_ui sets META_SKIP_TRANSLATE on the
+	# Window so its descendant Labels/Buttons aren't bound.
+	if _is_under_skip_root(node):
+		return
+
 	var props_found: Array = []
 	for prop in TRANSLATABLE_PROPS:
 		if prop in node:

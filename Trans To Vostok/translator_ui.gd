@@ -213,6 +213,11 @@ func _show_language_ui(is_startup: bool) -> void:
 	win.always_on_top = true
 	win.transparent = true
 	win.transparent_bg = true
+	# Mark this window (and all descendants) as exempt from translation —
+	# the translator scans every Label/Button via tree.node_added; without
+	# this marker our F9 UI text would be translated like game UI.
+	# translator.gd checks ancestors for this meta in _bind_node().
+	win.set_meta("_ttv_skip_translate", true)
 	get_tree().root.add_child(win)
 	win.popup_centered()
 
