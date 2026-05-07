@@ -162,6 +162,7 @@ Apache 2.0 §4(d) 의 attribution 보존 대상은 [`NOTICE`](NOTICE) 에 있고
 * [X] 일부 이미지 교체 기능 — 런타임 텍스처 로더 + 한국어 튜토리얼 빌보드 (v0.3.0)
 * [X] 우선 순위 화이트리스트 — 모드 호환용 매 프레임 번역 프리셋 (v0.3.1)
 * [X] 게임 1.0.0 대상 테스트
+* [X] 게임 0.1.1.3 테스트
 * [ ] 기타 언어 prototype + 게임 0.1.1.3 테스트
 * [ ] 텍스처 metadata 리스트 + 검증 도구 보강 (v0.3.0 carry-over)
 * [X] 사용자 커스텀 whitelist 키워드 입력 (v0.3.1 carry-over)
@@ -172,14 +173,10 @@ Apache 2.0 §4(d) 의 attribution 보존 대상은 [`NOTICE`](NOTICE) 에 있고
 
 * [X] Korean 번역 기준 template 완성
 * [X] DeepL 파이프라인 + French 1차 번역 (v0.4.0)
-* [ ] 번역 ToolBox prototype GitHub 공개 (진행 중)
-* [ ] 번역가 모집 / GitHub 협업 (공개 저장소 준비 후)
+* [X] 번역 ToolBox prototype GitHub 공개
+* [ ] 번역가 모집 / GitHub 협업 (Repository 정비중)
 * [ ] ToolBox / 매뉴얼 prototype 완성 후 GitHub 공개
 * [ ] 추가 언어 (Japanese, Chinese, German, …)
 * [ ] 정식 / 베타 버전에 대한 번역 workflow (버전별 diff, 릴리스 태깅)
 
 ---
-
-## Contact
-
-> **Status**: GitHub issues 는 아직 사용 불가 (저장소 공개 대기 중). 현재는 모드 배포 채널을 통해 문의.
