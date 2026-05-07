@@ -104,7 +104,7 @@ in your derivative, you must still preserve the upstream attribution
 notes in `Texture_Attribution.md` for any images of those sources you
 continue to distribute.
 
-Currently identified upstream sources include (non-exhaustive):
+For example:
 - **Copernicus Sentinel-2** satellite data
 - **National Land Survey of Finland (Maanmittauslaitos / MML)** map data
 - Various Pixabay, Texturelabs, and other image source contributions
