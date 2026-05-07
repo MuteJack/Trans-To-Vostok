@@ -74,16 +74,6 @@ Terminal	Terminal
 Tutorial Exit	Sortie du tutoriel
 Template	Modèle
 shaders	shaders
-Neutral	Neutre
-Overcast	Ciel couvert
-Rain	Pluie
-Storm	Tempête
-Generic	Générique
-Wood	Bois
-Metal	Métal
-Concrete	Béton
-Rock	Rock
-Vostok	Vostok
 Trader	Trader
 Generalist	Généraliste
 Doctor	Médecin
@@ -97,6 +87,16 @@ Bandit	Bandit
 Guards	Gardes
 Military	Militaire
 Punisher	Le Punisher
+Neutral	Neutre
+Overcast	Ciel couvert
+Rain	Pluie
+Storm	Tempête
+Generic	Générique
+Wood	Bois
+Metal	Métal
+Concrete	Béton
+Rock	Rock
+Vostok	Vostok
 Inventory	Stock
 Primary	Primaire
 Secondary	Secondaire
@@ -141,7 +141,6 @@ Guaranteed	Garanti
 Common	Courant
 Rare	Rare
 Legendary	Légendaire
-Ammo	Munitions
 Armor Plate	Plaque de blindage
 Armor	Armure
 Armor Plate {class}	Plaque de blindage {class}
@@ -150,13 +149,6 @@ Armor Plate (III+)	Plaque de blindage (III+)
 Armor Plate (III)	Plaque de blindage (III)
 Armor Plate (IIIA)	Plaque de blindage (IIIA)
 Armor Plate (IV)	Plaque de blindage (IV)
-Attachment	Pièce jointe
-Hybrid	Hybride
-Kobra	Kobra
-Leopard	Léopard
-Micro	Micro
-Monster	Monstre
-Thor	Thor
 Backpack	Sac à dos
 Jääkäri Backpack (Black)	Sac à dos Jääkäri (noir)
 Jääkäri BP.	Jääkäri BP.
@@ -416,7 +408,6 @@ Tourniquet (Improvised)	Garrot (improvisé)
 Wipes	Lingettes
 Wipe	Essuyer
 Misc	Divers
- Misc	 Divers
 Blanket	Couverture
 Board Game	Jeu de société
 B. Game	B. Jeu
@@ -485,6 +476,14 @@ P3 Magazine	Magazine P3
 RK Magazine	Magazine RK
 VSD Magazine	Magazine VSD
 SS Magazine	Magazine SS
+Ammo	Munitions
+Attachment	Pièce jointe
+Hybrid	Hybride
+Kobra	Kobra
+Leopard	Léopard
+Micro	Micro
+Monster	Monstre
+Thor	Thor
 New Furniture Added [Catalog]	Nouveaux meubles ajoutés [Catalogue]
 Boss Killed	Le patron a été tué
 Cat Rescued	Un chat sauvé

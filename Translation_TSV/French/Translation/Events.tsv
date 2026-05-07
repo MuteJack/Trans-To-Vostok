@@ -1,54 +1,54 @@
 WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Show	Button	text	728466319	Show	Afficher	
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Day	Label	text	826758355	Day 1	Jour 1	
-			0	0	0	0	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}		
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Title	Label	text	2075173674	Generalist returns to Village	Le généraliste revient au Village	
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Status	Label	text	1150425844	In 10 days	Dans 10 jours	
-			0	0	0	0	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days		
-			0	0	0	0	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event		
-			0	0	1	0	0	substr									Trader Event	Événement destiné aux traders	
-			0	0	1	0	0	substr									Dynamic Event	Événement dynamique	
-			0	0	1	0	0	substr									Special Event	Événement spécial	
-			0	0	1	0	0	ignore									Trader	Trader	
-			0	0	1	0	0	substr									Dynamic	Dynamique	
-			0	0	1	0	0	substr									Special	Spécial	
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	Événement destiné aux traders	
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Location	Label	text	1817711349	Event location:	Lieu de l'événement :	
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	text	1530040464	Village	Village	
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Possibility	Label	text	873648025	Event possibility:	Possibilité d'événement :	
-			0	0	1	0	0	substr	Scripts/Event	gd			possibility.get_child(0).text	literal		50	Guaranteed	Garanti	
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	text	1762783310	~5% / map instance	environ 5 % / instance de carte	"Dynamically Changed on Event.gd
-Maybe a Placeholder"
-			0	0	0	0	0	pattern	Scripts/Event	gd			possibility.get_child(0).text	concat		52	~{str}% / map instance		
-			0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Description	Label	text	1534808090	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+Events	PlaceHolder	Name	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Title	Label	text	2075173674	Generalist returns to Village	Le généraliste revient au Village	Place holder text. Don't need to Translate
+Events	PlaceHolder	Type	0	0	1	0	0	ignore									Trader	Trader	Place holder text. Don't need to Translate
+Events	PlaceHolder	Description	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Description	Label	text	1534808090	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
 
 After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Le Docteur est un marchand spécialisé dans le domaine médical qui tient un dispensaire de fortune dans un bâtiment scolaire abandonné de la Zone 05.
 
-Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."	
-			0	0	1	0	0	literal	Events/List/D1_Generalist	tres					name		Generalist returns to Village	Le généraliste revient au Village	
-			0	0	1	0	0	ignore	Events/List/D1_Generalist	tres					type		Trader	Trader	
-			0	0	1	0	0	literal	Events/List/D1_Generalist	tres					description		"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
+Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."	Place holder text. Don't need to Translate
+Events	/	Button	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Show	Button	text	728466319	Show	Afficher	
+Events	/	Day	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Day	Label	text	826758355	Day 1	Jour 1	
+Events	/	Day	0	0	0	0	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}		
+Events	/	Day Left	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Status	Label	text	1150425844	In 10 days	Dans 10 jours	Place holder text. Don't need to Translate. Use Pattern instead
+Events	/	Day Left	0	0	0	0	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days		
+Events	/	Type	0	0	0	0	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event		
+Events	/	Type	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	Événement destiné aux traders	I don't know why is this string use lower case (event).
+Events	/	Type	0	0	1	0	0	substr									Trader Event	Événement destiné aux traders	
+Events	/	Type	0	0	1	0	0	substr									Dynamic Event	Événement dynamique	
+Events	/	Type	0	0	1	0	0	substr									Special Event	Événement spécial	
+Events	/	Type	0	0	1	0	0	substr									Dynamic	Dynamique	
+Events	/	Type	0	0	1	0	0	substr									Special	Spécial	
+Events	/	Type	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Location	Label	text	1817711349	Event location:	Lieu de l'événement :	
+Events	/	Location	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	text	1530040464	Village	Village	
+Events	/	Location	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Possibility	Label	text	873648025	Event possibility:	Possibilité d'événement :	
+Events	/	Percent	0	0	1	0	0	substr	Scripts/Event	gd			possibility.get_child(0).text	literal		50	Guaranteed	Garanti	
+Events	/	Percent	0	0	1	0	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	text	1762783310	~5% / map instance	environ 5 % / instance de carte	"Dynamically Changed on Event.gd
+Maybe a Placeholder"
+Events	/	Percent	0	0	0	0	0	pattern	Scripts/Event	gd			possibility.get_child(0).text	concat		52	~{str}% / map instance		
+Events	List/Day1	Name	0	0	1	0	0	literal	Events/List/D1_Generalist	tres					name		Generalist returns to Village	Le généraliste revient au Village	
+Events	List/Day1	Type	0	0	1	0	0	ignore	Events/List/D1_Generalist	tres					type		Trader	Trader	
+Events	List/Day1	Description	0	0	1	0	0	literal	Events/List/D1_Generalist	tres					description		"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
 
 After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"Generalist est un commerçant « touche-à-tout » qui tient une petite boutique dans le garage du Village, dans la Zone 05, et qui est spécialisé dans les produits courants.
 
 Après s'être accordé une petite pause, Generalist a repris du service et est prêt à accueillir ses fidèles clients en leur proposant des prix raisonnables."	
-			0	0	1	0	0	literal	Events/List/D2_Doctor	tres					name		Doctor returns to School	Un médecin retourne à l'école	
-			0	0	1	0	0	ignore	Events/List/D2_Doctor	tres					type		Trader	Trader	
-			0	0	1	0	0	literal	Events/List/D2_Doctor	tres					description		"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
+Events	List/Day2	Name	0	0	1	0	0	literal	Events/List/D2_Doctor	tres					name		Doctor returns to School	Un médecin retourne à l'école	
+Events	List/Day2	Type	0	0	1	0	0	ignore	Events/List/D2_Doctor	tres					type		Trader	Trader	
+Events	List/Day2	Description	0	0	1	0	0	literal	Events/List/D2_Doctor	tres					description		"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
 
 After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"Le Docteur est un marchand spécialisé dans le domaine médical qui tient une clinique de fortune dans un bâtiment scolaire abandonné de la Zone 05.
 
 Après être allé voir Grand-mère pour s'assurer qu'elle allait bien, le Docteur retourne à sa clinique, prêt à prodiguer des soins médicaux aux blessés."	
-			0	0	1	0	0	literal	Events/List/D3_Fighters	tres					name		Fighter Jets	Avions de chasse	
-			0	0	1	0	0	ignore	Events/List/D3_Fighters	tres					type		Dynamic	Dynamique	
-			0	0	1	0	0	literal	Events/List/D3_Fighters	tres					description		"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
+Events	List/Day3	Name	0	0	1	0	0	literal	Events/List/D3_Fighters	tres					name		Fighter Jets	Avions de chasse	
+Events	List/Day3	Type	0	0	1	0	0	ignore	Events/List/D3_Fighters	tres					type		Dynamic	Dynamique	
+Events	List/Day3	Description	0	0	1	0	0	literal	Events/List/D3_Fighters	tres					description		"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
 
 The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"Depuis l'évacuation de la Zone 05 et la démilitarisation de la Zone frontalière, la situation a commencé à dégénérer et une démonstration de force s'impose.
 
 L'armée finlandaise va commencer à effectuer des survols aériens non létaux et très visibles avec des avions de chasse qui apparaîtront fréquemment dans le ciel."	
-			0	0	1	0	0	literal	Events/List/D4_Cat	tres					name		Missing Cat	Chat disparu	
-			0	0	1	0	0	ignore	Events/List/D4_Cat	tres					type		Special	Spécial	
-			0	0	1	0	0	literal	Events/List/D4_Cat	tres					description		"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
+Events	List/Day4	Name	0	0	1	0	0	literal	Events/List/D4_Cat	tres					name		Missing Cat	Chat disparu	
+Events	List/Day4	Type	0	0	1	0	0	ignore	Events/List/D4_Cat	tres					type		Special	Spécial	
+Events	List/Day4	Description	0	0	1	0	0	literal	Events/List/D4_Cat	tres					description		"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
 
 A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
 
@@ -57,53 +57,53 @@ Locals saw the Bandits tossing the box around in a cruel way and eventually leav
 Il y a quelques jours, les Nomades ont trouvé le chat errant dans l'Avant-poste et ont réussi à le capturer à l'aide d'une sorte de boîte. Alors que les Nomades s'apprêtaient à ramener le chat à la grand-mère, ils ont été pris en embuscade par des Bandits qui se sont apparemment emparés de la boîte.
 
 Des habitants ont vu les Bandits malmener la boîte de manière cruelle avant de l'abandonner quelque part."	
-			0	0	1	0	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05	Le Punisher arrive dans la Zone 05	
-			0	0	1	0	0	ignore	Events/List/D5_Punisher	tres					type		Dynamic	Dynamique	
-			0	0	1	0	0	literal	Events/List/D5_Punisher	tres					description		"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
+Events	List/Day5	Name	0	0	1	0	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05	Le Punisher arrive dans la Zone 05	
+Events	List/Day5	Type	0	0	1	0	0	ignore	Events/List/D5_Punisher	tres					type		Dynamic	Dynamique	
+Events	List/Day5	Description	0	0	1	0	0	literal	Events/List/D5_Punisher	tres					description		"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
 
 Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"Punisher est un chef de gang et un redoutable recouvreur de dettes dans le milieu criminel finlandais.
 
 Punisher et ses hommes de main ont volé un fourgon de police local et effectuent des patrouilles de routine dans la Zone 05."	
-			0	0	1	0	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05	Les largages sont effectués dans la Zone 05	
-			0	0	1	0	0	ignore	Events/List/D6_Airdrops	tres					type		Dynamic	Dynamique	
-			0	0	1	0	0	literal	Events/List/D6_Airdrops	tres					description		"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
+Events	List/Day6	Name	0	0	1	0	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05	Les largages sont effectués dans la Zone 05	
+Events	6	Type	0	0	1	0	0	ignore	Events/List/D6_Airdrops	tres					type		Dynamic	Dynamique	
+Events	List/Day6	Description	0	0	1	0	0	literal	Events/List/D6_Airdrops	tres					description		"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
 
 Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"Après un long délai, l'armée finlandaise a repris ses largages aériens dans la Zone 05.
 
 Ces largages contiennent généralement de l'aide humanitaire, notamment des fournitures médicales, des produits de première nécessité et d'autres équipements de survie indispensables."	
-			0	0	1	0	0	literal	Events/List/D7_BTR	tres					name		BTR Patrols	Patrouilles en BTR	
-			0	0	1	0	0	ignore	Events/List/D7_BTR	tres					type		Dynamic	Dynamique	
-			0	0	1	0	0	literal	Events/List/D7_BTR	tres					description		"The military faction has started to use armored vehicles in the Vostok area.
+Events	List/Day7	Name	0	0	1	0	0	literal	Events/List/D7_BTR	tres					name		BTR Patrols	Patrouilles en BTR	
+Events	List/Day7	Type	0	0	1	0	0	ignore	Events/List/D7_BTR	tres					type		Dynamic	Dynamique	
+Events	List/Day7	Description	0	0	1	0	0	literal	Events/List/D7_BTR	tres					description		"The military faction has started to use armored vehicles in the Vostok area.
 
 Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"La faction militaire a commencé à utiliser des véhicules blindés dans la région de Vostok.
 
 Les BTR militaires sont équipés de mitrailleuses lourdes et des patrouilles ont été aperçues sur les routes principales et aux endroits stratégiques."	
-			0	0	1	0	0	literal	Events/List/D8_Helicopters	tres					name		Attack Helicopters	Hélicoptères d'attaque	
-			0	0	1	0	0	ignore	Events/List/D8_Helicopters	tres					type		Dynamic	Dynamique	
-			0	0	1	0	0	literal	Events/List/D8_Helicopters	tres					description		"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
+Events	List/Day8	Name	0	0	1	0	0	literal	Events/List/D8_Helicopters	tres					name		Attack Helicopters	Hélicoptères d'attaque	
+Events	List/Day8	Type	0	0	1	0	0	ignore	Events/List/D8_Helicopters	tres					type		Dynamic	Dynamique	
+Events	List/Day8	Description	0	0	1	0	0	literal	Events/List/D8_Helicopters	tres					description		"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
 
 While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"La démilitarisation de la zone frontalière commence à s'effriter et il est évident que les règles en vigueur auparavant ne s'appliquent plus.
 
 Alors que les sources officielles affirment que rien n'a changé, des hélicoptères d'attaque ont commencé à effectuer des patrouilles fréquentes et à violer l'espace aérien à proximité de la zone frontalière."	
-			0	0	1	0	0	literal	Events/List/D9_Crashes	tres					name		Helicopter Crash Sites	Lieux d'accidents d'hélicoptère	
-			0	0	1	0	0	ignore	Events/List/D9_Crashes	tres					type		Dynamic	Dynamique	
-			0	0	1	0	0	literal	Events/List/D9_Crashes	tres					description		"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
+Events	List/Day9	Name	0	0	1	0	0	literal	Events/List/D9_Crashes	tres					name		Helicopter Crash Sites	Lieux d'accidents d'hélicoptère	
+Events	List/Day9	Type	0	0	1	0	0	ignore	Events/List/D9_Crashes	tres					type		Dynamic	Dynamique	
+Events	List/Day9	Description	0	0	1	0	0	literal	Events/List/D9_Crashes	tres					description		"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
 
 Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"À la suite de violations de l'espace aérien, des incidents aériens étaient inévitables et plusieurs hélicoptères d'attaque ont été abattus de part et d'autre de la frontière.
 
 Les sites d'écrasement d'hélicoptères sont disséminés à divers endroits et renferment un butin de grande valeur, ce qui en fait également des zones très fréquentées par l'IA."	
-			0	0	1	0	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost	Gunsmith revient à Outpost	"Please pay attention to the following points when translating
+Events	List/Day10	Name	0	0	1	0	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost	Gunsmith revient à Outpost	"Please pay attention to the following points when translating
 `Outpost`
 `Gunsmith`는 NPC의 고유 명사입니다."
-			0	0	1	0	0	ignore	Events/List/D10_Gunsmith	tres					type		Trader	Trader	
-			0	0	1	0	0	literal	Events/List/D10_Gunsmith	tres					description		"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
+Events	List/Day10	Type	0	0	1	0	0	ignore	Events/List/D10_Gunsmith	tres					type		Trader	Trader	
+Events	List/Day10	Description	0	0	1	0	0	literal	Events/List/D10_Gunsmith	tres					description		"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
 
 Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"Gunsmith est un marchand qui tient un entrepôt d'armes dans l'un des bunkers de l'Avant-poste et qui est spécialisé dans tout ce qui touche aux armes à feu.
 
 Gunsmith était introuvable depuis plusieurs mois, mais selon les rumeurs, il aurait effectué un « voyage d'affaires » de l'autre côté de la frontière ; il est désormais de retour dans son bunker bien-aimé de la Zone 05."	
-			0	0	1	0	0	literal	Events/List/D20_Outpost	tres					name		Outpost gets compromised	L'avant-poste est compromis	
-			0	0	1	0	0	ignore	Events/List/D20_Outpost	tres					type		Dynamic	Dynamique	
-			0	0	1	0	0	literal	Events/List/D20_Outpost	tres					description		"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
+Events	List/Day20	Name	0	0	1	0	0	literal	Events/List/D20_Outpost	tres					name		Outpost gets compromised	L'avant-poste est compromis	
+Events	List/Day20	Type	0	0	1	0	0	ignore	Events/List/D20_Outpost	tres					type		Dynamic	Dynamique	
+Events	List/Day20	Description	0	0	1	0	0	literal	Events/List/D20_Outpost	tres					description		"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
 
 Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
 
@@ -112,23 +112,23 @@ News of the event spread quickly among Area 05 locals and traders, but it is onl
 Les véhicules blindés de transport de troupes (BTR) peuvent désormais pénétrer sur la carte de l'avant-poste, et la Zone 05 n'est plus considérée comme sûre.
 
 La nouvelle de cet événement s'est rapidement répandue parmi les habitants et les commerçants de la Zone 05, mais elle n'est considérée que comme une rumeur par les médias et les autorités en dehors de la Zone 05."	
-			0	0	1	0	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05	Les commerçants quittent la zone 05	
-			0	0	1	0	0	ignore	Events/List/D30_Escape	tres					type		Trader	Trader	
-			0	0	1	0	0	literal	Events/List/D30_Escape	tres					description		"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
+Events	List/Day30	Name	0	0	1	0	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05	Les commerçants quittent la zone 05	
+Events	List/Day30	Type	0	0	1	0	0	ignore	Events/List/D30_Escape	tres					type		Trader	Trader	
+Events	List/Day30	Description	0	0	1	0	0	literal	Events/List/D30_Escape	tres					description		"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
 
 It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"Une fois l'avant-poste pris d'assaut, tous les marchands ont commencé à se préparer et à quitter la Zone 05.
 
 Il semblerait que les marchands agissent ainsi à titre de mesure temporaire et qu'ils reviendront dès que la situation se sera calmée."	
-			0	0	1	0	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05	Les commerçants reviennent dans la Zone 05	
-			0	0	1	0	0	ignore	Events/List/D40_Return	tres					type		Trader	Trader	
-			0	0	1	0	0	literal	Events/List/D40_Return	tres					description		"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
+Events	List/Day40	Name	0	0	1	0	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05	Les commerçants reviennent dans la Zone 05	
+Events	List/Day40	Type	0	0	1	0	0	ignore	Events/List/D40_Return	tres					type		Trader	Trader	
+Events	List/Day40	Description	0	0	1	0	0	literal	Events/List/D40_Return	tres					description		"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
 
 All traders are returning back to Area 05."	"L'escalade des événements récents semble s'être arrêtée et la Zone 05 n'a pas sombré dans le chaos total.
 
 Tous les commerçants reviennent dans la Zone 05."	
-			0	0	1	0	0	literal	Events/List/D50_Transmission	tres					name		Transmission	Transmission	
-			0	0	1	0	0	ignore	Events/List/D50_Transmission	tres					type		Special	Spécial	
-			0	0	1	0	0	literal	Events/List/D50_Transmission	tres					description		"The signal that started it all has suddenly reappeared.
+Events	List/Day50	Name	0	0	1	0	0	literal	Events/List/D50_Transmission	tres					name		Transmission	Transmission	
+Events	List/Day50	Type	0	0	1	0	0	ignore	Events/List/D50_Transmission	tres					type		Special	Spécial	
+Events	List/Day50	Description	0	0	1	0	0	literal	Events/List/D50_Transmission	tres					description		"The signal that started it all has suddenly reappeared.
 
 The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
 

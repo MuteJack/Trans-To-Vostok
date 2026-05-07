@@ -4,6 +4,19 @@ UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Mise à l
 UI/Interface	Equipment/Hints	Knife	Label	Knife	Couteau
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Grenade
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Grenade
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	Chaleur
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes culinaires.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	Exigence de proximité
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	Établi
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes de construction.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	Exigence de proximité
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	Banc d'essai
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes liées à l'électronique.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	Exigence de proximité
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	Refuge
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes de fabrication de meubles.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	Exigence de proximité
+UI/Interface	Trader/Panel	Info		Trader	Trader
 UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	Capacité de charge
 UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	La capacité (en kg) de tous les équipements.
 UI/Interface	Inventory/Header/Capacity	Info		Inventory Stat	Statistiques d'inventaire
@@ -566,19 +579,6 @@ UI/Interface	Character/Stats/Elements/?	Info		Special Event	Événement spécial
 UI/Interface	Supply/Header/Value	Info		Supply Value	Valeur d'approvisionnement
 UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	Le montant total (en euros) de tous les articles de la commande.
 UI/Interface	Supply/Header/Value	Info		Trader Stat	Statistiques du trader
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	Chaleur
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes culinaires.
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	Exigence de proximité
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	Établi
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes de construction.
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	Exigence de proximité
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	Banc d'essai
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes liées à l'électronique.
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	Exigence de proximité
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	Refuge
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes de fabrication de meubles.
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	Exigence de proximité
-UI/Interface	Trader/Panel	Info		Trader	Trader
 UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
 
 Name: Commonly known name among locals.

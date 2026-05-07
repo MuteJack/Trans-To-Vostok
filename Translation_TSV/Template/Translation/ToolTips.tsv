@@ -1,38 +1,64 @@
 WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	text	988715662	Item		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	text	284423885	Type (Common)		
-			0	0	0	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Rare)		
-			0	0	0	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Legendary)		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	text	344439182	An item is an object within the game world that can be collected by a player.		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	text	1418802616	Condition:		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	text	1575206874	Weight:		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	text	913881262	Value:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Value	Value	Label	text	1314691776	100€		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	text	1393351409	Use time:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Use	Value	Label	text	1111351186	10s		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	text	1563649886	Damage:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Damage	Value	Label	text	252494766	100		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	text	340357805	Caliber:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Caliber	Value	Label	text	1709584114	9x19		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	text	2089057817	Magazine:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Magazine	Value	Label	text	1286269279	100		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	text	1317579651	Capacity:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Capacity	Value	Label	text	15745248	+20kg		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	text	1264056674	Max stack:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Stack	Value	Label	text	1203542639	x30		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	text	2078401087	Armor:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Armor	Value	Label	text	134288100	NIJ III		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	text	973316326	Health:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Health	Value	Label	text	553960291	+100		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	text	1764317690	"Energy:
+Weapon	Weapon	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]		
+Weapon	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Magazine/Panel	Count	Label	text	1565790634	0		
+Weapon	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Chamber/Panel	Count	Label	text	343236737	0		
+Interaction	/	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction		
+Interaction	Fire	String	0	0	0	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]		
+Interaction	Fire	String	0	0	0	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]		
+Interaction	Fire	String	0	0	0	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		93	Fire [Extinguish]		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Add	Label	text	1516803336	[MMB] = Add to Catalog		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Catalog	Label	text	945705906	[TAB] = Furniture Catalog		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Close	Label	text	299252101	[F1] = Close Decor Mode		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements/Header	Label	Label	text	865843283	Decor Mode		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Place	Label	text	1770403458	[G] = Place Furniture		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Scroll	Label	text	431027796	[SCROLL] = Adjust / Rotate		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Magnet	Label	text	813263933	[LMB] = Surface Magnet		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements/Header	Label	Label	text	1550753811	Item Placement		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Place	Label	text	652634587	[G] = Grab / Drop Item		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Scroll	Label	text	734941771	[SCROLL] = Adjust / Rotate		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Switch	Label	text	1302393483	[RMB] = Rotation Mode		
+Interaction	Placement	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Orientation	Label	text	14073674	[MMB] = Change Orientation		
+Transition	Transition	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Destination	Label	text	1760777710	Village		
+Transition	Transition	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Zone	Label	text	1044890688	Area 05		
+Transition	Transition	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Time	Value	Label	text	1758081540	+4h		Value(Integer) about the cost of Transition. Untranslatable.
+Transition	Transition	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Energy	Value	Label	text	1436272038	-8		Value(Integer) about the cost of Transition. Untranslatable.
+Transition	Transition	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Hydration	Value	Label	text	1947628226	-16		Value(Integer) about the cost of Transition. Untranslatable.
+Transition	Transition	String	0	0	0	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Details	Hint	Label	text	958640207	Demo transition: Skips 2-3 maps		Deprecated String. Maybe only for DEMO Version.
+Item	Item		0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	text	988715662	Item		
+Item	Item	type	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	text	284423885	Type (Common)		
+Item	Item	type	0	0	0	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Rare)		
+Item	Item	type	0	0	0	0	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Legendary)		
+Item	Item	String	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	text	344439182	An item is an object within the game world that can be collected by a player.		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	text	1418802616	Condition:		
+Item	Item	Number	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	text	1575206874	Weight:		
+Item	Item	Number	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	text	913881262	Value:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Value	Value	Label	text	1314691776	100€		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	text	1393351409	Use time:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Use	Value	Label	text	1111351186	10s		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	text	1563649886	Damage:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Damage	Value	Label	text	252494766	100		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	text	340357805	Caliber:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Caliber	Value	Label	text	1709584114	9x19		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	text	2089057817	Magazine:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Magazine	Value	Label	text	1286269279	100		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	text	1317579651	Capacity:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Capacity	Value	Label	text	15745248	+20kg		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	text	1264056674	Max stack:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Stack	Value	Label	text	1203542639	x30		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	text	2078401087	Armor:		
+Item	Item	Level	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Armor	Value	Label	text	134288100	NIJ III		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	text	973316326	Health:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Health	Value	Label	text	553960291	+100		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	text	1764317690	"Energy:
 "		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:		
-			0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:		
-			0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U		Dynamically changed by gd script (I can't find what script file is, but must be somewhere)
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:		
+Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:		
+Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:		
+Item	Item	String	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U		Dynamically changed by gd script (I can't find what script file is, but must be somewhere)

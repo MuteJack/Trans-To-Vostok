@@ -1040,25 +1040,7 @@ UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
 UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Mental
 UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Temp.
 UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Oxygène
-UI/HUD	Tooltip	Label	Label	Interaction	Interaction
-UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	Arme enrayée | Appuyez sur [Recharger]
-UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Mode rotation
-UI/HUD	Decor/Margin/Elements	Add	Label	[MMB] = Add to Catalog	[MMB] = Ajouter au catalogue
-UI/HUD	Decor/Margin/Elements	Catalog	Label	[TAB] = Furniture Catalog	[TAB] = Catalogue de mobilier
-UI/HUD	Decor/Margin/Elements	Close	Label	[F1] = Close Decor Mode	[F1] = Quitter le mode Décoration
-UI/HUD	Decor/Margin/Elements/Header	Label	Label	Decor Mode	Mode Décoration
-UI/HUD	Decor/Margin/Elements	Place	Label	[G] = Place Furniture	[G] = Placer des meubles
-UI/HUD	Decor/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter
-UI/HUD	Decor/Margin/Elements	Magnet	Label	[LMB] = Surface Magnet	[LMB] = Aimant de surface
-UI/HUD	Placement/Margin/Elements/Header	Label	Label	Item Placement	Emplacement des éléments
-UI/HUD	Placement/Margin/Elements	Place	Label	[G] = Grab / Drop Item	[G] = Prendre / Lâcher un objet
-UI/HUD	Placement/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter
-UI/HUD	Placement/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Mode rotation
-UI/HUD	Placement/Margin/Elements	Orientation	Label	[MMB] = Change Orientation	[MMB] = Changer l'orientation
 UI/HUD	Info	Map	Label	Shelter (Area 05)	Refuge (Zone 05)
-UI/HUD	Transition/Elements/Header	Destination	Label	Village	Village
-UI/HUD	Transition/Elements/Header	Zone	Label	Area 05	Zone 05
-UI/HUD	Transition/Elements/Details	Hint	Label	Demo transition: Skips 2-3 maps	Transition de la démo : saute 2 à 3 niveaux
 UI/Interface	Container/Header	Label	Label	Container	Conteneur
 UI/Interface	Equipment/Header	Label	Label	Equipment	Équipement
 UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Sac à dos
@@ -1226,20 +1208,38 @@ UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Lancer la l
 UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Suspendre la livraison
 UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Livré
 UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Terminer
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	Le généraliste revient au Village
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Le Docteur est un marchand spécialisé dans le domaine médical qui tient un dispensaire de fortune dans un bâtiment scolaire abandonné de la Zone 05.
+
+Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."
 UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Afficher
 UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	Jour 1
-UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	Le généraliste revient au Village
 UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	Dans 10 jours
 UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Événement destiné aux traders
 UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Lieu de l'événement :
 UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Village
 UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Possibilité d'événement :
 UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	environ 5 % / instance de carte
-UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
-
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Le Docteur est un marchand spécialisé dans le domaine médical qui tient un dispensaire de fortune dans un bâtiment scolaire abandonné de la Zone 05.
-
-Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."
+UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	Arme enrayée | Appuyez sur [Recharger]
+UI/HUD	Tooltip	Label	Label	Interaction	Interaction
+UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Mode rotation
+UI/HUD	Decor/Margin/Elements	Add	Label	[MMB] = Add to Catalog	[MMB] = Ajouter au catalogue
+UI/HUD	Decor/Margin/Elements	Catalog	Label	[TAB] = Furniture Catalog	[TAB] = Catalogue de mobilier
+UI/HUD	Decor/Margin/Elements	Close	Label	[F1] = Close Decor Mode	[F1] = Quitter le mode Décoration
+UI/HUD	Decor/Margin/Elements/Header	Label	Label	Decor Mode	Mode Décoration
+UI/HUD	Decor/Margin/Elements	Place	Label	[G] = Place Furniture	[G] = Placer des meubles
+UI/HUD	Decor/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter
+UI/HUD	Decor/Margin/Elements	Magnet	Label	[LMB] = Surface Magnet	[LMB] = Aimant de surface
+UI/HUD	Placement/Margin/Elements/Header	Label	Label	Item Placement	Emplacement des éléments
+UI/HUD	Placement/Margin/Elements	Place	Label	[G] = Grab / Drop Item	[G] = Prendre / Lâcher un objet
+UI/HUD	Placement/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter
+UI/HUD	Placement/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Mode rotation
+UI/HUD	Placement/Margin/Elements	Orientation	Label	[MMB] = Change Orientation	[MMB] = Changer l'orientation
+UI/HUD	Transition/Elements/Header	Destination	Label	Village	Village
+UI/HUD	Transition/Elements/Header	Zone	Label	Area 05	Zone 05
+UI/HUD	Transition/Elements/Details	Hint	Label	Demo transition: Skips 2-3 maps	Transition de la démo : saute 2 à 3 niveaux
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	Item	Article
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Common)	Type (courant)
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Rare)	Type (Rare)

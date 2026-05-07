@@ -29,7 +29,7 @@ Inventory	Item/Armor	ToolTip	0	0	0	0	0	ignore	Scripts/Tooltip	gd			protection.ge
 Inventory	Item/Food	Button	0	0	0	0	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen		Use button will be replaced for frozen consumable items (instead use button)
 Inventory	Weapon	Button	0	0	0	0	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})		Remove Attachments
 HUD	Transition	String	0	0	0	0	0	substr	Scripts/HUD	gd			detailsHint.text	literal		107	Permadeath Zone		
-HUD	/	String	0	0	0	0	0	substr									[Open]		
+HUD	Door	String	0	0	0	0	0	substr									[Open]		
 HUD	Door	String	0	0	0	0	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}		
 HUD	Door	String	0	0	0	0	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}		
 HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]		

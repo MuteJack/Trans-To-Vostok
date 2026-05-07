@@ -1,268 +1,268 @@
 WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	
-Assets	Containers		0	0	0	0	0	substr	Assets/Airdrop/Airdrop	tscn	Assets/Airdrop/Airdrop		Airdrop	RigidBody3D	containerName	746632342	Airdrop			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Airdrop/Airdrop_Container	tscn	Assets/Airdrop/Airdrop_Container		Container	Node3D	containerName	2117731667	Airdrop			
-Assets	Containers		0	0	0	0	0	substr	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military		containerName	768748623	Tutorial Crate			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military_2		containerName	338289279	Tutorial Crate			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Tutorial	tscn	Assets/Crate_Wood/Crate_Wood_Tutorial		Crate_Wood_Tutorial	Node3D	containerName	238444265	Tutorial Crate			
-Assets	Containers		0	0	0	0	0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box			
-Assets	Containers		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tscn	Assets/Cabinet_Medical/Cabinet_Medical_F		Cabinet_Medical_F	Node3D	containerName	2092602420	Medical Cabinet			
-Assets	Containers		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	Assets/Cabinet_Office/Cabinet_Office		Cabinet_Office	Node3D	containerName	1131051434	Office Cabinet			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet			
-Assets	Containers		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet			
-			0	0	0	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse			
-Assets	Containers		0	0	0	0	0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_B	tscn	Assets/Corpse/Corpse_Bandit_Flat_B		Corpse_Bandit_Flat_B	Node3D	containerName	1269584548	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_C	tscn	Assets/Corpse/Corpse_Bandit_Flat_C		Corpse_Bandit_Flat_C	Node3D	containerName	1419056794	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_A	tscn	Assets/Corpse/Corpse_Bandit_Ledge_A		Corpse_Bandit_Ledge_A	Node3D	containerName	529336843	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_B	tscn	Assets/Corpse/Corpse_Bandit_Ledge_B		Corpse_Bandit_Ledge_B	Node3D	containerName	686653855	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_C	tscn	Assets/Corpse/Corpse_Bandit_Ledge_C		Corpse_Bandit_Ledge_C	Node3D	containerName	64577995	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_A	tscn	Assets/Corpse/Corpse_Bandit_Wall_A		Corpse_Bandit_Wall_A	Node3D	containerName	785157205	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_B	tscn	Assets/Corpse/Corpse_Bandit_Wall_B		Corpse_Bandit_Wall_B	Node3D	containerName	688220610	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_C	tscn	Assets/Corpse/Corpse_Bandit_Wall_C		Corpse_Bandit_Wall_C	Node3D	containerName	1035032452	Bandit Corpse			
-Assets	Containers		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military	tscn	Assets/Crate_Military/Crate_Military		Crate_Military	Node3D	containerName	768748623	Crate Military			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tscn	Assets/Crate_Military/Crate_Military_F		Crate_Military_F	Node3D	containerName	824422604	Crate Military			
-Assets	Containers		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special	tscn	Assets/Crate_Special/Crate_Special		Crate_Special	Node3D	containerName	492335792	Crate Special			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tscn	Assets/Crate_Special/Crate_Special_F		Crate_Special_F	Node3D	containerName	887499979	Crate Special			
-Assets	Containers		0	0	0	0	0	substr	Assets/Crate_Wood/Crate_Wood	tscn	Assets/Crate_Wood/Crate_Wood		Crate_Wood	Node3D	containerName	1173126166	Wooden Crate			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_B	tscn	Assets/Crate_Wood/Crate_Wood_Covered_B		Crate_Wood_Covered_B	Node3D	containerName	1131964192	Wooden Crate			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_A	tscn	Assets/Crate_Wood/Crate_Wood_Covered_A		Crate_Wood_Covered_A	Node3D	containerName	1454109832	Wooden Crate			
-Assets	Containers		0	0	0	0	0	substr	Assets/Debris/Garbage/Debris_Garbage_Corner_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_A		Debris_Garbage_Corner_A	Node3D	containerName	858191461	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_B		Debris_Garbage_Corner_B	Node3D	containerName	103898853	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_C		Debris_Garbage_Corner_C	Node3D	containerName	558955260	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_A		Debris_Garbage_Pile_A	Node3D	containerName	1440264966	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_B		Debris_Garbage_Pile_B	Node3D	containerName	549051876	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_C		Debris_Garbage_Pile_C	Node3D	containerName	1743085206	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_A		Debris_Garbage_Wall_A	Node3D	containerName	1834054132	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_B		Debris_Garbage_Wall_B	Node3D	containerName	1035194553	Garbage			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_C		Debris_Garbage_Wall_C	Node3D	containerName	1706130774	Garbage			
-Assets	Containers		0	0	0	0	0	substr	Assets/Fireplace_Tower/Fireplace_Tower	tscn	Assets/Fireplace_Tower/Fireplace_Tower		Fireplace_Tower	Node3D	containerName	1176528873	Fireplace			
-Assets	Containers		0	0	0	0	0	substr	Assets/Freezer/Freezer	tscn	Assets/Freezer/Freezer		Freezer	Node3D	containerName	76841885	Freezer			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tscn	Assets/Freezer/Freezer_F		Freezer_F	Node3D	containerName	245820146	Freezer			
-Assets	Containers		0	0	0	0	0	substr	Assets/Fridge/Fridge	tscn	Assets/Fridge/Fridge		Fridge	Node3D	containerName	1984538983	Fridge			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tscn	Assets/Fridge/Fridge_F		Fridge_F	Node3D	containerName	744500531	Fridge			
-Assets	Containers		0	0	0	0	0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox			
-Assets	Containers		0	0	0	0	0	substr	Assets/Locker/Locker	tscn	Assets/Locker/Locker		Locker	Node3D	containerName	1052007662	Locker			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tscn	Assets/Locker/Locker_F		Locker_F	Node3D	containerName	1740209526	Locker			
-Assets	Containers		0	0	0	0	0	substr	Assets/Mailbox/Mailbox	tscn	Assets/Mailbox/Mailbox		Mailbox	Node3D	containerName	276598480	Mailbox			
-Assets	Containers		0	0	0	0	0	substr	Assets/Nightstand/Nightstand	tscn	Assets/Nightstand/Nightstand		Nightstand	Node3D	containerName	1977643928	Nightstand			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tscn	Assets/Nightstand/Nightstand_F		Nightstand_F	Node3D	containerName	509230477	Nightstand			
-Assets	Containers		0	0	0	0	0	substr	Assets/Pile_Cardboard/Pile_Cardboard_A	tscn	Assets/Pile_Cardboard/Pile_Cardboard_A		Pile_Cardboard_A	Node3D	containerName	509230477	Boxes			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_B	tscn	Assets/Pile_Cardboard/Pile_Cardboard_B		Pile_Cardboard_B	Node3D	containerName	1215483040	Boxes			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_C	tscn	Assets/Pile_Cardboard/Pile_Cardboard_C		Pile_Cardboard_C	Node3D	containerName	870636015	Boxes			
-Assets	Containers		0	0	0	0	0	substr	Assets/Stove/Stove	tscn	Assets/Stove/Stove		Stove	Node3D	containerName	781697413	Stove			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tscn	Assets/Stove/Stove_F		Stove_F	Node3D	containerName	83268940	Stove			
-Assets	Containers		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_F	tscn	Assets/Tent_Civilian/Tent_Civilian_F		Tent_Civilian_F	Node3D	containerName	1397422008	Tent		"Duplicated with SceneName ""Tent"""	
-Assets	Containers		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_R	tscn	Assets/Tent_Civilian/Tent_Civilian_R		Tent_Civilian_R	Node3D	containerName	177370949	Tent		"Duplicated with SceneName ""Tent"""	
-			0	0	0	0	0	substr									Furniture			
-			0	0	0	0	0	substr									Furnitures			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					name		Bed (Civilian)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					inventory		Bed (Civilian)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					rotated		Bed (Civilian)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					equipment		Bed (Civilian)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					name		Bed (Nomad)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					inventory		Bed (Nomad)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					rotated		Bed (Nomad)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					equipment		Bed (Nomad)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					inventory		Cabinet (Medical)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					rotated		Cabinet (Medical)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					equipment		Cabinet (Medical)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					name		Cabinet (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					inventory		Cabinet (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					rotated		Cabinet (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					equipment		Cabinet (Office)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					name		Cabinet (Wood)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					inventory		Cabinet (Wood)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					rotated		Cabinet (Wood)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					equipment		Cabinet (Wood)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					name		Carpet (Persian)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					inventory		Carpet (Persian)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					equipment		Carpet (Persian)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					display		Carpet P.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					name		Carpet (Rag)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					inventory		Carpet (Rag)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					equipment		Carpet (Rag)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					display		Carpet R.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					inventory		Chair (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					rotated		Chair (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					equipment		Chair (Office)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					name		Chair (School)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					inventory		Chair (School)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					rotated		Chair (School)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					equipment		Chair (School)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					name		Sun Chair			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					display		S. Chair			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					name		Crate (Military)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					inventory		Crate (Military)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					rotated		Crate (Military)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					equipment		Crate (Military)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					name		Crate (Special)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					inventory		Crate (Special)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					rotated		Crate (Special)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					equipment		Crate (Special)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					name		Cupboard			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					inventory		Cupboard			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					rotated		Cupboard			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					equipment		Cupboard			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					name		Curtain (Long)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					inventory		Curtain (Long)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					rotated		Curtain L.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					equipment		Curtain (Long)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					display		Curtain L.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					name		Curtain (Mini)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					inventory		Curtain (Mini)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					rotated		Curtain M.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					equipment		Curtain (Mini)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					display		Curtain M.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					name		Dartboard			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					inventory		Dartboard			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					rotated		Dartboard			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					equipment		Dartboard			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					display		D. Board			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					name		Freezer			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					inventory		Freezer			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					rotated		Freezer			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					equipment		Freezer			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					display		Freezer			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					name		Fridge			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					inventory		Fridge			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					rotated		Fridge			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					equipment		Fridge			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					display		Fridge			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					name		Locker			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					inventory		Locker			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					rotated		Locker			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					equipment		Locker			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					display		Locker			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					name		Nightstand			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					inventory		Nightstand			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					rotated		Nightstand			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					equipment		Nightstand			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Nightstand/Nightstand_F	tres					display		N. Stand			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					name		Painting (Lake)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					inventory		Painting (Lake)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					rotated		Painting (Lake)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					equipment		Painting (Lake)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					display		Painting L.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Pallet/Pallet_F	tres					name		Pallet			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					inventory		Pallet			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					rotated		Pallet			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					equipment		Pallet			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					display		Pallet			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Posters/Poster_Posture_F	tres					name		Poster (Posture)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					inventory		Poster (Posture)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					rotated		Poster (Posture)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					equipment		Poster (Posture)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Posters/Poster_Posture_F	tres					display		Poster P.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					name		Rack (Coat)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					inventory		Rack (Coat)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					rotated		Rack C.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					equipment		Rack (Coat)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					display		Rack C.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					inventory		Rya (Maria)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					equipment		Rya (Maria)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					display		Rya M.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					name		Shelf (Metal)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					inventory		Shelf (Metal)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					rotated		Shelf (Metal)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					equipment		Shelf (Metal)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					name		Shelf (Wall)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					inventory		Shelf (Wall)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					equipment		Shelf (Wall)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					display		Shelf W.		Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Shelf_Wood/Shelf_Wood_F	tres					name		Shelf (Wood)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					inventory		Shelf (Wood)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					rotated		Shelf (Wood)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					equipment		Shelf (Wood)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					display		Shelf W.		Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					name		Sign (Border Zone)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					inventory		Sign (Border Zone)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					rotated		Sign (Border Zone)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					equipment		Sign (Border Zone)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					name		Sofa (Leather)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					inventory		Sofa (Leather)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					rotated		Sofa (Leather)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					equipment		Sofa (Leather)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					name		Stool (Military)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					inventory		Stool (Military)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					rotated		Stool (Military)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					equipment		Stool (Military)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					display		Stool M.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					name		Stool (Padded)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					inventory		Stool (Padded)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					rotated		Stool (Padded)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					equipment		Stool (Padded)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					display		Stool P.			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					name		Stove			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					inventory		Stove			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					rotated		Stove			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					equipment		Stove			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					display		Stove			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					name		Table (Cabin)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					inventory		Table (Cabin)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					rotated		Table (Cabin)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					equipment		Table (Cabin)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Table_Canteen/Table_Canteen_F	tres					name		Table (Canteen)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					inventory		Table (Canteen)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					rotated		Table (Canteen)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					equipment		Table (Canteen)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					display		Table (Canteen)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					name		Table (Kitchen)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					inventory		Table (Kitchen)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					rotated		Table (Kitchen)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					equipment		Table (Kitchen)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					display		Table K.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					name		Table (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					inventory		Table (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					rotated		Table (Office)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					equipment		Table (Office)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					name		Target Stand			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					inventory		Target Stand			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					rotated		Target Stand			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					equipment		Target Stand			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					display		Target S.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Television/Television_F	tres					name		Television			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					inventory		Television			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					rotated		Television			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					equipment		Television			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Television/Television_F	tres					display		TV			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					name		Trolley (Short)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					inventory		Trolley (Short)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					rotated		Trolley (Short)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					equipment		Trolley (Short)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					display		Trolley S.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					name		Trolley (Tall)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					inventory		Trolley (Tall)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					rotated		Trolley (Tall)			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					equipment		Trolley (Tall)			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					name		Weapon Display			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					inventory		Weapon Display			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					rotated		Weapon Display			
-Assets	Furnitures		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					equipment		Weapon Display			
-Assets	Furnitures		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					display		Weapon D.			
+Assets	Containers/Airdrop		0	0	0	0	0	substr	Assets/Airdrop/Airdrop	tscn	Assets/Airdrop/Airdrop		Airdrop	RigidBody3D	containerName	746632342	Airdrop			
+Assets	Containers/Airdrop_Container		0	0	0	0	0	ignore	Assets/Airdrop/Airdrop_Container	tscn	Assets/Airdrop/Airdrop_Container		Container	Node3D	containerName	2117731667	Airdrop			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	substr	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military		containerName	768748623	Tutorial Crate			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military_2		containerName	338289279	Tutorial Crate			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate			
+Assets	Containers/Crate_Wood_Tutorial		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Tutorial	tscn	Assets/Crate_Wood/Crate_Wood_Tutorial		Crate_Wood_Tutorial	Node3D	containerName	238444265	Tutorial Crate			
+Assets	Containers/Box_Electric		0	0	0	0	0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box			
+Assets	Containers/Cabinet_Medical		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet			
+Assets	Containers/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tscn	Assets/Cabinet_Medical/Cabinet_Medical_F		Cabinet_Medical_F	Node3D	containerName	2092602420	Medical Cabinet			
+Assets	Containers/Cabinet_Office		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	Assets/Cabinet_Office/Cabinet_Office		Cabinet_Office	Node3D	containerName	1131051434	Office Cabinet			
+Assets	Containers/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet			
+Assets	Containers/Cabinet_Wood		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet			
+Assets	Containers/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet			
+Assets	Containers/AI_Container		0	0	0	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse			
+Assets	Containers/Corpse_Bandit_Flat_A		0	0	0	0	0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Flat_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_B	tscn	Assets/Corpse/Corpse_Bandit_Flat_B		Corpse_Bandit_Flat_B	Node3D	containerName	1269584548	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Flat_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_C	tscn	Assets/Corpse/Corpse_Bandit_Flat_C		Corpse_Bandit_Flat_C	Node3D	containerName	1419056794	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Ledge_A		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_A	tscn	Assets/Corpse/Corpse_Bandit_Ledge_A		Corpse_Bandit_Ledge_A	Node3D	containerName	529336843	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Ledge_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_B	tscn	Assets/Corpse/Corpse_Bandit_Ledge_B		Corpse_Bandit_Ledge_B	Node3D	containerName	686653855	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Ledge_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_C	tscn	Assets/Corpse/Corpse_Bandit_Ledge_C		Corpse_Bandit_Ledge_C	Node3D	containerName	64577995	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Wall_A		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_A	tscn	Assets/Corpse/Corpse_Bandit_Wall_A		Corpse_Bandit_Wall_A	Node3D	containerName	785157205	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Wall_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_B	tscn	Assets/Corpse/Corpse_Bandit_Wall_B		Corpse_Bandit_Wall_B	Node3D	containerName	688220610	Bandit Corpse			
+Assets	Containers/Corpse_Bandit_Wall_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_C	tscn	Assets/Corpse/Corpse_Bandit_Wall_C		Corpse_Bandit_Wall_C	Node3D	containerName	1035032452	Bandit Corpse			
+Assets	Containers/Crate_Military		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military	tscn	Assets/Crate_Military/Crate_Military		Crate_Military	Node3D	containerName	768748623	Crate Military			
+Assets	Containers/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tscn	Assets/Crate_Military/Crate_Military_F		Crate_Military_F	Node3D	containerName	824422604	Crate Military			
+Assets	Containers/Crate_Special		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special	tscn	Assets/Crate_Special/Crate_Special		Crate_Special	Node3D	containerName	492335792	Crate Special			
+Assets	Containers/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tscn	Assets/Crate_Special/Crate_Special_F		Crate_Special_F	Node3D	containerName	887499979	Crate Special			
+Assets	Containers/Crate_Wood		0	0	0	0	0	substr	Assets/Crate_Wood/Crate_Wood	tscn	Assets/Crate_Wood/Crate_Wood		Crate_Wood	Node3D	containerName	1173126166	Wooden Crate			
+Assets	Containers/Crate_Wood_Covered_B		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_B	tscn	Assets/Crate_Wood/Crate_Wood_Covered_B		Crate_Wood_Covered_B	Node3D	containerName	1131964192	Wooden Crate			
+Assets	Containers/Crate_Wood_Covered_A		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_A	tscn	Assets/Crate_Wood/Crate_Wood_Covered_A		Crate_Wood_Covered_A	Node3D	containerName	1454109832	Wooden Crate			
+Assets	Containers/Debris_Garbage_Corner_A		0	0	0	0	0	substr	Assets/Debris/Garbage/Debris_Garbage_Corner_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_A		Debris_Garbage_Corner_A	Node3D	containerName	858191461	Garbage			
+Assets	Containers/Debris_Garbage_Corner_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_B		Debris_Garbage_Corner_B	Node3D	containerName	103898853	Garbage			
+Assets	Containers/Debris_Garbage_Corner_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_C		Debris_Garbage_Corner_C	Node3D	containerName	558955260	Garbage			
+Assets	Containers/Debris_Garbage_Pile_A		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_A		Debris_Garbage_Pile_A	Node3D	containerName	1440264966	Garbage			
+Assets	Containers/Debris_Garbage_Pile_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_B		Debris_Garbage_Pile_B	Node3D	containerName	549051876	Garbage			
+Assets	Containers/Debris_Garbage_Pile_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_C		Debris_Garbage_Pile_C	Node3D	containerName	1743085206	Garbage			
+Assets	Containers/Debris_Garbage_Wall_A		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_A		Debris_Garbage_Wall_A	Node3D	containerName	1834054132	Garbage			
+Assets	Containers/Debris_Garbage_Wall_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_B		Debris_Garbage_Wall_B	Node3D	containerName	1035194553	Garbage			
+Assets	Containers/Debris_Garbage_Wall_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_C		Debris_Garbage_Wall_C	Node3D	containerName	1706130774	Garbage			
+Assets	Containers/Fireplace_Tower		0	0	0	0	0	substr	Assets/Fireplace_Tower/Fireplace_Tower	tscn	Assets/Fireplace_Tower/Fireplace_Tower		Fireplace_Tower	Node3D	containerName	1176528873	Fireplace			
+Assets	Containers/Freezer		0	0	0	0	0	substr	Assets/Freezer/Freezer	tscn	Assets/Freezer/Freezer		Freezer	Node3D	containerName	76841885	Freezer			
+Assets	Containers/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tscn	Assets/Freezer/Freezer_F		Freezer_F	Node3D	containerName	245820146	Freezer			
+Assets	Containers/Fridge		0	0	0	0	0	substr	Assets/Fridge/Fridge	tscn	Assets/Fridge/Fridge		Fridge	Node3D	containerName	1984538983	Fridge			
+Assets	Containers/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tscn	Assets/Fridge/Fridge_F		Fridge_F	Node3D	containerName	744500531	Fridge			
+Assets	Containers/Fusebox		0	0	0	0	0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox			
+Assets	Containers/Locker		0	0	0	0	0	substr	Assets/Locker/Locker	tscn	Assets/Locker/Locker		Locker	Node3D	containerName	1052007662	Locker			
+Assets	Containers/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tscn	Assets/Locker/Locker_F		Locker_F	Node3D	containerName	1740209526	Locker			
+Assets	Containers/Mailbox		0	0	0	0	0	substr	Assets/Mailbox/Mailbox	tscn	Assets/Mailbox/Mailbox		Mailbox	Node3D	containerName	276598480	Mailbox			
+Assets	Containers/Nightstand		0	0	0	0	0	substr	Assets/Nightstand/Nightstand	tscn	Assets/Nightstand/Nightstand		Nightstand	Node3D	containerName	1977643928	Nightstand			
+Assets	Containers/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tscn	Assets/Nightstand/Nightstand_F		Nightstand_F	Node3D	containerName	509230477	Nightstand			
+Assets	Containers/Pile_Cardboard_A		0	0	0	0	0	substr	Assets/Pile_Cardboard/Pile_Cardboard_A	tscn	Assets/Pile_Cardboard/Pile_Cardboard_A		Pile_Cardboard_A	Node3D	containerName	509230477	Boxes			
+Assets	Containers/Pile_Cardboard_B		0	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_B	tscn	Assets/Pile_Cardboard/Pile_Cardboard_B		Pile_Cardboard_B	Node3D	containerName	1215483040	Boxes			
+Assets	Containers/Pile_Cardboard_C		0	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_C	tscn	Assets/Pile_Cardboard/Pile_Cardboard_C		Pile_Cardboard_C	Node3D	containerName	870636015	Boxes			
+Assets	Containers/Stove		0	0	0	0	0	substr	Assets/Stove/Stove	tscn	Assets/Stove/Stove		Stove	Node3D	containerName	781697413	Stove			
+Assets	Containers/Stove_F		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tscn	Assets/Stove/Stove_F		Stove_F	Node3D	containerName	83268940	Stove			
+Assets	Containers/Tent_Civilian_F		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_F	tscn	Assets/Tent_Civilian/Tent_Civilian_F		Tent_Civilian_F	Node3D	containerName	1397422008	Tent		"Duplicated with SceneName ""Tent"""	
+Assets	Containers/Tent_Civilian_R		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_R	tscn	Assets/Tent_Civilian/Tent_Civilian_R		Tent_Civilian_R	Node3D	containerName	177370949	Tent		"Duplicated with SceneName ""Tent"""	
+Assets	Furnitures	type	0	0	0	0	0	substr									Furniture			
+Assets	Furnitures	type	0	0	0	0	0	substr									Furnitures			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					name		Bed (Civilian)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					inventory		Bed (Civilian)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					rotated		Bed (Civilian)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					equipment		Bed (Civilian)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					name		Bed (Nomad)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					inventory		Bed (Nomad)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					rotated		Bed (Nomad)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					equipment		Bed (Nomad)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					inventory		Cabinet (Medical)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					rotated		Cabinet (Medical)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					equipment		Cabinet (Medical)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					name		Cabinet (Office)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					inventory		Cabinet (Office)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					rotated		Cabinet (Office)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					equipment		Cabinet (Office)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					name		Cabinet (Wood)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					inventory		Cabinet (Wood)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					rotated		Cabinet (Wood)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					equipment		Cabinet (Wood)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					name		Carpet (Persian)			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					inventory		Carpet (Persian)			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					equipment		Carpet (Persian)			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					display		Carpet P.			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					name		Carpet (Rag)			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					inventory		Carpet (Rag)			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					equipment		Carpet (Rag)			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					display		Carpet R.			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					inventory		Chair (Office)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					rotated		Chair (Office)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					equipment		Chair (Office)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					name		Chair (School)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					inventory		Chair (School)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					rotated		Chair (School)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					equipment		Chair (School)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.			
+Assets	Furnitures/Chair_Sun		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					name		Sun Chair			
+Assets	Furnitures/Chair_Sun		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					display		S. Chair			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					name		Crate (Military)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					inventory		Crate (Military)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					rotated		Crate (Military)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					equipment		Crate (Military)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					name		Crate (Special)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					inventory		Crate (Special)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					rotated		Crate (Special)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					equipment		Crate (Special)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					name		Cupboard			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					inventory		Cupboard			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					rotated		Cupboard			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					equipment		Cupboard			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					name		Curtain (Long)			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					inventory		Curtain (Long)			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					rotated		Curtain L.			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					equipment		Curtain (Long)			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					display		Curtain L.			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					name		Curtain (Mini)			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					inventory		Curtain (Mini)			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					rotated		Curtain M.			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					equipment		Curtain (Mini)			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					display		Curtain M.			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					name		Dartboard			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					inventory		Dartboard			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					rotated		Dartboard			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					equipment		Dartboard			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					display		D. Board			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					name		Freezer			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					inventory		Freezer			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					rotated		Freezer			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					equipment		Freezer			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					display		Freezer			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					name		Fridge			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					inventory		Fridge			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					rotated		Fridge			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					equipment		Fridge			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					display		Fridge			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					name		Locker			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					inventory		Locker			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					rotated		Locker			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					equipment		Locker			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					display		Locker			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					name		Nightstand			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					inventory		Nightstand			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					rotated		Nightstand			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					equipment		Nightstand			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	substr	Assets/Nightstand/Nightstand_F	tres					display		N. Stand			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					name		Painting (Lake)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					inventory		Painting (Lake)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					rotated		Painting (Lake)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					equipment		Painting (Lake)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					display		Painting L.			
+Assets	Furnitures/Pallet_F		0	0	0	0	0	substr	Assets/Pallet/Pallet_F	tres					name		Pallet			
+Assets	Furnitures/Pallet_F		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					inventory		Pallet			
+Assets	Furnitures/Pallet_F		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					rotated		Pallet			
+Assets	Furnitures/Pallet_F		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					equipment		Pallet			
+Assets	Furnitures/Pallet_F		0	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					display		Pallet			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	substr	Assets/Posters/Poster_Posture_F	tres					name		Poster (Posture)			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					inventory		Poster (Posture)			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					rotated		Poster (Posture)			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					equipment		Poster (Posture)			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	substr	Assets/Posters/Poster_Posture_F	tres					display		Poster P.			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					name		Rack (Coat)			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					inventory		Rack (Coat)			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					rotated		Rack C.			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					equipment		Rack (Coat)			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					display		Rack C.			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					inventory		Rya (Maria)			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					equipment		Rya (Maria)			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					display		Rya M.			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					name		Shelf (Metal)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					inventory		Shelf (Metal)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					rotated		Shelf (Metal)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					equipment		Shelf (Metal)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					name		Shelf (Wall)			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					inventory		Shelf (Wall)			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					equipment		Shelf (Wall)			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					display		Shelf W.		Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	substr	Assets/Shelf_Wood/Shelf_Wood_F	tres					name		Shelf (Wood)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					inventory		Shelf (Wood)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					rotated		Shelf (Wood)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					equipment		Shelf (Wood)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					display		Shelf W.		Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					name		Sign (Border Zone)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					inventory		Sign (Border Zone)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					rotated		Sign (Border Zone)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					equipment		Sign (Border Zone)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					name		Sofa (Leather)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					inventory		Sofa (Leather)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					rotated		Sofa (Leather)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					equipment		Sofa (Leather)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					name		Stool (Military)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					inventory		Stool (Military)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					rotated		Stool (Military)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					equipment		Stool (Military)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					display		Stool M.			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					name		Stool (Padded)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					inventory		Stool (Padded)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					rotated		Stool (Padded)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					equipment		Stool (Padded)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					display		Stool P.			
+Assets	Furnitures/Stove_F		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					name		Stove			
+Assets	Furnitures/Stove_F		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					inventory		Stove			
+Assets	Furnitures/Stove_F		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					rotated		Stove			
+Assets	Furnitures/Stove_F		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					equipment		Stove			
+Assets	Furnitures/Stove_F		0	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					display		Stove			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					name		Table (Cabin)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					inventory		Table (Cabin)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					rotated		Table (Cabin)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					equipment		Table (Cabin)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	substr	Assets/Table_Canteen/Table_Canteen_F	tres					name		Table (Canteen)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					inventory		Table (Canteen)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					rotated		Table (Canteen)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					equipment		Table (Canteen)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					display		Table (Canteen)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					name		Table (Kitchen)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					inventory		Table (Kitchen)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					rotated		Table (Kitchen)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					equipment		Table (Kitchen)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					display		Table K.			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					name		Table (Office)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					inventory		Table (Office)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					rotated		Table (Office)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					equipment		Table (Office)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					name		Target Stand			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					inventory		Target Stand			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					rotated		Target Stand			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					equipment		Target Stand			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					display		Target S.			
+Assets	Furnitures/Television_F		0	0	0	0	0	substr	Assets/Television/Television_F	tres					name		Television			
+Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					inventory		Television			
+Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					rotated		Television			
+Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					equipment		Television			
+Assets	Furnitures/Television_F		0	0	0	0	0	substr	Assets/Television/Television_F	tres					display		TV			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					name		Trolley (Short)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					inventory		Trolley (Short)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					rotated		Trolley (Short)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					equipment		Trolley (Short)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					display		Trolley S.			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					name		Trolley (Tall)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					inventory		Trolley (Tall)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					rotated		Trolley (Tall)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					equipment		Trolley (Tall)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					name		Weapon Display			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					inventory		Weapon Display			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					rotated		Weapon Display			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					equipment		Weapon Display			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					display		Weapon D.			

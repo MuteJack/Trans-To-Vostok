@@ -1,324 +1,311 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	Santé	
-HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	Énergie	
-HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	Eau	
-HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	Mental	
-HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	Temp.	
-HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100	100	
-HUD	HUD	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	Oxygène	
-HUD	HUD	Name	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:	FPS:	
-HUD	HUD	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100	100	
-HUD	HUD	String	0	0	1	0		literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction	Interaction	
-HUD	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Magazine/Panel	Count	Label	text	1565790634	0	0	
-HUD	Weapon	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Chamber/Panel	Count	Label	text	343236737	0	0	
-HUD	Weapon	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]	Arme enrayée | Appuyez sur [Recharger]	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode	[RMB] = Mode rotation	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Add	Label	text	1516803336	[MMB] = Add to Catalog	[MMB] = Ajouter au catalogue	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Catalog	Label	text	945705906	[TAB] = Furniture Catalog	[TAB] = Catalogue de mobilier	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Close	Label	text	299252101	[F1] = Close Decor Mode	[F1] = Quitter le mode Décoration	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements/Header	Label	Label	text	865843283	Decor Mode	Mode Décoration	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Place	Label	text	1770403458	[G] = Place Furniture	[G] = Placer des meubles	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Scroll	Label	text	431027796	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter	
-HUD	Decoration	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Magnet	Label	text	813263933	[LMB] = Surface Magnet	[LMB] = Aimant de surface	
-HUD	Placement	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements/Header	Label	Label	text	1550753811	Item Placement	Emplacement des éléments	
-HUD	Placement	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Place	Label	text	652634587	[G] = Grab / Drop Item	[G] = Prendre / Lâcher un objet	
-HUD	Placement	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Scroll	Label	text	734941771	[SCROLL] = Adjust / Rotate	[DÉFILER] = Ajuster / Faire pivoter	
-HUD	Placement	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Switch	Label	text	1302393483	[RMB] = Rotation Mode	[RMB] = Mode rotation	
-HUD	Placement	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Orientation	Label	text	14073674	[MMB] = Change Orientation	[MMB] = Changer l'orientation	
-HUD	Map	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	Refuge (Zone 05)	
-Transition	Scene	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Destination	Label	text	1760777710	Village	Village	
-Transition	Scene	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Zone	Label	text	1044890688	Area 05	Zone 05	
-Transition	Scene	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Time	Value	Label	text	1758081540	+4h	+4h	
-Transition	Scene	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Energy	Value	Label	text	1436272038	-8	-8	
-Transition	Scene	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Hydration	Value	Label	text	1947628226	-16	-16	
-Transition	Scene	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Details	Hint	Label	text	958640207	Demo transition: Skips 2-3 maps	Transition de la démo : saute 2 à 3 niveaux	Deprecated String. Maybe only for DEMO Version.
-Inventory	Inventory	Name	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	Stock	
-Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0	10.0	
-Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0	10.0	
-Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000	1000	
-Inventory	#Not Checked	Name	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	Conteneur	
-Inventory	#Not Checked	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0	10.0	
-Inventory	#Not Checked	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000	1000	
-Inventory	Equipment	Name	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	Équipement	
-Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg	10kg	
-Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000	1000	
-Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100	100	
-Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A	N/A	
-Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A	N/A	
-Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A	N/A	
-Inventory	Equipment	String	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	Primaire	Inventory Slot for Primary Weapon
-Inventory	Equipment	String	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	Secondaire	Inventory Slot for Secondory Weapon
-Inventory	Equipment	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	Couteau	Inventory Slot for Knife
-Inventory	Equipment	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	Grenade	Inventory Slot for Grenade1
-Inventory	Equipment	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	Grenade	Inventory Slot for Grenade2
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	Sac à dos	Inventory Slot for Backpack
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	Plateforme	Inventory Slot for Rig(Vest)
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	Casque	Inventory Slot for Helmet
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	Tête	Inventory Slot for Hat/Cap
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	Torse	Inventory Slot for Jacket
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	Jambes	Inventory Slot for Pants
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	Ceinture	Inventory Slot for Belt
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	Pieds	Inventory Slot for Shoes
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	Les mains	Inventory Slot for Gloves
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	Rencontres	Inventory Slot for Matches(lighter)
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	Lumière	Inventory Slot for FlashLight
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	NVG	Inventory Slot for Night Vision Goggle (NVG)
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	Heure	Inventory Slot for Clock(Time)
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	Carte	Inventory Slot for Map
-Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	Joueur	"Inventory Slot for Carest/MP3 ""Player"""
-Inventory	Vitals	Dictionary	0	0	1	0	0	substr									Vital	Essentiel	allow conflict
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	Personnage	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	Santé	Player's Status about Health Point (HP)
-Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	Énergie	Player's Status about Energy
-Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	Eau	Player's Status about Hydration (Water)
-Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	Mental	Player's Status about Mental
-Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	Temp.	Player's Status about Body Temparature
-Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100	100	
-Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	Chat	Cat's Status
-Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100	100	
-Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	Jour	Number of days the player survived
-Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00	00	
-Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	Refuges	Number of Shelters that unlocked
-Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00	00	
-Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	Tâches	Number of Tasks that cleared
-Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00	00	
-Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	Quêtes	Number of Quests that cleard
-Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00	00	
-Inventory	Stats	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS	CDS	Number of Civil Defence Shelters (Not Updated yet)
-Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00	00	
-Inventory	Stats	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?	?	Wating for Update
-Inventory	Stats	Number	0	0	0	0	1	ignore									?	?	Wating for Update
-Inventory	Tools	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	Outils	
-Inventory	Tools	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	Événements	
-Inventory	Tools	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	Artisanat	
-Inventory	Tools/Crafting	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	Proximité	
-Inventory	Tools/Task Note	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	Notes sur la tâche	
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	
+HUD	Vitals	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	Santé		
+HUD	Vitals	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100	100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	Énergie		
+HUD	Vitals	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100	100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	Eau		
+HUD	Vitals	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100	100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	Mental		
+HUD	Vitals	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100	100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	Temp.		
+HUD	Vitals	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100	100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Oxygen	Name	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	Oxygène		
+HUD	FPS	Name	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:	FPS:		
+HUD	FPS	Number	0	0	0	0	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100	100	Value(Integer) about the FPS. Untranslatable.	
+HUD	Map	String	0	0	1	0	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	Refuge (Zone 05)		
+Inventory	Inventory	Name	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	Stock		
+Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0	10.0	Value(Float) about Capacity. Untranslatable.	
+Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0	10.0	Value(Float) about Weight. Untranslatable.	
+Inventory	Inventory	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000	1000	Value(Float) about Value(Money). Untranslatable.	
+Inventory	#Not Checked	Name	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	Conteneur		
+Inventory	#Not Checked	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0	10.0	Value(Float) about Weight. Untranslatable.	
+Inventory	#Not Checked	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000	1000	Value(Float) about Weight. Untranslatable.	
+Inventory	Equipment	Name	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	Équipement		
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg	10kg	Value(Float) about Capacity. Untranslatable.	
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000	1000	Value(Float) about Value. Untranslatable.	
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100	100	Value(Float) about Insulation. Untranslatable.	
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A	N/A	Value(Float) about Dexterity. Untranslatable.	
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A	N/A	Value(Float) about Menace. Untranslatable.	
+Inventory	Equipment	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A	N/A	Value(Float) about CBRN. Untranslatable.	
+Inventory	Equipment	String	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	Primaire	Inventory Slot for Primary Weapon	
+Inventory	Equipment	String	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	Secondaire	Inventory Slot for Secondory Weapon	
+Inventory	Equipment	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	Couteau	Inventory Slot for Knife	
+Inventory	Equipment	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	Grenade	Inventory Slot for Grenade1	
+Inventory	Equipment	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	Grenade	Inventory Slot for Grenade2	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	Sac à dos	Inventory Slot for Backpack	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	Plateforme	Inventory Slot for Rig(Vest)	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	Casque	Inventory Slot for Helmet	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	Tête	Inventory Slot for Hat/Cap	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	Torse	Inventory Slot for Jacket	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	Jambes	Inventory Slot for Pants	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	Ceinture	Inventory Slot for Belt	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	Pieds	Inventory Slot for Shoes	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	Les mains	Inventory Slot for Gloves	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	Rencontres	Inventory Slot for Matches(lighter)	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	Lumière	Inventory Slot for FlashLight	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	NVG	Inventory Slot for Night Vision Goggle (NVG)	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	Heure	Inventory Slot for Clock(Time)	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	Carte	Inventory Slot for Map	
+Inventory	Equipment	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	Joueur	"Inventory Slot for Carest/MP3 ""Player"""	
+Inventory	Vitals	Dictionary	0	0	1	0	0	substr									Vital	Essentiel	allow conflict	
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	Personnage		
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	Santé	Player's Status about Health Point (HP)	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100	100		
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	Énergie	Player's Status about Energy	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100	100		
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	Eau	Player's Status about Hydration (Water)	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100	100		
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	Mental	Player's Status about Mental	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100	100		
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	Temp.	Player's Status about Body Temparature	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100	100		
+Inventory	Vitals	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	Chat	Cat's Status	
+Inventory	Vitals	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100	100		
+Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	Jour	Number of days the player survived	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00	00		
+Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	Refuges	Number of Shelters that unlocked	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00	00		
+Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	Tâches	Number of Tasks that cleared	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00	00		
+Inventory	Stats	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	Quêtes	Number of Quests that cleard	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00	00		
+Inventory	Stats	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS	CDS	Number of Civil Defence Shelters (Not Updated yet)	
+Inventory	Stats	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00	00		
+Inventory	Stats	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?	?	Wating for Update	
+Inventory	Stats	Number	0	0	0	0	1	ignore									?	?	Wating for Update	
+Inventory	Tools	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	Outils		
+Inventory	Tools	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	Événements		
+Inventory	Tools	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	Artisanat		
+Inventory	Tools/Crafting	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	Proximité		
+Inventory	Tools/Task Note	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	Notes sur la tâche		
 Inventory	Tools/Task Note	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty	Notes sur la tâche : vide	"Task Note will only display this Strings when there's any task added in the Task Note.
-It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"
+It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	0	1	0	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	Notes sur la tâche non disponibles (Tutoriel)	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
-Dynamically changed by Scripts/Interface.gd: notesHint.text"
-			0	0	1	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	Notes sur la tâche : vide	
-			0	0	1	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	Notes sur la tâche non disponibles (Tutoriel)	
-Inventory	Tools/Map	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	Carte du monde	
-Inventory	Tools/Map	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	Carte non fournie	
-Inventory	Tools/Map	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	Carte inutilisable (Vostok)	
-			0	0	1	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	Carte non fournie	
-			0	0	1	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	Carte inutilisable (Vostok)	
+Dynamically changed by Scripts/Interface.gd: notesHint.text"	
+Inventory	Tools/Task Note	String	0	0	1	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	Notes sur la tâche : vide		
+Inventory	Tools/Task Note	String	0	0	1	0	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	Notes sur la tâche non disponibles (Tutoriel)		
+Inventory	Tools/Map	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	Carte du monde		
+Inventory	Tools/Map	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	Carte non fournie		
+Inventory	Tools/Map	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	Carte inutilisable (Vostok)		
+Inventory	Tools/Map	String	0	0	1	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	Carte non fournie		
+Inventory	Tools/Map	String	0	0	1	0	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	Carte inutilisable (Vostok)		
 Inventory	Tools/Map	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
 Zoom = [SCROLL]"	"Panoramique = [Clic gauche]
-Zoom = [Molette]"	
-Inventory	Tools/Map	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	Carte de focalisation	Focuse the Map to Player's Location
-Inventory	Tools/Casette	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	Lecteur de cassettes	
-Inventory	Tools/Casette	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	Lecteur de cassettes non disponible	
-			0	0	1	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	Lecteur de cassettes non disponible	
-			0	0	1	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	Lecteur de cassettes : batterie à 0 %, recharger le lecteur	
-			0	0	1	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	Le lecteur de cassettes est vide, insérez une cassette	
-Inventory	Tools/Casette	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	Cette cassette contient de la musique sous licence (Avertissement concernant le contenu)	
-Inventory	Tools/Casette	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	Nom de la cassette	
-Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%	🗲 100%	
-Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪	Volume  🕪	
-Inventory	Tools/Casette	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]	Casette will Overide the Ambient Music when it's ON
+Zoom = [Molette]"		
+Inventory	Tools/Map	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	Carte de focalisation	Focuse the Map to Player's Location	
+Inventory	Tools/Casette	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	Lecteur de cassettes		
+Inventory	Tools/Casette	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	Lecteur de cassettes non disponible		
+Inventory	Tools/Casette	String	0	0	1	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	Lecteur de cassettes non disponible		
+Inventory	Tools/Casette	String	0	0	1	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	Lecteur de cassettes : batterie à 0 %, recharger le lecteur		
+Inventory	Tools/Casette	String	0	0	1	0	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	Le lecteur de cassettes est vide, insérez une cassette		
+Inventory	Tools/Casette	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	Cette cassette contient de la musique sous licence (Avertissement concernant le contenu)		
+Inventory	Tools/Casette	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	Nom de la cassette		
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%	🗲 100%		
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪	Volume  🕪		
+Inventory	Tools/Casette	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]	Casette will Overide the Ambient Music when it's ON	
 Inventory	Tools/Casette	Button	0	0	1	0	0	literal			UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button			Override Ambient Music [OFF]	Ignorer la musique d'ambiance [DÉSACTIVÉ]	"Casette will Overide the Ambient Music when it's ON.
-Dynamically changed by Scripts/Audio.gd"
-			0	0	1	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]	
-			0	0	1	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	Ignorer la musique d'ambiance [DÉSACTIVÉ]	
-Inventory	Tools	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	Nomades	
-Traders	Traders	Title	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	Trader	
-Traders	Traders	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	Approvisionnement	
-Traders	Traders	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	Tâches	
-Traders	Traders	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	Nom :	
+Dynamically changed by Scripts/Audio.gd"	
+Inventory	Tools/Casette	Button	0	0	1	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]		
+Inventory	Tools/Casette	Button	0	0	1	0	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	Ignorer la musique d'ambiance [DÉSACTIVÉ]		
+Inventory	Tools	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	Nomades		
+Traders	Traders	Title	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	Trader		
+Traders	Traders	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	Approvisionnement		
+Traders	Traders	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	Tâches		
+Traders	Traders	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	Nom :		
 Traders	Traders	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Name	Value	Label	text	191837597	Trader	Trader	"Dynamically Changed as Traders/{name}/{name}.tres file's name field
-by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"
-Traders	Traders/Stat	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	Fiscalité :	
-Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%	100%	
-Traders	Traders/Stat	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	Tâches :	
-Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10	0/10	
-Traders	Traders/Stat	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	Réapprovisionnement :	
-Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00	10:00	
-Traders	Deal	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	Offre	
-Traders	Deal	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	Montant de la demande + taxes (€)	
-Traders	Deal	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0	0	
-Traders	Deal	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	Valeur de l'offre (€)	
-Traders	Deal	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0	0	
-Traders	Deal	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	Réinitialiser	
-Traders	Deal	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	Accepter	
-Traders	Supply	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	Approvisionnement	
-Traders	Supply	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000	1000	
-Traders	Tasks	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	Tâches	
-Inventory	Furniture Catalog	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	Catalogue de mobilier	
-Inventory	Furniture Catalog	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	Le catalogue est lié à votre personnage ; si vous mourez, les objets de votre catalogue seront également détruits	
+by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"	
+Traders	Traders/Stat	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	Fiscalité :		
+Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%	100%		
+Traders	Traders/Stat	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	Tâches :		
+Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10	0/10		
+Traders	Traders/Stat	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	Réapprovisionnement :		
+Traders	Traders/Stat	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00	10:00		
+Traders	Deal	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	Offre		
+Traders	Deal	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	Montant de la demande + taxes (€)		
+Traders	Deal	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0	0		
+Traders	Deal	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	Valeur de l'offre (€)		
+Traders	Deal	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0	0		
+Traders	Deal	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	Réinitialiser		
+Traders	Deal	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	Accepter		
+Traders	Supply	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	Approvisionnement		
+Traders	Supply	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000	1000		
+Traders	Tasks	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	Tâches		
+Inventory	Furniture Catalog	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	Catalogue de mobilier		
+Inventory	Furniture Catalog	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	Le catalogue est lié à votre personnage ; si vous mourez, les objets de votre catalogue seront également détruits		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
 "	"Utilisation
-"	
-Inventory	Item/Equipments	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
+"		
+Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
 "	"Équiper
-"	
-Inventory	Item/Equipments	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
+"		
+Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
 "	"Déséquiper
-"	
+"		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
 "	"Décharger
-"	
+"		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
 "	"Diviser
-"	
+"		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
 "	"Prends
-"	
+"		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
 "	"Sommeil
-"	
-	Item	Button	0	0	1	0	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	Sommeil	
+"		
+Inventory	Item	Button	0	0	1	0	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	Sommeil		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
 "	"Transfert
-"	
+"		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
 "	"Lâcher
-"	
+"		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
 "	"Lieu
-"	
+"		
 Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
 "	"Détruire
-"	
-Inventory	Item/Weapon/Attachment	Button	0	0	0	0	0	pattern									Remove {name}		
-Inventory	Item/Weapon/Attachment	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
+"		
+Inventory	Item	Button	0	0	0	0	0	pattern									Remove {name}			
+Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
 "	"Supprimer [0]
-"	
-Inventory	Item/Weapon/Attachment	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
+"		
+Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
 "	"Supprimer [1]
-"	
-Inventory	Item/Weapon/Attachment	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
+"		
+Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
 "	"Supprimer [2]
-"	
-Inventory	Item/Weapon/Attachment	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
+"		
+Inventory	Item	Button	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
 "	"Supprimer [3]
-"	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	Maître du café	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	Consommable	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	Légendaire	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	Matériel :	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	Primaire	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	État :	
-Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%	100%	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	Poids :	
-Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg	100kg	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	Valeur :	
-Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€	100€	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	Calibre :	
-Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19	9x19	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	Dommages :	
-Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100	100	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	Pénétration :	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	Niveau 1	
-Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 2	Niveau 2	
-Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 3	Niveau 3	
-Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 4	Niveau 4	
-Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 5	Niveau 5	
-Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label		1220649414	Protection:	Protection :	
-Inventory	Item	String	0	0	0	0	0	pattern									Level {no}		
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	Niveau 1	
-Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 2	Niveau 2	
-Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 3	Niveau 3	
-Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 4	Niveau 4	
-Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 5	Niveau 5	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	Capacité :	
-Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg	+10kg	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	Isolation :	
-Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10	+10	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	Santé :	
-Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10	+10	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	Énergie :	
-Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10	+10	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	Eau :	
-Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10	+10	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	Mental :	
-Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10	+10	
-Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	Température corporelle :	
-Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10	+10	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	Imbriqué :	
-Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine	Hybrid, OZ5, Leopard, Magazine	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	Soins :	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	Articles compatibles :	
-Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG	
-HUD	Fire	String	0	0	1	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]	Feu [Allumer]	
-HUD	Fire	String	0	0	1	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]	Feu [Sans allumettes]	
-HUD	Fire	String	0	0	1	0	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		93	Fire [Extinguish]	Incendie [Éteindre]	
-Inventory	Tools/Craft	String	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	Chaleur nécessaire	
-Inventory	Tools/Craft	String	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	Établi requis	
-Inventory	Tools/Craft	String	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	Besoin d'un refuge	
-Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	Article	
-Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%	100%	
-Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1	1	
-Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	Profilage	Developer Only
-Inventory	Tools/Craft	Button	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	Afficher	
-Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	Nom de la recette	
-Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00	01:00	
-Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	Entrée :	
-Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder
-Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	Résultat :	
-Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder
-Inventory	Tools/Craft	Button	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	Commencer la saisie	
-Inventory	Tools/Craft	Button	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	Commencer la saisie	
-Inventory	Tools/Craft	Button	0	0	1	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input	Commencer la saisie	
-Inventory	Tools/Craft	Button	0	0	1	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input	Commencer la saisie	
-Inventory	Tools/Craft	Button	0	0	1	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input	Commencer la saisie	
-Inventory	Tools/Craft	Button	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	Arrêter la saisie	
-Inventory	Tools/Craft	Button	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	Réinitialiser l'entrée	
-Inventory	Tools/Craft	Button	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	Artisanat	
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	Le devoir m'appelle	PlaceHolder
-Inventory	Task	Button	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	Ajouter aux notes	
-Inventory	Task	Button	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	Supprimer	
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	Niveau de difficulté :	
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	Facile	
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Description	Label	text	1563024386	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+"		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	Maître du café		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	Consommable		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	Légendaire		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	Matériel :		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	Primaire		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	État :		
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%	100%		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	Poids :		
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg	100kg		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	Valeur :		
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€	100€		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	Calibre :		
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19	9x19		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	Dommages :		
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100	100		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	Pénétration :		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	Niveau 1		
+Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 2	Niveau 2		
+Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 3	Niveau 3		
+Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 4	Niveau 4		
+Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 5	Niveau 5		
+Inventory	Item	String	0	0	1	0	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label		1220649414	Protection:	Protection :		
+Inventory	Item	String	0	0	0	0	0	pattern									Level {no}			
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	Niveau 1		
+Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 2	Niveau 2		
+Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 3	Niveau 3		
+Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 4	Niveau 4		
+Inventory	Item	String	0	0	1	0	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 5	Niveau 5		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	Capacité :		
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg	+10kg		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	Isolation :		
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10	+10		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	Santé :		
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10	+10		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	Énergie :		
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10	+10		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	Eau :		
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10	+10		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	Mental :		
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10	+10		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	Température corporelle :		
+Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10	+10		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	Imbriqué :		
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine	Hybrid, OZ5, Leopard, Magazine		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	Soins :		
+Inventory	Item	String	0	0	1	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	Articles compatibles :		
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG		
+Inventory	Tools/Craft	String	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	Chaleur nécessaire		
+Inventory	Tools/Craft	String	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	Établi requis		
+Inventory	Tools/Craft	String	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	Besoin d'un refuge		
+Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	Article		
+Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%	100%		
+Inventory	#Not Checked	String	0	0	0	0	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1	1		
+Inventory	#Not Checked	String	0	0	1	0	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	Profilage	Developer Only	
+Inventory	Tools/Craft	Button	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	Afficher		
+Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	Nom de la recette		
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00	01:00		
+Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	Entrée :		
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder	
+Inventory	Tools/Craft	String	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	Résultat :		
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder	
+Inventory	Tools/Craft	Button	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	Commencer la saisie		
+Inventory	Tools/Craft	Button	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	Commencer la saisie		
+Inventory	Tools/Craft	Button	0	0	1	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input	Commencer la saisie		
+Inventory	Tools/Craft	Button	0	0	1	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input	Commencer la saisie		
+Inventory	Tools/Craft	Button	0	0	1	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input	Commencer la saisie		
+Inventory	Tools/Craft	Button	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	Arrêter la saisie		
+Inventory	Tools/Craft	Button	0	0	1	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	Réinitialiser l'entrée		
+Inventory	Tools/Craft	Button	0	0	1	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	Artisanat		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	Chaleur		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes culinaires.		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	Exigence de proximité		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	Établi		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes de construction.		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	Exigence de proximité		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	Banc d'essai	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes liées à l'électronique.	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	Exigence de proximité	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	Refuge		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes de fabrication de meubles.		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	Exigence de proximité		
+Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	Trader		
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	Le devoir m'appelle	PlaceHolder	
+Inventory	Tools/Task	Button	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	Ajouter aux notes		
+Inventory	Tools/Task	Button	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	Supprimer		
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	Niveau de difficulté :		
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	Facile		
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Description	Label	text	1563024386	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"La semaine dernière, je suis allé voir le médecin dans cette école abandonnée du coin. Il m'a dit que je devrais arrêter toutes mes « mauvaises habitudes », mais ce vieux connard fume lui-même, alors qu'il aille se faire voir !
 
-Tu es sûrement juste un de ces hippies des temps modernes qui ne font que sucer des pastilles à la menthe quand ça va mal, mais si jamais tu tombes sur un de ces endroits, apporte un paquet ou deux et des allumettes aussi."	
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	Livrer :	
-Inventory	Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	Recevoir :	
-Inventory	Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
+Tu es sûrement juste un de ces hippies des temps modernes qui ne font que sucer des pastilles à la menthe quand ça va mal, mais si jamais tu tombes sur un de ces endroits, apporte un paquet ou deux et des allumettes aussi."		
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	Livrer :		
+Inventory	Tools/Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder	
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	Recevoir :		
+Inventory	Tools/Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item	Item, Item, Item, Item	PlaceHolder	
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
 → Your furniture is located in Furniture Catalog [Decor Mode]"	"→ Vous recevrez des meubles pour votre abri à l'issue de cette mission
-→ Vos meubles se trouvent dans le catalogue de meubles [Mode Décoration]"	
-Inventory	Task	Button	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	Lancer la livraison	
-Inventory	Task	Button	0	0	1	0	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	Lancer la livraison	
-Inventory	Task	Button	0	0	1	0	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery	Lancer la livraison	
-Inventory	Task	Button	0	0	1	0	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	Suspendre la livraison	
-Inventory	Task	Button	0	0	1	0	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	Suspendre la livraison	
-Inventory	Task	Button	0	0	1	0	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	Livré	
-Inventory	Task	Button	0	0	1	0	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	Livré	
-Inventory	Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	Terminer	
-Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶	▶	
-Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen	
-Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30	3:30	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	Capacité de charge	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	La capacité (en kg) de tous les équipements.	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	Statistiques d'inventaire	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	Poids de l'inventaire	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	Le poids total (en kg) de tous les articles en stock.	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	Statistiques d'inventaire	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	Valeur des stocks	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	La valeur totale (en euros) de tous les articles en stock.	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	Statistiques d'inventaire	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	Poids du conteneur	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	Le poids total (en kg) de tous les articles contenus dans le conteneur.	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	Statistiques sur les conteneurs	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	Valeur du conteneur	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	Le montant total (en euros) de tous les articles en conteneur.	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	Statistiques sur les conteneurs	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	Capacité de charge	
+→ Vos meubles se trouvent dans le catalogue de meubles [Mode Décoration]"		
+Inventory	Tools/Task	Button	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	Lancer la livraison		
+Inventory	Tools/Task	Button	0	0	1	0	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	Lancer la livraison		
+Inventory	Tools/Task	Button	0	0	1	0	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery	Lancer la livraison		
+Inventory	Tools/Task	Button	0	0	1	0	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	Suspendre la livraison		
+Inventory	Tools/Task	Button	0	0	1	0	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	Suspendre la livraison		
+Inventory	Tools/Task	Button	0	0	1	0	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	Livré		
+Inventory	Tools/Task	Button	0	0	1	0	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	Livré		
+Inventory	Tools/Task	String	0	0	1	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	Terminer		
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶	▶		
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen		
+Inventory	Tools/Casette	String	0	0	0	0	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30	3:30		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	Capacité de charge		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	La capacité (en kg) de tous les équipements.		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	Statistiques d'inventaire		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	Poids de l'inventaire		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	Le poids total (en kg) de tous les articles en stock.		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	Statistiques d'inventaire		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	Valeur des stocks		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	La valeur totale (en euros) de tous les articles en stock.		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	Statistiques d'inventaire		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	Poids du conteneur		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	Le poids total (en kg) de tous les articles contenus dans le conteneur.		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	Statistiques sur les conteneurs		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	Valeur du conteneur		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	Le montant total (en euros) de tous les articles en conteneur.		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	Statistiques sur les conteneurs		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	Capacité de charge		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		info	825286726	"A weight capacity value (kg) of how much inventory weight you can carry.
 
 Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
@@ -327,12 +314,12 @@ Carry Capacity by default is 10kg"	"Une valeur de capacité de charge (kg) indiq
 
 La capacité de charge augmente lorsque vous équipez des objets tels que des sacs à dos, des harnais ou des vêtements dotés d'une statistique de capacité positive.
 
-La capacité de charge par défaut est de 10 kg."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	Statistiques d'équipement	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	Valeur des équipements	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	Le montant total (en euros) de tous les équipements.	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	Statistiques d'équipement	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	Isolation	
+La capacité de charge par défaut est de 10 kg."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	Statistiques d'équipement		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	Valeur des équipements		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	Le montant total (en euros) de tous les équipements.		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	Statistiques d'équipement		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	Isolation		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		info	1800952039	"A clothing-based thermal protection value against cold.
 
 Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
@@ -351,9 +338,9 @@ L'isolation augmente lorsque vous portez des vêtements dotés d'une valeur d'is
 Exemples d'isolation :
 [100] = La baisse de la température corporelle est complètement stoppée
 [50] = La baisse de la température corporelle est ralentie de 50 %
-[0] = La température corporelle baisse au rythme normal"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	Statistiques d'équipement	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	Dextérité	
+[0] = La température corporelle baisse au rythme normal"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	Statistiques d'équipement		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	Dextérité		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		info	550854834	"An inertia-based value of how quickly you can move and do certain actions.
 
 Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
@@ -362,9 +349,9 @@ Dexterity decreases when you equip heavy or unergonomic items with a negative de
 
 La dextérité est liée à la vitesse de déplacement et à la maniabilité des armes, notamment pour viser et recharger.
 
-La dextérité diminue lorsque vous équipez des objets lourds ou peu ergonomiques dont la statistique de dextérité est négative."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	Statistiques d'équipement	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	Menace	
+La dextérité diminue lorsque vous équipez des objets lourds ou peu ergonomiques dont la statistique de dextérité est négative."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	Statistiques d'équipement		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	Menace		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		info	1925451931	"An intimidation value of how threatening AI sees your character and equipment.
 
 When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
@@ -377,10 +364,10 @@ Lorsque votre valeur de Menace est élevée, l'IA est moins encline à adopter d
 
 La Menace augmente lorsque vous équipez des objets tels que des vêtements spéciaux dotés d'une statistique de Menace positive.
 
-La Menace n'affecte que l'IA de bas niveau (les bandits)."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	Statistiques d'équipement	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	CBRN	
-Inventory	Stats	String	0	0	1	0	0	substr									CBRN	CBRN	
+La Menace n'affecte que l'IA de bas niveau (les bandits)."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	Statistiques d'équipement		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	CBRN		
+Inventory	Stats	String	0	0	1	0	0	substr									CBRN	CBRN		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		info	215856199	"A protection value against chemical, biological, radiological and nuclear threats.
 
 CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
@@ -389,9 +376,9 @@ CBRN increases when you equip items such as special clothing or protective masks
 
 La valeur CBRN est liée à la santé vitale : elle permet de ralentir la perte de santé lorsque vous êtes exposé à des zones ou à des substances dangereuses.
 
-La valeur CBRN augmente lorsque vous équipez des objets tels que des vêtements spéciaux ou des masques de protection dotés d'une statistique CBRN positive."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	Statistiques d'équipement	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	Santé	
+La valeur CBRN augmente lorsque vous équipez des objets tels que des vêtements spéciaux ou des masques de protection dotés d'une statistique CBRN positive."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	Statistiques d'équipement		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	Santé		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		info	2025955860	"Your main vital for staying alive.
 
 Health decreases with damages and active medical conditions.
@@ -404,9 +391,9 @@ Ta santé diminue lorsque tu subis des dégâts ou que tu souffres de pathologie
 
 Ta santé augmente grâce à certains objets médicaux, tels que les bandages et les trousses de secours.
 
-Santé [0] -> Le personnage meurt"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	Énergie	
+Santé [0] -> Le personnage meurt"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	Essentiel		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	Énergie		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		info	256184	"Your hunger and energy level.
 
 Energy decreases over time and using map transitions with Energy Cost.
@@ -419,9 +406,9 @@ L'énergie diminue avec le temps et lors des transitions entre les cartes qui im
 
 L'énergie augmente grâce à certains consommables, comme la nourriture.
 
-Énergie [0] -> Famine (État)"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	Eau	
+Énergie [0] -> Famine (État)"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	Essentiel		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	Eau		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		info	1778216863	"Your thirst and hydration level.
 
 Hydration decreases over time and using map transitions with Hydration Cost. 
@@ -438,9 +425,9 @@ Certains consommables secs ou salés peuvent également réduire l'Eau.
 
 L'Eau augmente grâce à certains consommables, tels que les boissons.
 
-Eau [0] -> DésEau (état)"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	Mental	
+Eau [0] -> DésEau (état)"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	Essentiel		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	Mental		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		info	1524485513	"Your happiness and sanity level.
 
 Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
@@ -453,9 +440,9 @@ La santé mentale diminue avec le temps et sous l'effet de consommables nocifs. 
 
 La santé mentale augmente grâce à des objets réconfortants tels que des collations, des repas chauds et des produits tels que l'alcool ou la nicotine.
 
-Santé mentale [0] -> Folie (Affection)"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	Temp.	
+Santé mentale [0] -> Folie (Affection)"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	Essentiel		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	Temp.		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
 
 Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
@@ -468,9 +455,9 @@ La température corporelle diminue progressivement en hiver. Vous pouvez ralenti
 
 La température corporelle augmente dans un abri ou en restant près de sources de chaleur telles que des feux. Certains objets chauffants, comme les coussins chauffants ou les couvertures de survie, permettent également d'augmenter la température corporelle.
 
-Température corporelle [0] -> Gelures (état)"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	Chat	
+Température corporelle [0] -> Gelures (état)"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	Essentiel		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	Chat		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		info	2119249152	"Grandma's cat health level.
 
 Cat health activates if you decide to rescue the Cat and bring her to your shelter.
@@ -487,9 +474,9 @@ La santé du chat diminue avec le temps.
 
 La santé du chat augmente lorsque vous le nourrissez avec des consommables tels que de la nourriture pour chat ou du thon en conserve.
 
-Chat [0] -> Le chat meurt"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	Essentiel	
-Inventory	Stats	String	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	Surpoids	
+Chat [0] -> Le chat meurt"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	Essentiel		
+Inventory	Stats	String	0	0	1	0	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	Surpoids		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		info	1472180750	"A condition where you are carrying too much weight and movement becomes unsustainable.
 
 Causes:
@@ -514,9 +501,9 @@ Symptômes :
 - Hauteur de saut [-50 %]
 
 Remèdes :
-- Poids de l'inventaire < Capacité de charge"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	La famine	
+- Poids de l'inventaire < Capacité de charge"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	La famine		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		info	1549426522	"A condition where you have a lack of calories and essential nutrients.
 
 Causes:
@@ -539,9 +526,9 @@ Symptômes :
 - Régénération d'endurance [-50 %]
 
 Remèdes :
-- Consommables"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	DésEau	
+- Consommables"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	DésEau		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		info	986386791	"A condition where your body doesn't have enough fluids to function normally.
 
 Causes:
@@ -564,9 +551,9 @@ Symptômes :
 - Régénération d'endurance [-50 %]
 
 Remèdes :
-- Consommables"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	Saignement	
+- Consommables"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	Saignement		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		info	1768354194	"A condion where you have a minor bleeding from small cuts or scrapes.
 
 Causes: 
@@ -597,9 +584,9 @@ Traitements :
 - Bandage
 - Garrot
 - Trousse de secours
-- IFAK / AFAK"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	Fracture	
+- IFAK / AFAK"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	Fracture		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		info	139365606	"A condition where you have a partial or complete break in the bone.
 
 Causes: 
@@ -630,11 +617,11 @@ Symptômes :
 Traitements : 
 - Attelle
 - Trousse de secours
-- IFAK / AFAK"	
-Inventory	Stats	String	0	0	1	0	0	substr									Explosion	Explosion	
-Inventory	Stats	String	0	0	1	0	0	substr									Fall	Automne	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	Brûler	
+- IFAK / AFAK"		
+Inventory	Stats	String	0	0	1	0	0	substr									Explosion	Explosion		
+Inventory	Stats	String	0	0	1	0	0	substr									Fall	Automne		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	Brûler		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		info	275854551	"A condition where you have a tissue damage from intense heat or high-voltage electric current.
 
 Causes:
@@ -661,9 +648,9 @@ Traitements :
 - Baume
 - Lotion
 - Trousse de secours
-- IFAK / AFAK"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	Gelures	
+- IFAK / AFAK"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	Gelures		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		info	24250462	"A condition where you have hypothermia or body part freezes from cold exposure.
 
 Causes: 
@@ -686,9 +673,9 @@ Symptômes :
 Remèdes :
 - Sources de chaleur
 - Sac de couchage
-- Couverture thermique"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	Folie	
+- Couverture thermique"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	Folie		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		info	1233339607	"A condition where your sanity breaks and you start having dark thoughts.
 
 Causes: 
@@ -713,9 +700,9 @@ Remèdes :
 - Consommables
 - Sommeil
 - Sources de feu
-- Instruments"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	Empoisonnement	
+- Instruments"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	Empoisonnement		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		info	379297031	"A condition where toxic substance entered your digestion or lungs.
 
 Causes:
@@ -738,9 +725,9 @@ Symptômes :
 
 Traitements :
 - Trousse de secours
-- AFAK"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	Rupture	
+- AFAK"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	Rupture		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		info	71304217	"A critical condition where you have a catastrofal bleeding or major internal wound.
 
 Causes: 
@@ -763,9 +750,9 @@ Symptômes :
 
 Traitements :
 - Trousse de secours
-- IFAK / AFAK"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	Portrait	
+- IFAK / AFAK"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	Portrait		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		info	1309688651	"A critical condition where you have a major head related wound.
 
 Causes: 
@@ -786,10 +773,10 @@ Symptômes :
 
 Traitements :
 - Trousse de secours
-- IFAK / AFAK"	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	Problème de santé	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	Jour	
-Inventory	Stats	String	0	0	1	0	0	substr									Day	Jour	
+- IFAK / AFAK"		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	Problème de santé		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	Jour		
+Inventory	Stats	String	0	0	1	0	0	substr									Day	Jour		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		info	1507600508	"Number of Days survived.
 
 New day begins at 00:00 midnight and certain amount of days will unlock new game events.
@@ -798,9 +785,9 @@ Upcoming events can be displayed by using the Events tool."	"Nombre de jours de 
 
 Une nouvelle journée commence à minuit (00 h 00) et, au bout d'un certain nombre de jours, de nouveaux événements de jeu se débloquent.
 
-Vous pouvez consulter les événements à venir à l'aide de l'outil « Événements »."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	Statistiques de progression	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	Refuges	
+Vous pouvez consulter les événements à venir à l'aide de l'outil « Événements »."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	Statistiques de progression		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	Refuges		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		info	821447952	"Number of Shelters unlocked.
 
 Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
@@ -813,9 +800,9 @@ Les abris sont des zones sûres où vous pouvez sauvegarder votre progression et
 
 Une nouvelle partie commence avec deux abris débloqués, appelés « Cabane » et « Tente ».
 
-D'autres abris peuvent être débloqués à l'aide de clés que vous obtenez en accomplissant des missions confiées par différents marchands."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	Statistiques de progression	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	Tâches	
+D'autres abris peuvent être débloqués à l'aide de clés que vous obtenez en accomplissant des missions confiées par différents marchands."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	Statistiques de progression		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	Tâches		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		info	1384285326	"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
@@ -824,16 +811,16 @@ Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to un
 
 Les quêtes sont des missions proposées par les marchands et portant sur des objets spécifiques. Elles peuvent impliquer plusieurs marchands et nécessiter l'utilisation d'objets non récupérables dans le cadre de l'artisanat.
 
-Les quêtes permettent de bénéficier de prix plus avantageux (taxe du marchand) et d'obtenir des clés pour débloquer de nouveaux abris et des salles spéciales."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	Statistiques de progression	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	Quêtes	
+Les quêtes permettent de bénéficier de prix plus avantageux (taxe du marchand) et d'obtenir des clés pour débloquer de nouveaux abris et des salles spéciales."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	Statistiques de progression		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	Quêtes		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		info	1702334479	"Number of Quests completed.
 
 Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"Nombre de quêtes accomplies.
 
-Les quêtes sont des missions liées à l'univers du jeu proposées par les marchands. Elles peuvent être liées entre elles et impliquer plusieurs marchands, et leur déblocage peut nécessiter la survenue de certains événements."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	Statistiques de progression	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	Abris de la protection civile	
+Les quêtes sont des missions liées à l'univers du jeu proposées par les marchands. Elles peuvent être liées entre elles et impliquer plusieurs marchands, et leur déblocage peut nécessiter la survenue de certains événements."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	Statistiques de progression		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	Abris de la protection civile		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		info	2004804582	"Number of CDS completed.
 
 Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
@@ -846,9 +833,9 @@ Les abris de défense civile (CDS) sont des bunkers en béton et des espaces sou
 
 Après l'évacuation de la Zone 05, ces abris ont été pris d'assaut et la plupart du matériel de survie qui s'y trouvait a été volé.
 
-Pour sécuriser un abri de défense civile, vous devez éliminer tous les ennemis présents et remettre en marche la radio d'urgence de l'abri."	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	Statistiques de progression	
-Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	Douce nuit	
+Pour sécuriser un abri de défense civile, vous devez éliminer tous les ennemis présents et remettre en marche la radio d'urgence de l'abri."		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	Statistiques de progression		
+Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	Douce nuit		
 Inventory	Stats	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		info	1661761957	"There will be a silent night when all fades away.
 
 When you look up, you see the North Star, your only light in the darkness.
@@ -865,24 +852,11 @@ Cette lumière te rappelle ton foyer, l'endroit d'où tu viens et où tu retourn
 
 Tu te sens en sécurité, un moment de paix qui ressemble à la fin que tu souhaitais.
 
-Puis ta dernière lumière disparaît, le ciel rougit et le silence se rompt."	
-Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	Événement spécial	
-Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	Valeur d'approvisionnement	
-Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	Le montant total (en euros) de tous les articles de la commande.	
-Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	Statistiques du trader	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	Chaleur	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes culinaires.	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	Exigence de proximité	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	Établi	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	Un élément d'artisanat disponible à proximité qui peut être nécessaire pour certaines recettes de construction.	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	Exigence de proximité	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	Banc d'essai	I can't find this. Maybe not updated in 1.0.0 version yet.
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes liées à l'électronique.	I can't find this. Maybe not updated in 1.0.0 version yet.
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	Exigence de proximité	I can't find this. Maybe not updated in 1.0.0 version yet.
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	Refuge	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	Un élément d'artisanat disponible à proximité, qui peut être nécessaire pour certaines recettes de fabrication de meubles.	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	Exigence de proximité	
-Inventory	Tools/Crafting	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	Trader	
+Puis ta dernière lumière disparaît, le ciel rougit et le silence se rompt."		
+Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	Événement spécial		
+Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	Valeur d'approvisionnement		
+Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	Le montant total (en euros) de tous les articles de la commande.		
+Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	Statistiques du trader		
 Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		info	844527464	"A friendly NPC with trading supply, tasks and specialized services.
 
 Name: Commonly known name among locals.
@@ -893,9 +867,9 @@ Resupply: Time when supply resets."	"Un PNJ sympathique proposant des marchandis
 Nom : nom sous lequel il est communément connu des habitants.
 Taxe : coefficient multiplicateur appliqué au prix des marchandises.
 Quêtes : nombre de quêtes accomplies.
-Réapprovisionnement : heure à laquelle les stocks sont réapprovisionnés."	
-Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	Informations sur le trader	
-Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	Offre	
+Réapprovisionnement : heure à laquelle les stocks sont réapprovisionnés."		
+Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	Informations sur le trader		
+Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	Offre		
 Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		info	1021981031	"A deal balance meter which compares selected item values.
 
 Requsted Value (€) is calculated from selected Supply items with Tax added.
@@ -908,5 +882,5 @@ La valeur demandée (€) est calculée à partir des articles de l'offre sélec
 
 La valeur de l'offre (€) est calculée à partir des articles en stock sélectionnés.
 
-La transaction peut être acceptée lorsque l'indicateur de balance se trouve dans la zone verte, ce qui signifie que la valeur de l'offre est égale ou supérieure à la valeur demandée + taxes."	
-Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	Compteur de promotions	
+La transaction peut être acceptée lorsque l'indicateur de balance se trouve dans la zone verte, ce qui signifie que la valeur de l'offre est égale ou supérieure à la valeur demandée + taxes."		
+Inventory	Trader	String	0	0	1	0	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	Compteur de promotions		
