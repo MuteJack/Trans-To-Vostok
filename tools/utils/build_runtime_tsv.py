@@ -203,10 +203,18 @@ def main() -> int:
         print(f"[1/5] Validation skipped (--ignore)")
         print()
     else:
+        # parsed_text/ is gdre_tools-derived and not part of the public
+        # repo. If absent, validate_xlsx still runs (flags/method/whitespace/
+        # duplicates checks); only parsed_text-dependent checks (TSV match,
+        # tres/gd text-existence) are skipped.
+        validate_tsv_dir = tsv_dir if tsv_dir.exists() else None
         mode = "soft" if soft else "hard"
-        print(f"[1/5] Validating... ({locale}, {mode})")
+        if validate_tsv_dir is None:
+            print(f"[1/5] Validating (partial: parsed_text not found)... ({locale}, {mode})")
+        else:
+            print(f"[1/5] Validating... ({locale}, {mode})")
         try:
-            result = validate_xlsx(xlsx_path, tsv_dir, soft=soft)
+            result = validate_xlsx(xlsx_path, validate_tsv_dir, soft=soft)
         except (FileNotFoundError, ValueError) as e:
             print(f"[ERROR] Validation failed: {e}")
             return 1

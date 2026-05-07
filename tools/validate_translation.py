@@ -769,21 +769,23 @@ REQUIRED_COLUMNS = [
 ]
 
 
-def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> ValidationResult:
+def validate_xlsx(xlsx_path: Path, tsv_dir: Path | None, soft: bool = False) -> ValidationResult:
     """
     Validate all translation sheets (excluding MetaData) in Translation.xlsx.
 
     soft=False (--hard, default): TSV match failure → ERROR (block build)
     soft=True  (--soft):          TSV match failure → WARNING (continue build, exclude that row)
+
+    tsv_dir=None or missing directory: parsed_text-dependent checks
+    (check_tsv_match / check_tres_text / check_gd_text) are skipped, but
+    all other checks (flags, method, whitespace, duplicates, cross-sheet
+    duplicates) still run.
     """
     result = ValidationResult()
 
     if not xlsx_path.exists():
         raise FileNotFoundError(f"xlsx file not found: {xlsx_path}")
-    if not tsv_dir.exists():
-        raise FileNotFoundError(
-            f"TSV directory not found: {tsv_dir}\nRun parse_translatables.py first."
-        )
+    parsed_text_available = tsv_dir is not None and tsv_dir.exists()
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_path = xlsx_path.parent / ".log" / f"validate_translation_{timestamp}.log"
@@ -792,7 +794,7 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
 
     try:
         tee.print(f"Target:    {xlsx_path}")
-        tee.print(f"TSV source: {tsv_dir}")
+        tee.print(f"TSV source: {tsv_dir if parsed_text_available else '(unavailable — parsed_text checks will be skipped)'}")
         tee.print(f"Log file:  {log_path}")
         tee.print(f"Run time:  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
         meta = load_metadata(xlsx_path)
@@ -800,14 +802,21 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
             tee.print(line)
         tee.print()
 
-        tee.print("Building TSV index...")
-        tsv_index = load_tsv_index(tsv_dir)
-        total_tsv_entries = sum(len(v) for v in tsv_index.values())
-        tee.print(f"  unique_id count: {len(tsv_index)}, total records: {total_tsv_entries}")
+        if parsed_text_available:
+            tee.print("Building TSV index...")
+            tsv_index = load_tsv_index(tsv_dir)
+            total_tsv_entries = sum(len(v) for v in tsv_index.values())
+            tee.print(f"  unique_id count: {len(tsv_index)}, total records: {total_tsv_entries}")
 
-        tres_texts = load_tres_text_set(tsv_dir)
-        gd_texts = load_gd_text_set(tsv_dir)
-        tee.print(f"  tres text count: {len(tres_texts)}, gd text count: {len(gd_texts)}")
+            tres_texts = load_tres_text_set(tsv_dir)
+            gd_texts = load_gd_text_set(tsv_dir)
+            tee.print(f"  tres text count: {len(tres_texts)}, gd text count: {len(gd_texts)}")
+        else:
+            tsv_index = {}
+            tres_texts = set()
+            gd_texts = set()
+            tee.print("Skipping parsed_text-dependent checks (tsv_dir not provided/found).")
+            tee.print("  Active checks: flags, method, whitespace, duplicates, cross-sheet duplicates.")
 
         tee.print("Loading Translation.xlsx...")
         sheets = load_all_translation_sheets(xlsx_path)
@@ -833,25 +842,26 @@ def validate_xlsx(xlsx_path: Path, tsv_dir: Path, soft: bool = False) -> Validat
             for i, row in enumerate(rows, start=2):
                 local_issues = []
 
-                for msg in check_tsv_match(row, tsv_index):
-                    if soft:
-                        local_issues.append(("WARN", "TSV match (soft)", msg))
-                        result.warn_tsv_soft += 1
-                    else:
-                        local_issues.append(("ERROR", "TSV match", msg))
-                        result.error_tsv += 1
+                if parsed_text_available:
+                    for msg in check_tsv_match(row, tsv_index):
+                        if soft:
+                            local_issues.append(("WARN", "TSV match (soft)", msg))
+                            result.warn_tsv_soft += 1
+                        else:
+                            local_issues.append(("ERROR", "TSV match", msg))
+                            result.error_tsv += 1
 
-                for msg in check_tres_text(row, tres_texts):
-                    if soft:
-                        local_issues.append(("WARN", "tres match (soft)", msg))
-                        result.warn_tsv_soft += 1
-                    else:
-                        local_issues.append(("ERROR", "tres match", msg))
-                        result.error_tsv += 1
+                    for msg in check_tres_text(row, tres_texts):
+                        if soft:
+                            local_issues.append(("WARN", "tres match (soft)", msg))
+                            result.warn_tsv_soft += 1
+                        else:
+                            local_issues.append(("ERROR", "tres match", msg))
+                            result.error_tsv += 1
 
-                for msg in check_gd_text(row, gd_texts):
-                    local_issues.append(("WARN", "gd match", msg))
-                    result.warn_tsv_soft += 1
+                    for msg in check_gd_text(row, gd_texts):
+                        local_issues.append(("WARN", "gd match", msg))
+                        result.warn_tsv_soft += 1
 
                 for msg in check_whitespace(row):
                     local_issues.append(("WARN", "whitespace", msg))
@@ -947,8 +957,13 @@ def main() -> int:
         print(f"[ERROR] xlsx file not found: {xlsx_path}")
         return 1
 
+    # parsed_text/ may be absent for external contributors; pass None to
+    # have validate_xlsx skip parsed_text-dependent checks but still run
+    # everything else (flags, method, whitespace, duplicates, cross-sheet).
+    effective_tsv_dir = tsv_dir if tsv_dir.exists() else None
+
     try:
-        result = validate_xlsx(xlsx_path, tsv_dir, soft=soft)
+        result = validate_xlsx(xlsx_path, effective_tsv_dir, soft=soft)
     except (FileNotFoundError, ValueError) as e:
         print(f"[ERROR] {e}")
         return 1
