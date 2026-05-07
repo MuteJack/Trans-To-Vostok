@@ -4,6 +4,199 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.1] — 2026-05-08 (Patch Release)
+
+This release adds **Portuguese (Brazil)** as a new locale (initial DeepL
+machine-translated pass, text only — Texture not yet shipped),
+introduces an **"Info" tab** in the F9 UI (mod version / build date /
+target game version / contributors broken down by role), and reorganizes
+the contributor documentation into a numbered Korean guide series under
+`README/`. Internal: TSV-canonical xlsx rebuild pipeline replaces
+ad-hoc direct xlsx edits; the mod's own F9 UI is now exempted from being
+translated by itself.
+
+### Added
+
+- **New locale: Português (Brasil) / `Portuguese_BR`** — initial pass
+  via DeepL `PT-BR` (text only; texture translation deferred).
+  Generated through the standard `2_Add_new_language_kr.md` workflow:
+  Template TSV copy → `rebuild_xlsx.py` → DeepL pipeline → `locale.json`
+  registration. `display: "Português (Brasil)"`,
+  `message: "Selecione um idioma (Português Brasileiro)"`.
+
+- **F9 UI: "Info" tab** showing mod metadata. Layout follows the
+  Whitelist / Addons tabs (HBox left/right split):
+  - **Left (Mod Info)**: Mod Version (from `mod.txt`), Built (UTC date
+    of last build), Target Game Version (from each locale's
+    Translation.xlsx MetaData "Game Version" — Korean preferred,
+    falls back to first available), Selected Locale + Translation
+    Updated date (per-locale, from MetaData "Translation Updated Date").
+  - **Right (Contributors)**: Lead Developer / Code Contributors /
+    Acknowledgments (project-wide, from AUTHORS.md sections); then
+    Translators / Translation Contributors / Image Reworkers /
+    Image Contributors (current locale, from Translation.xlsx
+    MetaData and Texture.xlsx columns).
+  - Reads `<pkg_root>/info.json` generated at build time. Defensive
+    against missing / malformed JSON: `_safe_get_string` /
+    `_safe_get_array` / `_safe_get_dict` helpers with `is String/Array
+    /Dictionary` type checks fall back to placeholder text. Failure
+    in this tab can never propagate to other tabs / runtime.
+
+- **F9 UI excluded from translation**. The Window node sets
+  `set_meta("_ttv_skip_translate", true)` on creation; `translator.gd
+  ._bind_node()` walks ancestors and skips any subtree under a node
+  with that meta. Previously the mod's own UI text could be matched
+  by `literal global` / `substr` rules and replaced with target-locale
+  output, defeating the purpose.
+
+- **`tools/rebuild_xlsx.py`** + per-category utilities
+  (`tools/utils/rebuild_translation_xlsx.py` /
+  `rebuild_glossary_xlsx.py` / `rebuild_texture_xlsx.py`).
+  TSV → xlsx with current formatting / column widths /
+  conditional formatting policies applied. Replaces the previous
+  pattern of editing xlsx directly. Critical for new-locale flow
+  (Template TSV is canonical → `rebuild_xlsx.py NewLocale` produces
+  fresh xlsx ready for DeepL).
+
+- **`tools/utils/build_mod_info.py`** — generates `info.json` consumed
+  by the F9 Info tab. Sources: `mod.txt` (mod_version), today (UTC,
+  build_date), Translation.xlsx MetaData (target_game_version,
+  per-locale translation_updated / translators), Texture.xlsx
+  data sheets (per-locale texture_reworkers / contributors),
+  AUTHORS.md (lead_developer / code_contributors / acknowledgments).
+  Best-effort parser: missing / malformed sources fall back to
+  defaults so info.json always has the expected shape. Wired into
+  `build_mod_package.py` as step 4.5 (after `build_authors_md`,
+  before packaging).
+
+- **`README_USER.md`** — separated user-facing README intended for
+  the modworkshop description page (Features / Install / Compat
+  mods / Languages / Attribution / Screenshots, English + Korean
+  side-by-side). Image links point to GitHub raw URLs so they
+  render on external sites. The repo `README.md` is now repo /
+  developer-oriented (Quick Start to the README/ guide series,
+  repository layout, tools tables, technical structure, license,
+  roadmap).
+
+- **Korean contributor guide series** under `README/`:
+  - `0_Setting_Environments_kr.md` — Excel / Python / Git / VS Code
+    / Fork & Clone setup; warns about not committing to `main`
+    directly.
+  - `1_unpack_and_decompile_game_kr.md` — gdre_tools setup +
+    `parse_translatables.py` for full validation. Marked optional
+    since `parsed_text/` absence no longer blocks build.
+  - `2_Add_new_language_kr.md` — Template-from-Korean sync →
+    `rebuild_xlsx.py Template` → copy to new locale → DeepL →
+    `locale.json` → build.
+  - `3_How_to_Translate_kr.md` — translator-facing: MetaData credit
+    fields, translation column workflow, leading/trailing whitespace
+    matching warning, build → in-game verification.
+  - `3_How_to_Translate_kr(For Developers).md` — extended: full
+    method semantics, 9-tier runtime priority (including substr as
+    Tier 9, missing from `build_runtime_tsv.py` header), Godot
+    identifier columns, conflict resolution.
+  - `4_How_to_Pull_Request_kr.md` — branch hygiene, naming
+    conventions (with collision-avoidance note), PR template.
+  - `5_How_to_Update_from_MasterBranch_kr.md` — rebase-based
+    upstream sync (consistent with "one branch = one contributor"
+    policy), xlsx binary conflict resolution via TSV-shadow rebuild.
+
+- **AUTHORS.md `## Acknowledgments`** section — credits **DIO-KAMI**
+  for the prior RTV translation mod ([Korean Localization for
+  DEMO](https://modworkshop.net/mod/55997)) as inspiration. Placed
+  outside the auto-generated marker so `build_authors.py` runs
+  preserve it.
+
+### Changed
+
+- **`tools/validate_translation.py`** — `tsv_dir` parameter is now
+  `Optional[Path]`. When `None` or missing, `parsed_text`-dependent
+  checks (`check_tsv_match` / `check_tres_text` / `check_gd_text`)
+  are skipped and the rest (`check_flags` / `check_method_fields` /
+  `check_empty_method` / `check_whitespace` / `check_duplicates` /
+  `check_duplicates_cross_sheet`) still run. `build_runtime_tsv.py`
+  auto-detects `parsed_text/` absence and runs partial validation
+  with an informative message; `--ignore` still skips validation
+  entirely. External contributors can now build without gdre_tools.
+
+- **`tools/machine_translation_deepl.py`** — `DEFAULT_DEEPL_LANG`
+  expanded from 11 to ~50 entries covering all DeepL target
+  languages. Variant codes (`EN-GB` / `EN-US`, `PT-BR` / `PT-PT`,
+  `ES-419`, `ZH-HANS` / `ZH-HANT`) get both camelCase
+  (`EnglishGB`, `BrazilianPortuguese`) and underscore-suffix
+  (`English_GB`, `Portuguese_BR`) aliases. `Portuguese_BR` works
+  out of the box without `--deepl-lang` now.
+
+- **README.md split** into repo (developer entry point) +
+  `README_USER.md` (modworkshop). Repo README now starts with the
+  Quick Start guide table linking to `README/0~5_*.md`.
+
+- **`build_mod_package.py`** — `MOD_FILES` extended with `info.json`.
+  New step 4.5 calls `build_mod_info.py` after `build_authors_md`
+  finalizes AUTHORS.md but before TSV-shadow refresh and packaging.
+
+- **LICENSE.md** — "Currently identified upstream sources include
+  (non-exhaustive):" reworded to "For example:" to clarify the MML
+  / Copernicus list is illustrative, not a claim of actual use.
+  (Verified via `Texture_Attribution.md` content — no MML in any
+  shipped texture currently.)
+
+### Fixed
+
+- **Items / Assets(Furniture) SUB** subdivided. Previously rows
+  shared a coarse `SUB` value (e.g., `"Armor"` for all Armor items
+  / `"Containers"` for all containers); this defeated the visual
+  grouping of the rebuilder's group-separator borders. Now `SUB =
+  <old_SUB> + filename[filename.rfind('/'):]` for rows with a
+  non-empty filename (1,570 / 1,611 in Items; 265 / 267 in
+  Assets(Furniture)). Empty-filename rows are skipped (preserve
+  category-header semantics).
+
+- **`build_runtime_tsv.py` header comment 9-tier list** — substr
+  was missing as Tier 9 in the comment though it exists in the
+  runtime priority chain. Documented in the header alongside the
+  other 8 tiers.
+
+### Removed
+
+- **Decompile helper scripts purged from git history** via
+  `git filter-repo`: `tools/a_decompile_pck.py`,
+  `tools/decompile_gdc.bat`, `tools/unpack_and_decompile_pck.bat`,
+  `tools/unpack_and_decompile_pck.py`, `tools/set_requirements.py`.
+
+### Internal
+
+- **TSV-canonical workflow established**. Korean is the source of
+  truth for row structure; Template TSV is sync'd from Korean
+  with quality flags reset to 0 and translations cleared.
+  `Translation_TSV/Korean/Translation/Items.tsv` etc. are committed
+  as the diff-friendly shadow; xlsx files are rebuilt from TSV via
+  `rebuild_xlsx.py`. Sheet-agnostic key index used for cross-sheet
+  reorganizations (sync_locale_to_korean tool, in `d:/tmp/` for
+  now — to be promoted to `tools/utils/` when stable).
+
+- **`info.json` schema** (consumed by `_build_info_tab`):
+  ```
+  {
+    "mod_version": str,             // mod.txt
+    "build_date": str,              // YYYY-MM-DD UTC
+    "target_game_version": str,
+    "lead_developer": [str, ...],
+    "code_contributors": [str, ...],
+    "acknowledgments": [str, ...],
+    "locales": {
+      "<locale>": {
+        "translation_updated": str,
+        "texture_updated": str,
+        "translators": [str, ...],
+        "translation_contributors": [str, ...],
+        "texture_reworkers": [str, ...],
+        "texture_contributors": [str, ...]
+      }
+    }
+  }
+  ```
+
 ## [0.5.0] — 2026-05-06 (Minor Release)
 
 This release introduces a **mod compatibility addon system** — per-mod
@@ -607,6 +800,187 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.5.1] — 2026-05-08 (패치 릴리스)
+
+이번 릴리스는 신규 locale **Português (Brasil) / `Portuguese_BR`** 추가
+(DeepL 1차 기계 번역, 텍스트만 — 텍스처 미적용), F9 UI 에 **Info 탭**
+신설 (모드 버전 / 빌드 일자 / 게임 타깃 버전 / 역할별 기여자), 그리고
+기여자용 한국어 가이드 시리즈를 `README/` 하위에 정리. 내부적으로는
+ad-hoc xlsx 직접 편집 대신 **TSV-canonical xlsx rebuild 파이프라인**
+도입, 모드 자체의 F9 UI 가 자기 자신에 의해 번역되지 않도록 격리.
+
+### 추가
+
+- **신규 locale: Português (Brasil) / `Portuguese_BR`** — DeepL `PT-BR`
+  로 1차 기계 번역 (텍스트만, 텍스처는 추후). `2_Add_new_language_kr.md`
+  표준 워크플로 따라 생성: Template TSV 복사 → `rebuild_xlsx.py` →
+  DeepL 파이프라인 → `locale.json` 등록. `display: "Português (Brasil)"`,
+  `message: "Selecione um idioma (Português Brasileiro)"`.
+
+- **F9 UI Info 탭** 신설. Whitelist / Addons 탭과 동일 HBox 좌우 분할:
+  - **좌측 (Mod Info)**: Mod Version (mod.txt), Built (UTC 날짜),
+    Target Game Version (각 locale 의 Translation.xlsx MetaData
+    "Game Version" — Korean 우선, 없으면 첫 발견 locale), Selected
+    Locale + Translation Updated (locale 별 MetaData "Translation
+    Updated Date").
+  - **우측 (Contributors)**: 프로젝트 전역 — Lead Developer / Code
+    Contributors / Acknowledgments (AUTHORS.md 섹션별); 그 다음
+    현재 locale 기준 — Translators / Translation Contributors /
+    Image Reworkers / Image Contributors (Translation.xlsx MetaData
+    + Texture.xlsx 컬럼).
+  - 빌드 시 생성되는 `<pkg_root>/info.json` 을 읽음. JSON 부재 /
+    파싱 실패 / 타입 미스매치 모두 graceful fallback — `_safe_get_*`
+    헬퍼로 모든 read 안전 처리. Info 탭의 어떤 오류도 다른 탭 /
+    런타임에 전파되지 않음.
+
+- **F9 UI 가 자기 자신에 의해 번역되지 않도록 격리**. Window 노드 생성 시
+  `set_meta("_ttv_skip_translate", true)` 부여 → `translator.gd
+  ._bind_node()` 가 부모 체인을 따라 올라가며 해당 메타 보유한 ancestor
+  를 가진 노드는 binding 등록 자체 스킵. 이전엔 모드 자체 UI 텍스트가
+  literal global / substr 룰에 매칭돼 타깃 언어로 치환되는 현상이
+  있었음.
+
+- **`tools/rebuild_xlsx.py`** + 카테고리별 utility (`tools/utils/
+  rebuild_translation_xlsx.py` / `rebuild_glossary_xlsx.py` /
+  `rebuild_texture_xlsx.py`). TSV → xlsx 빌드 시 현재 서식 / 컬럼
+  너비 / 조건부 서식 정책을 일괄 적용. 기존의 xlsx 직접 편집 패턴을
+  대체. 새 locale 워크플로의 핵심 — Template TSV 가 canonical 이라
+  `rebuild_xlsx.py NewLocale` 한 줄로 DeepL 작업 준비된 fresh xlsx
+  생성.
+
+- **`tools/utils/build_mod_info.py`** — F9 Info 탭이 사용하는
+  `info.json` 생성. 출처: `mod.txt` (mod_version), 오늘 (UTC,
+  build_date), Translation.xlsx MetaData (target_game_version, locale
+  별 translation_updated / translators), Texture.xlsx 데이터 시트
+  (locale 별 texture_reworkers / contributors), AUTHORS.md
+  (lead_developer / code_contributors / acknowledgments). 출처 누락
+  / 포맷 이상 시 기본값으로 fallback — info.json 형태는 항상 보장.
+  `build_mod_package.py` 의 step 4.5 (`build_authors_md` 후,
+  packaging 전) 로 wired.
+
+- **`README_USER.md`** — modworkshop description 페이지용 README
+  분리 (Features / Install / Compat mods / Languages / Attribution /
+  Screenshots, 영어 + 한국어 병기). 이미지 링크는 GitHub raw URL 로
+  교체되어 외부 사이트에서도 렌더링됨. 저장소의 `README.md` 는
+  repo / 개발자 entry point 로 재구성 (Quick Start 표 → README/
+  가이드 시리즈 링크, 디렉토리 layout, 도구 표, 기술 구조, 라이선스,
+  로드맵).
+
+- **한국어 기여자 가이드 시리즈** (`README/`):
+  - `0_Setting_Environments_kr.md` — Excel / Python / Git / VS Code
+    / Fork & Clone 셋업; `main` 직접 commit 금지 경고 포함.
+  - `1_unpack_and_decompile_game_kr.md` — gdre_tools 셋업 +
+    `parse_translatables.py` 로 full validation 활성화. parsed_text
+    부재 시 빌드가 막히지 않으므로 선택 단계로 표기.
+  - `2_Add_new_language_kr.md` — Template (Korean → sync) →
+    `rebuild_xlsx.py Template` → 새 locale 폴더 복사 → DeepL →
+    `locale.json` → 빌드.
+  - `3_How_to_Translate_kr.md` — 번역가용: MetaData 크레딧 필드,
+    translation 컬럼 작업 흐름, 앞뒤 공백 / 줄바꿈 매칭 주의, 빌드
+    → 게임 내 검증.
+  - `3_How_to_Translate_kr(For Developers).md` — 확장판: 모든
+    method 의미, 9-tier 런타임 우선순위 (substr Tier 9 포함 —
+    `build_runtime_tsv.py` 헤더 주석에서 누락됐던 부분), Godot 식별자
+    컬럼, 충돌 해결.
+  - `4_How_to_Pull_Request_kr.md` — 브랜치 위생, 명명 컨벤션 (이름
+    중복 회피 안내 포함), PR 템플릿.
+  - `5_How_to_Update_from_MasterBranch_kr.md` — rebase 기반 upstream
+    동기화 ("한 브랜치 = 한 기여자" 정책에 부합), xlsx binary 충돌은
+    TSV-shadow 재빌드로 해결.
+
+- **AUTHORS.md `## Acknowledgments`** 섹션 — **DIO-KAMI** 의 RTV
+  [Korean Localization for DEMO](https://modworkshop.net/mod/55997)
+  를 영감 출처로 명시. 자동 생성 마커 밖에 두어 `build_authors.py`
+  실행 후에도 보존됨.
+
+### 변경
+
+- **`tools/validate_translation.py`** — `tsv_dir` 파라미터를
+  `Optional[Path]` 로 변경. `None` 또는 폴더 부재 시 parsed_text
+  의존 검사 (`check_tsv_match` / `check_tres_text` / `check_gd_text`)
+  만 스킵하고 나머지 (`check_flags` / `check_method_fields` /
+  `check_empty_method` / `check_whitespace` / `check_duplicates` /
+  `check_duplicates_cross_sheet`) 는 계속 수행. `build_runtime_tsv.py`
+  가 parsed_text 부재 자동 감지 → partial mode 메시지 출력 후 진행.
+  `--ignore` 는 여전히 검증 전체 스킵. 외부 기여자가 gdre_tools 없이도
+  빌드 가능.
+
+- **`tools/machine_translation_deepl.py`** — `DEFAULT_DEEPL_LANG` 을
+  11 → 약 50 entry 로 확장 (DeepL 모든 target 언어). 변종 코드
+  (`EN-GB` / `EN-US`, `PT-BR` / `PT-PT`, `ES-419`, `ZH-HANS` /
+  `ZH-HANT`) 는 camelCase (`EnglishGB`, `BrazilianPortuguese`) 와
+  underscore-suffix (`English_GB`, `Portuguese_BR`) 양쪽 모두 alias
+  로 등록. 이제 `Portuguese_BR` 도 `--deepl-lang` 명시 없이 동작.
+
+- **README.md 분할** — repo (개발자 entry) + `README_USER.md`
+  (modworkshop). Repo README 는 Quick Start 표로 시작 → `README/0~5_*.md`
+  가이드 시리즈 링크.
+
+- **`build_mod_package.py`** — `MOD_FILES` 에 `info.json` 추가. 새
+  step 4.5 가 `build_authors_md` 가 AUTHORS.md 를 finalize 한 뒤,
+  TSV-shadow refresh / packaging 전에 `build_mod_info.py` 호출.
+
+- **LICENSE.md** — "Currently identified upstream sources include
+  (non-exhaustive):" 표현을 "For example:" 로 완화. MML / Copernicus
+  목록이 실제 사용 주장이 아닌 예시임을 명확화. (현재 출하 텍스처
+  중 MML 출처 없음 — `Texture_Attribution.md` 검증 결과.)
+
+### 수정
+
+- **Items / Assets(Furniture) SUB 세분화**. 기존엔 같은 SUB 값을 다수
+  행이 공유 (예: 모든 Armor 아이템에 `"Armor"`, 모든 컨테이너에
+  `"Containers"`) — rebuilder 의 그룹 분리선 시각화 의미를 잃음.
+  이제 filename 비어있지 않은 행에 한해 `SUB = <기존 SUB> +
+  filename[filename.rfind('/'):]` 적용 (Items 1,570 / 1,611 행,
+  Assets(Furniture) 265 / 267 행). filename 빈 행은 스킵
+  (카테고리 헤더 의미 보존).
+
+- **`build_runtime_tsv.py` 헤더 9-tier 목록**: 주석에 substr (Tier 9)
+  가 누락돼 있었음. 런타임 우선순위 체인엔 존재. 헤더 주석을 9-tier
+  완전 형태로 갱신.
+
+### 제거
+
+- **`git filter-repo` 로 디컴파일 헬퍼 스크립트들을 history 에서 완전
+  제거**: `tools/a_decompile_pck.py`, `tools/decompile_gdc.bat`,
+  `tools/unpack_and_decompile_pck.bat`,
+  `tools/unpack_and_decompile_pck.py`,
+  `tools/set_requirements.py`.
+
+### 내부
+
+- **TSV-canonical 워크플로 정착**. Korean 이 행 구조의 source-of-truth.
+  Template TSV 는 Korean 에서 sync 받고 quality flag 는 0 으로 리셋,
+  translation 비움. `Translation_TSV/Korean/Translation/Items.tsv`
+  등이 diff 친화적 shadow 로 commit 됨; xlsx 는 `rebuild_xlsx.py`
+  로 TSV 에서 빌드. 시트 간 이동 케이스를 위한 sheet-agnostic 키
+  인덱스 도입 (sync_locale_to_korean 도구 — 현재 `d:/tmp/`, 안정화
+  되면 `tools/utils/` 로 승격 예정).
+
+- **`info.json` 스키마** (`_build_info_tab` 가 소비):
+  ```
+  {
+    "mod_version": str,             // mod.txt
+    "build_date": str,              // YYYY-MM-DD UTC
+    "target_game_version": str,
+    "lead_developer": [str, ...],
+    "code_contributors": [str, ...],
+    "acknowledgments": [str, ...],
+    "locales": {
+      "<locale>": {
+        "translation_updated": str,
+        "texture_updated": str,
+        "translators": [str, ...],
+        "translation_contributors": [str, ...],
+        "texture_reworkers": [str, ...],
+        "texture_contributors": [str, ...]
+      }
+    }
+  }
+  ```
+
+---
 
 ## [0.5.0] — 2026-05-06 (마이너 릴리스)
 

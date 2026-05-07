@@ -8,9 +8,25 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ## Known Issues
 
-- **Select Language UI (F9)** — some labels in the language-selection
-  window are themselves being translated when they should remain in
-  their source text. Fix planned.
+- _(none currently)_
+
+---
+
+## [0.5.1] — 2026-05-08
+
+- **Added**: **Portuguese (Brazil)** language support — initial pass
+  via DeepL machine translation (text only; texture translation
+  not yet shipped). Available in the F9 language list as
+  *Português (Brasil)*. Community refinement is welcome through the
+  upcoming public repository.
+- **Added**: New "Info" tab in the language window (F9) — shows mod
+  version, build date, target game version, and contributors broken
+  down by role (Lead Developer / Code Contributors /
+  Acknowledgments / Translators / Image Reworkers). Per-locale data
+  follows the currently selected language.
+- **Fixed**: Select Language UI (F9) is no longer affected by
+  translation rules — its own labels stay in their source text.
+  This was the only Known Issue listed under 0.5.0.
 
 ---
 
@@ -148,9 +164,21 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ## 알려진 문제
 
-- **Select Language UI (F9)** — 언어 선택 창의 일부 라벨이 의도와
-  다르게 번역됨 (해당 UI 는 항상 원본 텍스트로 유지되어야 함).
-  수정 예정.
+- _(현재 없음)_
+
+---
+
+## [0.5.1] — 2026-05-08
+
+- **추가**: **포르투갈어 (브라질)** 지원 — DeepL 1차 기계번역 (텍스트
+  만, 텍스처는 추후). F9 언어 선택 목록에 *Português (Brasil)* 로
+  표시됨. 공개 저장소 준비 후 커뮤니티 검수 환영.
+- **추가**: 언어 창 (F9) 에 새 "Info" 탭 — 모드 버전, 빌드 일자,
+  타깃 게임 버전, 기여자 (Lead Developer / Code Contributors /
+  Acknowledgments / Translators / Image Reworkers) 표시. locale 별
+  정보는 현재 선택된 언어 기준으로 표시.
+- **수정**: 언어 선택 UI (F9) 자체가 번역되지 않도록 격리. 0.5.0
+  의 Known Issues 에 등재된 유일한 항목 해결.
 
 ---
 
