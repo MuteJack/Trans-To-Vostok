@@ -438,6 +438,12 @@ func _show_language_ui(is_startup: bool) -> void:
 	# ============ Addons 탭 ============
 	var addon_checks: Dictionary = _build_addons_tab(tabs)
 
+	# ============ Info 탭 ============
+	# Defensive: any failure inside _build_info_tab is contained — the tab
+	# either renders fully or with a fallback placeholder; it never disrupts
+	# other tabs / runtime.
+	_build_info_tab(tabs)
+
 	# 구분선
 	root.add_child(HSeparator.new())
 
@@ -851,3 +857,193 @@ func _apply_locale() -> void:
 	add_child(tex_node)
 	tex_node._initialize()
 	_texture_loader_node = tex_node
+
+
+# ==========================================
+# Info 탭 — Mod metadata view
+# ==========================================
+# Reads <pkg_root>/info.json (built by tools/utils/build_mod_info.py).
+# Defensive at every step: missing file / malformed JSON / unexpected
+# field types fall back to placeholder text. Failures here MUST NOT
+# affect other tabs or runtime translation.
+
+const INFO_JSON_PATH: String = "res://Trans To Vostok/info.json"
+
+
+func _load_info_json() -> Dictionary:
+	# Returns {} on any error. Caller uses .get() with defaults.
+	if not FileAccess.file_exists(INFO_JSON_PATH):
+		return {}
+	var f: FileAccess = FileAccess.open(INFO_JSON_PATH, FileAccess.READ)
+	if f == null:
+		return {}
+	var text: String = f.get_as_text()
+	f.close()
+	if text.is_empty():
+		return {}
+	var parsed: Variant = JSON.parse_string(text)
+	if not (parsed is Dictionary):
+		return {}
+	return parsed
+
+
+func _safe_get_string(d: Dictionary, key: String, fallback: String) -> String:
+	if d.has(key) and d[key] is String:
+		return d[key]
+	return fallback
+
+
+func _safe_get_array(d: Dictionary, key: String) -> Array:
+	if d.has(key) and d[key] is Array:
+		return d[key]
+	return []
+
+
+func _safe_get_dict(d: Dictionary, key: String) -> Dictionary:
+	if d.has(key) and d[key] is Dictionary:
+		return d[key]
+	return {}
+
+
+func _add_kv_row(parent: VBoxContainer, key_text: String, value_text: String) -> void:
+	var line: Label = Label.new()
+	line.text = key_text + " : " + value_text
+	line.add_theme_font_size_override("font_size", 12)
+	parent.add_child(line)
+
+
+func _add_section_title(parent: VBoxContainer, title: String) -> void:
+	var l: Label = Label.new()
+	l.text = title
+	l.add_theme_font_size_override("font_size", 13)
+	l.modulate = Color(0.85, 0.85, 0.95)
+	parent.add_child(l)
+
+
+func _add_name_list(parent: VBoxContainer, names: Array, indent: String = "    ") -> void:
+	if names.is_empty():
+		var none_l: Label = Label.new()
+		none_l.text = indent + "(none)"
+		none_l.add_theme_font_size_override("font_size", 11)
+		none_l.modulate = Color(0.55, 0.55, 0.55)
+		parent.add_child(none_l)
+		return
+	for entry in names:
+		var name: String = ""
+		if entry is String:
+			name = entry
+		else:
+			name = str(entry)
+		if name.is_empty():
+			continue
+		var l: Label = Label.new()
+		l.text = indent + "• " + name
+		l.add_theme_font_size_override("font_size", 11)
+		parent.add_child(l)
+
+
+func _build_info_tab(tabs: TabContainer) -> void:
+	var tab_body: HBoxContainer = HBoxContainer.new()
+	tab_body.name = "Info"
+	tab_body.add_theme_constant_override("separation", 12)
+	tab_body.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	tabs.add_child(tab_body)
+
+	var info: Dictionary = _load_info_json()
+	var locales: Dictionary = _safe_get_dict(info, "locales")
+	var current: Dictionary = _safe_get_dict(locales, _current_locale)
+
+	# ===== Left: Mod Info =====
+	var info_left: VBoxContainer = VBoxContainer.new()
+	info_left.add_theme_constant_override("separation", 6)
+	info_left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	info_left.size_flags_stretch_ratio = 1.0
+	tab_body.add_child(info_left)
+
+	var meta_title: Label = Label.new()
+	meta_title.text = "Mod Info"
+	meta_title.add_theme_font_size_override("font_size", 14)
+	info_left.add_child(meta_title)
+
+	info_left.add_child(HSeparator.new())
+
+	_add_kv_row(info_left, "Mod Version    ",
+		_safe_get_string(info, "mod_version", "(unknown)"))
+	_add_kv_row(info_left, "Built          ",
+		_safe_get_string(info, "build_date", "(unknown)"))
+	_add_kv_row(info_left, "Target Game Ver",
+		_safe_get_string(info, "target_game_version", "(unknown)"))
+
+	var locale_title: Label = Label.new()
+	locale_title.text = "Selected Locale: " + _current_locale
+	locale_title.add_theme_font_size_override("font_size", 12)
+	locale_title.modulate = Color(0.85, 0.85, 0.95)
+	info_left.add_child(locale_title)
+
+	_add_kv_row(info_left, "Translation Upd",
+		_safe_get_string(current, "translation_updated", "(unknown)"))
+
+	if info.is_empty():
+		var fallback_hint: Label = Label.new()
+		fallback_hint.text = "(info.json not found — fallback values shown)"
+		fallback_hint.add_theme_font_size_override("font_size", 10)
+		fallback_hint.modulate = Color(0.7, 0.55, 0.45)
+		fallback_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		info_left.add_child(fallback_hint)
+
+	# ===== Vertical separator =====
+	tab_body.add_child(VSeparator.new())
+
+	# ===== Right: Contributors =====
+	var info_right: VBoxContainer = VBoxContainer.new()
+	info_right.add_theme_constant_override("separation", 6)
+	info_right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	info_right.size_flags_stretch_ratio = 1.0
+	tab_body.add_child(info_right)
+
+	var contrib_title: Label = Label.new()
+	contrib_title.text = "Contributors"
+	contrib_title.add_theme_font_size_override("font_size", 14)
+	info_right.add_child(contrib_title)
+
+	info_right.add_child(HSeparator.new())
+
+	var contrib_scroll: ScrollContainer = ScrollContainer.new()
+	contrib_scroll.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	contrib_scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	contrib_scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
+	info_right.add_child(contrib_scroll)
+
+	var contrib_list: VBoxContainer = VBoxContainer.new()
+	contrib_list.add_theme_constant_override("separation", 2)
+	contrib_list.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	contrib_scroll.add_child(contrib_list)
+
+	# Project-wide sections (locale-agnostic)
+	_add_section_title(contrib_list, "Lead Developer")
+	_add_name_list(contrib_list, _safe_get_array(info, "lead_developer"))
+
+	_add_section_title(contrib_list, "Code Contributors")
+	_add_name_list(contrib_list, _safe_get_array(info, "code_contributors"))
+
+	var ack: Array = _safe_get_array(info, "acknowledgments")
+	if not ack.is_empty():
+		_add_section_title(contrib_list, "Acknowledgments")
+		_add_name_list(contrib_list, ack)
+
+	var spacer: Label = Label.new()
+	spacer.text = ""
+	contrib_list.add_child(spacer)
+
+	# Per-locale sections (current locale)
+	_add_section_title(contrib_list, "Translators (" + _current_locale + ")")
+	_add_name_list(contrib_list, _safe_get_array(current, "translators"))
+
+	_add_section_title(contrib_list, "Translation Contributors (" + _current_locale + ")")
+	_add_name_list(contrib_list, _safe_get_array(current, "translation_contributors"))
+
+	_add_section_title(contrib_list, "Image Reworkers (" + _current_locale + ")")
+	_add_name_list(contrib_list, _safe_get_array(current, "texture_reworkers"))
+
+	_add_section_title(contrib_list, "Image Contributors (" + _current_locale + ")")
+	_add_name_list(contrib_list, _safe_get_array(current, "texture_contributors"))

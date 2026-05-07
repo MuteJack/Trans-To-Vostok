@@ -41,7 +41,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 MOD_NAME = "Trans To Vostok"
-MOD_FILES = ["translator_ui.gd", "translator.gd", "texture_loader.gd", "mod_addon.gd", "locale.json"]
+MOD_FILES = ["translator_ui.gd", "translator.gd", "texture_loader.gd", "mod_addon.gd", "locale.json", "info.json"]
 RUNTIME_TSV_DIR = "runtime_tsv"
 RUNTIME_TSV_FILES = [
     "metadata.tsv",
@@ -119,6 +119,21 @@ def build_authors_md(tools_dir: Path) -> bool:
     result = subprocess.run(cmd, cwd=tools_dir)
     if result.returncode != 0:
         print(f"[ERROR] AUTHORS.md build failed")
+        return False
+    print()
+    return True
+
+
+def build_mod_info(tools_dir: Path) -> bool:
+    """Call build_mod_info.py. Generates <pkg_root>/info.json (version +
+    build date + contributors) for the F9 UI Info tab. The script always
+    writes a JSON with sensible defaults if sources are missing, so this
+    only fails on disk / OS errors."""
+    print(f"=== Building info.json ===")
+    cmd = [sys.executable, "utils/build_mod_info.py"]
+    result = subprocess.run(cmd, cwd=tools_dir)
+    if result.returncode != 0:
+        print(f"[ERROR] info.json build failed")
         return False
     print()
     return True
@@ -270,6 +285,10 @@ def main() -> int:
 
     # 4. update project-wide AUTHORS.md (Translators auto-section)
     if not build_authors_md(script_dir):
+        return 1
+
+    # 4.5. write info.json (version + build date + contributors) for F9 UI
+    if not build_mod_info(script_dir):
         return 1
 
     # 5. refresh Translation_TSV/ shadow (xlsx -> TSV for git diff visibility)
