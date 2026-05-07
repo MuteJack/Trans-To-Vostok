@@ -25,6 +25,12 @@ e.g., people who submitted PRs to `tools/`, `Trans To Vostok/*.gd`, or
 other engine code. Translation/texture contributors appear in the
 auto-generated section below.)_
 
+## Acknowledgments
+
+Thanks to:
+
+- **DIO-KAMI** — inspiration from the prior RTV translation mod ([Korean Localization for DEMO](https://modworkshop.net/mod/55997)).
+
 <!-- BEGIN AUTO-GENERATED: Translators -->
 
 ## Translators
