@@ -207,10 +207,10 @@ Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/P
 Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:			
 Inventory	Item	Number	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10			
 Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:			
-Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine			
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine		PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:			
 Inventory	Item	String	0	0	0	0	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:			
-Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG			
+Inventory	Item	String	0	0	0	0	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG		PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Craft	String	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required			
 Inventory	Tools/Craft	String	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required			
 Inventory	Tools/Craft	String	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required			
@@ -222,9 +222,9 @@ Inventory	Tools/Craft	Button	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elemen
 Inventory	Tools/Craft	String	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name			
 Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00			
 Inventory	Tools/Craft	String	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:			
-Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item		PlaceHolder	
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item		PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Craft	String	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:			
-Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item		PlaceHolder	
+Inventory	Tools/Craft	String	0	0	0	0	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item		PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Craft	Button	0	0	0	0	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input			
 Inventory	Tools/Craft	Button	0	0	0	0	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input			
 Inventory	Tools/Craft	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input			
@@ -255,9 +255,9 @@ Inventory	Tools/Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."			
 Inventory	Tools/Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:			
-Inventory	Tools/Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item		PlaceHolder	
+Inventory	Tools/Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item		PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:			
-Inventory	Tools/Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item		PlaceHolder	
+Inventory	Tools/Task	String	0	0	0	0	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item		PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Task	String	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
 → Your furniture is located in Furniture Catalog [Decor Mode]"			
 Inventory	Tools/Task	Button	0	0	0	0	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery			

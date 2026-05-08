@@ -62,4 +62,4 @@ Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	C
 Item	Item	Number	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100	+100	
 Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:	치료:	
 Item	Item	Label	0	0	0	0	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:	호환성:	
-Item	Item	String	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U	AK-12, AKM, AKS-74U	Dynamically changed by gd script (I can't find what script file is, but must be somewhere)
+Item	Item	String	0	0	0	0	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U	AK-12, AKM, AKS-74U	PlaceHolderText, Don't need to translate (Will be handled by substr).
