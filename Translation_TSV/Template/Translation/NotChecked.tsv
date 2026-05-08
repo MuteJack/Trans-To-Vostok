@@ -1,21 +1,21 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	
-			0	0	0	0	1	ignore	AI/Bandit/AI_Bandit	tscn	AI/Bandit/AI_Bandit	.	Gizmo	Label3D	text	1139428799	AI		For Debug Only		
-			0	0	0	0	1	ignore	AI/Guard/AI_Guard	tscn	AI/Guard/AI_Guard	.	Gizmo	Label3D	text	344026857	AI		For Debug Only		
-			0	0	0	0	1	ignore	AI/Military/AI_Military	tscn	AI/Military/AI_Military	.	Gizmo	Label3D	text	814840357	AI		For Debug Only		
-			0	0	0	0	1	ignore	AI/Punisher/AI_Punisher	tscn	AI/Punisher/AI_Punisher	.	Gizmo	Label3D	text	902567087	AI		For Debug Only		
-			0	0	0	0	1	ignore	AI/Tools/AI_CP	tscn	AI/Tools/AI_CP	.	Label	Label3D	text	794184777	AI_CP		For Debug Only		
-			0	0	0	0	1	ignore	AI/Tools/AI_HP	tscn	AI/Tools/AI_HP	.	Label	Label3D	text	783323629	AI_HP		For Debug Only		
-			0	0	0	0	1	ignore	AI/Tools/AI_PP	tscn	AI/Tools/AI_PP	.	Label	Label3D	text	495158211	AI_PP		For Debug Only		
-			0	0	0	0	1	ignore	AI/Tools/AI_SP	tscn	AI/Tools/AI_SP	.	Label	Label3D	text	399052540	AI_SP		For Debug Only		
-			0	0	0	0	1	ignore	AI/Tools/AI_VP	tscn	AI/Tools/AI_VP	.	Label	Label3D	text	809889201	AI_VP		For Debug Only		
-			0	0	0	0	1	ignore	AI/Tools/AI_WP	tscn	AI/Tools/AI_WP	.	Label	Label3D	text	29094044	AI_WP		For Debug Only		
-			0	0	0	0	1	ignore	Loot/Lore/LS_Oil_Sample	tscn	Loot/Lore/LS_Oil_Sample	.	Label	Label3D	text	10457625	LS_OIL_SAMPLE		For Debug Only		
-			0	0	0	0	1	ignore	Loot/Lore/LS_Patient_Report	tscn	Loot/Lore/LS_Patient_Report	.	Label	Label3D	text	10457625	LS_PATIENT_REPORT		For Debug Only		
-			0	0	0	0	1	ignore	Loot/Simulations/LS_Civilian	tscn	Loot/Simulations/LS_Civilian	.	Label	Label3D	text	10457625	LS_CIVILIAN		For Debug Only		
-			0	0	0	0	1	ignore	Loot/Simulations/LS_Industrial	tscn	Loot/Simulations/LS_Industrial	.	Label	Label3D	text	10457625	LS_INDUSTRIAL		For Debug Only		
-			0	0	0	0	1	ignore	Loot/Simulations/LS_Military	tscn	Loot/Simulations/LS_Military	.	Label	Label3D	text	796229169	LS_MILITARY		For Debug Only		
-			0	0	0	0	0	substr									Indoors				
-			0	0	0	0	0	substr									Indoor				
-			0	0	0	0	0	substr									Mine				
-			0	0	0	0	0	substr									Lure				
-			0	0	0	0	0	substr									(Military)				
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments		max_length
+			0	0	0	0	1	ignore	AI/Bandit/AI_Bandit	tscn	AI/Bandit/AI_Bandit	.	Gizmo	Label3D	text	1139428799	AI		For Debug Only			
+			0	0	0	0	1	ignore	AI/Guard/AI_Guard	tscn	AI/Guard/AI_Guard	.	Gizmo	Label3D	text	344026857	AI		For Debug Only			
+			0	0	0	0	1	ignore	AI/Military/AI_Military	tscn	AI/Military/AI_Military	.	Gizmo	Label3D	text	814840357	AI		For Debug Only			
+			0	0	0	0	1	ignore	AI/Punisher/AI_Punisher	tscn	AI/Punisher/AI_Punisher	.	Gizmo	Label3D	text	902567087	AI		For Debug Only			
+			0	0	0	0	1	ignore	AI/Tools/AI_CP	tscn	AI/Tools/AI_CP	.	Label	Label3D	text	794184777	AI_CP		For Debug Only			
+			0	0	0	0	1	ignore	AI/Tools/AI_HP	tscn	AI/Tools/AI_HP	.	Label	Label3D	text	783323629	AI_HP		For Debug Only			
+			0	0	0	0	1	ignore	AI/Tools/AI_PP	tscn	AI/Tools/AI_PP	.	Label	Label3D	text	495158211	AI_PP		For Debug Only			
+			0	0	0	0	1	ignore	AI/Tools/AI_SP	tscn	AI/Tools/AI_SP	.	Label	Label3D	text	399052540	AI_SP		For Debug Only			
+			0	0	0	0	1	ignore	AI/Tools/AI_VP	tscn	AI/Tools/AI_VP	.	Label	Label3D	text	809889201	AI_VP		For Debug Only			
+			0	0	0	0	1	ignore	AI/Tools/AI_WP	tscn	AI/Tools/AI_WP	.	Label	Label3D	text	29094044	AI_WP		For Debug Only			
+			0	0	0	0	1	ignore	Loot/Lore/LS_Oil_Sample	tscn	Loot/Lore/LS_Oil_Sample	.	Label	Label3D	text	10457625	LS_OIL_SAMPLE		For Debug Only			
+			0	0	0	0	1	ignore	Loot/Lore/LS_Patient_Report	tscn	Loot/Lore/LS_Patient_Report	.	Label	Label3D	text	10457625	LS_PATIENT_REPORT		For Debug Only			
+			0	0	0	0	1	ignore	Loot/Simulations/LS_Civilian	tscn	Loot/Simulations/LS_Civilian	.	Label	Label3D	text	10457625	LS_CIVILIAN		For Debug Only			
+			0	0	0	0	1	ignore	Loot/Simulations/LS_Industrial	tscn	Loot/Simulations/LS_Industrial	.	Label	Label3D	text	10457625	LS_INDUSTRIAL		For Debug Only			
+			0	0	0	0	1	ignore	Loot/Simulations/LS_Military	tscn	Loot/Simulations/LS_Military	.	Label	Label3D	text	796229169	LS_MILITARY		For Debug Only			
+			0	0	0	0	0	substr									Indoors					
+			0	0	0	0	0	substr									Indoor					
+			0	0	0	0	0	substr									Mine					
+			0	0	0	0	0	substr									Lure					
+			0	0	0	0	0	substr									(Military)					

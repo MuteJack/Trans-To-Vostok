@@ -1,16 +1,16 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	
-Message	Furniture		0	0	1	0	0	literal	UI/Elements/Message	tscn	UI/Elements/Message	Panel/Margin	Info	Label	text	1343187841	✓  New Furniture Added [Catalog]	✓  Novos móveis adicionados [Catálogo]			PlaceHolder
-Message	Furniture		0	0	1	0	0	substr	Scripts/Interface	gd			Loader.Message	literal		1313	New Furniture Added [Catalog]	Novos móveis adicionados [Catálogo]			
-Message	Furniture		0	0	1	0	0	ignore	Scripts/Interface	gd			Loader.Message	literal		1471	New Furniture Added [Catalog]	Novos móveis adicionados [Catálogo]			
-Message	Boss		0	0	1	0	0	substr	Scripts/AI	gd			Loader.Message	literal		1587	Boss Killed	Chefe morto			
-Message	Sleep		0	0	0	0	0	pattern	Scripts/Bed	gd			Loader.Message	concat		42	You slept {str} hours				
-Message	Sleep		0	0	0	0	0	ignore	Scripts/Interface	gd			Loader.Message	concat		3214	You slept {str} hours	You slept {str} hours			
-Message	Cat		0	0	0	0	0	pattern	Scripts/CatFeeder	gd			Loader.Message	concat		46	Cat Fed ({name})				
-Message	Cat		0	0	1	0	0	substr	Scripts/CatRescue	gd			Loader.Message	literal		23	Cat Rescued	Gato resgatado			
-Message	Cat		0	0	1	0	0	substr	Scripts/CatRescue	gd			Loader.Message	literal		24	Cat Vital Activated	Cat Vital Ativado			
-Message	Cat		0	0	1	0	0	substr	Scripts/Character	gd			Loader.Message	literal		145	Cat Died	O gato morreu			
-Message	Helicopter		0	0	1	0	0	substr	Scripts/Helicopter	gd			Loader.Message	literal		310	You have been spotted!	Você foi visto!	 I can't find when is this message appears yet, but maybe for a helicopter		
-Message	Task		0	0	0	0	0	pattern	Scripts/Trader	gd			Loader.Message	concat		172	Task Completed: {name}				
-Message	Killbox		0	0	0	0	0	pattern	Scripts/Killbox	gd			Loader.Message	concat		52	Item Returned: {name}		Added at 0.1.1.3, but I can't find when is this message appears		
-Message	Killbox		0	0	1	0	0	substr	Scripts/Killbox	gd			Loader.Message	literal		74	Player Returned	Jogador retornou	Added at 0.1.1.3, but I can't find when is this message appears		
-Message	Killbox		0	0	1	0	0	ignore	Scripts/Killbox	gd			Loader.Message	literal		87	Player Returned	Jogador retornou	Added at 0.1.1.3, but I can't find when is this message appears		
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments		max_length
+Message	Furniture		0	0	1	0	0	literal	UI/Elements/Message	tscn	UI/Elements/Message	Panel/Margin	Info	Label	text	1343187841	✓  New Furniture Added [Catalog]	✓  Novos móveis adicionados [Catálogo]			PlaceHolder	
+Message	Furniture		0	0	1	0	0	substr	Scripts/Interface	gd			Loader.Message	literal		1313	New Furniture Added [Catalog]	Novos móveis adicionados [Catálogo]				
+Message	Furniture		0	0	1	0	0	ignore	Scripts/Interface	gd			Loader.Message	literal		1471	New Furniture Added [Catalog]	Novos móveis adicionados [Catálogo]				
+Message	Boss		0	0	1	0	0	substr	Scripts/AI	gd			Loader.Message	literal		1587	Boss Killed	Chefe morto				
+Message	Sleep		0	0	0	0	0	pattern	Scripts/Bed	gd			Loader.Message	concat		42	You slept {str} hours					
+Message	Sleep		0	0	0	0	0	ignore	Scripts/Interface	gd			Loader.Message	concat		3214	You slept {str} hours	You slept {str} hours				
+Message	Cat		0	0	0	0	0	pattern	Scripts/CatFeeder	gd			Loader.Message	concat		46	Cat Fed ({name})					
+Message	Cat		0	0	1	0	0	substr	Scripts/CatRescue	gd			Loader.Message	literal		23	Cat Rescued	Gato resgatado				
+Message	Cat		0	0	1	0	0	substr	Scripts/CatRescue	gd			Loader.Message	literal		24	Cat Vital Activated	Cat Vital Ativado				
+Message	Cat		0	0	1	0	0	substr	Scripts/Character	gd			Loader.Message	literal		145	Cat Died	O gato morreu				
+Message	Helicopter		0	0	1	0	0	substr	Scripts/Helicopter	gd			Loader.Message	literal		310	You have been spotted!	Você foi visto!	 I can't find when is this message appears yet, but maybe for a helicopter			
+Message	Task		0	0	0	0	0	pattern	Scripts/Trader	gd			Loader.Message	concat		172	Task Completed: {name}					
+Message	Killbox		0	0	0	0	0	pattern	Scripts/Killbox	gd			Loader.Message	concat		52	Item Returned: {name}		Added at 0.1.1.3, but I can't find when is this message appears			
+Message	Killbox		0	0	1	0	0	substr	Scripts/Killbox	gd			Loader.Message	literal		74	Player Returned	Jogador retornou	Added at 0.1.1.3, but I can't find when is this message appears			
+Message	Killbox		0	0	1	0	0	ignore	Scripts/Killbox	gd			Loader.Message	literal		87	Player Returned	Jogador retornou	Added at 0.1.1.3, but I can't find when is this message appears			

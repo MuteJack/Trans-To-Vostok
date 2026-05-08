@@ -1,54 +1,54 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments
-Inventory	Item/Weapon/Button	Button	0	0	0	0	0	substr	Scripts/Actions	gd			unload.text	literal		51	Unload	탄 꺼내기		
-Inventory	Item/Weapon/Button	Button	0	0	0	0	0	ignore	Scripts/Actions	gd			unload.text	literal		58	Unload	탄 꺼내기		
-Inventory	Item/Weapon/Button	Button	0	0	0	0	0	ignore	Scripts/Context	gd			unloadButton.text	literal		87	Unload	탄 꺼내기		
-Inventory	Item/Weapon/Button	Button	0	0	0	0	0	ignore	Scripts/Context	gd			unloadButton.text	literal		94	Unload	탄 꺼내기		
-Inventory	Item/Weapon/Button	Button	0	0	0	0	0	substr	Scripts/Context	gd			unloadButton.text	literal		101	Clear Chamber	약실 비우기		
-Inventory	Item/Equipments	Button	0	0	0	0	0	substr	Scripts/Actions	gd			equip.text	literal		92	Unequip	해제		
-Inventory	Item/Equipments	Button	0	0	0	0	0	substr	Scripts/Actions	gd			equip.text	literal		94	Equip	장비		
-Inventory	Item	Button	0	0	0	0	0	pattern	Scripts/Actions	gd			take.text	concat		77	Take ({str})	집기 ({str})		
-Inventory	Item	Button	0	0	0	0	0	ignore	Scripts/Context	gd			takeButton.text	concat		114	Take ({str})	집기 ({str})		
-Inventory	Event	Button	0	0	0	0	0	substr	Scripts/Event	gd			showButton.text	literal		81	Show	보기		
-Inventory	Event	Button	0	0	0	0	0	substr	Scripts/Event	gd			showButton.text	literal		86	Hide	숨기기		
-Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			status.text	literal		57	Activated	활성화됨		
-Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			status.text	literal		93	Not active	활성화되지 않음		
-Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			location.get_child(0).text	literal		42	All maps & zones	모든 지역 및 구역		
-Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			status.text	literal		98	Active	활성화		
-Inventory	Recipe	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			showButton.text	literal		256	Show	보기		
-Inventory	Recipe	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			showButton.text	literal		261	Hide	숨기기		
-Inventory	Recipe	ToolTip	0	0	0	0	0	substr	Scripts/Recipe	gd			completeButton.text	literal		63	Repair	수리		
-Inventory	Recipe	ToolTip	0	0	0	0	0	substr	Scripts/Recipe	gd			completeButton.text	literal		65	Craft	제작		
-Inventory	Tasks	ToolTip	0	0	0	0	0	substr	Scripts/Task	gd			addButton.text	literal		219	Added	추가됨		
-Inventory	Tasks	ToolTip	0	0	0	0	0	ignore	Scripts/Task	gd			addButton.text	literal		240	Added	추가됨		
-Inventory	Tasks	String	0	0	0	0	0	substr	Scripts/Task	gd			removeButton.text	literal		235	Remove	제거		
-Inventory	Tasks	String	0	0	0	0	0	substr	Scripts/Task	gd			addButton.text	literal		247	Completed	완료됨		
-Inventory	Tasks	String	0	0	0	0	0	substr	Scripts/Task	gd			addButton.text	literal		254	Add to Notes	노트에 추가		
-Inventory	Item/Ammo	ToolTip	0	0	0	0	0	pattern	Scripts/Tooltip	gd			penetration.get_child(0).text	concat		148	Level {str}	레벨 {str}		
-Inventory	Item/Armor	ToolTip	0	0	0	0	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		169	Level {str}	레벨 {str}		
-Inventory	Item/Armor	ToolTip	0	0	0	0	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		177	Level {str}	레벨 {str}		
-Inventory	Item/Food	Button	0	0	0	0	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen	냉동됨	Use button will be replaced for frozen consumable items (instead use button)	
-Inventory	Weapon	Button	0	0	0	0	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})	제거 ({display})	Remove Attachments	
-HUD	Transition	String	0	0	0	0	0	substr	Scripts/HUD	gd			detailsHint.text	literal		107	Permadeath Zone	퍼마데스 구역 (부활 불가)		
-HUD	Door	String	0	0	0	0	0	substr									[Open]	[열기]		
-HUD	Door	String	0	0	0	0	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}	열기 ({name} 사용)		
-HUD	Door	String	0	0	0	0	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}	문 열기 ({name})		
-HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]	문 [막힘]		
-HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		135	Door [Occupied]	문 [사용중]		
-HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		138	Door [Close]	문 [닫기]		
-HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		140	Door [Open]	문 [열기]		
-HUD	Container	String	0	0	0	0	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		142	{containerName} [Locked]	{containerName} [잠김]		
-HUD	Container	String	0	0	0	0	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		144	{containerName} [Open]	{containerName} [열기]		
-HUD	Shelter	String	0	0	0	0	0	substr	Scripts/Bed	gd			gameData.tooltip	literal		52	Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)		
-HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		33	Turn Off	끄기		
-HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		35	Turn On	켜기		
-HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		62	Radio [Turn Off]	라디오 [켜기]		
-HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		64	Radio [Turn On]	라디오 [끄기]		
-HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Television	gd			gameData.tooltip	literal		27	Television [Turn Off]	텔레비전 [끄기]		
-HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Television	gd			gameData.tooltip	literal		29	Television [Turn On]	텔레비전 [끄기]		
-HUD	Cat	String	0	0	0	0	0	substr	Scripts/CatRescue	gd			gameData.tooltip	literal		35	Rescue Cat	고양이 구출		
-HUD	Cat	String	0	0	0	0	0	substr	Scripts/CatFeeder	gd			gameData.tooltip	literal		55	Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.		
-HUD	Cat	String	0	0	0	0	1	ignore	Scripts/CatFeeder	gd			gameData.tooltip	concat		57	Feed cat:\n[{CreateFeedString}]	고양이에게 먹이 주기:\n[{CreateFeedString}]		
-HUD		String	0	0	0	0	0	substr	Scripts/Fuel	gd			gameData.tooltip	literal		11	Fuel Tank [89%]	연료 탱크 [89%]	Maybe not updated yet (hard-coded)	
-HUD		String	0	0	0	0	0	pattern									Fuel Tank [{percent}%]	연료 탱크 [{percent}%]	Maybe not updated yet (hard-coded)	
-HUD	Cat	String	0	0	0	0	0	substr									Feed cat:	고양이에게 먹이 주기:		
-Furniture	Furniture	String	0	0	0	0	0	pattern	Scripts/Item	gd			amount.text	concat		405	Items: {str}	아이템: {str}		
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
+Inventory	Item/Weapon/Button	Button	0	0	0	0	0	substr	Scripts/Actions	gd			unload.text	literal		51	Unload	탄 꺼내기			
+Inventory	Item/Weapon/Button	Button	0	0	0	0	0	ignore	Scripts/Actions	gd			unload.text	literal		58	Unload	탄 꺼내기			
+Inventory	Item/Weapon/Button	Button	0	0	0	0	0	ignore	Scripts/Context	gd			unloadButton.text	literal		87	Unload	탄 꺼내기			
+Inventory	Item/Weapon/Button	Button	0	0	0	0	0	ignore	Scripts/Context	gd			unloadButton.text	literal		94	Unload	탄 꺼내기			
+Inventory	Item/Weapon/Button	Button	0	0	0	0	0	substr	Scripts/Context	gd			unloadButton.text	literal		101	Clear Chamber	약실 비우기			
+Inventory	Item/Equipments	Button	0	0	0	0	0	substr	Scripts/Actions	gd			equip.text	literal		92	Unequip	해제			
+Inventory	Item/Equipments	Button	0	0	0	0	0	substr	Scripts/Actions	gd			equip.text	literal		94	Equip	장비			
+Inventory	Item	Button	0	0	0	0	0	pattern	Scripts/Actions	gd			take.text	concat		77	Take ({str})	집기 ({str})			
+Inventory	Item	Button	0	0	0	0	0	ignore	Scripts/Context	gd			takeButton.text	concat		114	Take ({str})	집기 ({str})			
+Inventory	Event	Button	0	0	0	0	0	substr	Scripts/Event	gd			showButton.text	literal		81	Show	보기			
+Inventory	Event	Button	0	0	0	0	0	substr	Scripts/Event	gd			showButton.text	literal		86	Hide	숨기기			
+Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			status.text	literal		57	Activated	활성화됨			
+Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			status.text	literal		93	Not active	활성화되지 않음			
+Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			location.get_child(0).text	literal		42	All maps & zones	모든 지역 및 구역			
+Inventory	Event	String	0	0	0	0	0	substr	Scripts/Event	gd			status.text	literal		98	Active	활성화			
+Inventory	Recipe	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			showButton.text	literal		256	Show	보기			
+Inventory	Recipe	Button	0	0	0	0	0	ignore	Scripts/Recipe	gd			showButton.text	literal		261	Hide	숨기기			
+Inventory	Recipe	ToolTip	0	0	0	0	0	substr	Scripts/Recipe	gd			completeButton.text	literal		63	Repair	수리			
+Inventory	Recipe	ToolTip	0	0	0	0	0	substr	Scripts/Recipe	gd			completeButton.text	literal		65	Craft	제작			
+Inventory	Tasks	ToolTip	0	0	0	0	0	substr	Scripts/Task	gd			addButton.text	literal		219	Added	추가됨			
+Inventory	Tasks	ToolTip	0	0	0	0	0	ignore	Scripts/Task	gd			addButton.text	literal		240	Added	추가됨			
+Inventory	Tasks	String	0	0	0	0	0	substr	Scripts/Task	gd			removeButton.text	literal		235	Remove	제거			
+Inventory	Tasks	String	0	0	0	0	0	substr	Scripts/Task	gd			addButton.text	literal		247	Completed	완료됨			
+Inventory	Tasks	String	0	0	0	0	0	substr	Scripts/Task	gd			addButton.text	literal		254	Add to Notes	노트에 추가			
+Inventory	Item/Ammo	ToolTip	0	0	0	0	0	pattern	Scripts/Tooltip	gd			penetration.get_child(0).text	concat		148	Level {str}	레벨 {str}			
+Inventory	Item/Armor	ToolTip	0	0	0	0	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		169	Level {str}	레벨 {str}			
+Inventory	Item/Armor	ToolTip	0	0	0	0	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		177	Level {str}	레벨 {str}			
+Inventory	Item/Food	Button	0	0	0	0	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen	냉동됨	Use button will be replaced for frozen consumable items (instead use button)		
+Inventory	Weapon	Button	0	0	0	0	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})	제거 ({display})	Remove Attachments		
+HUD	Transition	String	0	0	0	0	0	substr	Scripts/HUD	gd			detailsHint.text	literal		107	Permadeath Zone	퍼마데스 구역 (부활 불가)			
+HUD	Door	String	0	0	0	0	0	substr									[Open]	[열기]			
+HUD	Door	String	0	0	0	0	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}	열기 ({name} 사용)			
+HUD	Door	String	0	0	0	0	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}	문 열기 ({name})			
+HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]	문 [막힘]			
+HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		135	Door [Occupied]	문 [사용중]			
+HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		138	Door [Close]	문 [닫기]			
+HUD	Door	String	0	0	0	0	0	substr	Scripts/Door	gd			gameData.tooltip	literal		140	Door [Open]	문 [열기]			
+HUD	Container	String	0	0	0	0	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		142	{containerName} [Locked]	{containerName} [잠김]			
+HUD	Container	String	0	0	0	0	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		144	{containerName} [Open]	{containerName} [열기]			
+HUD	Shelter	String	0	0	0	0	0	substr	Scripts/Bed	gd			gameData.tooltip	literal		52	Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)			
+HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		33	Turn Off	끄기			
+HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		35	Turn On	켜기			
+HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		62	Radio [Turn Off]	라디오 [켜기]			
+HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		64	Radio [Turn On]	라디오 [끄기]			
+HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Television	gd			gameData.tooltip	literal		27	Television [Turn Off]	텔레비전 [끄기]			
+HUD	Electronics	String	0	0	0	0	0	substr	Scripts/Television	gd			gameData.tooltip	literal		29	Television [Turn On]	텔레비전 [끄기]			
+HUD	Cat	String	0	0	0	0	0	substr	Scripts/CatRescue	gd			gameData.tooltip	literal		35	Rescue Cat	고양이 구출			
+HUD	Cat	String	0	0	0	0	0	substr	Scripts/CatFeeder	gd			gameData.tooltip	literal		55	Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.			
+HUD	Cat	String	0	0	0	0	1	ignore	Scripts/CatFeeder	gd			gameData.tooltip	concat		57	Feed cat:\n[{CreateFeedString}]	고양이에게 먹이 주기:\n[{CreateFeedString}]			
+HUD		String	0	0	0	0	0	substr	Scripts/Fuel	gd			gameData.tooltip	literal		11	Fuel Tank [89%]	연료 탱크 [89%]	Maybe not updated yet (hard-coded)		
+HUD		String	0	0	0	0	0	pattern									Fuel Tank [{percent}%]	연료 탱크 [{percent}%]	Maybe not updated yet (hard-coded)		
+HUD	Cat	String	0	0	0	0	0	substr									Feed cat:	고양이에게 먹이 주기:			
+Furniture	Furniture	String	0	0	0	0	0	pattern	Scripts/Item	gd			amount.text	concat		405	Items: {str}	아이템: {str}			

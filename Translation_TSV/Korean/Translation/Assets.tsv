@@ -1,269 +1,269 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments
-Assets	Containers/Airdrop		0	0	0	0	0	substr	Assets/Airdrop/Airdrop	tscn	Assets/Airdrop/Airdrop		Airdrop	RigidBody3D	containerName	746632342	Airdrop	보급품		
-Assets	Containers/Airdrop_Container		0	0	0	0	0	ignore	Assets/Airdrop/Airdrop_Container	tscn	Assets/Airdrop/Airdrop_Container		Container	Node3D	containerName	2117731667	Airdrop	보급품		
-Assets	Containers/Billboard_Weapons		0	0	0	0	0	substr	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military		containerName	768748623	Tutorial Crate	튜토리얼 상자		
-Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military_2		containerName	338289279	Tutorial Crate	튜토리얼 상자		
-Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate	튜토리얼 상자		
-Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate	튜토리얼 상자		
-Assets	Containers/Crate_Wood_Tutorial		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Tutorial	tscn	Assets/Crate_Wood/Crate_Wood_Tutorial		Crate_Wood_Tutorial	Node3D	containerName	238444265	Tutorial Crate	튜토리얼 상자		
-Assets	Containers/Box_Electric		0	0	0	0	0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	배전함		
-Assets	Containers/Cabinet_Medical		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet	의료 수납장		
-Assets	Containers/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tscn	Assets/Cabinet_Medical/Cabinet_Medical_F		Cabinet_Medical_F	Node3D	containerName	2092602420	Medical Cabinet	의료 수납장		
-Assets	Containers/Cabinet_Office		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	Assets/Cabinet_Office/Cabinet_Office		Cabinet_Office	Node3D	containerName	1131051434	Office Cabinet	사무용 수납장		
-Assets	Containers/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet	사무용 수납장		
-Assets	Containers/Cabinet_Wood		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet	수납장		
-Assets	Containers/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet	수납장		
-Assets	Containers/AI_Container		0	0	0	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	시체		
-Assets	Containers/Corpse_Bandit_Flat_A		0	0	0	0	0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Flat_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_B	tscn	Assets/Corpse/Corpse_Bandit_Flat_B		Corpse_Bandit_Flat_B	Node3D	containerName	1269584548	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Flat_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_C	tscn	Assets/Corpse/Corpse_Bandit_Flat_C		Corpse_Bandit_Flat_C	Node3D	containerName	1419056794	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Ledge_A		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_A	tscn	Assets/Corpse/Corpse_Bandit_Ledge_A		Corpse_Bandit_Ledge_A	Node3D	containerName	529336843	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Ledge_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_B	tscn	Assets/Corpse/Corpse_Bandit_Ledge_B		Corpse_Bandit_Ledge_B	Node3D	containerName	686653855	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Ledge_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_C	tscn	Assets/Corpse/Corpse_Bandit_Ledge_C		Corpse_Bandit_Ledge_C	Node3D	containerName	64577995	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Wall_A		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_A	tscn	Assets/Corpse/Corpse_Bandit_Wall_A		Corpse_Bandit_Wall_A	Node3D	containerName	785157205	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Wall_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_B	tscn	Assets/Corpse/Corpse_Bandit_Wall_B		Corpse_Bandit_Wall_B	Node3D	containerName	688220610	Bandit Corpse	밴디트 시체		
-Assets	Containers/Corpse_Bandit_Wall_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_C	tscn	Assets/Corpse/Corpse_Bandit_Wall_C		Corpse_Bandit_Wall_C	Node3D	containerName	1035032452	Bandit Corpse	밴디트 시체		
-Assets	Containers/Crate_Military		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military	tscn	Assets/Crate_Military/Crate_Military		Crate_Military	Node3D	containerName	768748623	Crate Military	군용 상자		
-Assets	Containers/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tscn	Assets/Crate_Military/Crate_Military_F		Crate_Military_F	Node3D	containerName	824422604	Crate Military	군용 상자		
-Assets	Containers/Crate_Special		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special	tscn	Assets/Crate_Special/Crate_Special		Crate_Special	Node3D	containerName	492335792	Crate Special	특수 상자		
-Assets	Containers/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tscn	Assets/Crate_Special/Crate_Special_F		Crate_Special_F	Node3D	containerName	887499979	Crate Special	특수 상자		
-Assets	Containers/Crate_Wood		0	0	0	0	0	substr	Assets/Crate_Wood/Crate_Wood	tscn	Assets/Crate_Wood/Crate_Wood		Crate_Wood	Node3D	containerName	1173126166	Wooden Crate	나무 상자		
-Assets	Containers/Crate_Wood_Covered_B		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_B	tscn	Assets/Crate_Wood/Crate_Wood_Covered_B		Crate_Wood_Covered_B	Node3D	containerName	1131964192	Wooden Crate	나무 상자		
-Assets	Containers/Crate_Wood_Covered_A		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_A	tscn	Assets/Crate_Wood/Crate_Wood_Covered_A		Crate_Wood_Covered_A	Node3D	containerName	1454109832	Wooden Crate	나무 상자		
-Assets	Containers/Debris_Garbage_Corner_A		0	0	0	0	0	substr	Assets/Debris/Garbage/Debris_Garbage_Corner_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_A		Debris_Garbage_Corner_A	Node3D	containerName	858191461	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Corner_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_B		Debris_Garbage_Corner_B	Node3D	containerName	103898853	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Corner_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_C		Debris_Garbage_Corner_C	Node3D	containerName	558955260	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Pile_A		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_A		Debris_Garbage_Pile_A	Node3D	containerName	1440264966	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Pile_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_B		Debris_Garbage_Pile_B	Node3D	containerName	549051876	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Pile_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_C		Debris_Garbage_Pile_C	Node3D	containerName	1743085206	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Wall_A		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_A		Debris_Garbage_Wall_A	Node3D	containerName	1834054132	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Wall_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_B		Debris_Garbage_Wall_B	Node3D	containerName	1035194553	Garbage	쓰레기		
-Assets	Containers/Debris_Garbage_Wall_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_C		Debris_Garbage_Wall_C	Node3D	containerName	1706130774	Garbage	쓰레기		
-Assets	Containers/Fireplace_Tower		0	0	0	0	0	substr	Assets/Fireplace_Tower/Fireplace_Tower	tscn	Assets/Fireplace_Tower/Fireplace_Tower		Fireplace_Tower	Node3D	containerName	1176528873	Fireplace	화로		
-Assets	Containers/Freezer		0	0	0	0	0	substr	Assets/Freezer/Freezer	tscn	Assets/Freezer/Freezer		Freezer	Node3D	containerName	76841885	Freezer	냉동고		
-Assets	Containers/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tscn	Assets/Freezer/Freezer_F		Freezer_F	Node3D	containerName	245820146	Freezer	냉동고		
-Assets	Containers/Fridge		0	0	0	0	0	substr	Assets/Fridge/Fridge	tscn	Assets/Fridge/Fridge		Fridge	Node3D	containerName	1984538983	Fridge	냉장고		
-Assets	Containers/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tscn	Assets/Fridge/Fridge_F		Fridge_F	Node3D	containerName	744500531	Fridge	냉장고		
-Assets	Containers/Fusebox		0	0	0	0	0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox	퓨즈박스		
-Assets	Containers/Locker		0	0	0	0	0	substr	Assets/Locker/Locker	tscn	Assets/Locker/Locker		Locker	Node3D	containerName	1052007662	Locker	사물함		
-Assets	Containers/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tscn	Assets/Locker/Locker_F		Locker_F	Node3D	containerName	1740209526	Locker	사물함		
-Assets	Containers/Mailbox		0	0	0	0	0	substr	Assets/Mailbox/Mailbox	tscn	Assets/Mailbox/Mailbox		Mailbox	Node3D	containerName	276598480	Mailbox	우편함		
-Assets	Containers/Nightstand		0	0	0	0	0	substr	Assets/Nightstand/Nightstand	tscn	Assets/Nightstand/Nightstand		Nightstand	Node3D	containerName	1977643928	Nightstand	협탁		
-Assets	Containers/Nightstand_F		1	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tscn	Assets/Nightstand/Nightstand_F		Nightstand_F	Node3D	containerName	509230477	Nightstand	협탁		
-Assets	Containers/Pile_Cardboard_A		1	0	0	0	0	substr	Assets/Pile_Cardboard/Pile_Cardboard_A	tscn	Assets/Pile_Cardboard/Pile_Cardboard_A		Pile_Cardboard_A	Node3D	containerName	509230477	Boxes	박스		
-Assets	Containers/Pile_Cardboard_B		1	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_B	tscn	Assets/Pile_Cardboard/Pile_Cardboard_B		Pile_Cardboard_B	Node3D	containerName	1215483040	Boxes	박스		
-Assets	Containers/Pile_Cardboard_C		1	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_C	tscn	Assets/Pile_Cardboard/Pile_Cardboard_C		Pile_Cardboard_C	Node3D	containerName	870636015	Boxes	박스		
-Assets	Containers/Stove		1	0	0	0	0	substr	Assets/Stove/Stove	tscn	Assets/Stove/Stove		Stove	Node3D	containerName	781697413	Stove	스토브		
-Assets	Containers/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tscn	Assets/Stove/Stove_F		Stove_F	Node3D	containerName	83268940	Stove	스토브		
-Assets	Containers/Tent_Civilian_F		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_F	tscn	Assets/Tent_Civilian/Tent_Civilian_F		Tent_Civilian_F	Node3D	containerName	1397422008	Tent	텐트	"Duplicated with SceneName ""Tent"""	
-Assets	Containers/Tent_Civilian_R		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_R	tscn	Assets/Tent_Civilian/Tent_Civilian_R		Tent_Civilian_R	Node3D	containerName	177370949	Tent	텐트	"Duplicated with SceneName ""Tent"""	
-Assets	Furnitures	type	0	0	0	0	0	substr									Furniture	가구		
-Assets	Furnitures	type	0	0	0	0	0	substr									Furnitures	가구		
-Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					name		Bed (Civilian)	침대 (민간용)		
-Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					inventory		Bed (Civilian)	침대 (민간용)		
-Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					rotated		Bed (Civilian)	침대 (민간용)		
-Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					equipment		Bed (Civilian)	침대 (민간용)		
-Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.	침대 민간.		
-Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					name		Bed (Nomad)	침대 (방랑자)		
-Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					inventory		Bed (Nomad)	침대 (방랑자)		
-Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					rotated		Bed (Nomad)	침대 (방랑자)		
-Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					equipment		Bed (Nomad)	침대 (방랑자)		
-Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.	침대 방랑.		
-Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)	수납장 (의료용)		
-Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					inventory		Cabinet (Medical)	수납장 (의료용)		
-Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					rotated		Cabinet (Medical)	수납장 (의료용)		
-Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					equipment		Cabinet (Medical)	수납장 (의료용)		
-Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.	수납장 의료.		
-Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					name		Cabinet (Office)	수납장 (사무용)		
-Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					inventory		Cabinet (Office)	수납장 (사무용)		
-Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					rotated		Cabinet (Office)	수납장 (사무용)		
-Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					equipment		Cabinet (Office)	수납장 (사무용)		
-Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0	수납장 사무.		
-Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					name		Cabinet (Wood)	수납장 (나무)		
-Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					inventory		Cabinet (Wood)	수납장 (나무)		
-Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					rotated		Cabinet (Wood)	수납장 (나무)		
-Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					equipment		Cabinet (Wood)	수납장 (나무)		
-Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.	수납장 나무.		
-Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					name		Carpet (Persian)	카펫 (페르시안)		
-Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					inventory		Carpet (Persian)	카펫 (페르시안)		
-Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.	카펫 페르.		
-Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					equipment		Carpet (Persian)	카펫 페르.		
-Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					display		Carpet P.	카펫 페르.		
-Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					name		Carpet (Rag)	카펫 (누더기)		
-Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					inventory		Carpet (Rag)	카펫 (누더기)		
-Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	카펫 누더기.		
-Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					equipment		Carpet (Rag)	카펫 (누더기)		
-Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					display		Carpet R.	카펫 누더기.		
-Assets	Furnitures/Chair_Office_F		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)	의자 (사무용)		
-Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					inventory		Chair (Office)	의자 (사무용)		
-Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					rotated		Chair (Office)	의자 (사무용)		
-Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					equipment		Chair (Office)	의자 (사무용)		
-Assets	Furnitures/Chair_Office_F		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.	의자 사무.		
-Assets	Furnitures/Chair_School_F		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					name		Chair (School)	의자 (학교용)		
-Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					inventory		Chair (School)	의자 (학교용)		
-Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					rotated		Chair (School)	의자 (학교용)		
-Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					equipment		Chair (School)	의자 (학교용)		
-Assets	Furnitures/Chair_School_F		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.	의자 학교.		
-Assets	Furnitures/Chair_Sun		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					name		Sun Chair	선베드		
-Assets	Furnitures/Chair_Sun		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					display		S. Chair	선베드		
-Assets	Furnitures/Crate_Military_F		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					name		Crate (Military)	상자 (군용)		
-Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					inventory		Crate (Military)	상자 (군용)		
-Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					rotated		Crate (Military)	상자 (군용)		
-Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					equipment		Crate (Military)	상자 (군용)		
-Assets	Furnitures/Crate_Military_F		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.	상자 군용.		
-Assets	Furnitures/Crate_Special_F		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					name		Crate (Special)	상자 (특수)		
-Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					inventory		Crate (Special)	상자 (특수)		
-Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					rotated		Crate (Special)	상자 (특수)		
-Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					equipment		Crate (Special)	상자 (특수)		
-Assets	Furnitures/Crate_Special_F		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.	상자 특수.		
-Assets	Furnitures/Cupboard_F		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					name		Cupboard	찬장		
-Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					inventory		Cupboard	찬장		
-Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					rotated		Cupboard	찬장		
-Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					equipment		Cupboard	찬장		
-Assets	Furnitures/Cupboard_F		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board	찬장		
-Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					name		Curtain (Long)	커튼 (대형)		
-Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					inventory		Curtain (Long)	커튼 (대형)		
-Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					rotated		Curtain L.	커튼 대형.		
-Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					equipment		Curtain (Long)	커튼 (대형)		
-Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					display		Curtain L.	커튼 대형.		
-Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					name		Curtain (Mini)	커튼 (소형)		
-Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					inventory		Curtain (Mini)	커튼 (소형)		
-Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					rotated		Curtain M.	커튼 소형.		
-Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					equipment		Curtain (Mini)	커튼 (소형)		
-Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					display		Curtain M.	커튼 소형.		
-Assets	Furnitures/Dartboard_F		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					name		Dartboard	다트판		
-Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					inventory		Dartboard	다트판		
-Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					rotated		Dartboard	다트판		
-Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					equipment		Dartboard	다트판		
-Assets	Furnitures/Dartboard_F		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					display		D. Board	다트판		
-Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					name		Freezer	냉동고		
-Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					inventory		Freezer	냉동고		
-Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					rotated		Freezer	냉동고		
-Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					equipment		Freezer	냉동고		
-Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					display		Freezer	냉동고		
-Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					name		Fridge	냉장고		
-Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					inventory		Fridge	냉장고		
-Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					rotated		Fridge	냉장고		
-Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					equipment		Fridge	냉장고		
-Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					display		Fridge	냉장고		
-Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					name		Locker	사물함		
-Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					inventory		Locker	사물함		
-Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					rotated		Locker	사물함		
-Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					equipment		Locker	사물함		
-Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					display		Locker	사물함		
-Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					name		Nightstand	협탁		
-Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					inventory		Nightstand	협탁		
-Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					rotated		Nightstand	협탁		
-Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					equipment		Nightstand	협탁		
-Assets	Furnitures/Nightstand_F		0	0	0	0	0	substr	Assets/Nightstand/Nightstand_F	tres					display		N. Stand	협탁		
-Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					name		Painting (Lake)	그림 (호수)		
-Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					inventory		Painting (Lake)	그림 (호수)		
-Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					rotated		Painting (Lake)	그림 (호수)		
-Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					equipment		Painting (Lake)	그림 (호수)		
-Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					display		Painting L.	그림 호수.		
-Assets	Furnitures/Pallet_F		1	0	0	0	0	substr	Assets/Pallet/Pallet_F	tres					name		Pallet	팔레트		
-Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					inventory		Pallet	팔레트		
-Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					rotated		Pallet	팔레트		
-Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					equipment		Pallet	팔레트		
-Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					display		Pallet	팔레트		
-Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	substr	Assets/Posters/Poster_Posture_F	tres					name		Poster (Posture)	포스터 (바른자세)		
-Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					inventory		Poster (Posture)	포스터 (바른자세)		
-Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					rotated		Poster (Posture)	포스터 (바른자세)		
-Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					equipment		Poster (Posture)	포스터 (바른자세)		
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
+Assets	Containers/Airdrop		0	0	0	0	0	substr	Assets/Airdrop/Airdrop	tscn	Assets/Airdrop/Airdrop		Airdrop	RigidBody3D	containerName	746632342	Airdrop	보급품			
+Assets	Containers/Airdrop_Container		0	0	0	0	0	ignore	Assets/Airdrop/Airdrop_Container	tscn	Assets/Airdrop/Airdrop_Container		Container	Node3D	containerName	2117731667	Airdrop	보급품			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	substr	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military		containerName	768748623	Tutorial Crate	튜토리얼 상자			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military_2		containerName	338289279	Tutorial Crate	튜토리얼 상자			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate	튜토리얼 상자			
+Assets	Containers/Billboard_Weapons		0	0	0	0	0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate	튜토리얼 상자			
+Assets	Containers/Crate_Wood_Tutorial		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Tutorial	tscn	Assets/Crate_Wood/Crate_Wood_Tutorial		Crate_Wood_Tutorial	Node3D	containerName	238444265	Tutorial Crate	튜토리얼 상자			
+Assets	Containers/Box_Electric		0	0	0	0	0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	배전함			
+Assets	Containers/Cabinet_Medical		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet	의료 수납장			
+Assets	Containers/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tscn	Assets/Cabinet_Medical/Cabinet_Medical_F		Cabinet_Medical_F	Node3D	containerName	2092602420	Medical Cabinet	의료 수납장			
+Assets	Containers/Cabinet_Office		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	Assets/Cabinet_Office/Cabinet_Office		Cabinet_Office	Node3D	containerName	1131051434	Office Cabinet	사무용 수납장			
+Assets	Containers/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet	사무용 수납장			
+Assets	Containers/Cabinet_Wood		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet	수납장			
+Assets	Containers/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet	수납장			
+Assets	Containers/AI_Container		0	0	0	0	0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	시체			
+Assets	Containers/Corpse_Bandit_Flat_A		0	0	0	0	0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Flat_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_B	tscn	Assets/Corpse/Corpse_Bandit_Flat_B		Corpse_Bandit_Flat_B	Node3D	containerName	1269584548	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Flat_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Flat_C	tscn	Assets/Corpse/Corpse_Bandit_Flat_C		Corpse_Bandit_Flat_C	Node3D	containerName	1419056794	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Ledge_A		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_A	tscn	Assets/Corpse/Corpse_Bandit_Ledge_A		Corpse_Bandit_Ledge_A	Node3D	containerName	529336843	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Ledge_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_B	tscn	Assets/Corpse/Corpse_Bandit_Ledge_B		Corpse_Bandit_Ledge_B	Node3D	containerName	686653855	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Ledge_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Ledge_C	tscn	Assets/Corpse/Corpse_Bandit_Ledge_C		Corpse_Bandit_Ledge_C	Node3D	containerName	64577995	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Wall_A		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_A	tscn	Assets/Corpse/Corpse_Bandit_Wall_A		Corpse_Bandit_Wall_A	Node3D	containerName	785157205	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Wall_B		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_B	tscn	Assets/Corpse/Corpse_Bandit_Wall_B		Corpse_Bandit_Wall_B	Node3D	containerName	688220610	Bandit Corpse	밴디트 시체			
+Assets	Containers/Corpse_Bandit_Wall_C		0	0	0	0	0	ignore	Assets/Corpse/Corpse_Bandit_Wall_C	tscn	Assets/Corpse/Corpse_Bandit_Wall_C		Corpse_Bandit_Wall_C	Node3D	containerName	1035032452	Bandit Corpse	밴디트 시체			
+Assets	Containers/Crate_Military		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military	tscn	Assets/Crate_Military/Crate_Military		Crate_Military	Node3D	containerName	768748623	Crate Military	군용 상자			
+Assets	Containers/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tscn	Assets/Crate_Military/Crate_Military_F		Crate_Military_F	Node3D	containerName	824422604	Crate Military	군용 상자			
+Assets	Containers/Crate_Special		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special	tscn	Assets/Crate_Special/Crate_Special		Crate_Special	Node3D	containerName	492335792	Crate Special	특수 상자			
+Assets	Containers/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tscn	Assets/Crate_Special/Crate_Special_F		Crate_Special_F	Node3D	containerName	887499979	Crate Special	특수 상자			
+Assets	Containers/Crate_Wood		0	0	0	0	0	substr	Assets/Crate_Wood/Crate_Wood	tscn	Assets/Crate_Wood/Crate_Wood		Crate_Wood	Node3D	containerName	1173126166	Wooden Crate	나무 상자			
+Assets	Containers/Crate_Wood_Covered_B		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_B	tscn	Assets/Crate_Wood/Crate_Wood_Covered_B		Crate_Wood_Covered_B	Node3D	containerName	1131964192	Wooden Crate	나무 상자			
+Assets	Containers/Crate_Wood_Covered_A		0	0	0	0	0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_A	tscn	Assets/Crate_Wood/Crate_Wood_Covered_A		Crate_Wood_Covered_A	Node3D	containerName	1454109832	Wooden Crate	나무 상자			
+Assets	Containers/Debris_Garbage_Corner_A		0	0	0	0	0	substr	Assets/Debris/Garbage/Debris_Garbage_Corner_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_A		Debris_Garbage_Corner_A	Node3D	containerName	858191461	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Corner_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_B		Debris_Garbage_Corner_B	Node3D	containerName	103898853	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Corner_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Corner_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Corner_C		Debris_Garbage_Corner_C	Node3D	containerName	558955260	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Pile_A		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_A		Debris_Garbage_Pile_A	Node3D	containerName	1440264966	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Pile_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_B		Debris_Garbage_Pile_B	Node3D	containerName	549051876	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Pile_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Pile_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Pile_C		Debris_Garbage_Pile_C	Node3D	containerName	1743085206	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Wall_A		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_A		Debris_Garbage_Wall_A	Node3D	containerName	1834054132	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Wall_B		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_B		Debris_Garbage_Wall_B	Node3D	containerName	1035194553	Garbage	쓰레기			
+Assets	Containers/Debris_Garbage_Wall_C		0	0	0	0	0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_C		Debris_Garbage_Wall_C	Node3D	containerName	1706130774	Garbage	쓰레기			
+Assets	Containers/Fireplace_Tower		0	0	0	0	0	substr	Assets/Fireplace_Tower/Fireplace_Tower	tscn	Assets/Fireplace_Tower/Fireplace_Tower		Fireplace_Tower	Node3D	containerName	1176528873	Fireplace	화로			
+Assets	Containers/Freezer		0	0	0	0	0	substr	Assets/Freezer/Freezer	tscn	Assets/Freezer/Freezer		Freezer	Node3D	containerName	76841885	Freezer	냉동고			
+Assets	Containers/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tscn	Assets/Freezer/Freezer_F		Freezer_F	Node3D	containerName	245820146	Freezer	냉동고			
+Assets	Containers/Fridge		0	0	0	0	0	substr	Assets/Fridge/Fridge	tscn	Assets/Fridge/Fridge		Fridge	Node3D	containerName	1984538983	Fridge	냉장고			
+Assets	Containers/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tscn	Assets/Fridge/Fridge_F		Fridge_F	Node3D	containerName	744500531	Fridge	냉장고			
+Assets	Containers/Fusebox		0	0	0	0	0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox	퓨즈박스			
+Assets	Containers/Locker		0	0	0	0	0	substr	Assets/Locker/Locker	tscn	Assets/Locker/Locker		Locker	Node3D	containerName	1052007662	Locker	사물함			
+Assets	Containers/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tscn	Assets/Locker/Locker_F		Locker_F	Node3D	containerName	1740209526	Locker	사물함			
+Assets	Containers/Mailbox		0	0	0	0	0	substr	Assets/Mailbox/Mailbox	tscn	Assets/Mailbox/Mailbox		Mailbox	Node3D	containerName	276598480	Mailbox	우편함			
+Assets	Containers/Nightstand		0	0	0	0	0	substr	Assets/Nightstand/Nightstand	tscn	Assets/Nightstand/Nightstand		Nightstand	Node3D	containerName	1977643928	Nightstand	협탁			
+Assets	Containers/Nightstand_F		1	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tscn	Assets/Nightstand/Nightstand_F		Nightstand_F	Node3D	containerName	509230477	Nightstand	협탁			
+Assets	Containers/Pile_Cardboard_A		1	0	0	0	0	substr	Assets/Pile_Cardboard/Pile_Cardboard_A	tscn	Assets/Pile_Cardboard/Pile_Cardboard_A		Pile_Cardboard_A	Node3D	containerName	509230477	Boxes	박스			
+Assets	Containers/Pile_Cardboard_B		1	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_B	tscn	Assets/Pile_Cardboard/Pile_Cardboard_B		Pile_Cardboard_B	Node3D	containerName	1215483040	Boxes	박스			
+Assets	Containers/Pile_Cardboard_C		1	0	0	0	0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_C	tscn	Assets/Pile_Cardboard/Pile_Cardboard_C		Pile_Cardboard_C	Node3D	containerName	870636015	Boxes	박스			
+Assets	Containers/Stove		1	0	0	0	0	substr	Assets/Stove/Stove	tscn	Assets/Stove/Stove		Stove	Node3D	containerName	781697413	Stove	스토브			
+Assets	Containers/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tscn	Assets/Stove/Stove_F		Stove_F	Node3D	containerName	83268940	Stove	스토브			
+Assets	Containers/Tent_Civilian_F		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_F	tscn	Assets/Tent_Civilian/Tent_Civilian_F		Tent_Civilian_F	Node3D	containerName	1397422008	Tent	텐트	"Duplicated with SceneName ""Tent"""		
+Assets	Containers/Tent_Civilian_R		0	0	0	0	0	ignore	Assets/Tent_Civilian/Tent_Civilian_R	tscn	Assets/Tent_Civilian/Tent_Civilian_R		Tent_Civilian_R	Node3D	containerName	177370949	Tent	텐트	"Duplicated with SceneName ""Tent"""		
+Assets	Furnitures	type	0	0	0	0	0	substr									Furniture	가구			
+Assets	Furnitures	type	0	0	0	0	0	substr									Furnitures	가구			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					name		Bed (Civilian)	침대 (민간용)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					inventory		Bed (Civilian)	침대 (민간용)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					rotated		Bed (Civilian)	침대 (민간용)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					equipment		Bed (Civilian)	침대 (민간용)			
+Assets	Furnitures/Bed_Civilian_F		0	0	0	0	0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.	침대 민간.			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					name		Bed (Nomad)	침대 (방랑자)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					inventory		Bed (Nomad)	침대 (방랑자)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					rotated		Bed (Nomad)	침대 (방랑자)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					equipment		Bed (Nomad)	침대 (방랑자)			
+Assets	Furnitures/Bed_Nomad_F		0	0	0	0	0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.	침대 방랑.			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)	수납장 (의료용)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					inventory		Cabinet (Medical)	수납장 (의료용)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					rotated		Cabinet (Medical)	수납장 (의료용)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					equipment		Cabinet (Medical)	수납장 (의료용)			
+Assets	Furnitures/Cabinet_Medical_F		0	0	0	0	0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.	수납장 의료.			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					name		Cabinet (Office)	수납장 (사무용)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					inventory		Cabinet (Office)	수납장 (사무용)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					rotated		Cabinet (Office)	수납장 (사무용)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					equipment		Cabinet (Office)	수납장 (사무용)			
+Assets	Furnitures/Cabinet_Office_F		0	0	0	0	0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0	수납장 사무.			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					name		Cabinet (Wood)	수납장 (나무)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					inventory		Cabinet (Wood)	수납장 (나무)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					rotated		Cabinet (Wood)	수납장 (나무)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					equipment		Cabinet (Wood)	수납장 (나무)			
+Assets	Furnitures/Cabinet_Wood_F		0	0	0	0	0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.	수납장 나무.			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					name		Carpet (Persian)	카펫 (페르시안)			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					inventory		Carpet (Persian)	카펫 (페르시안)			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.	카펫 페르.			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					equipment		Carpet (Persian)	카펫 페르.			
+Assets	Furnitures/Carpet_Persian_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Persian_F	tres					display		Carpet P.	카펫 페르.			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					name		Carpet (Rag)	카펫 (누더기)			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					inventory		Carpet (Rag)	카펫 (누더기)			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	카펫 누더기.			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					equipment		Carpet (Rag)	카펫 (누더기)			
+Assets	Furnitures/Carpet_Rag_F		0	0	0	0	0	ignore	Assets/Carpet/Carpet_Rag_F	tres					display		Carpet R.	카펫 누더기.			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)	의자 (사무용)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					inventory		Chair (Office)	의자 (사무용)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					rotated		Chair (Office)	의자 (사무용)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	ignore	Assets/Chair_Office/Chair_Office_F	tres					equipment		Chair (Office)	의자 (사무용)			
+Assets	Furnitures/Chair_Office_F		0	0	0	0	0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.	의자 사무.			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					name		Chair (School)	의자 (학교용)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					inventory		Chair (School)	의자 (학교용)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					rotated		Chair (School)	의자 (학교용)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	ignore	Assets/Chair_School/Chair_School_F	tres					equipment		Chair (School)	의자 (학교용)			
+Assets	Furnitures/Chair_School_F		0	0	0	0	0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.	의자 학교.			
+Assets	Furnitures/Chair_Sun		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					name		Sun Chair	선베드			
+Assets	Furnitures/Chair_Sun		0	0	0	0	0	substr	Assets/Chair_Sun/Chair_Sun	tres					display		S. Chair	선베드			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					name		Crate (Military)	상자 (군용)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					inventory		Crate (Military)	상자 (군용)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					rotated		Crate (Military)	상자 (군용)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	ignore	Assets/Crate_Military/Crate_Military_F	tres					equipment		Crate (Military)	상자 (군용)			
+Assets	Furnitures/Crate_Military_F		0	0	0	0	0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.	상자 군용.			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					name		Crate (Special)	상자 (특수)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					inventory		Crate (Special)	상자 (특수)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					rotated		Crate (Special)	상자 (특수)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	ignore	Assets/Crate_Special/Crate_Special_F	tres					equipment		Crate (Special)	상자 (특수)			
+Assets	Furnitures/Crate_Special_F		0	0	0	0	0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.	상자 특수.			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					name		Cupboard	찬장			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					inventory		Cupboard	찬장			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					rotated		Cupboard	찬장			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	ignore	Assets/Cupboard/Cupboard_F	tres					equipment		Cupboard	찬장			
+Assets	Furnitures/Cupboard_F		0	0	0	0	0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board	찬장			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					name		Curtain (Long)	커튼 (대형)			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					inventory		Curtain (Long)	커튼 (대형)			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Long_F	tres					rotated		Curtain L.	커튼 대형.			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					equipment		Curtain (Long)	커튼 (대형)			
+Assets	Furnitures/Curtain_Long_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Long_F	tres					display		Curtain L.	커튼 대형.			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					name		Curtain (Mini)	커튼 (소형)			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					inventory		Curtain (Mini)	커튼 (소형)			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	substr	Assets/Curtains/Curtain_Mini_F	tres					rotated		Curtain M.	커튼 소형.			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					equipment		Curtain (Mini)	커튼 (소형)			
+Assets	Furnitures/Curtain_Mini_F		0	0	0	0	0	ignore	Assets/Curtains/Curtain_Mini_F	tres					display		Curtain M.	커튼 소형.			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					name		Dartboard	다트판			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					inventory		Dartboard	다트판			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					rotated		Dartboard	다트판			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	ignore	Assets/Dartboard/Dartboard_F	tres					equipment		Dartboard	다트판			
+Assets	Furnitures/Dartboard_F		0	0	0	0	0	substr	Assets/Dartboard/Dartboard_F	tres					display		D. Board	다트판			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					name		Freezer	냉동고			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					inventory		Freezer	냉동고			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					rotated		Freezer	냉동고			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					equipment		Freezer	냉동고			
+Assets	Furnitures/Freezer_F		0	0	0	0	0	ignore	Assets/Freezer/Freezer_F	tres					display		Freezer	냉동고			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					name		Fridge	냉장고			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					inventory		Fridge	냉장고			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					rotated		Fridge	냉장고			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					equipment		Fridge	냉장고			
+Assets	Furnitures/Fridge_F		0	0	0	0	0	ignore	Assets/Fridge/Fridge_F	tres					display		Fridge	냉장고			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					name		Locker	사물함			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					inventory		Locker	사물함			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					rotated		Locker	사물함			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					equipment		Locker	사물함			
+Assets	Furnitures/Locker_F		0	0	0	0	0	ignore	Assets/Locker/Locker_F	tres					display		Locker	사물함			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					name		Nightstand	협탁			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					inventory		Nightstand	협탁			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					rotated		Nightstand	협탁			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	ignore	Assets/Nightstand/Nightstand_F	tres					equipment		Nightstand	협탁			
+Assets	Furnitures/Nightstand_F		0	0	0	0	0	substr	Assets/Nightstand/Nightstand_F	tres					display		N. Stand	협탁			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					name		Painting (Lake)	그림 (호수)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					inventory		Painting (Lake)	그림 (호수)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					rotated		Painting (Lake)	그림 (호수)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	ignore	Assets/Painting/Painting_Lake_F	tres					equipment		Painting (Lake)	그림 (호수)			
+Assets	Furnitures/Painting_Lake_F		0	0	0	0	0	substr	Assets/Painting/Painting_Lake_F	tres					display		Painting L.	그림 호수.			
+Assets	Furnitures/Pallet_F		1	0	0	0	0	substr	Assets/Pallet/Pallet_F	tres					name		Pallet	팔레트			
+Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					inventory		Pallet	팔레트			
+Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					rotated		Pallet	팔레트			
+Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					equipment		Pallet	팔레트			
+Assets	Furnitures/Pallet_F		1	0	0	0	0	ignore	Assets/Pallet/Pallet_F	tres					display		Pallet	팔레트			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	substr	Assets/Posters/Poster_Posture_F	tres					name		Poster (Posture)	포스터 (바른자세)			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					inventory		Poster (Posture)	포스터 (바른자세)			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					rotated		Poster (Posture)	포스터 (바른자세)			
+Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	ignore	Assets/Posters/Poster_Posture_F	tres					equipment		Poster (Posture)	포스터 (바른자세)			
 Assets	Furnitures/Poster_Posture_F		0	0	0	0	0	substr	Assets/Posters/Poster_Posture_F	tres					display		Poster P.	"포스터
-바른자세"		
-Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					name		Rack (Coat)	옷걸이 (코트)		
-Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					inventory		Rack (Coat)	옷걸이 (코트)		
-Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					rotated		Rack C.	옷걸이		
-Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					equipment		Rack (Coat)	옷걸이 (코트)		
-Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					display		Rack C.	옷걸이		
-Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)	융단 (마리아)		
-Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					inventory		Rya (Maria)	융단 (마리아)		
-Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.	융단 마리아.		
-Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					equipment		Rya (Maria)	융단 (마리아)		
-Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					display		Rya M.	융단 마리아.		
-Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					name		Shelf (Metal)	선반 (철제)		
-Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					inventory		Shelf (Metal)	선반 (철제)		
-Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					rotated		Shelf (Metal)	선반 (철제)		
-Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					equipment		Shelf (Metal)	선반 (철제)		
-Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.	선반 (철제)		
-Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					name		Shelf (Wall)	선반 (벽면)		
-Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					inventory		Shelf (Wall)	선반 (벽면)		
-Assets	Furnitures/Shelf_Wall_F		0	0	0	1	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.	선반		
-Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					equipment		Shelf (Wall)	선반 (벽면)		
-Assets	Furnitures/Shelf_Wall_F		0	0	0	1	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					display		Shelf W.	선반	Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
-Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	substr	Assets/Shelf_Wood/Shelf_Wood_F	tres					name		Shelf (Wood)	선반 (나무)		
-Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					inventory		Shelf (Wood)	선반 (나무)		
-Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					rotated		Shelf (Wood)	선반 (나무)		
-Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					equipment		Shelf (Wood)	선반 (나무)		
-Assets	Furnitures/Shelf_Wood_F		0	0	0	1	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					display		Shelf W.	선반	Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
-Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					name		Sign (Border Zone)	표지판 (접경 지대)		
-Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					inventory		Sign (Border Zone)	표지판 (접경 지대)		
-Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					rotated		Sign (Border Zone)	표지판 (접경 지대)		
-Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					equipment		Sign (Border Zone)	표지판 (접경 지대)		
-Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.	표지판 (접경 지대)		
-Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					name		Sofa (Leather)	소파 (가죽)		
-Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					inventory		Sofa (Leather)	소파 (가죽)		
-Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					rotated		Sofa (Leather)	소파 (가죽)		
-Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					equipment		Sofa (Leather)	소파 (가죽)		
-Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.	소파 (가죽)		
-Assets	Furnitures/Stool_Military_F		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					name		Stool (Military)	의자 (군용)		
-Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					inventory		Stool (Military)	의자 (군용)		
-Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					rotated		Stool (Military)	의자 (군용)		
-Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					equipment		Stool (Military)	의자 (군용)		
-Assets	Furnitures/Stool_Military_F		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					display		Stool M.	의자 (군용)		
-Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					name		Stool (Padded)	의자 (쿠션)		
-Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					inventory		Stool (Padded)	의자 (쿠션)		
-Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					rotated		Stool (Padded)	의자 (쿠션)		
-Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					equipment		Stool (Padded)	의자 (쿠션)		
-Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					display		Stool P.	의자 (쿠션)		
-Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					name		Stove	스토브		
-Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					inventory		Stove	스토브		
-Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					rotated		Stove	스토브		
-Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					equipment		Stove	스토브		
-Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					display		Stove	스토브		
-Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					name		Table (Cabin)	테이블 (오두막)		
-Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					inventory		Table (Cabin)	테이블 (오두막)		
-Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					rotated		Table (Cabin)	테이블 (오두막)		
-Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					equipment		Table (Cabin)	테이블 (오두막)		
-Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.	테이블 (오두막)		
-Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	substr	Assets/Table_Canteen/Table_Canteen_F	tres					name		Table (Canteen)	테이블 (식당)		
-Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					inventory		Table (Canteen)	테이블 (식당)		
-Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					rotated		Table (Canteen)	테이블 (식당)		
-Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					equipment		Table (Canteen)	테이블 (식당)		
-Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					display		Table (Canteen)	테이블 (식당)		
-Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					name		Table (Kitchen)	테이블 (주방)		
-Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					inventory		Table (Kitchen)	테이블 (주방)		
-Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					rotated		Table (Kitchen)	테이블 (주방)		
-Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					equipment		Table (Kitchen)	테이블 (주방)		
-Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					display		Table K.	테이블 (주방)		
-Assets	Furnitures/Table_Office_F		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					name		Table (Office)	테이블 (사무용)		
-Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					inventory		Table (Office)	테이블 (사무용)		
-Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					rotated		Table (Office)	테이블 (사무용)		
-Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					equipment		Table (Office)	테이블 (사무용)		
-Assets	Furnitures/Table_Office_F		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O	테이블 (사무용)		
-Assets	Furnitures/Target_Stand_F		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					name		Target Stand	표적 거치대		
-Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					inventory		Target Stand	표적 거치대		
-Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					rotated		Target Stand	표적 거치대		
-Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					equipment		Target Stand	표적 거치대		
-Assets	Furnitures/Target_Stand_F		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					display		Target S.	표적 거치대		
-Assets	Furnitures/Television_F		0	0	0	0	0	substr	Assets/Television/Television_F	tres					name		Television	텔레비전		
-Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					inventory		Television	텔레비전		
-Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					rotated		Television	텔레비전		
-Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					equipment		Television	텔레비전		
-Assets	Furnitures/Television_F		0	0	0	0	0	substr	Assets/Television/Television_F	tres					display		TV	TV		
-Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					name		Trolley (Short)	트롤리 (소형)		
-Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					inventory		Trolley (Short)	트롤리 (소형)		
-Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					rotated		Trolley (Short)	트롤리 (소형)		
-Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					equipment		Trolley (Short)	트롤리 (소형)		
-Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					display		Trolley S.	트롤리 (소형)		
-Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					name		Trolley (Tall)	트롤리 (대형)		
-Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					inventory		Trolley (Tall)	트롤리 (대형)		
-Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					rotated		Trolley (Tall)	트롤리 (대형)		
-Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					equipment		Trolley (Tall)	트롤리 (대형)		
-Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.	트롤리 (대형)		
-Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					name		Weapon Display	무기 진열대		
-Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					inventory		Weapon Display	무기 진열대		
-Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					rotated		Weapon Display	무기 진열대		
-Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					equipment		Weapon Display	무기 진열대		
-Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					display		Weapon D.	무기 진열대		
+바른자세"			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					name		Rack (Coat)	옷걸이 (코트)			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					inventory		Rack (Coat)	옷걸이 (코트)			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					rotated		Rack C.	옷걸이			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					equipment		Rack (Coat)	옷걸이 (코트)			
+Assets	Furnitures/Rack_Coat_F		0	0	0	0	0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					display		Rack C.	옷걸이			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)	융단 (마리아)			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					inventory		Rya (Maria)	융단 (마리아)			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.	융단 마리아.			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					equipment		Rya (Maria)	융단 (마리아)			
+Assets	Furnitures/Rya_Maria_F		0	0	0	0	0	ignore	Assets/Rya/Rya_Maria_F	tres					display		Rya M.	융단 마리아.			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					name		Shelf (Metal)	선반 (철제)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					inventory		Shelf (Metal)	선반 (철제)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					rotated		Shelf (Metal)	선반 (철제)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					equipment		Shelf (Metal)	선반 (철제)			
+Assets	Furnitures/Shelf_Metal_F		0	0	0	0	0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.	선반 (철제)			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					name		Shelf (Wall)	선반 (벽면)			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					inventory		Shelf (Wall)	선반 (벽면)			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	1	0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.	선반			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	0	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					equipment		Shelf (Wall)	선반 (벽면)			
+Assets	Furnitures/Shelf_Wall_F		0	0	0	1	0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					display		Shelf W.	선반	Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))		
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	substr	Assets/Shelf_Wood/Shelf_Wood_F	tres					name		Shelf (Wood)	선반 (나무)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					inventory		Shelf (Wood)	선반 (나무)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					rotated		Shelf (Wood)	선반 (나무)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	0	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					equipment		Shelf (Wood)	선반 (나무)			
+Assets	Furnitures/Shelf_Wood_F		0	0	0	1	0	ignore	Assets/Shelf_Wood/Shelf_Wood_F	tres					display		Shelf W.	선반	Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))		
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					name		Sign (Border Zone)	표지판 (접경 지대)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					inventory		Sign (Border Zone)	표지판 (접경 지대)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					rotated		Sign (Border Zone)	표지판 (접경 지대)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					equipment		Sign (Border Zone)	표지판 (접경 지대)			
+Assets	Furnitures/Sign_Border_Zone_F		0	0	0	0	0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.	표지판 (접경 지대)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					name		Sofa (Leather)	소파 (가죽)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					inventory		Sofa (Leather)	소파 (가죽)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					rotated		Sofa (Leather)	소파 (가죽)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					equipment		Sofa (Leather)	소파 (가죽)			
+Assets	Furnitures/Sofa_Leather_F		0	0	0	0	0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.	소파 (가죽)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					name		Stool (Military)	의자 (군용)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					inventory		Stool (Military)	의자 (군용)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					rotated		Stool (Military)	의자 (군용)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	ignore	Assets/Stool_Military/Stool_Military_F	tres					equipment		Stool (Military)	의자 (군용)			
+Assets	Furnitures/Stool_Military_F		0	0	0	0	0	substr	Assets/Stool_Military/Stool_Military_F	tres					display		Stool M.	의자 (군용)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					name		Stool (Padded)	의자 (쿠션)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					inventory		Stool (Padded)	의자 (쿠션)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					rotated		Stool (Padded)	의자 (쿠션)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					equipment		Stool (Padded)	의자 (쿠션)			
+Assets	Furnitures/Stool_Padded_F		0	0	0	0	0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					display		Stool P.	의자 (쿠션)			
+Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					name		Stove	스토브			
+Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					inventory		Stove	스토브			
+Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					rotated		Stove	스토브			
+Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					equipment		Stove	스토브			
+Assets	Furnitures/Stove_F		1	0	0	0	0	ignore	Assets/Stove/Stove_F	tres					display		Stove	스토브			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					name		Table (Cabin)	테이블 (오두막)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					inventory		Table (Cabin)	테이블 (오두막)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					rotated		Table (Cabin)	테이블 (오두막)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					equipment		Table (Cabin)	테이블 (오두막)			
+Assets	Furnitures/Table_Cabin_F		0	0	0	0	0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.	테이블 (오두막)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	substr	Assets/Table_Canteen/Table_Canteen_F	tres					name		Table (Canteen)	테이블 (식당)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					inventory		Table (Canteen)	테이블 (식당)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					rotated		Table (Canteen)	테이블 (식당)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					equipment		Table (Canteen)	테이블 (식당)			
+Assets	Furnitures/Table_Canteen_F		0	0	0	0	0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					display		Table (Canteen)	테이블 (식당)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					name		Table (Kitchen)	테이블 (주방)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					inventory		Table (Kitchen)	테이블 (주방)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					rotated		Table (Kitchen)	테이블 (주방)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					equipment		Table (Kitchen)	테이블 (주방)			
+Assets	Furnitures/Table_Kitchen_F		0	0	0	0	0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					display		Table K.	테이블 (주방)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					name		Table (Office)	테이블 (사무용)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					inventory		Table (Office)	테이블 (사무용)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					rotated		Table (Office)	테이블 (사무용)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	ignore	Assets/Table_Office/Table_Office_F	tres					equipment		Table (Office)	테이블 (사무용)			
+Assets	Furnitures/Table_Office_F		0	0	0	0	0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O	테이블 (사무용)			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					name		Target Stand	표적 거치대			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					inventory		Target Stand	표적 거치대			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					rotated		Target Stand	표적 거치대			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	ignore	Assets/Target_Stand/Target_Stand_F	tres					equipment		Target Stand	표적 거치대			
+Assets	Furnitures/Target_Stand_F		0	0	0	0	0	substr	Assets/Target_Stand/Target_Stand_F	tres					display		Target S.	표적 거치대			
+Assets	Furnitures/Television_F		0	0	0	0	0	substr	Assets/Television/Television_F	tres					name		Television	텔레비전			
+Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					inventory		Television	텔레비전			
+Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					rotated		Television	텔레비전			
+Assets	Furnitures/Television_F		0	0	0	0	0	ignore	Assets/Television/Television_F	tres					equipment		Television	텔레비전			
+Assets	Furnitures/Television_F		0	0	0	0	0	substr	Assets/Television/Television_F	tres					display		TV	TV			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					name		Trolley (Short)	트롤리 (소형)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					inventory		Trolley (Short)	트롤리 (소형)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					rotated		Trolley (Short)	트롤리 (소형)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Short_F	tres					equipment		Trolley (Short)	트롤리 (소형)			
+Assets	Furnitures/Trolley_Short_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Short_F	tres					display		Trolley S.	트롤리 (소형)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					name		Trolley (Tall)	트롤리 (대형)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					inventory		Trolley (Tall)	트롤리 (대형)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					rotated		Trolley (Tall)	트롤리 (대형)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	ignore	Assets/Trolley/Trolley_Tall_F	tres					equipment		Trolley (Tall)	트롤리 (대형)			
+Assets	Furnitures/Trolley_Tall_F		0	0	0	0	0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.	트롤리 (대형)			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					name		Weapon Display	무기 진열대			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					inventory		Weapon Display	무기 진열대			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					rotated		Weapon Display	무기 진열대			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					equipment		Weapon Display	무기 진열대			
+Assets	Furnitures/Weapon_Display_F		0	0	0	0	0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					display		Weapon D.	무기 진열대			

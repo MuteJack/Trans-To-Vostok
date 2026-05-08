@@ -1,4 +1,4 @@
-Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution
+Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	max_length
 Tutorial	Billboard	1. Settings	"1. Settings
 
 Welcome to Road to Vostok Tutorial
@@ -27,7 +27,7 @@ Você pode acessar as Configurações com a tecla [ESC]
 Por meio dessas configurações, você pode alterar os comandos,
 vários parâmetros do sistema e as opções de desempenho
 
-?? = Opções de desempenho"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)
+?? = Opções de desempenho"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)	
 Tutorial	Billboard	2. Interface	"2. Interface
 
 Interface is your main UI which contains elements
@@ -50,7 +50,7 @@ Se quiser mais informações sobre um item, ícone
 ou valor específico, você pode usar a dica de ferramenta
 
 Experimente a dica de ferramenta abrindo a Interface
-e passando o cursor sobre o valor de saúde do personagem"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png			
+e passando o cursor sobre o valor de saúde do personagem"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png				
 Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -79,7 +79,7 @@ Você pode abrir, pegar e interagir com [botão do meio do mouse]
 Quando houver itens disponíveis na interface, você pode 
 escolher ações relacionadas aos itens pelo menu de contexto [botão direito do mouse]
 
-Abra o recipiente e experimente o menu de contexto com os itens"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png			
+Abra o recipiente e experimente o menu de contexto com os itens"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png				
 Tutorial	Billboard	4. Equipment	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -106,7 +106,7 @@ Você encontra os espaços para equipamentos na Interface
 Você pode ativar os espaços para equipamentos 
 movendo itens compatíveis para eles
 
-Abra o inventário e tente equipar os itens"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png			
+Abra o inventário e tente equipar os itens"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png				
 Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -135,7 +135,7 @@ ativa e precisa ser curada com um item médico
 
 Você pode ver as causas, sintomas e curas na dica de ferramenta
 
-Abra o inventário e tente usar alguns itens médicos"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png			
+Abra o inventário e tente usar alguns itens médicos"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png				
 Tutorial	Billboard	6. Weapons	"6. Weapons
 
 Weapons are equipment and they use 
@@ -166,7 +166,7 @@ as pistolas e as submetralhadoras podem ocupar o slot Secundário
 Abra o estojo, equipe uma arma e saque-a
 | [Botão direito do mouse] = Mirar (ADS) | [F] = Modo de disparo |
 | [Botão do meio do mouse] = Mirar inclinado | [X] = Inspecionar arma |
-| [Roda do mouse] = Posição da arma | [Roda do mouse] = Inspecionar rotação |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png			
+| [Roda do mouse] = Posição da arma | [Roda do mouse] = Inspecionar rotação |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png				
 Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -199,7 +199,7 @@ ou com [R], que busca um carregador carregado para você
 Abra o contêiner, use a dica de ferramenta para identificar a compatibilidade
 entre munição e carregador, Carregar -> Acoplar -> Disparar
 
-[Botão esquerdo do mouse] = Disparar [V] = Verificar munição [CTRL] -> [Botão esquerdo do mouse] = Inserir bala (Fuzis e Espingardas)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png			
+[Botão esquerdo do mouse] = Disparar [V] = Verificar munição [CTRL] -> [Botão esquerdo do mouse] = Inserir bala (Fuzis e Espingardas)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png				
 Tutorial	Billboard	8. Attachments	"8. Attachements
 
 You can customize weapons by attaching 
@@ -228,7 +228,7 @@ identificar a compatibilidade dos acessórios e tente personalizar
 [MANTENHA CTRL] + [ROLAR] = Posição do trilho óptico
 [ROLAR] = Nível de zoom do LPVO
 [ALT] = Ótica secundária
-[T] = Alternar laser"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png			
+[T] = Alternar laser"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png				
 Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -257,7 +257,7 @@ as granadas com as teclas [4] e [5]
 Você pode preparar um lançamento alto com [LMB] 
 e um lançamento baixo com [RMB]
 
-Pressionar pela segunda vez executa o lançamento e o botão oposto reinicia o lançamento"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png			
+Pressionar pela segunda vez executa o lançamento e o botão oposto reinicia o lançamento"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png				
 Tutorial	Billboard	10. Armor	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -291,7 +291,7 @@ tente fixar a placa de blindagem ao suporte como acessórios
 |NIJ IIA = Nível 2| 2. Cada acerto reduz a condição da blindagem; a blindagem se rompe a 0%|
 |NIJ III = Nível 3| 3. Penetração de nível superior rompe a blindagem imediatamente|
 |NIJ III+ = Nível 4| 4. Os capacetes evitam a condição médica crítica “Tiro na cabeça”|
-|NIJ IV = Nível 5| 5. As placas de blindagem evitam a condição médica crítica “Ruptura”|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png			
+|NIJ IV = Nível 5| 5. As placas de blindagem evitam a condição médica crítica “Ruptura”|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png				
 Tutorial	Billboard	11. Traders	"11. Traders
 
 Traders are in-game characters that allow 
@@ -318,7 +318,7 @@ A conclusão de tarefas reduzirá o Imposto do Comerciante e lhe proporcionará
 itens de recompensa e chaves para desbloquear novos Abrigos
 
 Interaja com o comerciante Generalista e tente 
-trocar algo e concluir uma tarefa"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png			
+trocar algo e concluir uma tarefa"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png				
 Tutorial	Billboard	12. AI	"12. AI
 
 AI is divided into three hostile factions which
@@ -345,7 +345,7 @@ Cada facção de IA possui habilidades diferentes e
 chefes de facção com variações de spawn raras
 
 As instâncias do mapa podem gerar no máximo 10 IA
-assim que você eliminar todas, terá paz"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png			
+assim que você eliminar todas, terá paz"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png				
 Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -372,7 +372,7 @@ Você pode viajar por essas zonas e mapas
 por meio de Transições, que têm certos custos de viagem 
 relacionados aos parâmetros vitais do personagem e à Simulação do Mundo
 
-As Transições são marcadas com Bandeiras de Transição"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png			
+As Transições são marcadas com Bandeiras de Transição"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png				
 Tutorial	Billboard	14. World Simulation	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -403,7 +403,7 @@ A Simulação do Mundo está vinculada ao sono e
 
 Você pode ver a hora atual com itens relacionados ao tempo
 Escolha um item de tempo (Despertador) e equipe-o
-*O tempo de simulação permanece bloqueado durante o Tutorial"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png			
+*O tempo de simulação permanece bloqueado durante o Tutorial"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png				
 Tutorial	Billboard	15. Shelters	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -430,7 +430,7 @@ Todos os abrigos podem ser personalizados com
 o Modo de Posicionamento de Itens e o Modo de Decoração
 
 Você pode usar o Modo de Posicionamento de Itens com [G] e mover 
-móveis ativando o Modo de Decoração com [F1]"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png			
+móveis ativando o Modo de Decoração com [F1]"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png				
 Tutorial	Billboard	16. Vostok	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -459,4 +459,4 @@ Quando você se dirige aos mapas de Vostok,
 
 Ao entrar nos mapas de Vostok, uma 
 caveira vermelha de Permadeath também aparecerá 
-no canto superior da tela"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/
+no canto superior da tela"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/	

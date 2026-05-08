@@ -1,9 +1,9 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments
-Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	쉬움		
-Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	보통		
-Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	어려움		
-Tasks	Generalist/Tutorial/01	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	튜토리얼 의뢰 1 (간단함)		
-Tasks	Generalist/Tutorial/01	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy	쉬움		
+WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
+Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	쉬움			
+Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	보통			
+Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	어려움			
+Tasks	Generalist/Tutorial/01	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	튜토리얼 의뢰 1 (간단함)			
+Tasks	Generalist/Tutorial/01	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy	쉬움			
 Tasks	Generalist/Tutorial/01	description	0	0	0	0	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					description		"Let's start with something simple.
 
 Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
@@ -17,9 +17,9 @@ Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery i
 3. '완료'를 누르세요."	"Please pay attention to the following points when translating:
 'Canned Pea Soup'
 'Start Delivery'
-'Complete'"	
-Tasks	Generalist/Tutorial/02	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	튜토리얼 의뢰 2 (복잡함)		
-Tasks	Generalist/Tutorial/02	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate	보통		
+'Complete'"		
+Tasks	Generalist/Tutorial/02	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	튜토리얼 의뢰 2 (복잡함)			
+Tasks	Generalist/Tutorial/02	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate	보통			
 Tasks	Generalist/Tutorial/02	description	0	0	0	0	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
 
 Some tasks might require crafting-based delivery items, like this task requires Meatballs (Cooked), which can only be obtained through crafting.
@@ -58,9 +58,9 @@ Now you have successfully crafted the required task item and you can complete th
 'matches'
 'Heat'
 'Firepot'
-'Start Input'"	
-Tasks	Generalist/Tutorial/03	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	튜토리얼 의뢰 (가구)		
-Tasks	Generalist/Tutorial/03	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard	어려움		
+'Start Input'"		
+Tasks	Generalist/Tutorial/03	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	튜토리얼 의뢰 (가구)			
+Tasks	Generalist/Tutorial/03	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard	어려움			
 Tasks	Generalist/Tutorial/03	description	0	0	0	0	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
 
 Some items that you might receive from crafting, trading or tasks are Furniture items, which are used for shelter customization.
@@ -98,9 +98,9 @@ You can learn more about shelter customization and Furniture Catalog from the tu
 'Potato'
 'Complete'
 'tutorial'
-'Shelters'"	
-Tasks	Generalist/01	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	본방사수		
-Tasks	Generalist/01	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy	쉬움		
+'Shelters'"		
+Tasks	Generalist/01	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	본방사수			
+Tasks	Generalist/01	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy	쉬움			
 Tasks	Generalist/01	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
 
 Nevertheless, you’ve arrived at the prime time, because I’m out of toilet paper and the situation is getting urgent.
@@ -118,18 +118,18 @@ If you bring me that toilet paper, the TV is yours. It has all the channels pre-
 'Nomad'
 'cabin'
 'toilet paper'
-'Area 05'"	
-Tasks	Generalist/02	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	나쁜 습관		
-Tasks	Generalist/02	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy	쉬움		
+'Area 05'"		
+Tasks	Generalist/02	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	나쁜 습관			
+Tasks	Generalist/02	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy	쉬움			
 Tasks	Generalist/02	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					description		"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"얼마 전, 근처 버려진 학교에 있는 의사를 만났네. 나보고 ""나쁜 습관""을 모두 끊으라고 하더만, 그 노친네도 뒤에서 담배를 뻑뻑 피우는데 신경 끄라지!
 
 자네도 좀 힘들다 싶으면 민트 사탕이나 집어먹는 어린 놈들같은지는 모르겠네만, 혹시라도 이런걸 찾게 된다면 한두 갑 정도 챙겨주게. 참, 성냥도 함께 말이야."	"Please pay attention to the following points when translating:
 'Matches' is the plural form of match (match, noun), not match (verb).
-'pack' may means cigarrete, not a cigar"	
-Tasks	Generalist/03	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	허리 통증		
-Tasks	Generalist/03	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy	쉬움		
+'pack' may means cigarrete, not a cigar"		
+Tasks	Generalist/03	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	허리 통증			
+Tasks	Generalist/03	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy	쉬움			
 Tasks	Generalist/03	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					description		"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
 
 I usually don't complain, but my fucking back is killing me. Every morning when I wake up, it feels like a gunshot directly to my spine. It won't be long until you're just like me and those cursed French cars.
@@ -138,9 +138,9 @@ If you happen to find something that could help with my back, I would highly app
 
 내가 웬만해서는 불평을 안 하지만, 이 빌어먹을 허리가 끊어질 것 같아. 매일 아침마다 눈을 뜰 때면 척추에 총을 맞은 것 마냥 죽을 지경이라니까. 자네도 머지않아 나처럼 빌어먹을 프랑스 자동차 신세가 될 거야.
 
-혹시라도 내 허리 통증에 도움이 될 만한 걸 찾게 된다면 가져와 주게."		
-Tasks	Generalist/04	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	커피 비축		
-Tasks	Generalist/04	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy	쉬움		
+혹시라도 내 허리 통증에 도움이 될 만한 걸 찾게 된다면 가져와 주게."			
+Tasks	Generalist/04	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	커피 비축			
+Tasks	Generalist/04	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy	쉬움			
 Tasks	Generalist/04	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					description		"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
 
 If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
@@ -150,9 +150,9 @@ As a matter of fact, I should probably increase my strategic coffee reserve a bi
 이 '05구역'에서 살아남으려면 카페인을 끊임없이 공급받는 것이야 말로 최우선 목표가 되어야 해.
 
 사실, 요즘 커피 소비량이 평소보다 많아져서 말이야. ""전략적 커피 비축량""을 좀 늘려야 할 것 같아."	"Please pay attention to the following points when translating:
-'Area 05'"	
-Tasks	Generalist/05	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	땀내나는 일		
-Tasks	Generalist/05	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate	보통		
+'Area 05'"		
+Tasks	Generalist/05	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	땀내나는 일			
+Tasks	Generalist/05	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate	보통			
 Tasks	Generalist/05	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
 
 Since air conditioning, showers and running water are just a faint memory from the past, it's important that you maintain personal hygiene and odor control for the sake of the others. You might wonder why not just go wash in the lake or sea? Well, let me tell you why that's a bad idea.
@@ -165,9 +165,9 @@ It’s a sweaty business, but we just have to figure out some alternative method
 
 폭발 후 남은 물들은 이제 깨끗함과는 거리가 멀고, 뭔가 불결한 일이 벌어지고 있어. 최근에 죽은 물고기를 너무 많이 봤거든. 나라면 절대로 그 물에 내 깔끔한 엉덩이를 담그지 않을거야. 자네도 그 물에는 들어가지 않는게 좋을거야.
 
-땀 흘리는 건 어쩔 수 없지만, 상쾌함을 유지하기 위해 다른 방법을 찾아봐야겠어."		
-Tasks	Generalist/06	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman	수리공		
-Tasks	Generalist/06	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate	보통		
+땀 흘리는 건 어쩔 수 없지만, 상쾌함을 유지하기 위해 다른 방법을 찾아봐야겠어."			
+Tasks	Generalist/06	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman	수리공			
+Tasks	Generalist/06	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate	보통			
 Tasks	Generalist/06	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					description		"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
@@ -177,9 +177,9 @@ I'm getting tired of being her handyman, but I promised to help this one last ti
 그저께는 가스레인지가 고장 났고, 냉동고는 녹아내렸지, 라디오는 그새 또 말썽이야! 게다가 지난주에 폭풍우가 몰아치면서 나무가 현관 지붕에 쓰러지는 바람에 지붕이 무너져 내렸어. 난장판도 이런 난장판이 없다니까.
 
 그 할멈 수리공 노릇을 하는것도 이제 지긋지긋하지만, 딱 한번만 더 도와주기로 했으니 어쩌겠어..."	"Please pay attention to the following points when translating:
-'Border Zone'"	
-Tasks	Generalist/07	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	맥주 여섯 캔		
-Tasks	Generalist/07	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard	어려움		
+'Border Zone'"		
+Tasks	Generalist/07	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	맥주 여섯 캔			
+Tasks	Generalist/07	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard	어려움			
 Tasks	Generalist/07	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					description		"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
 
 When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
@@ -188,9 +188,9 @@ Speaking of six-packs, I could definitely take one for my road trip, six for the
 
 겨울이 오면 맥주를 품속에 넣어서 따뜻하게 데워야 해. 겨드랑이나 사타구니가 맥주를 따뜻하게 유지하기에 가장 좋아. 그 부위가 열이 많이 나니까 잘만 하면 맥주 여섯 캔짜리 한 팩도 금방 데울 수 있어. 좀 징그러울 수 있다는 건 알지만, 자네도 그 추운 날씨에 밥맛 아이스크림을 먹고 싶지는 않을 거잖나.
 
-""맥주 여섯 캔"" 얘기가 나왔으니 말인데, 나도 어디 멀리 여행 떠나기 전에 하나 챙겨둬야겠어. ""갈 때 가더라도 맥주 여섯 캔 정도는 괞찮잖아?""라는 말도 있잖나 하하."		
-Tasks	Generalist/08	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend	오랜 친구		
-Tasks	Generalist/08	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard	어려움		
+""맥주 여섯 캔"" 얘기가 나왔으니 말인데, 나도 어디 멀리 여행 떠나기 전에 하나 챙겨둬야겠어. ""갈 때 가더라도 맥주 여섯 캔 정도는 괞찮잖아?""라는 말도 있잖나 하하."			
+Tasks	Generalist/08	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend	오랜 친구			
+Tasks	Generalist/08	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard	어려움			
 Tasks	Generalist/08	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					description		"Want to hear military stories?
 
 Back in the day, when I was doing my conscript service, we still had a few of those KP-31's lying around in the warehouse.
@@ -204,9 +204,9 @@ Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn,
 어느 날 사격 훈련을 하면서, 드디어 그 총을 시험해 볼 기회가 생겼어. 드럼 탄창을 사용해서 그런지완전 자동 사격은 금지되어 있었지만, 내 차례가 되자 참을 수가 없었지. 사격 모드를 바꾸고 방아쇠를 당겼더니, 마법처럼 71발의 총알이 내 총구에서 쏟아져 나왔어.
 
 젠장, 그 총이 너무 그리워. 아직도 가끔 꿈속에서 그 ""프랏-프랏"" 거리는 소리가 희미하게 들릴 지경이야. 언젠가 다시 그 옛 친구와 마법같이 다시 만나는 날이 오겠지, 언젠가는…"	"Please pay attention to the following points when translating:
-'KP-31' is a proper noun (items/weapon)."	
-Tasks	Generalist/09	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	장거리 여행		
-Tasks	Generalist/09	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard	어려움		
+'KP-31' is a proper noun (items/weapon)."		
+Tasks	Generalist/09	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	장거리 여행			
+Tasks	Generalist/09	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard	어려움			
 Tasks	Generalist/09	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					description		"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
 
 Have you ever visited the North? What a shame, that place has remained totally unaffected by all this bullshit. It's like nothing ever happened there. I'm talking about pristine nature, wildlife and crystal-clear rivers for catching those juicy arctic trouts.
@@ -219,9 +219,9 @@ Maybe you could help me with this? Bring back my stolen items and I have somethi
 
 지금 당장이라도 차를 몰고 가고 싶었는데, 그 더러운 도둑놈들이 내 차 배터리랑 트렁크에 있던 물건들을 훔쳐가버렸지 뭔가!
 
-자네가 날 좀 도와줄 수 있넸나? 그놈들이 훔쳐간 물건들을 되찾아주면 특별한 걸 주지."		
-Tasks	Generalist/10	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade	홈메이드		
-Tasks	Generalist/10	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard	어려움		
+자네가 날 좀 도와줄 수 있넸나? 그놈들이 훔쳐간 물건들을 되찾아주면 특별한 걸 주지."			
+Tasks	Generalist/10	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade	홈메이드			
+Tasks	Generalist/10	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard	어려움			
 Tasks	Generalist/10	description	0	0	0	1	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					description		"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
 
 I already had a large batch for him, but since my trip was delayed, I had to make sure the product didn't spoil in my cellar. After a few ""product-quality"" sips, I got carried away and started drinking and now I have nothing left.
@@ -236,9 +236,9 @@ If you can make this new batch for me, I will consider giving you a key to my at
 
 만약 나를 위해 킬유를 만들어 준다면, 이 건물의 다락방 열쇠를 내어주지. 자네의 그 좁아터진 석면 오두막보다는 훨씬 나을거야."	"Please pay attention to the following points when translating:
 `Shaman`
-'Kilju' is a traditional Finnish alcohol"	
-Tasks	Doctor/01	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	지독한 외풍		
-Tasks	Doctor/01	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy	쉬움		
+'Kilju' is a traditional Finnish alcohol"		
+Tasks	Doctor/01	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	지독한 외풍			
+Tasks	Doctor/01	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy	쉬움			
 Tasks	Doctor/01	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					description		"I haven't seen you here before, you must be a new patient?
 
 Welcome to my improvised clinic. It ain't much, but with these limited resources, it's the best that we've got.
@@ -251,9 +251,9 @@ Nowadays, my current concern is mostly related to heat insulation, since our win
 
 예전에 이 학교에서 초등학생들에게 보건 교육을 가르쳤었어요. 아주 오래전 일이지만, 이곳에 대한 좋은 추억이 많습니다. 건물은 낡았고 전성기는 지났지만, 상황이 나아지면 복원할 수 있을 거라고 생각해요.
 
-요즘 제 가장 큰 걱정은 단열 문제입니다. 창문이 거의 없어져서 특히 겨울에는 환자들이 좀 춥거든요. 임시방편으로 덕트 테이프를 붙여서 틈새 바람을 막아야 할 것 같습니다."		
-Tasks	Doctor/02	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	손떨림 방지		
-Tasks	Doctor/02	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy	쉬움		
+요즘 제 가장 큰 걱정은 단열 문제입니다. 창문이 거의 없어져서 특히 겨울에는 환자들이 좀 춥거든요. 임시방편으로 덕트 테이프를 붙여서 틈새 바람을 막아야 할 것 같습니다."			
+Tasks	Doctor/02	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	손떨림 방지			
+Tasks	Doctor/02	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy	쉬움			
 Tasks	Doctor/02	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					description		"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
 
 Especially in surgeries and working with a scalpel, I often get the shakes and small mistakes here and there are unavoidable. I think it's mostly related to my age, but I have found that smoking a few cigars before the operation keeps my hands more steady.
@@ -266,9 +266,9 @@ If you happen to find a few cigars somewhere, perhaps you could deliver those to
 
 의사로서 흡연을 권장하진 않지만, 이런 상황에서는 어쩔 수 없죠.
 
-혹시 시가를 구할 수 있으면 좀 나눠주시겠어요? 아, 잡화상에게는 비밀로 해 주세요, 방금 전에 담배 좀 그만 피우라고 한 참이거든요. 괜히 싸우고 싶지는 않으니, 이건 우리 둘만의 비밀로 해 줘요."		
-Tasks	Doctor/03	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm	책벌레		
-Tasks	Doctor/03	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy	쉬움		
+혹시 시가를 구할 수 있으면 좀 나눠주시겠어요? 아, 잡화상에게는 비밀로 해 주세요, 방금 전에 담배 좀 그만 피우라고 한 참이거든요. 괜히 싸우고 싶지는 않으니, 이건 우리 둘만의 비밀로 해 줘요."			
+Tasks	Doctor/03	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm	책벌레			
+Tasks	Doctor/03	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy	쉬움			
 Tasks	Doctor/03	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					description		"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
 
 On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
@@ -277,9 +277,9 @@ I actually like to read all kinds of old books, no matter the subject. Whether i
 
 그런 한가하고 지루한 날에는 주로 책을 읽어요. 이 동네에는 읽을거리가 많지 않아서 선택의 여지는 없지만, 때로는 주어진 대로 적응하는 법을 배워야 하죠.
 
-사실, 저는 주제와 상관없이 온갖 종류의 고서를 좋아해요. 동화든 종교 서적이든 항상 흥미롭게 읽죠. 아마 천성적으로 책벌레인 것 같아요."		
-Tasks	Doctor/04	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master	주사위 마스터		
-Tasks	Doctor/04	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy	쉬움		
+사실, 저는 주제와 상관없이 온갖 종류의 고서를 좋아해요. 동화든 종교 서적이든 항상 흥미롭게 읽죠. 아마 천성적으로 책벌레인 것 같아요."			
+Tasks	Doctor/04	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master	주사위 마스터			
+Tasks	Doctor/04	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy	쉬움			
 Tasks	Doctor/04	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					description		"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
 
 Just a few years ago, we often went fishing together, but that poor guy has multiple herniated disks, so fishing trips are no longer an option for him. We still have a few other common hobbies like horse races and gambling.
@@ -292,9 +292,9 @@ You know what, if you happen to find one of those dice games, bring one for me. 
 
 짐작하셨겠지만, 요즘 세상에는 할 수 있는게 그런 거 밖에 없다보니 우리의 우정은 순수하게 카드 게임과 주사위 게임으로 쌓아가고 있어요. 그런데 주사위 게임을 할 때마다 그 녀석이 매번 마법처럼 이겨버리다 보니, 그녀석의 주사위가 조작된 건 아닌가 하는 생각이 들어요. 사람이라면 그렇게까지 운이 좋을 수 없거든요.
 
-그래서 말인데, 혹시 주사위로 하는 보드 게임을 하나 구하시면 저한테도 하나 가져와줘요. 다음번에 만나면 제 걸로 해보려고요. 그래야 얄팍한 속임수따위 없이, 누가 진짜 주사위의 신인지 확실히 가릴 수 있잖아요."		
-Tasks	Doctor/05	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	야간 수술		
-Tasks	Doctor/05	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate	보통		
+그래서 말인데, 혹시 주사위로 하는 보드 게임을 하나 구하시면 저한테도 하나 가져와줘요. 다음번에 만나면 제 걸로 해보려고요. 그래야 얄팍한 속임수따위 없이, 누가 진짜 주사위의 신인지 확실히 가릴 수 있잖아요."			
+Tasks	Doctor/05	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	야간 수술			
+Tasks	Doctor/05	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate	보통			
 Tasks	Doctor/05	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					description		"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
 
 Daytime operations are a walk in the park for me when there's enough light, but at night, it gets more tricky. Operating in dim lighting or sometimes even in total darkness relies more on hand-feel and intuition, but it's always riskier for the patient.
@@ -303,9 +303,9 @@ Some sort of bright headlamp would probably solve this issue until the power gri
 
 낮에 수술하는 건, 조명만 충분하다면 공원에서 산책다니듯이 쉽게 하지만, 밤이되면 상황이 달라져요. 조명이 어둡거나 완전히 어두운 곳에서 수술할 때는 손의 감각과 직관에 더 의존해야 하는데, 이건 환자에게 위험부담이 크거든요.
 
-전력망이 완전히 복구될 때까지는 밝은 헤드램프 같은 거라도 있으면 괞찮을 것 같은데, 찾아보려고 노력해봤지만, 아쉽게도 운은 내 편이 아닌 거 같네요."		
-Tasks	Doctor/06	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections	감염		
-Tasks	Doctor/06	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate	보통		
+전력망이 완전히 복구될 때까지는 밝은 헤드램프 같은 거라도 있으면 괞찮을 것 같은데, 찾아보려고 노력해봤지만, 아쉽게도 운은 내 편이 아닌 거 같네요."			
+Tasks	Doctor/06	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections	감염			
+Tasks	Doctor/06	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate	보통			
 Tasks	Doctor/06	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/06_Infections	tres					description		"You know what one of the most common issues is here? It's infections.
 
 When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
@@ -314,9 +314,9 @@ I do still have some medical supplies left for infections, but those will run ou
 
 위생 상태가 불량하고 상처가 제대로 소독되지 않으면 박테리아와 세균이 번식하기에 완벽한 환경이 조성됩니다. 베인 상처나 찰과상이 있는 환자가 있으면 거의 예외 없이 감염이 발생합니다.
 
-감염을 막기 위한 약품이 아직 조금 남아있긴 하지만, 이것도 조만간 바닥날 거에요. 그렇게 되면 여기 사망률이 걷잡을 수 없을 거에요."		
-Tasks	Doctor/07	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia	저혈량증		
-Tasks	Doctor/07	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate	보통		
+감염을 막기 위한 약품이 아직 조금 남아있긴 하지만, 이것도 조만간 바닥날 거에요. 그렇게 되면 여기 사망률이 걷잡을 수 없을 거에요."			
+Tasks	Doctor/07	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia	저혈량증			
+Tasks	Doctor/07	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate	보통			
 Tasks	Doctor/07	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					description		"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
 
 After taking a closer look, the reason was simpler than expected. Correct, it was dehydration and a thing that we doctors call hypovolemia.
@@ -330,9 +330,9 @@ Whenever you find those saline bottles, always remember to bring them to me and 
 저혈량증은 기본적으로 체내 염분과 수분이 결핍된 상태인데, 이게 심해지면 그 방랑자들처럼 저혈량성 쇼크에 빠질 수 있어요. 다행히도, 이러한 증상에 대한 치료법은 매우 간단해요. 말초 정맥에 생리식염수를 주입하면 금방 회복되거든요.
 
 혹시나 생리식염수 병을 발견하시면 꼭 저에게 가져다주세요. 우리 둘 다 만족할 만한 거래가 될 겁니다."	"Please pay attention to the following points when translating:
-`Nomad'"	
-Tasks	Doctor/08	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	하모니카		
-Tasks	Doctor/08	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard	어려움		
+`Nomad'"		
+Tasks	Doctor/08	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	하모니카			
+Tasks	Doctor/08	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard	어려움			
 Tasks	Doctor/08	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					description		"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
 
 I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
@@ -341,9 +341,9 @@ It's never too late to start with an easier instrument, but I would need somethi
 
 몇 년 전에 낡은 악기들을 다시 연주해 보려고 했는데, 알다시피 이런건 폐활량이 꽤 좋아야 하잖아요. 이제는 소리조차 못내겠더라고요. 음악에 대한 열정과 재능은 여전한데, 시가 때문인지 예전같지 않은 느낌이에요.
 
-다시 시작하기에 늦다는 법은 없지만, 저처럼 나이 든 골초에게 맞는 아주 작은 악기가 필요할 것 같아요. 어쩌면 다음 생에는 가능할지도 모르겠네요."		
-Tasks	Doctor/09	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report	환자 보고서		
-Tasks	Doctor/09	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard	어려움		
+다시 시작하기에 늦다는 법은 없지만, 저처럼 나이 든 골초에게 맞는 아주 작은 악기가 필요할 것 같아요. 어쩌면 다음 생에는 가능할지도 모르겠네요."			
+Tasks	Doctor/09	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report	환자 보고서			
+Tasks	Doctor/09	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard	어려움			
 Tasks	Doctor/09	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					description		"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
@@ -352,9 +352,9 @@ Maybe you could search the gymnasium, the place where the kids used to play and 
 
 제 초기 환자 보고서 중 하나를 거기에 두고 온 것 같아요. 기억이 예전 같지 않다보니, 그 보고서가 필요해요. 증상과 세부 사항이 점점 흐릿해지고 있거든요.
 
-혹시 체육관에서, 아이들이 로프를 타고 자주 놀던 곳을 찾아봐 줄 수 있을까요? 아마 근처 어딘가에 있을 거예요."		
-Tasks	Doctor/10	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance	원인 물질		
-Tasks	Doctor/10	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard	어려움		
+혹시 체육관에서, 아이들이 로프를 타고 자주 놀던 곳을 찾아봐 줄 수 있을까요? 아마 근처 어딘가에 있을 거예요."			
+Tasks	Doctor/10	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance	원인 물질			
+Tasks	Doctor/10	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard	어려움			
 Tasks	Doctor/10	description	0	0	0	1	0	literal	Traders/Doctor/Tasks/10_Substance	tres					description		"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
 
 Acrylonitrile is definitely part of the compound, just as the officials claimed, but I have a theory that it’s only one piece of the puzzle. When burning, acrylonitrile releases toxic gases such as hydrogen cyanide and is classified as a C1 carcinogen, but let me explain my theory.
@@ -371,9 +371,9 @@ Since we know it was delivered in oil tank cars, I would visit the nearest oil t
 
 따라서 훨씬 더 독성이 강한 물질이 관련되어 있을 가능성을 염두에 두고 있어요. 물론 이론일 뿐이지만, 진상을 밝히는 유일한 방법은 그 원인을 찾는 겁니다.
 
-유조차로 운송되었다는 사실을 알고 있으니, 가장 가까운 석유 터미널에 가서 샘플을 검사해 실제로 기름이 들어있는지 아니면 다른 물질이 들어있는지 확인해 보겠습니다. 기름 샘플 용기는 찾는 건 쉬울거에요. 금색 우유병처럼 생겼고, 그런 용기가 아주 많이 있을 겁니다."		
-Tasks	Gunsmith/01	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers	흡혈귀		
-Tasks	Gunsmith/01	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy	쉬움		
+유조차로 운송되었다는 사실을 알고 있으니, 가장 가까운 석유 터미널에 가서 샘플을 검사해 실제로 기름이 들어있는지 아니면 다른 물질이 들어있는지 확인해 보겠습니다. 기름 샘플 용기는 찾는 건 쉬울거에요. 금색 우유병처럼 생겼고, 그런 용기가 아주 많이 있을 겁니다."			
+Tasks	Gunsmith/01	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers	흡혈귀			
+Tasks	Gunsmith/01	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy	쉬움			
 Tasks	Gunsmith/01	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					description		"Ain't that something? A new man and a new rifle, always a welcome sight.
 
 Forget the small talk. You want something reliable and cheap? Sure, but a few favors first, since you don't climb the ranks immediately around here. Where should we start? There are definitely some supply runs you could do, but you look a bit flimsy, so maybe you need something simple first. Let me think a moment.
@@ -386,9 +386,9 @@ Here's a suitable task for you. Find me something to get rid of those bloodsucke
 
 그래, 좋은 생각이 났네. 여름이면 그 날아다니는 벌레 놈들이 정말 짜증 나거든. 그 개같은 놈들이 벙커에 들어올 리 없다고 생각하겠지만, 장담컨대 들어와. 매년 여름이면 귀 옆에 달라붙어서 24시간 내내 윙윙거린다고.
 
-자네에게 딱 맞는 일을 하나 제안하지. 그 흡혈귀들을 없애버릴 방법을 찾아와. 그런 다음에 더 자세히 얘기해 보자고."		
-Tasks	Gunsmith/02	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	따듯한 식사		
-Tasks	Gunsmith/02	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy	쉬움		
+자네에게 딱 맞는 일을 하나 제안하지. 그 흡혈귀들을 없애버릴 방법을 찾아와. 그런 다음에 더 자세히 얘기해 보자고."			
+Tasks	Gunsmith/02	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	따듯한 식사			
+Tasks	Gunsmith/02	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy	쉬움			
 Tasks	Gunsmith/02	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					description		"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
 
 Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
@@ -398,9 +398,9 @@ It has been a while since I have seen a proper warm meal. Maybe this is your mom
 예전에는 전투식량에 제대로 된 통조림 식품이라도 들어 있었는데, 요즘 전투식량에는 맛대가리 없는 고기 반죽과 패스트푸드 밖에 없다고. 그딴 인공 폐기물은 절대로 입에 대지도 않을 거야.
 
 마지막으로 제대로 된 따뜻한 식사를 먹은게 언제인지도 기억나지 않아. 어쩌면 이번 기회에 자네가 실력을 발휘해서 우리 관계를 한 단계 더 발전시킬 수 있을지도 모르겠어. 제대로 된 핀란드식 완두콩 수프에 겨자를 곁들여 담은 반합 정도면 괞찮을 것 같군."	"Please pay attention to the following points when translating:
-`mess kit'"	
-Tasks	Gunsmith/03	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	북유럽 무역		
-Tasks	Gunsmith/03	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate	보통		
+`mess kit'"		
+Tasks	Gunsmith/03	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	북유럽 무역			
+Tasks	Gunsmith/03	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate	보통			
 Tasks	Gunsmith/03	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					description		"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
 
 Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
@@ -411,9 +411,9 @@ However, in the spirit of good neighbors, there's a fair trade we could do. I ca
 
 하지만 이웃 좋다는게 뭔가, 어쩌면 꽤 괞찮은 거래를 하나 제안해 볼 수도 있겠어. 나는 이걸 '디저트 교환'이라고 부른다네. 스웨덴 놈들의 꽤 괞찮은 디저트를 좀 가져다준다면, 나는 핀란드 디저트를 나눠주지. 서로에게 이득이 되는 거래지, 다른 말로 경쟁 없이 즐길 수 있는 북유럽식 무역이라고 할까?"	"Please pay attention to the following points when translating:
 (Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
-(Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."	
-Tasks	Gunsmith/04	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	커다란 칼날		
-Tasks	Gunsmith/04	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate	보통		
+(Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."		
+Tasks	Gunsmith/04	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	커다란 칼날			
+Tasks	Gunsmith/04	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate	보통			
 Tasks	Gunsmith/04	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					description		"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
 
 When it comes to blades, the rule is the bigger, the better. I myself prefer machetes that are suitable for wood chopping and clearing obstructions in a dense forest. Even though we're not in a jungle here, you still need a big blade since there will be times when you'll wish you had one.
@@ -422,9 +422,9 @@ Collecting blades is also an elegant hobby. I do have quite an extensive collect
 
 칼에 있어서는 불변의 진리가 있어. ""크면 클수록 좋다"" 라는 법칙이지. 나는 개인적으로 나무를 베거나 빽빽한 숲에서 장애물을 제거하는 데 적합한 마체테를 선호하는 편일세. 비록 여기가 정글은 아니지만, 살다보면 뼈저리게 후회하는 순간이 오거든.
 
-칼을 수집하는 것 또한 품격 있는 취미지. 나도 나름 꽤 다양한 칼을 수집했다고 자랑할 수 있지만, 아직 내 컬렉션에 넣지 못한 덩치 큰 놈들이 몇개 있단 말일세."		
-Tasks	Gunsmith/05	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery	탄약 배달		
-Tasks	Gunsmith/05	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate	보통		
+칼을 수집하는 것 또한 품격 있는 취미지. 나도 나름 꽤 다양한 칼을 수집했다고 자랑할 수 있지만, 아직 내 컬렉션에 넣지 못한 덩치 큰 놈들이 몇개 있단 말일세."			
+Tasks	Gunsmith/05	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery	탄약 배달			
+Tasks	Gunsmith/05	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate	보통			
 Tasks	Gunsmith/05	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					description		"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
 
 When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. Sometimes there are still those annoying customers who seek something more exotic, but it's hard to maintain a stock for every weird request.
@@ -434,9 +434,9 @@ Maybe you could do a quick ammo delivery run for me? We could expand the portfol
 탄약 중에서는 7.62x39와 .223 구경이 내 매출을 책임지는 베스트셀러라고 할 수 있네. 가끔은 좀 특이한 탄약을 찾는 별종들도 있지만, 그런 특이한 요청까지 고려해서 재고를 유지하는 것도 꽤 고역이야.
 
 잠깐 자네가 나 대신 탄약 배송을 대신해주지 않겠나? 그렇게 하면 우리도 취급 품목을 좀 늘려볼 수 있겠어."	"Please pay attention to the following points when translating:
-'7.62x39' and '.223' is untranslatable"	
-Tasks	Gunsmith/06	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	무기 배달		
-Tasks	Gunsmith/06	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate	보통		
+'7.62x39' and '.223' is untranslatable"		
+Tasks	Gunsmith/06	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	무기 배달			
+Tasks	Gunsmith/06	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate	보통			
 Tasks	Gunsmith/06	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					description		"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
 
 This has led to a situation where I'm constantly out of stock of those Eastern weapons. It's a damn shame, since I always find their products more reliable compared to the Western ones. You see, in the West, we have an incurable disease of making everything tactical. We add rails, dingles and dongles to everything and the end result is a mess that has too many moving parts.
@@ -447,9 +447,9 @@ Since I no longer have those networks active, a quick weapon delivery from the o
 
 이제 국경 너머와는 인맥이 끊겼으니, 다른 루트로 빠르게 무기를 공급해 준다면 정말 고맙겠어."	"Please pay attention to the following points when translating:
 Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
-'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."	
-Tasks	Gunsmith/07	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	의무병		
-Tasks	Gunsmith/07	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard	어려움		
+'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."		
+Tasks	Gunsmith/07	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	의무병			
+Tasks	Gunsmith/07	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard	어려움			
 Tasks	Gunsmith/07	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					description		"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
 
 I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
@@ -460,9 +460,9 @@ My medic could actually use a few extra lollipops just in case. I think those ca
 
 만일의 사태에 대비해서, 내 의무병 친구에게 사탕이 몇 개 더 필요할 것 같아. IFAK라 부르는 응급처치 키트 안에 들어있을 거 같은데, 만약 자네가 그걸 찾게된다면 또 다른 거래의 장이 열리겠지."	"Please pay attention to the following points when translating:
 'Nomad' is a pronoun of one of the faction
-'IFAK' is a pronoun of item (medical)"	
-Tasks	Gunsmith/08	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	소장품		
-Tasks	Gunsmith/08	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard	어려움		
+'IFAK' is a pronoun of item (medical)"		
+Tasks	Gunsmith/08	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	소장품			
+Tasks	Gunsmith/08	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard	어려움			
 Tasks	Gunsmith/08	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					description		"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
 
 My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
@@ -471,9 +471,9 @@ Currently, my main focus is on integrally suppressed pieces, but I've had a hard
 
 내 컬렉션에는 1500년대 머스킷부터 1990년대 소총까지 다양하게 있지만, 그 이후의 총들은 워낙 천박해서 못봐주겠더군. 지금까지 150정이 넘는 총을 모았는데, 그중에서도 가장 특별한 놈은 바로 1985년 휴가 때 밀반입한 터키제 리볼버 샷건 몇 자루라 할 수 있지.
 
-요즘은 소음기가 내장된 총기에 관심을 갖고 있는데, 그런 총을 찾는게 쉽지 않단 말이지. 특히, 요즘 눈독들이고 있는 동구권 물건이 하나 있는데, 통 찾을수가 없다고."		
-Tasks	Gunsmith/09	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	모두의 권리		
-Tasks	Gunsmith/09	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard	어려움		
+요즘은 소음기가 내장된 총기에 관심을 갖고 있는데, 그런 총을 찾는게 쉽지 않단 말이지. 특히, 요즘 눈독들이고 있는 동구권 물건이 하나 있는데, 통 찾을수가 없다고."			
+Tasks	Gunsmith/09	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	모두의 권리			
+Tasks	Gunsmith/09	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard	어려움			
 Tasks	Gunsmith/09	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					description		"I recently took a hike out to the Border Zone and collected some mushrooms.
 
 In Finland, we have Everyman’s Rights, which grant us the right to use nature regardless of who owns or occupies the area. It’s probably the best law we have.
@@ -487,9 +487,9 @@ Even though this sign is a nice decorative piece, it’s a bit too colorful for 
 ...솔직히 말하자면, 가끔은 경계가 애매한 구역에 발을 들여 버섯이 아닌 다른 것들을 채집하기도 하네. 예를 들자면, 몇 달 전에는 도랑에서 굴러다니던 접경 지대 표지판을 발견했었네. 나뭇잎과 흙으로 덮여 있었으니 자연의 일부라고 볼 수 있고, 그렇다면 이것도 ""모두의 권리""에 포함된다고 볼 수 있지 않겠나.
 
 이 표지판은 장식용으로도 좋지만, 너무 알록달록해서 내 취향에는 맞지 않는구만. 자네라면 좋아할 같은데, 작은 거래를 해보는건 어떤가. 아, 물론 헐값에 팔 생각은 전혀 없네."	"Please pay attention to the following points when translating:
-Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"	
-Tasks	Gunsmith/10	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	암살자		
-Tasks	Gunsmith/10	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard	어려움		
+Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"		
+Tasks	Gunsmith/10	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	암살자			
+Tasks	Gunsmith/10	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard	어려움			
 Tasks	Gunsmith/10	description	0	0	0	1	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					description		"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
 
 Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
@@ -500,4 +500,4 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 
 누군가는 이 광대짓을 끝내야만 해. 그런 의미에서, 나는 지금 히트맨이 필요하네. 그놈의 목을 가져오든 뭐든, 그놈이 죽었다는 증거를 가져오면, 내 창고 열쇠를 내어주지."	"Please pay attention to the following points when translating:
 'Area 05'
-'Purnisher' is a pronoun for a hostile NPC"	
+'Purnisher' is a pronoun for a hostile NPC"		
