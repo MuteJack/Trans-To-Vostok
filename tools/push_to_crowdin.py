@@ -23,12 +23,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-# Locale folder name -> Crowdin language id (matches crowdin.yml's languages_mapping).
-LOCALE_TO_CROWDIN_ID = {
-    "Korean": "ko",
-    "French": "fr",
-    "Portuguese_BR": "pt-BR",
-}
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from utils.locale_config import load_crowdin_locale_map
 
 
 def run(cmd: list, cwd: Path) -> bool:
@@ -38,13 +34,15 @@ def run(cmd: list, cwd: Path) -> bool:
 
 
 def main() -> int:
+    locale_map = load_crowdin_locale_map()
+
     parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
         "locale",
-        help=f"Locale folder name. Supported: {', '.join(LOCALE_TO_CROWDIN_ID)}",
+        help=f"Locale folder name. Supported: {', '.join(locale_map)}",
     )
     parser.add_argument(
         "--skip-tsv",
@@ -63,12 +61,14 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    if args.locale not in LOCALE_TO_CROWDIN_ID:
+    if args.locale not in locale_map:
         print(f"[ERROR] Unknown locale: {args.locale}", file=sys.stderr)
-        print(f"        Supported: {', '.join(LOCALE_TO_CROWDIN_ID)}", file=sys.stderr)
+        print(f"        Supported: {', '.join(locale_map)}", file=sys.stderr)
+        print(f"        (registered in Trans To Vostok/locale.json with a `crowdin_id` field)",
+              file=sys.stderr)
         return 1
 
-    crowdin_id = LOCALE_TO_CROWDIN_ID[args.locale]
+    crowdin_id = locale_map[args.locale]
 
     tools_dir = Path(__file__).resolve().parent
     repo_root = tools_dir.parent

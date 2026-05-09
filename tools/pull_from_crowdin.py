@@ -29,11 +29,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-LOCALE_TO_CROWDIN_ID = {
-    "Korean": "ko",
-    "French": "fr",
-    "Portuguese_BR": "pt-BR",
-}
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from utils.locale_config import load_crowdin_locale_map
 
 
 def run(cmd: list, cwd: Path) -> bool:
@@ -43,6 +40,8 @@ def run(cmd: list, cwd: Path) -> bool:
 
 
 def main() -> int:
+    locale_map = load_crowdin_locale_map()
+
     parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -51,7 +50,7 @@ def main() -> int:
         "locale",
         nargs="?",
         default=None,
-        help=f"Optional locale to limit. Supported: {', '.join(LOCALE_TO_CROWDIN_ID)}. "
+        help=f"Optional locale to limit. Supported: {', '.join(locale_map)}. "
              f"If omitted, applies to all locales.",
     )
     parser.add_argument(
@@ -61,9 +60,11 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    if args.locale is not None and args.locale not in LOCALE_TO_CROWDIN_ID:
+    if args.locale is not None and args.locale not in locale_map:
         print(f"[ERROR] Unknown locale: {args.locale}", file=sys.stderr)
-        print(f"        Supported: {', '.join(LOCALE_TO_CROWDIN_ID)}", file=sys.stderr)
+        print(f"        Supported: {', '.join(locale_map)}", file=sys.stderr)
+        print(f"        (registered in Trans To Vostok/locale.json with a `crowdin_id` field)",
+              file=sys.stderr)
         return 1
 
     tools_dir = Path(__file__).resolve().parent
@@ -73,7 +74,7 @@ def main() -> int:
     if not args.skip_download:
         download_cmd = ["crowdin", "download"]
         if args.locale is not None:
-            download_cmd += ["-l", LOCALE_TO_CROWDIN_ID[args.locale]]
+            download_cmd += ["-l", locale_map[args.locale]]
         if not run(download_cmd, cwd=repo_root):
             print("\n[ERROR] Crowdin download failed", file=sys.stderr)
             print("        Check Crowdin CLI install + CROWDIN_PERSONAL_TOKEN env var", file=sys.stderr)
@@ -98,7 +99,7 @@ def main() -> int:
     if args.locale:
         print(f"  python tools/rebuild_xlsx.py {args.locale}")
     else:
-        for loc in LOCALE_TO_CROWDIN_ID:
+        for loc in locale_map:
             print(f"  python tools/rebuild_xlsx.py {loc}")
     return 0
 
