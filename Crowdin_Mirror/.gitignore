@@ -1,0 +1,7 @@
+# Crowdin_Mirror is a staging/cache area for Crowdin sync.
+# Contents are regenerable from canonical xlsx/TSV via tools/crowdin/.
+# Crowdin itself is the source-of-truth for translation work in progress.
+# We don't track these files in git to avoid push/pull diff noise.
+*
+!.gitignore
+!README.md

@@ -26,7 +26,8 @@
     "unique_id": 12.0,
     "text": 84.0,
     "translation": 84.0,
-    "DESCRIPTION": 150.0
+    "DESCRIPTION": 150.0,
+    "max_length": 10.0
   },
   "Glossary": {
     "Transliteration": 12.0,
@@ -39,7 +40,8 @@
     "Class": 17.0,
     "text": 23.0,
     "translation": 24.0,
-    "DESCRIPTION": 100.0
+    "DESCRIPTION": 100.0,
+    "max_length": 10.0
   },
   "Texture": {
     "Where": 9.0,
@@ -49,6 +51,7 @@
     "File Directory": 58.0,
     "File Name": 69.0,
     "Reworked by": 14.0,
-    "Attribution": 53.0
+    "Attribution": 53.0,
+    "max_length": 10.0
   }
 }
