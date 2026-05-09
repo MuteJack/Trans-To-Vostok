@@ -63,7 +63,7 @@ def main() -> int:
     if args.locale is not None and args.locale not in locale_map:
         print(f"[ERROR] Unknown locale: {args.locale}", file=sys.stderr)
         print(f"        Supported: {', '.join(locale_map)}", file=sys.stderr)
-        print(f"        (registered in Trans To Vostok/locale.json with a `crowdin_id` field)",
+        print(f"        (active locale in Trans To Vostok/locale.json AND crowdin_id present in tools/languages.json)",
               file=sys.stderr)
         return 1
 

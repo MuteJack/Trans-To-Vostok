@@ -49,6 +49,9 @@ except ImportError:
     print("ERROR: openpyxl is required. pip install -r tools/requirements.txt", file=sys.stderr)
     sys.exit(1)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils.locale_config import dir_to_deepl_id, default_source_locale
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -68,22 +71,6 @@ def append_marker(existing: str, marker: str) -> str:
     if existing.strip():
         return existing + "\n" + marker
     return marker
-
-# Default mapping: target locale folder name -> DeepL language code
-DEFAULT_DEEPL_LANG = {
-    "Korean": "KO",
-    "Japanese": "JA",
-    "French": "FR",
-    "German": "DE",
-    "Spanish": "ES",
-    "Italian": "IT",
-    "Portuguese": "PT-PT",
-    "BrazilianPortuguese": "PT-BR",
-    "ChineseSimplified": "ZH-HANS",
-    "ChineseTraditional": "ZH-HANT",
-    "Russian": "RU",
-}
-
 
 # Per-xlsx column configuration (None = column not present in this file)
 XLSX_FILES = [
@@ -266,7 +253,18 @@ def main() -> int:
 
     target_locale = args.target_locale
     source_locale = args.source or target_locale
-    deepl_lang = args.deepl_lang or DEFAULT_DEEPL_LANG.get(target_locale)
+
+    project_source = default_source_locale()
+    if target_locale == project_source:
+        print(
+            f"[ERROR] '{target_locale}' is the project's source language "
+            f"(declared in tools/languages.json:default_source).\n"
+            f"  Imports go INTO a target locale — pick a target.",
+            file=sys.stderr,
+        )
+        return 1
+
+    deepl_lang = args.deepl_lang or dir_to_deepl_id(target_locale)
     if not deepl_lang:
         print(
             f"[ERROR] Cannot determine DeepL language code for locale '{target_locale}'.\n"

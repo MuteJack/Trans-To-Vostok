@@ -14,8 +14,7 @@
       "display": "한국어",
       "message": "언어를 선택하세요",
       "substr_mode_label": "Substr 모드 (권장되지 않음 — 게임 업데이트 이후 다수 텍스트가 번역되지 않을 때만 활성화)",
-      "enabled": true,
-      "crowdin_id": "ko"
+      "enabled": true
     },
     {
       "locale": "French",
@@ -23,8 +22,7 @@
       "display": "Français",
       "message": "Sélectionnez une langue",
       "substr_mode_label": "Mode Substr (non recommandé — pour textes non traduits après une MAJ du jeu)",
-      "enabled": true,
-      "crowdin_id": "fr"
+      "enabled": true
     },
     {
       "locale": "Portuguese",
@@ -32,8 +30,7 @@
       "display": "Português",
       "message": "SSelecione um idioma (Brasil)",
       "substr_mode_label": "Modo Substr (não recomendado — ative apenas se muitos textos não forem traduzidos após uma atualização do jogo)",
-      "enabled": true,
-      "crowdin_id": "pt-BR"
+      "enabled": true
     }
   ]
 }

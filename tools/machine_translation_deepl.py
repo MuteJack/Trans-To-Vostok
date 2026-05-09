@@ -27,6 +27,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from utils.locale_config import dir_to_deepl_id, default_source_locale
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -35,66 +38,10 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-# locale folder name -> DeepL language code (kept in sync with import_translations.py).
+# DeepL language codes are resolved from tools/languages.json via
+# utils/locale_config.dir_to_deepl_id(). To add support for a new
+# language, register it in languages.json.
 # DeepL target language list: https://developers.deepl.com/docs/getting-started/supported-languages
-# For variants (EN-GB/US, PT-BR/PT, ES/ES-419, ZH-HANS/HANT), both the
-# camelCase name (e.g., BrazilianPortuguese, EnglishGB) and the
-# underscore-suffixed alias (e.g., Portuguese_BR, English_GB) map to the
-# same code so folder naming conventions can vary across contributors.
-# Languages marked "(next-gen)" require DeepL's next-gen model — may fall
-# back or error on the classic model.
-DEFAULT_DEEPL_LANG = {
-    # --- Western Europe (Latin) ---
-    "Danish": "DA",
-    "Dutch": "NL",
-    "EnglishGB": "EN-GB",
-    "English_GB": "EN-GB",
-    "EnglishUS": "EN-US",
-    "English_US": "EN-US",
-    "Finnish": "FI",
-    "French": "FR",
-    "German": "DE",
-    "Italian": "IT",
-    "Norwegian": "NB",                    # Bokmål
-    "Spanish": "ES",                      # Castilian (default)
-    "Spanish_ES": "ES",
-    "SpanishLatAm": "ES-419",
-    "Spanish_419": "ES-419",
-    "Swedish": "SV",
-    "Portuguese": "PT-PT",
-    "Portuguese_PT": "PT-PT",
-    "BrazilianPortuguese": "PT-BR",
-    "Portuguese_BR": "PT-BR",
-    # --- Central / Eastern Europe (Latin) ---
-    "Czech": "CS",
-    "Estonian": "ET",
-    "Hungarian": "HU",
-    "Latvian": "LV",
-    "Lithuanian": "LT",
-    "Polish": "PL",
-    "Romanian": "RO",
-    "Slovak": "SK",
-    "Slovenian": "SL",
-    # --- Other Latin ---
-    "Indonesian": "ID",
-    "Turkish": "TR",
-    "Vietnamese": "VI",                   # (next-gen)
-    # --- Cyrillic / Greek ---
-    "Bulgarian": "BG",
-    "Greek": "EL",
-    "Russian": "RU",
-    "Ukrainian": "UK",
-    # --- Asian / Other scripts ---
-    "Arabic": "AR",
-    "ChineseSimplified": "ZH-HANS",
-    "Chinese_HANS": "ZH-HANS",
-    "ChineseTraditional": "ZH-HANT",
-    "Chinese_HANT": "ZH-HANT",
-    "Hebrew": "HE",                       # (next-gen)
-    "Japanese": "JA",
-    "Korean": "KO",
-    "Thai": "TH",                         # (next-gen)
-}
 
 
 def run_step(label: str, cmd: list[str], cwd: Path) -> bool:
@@ -132,7 +79,18 @@ def main() -> int:
     args = parser.parse_args()
 
     target_locale = args.target_locale
-    deepl_lang = args.deepl_lang or DEFAULT_DEEPL_LANG.get(target_locale)
+
+    source = default_source_locale()
+    if target_locale == source:
+        print(
+            f"[ERROR] '{target_locale}' is the project's source language "
+            f"(declared in tools/languages.json:default_source).\n"
+            f"  DeepL translates FROM the source TO a target — pick a target locale.",
+            file=sys.stderr,
+        )
+        return 1
+
+    deepl_lang = args.deepl_lang or dir_to_deepl_id(target_locale)
     if not deepl_lang:
         print(
             f"[ERROR] Cannot determine DeepL language code for '{target_locale}'.\n"
