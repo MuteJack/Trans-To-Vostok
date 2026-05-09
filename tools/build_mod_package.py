@@ -292,12 +292,13 @@ def main() -> int:
     if not build_mod_info(script_dir):
         return 1
 
-    # 5. refresh canonical TSV shadow (xlsx -> TSV for git diff visibility)
-    for locale in locales:
-        if not build_translation_tsv_for_locale(script_dir, locale):
-            return 1
+    # NOTE: We intentionally do NOT refresh Translations/<locale>/<cat>/*.tsv
+    # here. Working tree changes to canonical TSV are the responsibility of
+    # explicit user actions (push_to_crowdin, pull_from_crowdin, or running
+    # tools/utils/build_translation_tsv.py directly). Build only produces
+    # the mod zip; nothing else.
 
-    # 6. packaging
+    # 5. packaging
     print(f"=== Packaging ===")
     print(f"Target locales: {', '.join(locales)}")
     print(f"Output file: {out_path}")

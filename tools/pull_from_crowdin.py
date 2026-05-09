@@ -90,6 +90,7 @@ def main() -> int:
 
     target = args.locale if args.locale else "all locales"
     print(f"\n[OK] Pulled Crowdin translations to canonical TSVs ({target})")
+    print(f"     (commit Translations/ to share + refresh push diff baseline)")
     print("Next: review, then commit:")
     print("  git diff Translations/")
     print("  git add Translations/")

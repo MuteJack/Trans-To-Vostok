@@ -19,8 +19,11 @@ Filters mirror build_source.py so identifiers stay aligned:
     - dedup by identifier within file (first non-empty translation wins)
 
 Usage:
-    python tools/crowdin/build_translations.py             # all locales
-    python tools/crowdin/build_translations.py Korean      # one locale only
+    python tools/crowdin/build_translations.py                       # all locales
+    python tools/crowdin/build_translations.py Korean                # one locale only
+    python tools/crowdin/build_translations.py Korean --tsv-root <path>
+                                                # read canonical TSVs from <path>
+                                                # instead of ./Translations/
 """
 import csv
 import sys
@@ -37,7 +40,7 @@ from crowdin.identifier import (
     make_texture_id,
 )
 
-TSV_ROOT = REPO / "Translations"
+DEFAULT_TSV_ROOT = REPO / "Translations"
 MIRROR_ROOT = REPO / "Crowdin_Mirror"
 TEMPLATE_LOCALE = "Template"
 SKIP_SHEETS = {"MetaData"}
@@ -85,16 +88,16 @@ def _write_tsv(path: Path, header: list[str], rows: list[dict]) -> None:
             w.writerow([r.get(c, "") for c in header])
 
 
-def discover_locales() -> list[str]:
+def discover_locales(tsv_root: Path) -> list[str]:
     return sorted(
-        d.name for d in TSV_ROOT.iterdir()
+        d.name for d in tsv_root.iterdir()
         if d.is_dir() and d.name != TEMPLATE_LOCALE
     )
 
 
-def build_locale_category(locale: str, category: str) -> tuple[int, int]:
+def build_locale_category(tsv_root: Path, locale: str, category: str) -> tuple[int, int]:
     """Returns (files_written, rows_written)."""
-    src_dir = TSV_ROOT / locale / category
+    src_dir = tsv_root / locale / category
     out_dir = MIRROR_ROOT / "translations" / locale / category
     if not src_dir.exists():
         return 0, 0
@@ -142,14 +145,33 @@ def build_locale_category(locale: str, category: str) -> tuple[int, int]:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) >= 2:
-        locales = [argv[1]]
-    else:
-        locales = discover_locales()
+    # Parse: positional locale + optional --tsv-root <path>
+    positional = []
+    tsv_root = DEFAULT_TSV_ROOT
+    i = 1
+    while i < len(argv):
+        a = argv[i]
+        if a == "--tsv-root":
+            if i + 1 >= len(argv):
+                print("[ERROR] --tsv-root requires a value", file=sys.stderr)
+                return 1
+            tsv_root = Path(argv[i + 1]).resolve()
+            i += 2
+        elif a.startswith("--"):
+            print(f"[ERROR] Unknown flag: {a}", file=sys.stderr)
+            return 1
+        else:
+            positional.append(a)
+            i += 1
 
-    print(f"Source : {TSV_ROOT}")
-    print(f"Output : {MIRROR_ROOT / 'translations'}")
-    print(f"Locales: {', '.join(locales)}")
+    if positional:
+        locales = [positional[0]]
+    else:
+        locales = discover_locales(tsv_root)
+
+    print(f"TSV root : {tsv_root}")
+    print(f"Output   : {MIRROR_ROOT / 'translations'}")
+    print(f"Locales  : {', '.join(locales)}")
     print()
 
     grand_files = 0
@@ -157,7 +179,7 @@ def main(argv: list[str]) -> int:
     for locale in locales:
         print(f"=== {locale} ===")
         for cat in CATEGORIES:
-            f, r = build_locale_category(locale, cat)
+            f, r = build_locale_category(tsv_root, locale, cat)
             grand_files += f
             grand_rows += r
         print()

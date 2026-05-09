@@ -4,8 +4,11 @@ Replaces the need for the Crowdin CLI (Java-based) — translators only need
 `pip install -r tools/requirements.txt`.
 
 Operations exposed:
-  - upload_translations_for_locale(locale_dir, language_id, mirror_root,
-        auto_approve=False)
+  - upload_translations_for_locale(locale_dir, language_id, ...)
+        Upload every non-empty translation in locale_dir (full sync).
+  - upload_translations_diff(diff_rows, language_id, ...)
+        Upload only the (file, identifier, translation) rows in diff_rows
+        — used by smart push to avoid overwriting other contributors' edits.
 
 Configuration:
   - Project ID + source path prefix: tools/crowdin/config.json (committed)
@@ -15,8 +18,10 @@ The flow for uploading one TSV:
   1. POST /storages          (upload file bytes, get storage_id)
   2. POST /projects/{id}/translations/{lang}   (link storage_id to source file)
 """
+import csv
 import json
 import sys
+import tempfile
 from pathlib import Path
 
 try:
@@ -140,5 +145,79 @@ def upload_translations_for_locale(
         except Exception as e:
             stats["errors"].append((rel, str(e)))
             print(f"  [ERR]  {rel}  → {e}")
+
+    return stats
+
+
+# Minimal scheme for diff uploads. Crowdin only needs `identifier` (matching key)
+# + `translation` (value). Other columns are kept empty.
+_DIFF_SCHEME = ["identifier", "source_phrase", "translation", "context", "labels", "max_length"]
+
+
+def _write_minimal_tsv(rows: dict[str, str], dest: Path) -> None:
+    """Write a TSV with only identifier + translation populated."""
+    with open(dest, "w", encoding="utf-8", newline="") as f:
+        w = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
+        w.writerow(_DIFF_SCHEME)
+        for ident, tx in rows.items():
+            w.writerow([ident, "", tx, "", "", ""])
+
+
+def upload_translations_diff(
+    diff_rows: dict[str, dict[str, str]],
+    language_id: str,
+    *,
+    auto_approve: bool = False,
+) -> dict:
+    """Upload only the rows in diff_rows. Each file gets a minimal TSV with
+    just its changed rows; Crowdin matches by identifier and updates only those.
+
+    diff_rows: {file_relpath: {identifier: translation_string}}
+    file_relpath uses forward slashes, e.g. "Translation/Main.tsv".
+
+    Returns stats:
+        {"uploaded_rows": int, "uploaded_files": int,
+         "skipped_no_source": int, "errors": list[(rel, msg)]}
+    """
+    if not diff_rows:
+        return {"uploaded_rows": 0, "uploaded_files": 0,
+                "skipped_no_source": 0, "errors": []}
+
+    client, project_id, source_prefix = make_client()
+
+    print(f"Listing source files for project {project_id}...")
+    sources = list_source_files(client, project_id)
+    print(f"  {len(sources)} source files found")
+    print()
+
+    stats = {"uploaded_rows": 0, "uploaded_files": 0,
+             "skipped_no_source": 0, "errors": []}
+
+    with tempfile.TemporaryDirectory(prefix="crowdin_diff_") as tmpdir:
+        tmpdir_path = Path(tmpdir)
+        for rel, ids_map in sorted(diff_rows.items()):
+            source_path = f"{source_prefix}/{rel}"
+            file_id = sources.get(source_path)
+            if file_id is None:
+                print(f"  [SKIP] {rel}  no Crowdin source (expected {source_path})")
+                stats["skipped_no_source"] += 1
+                continue
+
+            # Write minimal TSV (uses safe path under temp dir)
+            tmp_tsv = tmpdir_path / rel.replace("/", "_")
+            _write_minimal_tsv(ids_map, tmp_tsv)
+
+            try:
+                storage_id = upload_storage(client, tmp_tsv)
+                upload_translation(
+                    client, project_id, language_id, file_id, storage_id,
+                    auto_approve=auto_approve,
+                )
+                stats["uploaded_files"] += 1
+                stats["uploaded_rows"] += len(ids_map)
+                print(f"  [OK]   {rel}  ({len(ids_map)} rows, file_id={file_id})")
+            except Exception as e:
+                stats["errors"].append((rel, str(e)))
+                print(f"  [ERR]  {rel}  → {e}")
 
     return stats
