@@ -81,15 +81,13 @@ scope 예시:
 
 ### 번역 작업 (xlsx 편집)
 ```powershell
-git add "Trans To Vostok/<locale>/Translation.xlsx"
-git add "Translation_TSV/<locale>/"
+git add "Translations/<locale>/"
 ```
-xlsx + TSV shadow **둘 다** 포함. TSV가 git diff를 가능하게 해서 리뷰가 쉬워짐.
+xlsx는 gitignored지만 함께 갱신된 TSV가 commit됨. TSV가 git diff를 가능하게 해서 리뷰가 쉬워짐.
 
 ### 새 언어 추가
 ```powershell
-git add "Trans To Vostok/<locale>/"
-git add "Translation_TSV/<locale>/"
+git add "Translations/<locale>/"
 git add "Trans To Vostok/locale.json"
 ```
 
@@ -223,7 +221,7 @@ git push origin main
 
 | 증상 | 원인 / 해결 |
 | --- | --- |
-| PR diff에 xlsx만 있고 TSV 없음 | `Translation_TSV/<locale>/` 도 add. xlsx 단독은 리뷰 불가 |
+| PR diff에 xlsx만 있고 TSV 없음 | `Translations/<locale>/<category>/` (TSV 폴더) 도 add. xlsx는 gitignored이라 단독으론 PR 안 됨 |
 | PR diff에 의도하지 않은 파일 다수 포함 | `git status` / `.gitignore` 확인. `~$*.xlsx`, `.log/`, `.tmp/` 등 stage 해제 |
 | PR을 올렸는데 빌드 검증 실패 표시 | CI 로그 확인 → 로컬에서 `python tools/build_mod_package.py` 재현 → 수정 |
 | upstream main이 빠르게 변해서 충돌 | `git fetch upstream && git rebase upstream/main` 또는 `git merge upstream/main` 후 push |

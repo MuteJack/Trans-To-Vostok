@@ -5,7 +5,7 @@ Runs the three per-category utils sequentially:
     utils/rebuild_glossary_xlsx.py    <locale>
     utils/rebuild_texture_xlsx.py     <locale>
 
-Each util writes to <pkg_root>/<locale>/<category>.xlsx, overwriting the
+Each util writes to Translations/<locale>/<category>.xlsx, overwriting the
 existing file. If a category's TSV folder doesn't exist for the locale,
 that util prints [SKIP] and returns 0 (not treated as failure).
 

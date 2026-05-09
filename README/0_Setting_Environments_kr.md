@@ -163,14 +163,14 @@ python tools/build_mod_package.py Korean
    git diff
    ```
 
-   - xlsx는 binary라 diff가 안 보이지만, `Translation_TSV/<locale>/` 의 TSV shadow에서 변경사항을 볼 수 있습니다.
+   - xlsx는 binary라 diff가 안 보이지만, `Translations/<locale>/<category>/*.tsv` 의 TSV shadow에서 변경사항을 볼 수 있습니다.
 4. **빌드로 검증**:
    ```powershell
    python tools/build_mod_package.py Korean
    ```
 5. **Commit & Push**:
    ```powershell
-   git add "Trans To Vostok/Korean/Translation.xlsx" "Translation_TSV/Korean/"
+   git add "Translations/Korean/"
    git commit -m "Korean: fix translation for X"
    git push origin <branch-name>
    ```

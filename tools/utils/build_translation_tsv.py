@@ -5,9 +5,9 @@ This is the xlsx -> TSV side of the editing/VCS workflow:
     xlsx (local working copy, gitignored)  ->  TSV (canonical, committed)
 
 Path mapping:
-    <pkg_root>/Trans To Vostok/<language>/<file>.xlsx
+    <project_root>/Translations/<language>/<file>.xlsx
         ->
-    <project_root>/Translation_TSV/<language>/<file>/<sheet>.tsv
+    <project_root>/Translations/<language>/<file>/<sheet>.tsv
 
 For every xlsx file in the locale folder (Translation.xlsx, Glossary.xlsx,
 Texture.xlsx, etc.), every sheet is exported as one TSV.
@@ -151,13 +151,12 @@ def export_xlsx(xlsx_path: Path, out_dir: Path) -> tuple[int, int]:
         wb.close()
 
 
-def process_locale(pkg_root: Path, locale: str, output_root: Path) -> tuple[int, int, int]:
+def process_locale(translations_root: Path, locale: str) -> tuple[int, int, int]:
     """Process all xlsx files in one locale folder.
 
     Returns (xlsx_count, sheet_count, row_count).
     """
-    locale_dir = pkg_root / locale
-    out_locale_dir = output_root / locale
+    locale_dir = translations_root / locale
 
     if not locale_dir.exists():
         print(f"[ERROR] Locale folder not found: {locale_dir}")
@@ -177,8 +176,8 @@ def process_locale(pkg_root: Path, locale: str, output_root: Path) -> tuple[int,
     total_rows = 0
 
     for xlsx_path in xlsx_files:
-        out_dir = out_locale_dir / xlsx_path.stem
-        rel_out = out_dir.relative_to(output_root.parent)
+        out_dir = locale_dir / xlsx_path.stem
+        rel_out = out_dir.relative_to(translations_root.parent)
         print(f"  [{locale}] {xlsx_path.name}  ->  {rel_out}/")
         try:
             sc, rc = export_xlsx(xlsx_path, out_dir)
@@ -193,10 +192,10 @@ def process_locale(pkg_root: Path, locale: str, output_root: Path) -> tuple[int,
     return xlsx_count, total_sheets, total_rows
 
 
-def discover_locales(pkg_root: Path) -> list[str]:
+def discover_locales(translations_root: Path) -> list[str]:
     """Find locale folders that contain at least one xlsx (excluding lock files)."""
     locales = []
-    for d in sorted(pkg_root.iterdir()):
+    for d in sorted(translations_root.iterdir()):
         if not d.is_dir():
             continue
         has_xlsx = any(
@@ -210,13 +209,11 @@ def discover_locales(pkg_root: Path) -> list[str]:
 
 def main() -> int:
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     project_root = script_dir.parent.parent
-    pkg_root = project_root / "Trans To Vostok"
-    output_root = project_root / "Translation_TSV"
+    translations_root = project_root / "Translations"
 
-    if not pkg_root.exists():
-        print(f"[ERROR] Package root not found: {pkg_root}")
+    if not translations_root.exists():
+        print(f"[ERROR] Translations root not found: {translations_root}")
         return 1
 
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
@@ -224,15 +221,14 @@ def main() -> int:
     if args:
         locales = [args[0]]
     else:
-        locales = discover_locales(pkg_root)
+        locales = discover_locales(translations_root)
 
     if not locales:
-        print(f"[ERROR] No locales with xlsx files found under: {pkg_root}")
+        print(f"[ERROR] No locales with xlsx files found under: {translations_root}")
         return 1
 
-    print(f"Source : {pkg_root}")
-    print(f"Output : {output_root}")
-    print(f"Locales: {', '.join(locales)}")
+    print(f"Root    : {translations_root}")
+    print(f"Locales : {', '.join(locales)}")
     print()
 
     total_xlsx = 0
@@ -240,7 +236,7 @@ def main() -> int:
     total_rows = 0
 
     for locale in locales:
-        xc, sc, rc = process_locale(pkg_root, locale, output_root)
+        xc, sc, rc = process_locale(translations_root, locale)
         total_xlsx += xc
         total_sheets += sc
         total_rows += rc

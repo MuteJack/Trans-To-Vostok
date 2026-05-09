@@ -87,12 +87,12 @@ def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
 
 def build_translation_tsv_for_locale(tools_dir: Path, locale: str) -> bool:
     """Call build_translation_tsv.py for the given locale.
-    Refreshes the diff-friendly TSV shadow under Translation_TSV/<locale>/."""
-    print(f"=== Building Translation_TSV: {locale} ===")
+    Refreshes the diff-friendly TSV shadow under Translations/<locale>/<file>/."""
+    print(f"=== Building canonical TSVs: {locale} ===")
     cmd = [sys.executable, "utils/build_translation_tsv.py", locale]
     result = subprocess.run(cmd, cwd=tools_dir)
     if result.returncode != 0:
-        print(f"[ERROR] {locale} Translation_TSV build failed")
+        print(f"[ERROR] {locale} TSV build failed")
         return False
     print()
     return True
@@ -261,11 +261,12 @@ def main() -> int:
 
     # 1. build each locale (includes validate, skip locales without folder)
     pkg_root = mod_root / MOD_NAME
+    translations_root = mod_root / "Translations"
     build_locales = []
     for locale in locales:
-        locale_dir = pkg_root / locale
-        xlsx_path = locale_dir / "Translation.xlsx"
-        if not locale_dir.exists() or not xlsx_path.exists():
+        xlsx_locale_dir = translations_root / locale
+        xlsx_path = xlsx_locale_dir / "Translation.xlsx"
+        if not xlsx_locale_dir.exists() or not xlsx_path.exists():
             print(f"[SKIP] {locale} - translation folder/xlsx not found (default language)")
             continue
         if not build_locale(script_dir, locale, soft=soft, ignore=ignore):
@@ -291,7 +292,7 @@ def main() -> int:
     if not build_mod_info(script_dir):
         return 1
 
-    # 5. refresh Translation_TSV/ shadow (xlsx -> TSV for git diff visibility)
+    # 5. refresh canonical TSV shadow (xlsx -> TSV for git diff visibility)
     for locale in locales:
         if not build_translation_tsv_for_locale(script_dir, locale):
             return 1

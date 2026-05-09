@@ -185,7 +185,7 @@ def read_texture_credits(xlsx_path: Path) -> dict:
     return out
 
 
-def collect_locale(pkg_root: Path, locale: str) -> dict:
+def collect_locale(translations_root: Path, locale: str) -> dict:
     info = {
         "translation_updated": "unknown",
         "texture_updated": "unknown",
@@ -195,7 +195,7 @@ def collect_locale(pkg_root: Path, locale: str) -> dict:
         "texture_contributors": [],
     }
     # Translation.xlsx MetaData
-    trans_meta = read_translation_metadata(pkg_root / locale / "Translation.xlsx")
+    trans_meta = read_translation_metadata(translations_root / locale / "Translation.xlsx")
     if trans_meta:
         date_str = trans_meta.get("Translation Updated Date", "").strip()
         if date_str:
@@ -204,7 +204,7 @@ def collect_locale(pkg_root: Path, locale: str) -> dict:
         info["translation_contributors"] = _split_names(trans_meta.get("Contributor (Translate)", ""))
 
     # Texture.xlsx — first try MetaData sheet, fall back to Translation date.
-    tex_path = pkg_root / locale / "Texture.xlsx"
+    tex_path = translations_root / locale / "Texture.xlsx"
     tex_meta = read_translation_metadata(tex_path)  # same shape (Field/Value)
     tex_date = tex_meta.get("Texture Updated Date", "").strip() if tex_meta else ""
     if tex_date:
@@ -219,22 +219,22 @@ def collect_locale(pkg_root: Path, locale: str) -> dict:
     return info
 
 
-def discover_locales(pkg_root: Path) -> list[str]:
+def discover_locales(translations_root: Path) -> list[str]:
     """List subdirs that look like locale folders (contain Translation.xlsx)."""
-    if not pkg_root.exists():
+    if not translations_root.exists():
         return []
     out = []
-    for d in sorted(pkg_root.iterdir()):
+    for d in sorted(translations_root.iterdir()):
         if d.is_dir() and (d / "Translation.xlsx").exists():
             out.append(d.name)
     return out
 
 
-def derive_target_game_version(pkg_root: Path, locales: list[str]) -> str:
+def derive_target_game_version(translations_root: Path, locales: list[str]) -> str:
     """Use Korean if available; otherwise the first locale with a value."""
     preferred = ["Korean"] + [l for l in locales if l != "Korean"]
     for loc in preferred:
-        meta = read_translation_metadata(pkg_root / loc / "Translation.xlsx")
+        meta = read_translation_metadata(translations_root / loc / "Translation.xlsx")
         v = meta.get("Game Version", "").strip()
         if v:
             return v
@@ -242,17 +242,17 @@ def derive_target_game_version(pkg_root: Path, locales: list[str]) -> str:
 
 
 def build_info(repo_root: Path) -> dict:
-    pkg_root = repo_root / "Trans To Vostok"
-    locales = [l for l in discover_locales(pkg_root) if l != "Template"]
+    translations_root = repo_root / "Translations"
+    locales = [l for l in discover_locales(translations_root) if l != "Template"]
     sections = parse_authors_by_section(repo_root / "AUTHORS.md")
     info = {
         "mod_version": parse_mod_version(repo_root / "mod.txt"),
         "build_date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
-        "target_game_version": derive_target_game_version(pkg_root, locales),
+        "target_game_version": derive_target_game_version(translations_root, locales),
         "lead_developer": sections["lead_developer"],
         "code_contributors": sections["code_contributors"],
         "acknowledgments": sections["acknowledgments"],
-        "locales": {locale: collect_locale(pkg_root, locale) for locale in locales},
+        "locales": {locale: collect_locale(translations_root, locale) for locale in locales},
     }
     return info
 

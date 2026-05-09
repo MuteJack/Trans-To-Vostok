@@ -35,21 +35,24 @@ If `parsed_text/` is absent, validation steps that depend on it are auto-skipped
 ## Repository Layout
 
 ```
+Translations/                     # Authoring + canonical translation data
+└── <locale>/                     # Each locale (Korean, French, Template, …)
+    ├── Translation.xlsx          # Text translations (human-edited, gitignored)
+    ├── Glossary.xlsx             # Glossary (manually curated, gitignored)
+    ├── Texture.xlsx              # Texture metadata + attribution (gitignored)
+    └── <category>/*.tsv          # Canonical TSV (committed, git-diff-friendly)
+
 Trans To Vostok/                  # Mod package root (this is what goes into the zip)
 ├── translator.gd                 # Runtime text engine (GDScript autoload)
 ├── translator_ui.gd              # F9 language selection UI
 ├── texture_loader.gd             # Runtime texture replacement engine
 ├── mod_addon.gd                  # Mod compatibility helper
 ├── locale.json                   # Registered locale list
-└── <locale>/                     # Each locale (Korean, French, Template, …)
-    ├── Translation.xlsx          # Text translations (human-edited)
-    ├── Glossary.xlsx             # Glossary (manually curated)
-    ├── Texture.xlsx              # Texture metadata + attribution
+└── <locale>/                     # Per-locale runtime artifacts
     ├── runtime_tsv/              # Build output (loaded by translator.gd)
-    └── textures/                 # Translated textures (optional)
-
-Translation_TSV/                   # Canonical TSV (git-diff-friendly shadow of xlsx)
-└── <locale>/<category>/*.tsv
+    ├── textures/                 # Translated textures (optional)
+    ├── Translation_Credit.md     # Generated credits
+    └── Texture_Attribution.md    # Generated attribution
 
 tools/                             # Python build / validation / helper tools
 ├── build_mod_package.py          # Main build (validate + package)
@@ -104,7 +107,7 @@ README/                            # Korean contributor guide series (see Quick 
 | `utils/build_attributions.py` | `Texture.xlsx` → `Texture_Attribution.md` |
 | `utils/build_translation_credit.py` | Per-locale `Translation_Credit.md` |
 | `utils/build_authors.py` | Update the auto-generated Translators section of `AUTHORS.md` |
-| `utils/build_translation_tsv.py` | Locale xlsx → per-sheet TSV under `Translation_TSV/` (git-diff visibility) |
+| `utils/build_translation_tsv.py` | Locale xlsx → per-sheet TSV under `Translations/<locale>/<file>/` (git-diff visibility) |
 | `utils/build_mod_info.py` | Generate `<pkg_root>/info.json` (version + build date + contributors) for the F9 Info tab |
 | `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (formatting / widths / conditional formatting applied) |
 | `utils/rebuild_glossary_xlsx.py` | TSV → Glossary.xlsx |
@@ -221,21 +224,24 @@ python tools/build_mod_package.py Korean         # locale 지정
 ## 저장소 구조
 
 ```
+Translations/                     # 번역 작업 데이터 (authoring + canonical)
+└── <locale>/                     # 각 locale (Korean, French, Template, …)
+    ├── Translation.xlsx          # 텍스트 번역 (사람 편집 대상, gitignored)
+    ├── Glossary.xlsx             # 용어집 (수동 큐레이트, gitignored)
+    ├── Texture.xlsx              # 텍스처 metadata + attribution (gitignored)
+    └── <category>/*.tsv          # canonical TSV (committed, git diff 친화적)
+
 Trans To Vostok/                  # 모드 패키지 루트 (zip에 들어가는 부분)
 ├── translator.gd                 # 런타임 텍스트 엔진 (GDScript autoload)
 ├── translator_ui.gd              # F9 언어 선택 UI
 ├── texture_loader.gd             # 런타임 텍스처 교체 엔진
 ├── mod_addon.gd                  # mod 호환성 helper
 ├── locale.json                   # 등록된 locale 목록
-└── <locale>/                     # 각 locale (Korean, French, Template, …)
-    ├── Translation.xlsx          # 텍스트 번역 (사람 편집 대상)
-    ├── Glossary.xlsx             # 용어집 (수동 큐레이트)
-    ├── Texture.xlsx              # 텍스처 metadata + attribution
+└── <locale>/                     # locale별 런타임 산출물
     ├── runtime_tsv/              # 빌드 산출물 (translator.gd 가 로드)
-    └── textures/                 # 번역 텍스처 (선택)
-
-Translation_TSV/                   # canonical TSV (xlsx의 git diff 친화적 shadow)
-└── <locale>/<category>/*.tsv
+    ├── textures/                 # 번역 텍스처 (선택)
+    ├── Translation_Credit.md     # 자동 생성 크레딧
+    └── Texture_Attribution.md    # 자동 생성 attribution
 
 tools/                             # Python 빌드 / 검증 / 보조 도구
 ├── build_mod_package.py          # 메인 빌드 (검증 + 패키징)
@@ -290,7 +296,7 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 | `utils/build_attributions.py` | `Texture.xlsx` → `Texture_Attribution.md` 자동 생성 |
 | `utils/build_translation_credit.py` | locale 별 `Translation_Credit.md` 생성 |
 | `utils/build_authors.py` | `AUTHORS.md` 의 자동 생성 Translators 섹션 갱신 |
-| `utils/build_translation_tsv.py` | locale xlsx → 시트별 TSV (`Translation_TSV/`) — git diff 가독성 |
+| `utils/build_translation_tsv.py` | locale xlsx → 시트별 TSV (`Translations/<locale>/<file>/`) — git diff 가독성 |
 | `utils/build_mod_info.py` | F9 Info 탭이 사용하는 `<pkg_root>/info.json` 생성 (version + build date + contributors) |
 | `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (서식 / 너비 / 조건부 서식 일괄 적용) |
 | `utils/rebuild_glossary_xlsx.py` | TSV → Glossary.xlsx |

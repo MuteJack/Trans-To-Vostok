@@ -116,9 +116,9 @@ def _collect_texture_credits(xlsx_path: Path) -> tuple[set[str], set[str]]:
     return reworked, contributors
 
 
-def _discover_locales(pkg_root: Path) -> list[str]:
+def _discover_locales(translations_root: Path) -> list[str]:
     locales: list[str] = []
-    for d in sorted(pkg_root.iterdir()):
+    for d in sorted(translations_root.iterdir()):
         if not d.is_dir():
             continue
         if (d / "Translation.xlsx").exists() or (d / "Texture.xlsx").exists():
@@ -140,7 +140,7 @@ def _render_subsection(label: str, names: list[str]) -> list[str]:
 def _render_locale(locale: str, lead: list[str], translation_contrib: list[str],
                    texture_reworked: list[str], texture_contrib: list[str]) -> list[str]:
     lines: list[str] = []
-    lines.append(f"### {locale} (`Trans To Vostok/{locale}/`)")
+    lines.append(f"### {locale} (`Translations/{locale}/`)")
     lines.append("")
     lines.extend(_render_subsection("Lead Translator(s)", lead))
     lines.extend(_render_subsection("Translation Contributors", translation_contrib))
@@ -149,9 +149,9 @@ def _render_locale(locale: str, lead: list[str], translation_contrib: list[str],
     return lines
 
 
-def build_auto_section(pkg_root: Path) -> str:
+def build_auto_section(translations_root: Path) -> str:
     """Build the markdown content for the auto-generated Translators section."""
-    locales = _discover_locales(pkg_root)
+    locales = _discover_locales(translations_root)
 
     lines: list[str] = []
     lines.append("## Translators")
@@ -169,7 +169,7 @@ def build_auto_section(pkg_root: Path) -> str:
         return "\n".join(lines) + "\n"
 
     for locale in locales:
-        locale_dir = pkg_root / locale
+        locale_dir = translations_root / locale
         translation_xlsx = locale_dir / "Translation.xlsx"
         texture_xlsx = locale_dir / "Texture.xlsx"
 
@@ -242,28 +242,27 @@ def update_authors_md(authors_path: Path, generated: str) -> bool:
 
 def main() -> int:
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     project_root = script_dir.parent.parent
-    pkg_root = project_root / "Trans To Vostok"
+    translations_root = project_root / "Translations"
     authors_path = project_root / "AUTHORS.md"
 
-    if not pkg_root.exists():
-        print(f"[ERROR] Package root not found: {pkg_root}")
+    if not translations_root.exists():
+        print(f"[ERROR] Translations root not found: {translations_root}")
         return 1
     if not authors_path.exists():
         print(f"[ERROR] AUTHORS.md not found: {authors_path}")
         return 1
 
     print(f"Project root: {project_root}")
-    print(f"Sources     : {pkg_root}")
+    print(f"Sources     : {translations_root}")
     print(f"Target      : {authors_path}")
     print()
 
-    locales = _discover_locales(pkg_root)
+    locales = _discover_locales(translations_root)
     print(f"Locales found: {', '.join(locales) if locales else '(none)'}")
     print()
 
-    auto_content = build_auto_section(pkg_root)
+    auto_content = build_auto_section(translations_root)
     if not update_authors_md(authors_path, auto_content):
         return 1
     return 0

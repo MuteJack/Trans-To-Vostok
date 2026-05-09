@@ -89,7 +89,7 @@ def main() -> int:
     )
     args = p.parse_args()
 
-    source_xlsx = ROOT / "Trans To Vostok" / args.source / "Translation.xlsx"
+    source_xlsx = ROOT / "Translations" / args.source / "Translation.xlsx"
     if not source_xlsx.exists():
         print(f"ERROR: source not found: {source_xlsx}", file=sys.stderr)
         return 1

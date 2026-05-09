@@ -276,11 +276,10 @@ def main() -> int:
         return 1
 
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     mod_root = script_dir.parent.parent
-    pkg_root = mod_root / "Trans To Vostok"
+    translations_root = mod_root / "Translations"
 
-    locale_dir = pkg_root / target_locale
+    locale_dir = translations_root / target_locale
     translated_path = mod_root / ".tmp" / "unique_text" / source_locale / f"translated_{deepl_lang}.tsv"
 
     if not locale_dir.exists():

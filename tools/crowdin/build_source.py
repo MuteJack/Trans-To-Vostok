@@ -1,4 +1,4 @@
-"""Build Crowdin source TSV files from Translation_TSV/Template.
+"""Build Crowdin source TSV files from Translations/Template.
 
 Reads Template TSVs (canonical structure with empty translation column)
 and writes slim source TSVs to Crowdin_Mirror/source/<category>/<sheet>.tsv
@@ -34,7 +34,7 @@ from crowdin.identifier import (
     make_texture_id,
 )
 
-TSV_ROOT = REPO / "Translation_TSV"
+TSV_ROOT = REPO / "Translations"
 MIRROR_ROOT = REPO / "Crowdin_Mirror"
 SOURCE_LOCALE = "Template"
 SKIP_SHEETS = {"MetaData"}

@@ -1,6 +1,6 @@
 """Build Crowdin translation upload files from existing locale TSVs.
 
-Reads Translation_TSV/<locale>/{Translation,Glossary,Texture}/*.tsv and
+Reads Translations/<locale>/{Translation,Glossary,Texture}/*.tsv and
 writes per-locale translation TSVs to:
 
     Crowdin_Mirror/translations/<locale>/<category>/<sheet>.tsv
@@ -37,7 +37,7 @@ from crowdin.identifier import (
     make_texture_id,
 )
 
-TSV_ROOT = REPO / "Translation_TSV"
+TSV_ROOT = REPO / "Translations"
 MIRROR_ROOT = REPO / "Crowdin_Mirror"
 TEMPLATE_LOCALE = "Template"
 SKIP_SHEETS = {"MetaData"}

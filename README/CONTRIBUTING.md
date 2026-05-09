@@ -173,7 +173,7 @@ This regenerates everything for all locales:
 - `Texture_Attribution.md` (per locale)
 - `Translation_Credit.md` (per locale)
 - `AUTHORS.md` (auto-section, all locales)
-- `Translation_TSV/` (git diff visibility)
+- `Translations/<locale>/<category>/*.tsv` (git diff visibility)
 - Final `Trans To Vostok.zip`
 
 Verify:

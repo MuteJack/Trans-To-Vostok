@@ -1,8 +1,8 @@
 # Crowdin CLI configuration for Trans-to-Vostok.
 #
 # Sync direction (manual, run from repo root):
-#   Sources : Translation_TSV/Template/  --build_source.py-->  Crowdin_Mirror/source/  --[crowdin upload sources]-->  Crowdin
-#   Seeds   : Translation_TSV/<locale>/   --build_translations.py-->  Crowdin_Mirror/translations/<locale>/  --[crowdin upload translations]-->  Crowdin
+#   Sources : Translations/Template/  --build_source.py-->  Crowdin_Mirror/source/  --[crowdin upload sources]-->  Crowdin
+#   Seeds   : Translations/<locale>/   --build_translations.py-->  Crowdin_Mirror/translations/<locale>/  --[crowdin upload translations]-->  Crowdin
 #   Pull    : Crowdin  --[crowdin download]-->  Crowdin_Mirror/translations/<locale>/  --apply_to_xlsx.py-->  xlsx/TSV
 #
 # Token: store in env var CROWDIN_PERSONAL_TOKEN

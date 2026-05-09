@@ -131,7 +131,7 @@ python tools/build_mod_package.py <locale>
 성공 시:
 
 - `Trans To Vostok.zip` 생성 (게임에서 ModLoader가 인식)
-- `Translation_TSV/<locale>/` 의 TSV shadow 갱신 (git diff용)
+- `Translations/<locale>/<category>/` 의 TSV shadow 갱신 (git diff용)
 
 검증 에러가 나면 콘솔 출력 / `Trans To Vostok/<locale>/.log/validate_translation_*.log` 확인.
 
@@ -154,12 +154,12 @@ python tools/build_mod_package.py <locale>
 ### 6-3. Commit & Push
 
 ```powershell
-git add "Trans To Vostok/<locale>/Translation.xlsx" "Translation_TSV/<locale>/"
+git add "Translations/<locale>/"
 git commit -m "<locale>: improve Items translations"
 git push origin <branch-name>
 ```
 
-xlsx는 binary라 PR 리뷰가 어렵지만, 같이 갱신되는 `Translation_TSV/<locale>/` 가 텍스트 diff로 변경 내역 보여줌 → 리뷰가 가능.
+xlsx는 binary라 PR 리뷰가 어렵지만, 같이 갱신되는 `Translations/<locale>/<category>/*.tsv` 가 텍스트 diff로 변경 내역 보여줌 → 리뷰가 가능.
 
 ---
 

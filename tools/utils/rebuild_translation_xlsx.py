@@ -1,6 +1,6 @@
 """Rebuild <locale>/Translation.xlsx from canonical TSVs.
 
-Source : <project_root>/Translation_TSV/<locale>/Translation/*.tsv
+Source : <project_root>/Translations/<locale>/Translation/*.tsv
 Output : <pkg_root>/<locale>/Translation.xlsx (overwritten)
 
 Sheet ordering : `_sheet_order.txt` next to the TSVs.
@@ -30,8 +30,7 @@ from openpyxl.utils import get_column_letter
 
 SCRIPT_DIR = Path(__file__).resolve().parent           # tools/utils
 PROJECT_ROOT = SCRIPT_DIR.parent.parent                 # mods/Trans To Vostok
-TSV_ROOT = PROJECT_ROOT / "Translation_TSV"
-PKG_ROOT = PROJECT_ROOT / "Trans To Vostok"
+TRANSLATIONS_ROOT = PROJECT_ROOT / "Translations"
 WIDTH_POLICY = PROJECT_ROOT / "tools" / "width.json"
 
 CATEGORY = "Translation"
@@ -236,8 +235,8 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
 
 
 def build(locale: str) -> int:
-    src_dir = TSV_ROOT / locale / CATEGORY
-    dst = PKG_ROOT / locale / f"{CATEGORY}.xlsx"
+    src_dir = TRANSLATIONS_ROOT / locale / CATEGORY
+    dst = TRANSLATIONS_ROOT / locale / f"{CATEGORY}.xlsx"
 
     if not src_dir.exists():
         print(f"[SKIP] {locale}/{CATEGORY}: TSV dir not found ({src_dir})")

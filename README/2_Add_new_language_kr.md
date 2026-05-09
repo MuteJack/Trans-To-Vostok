@@ -50,13 +50,13 @@ $loc = "French"   # 추가할 locale 폴더 이름으로 변경
 Copy-Item -Recurse "Trans To Vostok/Template" "Trans To Vostok/$loc"
 
 # 2. TSV 복사 (git diff용 shadow, 처음부터 동기화 상태로 시작)
-Copy-Item -Recurse "Translation_TSV/Template" "Translation_TSV/$loc"
+Copy-Item -Recurse "Translations/Template" "Translations/$loc"
 ```
 
 결과:
 
-- `Trans To Vostok/French/Translation.xlsx` / `Glossary.xlsx` / `Texture.xlsx` (Template과 동일, 서식 적용 완료)
-- `Translation_TSV/French/Translation/*.tsv` (Korean 구조 + translation 컬럼 빈 값)
+- `Translations/French/Translation.xlsx` / `Glossary.xlsx` / `Texture.xlsx` (Template과 동일, 서식 적용 완료)
+- `Translations/French/Translation/*.tsv` (Korean 구조 + translation 컬럼 빈 값)
 
 > Template TSV/xlsx는 Korean을 source-of-truth로 sync된 상태 — 모든 메타데이터 (행 구조 / WHERE/SUB/KIND / filename 등)가 Korean과 일치하고 quality flag는 0, translation은 빈 값. DeepL이 채울 준비 완료.
 
@@ -144,7 +144,7 @@ python tools/build_mod_package.py
 - `Texture_Attribution.md` (locale별)
 - `Translation_Credit.md` (locale별)
 - `AUTHORS.md` 의 자동 섹션 (전체 locale 통합)
-- `Translation_TSV/` (git diff용 shadow)
+- `Translations/<locale>/<category>/*.tsv` (git diff용 shadow)
 - 최종 `Trans To Vostok.zip`
 
 확인 사항:

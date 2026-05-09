@@ -45,7 +45,7 @@ Crowdin_Mirror/
 
 ```
 [push]
-  Translation_TSV/Template/         # canonical structure
+  Translations/Template/<cat>/      # canonical structure (TSV)
         ↓ build_source.py
   Crowdin_Mirror/source/            # this directory (regenerated)
         ↓ crowdin upload sources    # via Crowdin CLI
@@ -56,12 +56,12 @@ Crowdin_Mirror/
         ↓ crowdin download          # via Crowdin CLI
   Crowdin_Mirror/translations/      # this directory (regenerated)
         ↓ apply_to_xlsx.py
-  Trans To Vostok/<locale>/Translation.xlsx (translation column updated)
+  Translations/<locale>/Translation.xlsx (translation column updated)
 ```
 
 ## Regenerating content
 
-Anything under `source/` can be rebuilt from `Translation_TSV/Template/`:
+Anything under `source/` can be rebuilt from `Translations/Template/`:
 
 ```powershell
 python tools/crowdin/build_source.py

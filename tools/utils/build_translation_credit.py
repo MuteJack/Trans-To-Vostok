@@ -175,12 +175,15 @@ def main() -> int:
     args = parser.parse_args()
 
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     mod_root = script_dir.parent.parent
+    translations_root = mod_root / "Translations"
     pkg_root = mod_root / "Trans To Vostok"
-    locale_dir = pkg_root / args.locale
-    translation_xlsx = locale_dir / "Translation.xlsx"
-    texture_xlsx = locale_dir / "Texture.xlsx"
+    xlsx_locale_dir = translations_root / args.locale
+    output_locale_dir = pkg_root / args.locale
+    translation_xlsx = xlsx_locale_dir / "Translation.xlsx"
+    texture_xlsx = xlsx_locale_dir / "Texture.xlsx"
+    locale_dir = xlsx_locale_dir  # input check below
+    output_dir = output_locale_dir
 
     if not locale_dir.exists():
         print(f"[ERROR] Locale folder not found: {locale_dir}")
@@ -228,7 +231,7 @@ def main() -> int:
     print(f"  Texture contributors     : {len(texture_contrib)}")
     print()
 
-    output_path = Path(args.output).resolve() if args.output else (locale_dir / "Translation_Credit.md")
+    output_path = Path(args.output).resolve() if args.output else (output_dir / "Translation_Credit.md")
     md = build_md(
         args.locale, lead_unique, translation_contrib_unique,
         texture_reworked, texture_contrib,
