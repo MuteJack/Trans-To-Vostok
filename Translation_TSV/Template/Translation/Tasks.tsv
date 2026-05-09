@@ -1,10 +1,10 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
-Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy				
-Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate				
-Tasks	/	difficulty	0	0	0	0	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard				
-Tasks	Generalist/Tutorial/01	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)				
-Tasks	Generalist/Tutorial/01	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy				
-Tasks	Generalist/Tutorial/01	description	0	0	0	0	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					description		"Let's start with something simple.
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy				
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate				
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard				
+Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)				
+Tasks	Generalist/Tutorial/01	difficulty	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy				
+Tasks	Generalist/Tutorial/01	description	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					description		"Let's start with something simple.
 
 Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
 1. Press Start Delivery
@@ -13,9 +13,9 @@ Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery i
 'Canned Pea Soup'
 'Start Delivery'
 'Complete'"		
-Tasks	Generalist/Tutorial/02	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)				
-Tasks	Generalist/Tutorial/02	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate				
-Tasks	Generalist/Tutorial/02	description	0	0	0	0	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
+Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)				
+Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate				
+Tasks	Generalist/Tutorial/02	description	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
 
 Some tasks might require crafting-based delivery items, like this task requires Meatballs (Cooked), which can only be obtained through crafting.
 
@@ -39,9 +39,9 @@ Now you have successfully crafted the required task item and you can complete th
 'Heat'
 'Firepot'
 'Start Input'"		
-Tasks	Generalist/Tutorial/03	name	0	0	0	0	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)				
-Tasks	Generalist/Tutorial/03	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard				
-Tasks	Generalist/Tutorial/03	description	0	0	0	0	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
+Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)				
+Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard				
+Tasks	Generalist/Tutorial/03	description	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
 
 Some items that you might receive from crafting, trading or tasks are Furniture items, which are used for shelter customization.
 
@@ -65,9 +65,9 @@ You can learn more about shelter customization and Furniture Catalog from the tu
 'Complete'
 'tutorial'
 'Shelters'"		
-Tasks	Generalist/01	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time				
-Tasks	Generalist/01	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy				
-Tasks	Generalist/01	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
+Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time				
+Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy				
+Tasks	Generalist/01	description	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
 
 Nevertheless, you’ve arrived at the prime time, because I’m out of toilet paper and the situation is getting urgent.
 
@@ -78,55 +78,55 @@ If you bring me that toilet paper, the TV is yours. It has all the channels pre-
 'cabin'
 'toilet paper'
 'Area 05'"		
-Tasks	Generalist/02	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits				
-Tasks	Generalist/02	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy				
-Tasks	Generalist/02	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					description		"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
+Tasks	Generalist/02	name	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits				
+Tasks	Generalist/02	difficulty	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy				
+Tasks	Generalist/02	description	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					description		"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."		"Please pay attention to the following points when translating:
 'Matches' is the plural form of match (match, noun), not match (verb).
 'pack' may means cigarrete, not a cigar"		
-Tasks	Generalist/03	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains				
-Tasks	Generalist/03	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy				
-Tasks	Generalist/03	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					description		"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
+Tasks	Generalist/03	name	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains				
+Tasks	Generalist/03	difficulty	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy				
+Tasks	Generalist/03	description	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					description		"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
 
 I usually don't complain, but my fucking back is killing me. Every morning when I wake up, it feels like a gunshot directly to my spine. It won't be long until you're just like me and those cursed French cars.
 
 If you happen to find something that could help with my back, I would highly appreciate it."				
-Tasks	Generalist/04	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve				
-Tasks	Generalist/04	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy				
-Tasks	Generalist/04	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					description		"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
+Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve				
+Tasks	Generalist/04	difficulty	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy				
+Tasks	Generalist/04	description	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					description		"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
 
 If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
 
 As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."		"Please pay attention to the following points when translating:
 'Area 05'"		
-Tasks	Generalist/05	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business				
-Tasks	Generalist/05	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate				
-Tasks	Generalist/05	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
+Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business				
+Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate				
+Tasks	Generalist/05	description	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
 
 Since air conditioning, showers and running water are just a faint memory from the past, it's important that you maintain personal hygiene and odor control for the sake of the others. You might wonder why not just go wash in the lake or sea? Well, let me tell you why that's a bad idea.
 
 After the initial explosion, these waters are far from refreshing and there's something nasty going on. I have seen so many dead fish lately that my ass is not going into that water, that's for sure and I highly recommend the same for you.
 
 It’s a sweaty business, but we just have to figure out some alternative methods to stay fresh."				
-Tasks	Generalist/06	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman				
-Tasks	Generalist/06	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate				
-Tasks	Generalist/06	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					description		"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
+Tasks	Generalist/06	name	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman				
+Tasks	Generalist/06	difficulty	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate				
+Tasks	Generalist/06	description	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					description		"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
 
 I'm getting tired of being her handyman, but I promised to help this one last time."		"Please pay attention to the following points when translating:
 'Border Zone'"		
-Tasks	Generalist/07	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack				
-Tasks	Generalist/07	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard				
-Tasks	Generalist/07	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					description		"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
+Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack				
+Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard				
+Tasks	Generalist/07	description	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					description		"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
 
 When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
 
 Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."				
-Tasks	Generalist/08	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend				
-Tasks	Generalist/08	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard				
-Tasks	Generalist/08	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					description		"Want to hear military stories?
+Tasks	Generalist/08	name	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend				
+Tasks	Generalist/08	difficulty	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard				
+Tasks	Generalist/08	description	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					description		"Want to hear military stories?
 
 Back in the day, when I was doing my conscript service, we still had a few of those KP-31's lying around in the warehouse.
 
@@ -134,18 +134,18 @@ One range day, we actually got a chance to test those. We were not allowed to us
 
 Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn, I miss that gun. Someday I will once again reunite with my magical old friend, someday..."		"Please pay attention to the following points when translating:
 'KP-31' is a proper noun (items/weapon)."		
-Tasks	Generalist/09	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip				
-Tasks	Generalist/09	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard				
-Tasks	Generalist/09	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					description		"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
+Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip				
+Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard				
+Tasks	Generalist/09	description	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					description		"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
 
 Have you ever visited the North? What a shame, that place has remained totally unaffected by all this bullshit. It's like nothing ever happened there. I'm talking about pristine nature, wildlife and crystal-clear rivers for catching those juicy arctic trouts.
 
 I would be already driving there, but those filthy Bandits stole my car battery and a bunch of other items from the trunk, so I'm still stuck here.
 
 Maybe you could help me with this? Bring back my stolen items and I have something special for you."				
-Tasks	Generalist/10	name	0	0	0	0	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade				
-Tasks	Generalist/10	difficulty	0	0	0	0	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard				
-Tasks	Generalist/10	description	0	0	0	0	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					description		"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
+Tasks	Generalist/10	name	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade				
+Tasks	Generalist/10	difficulty	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard				
+Tasks	Generalist/10	description	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					description		"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
 
 I already had a large batch for him, but since my trip was delayed, I had to make sure the product didn't spoil in my cellar. After a few ""product-quality"" sips, I got carried away and started drinking and now I have nothing left.
 
@@ -154,57 +154,57 @@ I'm going to need a new batch, but I don't have time right now, so perhaps you c
 If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."		"Please pay attention to the following points when translating:
 `Shaman`
 'Kilju' is a traditional Finnish alcohol"		
-Tasks	Doctor/01	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft				
-Tasks	Doctor/01	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy				
-Tasks	Doctor/01	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					description		"I haven't seen you here before, you must be a new patient?
+Tasks	Doctor/01	name	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft				
+Tasks	Doctor/01	difficulty	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy				
+Tasks	Doctor/01	description	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					description		"I haven't seen you here before, you must be a new patient?
 
 Welcome to my improvised clinic. It ain't much, but with these limited resources, it's the best that we've got.
 
 I used to teach health education for elementary students in this school. It was a long time ago, but I have good memories of this place. The building is old and has seen better days, but I'm sure it can be restored when things settle down.
 
 Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."				
-Tasks	Doctor/02	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands				
-Tasks	Doctor/02	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy				
-Tasks	Doctor/02	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					description		"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
+Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands				
+Tasks	Doctor/02	difficulty	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy				
+Tasks	Doctor/02	description	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					description		"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
 
 Especially in surgeries and working with a scalpel, I often get the shakes and small mistakes here and there are unavoidable. I think it's mostly related to my age, but I have found that smoking a few cigars before the operation keeps my hands more steady.
 
 As a doctor, I do not recommend smoking, but desperate times require desperate actions.
 
 If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."				
-Tasks	Doctor/03	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm				
-Tasks	Doctor/03	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy				
-Tasks	Doctor/03	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					description		"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
+Tasks	Doctor/03	name	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm				
+Tasks	Doctor/03	difficulty	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy				
+Tasks	Doctor/03	description	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					description		"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
 
 On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
 
 I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."				
-Tasks	Doctor/04	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master				
-Tasks	Doctor/04	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy				
-Tasks	Doctor/04	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					description		"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
+Tasks	Doctor/04	name	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master				
+Tasks	Doctor/04	difficulty	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy				
+Tasks	Doctor/04	description	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					description		"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
 
 Just a few years ago, we often went fishing together, but that poor guy has multiple herniated disks, so fishing trips are no longer an option for him. We still have a few other common hobbies like horse races and gambling.
 
 Like you probably already guessed, only one of those is available nowadays, so our friendship is currently purely built on gambling with card and dice games. However, every time we play dice, he always magically wins and I'm starting to wonder if his dices are rigged somehow, since nobody is that lucky.
 
 You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."				
-Tasks	Doctor/05	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery				
-Tasks	Doctor/05	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate				
-Tasks	Doctor/05	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					description		"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
+Tasks	Doctor/05	name	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery				
+Tasks	Doctor/05	difficulty	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate				
+Tasks	Doctor/05	description	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					description		"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
 
 Daytime operations are a walk in the park for me when there's enough light, but at night, it gets more tricky. Operating in dim lighting or sometimes even in total darkness relies more on hand-feel and intuition, but it's always riskier for the patient.
 
 Some sort of bright headlamp would probably solve this issue until the power grid is fully restored. I have tried to find one, but unfortunately no luck so far."				
-Tasks	Doctor/06	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections				
-Tasks	Doctor/06	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate				
-Tasks	Doctor/06	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/06_Infections	tres					description		"You know what one of the most common issues is here? It's infections.
+Tasks	Doctor/06	name	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections				
+Tasks	Doctor/06	difficulty	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate				
+Tasks	Doctor/06	description	0	literal	Traders/Doctor/Tasks/06_Infections	tres					description		"You know what one of the most common issues is here? It's infections.
 
 When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
 
 I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."				
-Tasks	Doctor/07	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia				
-Tasks	Doctor/07	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate				
-Tasks	Doctor/07	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					description		"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
+Tasks	Doctor/07	name	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia				
+Tasks	Doctor/07	difficulty	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate				
+Tasks	Doctor/07	description	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					description		"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
 
 After taking a closer look, the reason was simpler than expected. Correct, it was dehydration and a thing that we doctors call hypovolemia.
 
@@ -212,23 +212,23 @@ Hypovolemia is basically a loss of both salt and water content in your body and 
 
 Whenever you find those saline bottles, always remember to bring them to me and we will surely find some deal that could work for both of us."		"Please pay attention to the following points when translating:
 `Nomad'"		
-Tasks	Doctor/08	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ				
-Tasks	Doctor/08	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard				
-Tasks	Doctor/08	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					description		"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
+Tasks	Doctor/08	name	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ				
+Tasks	Doctor/08	difficulty	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard				
+Tasks	Doctor/08	description	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					description		"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
 
 I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
 
 It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."				
-Tasks	Doctor/09	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report				
-Tasks	Doctor/09	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard				
-Tasks	Doctor/09	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					description		"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
+Tasks	Doctor/09	name	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report				
+Tasks	Doctor/09	difficulty	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard				
+Tasks	Doctor/09	description	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					description		"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
 
 Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."				
-Tasks	Doctor/10	name	0	0	0	0	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance				
-Tasks	Doctor/10	difficulty	0	0	0	0	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard				
-Tasks	Doctor/10	description	0	0	0	0	0	literal	Traders/Doctor/Tasks/10_Substance	tres					description		"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
+Tasks	Doctor/10	name	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance				
+Tasks	Doctor/10	difficulty	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard				
+Tasks	Doctor/10	description	0	literal	Traders/Doctor/Tasks/10_Substance	tres					description		"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
 
 Acrylonitrile is definitely part of the compound, just as the officials claimed, but I have a theory that it’s only one piece of the puzzle. When burning, acrylonitrile releases toxic gases such as hydrogen cyanide and is classified as a C1 carcinogen, but let me explain my theory.
 
@@ -237,75 +237,75 @@ These kinds of organic compounds have extremely pungent odors. Since we are talk
 This means we are looking at some kind of manufactured substance that is far more toxic. I know it’s just a theory, but there’s only one way to find out, we need to find the source.
 
 Since we know it was delivered in oil tank cars, I would visit the nearest oil terminal and check their samples to see if they really contain oil or something else. These oil sample containers are easy to spot, they look like golden milk jugs and there should be plenty of them."				
-Tasks	Gunsmith/01	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers				
-Tasks	Gunsmith/01	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy				
-Tasks	Gunsmith/01	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					description		"Ain't that something? A new man and a new rifle, always a welcome sight.
+Tasks	Gunsmith/01	name	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers				
+Tasks	Gunsmith/01	difficulty	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy				
+Tasks	Gunsmith/01	description	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					description		"Ain't that something? A new man and a new rifle, always a welcome sight.
 
 Forget the small talk. You want something reliable and cheap? Sure, but a few favors first, since you don't climb the ranks immediately around here. Where should we start? There are definitely some supply runs you could do, but you look a bit flimsy, so maybe you need something simple first. Let me think a moment.
 
 Okay, I have an idea. You know in the summertime, those flying suckers start to piss me off. You would assume those bastards would not get into these bunkers, but trust me, they do. Every single summer, there's buzzing around the clock.
 
 Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."				
-Tasks	Gunsmith/02	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal				
-Tasks	Gunsmith/02	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy				
-Tasks	Gunsmith/02	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					description		"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
+Tasks	Gunsmith/02	name	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal				
+Tasks	Gunsmith/02	difficulty	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy				
+Tasks	Gunsmith/02	description	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					description		"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
 
 Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
 
 It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."		"Please pay attention to the following points when translating:
 `mess kit'"		
-Tasks	Gunsmith/03	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade				
-Tasks	Gunsmith/03	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate				
-Tasks	Gunsmith/03	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					description		"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
+Tasks	Gunsmith/03	name	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade				
+Tasks	Gunsmith/03	difficulty	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate				
+Tasks	Gunsmith/03	description	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					description		"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
 
 Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
 
 However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."		"Please pay attention to the following points when translating:
 (Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
 (Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."		
-Tasks	Gunsmith/04	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades				
-Tasks	Gunsmith/04	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate				
-Tasks	Gunsmith/04	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					description		"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
+Tasks	Gunsmith/04	name	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades				
+Tasks	Gunsmith/04	difficulty	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate				
+Tasks	Gunsmith/04	description	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					description		"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
 
 When it comes to blades, the rule is the bigger, the better. I myself prefer machetes that are suitable for wood chopping and clearing obstructions in a dense forest. Even though we're not in a jungle here, you still need a big blade since there will be times when you'll wish you had one.
 
 Collecting blades is also an elegant hobby. I do have quite an extensive collection, but there are still a few big blades that I'm missing."				
-Tasks	Gunsmith/05	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery				
-Tasks	Gunsmith/05	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate				
-Tasks	Gunsmith/05	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					description		"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
+Tasks	Gunsmith/05	name	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery				
+Tasks	Gunsmith/05	difficulty	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate				
+Tasks	Gunsmith/05	description	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					description		"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
 
 When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. Sometimes there are still those annoying customers who seek something more exotic, but it's hard to maintain a stock for every weird request.
 
 Maybe you could do a quick ammo delivery run for me? We could expand the portfolio a bit, so to speak."		"Please pay attention to the following points when translating:
 '7.62x39' and '.223' is untranslatable"		
-Tasks	Gunsmith/06	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery				
-Tasks	Gunsmith/06	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate				
-Tasks	Gunsmith/06	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					description		"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
+Tasks	Gunsmith/06	name	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery				
+Tasks	Gunsmith/06	difficulty	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate				
+Tasks	Gunsmith/06	description	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					description		"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
 
 This has led to a situation where I'm constantly out of stock of those Eastern weapons. It's a damn shame, since I always find their products more reliable compared to the Western ones. You see, in the West, we have an incurable disease of making everything tactical. We add rails, dingles and dongles to everything and the end result is a mess that has too many moving parts.
 
 Since I no longer have those networks active, a quick weapon delivery from the other side would be highly appreciated."		"Please pay attention to the following points when translating:
 Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
 'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."		
-Tasks	Gunsmith/07	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic				
-Tasks	Gunsmith/07	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard				
-Tasks	Gunsmith/07	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					description		"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
+Tasks	Gunsmith/07	name	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic				
+Tasks	Gunsmith/07	difficulty	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard				
+Tasks	Gunsmith/07	description	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					description		"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
 
 I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
 
 My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."		"Please pay attention to the following points when translating:
 'Nomad' is a pronoun of one of the faction
 'IFAK' is a pronoun of item (medical)"		
-Tasks	Gunsmith/08	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection				
-Tasks	Gunsmith/08	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard				
-Tasks	Gunsmith/08	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					description		"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
+Tasks	Gunsmith/08	name	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection				
+Tasks	Gunsmith/08	difficulty	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard				
+Tasks	Gunsmith/08	description	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					description		"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
 
 My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
 
 Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."				
-Tasks	Gunsmith/09	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right				
-Tasks	Gunsmith/09	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard				
-Tasks	Gunsmith/09	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					description		"I recently took a hike out to the Border Zone and collected some mushrooms.
+Tasks	Gunsmith/09	name	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right				
+Tasks	Gunsmith/09	difficulty	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard				
+Tasks	Gunsmith/09	description	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					description		"I recently took a hike out to the Border Zone and collected some mushrooms.
 
 In Finland, we have Everyman’s Rights, which grant us the right to use nature regardless of who owns or occupies the area. It’s probably the best law we have.
 
@@ -313,9 +313,9 @@ However, I have to admit that sometimes I step into a grey area and collect stuf
 
 Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."		"Please pay attention to the following points when translating:
 Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"		
-Tasks	Gunsmith/10	name	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman				
-Tasks	Gunsmith/10	difficulty	0	0	0	0	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard				
-Tasks	Gunsmith/10	description	0	0	0	0	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					description		"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
+Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman				
+Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard				
+Tasks	Gunsmith/10	description	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					description		"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
 
 Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
 

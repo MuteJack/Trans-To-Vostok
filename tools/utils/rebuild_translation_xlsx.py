@@ -10,8 +10,6 @@ Column widths  : unified policy in `tools/width.json`, keyed by HEADER NAME
                  Header names absent from the sheet are silently skipped.
 Conditional formatting (Translation-category sheets only, MetaData skipped):
   - untranslatable = 1                            -> red bg / red text
-  - Transliteration/Transcreation/Machine
-    translated/Confused = 1                       -> yellow bg / yellow text
   - method = substr/static/ignore/literal/Pattern -> green/blue/red/yellow/yellow,red
   - duplicate values in unique_id/text/translation -> red bg / red text
 Group separators (Translation-category sheets only, MetaData skipped):
@@ -210,14 +208,6 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
         ws.conditional_formatting.add(
             f"{col}2:{col}{end_row}",
             _cell_is_rule('"1"', RED_BG, RED_FG),
-        )
-    for header_name in ["Transliteration", "Transcreation", "Machine translated", "Confused"]:
-        col = col_letter(header_name)
-        if not col:
-            continue
-        ws.conditional_formatting.add(
-            f"{col}2:{col}{end_row}",
-            _cell_is_rule('"1"', YELLOW_BG, YELLOW_FG),
         )
     method_col = col_letter("method")
     if method_col:

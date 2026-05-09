@@ -1,59 +1,59 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
-Main_Menu	/	Game Title	1	0	0	0	0	ignore									Road to Vostok	로드 투 보스토크	Subtitle(?) of the Game, that Displayed on Main Menu		
-Main_Menu	/	Game Subtitle	1	0	0	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access	얼리 엑세스	Subtitle(?) of the Game, that Displayed on Main Menu		
-Main_Menu	Compatibility		0	0	0	0	0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	호환 모드	Text that notice user is running the game as 'Compatibility Mode'		
-Main_Menu	Compatibility		0	0	0	0	0	substr									Compatibility	호환성			
-Main_Menu	Compatibility		0	0	0	0	0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility	호환 모드			
-Main_Menu	Compatibility		0	0	0	0	0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility	호환 모드			
-Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	새 게임			
-Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	불러오기			
-Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	튜토리얼			
-Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
+Main_Menu	/	Game Title	0	ignore									Road to Vostok	로드 투 보스토크	Subtitle(?) of the Game, that Displayed on Main Menu		
+Main_Menu	/	Game Subtitle	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access	얼리 엑세스	Subtitle(?) of the Game, that Displayed on Main Menu		
+Main_Menu	Compatibility		0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	호환 모드	Text that notice user is running the game as 'Compatibility Mode'		
+Main_Menu	Compatibility		0	substr									Compatibility	호환성			
+Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility	호환 모드			
+Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility	호환 모드			
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	새 게임			
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	불러오기			
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	튜토리얼			
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
 "	"설정
 "			
-Main_Menu	Main Button	Button	1	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
 "	"로드맵
 "			
-Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
 "	"정보
 "			
-Main_Menu	Main Button	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
 "	"나가기
 "			
-Main_Menu	ChangeLog	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	변경사항			
-Main_Menu	ChangeLog	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
+Main_Menu	ChangeLog	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	변경사항			
+Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
 "	"끄기
 "			
-Main_Menu	ChangeLog	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
+Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
 "	"켜기
 "			
-Main_Menu	Hardware Check	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	하드웨어 확인			
-Main_Menu	Hardware Check	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
+Main_Menu	Hardware Check	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	하드웨어 확인			
+Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
 "	"끄기
 "			
-Main_Menu	Hardware Check	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
+Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
 "	"켜기
 "			
-Main_Menu	Watch Intro	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	인트로 보기			
-Main_Menu	Watch Intro	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
+Main_Menu	Watch Intro	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	인트로 보기			
+Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
 "	"끄기
 "			
-Main_Menu	Watch Intro	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
+Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
 "	"켜기
 "			
-Main_Menu	Menu Music	UI Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	메뉴 음악			
-Main_Menu	Menu Music	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
+Main_Menu	Menu Music	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	메뉴 음악			
+Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
 "	"끄기
 "			
-Main_Menu	Menu Music	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
+Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
 "	"켜기
 "			
-Main_Menu	Bottom	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
 접경 지대를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."			
-Main_Menu	Bottom	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	버전: 0.1.1.3	"Will not use pattern matching. 
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	버전: 0.1.1.3	"Will not use pattern matching. 
 It will act as the ""canaria (bird)"" for the outdated translation."		
-Main_Menu	ChangeLog	UI_Label	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	변경사항			
-Main_Menu	ChangeLog	Scrollable String	0	0	1	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
+Main_Menu	ChangeLog	UI_Label	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	변경사항			
+Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
 Early Access [0.1.0.0] -> Early Access [0.1.1.3]
 ----------------------------------------
 Build name: Road - Build 1
@@ -187,8 +187,8 @@ Hotfix [0.1.1.3]
 [변경됨] 떨어진 아이템이 인벤토리가 아닌 플레이어 앞에 떨어짐 (쉘터)
 ----------------------------------------
 [제거됨] 안정성 향상을 위해 모든 타사/구형 AMD FSR 참조 제거
-----------------------------------------"			
-Main_Menu	ChangeLog	Scrollable String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
+----------------------------------------"		#Machine Translated	
+Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
 Build name: Road - Build 1
@@ -637,21 +637,21 @@ Build type: Release
 [변경됨] 무기 발사 후 잔향/메아리 소리가 더욱 사실적으로 변경되었습니다.
 [변경됨] AI 무기 오디오의 방향 및 비행 오디오가 개선되었습니다.
 [변경됨] 양초를 밟아도 화상을 입는 질병이 더 이상 발생하지 않습니다.
-[변경됨] 헬리콥터 기종이 Mi-8에서 Mi-24(힌드)로 변경되었습니다."	Version 0.1.0.0 (Will be deleted)		
-New Game	Difficulty/Standard	String	0	0	0	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select	선택			
-New Game	/	Button	0	0	0	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected	선택됨			
-New Game	/	Button	0	0	0	0	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	선택됨			
-New Game	/	Button	0	0	0	0	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected	선택됨			
-New Game	/	Button	0	0	0	0	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select	선택됨			
-New Game	/	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	경고!			
-New Game	/	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	기존 저장 파일이 삭제될 것입니다.			
-New Game	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	도로 진입하기			
-New Game	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	← 돌아가기			
-New Game	Difficulty	Section Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	난이도			
-New Game	Difficulty	Section Info	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode	게임플레이 모드			
-New Game	Difficulty	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	text	1115798198	Recommended for new players	초보자에게 권장됨			
-New Game	Difficulty/Standard	SubSection Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Name	Label	text	1943781324	Standard	표준			
-New Game	Difficulty/Standard	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Details	Label	text	1979679371	"- Random start kit
+[변경됨] 헬리콥터 기종이 Mi-8에서 Mi-24(힌드)로 변경되었습니다."	Version 0.1.0.0 (Will be deleted)	#Machine Translated	
+New Game	Difficulty/Standard	String	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select	선택			
+New Game	/	Button	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected	선택됨			
+New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	선택됨			
+New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected	선택됨			
+New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select	선택됨			
+New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	경고!			
+New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	기존 저장 파일이 삭제될 것입니다.			
+New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	도로 진입하기			
+New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	← 돌아가기			
+New Game	Difficulty	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	난이도			
+New Game	Difficulty	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode	게임플레이 모드			
+New Game	Difficulty	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	text	1115798198	Recommended for new players	초보자에게 권장됨			
+New Game	Difficulty/Standard	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Name	Label	text	1943781324	Standard	표준			
+New Game	Difficulty/Standard	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Details	Label	text	1979679371	"- Random start kit
 - Shelter spawn
 - Starts 08:00 with neutral weather
 - All character vitals 100
@@ -660,8 +660,8 @@ New Game	Difficulty/Standard	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Me
 - 오전 8:00시, 보통 날씨에서 시작
 - 캐릭터의 모든 상태 100
 - 보스토크에서의 죽음은 돌이킬 수 없습니다"			
-New Game	Difficulty/Darkness	SubSection Title	1	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	다크니스			
-New Game	Difficulty/Darkness	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	text	113876474	"- No start kit
+New Game	Difficulty/Darkness	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	다크니스			
+New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	text	113876474	"- No start kit
 - Random spawn
 - Random start time & weather
 - Random start vitals
@@ -670,9 +670,9 @@ New Game	Difficulty/Darkness	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Me
 - 무작위 시간 & 날씨에서 시작
 - 무작위의 캐릭터 상태로 시작
 - 보스토크에서의 죽음은 돌이킬 수 없습니다"			
-New Game	Difficulty/Darkness	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	text	1533099300	Select	선택			
-New Game	Difficulty/Ironman	SubSection Title	1	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	text	688804211	Ironman	아이언맨			
-New Game	Difficulty/Ironman	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	text	35357242	"- No start kit
+New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	text	1533099300	Select	선택			
+New Game	Difficulty/Ironman	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	text	688804211	Ironman	아이언맨			
+New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	text	35357242	"- No start kit
 - Random spawn
 - Random start time & weather
 - Random start vitals
@@ -681,247 +681,247 @@ New Game	Difficulty/Ironman	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Men
 - 무작위 시간 & 날씨에서 시작
 - 무작위의 캐릭터 상태로 시작
 - 모든 죽음은 돌이킬 수 없습니다"			
-New Game	Difficulty/Ironman	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select	선택			
-New Game	Season	Section Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	계절			
-New Game	Season	Section Info	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	계절별 모드			
-New Game	Season/Summer	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players	초보자에게 권장됨			
-New Game	Season/Summer	SubSection Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer	여름			
-New Game	Season/Summer	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Details	Label	text	745148717	"- Summer (365 days)
+New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select	선택			
+New Game	Season	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	계절			
+New Game	Season	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	계절별 모드			
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players	초보자에게 권장됨			
+New Game	Season/Summer	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer	여름			
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Details	Label	text	745148717	"- Summer (365 days)
 - No winter
 - Day & night cycle (2.4h IRL)"	"- 여름 (365일)
 - 겨울 없음
 - 낮/밤 주기 (현실시간 기준 2.4시간)"			
-New Game	Season/Summer	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Select	Button	text	762513593	Select	선택			
-New Game	Season/Winter	SubSection Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Name	Label	text	1225530918	Winter	겨울			
-New Game	Season/Winter	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Details	Label	text	1238633642	"- No summer
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Select	Button	text	762513593	Select	선택			
+New Game	Season/Winter	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Name	Label	text	1225530918	Winter	겨울			
+New Game	Season/Winter	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Details	Label	text	1238633642	"- No summer
 - Winter (365 days)
 - Day & night cycle (2.4h IRL)"	"- 여름 없음
 - 겨울 (365일)
 - 낮/밤 주기 (현실시간 기준 2.4시간)"			
-New Game	Season/Winter	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Select	Button	text	1694427365	Select	선택			
-New Game	Season/Dynamic	SubSection Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Name	Label	text	1253705311	Dynamic	동적			
-New Game	Season/Dynamic	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Details	Label	text	32667996	"- Summer / Autumn / Winter / Spring
+New Game	Season/Winter	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Select	Button	text	1694427365	Select	선택			
+New Game	Season/Dynamic	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Name	Label	text	1253705311	Dynamic	동적			
+New Game	Season/Dynamic	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Details	Label	text	32667996	"- Summer / Autumn / Winter / Spring
 - Dynamic season cycle (365 days)
 - Day & night cycle (2.4h IRL)"	"- 여름 / 가을 / 겨울 / 봄
 - 동적인 계절 주기 (365일)
 - 낮/밤 주기 (현실시간 기준 2.4시간)"			
-New Game	Season/Dynamic	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Select	Button	text	338862948	Locked	잠김			
-Settings	/	Page Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Header	Label	text	610266802	Settings	설정			
-Settings	/	Page Subtitle	1	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings/Header	Subheader	Label	text	1190483174	Game options	게임 옵션			
-Settings	/	String	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	.	Pause	Label	text	1032650120	Game Paused	게임 일시중지됨			
-Settings	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Settings_Return	Button	text	1591782435	← Return	← 돌아가기			
-Settings	/	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Return	Button	text	1846128635	← Return	← 돌아가기			
-Settings	/	String	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Warning	Warning	Label	text	942708465	Warning!	경고!			
-Settings	/	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Menu	Button	text	46679138	Continue to Main Menu	메인 메뉴로 이동			
-Settings	/	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game	게임 종료			
-Settings	/	String	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Warning	Detail	Label	text	2090207802	"You are exiting the game outside of the shelter
+New Game	Season/Dynamic	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Select	Button	text	338862948	Locked	잠김			
+Settings	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Header	Label	text	610266802	Settings	설정			
+Settings	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings/Header	Subheader	Label	text	1190483174	Game options	게임 옵션			
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	.	Pause	Label	text	1032650120	Game Paused	게임 일시중지됨			
+Settings	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Settings_Return	Button	text	1591782435	← Return	← 돌아가기			
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Return	Button	text	1846128635	← Return	← 돌아가기			
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning	Warning	Label	text	942708465	Warning!	경고!			
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Menu	Button	text	46679138	Continue to Main Menu	메인 메뉴로 이동			
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game	게임 종료			
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning/Warning	Detail	Label	text	2090207802	"You are exiting the game outside of the shelter
 Current inventory & equipment will be deleted"	"대피소 밖에서 게임을 종료하려 합니다
 현재 소지품 및 장비가 삭제될 것입니다."			
-Settings	Input Settings	Section Title	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings	입력 설정			
-Settings	Input Settings	Element	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse	마우스			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	text	907110992	"Normal
+Settings	Input Settings	Section Title	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings	입력 설정			
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse	마우스			
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	text	907110992	"Normal
 "	"일반
 "			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	text	1620747805	"Inverted
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	text	1620747805	"Inverted
 "	"반전
 "			
-Settings	Input Settings	Element	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint	달리기			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	text	547331103	"Hold
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint	달리기			
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	text	547331103	"Hold
 "	"유지
 "			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	text	503096142	"Toggle
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	text	503096142	"Toggle
 "	"토글
 "			
-Settings	Input Settings	Element	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean	기울이기			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	text	2100503869	"Hold
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean	기울이기			
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	text	2100503869	"Hold
 "	"유지
 "			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
 "	"토글
 "			
-Settings	Input Settings	Element	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	조준			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	조준			
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
 "	"유지
 "			
-Settings	Input Settings	Element Button	0	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
 "	"토글
 "			
-Settings	Input Settings	Button	1	0	0	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults	기본값으로 초기화			
-Settings	#Not Checked	String	0	0	0	1	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input	입력 예시			
-Settings	#Not Checked	String	0	0	0	0	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key	키 입력	Dynamically Changed on Inputs.gd		
-Settings	#Not Checked	String	0	1	0	1	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	키를 입력하세요...	Dynamically Changed on Inputs.gd		
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward	앞으로			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward	뒤로			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left	왼쪽으로			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.right	dict		33	Right	오른쪽으로			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.crouch	dict		34	Crouch	웅크리기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.jump	dict		35	Jump	점프			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.sprint	dict		36	Sprint	달리기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left	왼쪽으로 기울이기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right	오른쪽으로 기울이기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary	주무기 꺼내기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	보조무기 꺼내기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife	칼 꺼내기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1	수류탄 꺼내기 1			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2	수류탄 꺼내기 2			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.weapon_high	dict		44	Raise Weapon	무기 올리기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon	무기 내리기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim	조준			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim	기울여 조준			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	발사			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload	재장전			
-Settings	Input Settings	Scroll Element	0	0	0	1	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check	잔탄 확인			
-Settings	Input Settings	Scroll Element	0	0	0	1	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	조정간 (사격 방식)			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon	무기 살펴보기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert	삽입 준비			
-Settings	Input Settings	Scroll Element	0	0	0	1	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge	탄창 삽입			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.interact	dict		55	Interact	상호작용			
-Settings	Input Settings	Scroll Element	0	0	0	1	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	배치			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	장식 모드			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	손전등			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	야간투시경			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	레이저			
-Settings	Input Settings	Scroll Element	0	0	0	1	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	레일 이동			
-Settings	Input Settings	Scroll Element	0	0	0	1	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	보조 조준경			
-Settings	Input Settings	Scroll Element	1	0	0	0	0	substr	Scripts/Inputs	gd			inputs.interface	dict		63	Interface	인터페이스			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.item_rotate	dict		64	Rotate Item	아이템 회전			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	빠른 옮기기			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	빠른 장착			
-Settings	Input Settings	Scroll Element	0	0	0	0	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	빠른 버리기			
-Settings	Input Settings	Elements	0	0	0	0	0	substr									Left Mouse Button	마우스 좌클릭	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	0	0	0	substr									Right Mouse Button	마우스 우클릭	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	0	0	0	substr									Middle Mouse Button	마우스 휠클릭	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	0	0	0	substr									Mouse Wheel Up	마우스 휠 위로	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	0	0	0	substr									Mouse Wheel Down	마우스 휠 아래로	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	0	0	0	substr									Mouse Thumb Button 1	마우스 엄지 버튼 1	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	0	0	0	substr									Mouse Thumb Button 2	마우스 엄지 버튼 2	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Audio Settings	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	오디오 설정			
-Settings	Audio Settings	Element	1	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	마스터 볼륨			
-Settings	Audio Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	환경음 볼륨			
-Settings	Audio Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume	음악 볼륨			
-Settings	Audio Settings/Music Preset	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset	음악 프리셋			
-Settings	Audio Settings/Music Preset	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	text	1157664360	"Off
+Settings	Input Settings	Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults	기본값으로 초기화			
+Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input	입력 예시			
+Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key	키 입력	Dynamically Changed on Inputs.gd		
+Settings	#Not Checked	String	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	키를 입력하세요...	Dynamically Changed on Inputs.gd		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward	앞으로			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward	뒤로			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left	왼쪽으로			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.right	dict		33	Right	오른쪽으로			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.crouch	dict		34	Crouch	웅크리기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.jump	dict		35	Jump	점프			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.sprint	dict		36	Sprint	달리기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left	왼쪽으로 기울이기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right	오른쪽으로 기울이기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary	주무기 꺼내기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	보조무기 꺼내기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife	칼 꺼내기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1	수류탄 꺼내기 1			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2	수류탄 꺼내기 2			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_high	dict		44	Raise Weapon	무기 올리기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon	무기 내리기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim	조준			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim	기울여 조준			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	발사			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload	재장전			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check	잔탄 확인			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	조정간 (사격 방식)			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon	무기 살펴보기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert	삽입 준비			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge	탄창 삽입			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interact	dict		55	Interact	상호작용			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	배치			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	장식 모드			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	손전등			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	야간투시경			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	레이저			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	레일 이동			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	보조 조준경			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interface	dict		63	Interface	인터페이스			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_rotate	dict		64	Rotate Item	아이템 회전			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	빠른 옮기기			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	빠른 장착			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	빠른 버리기			
+Settings	Input Settings	Elements	0	substr									Left Mouse Button	마우스 좌클릭	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Right Mouse Button	마우스 우클릭	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Middle Mouse Button	마우스 휠클릭	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	마우스 휠 위로	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	마우스 휠 아래로	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	마우스 엄지 버튼 1	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	마우스 엄지 버튼 2	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Audio Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	오디오 설정			
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	마스터 볼륨			
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	환경음 볼륨			
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume	음악 볼륨			
+Settings	Audio Settings/Music Preset	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset	음악 프리셋			
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	text	1157664360	"Off
 "	"끄기
 "			
-Settings	Audio Settings/Music Preset	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	text	145862675	"Dynamic
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	text	145862675	"Dynamic
 "	"동적
 "			
-Settings	Audio Settings/Music Preset	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
 "	"은신처
 "			
-Settings	Audio Settings/Music Preset	Button	0	0	0	1	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
 "	"05 구역
 "			
-Settings	Audio Settings/Music Preset	Button	0	0	0	1	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
 "	"접경지대
 "	"다음 사항에 대해서 번역에 주의하세요:
 해당 버튼의 'Border'은 'Border Zone'을 의미합니다"		
-Settings	Audio Settings/Music Preset	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
 "	"보스토크
 "			
-Settings	Camera Settings	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	카메라 설정			
-Settings	Camera Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	보간			
-Settings	Camera Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	시야각 (FOV)			
-Settings	Camera Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob	화면 흔들림			
-Settings	Camera Settings	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	text	1097446784	"Off
+Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	카메라 설정			
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	보간			
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	시야각 (FOV)			
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob	화면 흔들림			
+Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	text	1097446784	"Off
 "	"끄기
 "			
-Settings	Camera Settings	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	text	875405842	"On
+Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	text	875405842	"On
 "	"켜기
 "			
-Settings	Mouse Settings	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings	마우스 설정			
-Settings	Mouse Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity	시점 감도			
-Settings	Mouse Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity	조준 감도			
-Settings	Mouse Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity	조준경 감도			
-Settings	Color Settings	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings	색상 설정			
-Settings	UI Scaling	Section Title	0	0	0	0	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]	UI 스케일링 [추가 예정]			
-Settings	UI Scaling	Section Title	0	0	0	0	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	UI 스케일링			
-Settings	UI Scaling	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale	인터페이스 크기			
-Settings	UI Scaling	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale	HUD 크기			
-Settings	UI Scaling	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Font	Label	text	1601276621	Font Scale	폰트 크기			
-Settings	Color Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	text	1627739783	Exposure	노출			
-Settings	Color Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	text	1493783365	Contrast	대비			
-Settings	Color Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation	채도			
-Settings	Image Settings	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	Image Settings	이미지 설정			
-Settings	Image Settings	Element	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text	924067924	Sharpness	선명도			
-Settings	HUD	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD	HUD			
-Settings	HUD	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	text	384487481	"Map
+Settings	Mouse Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings	마우스 설정			
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity	시점 감도			
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity	조준 감도			
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity	조준경 감도			
+Settings	Color Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings	색상 설정			
+Settings	UI Scaling	Section Title	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]	UI 스케일링 [추가 예정]			
+Settings	UI Scaling	Section Title	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	UI 스케일링			
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale	인터페이스 크기			
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale	HUD 크기			
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Font	Label	text	1601276621	Font Scale	폰트 크기			
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	text	1627739783	Exposure	노출			
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	text	1493783365	Contrast	대비			
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation	채도			
+Settings	Image Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	Image Settings	이미지 설정			
+Settings	Image Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text	924067924	Sharpness	선명도			
+Settings	HUD	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD	HUD			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	text	384487481	"Map
 "	"지도
 "			
-Settings	HUD	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS	FPS			
-Settings	HUD	Button	0	0	0	1	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals	바이탈			
-Settings	HUD	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical	의료			
-Settings	HUD	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	text	1947205630	Placement	배치			
-Settings	HUD	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor	장식			
-Settings	UI Tooltip	Section Title	1	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip	UI 툴팁			
-Settings	UI Tooltip	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	text	218441862	"On
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS	FPS			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals	바이탈			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical	의료			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	text	1947205630	Placement	배치			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor	장식			
+Settings	UI Tooltip	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip	UI 툴팁			
+Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	text	218441862	"On
 "	"켜기
 "			
-Settings	UI Tooltip	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off	끄기			
-Settings	PIP Scopes	Section Title	0	0	0	1	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes	PIP 조준경			
-Settings	PIP Scopes	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	text	1683999774	"On
+Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off	끄기			
+Settings	PIP Scopes	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes	PIP 조준경			
+Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	text	1683999774	"On
 "	"켜기
 "			
-Settings	PIP Scopes	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	text	1913543227	"Off
+Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	text	1913543227	"Off
 "	"끄기
 "			
-Settings	Detail Shadows	Section Title	0	0	0	1	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows	세부 그림자			
-Settings	Detail Shadows	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On	켜기			
-Settings	Detail Shadows	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	text	509666701	"Off
+Settings	Detail Shadows	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows	세부 그림자			
+Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On	켜기			
+Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	text	509666701	"Off
 "	"끄기
 "			
-Settings	Water Reflections	Section Title	0	0	0	1	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections	수면 반사			
-Settings	Water Reflections	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On	켜기			
-Settings	Water Reflections	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	text	1217670336	"Off
+Settings	Water Reflections	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections	수면 반사			
+Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On	켜기			
+Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	text	1217670336	"Off
 "	"끄기
 "			
-Settings	Ambient Occlusion	Section Title	1	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	앰비언트 오클루전			
-Settings	Ambient Occlusion	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	켜기			
-Settings	Ambient Occlusion	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
+Settings	Ambient Occlusion	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	앰비언트 오클루전			
+Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	켜기			
+Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
 "	"끄기
 "			
-Settings	Display	Section Title	1	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	디스플레이			
-Settings	Display	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	전체 화면			
-Settings	Display	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	창 모드			
-Settings	Display	Element	0	0	0	0	0	pattern									Monitor: {idx}	모니터: {idx}			
-Settings	Display	Element	0	0	0	0	0	pattern									Window: {percent}%	창 크기: {percent}%			
-Settings	Frames	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames	프레임			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_60	Button	text	137610325	60	60			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_120	Button	text	1049440983	120	120			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_200	Button	text	1243526225	200	200			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_300	Button	text	2062662255	300	300			
-Settings	Frames	Button	0	0	0	1	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	text	1956572514	Vsync	수직동기화			
-Settings	Frames	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	무제한			
-Settings	Render Resolution	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	렌더링 해상도			
-Settings	Render Resolution	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	낮음			
-Settings	Render Resolution	Button	0	0	0	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	보통	Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	0	0	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	높음	Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	0	0	1	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	울트라	Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	네이티브			
-Settings	Render Resolution	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	이미지 선명도			
-Settings	Lighting Quality	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	조명 품질			
-Settings	Lighting Quality	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	text	1856829880	Low	낮음			
-Settings	Lighting Quality	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	text	1240839901	Medium	보통			
-Settings	Lighting Quality	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	text	1338458648	High	높음			
-Settings	Lighting Quality	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	text	1687334721	Ultra	울트라			
-Settings	Anti-aliasing	Section Title	1	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	text	2029165260	Anti-aliasing	안티 앨리어싱			
-Settings	Anti-aliasing	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	text	1644486263	Off	끄기			
-Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x	MSAA 2x			
-Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x	MSAA 4x			
-Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x	MSAA 8x			
-Settings	Anti-aliasing	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	SMAA 끄기			
-Settings	Anti-aliasing	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	SMAA 켜기			
-Settings	Exit	Section Title	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	나가기			
-Settings	Exit	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	메인 메뉴			
-Settings	Exit	Button	0	0	0	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
+Settings	Display	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	디스플레이			
+Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	전체 화면			
+Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	창 모드			
+Settings	Display	Element	0	pattern									Monitor: {idx}	모니터: {idx}			
+Settings	Display	Element	0	pattern									Window: {percent}%	창 크기: {percent}%			
+Settings	Frames	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames	프레임			
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_60	Button	text	137610325	60	60			
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_120	Button	text	1049440983	120	120			
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_200	Button	text	1243526225	200	200			
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_300	Button	text	2062662255	300	300			
+Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	text	1956572514	Vsync	수직동기화			
+Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	무제한			
+Settings	Render Resolution	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	렌더링 해상도			
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	낮음			
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	보통	Depricated in 0.1.1.3, will be deleted		
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	높음	Depricated in 0.1.1.3, will be deleted		
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	울트라	Depricated in 0.1.1.3, will be deleted		
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	네이티브			
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	이미지 선명도			
+Settings	Lighting Quality	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	조명 품질			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	text	1856829880	Low	낮음			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	text	1240839901	Medium	보통			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	text	1338458648	High	높음			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	text	1687334721	Ultra	울트라			
+Settings	Anti-aliasing	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	text	2029165260	Anti-aliasing	안티 앨리어싱			
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	text	1644486263	Off	끄기			
+Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x	MSAA 2x			
+Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x	MSAA 4x			
+Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x	MSAA 8x			
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	SMAA 끄기			
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	SMAA 켜기			
+Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	나가기			
+Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	메인 메뉴			
+Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
 "	"게임 종료
 "			
-Roadmap	/	Page Title	1	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	로드맵			
-Roadmap	/	Page Subtitle	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	출시 예정 빌드			
-Roadmap	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	← 돌아가기			
-Roadmap	Build 1	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	빌드 1 | 도로			
-Roadmap	Build 1	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed	완료됨			
-Roadmap	Build 1	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	text	744617097	"•  Early access launch
+Roadmap	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	로드맵			
+Roadmap	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	출시 예정 빌드			
+Roadmap	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	← 돌아가기			
+Roadmap	Build 1	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	빌드 1 | 도로			
+Roadmap	Build 1	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed	완료됨			
+Roadmap	Build 1	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	text	744617097	"•  Early access launch
 •  Gameplay loop
 •  Expanded maps
 •  Dynamic elements
@@ -930,9 +930,9 @@ Roadmap	Build 1	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  확장된 맵
 •  동적 요소
 •  멀티- 은신처 지원"			
-Roadmap	Build 2	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	빌드 2 | 방랑자			
-Roadmap	Build 2	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026	Q3/2026			
-Roadmap	Build 2	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	text	1826473906	"•  Friendly faction
+Roadmap	Build 2	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	빌드 2 | 방랑자			
+Roadmap	Build 2	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026	Q3/2026			
+Roadmap	Build 2	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	text	1826473906	"•  Friendly faction
 •  AI vs. AI combat
 •  AI variants
 •  Driver (Trader)
@@ -941,9 +941,9 @@ Roadmap	Build 2	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  AI 변화
 •  운전사 (상인)
 •  새로운 맵 & 은신처"			
-Roadmap	Build 3	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	빌드 3 | 신호			
-Roadmap	Build 3	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026	Q4/2026			
-Roadmap	Build 3	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	text	1971995323	"•  Quest system
+Roadmap	Build 3	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	빌드 3 | 신호			
+Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026	Q4/2026			
+Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	text	1971995323	"•  Quest system
 •  Lore elements
 •  Civil defence shelters
 •  Grandma (Trader)
@@ -952,9 +952,9 @@ Roadmap	Build 3	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  민방위 대피소
 •  할머니 (상인)
 •  새로운 맵 & 은신처"			
-Roadmap	Build 4	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	빌드 4 | 총잡이			
-Roadmap	Build 4	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	발표 예정			
-Roadmap	Build 4	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
+Roadmap	Build 4	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	빌드 4 | 총잡이			
+Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	발표 예정			
+Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
 •  Bullet penetration
 •  Modding kits
 •  Trader services
@@ -963,9 +963,9 @@ Roadmap	Build 4	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  개조 키트
 •  상인 서비스
 •  새로운 맵 & 은신처"			
-Roadmap	Build 5	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	빌드 5 | 북부			
-Roadmap	Build 5	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	발표 예정			
-Roadmap	Build 5	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	text	1603967771	"•  Dynamic season
+Roadmap	Build 5	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	빌드 5 | 북부			
+Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	발표 예정			
+Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	text	1603967771	"•  Dynamic season
 •  Train system
 •  Hunting & wildlife
 •  Shaman (Trader)
@@ -974,9 +974,9 @@ Roadmap	Build 5	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  야생 & 사냥
 •  샤먼 (상인)
 •  새로운 맵 & 은신처"			
-Roadmap	Build 6	Section Title	1	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	빌드 6 | 어비스			
-Roadmap	Build 6	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	발표 예정			
-Roadmap	Build 6	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
+Roadmap	Build 6	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	빌드 6 | 어비스			
+Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	발표 예정			
+Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
 •  Patrol boats
 •  Scuba gear
 •  Fisherman (Trader)
@@ -985,9 +985,9 @@ Roadmap	Build 6	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  잠수 장비
 •  어부 (상인)
 •  새로운 맵 & 은신처"			
-Roadmap	Build 7	Section Title	1	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	빌드 7 | 에니그마			
-Roadmap	Build 7	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	발표 예정			
-Roadmap	Build 7	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
+Roadmap	Build 7	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	빌드 7 | 에니그마			
+Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	발표 예정			
+Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
 •  SIGINT tools
 •  Transmissions
 •  Scientist (Trader)
@@ -996,9 +996,9 @@ Roadmap	Build 7	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  전송
 •  과학자 (상인)
 •  보스토크 은신처"			
-Roadmap	Build 8	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	빌드 8 | 고요한 밤			
-Roadmap	Build 8	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	발표 예정			
-Roadmap	Build 8	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
+Roadmap	Build 8	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	빌드 8 | 고요한 밤			
+Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	발표 예정			
+Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
 •  World options
 •  Destruction system
 •  FINSOF faction
@@ -1007,19 +1007,19 @@ Roadmap	Build 8	String	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  파괴 시스템
 •  FINSOF 시스템
 •  새로운 맵 & 은신처"			
-About	/	Button	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	← 돌아가기			
-About	Road to Vostok	Section Title	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok	Road to Vostok			
-About	Road to Vostok	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
+About	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	← 돌아가기			
+About	Road to Vostok	Section Title	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok	Road to Vostok			
+About	Road to Vostok	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
 in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 접경 지대를
-배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."			
-About	Developer	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	개발사			
-About	Developer	String	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.	Road to Vostok Ltd.			
-About	Country of origin	Section Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	개발국			
-About	Country of origin	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	핀란드			
-About	Founding date	Section Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	설립일			
-About	Founding date	String	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	2022년 2월			
-About	Copyright & Legal	Section Title	0	0	0	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	저작권 & 법률			
-About	Copyright & Legal	String	0	0	1	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
+배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."		#Machine Translated	
+About	Developer	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	개발사			
+About	Developer	String	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.	Road to Vostok Ltd.			
+About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	개발국			
+About	Country of origin	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	핀란드			
+About	Founding date	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	설립일			
+About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	2022년 2월			
+About	Copyright & Legal	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	저작권 & 법률			
+About	Copyright & Legal	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
 Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
 
 2. Trademarks
@@ -1033,9 +1033,9 @@ Road to Vostok © 2026 Road to Vostok Ltd. 모든 권리 보유.
 Road to Vostok ®은 Road to Vostok Ltd.의 등록 상표입니다.
 
 3. 게임 엔진
-Road to Vostok ®은 오픈 소스 Godot 엔진으로 구동됩니다."			
-About	Engine License (MIT)	Section Title	0	0	0	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	게임 엔진 라이센스 (MIT License)			
-About	Engine License (MIT)	String	0	0	1	1	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/License	MIT	Label	text	921896888	"This game uses Godot Engine, available under the following license:
+Road to Vostok ®은 오픈 소스 Godot 엔진으로 구동됩니다."		#Machine Translated	
+About	Engine License (MIT)	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	게임 엔진 라이센스 (MIT License)			
+About	Engine License (MIT)	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/License	MIT	Label	text	921896888	"This game uses Godot Engine, available under the following license:
 
 Copyright © 2014-present Godot Engine contributors.
 Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
@@ -1072,84 +1072,84 @@ Copyright(c) 2007-2014 Juan Linietsky, Ariel Manzur.
 상품성, 특정 목적에의 적합성 및 비침해에 대한 보증을 포함하되 이에 국한되지 않습니다. 
 어떠한 경우에도 저작자 또는 저작권 보유자는 계약, 불법 행위 또는 기타 사유로 인해 발생하는 
 모든 청구, 손해 또는 기타 책임에 대해 책임을 지지 않습니다. 소프트웨어 또는 소프트웨어의 사용 
-또는 기타 거래와 관련하여 발생하는 모든 책임에 대해서도 책임을 지지 않습니다."			
-Loading	/	String	0	0	0	0	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	로딩중...			
-			0	0	0	0	0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	로딩중...			
-Loading	/	String	0	0	0	0	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...	{scene} 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	인트로 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	오두막 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	튜토리얼 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	메뉴 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	다락방 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	1	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	죽음 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	교실 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	텐트 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	벙커 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	마을 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	고속도로 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	학교 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	전초기지 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	지뢰지대 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	아파트 단지 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	터미널 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	0	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	템플릿 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	#Not Checked	0	0	0	0	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	셰이더 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Intro	/	String	0	0	0	0	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
-Intro	/	String	0	0	0	0	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
-Intro	/	String	0	0	0	0	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
-Intro	/	String	0	0	0	0	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
-Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	캐릭터가 사망했습니다			
-Death	/	String	0	0	0	0	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	모든 세이브 파일이 삭제되었습니다			
-Death	/	String	0	0	0	0	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	캐릭터가 사망했습니다			
-Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	불러오기			
-Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
+또는 기타 거래와 관련하여 발생하는 모든 책임에 대해서도 책임을 지지 않습니다."		#Machine Translated	
+Loading	/	String	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	로딩중...			
+			0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	로딩중...			
+Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...	{scene} 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	인트로 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	오두막 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	튜토리얼 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	메뉴 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	다락방 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	죽음 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	교실 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	텐트 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	벙커 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	마을 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	고속도로 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	학교 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	전초기지 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	지뢰지대 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	아파트 단지 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	터미널 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	템플릿 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	#Not Checked	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	셰이더 로딩중...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Intro	/	String	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
+Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
+Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
+Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]	인트로 스킵하기 [SPACE]			
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	캐릭터가 사망했습니다			
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	모든 세이브 파일이 삭제되었습니다			
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	캐릭터가 사망했습니다			
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	불러오기			
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
 "	"메인 메뉴
 "			
-Death	/	String	0	0	0	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
 "	"나가기
 "			
-/	Scene	Name	1	0	0	0	0	substr									Intro	인트로			
-/	Scene	Name	0	0	0	0	0	substr									Cabin	오두막	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	0	0	0	substr									Shelter	은신처			
-/	Scene	Name	1	0	0	0	0	substr									Tutorial	튜토리얼			
-/	Scene	Name	1	0	0	0	0	substr									Menu	메뉴			
-/	Scene	Name	0	0	0	0	0	substr									Attic	다락방	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	0	0	0	substr									Death	죽음			
-/	Scene	Name	0	0	0	0	0	substr									Classroom	교실	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	0	0	0	substr									Tent	텐트	Defined at Loader.gd: const shelters		
-/	Scene	Name	1	0	0	0	0	substr									Bunker	벙커	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	0	0	0	substr									Village	마을			
-/	Scene	Name	0	0	0	0	0	substr									Area 05	05 구역			
-/	Scene	Name	0	0	0	0	0	substr									Highway	고속도로			
-/	Scene	Name	0	0	0	0	0	substr									School	학교			
-/	Scene	Name	0	0	0	0	0	substr									Outpost	전초기지			
-/	Scene	Name	0	0	0	0	0	substr									Border Zone	접경지대			
-/	Scene	Name	0	0	0	0	0	substr									Minefield	지뢰지대			
-/	Scene	Name	1	0	0	0	0	substr									Apartments	아파트 단지			
-/	Scene	Name	1	0	0	0	0	substr									Terminal	터미널			
-/	Scene	ToolTip	0	0	0	0	0	substr									Tutorial Exit	튜토리얼 나가기			
-/	Scene	Name	1	0	0	0	0	substr									Template	템플릿			
-/	Scene	#Not Checked	1	0	0	0	0	substr									shaders	셰이더			
-NPC	Traders	Name	0	0	0	0	0	substr									Trader	상인			
-NPC	Traders	Name	0	0	0	1	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	잡화상			
-NPC	Traders	Name	0	0	0	0	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	의사			
-NPC	Traders	Name	0	0	0	0	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	총잡이			
-NPC	Traders	Name	0	0	0	0	0	substr									Driver	운전사			
-NPC	Traders	Name	0	0	0	0	0	substr									Grandma	할머니			
-NPC	Traders	Name	0	0	0	0	0	substr									Shaman	샤먼			
-NPC	Traders	Name	0	0	0	0	0	substr									Fisherman	어부			
-NPC	Traders	Name	0	0	0	0	0	substr									Scientist	과학자			
-NPC	Hostile	Name	1	0	0	0	0	substr									Bandit	밴디트	Hostile NPC faction spawned in Area 05;		
-NPC	Hostile	Name	0	0	0	0	0	substr									Guards	경비병	Hostile NPC faction spawned in Border Zone;		
-NPC	Hostile	Name	0	0	0	0	0	substr									Military	군대	Hostile NPC faction spawned in Vostok;		
-NPC	Elite	Name	1	0	0	0	0	substr									Punisher	퍼니셔	Hostile Elite(Boss) NPC spawned in Area 05;		
-/	Weather	Dictionary	0	0	0	0	0	substr									Neutral	보통			
-/	Weather	Dictionary	0	0	0	0	0	substr									Overcast	흐림			
-/	Weather	Dictionary	0	0	0	0	0	substr									Rain	비			
-/	Weather	Dictionary	0	0	0	0	0	substr									Storm	폭풍			
-/	Material	Dictionary	0	0	0	0	0	substr									Generic	일반			
-/	Material	Dictionary	0	0	0	0	0	substr									Wood	나무			
-/	Material	Dictionary	0	0	0	0	0	substr									Metal	금속			
-/	Material	Dictionary	1	0	0	0	0	substr									Concrete	콘크리트			
-/	Material	Dictionary	0	0	0	0	0	substr									Rock	돌			
-/	Material	Dictionary	1	0	0	0	0	substr									Vostok	보스토크			
+/	Scene	Name	0	substr									Intro	인트로			
+/	Scene	Name	0	substr									Cabin	오두막	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Shelter	은신처			
+/	Scene	Name	0	substr									Tutorial	튜토리얼			
+/	Scene	Name	0	substr									Menu	메뉴			
+/	Scene	Name	0	substr									Attic	다락방	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Death	죽음			
+/	Scene	Name	0	substr									Classroom	교실	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Tent	텐트	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Bunker	벙커	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Village	마을			
+/	Scene	Name	0	substr									Area 05	05 구역			
+/	Scene	Name	0	substr									Highway	고속도로			
+/	Scene	Name	0	substr									School	학교			
+/	Scene	Name	0	substr									Outpost	전초기지			
+/	Scene	Name	0	substr									Border Zone	접경지대			
+/	Scene	Name	0	substr									Minefield	지뢰지대			
+/	Scene	Name	0	substr									Apartments	아파트 단지			
+/	Scene	Name	0	substr									Terminal	터미널			
+/	Scene	ToolTip	0	substr									Tutorial Exit	튜토리얼 나가기			
+/	Scene	Name	0	substr									Template	템플릿			
+/	Scene	#Not Checked	0	substr									shaders	셰이더			
+NPC	Traders	Name	0	substr									Trader	상인			
+NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	잡화상			
+NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	의사			
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	총잡이			
+NPC	Traders	Name	0	substr									Driver	운전사			
+NPC	Traders	Name	0	substr									Grandma	할머니			
+NPC	Traders	Name	0	substr									Shaman	샤먼			
+NPC	Traders	Name	0	substr									Fisherman	어부			
+NPC	Traders	Name	0	substr									Scientist	과학자			
+NPC	Hostile	Name	0	substr									Bandit	밴디트	Hostile NPC faction spawned in Area 05;		
+NPC	Hostile	Name	0	substr									Guards	경비병	Hostile NPC faction spawned in Border Zone;		
+NPC	Hostile	Name	0	substr									Military	군대	Hostile NPC faction spawned in Vostok;		
+NPC	Elite	Name	0	substr									Punisher	퍼니셔	Hostile Elite(Boss) NPC spawned in Area 05;		
+/	Weather	Dictionary	0	substr									Neutral	보통			
+/	Weather	Dictionary	0	substr									Overcast	흐림			
+/	Weather	Dictionary	0	substr									Rain	비			
+/	Weather	Dictionary	0	substr									Storm	폭풍			
+/	Material	Dictionary	0	substr									Generic	일반			
+/	Material	Dictionary	0	substr									Wood	나무			
+/	Material	Dictionary	0	substr									Metal	금속			
+/	Material	Dictionary	0	substr									Concrete	콘크리트			
+/	Material	Dictionary	0	substr									Rock	돌			
+/	Material	Dictionary	0	substr									Vostok	보스토크			

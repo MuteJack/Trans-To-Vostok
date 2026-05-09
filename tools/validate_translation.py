@@ -3,7 +3,7 @@ Translation.xlsx validation tool.
 
 Schema (18 columns):
     A. Meta (not used by tool): WHERE, SUB, KIND
-    B. Status flags (validation only): Transliteration, Machine translated, Confused, ignore
+    B. Status flag (validation only): untranslatable
     C. Matching: method, filename, filetype, location, parent, name, type, unique_id
     D. Content: text, translation
     E. Notes (not used by tool): DESCRIPTION
@@ -20,7 +20,7 @@ Checks:
    - For filetype in {tscn, scn}, match against TSV by unique_id
    - text must match exactly including leading/trailing whitespace/newlines (strict)
 3. [WARNING] text ↔ translation leading/trailing whitespace/newline mismatch
-4. [ERROR] flag value validation: Transliteration, Machine translated, Confused, ignore
+4. [ERROR] flag value validation: untranslatable
    - allowed: 0/1/true/false/""
 5. [ERROR] method / field combination validation:
    - static: location/parent/name/type/unique_id required, filetype∈{tscn,scn}
@@ -75,7 +75,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 VALID_FLAGS = {"", "0", "1", "true", "false"}
 
 # flag columns (ignore is replaced by method=ignore)
-FLAG_COLUMNS = ["Transliteration", "Machine translated", "Confused", "untranslatable"]
+FLAG_COLUMNS = ["untranslatable"]
 
 # valid method values (empty string defaults to literal; ignore is treated as exclusion)
 VALID_METHODS = {"", "static", "literal", "pattern", "substr", "ignore"}
@@ -765,7 +765,7 @@ REQUIRED_COLUMNS = [
     "method", "filename", "filetype", "location",
     "parent", "name", "type", "unique_id",
     "text", "translation",
-    "Transliteration", "Machine translated", "Confused", "untranslatable",
+    "untranslatable",
 ]
 
 

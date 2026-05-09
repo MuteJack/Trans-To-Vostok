@@ -1,112 +1,112 @@
-Transliteration	Transcreation	Machine translated	Confused	untranslatable	Category	Sub-Category	Class	text	translation	DESCRIPTION	max_length
-0	0	0	0	1	PROPER	Game	Title	Road to Vostok	Road to Vostok	NEVER translate — official game title; preserve original Latin script (brand identity)	
-0	0	0	0	1	Proper	Game	Development	TBA	발표 예정	#N/A	
-1	0	0	0	0	Proper	Game	System	Player	플레이어	the player character	
-0	0	0	0	0	Place	Area	Intro	Intro	인트로		
-1	0	0	0	0	Place	Area	Tutorial	Tutorial	튜토리얼		
-0	0	0	0	0	Place	Area	Area 05	Area 05	05 구역	event area label	
-0	0	0	0	0	Place	Map	Area 05	Village	마을	starting area; trader Generalist resides here	
-0	0	0	0	0	Place	Map	Area 05	Highway	고속도로	mid-zone; connects Village/School	
-0	0	0	0	0	Place	Map	Area 05	School	학교	mid-zone; trader Doctor returns here	
-0	0	0	0	0	Place	Area	Border Zone	Border Zone	접경지대	same as above	
-0	0	0	0	0	Place	Map	Border Zone	Outpost	전초기지	east-side zone; trader Gunsmith returns here	
-0	0	0	0	0	Place	Map	Border Zone	Minefield	지뢰지대	dangerous zone east of Outpost	
-1	0	0	0	0	Place	Area	Vostok	Vostok	보스토크	end-game permadeath zone (proper noun)	
-0	0	0	0	0	Place	Map	Vostok	Apartments	아파트 단지	late-game residential zone	
-0	0	0	0	0	Place	Map	Vostok	Terminal	터미널	end-of-route zone	
-0	0	0	0	0	Place	Shelter	Shelter	Shelter	은신처	player home/safe area (preferred over 피신처)	
-0	0	0	0	0	Place	Shelter	Area 05	Cabin	오두막	primary shelter (player base)	
-0	0	0	0	0	Place	Shelter	Area 05	Attic	다락방	sub-area	
-0	0	0	0	0	Place	Shelter	Area 05	Classroom	교실	sub-area within School	
-1	0	0	0	0	Place	Shelter	Border Zone	Tent	텐트	secondary/portable shelter	
-1	0	0	0	0	Place	Shelter	Border Zone	Bunker	벙커	sub-area within Outpost	
-0	0	0	0	0	Place	Shelter	Border Zone	Border	접경지대	Label for BGM preset of Border Zone	
-0	0	0	0	0	Place	Shelter	Border Zone	Border	국경		
-0	0	0	0	0	Place	Shelter	#Not Updated Yet	CDS	대피소	"Will be updated at ""Build 4 | Gunslinger"""	
-0	0	0	0	0	NPC	Pet	Pet	Cat	고양이	rescuable companion	
-0	0	0	0	0	NPC	Trader	ALL	Trader	상인	generic trader noun (NOT 상인 통계)	
-0	0	0	0	0	NPC	Trader	Area 05	Generalist	잡화상	Village trader; handles general items	
-0	0	0	0	0	NPC	Trader	Area 05	Doctor	의사	School trader; handles medical	
-1	0	0	0	0	NPC	Trader	Border Zone	Gunsmith	건스미스	alternate (used in some event lines — prefer 총잡이 for consistency, see Events)	
-0	0	0	0	0	NPC	Trader	#Not Updated Yet	Driver	운전사	"Will be updated at ""Build 2 | Nomads"""	
-0	0	0	0	0	NPC	Trader	#Not Updated Yet	Grandma	할머니	"Will be updated at ""Build 3 | Signal"""	
-1	0	0	0	0	NPC	Trader	#Not Updated Yet	Shaman	샤먼	"Will be updated at ""Build 5 | North"""	
-0	0	0	0	0	NPC	Trader	#Not Updated Yet	Fisherman	어부	"Will be updated at ""Build 6 | Abyss"""	
-0	0	0	0	0	NPC	Trader	#Not Updated Yet	Scientist	과학자	"Will be updated at ""Build 7 | Enigma"""	
-1	0	0	0	0	Faction	Hostile	Area 05	Bandit	밴디트	Hostile NPC faction spawned in Area 05;	
-0	0	0	0	0	Faction	Hostile	Border Zone	Guards	경비병	Hostile NPC faction spawned in Border Zone;	
-0	0	0	0	0	Faction	Hostile	Vostok	Military	군대	Hostile NPC faction spawned in Vostok;	
-0	0	0	0	0				Military	군용		
-1	0	0	0	0	Faction	Hostile	Elite	Punisher	퍼니셔	Hostile Elite(Boss) NPC spawned in Area 05;	
-1	0	0	0	0	Status	All	Header	Character	캐릭터	character in general	
-1	0	0	0	0	Status	Vital	Type	Vital	바이탈	vitals system / status	
-0	0	0	0	0	Status	Vital	HUD Setting	Vitals	바이탈	HUD Setting	
-0	0	0	0	0	Status	Vital	Vital	Health	체력	Vital of Health (HP)	
-0	0	0	0	0	Status	Vital	Vital	Energy	기력	Vital of stamina (Hunger)	
-0	0	0	0	0	Status	Vital	Vital	Hydration	수분	Vital of Thirst	
-0	0	0	0	0	Status	Vital	Vital	Mental	정신력	Vital of Mental health	
-0	0	0	0	0	Status	Vital	Vital	Body Temp	체온	Vital of Body Temperature	
-0	0	0	0	0	Status	Vital	Vital	Cat	고양이	Vital of Cat (HP)	
-0	0	0	0	0	Status	Medical	Type	Medical Condition	질병		
-0	0	0	0	0	Status	Medical	Medical	Overweight	중량 초과		
-0	0	0	0	0	Status	Medical	Medical	Starvation	기아		
-0	0	0	0	0	Status	Medical	Medical	Dehydration	탈수		
-0	0	0	0	0	Status	Medical	Medical	Bleeding	출혈		
-0	0	0	0	0	Status	Medical	Medical	Fracture	골절		
-0	0	0	0	0	Status	Medical	Medical	Burn	화상		
-0	0	0	0	0	Status	Medical	Medical	Frostbite	동상		
-0	0	0	0	0	Status	Medical	Medical	Insanity	정신병		
-0	0	0	0	0	Status	Medical	Medical	Poisoning	중독		
-0	0	0	0	0	Status	Medical	Medical	Rupture	파열		
-0	0	0	0	0	Status	Medical	Medical	Headshot	헤드샷		
-0	0	0	0	0	Status	Progression	Type	Progression Stat	진행도		
-0	0	0	0	0	Status	Progression	Progression	Shelters	은신처 수	"This is the number of unlocked ""Shelters"". Since this is the plural form of ""Shelter"", please be careful not to confuse it with other words. "	
-0	0	0	0	0	Status	Progression	Progression	Tasks	의뢰 수		
-0	0	0	0	0	Status	Progression	Progression	Quests	퀘스트 수		
-0	0	0	0	0	Status	Progression	Progression	Civil Defence Shelters	민방위 대피소	"This is the Full Name of CDS, so please be careful not to confuse with other words. Will be updated at ""Build 4 | Gunslinger"""	
-0	0	0	0	0	Status	Progression	Progression	Silent Night	고요한 밤	"Not updated yet. It appears as ""?"" at Status"	
-0	0	0	0	0	Status	Inventory	Type	Inventory Stat	인벤토리 통계		
-0	0	0	0	0	Status	Inventory	Inventory	Carry Capacity	소지 한도		
-0	0	0	0	0	Status	Inventory	Inventory	Inventory Weight	인벤토리 무게		
-0	0	0	0	0	Status	Inventory	Inventory	Inventory Value	인벤토리 가치		
-0	0	0	0	0	Status	Container	Type	Container Stat	보관함 통계		
-0	0	0	0	0	Status	Container	Container	Container Weight	보관함 무게		
-0	0	0	0	0	Status	Container	Container	Container Value	보관함 가치		
-0	0	0	0	0	Status	Equiptments	Type	Equipment Stat	장비 통계		
-0	0	0	0	0	Status	Equiptments	Equipments	Equipment Value	장비 가치		
-0	0	0	0	0	Status	Equiptments	Equipments	Insulation	보온성	tooltip variant of 보온성 — labelled 방한 in tooltip context	
-0	0	0	0	0	Status	Equiptments	Equipments	Dexterity	민첩성		
-0	0	0	0	0	Status	Equiptments	Equipments	Menace	위협 수치		
-0	0	0	0	0	Status	Equiptments	Equipments	CBRN	화생방 수치	CBRN (Chemical / Biological / Radiological / Nuclear) hazard meter	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Primary	주무기	Label of the Primary Weapon	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Secondary	보조무기	Label of the Secondary Weapon	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Knife	칼	Label of the Melee Weapon (Knife)	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Grenade	수류탄	Grenade	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Grenade	수류탄1	Label of the first grenade slot in the Inventory. Check Equipment/Hints/Grenade_A	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Grenade	수류탄2	Label of the second grenade slot in the Inventory. Check Equipment/Hints/Grenade_B	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Backpack	배낭	Label of the Backpack in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Rig	조끼	Label of the Rig/Vest in the Inventory (ex: bullet proof vest)	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Helmet	헬멧	Label of the Helmet in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Head	모자	Label of the Hat/Cap in the Inventory (Not for a helmet)	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Torso	외투	Label of the jacket in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Legs	바지	Label of the Pants in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Belt	벨트	Label of the Belt Pouch in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Feet	신발	Label of the Shoes in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Hands	장갑	Label of the Gloves in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Matches	성냥	Label of the Matcehs/Lighter in the Inventory	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Light	손전등	Label of the Flash Light in the Inventory. (Not for a Matches/Lighter)	
-0	0	0	0	0	Inventory	Equipments	Slot Label	NVG	야투경	Label of the NVG(Night Vision Goggle) in the Inventory. Please use the short form only. Check Equipment/Hints/NVG.	
-0	0	0	0	0	Inventory	Equipments	Slot Label	NVG	야간투시경	Label of the NVG in the Settings/Input. You can choos Full/Short form.	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Night Vision Goggle	야간투시경	Full Name of the NVG	
-0	0	0	0	0	Inventory	Equipments	Slot Label	Time	시계	Label of the Clock(Time) slot in the Inventory.	
-0	0	0	0	0	Container	Body	Asset (Dynamic)	Corpse	시체	Lootable Container	
-0	0	0	0	0	Container	Body	Asset (Static)	Bandit Corpse	밴디트 시체	Lootable corpse; Statically spawned;	
-0	0	0	0	0	Action	Door	ToolTip	[Jammed]	[막힘]		
-0	0	0	0	0	Action	Door	ToolTip	[Occupied]	[사용중]		
-0	0	0	0	0	Action	Door	ToolTip	[Close]	[닫기]		
-0	0	0	0	0	Action	Door	ToolTip	[Open]	[열기]		
-0	0	0	0	0	Action	Electronics	ToolTip	[Turn Off]	[켜기]		
-0	0	0	0	0	Action	Electronics	ToolTip	[Turn On]	[끄기]		
-0	0	0	0	0	Action	Container	ToolTip	[Locked]	[잠김]		
-0	0	0	0	0	UI	All	Button	Off	끄기		
-0	0	0	0	0	UI	All	Button	On	켜기		
+untranslatable	Category	Sub-Category	Class	text	translation	DESCRIPTION	Comments	max_length
+1	PROPER	Game	Title	Road to Vostok	Road to Vostok	NEVER translate — official game title; preserve original Latin script (brand identity)		
+1	Proper	Game	Development	TBA	발표 예정	#N/A		
+0	Proper	Game	System	Player	플레이어	the player character		
+0	Place	Area	Intro	Intro	인트로			
+0	Place	Area	Tutorial	Tutorial	튜토리얼			
+0	Place	Area	Area 05	Area 05	05 구역	event area label		
+0	Place	Map	Area 05	Village	마을	starting area; trader Generalist resides here		
+0	Place	Map	Area 05	Highway	고속도로	mid-zone; connects Village/School		
+0	Place	Map	Area 05	School	학교	mid-zone; trader Doctor returns here		
+0	Place	Area	Border Zone	Border Zone	접경지대	same as above		
+0	Place	Map	Border Zone	Outpost	전초기지	east-side zone; trader Gunsmith returns here		
+0	Place	Map	Border Zone	Minefield	지뢰지대	dangerous zone east of Outpost		
+0	Place	Area	Vostok	Vostok	보스토크	end-game permadeath zone (proper noun)		
+0	Place	Map	Vostok	Apartments	아파트 단지	late-game residential zone		
+0	Place	Map	Vostok	Terminal	터미널	end-of-route zone		
+0	Place	Shelter	Shelter	Shelter	은신처	player home/safe area (preferred over 피신처)		
+0	Place	Shelter	Area 05	Cabin	오두막	primary shelter (player base)		
+0	Place	Shelter	Area 05	Attic	다락방	sub-area		
+0	Place	Shelter	Area 05	Classroom	교실	sub-area within School		
+0	Place	Shelter	Border Zone	Tent	텐트	secondary/portable shelter		
+0	Place	Shelter	Border Zone	Bunker	벙커	sub-area within Outpost		
+0	Place	Shelter	Border Zone	Border	접경지대	Label for BGM preset of Border Zone		
+0	Place	Shelter	Border Zone	Border	국경			
+0	Place	Shelter	#Not Updated Yet	CDS	대피소	"Will be updated at ""Build 4 | Gunslinger"""		
+0	NPC	Pet	Pet	Cat	고양이	rescuable companion		
+0	NPC	Trader	ALL	Trader	상인	generic trader noun (NOT 상인 통계)		
+0	NPC	Trader	Area 05	Generalist	잡화상	Village trader; handles general items		
+0	NPC	Trader	Area 05	Doctor	의사	School trader; handles medical		
+0	NPC	Trader	Border Zone	Gunsmith	건스미스	alternate (used in some event lines — prefer 총잡이 for consistency, see Events)		
+0	NPC	Trader	#Not Updated Yet	Driver	운전사	"Will be updated at ""Build 2 | Nomads"""		
+0	NPC	Trader	#Not Updated Yet	Grandma	할머니	"Will be updated at ""Build 3 | Signal"""		
+0	NPC	Trader	#Not Updated Yet	Shaman	샤먼	"Will be updated at ""Build 5 | North"""		
+0	NPC	Trader	#Not Updated Yet	Fisherman	어부	"Will be updated at ""Build 6 | Abyss"""		
+0	NPC	Trader	#Not Updated Yet	Scientist	과학자	"Will be updated at ""Build 7 | Enigma"""		
+0	Faction	Hostile	Area 05	Bandit	밴디트	Hostile NPC faction spawned in Area 05;		
+0	Faction	Hostile	Border Zone	Guards	경비병	Hostile NPC faction spawned in Border Zone;		
+0	Faction	Hostile	Vostok	Military	군대	Hostile NPC faction spawned in Vostok;		
+0				Military	군용			
+0	Faction	Hostile	Elite	Punisher	퍼니셔	Hostile Elite(Boss) NPC spawned in Area 05;		
+0	Status	All	Header	Character	캐릭터	character in general		
+0	Status	Vital	Type	Vital	바이탈	vitals system / status		
+0	Status	Vital	HUD Setting	Vitals	바이탈	HUD Setting		
+0	Status	Vital	Vital	Health	체력	Vital of Health (HP)		
+0	Status	Vital	Vital	Energy	기력	Vital of stamina (Hunger)		
+0	Status	Vital	Vital	Hydration	수분	Vital of Thirst		
+0	Status	Vital	Vital	Mental	정신력	Vital of Mental health		
+0	Status	Vital	Vital	Body Temp	체온	Vital of Body Temperature		
+0	Status	Vital	Vital	Cat	고양이	Vital of Cat (HP)		
+0	Status	Medical	Type	Medical Condition	질병			
+0	Status	Medical	Medical	Overweight	중량 초과			
+0	Status	Medical	Medical	Starvation	기아			
+0	Status	Medical	Medical	Dehydration	탈수			
+0	Status	Medical	Medical	Bleeding	출혈			
+0	Status	Medical	Medical	Fracture	골절			
+0	Status	Medical	Medical	Burn	화상			
+0	Status	Medical	Medical	Frostbite	동상			
+0	Status	Medical	Medical	Insanity	정신병			
+0	Status	Medical	Medical	Poisoning	중독			
+0	Status	Medical	Medical	Rupture	파열			
+0	Status	Medical	Medical	Headshot	헤드샷			
+0	Status	Progression	Type	Progression Stat	진행도			
+0	Status	Progression	Progression	Shelters	은신처 수	"This is the number of unlocked ""Shelters"". Since this is the plural form of ""Shelter"", please be careful not to confuse it with other words. "		
+0	Status	Progression	Progression	Tasks	의뢰 수			
+0	Status	Progression	Progression	Quests	퀘스트 수			
+0	Status	Progression	Progression	Civil Defence Shelters	민방위 대피소	"This is the Full Name of CDS, so please be careful not to confuse with other words. Will be updated at ""Build 4 | Gunslinger"""		
+0	Status	Progression	Progression	Silent Night	고요한 밤	"Not updated yet. It appears as ""?"" at Status"		
+0	Status	Inventory	Type	Inventory Stat	인벤토리 통계			
+0	Status	Inventory	Inventory	Carry Capacity	소지 한도			
+0	Status	Inventory	Inventory	Inventory Weight	인벤토리 무게			
+0	Status	Inventory	Inventory	Inventory Value	인벤토리 가치			
+0	Status	Container	Type	Container Stat	보관함 통계			
+0	Status	Container	Container	Container Weight	보관함 무게			
+0	Status	Container	Container	Container Value	보관함 가치			
+0	Status	Equiptments	Type	Equipment Stat	장비 통계			
+0	Status	Equiptments	Equipments	Equipment Value	장비 가치			
+0	Status	Equiptments	Equipments	Insulation	보온성	tooltip variant of 보온성 — labelled 방한 in tooltip context		
+0	Status	Equiptments	Equipments	Dexterity	민첩성			
+0	Status	Equiptments	Equipments	Menace	위협 수치			
+0	Status	Equiptments	Equipments	CBRN	화생방 수치	CBRN (Chemical / Biological / Radiological / Nuclear) hazard meter		
+0	Inventory	Equipments	Slot Label	Primary	주무기	Label of the Primary Weapon		
+0	Inventory	Equipments	Slot Label	Secondary	보조무기	Label of the Secondary Weapon		
+0	Inventory	Equipments	Slot Label	Knife	칼	Label of the Melee Weapon (Knife)		
+0	Inventory	Equipments	Slot Label	Grenade	수류탄	Grenade		
+0	Inventory	Equipments	Slot Label	Grenade	수류탄1	Label of the first grenade slot in the Inventory. Check Equipment/Hints/Grenade_A		
+0	Inventory	Equipments	Slot Label	Grenade	수류탄2	Label of the second grenade slot in the Inventory. Check Equipment/Hints/Grenade_B		
+0	Inventory	Equipments	Slot Label	Backpack	배낭	Label of the Backpack in the Inventory		
+0	Inventory	Equipments	Slot Label	Rig	조끼	Label of the Rig/Vest in the Inventory (ex: bullet proof vest)		
+0	Inventory	Equipments	Slot Label	Helmet	헬멧	Label of the Helmet in the Inventory		
+0	Inventory	Equipments	Slot Label	Head	모자	Label of the Hat/Cap in the Inventory (Not for a helmet)		
+0	Inventory	Equipments	Slot Label	Torso	외투	Label of the jacket in the Inventory		
+0	Inventory	Equipments	Slot Label	Legs	바지	Label of the Pants in the Inventory		
+0	Inventory	Equipments	Slot Label	Belt	벨트	Label of the Belt Pouch in the Inventory		
+0	Inventory	Equipments	Slot Label	Feet	신발	Label of the Shoes in the Inventory		
+0	Inventory	Equipments	Slot Label	Hands	장갑	Label of the Gloves in the Inventory		
+0	Inventory	Equipments	Slot Label	Matches	성냥	Label of the Matcehs/Lighter in the Inventory		
+0	Inventory	Equipments	Slot Label	Light	손전등	Label of the Flash Light in the Inventory. (Not for a Matches/Lighter)		
+0	Inventory	Equipments	Slot Label	NVG	야투경	Label of the NVG(Night Vision Goggle) in the Inventory. Please use the short form only. Check Equipment/Hints/NVG.		
+0	Inventory	Equipments	Slot Label	NVG	야간투시경	Label of the NVG in the Settings/Input. You can choos Full/Short form.		
+0	Inventory	Equipments	Slot Label	Night Vision Goggle	야간투시경	Full Name of the NVG		
+0	Inventory	Equipments	Slot Label	Time	시계	Label of the Clock(Time) slot in the Inventory.		
+0	Container	Body	Asset (Dynamic)	Corpse	시체	Lootable Container		
+0	Container	Body	Asset (Static)	Bandit Corpse	밴디트 시체	Lootable corpse; Statically spawned;		
+0	Action	Door	ToolTip	[Jammed]	[막힘]			
+0	Action	Door	ToolTip	[Occupied]	[사용중]			
+0	Action	Door	ToolTip	[Close]	[닫기]			
+0	Action	Door	ToolTip	[Open]	[열기]			
+0	Action	Electronics	ToolTip	[Turn Off]	[켜기]			
+0	Action	Electronics	ToolTip	[Turn On]	[끄기]			
+0	Action	Container	ToolTip	[Locked]	[잠김]			
+0	UI	All	Button	Off	끄기			
+0	UI	All	Button	On	켜기			

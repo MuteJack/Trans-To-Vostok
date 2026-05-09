@@ -141,11 +141,11 @@ the orchestrator just chains them.
 | Row condition | Action |
 | --- | --- |
 | translation already non-empty | skip (preserves human edits / curated entries) |
-| `untranslatable=1` | copy source text to translation; do NOT set Machine translated |
+| `untranslatable=1` | copy source text to translation; do NOT touch Comments |
 | `method=pattern` | skip (regex source can't be machine-translated) |
-| `method=ignore` + text found in DeepL results | use that translation; Machine translated=1 |
+| `method=ignore` + text found in DeepL results | use that translation; append `#Machine Translated` to Comments |
 | `method=ignore` + text NOT in DeepL results | fallback: copy source text (e.g., "Road to Vostok" game title) |
-| regular row + text found | write translation; Machine translated=1 |
+| regular row + text found | write translation; append `#Machine Translated` to Comments |
 
 ### Step 3 — Add the locale to `locale.json`
 

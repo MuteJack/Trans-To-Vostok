@@ -1,4 +1,4 @@
-Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	max_length
+Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
 Tutorial	Billboard	1. Settings	"1. Settings
 
 Welcome to Road to Vostok Tutorial
@@ -13,7 +13,7 @@ You can access Settings with [ESC]
 Through these settings you can change inputs,
 different system values and performance options
 
-?? = Performance options"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)	
+?? = Performance options"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
 Tutorial	Billboard	2. Interface	"2. Interface
 
 Interface is your main UI which contains elements
@@ -25,7 +25,7 @@ If you want more information about an item, icon
 or specific value, you can use Tooltip
 
 Try Tooltip by opening Interface
-and point the character health value"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png				
+and point the character health value"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
 Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -40,7 +40,7 @@ You can open, pick and interact with [MMB]
 When you have items available in Interface, you can 
 choose item actions with Context Menu [RMB]
 
-Open container and try Context Menu with items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png				
+Open container and try Context Menu with items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
 Tutorial	Billboard	4. Equipment	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -54,7 +54,7 @@ You can find equipment slots in Interface
 You can activate equipment slots by 
 moving compatible items to them
 
-Open container and try equipping items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png				
+Open container and try equipping items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
 Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -69,7 +69,7 @@ active and needs to be cured using a medical item
 
 You can see causes, symptoms and cures with Tooltip
 
-Open container and try using some medical items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png				
+Open container and try using some medical items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
 Tutorial	Billboard	6. Weapons	"6. Weapons
 
 Weapons are equipment and they use 
@@ -85,7 +85,7 @@ pistols and SMG's can utilize Secondary slot
 Open container, equip a weapon and draw it
 | [RMB] = Aim (ADS) | [F] = Firemode |
 | [MMB] = Canted aim | [X]=Inspect weapon |
-| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png				
+| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
 Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -102,7 +102,7 @@ or with [R] which fetches a loaded magazine for you
 Open container, use Tooltip to identify the ammo
 and magazine compatibility, Load -> Attach -> Fire
 
-[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png				
+[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
 Tutorial	Billboard	8. Attachments	"8. Attachements
 
 You can customize weapons by attaching 
@@ -117,7 +117,7 @@ identify attachment compatibility and try customizing
 [HOLD CTRL] + [SCROLL] = Optic rail position
 [SCROLL] = LPVO zoom level
 [ALT] = Secondary optic
-[T] = Laser toggle"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png				
+[T] = Laser toggle"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
 Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -132,7 +132,7 @@ grenades with keys [4] and [5]
 You can prepare high throw with [LMB] 
 and low throw with [RMB]
 
-Second press executes and opposite button resets the throw"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png				
+Second press executes and opposite button resets the throw"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
 Tutorial	Billboard	10. Armor	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -150,7 +150,7 @@ try attaching armor plate to the rig like attachments
 |NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
 |NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
 |NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
-|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png				
+|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
 Tutorial	Billboard	11. Traders	"11. Traders
 
 Traders are in-game characters that allow 
@@ -164,7 +164,7 @@ Completing tasks will lower Trader Tax and provide
 you reward items and keys for unlocking new Shelters
 
 Interact with trader Generalist and try 
-trading something and completing a task"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png				
+trading something and completing a task"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
 Tutorial	Billboard	12. AI	"12. AI
 
 AI is divided into three hostile factions which
@@ -178,7 +178,7 @@ Each AI faction has different abilities and
 faction bosses with rare spawn changes
 
 Map instances can spawn maximum of 10 AI's
-once you have eliminated all, you will have peace"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png				
+once you have eliminated all, you will have peace"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
 Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -192,7 +192,7 @@ You can travel through these zones and maps
 through Transitions which have certain travel costs 
 related to character vitals and World Simulation
 
-Transitions are marked with Transition Flags"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png				
+Transitions are marked with Transition Flags"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
 Tutorial	Billboard	14. World Simulation	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -208,7 +208,7 @@ map transitions which increases simulation time
 
 You can see current time with time related items 
 Pick a time item (Alarm Clock) and equip it
-*Simulation time stays locked during Tutorial"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png				
+*Simulation time stays locked during Tutorial"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
 Tutorial	Billboard	15. Shelters	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -222,7 +222,7 @@ All Shelters can be customized with
 Item Placement and Decor Mode
 
 You can use Item Placement with [G] and move 
-furniture by activating Decor Mode with [F1]"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png				
+furniture by activating Decor Mode with [F1]"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
 Tutorial	Billboard	16. Vostok	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -237,4 +237,4 @@ When you travel towards Vostok maps,
 
 When you enter Vostok maps a red 
 Permadeath Skull will also appear 
-in the upper corner of the screen"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/	
+in the upper corner of the screen"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		

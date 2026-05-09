@@ -42,30 +42,23 @@
 | **WHERE**                                                              | 게임 화면 / 영역 분류 (예:`UI`, `Inventory`, `Trader`) | ❌ 분류용 메타데이터                                  |
 | **SUB**                                                                | WHERE 안에서의 하위 분류 (예:`Armor/Armor_Plate_II`)       | ❌ 분류용 메타데이터                                  |
 | **KIND**                                                               | 항목 종류 (예:`Label`, `Button`)                         | ❌ 분류용 메타데이터                                  |
-| Transliteration                                                              | 음역 사용 여부 (1/0)                                         | 필요 시 ✅                                            |
-| Transcreation                                                                | 의역 / 창작 번역 여부 (1/0)                                  | 필요 시 ✅                                            |
-| Machine translated                                                           | 기계 번역 여부 (1/0) — DeepL 결과면 1                       | 검토 후 ✅                                            |
-| Confused                                                                     | 번역 모호 / 확신 부족 표시 (1/0)                             | 필요 시 ✅                                            |
 | untranslatable                                                               | 번역 불가 (예: 코드 식별자)                                  | ❌ 구조적, 변경 금지                                  |
 | **method**                                                             | 매칭 방식 (substr / literal / static / pattern / ignore)     | 일반적으로 ❌ ([4. 새 행 추가](#4-새-행-추가-선택) 참조) |
 | filename / filetype / location / parent / name / type / property / unique_id | RTV 게임 소스의 식별자                                       | ❌ 자동 생성, 변경 금지                               |
 | **text**                                                               | **원문 (영어)**                                        | ❌ 절대 변경 금지                                     |
 | **translation**                                                        | **번역문** — 여기에 번역 입력                         | ✅ 작업 대상                                          |
-| DESCRIPTION                                                                  | 번역가용 메모 / 컨텍스트                                     | 필요 시 ✅                                            |
+| DESCRIPTION                                                                  | 개발자 노트 (영문 통일)                                     | ❌ 번역자가 건드리지 않음                             |
+| Comments                                                                     | 번역자 자유 메모 (DeepL 자동 입력 마커 `#Machine Translated` 포함될 수 있음) | 필요 시 ✅                                            |
 
 ### WHERE / SUB / KIND 는 무엇인가
 
 번역 내용을 게임 내 화면 / 영역별로 **분류**하기 위한 메타데이터입니다. 시트 내 그룹 분리선 (Excel에서 굵은/얇은 가로선) 도 이 컬럼 변경 지점에서 자동 생성. 번역 작업 시에는 **읽기 전용**으로 취급.
 
-### Quality flag (Transliteration / Transcreation / Machine translated / Confused)
+### 번역 품질 검수는 Crowdin에서
 
-번역 품질 / 방식을 표시하는 플래그입니다 (0 또는 1). 본인이 번역한 내용에 대해 정직하게 표시:
+이전 버전에 있던 `Transliteration` / `Transcreation` / `Machine translated` / `Confused` 플래그 컬럼은 제거됨. **검수 상태(승인 여부)는 Crowdin이 관리** — Crowdin Editor에서 ✓ 버튼으로 Approve. xlsx에는 별도 컬럼 없음.
 
-- **DeepL 같은 기계 번역 결과를 그대로 두면 → `Machine translated=1`**
-- **검토 후 다듬은 결과 → `Machine translated=0`** (사람의 번역으로 간주)
-- 음역 (예: "Vostok" → "보스토크") → `Transliteration=1`
-- 창작 의역 → `Transcreation=1`
-- 확신 안 서서 다른 사람 검토 필요 → `Confused=1`
+`Comments` 컬럼은 번역자 자유 메모 + DeepL 출력 표시 (`#Machine Translated`) 용도로만 유지.
 
 ---
 
@@ -73,7 +66,7 @@
 
 1. 작업할 시트 (예: `Items`) 열기
 2. 각 행의 `text` (원문) 보고 → `translation` 셀에 번역 입력
-3. 필요 시 quality flag 갱신
+3. 필요 시 `Comments` 에 메모 (자유). DeepL 자동 시드는 `#Machine Translated` 마커가 미리 들어있을 수 있음 — 검수 후 본인 판단으로 정리
 4. 저장 (Excel 기본 단축키 `Ctrl+S`)
 5. 빌드로 검증:
    ```powershell
@@ -111,7 +104,7 @@
 | text                                                                             | 원문 (게임에 등장하는 영문 그대로) |
 | translation                                                                      | 번역문                             |
 | filename / filetype / location / parent / name / type / property / unique_id     | (substr 행은 비워둬도 됨)          |
-| Transliteration / Transcreation / Machine translated / Confused / untranslatable | 보통 0                             |
+| untranslatable                                                                   | 보통 0                             |
 | DESCRIPTION                                                                      | 왜 이 행을 추가했는지 메모 권장    |
 
 ### 다른 method 는?

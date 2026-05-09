@@ -1,58 +1,58 @@
-WHERE	SUB	KIND	Transliteration	Transcreation	Machine translated	Confused	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
-Main_Menu	/	Game Title	0	0	0	0	0	ignore									Road to Vostok	Road to Vostok	Subtitle(?) of the Game, that Displayed on Main Menu		
-Main_Menu	/	Game Subtitle	0	0	0	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access	Early Access	Subtitle(?) of the Game, that Displayed on Main Menu		
-Main_Menu	Compatibility		0	0	1	0	0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	Compatibilidade	Text that notice user is running the game as 'Compatibility Mode'		
-Main_Menu	Compatibility		0	0	1	0	0	substr									Compatibility	Compatibilidade			
-Main_Menu	Compatibility		0	0	1	0	0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility	Compatibilidade			
-Main_Menu	Compatibility		0	0	1	0	0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility	Compatibilidade			
-Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	Novo jogo			
-Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	Carregar jogo			
-Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	Tutorial			
-Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
+Main_Menu	/	Game Title	0	ignore									Road to Vostok	Road to Vostok	Subtitle(?) of the Game, that Displayed on Main Menu		
+Main_Menu	/	Game Subtitle	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access	Early Access	Subtitle(?) of the Game, that Displayed on Main Menu		
+Main_Menu	Compatibility		0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	Compatibilidade	Text that notice user is running the game as 'Compatibility Mode'	#Machine Translated	
+Main_Menu	Compatibility		0	substr									Compatibility	Compatibilidade		#Machine Translated	
+Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility	Compatibilidade		#Machine Translated	
+Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility	Compatibilidade		#Machine Translated	
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	Novo jogo		#Machine Translated	
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	Carregar jogo		#Machine Translated	
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	Tutorial		#Machine Translated	
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
 "	"Configurações
-"			
-Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
+"		#Machine Translated	
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
 "	"Roteiro
-"			
-Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
+"		#Machine Translated	
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
 "	"Sobre
-"			
-Main_Menu	Main Button	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
+"		#Machine Translated	
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
 "	"Sair
-"			
-Main_Menu	ChangeLog	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	Registro de alterações			
-Main_Menu	ChangeLog	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
+"		#Machine Translated	
+Main_Menu	ChangeLog	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	Registro de alterações		#Machine Translated	
+Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
 "	"Desligado
-"			
-Main_Menu	ChangeLog	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
+"		#Machine Translated	
+Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
 "	"Em
-"			
-Main_Menu	Hardware Check	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	Verificação de hardware			
-Main_Menu	Hardware Check	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
+"		#Machine Translated	
+Main_Menu	Hardware Check	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	Verificação de hardware		#Machine Translated	
+Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
 "	"Desligado
-"			
-Main_Menu	Hardware Check	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
+"		#Machine Translated	
+Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
 "	"Em
-"			
-Main_Menu	Watch Intro	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	Assista à introdução			
-Main_Menu	Watch Intro	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
+"		#Machine Translated	
+Main_Menu	Watch Intro	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	Assista à introdução		#Machine Translated	
+Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
 "	"Desligado
-"			
-Main_Menu	Watch Intro	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
+"		#Machine Translated	
+Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
 "	"Em
-"			
-Main_Menu	Menu Music	UI Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	Menu Música			
-Main_Menu	Menu Music	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
+"		#Machine Translated	
+Main_Menu	Menu Music	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	Menu Música		#Machine Translated	
+Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
 "	"Desligado
-"			
-Main_Menu	Menu Music	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
+"		#Machine Translated	
+Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
 "	"Em
-"			
-Main_Menu	Bottom	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	Road to Vostok ® é uma marca registrada da Road to Vostok Ltd. Todos os direitos reservados © 2026			
-Main_Menu	Bottom	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	Versão: 0.1.1.3	"Will not use pattern matching. 
-It will act as the ""canaria (bird)"" for the outdated translation."		
-Main_Menu	ChangeLog	UI_Label	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	Registro de alterações			
-Main_Menu	ChangeLog	Scrollable String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
+"		#Machine Translated	
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	Road to Vostok ® é uma marca registrada da Road to Vostok Ltd. Todos os direitos reservados © 2026		#Machine Translated	
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	Versão: 0.1.1.3	"Will not use pattern matching. 
+It will act as the ""canaria (bird)"" for the outdated translation."	#Machine Translated	
+Main_Menu	ChangeLog	UI_Label	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	Registro de alterações		#Machine Translated	
+Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
 Early Access [0.1.0.0] -> Early Access [0.1.1.3]
 ----------------------------------------
 Build name: Road - Build 1
@@ -186,8 +186,8 @@ Correção [0.1.1.3]
 [ALTERADO] Itens caídos agora aparecem na frente do jogador em vez de no inventário (Abrigo)
 ----------------------------------------
 [REMOVIDO] Todas as referências a AMD FSR de terceiros/obsoletas para garantir a estabilidade
-----------------------------------------"			
-Main_Menu	ChangeLog	Scrollable String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
+----------------------------------------"		#Machine Translated	
+Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
 Build name: Road - Build 1
@@ -635,21 +635,21 @@ Tipo de compilação: Lançamento
 [ALTERADO] O áudio das armas usa volumes de eco/ressonância mais realistas após o disparo
 [ALTERADO] Várias alterações no áudio das armas da IA para melhorar o áudio direcional e de passagem
 [ALTERADO] Velas não causam mais a condição médica “Queimadura” quando pisadas
-[ALTERADO] O modelo do helicóptero foi alterado de Mi-8 para Mi-24 (Hind)"	Version 0.1.0.0 (Will be deleted)		
-New Game	Difficulty/Standard	String	0	0	1	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select	Selecionar			
-New Game	/	Button	0	0	1	0	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected	Selecionado			
-New Game	/	Button	0	0	1	0	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	Selecionado			
-New Game	/	Button	0	0	1	0	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected	Selecionado			
-New Game	/	Button	0	0	1	0	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select	Selecionar			
-New Game	/	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	Atenção!			
-New Game	/	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	Os arquivos de salvamento existentes serão excluídos			
-New Game	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	Entre na estrada			
-New Game	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	← Voltar			
-New Game	Difficulty	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	Dificuldade			
-New Game	Difficulty	Section Info	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode	Modo de jogo			
-New Game	Difficulty	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	text	1115798198	Recommended for new players	Recomendado para jogadores novatos			
-New Game	Difficulty/Standard	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Name	Label	text	1943781324	Standard	Padrão			
-New Game	Difficulty/Standard	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Details	Label	text	1979679371	"- Random start kit
+[ALTERADO] O modelo do helicóptero foi alterado de Mi-8 para Mi-24 (Hind)"	Version 0.1.0.0 (Will be deleted)	#Machine Translated	
+New Game	Difficulty/Standard	String	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select	Selecionar		#Machine Translated	
+New Game	/	Button	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected	Selecionado		#Machine Translated	
+New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	Selecionado		#Machine Translated	
+New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected	Selecionado		#Machine Translated	
+New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select	Selecionar		#Machine Translated	
+New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	Atenção!		#Machine Translated	
+New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	Os arquivos de salvamento existentes serão excluídos		#Machine Translated	
+New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	Entre na estrada		#Machine Translated	
+New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	← Voltar		#Machine Translated	
+New Game	Difficulty	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	Dificuldade		#Machine Translated	
+New Game	Difficulty	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode	Modo de jogo		#Machine Translated	
+New Game	Difficulty	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	text	1115798198	Recommended for new players	Recomendado para jogadores novatos		#Machine Translated	
+New Game	Difficulty/Standard	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Name	Label	text	1943781324	Standard	Padrão		#Machine Translated	
+New Game	Difficulty/Standard	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Details	Label	text	1979679371	"- Random start kit
 - Shelter spawn
 - Starts 08:00 with neutral weather
 - All character vitals 100
@@ -657,9 +657,9 @@ New Game	Difficulty/Standard	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Me
 - Aparição no abrigo
 - Começa às 08:00 com clima neutro
 - Todos os parâmetros vitais dos personagens em 100
-- Morte permanente em Vostok"			
-New Game	Difficulty/Darkness	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	Escuridão			
-New Game	Difficulty/Darkness	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	text	113876474	"- No start kit
+- Morte permanente em Vostok"		#Machine Translated	
+New Game	Difficulty/Darkness	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	Escuridão		#Machine Translated	
+New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	text	113876474	"- No start kit
 - Random spawn
 - Random start time & weather
 - Random start vitals
@@ -667,10 +667,10 @@ New Game	Difficulty/Darkness	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Me
 - Aparição aleatória
 - Hora de início e condições meteorológicas aleatórias
 - Parâmetros vitais iniciais aleatórios
-- Morte definitiva em Vostok"			
-New Game	Difficulty/Darkness	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	text	1533099300	Select	Selecionar			
-New Game	Difficulty/Ironman	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	text	688804211	Ironman	Ironman			
-New Game	Difficulty/Ironman	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	text	35357242	"- No start kit
+- Morte definitiva em Vostok"		#Machine Translated	
+New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	text	1533099300	Select	Selecionar		#Machine Translated	
+New Game	Difficulty/Ironman	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	text	688804211	Ironman	Ironman		#Machine Translated	
+New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	text	35357242	"- No start kit
 - Random spawn
 - Random start time & weather
 - Random start vitals
@@ -678,248 +678,248 @@ New Game	Difficulty/Ironman	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Men
 - Aparição aleatória
 - Hora de início e condições meteorológicas aleatórias
 - Parâmetros vitais iniciais aleatórios
-- Morte permanente"			
-New Game	Difficulty/Ironman	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select	Selecionar			
-New Game	Season	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	Temporada			
-New Game	Season	Section Info	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	Modo sazonal			
-New Game	Season/Summer	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players	Recomendado para jogadores novatos			
-New Game	Season/Summer	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer	Verão			
-New Game	Season/Summer	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Details	Label	text	745148717	"- Summer (365 days)
+- Morte permanente"		#Machine Translated	
+New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select	Selecionar		#Machine Translated	
+New Game	Season	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	Temporada		#Machine Translated	
+New Game	Season	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	Modo sazonal		#Machine Translated	
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players	Recomendado para jogadores novatos		#Machine Translated	
+New Game	Season/Summer	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer	Verão		#Machine Translated	
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Details	Label	text	745148717	"- Summer (365 days)
 - No winter
 - Day & night cycle (2.4h IRL)"	"- Verão (365 dias)
 - Sem inverno
-- Ciclo de dia e noite (2,4 horas na vida real)"			
-New Game	Season/Summer	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Select	Button	text	762513593	Select	Selecionar			
-New Game	Season/Winter	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Name	Label	text	1225530918	Winter	Inverno			
-New Game	Season/Winter	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Details	Label	text	1238633642	"- No summer
+- Ciclo de dia e noite (2,4 horas na vida real)"		#Machine Translated	
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Select	Button	text	762513593	Select	Selecionar		#Machine Translated	
+New Game	Season/Winter	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Name	Label	text	1225530918	Winter	Inverno		#Machine Translated	
+New Game	Season/Winter	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Details	Label	text	1238633642	"- No summer
 - Winter (365 days)
 - Day & night cycle (2.4h IRL)"	"- Sem verão
 - Inverno (365 dias)
-- Ciclo dia e noite (2,4 h na vida real)"			
-New Game	Season/Winter	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Select	Button	text	1694427365	Select	Selecionar			
-New Game	Season/Dynamic	SubSection Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Name	Label	text	1253705311	Dynamic	Dinâmico			
-New Game	Season/Dynamic	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Details	Label	text	32667996	"- Summer / Autumn / Winter / Spring
+- Ciclo dia e noite (2,4 h na vida real)"		#Machine Translated	
+New Game	Season/Winter	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Select	Button	text	1694427365	Select	Selecionar		#Machine Translated	
+New Game	Season/Dynamic	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Name	Label	text	1253705311	Dynamic	Dinâmico		#Machine Translated	
+New Game	Season/Dynamic	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Details	Label	text	32667996	"- Summer / Autumn / Winter / Spring
 - Dynamic season cycle (365 days)
 - Day & night cycle (2.4h IRL)"	"- Verão / Outono / Inverno / Primavera
 - Ciclo dinâmico das estações (365 dias)
-- Ciclo dia e noite (2,4 horas no mundo real)"			
-New Game	Season/Dynamic	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Select	Button	text	338862948	Locked	Bloqueado			
-Settings	/	Page Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Header	Label	text	610266802	Settings	Configurações			
-Settings	/	Page Subtitle	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings/Header	Subheader	Label	text	1190483174	Game options	Opções do jogo			
-Settings	/	String	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	.	Pause	Label	text	1032650120	Game Paused	Jogo em pausa			
-Settings	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Settings_Return	Button	text	1591782435	← Return	← Voltar			
-Settings	/	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Return	Button	text	1846128635	← Return	← Voltar			
-Settings	/	String	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning	Warning	Label	text	942708465	Warning!	Atenção!			
-Settings	/	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Menu	Button	text	46679138	Continue to Main Menu	Continuar para o menu principal			
-Settings	/	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game	Sair do jogo			
-Settings	/	String	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Warning/Warning	Detail	Label	text	2090207802	"You are exiting the game outside of the shelter
+- Ciclo dia e noite (2,4 horas no mundo real)"		#Machine Translated	
+New Game	Season/Dynamic	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Select	Button	text	338862948	Locked	Bloqueado		#Machine Translated	
+Settings	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Header	Label	text	610266802	Settings	Configurações		#Machine Translated	
+Settings	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings/Header	Subheader	Label	text	1190483174	Game options	Opções do jogo		#Machine Translated	
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	.	Pause	Label	text	1032650120	Game Paused	Jogo em pausa		#Machine Translated	
+Settings	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Settings_Return	Button	text	1591782435	← Return	← Voltar		#Machine Translated	
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Return	Button	text	1846128635	← Return	← Voltar		#Machine Translated	
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning	Warning	Label	text	942708465	Warning!	Atenção!		#Machine Translated	
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Menu	Button	text	46679138	Continue to Main Menu	Continuar para o menu principal		#Machine Translated	
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game	Sair do jogo		#Machine Translated	
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning/Warning	Detail	Label	text	2090207802	"You are exiting the game outside of the shelter
 Current inventory & equipment will be deleted"	"Você está saindo do jogo fora do abrigo
-O inventário e o equipamento atuais serão apagados"			
-Settings	Input Settings	Section Title	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings	Configurações de entrada			
-Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse	Rato			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	text	907110992	"Normal
+O inventário e o equipamento atuais serão apagados"		#Machine Translated	
+Settings	Input Settings	Section Title	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings	Configurações de entrada		#Machine Translated	
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse	Rato		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	text	907110992	"Normal
 "	"Normal
-"			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	text	1620747805	"Inverted
+"		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	text	1620747805	"Inverted
 "	"Invertido
-"			
-Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint	Sprint			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	text	547331103	"Hold
+"		#Machine Translated	
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint	Sprint		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	text	547331103	"Hold
 "	"Aguarde
-"			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	text	503096142	"Toggle
+"		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	text	503096142	"Toggle
 "	"Alternar
-"			
-Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean	Lean			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	text	2100503869	"Hold
+"		#Machine Translated	
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean	Lean		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	text	2100503869	"Hold
 "	"Aguarde
-"			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
+"		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
 "	"Alternar
-"			
-Settings	Input Settings	Element	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	Objetivo			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
+"		#Machine Translated	
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	Objetivo		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
 "	"Aguarde
-"			
-Settings	Input Settings	Element Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
+"		#Machine Translated	
+Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
 "	"Alternar
-"			
-Settings	Input Settings	Button	0	0	1	0	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults	Redefinir para os padrões			
-Settings	#Not Checked	String	0	0	1	0	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input	Exemplo de entrada			
-Settings	#Not Checked	String	0	0	1	0	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key	Tecla de entrada	Dynamically Changed on Inputs.gd		
-Settings	#Not Checked	String	0	0	1	0	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	Pressione a tecla para atribuir...	Dynamically Changed on Inputs.gd		
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward	Avançar			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward	Para trás			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left	Esquerda			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.right	dict		33	Right	Certo			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.crouch	dict		34	Crouch	Agachar-se			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.jump	dict		35	Jump	Ir para			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.sprint	dict		36	Sprint	Sprint			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left	Inclinar para a esquerda			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right	Inclinar para a direita			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary	Empate na primeira fase			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	Empate na repescagem			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife	Faca de desbaste			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1	Pegar a granada 1			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2	Sacar Granada 2			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.weapon_high	dict		44	Raise Weapon	Levantar a arma			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon	Baixar a arma			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim	Objetivo			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim	Mira inclinada			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	Incêndio			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload	Atualizar			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check	Verificação de munição			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	Modo de Fogo			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon	Inspecionar arma			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert	Preparar inserção			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge	Insira o cartucho			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.interact	dict		55	Interact	Interagir			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	Local			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	Modo Decoração			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	Lanterna			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	NVG			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	Laser			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	Movimentação ferroviária			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	Ótica secundária			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.interface	dict		63	Interface	Interface			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_rotate	dict		64	Rotate Item	Girar item			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	Transferência rápida			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	Equipamento Rápido			
-Settings	Input Settings	Scroll Element	0	0	1	0	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	Queda rápida			
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Left Mouse Button	Botão esquerdo do mouse	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Right Mouse Button	Botão direito do mouse	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Middle Mouse Button	Botão do meio do mouse	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Up	Roda do mouse para cima	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Wheel Down	Roda do mouse para baixo	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 1	Botão 1 do polegar do mouse	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	0	1	0	0	substr									Mouse Thumb Button 2	Botão 2 do polegar do mouse	I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Audio Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	Configurações de áudio			
-Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	Volume principal			
-Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	Volume ambiente			
-Settings	Audio Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume	Volume da música			
-Settings	Audio Settings/Music Preset	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset	Predefinição de música			
-Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	text	1157664360	"Off
+"		#Machine Translated	
+Settings	Input Settings	Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults	Redefinir para os padrões		#Machine Translated	
+Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input	Exemplo de entrada		#Machine Translated	
+Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key	Tecla de entrada	Dynamically Changed on Inputs.gd	#Machine Translated	
+Settings	#Not Checked	String	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	Pressione a tecla para atribuir...	Dynamically Changed on Inputs.gd	#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward	Avançar		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward	Para trás		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left	Esquerda		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.right	dict		33	Right	Certo		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.crouch	dict		34	Crouch	Agachar-se		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.jump	dict		35	Jump	Ir para		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.sprint	dict		36	Sprint	Sprint		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left	Inclinar para a esquerda		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right	Inclinar para a direita		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary	Empate na primeira fase		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	Empate na repescagem		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife	Faca de desbaste		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1	Pegar a granada 1		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2	Sacar Granada 2		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_high	dict		44	Raise Weapon	Levantar a arma		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon	Baixar a arma		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim	Objetivo		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim	Mira inclinada		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	Incêndio		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload	Atualizar		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check	Verificação de munição		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	Modo de Fogo		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon	Inspecionar arma		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert	Preparar inserção		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge	Insira o cartucho		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interact	dict		55	Interact	Interagir		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	Local		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	Modo Decoração		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	Lanterna		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	NVG		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	Laser		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	Movimentação ferroviária		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	Ótica secundária		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interface	dict		63	Interface	Interface		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_rotate	dict		64	Rotate Item	Girar item		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	Transferência rápida		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	Equipamento Rápido		#Machine Translated	
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	Queda rápida		#Machine Translated	
+Settings	Input Settings	Elements	0	substr									Left Mouse Button	Botão esquerdo do mouse	I can't find those texts. Maybe dependent on Godot Engine.	#Machine Translated	
+Settings	Input Settings	Elements	0	substr									Right Mouse Button	Botão direito do mouse	I can't find those texts. Maybe dependent on Godot Engine.	#Machine Translated	
+Settings	Input Settings	Elements	0	substr									Middle Mouse Button	Botão do meio do mouse	I can't find those texts. Maybe dependent on Godot Engine.	#Machine Translated	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	Roda do mouse para cima	I can't find those texts. Maybe dependent on Godot Engine.	#Machine Translated	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	Roda do mouse para baixo	I can't find those texts. Maybe dependent on Godot Engine.	#Machine Translated	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	Botão 1 do polegar do mouse	I can't find those texts. Maybe dependent on Godot Engine.	#Machine Translated	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	Botão 2 do polegar do mouse	I can't find those texts. Maybe dependent on Godot Engine.	#Machine Translated	
+Settings	Audio Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	Configurações de áudio		#Machine Translated	
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	Volume principal		#Machine Translated	
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	Volume ambiente		#Machine Translated	
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume	Volume da música		#Machine Translated	
+Settings	Audio Settings/Music Preset	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset	Predefinição de música		#Machine Translated	
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	text	1157664360	"Off
 "	"Desligado
-"			
-Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	text	145862675	"Dynamic
+"		#Machine Translated	
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	text	145862675	"Dynamic
 "	"Dinâmico
-"			
-Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
+"		#Machine Translated	
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
 "	"Abrigo
-"			
-Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
+"		#Machine Translated	
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
 "	"Área 05
-"			
-Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
+"		#Machine Translated	
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
 "	"Fronteira
 "	"다음 사항에 대해서 번역에 주의하세요:
-해당 버튼의 'Border'은 'Border Zone'을 의미합니다"		
-Settings	Audio Settings/Music Preset	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
+해당 버튼의 'Border'은 'Border Zone'을 의미합니다"	#Machine Translated	
+Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
 "	"Vostok
-"			
-Settings	Camera Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	Configurações da câmera			
-Settings	Camera Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	Interpolar			
-Settings	Camera Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	Campo de visão			
-Settings	Camera Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob	Movimento da cabeça			
-Settings	Camera Settings	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	text	1097446784	"Off
+"		#Machine Translated	
+Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	Configurações da câmera		#Machine Translated	
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	Interpolar		#Machine Translated	
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	Campo de visão		#Machine Translated	
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob	Movimento da cabeça		#Machine Translated	
+Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	text	1097446784	"Off
 "	"Desligado
-"			
-Settings	Camera Settings	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	text	875405842	"On
+"		#Machine Translated	
+Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	text	875405842	"On
 "	"Em
-"			
-Settings	Mouse Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings	Configurações do mouse			
-Settings	Mouse Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity	Sensibilidade do olhar			
-Settings	Mouse Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity	Sensibilidade da mira			
-Settings	Mouse Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity	Sensibilidade do osciloscópio			
-Settings	Color Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings	Configurações de cor			
-Settings	UI Scaling	Section Title	0	0	1	0	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]	Escalonamento da interface do usuário [Em breve]			
-Settings	UI Scaling	Section Title	0	0	1	0	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	Escalonamento da interface do usuário			
-Settings	UI Scaling	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale	Escala da interface			
-Settings	UI Scaling	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale	Escala HUD			
-Settings	UI Scaling	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Font	Label	text	1601276621	Font Scale	Escala da fonte			
-Settings	Color Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	text	1627739783	Exposure	Exposição			
-Settings	Color Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	text	1493783365	Contrast	Contraste			
-Settings	Color Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation	Saturação			
-Settings	Image Settings	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	Image Settings	Configurações de imagem			
-Settings	Image Settings	Element	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text	924067924	Sharpness	Nitidez			
-Settings	HUD	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD	HUD			
-Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	text	384487481	"Map
+"		#Machine Translated	
+Settings	Mouse Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings	Configurações do mouse		#Machine Translated	
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity	Sensibilidade do olhar		#Machine Translated	
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity	Sensibilidade da mira		#Machine Translated	
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity	Sensibilidade do osciloscópio		#Machine Translated	
+Settings	Color Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings	Configurações de cor		#Machine Translated	
+Settings	UI Scaling	Section Title	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]	Escalonamento da interface do usuário [Em breve]		#Machine Translated	
+Settings	UI Scaling	Section Title	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	Escalonamento da interface do usuário		#Machine Translated	
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale	Escala da interface		#Machine Translated	
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale	Escala HUD		#Machine Translated	
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Font	Label	text	1601276621	Font Scale	Escala da fonte		#Machine Translated	
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	text	1627739783	Exposure	Exposição		#Machine Translated	
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	text	1493783365	Contrast	Contraste		#Machine Translated	
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation	Saturação		#Machine Translated	
+Settings	Image Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	Image Settings	Configurações de imagem		#Machine Translated	
+Settings	Image Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text	924067924	Sharpness	Nitidez		#Machine Translated	
+Settings	HUD	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD	HUD		#Machine Translated	
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	text	384487481	"Map
 "	"Mapa
-"			
-Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS	FPS			
-Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals	Dados vitais			
-Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical	Médico			
-Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	text	1947205630	Placement	Colocação			
-Settings	HUD	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor	Decoração			
-Settings	UI Tooltip	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip	Dica de interface do usuário			
-Settings	UI Tooltip	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	text	218441862	"On
+"		#Machine Translated	
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS	FPS		#Machine Translated	
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals	Dados vitais		#Machine Translated	
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical	Médico		#Machine Translated	
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	text	1947205630	Placement	Colocação		#Machine Translated	
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor	Decoração		#Machine Translated	
+Settings	UI Tooltip	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip	Dica de interface do usuário		#Machine Translated	
+Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	text	218441862	"On
 "	"Em
-"			
-Settings	UI Tooltip	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off	Desligado			
-Settings	PIP Scopes	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes	Âmbitos do PIP			
-Settings	PIP Scopes	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	text	1683999774	"On
+"		#Machine Translated	
+Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off	Desligado		#Machine Translated	
+Settings	PIP Scopes	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes	Âmbitos do PIP		#Machine Translated	
+Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	text	1683999774	"On
 "	"Em
-"			
-Settings	PIP Scopes	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	text	1913543227	"Off
+"		#Machine Translated	
+Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	text	1913543227	"Off
 "	"Desligado
-"			
-Settings	Detail Shadows	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows	Sombras detalhadas			
-Settings	Detail Shadows	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On	Em			
-Settings	Detail Shadows	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	text	509666701	"Off
+"		#Machine Translated	
+Settings	Detail Shadows	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows	Sombras detalhadas		#Machine Translated	
+Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On	Em		#Machine Translated	
+Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	text	509666701	"Off
 "	"Desligado
-"			
-Settings	Water Reflections	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections	Reflexos na água			
-Settings	Water Reflections	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On	Em			
-Settings	Water Reflections	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	text	1217670336	"Off
+"		#Machine Translated	
+Settings	Water Reflections	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections	Reflexos na água		#Machine Translated	
+Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On	Em		#Machine Translated	
+Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	text	1217670336	"Off
 "	"Desligado
-"			
-Settings	Ambient Occlusion	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	Oclusão ambiental			
-Settings	Ambient Occlusion	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	Em			
-Settings	Ambient Occlusion	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
+"		#Machine Translated	
+Settings	Ambient Occlusion	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	Oclusão ambiental		#Machine Translated	
+Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	Em		#Machine Translated	
+Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
 "	"Desligado
-"			
-Settings	Display	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	Exibir			
-Settings	Display	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	Tela inteira			
-Settings	Display	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	Em janela			
-Settings	Display	Element	0	0	0	0	0	pattern									Monitor: {idx}				
-Settings	Display	Element	0	0	0	0	0	pattern									Window: {percent}%				
-Settings	Frames	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames	Molduras			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_60	Button	text	137610325	60	60			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_120	Button	text	1049440983	120	120			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_200	Button	text	1243526225	200	200			
-Settings	Frames	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_300	Button	text	2062662255	300	300			
-Settings	Frames	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	text	1956572514	Vsync	Vsync			
-Settings	Frames	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	Ilimitado			
-Settings	Render Resolution	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	Resolução da renderização			
-Settings	Render Resolution	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	Baixo			
-Settings	Render Resolution	Button	0	0	1	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	Médio	Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	0	1	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	Alto	Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	0	1	0	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	Ultra	Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	Nativo			
-Settings	Render Resolution	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	Nitidez da imagem			
-Settings	Lighting Quality	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	Qualidade da iluminação			
-Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	text	1856829880	Low	Baixo			
-Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	text	1240839901	Medium	Médio			
-Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	text	1338458648	High	Alto			
-Settings	Lighting Quality	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	text	1687334721	Ultra	Ultra			
-Settings	Anti-aliasing	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	text	2029165260	Anti-aliasing	Suavização de bordas			
-Settings	Anti-aliasing	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	text	1644486263	Off	Desligado			
-Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x	MSAA 2x			
-Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x	MSAA 4x			
-Settings	Anti-aliasing	Button	0	0	0	0	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x	MSAA 8x			
-Settings	Anti-aliasing	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	SMAA desativado			
-Settings	Anti-aliasing	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	SMAA ativado			
-Settings	Exit	Section Title	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	Sair			
-Settings	Exit	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	Menu principal			
-Settings	Exit	Button	0	0	1	0	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
+"		#Machine Translated	
+Settings	Display	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	Exibir		#Machine Translated	
+Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	Tela inteira		#Machine Translated	
+Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	Em janela		#Machine Translated	
+Settings	Display	Element	0	pattern									Monitor: {idx}				
+Settings	Display	Element	0	pattern									Window: {percent}%				
+Settings	Frames	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames	Molduras		#Machine Translated	
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_60	Button	text	137610325	60	60			
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_120	Button	text	1049440983	120	120			
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_200	Button	text	1243526225	200	200			
+Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_300	Button	text	2062662255	300	300			
+Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	text	1956572514	Vsync	Vsync		#Machine Translated	
+Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	Ilimitado		#Machine Translated	
+Settings	Render Resolution	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	Resolução da renderização		#Machine Translated	
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	Baixo		#Machine Translated	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	Médio	Depricated in 0.1.1.3, will be deleted	#Machine Translated	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	Alto	Depricated in 0.1.1.3, will be deleted	#Machine Translated	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	Ultra	Depricated in 0.1.1.3, will be deleted	#Machine Translated	
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	Nativo		#Machine Translated	
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	Nitidez da imagem		#Machine Translated	
+Settings	Lighting Quality	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	Qualidade da iluminação		#Machine Translated	
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	text	1856829880	Low	Baixo		#Machine Translated	
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	text	1240839901	Medium	Médio		#Machine Translated	
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	text	1338458648	High	Alto		#Machine Translated	
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	text	1687334721	Ultra	Ultra		#Machine Translated	
+Settings	Anti-aliasing	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	text	2029165260	Anti-aliasing	Suavização de bordas		#Machine Translated	
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	text	1644486263	Off	Desligado		#Machine Translated	
+Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x	MSAA 2x			
+Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x	MSAA 4x			
+Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x	MSAA 8x			
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	SMAA desativado		#Machine Translated	
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	SMAA ativado		#Machine Translated	
+Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	Sair		#Machine Translated	
+Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	Menu principal		#Machine Translated	
+Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
 "	"Sair do jogo
-"			
-Roadmap	/	Page Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	Roteiro			
-Roadmap	/	Page Subtitle	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	Próximas versões			
-Roadmap	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	← Voltar			
-Roadmap	Build 1	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	Versão 1 | Estrada			
-Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed	Concluído			
-Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	text	744617097	"•  Early access launch
+"		#Machine Translated	
+Roadmap	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	Roteiro		#Machine Translated	
+Roadmap	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	Próximas versões		#Machine Translated	
+Roadmap	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	← Voltar		#Machine Translated	
+Roadmap	Build 1	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	Versão 1 | Estrada		#Machine Translated	
+Roadmap	Build 1	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed	Concluído		#Machine Translated	
+Roadmap	Build 1	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	text	744617097	"•  Early access launch
 •  Gameplay loop
 •  Expanded maps
 •  Dynamic elements
@@ -927,10 +927,10 @@ Roadmap	Build 1	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Ciclo de jogabilidade
 •  Mapas ampliados
 •  Elementos dinâmicos
-•  Suporte a múltiplos abrigos"			
-Roadmap	Build 2	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	Versão 2 | Nômades			
-Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026	3º trimestre de 2026			
-Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	text	1826473906	"•  Friendly faction
+•  Suporte a múltiplos abrigos"		#Machine Translated	
+Roadmap	Build 2	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	Versão 2 | Nômades		#Machine Translated	
+Roadmap	Build 2	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026	3º trimestre de 2026		#Machine Translated	
+Roadmap	Build 2	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	text	1826473906	"•  Friendly faction
 •  AI vs. AI combat
 •  AI variants
 •  Driver (Trader)
@@ -938,10 +938,10 @@ Roadmap	Build 2	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Combate IA x IA
 •  Variantes de IA
 •  Motorista (Comerciante)
-•  Novo mapa e abrigo"			
-Roadmap	Build 3	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	Versão 3 | Signal			
-Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026	4º trimestre de 2026			
-Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	text	1971995323	"•  Quest system
+•  Novo mapa e abrigo"		#Machine Translated	
+Roadmap	Build 3	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	Versão 3 | Signal		#Machine Translated	
+Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026	4º trimestre de 2026		#Machine Translated	
+Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	text	1971995323	"•  Quest system
 •  Lore elements
 •  Civil defence shelters
 •  Grandma (Trader)
@@ -949,10 +949,10 @@ Roadmap	Build 3	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Elementos da história
 •  Abrigos de defesa civil
 •  Vovó (Comerciante)
-•  Novo mapa e abrigo"			
-Roadmap	Build 4	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	Versão 4 | Pistoleiro			
-Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	A definir			
-Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
+•  Novo mapa e abrigo"		#Machine Translated	
+Roadmap	Build 4	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	Versão 4 | Pistoleiro		#Machine Translated	
+Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	A definir		#Machine Translated	
+Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
 •  Bullet penetration
 •  Modding kits
 •  Trader services
@@ -960,10 +960,10 @@ Roadmap	Build 4	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Penetração de balas
 •  Kits de modificação
 •  Serviços de comerciantes
-•  Novo mapa e abrigo"			
-Roadmap	Build 5	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	Versão 5 | Norte			
-Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	A definir			
-Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	text	1603967771	"•  Dynamic season
+•  Novo mapa e abrigo"		#Machine Translated	
+Roadmap	Build 5	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	Versão 5 | Norte		#Machine Translated	
+Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	A definir		#Machine Translated	
+Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	text	1603967771	"•  Dynamic season
 •  Train system
 •  Hunting & wildlife
 •  Shaman (Trader)
@@ -971,10 +971,10 @@ Roadmap	Build 5	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Sistema de trens
 •  Caça e vida selvagem
 •  Xamã (Comerciante)
-•  Novo mapa e abrigo"			
-Roadmap	Build 6	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	Versão 6 | Abyss			
-Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	A definir			
-Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
+•  Novo mapa e abrigo"		#Machine Translated	
+Roadmap	Build 6	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	Versão 6 | Abyss		#Machine Translated	
+Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	A definir		#Machine Translated	
+Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
 •  Patrol boats
 •  Scuba gear
 •  Fisherman (Trader)
@@ -982,10 +982,10 @@ Roadmap	Build 6	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Barcos de patrulha
 •  Equipamento de mergulho
 •  Pescador (Comerciante)
-•  Novo mapa e abrigo"			
-Roadmap	Build 7	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	Versão 7 | Enigma			
-Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	A definir			
-Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
+•  Novo mapa e abrigo"		#Machine Translated	
+Roadmap	Build 7	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	Versão 7 | Enigma		#Machine Translated	
+Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	A definir		#Machine Translated	
+Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
 •  SIGINT tools
 •  Transmissions
 •  Scientist (Trader)
@@ -993,10 +993,10 @@ Roadmap	Build 7	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Ferramentas SIGINT
 •  Transmissões
 •  Cientista (Comerciante)
-•  Abrigo Vostok"			
-Roadmap	Build 8	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	Versão 8 | Noite Silenciosa			
-Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	A definir			
-Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
+•  Abrigo Vostok"		#Machine Translated	
+Roadmap	Build 8	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	Versão 8 | Noite Silenciosa		#Machine Translated	
+Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	A definir		#Machine Translated	
+Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
 •  World options
 •  Destruction system
 •  FINSOF faction
@@ -1004,20 +1004,20 @@ Roadmap	Build 8	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Bu
 •  Opções do mundo
 •  Sistema de destruição
 •  Facção FINSOF
-•  Novo mapa e abrigo"			
-About	/	Button	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	← Voltar			
-About	Road to Vostok	Section Title	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok	Road to Vostok			
-About	Road to Vostok	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
+•  Novo mapa e abrigo"		#Machine Translated	
+About	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	← Voltar		#Machine Translated	
+About	Road to Vostok	Section Title	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok	Road to Vostok			
+About	Road to Vostok	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
 in a post-apocalyptic border zone between Finland and Russia"	"Road to Vostok ® é um jogo hardcore de sobrevivência para um jogador ambientado 
-em uma zona fronteiriça pós-apocalíptica entre a Finlândia e a Rússia"			
-About	Developer	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	Desenvolvedor			
-About	Developer	String	0	0	0	0	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.	Road to Vostok Ltd.			
-About	Country of origin	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	País de origem			
-About	Country of origin	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	Finlândia			
-About	Founding date	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	Data de fundação			
-About	Founding date	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	Fevereiro de 2022			
-About	Copyright & Legal	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	Direitos autorais e informações legais			
-About	Copyright & Legal	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
+em uma zona fronteiriça pós-apocalíptica entre a Finlândia e a Rússia"		#Machine Translated	
+About	Developer	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	Desenvolvedor		#Machine Translated	
+About	Developer	String	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.	Road to Vostok Ltd.			
+About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	País de origem		#Machine Translated	
+About	Country of origin	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	Finlândia		#Machine Translated	
+About	Founding date	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	Data de fundação		#Machine Translated	
+About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	Fevereiro de 2022		#Machine Translated	
+About	Copyright & Legal	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	Direitos autorais e informações legais		#Machine Translated	
+About	Copyright & Legal	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
 Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
 
 2. Trademarks
@@ -1031,9 +1031,9 @@ Road to Vostok © 2026 Road to Vostok Ltd. Todos os direitos reservados.
 Road to Vostok ® é uma marca registrada da Road to Vostok Ltd.
 
 3. Motor gráfico
-Road to Vostok ® é desenvolvido com o motor gráfico de código aberto Godot"			
-About	Engine License (MIT)	Section Title	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	Licença do Engine (MIT)			
-About	Engine License (MIT)	String	0	0	1	0	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/License	MIT	Label	text	921896888	"This game uses Godot Engine, available under the following license:
+Road to Vostok ® é desenvolvido com o motor gráfico de código aberto Godot"		#Machine Translated	
+About	Engine License (MIT)	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	Licença do Engine (MIT)		#Machine Translated	
+About	Engine License (MIT)	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/License	MIT	Label	text	921896888	"This game uses Godot Engine, available under the following license:
 
 Copyright © 2014-present Godot Engine contributors.
 Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
@@ -1075,84 +1075,84 @@ ADEQUAÇÃO A UM DETERMINADO FIM E NÃO VIOLAÇÃO. EM NENHUMA CIRCUNSTÂNCIA OS
 AUTORES OU TITULARES DOS DIREITOS AUTORAIS SERÃO RESPONSÁVEIS POR QUALQUER RECLAMAÇÃO, DANOS OU OUTRA
 RESPONSABILIDADE, SEJA EM AÇÃO CONTRATUAL, DELITUAL OU DE OUTRA NATUREZA, DECORRENTE DE,
 EM RELAÇÃO A OU CONEXA COM O SOFTWARE OU COM O USO OU OUTRAS TRANSAÇÕES RELACIONADAS AO
-SOFTWARE."			
-Loading	/	String	0	0	1	0	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	Carregando...			
-			0	0	1	0	0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	Carregando...			
-Loading	/	String	0	0	0	0	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	Carregando a introdução...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	Carregando a cabine...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	Carregando o tutorial...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	Carregando o menu...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	Carregando o sótão...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	Carregando Morte...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	Carregando a sala de aula...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	Carregando a tenda...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	Carregando o bunker...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	Carregando Village...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	Carregando a rodovia...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	Carregando a escola...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	Carregando o Posto Avançado...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	Carregando Minefield...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	Carregando apartamentos...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	Carregando o terminal...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	0	1	0	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	Carregando modelo...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	#Not Checked	0	0	1	0	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	Carregando shaders...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Intro	/	String	0	0	1	0	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]			
-Intro	/	String	0	0	1	0	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]			
-Intro	/	String	0	0	1	0	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]			
-Intro	/	String	0	0	1	0	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]			
-Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	O personagem morreu			
-Death	/	String	0	0	1	0	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	Todos os arquivos salvos foram excluídos			
-Death	/	String	0	0	1	0	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	O personagem morreu			
-Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	Carregar jogo			
-Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
+SOFTWARE."		#Machine Translated	
+Loading	/	String	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	Carregando...		#Machine Translated	
+			0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	Carregando...		#Machine Translated	
+Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	Carregando a introdução...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	Carregando a cabine...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	Carregando o tutorial...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	Carregando o menu...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	Carregando o sótão...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	Carregando Morte...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	Carregando a sala de aula...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	Carregando a tenda...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	Carregando o bunker...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	Carregando Village...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	Carregando a rodovia...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	Carregando a escola...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	Carregando o Posto Avançado...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	Carregando Minefield...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	Carregando apartamentos...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	Carregando o terminal...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	Carregando modelo...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Loading	/	#Not Checked	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	Carregando shaders...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
+Intro	/	String	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]		#Machine Translated	
+Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]		#Machine Translated	
+Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]		#Machine Translated	
+Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]		#Machine Translated	
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	O personagem morreu		#Machine Translated	
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	Todos os arquivos salvos foram excluídos		#Machine Translated	
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	O personagem morreu		#Machine Translated	
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	Carregar jogo		#Machine Translated	
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
 "	"Menu principal
-"			
-Death	/	String	0	0	1	0	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
+"		#Machine Translated	
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
 "	"Sair
-"			
-/	Scene	Name	0	0	1	0	0	substr									Intro	Introdução			
-/	Scene	Name	0	0	1	0	0	substr									Cabin	Cabine	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	1	0	0	substr									Shelter	Abrigo			
-/	Scene	Name	0	0	1	0	0	substr									Tutorial	Tutorial			
-/	Scene	Name	0	0	1	0	0	substr									Menu	Menu			
-/	Scene	Name	0	0	1	0	0	substr									Attic	Sótão	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	1	0	0	substr									Death	Morte			
-/	Scene	Name	0	0	1	0	0	substr									Classroom	Sala de aula	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	1	0	0	substr									Tent	Tenda	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	1	0	0	substr									Bunker	Bunker	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	0	1	0	0	substr									Village	Aldeia			
-/	Scene	Name	0	0	1	0	0	substr									Area 05	Área 05			
-/	Scene	Name	0	0	1	0	0	substr									Highway	Rodovia			
-/	Scene	Name	0	0	1	0	0	substr									School	Escola			
-/	Scene	Name	0	0	1	0	0	substr									Outpost	Posto avançado			
-/	Scene	Name	0	0	1	0	0	substr									Border Zone	Zona de Fronteira			
-/	Scene	Name	0	0	1	0	0	substr									Minefield	Campo minado			
-/	Scene	Name	0	0	1	0	0	substr									Apartments	Apartamentos			
-/	Scene	Name	0	0	1	0	0	substr									Terminal	Terminal			
-/	Scene	ToolTip	0	0	1	0	0	substr									Tutorial Exit	Sair do tutorial			
-/	Scene	Name	0	0	1	0	0	substr									Template	Modelo			
-/	Scene	#Not Checked	0	0	1	0	0	substr									shaders	shaders			
-NPC	Traders	Name	0	0	1	0	0	substr									Trader	Operador			
-NPC	Traders	Name	0	0	1	0	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	Generalista			
-NPC	Traders	Name	0	0	1	0	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	Médico			
-NPC	Traders	Name	0	0	1	0	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	Armeiro			
-NPC	Traders	Name	0	0	1	0	0	substr									Driver	Motorista			
-NPC	Traders	Name	0	0	1	0	0	substr									Grandma	Vovó			
-NPC	Traders	Name	0	0	1	0	0	substr									Shaman	Xamã			
-NPC	Traders	Name	0	0	1	0	0	substr									Fisherman	Pescador			
-NPC	Traders	Name	0	0	1	0	0	substr									Scientist	Cientista			
-NPC	Hostile	Name	0	0	1	0	0	substr									Bandit	Bandido	Hostile NPC faction spawned in Area 05;		
-NPC	Hostile	Name	0	0	1	0	0	substr									Guards	Guarda	Hostile NPC faction spawned in Border Zone;		
-NPC	Hostile	Name	0	0	1	0	0	substr									Military	Militar	Hostile NPC faction spawned in Vostok;		
-NPC	Elite	Name	0	0	1	0	0	substr									Punisher	O Castigador	Hostile Elite(Boss) NPC spawned in Area 05;		
-/	Weather	Dictionary	0	0	1	0	0	substr									Neutral	Neutro			
-/	Weather	Dictionary	0	0	1	0	0	substr									Overcast	Céu nublado			
-/	Weather	Dictionary	0	0	1	0	0	substr									Rain	Chuva			
-/	Weather	Dictionary	0	0	1	0	0	substr									Storm	Tempestade			
-/	Material	Dictionary	0	0	1	0	0	substr									Generic	Genérico			
-/	Material	Dictionary	0	0	1	0	0	substr									Wood	Madeira			
-/	Material	Dictionary	0	0	1	0	0	substr									Metal	Metal			
-/	Material	Dictionary	0	0	1	0	0	substr									Concrete	Concreto			
-/	Material	Dictionary	0	0	1	0	0	substr									Rock	Rock			
-/	Material	Dictionary	0	0	1	0	0	substr									Vostok	Vostok			
+"		#Machine Translated	
+/	Scene	Name	0	substr									Intro	Introdução		#Machine Translated	
+/	Scene	Name	0	substr									Cabin	Cabine	Defined at Loader.gd: const shelters	#Machine Translated	
+/	Scene	Name	0	substr									Shelter	Abrigo		#Machine Translated	
+/	Scene	Name	0	substr									Tutorial	Tutorial		#Machine Translated	
+/	Scene	Name	0	substr									Menu	Menu		#Machine Translated	
+/	Scene	Name	0	substr									Attic	Sótão	Defined at Loader.gd: const shelters	#Machine Translated	
+/	Scene	Name	0	substr									Death	Morte		#Machine Translated	
+/	Scene	Name	0	substr									Classroom	Sala de aula	Defined at Loader.gd: const shelters	#Machine Translated	
+/	Scene	Name	0	substr									Tent	Tenda	Defined at Loader.gd: const shelters	#Machine Translated	
+/	Scene	Name	0	substr									Bunker	Bunker	Defined at Loader.gd: const shelters	#Machine Translated	
+/	Scene	Name	0	substr									Village	Aldeia		#Machine Translated	
+/	Scene	Name	0	substr									Area 05	Área 05		#Machine Translated	
+/	Scene	Name	0	substr									Highway	Rodovia		#Machine Translated	
+/	Scene	Name	0	substr									School	Escola		#Machine Translated	
+/	Scene	Name	0	substr									Outpost	Posto avançado		#Machine Translated	
+/	Scene	Name	0	substr									Border Zone	Zona de Fronteira		#Machine Translated	
+/	Scene	Name	0	substr									Minefield	Campo minado		#Machine Translated	
+/	Scene	Name	0	substr									Apartments	Apartamentos		#Machine Translated	
+/	Scene	Name	0	substr									Terminal	Terminal		#Machine Translated	
+/	Scene	ToolTip	0	substr									Tutorial Exit	Sair do tutorial		#Machine Translated	
+/	Scene	Name	0	substr									Template	Modelo		#Machine Translated	
+/	Scene	#Not Checked	0	substr									shaders	shaders		#Machine Translated	
+NPC	Traders	Name	0	substr									Trader	Operador		#Machine Translated	
+NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	Generalista		#Machine Translated	
+NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	Médico		#Machine Translated	
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	Armeiro		#Machine Translated	
+NPC	Traders	Name	0	substr									Driver	Motorista		#Machine Translated	
+NPC	Traders	Name	0	substr									Grandma	Vovó		#Machine Translated	
+NPC	Traders	Name	0	substr									Shaman	Xamã		#Machine Translated	
+NPC	Traders	Name	0	substr									Fisherman	Pescador		#Machine Translated	
+NPC	Traders	Name	0	substr									Scientist	Cientista		#Machine Translated	
+NPC	Hostile	Name	0	substr									Bandit	Bandido	Hostile NPC faction spawned in Area 05;	#Machine Translated	
+NPC	Hostile	Name	0	substr									Guards	Guarda	Hostile NPC faction spawned in Border Zone;	#Machine Translated	
+NPC	Hostile	Name	0	substr									Military	Militar	Hostile NPC faction spawned in Vostok;	#Machine Translated	
+NPC	Elite	Name	0	substr									Punisher	O Castigador	Hostile Elite(Boss) NPC spawned in Area 05;	#Machine Translated	
+/	Weather	Dictionary	0	substr									Neutral	Neutro		#Machine Translated	
+/	Weather	Dictionary	0	substr									Overcast	Céu nublado		#Machine Translated	
+/	Weather	Dictionary	0	substr									Rain	Chuva		#Machine Translated	
+/	Weather	Dictionary	0	substr									Storm	Tempestade		#Machine Translated	
+/	Material	Dictionary	0	substr									Generic	Genérico		#Machine Translated	
+/	Material	Dictionary	0	substr									Wood	Madeira		#Machine Translated	
+/	Material	Dictionary	0	substr									Metal	Metal		#Machine Translated	
+/	Material	Dictionary	0	substr									Concrete	Concreto		#Machine Translated	
+/	Material	Dictionary	0	substr									Rock	Rock		#Machine Translated	
+/	Material	Dictionary	0	substr									Vostok	Vostok		#Machine Translated	

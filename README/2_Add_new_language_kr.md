@@ -98,11 +98,11 @@ python tools/machine_translation_deepl.py French
 | 행 조건                              | 동작                                                   |
 | ------------------------------------ | ------------------------------------------------------ |
 | `translation` 이미 채워짐          | skip (사람이 작업한 결과 / 고정값 보존)                |
-| `untranslatable=1`                 | 원문을 그대로 복사.`Machine translated`는 0 유지     |
+| `untranslatable=1`                 | 원문을 그대로 복사. `Comments` 변경 안 함              |
 | `method=pattern`                   | skip (regex 원본은 기계 번역 불가)                     |
-| `method=ignore` + 번역 결과에 있음 | 그 번역 사용.`Machine translated=1`                  |
+| `method=ignore` + 번역 결과에 있음 | 그 번역 사용. `Comments` 끝에 `#Machine Translated` 추가 |
 | `method=ignore` + 번역 결과에 없음 | fallback: 원문 그대로 복사 (예: "Road to Vostok" 제목) |
-| 일반 행 + 번역 결과에 있음           | 번역 적용.`Machine translated=1`                     |
+| 일반 행 + 번역 결과에 있음           | 번역 적용. `Comments` 끝에 `#Machine Translated` 추가    |
 
 ---
 

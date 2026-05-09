@@ -3,8 +3,8 @@
 Copies <source>/Translation.xlsx into the mod's .tmp/ folder, then on the
 copy:
   - clears the `translation` column for every row
-  - sets the boolean-style status columns (Transliteration / Transcreation /
-    Machine translated / Confused / untranslatable) to 0
+  - clears the `Comments` column for every row
+  - sets `untranslatable` to 0
   - keeps the source `text` and all metadata columns (method, filename,
     location, parent, name, type, property, unique_id, …) untouched
 
@@ -27,14 +27,8 @@ ROOT = Path(__file__).resolve().parent.parent  # mod root (Trans To Vostok mod)
 DEFAULT_SOURCE_LOCALE = "Korean"
 DEFAULT_OUTPUT = ROOT / ".tmp" / "Translation_template.xlsx"
 
-CLEAR_COLUMN = "translation"
-ZERO_COLUMNS = [
-    "Transliteration",
-    "Transcreation",
-    "Machine translated",
-    "Confused",
-    "untranslatable",
-]
+CLEAR_COLUMNS = ["translation", "Comments"]
+ZERO_COLUMNS = ["untranslatable"]
 
 
 def make_template(source_xlsx: Path, output_xlsx: Path) -> None:
@@ -54,23 +48,23 @@ def make_template(source_xlsx: Path, output_xlsx: Path) -> None:
             if c.value is not None:
                 header[str(c.value)] = c.column
 
-        clear_idx = header.get(CLEAR_COLUMN)
+        clear_indices = [header[col] for col in CLEAR_COLUMNS if col in header]
         zero_indices = [header[col] for col in ZERO_COLUMNS if col in header]
 
-        if clear_idx is None and not zero_indices:
+        if not clear_indices and not zero_indices:
             print(f"  [skip] {sheet_name}: no relevant columns")
             continue
 
         for row_idx in range(2, ws.max_row + 1):
-            if clear_idx is not None:
-                ws.cell(row_idx, clear_idx).value = None
+            for ci in clear_indices:
+                ws.cell(row_idx, ci).value = None
             for zi in zero_indices:
                 ws.cell(row_idx, zi).value = 0
 
         rows = ws.max_row - 1
         actions = []
-        if clear_idx is not None:
-            actions.append(f"cleared `{CLEAR_COLUMN}`")
+        if clear_indices:
+            actions.append(f"cleared {len(clear_indices)} columns")
         if zero_indices:
             actions.append(f"zeroed {len(zero_indices)} status columns")
         print(f"  {sheet_name}: {' + '.join(actions)} ({rows} rows)")

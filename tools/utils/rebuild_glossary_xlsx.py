@@ -199,14 +199,6 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
             f"{col}2:{col}{end_row}",
             _cell_is_rule('"1"', RED_BG, RED_FG),
         )
-    for header_name in ["Transliteration", "Transcreation", "Machine translated", "Confused"]:
-        col = col_letter(header_name)
-        if not col:
-            continue
-        ws.conditional_formatting.add(
-            f"{col}2:{col}{end_row}",
-            _cell_is_rule('"1"', YELLOW_BG, YELLOW_FG),
-        )
     method_col = col_letter("method")
     if method_col:
         rng = f"{method_col}2:{method_col}{end_row}"

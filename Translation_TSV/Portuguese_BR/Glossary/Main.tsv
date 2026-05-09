@@ -1,112 +1,112 @@
-Transliteration	Transcreation	Machine translated	Confused	untranslatable	Category	Sub-Category	Class	text	translation	DESCRIPTION	max_length
-0	0	0	0	1	PROPER	Game	Title	Road to Vostok	Road to Vostok	NEVER translate — official game title; preserve original Latin script (brand identity)	
-0	0	0	0	1	Proper	Game	Development	TBA	TBA	#N/A	
-1	0	1	0	0	Proper	Game	System	Player	Jogador	the player character	
-0	0	1	0	0	Place	Area	Intro	Intro	Introdução		
-1	0	1	0	0	Place	Area	Tutorial	Tutorial	Tutorial		
-0	0	1	0	0	Place	Area	Area 05	Area 05	Área 05	event area label	
-0	0	1	0	0	Place	Map	Area 05	Village	Aldeia	starting area; trader Generalist resides here	
-0	0	1	0	0	Place	Map	Area 05	Highway	Rodovia	mid-zone; connects Village/School	
-0	0	1	0	0	Place	Map	Area 05	School	Escola	mid-zone; trader Doctor returns here	
-0	0	1	0	0	Place	Area	Border Zone	Border Zone	Zona de Fronteira	same as above	
-0	0	1	0	0	Place	Map	Border Zone	Outpost	Posto avançado	east-side zone; trader Gunsmith returns here	
-0	0	1	0	0	Place	Map	Border Zone	Minefield	Campo minado	dangerous zone east of Outpost	
-1	0	1	0	0	Place	Area	Vostok	Vostok	Vostok	end-game permadeath zone (proper noun)	
-0	0	1	0	0	Place	Map	Vostok	Apartments	Apartamentos	late-game residential zone	
-0	0	1	0	0	Place	Map	Vostok	Terminal	Terminal	end-of-route zone	
-0	0	1	0	0	Place	Shelter	Shelter	Shelter	Abrigo	player home/safe area (preferred over 피신처)	
-0	0	1	0	0	Place	Shelter	Area 05	Cabin	Cabine	primary shelter (player base)	
-0	0	1	0	0	Place	Shelter	Area 05	Attic	Sótão	sub-area	
-0	0	1	0	0	Place	Shelter	Area 05	Classroom	Sala de aula	sub-area within School	
-1	0	1	0	0	Place	Shelter	Border Zone	Tent	Tenda	secondary/portable shelter	
-1	0	1	0	0	Place	Shelter	Border Zone	Bunker	Bunker	sub-area within Outpost	
-0	0	1	0	0	Place	Shelter	Border Zone	Border	Fronteira	Label for BGM preset of Border Zone	
-0	0	1	0	0	Place	Shelter	Border Zone	Border	Fronteira		
-0	0	1	0	0	Place	Shelter	#Not Updated Yet	CDS	CDS	"Will be updated at ""Build 4 | Gunslinger"""	
-0	0	1	0	0	NPC	Pet	Pet	Cat	Gato	rescuable companion	
-0	0	1	0	0	NPC	Trader	ALL	Trader	Operador	generic trader noun (NOT 상인 통계)	
-0	0	1	0	0	NPC	Trader	Area 05	Generalist	Generalista	Village trader; handles general items	
-0	0	1	0	0	NPC	Trader	Area 05	Doctor	Médico	School trader; handles medical	
-1	0	1	0	0	NPC	Trader	Border Zone	Gunsmith	Armeiro	alternate (used in some event lines — prefer 총잡이 for consistency, see Events)	
-0	0	1	0	0	NPC	Trader	#Not Updated Yet	Driver	Motorista	"Will be updated at ""Build 2 | Nomads"""	
-0	0	1	0	0	NPC	Trader	#Not Updated Yet	Grandma	Vovó	"Will be updated at ""Build 3 | Signal"""	
-1	0	1	0	0	NPC	Trader	#Not Updated Yet	Shaman	Xamã	"Will be updated at ""Build 5 | North"""	
-0	0	1	0	0	NPC	Trader	#Not Updated Yet	Fisherman	Pescador	"Will be updated at ""Build 6 | Abyss"""	
-0	0	1	0	0	NPC	Trader	#Not Updated Yet	Scientist	Cientista	"Will be updated at ""Build 7 | Enigma"""	
-1	0	1	0	0	Faction	Hostile	Area 05	Bandit	Bandido	Hostile NPC faction spawned in Area 05;	
-0	0	1	0	0	Faction	Hostile	Border Zone	Guards	Guarda	Hostile NPC faction spawned in Border Zone;	
-0	0	1	0	0	Faction	Hostile	Vostok	Military	Militar	Hostile NPC faction spawned in Vostok;	
-0	0	1	0	0				Military	Militar		
-1	0	1	0	0	Faction	Hostile	Elite	Punisher	O Castigador	Hostile Elite(Boss) NPC spawned in Area 05;	
-1	0	1	0	0	Status	All	Header	Character	Personagem	character in general	
-1	0	1	0	0	Status	Vital	Type	Vital	Essencial	vitals system / status	
-0	0	1	0	0	Status	Vital	HUD Setting	Vitals	Dados vitais	HUD Setting	
-0	0	1	0	0	Status	Vital	Vital	Health	Saúde	Vital of Health (HP)	
-0	0	1	0	0	Status	Vital	Vital	Energy	Energia	Vital of stamina (Hunger)	
-0	0	1	0	0	Status	Vital	Vital	Hydration	Hidratação	Vital of Thirst	
-0	0	1	0	0	Status	Vital	Vital	Mental	Mental	Vital of Mental health	
-0	0	1	0	0	Status	Vital	Vital	Body Temp	Temperatura corporal	Vital of Body Temperature	
-0	0	1	0	0	Status	Vital	Vital	Cat	Gato	Vital of Cat (HP)	
-0	0	1	0	0	Status	Medical	Type	Medical Condition	Condição médica		
-0	0	1	0	0	Status	Medical	Medical	Overweight	Excesso de peso		
-0	0	1	0	0	Status	Medical	Medical	Starvation	Inanição		
-0	0	1	0	0	Status	Medical	Medical	Dehydration	Desidratação		
-0	0	1	0	0	Status	Medical	Medical	Bleeding	Sangramento		
-0	0	1	0	0	Status	Medical	Medical	Fracture	Fratura		
-0	0	1	0	0	Status	Medical	Medical	Burn	Queimar		
-0	0	1	0	0	Status	Medical	Medical	Frostbite	Queimadura por frio		
-0	0	1	0	0	Status	Medical	Medical	Insanity	Loucura		
-0	0	1	0	0	Status	Medical	Medical	Poisoning	Envenenamento		
-0	0	1	0	0	Status	Medical	Medical	Rupture	Ruptura		
-0	0	1	0	0	Status	Medical	Medical	Headshot	Foto do rosto		
-0	0	1	0	0	Status	Progression	Type	Progression Stat	Estatísticas de progressão		
-0	0	1	0	0	Status	Progression	Progression	Shelters	Abrigos	"This is the number of unlocked ""Shelters"". Since this is the plural form of ""Shelter"", please be careful not to confuse it with other words. "	
-0	0	1	0	0	Status	Progression	Progression	Tasks	Tarefas		
-0	0	1	0	0	Status	Progression	Progression	Quests	Missões		
-0	0	1	0	0	Status	Progression	Progression	Civil Defence Shelters	Abrigos de Defesa Civil	"This is the Full Name of CDS, so please be careful not to confuse with other words. Will be updated at ""Build 4 | Gunslinger"""	
-0	0	1	0	0	Status	Progression	Progression	Silent Night	Noite Feliz	"Not updated yet. It appears as ""?"" at Status"	
-0	0	1	0	0	Status	Inventory	Type	Inventory Stat	Estatísticas de estoque		
-0	0	1	0	0	Status	Inventory	Inventory	Carry Capacity	Capacidade de carga		
-0	0	1	0	0	Status	Inventory	Inventory	Inventory Weight	Peso de estoque		
-0	0	1	0	0	Status	Inventory	Inventory	Inventory Value	Valor do estoque		
-0	0	1	0	0	Status	Container	Type	Container Stat	Estatísticas do contêiner		
-0	0	1	0	0	Status	Container	Container	Container Weight	Peso do contêiner		
-0	0	1	0	0	Status	Container	Container	Container Value	Valor do contêiner		
-0	0	1	0	0	Status	Equiptments	Type	Equipment Stat	Estatísticas do equipamento		
-0	0	1	0	0	Status	Equiptments	Equipments	Equipment Value	Valor do equipamento		
-0	0	1	0	0	Status	Equiptments	Equipments	Insulation	Isolamento	tooltip variant of 보온성 — labelled 방한 in tooltip context	
-0	0	1	0	0	Status	Equiptments	Equipments	Dexterity	Destreza		
-0	0	1	0	0	Status	Equiptments	Equipments	Menace	Ameaça		
-0	0	1	0	0	Status	Equiptments	Equipments	CBRN	CBRN	CBRN (Chemical / Biological / Radiological / Nuclear) hazard meter	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Primary	Primário	Label of the Primary Weapon	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Secondary	Secundário	Label of the Secondary Weapon	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Knife	Faca	Label of the Melee Weapon (Knife)	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Grenade	Granada	Grenade	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Grenade	Granada	Label of the first grenade slot in the Inventory. Check Equipment/Hints/Grenade_A	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Grenade	Granada	Label of the second grenade slot in the Inventory. Check Equipment/Hints/Grenade_B	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Backpack	Mochila	Label of the Backpack in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Rig	Plataforma	Label of the Rig/Vest in the Inventory (ex: bullet proof vest)	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Helmet	Capacete	Label of the Helmet in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Head	Cabeça	Label of the Hat/Cap in the Inventory (Not for a helmet)	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Torso	Torso	Label of the jacket in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Legs	Pernas	Label of the Pants in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Belt	Cinto	Label of the Belt Pouch in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Feet	Pés	Label of the Shoes in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Hands	Mãos	Label of the Gloves in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Matches	Partidas	Label of the Matcehs/Lighter in the Inventory	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Light	Luz	Label of the Flash Light in the Inventory. (Not for a Matches/Lighter)	
-0	0	1	0	0	Inventory	Equipments	Slot Label	NVG	NVG	Label of the NVG(Night Vision Goggle) in the Inventory. Please use the short form only. Check Equipment/Hints/NVG.	
-0	0	1	0	0	Inventory	Equipments	Slot Label	NVG	NVG	Label of the NVG in the Settings/Input. You can choos Full/Short form.	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Night Vision Goggle	Óculos de visão noturna	Full Name of the NVG	
-0	0	1	0	0	Inventory	Equipments	Slot Label	Time	Hora	Label of the Clock(Time) slot in the Inventory.	
-0	0	1	0	0	Container	Body	Asset (Dynamic)	Corpse	Cadáver	Lootable Container	
-0	0	1	0	0	Container	Body	Asset (Static)	Bandit Corpse	Cadáver de bandido	Lootable corpse; Statically spawned;	
-0	0	1	0	0	Action	Door	ToolTip	[Jammed]	[Atolado]		
-0	0	1	0	0	Action	Door	ToolTip	[Occupied]	[Ocupado]		
-0	0	1	0	0	Action	Door	ToolTip	[Close]	[Fechar]		
-0	0	1	0	0	Action	Door	ToolTip	[Open]	[Abrir]		
-0	0	1	0	0	Action	Electronics	ToolTip	[Turn Off]	[Desligar]		
-0	0	1	0	0	Action	Electronics	ToolTip	[Turn On]	[Ligar]		
-0	0	1	0	0	Action	Container	ToolTip	[Locked]	[Bloqueado]		
-0	0	1	0	0	UI	All	Button	Off	Desligado		
-0	0	1	0	0	UI	All	Button	On	Em		
+untranslatable	Category	Sub-Category	Class	text	translation	DESCRIPTION	Comments	max_length
+1	PROPER	Game	Title	Road to Vostok	Road to Vostok	NEVER translate — official game title; preserve original Latin script (brand identity)		
+1	Proper	Game	Development	TBA	TBA	#N/A		
+0	Proper	Game	System	Player	Jogador	the player character		
+0	Place	Area	Intro	Intro	Introdução			
+0	Place	Area	Tutorial	Tutorial	Tutorial			
+0	Place	Area	Area 05	Area 05	Área 05	event area label		
+0	Place	Map	Area 05	Village	Aldeia	starting area; trader Generalist resides here		
+0	Place	Map	Area 05	Highway	Rodovia	mid-zone; connects Village/School		
+0	Place	Map	Area 05	School	Escola	mid-zone; trader Doctor returns here		
+0	Place	Area	Border Zone	Border Zone	Zona de Fronteira	same as above		
+0	Place	Map	Border Zone	Outpost	Posto avançado	east-side zone; trader Gunsmith returns here		
+0	Place	Map	Border Zone	Minefield	Campo minado	dangerous zone east of Outpost		
+0	Place	Area	Vostok	Vostok	Vostok	end-game permadeath zone (proper noun)		
+0	Place	Map	Vostok	Apartments	Apartamentos	late-game residential zone		
+0	Place	Map	Vostok	Terminal	Terminal	end-of-route zone		
+0	Place	Shelter	Shelter	Shelter	Abrigo	player home/safe area (preferred over 피신처)		
+0	Place	Shelter	Area 05	Cabin	Cabine	primary shelter (player base)		
+0	Place	Shelter	Area 05	Attic	Sótão	sub-area		
+0	Place	Shelter	Area 05	Classroom	Sala de aula	sub-area within School		
+0	Place	Shelter	Border Zone	Tent	Tenda	secondary/portable shelter		
+0	Place	Shelter	Border Zone	Bunker	Bunker	sub-area within Outpost		
+0	Place	Shelter	Border Zone	Border	Fronteira	Label for BGM preset of Border Zone		
+0	Place	Shelter	Border Zone	Border	Fronteira			
+0	Place	Shelter	#Not Updated Yet	CDS	CDS	"Will be updated at ""Build 4 | Gunslinger"""		
+0	NPC	Pet	Pet	Cat	Gato	rescuable companion		
+0	NPC	Trader	ALL	Trader	Operador	generic trader noun (NOT 상인 통계)		
+0	NPC	Trader	Area 05	Generalist	Generalista	Village trader; handles general items		
+0	NPC	Trader	Area 05	Doctor	Médico	School trader; handles medical		
+0	NPC	Trader	Border Zone	Gunsmith	Armeiro	alternate (used in some event lines — prefer 총잡이 for consistency, see Events)		
+0	NPC	Trader	#Not Updated Yet	Driver	Motorista	"Will be updated at ""Build 2 | Nomads"""		
+0	NPC	Trader	#Not Updated Yet	Grandma	Vovó	"Will be updated at ""Build 3 | Signal"""		
+0	NPC	Trader	#Not Updated Yet	Shaman	Xamã	"Will be updated at ""Build 5 | North"""		
+0	NPC	Trader	#Not Updated Yet	Fisherman	Pescador	"Will be updated at ""Build 6 | Abyss"""		
+0	NPC	Trader	#Not Updated Yet	Scientist	Cientista	"Will be updated at ""Build 7 | Enigma"""		
+0	Faction	Hostile	Area 05	Bandit	Bandido	Hostile NPC faction spawned in Area 05;		
+0	Faction	Hostile	Border Zone	Guards	Guarda	Hostile NPC faction spawned in Border Zone;		
+0	Faction	Hostile	Vostok	Military	Militar	Hostile NPC faction spawned in Vostok;		
+0				Military	Militar			
+0	Faction	Hostile	Elite	Punisher	O Castigador	Hostile Elite(Boss) NPC spawned in Area 05;		
+0	Status	All	Header	Character	Personagem	character in general		
+0	Status	Vital	Type	Vital	Essencial	vitals system / status		
+0	Status	Vital	HUD Setting	Vitals	Dados vitais	HUD Setting		
+0	Status	Vital	Vital	Health	Saúde	Vital of Health (HP)		
+0	Status	Vital	Vital	Energy	Energia	Vital of stamina (Hunger)		
+0	Status	Vital	Vital	Hydration	Hidratação	Vital of Thirst		
+0	Status	Vital	Vital	Mental	Mental	Vital of Mental health		
+0	Status	Vital	Vital	Body Temp	Temperatura corporal	Vital of Body Temperature		
+0	Status	Vital	Vital	Cat	Gato	Vital of Cat (HP)		
+0	Status	Medical	Type	Medical Condition	Condição médica			
+0	Status	Medical	Medical	Overweight	Excesso de peso			
+0	Status	Medical	Medical	Starvation	Inanição			
+0	Status	Medical	Medical	Dehydration	Desidratação			
+0	Status	Medical	Medical	Bleeding	Sangramento			
+0	Status	Medical	Medical	Fracture	Fratura			
+0	Status	Medical	Medical	Burn	Queimar			
+0	Status	Medical	Medical	Frostbite	Queimadura por frio			
+0	Status	Medical	Medical	Insanity	Loucura			
+0	Status	Medical	Medical	Poisoning	Envenenamento			
+0	Status	Medical	Medical	Rupture	Ruptura			
+0	Status	Medical	Medical	Headshot	Foto do rosto			
+0	Status	Progression	Type	Progression Stat	Estatísticas de progressão			
+0	Status	Progression	Progression	Shelters	Abrigos	"This is the number of unlocked ""Shelters"". Since this is the plural form of ""Shelter"", please be careful not to confuse it with other words. "		
+0	Status	Progression	Progression	Tasks	Tarefas			
+0	Status	Progression	Progression	Quests	Missões			
+0	Status	Progression	Progression	Civil Defence Shelters	Abrigos de Defesa Civil	"This is the Full Name of CDS, so please be careful not to confuse with other words. Will be updated at ""Build 4 | Gunslinger"""		
+0	Status	Progression	Progression	Silent Night	Noite Feliz	"Not updated yet. It appears as ""?"" at Status"		
+0	Status	Inventory	Type	Inventory Stat	Estatísticas de estoque			
+0	Status	Inventory	Inventory	Carry Capacity	Capacidade de carga			
+0	Status	Inventory	Inventory	Inventory Weight	Peso de estoque			
+0	Status	Inventory	Inventory	Inventory Value	Valor do estoque			
+0	Status	Container	Type	Container Stat	Estatísticas do contêiner			
+0	Status	Container	Container	Container Weight	Peso do contêiner			
+0	Status	Container	Container	Container Value	Valor do contêiner			
+0	Status	Equiptments	Type	Equipment Stat	Estatísticas do equipamento			
+0	Status	Equiptments	Equipments	Equipment Value	Valor do equipamento			
+0	Status	Equiptments	Equipments	Insulation	Isolamento	tooltip variant of 보온성 — labelled 방한 in tooltip context		
+0	Status	Equiptments	Equipments	Dexterity	Destreza			
+0	Status	Equiptments	Equipments	Menace	Ameaça			
+0	Status	Equiptments	Equipments	CBRN	CBRN	CBRN (Chemical / Biological / Radiological / Nuclear) hazard meter		
+0	Inventory	Equipments	Slot Label	Primary	Primário	Label of the Primary Weapon		
+0	Inventory	Equipments	Slot Label	Secondary	Secundário	Label of the Secondary Weapon		
+0	Inventory	Equipments	Slot Label	Knife	Faca	Label of the Melee Weapon (Knife)		
+0	Inventory	Equipments	Slot Label	Grenade	Granada	Grenade		
+0	Inventory	Equipments	Slot Label	Grenade	Granada	Label of the first grenade slot in the Inventory. Check Equipment/Hints/Grenade_A		
+0	Inventory	Equipments	Slot Label	Grenade	Granada	Label of the second grenade slot in the Inventory. Check Equipment/Hints/Grenade_B		
+0	Inventory	Equipments	Slot Label	Backpack	Mochila	Label of the Backpack in the Inventory		
+0	Inventory	Equipments	Slot Label	Rig	Plataforma	Label of the Rig/Vest in the Inventory (ex: bullet proof vest)		
+0	Inventory	Equipments	Slot Label	Helmet	Capacete	Label of the Helmet in the Inventory		
+0	Inventory	Equipments	Slot Label	Head	Cabeça	Label of the Hat/Cap in the Inventory (Not for a helmet)		
+0	Inventory	Equipments	Slot Label	Torso	Torso	Label of the jacket in the Inventory		
+0	Inventory	Equipments	Slot Label	Legs	Pernas	Label of the Pants in the Inventory		
+0	Inventory	Equipments	Slot Label	Belt	Cinto	Label of the Belt Pouch in the Inventory		
+0	Inventory	Equipments	Slot Label	Feet	Pés	Label of the Shoes in the Inventory		
+0	Inventory	Equipments	Slot Label	Hands	Mãos	Label of the Gloves in the Inventory		
+0	Inventory	Equipments	Slot Label	Matches	Partidas	Label of the Matcehs/Lighter in the Inventory		
+0	Inventory	Equipments	Slot Label	Light	Luz	Label of the Flash Light in the Inventory. (Not for a Matches/Lighter)		
+0	Inventory	Equipments	Slot Label	NVG	NVG	Label of the NVG(Night Vision Goggle) in the Inventory. Please use the short form only. Check Equipment/Hints/NVG.		
+0	Inventory	Equipments	Slot Label	NVG	NVG	Label of the NVG in the Settings/Input. You can choos Full/Short form.		
+0	Inventory	Equipments	Slot Label	Night Vision Goggle	Óculos de visão noturna	Full Name of the NVG		
+0	Inventory	Equipments	Slot Label	Time	Hora	Label of the Clock(Time) slot in the Inventory.		
+0	Container	Body	Asset (Dynamic)	Corpse	Cadáver	Lootable Container		
+0	Container	Body	Asset (Static)	Bandit Corpse	Cadáver de bandido	Lootable corpse; Statically spawned;		
+0	Action	Door	ToolTip	[Jammed]	[Atolado]			
+0	Action	Door	ToolTip	[Occupied]	[Ocupado]			
+0	Action	Door	ToolTip	[Close]	[Fechar]			
+0	Action	Door	ToolTip	[Open]	[Abrir]			
+0	Action	Electronics	ToolTip	[Turn Off]	[Desligar]			
+0	Action	Electronics	ToolTip	[Turn On]	[Ligar]			
+0	Action	Container	ToolTip	[Locked]	[Bloqueado]			
+0	UI	All	Button	Off	Desligado			
+0	UI	All	Button	On	Em			

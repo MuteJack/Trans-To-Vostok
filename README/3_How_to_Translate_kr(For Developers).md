@@ -105,18 +105,23 @@
 
 ## 5. Quality flag 운영 가이드라인
 
-| Flag                   | 1로 두는 기준                                                               |
-| ---------------------- | --------------------------------------------------------------------------- |
-| `Transliteration`    | 음역으로만 처리한 경우 (Vostok → "보스토크")                               |
-| `Transcreation`      | 원문에서 의미를 자유롭게 바꾼 창작 번역                                     |
-| `Machine translated` | DeepL / 기타 MT 결과를 사람 검토 없이 그대로 사용 중. 사람이 다듬으면 0으로 |
-| `Confused`           | 번역가가 확신 못 하는 / 다른 사람 검토 필요한 행                            |
-| `untranslatable`     | 번역 자체가 불가능 / 무의미한 항목 (코드 식별자, 숫자 등). 빌드에서 제외됨  |
+xlsx에는 단일 status flag만 유지:
+
+| Flag             | 1로 두는 기준                                                               |
+| ---------------- | --------------------------------------------------------------------------- |
+| `untranslatable` | 번역 자체가 불가능 / 무의미한 항목 (코드 식별자, 숫자 등). 빌드/Crowdin push에서 제외됨 |
+
+검수 상태 (이 번역이 검수 완료인지 / MT 잔재인지) 는 **Crowdin이 관리**:
+- Crowdin Editor에서 **Approve (✓)** 버튼 = 검수 완료
+- 미승인 상태 = 검토 필요 (구 `Machine translated=1` / `Confused=1` 통합)
+
+`Comments` 컬럼은 **자유 메모 + DeepL 출처 마커** (`#Machine Translated`) 용도. 직접 검수 플래그로 쓰지는 않음 (Crowdin과 동기화 안 됨).
 
 ### Korean 작업 정책 (참고)
 
-- DeepL 초기 패스 → 사람 검토 → 다듬은 후 `Machine translated=0` 으로 전환
-- 검토 미진한 행은 `Confused=1` 로 표시해서 추후 재검토 큐로 활용
+- DeepL 초기 패스 → `Comments`에 자동 `#Machine Translated` 마커 추가
+- 사람 검수 → Crowdin에서 Approve 누르면 검수 완료 표시
+- 모호한 번역: Crowdin **Issue** 기능으로 표시하거나 `Comments`에 자유 메모
 
 ---
 
