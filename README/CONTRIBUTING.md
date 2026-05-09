@@ -19,7 +19,7 @@ To be credited, edit the appropriate xlsx file:
 
 ### As a translator (text)
 
-Edit `Trans To Vostok/<locale>/Translation.xlsx` → **MetaData** sheet:
+Edit `Translations/<locale>/Translation.xlsx` → **MetaData** sheet:
 
 | Role         | Field in MetaData          |
 | ------------ | -------------------------- |
@@ -31,7 +31,7 @@ inside the cell in Excel).
 
 ### As a texture / image worker
 
-Edit `Trans To Vostok/<locale>/Texture.xlsx`:
+Edit `Translations/<locale>/Texture.xlsx`:
 
 | Role           | Column in any sheet  |
 | -------------- | -------------------- |

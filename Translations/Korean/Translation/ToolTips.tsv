@@ -53,8 +53,7 @@ Item	Item	Level	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/P
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	text	973316326	Health:	체력:			
 Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Health	Value	Label	text	553960291	+100	+100			
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	text	1764317690	"Energy:
-"	"기력:
-"			
+"	기력:			
 Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100	+100			
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:	수분:			
 Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100	+100			

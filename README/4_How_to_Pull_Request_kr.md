@@ -1,13 +1,15 @@
 # 4. Pull Request 가이드 (한국어)
 
-작업한 결과를 본 저장소에 제출 (Pull Request) 하는 흐름입니다. 0~3번 가이드의 git 부분을 한 곳에 모은 단일 진입점.
+코드 / 텍스처 / 문서 / 새 언어 추가 등 **번역 텍스트 외 작업**을 본 저장소에 제출하는 흐름입니다.
+
+> ⚠️ **번역 텍스트 변경은 PR 대상 아님**. 번역은 Crowdin에 업로드 → 관리자가 주기적으로 sync. 자세한 흐름은 [3_How_to_Translate_kr.md](3_How_to_Translate_kr.md) 참조.
 
 ---
 
 ## 1. 사전 준비
 
 - [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md) 의 셋업 완료 (Fork + Clone + upstream 등록)
-- 작업 (번역 / 코드) 이 로컬에 있는 상태
+- 작업 (코드 / 텍스처 / 문서) 이 로컬에 있는 상태
 
 ---
 
@@ -29,11 +31,12 @@ git checkout -b <type>/<short-description>
 
 | 작업 종류 | 예시 |
 | --- | --- |
-| 번역 | `translate/korean-items-fix` |
 | 새 언어 추가 | `translate/add-japanese` |
 | 텍스처 / 이미지 | `texture/world-map-revision` |
 | 코드 | `code/improve-validate-output` |
 | 문서 | `docs/contributing-update` |
+
+> 번역 텍스트만 변경 시에는 PR 만들지 말고 [3_How_to_Translate_kr.md](3_How_to_Translate_kr.md) 의 Crowdin 업로드 흐름을 따라주세요.
 
 > 한 브랜치 = 한 PR. 여러 종류의 작업을 한 브랜치에 섞지 말 것 (리뷰가 어려워짐).
 >
@@ -71,7 +74,7 @@ scope 예시:
 - `docs` (README/가이드 문서)
 - `mod-compat` (모드 호환성)
 
-> **xlsx 변경만 있을 때**도 의미있는 메시지를 남기세요. "Update xlsx" 보다는 "Korean: improve Items wording for X-class items" 처럼.
+> 코드/문서 변경의 commit 메시지는 의미있게 작성. "Update X" 보다는 "tools: relax validate_translation when parsed_text missing" 처럼.
 
 ---
 
@@ -79,24 +82,22 @@ scope 예시:
 
 작업 종류에 따라 commit / staging 대상이 달라짐:
 
-### 번역 작업 (xlsx 편집)
-```powershell
-git add "Translations/<locale>/"
-```
-xlsx는 gitignored지만 함께 갱신된 TSV가 commit됨. TSV가 git diff를 가능하게 해서 리뷰가 쉬워짐.
-
 ### 새 언어 추가
 ```powershell
-git add "Translations/<locale>/"
+git add "Translations/<locale>/"     # 새 locale의 TSV 폴더
 git add "Trans To Vostok/locale.json"
 ```
+
+> 번역 텍스트 자체는 빈 상태로 시작. 추가된 후엔 번역자가 Crowdin에서 채움.
 
 ### 텍스처 / 이미지
 ```powershell
 git add "Trans To Vostok/<locale>/textures/"
-git add "Trans To Vostok/<locale>/Texture.xlsx"     # attribution 갱신
+git add "Translations/<locale>/Texture.xlsx"            # attribution 갱신 — 단, 별도 PR로 권장 (gitignored 정책 검토 필요)
 git add "Trans To Vostok/<locale>/Texture_Attribution.md"  # 빌드로 자동 갱신됨
 ```
+
+> Texture metadata는 xlsx에 있지만 gitignored이라 PR에 안 들어감 — 텍스처 본 파일과 attribution.md만 PR.
 
 ### 코드 변경
 ```powershell
@@ -221,7 +222,7 @@ git push origin main
 
 | 증상 | 원인 / 해결 |
 | --- | --- |
-| PR diff에 xlsx만 있고 TSV 없음 | `Translations/<locale>/<category>/` (TSV 폴더) 도 add. xlsx는 gitignored이라 단독으론 PR 안 됨 |
+| PR에 번역 텍스트 변경 포함됨 | 번역은 PR 대상 아님 — Crowdin 업로드로 변경. PR에서 번역 변경분은 제외 |
 | PR diff에 의도하지 않은 파일 다수 포함 | `git status` / `.gitignore` 확인. `~$*.xlsx`, `.log/`, `.tmp/` 등 stage 해제 |
 | PR을 올렸는데 빌드 검증 실패 표시 | CI 로그 확인 → 로컬에서 `python tools/build_mod_package.py` 재현 → 수정 |
 | upstream main이 빠르게 변해서 충돌 | `git fetch upstream && git rebase upstream/main` 또는 `git merge upstream/main` 후 push |

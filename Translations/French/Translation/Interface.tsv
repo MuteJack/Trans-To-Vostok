@@ -133,52 +133,37 @@ Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label
 Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	Catalogue de mobilier		#Machine Translated		
 Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	Le catalogue est lié à votre personnage ; si vous mourez, les objets de votre catalogue seront également détruits		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
-"	"Utilisation
-"		#Machine Translated		
+"	Utilisation		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
-"	"Équiper
-"		#Machine Translated		
+"	Équiper		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
-"	"Déséquiper
-"		#Machine Translated		
+"	Déséquiper		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
-"	"Décharger
-"		#Machine Translated		
+"	Décharger		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
-"	"Diviser
-"		#Machine Translated		
+"	Diviser		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
-"	"Prends
-"		#Machine Translated		
+"	Prends		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
-"	"Sommeil
-"		#Machine Translated		
+"	Sommeil		#Machine Translated		
 Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	Sommeil		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
-"	"Transfert
-"		#Machine Translated		
+"	Transfert		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
-"	"Lâcher
-"		#Machine Translated		
+"	Lâcher		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
-"	"Lieu
-"		#Machine Translated		
+"	Lieu		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
-"	"Détruire
-"		#Machine Translated		
+"	Détruire		#Machine Translated		
 Inventory	Item	Button	0	pattern									Remove {name}					
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
-"	"Supprimer [0]
-"		#Machine Translated		
+"	Supprimer [0]		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
-"	"Supprimer [1]
-"		#Machine Translated		
+"	Supprimer [1]		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
-"	"Supprimer [2]
-"		#Machine Translated		
+"	Supprimer [2]		#Machine Translated		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
-"	"Supprimer [3]
-"		#Machine Translated		
+"	Supprimer [3]		#Machine Translated		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	Maître du café		#Machine Translated		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	Consommable		#Machine Translated		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	Légendaire		#Machine Translated		

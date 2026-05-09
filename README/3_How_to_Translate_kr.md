@@ -1,17 +1,57 @@
 # 3. 번역 작업 가이드 (한국어)
 
-`Trans To Vostok/<locale>/Translation.xlsx` 를 직접 편집해서 번역하는 흐름입니다. 새 locale 추가는 [2_Add_new_language_kr.md](2_Add_new_language_kr.md) 참조.
+번역 기여 방법은 **두 가지** 중 선택:
+
+| 방법 | 진입 장벽 | 인게임 테스트 | 추천 대상 |
+|------|----------|--------------|----------|
+| **A. Crowdin 웹UI** | 가입만 (브라우저) | 불가 (번역만) | 대부분의 번역자 |
+| **B. xlsx 로컬 + 업로드** | git + Python + CLI 셋업 | 가능 (빌드 후 게임 실행) | power user / 인게임 컨텍스트 검증 필요 |
+
+**둘 다 결과는 Crowdin에 모임.** 관리자가 주기적으로 Crowdin → repo 로 sync. 새 locale 추가는 [2_Add_new_language_kr.md](2_Add_new_language_kr.md) 참조.
 
 ---
 
-## 1. 사전 준비
+## 방법 A — Crowdin 웹UI (간단)
+
+### 시작
+
+1. **crowdin.com 가입**
+2. 관리자(MuteJack)에게 프로젝트 초대 요청 (또는 OSS 공개 프로젝트면 직접 Join)
+3. 프로젝트 → 본인 언어 선택 → **Editor** 진입
+
+### 작업
+
+- 좌측 string 목록에서 미번역 / 미승인 행 골라 번역 입력 → 자동 저장
+- 우측 패널: **Context** (영문 노트) / **Comments** (자유 토론) / **TM 매칭** 활용
+- **Issue** 기능: 원문 모호하거나 번역 어려우면 신고 (관리자가 답변)
+- 본인이 Proofreader 권한이면 검수 후 **Approve (✓)** 버튼 클릭 = 검수 완료
+
+### 끝
+
+git, Python, xlsx 만질 필요 없음. 번역 데이터는 Crowdin이 보관 → 관리자가 주기적으로 repo에 sync.
+
+상세한 Crowdin Editor 사용법, 라벨 필터, Issue 활용 → 별도 문서 (예정) 또는 [Crowdin 공식 가이드](https://support.crowdin.com/online-editor/).
+
+---
+
+## 방법 B — xlsx 로컬 + 업로드 (power user)
+
+게임에서 실시간으로 결과 확인하면서 번역하고 싶을 때.
+
+### 1. 사전 준비
 
 - [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md) 의 셋업 (Excel / Python / Git / Fork & Clone) 완료
+- **Crowdin CLI 설치** (https://crowdin.github.io/crowdin-cli/installation)
+- **Crowdin Personal Access Token** 발급 + 환경변수 설정:
+  ```powershell
+  setx CROWDIN_PERSONAL_TOKEN "<your-token>"
+  ```
+  (새 PowerShell 창부터 적용)
 - 작업할 locale의 xlsx 파일 위치 확인:
   ```
-  Trans To Vostok/<locale>/Translation.xlsx
-  Trans To Vostok/<locale>/Glossary.xlsx
-  Trans To Vostok/<locale>/Texture.xlsx
+  Translations/<locale>/Translation.xlsx
+  Translations/<locale>/Glossary.xlsx
+  Translations/<locale>/Texture.xlsx
   ```
 
 ---
@@ -85,7 +125,7 @@
 - 원문의 앞뒤 공백 / 줄바꿈 패턴을 그대로 번역에도 보존
 - Excel 셀 내 줄바꿈은 `Alt+Enter`
 - `text` 셀에 보이지 않는 trailing space가 있는지 의심되면 셀 클릭 후 수식 입력줄에서 끝까지 커서 이동해 확인
-- 빌드 후 `Trans To Vostok/<locale>/.log/validate_translation_*.log` 에서 `whitespace` 카테고리 WARNING 확인
+- 빌드 후 `Translations/<locale>/.log/validate_translation_*.log` 에서 `whitespace` 카테고리 WARNING 확인
 
 ---
 
@@ -120,7 +160,7 @@
 
 ---
 
-## 6. 검증 & 커밋
+## 6. 검증 & 업로드
 
 ### 6-1. 빌드 검증
 
@@ -131,9 +171,9 @@ python tools/build_mod_package.py <locale>
 성공 시:
 
 - `Trans To Vostok.zip` 생성 (게임에서 ModLoader가 인식)
-- `Translations/<locale>/<category>/` 의 TSV shadow 갱신 (git diff용)
+- `Translations/<locale>/<category>/` 의 TSV shadow 갱신
 
-검증 에러가 나면 콘솔 출력 / `Trans To Vostok/<locale>/.log/validate_translation_*.log` 확인.
+검증 에러가 나면 콘솔 출력 / `Translations/<locale>/.log/validate_translation_*.log` 확인.
 
 ### 6-2. 게임 실행 후 실제 표시 확인
 
@@ -151,22 +191,56 @@ python tools/build_mod_package.py <locale>
 
 > 모드 변경사항이 게임에 반영되지 않으면 ModLoader 재로드 (게임 재시작 또는 ModLoader 핫 리로드 기능) 가 필요할 수 있음.
 
-### 6-3. Commit & Push
+### 6-3. Crowdin 업로드
+
+검토가 끝나면 한 줄로 Crowdin에 푸시:
 
 ```powershell
-git add "Translations/<locale>/"
-git commit -m "<locale>: improve Items translations"
-git push origin <branch-name>
+python tools/push_to_crowdin.py <locale>
 ```
 
-xlsx는 binary라 PR 리뷰가 어렵지만, 같이 갱신되는 `Translations/<locale>/<category>/*.tsv` 가 텍스트 diff로 변경 내역 보여줌 → 리뷰가 가능.
+내부적으로 다음 3 단계를 자동 실행:
+1. xlsx → canonical TSV (`tools/utils/build_translation_tsv.py`)
+2. canonical TSV → Crowdin_Mirror (`tools/crowdin/build_translations.py`)
+3. Crowdin_Mirror → Crowdin 서버 (`crowdin upload translations -l <code>`)
+
+성공 시 Crowdin에 본인 번역이 반영되어, 다른 검수자 / Proofreader가 웹UI에서 검토할 수 있게 됨.
+
+> **PR로 보내지 말 것** — 번역 변경은 Crowdin이 단일 진입점. xlsx 변경사항을 git commit해도 sync에 누락될 수 있음. 항상 `push_to_crowdin.py` 사용.
+
+### 6-4. (옵션) `--auto-approve`
+
+본인이 해당 locale의 Proofreader이고 자기 번역을 자동 승인하고 싶으면:
+
+```powershell
+python tools/push_to_crowdin.py <locale> --auto-approve
+```
+
+업로드된 행이 Crowdin에서 즉시 approved 상태로 표시됨.
 
 ---
 
-## 7. 다음 단계
+## 7. 검수 흐름 (방법 A/B 공통)
+
+번역이 Crowdin에 올라간 후:
+
+1. **Proofreader가 웹UI에서 검수** → ✓ Approve 버튼 클릭
+2. **관리자가 주기적으로 sync**:
+   ```powershell
+   python tools/pull_from_crowdin.py
+   git commit
+   ```
+3. 다음 mod 빌드부터 게임에 반영됨
+
+→ 방법 A 사용자: 추가 작업 없음 (관리자가 sync)
+→ 방법 B 사용자: 새 번역 받으려면 `git pull` 후 `python tools/rebuild_xlsx.py <locale>` 로 xlsx 갱신
+
+---
+
+## 8. 다음 단계
 
 - 셋업 / 일반 작업 흐름 → [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md)
 - 게임 소스 추출 (전체 validation 활성화) → [1_unpack_and_decompile_game_kr.md](1_unpack_and_decompile_game_kr.md)
 - 새 언어 추가 → [2_Add_new_language_kr.md](2_Add_new_language_kr.md)
-- 크레딧 / 코드 기여 → `CONTRIBUTING.md`
-- method 가이드 → (별도 문서, 추후 작성 예정)
+- 코드 기여 / 크레딧 등록 → `CONTRIBUTING.md`
+- method 가이드 → 별도 문서 (예정)
