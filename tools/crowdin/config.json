@@ -1,0 +1,7 @@
+{
+  "_comment": "Non-secret Crowdin configuration. Project ID is visible in Crowdin URL (https://crowdin.com/project/<slug>/settings) and is safe to commit. Auth token lives in secrets.json (gitignored).",
+  "project_id": 895780,
+  "base_url": "https://api.crowdin.com",
+  "_source_pattern_help": "Path under which Crowdin stores our source files. Used by api_client.py to look up file IDs. Must match crowdin.yml's `source` paths if CLI is also used.",
+  "source_path_prefix": "/Crowdin_Mirror/source"
+}

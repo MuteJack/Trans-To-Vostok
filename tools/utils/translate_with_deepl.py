@@ -11,8 +11,9 @@ Placeholder protection:
     \\n      ->  preserved automatically (preserve_formatting=True)
 
 Auth:
-    1. Environment variable DEEPL_AUTH_KEY
-    2. tools/.deepl_key (single-line text file — should be gitignored)
+    secrets.json (repo root) — `deepl_api_key` field.
+    Falls back to DEEPL_AUTH_KEY environment variable if absent.
+    See secrets.example.json for setup.
 
 Output (under <mod_root>/.tmp/unique_text/<source>/):
     translated_<TARGET>.tsv     unique_id, source, translation, status, message
@@ -38,7 +39,6 @@ Examples:
 DeepL language codes: see https://developers.deepl.com/docs/getting-started/supported-languages
 """
 import csv
-import os
 import re
 import sys
 from pathlib import Path
@@ -48,6 +48,9 @@ try:
 except ImportError:
     print("ERROR: deepl is required. pip install deepl", file=sys.stderr)
     sys.exit(1)
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils.secrets import get_deepl_api_key
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
@@ -62,15 +65,9 @@ PROTECTED_RE = re.compile(r"<x>(\{[a-zA-Z_][a-zA-Z0-9_]*\})</x>")
 BATCH_SIZE = 50  # DeepL accepts up to 50 texts per API call
 
 
-def load_api_key(tools_dir: Path) -> str | None:
-    """Load DeepL API key from env var or tools/.deepl_key file."""
-    key = os.environ.get("DEEPL_AUTH_KEY")
-    if key:
-        return key.strip()
-    key_file = tools_dir / ".deepl_key"
-    if key_file.exists():
-        return key_file.read_text(encoding="utf-8").strip()
-    return None
+def load_api_key() -> str | None:
+    """Load DeepL API key from secrets.json (or DEEPL_AUTH_KEY env var)."""
+    return get_deepl_api_key()
 
 
 def wrap_placeholders(text: str) -> list[str]:
@@ -273,11 +270,12 @@ def main() -> int:
         print(f"Run first: python tools/utils/export_unique_text.py {source_locale}")
         return 1
 
-    api_key = load_api_key(tools_dir)
+    api_key = load_api_key()
     if api_key is None and not dry_run:
         print("[ERROR] DeepL API key not found.")
-        print("  - Set env var: DEEPL_AUTH_KEY=<key>")
-        print(f"  - Or write to: {tools_dir / '.deepl_key'}")
+        print(f"  - Add `deepl_api_key` to: {mod_root / 'secrets.json'}")
+        print(f"    (copy from secrets.example.json and fill in)")
+        print("  - Or set env var: DEEPL_AUTH_KEY=<key>")
         return 1
 
     print(f"Source unique.tsv  : {unique_path}")

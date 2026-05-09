@@ -1,17 +1,20 @@
-"""Power-user wrapper: push xlsx translations → Crowdin.
+"""Power-user wrapper: push xlsx translations → Crowdin (Python-only, no CLI).
 
 Combines three steps:
   1. utils/build_translation_tsv.py <locale>   xlsx → canonical TSV
   2. crowdin/build_translations.py <locale>    canonical TSV → Crowdin_Mirror
-  3. crowdin upload translations -l <code>     Crowdin_Mirror → Crowdin
+  3. Crowdin SDK upload                        Crowdin_Mirror → Crowdin server
 
 Use this when you edit xlsx locally (Method B — power user) and want to
 publish your translations to Crowdin in a single command.
 
 Required setup (one-time):
-  - Python deps:           pip install -r tools/requirements.txt
-  - Crowdin CLI installed: https://crowdin.github.io/crowdin-cli/installation
-  - API token env var:     setx CROWDIN_PERSONAL_TOKEN "<your-token>"
+  - Python deps: pip install -r tools/requirements.txt   (includes crowdin-api-client)
+  - Crowdin token: copy secrets.example.json to secrets.json (repo root)
+                   and fill in `crowdin_personal_token`.
+                   Token: Crowdin > Account Settings > API & SSO > New Token.
+
+No Crowdin CLI / Java install required.
 
 Usage:
     python tools/push_to_crowdin.py Korean
@@ -91,16 +94,44 @@ def main() -> int:
             print("\n[ERROR] TSV → Crowdin_Mirror step failed", file=sys.stderr)
             return 1
 
-    # 3. crowdin upload translations -l <code>
-    upload_cmd = ["crowdin", "upload", "translations", "-l", crowdin_id]
-    if args.auto_approve:
-        upload_cmd.append("--auto-approve-imported")
-    if not run(upload_cmd, cwd=repo_root):
-        print("\n[ERROR] Crowdin upload failed", file=sys.stderr)
-        print("        Check Crowdin CLI install + CROWDIN_PERSONAL_TOKEN env var", file=sys.stderr)
+    # 3. SDK upload (no CLI needed)
+    print(f"\n>>> Crowdin SDK upload: {args.locale} → {crowdin_id}")
+    try:
+        from crowdin.api_client import upload_translations_for_locale
+    except ImportError as e:
+        print(f"\n[ERROR] Could not import Crowdin SDK wrapper: {e}", file=sys.stderr)
+        print("        Run: pip install -r tools/requirements.txt", file=sys.stderr)
         return 1
 
-    print(f"\n[OK] {args.locale} translations pushed to Crowdin (-l {crowdin_id})")
+    locale_dir = repo_root / "Crowdin_Mirror" / "translations" / args.locale
+    if not locale_dir.exists():
+        print(f"\n[ERROR] Crowdin_Mirror dir missing: {locale_dir}", file=sys.stderr)
+        print("        Run without --skip-mirror to regenerate.", file=sys.stderr)
+        return 1
+
+    try:
+        stats = upload_translations_for_locale(
+            locale_dir=locale_dir,
+            language_id=crowdin_id,
+            auto_approve=args.auto_approve,
+        )
+    except RuntimeError as e:
+        print(f"\n[ERROR] {e}", file=sys.stderr)
+        return 1
+
+    print()
+    print(f"=== Upload summary ({args.locale} → {crowdin_id}) ===")
+    print(f"  uploaded            : {stats['uploaded']}")
+    print(f"  skipped (no source) : {stats['skipped_no_source']}")
+    print(f"  errors              : {len(stats['errors'])}")
+    if stats["errors"]:
+        for path, msg in stats["errors"][:10]:
+            print(f"    {path}: {msg}")
+        if len(stats["errors"]) > 10:
+            print(f"    ... ({len(stats['errors']) - 10} more)")
+        return 1
+
+    print(f"\n[OK] {args.locale} translations pushed to Crowdin")
     return 0
 
 

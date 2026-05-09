@@ -110,7 +110,7 @@ git add "Trans To Vostok/*.gd"
 - `.log/` 의 로그 파일
 - `~$*.xlsx` (Excel 락 파일)
 - `tools/3rd_party/` 의 gdre_tools 바이너리 등 (gitignored)
-- `tools/.deepl_key` (gitignored)
+- `secrets.json` (gitignored — DeepL/Crowdin 키 보관)
 
 `git status` 로 staged 파일이 의도한 것만인지 확인.
 

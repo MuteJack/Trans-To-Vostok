@@ -12,7 +12,7 @@
 
 1. **DeepL API key** (Free 또는 Pro)
    - 가입: [https://www.deepl.com/pro-api](https://www.deepl.com/pro-api)
-   - 키를 한 줄 텍스트 파일로 저장: `tools/.deepl_key` (gitignored)
+   - 키를 `secrets.json` 의 `deepl_api_key` 필드에 입력 (repo 루트, gitignored). `secrets.example.json` 복사해서 시작.
    - 또는 환경 변수 `DEEPL_AUTH_KEY` 로 설정
 2. **DeepL 언어 코드** 확인
    - 예: `FR` (French), `JA` (Japanese), `PT-BR` (Brazilian Portuguese)
