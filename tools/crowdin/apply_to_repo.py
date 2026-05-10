@@ -33,7 +33,6 @@ REPO = TOOLS_DIR.parent
 sys.path.insert(0, str(TOOLS_DIR))
 from crowdin.identifier import (
     make_translation_id,
-    make_glossary_id,
     make_texture_id,
 )
 
@@ -42,18 +41,16 @@ MIRROR_ROOT = REPO / "Crowdin_Mirror"
 TEMPLATE_LOCALE = "Template"
 SKIP_SHEETS = {"MetaData"}
 
-CATEGORIES = ["Translation", "Glossary", "Texture"]
+CATEGORIES = ["Translation", "Texture"]
 
 # Per-category column name for the translation cell in the canonical TSV.
 TRANSLATION_FIELD = {
     "Translation": "translation",
-    "Glossary": "translation",
     "Texture": "Translation",
 }
 
 ID_FUNC = {
     "Translation": make_translation_id,
-    "Glossary": make_glossary_id,
     "Texture": make_texture_id,
 }
 

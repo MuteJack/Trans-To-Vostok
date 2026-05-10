@@ -9,8 +9,8 @@ Path mapping:
         ->
     <project_root>/Translations/<language>/<file>/<sheet>.tsv
 
-For every xlsx file in the locale folder (Translation.xlsx, Glossary.xlsx,
-Texture.xlsx, etc.), every sheet is exported as one TSV.
+For every xlsx file in the locale folder (Translation.xlsx, Texture.xlsx,
+etc.), every sheet is exported as one TSV.
 
 Behavior:
     - All sheets exported (including MetaData)
@@ -24,8 +24,8 @@ Behavior:
       lets downstream tools (e.g. TSV -> xlsx rebuild) preserve sheet order.
     - Column widths are NOT written per-locale; the unified policy lives
       in `tools/width.json` keyed by category (MetaData / Translation /
-      Glossary / Texture). Any pre-existing `_column_widths.json` here
-      is treated as stale and removed.
+      Texture). Any pre-existing `_column_widths.json` here is treated
+      as stale and removed.
 
 Usage:
     python tools/utils/build_translation_tsv.py             # all locales

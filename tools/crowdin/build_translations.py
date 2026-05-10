@@ -1,6 +1,6 @@
 """Build Crowdin translation upload files from existing locale TSVs.
 
-Reads Translations/<locale>/{Translation,Glossary,Texture}/*.tsv and
+Reads Translations/<locale>/{Translation,Texture}/*.tsv and
 writes per-locale translation TSVs to:
 
     Crowdin_Mirror/translations/<locale>/<category>/<sheet>.tsv
@@ -36,7 +36,6 @@ REPO = TOOLS_DIR.parent
 sys.path.insert(0, str(TOOLS_DIR))
 from crowdin.identifier import (
     make_translation_id,
-    make_glossary_id,
     make_texture_id,
 )
 
@@ -45,23 +44,20 @@ MIRROR_ROOT = REPO / "Crowdin_Mirror"
 TEMPLATE_LOCALE = "Template"
 SKIP_SHEETS = {"MetaData"}
 
-CATEGORIES = ["Translation", "Glossary", "Texture"]
+CATEGORIES = ["Translation", "Texture"]
 OUTPUT_COLUMNS = ["identifier", "source_phrase", "translation", "context", "labels", "max_length"]
 
 SOURCE_FIELD = {
     "Translation": "text",
-    "Glossary": "text",
     "Texture": "Text",
 }
 TRANSLATION_FIELD = {
     "Translation": "translation",
-    "Glossary": "translation",
     "Texture": "Translation",
 }
 
 ID_FUNC = {
     "Translation": make_translation_id,
-    "Glossary": make_glossary_id,
     "Texture": make_texture_id,
 }
 

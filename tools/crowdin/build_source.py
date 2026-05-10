@@ -8,7 +8,7 @@ with the columns Crowdin expects:
 
 Filters out rows that should not be pushed:
     - method=ignore (Translation only)
-    - untranslatable=1 (Translation/Glossary)
+    - untranslatable=1 (Translation)
     - empty text
 
 Dedups rows with identical composite_id within the same file (most
@@ -30,7 +30,6 @@ REPO = TOOLS_DIR.parent                                    # repo root
 sys.path.insert(0, str(TOOLS_DIR))
 from crowdin.identifier import (
     make_translation_id,
-    make_glossary_id,
     make_texture_id,
 )
 
@@ -39,7 +38,7 @@ MIRROR_ROOT = REPO / "Crowdin_Mirror"
 SOURCE_LOCALE = "Template"
 SKIP_SHEETS = {"MetaData"}
 
-CATEGORIES = ["Translation", "Glossary", "Texture"]
+CATEGORIES = ["Translation", "Texture"]
 
 # Columns we'll output to Crowdin source TSV
 OUTPUT_COLUMNS = ["identifier", "source_phrase", "translation", "context", "labels", "max_length"]
@@ -87,24 +86,6 @@ def _row_to_translation_source(row: dict) -> dict | None:
     }
 
 
-def _row_to_glossary_source(row: dict) -> dict | None:
-    cid = make_glossary_id(row)
-    if not cid:
-        return None
-    return {
-        "identifier": cid,
-        "source_phrase": row.get("text", ""),
-        "translation": "",
-        "context": row.get("DESCRIPTION", ""),
-        "labels": _join_labels(
-            row.get("Category", ""),
-            row.get("Sub-Category", ""),
-            row.get("Class", ""),
-        ),
-        "max_length": (row.get("max_length") or "").strip(),
-    }
-
-
 def _row_to_texture_source(row: dict) -> dict | None:
     cid = make_texture_id(row)
     if not cid:
@@ -121,7 +102,6 @@ def _row_to_texture_source(row: dict) -> dict | None:
 
 CATEGORY_BUILDERS = {
     "Translation": _row_to_translation_source,
-    "Glossary": _row_to_glossary_source,
     "Texture": _row_to_texture_source,
 }
 

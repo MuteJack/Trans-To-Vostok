@@ -1,5 +1,5 @@
 {
-  "_comment": "Unified column widths applied by the TSV->xlsx rebuild tools. Keys are header names (not column letters), so policies survive column reordering. Sheet name 'MetaData' uses the MetaData policy; every other sheet uses the policy of its containing xlsx (Translation / Glossary / Texture). Header names not listed default to Excel's standard width.",
+  "_comment": "Unified column widths applied by the TSV->xlsx rebuild tools. Keys are header names (not column letters), so policies survive column reordering. Sheet name 'MetaData' uses the MetaData policy; every other sheet uses the policy of its containing xlsx (Translation / Texture). Header names not listed default to Excel's standard width.",
   "MetaData": {
     "IDX": 6.0,
     "Field": 25.0,
@@ -23,16 +23,6 @@
     "text": 84.0,
     "translation": 84.0,
     "DESCRIPTION": 150.0,
-    "max_length": 10.0
-  },
-  "Glossary": {
-    "untranslatable": 10.0,
-    "Category": 11.0,
-    "Sub-Category": 14.0,
-    "Class": 17.0,
-    "text": 23.0,
-    "translation": 24.0,
-    "DESCRIPTION": 100.0,
     "max_length": 10.0
   },
   "Texture": {

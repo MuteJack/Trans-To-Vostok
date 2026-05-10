@@ -46,7 +46,7 @@ Step 1에서 Template.xlsx가 fresh로 만들어졌으니, 새 locale은 Templat
 ```powershell
 $loc = "French"   # 추가할 locale 폴더 이름으로 변경
 
-# 1. xlsx 폴더 복사 (Translation.xlsx / Glossary.xlsx / Texture.xlsx 등)
+# 1. xlsx 폴더 복사 (Translation.xlsx / Texture.xlsx 등)
 Copy-Item -Recurse "Trans To Vostok/Template" "Trans To Vostok/$loc"
 
 # 2. TSV 복사 (git diff용 shadow, 처음부터 동기화 상태로 시작)
@@ -55,7 +55,7 @@ Copy-Item -Recurse "Translations/Template" "Translations/$loc"
 
 결과:
 
-- `Translations/French/Translation.xlsx` / `Glossary.xlsx` / `Texture.xlsx` (Template과 동일, 서식 적용 완료)
+- `Translations/French/Translation.xlsx` / `Texture.xlsx` (Template과 동일, 서식 적용 완료)
 - `Translations/French/Translation/*.tsv` (Korean 구조 + translation 컬럼 빈 값)
 
 > Template TSV/xlsx는 Korean을 source-of-truth로 sync된 상태 — 모든 메타데이터 (행 구조 / WHERE/SUB/KIND / filename 등)가 Korean과 일치하고 quality flag는 0, translation은 빈 값. DeepL이 채울 준비 완료.
@@ -81,7 +81,7 @@ python tools/machine_translation_deepl.py French
 ### 내부 단계 (`tools/utils/` 의 3개 스크립트 chained)
 
 1. **`export_unique_text.py French`**
-   - `Translation.xlsx` / `Texture.xlsx` / `Glossary.xlsx` 스캔
+   - `Translation.xlsx` / `Texture.xlsx` 스캔
    - `method=ignore`, `method=pattern`, `untranslatable=1`, 이미 번역된 행은 제외
    - 본문 기준 중복 제거 → `.tmp/unique_text/French/unique.tsv` 작성
 2. **`translate_with_deepl.py FR --source French`**
@@ -157,15 +157,6 @@ python tools/build_mod_package.py
 
 ## 7. Quirks & 자주 겪는 이슈
 
-### Glossary 상속 주의
-
-Template이 과거에 다른 번역된 locale (예: Korean)에서 복사된 흔적이 있다면, Glossary의 `translation` 컬럼이 그 언어 텍스트로 채워져 있을 수 있음. 파이프라인의 "이미 번역됨" 필터가 그 행들을 skip → 새 locale에서 엉뚱한 언어가 들어감.
-
-해결:
-
-- 새 locale의 `Glossary.xlsx`에서 `translation` 컬럼 비우기, 또는
-- (권장) Template의 모든 `translation` 컬럼을 항상 비워두기
-
 ### DeepL XML 파싱 에러
 
 원문에 `&`, `<`, `>` 가 있으면 batch 실패 (`Tag handling parsing failed`) 가능. 현재 도구는 자동으로 `&amp;` / `&lt;` / `&gt;` 로 escape해서 보내고 응답에서 복원함.
@@ -190,7 +181,6 @@ DeepL은 출발점일 뿐, 최종이 아님. 후속 검토 권장:
 
 - **고유 명사 / 게임 용어** (Vostok, Outpost 등): 의도한 표기 규칙 일관성 확인
 - **UI 문자열** (짧고 맥락 부족): DeepL이 오역 가능
-- **Glossary**: 사람이 직접 큐레이트하는 영역 → DeepL 결과는 초안으로만 사용, 검토/수정 필수
 
 ---
 

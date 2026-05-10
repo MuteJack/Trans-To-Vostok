@@ -38,7 +38,6 @@ If `parsed_text/` is absent, validation steps that depend on it are auto-skipped
 Translations/                     # Authoring + canonical translation data
 └── <locale>/                     # Each locale (Korean, French, Template, …)
     ├── Translation.xlsx          # Text translations (human-edited, gitignored)
-    ├── Glossary.xlsx             # Glossary (manually curated, gitignored)
     ├── Texture.xlsx              # Texture metadata + attribution (gitignored)
     └── <category>/*.tsv          # Canonical TSV (committed, git-diff-friendly)
 
@@ -91,7 +90,7 @@ README/                            # Korean contributor guide series (see Quick 
 | `check_duplicate.py` | Pre-build duplicate-key detector (xlsx-only) |
 | `check_conflict.py` | Conflict detection (same source text, different translations) |
 | `check_old_translation.py` | Detect stale translations from removed game content |
-| `rebuild_xlsx.py` | TSV → xlsx for a locale (Translation / Glossary / Texture batch) |
+| `rebuild_xlsx.py` | TSV → xlsx for a locale (Translation / Texture batch) |
 
 ### Utilities (`tools/utils/` — invoked by the above)
 
@@ -110,7 +109,6 @@ README/                            # Korean contributor guide series (see Quick 
 | `utils/build_translation_tsv.py` | Locale xlsx → per-sheet TSV under `Translations/<locale>/<file>/` (git-diff visibility) |
 | `utils/build_mod_info.py` | Generate `<pkg_root>/info.json` (version + build date + contributors) for the F9 Info tab |
 | `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (formatting / widths / conditional formatting applied) |
-| `utils/rebuild_glossary_xlsx.py` | TSV → Glossary.xlsx |
 | `utils/rebuild_texture_xlsx.py` | TSV → Texture.xlsx |
 
 ---
@@ -135,7 +133,7 @@ This repository uses different licenses by asset type. See [`LICENSE.md`](LICENS
 | Asset | License | File |
 | --- | --- | --- |
 | Code (Python tools, GDScript, batch) | Apache 2.0 | [`LICENSE-CODE`](LICENSE-CODE) |
-| Translation text (Translation, Glossary) | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
+| Translation text | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
 | Texture / image assets | CC BY 4.0 | [`LICENSE-TEXTURE`](LICENSE-TEXTURE) |
 
 Attribution preserved per Apache 2.0 §4(d) is in [`NOTICE`](NOTICE); the contributor list referenced by `NOTICE` and the CC BY 4.0 licenses is in [`AUTHORS.md`](AUTHORS.md). The original Road to Vostok game's English source text and original assets remain the copyright of the game developers and are NOT licensed by this repository.
@@ -227,7 +225,6 @@ python tools/build_mod_package.py Korean         # locale 지정
 Translations/                     # 번역 작업 데이터 (authoring + canonical)
 └── <locale>/                     # 각 locale (Korean, French, Template, …)
     ├── Translation.xlsx          # 텍스트 번역 (사람 편집 대상, gitignored)
-    ├── Glossary.xlsx             # 용어집 (수동 큐레이트, gitignored)
     ├── Texture.xlsx              # 텍스처 metadata + attribution (gitignored)
     └── <category>/*.tsv          # canonical TSV (committed, git diff 친화적)
 
@@ -248,7 +245,7 @@ tools/                             # Python 빌드 / 검증 / 보조 도구
 ├── validate_translation.py       # xlsx 검증 (parsed_text 의존 / 비의존 모두)
 ├── parse_translatables.py        # PCK 추출본을 파싱 → parsed_text/
 ├── machine_translation_deepl.py  # DeepL 1차 번역 파이프라인
-├── rebuild_xlsx.py               # TSV → xlsx 재빌드 (3개 카테고리 일괄)
+├── rebuild_xlsx.py               # TSV → xlsx 재빌드 (Translation/Texture 일괄)
 ├── check_*.py                    # 중복 / 충돌 / 미번역 / drift 검사
 └── utils/                        # 위 도구들이 호출하는 유틸리티
 
@@ -280,7 +277,7 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 | `check_duplicate.py` | 빌드 전 중복 키 사전 검사 (xlsx 단독) |
 | `check_conflict.py` | 번역 충돌 검사 (같은 원문, 다른 번역) |
 | `check_old_translation.py` | 게임 업데이트로 사라진 옛 번역 감지 |
-| `rebuild_xlsx.py` | locale 의 TSV → xlsx 일괄 재빌드 (Translation/Glossary/Texture) |
+| `rebuild_xlsx.py` | locale 의 TSV → xlsx 일괄 재빌드 (Translation/Texture) |
 
 ### 유틸리티 (`tools/utils/` — 위 도구가 호출)
 
@@ -299,7 +296,6 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 | `utils/build_translation_tsv.py` | locale xlsx → 시트별 TSV (`Translations/<locale>/<file>/`) — git diff 가독성 |
 | `utils/build_mod_info.py` | F9 Info 탭이 사용하는 `<pkg_root>/info.json` 생성 (version + build date + contributors) |
 | `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (서식 / 너비 / 조건부 서식 일괄 적용) |
-| `utils/rebuild_glossary_xlsx.py` | TSV → Glossary.xlsx |
 | `utils/rebuild_texture_xlsx.py` | TSV → Texture.xlsx |
 
 ---
@@ -324,7 +320,7 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 | 자산 | 라이선스 | 파일 |
 | --- | --- | --- |
 | 코드 (Python tools, GDScript, batch) | Apache 2.0 | [`LICENSE-CODE`](LICENSE-CODE) |
-| 번역 텍스트 (Translation, Glossary) | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
+| 번역 텍스트 | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
 | 텍스처 / 이미지 자산 | CC BY 4.0 | [`LICENSE-TEXTURE`](LICENSE-TEXTURE) |
 
 Apache 2.0 §4(d) 의 attribution 보존 대상은 [`NOTICE`](NOTICE) 에 있고, `NOTICE` 와 CC BY 4.0 라이선스가 참조하는 기여자 명단은 [`AUTHORS.md`](AUTHORS.md). 원작 Road to Vostok 게임의 영문 텍스트와 원본 자산은 게임 개발사의 저작권으로 남으며 본 저장소의 라이선스 대상이 아님.

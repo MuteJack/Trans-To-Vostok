@@ -70,7 +70,7 @@ def parse_canonical_tsv_translations(text: str, id_func, tx_field: str) -> dict[
     Canonical TSV doesn't have a precomputed `identifier` column — the
     identifier is derived from structural columns via `id_func(row_dict)`.
     `tx_field` is the column name holding the translation ("translation"
-    for Translation/Glossary, "Translation" for Texture).
+    for Translation, "Translation" for Texture).
     """
     if not text:
         return {}
@@ -128,18 +128,15 @@ def diff_against_head(
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
     from crowdin.identifier import (
         make_translation_id,
-        make_glossary_id,
         make_texture_id,
     )
 
     id_func = {
         "Translation": make_translation_id,
-        "Glossary": make_glossary_id,
         "Texture": make_texture_id,
     }
     tx_field = {
         "Translation": "translation",
-        "Glossary": "translation",
         "Texture": "Translation",
     }
 

@@ -40,21 +40,6 @@
     }
   },
   {
-    "source": "/Crowdin_Mirror/source/Glossary/*.tsv",
-    "translation": "/Crowdin_Mirror/translations/%locale%/Glossary/%original_file_name%",
-    "type": "csv",
-    "scheme": "identifier,source_phrase,translation,context,labels,max_length",
-    "delimiter": "\t",
-    "first_line_contains_header": true,
-    "languages_mapping": {
-      "locale": {
-        "ko": "Korean",
-        "fr": "French",
-        "pt-BR": "Portuguese_BR"
-      }
-    }
-  },
-  {
     "source": "/Crowdin_Mirror/source/Texture/*.tsv",
     "translation": "/Crowdin_Mirror/translations/%locale%/Texture/%original_file_name%",
     "type": "csv",

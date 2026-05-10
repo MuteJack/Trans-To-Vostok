@@ -19,7 +19,7 @@ Windows 기준이며, macOS/Linux에서도 비슷하게 진행 가능합니다.
 
 ### Microsoft Excel
 
-- xlsx 파일 (Translation.xlsx / Glossary.xlsx / Texture.xlsx) 편집용.
+- xlsx 파일 (Translation.xlsx / Texture.xlsx) 편집용.
 - LibreOffice Calc 등도 사용 가능하나 셀 내 줄바꿈(`Alt+Enter`) 동작과 서식 보존을 위해 **Microsoft Excel** 권장.
 
 ### Python 3 (Python 3.13 권장됨)

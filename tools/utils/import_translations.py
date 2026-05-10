@@ -6,7 +6,6 @@ Reads:
 Writes (in-place, all under Trans To Vostok/<target_locale>/):
     Translation.xlsx   (game text)
     Texture.xlsx       (image labels, capitalized columns)
-    Glossary.xlsx      (translator reference)
 
 Per-row logic (per file, columns vary; checks adapted by config):
     1. If row's translation is already non-empty:
@@ -30,7 +29,7 @@ Per-row logic (per file, columns vary; checks adapted by config):
          row matches first at runtime and returns the English template,
          consistent and not partially translated. Korean (manual) pattern
          translations are preserved by step 1.
-    5. Else (regular: static / literal / substr / Texture / Glossary):
+    5. Else (regular: static / literal / substr / Texture):
          look up text in translated TSV
          if found, write translation; append `#Machine Translated` to Comments
 
@@ -96,14 +95,6 @@ XLSX_FILES = [
         "trans_col": "Translation",
         "method_col": None,
         "untrans_col": None,
-        "comments_col": "Comments",
-    },
-    {
-        "name": "Glossary.xlsx",
-        "text_col": "text",
-        "trans_col": "translation",
-        "method_col": None,
-        "untrans_col": "untranslatable",
         "comments_col": "Comments",
     },
 ]

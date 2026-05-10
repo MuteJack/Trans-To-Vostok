@@ -2,15 +2,15 @@
 
 Crowdin requires a single, file-unique identifier per string. Our xlsx
 schema uses multiple columns to identify a row (filename / parent /
-name / type / property / unique_id for Translation; Category /
-Sub-Category / Class for Glossary; File Name + Text for Texture). This
-module composes those columns into a single deterministic string.
+name / type / property / unique_id for Translation; File Name + Text
+for Texture). This module composes those columns into a single
+deterministic string.
 
 Properties:
   - **Stable**: same row → same identifier across runs (push/pull match)
   - **Unique-within-file**: rows that differ in their identifying
     columns get distinct identifiers
-  - **Reversible-ish**: prefix tells the category at a glance (T/G/X);
+  - **Reversible-ish**: prefix tells the category at a glance (T/X);
     body keeps the structural info readable
 
 Patterns:
@@ -18,8 +18,6 @@ Patterns:
     T:<filename>:<parent>:<name>:<type>:<property>[:<unique_id>]
   Translation (global — method=substr / literal/pattern with no location):
     T:GLOBAL:<method>:<text_hash>
-  Glossary:
-    G:<Category>:<Sub-Category>:<Class>:<text_hash>
   Texture:
     X:<File_Name>:<text_hash>
 """
@@ -80,30 +78,6 @@ def make_translation_id(row: dict) -> str:
         short_hash(row.get("text", "")),
     ]
     return "T:" + ":".join(parts)
-
-
-def make_glossary_id(row: dict) -> str:
-    """Generate composite_id for a Glossary row.
-
-    Includes DESCRIPTION hash because Glossary intentionally allows
-    multiple entries for the same source text distinguished by context
-    (e.g., NVG → 야투경 in inventory short form vs 야간투시경 in settings
-    full form). Different DESCRIPTION → different intent → different id.
-    """
-    if (row.get("untranslatable") or "").strip() == "1":
-        return ""
-    text = (row.get("text") or "").strip()
-    if not text:
-        return ""
-    description = (row.get("DESCRIPTION") or "").strip()
-    parts = [
-        (row.get("Category") or "").strip(),
-        (row.get("Sub-Category") or "").strip(),
-        (row.get("Class") or "").strip(),
-        short_hash(text),
-        short_hash(description),
-    ]
-    return "G:" + ":".join(parts)
 
 
 def make_texture_id(row: dict) -> str:

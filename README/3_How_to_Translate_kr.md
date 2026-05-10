@@ -50,7 +50,6 @@ git, Python, xlsx 만질 필요 없음. 번역 데이터는 Crowdin이 보관 �
 - 작업할 locale의 xlsx 파일 위치 확인:
   ```
   Translations/<locale>/Translation.xlsx
-  Translations/<locale>/Glossary.xlsx
   Translations/<locale>/Texture.xlsx
   ```
 

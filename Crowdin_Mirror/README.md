@@ -17,19 +17,18 @@ Crowdin_Mirror/
 │   │   ├── Main.tsv
 │   │   ├── Interface.tsv
 │   │   └── ...
-│   ├── Glossary/
-│   │   └── Main.tsv
 │   └── Texture/
 │       ├── Tutorial.tsv
 │       └── UI.tsv
 └── translations/                    # Translations pulled from Crowdin
     ├── Korean/
     │   ├── Translation/
-    │   ├── Glossary/
     │   └── Texture/
     ├── French/
     └── Portuguese_BR/
 ```
+
+> Glossary 용어집은 별도 폴더가 아닌 Crowdin 네이티브 Glossary 리소스로 관리됨 (Editor 우측 패널에 자동 매칭). `tools/crowdin/migrate_glossary.py` 가 일회성 마이그레이션 스크립트.
 
 ## TSV columns (Crowdin push format)
 

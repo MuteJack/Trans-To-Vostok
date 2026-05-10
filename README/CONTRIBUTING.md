@@ -95,12 +95,11 @@ $loc = "French"   # change to your target locale folder name
 mkdir "Trans To Vostok/$loc"
 cp "Trans To Vostok/Template/Translation.xlsx" "Trans To Vostok/$loc/"
 cp "Trans To Vostok/Template/Texture.xlsx"     "Trans To Vostok/$loc/"
-cp "Trans To Vostok/Template/Glossary.xlsx"    "Trans To Vostok/$loc/"
 ```
 
 The Template should have **empty `translation` columns** so DeepL has
 work to do. If your Template inherited translations from another locale,
-clear those columns first (see "Glossary inheritance caveat" below).
+clear those columns first.
 
 ### Step 2 — Run the translation pipeline
 
@@ -121,16 +120,16 @@ Optional flags:
 Internally the orchestrator chains three steps in `tools/utils/`:
 
 1. **`export_unique_text.py French`** — scans `Translation.xlsx`,
-   `Texture.xlsx`, `Glossary.xlsx`. Filters skip ignore/pattern/
-   untranslatable rows and rows whose translation column is already
-   filled. Deduplicates by exact text. Writes `.tmp/unique_text/French/unique.tsv`.
+   `Texture.xlsx`. Filters skip ignore/pattern/untranslatable rows
+   and rows whose translation column is already filled. Deduplicates
+   by exact text. Writes `.tmp/unique_text/French/unique.tsv`.
 2. **`translate_with_deepl.py FR --source French`** — sends each unique
    text to DeepL with placeholder protection (`{name}` -> `<x>{name}</x>`)
    and XML-escape (`&`/`<`/`>`). Resume is text-keyed, so re-running
    the pipeline only translates newly-discovered or previously-failed
    texts. Output: `.tmp/unique_text/French/translated_FR.tsv`.
 3. **`import_translations.py French`** — writes translations back to
-   the 3 xlsx files in `Trans To Vostok/French/` using the per-row
+   the xlsx files in `Trans To Vostok/French/` using the per-row
    logic below.
 
 If you prefer to run the steps manually (e.g., to insert an LLM review
@@ -184,15 +183,6 @@ Verify:
 
 ### Quirks & common issues
 
-**Glossary inheritance caveat.** If the Template was previously copied
-from a translated locale (e.g., Korean), the Glossary's translation
-column may still contain that other language's text. The pipeline's
-"already translated" filter will skip those rows. To get fresh DeepL
-translations:
-- Clear the translation column in `<NewLocale>/Glossary.xlsx`, OR
-- (Better) keep the Template's translation columns empty so all new
-  locales start clean.
-
 **DeepL XML parse errors.** Texts with `&`, `<`, or `>` were causing
 batch failures (`Tag handling parsing failed`). The current tool
 auto-escapes these to `&amp;` / `&lt;` / `&gt;` before sending and
@@ -213,8 +203,6 @@ import, review:
   intended convention
 - UI strings (short, contextual) — DeepL sometimes mistranslates without
   context
-- The Glossary specifically — it is meant to be **human-curated**, so
-  treat the DeepL output as a draft and edit as needed.
 
 ---
 
