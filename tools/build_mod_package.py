@@ -98,9 +98,23 @@ def build_translation_tsv_for_locale(tools_dir: Path, locale: str) -> bool:
     return True
 
 
+def get_texture_credits_for_locale(tools_dir: Path, locale: str) -> bool:
+    """Call get_texture_credits.py. Refreshes the Texture_reworker field of
+    Trans To Vostok/<locale>/credits.json from Texture.xlsx so subsequent
+    build_translation_credit / build_authors / build_mod_info see fresh data."""
+    print(f"=== Refreshing texture credits: {locale} ===")
+    cmd = [sys.executable, "utils/get_texture_credits.py", locale]
+    result = subprocess.run(cmd, cwd=tools_dir)
+    if result.returncode != 0:
+        print(f"[ERROR] {locale} get_texture_credits failed")
+        return False
+    print()
+    return True
+
+
 def build_translation_credit_for_locale(tools_dir: Path, locale: str) -> bool:
     """Call build_translation_credit.py. Generates <locale>/Translation_Credit.md
-    from Translation.xlsx MetaData and Texture.xlsx columns."""
+    from credits.json."""
     print(f"=== Building Translation_Credit: {locale} ===")
     cmd = [sys.executable, "utils/build_translation_credit.py", "--locale", locale]
     result = subprocess.run(cmd, cwd=tools_dir)
@@ -279,8 +293,11 @@ def main() -> int:
         if not build_attributions_for_locale(script_dir, locale):
             return 1
 
-    # 3. build translation credits (Translation_Credit.md per locale)
+    # 3. refresh credits.json's Texture_reworker from Texture.xlsx (per locale),
+    #    then build Translation_Credit.md from credits.json
     for locale in locales:
+        if not get_texture_credits_for_locale(script_dir, locale):
+            return 1
         if not build_translation_credit_for_locale(script_dir, locale):
             return 1
 

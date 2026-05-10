@@ -3,45 +3,33 @@ Scenes/Menu	Main/Buttons	New	Button	New game	Nouveau jeu
 Scenes/Menu	Main/Buttons	Load	Button	Load game	Charger la partie
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	Tutoriel
 Scenes/Menu	Main/Buttons	Settings	Button	"Settings
-"	"Paramètres
-"
+"	Paramètres
 Scenes/Menu	Main/Buttons	Roadmap	Button	"Roadmap
-"	"Feuille de route
-"
+"	Feuille de route
 Scenes/Menu	Main/Buttons	About	Button	"About
-"	"À propos
-"
+"	À propos
 Scenes/Menu	Main/Buttons	Quit	Button	"Quit
-"	"Quitter
-"
+"	Quitter
 Scenes/Menu	Log	Header	Label	Changelog	Journal des modifications
 Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 Scenes/Menu	Log/Buttons	Log_On	Button	"On
-"	"Le
-"
+"	Le
 Scenes/Menu	Hardware	Header	Label	Hardware Check	Vérification du matériel
 Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
-"	"Le
-"
+"	Le
 Scenes/Menu	Intro	Header	Label	Watch Intro	Regarder l'intro
 Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
-"	"Le
-"
+"	Le
 Scenes/Menu	Music	Header	Label	Menu Music	Menu Musique
 Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 Scenes/Menu	Music/Buttons	Music_On	Button	"On
-"	"Le
-"
+"	Le
 Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	Road to Vostok ® est une marque déposée de Road to Vostok Ltd. Tous droits réservés © 2026
 Scenes/Menu	.	Version	Label	Version: 0.1.1.3	Version : 0.1.1.3
 Scenes/Menu	Changelog/Header	Label	Label	Changelog	Journal des modifications
@@ -706,32 +694,24 @@ Votre inventaire et votre équipement actuels seront supprimés."
 Resources/Inputs	.	Header	Label	Input Settings	Paramètres de saisie
 Resources/Inputs	Modes/Settings	Mouse	Label	Mouse	Souris
 Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	"Normal
-"	"Normal
-"
+"	Normal
 Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	"Inverted
-"	"À l'envers
-"
+"	À l'envers
 Resources/Inputs	Modes/Settings	Sprint	Label	Sprint	Sprint
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	"Hold
-"	"Attendez
-"
+"	Attendez
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	"Toggle
-"	"Basculer
-"
+"	Basculer
 Resources/Inputs	Modes/Settings	Lean	Label	Lean	Lean
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
-"	"Attendez
-"
+"	Attendez
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
-"	"Basculer
-"
+"	Basculer
 Resources/Inputs	Modes/Settings	Aim	Label	Aim	Objectif
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
-"	"Attendez
-"
+"	Attendez
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
-"	"Basculer
-"
+"	Basculer
 Resources/Inputs	.	Reset	Button	Reset to defaults	Rétablir les paramètres par défaut
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	Exemple de saisie
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	Input Key	Touche de saisie
@@ -741,33 +721,25 @@ UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	Ambient Volume	Volume a
 UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	Music Volume	Volume de la musique
 UI/Settings	Settings/Row_01/Music/Elements	Music	Label	Music Preset	Préréglage musical
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	"Dynamic
-"	"Dynamique
-"
+"	Dynamique
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	"Shelter
-"	"Refuge
-"
+"	Refuge
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 05
-"	"Zone 05
-"
+"	Zone 05
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
-"	"Frontière
-"
+"	Frontière
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
-"	"Vostok
-"
+"	Vostok
 UI/Settings	Settings/Row_01/Camera	Camera	Label	Camera Settings	Paramètres de l'appareil photo
 UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	Interpolate	Interpoler
 UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	Field of View	Champ de vision
 UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	Headbob	Hochement de tête
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	"On
-"	"Le
-"
+"	Le
 UI/Settings	Settings/Row_01/Mouse	Mouse	Label	Mouse Settings	Paramètres de la souris
 UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	Sensibilité de la vision
 UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	Sensibilité de la visée
@@ -783,8 +755,7 @@ UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	Paramètres d'image
 UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	Netteté
 UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
 UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
-"	"Carte
-"
+"	Carte
 UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	FPS
 UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	Signes vitaux
 UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	Médical
@@ -792,31 +763,25 @@ UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	Placement
 UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	Décoration
 UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	UI Tooltip	Info-bulle de l'interface utilisateur
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	"On
-"	"Le
-"
+"	Le
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	Off	Désactivé
 UI/Settings	Settings/Row_02/PIP	PIP	Label	PIP Scopes	Lunettes PIP
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	"On
-"	"Le
-"
+"	Le
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 UI/Settings	Settings/Row_02/Shadows	Shadows	Label	Detail Shadows	Détails des ombres
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	On	Le
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 UI/Settings	Settings/Row_02/Water	Header	Label	Water Reflections	Reflets sur l'eau
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	On	Le
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	Occlusion ambiante
 UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	Le
 UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
-"	"Désactivé
-"
+"	Désactivé
 UI/Settings	Settings/Row_03/Display	Display	Label	Display	Affichage
 UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	Plein écran
 UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	En mode fenêtré
@@ -842,8 +807,7 @@ UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	SMAA On	SMAA ac
 UI/Settings	Settings/Row_03/Exit	Exit	Label	Exit	Sortie
 UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	Main Menu	Menu principal
 UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
-"	"Quitter le jeu
-"
+"	Quitter le jeu
 Scenes/Menu	Roadmap	Header	Label	Roadmap	Feuille de route
 Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	Prochaines versions
 Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← Retour
@@ -1029,11 +993,9 @@ Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	Passer l'introduction [ESPAC
 Scenes/Death	Main	Hint	Label	Character died	Le personnage est mort
 Scenes/Death	Main/Buttons	Load	Button	Load game	Charger la partie
 Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
-"	"Menu principal
-"
+"	Menu principal
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
-"	"Quitter
-"
+"	Quitter
 UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Santé
 UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Énergie
 UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
@@ -1108,50 +1070,35 @@ UI/Interface	Tasks/Header	Label	Label	Tasks	Tâches
 UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Catalogue de mobilier
 UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	Le catalogue est lié à votre personnage ; si vous mourez, les objets de votre catalogue seront également détruits
 UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	"Utilisation
-"
+"	Utilisation
 UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	"Équiper
-"
+"	Équiper
 UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	"Déséquiper
-"
+"	Déséquiper
 UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	"Décharger
-"
+"	Décharger
 UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	"Diviser
-"
+"	Diviser
 UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	"Prends
-"
+"	Prends
 UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	"Sommeil
-"
+"	Sommeil
 UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	"Transfert
-"
+"	Transfert
 UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	"Lâcher
-"
+"	Lâcher
 UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	"Lieu
-"
+"	Lieu
 UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	"Détruire
-"
+"	Détruire
 UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	"Supprimer [0]
-"
+"	Supprimer [0]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	"Supprimer [1]
-"
+"	Supprimer [1]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	"Supprimer [2]
-"
+"	Supprimer [2]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	"Supprimer [3]
-"
+"	Supprimer [3]
 UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Maître du café
 UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Consommable
 UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Légendaire
@@ -1246,9 +1193,7 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Rare)	Type (Rare)
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Legendary)	Type (Légendaire)
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	Condition:	État :
-UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	100%	100 %
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	Weight:	Poids :
-UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	100kg	100 kg
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	Value:	Valeur :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	Use time:	Durée d'utilisation :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	Damage:	Dommages :
@@ -1259,8 +1204,7 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	Nombre maxi
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	Armure :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	Santé :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
-"	"Énergie :
-"
+"	Énergie :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Eau :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Temp. :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Soins :

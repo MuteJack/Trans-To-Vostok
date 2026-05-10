@@ -1,8 +1,10 @@
 """Maintainer wrapper: pull Crowdin translations -> canonical TSV (Python-only, no CLI).
 
-Combines two steps:
+Combines three steps:
   1. Crowdin SDK build + download         Crowdin -> Crowdin_Mirror/translations/<locale>/
   2. crowdin/apply_to_repo.py             Crowdin_Mirror -> Translations/<locale>/<cat>/*.tsv
+  3. crowdin/get_member_list.py           Crowdin members -> Trans To Vostok/<locale>/credits.json
+                                          (Translator fields only; Texture_reworker preserved)
 
 Run this periodically (e.g. weekly) to bring the repo's canonical TSVs in
 sync with the latest translations on Crowdin. After running, review the
@@ -42,7 +44,7 @@ from utils.locale_config import load_crowdin_locale_map
 
 
 def run(cmd: list, cwd: Path) -> bool:
-    print(f"\n>>> {' '.join(str(c) for c in cmd)}")
+    print(f"\n>>> {' '.join(str(c) for c in cmd)}", flush=True)
     result = subprocess.run(cmd, cwd=cwd)
     return result.returncode == 0
 
@@ -101,6 +103,14 @@ def main() -> int:
         apply_cmd.append(args.locale)
     if not run(apply_cmd, cwd=tools_dir):
         print("\n[ERROR] apply_to_repo step failed", file=sys.stderr)
+        return 1
+
+    # 3. Update per-locale credits.json (Translator fields only; Texture preserved)
+    members_cmd = [sys.executable, "crowdin/get_member_list.py"]
+    if not pull_all:
+        members_cmd.append(args.locale)
+    if not run(members_cmd, cwd=tools_dir):
+        print("\n[ERROR] get_member_list step failed", file=sys.stderr)
         return 1
 
     target = "all locales" if pull_all else args.locale
