@@ -8,10 +8,10 @@ After visiting the Grandma for an ""welfare check"", Doctor returns to this clin
 Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."	Place holder text. Don't need to Translate	#Machine Translated	
 Events	/	Button	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Show	Button	text	728466319	Show	Afficher		#Machine Translated	
 Events	/	Day	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Day	Label	text	826758355	Day 1	Jour 1		#Machine Translated	
-Events	/	Day	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}				
+Events	/	Day	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}	Day {str}			
 Events	/	Day Left	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Status	Label	text	1150425844	In 10 days	Dans 10 jours	Place holder text. Don't need to Translate. Use Pattern instead	#Machine Translated	
-Events	/	Day Left	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days				
-Events	/	Type	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event				
+Events	/	Day Left	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days	In {str} Days			
+Events	/	Type	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event	{type} Event			
 Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	Événement destiné aux traders	I don't know why is this string use lower case (event).	#Machine Translated	
 Events	/	Type	0	substr									Trader Event	Événement destiné aux traders		#Machine Translated	
 Events	/	Type	0	substr									Dynamic Event	Événement dynamique		#Machine Translated	
@@ -24,7 +24,7 @@ Events	/	Location	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elem
 Events	/	Percent	0	substr	Scripts/Event	gd			possibility.get_child(0).text	literal		50	Guaranteed	Garanti		#Machine Translated	
 Events	/	Percent	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	text	1762783310	~5% / map instance	environ 5 % / instance de carte	"Dynamically Changed on Event.gd
 Maybe a Placeholder"	#Machine Translated	
-Events	/	Percent	0	pattern	Scripts/Event	gd			possibility.get_child(0).text	concat		52	~{str}% / map instance				
+Events	/	Percent	0	pattern	Scripts/Event	gd			possibility.get_child(0).text	concat		52	~{str}% / map instance	~{str}% / map instance			
 Events	List/Day1	Name	0	literal	Events/List/D1_Generalist	tres					name		Generalist returns to Village	Le généraliste revient au Village		#Machine Translated	
 Events	List/Day1	Type	0	ignore	Events/List/D1_Generalist	tres					type		Trader	Trader		#Machine Translated	
 Events	List/Day1	Description	0	literal	Events/List/D1_Generalist	tres					description		"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.

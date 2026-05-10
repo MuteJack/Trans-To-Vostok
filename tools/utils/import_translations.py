@@ -21,7 +21,15 @@ Per-row logic (per file, columns vary; checks adapted by config):
          (an ignore row is usually a duplicate of a non-ignore row whose text
           was translated; reusing that translation keeps the xlsx complete)
     4. Else if method == "pattern" (only when column exists):
-         skip (DeepL cannot translate regex source patterns)
+         translation = text (copy original)
+         Rationale: pattern rows like "In {str} Days" can't be safely
+         machine-translated (DeepL would mangle the regex). But leaving
+         translation empty causes the runtime to fall through to substr
+         matching, producing broken output like "In 5 Jours" (mixed
+         English/target language). Copying source ensures the pattern
+         row matches first at runtime and returns the English template,
+         consistent and not partially translated. Korean (manual) pattern
+         translations are preserved by step 1.
     5. Else (regular: static / literal / substr / Texture / Glossary):
          look up text in translated TSV
          if found, write translation; append `#Machine Translated` to Comments
@@ -137,7 +145,7 @@ def _new_stats() -> dict:
         "rows_filled_ignore": 0,
         "rows_filled_ignore_fallback": 0,
         "rows_filled_regular": 0,
-        "rows_skipped_pattern": 0,
+        "rows_filled_pattern_as_source": 0,
         "rows_no_text": 0,
         "rows_no_translation_available": 0,
         "rows_placeholder_warning": 0,
@@ -203,9 +211,11 @@ def import_to_xlsx(target_xlsx: Path, cfg: dict, translated_map: dict[str, dict]
                     stats["rows_filled_untranslatable"] += 1
                     continue
 
-                # 4. pattern → skip
+                # 4. pattern → copy source; prevents runtime fall-through to
+                #    substr global which would partially translate the pattern.
                 if method_val == "pattern":
-                    stats["rows_skipped_pattern"] += 1
+                    ws.cell(row_idx, trans_col).value = text
+                    stats["rows_filled_pattern_as_source"] += 1
                     continue
 
                 # 3 & 5. ignore or regular → look up text in translated map
@@ -328,7 +338,7 @@ def main() -> int:
         print(f"  Filled (ignore via lookup)   : {stats['rows_filled_ignore']}")
         print(f"  Filled (ignore fallback copy): {stats['rows_filled_ignore_fallback']}")
         print(f"  Filled (regular row)         : {stats['rows_filled_regular']}")
-        print(f"  Skipped (method=pattern)     : {stats['rows_skipped_pattern']}")
+        print(f"  Filled (pattern -> source)   : {stats['rows_filled_pattern_as_source']}")
         print(f"  Skipped (no text in row)     : {stats['rows_no_text']}")
         print(f"  No translation available     : {stats['rows_no_translation_available']}")
         if stats["rows_placeholder_warning"]:

@@ -846,8 +846,8 @@ Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Setting
 Settings	Display	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	Exibir		#Machine Translated	
 Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	Tela inteira		#Machine Translated	
 Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	Em janela		#Machine Translated	
-Settings	Display	Element	0	pattern									Monitor: {idx}				
-Settings	Display	Element	0	pattern									Window: {percent}%				
+Settings	Display	Element	0	pattern									Monitor: {idx}	Monitor: {idx}			
+Settings	Display	Element	0	pattern									Window: {percent}%	Window: {percent}%			
 Settings	Frames	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames	Molduras		#Machine Translated	
 Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_60	Button	text	137610325	60	60			
 Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_120	Button	text	1049440983	120	120			
@@ -1042,7 +1042,7 @@ EM RELAÇÃO A OU CONEXA COM O SOFTWARE OU COM O USO OU OUTRAS TRANSAÇÕES RELA
 SOFTWARE."		#Machine Translated	
 Loading	/	String	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	Carregando...		#Machine Translated	
 			0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	Carregando...		#Machine Translated	
-Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...	Loading {scene}...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	Carregando a introdução...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	Carregando a cabine...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	Carregando o tutorial...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	#Machine Translated	

@@ -155,7 +155,7 @@ Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Mar
 "	Local		#Machine Translated	
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
 "	Destruir		#Machine Translated	
-Inventory	Item	Button	0	pattern									Remove {name}				
+Inventory	Item	Button	0	pattern									Remove {name}	Remove {name}			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
 "	Remover [0]		#Machine Translated	
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
@@ -187,7 +187,7 @@ Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Pen
 Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 4	Nível 4		#Machine Translated	
 Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 5	Nível 5		#Machine Translated	
 Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label		1220649414	Protection:	Proteção:		#Machine Translated	
-Inventory	Item	String	0	pattern									Level {no}				
+Inventory	Item	String	0	pattern									Level {no}	Level {no}			
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	Nível 1		#Machine Translated	
 Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 2	Nível 2		#Machine Translated	
 Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 3	Nível 3		#Machine Translated	
