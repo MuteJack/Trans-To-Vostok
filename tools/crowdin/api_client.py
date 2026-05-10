@@ -1,6 +1,6 @@
 """Thin Python SDK wrapper around crowdin-api-client.
 
-Replaces the need for the Crowdin CLI (Java-based) — translators only need
+Replaces the need for the Crowdin CLI (Java-based) -- translators only need
 `pip install -r tools/requirements.txt`.
 
 Operations exposed:
@@ -8,20 +8,22 @@ Operations exposed:
         Upload every non-empty translation in locale_dir (full sync).
   - upload_translations_diff(diff_rows, language_id, ...)
         Upload only the (file, identifier, translation) rows in diff_rows
-        — used by smart push to avoid overwriting other contributors' edits.
+        -- used by smart push to avoid overwriting other contributors' edits.
+  - download_translations(language_id=None, extract_to=None)
+        Build + download project translations as zip, extract.
 
 Configuration:
   - Project ID + source path prefix: tools/crowdin/config.json (committed)
   - Auth token: secrets.json:crowdin_personal_token (gitignored)
-
-The flow for uploading one TSV:
-  1. POST /storages          (upload file bytes, get storage_id)
-  2. POST /projects/{id}/translations/{lang}   (link storage_id to source file)
 """
 import csv
+import io
 import json
 import sys
 import tempfile
+import time
+import urllib.request
+import zipfile
 from pathlib import Path
 
 try:
@@ -230,3 +232,138 @@ def upload_translations_diff(
                 print(f"  [ERR]  {rel}  → {e}")
 
     return stats
+
+
+def _build_locale_to_folder_map(client, project_id: int) -> dict[str, str]:
+    """Map Crowdin's exported locale codes to our canonical folder names.
+
+    The zip Crowdin builds uses each language's BCP-47 `locale` (e.g. "ko-KR")
+    as the folder segment under `Crowdin_Mirror/translations/`. Our repo
+    layout uses friendly folder names from languages.json (e.g. "Korean").
+
+    We bridge the two by:
+      - languages.json registry: folder_name -> crowdin_id (e.g. Korean -> ko)
+      - Crowdin API:             id -> locale (e.g. ko -> ko-KR)
+    Compose: locale -> folder_name (e.g. ko-KR -> Korean).
+
+    Both `locale` and `id` are added as keys for robustness, since some
+    builds export by short id (e.g. pt-BR) which already matches `locale`.
+    """
+    languages_path = _SCRIPT_DIR.parent / "languages.json"
+    registry = json.loads(languages_path.read_text(encoding="utf-8"))["languages"]
+    cid_to_folder = {
+        entry["crowdin_id"]: dir_name
+        for dir_name, entry in registry.items()
+        if entry.get("crowdin_id")
+    }
+
+    proj = client.projects.get_project(projectId=project_id)
+    target_langs = proj["data"].get("targetLanguages", [])
+    out: dict[str, str] = {}
+    for lang in target_langs:
+        cid = lang.get("id")
+        folder = cid_to_folder.get(cid)
+        if not folder:
+            continue
+        for code in (lang.get("locale"), cid):
+            if code:
+                out[code] = folder
+    return out
+
+
+def download_translations(
+    language_id: str | None = None,
+    extract_to: Path | None = None,
+    *,
+    poll_interval: float = 3.0,
+    poll_timeout: float = 600.0,
+) -> Path:
+    """Build + download project translations as zip and extract.
+
+    Steps:
+      1. Trigger a project build (server-side export). If language_id is given,
+         build only that target; else build all targets.
+      2. Poll build status until "finished" (or fail/cancel/timeout).
+      3. Fetch the resulting zip via the issued URL.
+      4. Extract zip into extract_to (defaults to cwd), remapping the
+         locale folder segment from Crowdin's BCP-47 code (e.g. ko-KR) to
+         the canonical folder name (e.g. Korean) per languages.json.
+
+    Returns extract_to.
+    """
+    client, project_id, _ = make_client()
+    extract_to = Path(extract_to) if extract_to else Path.cwd()
+
+    locale_map = _build_locale_to_folder_map(client, project_id)
+
+    build_args: dict = {"projectId": project_id}
+    if language_id:
+        build_args["targetLanguageIds"] = [language_id]
+    print(f"Triggering Crowdin build (project {project_id}, "
+          f"lang={language_id or 'all'})...")
+    build = client.translations.build_crowdin_project_translation(**build_args)
+    build_id = build["data"]["id"]
+    print(f"  Build ID: {build_id}")
+
+    deadline = time.time() + poll_timeout
+    last_progress = -1
+    while True:
+        status = client.translations.check_project_build_status(
+            projectId=project_id, buildId=build_id
+        )
+        state = status["data"]["status"]
+        progress = status["data"].get("progress", 0)
+        if progress != last_progress or state != "inProgress":
+            print(f"  Build status: {state} ({progress}%)")
+            last_progress = progress
+        if state == "finished":
+            break
+        if state in ("failed", "canceled"):
+            raise RuntimeError(f"Crowdin build {state}: {status['data']}")
+        if time.time() > deadline:
+            raise RuntimeError(f"Crowdin build timed out after {poll_timeout}s")
+        time.sleep(poll_interval)
+
+    dl = client.translations.download_project_translations(
+        projectId=project_id, buildId=build_id
+    )
+    url = dl["data"]["url"]
+
+    print(f"  Downloading zip...")
+    with urllib.request.urlopen(url) as resp:
+        zip_bytes = resp.read()
+    print(f"  Got {len(zip_bytes)} bytes; extracting to {extract_to}")
+
+    extract_to.mkdir(parents=True, exist_ok=True)
+    written = 0
+    skipped = 0
+    with zipfile.ZipFile(io.BytesIO(zip_bytes)) as z:
+        for member in z.infolist():
+            if member.is_dir():
+                continue
+            new_name = _rewrite_locale_in_path(member.filename, locale_map)
+            dest = extract_to / new_name
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            with z.open(member) as src, open(dest, "wb") as out:
+                out.write(src.read())
+            written += 1
+        skipped = len(z.namelist()) - written
+    print(f"  Wrote {written} files (skipped {skipped} dir entries)")
+
+    return extract_to
+
+
+def _rewrite_locale_in_path(path: str, locale_map: dict[str, str]) -> str:
+    """Replace the locale segment under `Crowdin_Mirror/translations/<locale>/`.
+
+    No-op for paths outside that prefix or for locales not in the map
+    (extracted as-is so nothing is silently lost).
+    """
+    parts = path.split("/")
+    if (len(parts) >= 3
+            and parts[0] == "Crowdin_Mirror"
+            and parts[1] == "translations"
+            and parts[2] in locale_map):
+        parts[2] = locale_map[parts[2]]
+        return "/".join(parts)
+    return path
