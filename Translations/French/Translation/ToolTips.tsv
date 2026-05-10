@@ -31,9 +31,9 @@ Item	Item	type	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	La
 Item	Item	type	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Legendary)	Type (Légendaire)		#Machine Translated	
 Item	Item	String	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	text	344439182	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.		#Machine Translated	
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	text	1418802616	Condition:	État :		#Machine Translated	
-Item	Item	Number	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%	100 %		#Machine Translated	
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%	100 %		#Machine Translated	
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	text	1575206874	Weight:	Poids :		#Machine Translated	
-Item	Item	Number	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg	100 kg		#Machine Translated	
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg	100 kg		#Machine Translated	
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	text	913881262	Value:	Valeur :		#Machine Translated	
 Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Value	Value	Label	text	1314691776	100€	100€			
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	text	1393351409	Use time:	Durée d'utilisation :		#Machine Translated	
