@@ -6,7 +6,7 @@ Interaction	/	String	0	literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341
 Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]	불 [켜기]			
 Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]	불 [성냥이 장착되지 않았습니다]			
 Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		93	Fire [Extinguish]	불 [끄기]			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode	[RMB] = 회전 모드			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode	[우클릭] = 회전 모드			
 Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Add	Label	text	1516803336	[MMB] = Add to Catalog	[MMB] = 카탈로그에 추가			
 Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Catalog	Label	text	945705906	[TAB] = Furniture Catalog	[TAB] = 가구 카탈로그			
 Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Close	Label	text	299252101	[F1] = Close Decor Mode	[F1] = 장식 모드 종료			
