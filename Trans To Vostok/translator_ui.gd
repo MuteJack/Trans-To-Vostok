@@ -296,16 +296,24 @@ func _show_language_ui(is_startup: bool) -> void:
 	item_list.select_mode = ItemList.SELECT_SINGLE
 	item_list.add_theme_font_size_override("font_size", 16)
 
+	# locale.json's `dir` field is the canonical per-locale identifier
+	# (matches the folder name under <pkg_root>/<dir>/runtime_tsv).
+	# `locale` is kept as a legacy alias; if a saved setting still uses
+	# the legacy value, we migrate it on the fly below.
 	var pre_select: int = 0
 	for i in enabled_locales.size():
 		var loc: Dictionary = enabled_locales[i]
-		var display: String = loc.get("display", loc.get("locale", "???"))
-		var locale_id: String = loc.get("locale", "")
+		var dir_id: String = loc.get("dir", "")
+		var legacy_locale: String = loc.get("locale", "")
+		var display: String = loc.get("display", dir_id if dir_id != "" else legacy_locale)
 		var msg: String = loc.get("message", "")
-		var label: String = "%s (%s) — %s" % [display, locale_id, msg]
+		var label: String = "%s (%s) — %s" % [display, dir_id, msg]
 		item_list.add_item(label)
-		if locale_id == _current_locale:
+		if dir_id == _current_locale or (legacy_locale != "" and legacy_locale == _current_locale):
 			pre_select = i
+			# Migrate legacy `locale` value to canonical `dir`.
+			if dir_id != "" and dir_id != _current_locale:
+				_current_locale = dir_id
 
 	item_list.select(pre_select)
 	item_list.ensure_current_is_visible()
@@ -512,7 +520,7 @@ func _show_language_ui(is_startup: bool) -> void:
 	if selected_items.size() > 0:
 		var sel_idx: int = selected_items[0]
 		if sel_idx >= 0 and sel_idx < enabled_locales.size():
-			var selected_locale: String = enabled_locales[sel_idx].get("locale", DEFAULT_LOCALE)
+			var selected_locale: String = enabled_locales[sel_idx].get("dir", DEFAULT_LOCALE)
 			var locale_changed: bool = selected_locale != _current_locale
 			var substr_changed: bool = _substr_mode != prev_substr
 			if locale_changed or substr_changed or batch_changed or whitelist_changed or addons_changed or is_startup:
