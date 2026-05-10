@@ -103,7 +103,7 @@ git fetch upstream
 
 ```powershell
 git fetch upstream
-git merge upstream/main
+git merge upstream/master
 ```
 
 ---
@@ -137,18 +137,18 @@ python tools/build_mod_package.py Korean
 
 ## 6. 일반 작업 흐름
 
-> ### ⚠️ 시작 전 필수 — `main` 브랜치에 직접 작업하지 마세요
+> ### ⚠️ 시작 전 필수 — `master` 브랜치에 직접 작업하지 마세요
 >
-> Clone 직후 기본 브랜치는 `main` 입니다. 이 상태에서 바로 xlsx를 편집하고 commit하면 **fork의 main에 작업이 쌓여 PR 흐름이 꼬입니다**.
+> Clone 직후 기본 브랜치는 `master` 입니다. 이 상태에서 바로 xlsx를 편집하고 commit하면 **fork의 master에 작업이 쌓여 PR 흐름이 꼬입니다**.
 >
 > 첫 작업 전에 반드시 **새 브랜치 생성** (아래 1번 단계). 자세한 브랜치 / PR 흐름은 [4_How_to_Pull_Request_kr.md](4_How_to_Pull_Request_kr.md) 참조.
 
 1. **새 브랜치 생성** (작업별로):
    ```powershell
-   # upstream 최신을 main에 반영
+   # upstream 최신을 master에 반영
    git fetch upstream
-   git checkout main
-   git merge upstream/main
+   git checkout master
+   git merge upstream/master
 
    # 작업용 브랜치
    git checkout -b <type>/<short-description>

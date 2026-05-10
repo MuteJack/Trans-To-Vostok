@@ -15,13 +15,13 @@
 
 ## 2. 작업 시작 — 새 브랜치
 
-`main`에 직접 작업하지 말고 작업별 브랜치 생성:
+`master`에 직접 작업하지 말고 작업별 브랜치 생성:
 
 ```powershell
 # upstream 최신 가져오기
 git fetch upstream
-git checkout main
-git merge upstream/main
+git checkout master
+git merge upstream/master
 
 # 새 브랜치 생성 (작업 단위별)
 git checkout -b <type>/<short-description>
@@ -200,9 +200,9 @@ PR이 머지됐다면 로컬 / fork 정리:
 
 ```powershell
 # upstream 최신 가져오기 (방금 머지된 내 PR 포함)
-git checkout main
+git checkout master
 git fetch upstream
-git merge upstream/main
+git merge upstream/master
 
 # 머지된 브랜치 삭제 (로컬)
 git branch -d <branch-name>
@@ -210,8 +210,8 @@ git branch -d <branch-name>
 # fork의 원격 브랜치 삭제 (선택)
 git push origin --delete <branch-name>
 
-# fork 의 main도 동기화 (push)
-git push origin main
+# fork 의 master도 동기화 (push)
+git push origin master
 ```
 
 다음 작업은 `git checkout -b <new-branch>` 부터 다시 시작.
@@ -225,7 +225,7 @@ git push origin main
 | PR에 번역 텍스트 변경 포함됨 | 번역은 PR 대상 아님 — Crowdin 업로드로 변경. PR에서 번역 변경분은 제외 |
 | PR diff에 의도하지 않은 파일 다수 포함 | `git status` / `.gitignore` 확인. `~$*.xlsx`, `.log/`, `.tmp/` 등 stage 해제 |
 | PR을 올렸는데 빌드 검증 실패 표시 | CI 로그 확인 → 로컬에서 `python tools/build_mod_package.py` 재현 → 수정 |
-| upstream main이 빠르게 변해서 충돌 | `git fetch upstream && git rebase upstream/main` 또는 `git merge upstream/main` 후 push |
+| upstream master이 빠르게 변해서 충돌 | `git fetch upstream && git rebase upstream/master` 또는 `git merge upstream/master` 후 push |
 | Excel에 파일 열려있어 push 후 다른 사람이 build 시 conflict | xlsx는 binary라 Git rebase / merge 로 다루기 어려움 — 가능하면 같은 xlsx 동시 작업 회피 |
 
 ---

@@ -1,14 +1,14 @@
-# 5. Master(main) 브랜치 업데이트 동기화 (한국어)
+# 5. Master 브랜치 업데이트 동기화 (한국어)
 
-작업 중간에 본 저장소의 `main` 브랜치가 갱신됐을 때, 내 작업 브랜치를 어떻게 동기화할지 다룹니다.
+작업 중간에 본 저장소의 `master` 브랜치가 갱신됐을 때, 내 작업 브랜치를 어떻게 동기화할지 다룹니다.
 
-> 본 저장소의 기본 브랜치 이름은 `main` 입니다 ("master"가 아님). 문서 제목은 일반적인 표현을 따랐고, 본문에서는 `main`을 사용합니다.
+> 본 저장소의 기본 브랜치 이름은 `master` 입니다.
 
 ---
 
 ## 1. 왜 동기화가 필요한가
 
-작업 시작 후 시간이 흐르면 upstream `main`이 다른 기여자의 PR로 갱신되는데, 내 작업 브랜치는 갈라진 시점에 머물러 있습니다.
+작업 시작 후 시간이 흐르면 upstream `master`이 다른 기여자의 PR로 갱신되는데, 내 작업 브랜치는 갈라진 시점에 머물러 있습니다.
 
 이 상태로 계속 작업 → PR 생성 시 충돌 다발 가능. 작업 진행 중에 주기적으로 동기화하면 충돌이 작은 단위로 분산됨 (작업 끝나고 한꺼번에 해결하는 것보다 쉬움).
 
@@ -41,21 +41,21 @@ git fetch upstream
 
 > upstream이 등록 안 됐으면 [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md) §3-3 참조.
 
-### 3-2. 내 main 갱신 (선택, 좋은 습관)
+### 3-2. 내 master 갱신 (선택, 좋은 습관)
 
 ```powershell
-git checkout main
-git merge upstream/main      # 빠른 fast-forward (충돌 없음)
-git push origin main         # fork의 main도 갱신
+git checkout master
+git merge upstream/master      # 빠른 fast-forward (충돌 없음)
+git push origin master         # fork의 master도 갱신
 ```
 
-내 fork의 main을 항상 upstream과 같게 유지 → 새 브랜치 만들 때 출발점이 항상 최신.
+내 fork의 master을 항상 upstream과 같게 유지 → 새 브랜치 만들 때 출발점이 항상 최신.
 
-### 3-3. 작업 브랜치를 upstream/main 위로 rebase
+### 3-3. 작업 브랜치를 upstream/master 위로 rebase
 
 ```powershell
 git checkout <my-branch>
-git rebase upstream/main
+git rebase upstream/master
 ```
 
 충돌 없으면 끝. push:
@@ -141,7 +141,7 @@ PR 직전에 한 번 더 rebase하면 머지 시점에 충돌이 거의 없음:
 
 ```powershell
 git fetch upstream
-git rebase upstream/main
+git rebase upstream/master
 # 충돌 발생 시 §4 절차
 
 python tools/build_mod_package.py <locale>      # 빌드 검증
