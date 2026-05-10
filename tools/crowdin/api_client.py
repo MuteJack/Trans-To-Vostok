@@ -89,14 +89,23 @@ def upload_storage(client, file_path: Path) -> int:
 
 def upload_translation(client, project_id: int, language_id: str,
                        file_id: int, storage_id: int,
-                       auto_approve: bool = False) -> dict:
-    """Register an uploaded storage as a translation for one (file, language)."""
+                       auto_approve: bool = False,
+                       import_eq_suggestions: bool = True) -> dict:
+    """Register an uploaded storage as a translation for one (file, language).
+
+    `import_eq_suggestions=True` is set by default to encourage Crowdin to
+    accept translations identical to source (proper nouns, abbreviations,
+    UI labels that we intentionally keep in English). Crowdin's default is
+    False, which silently skips these — visible as empty translation cells
+    on the web UI.
+    """
     return client.translations.upload_translation(
         projectId=project_id,
         languageId=language_id,
         fileId=file_id,
         storageId=storage_id,
         autoApproveImported=auto_approve,
+        importEqSuggestions=import_eq_suggestions,
     )
 
 

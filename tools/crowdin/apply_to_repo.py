@@ -9,8 +9,14 @@ row's structural columns and looked up against the Crowdin TSV's
 `identifier` column. Rows excluded from Crowdin (untranslatable=1,
 method=ignore, empty text) are skipped.
 
-Crowdin is treated as the source-of-truth: empty value in Crowdin → empty
-in canonical (translator may have explicitly cleared a translation).
+Empty translation on Crowdin (untranslated rows) is IGNORED — local canonical
+translation is preserved. This avoids wiping our committed translations when
+Crowdin's downloaded file includes the row with an empty translation cell
+(common when a string has no translation yet on Crowdin's side).
+
+If a translator wants to delete a translation on Crowdin and have it removed
+from repo, they should do so via the Crowdin web UI then commit the manual
+empty value in xlsx; the pipeline won't blank it automatically.
 
 Usage:
     python tools/crowdin/apply_to_repo.py             # all locales
@@ -125,6 +131,7 @@ def apply_locale_category(locale: str, category: str) -> dict:
 
         sheet_updated = 0
         sheet_unchanged = 0
+        sheet_skipped_empty = 0
         seen_cids: set[str] = set()
         for r in dst_rows:
             row_dict = dict(zip(dst_header, r))
@@ -135,6 +142,10 @@ def apply_locale_category(locale: str, category: str) -> dict:
             if cid not in crowdin_map:
                 continue
             new_tx = crowdin_map[cid]
+            if not new_tx.strip():
+                # Crowdin row exists but has no translation -- preserve local.
+                sheet_skipped_empty += 1
+                continue
             if r[dst_tx_idx] == new_tx:
                 sheet_unchanged += 1
             else:
@@ -150,7 +161,11 @@ def apply_locale_category(locale: str, category: str) -> dict:
         stats["sheets"] += 1
         stats["updated"] += sheet_updated
         stats["unchanged"] += sheet_unchanged
-        print(f"  [{locale}/{category}/{src_tsv.stem:25s}] updated={sheet_updated:4d} unchanged={sheet_unchanged:4d}")
+        stats.setdefault("skipped_empty", 0)
+        stats["skipped_empty"] += sheet_skipped_empty
+        print(f"  [{locale}/{category}/{src_tsv.stem:25s}] "
+              f"updated={sheet_updated:4d} unchanged={sheet_unchanged:4d} "
+              f"skipped_empty={sheet_skipped_empty:4d}")
 
     return stats
 
@@ -171,19 +186,21 @@ def main(argv: list[str]) -> int:
     print(f"Locales: {', '.join(locales)}")
     print()
 
-    grand = {"sheets": 0, "updated": 0, "unchanged": 0, "missing_canon": 0}
+    grand = {"sheets": 0, "updated": 0, "unchanged": 0,
+             "skipped_empty": 0, "missing_canon": 0}
     for locale in locales:
         print(f"=== {locale} ===")
         for cat in CATEGORIES:
             s = apply_locale_category(locale, cat)
             for k in grand:
-                grand[k] += s[k]
+                grand[k] += s.get(k, 0)
         print()
 
     print("=== Done ===")
-    print(f"  sheets processed : {grand['sheets']}")
-    print(f"  rows updated     : {grand['updated']}")
-    print(f"  rows unchanged   : {grand['unchanged']}")
+    print(f"  sheets processed     : {grand['sheets']}")
+    print(f"  rows updated         : {grand['updated']}")
+    print(f"  rows unchanged       : {grand['unchanged']}")
+    print(f"  rows preserved (empty on Crowdin): {grand['skipped_empty']}")
     if grand["missing_canon"]:
         print(f"  [WARN] {grand['missing_canon']} Crowdin entries had no matching canonical row "
               f"(possibly stale source on Crowdin — re-push sources)")
