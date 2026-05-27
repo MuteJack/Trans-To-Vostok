@@ -1,13 +1,24 @@
 """
-Auto-update the Translators section of AUTHORS.md.
+Auto-update the Translators section of AUTHORS.md from per-locale credits.json.
 
-Reads each locale's:
-  - Translation.xlsx MetaData ("Translator", "Contributor (Translate)")
-  - Texture.xlsx ("Reworked by", "Contributors" columns)
+Reads `Trans To Vostok/<locale>/credits.json` for each locale (file is
+populated by `tools/crowdin/get_member_list.py` for translator fields and
+`tools/utils/get_texture_credits.py` for texture rework credits).
 
-and aggregates them into a single Translators section in the project-root
-AUTHORS.md, between BEGIN/END markers. Manual sections (Author / Lead
-Developer, Code Contributors, How to add yourself) are preserved.
+credits.json schema:
+    {
+      "translation_updated": "<ISO timestamp>",
+      "Translator": {
+        "Leader":      [...],   # Crowdin: Owner / Manager / Language Coordinator
+        "Translator":  [...],   # Crowdin: Proofreader
+        "Contributor": [...]    # Crowdin: Member with translated > 0
+      },
+      "Texture_reworker": [...]  # Texture.xlsx Reworked by + Contributors (off-Crowdin)
+    }
+
+Aggregates them into a single Translators section in AUTHORS.md, between
+BEGIN/END markers. Manual sections (Author / Lead Developer, Code
+Contributors, How to add yourself) are preserved.
 
 Markers (must already exist in AUTHORS.md):
     <!-- BEGIN AUTO-GENERATED: Translators -->
@@ -17,14 +28,9 @@ Markers (must already exist in AUTHORS.md):
 Usage:
     python tools/utils/build_authors.py
 """
+import json
 import sys
 from pathlib import Path
-
-try:
-    import openpyxl
-except ImportError:
-    print("ERROR: openpyxl is required. pip install -r tools/requirements.txt", file=sys.stderr)
-    sys.exit(1)
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
@@ -34,96 +40,44 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-METADATA_TRANSLATOR_FIELD = "Translator"
-METADATA_CONTRIBUTOR_FIELD = "Contributor (Translate)"
-TEXTURE_REWORKED_COLUMN = "Reworked by"
-TEXTURE_CONTRIBUTORS_COLUMN = "Contributors"
+SCRIPT_DIR = Path(__file__).resolve().parent
+TOOLS_DIR = SCRIPT_DIR.parent
+REPO = TOOLS_DIR.parent
+
+MOD_ROOT = REPO / "Trans To Vostok"
+CREDITS_FILE = "credits.json"
 
 BEGIN_MARKER = "<!-- BEGIN AUTO-GENERATED: Translators -->"
 END_MARKER = "<!-- END AUTO-GENERATED: Translators -->"
 
 
-def _split_names(value) -> list[str]:
-    if value is None:
-        return []
-    return [line.strip() for line in str(value).split("\n") if line.strip()]
-
-
-def _read_metadata_field(xlsx_path: Path, field_name: str) -> list[str]:
-    if not xlsx_path.exists():
-        return []
+def _load_credits(credits_path: Path) -> dict | None:
     try:
-        wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
-    except (PermissionError, Exception) as e:
-        print(f"  [WARN] Cannot read {xlsx_path.name}: {e}")
-        return []
-    try:
-        if "MetaData" not in wb.sheetnames:
-            return []
-        ws = wb["MetaData"]
-        rows = list(ws.iter_rows(values_only=True))
-        if len(rows) < 2:
-            return []
-        header = [str(c).strip() if c is not None else "" for c in rows[0]]
-        try:
-            field_idx = header.index("Field")
-            value_idx = header.index("Value")
-        except ValueError:
-            return []
-        for row in rows[1:]:
-            if row is None or len(row) <= max(field_idx, value_idx):
-                continue
-            field = str(row[field_idx]).strip() if row[field_idx] is not None else ""
-            if field == field_name:
-                return _split_names(row[value_idx])
-        return []
-    finally:
-        wb.close()
+        return json.loads(credits_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as e:
+        print(f"  [WARN] Cannot read {credits_path}: {e}")
+        return None
 
 
-def _collect_texture_credits(xlsx_path: Path) -> tuple[set[str], set[str]]:
-    reworked: set[str] = set()
-    contributors: set[str] = set()
-    if not xlsx_path.exists():
-        return reworked, contributors
-    try:
-        wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
-    except (PermissionError, Exception) as e:
-        print(f"  [WARN] Cannot read {xlsx_path.name}: {e}")
-        return reworked, contributors
-    try:
-        for sheet_name in wb.sheetnames:
-            if sheet_name == "MetaData":
-                continue
-            ws = wb[sheet_name]
-            rows = list(ws.iter_rows(values_only=True))
-            if not rows:
-                continue
-            header = [str(c).strip() if c is not None else "" for c in rows[0]]
-            rb_idx = header.index(TEXTURE_REWORKED_COLUMN) if TEXTURE_REWORKED_COLUMN in header else None
-            co_idx = header.index(TEXTURE_CONTRIBUTORS_COLUMN) if TEXTURE_CONTRIBUTORS_COLUMN in header else None
-            for row in rows[1:]:
-                if row is None:
-                    continue
-                if rb_idx is not None and rb_idx < len(row):
-                    for n in _split_names(row[rb_idx]):
-                        reworked.add(n)
-                if co_idx is not None and co_idx < len(row):
-                    for n in _split_names(row[co_idx]):
-                        contributors.add(n)
-    finally:
-        wb.close()
-    return reworked, contributors
+def _discover_locales(mod_root: Path) -> list[str]:
+    """Locales are subdirectories of Trans To Vostok/ that contain credits.json."""
+    out: list[str] = []
+    if not mod_root.exists():
+        return out
+    for d in sorted(mod_root.iterdir()):
+        if d.is_dir() and (d / CREDITS_FILE).exists():
+            out.append(d.name)
+    return out
 
 
-def _discover_locales(pkg_root: Path) -> list[str]:
-    locales: list[str] = []
-    for d in sorted(pkg_root.iterdir()):
-        if not d.is_dir():
-            continue
-        if (d / "Translation.xlsx").exists() or (d / "Texture.xlsx").exists():
-            locales.append(d.name)
-    return locales
+def _dedup_keep_order(items: list[str]) -> list[str]:
+    seen: set[str] = set()
+    out: list[str] = []
+    for x in items:
+        if x and x not in seen:
+            seen.add(x)
+            out.append(x)
+    return out
 
 
 def _render_subsection(label: str, names: list[str]) -> list[str]:
@@ -137,67 +91,51 @@ def _render_subsection(label: str, names: list[str]) -> list[str]:
     return out
 
 
-def _render_locale(locale: str, lead: list[str], translation_contrib: list[str],
-                   texture_reworked: list[str], texture_contrib: list[str]) -> list[str]:
+def _render_locale(locale: str, credits: dict) -> list[str]:
+    translator = credits.get("Translator") or {}
+    leader = _dedup_keep_order(translator.get("Leader") or [])
+    translator_tier = _dedup_keep_order(translator.get("Translator") or [])
+    contributor = _dedup_keep_order(translator.get("Contributor") or [])
+    texture = _dedup_keep_order(credits.get("Texture_reworker") or [])
+    updated = credits.get("translation_updated")
+
     lines: list[str] = []
-    lines.append(f"### {locale} (`Trans To Vostok/{locale}/`)")
+    lines.append(f"### {locale} (`Translations/{locale}/`)")
     lines.append("")
-    lines.extend(_render_subsection("Lead Translator(s)", lead))
-    lines.extend(_render_subsection("Translation Contributors", translation_contrib))
-    lines.extend(_render_subsection("Texture Reworkers", texture_reworked))
-    lines.extend(_render_subsection("Texture Contributors", texture_contrib))
+    if updated:
+        lines.append(f"_Translation last updated: {updated}_")
+        lines.append("")
+    lines.extend(_render_subsection("Lead Translator(s)", leader))
+    lines.extend(_render_subsection("Translator(s)", translator_tier))
+    lines.extend(_render_subsection("Translation Contributors", contributor))
+    lines.extend(_render_subsection("Texture Reworkers", texture))
     return lines
 
 
-def build_auto_section(pkg_root: Path) -> str:
+def build_auto_section(mod_root: Path) -> str:
     """Build the markdown content for the auto-generated Translators section."""
-    locales = _discover_locales(pkg_root)
+    locales = _discover_locales(mod_root)
 
     lines: list[str] = []
     lines.append("## Translators")
     lines.append("")
     lines.append(
-        "_Auto-generated from each locale's `Translation.xlsx` MetaData "
-        "(`Translator`, `Contributor (Translate)`) and `Texture.xlsx` "
-        "(`Reworked by`, `Contributors`) by `tools/utils/build_authors.py`. "
-        "Update the source xlsx files to change this list._"
+        "_Auto-generated from each locale's `credits.json` by "
+        "`tools/utils/build_authors.py`. credits.json itself is updated by "
+        "`tools/crowdin/get_member_list.py` (translator roles from Crowdin) "
+        "and `tools/utils/get_texture_credits.py` (texture rework from Texture.xlsx)._"
     )
     lines.append("")
 
     if not locales:
-        lines.append("_(no locales registered yet)_")
+        lines.append("_(no locales with credits.json yet)_")
         return "\n".join(lines) + "\n"
 
     for locale in locales:
-        locale_dir = pkg_root / locale
-        translation_xlsx = locale_dir / "Translation.xlsx"
-        texture_xlsx = locale_dir / "Texture.xlsx"
-
-        lead = _read_metadata_field(translation_xlsx, METADATA_TRANSLATOR_FIELD)
-        translation_contrib = _read_metadata_field(translation_xlsx, METADATA_CONTRIBUTOR_FIELD)
-        texture_reworked_set, texture_contrib_set = _collect_texture_credits(texture_xlsx)
-
-        # dedup within MetaData (Translator vs Contributor mutually exclusive)
-        seen_meta: set[str] = set()
-        lead_unique: list[str] = []
-        for n in lead:
-            if n not in seen_meta:
-                lead_unique.append(n)
-                seen_meta.add(n)
-        translation_contrib_unique: list[str] = []
-        for n in translation_contrib:
-            if n not in seen_meta:
-                translation_contrib_unique.append(n)
-                seen_meta.add(n)
-
-        # texture sections are independent of MetaData (same person can be in both)
-        texture_reworked = sorted(texture_reworked_set)
-        texture_contrib = sorted(texture_contrib_set - texture_reworked_set)
-
-        lines.extend(_render_locale(
-            locale, lead_unique, translation_contrib_unique,
-            texture_reworked, texture_contrib,
-        ))
+        credits = _load_credits(mod_root / locale / CREDITS_FILE)
+        if credits is None:
+            continue
+        lines.extend(_render_locale(locale, credits))
 
     return "\n".join(lines) + "\n"
 
@@ -241,29 +179,24 @@ def update_authors_md(authors_path: Path, generated: str) -> bool:
 
 
 def main() -> int:
-    script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
-    project_root = script_dir.parent.parent
-    pkg_root = project_root / "Trans To Vostok"
-    authors_path = project_root / "AUTHORS.md"
+    authors_path = REPO / "AUTHORS.md"
 
-    if not pkg_root.exists():
-        print(f"[ERROR] Package root not found: {pkg_root}")
+    if not MOD_ROOT.exists():
+        print(f"[ERROR] Mod root not found: {MOD_ROOT}")
         return 1
     if not authors_path.exists():
         print(f"[ERROR] AUTHORS.md not found: {authors_path}")
         return 1
 
-    print(f"Project root: {project_root}")
-    print(f"Sources     : {pkg_root}")
-    print(f"Target      : {authors_path}")
+    print(f"Mod root : {MOD_ROOT}")
+    print(f"Target   : {authors_path}")
     print()
 
-    locales = _discover_locales(pkg_root)
-    print(f"Locales found: {', '.join(locales) if locales else '(none)'}")
+    locales = _discover_locales(MOD_ROOT)
+    print(f"Locales with credits.json: {', '.join(locales) if locales else '(none)'}")
     print()
 
-    auto_content = build_auto_section(pkg_root)
+    auto_content = build_auto_section(MOD_ROOT)
     if not update_authors_md(authors_path, auto_content):
         return 1
     return 0

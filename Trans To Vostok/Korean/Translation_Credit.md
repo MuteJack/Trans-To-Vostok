@@ -2,22 +2,24 @@
 
 People who contributed to translating Road to Vostok into Korean. This includes both text translation and texture / image rework.
 
+_Translation last updated: 2026-05-27T13:31:06+09:00_
+
 ## Lead Translator(s)
 
-- MuteJack
+- Mute Jack
+
+## Translator(s)
+
+_(none yet)_
 
 ## Translation Contributors
 
-_(none yet)_
+- MuteJack_Tester
 
 ## Texture Reworkers
 
 - MuteJack
 
-## Texture Contributors
-
-_(none yet)_
-
 ---
 
-_Auto-generated from `Translation.xlsx` MetaData (`Translator`, `Contributor (Translate)` fields) and `Texture.xlsx` (`Reworked by`, `Contributors` columns) by `tools/utils/build_translation_credit.py`. Do not edit manually — update the source xlsx files instead._
+_Auto-generated from `Trans To Vostok/<locale>/credits.json` by `tools/utils/build_translation_credit.py`. Do not edit manually — credits.json is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/utils/get_texture_credits.py` (texture rework from Texture.xlsx)._

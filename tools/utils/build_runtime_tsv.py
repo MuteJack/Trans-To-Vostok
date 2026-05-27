@@ -184,15 +184,16 @@ def main() -> int:
 
     locale = args[0]
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     mod_root = script_dir.parent.parent
+    translations_root = mod_root / "Translations"
     pkg_root = mod_root / "Trans To Vostok"
-    locale_dir = pkg_root / locale
-    xlsx_path = locale_dir / "Translation.xlsx"
+    xlsx_locale_dir = translations_root / locale
+    locale_dir = pkg_root / locale  # for runtime_tsv output
+    xlsx_path = xlsx_locale_dir / "Translation.xlsx"
     tsv_dir = mod_root / ".tmp" / "parsed_text"
 
-    if not locale_dir.exists():
-        print(f"[ERROR] Locale folder not found: {locale_dir}")
+    if not xlsx_locale_dir.exists():
+        print(f"[ERROR] Translations locale folder not found: {xlsx_locale_dir}")
         return 1
     if not xlsx_path.exists():
         print(f"[ERROR] xlsx file not found: {xlsx_path}")

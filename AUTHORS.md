@@ -5,10 +5,10 @@ It is referenced by `NOTICE` (Apache 2.0) and the CC BY 4.0 licenses for
 translation and texture content.
 
 The **Translators** section below is auto-generated from each locale's
-`Translation.xlsx` MetaData and `Texture.xlsx` columns by
-`tools/utils/build_authors.py`. Do not edit it manually — the manual
-sections (Author / Lead Developer, Code Contributors) are preserved
-across regenerations via the BEGIN/END markers below.
+`Trans To Vostok/<locale>/credits.json` by `tools/utils/build_authors.py`.
+Do not edit it manually — the manual sections (Author / Lead Developer,
+Code Contributors, Acknowledgments) are preserved across regenerations
+via the BEGIN/END markers below.
 
 If you want to be added to this list, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
@@ -35,55 +35,50 @@ Thanks to:
 
 ## Translators
 
-_Auto-generated from each locale's `Translation.xlsx` MetaData (`Translator`, `Contributor (Translate)`) and `Texture.xlsx` (`Reworked by`, `Contributors`) by `tools/utils/build_authors.py`. Update the source xlsx files to change this list._
+_Auto-generated from each locale's `credits.json` by `tools/utils/build_authors.py`. credits.json itself is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/utils/get_texture_credits.py` (texture rework from Texture.xlsx)._
 
-### French (`Trans To Vostok/French/`)
+### French (`Translations/French/`)
 
-**Lead Translator(s):** _(none yet)_
-
-**Translation Contributors:**
-- MuteJack
-
-**Texture Reworkers:**
-- MuteJack
-
-**Texture Contributors:** _(none yet)_
-
-### Korean (`Trans To Vostok/Korean/`)
+_Translation last updated: 2026-05-10T18:02:31+09:00_
 
 **Lead Translator(s):**
-- MuteJack
+- Mute Jack
+
+**Translator(s):** _(none yet)_
 
 **Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
 
-**Texture Contributors:** _(none yet)_
+### Korean (`Translations/Korean/`)
 
-### Portuguese_BR (`Trans To Vostok/Portuguese_BR/`)
+_Translation last updated: 2026-05-27T13:31:06+09:00_
 
-**Lead Translator(s):** _(none yet)_
+**Lead Translator(s):**
+- Mute Jack
+
+**Translator(s):** _(none yet)_
 
 **Translation Contributors:**
-- MuteJack
+- MuteJack_Tester
 
 **Texture Reworkers:**
 - MuteJack
 
-**Texture Contributors:** _(none yet)_
+### Portuguese_BR (`Translations/Portuguese_BR/`)
 
-### Template (`Trans To Vostok/Template/`)
+_Translation last updated: 2026-05-10T18:03:51+09:00_
 
-**Lead Translator(s):** _(none yet)_
+**Lead Translator(s):**
+- Mute Jack
 
-**Translation Contributors:**
-- MuteJack
+**Translator(s):** _(none yet)_
+
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
-
-**Texture Contributors:** _(none yet)_
 
 
 <!-- END AUTO-GENERATED: Translators -->

@@ -149,10 +149,10 @@ def main() -> int:
     args = parser.parse_args()
 
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     mod_root = script_dir.parent.parent
+    translations_root = mod_root / "Translations"
     pkg_root = mod_root / "Trans To Vostok"
-    xlsx_path = pkg_root / args.locale / "Texture.xlsx"
+    xlsx_path = translations_root / args.locale / "Texture.xlsx"
 
     if not xlsx_path.exists():
         # When called from the build pipeline, locales without Texture.xlsx are normal (no texture translation)

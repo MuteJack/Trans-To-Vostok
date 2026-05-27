@@ -1,0 +1,49 @@
+{
+  "_comment": "Master language registry. Maps locale folder name (used in Translations/<dir>/) to external service codes. Tools resolve dir-name -> codes via tools/utils/locale_config.py. Adding a new language: add an entry here, then register the active locale in Trans To Vostok/locale.json. crowdin_id values are BCP-47 short codes — adjust if your Crowdin project uses regional variants (e.g. fr-FR instead of fr). `default_source` declares the linguistic source language: tools exclude it as a translation target (DeepL / Crowdin push / pull).",
+  "default_source": "English",
+  "languages": {
+    "English":            { "deepl_id": null,      "crowdin_id": "en"    },
+    "English_GB":         { "deepl_id": "EN-GB",   "crowdin_id": "en-GB" },
+    "English_US":         { "deepl_id": "EN-US",   "crowdin_id": "en-US" },
+    "Korean":             { "deepl_id": "KO",      "crowdin_id": "ko"    },
+
+    "Danish":             { "deepl_id": "DA",      "crowdin_id": "da"    },
+    "Dutch":              { "deepl_id": "NL",      "crowdin_id": "nl"    },
+    "Finnish":            { "deepl_id": "FI",      "crowdin_id": "fi"    },
+    "French":             { "deepl_id": "FR",      "crowdin_id": "fr"    },
+    "German":             { "deepl_id": "DE",      "crowdin_id": "de"    },
+    "Italian":            { "deepl_id": "IT",      "crowdin_id": "it"    },
+    "Norwegian":          { "deepl_id": "NB",      "crowdin_id": "no"    },
+    "Spanish":            { "deepl_id": "ES",      "crowdin_id": "es"    },
+    "Spanish_LatAm":      { "deepl_id": "ES-419",  "crowdin_id": "es-419" },
+    "Swedish":            { "deepl_id": "SV",      "crowdin_id": "sv"    },
+    "Portuguese_PT":      { "deepl_id": "PT-PT",   "crowdin_id": "pt-PT" },
+    "Portuguese_BR":      { "deepl_id": "PT-BR",   "crowdin_id": "pt-BR" },
+
+    "Czech":              { "deepl_id": "CS",      "crowdin_id": "cs"    },
+    "Estonian":           { "deepl_id": "ET",      "crowdin_id": "et"    },
+    "Hungarian":          { "deepl_id": "HU",      "crowdin_id": "hu"    },
+    "Latvian":            { "deepl_id": "LV",      "crowdin_id": "lv"    },
+    "Lithuanian":         { "deepl_id": "LT",      "crowdin_id": "lt"    },
+    "Polish":             { "deepl_id": "PL",      "crowdin_id": "pl"    },
+    "Romanian":           { "deepl_id": "RO",      "crowdin_id": "ro"    },
+    "Slovak":             { "deepl_id": "SK",      "crowdin_id": "sk"    },
+    "Slovenian":          { "deepl_id": "SL",      "crowdin_id": "sl"    },
+
+    "Indonesian":         { "deepl_id": "ID",      "crowdin_id": "id"    },
+    "Turkish":            { "deepl_id": "TR",      "crowdin_id": "tr"    },
+    "Vietnamese":         { "deepl_id": "VI",      "crowdin_id": "vi"    },
+
+    "Bulgarian":          { "deepl_id": "BG",      "crowdin_id": "bg"    },
+    "Greek":              { "deepl_id": "EL",      "crowdin_id": "el"    },
+    "Russian":            { "deepl_id": "RU",      "crowdin_id": "ru"    },
+    "Ukrainian":          { "deepl_id": "UK",      "crowdin_id": "uk"    },
+
+    "Arabic":             { "deepl_id": "AR",      "crowdin_id": "ar"    },
+    "ChineseSimplified":  { "deepl_id": "ZH-HANS", "crowdin_id": "zh-CN" },
+    "ChineseTraditional": { "deepl_id": "ZH-HANT", "crowdin_id": "zh-TW" },
+    "Hebrew":             { "deepl_id": "HE",      "crowdin_id": "he"    },
+    "Japanese":           { "deepl_id": "JA",      "crowdin_id": "ja"    },
+    "Thai":               { "deepl_id": "TH",      "crowdin_id": "th"    }
+  }
+}

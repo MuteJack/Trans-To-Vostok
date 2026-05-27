@@ -5,12 +5,12 @@ This is the xlsx -> TSV side of the editing/VCS workflow:
     xlsx (local working copy, gitignored)  ->  TSV (canonical, committed)
 
 Path mapping:
-    <pkg_root>/Trans To Vostok/<language>/<file>.xlsx
+    <project_root>/Translations/<language>/<file>.xlsx
         ->
-    <project_root>/Translation_TSV/<language>/<file>/<sheet>.tsv
+    <project_root>/Translations/<language>/<file>/<sheet>.tsv
 
-For every xlsx file in the locale folder (Translation.xlsx, Glossary.xlsx,
-Texture.xlsx, etc.), every sheet is exported as one TSV.
+For every xlsx file in the locale folder (Translation.xlsx, Texture.xlsx,
+etc.), every sheet is exported as one TSV.
 
 Behavior:
     - All sheets exported (including MetaData)
@@ -23,9 +23,9 @@ Behavior:
       the sheets in their original xlsx order (one name per line). This
       lets downstream tools (e.g. TSV -> xlsx rebuild) preserve sheet order.
     - Column widths are NOT written per-locale; the unified policy lives
-      in `tools/width.json` keyed by category (MetaData / Translation /
-      Glossary / Texture). Any pre-existing `_column_widths.json` here
-      is treated as stale and removed.
+      in `tools/configs/width.json` keyed by category (MetaData / Translation /
+      Texture). Any pre-existing `_column_widths.json` here is treated
+      as stale and removed.
 
 Usage:
     python tools/utils/build_translation_tsv.py             # all locales
@@ -136,7 +136,7 @@ def export_xlsx(xlsx_path: Path, out_dir: Path) -> tuple[int, int]:
                     pass
             raise
 
-        # column-width policy is unified in tools/width.json (not per-locale).
+        # column-width policy is unified in tools/configs/width.json (not per-locale).
         # Any pre-existing _column_widths.json here is stale.
         stale_widths = out_dir / "_column_widths.json"
         if stale_widths.exists():
@@ -151,12 +151,19 @@ def export_xlsx(xlsx_path: Path, out_dir: Path) -> tuple[int, int]:
         wb.close()
 
 
-def process_locale(pkg_root: Path, locale: str, output_root: Path) -> tuple[int, int, int]:
+def process_locale(input_root: Path, locale: str,
+                   output_root: Path | None = None) -> tuple[int, int, int]:
     """Process all xlsx files in one locale folder.
+
+    Reads xlsx from input_root/<locale>/*.xlsx.
+    Writes TSV to output_root/<locale>/<file_stem>/*.tsv (defaults to input_root).
 
     Returns (xlsx_count, sheet_count, row_count).
     """
-    locale_dir = pkg_root / locale
+    if output_root is None:
+        output_root = input_root
+
+    locale_dir = input_root / locale
     out_locale_dir = output_root / locale
 
     if not locale_dir.exists():
@@ -178,7 +185,10 @@ def process_locale(pkg_root: Path, locale: str, output_root: Path) -> tuple[int,
 
     for xlsx_path in xlsx_files:
         out_dir = out_locale_dir / xlsx_path.stem
-        rel_out = out_dir.relative_to(output_root.parent)
+        try:
+            rel_out = out_dir.relative_to(input_root.parent)
+        except ValueError:
+            rel_out = out_dir
         print(f"  [{locale}] {xlsx_path.name}  ->  {rel_out}/")
         try:
             sc, rc = export_xlsx(xlsx_path, out_dir)
@@ -193,10 +203,10 @@ def process_locale(pkg_root: Path, locale: str, output_root: Path) -> tuple[int,
     return xlsx_count, total_sheets, total_rows
 
 
-def discover_locales(pkg_root: Path) -> list[str]:
+def discover_locales(translations_root: Path) -> list[str]:
     """Find locale folders that contain at least one xlsx (excluding lock files)."""
     locales = []
-    for d in sorted(pkg_root.iterdir()):
+    for d in sorted(translations_root.iterdir()):
         if not d.is_dir():
             continue
         has_xlsx = any(
@@ -210,29 +220,46 @@ def discover_locales(pkg_root: Path) -> list[str]:
 
 def main() -> int:
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     project_root = script_dir.parent.parent
-    pkg_root = project_root / "Trans To Vostok"
-    output_root = project_root / "Translation_TSV"
+    input_root = project_root / "Translations"
 
-    if not pkg_root.exists():
-        print(f"[ERROR] Package root not found: {pkg_root}")
+    if not input_root.exists():
+        print(f"[ERROR] Translations root not found: {input_root}")
         return 1
 
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    # Parse CLI: positional locale + optional --output-root <path>
+    positional = []
+    output_root = None
+    rest = list(sys.argv[1:])
+    i = 0
+    while i < len(rest):
+        a = rest[i]
+        if a == "--output-root":
+            if i + 1 >= len(rest):
+                print("[ERROR] --output-root requires a value", file=sys.stderr)
+                return 1
+            output_root = Path(rest[i + 1]).resolve()
+            i += 2
+        elif a.startswith("--"):
+            print(f"[ERROR] Unknown flag: {a}", file=sys.stderr)
+            return 1
+        else:
+            positional.append(a)
+            i += 1
 
-    if args:
-        locales = [args[0]]
+    if positional:
+        locales = [positional[0]]
     else:
-        locales = discover_locales(pkg_root)
+        locales = discover_locales(input_root)
 
     if not locales:
-        print(f"[ERROR] No locales with xlsx files found under: {pkg_root}")
+        print(f"[ERROR] No locales with xlsx files found under: {input_root}")
         return 1
 
-    print(f"Source : {pkg_root}")
-    print(f"Output : {output_root}")
-    print(f"Locales: {', '.join(locales)}")
+    effective_output = output_root if output_root else input_root
+    print(f"Input   : {input_root}")
+    print(f"Output  : {effective_output}")
+    print(f"Locales : {', '.join(locales)}")
     print()
 
     total_xlsx = 0
@@ -240,7 +267,7 @@ def main() -> int:
     total_rows = 0
 
     for locale in locales:
-        xc, sc, rc = process_locale(pkg_root, locale, output_root)
+        xc, sc, rc = process_locale(input_root, locale, output_root=output_root)
         total_xlsx += xc
         total_sheets += sc
         total_rows += rc

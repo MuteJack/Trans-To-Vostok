@@ -2,24 +2,26 @@
 
 A multilingual translation mod for **Road to Vostok**, with a Python-based translation pipeline (xlsx ↔ TSV ↔ runtime TSV) and a GDScript runtime that hooks into the game via Metro's ModLoader.
 
-> The user-facing / modworkshop description README is [README_USER.md](README_USER.md) (Features / Install / Compatible mods / Languages / Attribution / Screenshots).
+> The user-facing / modworkshop description README is [docs/README_USER.md](docs/README_USER.md) (Features / Install / Compatible mods / Languages / Attribution / Screenshots).
 
 ---
 
 ## Quick Start (Contributors)
 
-Step-by-step guides live under `README/` (Korean).
+Step-by-step guides live under `docs/translator/kr/` (translators) and `docs/dev/kr/` (developers / maintainers).
 
-| Step | Guide |
+| Audience | Guide |
 | --- | --- |
-| 0 | Environment setup (Excel / Python / Git / Fork & Clone) — [README/0_Setting_Environments_kr.md](README/0_Setting_Environments_kr.md) |
-| 1 | (Optional) Game PCK extraction & decompile — [README/1_unpack_and_decompile_game_kr.md](README/1_unpack_and_decompile_game_kr.md) |
-| 2 | Adding a new language (DeepL initial pass) — [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md) |
-| 3 | How to translate (general) — [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md) |
-| 3+ | How to translate (developer / method details) — [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) |
-| 4 | Pull Request workflow — [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md) |
-| 5 | Upstream `master` sync (rebase) — [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md) |
-| general | Crediting / code contributions — [README/CONTRIBUTING.md](README/CONTRIBUTING.md) |
+| Setup (everyone with local repo) | [docs/translator/kr/Setting_Environments.md](docs/translator/kr/Setting_Environments.md) |
+| Translator (Crowdin web only) | [docs/translator/kr/Translating_using_crowdin.md](docs/translator/kr/Translating_using_crowdin.md) |
+| Translator + in-game testing | [docs/translator/kr/Translating_on_Local.md](docs/translator/kr/Translating_on_Local.md) |
+| Pull Request workflow | [docs/dev/kr/How_to_Pull_Request.md](docs/dev/kr/How_to_Pull_Request.md) |
+| Upstream `master` sync (rebase) | [docs/dev/kr/Sync_from_Master.md](docs/dev/kr/Sync_from_Master.md) |
+| Developer — Crowdin → repo sync | [docs/dev/kr/Pull_from_Crowdin.md](docs/dev/kr/Pull_from_Crowdin.md) |
+| Developer — adding a new language (DeepL seed) | [docs/dev/kr/Add_new_language.md](docs/dev/kr/Add_new_language.md) |
+| Developer — translation method details | [docs/dev/kr/Translation_Methods.md](docs/dev/kr/Translation_Methods.md) |
+| Developer — game PCK extraction & decompile | [docs/dev/kr/Unpack_and_Decompile_Game.md](docs/dev/kr/Unpack_and_Decompile_Game.md) |
+| Crediting / code contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 Basic build commands:
 
@@ -35,21 +37,23 @@ If `parsed_text/` is absent, validation steps that depend on it are auto-skipped
 ## Repository Layout
 
 ```
+Translations/                     # Authoring + canonical translation data
+└── <locale>/                     # Each locale (Korean, French, Template, …)
+    ├── Translation.xlsx          # Text translations (human-edited, gitignored)
+    ├── Texture.xlsx              # Texture metadata + attribution (gitignored)
+    └── <category>/*.tsv          # Canonical TSV (committed, git-diff-friendly)
+
 Trans To Vostok/                  # Mod package root (this is what goes into the zip)
 ├── translator.gd                 # Runtime text engine (GDScript autoload)
 ├── translator_ui.gd              # F9 language selection UI
 ├── texture_loader.gd             # Runtime texture replacement engine
 ├── mod_addon.gd                  # Mod compatibility helper
 ├── locale.json                   # Registered locale list
-└── <locale>/                     # Each locale (Korean, French, Template, …)
-    ├── Translation.xlsx          # Text translations (human-edited)
-    ├── Glossary.xlsx             # Glossary (manually curated)
-    ├── Texture.xlsx              # Texture metadata + attribution
+└── <locale>/                     # Per-locale runtime artifacts
     ├── runtime_tsv/              # Build output (loaded by translator.gd)
-    └── textures/                 # Translated textures (optional)
-
-Translation_TSV/                   # Canonical TSV (git-diff-friendly shadow of xlsx)
-└── <locale>/<category>/*.tsv
+    ├── textures/                 # Translated textures (optional)
+    ├── Translation_Credit.md     # Generated credits
+    └── Texture_Attribution.md    # Generated attribution
 
 tools/                             # Python build / validation / helper tools
 ├── build_mod_package.py          # Main build (validate + package)
@@ -60,16 +64,21 @@ tools/                             # Python build / validation / helper tools
 ├── check_*.py                    # Duplicate / conflict / coverage / drift checks
 └── utils/                        # Utilities invoked by the above
 
-README/                            # Korean contributor guide series (see Quick Start)
-├── 0_Setting_Environments_kr.md
-├── 1_unpack_and_decompile_game_kr.md
-├── 2_Add_new_language_kr.md
-├── 3_How_to_Translate_kr.md
-├── 3_How_to_Translate_kr(For Developers).md
-├── 4_How_to_Pull_Request_kr.md
-├── 5_How_to_Update_from_MasterBranch_kr.md
-├── CONTRIBUTING.md                # Crediting / new-language DeepL guide (English)
-└── image/                         # Screenshots used by README_USER.md
+docs/translator/kr/                           # Korean translator-facing guides
+├── Setting_Environments.md
+├── Translating_using_crowdin.md   # Crowdin web only
+├── Translating_on_Local.md        # Local clone + Crowdin (in-game testing)
+├── How_to_Pull_Request.md
+└── Sync_from_Master.md
+
+docs/dev/kr/                       # Korean developer / maintainer guides
+├── Pull_from_Crowdin.md           # Crowdin → repo sync (maintainer)
+├── Add_new_language.md            # DeepL seed pipeline
+├── Translation_Methods.md         # method semantics + matching debug
+└── Unpack_and_Decompile_Game.md   # gdre_tools + parse_translatables
+
+README/
+└── image/                         # Screenshots referenced by README_USER.md via raw URL
 ```
 
 ---
@@ -88,7 +97,7 @@ README/                            # Korean contributor guide series (see Quick 
 | `check_duplicate.py` | Pre-build duplicate-key detector (xlsx-only) |
 | `check_conflict.py` | Conflict detection (same source text, different translations) |
 | `check_old_translation.py` | Detect stale translations from removed game content |
-| `rebuild_xlsx.py` | TSV → xlsx for a locale (Translation / Glossary / Texture batch) |
+| `rebuild_xlsx.py` | TSV → xlsx for a locale (Translation / Texture batch) |
 
 ### Utilities (`tools/utils/` — invoked by the above)
 
@@ -104,10 +113,9 @@ README/                            # Korean contributor guide series (see Quick 
 | `utils/build_attributions.py` | `Texture.xlsx` → `Texture_Attribution.md` |
 | `utils/build_translation_credit.py` | Per-locale `Translation_Credit.md` |
 | `utils/build_authors.py` | Update the auto-generated Translators section of `AUTHORS.md` |
-| `utils/build_translation_tsv.py` | Locale xlsx → per-sheet TSV under `Translation_TSV/` (git-diff visibility) |
+| `utils/build_translation_tsv.py` | Locale xlsx → per-sheet TSV under `Translations/<locale>/<file>/` (git-diff visibility) |
 | `utils/build_mod_info.py` | Generate `<pkg_root>/info.json` (version + build date + contributors) for the F9 Info tab |
 | `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (formatting / widths / conditional formatting applied) |
-| `utils/rebuild_glossary_xlsx.py` | TSV → Glossary.xlsx |
 | `utils/rebuild_texture_xlsx.py` | TSV → Texture.xlsx |
 
 ---
@@ -119,7 +127,7 @@ README/                            # Korean contributor guide series (see Quick 
 - **UI**: `translator_ui.gd` (F9 hotkey)
 - **Text data**: `<locale>/runtime_tsv/translation_*.tsv` (6 buckets + metadata, built from xlsx)
 - **Image data**: `<locale>/textures/**` (mirrors the original `res://` layout)
-- **Matching approach**: 1:1 mapping based on Godot node structure — see the header comment in [`translator.gd`](Trans%20To%20Vostok/translator.gd) and [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) for details.
+- **Matching approach**: 1:1 mapping based on Godot node structure — see the header comment in [`translator.gd`](Trans%20To%20Vostok/translator.gd) and [docs/dev/kr/Translation_Methods.md](docs/dev/kr/Translation_Methods.md) for details.
 
 ---
 
@@ -132,7 +140,7 @@ This repository uses different licenses by asset type. See [`LICENSE.md`](LICENS
 | Asset | License | File |
 | --- | --- | --- |
 | Code (Python tools, GDScript, batch) | Apache 2.0 | [`LICENSE-CODE`](LICENSE-CODE) |
-| Translation text (Translation, Glossary) | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
+| Translation text | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
 | Texture / image assets | CC BY 4.0 | [`LICENSE-TEXTURE`](LICENSE-TEXTURE) |
 
 Attribution preserved per Apache 2.0 §4(d) is in [`NOTICE`](NOTICE); the contributor list referenced by `NOTICE` and the CC BY 4.0 licenses is in [`AUTHORS.md`](AUTHORS.md). The original Road to Vostok game's English source text and original assets remain the copyright of the game developers and are NOT licensed by this repository.
@@ -143,11 +151,12 @@ Attribution preserved per Apache 2.0 §4(d) is in [`NOTICE`](NOTICE); the contri
 
 > **Status**: The contribution flow is being prepared. The links below describe the intended workflow.
 
-- **Translators (Excel editing)** → [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md)
-- **Adding a new language** → [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md)
-- **Pull Request workflow** → [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md)
-- **Upstream sync** → [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md)
-- **Crediting / code contribution / DeepL pipeline** → [README/CONTRIBUTING.md](README/CONTRIBUTING.md)
+- **Translators (Crowdin web)** → [docs/translator/kr/Translating_using_crowdin.md](docs/translator/kr/Translating_using_crowdin.md)
+- **Translators with in-game testing** → [docs/translator/kr/Translating_on_Local.md](docs/translator/kr/Translating_on_Local.md)
+- **Adding a new language** → [docs/dev/kr/Add_new_language.md](docs/dev/kr/Add_new_language.md)
+- **Pull Request workflow** → [docs/dev/kr/How_to_Pull_Request.md](docs/dev/kr/How_to_Pull_Request.md)
+- **Upstream sync** → [docs/dev/kr/Sync_from_Master.md](docs/dev/kr/Sync_from_Master.md)
+- **Crediting / code contribution** → [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
@@ -188,24 +197,26 @@ Attribution preserved per Apache 2.0 §4(d) is in [`NOTICE`](NOTICE); the contri
 
 **Road to Vostok** 의 다국어 번역 모드. Python 기반 번역 파이프라인 (xlsx ↔ TSV ↔ runtime TSV) 과 Metro's ModLoader 를 통해 게임에 후킹되는 GDScript 런타임으로 구성.
 
-> 사용자 / modworkshop 페이지용 README 는 [README_USER.md](README_USER.md) 참조 (Features / Install / Compatible mods / Languages / Attribution / Screenshots).
+> 사용자 / modworkshop 페이지용 README 는 [docs/README_USER.md](docs/README_USER.md) 참조 (Features / Install / Compatible mods / Languages / Attribution / Screenshots).
 
 ---
 
 ## Quick Start (기여자용)
 
-세부 가이드는 `README/` 폴더의 한국어 매뉴얼 시리즈 참조.
+세부 가이드는 `docs/translator/kr/` (번역가) 와 `docs/dev/kr/` (개발자/메인테이너) 에 있습니다.
 
-| 단계 | 가이드 |
+| 대상 | 가이드 |
 | --- | --- |
-| 0 | 환경 셋업 (Excel / Python / Git / Fork & Clone) — [README/0_Setting_Environments_kr.md](README/0_Setting_Environments_kr.md) |
-| 1 | (선택) 게임 PCK 추출 & 디컴파일 — [README/1_unpack_and_decompile_game_kr.md](README/1_unpack_and_decompile_game_kr.md) |
-| 2 | 새 언어 추가 (DeepL 1차 기계번역) — [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md) |
-| 3 | 번역 작업 (일반) — [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md) |
-| 3+ | 번역 작업 (개발자 / method 상세) — [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) |
-| 4 | Pull Request 워크플로 — [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md) |
-| 5 | upstream `master` 동기화 (rebase) — [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md) |
-| 일반 | 크레딧 등록 / 코드 기여 — [README/CONTRIBUTING.md](README/CONTRIBUTING.md) |
+| 셋업 (로컬 저장소 쓰는 모두) | [docs/translator/kr/Setting_Environments.md](docs/translator/kr/Setting_Environments.md) |
+| 번역가 (Crowdin 웹만) | [docs/translator/kr/Translating_using_crowdin.md](docs/translator/kr/Translating_using_crowdin.md) |
+| 번역가 + 인게임 테스트 | [docs/translator/kr/Translating_on_Local.md](docs/translator/kr/Translating_on_Local.md) |
+| Pull Request 워크플로 | [docs/dev/kr/How_to_Pull_Request.md](docs/dev/kr/How_to_Pull_Request.md) |
+| upstream `master` 동기화 (rebase) | [docs/dev/kr/Sync_from_Master.md](docs/dev/kr/Sync_from_Master.md) |
+| 개발자 — Crowdin → 저장소 sync | [docs/dev/kr/Pull_from_Crowdin.md](docs/dev/kr/Pull_from_Crowdin.md) |
+| 개발자 — 새 언어 추가 (DeepL 시드) | [docs/dev/kr/Add_new_language.md](docs/dev/kr/Add_new_language.md) |
+| 개발자 — 번역 method 상세 | [docs/dev/kr/Translation_Methods.md](docs/dev/kr/Translation_Methods.md) |
+| 개발자 — 게임 PCK 추출 & 디컴파일 | [docs/dev/kr/Unpack_and_Decompile_Game.md](docs/dev/kr/Unpack_and_Decompile_Game.md) |
+| 크레딧 등록 / 코드 기여 | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 기본 빌드 명령:
 
@@ -221,41 +232,48 @@ python tools/build_mod_package.py Korean         # locale 지정
 ## 저장소 구조
 
 ```
+Translations/                     # 번역 작업 데이터 (authoring + canonical)
+└── <locale>/                     # 각 locale (Korean, French, Template, …)
+    ├── Translation.xlsx          # 텍스트 번역 (사람 편집 대상, gitignored)
+    ├── Texture.xlsx              # 텍스처 metadata + attribution (gitignored)
+    └── <category>/*.tsv          # canonical TSV (committed, git diff 친화적)
+
 Trans To Vostok/                  # 모드 패키지 루트 (zip에 들어가는 부분)
 ├── translator.gd                 # 런타임 텍스트 엔진 (GDScript autoload)
 ├── translator_ui.gd              # F9 언어 선택 UI
 ├── texture_loader.gd             # 런타임 텍스처 교체 엔진
 ├── mod_addon.gd                  # mod 호환성 helper
 ├── locale.json                   # 등록된 locale 목록
-└── <locale>/                     # 각 locale (Korean, French, Template, …)
-    ├── Translation.xlsx          # 텍스트 번역 (사람 편집 대상)
-    ├── Glossary.xlsx             # 용어집 (수동 큐레이트)
-    ├── Texture.xlsx              # 텍스처 metadata + attribution
+└── <locale>/                     # locale별 런타임 산출물
     ├── runtime_tsv/              # 빌드 산출물 (translator.gd 가 로드)
-    └── textures/                 # 번역 텍스처 (선택)
-
-Translation_TSV/                   # canonical TSV (xlsx의 git diff 친화적 shadow)
-└── <locale>/<category>/*.tsv
+    ├── textures/                 # 번역 텍스처 (선택)
+    ├── Translation_Credit.md     # 자동 생성 크레딧
+    └── Texture_Attribution.md    # 자동 생성 attribution
 
 tools/                             # Python 빌드 / 검증 / 보조 도구
 ├── build_mod_package.py          # 메인 빌드 (검증 + 패키징)
 ├── validate_translation.py       # xlsx 검증 (parsed_text 의존 / 비의존 모두)
 ├── parse_translatables.py        # PCK 추출본을 파싱 → parsed_text/
 ├── machine_translation_deepl.py  # DeepL 1차 번역 파이프라인
-├── rebuild_xlsx.py               # TSV → xlsx 재빌드 (3개 카테고리 일괄)
+├── rebuild_xlsx.py               # TSV → xlsx 재빌드 (Translation/Texture 일괄)
 ├── check_*.py                    # 중복 / 충돌 / 미번역 / drift 검사
 └── utils/                        # 위 도구들이 호출하는 유틸리티
 
-README/                            # 한국어 매뉴얼 시리즈 (위 Quick Start 표)
-├── 0_Setting_Environments_kr.md
-├── 1_unpack_and_decompile_game_kr.md
-├── 2_Add_new_language_kr.md
-├── 3_How_to_Translate_kr.md
-├── 3_How_to_Translate_kr(For Developers).md
-├── 4_How_to_Pull_Request_kr.md
-├── 5_How_to_Update_from_MasterBranch_kr.md
-├── CONTRIBUTING.md                # 크레딧 등록 / 새 언어 DeepL 가이드 (영문)
-└── image/                         # README_USER.md 의 스크린샷
+docs/translator/kr/                           # 한국어 번역가용 가이드
+├── Setting_Environments.md
+├── Translating_using_crowdin.md   # Crowdin 웹만 사용
+├── Translating_on_Local.md        # 로컬 클론 + Crowdin (인게임 테스트)
+├── How_to_Pull_Request.md
+└── Sync_from_Master.md
+
+docs/dev/kr/                       # 한국어 개발자/메인테이너 가이드
+├── Pull_from_Crowdin.md           # Crowdin → 저장소 sync (메인테이너)
+├── Add_new_language.md            # DeepL 시드 파이프라인
+├── Translation_Methods.md         # method 의미 + 매칭 디버깅
+└── Unpack_and_Decompile_Game.md   # gdre_tools + parse_translatables
+
+README/
+└── image/                         # README_USER.md 가 raw URL 로 참조하는 스크린샷
 ```
 
 ---
@@ -274,7 +292,7 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 | `check_duplicate.py` | 빌드 전 중복 키 사전 검사 (xlsx 단독) |
 | `check_conflict.py` | 번역 충돌 검사 (같은 원문, 다른 번역) |
 | `check_old_translation.py` | 게임 업데이트로 사라진 옛 번역 감지 |
-| `rebuild_xlsx.py` | locale 의 TSV → xlsx 일괄 재빌드 (Translation/Glossary/Texture) |
+| `rebuild_xlsx.py` | locale 의 TSV → xlsx 일괄 재빌드 (Translation/Texture) |
 
 ### 유틸리티 (`tools/utils/` — 위 도구가 호출)
 
@@ -290,10 +308,9 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 | `utils/build_attributions.py` | `Texture.xlsx` → `Texture_Attribution.md` 자동 생성 |
 | `utils/build_translation_credit.py` | locale 별 `Translation_Credit.md` 생성 |
 | `utils/build_authors.py` | `AUTHORS.md` 의 자동 생성 Translators 섹션 갱신 |
-| `utils/build_translation_tsv.py` | locale xlsx → 시트별 TSV (`Translation_TSV/`) — git diff 가독성 |
+| `utils/build_translation_tsv.py` | locale xlsx → 시트별 TSV (`Translations/<locale>/<file>/`) — git diff 가독성 |
 | `utils/build_mod_info.py` | F9 Info 탭이 사용하는 `<pkg_root>/info.json` 생성 (version + build date + contributors) |
 | `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (서식 / 너비 / 조건부 서식 일괄 적용) |
-| `utils/rebuild_glossary_xlsx.py` | TSV → Glossary.xlsx |
 | `utils/rebuild_texture_xlsx.py` | TSV → Texture.xlsx |
 
 ---
@@ -305,7 +322,7 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 - **UI**: `translator_ui.gd` (F9 단축키)
 - **텍스트 데이터**: `<locale>/runtime_tsv/translation_*.tsv` (xlsx 에서 빌드된 6개 버킷 + metadata)
 - **이미지 데이터**: `<locale>/textures/**` (원본 `res://` 구조 미러링)
-- **매칭 방식**: Godot 노드 구조 기반 1:1 매핑 — 자세한 동작은 [`translator.gd`](Trans%20To%20Vostok/translator.gd) 상단 주석 + [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) 참조
+- **매칭 방식**: Godot 노드 구조 기반 1:1 매핑 — 자세한 동작은 [`translator.gd`](Trans%20To%20Vostok/translator.gd) 상단 주석 + [docs/dev/kr/Translation_Methods.md](docs/dev/kr/Translation_Methods.md) 참조
 
 ---
 
@@ -318,7 +335,7 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 | 자산 | 라이선스 | 파일 |
 | --- | --- | --- |
 | 코드 (Python tools, GDScript, batch) | Apache 2.0 | [`LICENSE-CODE`](LICENSE-CODE) |
-| 번역 텍스트 (Translation, Glossary) | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
+| 번역 텍스트 | CC BY 4.0 | [`LICENSE-TRANSLATION`](LICENSE-TRANSLATION) |
 | 텍스처 / 이미지 자산 | CC BY 4.0 | [`LICENSE-TEXTURE`](LICENSE-TEXTURE) |
 
 Apache 2.0 §4(d) 의 attribution 보존 대상은 [`NOTICE`](NOTICE) 에 있고, `NOTICE` 와 CC BY 4.0 라이선스가 참조하는 기여자 명단은 [`AUTHORS.md`](AUTHORS.md). 원작 Road to Vostok 게임의 영문 텍스트와 원본 자산은 게임 개발사의 저작권으로 남으며 본 저장소의 라이선스 대상이 아님.
@@ -329,11 +346,12 @@ Apache 2.0 §4(d) 의 attribution 보존 대상은 [`NOTICE`](NOTICE) 에 있고
 
 > **상태**: 기여 흐름은 아직 개방 전 — 공개 저장소 준비 중. 아래 안내는 의도된 워크플로.
 
-- **번역가 (Excel 편집)** → [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md)
-- **새 언어 추가** → [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md)
-- **Pull Request 흐름** → [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md)
-- **upstream 동기화** → [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md)
-- **크레딧 등록 / 코드 기여 / DeepL 파이프라인** → [README/CONTRIBUTING.md](README/CONTRIBUTING.md)
+- **번역가 (Crowdin 웹)** → [docs/translator/kr/Translating_using_crowdin.md](docs/translator/kr/Translating_using_crowdin.md)
+- **번역가 + 인게임 테스트** → [docs/translator/kr/Translating_on_Local.md](docs/translator/kr/Translating_on_Local.md)
+- **새 언어 추가** → [docs/dev/kr/Add_new_language.md](docs/dev/kr/Add_new_language.md)
+- **Pull Request 흐름** → [docs/dev/kr/How_to_Pull_Request.md](docs/dev/kr/How_to_Pull_Request.md)
+- **upstream 동기화** → [docs/dev/kr/Sync_from_Master.md](docs/dev/kr/Sync_from_Master.md)
+- **크레딧 등록 / 코드 기여** → [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 

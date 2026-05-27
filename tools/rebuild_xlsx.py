@@ -1,11 +1,10 @@
 """Rebuild all xlsx files for a locale from canonical TSVs.
 
-Runs the three per-category utils sequentially:
+Runs the per-category utils sequentially:
     utils/rebuild_translation_xlsx.py <locale>
-    utils/rebuild_glossary_xlsx.py    <locale>
     utils/rebuild_texture_xlsx.py     <locale>
 
-Each util writes to <pkg_root>/<locale>/<category>.xlsx, overwriting the
+Each util writes to Translations/<locale>/<category>.xlsx, overwriting the
 existing file. If a category's TSV folder doesn't exist for the locale,
 that util prints [SKIP] and returns 0 (not treated as failure).
 
@@ -20,7 +19,6 @@ SCRIPT_DIR = Path(__file__).resolve().parent  # tools
 
 UTILS = [
     "rebuild_translation_xlsx.py",
-    "rebuild_glossary_xlsx.py",
     "rebuild_texture_xlsx.py",
 ]
 

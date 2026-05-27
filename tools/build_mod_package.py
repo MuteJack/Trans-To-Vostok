@@ -87,12 +87,26 @@ def build_attributions_for_locale(tools_dir: Path, locale: str) -> bool:
 
 def build_translation_tsv_for_locale(tools_dir: Path, locale: str) -> bool:
     """Call build_translation_tsv.py for the given locale.
-    Refreshes the diff-friendly TSV shadow under Translation_TSV/<locale>/."""
-    print(f"=== Building Translation_TSV: {locale} ===")
+    Refreshes the diff-friendly TSV shadow under Translations/<locale>/<file>/."""
+    print(f"=== Building canonical TSVs: {locale} ===")
     cmd = [sys.executable, "utils/build_translation_tsv.py", locale]
     result = subprocess.run(cmd, cwd=tools_dir)
     if result.returncode != 0:
-        print(f"[ERROR] {locale} Translation_TSV build failed")
+        print(f"[ERROR] {locale} TSV build failed")
+        return False
+    print()
+    return True
+
+
+def get_texture_credits_for_locale(tools_dir: Path, locale: str) -> bool:
+    """Call get_texture_credits.py. Refreshes the Texture_reworker field of
+    Trans To Vostok/<locale>/credits.json from Texture.xlsx so subsequent
+    build_translation_credit / build_authors / build_mod_info see fresh data."""
+    print(f"=== Refreshing texture credits: {locale} ===")
+    cmd = [sys.executable, "utils/get_texture_credits.py", locale]
+    result = subprocess.run(cmd, cwd=tools_dir)
+    if result.returncode != 0:
+        print(f"[ERROR] {locale} get_texture_credits failed")
         return False
     print()
     return True
@@ -100,7 +114,7 @@ def build_translation_tsv_for_locale(tools_dir: Path, locale: str) -> bool:
 
 def build_translation_credit_for_locale(tools_dir: Path, locale: str) -> bool:
     """Call build_translation_credit.py. Generates <locale>/Translation_Credit.md
-    from Translation.xlsx MetaData and Texture.xlsx columns."""
+    from credits.json."""
     print(f"=== Building Translation_Credit: {locale} ===")
     cmd = [sys.executable, "utils/build_translation_credit.py", "--locale", locale]
     result = subprocess.run(cmd, cwd=tools_dir)
@@ -207,6 +221,14 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                     zf.write(credit_path, f"{MOD_NAME}/{locale}/Translation_Credit.md")
                     count += 1
 
+                # 7. credits.json → Trans To Vostok/<locale>/credits.json
+                # consumed by F9 Info tab in translator_ui.gd. Translator fields
+                # come from get_member_list.py, Texture_reworker from get_texture_credits.py.
+                credits_json = locale_dir / "credits.json"
+                if credits_json.exists() and credits_json.is_file():
+                    zf.write(credits_json, f"{MOD_NAME}/{locale}/credits.json")
+                    count += 1
+
         # overwrite original on success
         tmp_path.replace(out_path)
     except Exception:
@@ -261,11 +283,12 @@ def main() -> int:
 
     # 1. build each locale (includes validate, skip locales without folder)
     pkg_root = mod_root / MOD_NAME
+    translations_root = mod_root / "Translations"
     build_locales = []
     for locale in locales:
-        locale_dir = pkg_root / locale
-        xlsx_path = locale_dir / "Translation.xlsx"
-        if not locale_dir.exists() or not xlsx_path.exists():
+        xlsx_locale_dir = translations_root / locale
+        xlsx_path = xlsx_locale_dir / "Translation.xlsx"
+        if not xlsx_locale_dir.exists() or not xlsx_path.exists():
             print(f"[SKIP] {locale} - translation folder/xlsx not found (default language)")
             continue
         if not build_locale(script_dir, locale, soft=soft, ignore=ignore):
@@ -278,8 +301,11 @@ def main() -> int:
         if not build_attributions_for_locale(script_dir, locale):
             return 1
 
-    # 3. build translation credits (Translation_Credit.md per locale)
+    # 3. refresh credits.json's Texture_reworker from Texture.xlsx (per locale),
+    #    then build Translation_Credit.md from credits.json
     for locale in locales:
+        if not get_texture_credits_for_locale(script_dir, locale):
+            return 1
         if not build_translation_credit_for_locale(script_dir, locale):
             return 1
 
@@ -291,12 +317,13 @@ def main() -> int:
     if not build_mod_info(script_dir):
         return 1
 
-    # 5. refresh Translation_TSV/ shadow (xlsx -> TSV for git diff visibility)
-    for locale in locales:
-        if not build_translation_tsv_for_locale(script_dir, locale):
-            return 1
+    # NOTE: We intentionally do NOT refresh Translations/<locale>/<cat>/*.tsv
+    # here. Working tree changes to canonical TSV are the responsibility of
+    # explicit user actions (push_to_crowdin, pull_from_crowdin, or running
+    # tools/utils/build_translation_tsv.py directly). Build only produces
+    # the mod zip; nothing else.
 
-    # 6. packaging
+    # 5. packaging
     print(f"=== Packaging ===")
     print(f"Target locales: {', '.join(locales)}")
     print(f"Output file: {out_path}")

@@ -4,7 +4,6 @@ Extract unique source texts from a target locale's xlsx files.
 Sources scanned (all under Trans To Vostok/<target_locale>/):
     - Translation.xlsx   (game text, with method/untranslatable filters)
     - Texture.xlsx       (image labels — capitalized Text/Translation columns)
-    - Glossary.xlsx      (translator reference, untranslatable filter only)
 
 Filter logic per row (per file's column conventions):
     - text must be non-empty
@@ -72,13 +71,6 @@ XLSX_FILES = [
         "trans_col": "Translation",
         "method_col": None,
         "untrans_col": None,
-    },
-    {
-        "name": "Glossary.xlsx",
-        "text_col": "text",
-        "trans_col": "translation",
-        "method_col": None,
-        "untrans_col": "untranslatable",
     },
 ]
 
@@ -296,8 +288,8 @@ def main() -> int:
     script_dir = Path(__file__).resolve().parent
     # script_dir = mods/Trans To Vostok/tools/utils
     mod_root = script_dir.parent.parent
-    pkg_root = mod_root / "Trans To Vostok"
-    locale_dir = pkg_root / target_locale
+    translations_root = mod_root / "Translations"
+    locale_dir = translations_root / target_locale
     out_dir = mod_root / ".tmp" / "unique_text" / target_locale
 
     if not locale_dir.exists():

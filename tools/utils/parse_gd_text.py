@@ -368,7 +368,7 @@ def main():
     mod_root = script_dir.parent.parent
 
     # load parse_list_gd.json (located in tools/, one level up from utils/)
-    config_path = script_dir.parent / "parse_list_gd.json"
+    config_path = script_dir.parent / "configs" / "parse_list_gd.json"
     config = load_gd_config(config_path)
     print(f"Config: {config_path.name}")
     print(f"  properties: {config['properties']}")

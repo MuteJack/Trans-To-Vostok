@@ -3,45 +3,33 @@ Scenes/Menu	Main/Buttons	New	Button	New game	새 게임
 Scenes/Menu	Main/Buttons	Load	Button	Load game	불러오기
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	튜토리얼
 Scenes/Menu	Main/Buttons	Settings	Button	"Settings
-"	"설정
-"
+"	설정
 Scenes/Menu	Main/Buttons	Roadmap	Button	"Roadmap
-"	"로드맵
-"
+"	로드맵
 Scenes/Menu	Main/Buttons	About	Button	"About
-"	"정보
-"
+"	정보
 Scenes/Menu	Main/Buttons	Quit	Button	"Quit
-"	"나가기
-"
+"	나가기
 Scenes/Menu	Log	Header	Label	Changelog	변경사항
 Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 Scenes/Menu	Log/Buttons	Log_On	Button	"On
-"	"켜기
-"
+"	켜기
 Scenes/Menu	Hardware	Header	Label	Hardware Check	하드웨어 확인
 Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
-"	"켜기
-"
+"	켜기
 Scenes/Menu	Intro	Header	Label	Watch Intro	인트로 보기
 Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
-"	"켜기
-"
+"	켜기
 Scenes/Menu	Music	Header	Label	Menu Music	메뉴 음악
 Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 Scenes/Menu	Music/Buttons	Music_On	Button	"On
-"	"켜기
-"
+"	켜기
 Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 
 접경 지대를 배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."
 Scenes/Menu	.	Version	Label	Version: 0.1.1.3	버전: 0.1.1.3
@@ -708,32 +696,24 @@ Current inventory & equipment will be deleted"	"대피소 밖에서 게임을 �
 Resources/Inputs	.	Header	Label	Input Settings	입력 설정
 Resources/Inputs	Modes/Settings	Mouse	Label	Mouse	마우스
 Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	"Normal
-"	"일반
-"
+"	일반
 Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	"Inverted
-"	"반전
-"
+"	반전
 Resources/Inputs	Modes/Settings	Sprint	Label	Sprint	달리기
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	"Hold
-"	"유지
-"
+"	유지
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	"Toggle
-"	"토글
-"
+"	토글
 Resources/Inputs	Modes/Settings	Lean	Label	Lean	기울이기
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
-"	"유지
-"
+"	유지
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
-"	"토글
-"
+"	토글
 Resources/Inputs	Modes/Settings	Aim	Label	Aim	조준
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
-"	"유지
-"
+"	유지
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
-"	"토글
-"
+"	토글
 Resources/Inputs	.	Reset	Button	Reset to defaults	기본값으로 초기화
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	입력 예시
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	Input Key	키 입력
@@ -743,33 +723,25 @@ UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	Ambient Volume	환경�
 UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	Music Volume	음악 볼륨
 UI/Settings	Settings/Row_01/Music/Elements	Music	Label	Music Preset	음악 프리셋
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	"Dynamic
-"	"동적
-"
+"	동적
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	"Shelter
-"	"은신처
-"
+"	은신처
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 05
-"	"05 구역
-"
+"	05 구역
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
-"	"접경지대
-"
+"	접경지대
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
-"	"보스토크
-"
+"	보스토크
 UI/Settings	Settings/Row_01/Camera	Camera	Label	Camera Settings	카메라 설정
 UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	Interpolate	보간
 UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	Field of View	시야각 (FOV)
 UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	Headbob	화면 흔들림
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	"On
-"	"켜기
-"
+"	켜기
 UI/Settings	Settings/Row_01/Mouse	Mouse	Label	Mouse Settings	마우스 설정
 UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	시점 감도
 UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	조준 감도
@@ -785,8 +757,7 @@ UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	이미지 설정
 UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	선명도
 UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
 UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
-"	"지도
-"
+"	지도
 UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	FPS
 UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	바이탈
 UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	의료
@@ -794,31 +765,25 @@ UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	배치
 UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	장식
 UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	UI Tooltip	UI 툴팁
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	"On
-"	"켜기
-"
+"	켜기
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	Off	끄기
 UI/Settings	Settings/Row_02/PIP	PIP	Label	PIP Scopes	PIP 조준경
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	"On
-"	"켜기
-"
+"	켜기
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 UI/Settings	Settings/Row_02/Shadows	Shadows	Label	Detail Shadows	세부 그림자
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	On	켜기
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 UI/Settings	Settings/Row_02/Water	Header	Label	Water Reflections	수면 반사
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	On	켜기
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	앰비언트 오클루전
 UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	켜기
 UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
-"	"끄기
-"
+"	끄기
 UI/Settings	Settings/Row_03/Display	Display	Label	Display	디스플레이
 UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	전체 화면
 UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	창 모드
@@ -844,8 +809,7 @@ UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	SMAA On	SMAA �
 UI/Settings	Settings/Row_03/Exit	Exit	Label	Exit	나가기
 UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	Main Menu	메인 메뉴
 UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
-"	"게임 종료
-"
+"	게임 종료
 Scenes/Menu	Roadmap	Header	Label	Roadmap	로드맵
 Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	출시 예정 빌드
 Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← 돌아가기
@@ -1024,11 +988,9 @@ Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	인트로 스킵하기 [SPAC
 Scenes/Death	Main	Hint	Label	Character died	캐릭터가 사망했습니다
 Scenes/Death	Main/Buttons	Load	Button	Load game	불러오기
 Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
-"	"메인 메뉴
-"
+"	메인 메뉴
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
-"	"나가기
-"
+"	나가기
 UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	체력
 UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	기력
 UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	수분
@@ -1103,50 +1065,35 @@ UI/Interface	Tasks/Header	Label	Label	Tasks	의뢰
 UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	가구 카탈로그
 UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.
 UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	"사용
-"
+"	사용
 UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	"장비
-"
+"	장비
 UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	"해제
-"
+"	해제
 UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	"탄 꺼내기
-"
+"	탄 꺼내기
 UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	"나누기
-"
+"	나누기
 UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	"잡기
-"
+"	잡기
 UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	"수면
-"
+"	수면
 UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	"이동
-"
+"	이동
 UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	"버리기
-"
+"	버리기
 UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	"배치
-"
+"	배치
 UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	"파괴
-"
+"	파괴
 UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	"제거 [0]
-"
+"	제거 [0]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	"제거 [1]
-"
+"	제거 [1]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	"제거 [2]
-"
+"	제거 [2]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	"제거 [3]
-"
+"	제거 [3]
 UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	커피머신
 UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	소모품
 UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	전설
@@ -1241,9 +1188,7 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Rare)	유형 (희
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Legendary)	유형 (전설)
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	An item is an object within the game world that can be collected by a player.	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	Condition:	상태:
-UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	100%	100%
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	Weight:	무게:
-UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	100kg	100kg
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	Value:	가치:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	Use time:	사용 시간:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	Damage:	데미지:
@@ -1254,8 +1199,7 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	최대 중�
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	방어등급:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	체력:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
-"	"기력:
-"
+"	기력:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	수분:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	체온:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	치료:

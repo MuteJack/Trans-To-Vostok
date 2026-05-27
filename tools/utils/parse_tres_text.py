@@ -461,8 +461,8 @@ def main() -> int:
     if args.config:
         config_path = Path(args.config).resolve()
     else:
-        # default config (parse_list_tres.json) lives in tools/, one level up from utils/
-        config_path = (script_dir.parent / DEFAULT_CONFIG_NAME).resolve()
+        # default config (parse_list_tres.json) lives in tools/configs/, one level up + configs/ from utils/
+        config_path = (script_dir.parent / "configs" / DEFAULT_CONFIG_NAME).resolve()
 
     if not config_path.exists():
         print(f"[ERROR] Config file not found: {config_path}", file=sys.stderr)

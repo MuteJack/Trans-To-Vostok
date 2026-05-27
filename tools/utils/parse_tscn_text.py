@@ -245,7 +245,7 @@ def main():
     out_dir = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else default_out
 
     # load parse_list_tscn.json (located in tools/, one level up from utils/)
-    config_path = script_dir.parent / "parse_list_tscn.json"
+    config_path = script_dir.parent / "configs" / "parse_list_tscn.json"
     config = load_tscn_config(config_path)
     global_extra = config.get("extra_properties", [])
     per_file_extras = _build_per_file_extras(config)

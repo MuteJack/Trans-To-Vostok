@@ -7,7 +7,7 @@ or modifying any part of this repository.**
 | Asset Type                                | License        | File                  |
 | ----------------------------------------- | -------------- | --------------------- |
 | Code (Python tools, GDScript, batch)      | Apache 2.0     | `LICENSE-CODE`        |
-| Translation text (Translation, Glossary)  | CC BY 4.0      | `LICENSE-TRANSLATION` |
+| Translation text                           | CC BY 4.0      | `LICENSE-TRANSLATION` |
 | Texture / Image assets                    | CC BY 4.0      | `LICENSE-TEXTURE`     |
 
 For the contributor / translator name list referenced by these licenses,

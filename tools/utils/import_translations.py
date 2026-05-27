@@ -6,25 +6,32 @@ Reads:
 Writes (in-place, all under Trans To Vostok/<target_locale>/):
     Translation.xlsx   (game text)
     Texture.xlsx       (image labels, capitalized columns)
-    Glossary.xlsx      (translator reference)
 
 Per-row logic (per file, columns vary; checks adapted by config):
     1. If row's translation is already non-empty:
          skip (preserve human edits / curated entries / previous runs)
     2. If untranslatable == "1" (only when column exists):
          translation = text (copy original)
-         Machine translated NOT set (it's a copy, not a machine translation)
+         Comments NOT updated (it's a copy, not a machine translation)
     3. Else if method == "ignore" (only when column exists):
          look up text in translated TSV (text-based)
-         if found, use that translation; Machine translated = 1
+         if found, use that translation; append `#Machine Translated` to Comments
          if not found, fallback: copy text to translation
          (an ignore row is usually a duplicate of a non-ignore row whose text
           was translated; reusing that translation keeps the xlsx complete)
     4. Else if method == "pattern" (only when column exists):
-         skip (DeepL cannot translate regex source patterns)
-    5. Else (regular: static / literal / substr / Texture / Glossary):
+         translation = text (copy original)
+         Rationale: pattern rows like "In {str} Days" can't be safely
+         machine-translated (DeepL would mangle the regex). But leaving
+         translation empty causes the runtime to fall through to substr
+         matching, producing broken output like "In 5 Jours" (mixed
+         English/target language). Copying source ensures the pattern
+         row matches first at runtime and returns the English template,
+         consistent and not partially translated. Korean (manual) pattern
+         translations are preserved by step 1.
+    5. Else (regular: static / literal / substr / Texture):
          look up text in translated TSV
-         if found, write translation; Machine translated = 1 (when column exists)
+         if found, write translation; append `#Machine Translated` to Comments
 
 Note: lookup is by exact text match on the row's text column. The unique.tsv
 / mapping.tsv files are not needed here — translated_<TARGET>.tsv already
@@ -49,6 +56,9 @@ except ImportError:
     print("ERROR: openpyxl is required. pip install -r tools/requirements.txt", file=sys.stderr)
     sys.exit(1)
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from utils.locale_config import dir_to_deepl_id, default_source_locale
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -58,22 +68,16 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 BOOL_TRUE = {"1", "true"}
+MT_MARKER = "#Machine Translated"
 
-# Default mapping: target locale folder name -> DeepL language code
-DEFAULT_DEEPL_LANG = {
-    "Korean": "KO",
-    "Japanese": "JA",
-    "French": "FR",
-    "German": "DE",
-    "Spanish": "ES",
-    "Italian": "IT",
-    "Portuguese": "PT-PT",
-    "BrazilianPortuguese": "PT-BR",
-    "ChineseSimplified": "ZH-HANS",
-    "ChineseTraditional": "ZH-HANT",
-    "Russian": "RU",
-}
 
+def append_marker(existing: str, marker: str) -> str:
+    existing = existing or ""
+    if marker in existing:
+        return existing
+    if existing.strip():
+        return existing + "\n" + marker
+    return marker
 
 # Per-xlsx column configuration (None = column not present in this file)
 XLSX_FILES = [
@@ -83,7 +87,7 @@ XLSX_FILES = [
         "trans_col": "translation",
         "method_col": "method",
         "untrans_col": "untranslatable",
-        "mt_col": "Machine translated",
+        "comments_col": "Comments",
     },
     {
         "name": "Texture.xlsx",
@@ -91,15 +95,7 @@ XLSX_FILES = [
         "trans_col": "Translation",
         "method_col": None,
         "untrans_col": None,
-        "mt_col": None,
-    },
-    {
-        "name": "Glossary.xlsx",
-        "text_col": "text",
-        "trans_col": "translation",
-        "method_col": None,
-        "untrans_col": "untranslatable",
-        "mt_col": "Machine translated",
+        "comments_col": "Comments",
     },
 ]
 
@@ -140,7 +136,7 @@ def _new_stats() -> dict:
         "rows_filled_ignore": 0,
         "rows_filled_ignore_fallback": 0,
         "rows_filled_regular": 0,
-        "rows_skipped_pattern": 0,
+        "rows_filled_pattern_as_source": 0,
         "rows_no_text": 0,
         "rows_no_translation_available": 0,
         "rows_placeholder_warning": 0,
@@ -175,7 +171,7 @@ def import_to_xlsx(target_xlsx: Path, cfg: dict, translated_map: dict[str, dict]
 
             method_col = header.get(cfg["method_col"]) if cfg.get("method_col") else None
             untrans_col = header.get(cfg["untrans_col"]) if cfg.get("untrans_col") else None
-            mt_col = header.get(cfg["mt_col"]) if cfg.get("mt_col") else None
+            comments_col = header.get(cfg["comments_col"]) if cfg.get("comments_col") else None
 
             for row_idx in range(2, ws.max_row + 1):
                 stats["rows_total"] += 1
@@ -206,9 +202,11 @@ def import_to_xlsx(target_xlsx: Path, cfg: dict, translated_map: dict[str, dict]
                     stats["rows_filled_untranslatable"] += 1
                     continue
 
-                # 4. pattern → skip
+                # 4. pattern → copy source; prevents runtime fall-through to
+                #    substr global which would partially translate the pattern.
                 if method_val == "pattern":
-                    stats["rows_skipped_pattern"] += 1
+                    ws.cell(row_idx, trans_col).value = text
+                    stats["rows_filled_pattern_as_source"] += 1
                     continue
 
                 # 3 & 5. ignore or regular → look up text in translated map
@@ -222,8 +220,10 @@ def import_to_xlsx(target_xlsx: Path, cfg: dict, translated_map: dict[str, dict]
                     continue
 
                 ws.cell(row_idx, trans_col).value = entry["translation"]
-                if mt_col is not None:
-                    ws.cell(row_idx, mt_col).value = 1
+                if comments_col is not None:
+                    existing = ws.cell(row_idx, comments_col).value
+                    new_val = append_marker(str(existing) if existing is not None else "", MT_MARKER)
+                    ws.cell(row_idx, comments_col).value = new_val
                 if entry["status"] == "placeholder_lost":
                     stats["rows_placeholder_warning"] += 1
 
@@ -254,7 +254,18 @@ def main() -> int:
 
     target_locale = args.target_locale
     source_locale = args.source or target_locale
-    deepl_lang = args.deepl_lang or DEFAULT_DEEPL_LANG.get(target_locale)
+
+    project_source = default_source_locale()
+    if target_locale == project_source:
+        print(
+            f"[ERROR] '{target_locale}' is the project's source language "
+            f"(declared in tools/configs/languages.json:default_source).\n"
+            f"  Imports go INTO a target locale — pick a target.",
+            file=sys.stderr,
+        )
+        return 1
+
+    deepl_lang = args.deepl_lang or dir_to_deepl_id(target_locale)
     if not deepl_lang:
         print(
             f"[ERROR] Cannot determine DeepL language code for locale '{target_locale}'.\n"
@@ -264,11 +275,10 @@ def main() -> int:
         return 1
 
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
     mod_root = script_dir.parent.parent
-    pkg_root = mod_root / "Trans To Vostok"
+    translations_root = mod_root / "Translations"
 
-    locale_dir = pkg_root / target_locale
+    locale_dir = translations_root / target_locale
     translated_path = mod_root / ".tmp" / "unique_text" / source_locale / f"translated_{deepl_lang}.tsv"
 
     if not locale_dir.exists():
@@ -319,7 +329,7 @@ def main() -> int:
         print(f"  Filled (ignore via lookup)   : {stats['rows_filled_ignore']}")
         print(f"  Filled (ignore fallback copy): {stats['rows_filled_ignore_fallback']}")
         print(f"  Filled (regular row)         : {stats['rows_filled_regular']}")
-        print(f"  Skipped (method=pattern)     : {stats['rows_skipped_pattern']}")
+        print(f"  Filled (pattern -> source)   : {stats['rows_filled_pattern_as_source']}")
         print(f"  Skipped (no text in row)     : {stats['rows_no_text']}")
         print(f"  No translation available     : {stats['rows_no_translation_available']}")
         if stats["rows_placeholder_warning"]:

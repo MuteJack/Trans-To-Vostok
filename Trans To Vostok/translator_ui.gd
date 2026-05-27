@@ -296,16 +296,24 @@ func _show_language_ui(is_startup: bool) -> void:
 	item_list.select_mode = ItemList.SELECT_SINGLE
 	item_list.add_theme_font_size_override("font_size", 16)
 
+	# locale.json's `dir` field is the canonical per-locale identifier
+	# (matches the folder name under <pkg_root>/<dir>/runtime_tsv).
+	# `locale` is kept as a legacy alias; if a saved setting still uses
+	# the legacy value, we migrate it on the fly below.
 	var pre_select: int = 0
 	for i in enabled_locales.size():
 		var loc: Dictionary = enabled_locales[i]
-		var display: String = loc.get("display", loc.get("locale", "???"))
-		var locale_id: String = loc.get("locale", "")
+		var dir_id: String = loc.get("dir", "")
+		var legacy_locale: String = loc.get("locale", "")
+		var display: String = loc.get("display", dir_id if dir_id != "" else legacy_locale)
 		var msg: String = loc.get("message", "")
-		var label: String = "%s (%s) — %s" % [display, locale_id, msg]
+		var label: String = "%s (%s) — %s" % [display, dir_id, msg]
 		item_list.add_item(label)
-		if locale_id == _current_locale:
+		if dir_id == _current_locale or (legacy_locale != "" and legacy_locale == _current_locale):
 			pre_select = i
+			# Migrate legacy `locale` value to canonical `dir`.
+			if dir_id != "" and dir_id != _current_locale:
+				_current_locale = dir_id
 
 	item_list.select(pre_select)
 	item_list.ensure_current_is_visible()
@@ -512,7 +520,7 @@ func _show_language_ui(is_startup: bool) -> void:
 	if selected_items.size() > 0:
 		var sel_idx: int = selected_items[0]
 		if sel_idx >= 0 and sel_idx < enabled_locales.size():
-			var selected_locale: String = enabled_locales[sel_idx].get("locale", DEFAULT_LOCALE)
+			var selected_locale: String = enabled_locales[sel_idx].get("dir", DEFAULT_LOCALE)
 			var locale_changed: bool = selected_locale != _current_locale
 			var substr_changed: bool = _substr_mode != prev_substr
 			if locale_changed or substr_changed or batch_changed or whitelist_changed or addons_changed or is_startup:
@@ -867,7 +875,9 @@ func _apply_locale() -> void:
 # ==========================================
 # Info 탭 — Mod metadata view
 # ==========================================
-# Reads <pkg_root>/info.json (built by tools/utils/build_mod_info.py).
+# Reads two JSON sources:
+#   - <pkg_root>/info.json                     (project-wide; built by build_mod_info.py)
+#   - <pkg_root>/<current_locale>/credits.json (per-locale; built by get_member_list.py + get_texture_credits.py)
 # Defensive at every step: missing file / malformed JSON / unexpected
 # field types fall back to placeholder text. Failures here MUST NOT
 # affect other tabs or runtime translation.
@@ -875,11 +885,11 @@ func _apply_locale() -> void:
 const INFO_JSON_PATH: String = "res://Trans To Vostok/info.json"
 
 
-func _load_info_json() -> Dictionary:
+func _load_json_dict(path: String) -> Dictionary:
 	# Returns {} on any error. Caller uses .get() with defaults.
-	if not FileAccess.file_exists(INFO_JSON_PATH):
+	if not FileAccess.file_exists(path):
 		return {}
-	var f: FileAccess = FileAccess.open(INFO_JSON_PATH, FileAccess.READ)
+	var f: FileAccess = FileAccess.open(path, FileAccess.READ)
 	if f == null:
 		return {}
 	var text: String = f.get_as_text()
@@ -890,6 +900,24 @@ func _load_info_json() -> Dictionary:
 	if not (parsed is Dictionary):
 		return {}
 	return parsed
+
+
+func _load_info_json() -> Dictionary:
+	return _load_json_dict(INFO_JSON_PATH)
+
+
+func _load_locale_credits(locale: String) -> Dictionary:
+	# Reads <pkg_root>/<locale>/credits.json. Per-locale data lives there
+	# (Translator.{Leader,Translator,Contributor}, Texture_reworker,
+	# translation_updated). Project-wide info stays in info.json.
+	return _load_json_dict("res://Trans To Vostok/%s/credits.json" % locale)
+
+
+func _date_only(ts: String) -> String:
+	# Strip time portion from "2026-05-10T19:41:31+09:00" or "2026-05-10 ...".
+	if ts.length() >= 10 and (ts[10] == "T" or ts[10] == " "):
+		return ts.substr(0, 10)
+	return ts
 
 
 func _safe_get_string(d: Dictionary, key: String, fallback: String) -> String:
@@ -955,8 +983,8 @@ func _build_info_tab(tabs: TabContainer) -> void:
 	tabs.add_child(tab_body)
 
 	var info: Dictionary = _load_info_json()
-	var locales: Dictionary = _safe_get_dict(info, "locales")
-	var current: Dictionary = _safe_get_dict(locales, _current_locale)
+	var credits: Dictionary = _load_locale_credits(_current_locale)
+	var translator_obj: Dictionary = _safe_get_dict(credits, "Translator")
 
 	# ===== Left: Mod Info =====
 	var info_left: VBoxContainer = VBoxContainer.new()
@@ -986,7 +1014,7 @@ func _build_info_tab(tabs: TabContainer) -> void:
 	info_left.add_child(locale_title)
 
 	_add_kv_row(info_left, "Translation Upd",
-		_safe_get_string(current, "translation_updated", "(unknown)"))
+		_date_only(_safe_get_string(credits, "translation_updated", "(unknown)")))
 
 	if info.is_empty():
 		var fallback_hint: Label = Label.new()
@@ -1041,14 +1069,24 @@ func _build_info_tab(tabs: TabContainer) -> void:
 	contrib_list.add_child(spacer)
 
 	# Per-locale sections (current locale)
+	# "Translators" combines Crowdin's Lead (Language Coordinator / Manager / Owner)
+	# and Proofreader roles. credits.Translator.Contributor (Crowdin Members
+	# with translation activity) goes to "Translation Contributors".
+	var leaders: Array = _safe_get_array(translator_obj, "Leader")
+	var proofreaders: Array = _safe_get_array(translator_obj, "Translator")
+	var translators_combined: Array = []
+	for n in leaders:
+		if not translators_combined.has(n):
+			translators_combined.append(n)
+	for n in proofreaders:
+		if not translators_combined.has(n):
+			translators_combined.append(n)
+
 	_add_section_title(contrib_list, "Translators (" + _current_locale + ")")
-	_add_name_list(contrib_list, _safe_get_array(current, "translators"))
+	_add_name_list(contrib_list, translators_combined)
 
 	_add_section_title(contrib_list, "Translation Contributors (" + _current_locale + ")")
-	_add_name_list(contrib_list, _safe_get_array(current, "translation_contributors"))
+	_add_name_list(contrib_list, _safe_get_array(translator_obj, "Contributor"))
 
 	_add_section_title(contrib_list, "Image Reworkers (" + _current_locale + ")")
-	_add_name_list(contrib_list, _safe_get_array(current, "texture_reworkers"))
-
-	_add_section_title(contrib_list, "Image Contributors (" + _current_locale + ")")
-	_add_name_list(contrib_list, _safe_get_array(current, "texture_contributors"))
+	_add_name_list(contrib_list, _safe_get_array(credits, "Texture_reworker"))

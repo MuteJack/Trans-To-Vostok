@@ -1,17 +1,15 @@
 """Rebuild <locale>/Translation.xlsx from canonical TSVs.
 
-Source : <project_root>/Translation_TSV/<locale>/Translation/*.tsv
+Source : <project_root>/Translations/<locale>/Translation/*.tsv
 Output : <pkg_root>/<locale>/Translation.xlsx (overwritten)
 
 Sheet ordering : `_sheet_order.txt` next to the TSVs.
-Column widths  : unified policy in `tools/width.json`, keyed by HEADER NAME
+Column widths  : unified policy in `tools/configs/width.json`, keyed by HEADER NAME
                  (not column letter). Sheet "MetaData" uses the "MetaData"
                  entry; every other sheet uses the "Translation" entry.
                  Header names absent from the sheet are silently skipped.
 Conditional formatting (Translation-category sheets only, MetaData skipped):
   - untranslatable = 1                            -> red bg / red text
-  - Transliteration/Transcreation/Machine
-    translated/Confused = 1                       -> yellow bg / yellow text
   - method = substr/static/ignore/literal/Pattern -> green/blue/red/yellow/yellow,red
   - duplicate values in unique_id/text/translation -> red bg / red text
 Group separators (Translation-category sheets only, MetaData skipped):
@@ -32,9 +30,8 @@ from openpyxl.utils import get_column_letter
 
 SCRIPT_DIR = Path(__file__).resolve().parent           # tools/utils
 PROJECT_ROOT = SCRIPT_DIR.parent.parent                 # mods/Trans To Vostok
-TSV_ROOT = PROJECT_ROOT / "Translation_TSV"
-PKG_ROOT = PROJECT_ROOT / "Trans To Vostok"
-WIDTH_POLICY = PROJECT_ROOT / "tools" / "width.json"
+TRANSLATIONS_ROOT = PROJECT_ROOT / "Translations"
+WIDTH_POLICY = PROJECT_ROOT / "tools" / "configs" / "width.json"
 
 CATEGORY = "Translation"
 THICK_RIGHT_HEADERS = {"KIND", "untranslatable", "unique_id", "translation"}
@@ -211,14 +208,6 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
             f"{col}2:{col}{end_row}",
             _cell_is_rule('"1"', RED_BG, RED_FG),
         )
-    for header_name in ["Transliteration", "Transcreation", "Machine translated", "Confused"]:
-        col = col_letter(header_name)
-        if not col:
-            continue
-        ws.conditional_formatting.add(
-            f"{col}2:{col}{end_row}",
-            _cell_is_rule('"1"', YELLOW_BG, YELLOW_FG),
-        )
     method_col = col_letter("method")
     if method_col:
         rng = f"{method_col}2:{method_col}{end_row}"
@@ -246,8 +235,8 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
 
 
 def build(locale: str) -> int:
-    src_dir = TSV_ROOT / locale / CATEGORY
-    dst = PKG_ROOT / locale / f"{CATEGORY}.xlsx"
+    src_dir = TRANSLATIONS_ROOT / locale / CATEGORY
+    dst = TRANSLATIONS_ROOT / locale / f"{CATEGORY}.xlsx"
 
     if not src_dir.exists():
         print(f"[SKIP] {locale}/{CATEGORY}: TSV dir not found ({src_dir})")
