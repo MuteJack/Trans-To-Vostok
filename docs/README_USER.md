@@ -1,9 +1,9 @@
 **Supported languages**
 
 - **English** (game default)
-- **Korean** (primary target)
+- **Korean** (Mainly managed by lead developer)
 - **French** (Prototyped)
-- **Português_BS** (under testing, Texture not updated yet)
+- **Português_BS** (Prototyped, Texture not updated yet)
 
 **Compatible mods** (tested — but compatibility may not always be guaranteed)
 
@@ -19,9 +19,17 @@ A multilingual translation mod for Road to Vostok.
 
 > **NOTE:** *This mode is currently under development. .*
 
-- Currently supported languages: **English** (game default), **Korean**, **French** (initial machine-translated pass, in testing)
-- The first development iteration based on Korean is complete; ToolBox refactoring is currently in progress alongside the addition of French and other languages.
-- Detailed manuals and the ToolBox will be published on GitHub once development reaches a sufficient milestone.
+> **Important Notice — Translation Contributions via Crowdin**
+>
+> Translation contributions are accepted through **Crowdin** — anyone
+> can join and translate directly in the browser, no local setup
+> required. Visit the project page to participate:
+> [Trans to Vostok on Crowdin](https://crowdin.com/project/trans-to-vostok).
+>
+> Translation-only Pull Requests on GitHub are no longer accepted;
+> please use Crowdin instead. Maintainers periodically sync Crowdin
+> back to the repository, and the next mod release ships with the
+> updated translations.
 
 ## 1. Introduction
 
@@ -151,9 +159,15 @@ Road to Vostok의 다국어 번역 지원 모드.
 
 > **NOTE:** *해당 모드는 현재 개발중에 있습니다.*
 
-- 현재 지원 언어: **English** (게임 기본언어), **Korean**, **French** (DeepL 1차 기계번역, 테스트 중)
-- 한국어를 기준으로 1차 개발이 완료되었으며, French 등 다른 언어 추가와 ToolBox 리팩토링이 함께 진행 중.
-- 개발이 어느 정도 완료되면 GitHub에 자세한 메뉴얼과 ToolBox 등을 공개할 예정입니다.
+> **공지 — 번역 기여는 Crowdin으로**
+>
+> 번역 기여는 **Crowdin**을 통해 받고 있습니다. 별도 셋업 없이 브라우저
+> 에서 바로 참여할 수 있습니다. 참여는 Crowdin 프로젝트 페이지:
+> [Trans to Vostok on Crowdin](https://crowdin.com/project/trans-to-vostok).
+>
+> GitHub의 번역만 변경한 Pull Request는 더 이상 받지 않으니, Crowdin을
+> 이용해 주세요. 메인테이너가 주기적으로 Crowdin → 저장소로 sync하며
+> 다음 모드 릴리스부터 반영됩니다.
 
 ## 1. 소개
 

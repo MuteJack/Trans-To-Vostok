@@ -12,6 +12,25 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.5.2] — 2026-05-27
+
+- **Fixed**: **Portuguese (Brazil)** translations were not loading
+  in-game. The language is now displayed correctly when selected
+  from the F9 language list.
+- **Fixed**: F9 → Info tab now shows the actual Translation Updated
+  date per language (previously stuck at `(unknown)`).
+- **Changed**: F9 → Info tab gains a new contributor section structure
+  — separate **Translators** (project leads + proofreaders),
+  **Translation Contributors**, and **Image Reworkers** rows per
+  language, sourced automatically from Crowdin contributor activity.
+- **Community**: All translation contributions are now collected
+  through the Crowdin web platform — anyone can join, translate in
+  the browser, and the maintainer periodically syncs to the next
+  mod release. (Translation-only Pull Requests are no longer accepted
+  on GitHub; use Crowdin instead.)
+
+---
+
 ## [0.5.1] — 2026-05-08
 
 - **Added**: **Portuguese (Brazil)** language support — initial pass
@@ -165,6 +184,23 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 ## 알려진 문제
 
 - _(현재 없음)_
+
+---
+
+## [0.5.2] — 2026-05-27
+
+- **수정**: **포르투갈어 (브라질)** 번역이 인게임에서 적용되지 않던 문제 해결.
+  F9 언어 선택에서 선택 시 정상적으로 표시됩니다.
+- **수정**: F9 → Info 탭의 Translation Updated 가 `(unknown)` 으로 표시되던
+  문제 해결. 이제 언어별 마지막 번역 시점이 정상 표시됩니다.
+- **변경**: F9 → Info 탭의 기여자 섹션 구조 개편 — 언어별로 **Translators**
+  (프로젝트 리더 + Proofreader), **Translation Contributors**,
+  **Image Reworkers** 항목이 분리되어 표시됩니다. Crowdin 활동 기록에서
+  자동 추출.
+- **커뮤니티**: 모든 번역 기여를 **Crowdin 웹**으로 일원화. 누구나 가입 후
+  브라우저에서 번역 가능하며, 관리자가 주기적으로 다음 모드 빌드에 반영
+  합니다. (번역만 변경한 GitHub Pull Request는 더 이상 받지 않습니다 —
+  Crowdin을 이용해 주세요.)
 
 ---
 

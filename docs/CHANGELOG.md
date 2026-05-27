@@ -4,6 +4,164 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.2] — 2026-05-27 (Crowdin Integration & Doc Restructure)
+
+This release completes the **Crowdin integration overhaul**: the Java
+Crowdin CLI is fully replaced by the Python `crowdin-api-client` SDK
+across both push and pull paths, the legacy Glossary xlsx workflow is
+retired in favor of Crowdin's native Glossary resource, and per-locale
+contributor credits move from `Translation.xlsx` MetaData sheets to a
+new `Trans To Vostok/<locale>/credits.json` populated automatically
+from the Crowdin members + activity reports. The contributor docs are
+restructured into a `docs/translator/` / `docs/dev/` split so each
+audience sees only their own workflow. Several runtime bugs that
+affected Portuguese in particular are fixed.
+
+### Added
+
+- **Crowdin SDK pipeline** — Java CLI dependency removed. `push_to_crowdin.py`
+  and `pull_from_crowdin.py` now drive the entire sync via the
+  `crowdin-api-client` Python library. No Java install required.
+  Token configured via `tools/configs/secrets.json:crowdin_personal_token`
+  (gitignored). Required scopes: Projects (Read & Write), Source Files,
+  Translations, Glossary (Read & Write).
+- **Smart push (HEAD-based diff)** — `push_to_crowdin.py` computes the
+  diff against the last git-committed canonical TSV and uploads only
+  changed rows. Other contributors' edits to untouched rows are
+  preserved. Working tree's `Translations/<locale>/` is no longer
+  dirtied by push (xlsx → canonical TSV happens in `.tmp/`).
+- **Smart pull (preserve-on-empty)** — `apply_to_repo.py` ignores empty
+  translation cells returned by Crowdin so a row that's never been
+  translated on Crowdin doesn't blank out an existing local value.
+- **Per-locale `credits.json`** at `Trans To Vostok/<locale>/credits.json`
+  (committed, packaged in mod zip). Schema:
+  ```json
+  {
+    "translation_updated": "<ISO timestamp>",
+    "Translator": {
+      "Leader":      [...],   // Crowdin Owner / Manager / Language Coordinator
+      "Translator":  [...],   // Crowdin Proofreader
+      "Contributor": [...]    // Crowdin Member with translated > 0
+    },
+    "Texture_reworker": [...]
+  }
+  ```
+  `translation_updated` is the most recent `max(createdAt, updatedAt)`
+  across all translations for that language (full pagination scan).
+- **`tools/crowdin/get_member_list.py`** (new) — fetches Crowdin members
+  + Top Members Report per language, classifies by role + activity,
+  writes Translator fields and `translation_updated` to credits.json.
+  Preserves `Texture_reworker` across runs. Called by `pull_from_crowdin.py`.
+- **`tools/utils/get_texture_credits.py`** (new) — extracts the
+  `Reworked by` + `Contributors` columns from `Texture.xlsx` across all
+  sheets, dedupes, writes to `credits.json:Texture_reworker`. Called
+  per-locale during build.
+- **F9 Info tab — per-locale data now reads credits.json directly**.
+  `info.json` is no longer the carrier for per-locale fields; it stays
+  a project-wide summary (mod_version, build_date, target_game_version,
+  lead_developer, code_contributors, acknowledgments).
+- **Docs structure overhaul** — `docs/translator/kr/` (Crowdin web or
+  local+test) and `docs/dev/kr/` (maintainer / contributor) under a
+  unified `docs/` root. New guides: `Translating_using_crowdin.md`,
+  `Translating_on_Local.md`, `Pull_from_Crowdin.md`. CHANGELOG /
+  CHANGELOG_user / README_USER also moved into `docs/`.
+- **`tools/configs/`** — centralized JSON config location for
+  `languages.json`, `width.json`, `parse_list_*.json`, and
+  `secrets.json` / `secrets_example.json`. All tooling Path constants
+  updated accordingly.
+
+### Changed
+
+- **`info.json` schema** — hybrid file (read-modify-write). The
+  `target_game_version` field is now hand-edited in `info.json` and
+  preserved across regenerations. The `locales` field is removed;
+  per-locale data lives in each `<locale>/credits.json` (consumed by
+  F9 UI directly).
+- **`build_authors.py` / `build_translation_credit.py` / `build_mod_info.py`**
+  refactored to read from `credits.json` instead of xlsx. `openpyxl`
+  dependency dropped from these three scripts. AUTHORS.md gains a
+  "Translator(s)" subsection (Crowdin Proofreader tier).
+- **`build_mod_package.py`** — orchestration now calls
+  `get_texture_credits.py` per locale before `build_translation_credit.py`
+  so credits.json's Texture_reworker is always fresh in the build.
+- **Crowdin pull / push require explicit `all` keyword** — bare invocation
+  is rejected to prevent accidental mass operations.
+- **Documentation tone** — `docs/translator/kr/` and `docs/dev/kr/`
+  standardized on Korean formal tone (`~입니다 / ~합니다`); informal
+  `~어요 / ~예요` replaced.
+
+### Fixed
+
+- **Portuguese (Brazil) translations were not loading in-game**.
+  `translator_ui.gd` was using `locale.json`'s `locale` field as both
+  identifier and folder path; Portuguese's `locale="Portuguese"` didn't
+  match its actual folder `Portuguese_BR/`. UI now uses `locale.json`'s
+  `dir` field for folder lookup, with automatic migration of saved
+  settings from the legacy `locale` value.
+- **`credits.json` was missing from the packaged mod zip** —
+  `build_mod_package.py` packaging step did not include
+  `<locale>/credits.json`, so the F9 Info tab fell back to "(unknown)"
+  for Translation Updated despite the file existing on disk. Fixed by
+  adding a step 7 to the per-locale packaging loop.
+- **`pull_from_crowdin.py` mapping Crowdin's BCP-47 locale folders** —
+  Crowdin's exported zip uses locale codes like `ko-KR`, `fr-FR`,
+  `pt-BR` for folder names. The SDK download path now queries the
+  project's `targetLanguages` once and rewrites zip entry paths to the
+  canonical folder names (`Korean`, `French`, `Portuguese_BR`) during
+  extraction.
+- **DeepL pattern-row handling** — pattern rows (`method=pattern` with
+  placeholders like `In {str} Days`) are no longer left with empty
+  translations after the DeepL import; the import now copies source to
+  translation for these rows so the runtime returns the English template
+  instead of falling through to substr matching and producing mixed
+  output like `In 5 Jours`.
+- **`100%` and `100kg` ToolTip rows** marked `untranslatable=1` across
+  all locales (proper handling per `untranslatable` semantics: numbers
+  and units, not "translator's choice").
+- **Branch naming in docs** — every reference to a `main` branch
+  corrected to `master` (the actual default branch).
+
+### Removed
+
+- **`Translation.xlsx` MetaData sheet** — fields are now sourced from
+  Crowdin (translator credits, translation_updated), `mod.txt`
+  (mod_version), or hand-edited `info.json` (target_game_version).
+  Canonical `Translations/<locale>/Translation/MetaData.tsv` files and
+  the corresponding entry in `_sheet_order.txt` are removed.
+- **Glossary xlsx workflow** — `Translations/<locale>/Glossary.xlsx`
+  files, `Translations/<locale>/Glossary/` canonical TSV trees,
+  `tools/utils/rebuild_glossary_xlsx.py`, the `Glossary` category from
+  every tool's `CATEGORIES` constant, `make_glossary_id()` in
+  `tools/crowdin/identifier.py`, and the Glossary `files:` entry in
+  `crowdin.yml` are all deleted. Glossary terms now live as a Crowdin
+  native Glossary resource (terms surface in the Editor's right panel
+  during translation). One-shot migration tool kept at
+  `tools/crowdin/migrate_glossary.py` for archival reference.
+- **`README/0_..._kr.md` through `README/5_..._kr.md`** numbered guide
+  series — content migrated to `docs/translator/kr/` and `docs/dev/kr/`
+  with audience-appropriate splits. The legacy `README/CONTRIBUTING.md`
+  is relocated to repo-root `CONTRIBUTING.md`.
+- **`README_Translation.md`** — gdre_tools install instructions are
+  already covered in `docs/translator/kr/Setting_Environments.md §1`.
+- **`info.json[locales]` field** — per-locale data moved into the
+  per-locale `credits.json` files.
+- **`tools/utils/set_requirements.py`** (briefly introduced earlier in
+  the cycle, then reverted before merge).
+
+### Internal / Tooling
+
+- **`tools/configs/`** consolidates all JSON config files (was scattered
+  in `tools/` and repo root). All Python `Path()` constants updated.
+- **GD code in `translator_ui.gd`** gains `_load_locale_credits(locale)`,
+  `_load_json_dict(path)` helpers, and a `_date_only()` formatter for
+  the ISO timestamp display.
+- **Crowdin `download_translations()` SDK helper** in
+  `tools/crowdin/api_client.py` — build + poll + zip download with
+  locale-path remapping in one call.
+- **`tools/utils/build_mod_info.py`** simplified — read existing
+  `info.json` (for target_game_version preservation), parse mod.txt,
+  parse AUTHORS.md sections, write back without `locales` field.
+
 ## [0.5.1] — 2026-05-08 (Patch Release)
 
 This release adds **Portuguese (Brazil)** as a new locale (initial DeepL
@@ -800,6 +958,151 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.5.2] — 2026-05-27 (Crowdin 통합 & 문서 재구조)
+
+이번 릴리스는 **Crowdin 통합 오버홀**을 완료합니다: Java 기반 Crowdin
+CLI 의존성을 Python `crowdin-api-client` SDK로 완전히 대체 (push / pull
+양쪽), 기존 xlsx 기반 Glossary 워크플로를 Crowdin 네이티브 Glossary
+리소스로 전환, 그리고 locale 별 기여자 크레딧을 `Translation.xlsx`의
+MetaData 시트에서 새 `Trans To Vostok/<locale>/credits.json`(Crowdin
+멤버 + 활동 리포트에서 자동 생성)으로 이전했습니다. 기여자 문서는
+`docs/translator/` / `docs/dev/` 구분으로 재구성하여 대상별 워크플로만
+보이도록 정리. 그리고 Portuguese 등 인게임 표시 관련 버그 다수 수정.
+
+### 추가
+
+- **Crowdin SDK 파이프라인** — Java CLI 의존 제거. `push_to_crowdin.py`,
+  `pull_from_crowdin.py` 모두 `crowdin-api-client` 파이썬 라이브러리로
+  전체 sync 수행. Java 설치 불필요. 토큰은
+  `tools/configs/secrets.json:crowdin_personal_token`(gitignored)에 설정.
+  필요 권한: Projects (Read & Write), Source Files, Translations,
+  Glossary (Read & Write).
+- **Smart push (HEAD-based diff)** — `push_to_crowdin.py`가 마지막 git
+  commit의 canonical TSV 대비 diff를 계산해 변경된 행만 업로드.
+  다른 contributor의 작업은 덮어쓰지 않음. xlsx → canonical TSV 변환이
+  `.tmp/`에서 수행되어 working tree `Translations/<locale>/` 가 더 이상
+  push 때문에 더러워지지 않음.
+- **Smart pull (preserve-on-empty)** — `apply_to_repo.py`가 Crowdin이
+  돌려준 빈 번역 칸을 무시하여 미번역 행이 로컬 값을 지우지 않도록 보호.
+- **locale 별 `credits.json`** (`Trans To Vostok/<locale>/credits.json`,
+  committed, 모드 zip에 포함). 스키마:
+  ```json
+  {
+    "translation_updated": "<ISO timestamp>",
+    "Translator": {
+      "Leader":      [...],   // Crowdin Owner / Manager / Language Coordinator
+      "Translator":  [...],   // Crowdin Proofreader
+      "Contributor": [...]    // Crowdin Member with translated > 0
+    },
+    "Texture_reworker": [...]
+  }
+  ```
+  `translation_updated`는 해당 언어의 모든 번역 행에 대해
+  `max(createdAt, updatedAt)`(전체 페이지네이션 스캔).
+- **`tools/crowdin/get_member_list.py`** (신규) — Crowdin 멤버 +
+  Top Members Report 조회 → 역할/활동에 따라 분류 → credits.json의
+  Translator 필드 + `translation_updated` 작성. `Texture_reworker`는
+  run 간 보존. `pull_from_crowdin.py`가 호출.
+- **`tools/utils/get_texture_credits.py`** (신규) — `Texture.xlsx`의
+  `Reworked by` + `Contributors` 컬럼을 모든 시트에서 추출 + 중복 제거
+  → credits.json의 `Texture_reworker`에 기재. 빌드 시 locale 별로 호출.
+- **F9 Info 탭 — locale 별 데이터는 credits.json에서 직접 로드**.
+  `info.json`은 더 이상 locale 별 데이터를 담지 않고 프로젝트 와이드
+  요약(mod_version / build_date / target_game_version /
+  lead_developer / code_contributors / acknowledgments)만 유지.
+- **문서 구조 재정비** — `docs/translator/kr/`(Crowdin 웹 or 로컬 + 테스트)
+  와 `docs/dev/kr/`(메인테이너 / 기여자) 로 분리, 통합 `docs/` 루트.
+  신규 가이드: `Translating_using_crowdin.md`, `Translating_on_Local.md`,
+  `Pull_from_Crowdin.md`. CHANGELOG / CHANGELOG_user / README_USER도
+  `docs/` 로 이동.
+- **`tools/configs/`** — 모든 JSON 설정 파일 통합 위치
+  (`languages.json`, `width.json`, `parse_list_*.json`,
+  `secrets.json` / `secrets_example.json`). 도구의 모든 Path 상수 갱신.
+
+### 변경
+
+- **`info.json` 스키마** — hybrid 파일(read-modify-write).
+  `target_game_version`은 `info.json`에서 직접 hand-edit, 빌드 시 보존.
+  `locales` 필드 제거 — locale 별 데이터는 각 `<locale>/credits.json`에
+  존재 (F9 UI가 직접 로드).
+- **`build_authors.py` / `build_translation_credit.py` / `build_mod_info.py`**
+  를 credits.json에서 읽도록 리팩터. 이 세 스크립트에서 `openpyxl` 의존
+  제거. AUTHORS.md에 "Translator(s)" 서브섹션 추가 (Crowdin Proofreader
+  단계).
+- **`build_mod_package.py`** — locale 별 흐름이 `build_translation_credit.py`
+  전에 `get_texture_credits.py`를 호출하도록 보강. credits.json의
+  Texture_reworker가 항상 fresh.
+- **Crowdin pull / push 명시적 `all` 키워드 필수** — 빈 인자 호출은
+  실수에 의한 대량 작업 방지를 위해 거부.
+- **문서 톤** — `docs/translator/kr/` 와 `docs/dev/kr/` 의 한국어 톤을
+  `~입니다 / ~합니다` 격식체로 통일. `~어요 / ~예요` 비격식 표현 치환.
+
+### 수정
+
+- **포르투갈어 (브라질) 번역이 인게임에서 로드되지 않던 문제**.
+  `translator_ui.gd`가 `locale.json`의 `locale` 필드를 식별자이자 폴더
+  경로로 사용 중이었는데, Portuguese의 `locale="Portuguese"`가 실제
+  폴더 `Portuguese_BR/` 와 일치하지 않았음. 이제 폴더 lookup에
+  `locale.json`의 `dir` 필드를 사용하며, 기존 settings에 저장된 legacy
+  `locale` 값은 자동 마이그레이션.
+- **`credits.json`이 패키지된 모드 zip에 빠져있던 문제** —
+  `build_mod_package.py` packaging 단계에 `<locale>/credits.json`
+  포함 단계가 누락되어 디스크에는 파일이 있어도 F9 Info 탭이
+  Translation Updated를 "(unknown)" 으로 표시. locale 별 packaging
+  loop에 step 7 추가로 해결.
+- **`pull_from_crowdin.py`의 BCP-47 locale 폴더 매핑** — Crowdin이
+  export한 zip은 `ko-KR`, `fr-FR`, `pt-BR` 같은 locale 코드를 폴더명
+  으로 사용. SDK download 경로에서 프로젝트의 `targetLanguages`를 1회
+  조회해 canonical 폴더명 (`Korean`, `French`, `Portuguese_BR`) 으로
+  zip entry 경로 재작성.
+- **DeepL pattern 행 처리** — pattern 행(`{str}` 같은 placeholder가
+  들어간 `method=pattern`)이 DeepL import 후 translation이 비어있던
+  문제. 이제 import 단계에서 source를 translation으로 복사하여 런타임이
+  영어 템플릿을 반환하도록 처리 (substr 폴백으로 `In 5 Jours` 같은
+  부분 번역이 발생하지 않음).
+- **`100%` / `100kg`** ToolTip 행을 모든 locale에서 `untranslatable=1`
+  로 표시 (untranslatable 의 의미를 숫자/단위 등 본질적 비번역 대상에
+  한정하는 정책 정정).
+- **문서의 브랜치명 정정** — `main`으로 잘못 표기된 모든 부분을
+  실제 기본 브랜치명인 `master`로 정정.
+
+### 제거
+
+- **`Translation.xlsx`의 MetaData 시트** — Translator/번역 갱신일은
+  Crowdin, mod_version은 `mod.txt`, target_game_version은 hand-edited
+  `info.json`이 소스. canonical `Translations/<locale>/Translation/MetaData.tsv`
+  파일들과 `_sheet_order.txt`의 MetaData 항목도 함께 제거.
+- **Glossary xlsx 워크플로** —
+  `Translations/<locale>/Glossary.xlsx`, canonical TSV 트리
+  (`Translations/<locale>/Glossary/`), `tools/utils/rebuild_glossary_xlsx.py`,
+  각 도구의 `CATEGORIES` 상수에서 Glossary 키, `make_glossary_id()`,
+  `crowdin.yml`의 Glossary `files:` 항목 모두 삭제. 이제 Glossary 용어는
+  Crowdin 네이티브 Glossary 리소스로 존재 (Editor 우측 패널 자동 매칭).
+  1회성 마이그레이션 도구는 `tools/crowdin/migrate_glossary.py`에 보존.
+- **`README/0_..._kr.md` ~ `README/5_..._kr.md`** 번호제 가이드 시리즈 —
+  내용을 `docs/translator/kr/` 와 `docs/dev/kr/` 로 대상별 분리 이전.
+  기존 `README/CONTRIBUTING.md`는 repo 루트 `CONTRIBUTING.md`로 이동.
+- **`README_Translation.md`** — gdre_tools 설치 안내는 이미
+  `docs/translator/kr/Setting_Environments.md §1`에 포함되어 중복.
+- **`info.json[locales]` 필드** — locale 별 데이터를 각
+  `credits.json`으로 이전.
+- **`tools/utils/set_requirements.py`** (사이클 중간에 잠시 도입했다가
+  머지 전 reverted).
+
+### 내부 / 도구
+
+- **`tools/configs/`** 가 모든 JSON 설정 파일을 모음 (이전엔 `tools/`와
+  repo 루트에 흩어져 있음). 도구의 모든 Python `Path()` 상수 갱신.
+- **`translator_ui.gd`** 에 `_load_locale_credits(locale)`,
+  `_load_json_dict(path)` 헬퍼 + ISO 타임스탬프 표시용 `_date_only()`
+  포매터 추가.
+- **`tools/crowdin/api_client.py`** 의 `download_translations()` SDK
+  헬퍼 — build + poll + zip 다운로드 + locale 경로 재매핑을 1회
+  호출로 처리.
+- **`tools/utils/build_mod_info.py`** 단순화 — 기존 `info.json` 읽기
+  (target_game_version 보존용), mod.txt 파싱, AUTHORS.md 섹션 파싱,
+  `locales` 필드 없이 작성.
 
 ## [0.5.1] — 2026-05-08 (패치 릴리스)
 
