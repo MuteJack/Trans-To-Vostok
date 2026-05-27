@@ -2,7 +2,7 @@
 
 People who contributed to translating Road to Vostok into Korean. This includes both text translation and texture / image rework.
 
-_Translation last updated: 2026-05-10T19:41:31+09:00_
+_Translation last updated: 2026-05-27T13:31:06+09:00_
 
 ## Lead Translator(s)
 

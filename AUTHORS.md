@@ -53,7 +53,7 @@ _Translation last updated: 2026-05-10T18:02:31+09:00_
 
 ### Korean (`Translations/Korean/`)
 
-_Translation last updated: 2026-05-10T19:41:31+09:00_
+_Translation last updated: 2026-05-27T13:31:06+09:00_
 
 **Lead Translator(s):**
 - Mute Jack

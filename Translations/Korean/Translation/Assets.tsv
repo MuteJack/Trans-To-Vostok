@@ -44,7 +44,7 @@ Assets	Containers/Freezer		0	substr	Assets/Freezer/Freezer	tscn	Assets/Freezer/F
 Assets	Containers/Freezer_F		0	ignore	Assets/Freezer/Freezer_F	tscn	Assets/Freezer/Freezer_F		Freezer_F	Node3D	containerName	245820146	Freezer	냉동고			
 Assets	Containers/Fridge		0	substr	Assets/Fridge/Fridge	tscn	Assets/Fridge/Fridge		Fridge	Node3D	containerName	1984538983	Fridge	냉장고			
 Assets	Containers/Fridge_F		0	ignore	Assets/Fridge/Fridge_F	tscn	Assets/Fridge/Fridge_F		Fridge_F	Node3D	containerName	744500531	Fridge	냉장고			
-Assets	Containers/Fusebox		0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox	퓨즈박스			
+Assets	Containers/Fusebox		0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox	퓨즈 박스			
 Assets	Containers/Locker		0	substr	Assets/Locker/Locker	tscn	Assets/Locker/Locker		Locker	Node3D	containerName	1052007662	Locker	사물함			
 Assets	Containers/Locker_F		0	ignore	Assets/Locker/Locker_F	tscn	Assets/Locker/Locker_F		Locker_F	Node3D	containerName	1740209526	Locker	사물함			
 Assets	Containers/Mailbox		0	substr	Assets/Mailbox/Mailbox	tscn	Assets/Mailbox/Mailbox		Mailbox	Node3D	containerName	276598480	Mailbox	우편함			
@@ -91,7 +91,7 @@ Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres
 Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres					display		Carpet P.	카펫 페르.			
 Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					name		Carpet (Rag)	카펫 (누더기)			
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					inventory		Carpet (Rag)	카펫 (누더기)			
-Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	카펫 누더기.			
+Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	카펫 (누더기)			
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					equipment		Carpet (Rag)	카펫 (누더기)			
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					display		Carpet R.	카펫 누더기.			
 Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)	의자 (사무용)			
