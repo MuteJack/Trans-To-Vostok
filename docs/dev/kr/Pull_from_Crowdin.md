@@ -9,7 +9,7 @@ Crowdin에 누적된 번역 활동을 정기적으로 저장소에 반영해, �
 
 ## 1. 사전 준비
 
-1. **[Setting_Environments.md](../../docs/kr/Setting_Environments.md)** 완료 (Python / Git / pip 의존성)
+1. **[Setting_Environments.md](../../translator/kr/Setting_Environments.md)** 완료 (Python / Git / pip 의존성)
 2. **`secrets.json`의 `crowdin_personal_token`** 설정 — 다음 scope들이 활성화돼 있어야 합니다.
    - **Projects** (Read & Write)
    - **Source Files**
@@ -139,7 +139,7 @@ git push
 다른 contributor에게는 다음을 안내합니다.
 
 1. `git fetch && git pull`
-2. `python tools/rebuild_xlsx.py <locale>` (필수 — 자세히는 [Translating_on_Local.md §3-2](../../docs/kr/Translating_on_Local.md#3-2-엑셀-파일xlsx-re-build-필수))
+2. `python tools/rebuild_xlsx.py <locale>` (필수 — 자세히는 [Translating_on_Local.md §3-2](../../translator/kr/Translating_on_Local.md#3-2-엑셀-파일xlsx-re-build-필수))
 3. `python tools/build_mod_package.py`로 zip 갱신 후 인게임 테스트
 
 ---

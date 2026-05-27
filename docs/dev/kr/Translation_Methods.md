@@ -1,6 +1,6 @@
 # 번역 method 가이드 — 개발자용 (한국어)
 
-[Translating_on_Local.md](../../docs/kr/Translating_on_Local.md) 의 **확장판**입니다. 일반 번역 작업이 아닌, 새 행 추가 / method 선택 / 매칭 디버깅이 필요한 코드 기여자 / 메인테이너 대상.
+[Translating_on_Local.md](../../translator/kr/Translating_on_Local.md) 의 **확장판**입니다. 일반 번역 작업이 아닌, 새 행 추가 / method 선택 / 매칭 디버깅이 필요한 코드 기여자 / 메인테이너 대상.
 
 ---
 
@@ -212,9 +212,9 @@ runtime_tsv/
 
 ## 10. 다음 단계
 
-- 번역가용 가이드 (Crowdin 웹) → [Translating_using_crowdin.md](../../docs/kr/Translating_using_crowdin.md)
-- 번역 + 인게임 테스트 → [Translating_on_Local.md](../../docs/kr/Translating_on_Local.md)
-- 셋업 → [Setting_Environments.md](../../docs/kr/Setting_Environments.md)
+- 번역가용 가이드 (Crowdin 웹) → [Translating_using_crowdin.md](../../translator/kr/Translating_using_crowdin.md)
+- 번역 + 인게임 테스트 → [Translating_on_Local.md](../../translator/kr/Translating_on_Local.md)
+- 셋업 → [Setting_Environments.md](../../translator/kr/Setting_Environments.md)
 - 게임 소스 추출 → [Unpack_and_Decompile_Game.md](Unpack_and_Decompile_Game.md)
 - 새 언어 추가 → [Add_new_language.md](Add_new_language.md)
 - 크레딧 / 코드 기여 → `../../CONTRIBUTING.md`

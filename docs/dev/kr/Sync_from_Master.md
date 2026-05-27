@@ -39,7 +39,7 @@
 git fetch upstream
 ```
 
-> upstream이 등록 안 됐으면 [Setting_Environments.md](Setting_Environments.md) §3-3 참조.
+> upstream이 등록 안 됐으면 [Setting_Environments.md](../../translator/kr/Setting_Environments.md) §3-3 참조.
 
 ### 3-2. 내 master 갱신 (선택, 좋은 습관)
 
@@ -166,6 +166,6 @@ git push --force-with-lease origin <my-branch>
 
 ## 7. 다음 단계
 
-- 셋업 / 일반 흐름 → [Setting_Environments.md](Setting_Environments.md)
+- 셋업 / 일반 흐름 → [Setting_Environments.md](../../translator/kr/Setting_Environments.md)
 - PR 생성 / 머지 후 정리 → [How_to_Pull_Request.md](How_to_Pull_Request.md)
 - xlsx ↔ TSV 재빌드 도구 → `tools/rebuild_xlsx.py`

@@ -194,7 +194,7 @@ python tools/build_mod_package.py Korean French       # 두 locale만
 >
 > Clone 직후 기본 브랜치는 `master`입니다. 이 상태에서 바로 수정하고 commit하면 **fork의 master에 작업이 쌓여 PR 흐름이 꼬입니다**.
 >
-> 첫 작업 전에 반드시 **새 브랜치를 생성**하세요(아래 1번 단계). 자세한 브랜치 / PR 흐름은 [How_to_Pull_Request.md](How_to_Pull_Request.md)를 참조하세요.
+> 첫 작업 전에 반드시 **새 브랜치를 생성**하세요(아래 1번 단계). 자세한 브랜치 / PR 흐름은 [How_to_Pull_Request.md](../../dev/kr/How_to_Pull_Request.md)를 참조하세요.
 
 1. **새 브랜치 생성** (작업별로):
 
@@ -209,7 +209,7 @@ python tools/build_mod_package.py Korean French       # 두 locale만
    # 예: git checkout -b tools/fix-pull-locale-mapping
    ```
 
-   브랜치 명명 컨벤션은 `How_to_Pull_Request.md` §2를 참조하세요.
+   브랜치 명명 컨벤션은 `../../dev/kr/How_to_Pull_Request.md` §2를 참조하세요.
 2. **코드 / 도구 / 문서 수정**
 3. **변경 확인**:
 
@@ -229,7 +229,7 @@ python tools/build_mod_package.py Korean French       # 두 locale만
    git commit -m "tools: fix Crowdin pull locale folder remap"
    git push origin <branch-name>
    ```
-6. **GitHub에서 Pull Request를 생성합니다** (your fork → 원본 repo). 자세한 PR 작성법은 `How_to_Pull_Request.md`를 참조하세요.
+6. **GitHub에서 Pull Request를 생성합니다** (your fork → 원본 repo). 자세한 PR 작성법은 `../../dev/kr/How_to_Pull_Request.md`를 참조하세요.
 
 ---
 
@@ -237,6 +237,6 @@ python tools/build_mod_package.py Korean French       # 두 locale만
 
 - **번역만 하고 싶은 경우** → [Translating_using_crowdin.md](Translating_using_crowdin.md) (Crowdin 웹 UI)
 - **번역 작업 + 인게임 테스트** → [Translating_on_Local.md](Translating_on_Local.md) (`pull_from_crowdin` + 빌드 + 테스트)
-- **새 언어 추가** → [Add_new_language.md](../../docs_dev/kr/Add_new_language.md)
-- **method 가이드 / 매칭 디버깅** → [Translation_Methods.md](../../docs_dev/kr/Translation_Methods.md)
-- **Crowdin → 저장소 sync (메인테이너)** → [Pull_from_Crowdin.md](../../docs_dev/kr/Pull_from_Crowdin.md)
+- **새 언어 추가** → [Add_new_language.md](../../dev/kr/Add_new_language.md)
+- **method 가이드 / 매칭 디버깅** → [Translation_Methods.md](../../dev/kr/Translation_Methods.md)
+- **Crowdin → 저장소 sync (메인테이너)** → [Pull_from_Crowdin.md](../../dev/kr/Pull_from_Crowdin.md)

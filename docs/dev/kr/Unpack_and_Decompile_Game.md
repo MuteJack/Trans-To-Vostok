@@ -14,7 +14,7 @@
 
 ## 1. 사전 준비
 
-[Setting_Environments.md](../../docs/kr/Setting_Environments.md) 의 셋업이 끝났다고 가정합니다.
+[Setting_Environments.md](../../translator/kr/Setting_Environments.md) 의 셋업이 끝났다고 가정합니다.
 
 추가로 필요한 것:
 
@@ -148,6 +148,6 @@ python tools/check_old_translation.py Korean
 
 ## 7. 다음 단계
 
-- 일반 작업 흐름 → [Setting_Environments.md](../../docs/kr/Setting_Environments.md) 6장
+- 일반 작업 흐름 → [Setting_Environments.md](../../translator/kr/Setting_Environments.md) 6장
 - 번역 작업 / 크레딧 → `CONTRIBUTING.md`
 - 도구 전체 목록 → `README.md`
