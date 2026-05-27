@@ -221,6 +221,14 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                     zf.write(credit_path, f"{MOD_NAME}/{locale}/Translation_Credit.md")
                     count += 1
 
+                # 7. credits.json → Trans To Vostok/<locale>/credits.json
+                # consumed by F9 Info tab in translator_ui.gd. Translator fields
+                # come from get_member_list.py, Texture_reworker from get_texture_credits.py.
+                credits_json = locale_dir / "credits.json"
+                if credits_json.exists() and credits_json.is_file():
+                    zf.write(credits_json, f"{MOD_NAME}/{locale}/credits.json")
+                    count += 1
+
         # overwrite original on success
         tmp_path.replace(out_path)
     except Exception:
