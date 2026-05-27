@@ -237,4 +237,6 @@ python tools/build_mod_package.py Korean French       # 두 locale만
 
 - **번역만 하고 싶은 경우** → [Translating_using_crowdin.md](Translating_using_crowdin.md) (Crowdin 웹 UI)
 - **번역 작업 + 인게임 테스트** → [Translating_on_Local.md](Translating_on_Local.md) (`pull_from_crowdin` + 빌드 + 테스트)
-- **새 언어 추가 / 도구 수정 / 빌드 시스템** → [For_Developer.md](For_Developer.md)
+- **새 언어 추가** → [Add_new_language.md](../../docs_dev/kr/Add_new_language.md)
+- **method 가이드 / 매칭 디버깅** → [Translation_Methods.md](../../docs_dev/kr/Translation_Methods.md)
+- **Crowdin → 저장소 sync (메인테이너)** → [Pull_from_Crowdin.md](../../docs_dev/kr/Pull_from_Crowdin.md)

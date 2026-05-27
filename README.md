@@ -8,18 +8,20 @@ A multilingual translation mod for **Road to Vostok**, with a Python-based trans
 
 ## Quick Start (Contributors)
 
-Step-by-step guides live under `README/` (Korean).
+Step-by-step guides live under `docs/kr/` (translators) and `docs_dev/kr/` (developers / maintainers).
 
-| Step | Guide |
+| Audience | Guide |
 | --- | --- |
-| 0 | Environment setup (Excel / Python / Git / Fork & Clone) — [README/0_Setting_Environments_kr.md](README/0_Setting_Environments_kr.md) |
-| 1 | (Optional) Game PCK extraction & decompile — [README/1_unpack_and_decompile_game_kr.md](README/1_unpack_and_decompile_game_kr.md) |
-| 2 | Adding a new language (DeepL initial pass) — [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md) |
-| 3 | How to translate (general) — [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md) |
-| 3+ | How to translate (developer / method details) — [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) |
-| 4 | Pull Request workflow — [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md) |
-| 5 | Upstream `master` sync (rebase) — [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md) |
-| general | Crediting / code contributions — [README/CONTRIBUTING.md](README/CONTRIBUTING.md) |
+| Setup (everyone with local repo) | [docs/kr/Setting_Environments.md](docs/kr/Setting_Environments.md) |
+| Translator (Crowdin web only) | [docs/kr/Translating_using_crowdin.md](docs/kr/Translating_using_crowdin.md) |
+| Translator + in-game testing | [docs/kr/Translating_on_Local.md](docs/kr/Translating_on_Local.md) |
+| Pull Request workflow | [docs/kr/How_to_Pull_Request.md](docs/kr/How_to_Pull_Request.md) |
+| Upstream `master` sync (rebase) | [docs/kr/Sync_from_Master.md](docs/kr/Sync_from_Master.md) |
+| Developer — Crowdin → repo sync | [docs_dev/kr/Pull_from_Crowdin.md](docs_dev/kr/Pull_from_Crowdin.md) |
+| Developer — adding a new language (DeepL seed) | [docs_dev/kr/Add_new_language.md](docs_dev/kr/Add_new_language.md) |
+| Developer — translation method details | [docs_dev/kr/Translation_Methods.md](docs_dev/kr/Translation_Methods.md) |
+| Developer — game PCK extraction & decompile | [docs_dev/kr/Unpack_and_Decompile_Game.md](docs_dev/kr/Unpack_and_Decompile_Game.md) |
+| Crediting / code contributions | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 Basic build commands:
 
@@ -62,16 +64,21 @@ tools/                             # Python build / validation / helper tools
 ├── check_*.py                    # Duplicate / conflict / coverage / drift checks
 └── utils/                        # Utilities invoked by the above
 
-README/                            # Korean contributor guide series (see Quick Start)
-├── 0_Setting_Environments_kr.md
-├── 1_unpack_and_decompile_game_kr.md
-├── 2_Add_new_language_kr.md
-├── 3_How_to_Translate_kr.md
-├── 3_How_to_Translate_kr(For Developers).md
-├── 4_How_to_Pull_Request_kr.md
-├── 5_How_to_Update_from_MasterBranch_kr.md
-├── CONTRIBUTING.md                # Crediting / new-language DeepL guide (English)
-└── image/                         # Screenshots used by README_USER.md
+docs/kr/                           # Korean translator-facing guides
+├── Setting_Environments.md
+├── Translating_using_crowdin.md   # Crowdin web only
+├── Translating_on_Local.md        # Local clone + Crowdin (in-game testing)
+├── How_to_Pull_Request.md
+└── Sync_from_Master.md
+
+docs_dev/kr/                       # Korean developer / maintainer guides
+├── Pull_from_Crowdin.md           # Crowdin → repo sync (maintainer)
+├── Add_new_language.md            # DeepL seed pipeline
+├── Translation_Methods.md         # method semantics + matching debug
+└── Unpack_and_Decompile_Game.md   # gdre_tools + parse_translatables
+
+README/
+└── image/                         # Screenshots referenced by README_USER.md via raw URL
 ```
 
 ---
@@ -120,7 +127,7 @@ README/                            # Korean contributor guide series (see Quick 
 - **UI**: `translator_ui.gd` (F9 hotkey)
 - **Text data**: `<locale>/runtime_tsv/translation_*.tsv` (6 buckets + metadata, built from xlsx)
 - **Image data**: `<locale>/textures/**` (mirrors the original `res://` layout)
-- **Matching approach**: 1:1 mapping based on Godot node structure — see the header comment in [`translator.gd`](Trans%20To%20Vostok/translator.gd) and [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) for details.
+- **Matching approach**: 1:1 mapping based on Godot node structure — see the header comment in [`translator.gd`](Trans%20To%20Vostok/translator.gd) and [docs_dev/kr/Translation_Methods.md](docs_dev/kr/Translation_Methods.md) for details.
 
 ---
 
@@ -144,11 +151,12 @@ Attribution preserved per Apache 2.0 §4(d) is in [`NOTICE`](NOTICE); the contri
 
 > **Status**: The contribution flow is being prepared. The links below describe the intended workflow.
 
-- **Translators (Excel editing)** → [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md)
-- **Adding a new language** → [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md)
-- **Pull Request workflow** → [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md)
-- **Upstream sync** → [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md)
-- **Crediting / code contribution / DeepL pipeline** → [README/CONTRIBUTING.md](README/CONTRIBUTING.md)
+- **Translators (Crowdin web)** → [docs/kr/Translating_using_crowdin.md](docs/kr/Translating_using_crowdin.md)
+- **Translators with in-game testing** → [docs/kr/Translating_on_Local.md](docs/kr/Translating_on_Local.md)
+- **Adding a new language** → [docs_dev/kr/Add_new_language.md](docs_dev/kr/Add_new_language.md)
+- **Pull Request workflow** → [docs/kr/How_to_Pull_Request.md](docs/kr/How_to_Pull_Request.md)
+- **Upstream sync** → [docs/kr/Sync_from_Master.md](docs/kr/Sync_from_Master.md)
+- **Crediting / code contribution** → [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
@@ -195,18 +203,20 @@ Attribution preserved per Apache 2.0 §4(d) is in [`NOTICE`](NOTICE); the contri
 
 ## Quick Start (기여자용)
 
-세부 가이드는 `README/` 폴더의 한국어 매뉴얼 시리즈 참조.
+세부 가이드는 `docs/kr/` (번역가) 와 `docs_dev/kr/` (개발자/메인테이너) 에 있습니다.
 
-| 단계 | 가이드 |
+| 대상 | 가이드 |
 | --- | --- |
-| 0 | 환경 셋업 (Excel / Python / Git / Fork & Clone) — [README/0_Setting_Environments_kr.md](README/0_Setting_Environments_kr.md) |
-| 1 | (선택) 게임 PCK 추출 & 디컴파일 — [README/1_unpack_and_decompile_game_kr.md](README/1_unpack_and_decompile_game_kr.md) |
-| 2 | 새 언어 추가 (DeepL 1차 기계번역) — [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md) |
-| 3 | 번역 작업 (일반) — [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md) |
-| 3+ | 번역 작업 (개발자 / method 상세) — [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) |
-| 4 | Pull Request 워크플로 — [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md) |
-| 5 | upstream `master` 동기화 (rebase) — [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md) |
-| 일반 | 크레딧 등록 / 코드 기여 — [README/CONTRIBUTING.md](README/CONTRIBUTING.md) |
+| 셋업 (로컬 저장소 쓰는 모두) | [docs/kr/Setting_Environments.md](docs/kr/Setting_Environments.md) |
+| 번역가 (Crowdin 웹만) | [docs/kr/Translating_using_crowdin.md](docs/kr/Translating_using_crowdin.md) |
+| 번역가 + 인게임 테스트 | [docs/kr/Translating_on_Local.md](docs/kr/Translating_on_Local.md) |
+| Pull Request 워크플로 | [docs/kr/How_to_Pull_Request.md](docs/kr/How_to_Pull_Request.md) |
+| upstream `master` 동기화 (rebase) | [docs/kr/Sync_from_Master.md](docs/kr/Sync_from_Master.md) |
+| 개발자 — Crowdin → 저장소 sync | [docs_dev/kr/Pull_from_Crowdin.md](docs_dev/kr/Pull_from_Crowdin.md) |
+| 개발자 — 새 언어 추가 (DeepL 시드) | [docs_dev/kr/Add_new_language.md](docs_dev/kr/Add_new_language.md) |
+| 개발자 — 번역 method 상세 | [docs_dev/kr/Translation_Methods.md](docs_dev/kr/Translation_Methods.md) |
+| 개발자 — 게임 PCK 추출 & 디컴파일 | [docs_dev/kr/Unpack_and_Decompile_Game.md](docs_dev/kr/Unpack_and_Decompile_Game.md) |
+| 크레딧 등록 / 코드 기여 | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 기본 빌드 명령:
 
@@ -249,16 +259,21 @@ tools/                             # Python 빌드 / 검증 / 보조 도구
 ├── check_*.py                    # 중복 / 충돌 / 미번역 / drift 검사
 └── utils/                        # 위 도구들이 호출하는 유틸리티
 
-README/                            # 한국어 매뉴얼 시리즈 (위 Quick Start 표)
-├── 0_Setting_Environments_kr.md
-├── 1_unpack_and_decompile_game_kr.md
-├── 2_Add_new_language_kr.md
-├── 3_How_to_Translate_kr.md
-├── 3_How_to_Translate_kr(For Developers).md
-├── 4_How_to_Pull_Request_kr.md
-├── 5_How_to_Update_from_MasterBranch_kr.md
-├── CONTRIBUTING.md                # 크레딧 등록 / 새 언어 DeepL 가이드 (영문)
-└── image/                         # README_USER.md 의 스크린샷
+docs/kr/                           # 한국어 번역가용 가이드
+├── Setting_Environments.md
+├── Translating_using_crowdin.md   # Crowdin 웹만 사용
+├── Translating_on_Local.md        # 로컬 클론 + Crowdin (인게임 테스트)
+├── How_to_Pull_Request.md
+└── Sync_from_Master.md
+
+docs_dev/kr/                       # 한국어 개발자/메인테이너 가이드
+├── Pull_from_Crowdin.md           # Crowdin → 저장소 sync (메인테이너)
+├── Add_new_language.md            # DeepL 시드 파이프라인
+├── Translation_Methods.md         # method 의미 + 매칭 디버깅
+└── Unpack_and_Decompile_Game.md   # gdre_tools + parse_translatables
+
+README/
+└── image/                         # README_USER.md 가 raw URL 로 참조하는 스크린샷
 ```
 
 ---
@@ -307,7 +322,7 @@ README/                            # 한국어 매뉴얼 시리즈 (위 Quick St
 - **UI**: `translator_ui.gd` (F9 단축키)
 - **텍스트 데이터**: `<locale>/runtime_tsv/translation_*.tsv` (xlsx 에서 빌드된 6개 버킷 + metadata)
 - **이미지 데이터**: `<locale>/textures/**` (원본 `res://` 구조 미러링)
-- **매칭 방식**: Godot 노드 구조 기반 1:1 매핑 — 자세한 동작은 [`translator.gd`](Trans%20To%20Vostok/translator.gd) 상단 주석 + [README/3_How_to_Translate_kr(For Developers).md](README/3_How_to_Translate_kr%28For%20Developers%29.md) 참조
+- **매칭 방식**: Godot 노드 구조 기반 1:1 매핑 — 자세한 동작은 [`translator.gd`](Trans%20To%20Vostok/translator.gd) 상단 주석 + [docs_dev/kr/Translation_Methods.md](docs_dev/kr/Translation_Methods.md) 참조
 
 ---
 
@@ -331,11 +346,12 @@ Apache 2.0 §4(d) 의 attribution 보존 대상은 [`NOTICE`](NOTICE) 에 있고
 
 > **상태**: 기여 흐름은 아직 개방 전 — 공개 저장소 준비 중. 아래 안내는 의도된 워크플로.
 
-- **번역가 (Excel 편집)** → [README/3_How_to_Translate_kr.md](README/3_How_to_Translate_kr.md)
-- **새 언어 추가** → [README/2_Add_new_language_kr.md](README/2_Add_new_language_kr.md)
-- **Pull Request 흐름** → [README/4_How_to_Pull_Request_kr.md](README/4_How_to_Pull_Request_kr.md)
-- **upstream 동기화** → [README/5_How_to_Update_from_MasterBranch_kr.md](README/5_How_to_Update_from_MasterBranch_kr.md)
-- **크레딧 등록 / 코드 기여 / DeepL 파이프라인** → [README/CONTRIBUTING.md](README/CONTRIBUTING.md)
+- **번역가 (Crowdin 웹)** → [docs/kr/Translating_using_crowdin.md](docs/kr/Translating_using_crowdin.md)
+- **번역가 + 인게임 테스트** → [docs/kr/Translating_on_Local.md](docs/kr/Translating_on_Local.md)
+- **새 언어 추가** → [docs_dev/kr/Add_new_language.md](docs_dev/kr/Add_new_language.md)
+- **Pull Request 흐름** → [docs/kr/How_to_Pull_Request.md](docs/kr/How_to_Pull_Request.md)
+- **upstream 동기화** → [docs/kr/Sync_from_Master.md](docs/kr/Sync_from_Master.md)
+- **크레딧 등록 / 코드 기여** → [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 

@@ -21,7 +21,7 @@
 
 ## 2. 정책: 한 브랜치 = 한 사람 → **rebase 사용**
 
-이 프로젝트는 "한 브랜치는 한 기여자만 push" 정책 ([4_How_to_Pull_Request_kr.md](4_How_to_Pull_Request_kr.md) §2 참조). 그래서 **rebase 가 안전하고 권장**됩니다:
+이 프로젝트는 "한 브랜치는 한 기여자만 push" 정책 ([How_to_Pull_Request.md](How_to_Pull_Request.md) §2 참조). 그래서 **rebase 가 안전하고 권장**됩니다:
 
 - ✅ Linear history (PR diff 깔끔, 리뷰 추적 쉬움)
 - ✅ Force push 충돌 위험 없음 (혼자 쓰는 브랜치)
@@ -39,7 +39,7 @@
 git fetch upstream
 ```
 
-> upstream이 등록 안 됐으면 [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md) §3-3 참조.
+> upstream이 등록 안 됐으면 [Setting_Environments.md](Setting_Environments.md) §3-3 참조.
 
 ### 3-2. 내 master 갱신 (선택, 좋은 습관)
 
@@ -166,6 +166,6 @@ git push --force-with-lease origin <my-branch>
 
 ## 7. 다음 단계
 
-- 셋업 / 일반 흐름 → [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md)
-- PR 생성 / 머지 후 정리 → [4_How_to_Pull_Request_kr.md](4_How_to_Pull_Request_kr.md)
+- 셋업 / 일반 흐름 → [Setting_Environments.md](Setting_Environments.md)
+- PR 생성 / 머지 후 정리 → [How_to_Pull_Request.md](How_to_Pull_Request.md)
 - xlsx ↔ TSV 재빌드 도구 → `tools/rebuild_xlsx.py`

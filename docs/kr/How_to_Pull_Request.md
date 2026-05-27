@@ -1,14 +1,14 @@
-# 4. Pull Request 가이드 (한국어)
+# Pull Request 가이드 (한국어)
 
 코드 / 텍스처 / 문서 / 새 언어 추가 등 **번역 텍스트 외 작업**을 본 저장소에 제출하는 흐름입니다.
 
-> ⚠️ **번역 텍스트 변경은 PR 대상 아님**. 번역은 Crowdin에 업로드 → 관리자가 주기적으로 sync. 자세한 흐름은 [3_How_to_Translate_kr.md](3_How_to_Translate_kr.md) 참조.
+> ⚠️ **번역 텍스트 변경은 PR 대상 아닙니다**. 번역은 Crowdin에 업로드되고 관리자가 주기적으로 sync합니다. 자세한 흐름은 [Translating_using_crowdin.md](Translating_using_crowdin.md) 참조.
 
 ---
 
 ## 1. 사전 준비
 
-- [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md) 의 셋업 완료 (Fork + Clone + upstream 등록)
+- [Setting_Environments.md](Setting_Environments.md) 의 셋업 완료 (Fork + Clone + upstream 등록)
 - 작업 (코드 / 텍스처 / 문서) 이 로컬에 있는 상태
 
 ---
@@ -36,7 +36,7 @@ git checkout -b <type>/<short-description>
 | 코드 | `code/improve-validate-output` |
 | 문서 | `docs/contributing-update` |
 
-> 번역 텍스트만 변경 시에는 PR 만들지 말고 [3_How_to_Translate_kr.md](3_How_to_Translate_kr.md) 의 Crowdin 업로드 흐름을 따라주세요.
+> 번역 텍스트만 변경 시에는 PR 만들지 말고 [Translating_using_crowdin.md](Translating_using_crowdin.md) 의 Crowdin 업로드 흐름을 따라주세요.
 
 > 한 브랜치 = 한 PR. 여러 종류의 작업을 한 브랜치에 섞지 말 것 (리뷰가 어려워짐).
 >
@@ -125,7 +125,7 @@ PR 전 마지막 체크:
 python tools/build_mod_package.py <locale>
 
 # 2. (번역 작업이면) 게임에서 실제 화면 확인
-#    [3_How_to_Translate_kr.md](3_How_to_Translate_kr.md) 6-2 참조
+#    [Translating_on_Local.md](Translating_on_Local.md) §4-2 참조
 
 # 3. push
 git push origin <branch-name>
@@ -232,9 +232,10 @@ git push origin master
 
 ## 10. 다음 단계
 
-- 셋업 → [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md)
-- 게임 소스 추출 → [1_unpack_and_decompile_game_kr.md](1_unpack_and_decompile_game_kr.md)
-- 새 언어 추가 → [2_Add_new_language_kr.md](2_Add_new_language_kr.md)
-- 번역 작업 → [3_How_to_Translate_kr.md](3_How_to_Translate_kr.md)
-- 개발자용 매칭 / method 가이드 → [3_How_to_Translate_kr(For Developers).md](3_How_to_Translate_kr%28For%20Developers%29.md)
+- 셋업 → [Setting_Environments.md](Setting_Environments.md)
+- 게임 소스 추출 → [Unpack_and_Decompile_Game.md](../../docs_dev/kr/Unpack_and_Decompile_Game.md)
+- 새 언어 추가 → [Add_new_language.md](../../docs_dev/kr/Add_new_language.md)
+- 번역 작업 (웹) → [Translating_using_crowdin.md](Translating_using_crowdin.md)
+- 번역 + 인게임 테스트 → [Translating_on_Local.md](Translating_on_Local.md)
+- 개발자용 매칭 / method 가이드 → [Translation_Methods.md](../../docs_dev/kr/Translation_Methods.md)
 - 크레딧 / 코드 기여 / 새 언어 DeepL → `CONTRIBUTING.md`

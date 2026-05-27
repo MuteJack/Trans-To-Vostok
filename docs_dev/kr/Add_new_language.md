@@ -8,7 +8,7 @@
 
 ## 1. 사전 준비
 
-[0_Setting_Environments_kr.md](0_Setting_Environments_kr.md) 의 셋업이 끝났다고 가정합니다. 추가로 필요한 것:
+[Setting_Environments.md](../../docs/kr/Setting_Environments.md) 의 셋업이 끝났다고 가정합니다. 추가로 필요한 것:
 
 1. **DeepL API key** (Free 또는 Pro)
    - 가입: [https://www.deepl.com/pro-api](https://www.deepl.com/pro-api)
@@ -200,7 +200,7 @@ DeepL 단계가 없을 뿐 흐름은 동일. 시간이 오래 걸리지만 품�
 
 ## 9. 다음 단계
 
-- 일반 작업 흐름 → [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md) 6장
-- 게임 소스 추출 (선택) → [1_unpack_and_decompile_game_kr.md](1_unpack_and_decompile_game_kr.md)
+- 일반 작업 흐름 → [Setting_Environments.md](../../docs/kr/Setting_Environments.md) 6장
+- 게임 소스 추출 (선택) → [Unpack_and_Decompile_Game.md](Unpack_and_Decompile_Game.md)
 - 크레딧 등록 / 코드 기여 → `CONTRIBUTING.md`
 - 도구 전체 목록 → `README.md`

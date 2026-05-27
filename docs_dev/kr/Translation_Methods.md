@@ -1,6 +1,6 @@
-# 3. 번역 작업 가이드 — 개발자용 (한국어)
+# 번역 method 가이드 — 개발자용 (한국어)
 
-[3_How_to_Translate_kr.md](3_How_to_Translate_kr.md) 의 **확장판**입니다. 일반 번역 작업이 아닌, 새 행 추가 / method 선택 / 매칭 디버깅이 필요한 코드 기여자 / 메인테이너 대상.
+[Translating_on_Local.md](../../docs/kr/Translating_on_Local.md) 의 **확장판**입니다. 일반 번역 작업이 아닌, 새 행 추가 / method 선택 / 매칭 디버깅이 필요한 코드 기여자 / 메인테이너 대상.
 
 ---
 
@@ -204,7 +204,7 @@ runtime_tsv/
    - "특정 위치에서만 / 다른 위치엔 다른 번역" → `static` 또는 `literal` + location
    - "정규식이 필요" → `pattern`
    - "다른 게 안 맞으면 부분 문자열 치환" → `substr`
-3. method = static / scoped 인 경우: 게임 소스에서 정확한 5-tuple 추출 필요 → [1_unpack_and_decompile_game_kr.md](1_unpack_and_decompile_game_kr.md) 참조
+3. method = static / scoped 인 경우: 게임 소스에서 정확한 5-tuple 추출 필요 → [Unpack_and_Decompile_Game.md](Unpack_and_Decompile_Game.md) 참조
 4. 추가 후 `python tools/validate_translation.py <locale>` 로 검증
 5. duplicate / TSV match 에러 없으면 빌드 → 게임 테스트
 
@@ -212,8 +212,9 @@ runtime_tsv/
 
 ## 10. 다음 단계
 
-- 일반 번역 가이드 → [3_How_to_Translate_kr.md](3_How_to_Translate_kr.md)
-- 셋업 → [0_Setting_Environments_kr.md](0_Setting_Environments_kr.md)
-- 게임 소스 추출 → [1_unpack_and_decompile_game_kr.md](1_unpack_and_decompile_game_kr.md)
-- 새 언어 추가 → [2_Add_new_language_kr.md](2_Add_new_language_kr.md)
-- 크레딧 / 코드 기여 → `CONTRIBUTING.md`
+- 번역가용 가이드 (Crowdin 웹) → [Translating_using_crowdin.md](../../docs/kr/Translating_using_crowdin.md)
+- 번역 + 인게임 테스트 → [Translating_on_Local.md](../../docs/kr/Translating_on_Local.md)
+- 셋업 → [Setting_Environments.md](../../docs/kr/Setting_Environments.md)
+- 게임 소스 추출 → [Unpack_and_Decompile_Game.md](Unpack_and_Decompile_Game.md)
+- 새 언어 추가 → [Add_new_language.md](Add_new_language.md)
+- 크레딧 / 코드 기여 → `../../CONTRIBUTING.md`

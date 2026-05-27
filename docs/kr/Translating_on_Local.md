@@ -111,7 +111,7 @@ xlsx 파일을 편집 후, 아래 명령어를 실행해주세요. Crowdin에 �
 python tools/push_to_crowdin.py Korean
 ```
 
-게임에 표시되는 텍스트가 xlsx에 없으면 새 행을 추가할 수 있습니다. 자세한 방법은 [README/3_How_to_Translate_kr.md](../../README/3_How_to_Translate_kr.md)를 참조하세요.
+게임에 표시되는 텍스트가 xlsx에 없으면 새 행을 추가할 수 있습니다. 자세한 방법은 [Translation_Methods.md](../../docs_dev/kr/Translation_Methods.md)를 참조하세요.
 
 Translation validation, exact matching 등에 의해 편집 방법이 조금 복잡할 수 있으므로,
 번역 대상 텍스트 누락에 대해서는 가급적 GitHub에 Issue를 등록해 주시는 것을 권장드립니다.
@@ -167,5 +167,5 @@ Translation validation, exact matching 등에 의해 편집 방법이 조금 복
 ## 8. 다음 단계
 
 - **Pull Request 흐름** (코드/도구 변경) → [Setting_Environments.md §7](Setting_Environments.md#7-일반-작업-흐름)
-- **새 언어 추가 / DeepL 시드** → [For_Developer.md](For_Developer.md) (예정)
-- **method 자세히** → [README/3_How_to_Translate_kr.md](../../README/3_How_to_Translate_kr.md)
+- **새 언어 추가 / DeepL 시드** → [Add_new_language.md](../../docs_dev/kr/Add_new_language.md)
+- **method 자세히** → [Translation_Methods.md](../../docs_dev/kr/Translation_Methods.md)

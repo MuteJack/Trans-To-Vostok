@@ -174,4 +174,4 @@ Editor 우측 패널에 DeepL 등 기계 번역 결과가 표시될 수 있습�
 
 - **인게임에서 테스트하며 번역하고 싶다** → [Translating_on_Local.md](Translating_on_Local.md)
 - **Crowdin Editor 자세한 기능** → [Crowdin 공식 가이드](https://support.crowdin.com/online-editor/)
-- **새 언어 추가 (관리자/개발자 영역)** → [For_Developer.md](For_Developer.md)
+- **새 언어 추가 (관리자/개발자 영역)** → [Add_new_language.md](../../docs_dev/kr/Add_new_language.md)
