@@ -79,7 +79,7 @@ to the new locale's xlsx files.
 ### Prerequisites
 
 1. A DeepL API key (Free or Pro). Save it as a single-line file at
-   `secrets.json:deepl_api_key` (repo root, gitignored — copy from `secrets.example.json`),
+   `secrets.json:deepl_api_key` (repo root, gitignored — copy from `tools/configs/secrets_example.json`),
    or set the `DEEPL_AUTH_KEY` env var.
 2. Python deps installed: `pip install -r tools/requirements.txt`
 3. Knowledge of the target language's DeepL code

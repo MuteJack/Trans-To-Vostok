@@ -11,9 +11,9 @@ Placeholder protection:
     \\n      ->  preserved automatically (preserve_formatting=True)
 
 Auth:
-    secrets.json (repo root) — `deepl_api_key` field.
+    secrets.json (tools/configs/) — `deepl_api_key` field.
     Falls back to DEEPL_AUTH_KEY environment variable if absent.
-    See secrets.example.json for setup.
+    See tools/configs/secrets_example.json for setup.
 
 Output (under <mod_root>/.tmp/unique_text/<source>/):
     translated_<TARGET>.tsv     unique_id, source, translation, status, message
@@ -66,7 +66,7 @@ BATCH_SIZE = 50  # DeepL accepts up to 50 texts per API call
 
 
 def load_api_key() -> str | None:
-    """Load DeepL API key from secrets.json (or DEEPL_AUTH_KEY env var)."""
+    """Load DeepL API key from tools/configs/secrets.json (or DEEPL_AUTH_KEY env var)."""
     return get_deepl_api_key()
 
 
@@ -273,8 +273,8 @@ def main() -> int:
     api_key = load_api_key()
     if api_key is None and not dry_run:
         print("[ERROR] DeepL API key not found.")
-        print(f"  - Add `deepl_api_key` to: {mod_root / 'secrets.json'}")
-        print(f"    (copy from secrets.example.json and fill in)")
+        print(f"  - Add `deepl_api_key` to: {mod_root / 'tools' / 'configs' / 'secrets.json'}")
+        print(f"    (copy from tools/configs/secrets_example.json and fill in)")
         print("  - Or set env var: DEEPL_AUTH_KEY=<key>")
         return 1
 

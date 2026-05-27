@@ -135,14 +135,14 @@ DeepL 자동 번역 또는 Crowdin push/pull을 사용한다면 토큰이 필요
 
 ### 5-1. `secrets.json` 만들기
 
-저장소 루트의 `secrets_example.json`을 같은 폴더에 `secrets.json`으로 복사:
+`tools/configs/secrets_example.json`을 같은 폴더에 `secrets.json`으로 복사:
 
 ```powershell
 # 저장소 루트(Trans To Vostok)에서
-cp secrets_example.json secrets.json
+cp tools/configs/secrets_example.json tools/configs/secrets.json
 ```
 
-> `secrets.json`은 `.gitignore`에 등록되어 있어 커밋되지 않습니다. 실제 키를 `secrets_example.json`에 직접 적거나, `.gitignore`에서 `secrets.json`을 지우지 마십시오.
+> `secrets.json`은 `.gitignore`에 등록되어 있어 커밋되지 않습니다. 실제 키를 `tools/configs/secrets_example.json`에 직접 적거나, `.gitignore`에서 `secrets.json`을 지우지 마십시오.
 
 ### 5-2. DeepL API 키 (신규 언어 자동 시드용)
 

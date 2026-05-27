@@ -38,7 +38,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
-# DeepL language codes are resolved from tools/languages.json via
+# DeepL language codes are resolved from tools/configs/languages.json via
 # utils/locale_config.dir_to_deepl_id(). To add support for a new
 # language, register it in languages.json.
 # DeepL target language list: https://developers.deepl.com/docs/getting-started/supported-languages
@@ -84,7 +84,7 @@ def main() -> int:
     if target_locale == source:
         print(
             f"[ERROR] '{target_locale}' is the project's source language "
-            f"(declared in tools/languages.json:default_source).\n"
+            f"(declared in tools/configs/languages.json:default_source).\n"
             f"  DeepL translates FROM the source TO a target — pick a target locale.",
             file=sys.stderr,
         )

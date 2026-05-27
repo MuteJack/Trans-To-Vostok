@@ -27,7 +27,7 @@ from openpyxl.utils import get_column_letter
 SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent.parent
 TRANSLATIONS_ROOT = PROJECT_ROOT / "Translations"
-WIDTH_POLICY = PROJECT_ROOT / "tools" / "width.json"
+WIDTH_POLICY = PROJECT_ROOT / "tools" / "configs" / "width.json"
 
 CATEGORY = "Texture"
 THICK_RIGHT_HEADERS = {"Sub", "Translation", "File Name"}

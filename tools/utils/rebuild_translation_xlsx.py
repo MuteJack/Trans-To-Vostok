@@ -4,7 +4,7 @@ Source : <project_root>/Translations/<locale>/Translation/*.tsv
 Output : <pkg_root>/<locale>/Translation.xlsx (overwritten)
 
 Sheet ordering : `_sheet_order.txt` next to the TSVs.
-Column widths  : unified policy in `tools/width.json`, keyed by HEADER NAME
+Column widths  : unified policy in `tools/configs/width.json`, keyed by HEADER NAME
                  (not column letter). Sheet "MetaData" uses the "MetaData"
                  entry; every other sheet uses the "Translation" entry.
                  Header names absent from the sheet are silently skipped.
@@ -31,7 +31,7 @@ from openpyxl.utils import get_column_letter
 SCRIPT_DIR = Path(__file__).resolve().parent           # tools/utils
 PROJECT_ROOT = SCRIPT_DIR.parent.parent                 # mods/Trans To Vostok
 TRANSLATIONS_ROOT = PROJECT_ROOT / "Translations"
-WIDTH_POLICY = PROJECT_ROOT / "tools" / "width.json"
+WIDTH_POLICY = PROJECT_ROOT / "tools" / "configs" / "width.json"
 
 CATEGORY = "Translation"
 THICK_RIGHT_HEADERS = {"KIND", "untranslatable", "unique_id", "translation"}

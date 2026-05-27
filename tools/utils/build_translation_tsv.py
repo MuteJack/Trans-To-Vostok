@@ -23,7 +23,7 @@ Behavior:
       the sheets in their original xlsx order (one name per line). This
       lets downstream tools (e.g. TSV -> xlsx rebuild) preserve sheet order.
     - Column widths are NOT written per-locale; the unified policy lives
-      in `tools/width.json` keyed by category (MetaData / Translation /
+      in `tools/configs/width.json` keyed by category (MetaData / Translation /
       Texture). Any pre-existing `_column_widths.json` here is treated
       as stale and removed.
 
@@ -136,7 +136,7 @@ def export_xlsx(xlsx_path: Path, out_dir: Path) -> tuple[int, int]:
                     pass
             raise
 
-        # column-width policy is unified in tools/width.json (not per-locale).
+        # column-width policy is unified in tools/configs/width.json (not per-locale).
         # Any pre-existing _column_widths.json here is stale.
         stale_widths = out_dir / "_column_widths.json"
         if stale_widths.exists():

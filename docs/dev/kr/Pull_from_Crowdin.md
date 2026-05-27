@@ -148,7 +148,7 @@ git push
 
 ### 6-1. `Crowdin token not found` 에러
 
-`secrets.json`에 `crowdin_personal_token`이 비어 있거나 파일 자체가 없는 경우입니다. `secrets_example.json`을 복사해 토큰을 채우거나, `CROWDIN_PERSONAL_TOKEN` 환경변수를 설정합니다.
+`secrets.json`에 `crowdin_personal_token`이 비어 있거나 파일 자체가 없는 경우입니다. `tools/configs/secrets_example.json`을 복사해 토큰을 채우거나, `CROWDIN_PERSONAL_TOKEN` 환경변수를 설정합니다.
 
 ### 6-2. `403 Endpoint isn't allowed for token scopes`
 

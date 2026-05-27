@@ -23,7 +23,7 @@ Smart push (default):
 
 Required setup (one-time):
   - Python deps: pip install -r tools/requirements.txt   (includes crowdin-api-client)
-  - Crowdin token: copy secrets.example.json to secrets.json (repo root)
+  - Crowdin token: copy tools/configs/secrets_example.json to tools/configs/secrets.json
                    and fill in `crowdin_personal_token`.
 
 No Crowdin CLI / Java install required.
@@ -195,7 +195,7 @@ def main() -> int:
     if not push_all and args.locale not in locale_map:
         print(f"[ERROR] Unknown locale: {args.locale}", file=sys.stderr)
         print(f"        Supported: {', '.join(locale_map)} OR `all`", file=sys.stderr)
-        print(f"        (active locale in Trans To Vostok/locale.json AND crowdin_id present in tools/languages.json)",
+        print(f"        (active locale in Trans To Vostok/locale.json AND crowdin_id present in tools/configs/languages.json)",
               file=sys.stderr)
         return 1
 

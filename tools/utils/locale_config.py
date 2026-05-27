@@ -1,7 +1,7 @@
 """Helpers for reading the locale registry + active locale list.
 
 Two files in play:
-  - `tools/languages.json` (registry) — maps locale folder name to
+  - `tools/configs/languages.json` (registry) — maps locale folder name to
     DeepL / Crowdin codes. Lists every language we might ever support;
     adding new entries here doesn't activate them.
   - `Trans To Vostok/locale.json` (active list) — locales actually shipped
@@ -15,7 +15,7 @@ import json
 from pathlib import Path
 
 _REPO = Path(__file__).resolve().parent.parent.parent
-LANGUAGES_JSON = _REPO / "tools" / "languages.json"
+LANGUAGES_JSON = _REPO / "tools" / "configs" / "languages.json"
 LOCALE_JSON = _REPO / "Trans To Vostok" / "locale.json"
 
 

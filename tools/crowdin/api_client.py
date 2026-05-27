@@ -14,7 +14,7 @@ Operations exposed:
 
 Configuration:
   - Project ID + source path prefix: tools/crowdin/config.json (committed)
-  - Auth token: secrets.json:crowdin_personal_token (gitignored)
+  - Auth token: tools/configs/secrets.json:crowdin_personal_token (gitignored)
 """
 import csv
 import io
@@ -49,8 +49,8 @@ def make_client() -> tuple["CrowdinClient", int, str]:
     token = get_crowdin_personal_token()
     if not token:
         raise RuntimeError(
-            "Crowdin token not found. Add `crowdin_personal_token` to secrets.json "
-            "(copy from secrets.example.json) or set CROWDIN_PERSONAL_TOKEN env var."
+            "Crowdin token not found. Add `crowdin_personal_token` to tools/configs/secrets.json "
+            "(copy from tools/configs/secrets_example.json) or set CROWDIN_PERSONAL_TOKEN env var."
         )
     cfg = _load_config()
     client = CrowdinClient(token=token, project_id=cfg["project_id"])
@@ -249,7 +249,7 @@ def _build_locale_to_folder_map(client, project_id: int) -> dict[str, str]:
     Both `locale` and `id` are added as keys for robustness, since some
     builds export by short id (e.g. pt-BR) which already matches `locale`.
     """
-    languages_path = _SCRIPT_DIR.parent / "languages.json"
+    languages_path = _SCRIPT_DIR.parent / "configs" / "languages.json"
     registry = json.loads(languages_path.read_text(encoding="utf-8"))["languages"]
     cid_to_folder = {
         entry["crowdin_id"]: dir_name

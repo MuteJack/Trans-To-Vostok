@@ -259,7 +259,7 @@ def main() -> int:
     if target_locale == project_source:
         print(
             f"[ERROR] '{target_locale}' is the project's source language "
-            f"(declared in tools/languages.json:default_source).\n"
+            f"(declared in tools/configs/languages.json:default_source).\n"
             f"  Imports go INTO a target locale — pick a target.",
             file=sys.stderr,
         )

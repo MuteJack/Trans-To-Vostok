@@ -1,16 +1,16 @@
-"""Load API secrets from secrets.json (gitignored, repo root).
+"""Load API secrets from tools/configs/secrets.json (gitignored).
 
 Returns None for missing keys — callers decide whether to fall back
 to env vars or error out.
 
-Setup: copy secrets.example.json to secrets.json and fill in values.
+Setup: copy tools/configs/secrets_example.json to tools/configs/secrets.json and fill in values.
 """
 import json
 import os
 from pathlib import Path
 
 _REPO = Path(__file__).resolve().parent.parent.parent
-SECRETS_PATH = _REPO / "secrets.json"
+SECRETS_PATH = _REPO / "tools" / "configs" / "secrets.json"
 
 
 def _load() -> dict:
