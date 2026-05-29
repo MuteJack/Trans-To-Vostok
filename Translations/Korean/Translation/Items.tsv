@@ -33,7 +33,7 @@ Items	Armor/Armor_Plate_IV	name	0	ignore	Items/Armor/Armor_Plate_IV	tres					inv
 Items	Armor/Armor_Plate_IV	name	0	ignore	Items/Armor/Armor_Plate_IV	tres					rotated		Armor Plate	방탄판			
 Items	Armor/Armor_Plate_IV	name	0	ignore	Items/Armor/Armor_Plate_IV	tres					equipment		Armor Plate	방탄판			
 Items	Armor/Armor_Plate_IV	type	0	ignore	Items/Armor/Armor_Plate_IV	tres					display		Armor	방어구			
-Items	Backpacks	type	0	substr									Backpack	가방			
+Items	Backpacks	type	0	substr									Backpack	배낭			
 Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					name		Jääkäri Backpack (Black)	야카리 배낭 (블랙)			
 Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					inventory		Jääkäri BP.	야카리 배낭			
 Items	Backpacks/Backpack_Jaeger_Black	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					rotated		Jääkäri BP.	야카리 배낭			
