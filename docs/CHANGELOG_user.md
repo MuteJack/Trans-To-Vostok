@@ -2,7 +2,7 @@
 
 A short, user-facing summary of changes you may notice in-game.
 For full developer-level details (code paths, refactors, internal
-tooling), see [`CHANGELOG.md`](CHANGELOG.md).
+tooling), see [`CHANGELOG.md`](CHANGELOG.md). 
 
 ---
 
