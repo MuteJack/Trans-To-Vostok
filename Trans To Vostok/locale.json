@@ -55,6 +55,30 @@
       "message": "言語を選択",
       "substr_mode_label": "Substrモード（非推奨 — ゲーム更新後に多くのテキストが翻訳されない場合のみ有効化）",
       "enabled": true
+    },
+    {
+      "locale": "ChineseSimplified",
+      "dir": "ChineseSimplified",
+      "display": "简体中文",
+      "message": "选择语言",
+      "substr_mode_label": "Substr 模式（不推荐 — 仅当游戏更新后大量文本未翻译时启用）",
+      "enabled": true
+    },
+    {
+      "locale": "ChineseTraditional",
+      "dir": "ChineseTraditional",
+      "display": "繁體中文",
+      "message": "選擇語言",
+      "substr_mode_label": "Substr 模式（不推薦 — 僅當遊戲更新後大量文字未翻譯時啟用）",
+      "enabled": true
+    },
+    {
+      "locale": "Russian",
+      "dir": "Russian",
+      "display": "Русский",
+      "message": "Выберите язык",
+      "substr_mode_label": "Режим Substr (не рекомендуется — включать только если после обновления игры многие тексты остаются непереведёнными)",
+      "enabled": false
     }
   ]
 }
