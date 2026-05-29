@@ -1166,7 +1166,7 @@ UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	�
 UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / 해당 지역
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	총기 기능 고장 | [재장전] 버튼을 누르세요
 UI/HUD	Tooltip	Label	Label	Interaction	상호작용
-UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 회전 모드
+UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[우클릭] = 회전 모드
 UI/HUD	Decor/Margin/Elements	Add	Label	[MMB] = Add to Catalog	[MMB] = 카탈로그에 추가
 UI/HUD	Decor/Margin/Elements	Catalog	Label	[TAB] = Furniture Catalog	[TAB] = 가구 카탈로그
 UI/HUD	Decor/Margin/Elements	Close	Label	[F1] = Close Decor Mode	[F1] = 장식 모드 종료

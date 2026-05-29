@@ -164,16 +164,16 @@ Now you have successfully crafted the required task item and you can complete th
 
 일부 임무는 '미트볼 (조리됨)'과 같이 '제작'을 통해서만 얻을 수 있는 특정 재료를 필요로 합니다.
 
-아이템 게시판에서 '미트볼 통조림', '반함', '물병'을 선택하세요. '성냥'도 필요한데, 장비 게시판에서 구입할 수 있습니다.
+아이템 게시판에서 '미트볼 통조림', '반합', '물병'을 선택하세요. '성냥'도 필요한데, 장비 게시판에서 구입할 수 있습니다.
 
-다음으로, '도구' 메뉴에서 '제작' 버튼을 눌러 '구운 미트볼' 레시피를 찾으세요. 레시피를 보면 '열원'이라는 조건이 있는데, 이는 레시피를 만들려면 화로와 같은 열원이 필요하다는 뜻입니다.
+다음으로, '도구' 메뉴에서 '제작' 버튼을 눌러 '미트볼 (조리됨)' 레시피를 찾으세요. 레시피를 보면 '열원'이라는 조건이 있는데, 이는 레시피를 만들려면 화로와 같은 열원이 필요하다는 뜻입니다.
 
 '미트볼 (조리됨)'을 제작하려면 다음 단계를 따르세요.
 1. 화로로 가서 '성냥'을 장착하고 불을 붙입니다.
 2. '미트볼 (조리됨)' 레시피를 열면 '열원 기호가 초록색으로 바뀔겁니다.
 3. '투입 시작' 버튼을 누릅니다.
 4. '반합', '미트볼 통조림', '물병'을 선택합니다.
-5. '투입 시작' 버튼을 누릅니다.
+5. '제작' 버튼을 누릅니다.
 
 이제 의뢰에 필요한 아이템을 성공적으로 제작했으니 의뢰를 완료할 수 있습니다."
 Tutorial Task 3 (Furniture)	튜토리얼 의뢰 (가구)
@@ -242,9 +242,9 @@ Coffee Reserve	커피 비축
 
 If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
 
-As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	"인생에서 타협할 수 없는 몇 가지가 있지. 아침 6시의 모닝 커피, 점심과 저녁 6시에 마시는 오후 커피는 인생에서 빠질 수 없지. 육체노동을 하는 경우에는 중간중간 커피를 마시면서 쉬는건 필수야. 이건 사실상 법으로 정해져 있는 거나 마찬가지라고.
+As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	"인생에서 타협할 수 없는 몇 가지가 있지. 아침 6시의 모닝 커피, 점심과 저녁 6시에 마시는 오후 커피는 인생에서 빠질 수 없지. 육체노동을 하는 경우에는 중간중간 커피를 마시면서 쉬는 건 필수야. 이건 사실상 법으로 정해져 있는 거나 마찬가지라고.
 
-이 '05구역'에서 살아남으려면 카페인을 끊임없이 공급받는 것이야 말로 최우선 목표가 되어야 해.
+이 '05구역'에서 살아남으려면 카페인을 끊임없이 공급받는 것이야말로 최우선 목표가 되어야 해.
 
 사실, 요즘 커피 소비량이 평소보다 많아져서 말이야. ""전략적 커피 비축량""을 좀 늘려야 할 것 같아."
 Sweaty Business	땀내나는 일
@@ -256,9 +256,9 @@ After the initial explosion, these waters are far from refreshing and there's so
 
 It’s a sweaty business, but we just have to figure out some alternative methods to stay fresh."	"이곳에서의 하루는 길고, 항상 땀으로 범벅이 되기 십상이지. 특히 여름에는 더더욱 그렇고.
 
-에어컨, 샤워, 수돗물은 이제 내 몸뚱이만큼 오래된 추억일 뿐이니, 다른 사람들을 위해서라도 개인위생과 냄새 관리에 신경써야 해. 호수나 바다에 가서 씻으면 되지 않냐고? 그게 왜 그리 좋은 생각이 아닌지 알려주지.
+에어컨, 샤워, 수돗물은 이제 내 몸뚱이만큼 오래된 추억일 뿐이니, 다른 사람들을 위해서라도 개인위생과 냄새 관리에 신경 써야 해. 호수나 바다에 가서 씻으면 되지 않냐고? 그게 왜 그리 좋은 생각이 아닌지 알려주지.
 
-폭발 후 남은 물들은 이제 깨끗함과는 거리가 멀고, 뭔가 불결한 일이 벌어지고 있어. 최근에 죽은 물고기를 너무 많이 봤거든. 나라면 절대로 그 물에 내 깔끔한 엉덩이를 담그지 않을거야. 자네도 그 물에는 들어가지 않는게 좋을거야.
+폭발 후 남은 물들은 이제 깨끗함과는 거리가 멀고, 뭔가 불결한 일이 벌어지고 있어. 최근에 죽은 물고기를 너무 많이 봤거든. 나라면 절대로 그 물에 내 깔끔한 엉덩이를 담그지 않을 거야. 자네도 그 물에는 들어가지 않는 게 좋을 거야.
 
 땀 흘리는 건 어쩔 수 없지만, 상쾌함을 유지하기 위해 다른 방법을 찾아봐야겠어."
 Handyman	수리공
@@ -266,21 +266,21 @@ Handyman	수리공
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
 
-I'm getting tired of being her handyman, but I promised to help this one last time."	"아직 접경 지대 근처에 사는 그 노인네 알지? 그 할멈 앞을 잘 못 보는데, 내가 아무리 전자제품 조심히 다루라고 그렇게 말해도 자꾸만 버튼을 만지작거려서 전부 고장 내버린다고!
+I'm getting tired of being her handyman, but I promised to help this one last time."	"아직 접경지대 근처에 사는 그 노인네 알지? 그 할멈 앞을 잘 못 보는데, 내가 아무리 전자제품 조심히 다루라고 그렇게 말해도 자꾸만 버튼을 만지작거려서 전부 고장 내버린다고!
 
 그저께는 가스레인지가 고장 났고, 냉동고는 녹아내렸지, 라디오는 그새 또 말썽이야! 게다가 지난주에 폭풍우가 몰아치면서 나무가 현관 지붕에 쓰러지는 바람에 지붕이 무너져 내렸어. 난장판도 이런 난장판이 없다니까.
 
-그 할멈 수리공 노릇을 하는것도 이제 지긋지긋하지만, 딱 한번만 더 도와주기로 했으니 어쩌겠어..."
+그 할멈 수리공 노릇을 하는 것도 이제 지긋지긋하지만, 딱 한 번만 더 도와주기로 했으니 어쩌겠어..."
 Six Pack	맥주 여섯 캔
 "Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
 
 When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
 
-Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	"남자라면 절대로 참을 수 없는게 있는 법이지. 나의 경우에는 따뜻하고 값싼 맥주가 바로 그거야, 특히 서리가 내린 겨울 아침에 마시는 맥주만한게 없지.
+Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	"남자라면 절대로 참을 수 없는 게 있는 법이지. 나의 경우에는 따뜻한 싸구려 맥주가 바로 그거야, 특히 서리가 내린 겨울 아침에 마시는 맥주만 한게 없지.
 
 겨울이 오면 맥주를 품속에 넣어서 따뜻하게 데워야 해. 겨드랑이나 사타구니가 맥주를 따뜻하게 유지하기에 가장 좋아. 그 부위가 열이 많이 나니까 잘만 하면 맥주 여섯 캔짜리 한 팩도 금방 데울 수 있어. 좀 징그러울 수 있다는 건 알지만, 자네도 그 추운 날씨에 밥맛 아이스크림을 먹고 싶지는 않을 거잖나.
 
-""맥주 여섯 캔"" 얘기가 나왔으니 말인데, 나도 어디 멀리 여행 떠나기 전에 하나 챙겨둬야겠어. ""갈 때 가더라도 맥주 여섯 캔 정도는 괞찮잖아?""라는 말도 있잖나 하하."
+""맥주 여섯 캔"" 얘기가 나왔으니 말인데, 나도 어디 멀리 여행 떠나기 전에 하나 챙겨둬야겠어. ""갈 때 가더라도 맥주 여섯 캔 정도는 괜찮잖아?""라는 말도 있잖나 하하."
 Old Friend	오랜 친구
 "Want to hear military stories?
 
@@ -292,9 +292,9 @@ Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn,
 
 내가 군에 복무하던 시절, 창고에 KP-31 소총이 몇 자루 굴러다니고 있었지.
 
-어느 날 사격 훈련을 하면서, 드디어 그 총을 시험해 볼 기회가 생겼어. 드럼 탄창을 사용해서 그런지완전 자동 사격은 금지되어 있었지만, 내 차례가 되자 참을 수가 없었지. 사격 모드를 바꾸고 방아쇠를 당겼더니, 마법처럼 71발의 총알이 내 총구에서 쏟아져 나왔어.
+어느 날 사격 훈련을 하면서, 드디어 그 총을 시험해 볼 기회가 생겼어. 드럼 탄창을 사용해서 그런지완전 자동 사격은 못하게 했지만, 내 차례가 다가오자 참을 수가 없더군. 사격 모드를 바꾸고 방아쇠를 당겼더니, 71발의 총알이 내 총구에서 쏟아져 나왔어. 마치 마법처럼 말이야!
 
-젠장, 그 총이 너무 그리워. 아직도 가끔 꿈속에서 그 ""프랏-프랏"" 거리는 소리가 희미하게 들릴 지경이야. 언젠가 다시 그 옛 친구와 마법같이 다시 만나는 날이 오겠지, 언젠가는…"
+젠장, 그 총이 너무 그리워. 아직도 가끔 꿈속에서 그 ""프랏-프랏"" 거리는 소리가 희미하게 들릴 지경이야. 언젠가는 다시 그 옛 친구와 마법같이 다시 만나는 날이 오겠지, 언젠가는…"
 Road Trip	장거리 여행
 "I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
 
@@ -302,13 +302,13 @@ Have you ever visited the North? What a shame, that place has remained totally u
 
 I would be already driving there, but those filthy Bandits stole my car battery and a bunch of other items from the trunk, so I'm still stuck here.
 
-Maybe you could help me with this? Bring back my stolen items and I have something special for you."	"이 거지같은 같은 곳도 이젠 지긋지긋해. 차를 끌고 북쪽으로 편도 여행을 계획중일세. 이 모든 고통을 뒤로하고 멀리 떠나버릴거야.
+Maybe you could help me with this? Bring back my stolen items and I have something special for you."	"이 거지 같은 곳도 이젠 지긋지긋해. 차를 끌고 북쪽으로 편도 여행을 계획 중일세. 이 모든 고통을 뒤로하고 멀리 떠나버릴 거야.
 
-자네도 북쪽에 가본 적 있나? 안 가봤다고? 그거 참 안타깝구만, 그 곳 만큼은 그 모든 시궁창같은 것의 영향을 전혀 받지 않았더라고. 마치 아무 일도 없었던 것처럼 말이지. 수많은 야생 동물들, 그리고 북극 송어를 낚을 수 있는 수정처럼 맑은 강들이 있는, 그야말로 때묻지 않은 자연이야.
+자네도 북쪽에 가본 적 있나? 안 가봤다고? 그것 참 안타깝구만, 그곳만큼은 그 모든 시궁창 같은 것의 영향을 전혀 받지 않았더라고. 마치 아무 일도 없었던 것처럼 말이지. 수많은 야생 동물들, 그리고 북극 송어를 낚을 수 있는 수정처럼 맑은 강들이 있는, 그야말로 때 묻지 않은 자연이야.
 
-지금 당장이라도 차를 몰고 가고 싶었는데, 그 더러운 도둑놈들이 내 차 배터리랑 트렁크에 있던 물건들을 훔쳐가버렸지 뭔가!
+지금 당장이라도 차를 몰고 가고 싶었는데, 그 더러운 도둑놈들이 내 차 배터리랑 트렁크에 있던 물건들을 훔쳐 가버렸지 뭔가!
 
-자네가 날 좀 도와줄 수 있넸나? 그놈들이 훔쳐간 물건들을 되찾아주면 특별한 걸 주지."
+자네가 날 좀 도와줄 수 있겠나? 그놈들이 훔쳐 간 물건들을 되찾아주면 특별한 걸 주지."
 Homemade	홈메이드
 "When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
 
@@ -316,13 +316,13 @@ I already had a large batch for him, but since my trip was delayed, I had to mak
 
 I'm going to need a new batch, but I don't have time right now, so perhaps you can cook it. The recipe is really simple, but do not add too much sugar or you're going to ruin the whole thing. Keep it simple, keep it homemade.
 
-If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."	"북쪽에 도착하면 샤먼 녀석에게 깜작 선물을 줄 생각이야. 킬유라고 내가 젊던 시절에 집에서 담궈먹던 밀주인데, 그 녀석이 내가 담근거라면 아주 환장을 하거든.
+If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."	"북쪽에 도착하면 샤먼 녀석에게 깜작 선물을 줄 생각이야. 킬유라고 내가 젊던 시절에 집에서 담가 먹던 밀주인데, 그 녀석이 내가 담근 거라면 아주 환장을 하거든.
 
-그 녀석 먹이려고 한 가득 만들어 놨었는데, 자네도 알다시피 내 여행 일정이 좀 늦어져버렸지 않은가. 그러니까... 지하실에 보관하다보니 아무래도 상할 수도 있지 않나. ""품질 확인""차 딱 몇 모금만 마셔볼 생각이었는데... 정신을 차려보니 한 톨도 안 남아버렸지 뭔가.
+그 녀석 먹이려고 한가득 만들어 놨었는데, 자네도 알다시피 내 여행 일정이 좀 늦어져버렸지 않은가. 그러니까... 지하실에 보관하다 보니 아무래도 상할 수도 있지 않나. ""품질 확인""차 딱 몇 모금만 마셔볼 생각이었는데... 정신을 차려보니 한 톨도 안 남아버렸지 뭔가.
 
 다시 새로 담가야 하는데 내가 시간이 없어서 말이야, 자네가 대신 좀 만들어 줄 수 있겠나? 레시피는 간단한데, 설탕을 너무 많이 넣으면 망칠 수 있으니 조심하게. 간단하게, 집에서 담그는 것처럼 만들면 돼.
 
-만약 나를 위해 킬유를 만들어 준다면, 이 건물의 다락방 열쇠를 내어주지. 자네의 그 좁아터진 석면 오두막보다는 훨씬 나을거야."
+만약 나를 위해 킬유를 만들어 준다면, 이 건물의 다락방 열쇠를 내어주지. 자네의 그 좁아터진 석면 오두막보다는 훨씬 나을 거야."
 Nasty Draft	지독한 외풍
 "I haven't seen you here before, you must be a new patient?
 
@@ -356,7 +356,7 @@ Bookworm	책벌레
 
 On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
 
-I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	"이곳에서 의사로 일하는 건 마치 주기적인 직업 같아요. 무슨 말이냐면, 엄청 바쁜 날도 있고, 사람 한 명 없는 날도 있다는 거죠.
+I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	"이곳의 의사 일은 참 기복이 심한 것 같아요. 무슨 말이냐면, 엄청 바쁜 날도 있고, 사람 한 명 없는 날도 있다는 거죠.
 
 그런 한가하고 지루한 날에는 주로 책을 읽어요. 이 동네에는 읽을거리가 많지 않아서 선택의 여지는 없지만, 때로는 주어진 대로 적응하는 법을 배워야 하죠.
 
@@ -368,13 +368,13 @@ Just a few years ago, we often went fishing together, but that poor guy has mult
 
 Like you probably already guessed, only one of those is available nowadays, so our friendship is currently purely built on gambling with card and dice games. However, every time we play dice, he always magically wins and I'm starting to wonder if his dices are rigged somehow, since nobody is that lucky.
 
-You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	"저랑 그 잡화상은 어릴 적부터 알고 지냈어요. 괴팍한 노인네지만, 친해지면 생각보다 괞찮은 놈이에요.
+You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	"저랑 그 잡화상은 어릴 적부터 알고 지냈어요. 괴팍한 노인네지만, 친해지면 생각보다 괜찮은 놈이에요.
 
-몇 년 전까지만 해도 같이 낚시를 자주 갔었는데, 그 불쌍한 놈이 허리 디스크가 여기저기 터지는 바람에 이제 낚시는 엄두도 못 내요. 그래도 경마나 도박 같이 함께 즐길거리는 몇 가지 남아있죠.
+몇 년 전까지만 해도 같이 낚시를 자주 갔었는데, 그 불쌍한 놈이 허리 디스크가 여기저기 터지는 바람에 이제 낚시는 엄두도 못 내요. 그래도 경마나 도박같이 함께 즐길 거리는 몇 가지 남아 있죠.
 
-짐작하셨겠지만, 요즘 세상에는 할 수 있는게 그런 거 밖에 없다보니 우리의 우정은 순수하게 카드 게임과 주사위 게임으로 쌓아가고 있어요. 그런데 주사위 게임을 할 때마다 그 녀석이 매번 마법처럼 이겨버리다 보니, 그녀석의 주사위가 조작된 건 아닌가 하는 생각이 들어요. 사람이라면 그렇게까지 운이 좋을 수 없거든요.
+짐작하셨겠지만, 요즘 세상에는 할 수 있는 게 그런 거 밖에 없다 보니 우리의 우정은 순수하게 카드 게임과 주사위 게임으로 쌓아가고 있어요. 그런데 주사위 게임을 할 때마다 그 녀석이 매번 마법처럼 이겨버리다 보니, 그 녀석의 주사위가 조작된 건 아닌가 하는 생각이 들어요. 사람이라면 그렇게까지 운이 좋을 수 없거든요.
 
-그래서 말인데, 혹시 주사위로 하는 보드 게임을 하나 구하시면 저한테도 하나 가져와줘요. 다음번에 만나면 제 걸로 해보려고요. 그래야 얄팍한 속임수따위 없이, 누가 진짜 주사위의 신인지 확실히 가릴 수 있잖아요."
+그래서 말인데, 혹시 주사위로 하는 보드게임을 하나 구하시면 저한테도 하나 가져와 줘요. 다음번에 만나면 제 걸로 해보려고요. 그래야 얄팍한 속임수 따위 없이, 누가 진짜 주사위의 신인지 확실히 가릴 수 있잖아요."
 Night Surgery	야간 수술
 "Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
 
@@ -382,19 +382,19 @@ Daytime operations are a walk in the park for me when there's enough light, but 
 
 Some sort of bright headlamp would probably solve this issue until the power grid is fully restored. I have tried to find one, but unfortunately no luck so far."	"저는 외과 전문의는 아니지만, 장기나 인체 해부학에 있어서 꽤 실력이 있다고 생각해요.
 
-낮에 수술하는 건, 조명만 충분하다면 공원에서 산책다니듯이 쉽게 하지만, 밤이되면 상황이 달라져요. 조명이 어둡거나 완전히 어두운 곳에서 수술할 때는 손의 감각과 직관에 더 의존해야 하는데, 이건 환자에게 위험부담이 크거든요.
+낮에 수술하는 건, 조명만 충분하다면 공원에서 산책 다니듯이 쉽게 하지만, 밤이 되면 상황이 달라져요. 조명이 어둡거나 완전히 어두운 곳에서 수술할 때는 손의 감각과 직관에 더 의존해야 하는데, 이건 환자에게 위험부담이 크거든요.
 
-전력망이 완전히 복구될 때까지는 밝은 헤드램프 같은 거라도 있으면 괞찮을 것 같은데, 찾아보려고 노력해봤지만, 아쉽게도 운은 내 편이 아닌 거 같네요."
+전력망이 완전히 복구될 때까지는 밝은 헤드램프 같은 거라도 있으면 괜찮을 것 같은데, 찾아보려고 노력해봤지만, 아쉽게도 운은 내 편이 아닌 거 같네요."
 Infections	감염
 "You know what one of the most common issues is here? It's infections.
 
 When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
 
-I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."	"이런 곳에서 가장 자주 일어나는 문제가 뭔지 아세요? 바로 감염이에요.
+I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."	"이런 곳에서 가장 자주 일어나는 문제가 뭔지 아시나요? 바로 감염이에요.
 
-위생 상태가 불량하고 상처가 제대로 소독되지 않으면 박테리아와 세균이 번식하기에 완벽한 환경이 조성됩니다. 베인 상처나 찰과상이 있는 환자가 있으면 거의 예외 없이 감염이 발생합니다.
+위생 상태가 불량하고, 상처가 제대로 소독되지 않으면 박테리아와 세균이 번식하기에 완벽한 환경이 조성됩니다. 베인 상처나 찰과상이 있는 환자가 있으면 거의 예외 없이 감염되죠.
 
-감염을 막기 위한 약품이 아직 조금 남아있긴 하지만, 이것도 조만간 바닥날 거에요. 그렇게 되면 여기 사망률이 걷잡을 수 없을 거에요."
+감염을 막기 위한 약품이 아직 조금 남아 있긴 하지만, 이것도 조만간 바닥날 거예요. 그렇게 되면 여기 사망률이 걷잡을 수 없을 거예요."
 Hypovolemia	저혈량증
 "Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
 
@@ -414,11 +414,11 @@ Mouth Organ	하모니카
 
 I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
 
-It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."	"음악이야말로 최고의 항우울제라 할 수 있죠. 의학 공부를 시작하기 전에는 색소폰과 호른을 연주했고, 해군 오케스트라에서 멋진 황금빛 파이프를 들고 전국에 순회 공연을 다녔죠. 참 놀라운 경력 전환이었어요.
+It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."	"음악이야말로 최고의 항우울제라 할 수 있죠. 의학 공부를 시작하기 전에는 색소폰과 호른을 연주했고, 해군 오케스트라에서 멋진 황금빛 파이프를 들고 전국에 순회공연을 다녔죠. 참 놀라운 경력 전환이었어요.
 
-몇 년 전에 낡은 악기들을 다시 연주해 보려고 했는데, 알다시피 이런건 폐활량이 꽤 좋아야 하잖아요. 이제는 소리조차 못내겠더라고요. 음악에 대한 열정과 재능은 여전한데, 시가 때문인지 예전같지 않은 느낌이에요.
+몇 년 전에 낡은 악기들을 다시 연주해 보려고 했는데, 알다시피 이런건 폐활량이 꽤 좋아야 하잖아요. 이제는 소리조차 못 내겠더라고요. 음악에 대한 열정과 재능은 여전한데, 시가 때문인지 예전 같지 않은 느낌이에요.
 
-다시 시작하기에 늦다는 법은 없지만, 저처럼 나이 든 골초에게 맞는 아주 작은 악기가 필요할 것 같아요. 어쩌면 다음 생에는 가능할지도 모르겠네요."
+다시 시작하기에 늦다는 법은 없지만, 저처럼 나이 든 골초에게 맞는 아주 작은 악기가 필요할 것 같아요. 그게 아니라면 다음 생에나 기약해야겠지요."
 Patient Report	환자 보고서
 "When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
@@ -442,11 +442,11 @@ Since we know it was delivered in oil tank cars, I would visit the nearest oil t
 
 관계자들이 주장한 대로 아크릴로니트릴이 원인 물질 중 하나인 것은 분명하지만, 저는 그것이 큰 그림의 일부일 뿐이라는 가설을 세웠어요. 물론, 아크릴로니트릴은 연소 시 시안화수소와 같은 유독 가스를 방출하며 1급 발암물질로 분류되는 건 맞지만, 제 이론을 설명해 드리죠.
 
-이러한 유기 화합물은 매우 강한 냄새를 풍겨요. 그 사람들이 말한대로 엄청난 양이 누출됐다면 냄새가 사방에 퍼져 있어야 했지만, 그렇지 않았어요. 게다가 아크릴로니트릴만으로는 환경과 수자원에 그렇게 오랫동안 영향이 지속되지 않아요
+이러한 유기 화합물은 매우 강한 냄새를 풍겨요. 그 사람들이 말한 대로 엄청난 양이 누출됐다면 냄새가 사방에 퍼져 있어야 했지만, 그렇지 않았죠. 게다가 아크릴로니트릴만으로는 환경과 수자원에 그렇게 오랫동안 영향이 지속되지 않아요.
 
-따라서 훨씬 더 독성이 강한 물질이 관련되어 있을 가능성을 염두에 두고 있어요. 물론 이론일 뿐이지만, 진상을 밝히는 유일한 방법은 그 원인을 찾는 겁니다.
+따라서 훨씬 더 독성이 강한 인공 물질이 관련되어 있을 가능성을 염두에 두고 있어요. 물론 이론일 뿐이지만, 진상을 밝히는 유일한 방법은 그 원인을 찾는 겁니다.
 
-유조차로 운송되었다는 사실을 알고 있으니, 가장 가까운 석유 터미널에 가서 샘플을 검사해 실제로 기름이 들어있는지 아니면 다른 물질이 들어있는지 확인해 보겠습니다. 기름 샘플 용기는 찾는 건 쉬울거에요. 금색 우유병처럼 생겼고, 그런 용기가 아주 많이 있을 겁니다."
+유조차로 운송되었다는 사실을 알고 있으니, 가장 가까운 석유 터미널에 가서 샘플을 검사해 실제로 기름이 들어있는지 아니면 다른 물질이 들어있는지 확인해 봐야겠어요. 기름 샘플 용기는 찾는 건 쉬울 거에요. 금색 우유병처럼 생겼고, 그 주변에 널려 있을 겁니다."
 Bloodsuckers	흡혈귀
 "Ain't that something? A new man and a new rifle, always a welcome sight.
 
@@ -466,11 +466,11 @@ Warm Meal	따듯한 식사
 
 Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
 
-It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."	"나는 군인으로서 전투식량을 사랑하는 편이지네만, 몇 주 동안 똑같은 죽과 말라빠진 간식만 씹어대는 것도 이제는 한계가 있다고.
+It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."	"나는 군인으로서 전투식량을 사랑하는 편이네만, 몇 주 동안 똑같은 죽과 말라빠진 간식만 씹어대는 것도 한계가 있다고.
 
-예전에는 전투식량에 제대로 된 통조림 식품이라도 들어 있었는데, 요즘 전투식량에는 맛대가리 없는 고기 반죽과 패스트푸드 밖에 없다고. 그딴 인공 폐기물은 절대로 입에 대지도 않을 거야.
+예전에는 전투식량에 제대로 된 통조림 식품이라도 들어 있었는데, 요즘 전투식량에는 맛대가리 없는 고기 반죽과 패스트푸드 밖에 없어. 그딴 인공 폐기물은 절대로 입에 대지도 않을 거야.
 
-마지막으로 제대로 된 따뜻한 식사를 먹은게 언제인지도 기억나지 않아. 어쩌면 이번 기회에 자네가 실력을 발휘해서 우리 관계를 한 단계 더 발전시킬 수 있을지도 모르겠어. 제대로 된 핀란드식 완두콩 수프에 겨자를 곁들여 담은 반합 정도면 괞찮을 것 같군."
+마지막으로 제대로 된 따뜻한 식사를 한 게 언제인지도 기억나지 않아. 어쩌면 이번 기회에 자네가 실력을 발휘해서 우리 관계를 한 단계 더 발전시킬 수 있을지도 모르겠어. 제대로 된 핀란드식 완두콩 수프에 겨자를 곁들여 담은 반합 정도면 괜찮을 것 같군."
 Nordic Trade	북유럽 무역
 "Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
 
@@ -480,7 +480,7 @@ However, in the spirit of good neighbors, there's a fair trade we could do. I ca
 
 아, 오해는 하지 말게. 좋은 이웃이긴 하지만.. 글쎄. 어쩌면 너무 부유해서 옷을 쫙 빼 입고 다녀서인지, 아니면 그놈의 하키 때문인지 잘 모르겠어.
 
-하지만 이웃 좋다는게 뭔가, 어쩌면 꽤 괞찮은 거래를 하나 제안해 볼 수도 있겠어. 나는 이걸 '디저트 교환'이라고 부른다네. 스웨덴 놈들의 꽤 괞찮은 디저트를 좀 가져다준다면, 나는 핀란드 디저트를 나눠주지. 서로에게 이득이 되는 거래지, 다른 말로 경쟁 없이 즐길 수 있는 북유럽식 무역이라고 할까?"
+하지만 이웃 좋다는 게 뭔가, 어쩌면 꽤 괜찮은 거래를 하나 제안해 볼 수도 있겠어. 나는 이걸 '디저트 교환'이라고 부른다네. 스웨덴 놈들의 꽤 괜찮은 디저트를 좀 가져다준다면, 나는 핀란드 디저트를 나눠주지. 서로에게 이득이 되는 거래야. 다른 말로 경쟁 없이 즐길 수 있는 북유럽식 무역이라고 할까?"
 Big Blades	커다란 칼날
 "You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
 
@@ -488,9 +488,9 @@ When it comes to blades, the rule is the bigger, the better. I myself prefer mac
 
 Collecting blades is also an elegant hobby. I do have quite an extensive collection, but there are still a few big blades that I'm missing."	"사람이 어떤 칼을 차고 다니는지 보면 그 사람에 대해 많은 것을 알 수 있지. 만약 작은 주머니칼을 차고 다니는 사람을 본다면, 자네도 그런 놈들과는 어울리고 싶지 않을 거야.
 
-칼에 있어서는 불변의 진리가 있어. ""크면 클수록 좋다"" 라는 법칙이지. 나는 개인적으로 나무를 베거나 빽빽한 숲에서 장애물을 제거하는 데 적합한 마체테를 선호하는 편일세. 비록 여기가 정글은 아니지만, 살다보면 뼈저리게 후회하는 순간이 오거든.
+칼에 있어서는 불변의 진리가 있어. ""크면 클수록 좋다""라는 법칙이지. 나는 개인적으로 나무를 베거나 빽빽한 숲에서 장애물을 제거하는 데 적합한 마체테를 선호하는 편일세. 비록 여기가 정글은 아니지만, 살다 보면 하나 쟁여둘걸 하고 뼈저리게 후회하는 순간이 오거든.
 
-칼을 수집하는 것 또한 품격 있는 취미지. 나도 나름 꽤 다양한 칼을 수집했다고 자랑할 수 있지만, 아직 내 컬렉션에 넣지 못한 덩치 큰 놈들이 몇개 있단 말일세."
+칼을 수집하는 것 또한 품격 있는 취미지. 나도 나름 꽤 다양한 칼을 수집했다고 자랑할 수 있지만, 아직 내 컬렉션에 넣지 못한 덩치 큰 놈들이 몇 개 있단 말일세."
 Ammo Delivery	탄약 배달
 "You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
 
@@ -498,9 +498,9 @@ When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. So
 
 Maybe you could do a quick ammo delivery run for me? We could expand the portfolio a bit, so to speak."	"자네도 알겠지만, 내 창고에는 웬만한 종류의 탄약은 다 구비되어 있네. 자네가 다람쥐를 잡든, 사람을 잡든, 어떤 것이라도 자네 입맛대로 고를 수 있다는 걸세 .
 
-탄약 중에서는 7.62x39와 .223 구경이 내 매출을 책임지는 베스트셀러라고 할 수 있네. 가끔은 좀 특이한 탄약을 찾는 별종들도 있지만, 그런 특이한 요청까지 고려해서 재고를 유지하는 것도 꽤 고역이야.
+탄약 중에서는 7.62x39와 .223 구경이 내 매출을 책임지는 베스트셀러라고 할 수 있네. 가끔은 좀 특이한 탄약을 찾는 별종들도 있지만, 그런 요청들까지 고려해서 재고를 유지하는 건 꽤나 고역이거든.
 
-잠깐 자네가 나 대신 탄약 배송을 대신해주지 않겠나? 그렇게 하면 우리도 취급 품목을 좀 늘려볼 수 있겠어."
+잠깐 자네가 나 대신 탄약 배송을 해 주지 않겠나? 그렇게 하면 우리도 취급 품목을 좀 늘려볼 수 있겠어."
 Weapon Delivery	무기 배달
 "I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
 
@@ -508,7 +508,7 @@ This has led to a situation where I'm constantly out of stock of those Eastern w
 
 Since I no longer have those networks active, a quick weapon delivery from the other side would be highly appreciated."	"예전에는 국경 너머에서 거래를 꽤 많이 했었는데, 요즘은 그 인맥이 전부 끊겨버렸어.
 
-덕분에 동구권 무기는 늘 재고가 부족하지, 참 안타까운 일이야. 서방제 물건들에 비하면 그쪽품 물건들이 훨씬 믿음직하거든. 자네도 알다시피 서방은 모든 걸 '택티컬'하게 만드는 고질병이 있어. 레일이니 뭐니 온갖 잡동사니들을 주렁주렁 달아대다보니 엉망진창이 되기 마련이지, .
+덕분에 동구권 무기는 늘 재고가 부족하지, 참 안타까운 일이야. 서방제 물건들에 비하면 그쪽 물건들이 훨씬 믿음직하거든. 자네도 알다시피 서방은 모든 걸 '택티컬'하게 만드는 고질병이 있어. 레일이니 뭐니 온갖 잡동사니들을 주렁주렁 달아대다 보니 엉망진창이 되기 마련이지.
 
 이제 국경 너머와는 인맥이 끊겼으니, 다른 루트로 빠르게 무기를 공급해 준다면 정말 고맙겠어."
 Medic	의무병
@@ -516,11 +516,11 @@ Medic	의무병
 
 I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
 
-My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	"군대에서 가장 중요한 역할은 딱 두 가지뿐이야. 소총수와 의무병이지, 지휘관, 포병, 기타 지원 부대, 이런건 전부 겉치레일 뿐이란 말일세.
+My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	"군대에서 중요한 역할은 딱 두 가지, 소총수와 의무병뿐이네. 지휘관, 포병, 기타 지원 부대, 이런 건 전부 겉치레일 뿐이란 말일세.
 
-사실, 나는 전담 의무병을 하나 두고 있네. 실력 있는 방랑자인데, 전투태세에서 사용할 간단한 전술이 있지. 만약 내가 사격을 하다가 총에 맞으면, 의무병이 내 입에 펜타닐 사탕을 물려주는 거야. 그러면 우리는 다시 진군을 이어가는 거지. 이게 광기를 잠재워주지는 않아, 그저 통증을 잊고 진격하게 해주는 거지.
+사실, 나는 전담 의무병을 하나 두고 있네. 실력 있는 방랑자야. 우리 둘에게는 돌격할 때 쓰는 간단한 전술이 있어. 만약 내가 사격을 하다가 총에 맞으면, 의무병이 내 입에 펜타닐 사탕을 물려주는 거야. 그러고는 다시 진군을 이어 나가는 거지. 이게 광기를 잠재워주지는 않아, 그저 통증을 잊고 진격하게 해주는 거지.
 
-만일의 사태에 대비해서, 내 의무병 친구에게 사탕이 몇 개 더 필요할 것 같아. IFAK라 부르는 응급처치 키트 안에 들어있을 거 같은데, 만약 자네가 그걸 찾게된다면 또 다른 거래의 장이 열리겠지."
+만일의 사태에 대비해서, 내 의무병 친구에게 사탕이 몇 개 더 필요할 것 같아. IFAK이라 부르는 응급처치 키트 안에 들어있을 거 같은데, 만약 자네가 그걸 찾게 된다면 또 다른 거래의 장이 열리겠지."
 Home Collection	소장품
 "Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
 
@@ -576,9 +576,9 @@ After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and
 Fighter Jets	전투기
 "After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
 
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"05구역 철수 및 접경 지대 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 필요합니다.
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"05구역 철수 및 접경 지대 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 불가피해졌습니다.
 
-핀란드군은 전투기를 이용해 상공에 자주 나타나는 고위험 비살상 공중 시범 비행을 시작할 예정입니다."
+핀란드군은 전투기를 동원해 상공에 자주 모습을 드러내며, 위협적인 비살상 공중 위력 비행을 시작할 예정입니다."
 Missing Cat	잃어버린 고양이
 "Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
 
@@ -586,13 +586,13 @@ A few days ago, Nomads found the cat wandering in the Outpost and managed to cap
 
 Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"할머니의 고양이가 전투기의 굉음에 놀라 도망친 후 사라졌습니다.
 
-며칠 전, 방랑자들이 전초기지에서 고양이를 발견하고 어떤 상자로 고양이를 잡았습니다. 유목민들이 고양이를 할머니에게 돌려주려던 순간, 산적들이 습격하여 상자를 빼앗아 갔습니다.
+며칠 전, 방랑자들이 전초기지를 돌아다니던 고양이를 발견하고 상자 같은 것으로 붙잡았습니다. 하지만 방랑자들이 고양이를 할머니에게 돌려주려던 순간, 밴디트들이 습격하여 상자를 빼앗아 갔습니다.
 
 마을 사람들은 밴디트들이 상자를 마구 던지다가 결국 어딘가에 버려두는 것을 목격했습니다."
 Punisher arrives to Area 05	퍼니셔가 05구역에 도착
 "Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
 
-Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"퍼니셔는 핀란드 범죄 세계에서 악명 높은 산적 두목이자 채권 추심원입니다.
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"퍼니셔는 핀란드 범죄 세계에서 악명 높은 밴디트 두목이자 채권 추심원입니다.
 
 퍼니셔와 그의 부하들은 지역 경찰차를 훔쳐 05구역 곳곳을 누비고 다니고 있습니다."
 Airdrops are delivered to Area 05	공중 보급품이 05구역에 투하됨
@@ -639,13 +639,13 @@ News of the event spread quickly among Area 05 locals and traders, but it is onl
 Traders leave Area 05	상인들이 05구역을 떠남
 "After the Outpost was compromised, all traders started making preparations and leaving Area 05.
 
-It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"전초기지가 발각된 후, 모든 상인들은 준비를 마치고 05구역을 떠나기 시작했습니다.
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"전초기지가 발각된 후, 모든 상인들이 철수 준비를 하며 05구역을 떠나기 시작했습니다.
 
-상인들이 이렇게 하는 것은 임시방편이며, 상황이 진정되면 돌아올 것으로 보입니다."
+상인들의 철수는 일시적인 조치로 보이며, 상황이 진정되면 다시 돌아올 것입니다."
 Traders return to Area 05	상인들이 05구역으로 복귀
 "The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
 
-All traders are returning back to Area 05."	"최근 사태의 악화세는 진정된 듯하며, 5구역은 완전한 혼란에 빠지지 않았습니다.
+All traders are returning back to Area 05."	"최근 사태의 악화세는 진정된 듯하며, 05구역이 완전한 혼란에 빠지는 상황은 면했습니다.
 
 모든 상인들이 05구역으로 복귀하고 있습니다."
 Transmission	송신
@@ -669,7 +669,7 @@ Armor Plate (III+)	방탄판 (III+)
 Armor Plate (III)	방탄판 (III)
 Armor Plate (IIIA)	방탄판 (IIIA)
 Armor Plate (IV)	방탄판 (IV)
-Backpack	가방
+Backpack	배낭
 Jääkäri Backpack (Black)	야카리 배낭 (블랙)
 Jääkäri BP.	야카리 배낭
 Jääkäri Backpack (Brown)	야카리 배낭 (브라운)
@@ -1034,7 +1034,7 @@ Garbage	쓰레기
 Fireplace	화로
 Freezer	냉동고
 Fridge	냉장고
-Fusebox	퓨즈박스
+Fusebox	퓨즈 박스
 Locker	사물함
 Mailbox	우편함
 Nightstand	협탁
@@ -1049,13 +1049,13 @@ Bed N.	침대 방랑.
 Cabinet (Medical)	수납장 (의료용)
 Cabinet M.	수납장 의료.
 Cabinet (Office)	수납장 (사무용)
-Cabinet. 0	수납장 사무.
+Cabinet. 0	수납장 (사무)
 Cabinet (Wood)	수납장 (나무)
-Cabinet W.	수납장 나무.
+Cabinet W.	수납장 (나무)
 Carpet (Persian)	카펫 (페르시안)
 Carpet P.	카펫 페르.
 Carpet (Rag)	카펫 (누더기)
-Carpet R.	카펫 누더기.
+Carpet R.	카펫 (누더기)
 Chair (Office)	의자 (사무용)
 Chair O.	의자 사무.
 Chair (School)	의자 (학교용)
