@@ -1,0 +1,608 @@
+location	parent	name	type	text	translation
+Scenes/Menu	.	Compatibility	Label	Compatibility	互換性
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UIの拡大縮小 [近日公開予定]
+UI/Interface	Equipment/Hints	Knife	Label	Knife	ナイフ
+UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	手榴弾
+UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	手榴弾
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	熱
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	特定の料理レシピに必要な、近くにあるクラフト素材。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	近接要件
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	作業台
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	特定の建築系レシピで必要となる、近くにあるクラフト素材。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	近接要件
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	テストベンチ
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	特定の電子機器関連のレシピで必要となる、近くにあるクラフト素材。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	近接要件
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	シェルター
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	特定の家具のレシピに必要な、近くにあるクラフト素材。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	近接要件
+UI/Interface	Trader/Panel	Info		Trader	トレーダー
+UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	環境収容力
+UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	全機器の容量値（kg）。
+UI/Interface	Inventory/Header/Capacity	Info		Inventory Stat	ステータス
+UI/Interface	Inventory/Header/Weight	Info		Inventory Weight	在庫重量
+UI/Interface	Inventory/Header/Weight	Info		A weight value (kg) of all inventory items.	全在庫品目の重量（kg）。
+UI/Interface	Inventory/Header/Weight	Info		Inventory Stat	ステータス
+UI/Interface	Inventory/Header/Value	Info		Inventory Value	在庫評価額
+UI/Interface	Inventory/Header/Value	Info		A price value (€) of all inventory items.	全在庫品目の価格（ユーロ）
+UI/Interface	Inventory/Header/Value	Info		Inventory Stat	ステータス
+UI/Interface	Container/Header/Weight	Info		Container Weight	コンテナ重量
+UI/Interface	Container/Header/Weight	Info		A weight value (kg) of all container items.	すべてのコンテナ内物品の重量（kg）。
+UI/Interface	Container/Header/Weight	Info		Container Stat	コンテナの状態
+UI/Interface	Container/Header/Value	Info		Container Value	コンテナの値
+UI/Interface	Container/Header/Value	Info		A price value (€) of all container items.	すべてのコンテナ項目の価格（ユーロ）
+UI/Interface	Container/Header/Value	Info		Container Stat	コンテナの状態
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Carry Capacity	環境収容力
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		"A weight capacity value (kg) of how much inventory weight you can carry.
+
+Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
+
+Carry Capacity by default is 10kg"	"持ち運び可能な荷物の重量上限（kg）です。
+
+バックパック、リグ、または「容量」ステータスがプラスの装備品を装備すると、持ち運び可能重量が増加します。
+
+デフォルトの持ち運び可能重量は10kgです。"
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	装備ステータス
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	設備の価値
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	すべての機器の価格（ユーロ）
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	装備ステータス
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	断熱
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
+
+Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
+
+Insulation increases when you equip clothing items with a positive insulation stat.
+
+Insulation examples:
+[100] = B. Temp decrease fully stopped
+[50] = B. Temp decrease slowed by 50%
+[0] = B. Temp decreases at default rate"	"寒さに対する衣類による防寒効果。
+
+防寒効果は「体温」と密接に関連しており、防寒効果が高いほど、冬場の体温低下速度が緩やかになります。
+
+防寒効果は、防寒ステータスがプラスの衣類を装備することで上昇します。
+
+防寒効果の例：
+[100] = 体温の低下が完全に停止
+[50] = 体温の低下が50%遅くなる
+[0] = 体温がデフォルトの速度で低下する"
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Equipment Stat	装備ステータス
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Dexterity	器用さ
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		"An inertia-based value of how quickly you can move and do certain actions.
+
+Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
+
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	"慣性に基づく、移動や特定の行動をどれだけ素早く行えるかを示す数値です。
+
+器用さは、移動速度や、照準やリロードといった武器の操作能力に関連しています。
+
+器用さのステータスがマイナスとなる、重たいアイテムや持ちにくいアイテムを装備すると、器用さは低下します。"
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	装備ステータス
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Menace	脅威
+UI/Interface	Equipment/Stats/Elements/Menace	Info		"An intimidation value of how threatening AI sees your character and equipment.
+
+When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
+
+Menace increases when you equip items such as special clothing with a positive Menace stat.
+
+Menace only affects low-tier AI (Bandits)."	"AIがあなたのキャラクターや装備をどれほど脅威と見なすかを示す「威嚇値」です。
+
+威嚇値が高い場合、AIがあなたに対して攻撃的な行動や攻撃行動をとる可能性は低くなります。
+
+威嚇値は、威嚇ステータスがプラスになる特殊な防具などのアイテムを装備すると上昇します。
+
+威嚇値の影響を受けるのは、低レベルのAI（山賊）のみです。"
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	装備ステータス
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		CBRN	CBRN
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		"A protection value against chemical, biological, radiological and nuclear threats.
+
+CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
+
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	"化学、生物、放射線、核の脅威に対する防御値。
+
+CBRNは「体力」と関連しており、危険な地域や物質にさらされた際、CBRNが高いほど体力の減少速度が緩やかになります。
+
+CBRNステータスを持つ特殊な防護服や防護マスクなどの装備を身につけると、CBRN値が上昇します。"
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		Equipment Stat	装備ステータス
+UI/Interface	Character/Vitals/Elements/Health	Info		Health	健康
+UI/Interface	Character/Vitals/Elements/Health	Info		"Your main vital for staying alive.
+
+Health decreases with damages and active medical conditions.
+
+Health increases with certain medical items such as Bandages and Medkits.
+
+Health [0] -> Character dies"	"生存するために最も重要なステータスです。
+
+ダメージを受けたり、病気にかかったりすると、体力は減少します。
+
+包帯や救急キットなどの特定の医療アイテムを使用すると、体力は回復します。
+
+体力 [0] → キャラクターが死亡します"
+UI/Interface	Character/Vitals/Elements/Health	Info		Vital	不可欠
+UI/Interface	Character/Vitals/Elements/Energy	Info		Energy	エネルギー
+UI/Interface	Character/Vitals/Elements/Energy	Info		"Your hunger and energy level.
+
+Energy decreases over time and using map transitions with Energy Cost.
+
+Energy increases with certain consumables such as food.
+
+Energy [0] -> Starvation (Condition)"	"空腹度とエネルギー量。
+
+エネルギーは時間の経過とともに減少します。また、エネルギー消費を伴うマップ移動を行うと減少します。
+
+エネルギーは、食料などの特定の消費アイテムを使用することで増加します。
+
+エネルギー [0] → 飢餓（状態異常）"
+UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	不可欠
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	水分補給
+UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
+
+Hydration decreases over time and using map transitions with Hydration Cost. 
+
+Certain dry or salty consumables may also decrease Hydration.
+
+Hydration increases with certain consumables such as drinks.
+
+Hydration [0] -> Dehydration (Condition)"	"喉の渇きと水分補給レベル。
+
+時間の経過や、「水分補給コスト」が設定されたマップの移動によって、水分補給レベルは低下します。
+
+特定の乾燥食品や塩分の多い消費アイテムも、水分補給レベルを低下させることがあります。
+
+飲み物などの特定の消費アイテムを使用すると、水分補給レベルが上昇します。
+
+水分補給レベル [0] → 脱水症状（状態異常）"
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	不可欠
+UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	メンタル
+UI/Interface	Character/Vitals/Elements/Mental	Info		"Your happiness and sanity level.
+
+Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
+
+Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
+
+Mental [0] -> Insanity (Condition)"	"幸福度と精神力。
+
+精神力は時間の経過や有害な消耗品によって減少します。何らかの持病がある場合、減少速度は2倍になります。
+
+精神力は、スナックや温かい食事などの癒やしとなるアイテム、あるいはアルコールやニコチン製品などの快楽品によって増加します。
+
+精神力 [0] → 狂気（状態異常）"
+UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	不可欠
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	体温
+UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
+
+Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
+
+Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
+
+Body Temp [0] -> Frostbite (Condition)"	"体温と体温レベルについて
+
+冬になると、時間の経過とともに体温は低下します。屋内に留まったり、保温効果のある装備を身に着けたりすることで、体温の低下速度を抑えることができます。
+
+シェルター内や、焚き火などの熱源のそばにいると体温が上昇します。ヒートパックやスペースブランケットなどの特定の保温アイテムも、体温を上昇させます。
+
+体温 [0] → 凍傷（状態異常）"
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	不可欠
+UI/Interface	Character/Vitals/Elements/Cat	Info		Cat	猫
+UI/Interface	Character/Vitals/Elements/Cat	Info		"Grandma's cat health level.
+
+Cat health activates if you decide to rescue the Cat and bring her to your shelter.
+
+Cat health decreases over time.
+
+Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
+
+Cat [0] -> Cat dies"	"おばあちゃんの猫の健康レベル。
+
+猫を保護してシェルターに連れてくると、猫の健康状態が反映されます。
+
+猫の健康状態は時間の経過とともに低下します。
+
+キャットフードやツナ缶などのアイテムで猫に餌を与えると、猫の健康状態が回復します。
+
+猫 [0] → 猫が死亡"
+UI/Interface	Character/Vitals/Elements/Cat	Info		Vital	不可欠
+UI/Interface	Character/Medical/Elements/Overweight	Info		"A condition where you are carrying too much weight and movement becomes unsustainable.
+
+Causes:
+- Inventory Weight > Carry Capacity
+
+Symptoms
+- All stamina consumption [+50%]
+- All stamina regeneration [Blocked]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures:
+- Inventory Weight < Carry Capacity"	"所持重量が重すぎて、移動が困難になる状態。
+
+原因：
+- 所持重量 ＞ 運搬容量
+
+症状：
+- スタミナ消費量 [+50%]
+- スタミナ回復 [停止]
+- 移動速度 [-50%]
+- ジャンプ高さ [-50%]
+
+対処法：
+- 所持重量 ＜ 運搬容量"
+UI/Interface	Character/Medical/Elements/Overweight	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Starvation	Info		Starvation	飢餓
+UI/Interface	Character/Medical/Elements/Starvation	Info		"A condition where you have a lack of calories and essential nutrients.
+
+Causes:
+- Energy [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- Stamina consumption [+50%]
+- Stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"カロリーと必須栄養素が不足している状態。
+
+原因：
+- エネルギー [0]
+
+症状：
+- 体力 [-1 単位 / 10 秒]
+- スタミナ消費量 [+50%]
+- スタミナ回復量 [-50%]
+
+治療法：
+- 消耗品"
+UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	脱水
+UI/Interface	Character/Medical/Elements/Dehydration	Info		"A condition where your body doesn't have enough fluids to function normally.
+
+Causes:
+- Hydration [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- All stamina consumption [+50%]
+- All stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"体内の水分が不足し、正常に機能しなくなる状態。
+
+原因：
+- 脱水症状 [0]
+
+症状：
+- 体力 [-1 単位 / 10 秒]
+- すべてのスタミナ消費 [+50%]
+- すべてのスタミナ回復 [-50%]
+
+治療法：
+- 消耗品"
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Bleeding	出血
+UI/Interface	Character/Medical/Elements/Bleeding	Info		"A condion where you have a minor bleeding from small cuts or scrapes.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+- Razor wire
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures: 
+- Bandage
+- Tourniquet
+- Medkit
+- IFAK / AFAK"	"小さな切り傷や擦り傷から軽度の出血が見られる状態。
+
+原因：
+- 武器によるダメージ
+- 爆発によるダメージ
+- 落下によるダメージ
+- 有刺鉄線
+
+症状：
+- 体力 [-1 単位 / 5 秒]
+
+治療法：
+- 包帯
+- 止血帯
+- 救急キット
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Fracture	Info		Fracture	骨折
+UI/Interface	Character/Medical/Elements/Fracture	Info		"A condition where you have a partial or complete break in the bone.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures: 
+- Splint
+- Medkit
+- IFAK / AFAK"	"骨が部分的または完全に折れてしまう状態。
+
+原因：
+- 武器によるダメージ
+- 爆発によるダメージ
+- 落下によるダメージ
+
+症状：
+- 体力 [-1 / 5秒]
+- 移動速度 [-50%]
+- ジャンプ高さ [-50%]
+
+治療法：
+- 副木
+- 救急キット
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Burn	Info		Burn	バーン
+UI/Interface	Character/Medical/Elements/Burn	Info		"A condition where you have a tissue damage from intense heat or high-voltage electric current.
+
+Causes:
+- Fire damage
+- Electrical damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Balm
+- Lotion
+- Medkit
+- IFAK / AFAK"	"強烈な熱や高電圧の電流によって組織が損傷する状態。
+
+原因：
+- 火災による損傷
+- 感電による損傷
+
+症状：
+- 体力 [-1 / 5秒]
+
+治療法：
+- バーム
+- ローション
+- 救急キット
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Burn	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Frostbite	凍傷
+UI/Interface	Character/Medical/Elements/Frostbite	Info		"A condition where you have hypothermia or body part freezes from cold exposure.
+
+Causes: 
+- Body temperature [0]
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Fire sources
+- Sleeping Bag
+- Thermal Blanket"	"寒さにさらされたことで低体温症になったり、体の部位が凍傷になったりする状態。
+
+原因：
+- 体温 [0]
+
+症状：
+- 体力 [-1 単位 / 5 秒]
+
+治療法：
+- 火源
+- 寝袋
+- 保温ブランケット"
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Insanity	Info		Insanity	狂気
+UI/Interface	Character/Medical/Elements/Insanity	Info		"A condition where your sanity breaks and you start having dark thoughts.
+
+Causes: 
+- Mental [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+
+Cures:
+- Consumables
+- Sleeping
+- Fire sources
+- Instruments"	"正気を失い、暗い考えが頭をよぎるようになる状態。
+
+原因：
+- 精神 [0]
+
+症状：
+- 体力 [-1 単位 / 10 秒]
+
+治療法：
+- 消耗品
+- 睡眠
+- 火源
+- 楽器"
+UI/Interface	Character/Medical/Elements/Insanity	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Poisoning	中毒
+UI/Interface	Character/Medical/Elements/Poisoning	Info		"A condition where toxic substance entered your digestion or lungs.
+
+Causes:
+- Chemical damage
+- Toxic consumables
+
+Symptoms:
+- Health [-1 unit / 2 sec]
+
+Cures:
+- Medkit
+- AFAK"	"消化管や肺に有毒物質が入り込んだ状態。
+
+原因：
+- 化学物質による損傷
+- 有毒な消耗品
+
+症状：
+- 体力 [-1 / 2秒]
+
+治療法：
+- 救急キット
+- AFAK"
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Rupture	Info		Rupture	破裂
+UI/Interface	Character/Medical/Elements/Rupture	Info		"A critical condition where you have a catastrofal bleeding or major internal wound.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"致命的な出血や重度の内傷を負った重篤な状態。
+
+原因：
+- 武器によるダメージ
+- 爆発によるダメージ
+
+症状：
+- 体力 [1秒ごとに-1]
+
+治療法：
+- 救急キット
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Rupture	Info		Medical Condition	病状
+UI/Interface	Character/Medical/Elements/Headshot	Info		Headshot	顔面直撃
+UI/Interface	Character/Medical/Elements/Headshot	Info		"A critical condition where you have a major head related wound.
+
+Causes: 
+- Weapon damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"頭部に重傷を負った重篤な状態。
+
+原因：
+- 武器によるダメージ
+
+症状：
+- 体力 [1秒ごとに-1]
+
+治療法：
+- 救急キット
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Headshot	Info		Medical Condition	病状
+UI/Interface	Character/Stats/Elements/Day	Info		Day	日
+UI/Interface	Character/Stats/Elements/Day	Info		"Number of Days survived.
+
+New day begins at 00:00 midnight and certain amount of days will unlock new game events.
+
+Upcoming events can be displayed by using the Events tool."	"生存日数。
+
+新しい日は深夜00:00に始まり、一定の日数が経過すると新しいゲームイベントが解放されます。
+
+今後のイベントは、「イベント」ツールから確認できます。"
+UI/Interface	Character/Stats/Elements/Day	Info		Progression Stat	進行状況
+UI/Interface	Character/Stats/Elements/Shelters	Info		Shelters	避難所
+UI/Interface	Character/Stats/Elements/Shelters	Info		"Number of Shelters unlocked.
+
+Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
+
+New game starts with two unlocked Shelters called Cabin and Tent.
+
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	"アンロックされたシェルターの数。
+
+シェルターは、進行状況や入手したアイテムを保存できる安全な場所です。ゲームの世界には複数のシェルターがあり、テーマ、大きさ、カスタマイズ性などがそれぞれ異なります。
+
+新規ゲーム開始時には、「キャビン」と「テント」という2つのシェルターが最初から利用可能です。
+
+その他のシェルターは、各商人からのタスクを完了することで入手できる鍵を使ってアンロックできます。"
+UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	進行状況
+UI/Interface	Character/Stats/Elements/Tasks	Info		Tasks	タスク
+UI/Interface	Character/Stats/Elements/Tasks	Info		"Number of Tasks completed.
+
+Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
+
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"完了したタスクの数。
+
+タスクとは、商人から受けられるアイテムを扱う仕事です。タスクは複数の商人の間で相互に関連している場合があり、また、クラフトに非入手可能なアイテムが必要になることもあります。
+
+タスクは、取引価格の引き下げ（商人税）や、新しいシェルターや特別ルームのロックを解除するための鍵の入手につながります。"
+UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	進行状況
+UI/Interface	Character/Stats/Elements/Quests	Info		Quests	クエスト
+UI/Interface	Character/Stats/Elements/Quests	Info		"Number of Quests completed.
+
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"完了したクエストの数。
+
+クエストとは、商人から受けられる物語に基づいた任務のことです。クエストは複数の商人同士で関連している場合があり、利用可能になる前に特定のイベントが発生する必要がある場合があります。"
+UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	進行状況
+UI/Interface	Character/Stats/Elements/CDS	Info		Civil Defence Shelters	民間防空壕
+UI/Interface	Character/Stats/Elements/CDS	Info		"Number of CDS completed.
+
+Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
+
+After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
+
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	"CDSのクリア数。
+
+民間防衛シェルター（CDS）は、軍事的脅威から身を守るために設計されたコンクリート製のバンカーおよび地下施設です。
+
+エリア05からの避難後、これらのCDSは占拠され、内部にあった生存用装備のほとんどが盗まれてしまいました。
+
+CDSをクリアするには、敵を全滅させ、CDSの緊急放送用ラジオの電源を再び入れる必要があります。"
+UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	進行状況
+UI/Interface	Character/Stats/Elements/?	Info		Silent Night	きよしこの夜
+UI/Interface	Character/Stats/Elements/?	Info		"There will be a silent night when all fades away.
+
+When you look up, you see the North Star, your only light in the darkness.
+
+This light reminds you of home, a place where you came from and where you will return.
+
+You feel safe, a peaceful moment that feels like the ending you wanted.
+
+Then your last light disappears, the sky turns red and the silence breaks."	"すべてが消え去る、静寂の夜が訪れる。
+
+見上げれば、北極星が見える。それは暗闇の中で唯一の光だ。
+
+その光は、故郷を思い出させる。あなたが生まれ、そして帰っていく場所だ。
+
+安心感を覚える。それは、あなたが望んでいた結末のような、安らかなひとときだ。
+
+そして、最後の光が消え、空が赤く染まり、静寂が破られる。"
+UI/Interface	Character/Stats/Elements/?	Info		Special Event	特別イベント
+UI/Interface	Supply/Header/Value	Info		Supply Value	供給価値
+UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	すべての供給品目の価格（ユーロ）
+UI/Interface	Supply/Header/Value	Info		Trader Stat	トレーダー統計
+UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
+
+Name: Commonly known name among locals.
+Tax: Price multiplier for supply items.
+Tasks: Number of completed tasks.
+Resupply: Time when supply resets."	"物資の取引、クエスト、専門サービスを提供する親しみやすいNPC。
+
+名前：地元の人々の間で広く知られている名前。
+税金：物資の価格に適用される倍率。
+クエスト：完了したクエストの数。
+再補給：物資が補充される時間。"
+UI/Interface	Trader/Panel	Info		Trader Info	トレーダー情報
+UI/Interface	Deal/Panel	Info		Deal	取引
+UI/Interface	Deal/Panel	Info		"A deal balance meter which compares selected item values.
+
+Requsted Value (€) is calculated from selected Supply items with Tax added.
+
+Offer Value (€) is calculated from selected Inventory items.
+
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	"選択した項目の金額を比較する取引バランスメーターです。
+
+「要求額（€）」は、選択された供給品目に税額を加算して算出されます。
+
+「提示額（€）」は、選択された在庫品目から算出されます。
+
+取引メーターが緑色の範囲内にある場合、取引は成立します。これは、提示額が要求額＋税額以上であることを意味します。"
+UI/Interface	Deal/Panel	Info		Deal Meter	取引メーター

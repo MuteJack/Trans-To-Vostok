@@ -51,6 +51,28 @@ _Translation last updated: 2026-05-10T18:02:31+09:00_
 **Texture Reworkers:**
 - MuteJack
 
+### German (`Translations/German/`)
+
+**Lead Translator(s):** _(none yet)_
+
+**Translator(s):** _(none yet)_
+
+**Translation Contributors:** _(none yet)_
+
+**Texture Reworkers:**
+- MuteJack
+
+### Japanese (`Translations/Japanese/`)
+
+**Lead Translator(s):** _(none yet)_
+
+**Translator(s):** _(none yet)_
+
+**Translation Contributors:** _(none yet)_
+
+**Texture Reworkers:**
+- MuteJack
+
 ### Korean (`Translations/Korean/`)
 
 _Translation last updated: 2026-05-30T02:26:13+09:00_
@@ -73,6 +95,17 @@ _Translation last updated: 2026-05-10T18:03:51+09:00_
 
 **Lead Translator(s):**
 - Mute Jack
+
+**Translator(s):** _(none yet)_
+
+**Translation Contributors:** _(none yet)_
+
+**Texture Reworkers:**
+- MuteJack
+
+### Spanish_LatAm (`Translations/Spanish_LatAm/`)
+
+**Lead Translator(s):** _(none yet)_
 
 **Translator(s):** _(none yet)_
 

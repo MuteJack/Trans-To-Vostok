@@ -1,0 +1,608 @@
+location	parent	name	type	text	translation
+Scenes/Menu	.	Compatibility	Label	Compatibility	Compatibilidad
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Escalado de la interfaz de usuario [Próximamente]
+UI/Interface	Equipment/Hints	Knife	Label	Knife	Cuchillo
+UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Granada
+UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Granada
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	Calor
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	Un material de artesanía cercano que puede ser necesario para ciertas recetas de cocina.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	Requisito de proximidad
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	Banco de trabajo
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	Un elemento de artesanía cercano que puede ser necesario para ciertas recetas relacionadas con la construcción.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	Requisito de proximidad
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	Banco de pruebas
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	Un material de fabricación cercano que puede ser necesario para ciertas recetas de objetos electrónicos.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	Requisito de proximidad
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	Refugio
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	Un elemento de artesanía cercano que puede ser necesario para ciertas recetas relacionadas con muebles.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	Requisito de proximidad
+UI/Interface	Trader/Panel	Info		Trader	Operador
+UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	Capacidad de carga
+UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	El valor de la capacidad (kg) de todos los equipos.
+UI/Interface	Inventory/Header/Capacity	Info		Inventory Stat	Estadísticas de inventario
+UI/Interface	Inventory/Header/Weight	Info		Inventory Weight	Peso de inventario
+UI/Interface	Inventory/Header/Weight	Info		A weight value (kg) of all inventory items.	El peso (en kg) de todos los artículos en inventario.
+UI/Interface	Inventory/Header/Weight	Info		Inventory Stat	Estadísticas de inventario
+UI/Interface	Inventory/Header/Value	Info		Inventory Value	Valor de inventario
+UI/Interface	Inventory/Header/Value	Info		A price value (€) of all inventory items.	El valor total (en euros) de todos los artículos en inventario.
+UI/Interface	Inventory/Header/Value	Info		Inventory Stat	Estadísticas de inventario
+UI/Interface	Container/Header/Weight	Info		Container Weight	Peso del contenedor
+UI/Interface	Container/Header/Weight	Info		A weight value (kg) of all container items.	El peso total (en kg) de todos los artículos del contenedor.
+UI/Interface	Container/Header/Weight	Info		Container Stat	Estado del contenedor
+UI/Interface	Container/Header/Value	Info		Container Value	Valor del contenedor
+UI/Interface	Container/Header/Value	Info		A price value (€) of all container items.	El valor total (en euros) de todos los artículos en contenedores.
+UI/Interface	Container/Header/Value	Info		Container Stat	Estado del contenedor
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Carry Capacity	Capacidad de carga
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		"A weight capacity value (kg) of how much inventory weight you can carry.
+
+Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
+
+Carry Capacity by default is 10kg"	"Un valor de capacidad de carga (kg) que indica cuánto peso de inventario puedes transportar.
+
+La capacidad de carga aumenta cuando equipas objetos como mochilas, arneses o ropa con una estadística de capacidad positiva.
+
+La capacidad de carga predeterminada es de 10 kg"
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	Estadísticas del equipo
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	Valor del equipo
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	El valor (en euros) de todos los artículos de equipo.
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	Estadísticas del equipo
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	Aislamiento
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
+
+Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
+
+Insulation increases when you equip clothing items with a positive insulation stat.
+
+Insulation examples:
+[100] = B. Temp decrease fully stopped
+[50] = B. Temp decrease slowed by 50%
+[0] = B. Temp decreases at default rate"	"Un valor de protección térmica contra el frío basado en la ropa.
+
+El aislamiento está vinculado a la temperatura corporal, ya que reduce la velocidad a la que esta desciende en invierno.
+
+El aislamiento aumenta cuando te equipas con prendas que tienen un valor de aislamiento positivo.
+
+Ejemplos de aislamiento:
+[100] = La disminución de la temperatura corporal se detiene por completo
+[50] = La disminución de la temperatura corporal se ralentiza en un 50 %
+[0] = La temperatura corporal disminuye a la velocidad predeterminada"
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Equipment Stat	Estadísticas del equipo
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Dexterity	Destreza
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		"An inertia-based value of how quickly you can move and do certain actions.
+
+Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
+
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	"Un valor basado en la inercia que indica la rapidez con la que puedes moverte y realizar ciertas acciones.
+
+La destreza está relacionada con la velocidad de movimiento y el manejo de las armas, como apuntar y recargar.
+
+La destreza disminuye cuando equipas objetos pesados o poco ergonómicos que tienen un valor negativo en la estadística de destreza."
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	Estadísticas del equipo
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Menace	Amenaza
+UI/Interface	Equipment/Stats/Elements/Menace	Info		"An intimidation value of how threatening AI sees your character and equipment.
+
+When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
+
+Menace increases when you equip items such as special clothing with a positive Menace stat.
+
+Menace only affects low-tier AI (Bandits)."	"Un valor de intimidación que indica el grado de amenaza que la IA percibe en tu personaje y tu equipamiento.
+
+Cuando tienes un valor de Amenaza alto, es menos probable que la IA utilice comportamientos agresivos o de ataque contra ti.
+
+La Amenaza aumenta cuando equipas objetos como ropa especial con una estadística de Amenaza positiva.
+
+La Amenaza solo afecta a la IA de bajo nivel (bandidos)."
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	Estadísticas del equipo
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		CBRN	CBRN
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		"A protection value against chemical, biological, radiological and nuclear threats.
+
+CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
+
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	"Un valor de protección frente a amenazas químicas, biológicas, radiológicas y nucleares.
+
+El CBRN está vinculado a la salud vital, ya que reduce la velocidad a la que disminuye la salud cuando te expones a zonas o materiales peligrosos.
+
+El CBRN aumenta cuando te equipas con objetos como ropa especial o máscaras protectoras que tengan una estadística CBRN positiva."
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		Equipment Stat	Estadísticas del equipo
+UI/Interface	Character/Vitals/Elements/Health	Info		Health	Salud
+UI/Interface	Character/Vitals/Elements/Health	Info		"Your main vital for staying alive.
+
+Health decreases with damages and active medical conditions.
+
+Health increases with certain medical items such as Bandages and Medkits.
+
+Health [0] -> Character dies"	"Tu salud es fundamental para seguir con vida.
+
+La salud disminuye con los daños y las afecciones médicas activas.
+
+La salud aumenta con ciertos artículos médicos, como vendajes y botiquines.
+
+Salud [0] -> El personaje muere"
+UI/Interface	Character/Vitals/Elements/Health	Info		Vital	Fundamental
+UI/Interface	Character/Vitals/Elements/Energy	Info		Energy	Energía
+UI/Interface	Character/Vitals/Elements/Energy	Info		"Your hunger and energy level.
+
+Energy decreases over time and using map transitions with Energy Cost.
+
+Energy increases with certain consumables such as food.
+
+Energy [0] -> Starvation (Condition)"	"Tu nivel de hambre y de energía.
+
+La energía disminuye con el tiempo y al usar transiciones de mapa que consumen energía.
+
+La energía aumenta con ciertos consumibles, como la comida.
+
+Energía [0] -> Inanición (Condición)"
+UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	Fundamental
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	Hidratación
+UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
+
+Hydration decreases over time and using map transitions with Hydration Cost. 
+
+Certain dry or salty consumables may also decrease Hydration.
+
+Hydration increases with certain consumables such as drinks.
+
+Hydration [0] -> Dehydration (Condition)"	"Tu sed y tu nivel de hidratación.
+
+La hidratación disminuye con el tiempo y al realizar transiciones entre mapas que impliquen un «costo de hidratación».
+
+Ciertos consumibles secos o salados también pueden reducir la hidratación.
+
+La hidratación aumenta con ciertos consumibles, como las bebidas.
+
+Hidratación [0] -> Deshidratación (condición)"
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	Fundamental
+UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	Mental
+UI/Interface	Character/Vitals/Elements/Mental	Info		"Your happiness and sanity level.
+
+Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
+
+Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
+
+Mental [0] -> Insanity (Condition)"	"Tu nivel de felicidad y cordura.
+
+La cordura disminuye con el tiempo y al consumir productos nocivos. Cualquier afección médica activa duplica la velocidad de disminución.
+
+La cordura aumenta con artículos reconfortantes, como bocadillos, comidas calientes y vicios como el alcohol o los productos con nicotina.
+
+Cordura [0] -> Locura (Afección)"
+UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	Fundamental
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	Temperatura corporal
+UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
+
+Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
+
+Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
+
+Body Temp [0] -> Frostbite (Condition)"	"Tu calor corporal y tu temperatura corporal.
+
+La temperatura corporal disminuye con el tiempo en invierno. La velocidad de esta disminución puede reducirse permaneciendo en interiores o utilizando prendas con un valor de aislamiento positivo.
+
+La temperatura corporal aumenta en los refugios o al permanecer cerca de fuentes de calor, como el fuego. Ciertos artículos relacionados con el calor, como las bolsas térmicas o las mantas isotérmicas, también aumentarán la temperatura corporal.
+
+Temperatura corporal [0] -> Congelación (condición)"
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	Fundamental
+UI/Interface	Character/Vitals/Elements/Cat	Info		Cat	Gato
+UI/Interface	Character/Vitals/Elements/Cat	Info		"Grandma's cat health level.
+
+Cat health activates if you decide to rescue the Cat and bring her to your shelter.
+
+Cat health decreases over time.
+
+Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
+
+Cat [0] -> Cat dies"	"Nivel de salud de la gata de la abuela.
+
+La salud de la gata se activa si decides rescatarla y llevarla a tu refugio.
+
+La salud de la gata disminuye con el tiempo.
+
+La salud de la gata aumenta cuando le das de comer productos como comida para gatos o atún enlatado.
+
+Gata [0] -> La gata muere"
+UI/Interface	Character/Vitals/Elements/Cat	Info		Vital	Fundamental
+UI/Interface	Character/Medical/Elements/Overweight	Info		"A condition where you are carrying too much weight and movement becomes unsustainable.
+
+Causes:
+- Inventory Weight > Carry Capacity
+
+Symptoms
+- All stamina consumption [+50%]
+- All stamina regeneration [Blocked]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures:
+- Inventory Weight < Carry Capacity"	"Una condición en la que llevas demasiado peso y el movimiento se vuelve insostenible.
+
+Causas:
+- Peso del inventario > Capacidad de carga
+
+Síntomas:
+- Consumo de resistencia [+50 %]
+- Regeneración de resistencia [Bloqueada]
+- Velocidad de movimiento [-50 %]
+- Altura de salto [-50 %]
+
+Soluciones:
+- Peso del inventario < Capacidad de carga"
+UI/Interface	Character/Medical/Elements/Overweight	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Starvation	Info		Starvation	Inanición
+UI/Interface	Character/Medical/Elements/Starvation	Info		"A condition where you have a lack of calories and essential nutrients.
+
+Causes:
+- Energy [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- Stamina consumption [+50%]
+- Stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"Condición en la que sufres una carencia de calorías y nutrientes esenciales.
+
+Causas:
+- Energía [0]
+
+Síntomas:
+- Salud [-1 unidad / 10 s]
+- Consumo de resistencia [+50 %]
+- Regeneración de resistencia [-50 %]
+
+Curas:
+- Consumibles"
+UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	Deshidratación
+UI/Interface	Character/Medical/Elements/Dehydration	Info		"A condition where your body doesn't have enough fluids to function normally.
+
+Causes:
+- Hydration [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- All stamina consumption [+50%]
+- All stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"Condición en la que el cuerpo no tiene suficientes líquidos para funcionar con normalidad.
+
+Causas:
+- Hidratación [0]
+
+Síntomas:
+- Salud [-1 unidad / 10 s]
+- Consumo de resistencia [+50 %]
+- Regeneración de resistencia [-50 %]
+
+Curas:
+- Consumibles"
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Bleeding	Hemorragia
+UI/Interface	Character/Medical/Elements/Bleeding	Info		"A condion where you have a minor bleeding from small cuts or scrapes.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+- Razor wire
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures: 
+- Bandage
+- Tourniquet
+- Medkit
+- IFAK / AFAK"	"Condición en la que se produce un sangrado leve debido a pequeños cortes o rasguños.
+
+Causas: 
+- Daño por arma
+- Daño por explosión
+- Daño por caída
+- Alambre de púas
+
+Síntomas:
+- Salud [-1 unidad / 5 seg]
+
+Tratamientos: 
+- Vendaje
+- Torniquete
+- Botiquín
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Fracture	Info		Fracture	Fractura
+UI/Interface	Character/Medical/Elements/Fracture	Info		"A condition where you have a partial or complete break in the bone.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures: 
+- Splint
+- Medkit
+- IFAK / AFAK"	"Afección en la que se produce una fractura parcial o completa del hueso.
+
+Causas: 
+- Daño por arma
+- Daño por explosión
+- Daño por caída
+
+Síntomas:
+- Salud [-1 unidad / 5 s]
+- Velocidad de movimiento [-50 %]
+- Altura de salto [-50 %]
+
+Tratamientos: 
+- Férula
+- Botiquín
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Burn	Info		Burn	Quemar
+UI/Interface	Character/Medical/Elements/Burn	Info		"A condition where you have a tissue damage from intense heat or high-voltage electric current.
+
+Causes:
+- Fire damage
+- Electrical damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Balm
+- Lotion
+- Medkit
+- IFAK / AFAK"	"Afección en la que se produce un daño tisular debido al calor intenso o a una corriente eléctrica de alto voltaje.
+
+Causas:
+- Daños por incendio
+- Daños eléctricos
+
+Síntomas:
+- Salud [-1 unidad / 5 s]
+
+Curas:
+- Bálsamo
+- Loción
+- Botiquín
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Burn	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Frostbite	Congelación
+UI/Interface	Character/Medical/Elements/Frostbite	Info		"A condition where you have hypothermia or body part freezes from cold exposure.
+
+Causes: 
+- Body temperature [0]
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Fire sources
+- Sleeping Bag
+- Thermal Blanket"	"Condición en la que se sufre hipotermia o se congelan partes del cuerpo por exposición al frío.
+
+Causas: 
+- Temperatura corporal [0]
+
+Síntomas:
+- Salud [-1 unidad / 5 segundos]
+
+Curas:
+- Fuentes de fuego
+- Saco de dormir
+- Manta térmica"
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Insanity	Info		Insanity	Locura
+UI/Interface	Character/Medical/Elements/Insanity	Info		"A condition where your sanity breaks and you start having dark thoughts.
+
+Causes: 
+- Mental [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+
+Cures:
+- Consumables
+- Sleeping
+- Fire sources
+- Instruments"	"Una afección en la que pierdes la cordura y empiezas a tener pensamientos oscuros.
+
+Causas: 
+- Mental [0]
+
+Síntomas:
+- Salud [-1 unidad / 10 s]
+
+Curas:
+- Consumibles
+- Dormir
+- Fuentes de fuego
+- Instrumentos"
+UI/Interface	Character/Medical/Elements/Insanity	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Poisoning	Intoxicación
+UI/Interface	Character/Medical/Elements/Poisoning	Info		"A condition where toxic substance entered your digestion or lungs.
+
+Causes:
+- Chemical damage
+- Toxic consumables
+
+Symptoms:
+- Health [-1 unit / 2 sec]
+
+Cures:
+- Medkit
+- AFAK"	"Condición en la que una sustancia tóxica ha entrado en tu sistema digestivo o en tus pulmones.
+
+Causas:
+- Daño químico
+- Productos tóxicos
+
+Síntomas:
+- Salud [-1 unidad / 2 s]
+
+Curas:
+- Botiquín
+- AFAK"
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Rupture	Info		Rupture	Ruptura
+UI/Interface	Character/Medical/Elements/Rupture	Info		"A critical condition where you have a catastrofal bleeding or major internal wound.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"Una condición crítica en la que sufres una hemorragia catastrófica o una herida interna grave.
+
+Causas: 
+- Daño por arma
+- Daño por explosión
+
+Síntomas:
+- Salud [-1 unidad / 1 seg]
+
+Curas:
+- Botiquín
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Rupture	Info		Medical Condition	Afección médica
+UI/Interface	Character/Medical/Elements/Headshot	Info		Headshot	Foto de rostro
+UI/Interface	Character/Medical/Elements/Headshot	Info		"A critical condition where you have a major head related wound.
+
+Causes: 
+- Weapon damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"Una condición crítica en la que se sufre una herida grave en la cabeza.
+
+Causas: 
+- Daño por arma
+
+Síntomas:
+- Salud [-1 unidad / 1 seg]
+
+Tratamientos:
+- Botiquín
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Headshot	Info		Medical Condition	Afección médica
+UI/Interface	Character/Stats/Elements/Day	Info		Day	Día
+UI/Interface	Character/Stats/Elements/Day	Info		"Number of Days survived.
+
+New day begins at 00:00 midnight and certain amount of days will unlock new game events.
+
+Upcoming events can be displayed by using the Events tool."	"Número de días sobrevividos.
+
+El nuevo día comienza a las 00:00 de la medianoche y, al acumular una determinada cantidad de días, se desbloquearán nuevos eventos del juego.
+
+Los próximos eventos se pueden consultar mediante la herramienta «Eventos»."
+UI/Interface	Character/Stats/Elements/Day	Info		Progression Stat	Estadísticas de progreso
+UI/Interface	Character/Stats/Elements/Shelters	Info		Shelters	Refugios
+UI/Interface	Character/Stats/Elements/Shelters	Info		"Number of Shelters unlocked.
+
+Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
+
+New game starts with two unlocked Shelters called Cabin and Tent.
+
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	"Número de refugios desbloqueados.
+
+Los refugios son zonas seguras donde guardar tu progreso y tu botín. El mundo del juego cuenta con múltiples refugios, que varían en cuanto a temática, tamaño y posibilidades de personalización.
+
+Al iniciar una nueva partida, se desbloquean dos refugios: la cabaña y la tienda de campaña.
+
+Se pueden desbloquear refugios adicionales con llaves que se obtienen al completar misiones de diferentes comerciantes."
+UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	Estadísticas de progreso
+UI/Interface	Character/Stats/Elements/Tasks	Info		Tasks	Tareas
+UI/Interface	Character/Stats/Elements/Tasks	Info		"Number of Tasks completed.
+
+Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
+
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"Número de tareas completadas.
+
+Las tareas son encargos basados en objetos que te dan los comerciantes. Las tareas pueden estar interrelacionadas entre varios comerciantes y también pueden requerir la fabricación de objetos que no se pueden obtener como botín.
+
+Las tareas están vinculadas a precios de intercambio más bajos (impuesto de comerciante) y a la obtención de llaves para desbloquear nuevos refugios y salas especiales."
+UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	Estadísticas de progreso
+UI/Interface	Character/Stats/Elements/Quests	Info		Quests	Misiones
+UI/Interface	Character/Stats/Elements/Quests	Info		"Number of Quests completed.
+
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"Número de misiones completadas.
+
+Las misiones son encargos basados en la historia que te dan los comerciantes. Las misiones pueden estar relacionadas entre sí a través de varios comerciantes y es posible que deban ocurrir ciertos eventos antes de que estén disponibles."
+UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	Estadísticas de progreso
+UI/Interface	Character/Stats/Elements/CDS	Info		Civil Defence Shelters	Refugios de defensa civil
+UI/Interface	Character/Stats/Elements/CDS	Info		"Number of CDS completed.
+
+Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
+
+After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
+
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	"Número de refugios de defensa civil completados.
+
+Los refugios de defensa civil (CDS) son búnkeres de hormigón y zonas subterráneas diseñadas para ofrecer protección frente a amenazas militares.
+
+Tras la evacuación de la Zona 05, estos refugios fueron asaltados y la mayor parte del equipo de supervivencia que había en su interior fue robado.
+
+Puedes completar un refugio de defensa civil eliminando a los enemigos hostiles y volviendo a conectar la radio de emergencia del refugio."
+UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	Estadísticas de progreso
+UI/Interface	Character/Stats/Elements/?	Info		Silent Night	Noche de paz
+UI/Interface	Character/Stats/Elements/?	Info		"There will be a silent night when all fades away.
+
+When you look up, you see the North Star, your only light in the darkness.
+
+This light reminds you of home, a place where you came from and where you will return.
+
+You feel safe, a peaceful moment that feels like the ending you wanted.
+
+Then your last light disappears, the sky turns red and the silence breaks."	"Habrá una noche silenciosa en la que todo se desvanecerá.
+
+Cuando levantas la vista, ves la Estrella Polar, tu única luz en la oscuridad.
+
+Esta luz te recuerda a tu hogar, el lugar del que vienes y al que volverás.
+
+Te sientes a salvo, un momento de paz que parece el final que deseabas.
+
+Entonces, tu última luz se desvanece, el cielo se tiñe de rojo y el silencio se rompe."
+UI/Interface	Character/Stats/Elements/?	Info		Special Event	Evento especial
+UI/Interface	Supply/Header/Value	Info		Supply Value	Valor de suministro
+UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	El valor del precio (€) de todos los artículos del suministro.
+UI/Interface	Supply/Header/Value	Info		Trader Stat	Estadísticas del operador
+UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
+
+Name: Commonly known name among locals.
+Tax: Price multiplier for supply items.
+Tasks: Number of completed tasks.
+Resupply: Time when supply resets."	"Un PNJ amistoso que ofrece suministros, misiones y servicios especializados.
+
+Nombre: Nombre con el que lo conocen los lugareños.
+Impuesto: Multiplicador del precio de los artículos de suministro.
+Misiones: Número de misiones completadas.
+Reabastecimiento: Hora a la que se repone el suministro."
+UI/Interface	Trader/Panel	Info		Trader Info	Información del operador
+UI/Interface	Deal/Panel	Info		Deal	Oferta
+UI/Interface	Deal/Panel	Info		"A deal balance meter which compares selected item values.
+
+Requsted Value (€) is calculated from selected Supply items with Tax added.
+
+Offer Value (€) is calculated from selected Inventory items.
+
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	"Un indicador de equilibrio de la operación que compara los valores de los artículos seleccionados.
+
+El valor solicitado (€) se calcula a partir de los artículos de suministro seleccionados, con el impuesto incluido.
+
+El valor de la oferta (€) se calcula a partir de los artículos de inventario seleccionados.
+
+La operación se puede aceptar cuando el indicador de equilibrio se encuentra dentro de la zona verde, lo que significa que el valor de la oferta iguala o supera el valor solicitado más el impuesto."
+UI/Interface	Deal/Panel	Info		Deal Meter	Medidor de ofertas

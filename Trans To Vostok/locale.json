@@ -31,6 +31,30 @@
       "message": "SSelecione um idioma (Brasil)",
       "substr_mode_label": "Modo Substr (não recomendado — ative apenas se muitos textos não forem traduzidos após uma atualização do jogo)",
       "enabled": true
+    },
+    {
+      "locale": "German",
+      "dir": "German",
+      "display": "Deutsch",
+      "message": "Sprache wählen",
+      "substr_mode_label": "Substr-Modus (nicht empfohlen — nur aktivieren, falls nach einem Spiel-Update viele Texte unübersetzt bleiben)",
+      "enabled": true
+    },
+    {
+      "locale": "Spanish_LatAm",
+      "dir": "Spanish_LatAm",
+      "display": "Español (LatAm)",
+      "message": "Seleccionar idioma",
+      "substr_mode_label": "Modo Substr (no recomendado — actívalo solo si muchos textos quedan sin traducir tras una actualización del juego)",
+      "enabled": true
+    },
+    {
+      "locale": "Japanese",
+      "dir": "Japanese",
+      "display": "日本語",
+      "message": "言語を選択",
+      "substr_mode_label": "Substrモード（非推奨 — ゲーム更新後に多くのテキストが翻訳されない場合のみ有効化）",
+      "enabled": true
     }
   ]
 }

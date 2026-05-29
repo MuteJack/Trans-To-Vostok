@@ -1,0 +1,627 @@
+text	translation
+Compatibility	互換性
+Selected	選択済み
+Press key to bind...	キーを押して割り当ててください...
+Forward	次へ
+Backward	戻る
+Left	左
+Right	その通り
+Crouch	クラウチ
+Jump	ジャンプ
+Sprint	スプリント
+Lean Left	左寄り
+Lean Right	右に傾く
+Draw Primary	プライマリの描画
+Draw Secondary	セカンダリを描画
+Draw Knife	引き鉋
+Draw Grenade 1	手榴弾1を投げる
+Draw Grenade 2	手榴弾を投げる 2
+Raise Weapon	武器を構える
+Lower Weapon	武器を下げる
+Aim	目的
+Canted Aim	傾斜した照準
+Fire	火
+Reload	再読み込み
+Ammo Check	弾薬確認
+Firemode	ファイアモード
+Inspect Weapon	武器を点検する
+Prepare Insert	挿入の準備
+Insert Cartridge	カートリッジを挿入してください
+Interact	交流する
+Place	場所
+Decor Mode	デコレーションモード
+Flashlight	懐中電灯
+NVG	NVG
+Laser	レーザー
+Rail Movement	レールの動き
+Secondary Optic	二次光学系
+Interface	インターフェース
+Rotate Item	アイテムを回転
+Fast Transfer	高速転送
+Fast Equip	即装備
+Fast Drop	ファスト・ドロップ
+Left Mouse Button	マウスの左ボタン
+Right Mouse Button	マウスの右ボタン
+Middle Mouse Button	マウスの中ボタン
+Mouse Wheel Up	マウスホイールを上にスクロール
+Mouse Wheel Down	マウスホイールを下にスクロール
+Mouse Thumb Button 1	マウスの親指ボタン 1
+Mouse Thumb Button 2	マウスの親指ボタン 2
+UI Scaling	UIの拡大縮小
+Loading...	読み込み中...
+Skip Intro [SPACE]	イントロをスキップ [スペース]
+All save files deleted	保存されたファイルがすべて削除されました
+Character died	キャラクターが死亡しました
+Intro	はじめに
+Cabin	キャビン
+Shelter	シェルター
+Tutorial	チュートリアル
+Menu	メニュー
+Attic	屋根裏部屋
+Death	死
+Classroom	教室
+Tent	テント
+Bunker	バンカー
+Village	村
+Area 05	エリア05
+Highway	高速道路
+School	学校
+Outpost	前哨基地
+Border Zone	国境地帯
+Minefield	地雷原
+Apartments	アパート
+Terminal	ターミナル
+Tutorial Exit	チュートリアルの終了
+Template	テンプレート
+shaders	シェーダー
+Trader	トレーダー
+Generalist	ジェネラリスト
+Doctor	医師
+Gunsmith	銃器職人
+Driver	ドライバー
+Grandma	おばあちゃん
+Shaman	シャーマン
+Fisherman	漁師
+Scientist	科学者
+Bandit	バンディット
+Guards	警備員
+Military	軍事
+Punisher	パニッシャー
+Neutral	中立
+Overcast	曇り
+Rain	雨
+Storm	嵐
+Generic	一般
+Wood	木材
+Metal	金属
+Concrete	コンクリート
+Rock	ロック
+Vostok	ボストーク
+Inventory	在庫
+Primary	小学校
+Secondary	中等
+Vital	不可欠
+Task Notes empty	タスクのメモは空です
+Task Notes not available (Tutorial)	タスクノートは利用できません（チュートリアル）
+Map not equipped	マップが装備されていません
+Map not usable (Vostok)	地図は使用不可（ボストーク）
+Casette Player not equipped	カセットプレーヤーは搭載されていません
+Casette Player power 0%, recharge player	カセットプレーヤーのバッテリー残量 0%、プレーヤーを充電してください
+Casette Player empty, insert casette	カセットプレーヤーにカセットが入っていません。カセットを入れてください。
+Override Ambient Music [ON]	BGMの上書き [ON]
+Override Ambient Music [OFF]	BGMの上書き [OFF]
+Sleep	睡眠
+Level 2	レベル2
+Level 3	レベル3
+Level 4	レベル4
+Level 5	レベル5
+Heat required	加熱が必要
+Workbench required	ワークベンチが必要です
+Shelter required	シェルターが必要
+Start Input	入力を開始
+Stop Input	入力を停止
+Reset Input	入力をリセット
+Start Delivery	配送を開始する
+Stop Delivery	配達停止
+Delivered	納品済み
+CBRN	CBRN
+Overweight	肥満
+Explosion	爆発
+Fall	秋
+Day	日
+Easy	簡単
+Intermediate	中級
+Hard	難しい
+Trader Event	トレーダー向けイベント
+Dynamic Event	ダイナミック・イベント
+Special Event	特別イベント
+Dynamic	ダイナミック
+Special	スペシャル
+Guaranteed	保証付き
+Common	一般的な
+Rare	希少
+Legendary	伝説の
+Armor Plate	装甲板
+Armor	鎧
+Armor Plate {class}	装甲板 {class}
+Armor Plate (II)	装甲板（II）
+Armor Plate (III+)	装甲板（III+）
+Armor Plate (III)	装甲板（III）
+Armor Plate (IIIA)	鎧板（III A）
+Armor Plate (IV)	装甲板（IV）
+Backpack	リュックサック
+Jääkäri Backpack (Black)	ヤーカリー・バックパック（ブラック）
+Jääkäri BP.	ヤーカリ BP.
+Jääkäri Backpack (Brown)	ヤーカリ・バックパック（ブラウン）
+Jääkäri Backpack (Green)	ヤーカリー・バックパック（グリーン）
+Jääkäri Backpack (M05)	ヤーカリ・バックパック (M05)
+Nomad Backpack	ノマド・バックパック
+Nomad BP.	ノマドBP。
+Patrol Backpack	パトロール用バックパック
+Patrol BP.	パトロールBP。
+Duffel (Retro)	ダッフルバッグ（レトロ）
+R. Duffel	R. ダッフェル
+Belt Pouch	ベルトポーチ
+Kukkaro (Black)	クッカロ（ブラック）
+Kukkaro	クッカロ
+Kukkaro (Brown)	クッカロ（ブラウン）
+Kukkaro (Green)	クッカロ（グリーン）
+Kukkaro (M05)	クッカロ (M05)
+Literature	文学
+Book (Children)	絵本
+Children	子どもたち
+Book (Cooking)	本（料理）
+Cooking	料理
+Book (Fishing)	本（釣り）
+Book (Religion)	書籍（宗教）
+Religion	宗教
+Clothing	衣類
+Flame Beanie	フレイム・ビーニー
+F. Beanie	F. ビーニー
+Combat Boots	コンバットブーツ
+C. Boots	C. ブーツ
+M62 Cap	M62キャップ
+Tactical Fleece (Brown)	タクティカルフリース（ブラウン）
+T. Fleece	T. フリース
+Tactical Fleece (Green)	タクティカルフリース（グリーン）
+Leather Gloves	革手袋
+L. Gloves	L. 手袋
+Work Gloves	作業用手袋
+W. Gloves	W. グローブ
+Mosquito Hat	蚊よけ帽子
+M. Hat	M. ハット
+Sauna Hat	サウナ用帽子
+S. Hat	S. ハット
+Hoodie (Border Zone)	フーディー（ボーダーゾーン）
+Hoodie BZ.	フーディー BZ。
+Hoodie B.	フーディー・B
+Hoodie (Gray)	フーディ（グレー）
+Hoodie	フーディ
+M62 Jacket	M62ジャケット
+M62 J.	M62 J.
+Santa Jacket	サンタのジャケット
+Santa J.	サンタ・J
+Winter Jacket (Blue)	冬用ジャケット（ブルー）
+Winter Jacket	冬用ジャケット
+Winter Jacket (Red)	ウィンタージャケット（赤）
+Winter J.	ウィンター・J.
+Jeans (Black)	ジーンズ（ブラック）
+Jeans	ジーンズ
+Hiking Pants	ハイキングパンツ
+Hiking P.	ハイキング P.
+Windbreaker (Black)	ウィンドブレーカー（ブラック）
+Windbreaker	ウインドブレーカー
+Windbr.	ウィンドブレ
+Windbreaker (Green)	ウィンドブレーカー（グリーン）
+Consumables	消耗品
+Consumable	消耗品
+Drink	飲み物
+Eat	食べる
+Eat Raw	生で食べる
+Eat (Raw)	食べる（生）
+Chew	チュー
+Smoke	煙
+Use	使用方法
+Beer	ビール
+Empty Can	空の缶
+Can	できる
+Canned Meat	缶詰の肉
+Meat	肉
+Canned Meatballs	ミートボールの缶詰
+Meatballs	ミートボール
+Canned Pea Soup	缶詰のエンドウ豆のスープ
+Pea Soup	エンドウ豆のスープ
+Canned Peaches	缶詰の桃
+Peaches	ピーチ
+Canned Pear	洋ナシの缶詰
+Pear	洋梨
+Canned Peas	グリーンピースの缶詰
+Peas	エンドウ豆
+Canned Pineapple	パイナップルの缶詰
+Pineapple	パイナップル
+Canned Tomatoes	トマト缶
+Tomatoes	トマト
+Canned Tuna	ツナ缶
+Tuna	マグロ
+Cat Food	キャットフード
+War Chocolate	戦争チョコレート
+W. Choco	W. チョコ
+Cigarettes	タバコ
+Cigs	タバコ
+Cigars	葉巻
+Coffee	コーヒー
+Coffee (Brewed)	コーヒー（ドリップ）
+C. Brewed	C. 醸造
+Fish Soup (Cooked)	魚のスープ（調理済み）
+F. Soup (Cooked)	F. スープ（調理済み）
+F. Soup	F. スープ
+Meatballs (Cooked)	ミートボール（調理済み）
+M. Balls (Cooked)	M. ボールズ（調理済み）
+M. Balls	M. ボールズ
+Pea Soup (Cooked)	エンドウ豆のスープ（調理済み）
+P. Soup (Cooked)	P. スープ（調理済み）
+P. Soup	P. スープ
+Tomato Soup (Cooked)	トマトスープ（調理済み）
+T. Soup (Cooked)	T. スープ（調理済み）
+T. Soup	T. スープ
+Crackers	クラッカー
+Energy Drink	エナジードリンク
+E. Drink	E. 飲み物
+Energy Powder	エナジーパウダー
+E. Powder	E. 粉末
+Field Ration	野戦食
+F. Ration	F. 配給
+Juice	ジュース
+Juice (Orange)	ジュース（オレンジ）
+Juice O.	ジュース・オー
+Juice (Pear)	ジュース（洋梨）
+Juice P.	ジュース・P
+Juice (Raspberry)	ジュース（ラズベリー）
+Juice R.	ジュース・R.
+Kilju	キルジュ
+Kompot	コンポト
+Mustard	マスタード
+Peanuts	ピーナッツ
+Potato	ジャガイモ
+Salty Liquorice	塩味のリコリス
+Salty Liq.	塩味のリキッド
+Snus	スヌース
+Soda (Lemon)	ソーダ（レモン）
+Soda	ソーダ
+Soda L.	ソーダ・L.
+Sugar	砂糖
+Water Bottle	水筒
+Water	水
+Yeast	酵母
+Electronics	電子機器
+Alarm Clock	目覚まし時計
+A. Clock	A. 時計
+Batteries	電池
+Battery	バッテリー
+Battery Cables	バッテリーケーブル
+B. Cables	B. ケーブル
+Casette	カセット
+Casette (Electrofolk)	カセット（エレクトロフォーク）
+Junna - Haavakko	ジュンナ - ハヴァッコ
+Junna - Lempi	ジュンナ - レンピ
+Junna - Mistä Sä Tiesit Tulla	ジュンナ - どうやってここに来ることを知ったの
+Junna - Mukula	ジュンナ - ムクラ
+Junna - Pappa Se Antoi Hevosen	ジュンナ - パパが馬をくれた
+Junna - Rautahepo	ジュンナ - ラウタヘポ
+Junna - Ruslana	ジュンナ - ルスラナ
+Junna - Vandringsman	ジュンナ - 放浪者
+Casette (Nomad)	カセット（ノマド）
+Casette (OST)	カセット（サウンドトラック）
+OST - Alive	OST - Alive
+OST - Daybreak	OST - 夜明け
+OST - Far	OST - Far
+OST - Lost	OST - ロスト
+OST - Rain	OST - レイン
+OST - Road	OST - ロード
+OST - Trailer	OST - 予告編
+OST - Winds	OST - ウィンド
+Casette (Radio Hits)	カセット（ラジオ・ヒット）
+Casette (Symphony)	カセット（交響曲）
+Vostok Symphony	ボストーク交響楽団
+Casette Player	カセットプレーヤー
+C. Player	C. プレイヤー
+Coffeemaster	コーヒーマスター
+C. Master	C. 修士
+Cooking Station	調理ステーション
+C. Station	C. 駅
+Hotplate	ホットプレート
+Inverter	インバータ
+Narva	ナルヴァ
+Polaris	ポラリス
+Fish	魚
+Fishing	釣り
+Bream	鯛
+Fishing Rod	釣り竿
+F. Rod	F. ロッド
+Perch	スズキ
+Pike	パイク
+Roach	ゴキブリ
+Grenade	手榴弾
+Helmet	ヘルメット
+Police Helmet (IIIA)	警察用ヘルメット（IIIA）
+Police Helmet	警察用ヘルメット
+P. Helmet	P. ヘルメット
+Instrument	楽器
+Guitar	ギター
+Harmonica	ハーモニカ
+Harmo.	ハーモ。
+Key	キー
+Attic Key	屋根裏部屋の鍵
+Attic K.	アティック・K
+Bunker Key	バンカー・キー
+Bunker K.	バンカー・K
+Cellar Key	セラー・キー
+Cellar K.	セラーK.
+Classroom Key	教室の鍵
+Class. K.	クラスK
+Gymnasium Key	体育館の鍵
+Gym. K.	ジム・K
+Tunnel Key	トンネルキー
+Tunnel K.	トンネルK
+Knife	ナイフ
+Jaeger 140	イェーガー 140
+Jaeger	イェーガー
+Skrama 200	スクラマ 200
+Skrama	スクラマ
+Skrama 240	スクラマ 240
+Lore	伝承
+Cat	猫
+Oil Sample	石油サンプル
+Oil S.	オイル・S.
+Patient Report	患者報告
+P. Report	P. 報告書
+Heal	癒す
+Spray	スプレー
+Medical	医療
+Antibiotics	抗生物質
+Antibio.	アンチビオ。
+Antiseptic	消毒剤
+A. Septic	A. 浄化槽
+Balm	バーム
+Bandage	包帯
+Bandage (Improvised)	包帯（即席）
+Cold Medicine	風邪薬
+C. Med.	医学博士
+Deodorant	デオドラント
+Deodora.	デオドラ。
+Gum	ガム
+Lotion	ローション
+Medkit	救急キット
+Melatonin	メラトニン
+Melaton.	メラトン。
+Painkill.	鎮痛剤。
+Saline	生理食塩水
+Splint	副木
+Splint (Improvised)	（即席の）副子
+Thermal Blanket	保温ブランケット
+Thermal	熱
+Tissues	ティッシュ
+Sneeze	くしゃみ
+Tourniquet	止血帯
+Tourni.	トゥルニ。
+Tourniquet (Improvised)	止血帯（即席）
+Wipes	ウェットティッシュ
+Wipe	拭く
+Misc	その他
+Blanket	毛布
+Board Game	ボードゲーム
+B. Game	B. ゲーム
+Bucket	バケツ
+Coffee Filter	コーヒーフィルター
+C. Filter	C. フィルター
+Duct Tape	ダクトテープ
+D. Tape	D. テープ
+Happy Stove	ハッピー・ストーブ
+H. Stove	H. ストーブ
+Jerry Can	ジェリー缶
+Jerry C.	ジェリー・C.
+Lumber	木材
+Map	地図
+Map (Tactical)	地図（戦術用）
+T. Map	T. 地図
+Matches	試合
+Mat.	マテ。
+Mattress	マットレス
+Mess Kit	食器セット
+Nails	ネイル
+Oil Filter	オイルフィルター
+O. Filter	O. フィルター
+Pillow	枕
+Rags	ぼろ
+Sleeping_Bag	寝袋
+Sleeping Bag	寝袋
+S. Bag	S. バッグ
+Sticks	棒
+Tackle Box	タックルボックス
+Tackle B.	タックルB.
+Toilet Paper	トイレットペーパー
+T. Paper	T. ペーパー
+Toolbox	ツールボックス
+Water Lock	水封
+W. Lock	W. ロック
+Weapon Repair Kit	武器修理キット
+Repair Kit	修理キット
+Rig	リグ
+LVPC (Green)	LVPC（緑）
+LVPC (Winter)	LVPC（冬）
+Fishing Vest	フィッシングベスト
+F. Vest	F. ベスト
+Weapon	武器
+Mag.	修士（Mag.）
+KA-12 Magazine	KA-12マガジン
+KA-M Magazine	KA-Mマガジン
+KAS-74U Magazine	KAS-74U 弾倉
+C1911 Magazine	C1911マガジン
+G7 Magazine	G7マガジン
+KAR-21 Magazine (.223)	KAR-21 弾倉（.223）
+KAR-21 Magazine (.308)	KAR-21 弾倉（.308）
+KAR-21 Barrel (.308)	KAR-21 銃身（.308）
+KAR-21 Barrel	KAR-21 銃身
+Barrel	樽
+KP-31 Drum	KP-31ドラム
+Drum	ドラム
+STANAG Magazine	STANAGマガジン
+M78 Magazine	M78マガジン
+Karov	カロフ
+Karov Magazine	カロフ・マガジン
+Mosin	モシン
+PM5 Magazine	PM5マガジン
+MP7 Magazine	MP7 マガジン
+P3 Magazine	P3マガジン
+RK Magazine	RKマガジン
+VSD Magazine	VSDマガジン
+SS Magazine	SSマガジン
+Ammo	弾薬
+Attachment	添付ファイル
+Hybrid	ハイブリッド
+Kobra	コブラ
+Leopard	ヒョウ
+Micro	マイクロ
+Monster	モンスター
+Thor	トール
+New Furniture Added [Catalog]	新着家具を追加しました [カタログ]
+Boss Killed	ボスを倒した
+Cat Rescued	猫が救助された
+Cat Vital Activated	キャット・バイタル アクティベート
+Cat Died	猫が死んでしまった
+You have been spotted!	あなたが見つかりました！
+Player Returned	プレイヤーが戻ってきた
+Airdrop	エアドロップ
+Tutorial Crate	チュートリアル・クレート
+Electric Box	電気箱
+Medical Cabinet	薬箱
+Office Cabinet	オフィス用キャビネット
+Cabinet	内閣
+Corpse	死体
+Bandit Corpse	盗賊の死体
+Crate Military	クレート・ミリタリー
+Crate Special	クレート特選
+Wooden Crate	木箱
+Garbage	ゴミ
+Fireplace	暖炉
+Freezer	冷凍庫
+Fridge	冷蔵庫
+Fusebox	配電盤
+Locker	ロッカー
+Mailbox	メールボックス
+Nightstand	ナイトスタンド
+Boxes	箱
+Stove	コンロ
+Furniture	家具
+Furnitures	家具
+Bed (Civilian)	ベッド（一般用）
+Bed C.	ベッドC
+Bed (Nomad)	ベッド（ノマド）
+Bed N.	ベッド・N.
+Cabinet (Medical)	内閣（医療担当）
+Cabinet M.	キャビネットM.
+Cabinet (Office)	内閣（事務局）
+Cabinet. 0	キャビネット。 0
+Cabinet (Wood)	キャビネット（木製）
+Cabinet W.	キャビネットW.
+Carpet (Persian)	カーペット（ペルシャ絨毯）
+Carpet P.	カーペット・P
+Carpet (Rag)	カーペット（ラグ）
+Carpet R.	カーペット・R.
+Chair (Office)	椅子（オフィス用）
+Chair O.	O.委員長
+Chair (School)	学部長
+Chair S.	S.委員長
+Sun Chair	サンチェア
+S. Chair	S. 議長
+Crate (Military)	木箱（軍用）
+Crate M.	クレート・M
+Crate (Special)	クレート（スペシャル）
+Crate S.	クレート・S.
+Cupboard	食器棚
+C. Board	C. 理事会
+Curtain (Long)	カーテン（ロング）
+Curtain L.	カーテン・L.
+Curtain (Mini)	カーテン（ミニ）
+Curtain M.	カーテン・M.
+Dartboard	ダーツボード
+D. Board	D. 理事会
+N. Stand	N. スタンド
+Painting (Lake)	絵画（湖）
+Painting L.	絵画 L.
+Pallet	パレット
+Poster (Posture)	ポスター（姿勢）
+Poster P.	ポスター P.
+Rack (Coat)	ラック（コート用）
+Rack C.	ラックC.
+Rya (Maria)	リヤ（マリア）
+Rya M.	Rya M.
+Shelf (Metal)	棚（金属製）
+Shelf M.	シェルフ・M.
+Shelf (Wall)	棚（壁掛け）
+Shelf W.	シェルフ・W.
+Shelf (Wood)	棚（木製）
+Sign (Border Zone)	標識（境界区域）
+Sign BZ.	BZにサインしてください。
+Sofa (Leather)	ソファ（本革）
+Sofa L.	ソファ L.
+Stool (Military)	スツール（軍用）
+Stool M.	便 M.
+Stool (Padded)	スツール（クッション付き）
+Stool P.	便
+Table (Cabin)	テーブル（客室）
+Table C.	表C.
+Table (Canteen)	テーブル（食堂用）
+Table (Kitchen)	テーブル（キッチン用）
+Table K.	表K.
+Table (Office)	テーブル（オフィス用）
+Table. O	表 O
+Target Stand	ターゲットスタンド
+Target S.	ターゲット・S
+Television	テレビ
+TV	テレビ
+Trolley (Short)	トロリー（ショート）
+Trolley S.	トロリー・S
+Trolley (Tall)	トロリー（背の高いタイプ）
+Trolley T.	トロリー・T
+Weapon Display	武器展示
+Weapon D.	武器D。
+Unload	アンロード
+Clear Chamber	クリアチャンバー
+Unequip	装備解除
+Equip	装備
+Show	表示
+Hide	非表示
+Activated	有効化
+Not active	非アクティブ
+All maps & zones	すべてのマップとゾーン
+Active	アクティブ
+Repair	修理
+Craft	クラフト
+Added	追加されました
+Remove	削除
+Completed	完了
+Add to Notes	メモに追加
+Frozen	『アナと雪の女王』
+Permadeath Zone	パーマネントデス・ゾーン
+[Open]	[開く]
+Door [Jammed]	ドア [開かない]
+Door [Occupied]	ドア [使用中]
+Door [Close]	ドア [閉じる]
+Door [Open]	ドア [開]
+Sleep (Random sleep: 6-12h)	睡眠（ランダムな睡眠時間：6～12時間）
+Turn Off	オフにする
+Turn On	オンにする
+Radio [Turn Off]	ラジオ [オフ]
+Radio [Turn On]	ラジオ [電源オン]
+Television [Turn Off]	テレビ [電源オフ]
+Television [Turn On]	テレビ [電源オン]
+Rescue Cat	保護猫
+Cat is eating, do not disturb	猫が食事中なので、邪魔しないでください
+Fuel Tank [89%]	燃料タンク [89%]
+Feed cat:	猫に餌をあげる：
+Indoors	屋内
+Indoor	屋内
+Mine	私
+Lure	ルアー
+(Military)	（軍事）

@@ -1,0 +1,1148 @@
+text	translation
+Compatibility	Compatibilidad
+Selected	Seleccionado
+Press key to bind...	Presiona la tecla para asignar...
+Forward	Adelante
+Backward	Atrás
+Left	Izquierda
+Right	Correcto
+Crouch	Agacharse
+Jump	Ir
+Sprint	Sprint
+Lean Left	Inclínate hacia la izquierda
+Lean Right	Inclínate hacia la derecha
+Draw Primary	Sorteo de primaria
+Draw Secondary	Empate en la segunda ronda
+Draw Knife	Cuchillo de desbaste
+Draw Grenade 1	Sacar granada 1
+Draw Grenade 2	Sacar granada 2
+Raise Weapon	Levantar el arma
+Lower Weapon	Arma inferior
+Aim	Objetivo
+Canted Aim	Punto de mira inclinado
+Fire	Fuego
+Reload	Actualizar
+Ammo Check	Comprobación de munición
+Firemode	Modo de fuego
+Inspect Weapon	Inspeccionar arma
+Prepare Insert	Preparar inserción
+Insert Cartridge	Insertar cartucho
+Interact	Interact
+Place	Lugar
+Decor Mode	Modo Decoración
+Flashlight	Linterna
+NVG	NVG
+Laser	Láser
+Rail Movement	Movimiento ferroviario
+Secondary Optic	Óptica secundaria
+Interface	Interfaz
+Rotate Item	Girar elemento
+Fast Transfer	Transferencia rápida
+Fast Equip	Equipamiento rápido
+Fast Drop	Caída rápida
+Left Mouse Button	Botón izquierdo del ratón
+Right Mouse Button	Botón derecho del ratón
+Middle Mouse Button	Botón central del ratón
+Mouse Wheel Up	Rueda del ratón hacia arriba
+Mouse Wheel Down	Rueda del ratón hacia abajo
+Mouse Thumb Button 1	Botón 1 del pulgar del ratón
+Mouse Thumb Button 2	Botón 2 del pulgar del ratón
+UI Scaling	Escalado de la interfaz de usuario
+Loading...	Cargando...
+Skip Intro [SPACE]	Saltar introducción [BARRA ESPACIADORA]
+All save files deleted	Se han eliminado todos los archivos guardados
+Character died	El personaje ha muerto
+Intro	Introducción
+Cabin	Cabina
+Shelter	Refugio
+Tutorial	Tutorial
+Menu	Menú
+Attic	Ático
+Death	Muerte
+Classroom	Aula
+Tent	Tienda de campaña
+Bunker	Búnker
+Village	Pueblo
+Area 05	Área 05
+Highway	Autopista
+School	Escuela
+Outpost	Puesto avanzado
+Border Zone	Zona fronteriza
+Minefield	Campo minado
+Apartments	Apartamentos
+Terminal	Terminal
+Tutorial Exit	Salir del tutorial
+Template	Plantilla
+shaders	sombreadores
+Trader	Operador
+Generalist	Generalista
+Doctor	Doctor
+Gunsmith	Armero
+Driver	Conductor
+Grandma	Abuela
+Shaman	Chamán
+Fisherman	Pescador
+Scientist	Científico
+Bandit	Bandido
+Guards	Guardias
+Military	Militar
+Punisher	El Castigador
+Neutral	Neutro
+Overcast	Nublado
+Rain	Lluvia
+Storm	Tormenta
+Generic	Genérico
+Wood	Madera
+Metal	Metal
+Concrete	Hormigón
+Rock	Rock
+Vostok	Vostok
+Inventory	Inventario
+Primary	Primaria
+Secondary	Secundaria
+Vital	Fundamental
+Task Notes empty	Notas de la tarea: vacías
+Task Notes not available (Tutorial)	Notas de la tarea no disponibles (Tutorial)
+Map not equipped	El mapa no está disponible
+Map not usable (Vostok)	Mapa no disponible (Vostok)
+Casette Player not equipped	No dispone de reproductor de casetes
+Casette Player power 0%, recharge player	El reproductor de casetes tiene un 0 % de batería, recárgalo
+Casette Player empty, insert casette	El reproductor de casetes está vacío, inserte una casete
+Override Ambient Music [ON]	Anular música ambiental [ACTIVADO]
+Override Ambient Music [OFF]	Anular música ambiental [DESACTIVADO]
+Sleep	Sueño
+Level 2	Nivel 2
+Level 3	Nivel 3
+Level 4	Nivel 4
+Level 5	Nivel 5
+Heat required	Calor necesario
+Workbench required	Se necesita un banco de trabajo
+Shelter required	Se necesita refugio
+Start Input	Introducción
+Stop Input	Detener la entrada
+Reset Input	Restablecer entrada
+Start Delivery	Iniciar entrega
+Stop Delivery	Suspender la entrega
+Delivered	Entregado
+CBRN	CBRN
+Overweight	Sobrepeso
+Explosion	Explosión
+Fall	Otoño
+Day	Día
+Easy	Fácil
+Intermediate	Nivel intermedio
+Hard	Difícil
+Tutorial Task 1 (Simple)	Tarea 1 del tutorial (sencilla)
+"Let's start with something simple.
+
+Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
+1. Press Start Delivery
+2. Select Canned Pea Soup
+3. Press Complete"	"Empecemos con algo sencillo.
+
+Ve al tablón de anuncios de artículos y elige «Sopa de guisantes en lata». Una vez que tengas el artículo de entrega en tu inventario:
+1. Pulsa «Iniciar entrega»
+2. Selecciona «Sopa de guisantes en lata»
+3. Pulsa «Completar»"
+Tutorial Task 2 (Complex)	Tarea 2 del tutorial (Compleja)
+"Now let's add some complexity.
+
+Some tasks might require crafting-based delivery items, like this task requires Meatballs (Cooked), which can only be obtained through crafting.
+
+Go to the Items billboard, grab Canned Meatballs, Mess Kit and Water Bottle. You are also going to need matches, you can find those from the Equipment billboard.
+
+Next, find the Meatballs (Cooked) recipe from the Tools UI using the Crafting button. When you look at the recipe, it has a proximity requirement Heat, meaning you will need a heat source to unlock that recipe.
+
+In order to craft the Meatballs (Cooked), do the following:
+1. Go to the Firepot, equip matches and light the fire
+2. Open the Meatballs (Cooked) recipe and notice the heat symbol turned green
+3. Press Start Input
+4. Select Mess Kit, Canned Meatballs and Water Bottle
+5. Press Craft
+
+Now you have successfully crafted the required task item and you can complete the task."	"Ahora vamos a añadir un poco de complejidad.
+
+Algunas tareas pueden requerir objetos de entrega que hay que fabricar, como esta tarea, que requiere albóndigas (cocidas), las cuales solo se pueden obtener mediante la fabricación.
+
+Ve al panel de objetos, toma las albóndigas enlatadas, el kit de comida y la botella de agua. También vas a necesitar fósforos, los puedes encontrar en el panel de equipo.
+
+A continuación, busca la receta de albóndigas (cocidas) en la interfaz de herramientas usando el botón de fabricación. Cuando mires la receta, verás que tiene un requisito de proximidad de calor, lo que significa que necesitarás una fuente de calor para desbloquear esa receta.
+
+Para fabricar las albóndigas (cocidas), haz lo siguiente:
+1. Ve al fogón, equipa las cerillas y enciende el fuego
+2. Abre la receta de albóndigas (cocidas) y fíjate en que el símbolo de calor se ha vuelto verde
+3. Presiona «Iniciar entrada»
+4. Selecciona el kit de cocina, las albóndigas enlatadas y la botella de agua
+5. Presiona «Fabricar»
+
+Ahora has fabricado con éxito el objeto requerido para la tarea y puedes completarla."
+Tutorial Task 3 (Furniture)	Tarea 3 del tutorial (Mobiliario)
+"There's one more thing to learn.
+
+Some items that you might receive from crafting, trading or tasks are Furniture items, which are used for shelter customization.
+
+Once you receive a Furniture item, it will be stored to a separate inventory called the Furniture Catalog, so it doesn't appear in your normal inventory.
+
+Furniture Catalog is only accessible when you are inside of shelters, but you will always receive a message ""New Furniture Added [Catalog]"" when the catalog is updated.
+
+Try getting new furniture by completing this task:
+1. Press Start Delivery
+2. Select Potato
+3. Press Complete
+4. Notice the message ""New Furniture Added [Catalog]""
+
+You can learn more about shelter customization and Furniture Catalog from the tutorial billboard called Shelters."	"Hay algo más que debes saber.
+
+Algunos objetos que puedes obtener al fabricar, intercambiar o completar tareas son muebles, que se utilizan para personalizar tu refugio.
+
+Cuando recibas un mueble, este se guardará en un inventario independiente llamado «Catálogo de muebles», por lo que no aparecerá en tu inventario normal.
+
+Solo puedes acceder al Catálogo de muebles cuando estás dentro de los refugios, pero siempre recibirás un mensaje que dice «Nuevo mueble agregado [Catálogo]» cuando se actualice el catálogo.
+
+Intenta conseguir muebles nuevos completando esta tarea:
+1. Presiona «Iniciar entrega»
+2. Selecciona «Papa»
+3. Presiona «Completar»
+4. Fíjate en el mensaje «Nuevo mueble agregado [Catálogo]»
+
+Puedes aprender más sobre la personalización de refugios y el Catálogo de muebles en el cartel tutorial llamado «Refugios»."
+Prime Time	Hora de máxima audiencia
+"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
+
+Nevertheless, you’ve arrived at the prime time, because I’m out of toilet paper and the situation is getting urgent.
+
+Speaking of prime time, I just finished repairing some electronics and I have this fully functional TV ready to go. Mark my words, at the moment, this is the only working TV in Area 05.
+
+If you bring me that toilet paper, the TV is yours. It has all the channels pre-configured, vibrant colors and prime time shows are running as we speak."	"Vaya, vaya... tú debes de ser ese tipo que encontraron los Nómadas la semana pasada. ¿No te alojaron en esa cabaña vieja y diminuta? A veces solíamos emborracharnos y jugar al póquer allí, pero ese lugar siempre me daba dolor de cabeza; estoy bastante seguro de que hay amianto en el techo o algo así.
+
+De todos modos, has llegado en el momento justo, porque me he quedado sin papel higiénico y la situación se está volviendo urgente.
+
+Hablando de la hora de máxima audiencia, acabo de terminar de reparar algunos aparatos electrónicos y tengo este televisor totalmente funcional listo para usar. Créeme, en este momento, este es el único televisor que funciona en el Área 05.
+
+Si me traes ese papel higiénico, el televisor es tuyo. Tiene todos los canales preconfigurados, colores vibrantes y los programas de máxima audiencia están al aire en este mismo momento."
+Bad Habits	Malos hábitos
+"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"Hace un tiempo fui a ver al doctor a esa escuela abandonada que hay por aquí. Me dijo que debía dejar todos mis «malos hábitos», pero el viejo cabrón fuma él mismo, ¡así que que le den!
+
+Probablemente seas uno de esos hippies de hoy en día que solo chupan pastillas de menta cuando las cosas se ponen feas, pero si por casualidad te topas con uno de estos, tráete un paquete o dos y también unas cerillas."
+Backpains	Dolores de espalda
+"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
+
+I usually don't complain, but my fucking back is killing me. Every morning when I wake up, it feels like a gunshot directly to my spine. It won't be long until you're just like me and those cursed French cars.
+
+If you happen to find something that could help with my back, I would highly appreciate it."	"Cuando llegas a mi edad, todo te duele y tu cuerpo es como esos autos franceses: problemas constantes y siempre necesita reparaciones.
+
+Normalmente no me quejo, pero me está matando la maldita espalda. Cada mañana, cuando me despierto, siento como si me hubieran disparado directamente en la columna. No tardarás mucho en ser igual que yo y esos malditos autos franceses.
+
+Si por casualidad encuentras algo que pueda ayudarme con la espalda, te lo agradecería mucho."
+Coffee Reserve	Reserva de café
+"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
+
+If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
+
+As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	"Hay pocas cosas en la vida que sean innegociables. Está el café de la mañana a las 6:00, el de la tarde a las 12:00 y el de la cena a las 18:00. Cuando se trata de trabajo físico, las pausas para el café entre horas también son obligatorias y, básicamente, están prescritas por ley.
+
+Si quieres seguir con vida aquí en el Área 05, el flujo constante de cafeína debe ser tu objetivo principal.
+
+De hecho, probablemente debería aumentar un poco mi reserva estratégica de café, ya que últimamente el consumo ha estado por encima de la media."
+Sweaty Business	Un asunto sudado
+"The days out here are long and sweaty, especially in the summertime.
+
+Since air conditioning, showers and running water are just a faint memory from the past, it's important that you maintain personal hygiene and odor control for the sake of the others. You might wonder why not just go wash in the lake or sea? Well, let me tell you why that's a bad idea.
+
+After the initial explosion, these waters are far from refreshing and there's something nasty going on. I have seen so many dead fish lately that my ass is not going into that water, that's for sure and I highly recommend the same for you.
+
+It’s a sweaty business, but we just have to figure out some alternative methods to stay fresh."	"Los días aquí son largos y calurosos, sobre todo en verano.
+
+Dado que el aire acondicionado, las duchas y el agua corriente son solo un vago recuerdo del pasado, es importante que mantengas la higiene personal y controles los olores por el bien de los demás. Quizás te preguntes: ¿por qué no ir simplemente a lavarse al lago o al mar? Bueno, déjame explicarte por qué es una mala idea.
+
+Después de la explosión inicial, estas aguas están lejos de ser refrescantes y hay algo desagradable pasando. He visto tantos peces muertos últimamente que ni de coña me meto en esa agua, eso es seguro, y te recomiendo encarecidamente que hagas lo mismo.
+
+Es un asunto sudoroso, pero tenemos que encontrar algunos métodos alternativos para mantenernos frescos."
+Handyman	Manitas
+"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
+
+Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
+
+I'm getting tired of being her handyman, but I promised to help this one last time."	"¿Te acuerdas de esa anciana que todavía vive cerca de la Zona Fronteriza? Bueno, pues es ciega y, por más que le haya advertido sobre los aparatos electrónicos, ¡sigue jugando con los botones y al final todo se estropea!
+
+Ahora la estufa está rota, el congelador se derritió y, al parecer, la radio está «fallando» otra vez. Además de todo esto, durante una tormenta la semana pasada, un árbol cayó directamente sobre el techo de su porche y ahora se ha derrumbado un poco, así que estamos lidiando con un lío de problemas.
+
+Me estoy cansando de ser su manitas, pero le prometí que la ayudaría por última vez."
+Six Pack	Paquete de seis
+"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
+
+When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
+
+Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	"Todo hombre tiene un punto débil; el mío es la cerveza caliente y barata, sobre todo en una gélida mañana de invierno.
+
+Cuando llega el invierno, hay que mantenerlas calientes y cerca del cuerpo. Puede sonar asqueroso, pero créeme, no te apetece beber un sorbete de trigo cuando estás dando vueltas en el frío. Las axilas o la entrepierna son los mejores lugares para mantenerlas calientes; de ahí irradias mucho calor y puedes mantener caliente un paquete de seis si sabes manejarlas bien.
+
+Hablando de paquetes de seis, definitivamente podría llevarme uno para mi viaje por carretera; seis para el camino, como dicen."
+Old Friend	Un viejo amigo
+"Want to hear military stories?
+
+Back in the day, when I was doing my conscript service, we still had a few of those KP-31's lying around in the warehouse.
+
+One range day, we actually got a chance to test those. We were not allowed to use full-auto with those drum mags, but when it was my turn, I couldn't resist. I changed the fire mode, squeezed the trigger and 71 rounds of pure magic came out of my barrel.
+
+Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn, I miss that gun. Someday I will once again reunite with my magical old friend, someday..."	"¿Quieres escuchar historias militares?
+
+En aquellos tiempos, cuando estaba haciendo el servicio militar obligatorio, todavía teníamos unos cuantos KP-31 tirados por ahí en el almacén.
+
+Un día de prácticas de tiro, tuvimos la oportunidad de probarlos. No nos dejaban disparar en modo automático con esos cargadores de tambor, pero cuando llegó mi turno, no pude resistirme. Cambié el modo de disparo, apreté el gatillo y 71 balas de pura magia salieron de mi cañón.
+
+A veces todavía escucho ese sonido «prat-prat-prat» débilmente en mis sueños. Caray, extraño esa arma. Algún día me reuniré de nuevo con mi vieja amiga mágica, algún día..."
+Road Trip	Viaje por carretera
+"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
+
+Have you ever visited the North? What a shame, that place has remained totally unaffected by all this bullshit. It's like nothing ever happened there. I'm talking about pristine nature, wildlife and crystal-clear rivers for catching those juicy arctic trouts.
+
+I would be already driving there, but those filthy Bandits stole my car battery and a bunch of other items from the trunk, so I'm still stuck here.
+
+Maybe you could help me with this? Bring back my stolen items and I have something special for you."	"Estoy harto de este antro. Estoy planeando hacer un viaje de ida hacia el norte y dejar atrás toda esta miseria.
+
+¿Alguna vez has visitado el norte? Qué pena, ese lugar se ha mantenido totalmente al margen de toda esta mierda. Es como si allí nunca hubiera pasado nada. Me refiero a naturaleza virgen, vida silvestre y ríos cristalinos para pescar esas jugosas truchas árticas.
+
+Ya estaría conduciendo hacia allá, pero esos asquerosos bandidos me robaron la batería del auto y un montón de otras cosas del maletero, así que sigo atrapado aquí.
+
+¿Quizás podrías ayudarme con esto? Devuélveme mis cosas robadas y tengo algo especial para ti."
+Homemade	Casero
+"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
+
+I already had a large batch for him, but since my trip was delayed, I had to make sure the product didn't spoil in my cellar. After a few ""product-quality"" sips, I got carried away and started drinking and now I have nothing left.
+
+I'm going to need a new batch, but I don't have time right now, so perhaps you can cook it. The recipe is really simple, but do not add too much sugar or you're going to ruin the whole thing. Keep it simple, keep it homemade.
+
+If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."	"Cuando llegue al Norte, le voy a dar una sorpresa al chamán, ya que es un gran fan de mi vino de azúcar casero.
+
+Ya tenía una gran cantidad preparada para él, pero como mi viaje se retrasó, tuve que asegurarme de que el producto no se echara a perder en mi bodega. Después de unos cuantos sorbos para comprobar la «calidad del producto», me dejé llevar y empecé a beber, y ahora no me queda nada.
+
+Voy a necesitar una nueva tanda, pero ahora mismo no tengo tiempo, así que tal vez tú puedas prepararla. La receta es muy sencilla, pero no le pongas demasiado azúcar o vas a arruinarlo todo. Que sea sencillo, que sea casero.
+
+Si puedes prepararme esta nueva tanda, consideraré darte una llave de mi ático, lo cual sería una mejora considerable respecto a tu pequeña cabaña de asbesto."
+Nasty Draft	Borrador desagradable
+"I haven't seen you here before, you must be a new patient?
+
+Welcome to my improvised clinic. It ain't much, but with these limited resources, it's the best that we've got.
+
+I used to teach health education for elementary students in this school. It was a long time ago, but I have good memories of this place. The building is old and has seen better days, but I'm sure it can be restored when things settle down.
+
+Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	"No te había visto por aquí antes, ¿debes de ser un paciente nuevo?
+
+Bienvenido a mi clínica improvisada. No es gran cosa, pero con estos recursos limitados, es lo mejor que tenemos.
+
+Solía dar clases de educación para la salud a los alumnos de primaria en esta escuela. Fue hace mucho tiempo, pero guardo buenos recuerdos de este lugar. El edificio es viejo y ha visto días mejores, pero estoy seguro de que se podrá restaurar cuando las cosas se calmen.
+
+Hoy en día, mi mayor preocupación es el aislamiento térmico, ya que nuestras ventanas prácticamente no existen. Especialmente en invierno, hace un poco de frío para mis pacientes. Creo que una solución de emergencia solo requeriría un poco de cinta adhesiva para controlar las molestas corrientes de aire."
+Steady Hands	Manos firmes
+"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
+
+Especially in surgeries and working with a scalpel, I often get the shakes and small mistakes here and there are unavoidable. I think it's mostly related to my age, but I have found that smoking a few cigars before the operation keeps my hands more steady.
+
+As a doctor, I do not recommend smoking, but desperate times require desperate actions.
+
+If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."	"Tengo que admitir que, a veces, mi coordinación mano-ojo y mi motricidad fina están un poco oxidadas.
+
+Especialmente en las cirugías y al trabajar con el bisturí, a menudo me tiemblan las manos y es inevitable cometer pequeños errores aquí y allá. Creo que se debe principalmente a mi edad, pero he descubierto que fumar unos cuantos cigarros antes de la operación me ayuda a mantener las manos más firmes.
+
+Como médico, no recomiendo fumar, pero a grandes males, grandes remedios.
+
+Si por casualidad encuentras unos cuantos cigarros en algún lado, ¿tal vez podrías traérmelos? Pero no se lo digas al Generalista, acabo de decirle que deje de fumar, para no generar ninguna guía controvertida. Que esto quede entre tú y yo."
+Bookworm	Ratón de biblioteca
+"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
+
+On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
+
+I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	"Ser médico por aquí es un trabajo cíclico. Lo que quiero decir es que hay días en los que hay muchísimo trabajo y otros en los que no se ve ni un alma.
+
+En esos días aburridos y vacíos, suelo pasar el tiempo leyendo. El material de lectura por aquí es bastante aleatorio; no puedes elegir lo que lees, así que tienes que aprender a adaptarte a lo que hay disponible.
+
+De hecho, me gusta leer todo tipo de libros antiguos, sin importar el tema. Ya sean cuentos infantiles o libros de religión, siempre me parecen interesantes. Creo que soy un poco ratón de biblioteca por naturaleza."
+Dice Master	Maestro de los dados
+"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
+
+Just a few years ago, we often went fishing together, but that poor guy has multiple herniated disks, so fishing trips are no longer an option for him. We still have a few other common hobbies like horse races and gambling.
+
+Like you probably already guessed, only one of those is available nowadays, so our friendship is currently purely built on gambling with card and dice games. However, every time we play dice, he always magically wins and I'm starting to wonder if his dices are rigged somehow, since nobody is that lucky.
+
+You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	"El Generalista y yo nos conocemos desde que éramos niños. Es un viejo gruñón, sin duda, pero una vez que lo conoces, resulta más o menos soportable.
+
+Hace solo unos años, solíamos ir a pescar juntos, pero el pobre tiene varias hernias discales, así que las salidas de pesca ya no son una opción para él. Aún compartimos otras aficiones, como las carreras de caballos y el juego.
+
+Como probablemente ya habrás adivinado, hoy en día solo una de esas opciones está disponible, así que nuestra amistad se basa actualmente exclusivamente en los juegos de azar con cartas y dados. Sin embargo, cada vez que jugamos a los dados, él siempre gana mágicamente y estoy empezando a preguntarme si sus dados están amañados de alguna manera, ya que nadie tiene tanta suerte.
+
+¿Sabes qué? Si por casualidad encuentras uno de esos juegos de dados, tráeme uno. La próxima vez que juguemos, será con mi juego. De esa manera, podré descartar la posibilidad de que haga trampa y veremos quién es el verdadero maestro de los dados."
+Night Surgery	Cirugía nocturna
+"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
+
+Daytime operations are a walk in the park for me when there's enough light, but at night, it gets more tricky. Operating in dim lighting or sometimes even in total darkness relies more on hand-feel and intuition, but it's always riskier for the patient.
+
+Some sort of bright headlamp would probably solve this issue until the power grid is fully restored. I have tried to find one, but unfortunately no luck so far."	"Aunque no soy especialista en cirugía, me considero bastante hábil a la hora de trabajar con órganos y con la anatomía humana.
+
+Las operaciones diurnas son pan comido para mí cuando hay suficiente luz, pero por la noche se vuelve más complicado. Operar con poca luz o, a veces, incluso en la oscuridad total, depende más del tacto y la intuición, pero siempre es más riesgoso para el paciente.
+
+Probablemente, algún tipo de linterna frontal brillante resolvería este problema hasta que se restablezca por completo la red eléctrica. He intentado encontrar una, pero, por desgracia, hasta ahora no he tenido suerte."
+Infections	Infecciones
+"You know what one of the most common issues is here? It's infections.
+
+When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
+
+I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."	"¿Sabes cuál es uno de los problemas más comunes aquí? Son las infecciones.
+
+Cuando la higiene es deficiente y las heridas no se limpian, se crea la combinación perfecta para las bacterias y los gérmenes. Cada vez que hay un paciente con algún tipo de corte o rasguño, casi siempre se produce una infección de manera automática.
+
+Todavía me quedan algunos suministros médicos para tratar las infecciones, pero tarde o temprano se agotarán. Una vez que eso suceda, la tasa de mortalidad aquí dará un giro sombrío."
+Hypovolemia	Hipovolemia
+"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
+
+After taking a closer look, the reason was simpler than expected. Correct, it was dehydration and a thing that we doctors call hypovolemia.
+
+Hypovolemia is basically a loss of both salt and water content in your body and if it gets really bad, then you're screwed like those Nomads and met with a hypovolemic shock. Fortunately, the treatment for these symptoms is really simple, you just stick a saline solution into a peripheral vein and you're good to go.
+
+Whenever you find those saline bottles, always remember to bring them to me and we will surely find some deal that could work for both of us."	"La hidratación es extremadamente importante. Justo la semana pasada, me encontré con unos cuantos nómadas pálidos que estaban acurrucados en el bosque con la presión arterial baja.
+
+Tras examinarlos más de cerca, la razón era más simple de lo que esperaba. Exacto, se trataba de deshidratación y de algo que los médicos llamamos hipovolemia.
+
+La hipovolemia es básicamente una pérdida de sal y agua en el cuerpo y, si se agrava mucho, estás jodido como esos nómadas y sufres un choque hipovolémico. Afortunadamente, el tratamiento para estos síntomas es muy sencillo: solo hay que inyectar una solución salina en una vena periférica y ya estás listo.
+
+Siempre que encuentres esas botellas de suero, acuérdate de traérmelas y seguro que llegaremos a un acuerdo que nos beneficie a los dos."
+Mouth Organ	Armónica
+"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
+
+I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
+
+It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."	"La música es el mejor antidepresivo que existe. Antes de estudiar medicina, solía tocar el saxofón y los instrumentos de viento en nuestra orquesta naval y viajaba por todo el país con esos elegantes instrumentos dorados. Sin duda, todo un cambio de carrera.
+
+Intenté tocar mis viejos instrumentos hace unos años, pero se necesitan pulmones sanos para eso, así que ya ni siquiera podía sacar un sonido de esas malditas cosas. Mi pasión por las armónicas y mis habilidades musicales siguen ahí, pero creo que los cigarros ya han hecho su daño.
+
+Nunca es demasiado tarde para empezar con un instrumento más fácil, pero necesitaría algo realmente pequeño que sea adecuado para un viejo fumador de cigarros como yo. Quizás en la próxima vida."
+Patient Report	Informe del paciente
+"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
+
+I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
+
+Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	"Cuando empezó todo, nuestros hospitales se saturaron en menos de una hora. De hecho, tuvimos que convertir el gimnasio de la escuela en un centro de triaje de emergencias.
+
+Creo que dejé allí uno de mis primeros informes de pacientes. Necesito ese informe para refrescar la memoria, ya que no es lo que solía ser. Los síntomas y los detalles específicos de ese informe están empezando a difuminarse en mi mente.
+
+Quizás podrías buscar en el gimnasio, el lugar donde los niños solían jugar y trepar por las cuerdas. Debería estar por ahí en algún lado."
+Substance	Contenido
+"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
+
+Acrylonitrile is definitely part of the compound, just as the officials claimed, but I have a theory that it’s only one piece of the puzzle. When burning, acrylonitrile releases toxic gases such as hydrogen cyanide and is classified as a C1 carcinogen, but let me explain my theory.
+
+These kinds of organic compounds have extremely pungent odors. Since we are talking about massive volumes, the smell should have been everywhere, but it wasn’t. On top of this, acrylonitrile alone shouldn’t have such long-lasting effects on the environment and water sources.
+
+This means we are looking at some kind of manufactured substance that is far more toxic. I know it’s just a theory, but there’s only one way to find out, we need to find the source.
+
+Since we know it was delivered in oil tank cars, I would visit the nearest oil terminal and check their samples to see if they really contain oil or something else. These oil sample containers are easy to spot, they look like golden milk jugs and there should be plenty of them."	"Cuando explotaron esos vagones cisterna y se desataron los incendios iniciales, estoy seguro de que había algo más en juego además de los productos químicos industriales habituales.
+
+El acrilonitrilo es sin duda parte del compuesto, tal como afirmaron las autoridades, pero tengo la teoría de que es solo una pieza del rompecabezas. Al quemarse, el acrilonitrilo libera gases tóxicos como el cianuro de hidrógeno y está clasificado como carcinógeno de categoría 1, pero déjenme explicar mi teoría.
+
+Este tipo de compuestos orgánicos tienen olores extremadamente penetrantes. Dado que estamos hablando de volúmenes masivos, el olor debería haber estado por todas partes, pero no fue así. Además, el acrilonitrilo por sí solo no debería tener efectos tan duraderos en el medio ambiente y las fuentes de agua.
+
+Esto significa que estamos ante algún tipo de sustancia manufacturada que es mucho más tóxica. Sé que es solo una teoría, pero solo hay una forma de averiguarlo: tenemos que encontrar la fuente.
+
+Dado que sabemos que se transportó en vagones cisterna, yo iría a la terminal petrolera más cercana y revisaría sus muestras para ver si realmente contienen petróleo o algo más. Estos recipientes de muestras de petróleo son fáciles de identificar, parecen jarras de leche doradas y debería haber muchos de ellos."
+Bloodsuckers	Chupasangres
+"Ain't that something? A new man and a new rifle, always a welcome sight.
+
+Forget the small talk. You want something reliable and cheap? Sure, but a few favors first, since you don't climb the ranks immediately around here. Where should we start? There are definitely some supply runs you could do, but you look a bit flimsy, so maybe you need something simple first. Let me think a moment.
+
+Okay, I have an idea. You know in the summertime, those flying suckers start to piss me off. You would assume those bastards would not get into these bunkers, but trust me, they do. Every single summer, there's buzzing around the clock.
+
+Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."	"¿No te parece increíble? Un hombre nuevo y un rifle nuevo, siempre es un placer verlos.
+
+Olvídate de las tonterías. ¿Quieres algo confiable y barato? Claro, pero primero unos cuantos favores, ya que por aquí no se sube de rango de inmediato. ¿Por dónde empezamos? Sin duda hay algunas misiones de abastecimiento que podrías hacer, pero te ves un poco frágil, así que tal vez necesites algo sencillo primero. Déjame pensar un momento.
+
+Bien, tengo una idea. Sabes que en verano esos chupasangres voladores empiezan a sacarme de quicio. Uno pensaría que esos bastardos no entrarían en estos búnkeres, pero créeme, lo hacen. Cada verano, hay zumbidos las veinticuatro horas del día.
+
+Aquí tienes una tarea adecuada para ti. Búscame algo para deshacerme de esos chupasangres y luego hablamos más."
+Warm Meal	Comida caliente
+"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
+
+Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
+
+It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."	"Como militar, me gusta conformarme con las raciones, pero incluso yo tengo un límite a la hora de comer la misma papilla y los mismos bocadillos secos varias semanas seguidas.
+
+Antes, estas raciones al menos incluían comida enlatada de verdad, pero hoy en día la mayoría solo contiene una pasta de carne asquerosa y comida de montaña moderna. No pienso meterme esa porquería sintética en la boca, eso está claro.
+
+Hace tiempo que no veo una comida caliente de verdad. Quizás este sea tu momento de brillar y nuestra relación profesional pueda dar un paso adelante. Quizás un juego de comida con sopa de chícharos finlandesa de verdad y un poco de mostaza al lado sería lo ideal."
+Nordic Trade	Nordic Trade
+"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
+
+Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
+
+However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."	"Aunque no entiendo a los suecos, hay tres cosas que hacen bien. Tienen una buena armada, buenos autos y buenos productos de tabaco. Pero hay algo que no me cuadra con ellos: parecen demasiado felices y sociables. Definitivamente, no es natural.
+
+No me malinterpretes, son buenos vecinos y todo eso, pero no sé. Quizás son demasiado ricos y siempre van bien vestidos, o quizás sea solo por lo del hockey.
+
+Sin embargo, en el espíritu de la buena vecindad, hay un intercambio justo que podríamos hacer. A esto lo llamo «intercambiar los postres». Tráeme algunas de esas delicias suecas y yo te daré algunas finlandesas. Es un trato en el que todos ganan, un intercambio nórdico, en cierto modo, sin rivalidad alguna."
+Big Blades	Cuchillas grandes
+"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
+
+When it comes to blades, the rule is the bigger, the better. I myself prefer machetes that are suitable for wood chopping and clearing obstructions in a dense forest. Even though we're not in a jungle here, you still need a big blade since there will be times when you'll wish you had one.
+
+Collecting blades is also an elegant hobby. I do have quite an extensive collection, but there are still a few big blades that I'm missing."	"Se puede saber mucho de un hombre por el cuchillo que lleva. Si alguna vez ves a alguien con una navaja pequeña, mejor no te acerques a esa gente.
+
+En lo que respecta a los cuchillos, la regla es: cuanto más grande, mejor. Yo, personalmente, prefiero los machetes que sirven para cortar leña y despejar obstáculos en un bosque denso. Aunque aquí no estemos en una selva, igual necesitas un cuchillo grande, ya que habrá momentos en los que desearás tener uno.
+
+Coleccionar cuchillos también es un pasatiempo elegante. Tengo una colección bastante extensa, pero aún me faltan algunos cuchillos grandes."
+Ammo Delivery	Entrega de munición
+"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
+
+When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. Sometimes there are still those annoying customers who seek something more exotic, but it's hard to maintain a stock for every weird request.
+
+Maybe you could do a quick ammo delivery run for me? We could expand the portfolio a bit, so to speak."	"En mi inventario encontrarás la mayoría de los tipos de munición. Ya sea que te guste la caza de ardillas o la caza de personas, hay opciones para todos.
+
+En cuanto a municiones, las 7.62x39 y las .223 son, con diferencia, las más vendidas. A veces todavía hay clientes molestos que buscan algo más exótico, pero es difícil mantener existencias para cada pedido raro.
+
+¿Quizás podrías hacerme un pequeño reparto de municiones? Podríamos ampliar un poco el surtido, por así decirlo."
+Weapon Delivery	Entrega de armas
+"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
+
+This has led to a situation where I'm constantly out of stock of those Eastern weapons. It's a damn shame, since I always find their products more reliable compared to the Western ones. You see, in the West, we have an incurable disease of making everything tactical. We add rails, dingles and dongles to everything and the end result is a mess that has too many moving parts.
+
+Since I no longer have those networks active, a quick weapon delivery from the other side would be highly appreciated."	"Solía hacer muchos negocios al otro lado de la frontera, pero hoy en día mis contactos se han agotado.
+
+Esto ha llevado a una situación en la que siempre me quedo sin existencias de esas armas del Este. Es una verdadera lástima, ya que siempre me parecen más confiables que las occidentales. Verás, en Occidente tenemos una enfermedad incurable que nos lleva a convertir todo en algo «táctico». Le ponemos rieles, accesorios y adaptadores a todo, y el resultado final es un lío con demasiadas piezas móviles.
+
+Como ya no tengo esas redes activas, agradecería mucho una entrega rápida de armas desde el otro lado."
+Medic	Médico
+"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
+
+I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
+
+My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	"En el ejército, solo hay dos roles que importan: el fusilero y el médico. Los líderes, la artillería y otros elementos de apoyo son, en mi opinión, solo adornos innecesarios.
+
+De hecho, tengo un médico personal solo para mí. Es un nómada muy hábil y tenemos una táctica sencilla por si hace falta pasar a la fase de ataque. En nuestra táctica, yo disparo y, si me alcanzan, él me pone una pastilla de fentanilo en la boca y seguimos adelante. Nunca se detiene la locura, solo alivio ocasional del dolor y seguir adelante.
+
+A mi médico le vendrían bien unas cuantas pastillas más, por si acaso. Creo que se pueden encontrar dentro de los botiquines de primeros auxilios, así que si por casualidad encuentras un par de esos, ahí tenemos otra oportunidad de negocio."
+Home Collection	Colección para el hogar
+"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
+
+My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
+
+Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	"Coleccionar cuchillos es una cosa, pero coleccionar armas es un arte en el que hay que separar el grano de la paja.
+
+Mi colección personal abarca desde mosquetes del siglo XVI hasta rifles de la década de 1990, pero cualquier cosa más allá de eso me parece de mal gusto. Creo que hasta ahora tengo más de 150 armas en mi colección. Las más exóticas son probablemente unas cuantas escopetas revólver turcas que traje de contrabando de un viaje de vacaciones en 1985.
+
+Actualmente, mi interés principal se centra en las piezas con silenciador integrado, pero me ha costado mucho encontrarlas. Hay una en particular, de origen oriental, que me tiene en la mira, pero sigue escondiéndose de mí."
+Everyman's Right	El derecho de todos
+"I recently took a hike out to the Border Zone and collected some mushrooms.
+
+In Finland, we have Everyman’s Rights, which grant us the right to use nature regardless of who owns or occupies the area. It’s probably the best law we have.
+
+However, I have to admit that sometimes I step into a grey area and collect stuff that isn't just mushrooms. For example, a few months ago, I found a fallen Border Zone sign in a ditch. Since it was covered in leaves and dirt, I figured it belonged to nature which makes it part of Everyman’s Rights in my mind.
+
+Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	"Hace poco hice una caminata hasta la Zona Fronteriza y recogí algunas setas.
+
+En Finlandia, contamos con el «derecho de todos», que nos otorga el derecho a disfrutar de la naturaleza independientemente de quién sea el propietario o ocupante del terreno. Probablemente sea la mejor ley que tenemos.
+
+Sin embargo, debo admitir que a veces me meto en una zona gris y recojo cosas que no son solo hongos. Por ejemplo, hace unos meses, encontré un letrero caído de la Zona Fronteriza en una zanja. Como estaba cubierto de hojas y tierra, pensé que pertenecía a la naturaleza, lo que en mi opinión lo convierte en parte del Derecho de Todos.
+
+Aunque este letrero es una bonita pieza decorativa, es un poco demasiado colorido para mi gusto. Pareces un hombre que lo apreciaría. Quizás podamos hacer un pequeño intercambio por él, pero no lo voy a regalar por cualquier cosa barata."
+Hitman	Hitman
+"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
+
+Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
+
+Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	"En el Área 05 hay un tipo al que llamamos «el Castigador». Viene del hampa finlandesa; algunos dicen que es cobrador de deudas para una de las principales bandas de moteros.
+
+De vez en cuando, este tipo aparece y exige el puto pago de alguna deuda inventada. Normalmente, les dispararía a estos payasos en la puerta principal, pero este es duro como una roca. El Castigador y sus secuaces también robaron recientemente una camioneta de la policía, así que ahora incluso tienen un vehículo ligeramente blindado.
+
+Alguien tiene que poner fin a este circo, así que básicamente necesito un sicario. Tráeme su cabeza o cualquier otra cosa que pruebe que está muerto y te daré las llaves de mi búnker de almacenamiento."
+Trader Event	Evento para traders
+Dynamic Event	Evento dinámico
+Special Event	Evento especial
+Dynamic	Dinámico
+Special	Especial
+Guaranteed	Garantizado
+Generalist returns to Village	Generalist vuelve a Village
+"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
+
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"Generalist es un comerciante «todoterreno» que regenta una pequeña tienda dentro del edificio del garaje del Village, en el Área 05, y se especializa en productos de uso común.
+
+Tras tomarse un breve descanso, Generalist ha vuelto al trabajo y está listo para atender a sus fieles clientes con precios razonables."
+Doctor returns to School	El médico regresa a la escuela
+"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
+
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"El Doctor es un comerciante especializado en medicina que tiene una clínica improvisada dentro de un edificio escolar abandonado en el Área 05.
+
+Tras visitar a la Abuela para ver cómo se encuentra, el Doctor regresa a su clínica y está listo para atender a los heridos."
+Fighter Jets	Aviones de combate
+"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
+
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"Tras la evacuación del Área 05 y la desmilitarización de la Zona Fronteriza, la situación ha empezado a torcerse y es necesario hacer una demostración de fuerza.
+
+Las Fuerzas Armadas finlandesas comenzarán a realizar vuelos de reconocimiento aéreos no letales y de gran visibilidad con aviones de combate que aparecerán con frecuencia en el cielo."
+Missing Cat	Gato desaparecido
+"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
+
+A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
+
+Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"El gato de la abuela se ha perdido después de que el estampido sónico de un avión de combate lo asustara y saliera corriendo.
+
+Hace unos días, los Nómadas encontraron al gato vagando por el Puesto Fronterizo y lograron capturarlo con una especie de caja. Cuando los Nómadas comenzaron a llevar al gato de regreso con la abuela, sufrieron una emboscada de los Bandidos, quienes aparentemente se llevaron la caja.
+
+Los lugareños vieron a los Bandidos zarandeando la caja de manera cruel y, finalmente, abandonándola en algún lugar."
+Punisher arrives to Area 05	El Castigador llega al Área 05
+"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
+
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"Punisher es un jefe de bandidos y un temido cobrador de deudas en el mundo del crimen finlandés.
+
+Punisher y sus secuaces han robado una camioneta de la policía local y están dando vueltas por la Zona 05."
+Airdrops are delivered to Area 05	Se realizan lanzamientos aéreos en el Área 05
+"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
+
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"Tras un largo retraso, el ejército finlandés ha reanudado los lanzamientos aéreos en el Área 05.
+
+Los lanzamientos aéreos suelen contener ayuda humanitaria, como suministros médicos, productos de consumo y otros artículos de supervivencia necesarios."
+BTR Patrols	Patrullas BTR
+"The military faction has started to use armored vehicles in the Vostok area.
+
+Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"La facción militar ha comenzado a utilizar vehículos blindados en la zona de Vostok.
+
+Los BTR militares están equipados con ametralladoras pesadas y se han visto patrullas en las carreteras principales y en puntos estratégicos."
+Attack Helicopters	Helicópteros de ataque
+"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
+
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"La desmilitarización de la zona fronteriza está empezando a desmoronarse y es evidente que las normas anteriores ya no se aplican.
+
+Aunque las fuentes oficiales aseguran que nada ha cambiado, los helicópteros de combate han comenzado a realizar patrullas frecuentes y a violar el espacio aéreo cerca de la zona fronteriza."
+Helicopter Crash Sites	Lugares donde se han producido accidentes de helicóptero
+"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
+
+Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"Tras las violaciones del espacio aéreo, los incidentes aéreos fueron inevitables y varios helicópteros de combate fueron derribados a ambos lados de la frontera.
+
+Los lugares donde se estrellaron los helicópteros se encuentran dispersos por múltiples ubicaciones y contienen botines de gran valor, lo que también los convierte en puntos clave para la actividad de la IA."
+Gunsmith returns to Outpost	El armero regresa al Puesto Fronterizo
+"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
+
+Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"El armero es un comerciante que tiene un almacén de armas dentro de uno de los búnkeres del Puesto Fronterizo y se especializa en todo lo relacionado con las armas de fuego.
+
+El armero estuvo desaparecido durante varios meses, pero, según los rumores, se había ido de «viaje de negocios» al otro lado de la frontera y ahora ha regresado a su querido búnker en el Área 05."
+Outpost gets compromised	El puesto avanzado queda comprometido
+"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
+
+Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
+
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"A la luz de los acontecimientos anteriores, la situación en la Zona Fronteriza se está agravando rápidamente y las áreas cercanas están sufriendo las consecuencias.
+
+Los BTR militares ya pueden entrar en el mapa del Puesto Fronterizo y el Área 05 ya no se considera segura.
+
+Las noticias sobre el suceso se difundieron rápidamente entre los habitantes y comerciantes del Área 05, pero los medios de comunicación y las autoridades fuera del Área 05 solo las consideran rumores."
+Traders leave Area 05	Los comerciantes abandonan el Área 05
+"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
+
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"Tras el asalto al puesto avanzado, todos los comerciantes comenzaron a prepararse y a abandonar el Área 05.
+
+Parece que los comerciantes están tomando esta medida de forma temporal y que volverán cuando la situación se calme."
+Traders return to Area 05	Los comerciantes regresan a la Zona 05
+"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
+
+All traders are returning back to Area 05."	"La escalada de los acontecimientos recientes parece haberse detenido y el Área 05 no ha caído en un caos total.
+
+Todos los comerciantes están regresando al Área 05."
+Transmission	Transmisión
+"The signal that started it all has suddenly reappeared.
+
+The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
+
+This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"La señal que lo inició todo ha reaparecido de repente.
+
+La transmisión está interfiriendo con las emisiones de radio y se puede escuchar en todas las frecuencias habituales.
+
+Este es el último evento del Acceso Anticipado [Build 1]. Los eventos y la historia continuarán en las próximas versiones."
+Common	Común
+Rare	Raro
+Legendary	Legendario
+Armor Plate	Placa de blindaje
+Armor	Armadura
+Armor Plate {class}	Placa de blindaje {class}
+Armor Plate (II)	Placa de armadura (II)
+Armor Plate (III+)	Placa de armadura (III+)
+Armor Plate (III)	Placa de armadura (III)
+Armor Plate (IIIA)	Placa de armadura (IIIA)
+Armor Plate (IV)	Placa de armadura (IV)
+Backpack	Mochila
+Jääkäri Backpack (Black)	Mochila Jääkäri (Negra)
+Jääkäri BP.	Jääkäri BP.
+Jääkäri Backpack (Brown)	Mochila Jääkäri (marrón)
+Jääkäri Backpack (Green)	Mochila Jääkäri (verde)
+Jääkäri Backpack (M05)	Mochila Jääkäri (M05)
+Nomad Backpack	Mochila Nomad
+Nomad BP.	Nomad BP.
+Patrol Backpack	Mochila de patrulla
+Patrol BP.	Patrulla BP.
+Duffel (Retro)	Bolsa de lona (Retro)
+R. Duffel	R. Duffel
+Belt Pouch	Riñonera
+Kukkaro (Black)	Kukkaro (Negro)
+Kukkaro	Kukkaro
+Kukkaro (Brown)	Kukkaro (marrón)
+Kukkaro (Green)	Kukkaro (Verde)
+Kukkaro (M05)	Kukkaro (M05)
+Literature	Bibliografía
+Book (Children)	Libro (infantil)
+Children	Niños
+Book (Cooking)	Libro (de cocina)
+Cooking	Cocina
+Book (Fishing)	Libro (Pesca)
+Book (Religion)	Libro (Religión)
+Religion	Religión
+Clothing	Ropa
+Flame Beanie	Gorro Flame
+F. Beanie	F. Gorro
+Combat Boots	Botas militares
+C. Boots	C. Botas
+M62 Cap	Gorra M62
+Tactical Fleece (Brown)	Forro polar táctico (marrón)
+T. Fleece	T. Fleece
+Tactical Fleece (Green)	Forro polar táctico (verde)
+Leather Gloves	Guantes de cuero
+L. Gloves	L. Guantes
+Work Gloves	Guantes de trabajo
+W. Gloves	W. Guantes
+Mosquito Hat	Gorro antimosquitos
+M. Hat	M. Hat
+Sauna Hat	Gorro de sauna
+S. Hat	S. Hat
+Hoodie (Border Zone)	Sudadera con capucha (Border Zone)
+Hoodie BZ.	Sudadera con capucha BZ.
+Hoodie B.	Hoodie B.
+Hoodie (Gray)	Sudadera con capucha (gris)
+Hoodie	Sudadera con capucha
+M62 Jacket	Chaqueta M62
+M62 J.	M62 J.
+Santa Jacket	Chaqueta de Papá Noel
+Santa J.	Santa J.
+Winter Jacket (Blue)	Chaqueta de invierno (azul)
+Winter Jacket	Chaqueta de invierno
+Winter Jacket (Red)	Chaqueta de invierno (roja)
+Winter J.	Winter J.
+Jeans (Black)	Pantalones de mezclilla (negros)
+Jeans	Pantalones de mezclilla
+Hiking Pants	Pantalones de senderismo
+Hiking P.	Senderismo P.
+Windbreaker (Black)	Cortavientos (negro)
+Windbreaker	Cortavientos
+Windbr.	Windbr.
+Windbreaker (Green)	Cortavientos (verde)
+Consumables	Consumibles
+Consumable	Consumible
+Drink	Bebida
+Eat	Comer
+Eat Raw	Come crudo
+Eat (Raw)	Comer (crudo)
+Chew	Masticar
+Smoke	Humo
+Use	Uso
+Beer	Cerveza
+Empty Can	Lata vacía
+Can	¿Se puede?
+Canned Meat	Carne enlatada
+Meat	Carne
+Canned Meatballs	Albóndigas enlatadas
+Meatballs	Albóndigas
+Canned Pea Soup	Sopa de guisantes en lata
+Pea Soup	Sopa de guisantes
+Canned Peaches	Melocotones en conserva
+Peaches	Melocotones
+Canned Pear	Pera en conserva
+Pear	Pera
+Canned Peas	Guisantes en lata
+Peas	Guisantes
+Canned Pineapple	Piña enlatada
+Pineapple	Piña
+Canned Tomatoes	Tomates en lata
+Tomatoes	Tomates
+Canned Tuna	Atún en lata
+Tuna	Atún
+Cat Food	Comida para gatos
+War Chocolate	Chocolate de guerra
+W. Choco	W. Choco
+Cigarettes	Cigarrillos
+Cigs	Cigarrillos
+Cigars	Cigarros
+Coffee	Café
+Coffee (Brewed)	Café (preparado)
+C. Brewed	C. Elaborado
+Fish Soup (Cooked)	Sopa de pescado (cocida)
+F. Soup (Cooked)	F. Sopa (cocinada)
+F. Soup	F. Sopa
+Meatballs (Cooked)	Albóndigas (cocidas)
+M. Balls (Cooked)	M. Bolas (cocidas)
+M. Balls	M. Balls
+Pea Soup (Cooked)	Sopa de guisantes (cocida)
+P. Soup (Cooked)	P. Sopa (cocida)
+P. Soup	P. Soup
+Tomato Soup (Cooked)	Sopa de tomate (cocida)
+T. Soup (Cooked)	Sopa (cocida)
+T. Soup	T. Soup
+Crackers	Galletas saladas
+Energy Drink	Bebida energética
+E. Drink	E. Bebida
+Energy Powder	Polvo energético
+E. Powder	E. Polvo
+Field Ration	Ración de campaña
+F. Ration	F. Ración
+Juice	Jugo
+Juice (Orange)	Jugo (de naranja)
+Juice O.	Juice O.
+Juice (Pear)	Jugo (de pera)
+Juice P.	Juice P.
+Juice (Raspberry)	Jugo (de frambuesa)
+Juice R.	Juice R.
+Kilju	Kilju
+Kompot	Kompot
+Mustard	Mostaza
+Peanuts	Cacahuetes
+Potato	Papa
+Salty Liquorice	Regaliz salado
+Salty Liq.	Salty Liq.
+Snus	Snus
+Soda (Lemon)	Refresco (de limón)
+Soda	Refresco
+Soda L.	Soda L.
+Sugar	Azúcar
+Water Bottle	Botella de agua
+Water	Agua
+Yeast	Levadura
+Electronics	Electrónica
+Alarm Clock	Despertador
+A. Clock	A. Reloj
+Batteries	Baterías
+Battery	Batería
+Battery Cables	Cables de batería
+B. Cables	B. Cables
+Casette	Casete
+Casette (Electrofolk)	Casette (Electrofolk)
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - ¿Cómo supiste que ibas a venir?
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - Papá le regaló un caballo
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	Junna - Ruslana
+Junna - Vandringsman	Junna - El vagabundo
+Casette (Nomad)	Casette (Nomad)
+Casette (OST)	Casete (banda sonora original)
+OST - Alive	Banda sonora - Alive
+OST - Daybreak	OST - Amanecer
+OST - Far	OST - Lejos
+OST - Lost	Banda sonora - Lost
+OST - Rain	OST - Lluvia
+OST - Road	OST - Carretera
+OST - Trailer	OST - Tráiler
+OST - Winds	OST - Vientos
+Casette (Radio Hits)	Casete (Éxitos de la radio)
+Casette (Symphony)	Casette (Sinfonía)
+Vostok Symphony	Sinfonía Vostok
+Casette Player	Reproductor de casetes
+C. Player	C. Jugador
+Coffeemaster	Coffeemaster
+C. Master	C. Máster
+Cooking Station	Estación de cocina
+C. Station	C. Estación
+Hotplate	Placa calefactora
+Inverter	Inversor
+Narva	Narva
+Polaris	Polaris
+Fish	Pescado
+Fishing	Pesca
+Bream	Bream
+Fishing Rod	Caña de pescar
+F. Rod	F. Rod
+Perch	Percha
+Pike	Lucio
+Roach	Cucaracha
+Grenade	Granada
+Helmet	Casco
+Police Helmet (IIIA)	Casco policial (IIIA)
+Police Helmet	Casco policial
+P. Helmet	P. Helmet
+Instrument	Instrumento
+Guitar	Guitarra
+Harmonica	Armónica
+Harmo.	Harmo.
+Key	Clave
+Attic Key	La llave del ático
+Attic K.	Ático K.
+Bunker Key	Bunker Key
+Bunker K.	Bunker K.
+Cellar Key	Cellar Key
+Cellar K.	Bodega K.
+Classroom Key	Clave del aula
+Class. K.	Clase K.
+Gymnasium Key	Clave del gimnasio
+Gym. K.	Gimnasio. K.
+Tunnel Key	Clave del túnel
+Tunnel K.	Túnel K.
+Knife	Cuchillo
+Jaeger 140	Jaeger 140
+Jaeger	Jaeger
+Skrama 200	Skrama 200
+Skrama	Skrama
+Skrama 240	Skrama 240
+Lore	Tradición
+Cat	Gato
+Oil Sample	Muestra de aceite
+Oil S.	Oil S.
+Patient Report	Informe del paciente
+P. Report	P. Informe
+Heal	Sanar
+Spray	Spray
+Medical	Médico
+Antibiotics	Antibióticos
+Antibio.	Antibio.
+Antiseptic	Antiséptico
+A. Septic	A. Fosa séptica
+Balm	Bálsamo
+Bandage	Vendaje
+Bandage (Improvised)	Vendaje (improvisado)
+Cold Medicine	Medicamentos para el resfriado
+C. Med.	Lic. en Medicina
+Deodorant	Desodorante
+Deodora.	Deodora.
+Gum	Chicle
+Lotion	Loción
+Medkit	Botiquín
+Melatonin	Melatonina
+Melaton.	Melatonina.
+Painkill.	Analgésico.
+Saline	Salina
+Splint	Férula
+Splint (Improvised)	Férula (improvisada)
+Thermal Blanket	Manta térmica
+Thermal	Térmico
+Tissues	Pañuelos de papel
+Sneeze	Estornudo
+Tourniquet	Torniquete
+Tourni.	Tourni.
+Tourniquet (Improvised)	Tornillo de hemostasia (improvisado)
+Wipes	Toallitas
+Wipe	Limpiar
+Misc	Varios
+Blanket	Manta
+Board Game	Juego de mesa
+B. Game	B. Juego
+Bucket	Cubo
+Coffee Filter	Filtro de café
+C. Filter	C. Filtro
+Duct Tape	Cinta adhesiva
+D. Tape	D. Cinta
+Happy Stove	Happy Stove
+H. Stove	H. Stove
+Jerry Can	Bidón
+Jerry C.	Jerry C.
+Lumber	Madera
+Map	Mapa
+Map (Tactical)	Mapa (táctico)
+T. Map	T. Mapa
+Matches	Partidos
+Mat.	Mat.
+Mattress	Colchón
+Mess Kit	Juego de utensilios de cocina
+Nails	Uñas
+Oil Filter	Filtro de aceite
+O. Filter	O. Filtro
+Pillow	Almohada
+Rags	Trapos
+Sleeping_Bag	Saco de dormir
+Sleeping Bag	Saco de dormir
+S. Bag	S. Bag
+Sticks	Palos
+Tackle Box	Caja de aparejos
+Tackle B.	Tackle B.
+Toilet Paper	Papel higiénico
+T. Paper	T. Papel
+Toolbox	Caja de herramientas
+Water Lock	Bloqueo de agua
+W. Lock	W. Lock
+Weapon Repair Kit	Kit de reparación de armas
+Repair Kit	Kit de reparación
+Rig	Plataforma
+LVPC (Green)	LVPC (Verde)
+LVPC (Winter)	LVPC (Invierno)
+Fishing Vest	Chaleco de pesca
+F. Vest	F. Vest
+Weapon	Arma
+Mag.	Mag.
+KA-12 Magazine	Revista KA-12
+KA-M Magazine	Revista KA-M
+KAS-74U Magazine	Revista KAS-74U
+C1911 Magazine	Revista C1911
+G7 Magazine	Revista G7
+KAR-21 Magazine (.223)	Cargador KAR-21 (.223)
+KAR-21 Magazine (.308)	Cargador KAR-21 (.308)
+KAR-21 Barrel (.308)	Cañón KAR-21 (.308)
+KAR-21 Barrel	Cañón del KAR-21
+Barrel	Cañón
+KP-31 Drum	Tambor KP-31
+Drum	Tambor
+STANAG Magazine	Revista STANAG
+M78 Magazine	Revista M78
+Karov	Karov
+Karov Magazine	Revista Karov
+Mosin	Mosin
+PM5 Magazine	Revista PM5
+MP7 Magazine	Revista MP7
+P3 Magazine	Revista P3
+RK Magazine	Revista RK
+VSD Magazine	Revista VSD
+SS Magazine	Revista SS
+Ammo	Munición
+Attachment	Archivo adjunto
+Hybrid	Híbrido
+Kobra	Kobra
+Leopard	Leopardo
+Micro	Micro
+Monster	Monstruo
+Thor	Thor
+Fire [Ignite]	Fuego [Encender]
+Fire [Matches not equipped]	Fuego [Sin cerillas]
+Fire [Extinguish]	Fuego [Extinguir]
+New Furniture Added [Catalog]	Se han añadido nuevos muebles [Catálogo]
+Boss Killed	Asesinato del jefe
+Cat Rescued	Gato rescatado
+Cat Vital Activated	Cat Vital Activado
+Cat Died	Murió el gato
+You have been spotted!	¡Te han visto!
+Player Returned	Jugador devuelto
+Airdrop	Lanzamiento aéreo
+Tutorial Crate	Tutorial Crate
+Electric Box	Caja eléctrica
+Medical Cabinet	Botiquín
+Office Cabinet	Mueble de oficina
+Cabinet	Gabinete
+Corpse	Cadáver
+Bandit Corpse	Cadáver de bandido
+Crate Military	Crate Military
+Crate Special	Oferta especial de jaulas
+Wooden Crate	Caja de madera
+Garbage	Basura
+Fireplace	Chimenea
+Freezer	Congelador
+Fridge	Hielera
+Fusebox	Caja de fusibles
+Locker	Casillero
+Mailbox	Buzón
+Nightstand	Mesita de noche
+Boxes	Cajas
+Stove	Estufa
+Furniture	Muebles
+Furnitures	Muebles
+Bed (Civilian)	Cama (civil)
+Bed C.	Cama C.
+Bed (Nomad)	Cama (Nomad)
+Bed N.	Cama N.
+Cabinet (Medical)	Gabinete (Médico)
+Cabinet M.	Gabinete M.
+Cabinet (Office)	Gabinete (Oficina)
+Cabinet. 0	Gabinete. 0
+Cabinet (Wood)	Armario (de madera)
+Cabinet W.	Gabinete W.
+Carpet (Persian)	Alfombra (persa)
+Carpet P.	Carpet P.
+Carpet (Rag)	Alfombra (de trapo)
+Carpet R.	Carpet R.
+Chair (Office)	Silla (de oficina)
+Chair O.	Presidente O.
+Chair (School)	Cátedra (Facultad)
+Chair S.	Presidente S.
+Sun Chair	Silla Sun
+S. Chair	Presidente de EE. UU.
+Crate (Military)	Caja (militar)
+Crate M.	Crate M.
+Crate (Special)	Caja (especial)
+Crate S.	Crate S.
+Cupboard	Armario
+C. Board	C. Junta Directiva
+Curtain (Long)	Cortina (larga)
+Curtain L.	Cortina L.
+Curtain (Mini)	Cortina (Mini)
+Curtain M.	Curtain M.
+Dartboard	Diapositiva
+D. Board	D. Junta Directiva
+N. Stand	N. Stand
+Painting (Lake)	Pintura (Lago)
+Painting L.	Pintura L.
+Pallet	Palé
+Poster (Posture)	Cartel (Postura)
+Poster P.	Cartel P.
+Rack (Coat)	Perchero (para abrigos)
+Rack C.	Rack C.
+Rya (Maria)	Rya (María)
+Rya M.	Rya M.
+Shelf (Metal)	Estante (de metal)
+Shelf M.	Estante M.
+Shelf (Wall)	Estante (de pared)
+Shelf W.	Estante W.
+Shelf (Wood)	Estante (de madera)
+Sign (Border Zone)	Cartel (Zona fronteriza)
+Sign BZ.	Firma BZ.
+Sofa (Leather)	Sofá (de cuero)
+Sofa L.	Sofá L.
+Stool (Military)	Taburete (militar)
+Stool M.	M. Stool
+Stool (Padded)	Taburete (acolchado)
+Stool P.	Heces P.
+Table (Cabin)	Mesa (cabina)
+Table C.	Tabla C.
+Table (Canteen)	Mesa (comedor)
+Table (Kitchen)	Mesa (de cocina)
+Table K.	Tabla K.
+Table (Office)	Mesa (de oficina)
+Table. O	Tabla. O
+Target Stand	Soporte para dianas
+Target S.	Destino S.
+Television	Televisión
+TV	Televisión
+Trolley (Short)	Carrito (corto)
+Trolley S.	Trolley S.
+Trolley (Tall)	Carrito (alto)
+Trolley T.	Trolley T.
+Weapon Display	Exposición de armas
+Weapon D.	Arma D.
+Unload	Descargar
+Clear Chamber	Cámara transparente
+Unequip	Quitar
+Equip	Equipar
+Show	Mostrar
+Hide	Ocultar
+Activated	Activado
+Not active	No activo
+All maps & zones	Todos los mapas y zonas
+Active	Activo
+Repair	Reparación
+Craft	Artesanía
+Added	Añadido
+Remove	Eliminar
+Completed	Completado
+Add to Notes	Añadir a las notas
+Frozen	Frozen
+Permadeath Zone	Zona de muerte permanente
+[Open]	[Abrir]
+Door [Jammed]	Puerta [atascada]
+Door [Occupied]	Puerta [Ocupado]
+Door [Close]	Puerta [Cerrar]
+Door [Open]	Puerta [Abierta]
+Sleep (Random sleep: 6-12h)	Sueño (Sueño aleatorio: 6-12 h)
+Turn Off	Desactivar
+Turn On	Encender
+Radio [Turn Off]	Radio [Apagar]
+Radio [Turn On]	Radio [Encender]
+Television [Turn Off]	Televisión [Apagar]
+Television [Turn On]	Televisión [Encender]
+Rescue Cat	Gato rescatado
+Cat is eating, do not disturb	El gato está comiendo, no molestar
+Fuel Tank [89%]	Depósito de combustible [89 %]
+Feed cat:	Alimentar al gato:
+Indoors	En interiores
+Indoor	En interiores
+Mine	Mío
+Lure	Señuelo
+(Military)	(Militar)
