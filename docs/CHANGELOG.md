@@ -4,6 +4,64 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.5.3] — 2026-05-30 (Five New Languages — DeepL Initial Pass)
+
+This release adds **five new locales** as initial DeepL machine-translated
+passes (text only; texture translation pending). Locale registry was
+retuned: Italian — added briefly during this cycle then dropped because
+its initial DeepL pass never completed — was removed entirely, and Russian
+was added but disabled (the DeepL Free monthly quota was exhausted
+mid-pass; the partial Russian xlsx is preserved in-repo and will resume
+on next month's quota reset). `target_game_version` is now also declared
+in `mod.txt` (for ModLoader compatibility warnings) alongside the existing
+`info.json` value (consumed by the F9 Info tab).
+
+### Added
+
+- **New locales (5)** — each via the standard
+  `docs/dev/kr/Add_new_language.md` workflow (Template canonical TSV copy →
+  `rebuild_xlsx.py` → DeepL pipeline → `locale.json` registration):
+  - **Deutsch** — `display: "Deutsch"`, `message: "Sprache wählen"`.
+  - **Español (LatAm)** — `dir: Spanish_LatAm`, DeepL `ES-419`,
+    `display: "Español (LatAm)"`, `message: "Seleccionar idioma"`.
+  - **日本語** — `display: "日本語"`, `message: "言語を選択"`.
+  - **简体中文** — `dir: ChineseSimplified`, DeepL `ZH-HANS`,
+    `display: "简体中文"`, `message: "选择语言"`.
+  - **繁體中文** — `dir: ChineseTraditional`, DeepL `ZH-HANT`,
+    `display: "繁體中文"`, `message: "選擇語言"`.
+- **Russian locale (disabled)** — `dir: Russian`, `enabled: false`.
+  DeepL pass partially completed (~252/1100 unique strings translated)
+  before the Free monthly quota was exhausted. The partial xlsx is kept
+  in-repo (`Translations/Russian/Translation.xlsx`) and will be completed
+  on next month's quota reset, at which point the locale flips to
+  `enabled: true`.
+- **`mod.txt[target_game_version]` field** — declared so the value is
+  also picked up by ModLoader (`MetroModLoader` etc.) for game-version
+  compatibility warnings. `info.json` continues to carry its own
+  hand-edited `target_game_version` consumed by the F9 Info tab; both
+  should be kept in sync on each game-version bump.
+
+### Changed
+
+- **`substr_mode_label` localized for all new locales** in `locale.json`
+  (Deutsch / Español LatAm / 日本語 / 简体中文 / 繁體中文 / Русский).
+
+### Removed
+
+- **Italian locale** — added briefly during this cycle and removed before
+  release: the DeepL initial pass produced 0/1100 successful translations
+  (Free quota was already exhausted by the time Italian's run began), and
+  the locale was dropped entirely rather than shipped as an empty stub.
+  All `Translations/Italian/` files and the `locale.json` Italian entry
+  were deleted. Will be re-added in a future cycle once DeepL quota or
+  community contribution makes initial coverage viable.
+
+### Internal / Tooling
+
+- **Russian `Translation.xlsx` left at partial fill** — `translate_with_deepl.py`
+  resume support means a future run picks up at the remaining ~900 untranslated
+  unique strings without reprocessing the existing 252.
+
 ## [0.5.2] — 2026-05-27 (Crowdin Integration & Doc Restructure)
 
 This release completes the **Crowdin integration overhaul**: the Java
@@ -958,6 +1016,60 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.5.3] — 2026-05-30 (신규 5개 언어 — DeepL 1차 기계번역)
+
+이번 릴리스는 **신규 5개 로케일**을 DeepL 1차 기계번역(텍스트만, 텍스처는
+추후)으로 추가합니다. 로케일 레지스트리 재조정: 이번 사이클에서 임시로
+추가되었다가 DeepL 1차 패스가 완료되지 못한 Italian 은 출시 전 완전히
+제거했고, Russian 은 추가되었으나 비활성(`enabled: false`) 상태로 출시 —
+DeepL Free 월간 quota 가 패스 도중 소진되었으며, 부분 완료된 Russian xlsx
+는 저장소에 보존되어 다음 달 quota 리셋 시점에 이어서 완료할 예정입니다.
+`target_game_version` 은 ModLoader 호환 경고용으로 `mod.txt` 에도 함께
+선언되었습니다 (F9 Info 탭이 읽는 `info.json` 의 값과는 별도로 유지).
+
+### 추가
+
+- **신규 로케일 (5개)** — 모두 `docs/dev/kr/Add_new_language.md` 의 표준
+  워크플로(Template canonical TSV 복사 → `rebuild_xlsx.py` → DeepL
+  파이프라인 → `locale.json` 등록)로 추가:
+  - **Deutsch** — `display: "Deutsch"`, `message: "Sprache wählen"`.
+  - **Español (LatAm)** — `dir: Spanish_LatAm`, DeepL `ES-419`,
+    `display: "Español (LatAm)"`, `message: "Seleccionar idioma"`.
+  - **日本語** — `display: "日本語"`, `message: "言語を選択"`.
+  - **简体中文** — `dir: ChineseSimplified`, DeepL `ZH-HANS`,
+    `display: "简体中文"`, `message: "选择语言"`.
+  - **繁體中文** — `dir: ChineseTraditional`, DeepL `ZH-HANT`,
+    `display: "繁體中文"`, `message: "選擇語言"`.
+- **러시아어 로케일 (비활성)** — `dir: Russian`, `enabled: false`.
+  DeepL 패스 도중 Free 월간 quota 소진으로 부분 완료
+  (~252/1100 unique 문자열). 부분 xlsx 는 저장소에 보존
+  (`Translations/Russian/Translation.xlsx`) 되며, 다음 달 quota 리셋 시
+  잔여분 완료 후 `enabled: true` 로 전환 예정.
+- **`mod.txt[target_game_version]` 필드 추가** — ModLoader
+  (`MetroModLoader` 등) 가 게임 버전 호환 경고를 표시할 때 참조하도록
+  선언. F9 Info 탭이 읽는 `info.json` 의 `target_game_version` 은 그대로
+  hand-edit 유지되며, 게임 버전 bump 시 양쪽을 함께 갱신해야 합니다.
+
+### 변경
+
+- **모든 신규 로케일에 대해 `locale.json` 의 `substr_mode_label` 현지화**
+  (Deutsch / Español LatAm / 日本語 / 简体中文 / 繁體中文 / Русский).
+
+### 제거
+
+- **이탈리아어 로케일** — 이번 사이클 도중 추가되었다가 릴리스 전 제거.
+  DeepL 1차 패스가 0/1100 성공 (이탈리아어 차례에 도달했을 시점에 이미
+  Free quota 소진), 빈 stub 으로 출시하기보다 완전히 제거하는 것으로
+  결정. `Translations/Italian/` 디렉토리와 `locale.json` 의 이탈리아어
+  엔트리 모두 삭제. DeepL quota 또는 커뮤니티 기여로 초기 커버리지가
+  가능해지는 향후 사이클에 재추가 예정.
+
+### 내부 / 도구
+
+- **러시아어 `Translation.xlsx` 는 부분 채움 상태로 유지** —
+  `translate_with_deepl.py` 의 resume 지원으로 향후 run 은 기존 252개를
+  재처리하지 않고 잔여 ~900개의 unique 문자열부터 이어서 처리.
 
 ## [0.5.2] — 2026-05-27 (Crowdin 통합 & 문서 재구조)
 

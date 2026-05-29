@@ -1,9 +1,18 @@
 **Supported languages**
 
 - **English** (game default)
-- **Korean** (Mainly managed by lead developer)
-- **French** (Prototyped)
-- **Português_BS** (Prototyped, Texture not updated yet)
+- **Korean / 한국어** (Mainly managed by lead developer, texture reoworked)
+- **French / Français** (DeepL initial pass, texture prototyped)
+- **Português (Brasil)** (Prototyped, texture pending)
+- **Deutsch** (Prototyped, texture pending)
+- **Español (LatAm)** (Prototyped, texture pending)
+- **日本語** (Prototyped, texture pending)
+- **简体中文** (Prototyped, texture pending)
+- **繁體中文** (Prototyped, texture pending)
+
+> Most non-Korean languages started as DeepL machine-translated drafts.
+> Community refinement via [Crowdin](https://crowdin.com/project/trans-to-vostok)
+> is welcome.
 
 **Compatible mods** (tested — but compatibility may not always be guaranteed)
 
@@ -123,10 +132,15 @@ It aims to deliver **complete, non-missing translation** across all translatable
 
 1. **English**: The game's default language.
 2. **Korean (한국어)**: First development iteration complete. Both text and texture translation included.
-3. **French (Français)**: Added in v0.4.0 — initial pass via DeepL machine translation (text only; texture translation not yet shipped). Currently maintained internally; the public repository and contribution flow for community refinement are still being prepared.
-4. Other languages will be supported gradually as the ToolBox refactor finishes.
+3. **French (Français)**: Added in v0.4.0 — initial pass via DeepL machine translation (text only; texture translation pending).
+4. **Português (Brasil)**: Added in v0.5.1 — Prototyped via Machine Translation (DeepL) (text only; texture pending).
+5. **Deutsch / Español (LatAm) / 日本語 / 简体中文 / 繁體中文**: Added in v0.5.3 — Prototyped via Machine Translation (DeepL) (text only; texture pending).
+6. **Русский / Italiano**: Pending due to a DeepL API quota exceeded. Scheduled to be added in June.
+7. And other languages will be added as quota / community demand allow.
 
-To request additional languages, please submit a GitHub issue (to be published).
+**Want to contribute or request a language?**
+- Translation contributions (any language listed above): join on [Crowdin](https://crowdin.com/project/trans-to-vostok) and start translating in the browser — no setup required.
+- New language request or general feedback: submit a GitHub issue (to be published).
 
 ## 5. Attribution
 
@@ -139,11 +153,18 @@ Per-locale translator credit (text + texture) is in **`Trans To Vostok/<locale>/
 **지원 언어**
 
 - **English** (게임 기본언어)
-- **Korean** (메인 타깃)
-- **French** (프로토타입 — 테스트 중)
-- 한국어/프랑스어 검증 완료 후 다른 언어를 점진적으로 추가할 예정.
-  라틴 알파벳에 발음 부호가 섞이는 언어 (French, Português 등) 의
-  사전 점검과 ToolBox 리팩토링이 함께 진행 중.
+- **Korean / 한국어** (개발자로부터 번역 관리중, 텍스처 작업 완료)
+- **French / Français** (DeepL 1차 기계번역, 텍스처 프로토타입)
+- **Português (Brasil)** (프로토타입, 텍스처 미적용)
+- **Deutsch** (프로토타입, 텍스처 미적용)
+- **Español (LatAm)** (프로토타입, 텍스처 미적용)
+- **日本語** (프로토타입, 텍스처 미적용)
+- **简体中文** (프로토타입, 텍스처 미적용)
+- **繁體中文** (프로토타입, 텍스처 미적용)
+
+> 한국어 외 대부분은 DeepL 기계번역으로 시작된 초안 상태입니다.
+> [Crowdin](https://crowdin.com/project/trans-to-vostok)에서
+> 커뮤니티 검수/개선 환영합니다.
 
 **호환 모드** (테스트 됨 — 호환성이 항상 보장되지는 않을 수 있음)
 
@@ -259,12 +280,17 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 
 ## 4. 지원 언어
 
-1. English: 게임의 기본 언어입니다.
-2. 한국어 (Korean): 1차 개발 완료. 텍스트 + 텍스처 번역 모두 포함.
-3. 프랑스어 (French / Français): v0.4.0 에 추가됨 — DeepL 로 1차 기계번역 (텍스트만 적용; 텍스처 번역은 아직 미포함). 현재 내부에서 관리 중이며, 커뮤니티 검수/보정용 공개 저장소 및 기여 흐름은 준비 중.
-4. 그 외 다른 언어는 ToolBox 정리가 마무리되는 대로 점진적으로 지원해 나갈 계획입니다.
+1. **English**: 게임의 기본 언어입니다.
+2. **한국어 (Korean)**: 번역 완료 (텍스처 번역 포함). QA 진행중.
+3. **프랑스어 (Français)**: v0.4.0 추가 — DeepL 1차 기계번역 (텍스트만, 텍스처 미적용).
+4. **포르투갈어 (Português / Brasil)**: v0.5.1 추가 — DeepL 1차 기계번역 (텍스트만, 텍스처 미적용).
+5. **독일어 (Deutsch) / 스페인어 LatAm (Español) / 일본어 (日本語) / 중국어 간체 (简体中文) / 중국어 번체 (繁體中文)**: v0.5.3 추가 — DeepL 1차 기계번역 (텍스트만, 텍스처 미적용). Crowdin 커뮤니티 검수 환영.
+6. **러시아어 (Русский)**: DeepL 번역 부분 완료 (quota 한도로 일시 중단). 잔여 부분 완료 시 활성화 예정.
+7. **이탈리아어 (Italiano)** 및 그 외 언어: quota / 커뮤니티 수요에 따라 추가 예정.
 
-추가 언어 지원을 원하시면 GitHub 이슈로 요청해 주세요. (차후 공개 예정)
+**번역 기여 또는 새 언어 요청**:
+- 위 언어의 번역 기여: [Crowdin](https://crowdin.com/project/trans-to-vostok)에서 가입 후 브라우저에서 바로 작업 (별도 셋업 불필요).
+- 새 언어 요청 / 일반 피드백: GitHub 이슈로 요청해 주세요 (차후 공개 예정).
 
 ## 5. 출처 표기 (Attribution)
 

@@ -12,6 +12,18 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.5.3] — 2026-05-30
+
+- **Added**: **5 new languages** — *Deutsch*, *Español (LatAm)*,
+  *日本語*, *简体中文*, *繁體中文*. Each is an initial DeepL
+  machine-translated pass (text only; texture translation pending).
+- **Added (disabled)**: **Russian** (*Русский*) — partial DeepL pass
+  (~23%) before the monthly translation quota was exhausted. The
+  locale ships disabled and will become selectable once the quota
+  resets and the remaining strings are translated.
+
+---
+
 ## [0.5.2] — 2026-05-27
 
 - **Fixed**: **Portuguese (Brazil)** translations were not loading
@@ -184,6 +196,18 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 ## 알려진 문제
 
 - _(현재 없음)_
+
+---
+
+## [0.5.3] — 2026-05-30
+
+- **추가**: **새로운 5개 언어** — *Deutsch*, *Español (LatAm)*,
+  *日本語*, *简体中文*, *繁體中文*. 각 언어는 DeepL 1차 기계번역
+  (텍스트만, 텍스처는 추후 작업 예정).
+- **추가 (비활성)**: **러시아어** (*Русский*) — DeepL 번역 부분
+  완료 (~23%) 후 월간 quota 한도 도달로 일시 중단.
+  현재는 비활성 상태로 출시하며, quota 리셋 후 잔여 분량이 완료되면
+  활성화될 예정입니다.
 
 ---
 
