@@ -1,0 +1,627 @@
+text	translation
+Compatibility	相容性
+Selected	已選取
+Press key to bind...	按下按鍵以綁定...
+Forward	前言
+Backward	返回
+Left	左
+Right	對
+Crouch	克勞奇
+Jump	跳轉
+Sprint	Sprint
+Lean Left	向左傾
+Lean Right	向右傾
+Draw Primary	繪製主圖
+Draw Secondary	繪製次要圖層
+Draw Knife	刨刀
+Draw Grenade 1	繪製手榴彈 1
+Draw Grenade 2	繪製手榴彈 2
+Raise Weapon	舉起武器
+Lower Weapon	放下武器
+Aim	目的
+Canted Aim	傾斜瞄準
+Fire	火
+Reload	重新載入
+Ammo Check	彈藥檢查
+Firemode	火模式
+Inspect Weapon	檢查武器
+Prepare Insert	準備插入
+Insert Cartridge	插入墨盒
+Interact	互動
+Place	地點
+Decor Mode	裝飾模式
+Flashlight	手電筒
+NVG	NVG
+Laser	雷射
+Rail Movement	軌道移動
+Secondary Optic	次級光學元件
+Interface	介面
+Rotate Item	旋轉項目
+Fast Transfer	快速傳輸
+Fast Equip	快速裝備
+Fast Drop	快速下墜
+Left Mouse Button	滑鼠左鍵
+Right Mouse Button	滑鼠右鍵
+Middle Mouse Button	滑鼠中鍵
+Mouse Wheel Up	滑鼠滾輪向上
+Mouse Wheel Down	滑鼠滾輪向下
+Mouse Thumb Button 1	滑鼠拇指按鈕 1
+Mouse Thumb Button 2	滑鼠拇指按鈕 2
+UI Scaling	UI 縮放
+Loading...	載入中...
+Skip Intro [SPACE]	跳過介紹 [空格鍵]
+All save files deleted	所有儲存檔已刪除
+Character died	角色死亡
+Intro	簡介
+Cabin	艙室
+Shelter	庇護所
+Tutorial	教學指南
+Menu	選單
+Attic	閣樓
+Death	死亡
+Classroom	教室
+Tent	帳篷
+Bunker	掩體
+Village	村莊
+Area 05	第05區
+Highway	高速公路
+School	學校
+Outpost	前哨站
+Border Zone	邊境地帶
+Minefield	雷區
+Apartments	公寓
+Terminal	終端機
+Tutorial Exit	教學結束
+Template	範本
+shaders	著色器
+Trader	交易員
+Generalist	通才
+Doctor	醫生
+Gunsmith	槍械師
+Driver	駕駛員
+Grandma	奶奶
+Shaman	薩滿
+Fisherman	漁夫
+Scientist	科學家
+Bandit	強盜
+Guards	守衛
+Military	軍事
+Punisher	懲罰者
+Neutral	中立
+Overcast	陰天
+Rain	雨
+Storm	風暴
+Generic	通用
+Wood	木
+Metal	金屬
+Concrete	混凝土
+Rock	搖滾
+Vostok	沃斯托克
+Inventory	庫存
+Primary	小學
+Secondary	中學
+Vital	至關重要
+Task Notes empty	任務備註為空
+Task Notes not available (Tutorial)	任務筆記無法使用（教學）
+Map not equipped	未裝備地圖
+Map not usable (Vostok)	地圖無法使用（沃斯托克）
+Casette Player not equipped	未配備卡式錄音機
+Casette Player power 0%, recharge player	卡式播放器電量 0%，請為播放器充電
+Casette Player empty, insert casette	卡帶播放器為空，請放入卡帶
+Override Ambient Music [ON]	覆寫環境音樂 [開啟]
+Override Ambient Music [OFF]	覆寫環境音樂 [關閉]
+Sleep	睡眠
+Level 2	第 2 級
+Level 3	第 3 級
+Level 4	第 4 級
+Level 5	第 5 級
+Heat required	需加熱
+Workbench required	需配備工作檯
+Shelter required	需要庇護所
+Start Input	開始輸入
+Stop Input	停止輸入
+Reset Input	重設輸入
+Start Delivery	開始配送
+Stop Delivery	暫停配送
+Delivered	已送達
+CBRN	CBRN
+Overweight	超重
+Explosion	爆炸
+Fall	秋季
+Day	日
+Easy	簡單
+Intermediate	中級
+Hard	困難
+Trader Event	交易者活動
+Dynamic Event	動態活動
+Special Event	特別活動
+Dynamic	動態
+Special	特別版
+Guaranteed	保證
+Common	常見
+Rare	稀有
+Legendary	傳奇
+Armor Plate	裝甲板
+Armor	護甲
+Armor Plate {class}	裝甲板 {class}
+Armor Plate (II)	護甲板（II）
+Armor Plate (III+)	裝甲板（III+）
+Armor Plate (III)	裝甲板（III）
+Armor Plate (IIIA)	護甲板（III級A型）
+Armor Plate (IV)	護甲板（IV）
+Backpack	後背包
+Jääkäri Backpack (Black)	Jääkäri 後背包（黑色）
+Jääkäri BP.	Jääkäri BP.
+Jääkäri Backpack (Brown)	Jääkäri 後背包（棕色）
+Jääkäri Backpack (Green)	Jääkäri 後背包（綠色）
+Jääkäri Backpack (M05)	Jääkäri 後背包 (M05)
+Nomad Backpack	Nomad 後背包
+Nomad BP.	Nomad BP。
+Patrol Backpack	巡邏背包
+Patrol BP.	巡邏 BP。
+Duffel (Retro)	杜弗爾 (復古風)
+R. Duffel	R. 達菲爾
+Belt Pouch	腰包
+Kukkaro (Black)	Kukkaro（黑色）
+Kukkaro	庫卡羅
+Kukkaro (Brown)	庫卡羅（棕色）
+Kukkaro (Green)	庫卡羅（綠色）
+Kukkaro (M05)	庫卡羅 (M05)
+Literature	文學
+Book (Children)	書籍（兒童）
+Children	兒童
+Book (Cooking)	書籍（烹飪）
+Cooking	烹飪
+Book (Fishing)	書籍（釣魚）
+Book (Religion)	書籍（宗教）
+Religion	宗教
+Clothing	服裝
+Flame Beanie	火焰毛線帽
+F. Beanie	F. 貝尼
+Combat Boots	戰鬥靴
+C. Boots	C. 靴子
+M62 Cap	M62 帽
+Tactical Fleece (Brown)	戰術抓絨外套（棕色）
+T. Fleece	T. Fleece
+Tactical Fleece (Green)	戰術抓絨外套（綠色）
+Leather Gloves	皮手套
+L. Gloves	L. 手套
+Work Gloves	工作手套
+W. Gloves	W. 手套
+Mosquito Hat	防蚊帽
+M. Hat	M. Hat
+Sauna Hat	桑拿帽
+S. Hat	S. Hat
+Hoodie (Border Zone)	連帽衫（邊境地帶）
+Hoodie BZ.	連帽衫 BZ。
+Hoodie B.	胡迪·B.
+Hoodie (Gray)	連帽衫（灰色）
+Hoodie	連帽衫
+M62 Jacket	M62 夾克
+M62 J.	M62 J.
+Santa Jacket	聖誕老人外套
+Santa J.	聖塔·J.
+Winter Jacket (Blue)	冬季外套（藍色）
+Winter Jacket	冬季外套
+Winter Jacket (Red)	冬季外套（紅色）
+Winter J.	溫特·J.
+Jeans (Black)	牛仔褲（黑色）
+Jeans	牛仔褲
+Hiking Pants	登山褲
+Hiking P.	P. 健行
+Windbreaker (Black)	防風外套（黑色）
+Windbreaker	防風外套
+Windbr.	Windbr.
+Windbreaker (Green)	防風外套（綠色）
+Consumables	耗材
+Consumable	耗材
+Drink	飲品
+Eat	吃
+Eat Raw	生食
+Eat (Raw)	吃（生食）
+Chew	嚼
+Smoke	煙
+Use	使用
+Beer	啤酒
+Empty Can	空罐
+Can	可以
+Canned Meat	罐裝肉
+Meat	肉類
+Canned Meatballs	罐裝肉丸
+Meatballs	肉丸
+Canned Pea Soup	罐裝豌豆湯
+Pea Soup	豌豆湯
+Canned Peaches	罐裝水蜜桃
+Peaches	水蜜桃
+Canned Pear	罐裝梨
+Pear	梨
+Canned Peas	罐裝豌豆
+Peas	豌豆
+Canned Pineapple	罐裝鳳梨
+Pineapple	鳳梨
+Canned Tomatoes	番茄罐頭
+Tomatoes	番茄
+Canned Tuna	金槍魚罐頭
+Tuna	鮪魚
+Cat Food	貓糧
+War Chocolate	戰爭巧克力
+W. Choco	W. Choco
+Cigarettes	香菸
+Cigs	香菸
+Cigars	雪茄
+Coffee	咖啡
+Coffee (Brewed)	咖啡（沖泡）
+C. Brewed	C. 釀造
+Fish Soup (Cooked)	魚湯（煮好的）
+F. Soup (Cooked)	F. 湯（煮熟的）
+F. Soup	F. 湯
+Meatballs (Cooked)	肉丸（已煮熟）
+M. Balls (Cooked)	M. 肉丸（熟食）
+M. Balls	M. 鮑爾斯
+Pea Soup (Cooked)	豌豆湯（煮熟的）
+P. Soup (Cooked)	P. 湯（煮熟的）
+P. Soup	P. Soup
+Tomato Soup (Cooked)	番茄湯（煮好的）
+T. Soup (Cooked)	T. 湯（煮熟的）
+T. Soup	T. Soup
+Crackers	脆餅
+Energy Drink	能量飲料
+E. Drink	E. 飲品
+Energy Powder	能量粉
+E. Powder	E. 粉末
+Field Ration	野戰口糧
+F. Ration	F. 口糧
+Juice	果汁
+Juice (Orange)	果汁（柳橙）
+Juice O.	Juice O.
+Juice (Pear)	果汁（梨）
+Juice P.	Juice P.
+Juice (Raspberry)	果汁（覆盆子）
+Juice R.	Juice R.
+Kilju	吉州
+Kompot	果子露
+Mustard	芥末
+Peanuts	花生
+Potato	馬鈴薯
+Salty Liquorice	鹹味甘草
+Salty Liq.	鹹味液體
+Snus	斯努斯
+Soda (Lemon)	檸檬汽水
+Soda	蘇打水
+Soda L.	索達・L.
+Sugar	糖
+Water Bottle	水瓶
+Water	水
+Yeast	酵母
+Electronics	電子產品
+Alarm Clock	鬧鐘
+A. Clock	A. 時鐘
+Batteries	電池
+Battery	電池
+Battery Cables	電池電纜
+B. Cables	B. 纜線
+Casette	卡匣
+Casette (Electrofolk)	卡塞特（電子民謠）
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - 你是怎麼知道要來的
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - 爸爸送的馬
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	朱娜 - 魯斯蘭娜
+Junna - Vandringsman	Junna - 流浪者
+Casette (Nomad)	卡塞特（遊牧者）
+Casette (OST)	卡塞特 (原聲帶)
+OST - Alive	原聲帶 - 《Alive》
+OST - Daybreak	原聲帶 - 破曉
+OST - Far	原聲帶 - 《Far》
+OST - Lost	原聲帶 - 《迷失》
+OST - Rain	原聲帶 - 雨
+OST - Road	原聲帶 - 《Road》
+OST - Trailer	原聲帶 - 預告片
+OST - Winds	原聲帶 - 《風》
+Casette (Radio Hits)	卡式錄音帶（廣播熱門金曲）
+Casette (Symphony)	卡塞特（交響曲）
+Vostok Symphony	《東方交響曲》
+Casette Player	卡式錄音機
+C. Player	C. 玩家
+Coffeemaster	咖啡大師
+C. Master	C. 碩士
+Cooking Station	烹飪區
+C. Station	C. 車站
+Hotplate	電熱板
+Inverter	變頻器
+Narva	納爾瓦
+Polaris	北極星
+Fish	魚
+Fishing	釣魚
+Bream	鯛魚
+Fishing Rod	釣竿
+F. Rod	F. Rod
+Perch	鱸魚
+Pike	梭魚
+Roach	蟑螂
+Grenade	手榴彈
+Helmet	頭盔
+Police Helmet (IIIA)	警用頭盔（IIIA）
+Police Helmet	警用頭盔
+P. Helmet	P. 頭盔
+Instrument	樂器
+Guitar	吉他
+Harmonica	口琴
+Harmo.	哈莫。
+Key	關鍵
+Attic Key	閣樓鑰匙
+Attic K.	Attic K.
+Bunker Key	邦克島
+Bunker K.	邦克·K.
+Cellar Key	酒窖鑰匙
+Cellar K.	地窖 K.
+Classroom Key	課堂指南
+Class. K.	K班
+Gymnasium Key	體育館鑰匙
+Gym. K.	Gym. K.
+Tunnel Key	隧道鑰匙
+Tunnel K.	K號隧道
+Knife	刀
+Jaeger 140	Jaeger 140
+Jaeger	耶格
+Skrama 200	Skrama 200
+Skrama	斯克拉馬
+Skrama 240	Skrama 240
+Lore	背景故事
+Cat	貓
+Oil Sample	油樣
+Oil S.	奧伊爾·S.
+Patient Report	病患報告
+P. Report	P. 報告
+Heal	療癒
+Spray	噴霧
+Medical	醫療
+Antibiotics	抗生素
+Antibio.	安提比奧。
+Antiseptic	消毒劑
+A. Septic	A. 化糞池
+Balm	香膏
+Bandage	繃帶
+Bandage (Improvised)	繃帶（臨時製作）
+Cold Medicine	感冒藥
+C. Med.	醫學碩士
+Deodorant	除臭劑
+Deodora.	德奧多拉。
+Gum	口香糖
+Lotion	乳液
+Medkit	急救包
+Melatonin	褪黑激素
+Melaton.	褪黑激素。
+Painkill.	止痛藥。
+Saline	薩林
+Splint	夾板
+Splint (Improvised)	夾板（臨時製作）
+Thermal Blanket	保暖毯
+Thermal	熱力
+Tissues	面紙
+Sneeze	打噴嚏
+Tourniquet	止血帶
+Tourni.	圖爾尼。
+Tourniquet (Improvised)	止血帶（簡易版）
+Wipes	濕紙巾
+Wipe	擦拭
+Misc	雜項
+Blanket	毛毯
+Board Game	桌遊
+B. Game	B. 遊戲
+Bucket	水桶
+Coffee Filter	咖啡濾紙
+C. Filter	C. 篩選器
+Duct Tape	膠帶
+D. Tape	D. 膠帶
+Happy Stove	快樂爐灶
+H. Stove	H. 斯托夫
+Jerry Can	油桶
+Jerry C.	傑瑞・C.
+Lumber	木材
+Map	地圖
+Map (Tactical)	地圖（戰術）
+T. Map	T. 地圖
+Matches	比賽
+Mat.	Mat.
+Mattress	床墊
+Mess Kit	餐具組
+Nails	指甲
+Oil Filter	機油濾清器
+O. Filter	O. 濾網
+Pillow	枕頭
+Rags	破布
+Sleeping_Bag	睡袋
+Sleeping Bag	睡袋
+S. Bag	S. Bag
+Sticks	棍棒
+Tackle Box	釣具盒
+Tackle B.	塔克爾·B.
+Toilet Paper	衛生紙
+T. Paper	T. Paper
+Toolbox	工具箱
+Water Lock	水閘
+W. Lock	W. Lock
+Weapon Repair Kit	武器維修包
+Repair Kit	維修套件
+Rig	鑽井平台
+LVPC (Green)	LVPC（綠色）
+LVPC (Winter)	LVPC（冬季）
+Fishing Vest	釣魚背心
+F. Vest	F. 維斯特
+Weapon	武器
+Mag.	Mag.
+KA-12 Magazine	《KA-12》雜誌
+KA-M Magazine	《KA-M》雜誌
+KAS-74U Magazine	KAS-74U 彈匣
+C1911 Magazine	《C1911》雜誌
+G7 Magazine	《G7》雜誌
+KAR-21 Magazine (.223)	KAR-21 彈匣（.223）
+KAR-21 Magazine (.308)	KAR-21 彈匣（.308）
+KAR-21 Barrel (.308)	KAR-21 槍管（.308）
+KAR-21 Barrel	KAR-21 槍管
+Barrel	槍管
+KP-31 Drum	KP-31 鼓
+Drum	鼓
+STANAG Magazine	《STANAG》雜誌
+M78 Magazine	《M78》雜誌
+Karov	卡羅夫
+Karov Magazine	《卡羅夫雜誌》
+Mosin	莫辛
+PM5 Magazine	《PM5》雜誌
+MP7 Magazine	MP7 彈匣
+P3 Magazine	《P3》雜誌
+RK Magazine	《RK雜誌》
+VSD Magazine	《VSD》雜誌
+SS Magazine	《SS》雜誌
+Ammo	彈藥
+Attachment	附件
+Hybrid	混合型
+Kobra	科布拉
+Leopard	豹
+Micro	微型
+Monster	怪物
+Thor	索爾
+New Furniture Added [Catalog]	新增家具 [型錄]
+Boss Killed	老闆被殺
+Cat Rescued	貓咪獲救
+Cat Vital Activated	Cat Vital 已啟用
+Cat Died	貓咪去世了
+You have been spotted!	你被發現了！
+Player Returned	球員歸隊
+Airdrop	空投
+Tutorial Crate	教學資源包
+Electric Box	電箱
+Medical Cabinet	藥櫃
+Office Cabinet	辦公櫃
+Cabinet	內閣
+Corpse	屍體
+Bandit Corpse	盜賊屍體
+Crate Military	Crate Military
+Crate Special	木箱特惠
+Wooden Crate	木箱
+Garbage	垃圾
+Fireplace	壁爐
+Freezer	冷凍庫
+Fridge	冰箱
+Fusebox	Fusebox
+Locker	置物櫃
+Mailbox	信箱
+Nightstand	床頭櫃
+Boxes	盒子
+Stove	爐子
+Furniture	家具
+Furnitures	家具
+Bed (Civilian)	床（民用）
+Bed C.	床 C.
+Bed (Nomad)	床（Nomad）
+Bed N.	貝德·N.
+Cabinet (Medical)	內閣（醫療）
+Cabinet M.	M. 櫥櫃
+Cabinet (Office)	內閣（辦公室）
+Cabinet. 0	櫥櫃。0
+Cabinet (Wood)	櫥櫃（木製）
+Cabinet W.	W. 櫥櫃
+Carpet (Persian)	地毯（波斯）
+Carpet P.	地毯 P.
+Carpet (Rag)	地毯（碎布）
+Carpet R.	地毯 R.
+Chair (Office)	椅子（辦公用）
+Chair O.	主席 O.
+Chair (School)	系主任
+Chair S.	主席 S.
+Sun Chair	Sun Chair
+S. Chair	S. 主席
+Crate (Military)	軍用貨櫃
+Crate M.	克雷特·M.
+Crate (Special)	箱子（特殊）
+Crate S.	克雷特·S.
+Cupboard	櫥櫃
+C. Board	C. 董事會
+Curtain (Long)	窗簾（長款）
+Curtain L.	柯坦·L.
+Curtain (Mini)	窗簾（迷你款）
+Curtain M.	柯坦·M.
+Dartboard	飛鏢靶
+D. Board	D. 董事會
+N. Stand	N. 展位
+Painting (Lake)	油畫（湖）
+Painting L.	繪畫 L.
+Pallet	托盤
+Poster (Posture)	海報（姿勢）
+Poster P.	P. 海報
+Rack (Coat)	衣架（外套用）
+Rack C.	C 機架
+Rya (Maria)	瑞亞（瑪麗亞）
+Rya M.	Rya M.
+Shelf (Metal)	層架（金屬製）
+Shelf M.	Shelf M.
+Shelf (Wall)	壁掛式層架
+Shelf W.	Shelf W.
+Shelf (Wood)	層架（木製）
+Sign (Border Zone)	標誌（邊境區）
+Sign BZ.	請簽署 BZ。
+Sofa (Leather)	沙發（皮質）
+Sofa L.	沙發 L.
+Stool (Military)	軍用凳
+Stool M.	斯圖爾·M.
+Stool (Padded)	凳子（軟墊款）
+Stool P.	斯圖爾·P.
+Table (Cabin)	餐桌（艙內）
+Table C.	表 C.
+Table (Canteen)	餐桌（食堂）
+Table (Kitchen)	餐桌（廚房用）
+Table K.	表 K.
+Table (Office)	桌子（辦公用）
+Table. O	表 O
+Target Stand	標靶架
+Target S.	目標 S.
+Television	電視
+TV	電視
+Trolley (Short)	手推車（短款）
+Trolley S.	Trolley S.
+Trolley (Tall)	手推車（高款）
+Trolley T.	Trolley T.
+Weapon Display	武器展示
+Weapon D.	武器 D.
+Unload	卸載
+Clear Chamber	透明腔室
+Unequip	卸下
+Equip	裝備
+Show	顯示
+Hide	隱藏
+Activated	已啟用
+Not active	未啟用
+All maps & zones	所有地圖與區域
+Active	有效
+Repair	維修
+Craft	工藝
+Added	已新增
+Remove	移除
+Completed	已完成
+Add to Notes	加入筆記
+Frozen	冰雪奇緣
+Permadeath Zone	永久死亡區
+[Open]	[開啟]
+Door [Jammed]	門 [卡住]
+Door [Occupied]	門 [有人]
+Door [Close]	門 [關閉]
+Door [Open]	門 [開啟]
+Sleep (Random sleep: 6-12h)	睡眠（隨機睡眠時間：6-12小時）
+Turn Off	關閉
+Turn On	開啟
+Radio [Turn Off]	收音機 [關閉]
+Radio [Turn On]	收音機 [開啟]
+Television [Turn Off]	電視 [關閉]
+Television [Turn On]	電視 [開啟]
+Rescue Cat	被救援的貓
+Cat is eating, do not disturb	貓正在吃東西，請勿打擾
+Fuel Tank [89%]	油箱 [89%]
+Feed cat:	餵貓：
+Indoors	室內
+Indoor	室內
+Mine	我的
+Lure	誘餌
+(Military)	（軍事）

@@ -1,0 +1,608 @@
+location	parent	name	type	text	translation
+Scenes/Menu	.	Compatibility	Label	Compatibility	兼容性
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UI 缩放 [即将推出]
+UI/Interface	Equipment/Hints	Knife	Label	Knife	刀
+UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	手榴弹
+UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	手榴弹
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	热
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	附近的一种制作材料，某些烹饪类配方可能需要它。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	距离要求
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	工作台
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	一种附近的合成材料，某些建筑类配方可能需要它。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	距离要求
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	测试平台
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	一种附近的合成材料，某些电子类配方可能需要它。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	距离要求
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	庇护所
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	附近的一种制作材料，某些家具制作配方可能需要它。
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	距离要求
+UI/Interface	Trader/Panel	Info		Trader	交易员
+UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	承载能力
+UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	所有设备项目的容量值（千克）。
+UI/Interface	Inventory/Header/Capacity	Info		Inventory Stat	背包状态
+UI/Interface	Inventory/Header/Weight	Info		Inventory Weight	库存重量
+UI/Interface	Inventory/Header/Weight	Info		A weight value (kg) of all inventory items.	所有库存项目的重量（公斤）。
+UI/Interface	Inventory/Header/Weight	Info		Inventory Stat	背包状态
+UI/Interface	Inventory/Header/Value	Info		Inventory Value	库存价值
+UI/Interface	Inventory/Header/Value	Info		A price value (€) of all inventory items.	所有库存项目的价格（欧元）。
+UI/Interface	Inventory/Header/Value	Info		Inventory Stat	背包状态
+UI/Interface	Container/Header/Weight	Info		Container Weight	集装箱重量
+UI/Interface	Container/Header/Weight	Info		A weight value (kg) of all container items.	所有集装箱货物的总重量（公斤）。
+UI/Interface	Container/Header/Weight	Info		Container Stat	容器状态
+UI/Interface	Container/Header/Value	Info		Container Value	容器值
+UI/Interface	Container/Header/Value	Info		A price value (€) of all container items.	所有集装箱货物的价格（欧元）。
+UI/Interface	Container/Header/Value	Info		Container Stat	容器状态
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Carry Capacity	承载能力
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		"A weight capacity value (kg) of how much inventory weight you can carry.
+
+Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
+
+Carry Capacity by default is 10kg"	"负重上限（kg）指角色能够携带的物品总重量。
+
+当你装备背包、装备套件或带有正负重属性的服装等物品时，负重上限会相应增加。
+
+默认负重上限为10公斤"
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	装备属性
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	设备价值
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	所有设备项目的价格（欧元）。
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	装备属性
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	隔热
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
+
+Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
+
+Insulation increases when you equip clothing items with a positive insulation stat.
+
+Insulation examples:
+[100] = B. Temp decrease fully stopped
+[50] = B. Temp decrease slowed by 50%
+[0] = B. Temp decreases at default rate"	"基于服装的抗寒热保护值。
+
+隔热度与体温密切相关，它能减缓冬季体温的下降速度。
+
+装备具有正隔热属性的服装时，隔热度会提升。
+
+隔热度示例：
+[100] = 体温下降完全停止
+[50] = 体温下降速度减缓50%
+[0] = 体温以默认速度下降"
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Equipment Stat	装备属性
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Dexterity	灵巧
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		"An inertia-based value of how quickly you can move and do certain actions.
+
+Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
+
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	"一项基于惯性的属性，反映你移动和执行特定动作的速度。
+
+敏捷度与移动速度以及武器操作（如瞄准和装弹）相关。
+
+当你装备具有负敏捷度属性的笨重或不合人体工学的物品时，敏捷度会降低。"
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	装备属性
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Menace	威胁
+UI/Interface	Equipment/Stats/Elements/Menace	Info		"An intimidation value of how threatening AI sees your character and equipment.
+
+When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
+
+Menace increases when you equip items such as special clothing with a positive Menace stat.
+
+Menace only affects low-tier AI (Bandits)."	"“威胁值”反映了AI认为你的角色和装备有多具威胁性。
+
+当你的威胁值较高时，AI较少会对你采取攻击性或以攻击为主的行为。
+
+装备具有正威胁属性的特殊服装等物品时，威胁值会提升。
+
+威胁值仅对低级AI（强盗）生效。"
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	装备属性
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		CBRN	CBRN
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		"A protection value against chemical, biological, radiological and nuclear threats.
+
+CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
+
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	"一项抵御化学、生物、放射性和核威胁的防护属性。
+
+CBRN 与生命值密切相关，当你暴露在危险区域或接触危险物质时，CBRN 会减缓生命值的下降速度。
+
+当你装备具有正 CBRN 属性的物品（如特殊服装或防护面罩）时，CBRN 属性值会提升。"
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		Equipment Stat	装备属性
+UI/Interface	Character/Vitals/Elements/Health	Info		Health	健康
+UI/Interface	Character/Vitals/Elements/Health	Info		"Your main vital for staying alive.
+
+Health decreases with damages and active medical conditions.
+
+Health increases with certain medical items such as Bandages and Medkits.
+
+Health [0] -> Character dies"	"生命值是生存的关键。
+
+受到伤害或患有疾病时，生命值会减少。
+
+使用绷带和急救包等医疗物品可恢复生命值。
+
+生命值 [0] -> 角色死亡"
+UI/Interface	Character/Vitals/Elements/Health	Info		Vital	重要
+UI/Interface	Character/Vitals/Elements/Energy	Info		Energy	能源
+UI/Interface	Character/Vitals/Elements/Energy	Info		"Your hunger and energy level.
+
+Energy decreases over time and using map transitions with Energy Cost.
+
+Energy increases with certain consumables such as food.
+
+Energy [0] -> Starvation (Condition)"	"你的饥饿值和能量值。
+
+能量值会随时间流逝而减少，使用需要消耗能量的地图传送也会消耗能量。
+
+使用某些消耗品（如食物）可以增加能量值。
+
+能量 [0] -> 饥饿（状态）"
+UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	重要
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	补水
+UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
+
+Hydration decreases over time and using map transitions with Hydration Cost. 
+
+Certain dry or salty consumables may also decrease Hydration.
+
+Hydration increases with certain consumables such as drinks.
+
+Hydration [0] -> Dehydration (Condition)"	"你的口渴程度和水分值。
+
+水分值会随时间推移而降低，且在进行带有“水分消耗”的地图切换时也会降低。
+
+某些干燥或咸味消耗品也会降低水分值。
+
+某些消耗品（如饮料）会增加水分值。
+
+水分值 [0] -> 脱水（状态）"
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	重要
+UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	心理
+UI/Interface	Character/Vitals/Elements/Mental	Info		"Your happiness and sanity level.
+
+Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
+
+Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
+
+Mental [0] -> Insanity (Condition)"	"你的幸福感和精神状态。
+
+精神值会随时间流逝以及使用有害消耗品而下降。若存在任何活跃的疾病状态，下降速度将加倍。
+
+精神值会因食用零食、热餐等慰藉物品，或饮酒、吸烟等不良嗜好而提升。
+
+精神值 [0] -> 精神失常（状态）"
+UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	重要
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	体温
+UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
+
+Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
+
+Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
+
+Body Temp [0] -> Frostbite (Condition)"	"你的体温及体温水平。
+
+冬季随着时间推移，体温会逐渐下降。通过待在室内或穿戴具有正保温属性的服装，可以减缓体温下降的速度。
+
+在庇护所内或靠近火堆等热源时，体温会上升。某些与热相关的物品，如暖宝宝或太空毯，也能提升体温。
+
+体温 [0] -> 冻伤（状态）"
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	重要
+UI/Interface	Character/Vitals/Elements/Cat	Info		Cat	猫
+UI/Interface	Character/Vitals/Elements/Cat	Info		"Grandma's cat health level.
+
+Cat health activates if you decide to rescue the Cat and bring her to your shelter.
+
+Cat health decreases over time.
+
+Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
+
+Cat [0] -> Cat dies"	"奶奶的猫的健康值。
+
+如果你决定收养这只猫并将其带回你的收容所，猫的健康值系统就会生效。
+
+猫的健康值会随时间推移而下降。
+
+当你用猫粮或金枪鱼罐头等消耗品喂食猫咪时，猫的健康值会增加。
+
+猫 [0] -> 猫死亡"
+UI/Interface	Character/Vitals/Elements/Cat	Info		Vital	重要
+UI/Interface	Character/Medical/Elements/Overweight	Info		"A condition where you are carrying too much weight and movement becomes unsustainable.
+
+Causes:
+- Inventory Weight > Carry Capacity
+
+Symptoms
+- All stamina consumption [+50%]
+- All stamina regeneration [Blocked]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures:
+- Inventory Weight < Carry Capacity"	"一种因负重过重导致无法正常移动的状态。
+
+原因：
+- 背包重量 > 负重上限
+
+症状
+- 所有耐力消耗 [+50%]
+- 所有耐力恢复 [被阻断]
+- 移动速度 [-50%]
+- 跳跃高度 [-50%]
+
+解决方法：
+- 背包重量 < 负重上限"
+UI/Interface	Character/Medical/Elements/Overweight	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Starvation	Info		Starvation	饥饿
+UI/Interface	Character/Medical/Elements/Starvation	Info		"A condition where you have a lack of calories and essential nutrients.
+
+Causes:
+- Energy [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- Stamina consumption [+50%]
+- Stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"一种因缺乏热量和必需营养素而引发的状态。
+
+成因：
+- 能量 [0]
+
+症状：
+- 生命值 [-1 点 / 10 秒]
+- 耐力消耗 [+50%]
+- 耐力恢复 [-50%]
+
+治疗方法：
+- 消耗品"
+UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	脱水
+UI/Interface	Character/Medical/Elements/Dehydration	Info		"A condition where your body doesn't have enough fluids to function normally.
+
+Causes:
+- Hydration [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- All stamina consumption [+50%]
+- All stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"身体缺水，无法正常运作的状态。
+
+成因：
+- 补水 [0]
+
+症状：
+- 生命值 [-1 点 / 10 秒]
+- 所有耐力消耗 [+50%]
+- 所有耐力恢复 [-50%]
+
+治疗方法：
+- 消耗品"
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Bleeding	出血
+UI/Interface	Character/Medical/Elements/Bleeding	Info		"A condion where you have a minor bleeding from small cuts or scrapes.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+- Razor wire
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures: 
+- Bandage
+- Tourniquet
+- Medkit
+- IFAK / AFAK"	"一种因小割伤或擦伤导致轻微出血的状态。
+
+成因：
+- 武器伤害
+- 爆炸伤害
+- 坠落伤害
+- 刀片铁丝网
+
+症状：
+- 生命值 [每 5 秒减少 1 点]
+
+治疗方法：
+- 绷带
+- 止血带
+- 急救包
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Fracture	Info		Fracture	骨折
+UI/Interface	Character/Medical/Elements/Fracture	Info		"A condition where you have a partial or complete break in the bone.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures: 
+- Splint
+- Medkit
+- IFAK / AFAK"	"一种骨骼发生部分或完全断裂的状况。
+
+成因：
+- 武器伤害
+- 爆炸伤害
+- 坠落伤害
+
+症状：
+- 生命值 [-1 点 / 5 秒]
+- 移动速度 [-50%]
+- 跳跃高度 [-50%]
+
+治疗方法：
+- 夹板
+- 急救包
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Burn	Info		Burn	燃烧
+UI/Interface	Character/Medical/Elements/Burn	Info		"A condition where you have a tissue damage from intense heat or high-voltage electric current.
+
+Causes:
+- Fire damage
+- Electrical damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Balm
+- Lotion
+- Medkit
+- IFAK / AFAK"	"一种因高温或高电压电流导致组织受损的状况。
+
+成因：
+- 火灾伤害
+- 电击伤害
+
+症状：
+- 生命值 [-1 点 / 5 秒]
+
+治疗方法：
+- 药膏
+- 润肤露
+- 急救包
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Burn	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Frostbite	冻伤
+UI/Interface	Character/Medical/Elements/Frostbite	Info		"A condition where you have hypothermia or body part freezes from cold exposure.
+
+Causes: 
+- Body temperature [0]
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Fire sources
+- Sleeping Bag
+- Thermal Blanket"	"因暴露在寒冷环境中导致体温过低或身体部位冻伤的状况。
+
+原因：
+- 体温 [0]
+
+症状：
+- 生命值 [-1 点 / 5 秒]
+
+治疗方法：
+- 火源
+- 睡袋
+- 保暖毯"
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Insanity	Info		Insanity	疯狂
+UI/Interface	Character/Medical/Elements/Insanity	Info		"A condition where your sanity breaks and you start having dark thoughts.
+
+Causes: 
+- Mental [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+
+Cures:
+- Consumables
+- Sleeping
+- Fire sources
+- Instruments"	"一种精神崩溃、开始产生黑暗念头的状态。
+
+成因：
+- 精神 [0]
+
+症状：
+- 生命值 [-1 点 / 10 秒]
+
+治疗方法：
+- 消耗品
+- 睡眠
+- 火源
+- 乐器"
+UI/Interface	Character/Medical/Elements/Insanity	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Poisoning	中毒
+UI/Interface	Character/Medical/Elements/Poisoning	Info		"A condition where toxic substance entered your digestion or lungs.
+
+Causes:
+- Chemical damage
+- Toxic consumables
+
+Symptoms:
+- Health [-1 unit / 2 sec]
+
+Cures:
+- Medkit
+- AFAK"	"一种有毒物质进入消化道或肺部的状况。
+
+原因：
+- 化学损伤
+- 有毒消耗品
+
+症状：
+- 生命值 [-1 点 / 2 秒]
+
+治疗方法：
+- 急救包
+- AFAK"
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Rupture	Info		Rupture	破裂
+UI/Interface	Character/Medical/Elements/Rupture	Info		"A critical condition where you have a catastrofal bleeding or major internal wound.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"一种危急状态，此时你会遭受致命性出血或严重的内伤。
+
+原因：
+- 武器伤害
+- 爆炸伤害
+
+症状：
+- 生命值 [-1 点 / 1 秒]
+
+治疗方法：
+- 急救包
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Rupture	Info		Medical Condition	健康状况
+UI/Interface	Character/Medical/Elements/Headshot	Info		Headshot	头像
+UI/Interface	Character/Medical/Elements/Headshot	Info		"A critical condition where you have a major head related wound.
+
+Causes: 
+- Weapon damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"一种危急状况，表现为头部遭受严重创伤。
+
+原因：
+- 武器伤害
+
+症状：
+- 生命值 [-1 点 / 1 秒]
+
+治疗方法：
+- 急救包
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Headshot	Info		Medical Condition	健康状况
+UI/Interface	Character/Stats/Elements/Day	Info		Day	天
+UI/Interface	Character/Stats/Elements/Day	Info		"Number of Days survived.
+
+New day begins at 00:00 midnight and certain amount of days will unlock new game events.
+
+Upcoming events can be displayed by using the Events tool."	"生存天数。
+
+新的一天于午夜00:00开始，达到一定天数将解锁新的游戏活动。
+
+可通过“活动”工具查看即将到来的活动。"
+UI/Interface	Character/Stats/Elements/Day	Info		Progression Stat	进度统计
+UI/Interface	Character/Stats/Elements/Shelters	Info		Shelters	收容所
+UI/Interface	Character/Stats/Elements/Shelters	Info		"Number of Shelters unlocked.
+
+Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
+
+New game starts with two unlocked Shelters called Cabin and Tent.
+
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	"已解锁的避难所数量。
+
+避难所是保存游戏进度和战利品的安全区域。游戏世界中分布着多个避难所，它们在主题、规模和可自定义性方面各不相同。
+
+新游戏开始时，将解锁两个名为“小木屋”和“帐篷”的避难所。
+
+通过完成不同商人的任务获得钥匙，即可解锁更多避难所。"
+UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	进度统计
+UI/Interface	Character/Stats/Elements/Tasks	Info		Tasks	任务
+UI/Interface	Character/Stats/Elements/Tasks	Info		"Number of Tasks completed.
+
+Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
+
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"已完成的任务数量。
+
+任务是商人发布的基于物品的工作。任务可能涉及多个商人之间的联动，也可能需要通过制作获得不可拾取的物品。
+
+完成任务可降低交易价格（商人税），并获得钥匙以解锁新的避难所和特殊房间。"
+UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	进度统计
+UI/Interface	Character/Stats/Elements/Quests	Info		Quests	任务
+UI/Interface	Character/Stats/Elements/Quests	Info		"Number of Quests completed.
+
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"已完成的任务数量。
+
+任务是由商人发布的、基于游戏背景故事的任务。不同商人的任务之间可能相互关联，且某些任务可能需要触发特定事件后才会解锁。"
+UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	进度统计
+UI/Interface	Character/Stats/Elements/CDS	Info		Civil Defence Shelters	民防避难所
+UI/Interface	Character/Stats/Elements/CDS	Info		"Number of CDS completed.
+
+Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
+
+After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
+
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	"已完成的民防掩体数量。
+
+民防掩体（CDS）是混凝土碉堡和地下区域，旨在抵御军事威胁。
+
+在05区疏散后，这些民防掩体遭到洗劫，内部的大部分生存装备被盗。
+
+要完成一个民防掩体，你需要清除其中的敌对敌人，并重新接通民防掩体的应急广播电台。"
+UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	进度统计
+UI/Interface	Character/Stats/Elements/?	Info		Silent Night	平安夜
+UI/Interface	Character/Stats/Elements/?	Info		"There will be a silent night when all fades away.
+
+When you look up, you see the North Star, your only light in the darkness.
+
+This light reminds you of home, a place where you came from and where you will return.
+
+You feel safe, a peaceful moment that feels like the ending you wanted.
+
+Then your last light disappears, the sky turns red and the silence breaks."	"当一切归于沉寂，将会有一个寂静的夜晚。
+
+当你抬头望去，北极星映入眼帘，它是黑暗中你唯一的明灯。
+
+这道光让你想起家，那个你曾来过、终将归去的地方。
+
+你感到安宁，这片刻的宁静仿佛就是你所期盼的结局。
+
+随后，最后的光芒消失了，天际染上血色，寂静被打破。"
+UI/Interface	Character/Stats/Elements/?	Info		Special Event	特别活动
+UI/Interface	Supply/Header/Value	Info		Supply Value	供应价值
+UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	所有供应项目的价格（欧元）。
+UI/Interface	Supply/Header/Value	Info		Trader Stat	交易员统计
+UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
+
+Name: Commonly known name among locals.
+Tax: Price multiplier for supply items.
+Tasks: Number of completed tasks.
+Resupply: Time when supply resets."	"一位友好的NPC，提供物资交易、任务和专项服务。
+
+名称：当地人常称的名称。
+税费：物资价格的倍数。
+任务：已完成的任务数量。
+补给：物资重置的时间。"
+UI/Interface	Trader/Panel	Info		Trader Info	交易者信息
+UI/Interface	Deal/Panel	Info		Deal	交易
+UI/Interface	Deal/Panel	Info		"A deal balance meter which compares selected item values.
+
+Requsted Value (€) is calculated from selected Supply items with Tax added.
+
+Offer Value (€) is calculated from selected Inventory items.
+
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	"一个用于比较所选项目价值的交易平衡表。
+
+“要价”（€）根据所选供应项目（含税）计算得出。
+
+“报价”（€）根据所选库存项目计算得出。
+
+当交易平衡表位于绿色区域内时，即可接受该交易，这意味着“报价”等于或高于“要价”加上税款。"
+UI/Interface	Deal/Panel	Info		Deal Meter	交易动态

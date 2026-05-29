@@ -37,6 +37,28 @@ Thanks to:
 
 _Auto-generated from each locale's `credits.json` by `tools/utils/build_authors.py`. credits.json itself is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/utils/get_texture_credits.py` (texture rework from Texture.xlsx)._
 
+### ChineseSimplified (`Translations/ChineseSimplified/`)
+
+**Lead Translator(s):** _(none yet)_
+
+**Translator(s):** _(none yet)_
+
+**Translation Contributors:** _(none yet)_
+
+**Texture Reworkers:**
+- MuteJack
+
+### ChineseTraditional (`Translations/ChineseTraditional/`)
+
+**Lead Translator(s):** _(none yet)_
+
+**Translator(s):** _(none yet)_
+
+**Translation Contributors:** _(none yet)_
+
+**Texture Reworkers:**
+- MuteJack
+
 ### French (`Translations/French/`)
 
 _Translation last updated: 2026-05-10T18:02:31+09:00_

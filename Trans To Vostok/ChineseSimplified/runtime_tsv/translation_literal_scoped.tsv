@@ -1,0 +1,1263 @@
+location	parent	name	type	text	translation
+Scenes/Menu	Main/Buttons	New	Button	New game	新游戏
+Scenes/Menu	Main/Buttons	Load	Button	Load game	加载游戏
+Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	教程
+Scenes/Menu	Main/Buttons	Settings	Button	"Settings
+"	"设置
+"
+Scenes/Menu	Main/Buttons	Roadmap	Button	"Roadmap
+"	"路线图
+"
+Scenes/Menu	Main/Buttons	About	Button	"About
+"	"关于
+"
+Scenes/Menu	Main/Buttons	Quit	Button	"Quit
+"	"退出
+"
+Scenes/Menu	Log	Header	Label	Changelog	更新日志
+Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
+"	"关闭
+"
+Scenes/Menu	Log/Buttons	Log_On	Button	"On
+"	"于
+"
+Scenes/Menu	Hardware	Header	Label	Hardware Check	硬件检查
+Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
+"	"关闭
+"
+Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
+"	"于
+"
+Scenes/Menu	Intro	Header	Label	Watch Intro	观看简介
+Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
+"	"关闭
+"
+Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
+"	"于
+"
+Scenes/Menu	Music	Header	Label	Menu Music	菜单 音乐
+Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
+"	"关闭
+"
+Scenes/Menu	Music/Buttons	Music_On	Button	"On
+"	"于
+"
+Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	“Road to Vostok ®”是Road to Vostok有限公司的注册商标。版权所有 © 2026
+Scenes/Menu	.	Version	Label	Version: 0.1.1.3	版本：0.1.1.3
+Scenes/Menu	Changelog/Header	Label	Label	Changelog	更新日志
+Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	"Following changes were made from:
+Early Access [0.1.0.0] -> Early Access [0.1.1.3]
+----------------------------------------
+Build name: Road - Build 1
+Build version: 0.1.1.3
+Build type: Release
+----------------------------------------
+Hotfix [0.1.1.3]
+[FIXED] Context actions could cause death when closing Interface at the same frame (Context Use)
+[FIXED] Context actions could corrupt items when closing Interface at the same frame (Context Unload)
+[FIXED] Context actions could corrupt furniture when closing Interface at the same frame (Context Place)
+----------------------------------------
+[ADDED] Compatibility launch option for hardware issues
+[ADDED] Increased buffer memory for GPU stalls/timeouts
+[ADDED] CPU-load distribution when loading into a map
+[ADDED] Engine version switched to Godot 4.6.2 for stability
+[ADDED] Added SMAA anti-aliasing option (Settings)
+[ADDED] Reworked image sharpness shader for stability (Settings)
+[ADDED] Furniture destroy uses safeguard (LMB hold) for misclicks
+[ADDED] Airdrops use green chemlights for night time visibility
+[ADDED] Airdrops now support variable loot tables [x3]
+[ADDED] Punisher now support variable loot tables [x3]
+[ADDED] Punisher loot tables improved with more items
+[ADDED] Killed AI corpse loot possibility increased [25%->75%]
+[ADDED] Additional industrial loot spawns [Oil Filter]
+[ADDED] Terminal has more special crates and loot spawns
+[ADDED] Special crates can also spawn Legendary items
+[ADDED] New item: Chewing Gum
+----------------------------------------
+[FIXED] Flickering lights/shadows in shelters and trader areas
+[FIXED] Active context menu could freeze when closing the Interface
+[FIXED] Frozen context menu could lead to corrupted/floating items
+[FIXED] Shelter item return while using items could cause death
+[FIXED] Cartridges during ammo check were glowing in low lighting
+[FIXED] AI could navigate/attack through airdrop colliders
+[FIXED] AI could navigate/attack through heli crash colliders
+[FIXED] AI could get stuck on heli crash colliders
+[FIXED] Blocked Highway tunnel could be exploited without a key
+[FIXED] Darkness/Ironman random spawn teleported to transition (School/Highway)
+[FIXED] AI firing accuracy inconsistency and miscalculations
+[FIXED] Controller could get stuck on Village building (toilet door)
+[FIXED] Controller could get stuck on Village tractor (barn)
+[FIXED] Controller could get stuck on Village garage (cardboard boxes)
+[FIXED] Controller could get stuck on School building (trader table)
+[FIXED] Controller could get stuck on School building (multiple chairs)
+[FIXED] Controller could get stuck on Highway market (shelf gaps)
+[FIXED] Controller could get stuck on Highway market (shopping carts)
+[FIXED] Controller could get stuck on Apartments staircases (corpse head)
+[FIXED] Controller could get stuck on Terminal ramps (trainyard area)
+[FIXED] Military BTR could stuck driving in circles at fast speed
+[FIXED] Improvised splint didn't heal Fracture condition
+[FIXED] Doctor sold own task items [Antiseptic]
+[FIXED] Gunsmith sold own task items [Skrama 200]
+[FIXED] MSAA 8x option didn't save to preferences
+[FIXED] Tutorial crates didn't contain M78 magazines
+----------------------------------------
+[CHANGED] Critical medical condition [Rupture] possibility lowered [5%->3%]
+[CHANGED] Critical medical condition [Headshot] possibility lowered [5%->3%]
+[CHANGED] Character hydration decrease speed slowed by [10%]
+[CHANGED] Character mental decrease speed slowed by [10%]
+[CHANGED] Cat vital decrease speed slowed by [20%]
+[CHANGED] Cat meows and makes noises less often
+[CHANGED] Trader (Start/End/Idle) voices activate less often
+[CHANGED] Render resolution options changed to Low/Native (less confusion)
+[CHANGED] Fallen items drop front of the player vs. inventory (Shelter)
+----------------------------------------
+[REMOVED] All third-party/obsolete AMD FSR references for stability
+----------------------------------------"	"以下是本次更新的变更内容：
+抢先体验版 [0.1.0.0] -> 抢先体验版 [0.1.1.3]
+----------------------------------------
+构建名称：Road - Build 1
+构建版本：0.1.1.3
+构建类型：正式版
+----------------------------------------
+热修复 [0.1.1.3]
+[已修复] 在同一帧关闭界面时，上下文操作可能导致角色死亡 （上下文使用）
+[已修复] 若在同一帧关闭界面，上下文操作可能导致物品损坏（上下文卸载）
+[已修复] 若在同一帧关闭界面，上下文操作可能导致家具损坏（上下文放置）
+----------------------------------------
+[新增] 针对硬件问题的兼容性启动选项
+[新增] 增加了用于处理 GPU 停滞/超时的缓冲内存
+[新增] 加载地图时的 CPU 负载分配
+[新增] 引擎版本切换为 Godot 4.6.2 以提升稳定性
+[新增] 添加了 SMAA 抗锯齿选项（设置）
+[新增] 重写了图像锐化着色器以提升稳定性 （设置）
+[新增] 家具破坏功能新增误点击保护机制（按住左键）
+[新增] 空投补给在夜间使用绿色化学灯提升可见度
+[新增] 空投补给现支持可变战利品表 [x3]
+[新增] 惩罚者现支持可变战利品表 [x3]
+[新增] 惩罚者战利品表优化，新增更多物品
+[新增] 击杀 AI 后其尸体掉落几率提升 [25%->75%]
+[新增] 增加工业类战利品生成 [机油滤清器]
+[新增] 终端机新增特殊箱子及战利品生成点
+[新增] 特殊箱子也可生成传奇物品
+[新增] 新物品：口香糖
+----------------------------------------
+[修复] 避难所和商人区域内灯光/阴影闪烁
+[修复] 关闭界面时，若上下文菜单处于活动状态可能导致卡死
+[修复] 卡死的上下文菜单可能导致物品损坏或悬浮
+[修复] 使用物品时庇护所物品返还可能导致死亡
+[修复] 低光环境下检查弹药时弹匣会发光
+[修复] AI 能穿过空投碰撞体进行移动/攻击
+[修复] AI 能穿过直升机坠毁碰撞体进行移动/攻击
+[修复] AI 可能卡在直升机坠毁碰撞体上
+[已修复] 无需钥匙即可利用高速公路隧道漏洞
+[已修复] 黑暗/铁人模式的随机出生点会传送至过渡区域（学校/高速公路）
+[已修复] AI 射击精度不一致及计算错误
+[已修复] 控制器角色可能卡在村庄建筑（厕所门）上
+[已修复] 控制器角色可能卡在村庄拖拉机上 （谷仓）
+[已修复] 控制器可能卡在村庄车库（纸箱）上
+[已修复] 控制器可能卡在学校建筑（交易台）上
+[已修复] 控制器可能卡在学校建筑（多把椅子）上
+[已修复] 控制器可能卡在高速公路市场（货架缝隙）上
+[已修复] 控制器可能卡在高速公路市场（购物车）上
+[已修复] 控制器可能卡在公寓楼的楼梯上（尸体头部）
+[已修复] 控制器可能卡在车站坡道上（火车场区域）
+[已修复] 军用BTR可能以高速原地打转
+[已修复] 简易夹板无法治愈骨折状态
+[已修复] 医生出售自己的任务物品 [消毒剂]
+[已修复] 枪匠出售了本应属于任务的物品 [Skrama 200]
+[已修复] MSAA 8x 选项无法保存至偏好设置
+[已修复] 教程箱中未包含 M78 弹匣
+----------------------------------------
+[调整] 致命医疗状况 [内脏破裂] 的触发概率降低 [5%->3%]
+[调整] 致命医疗状况 [爆头] 的触发概率降低 [5%->3%]
+[调整] 角色脱水速度降低 [10%]
+[调整] 角色精神值下降速度降低 [10%]
+[调整] 猫的生命值下降速度减缓 [20%]
+[调整] 猫的叫声和发声频率降低
+[调整] 商人（开始/结束/闲置）语音触发频率降低
+[调整] 渲染分辨率选项改为“低/原生”（减少混淆）
+[调整] 掉落物品改为出现在玩家正前方而非背包内（避难所）
+----------------------------------------
+[移除] 移除了所有第三方/过时的 AMD FSR 相关内容以提升稳定性
+----------------------------------------"
+Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	"Following changes were made from:
+Demo [0.0.1.0] -> Early Access [0.1.0.0]
+----------------------------------------
+Build name: Road - Build 1
+Build version: 0.1.0.0
+Build type: Release
+----------------------------------------
+[ADDED] Event system
+[ADDED] Multi-shelter support
+[ADDED] Keys and locked doors
+[ADDED] PIP-scopes and scope options
+[ADDED] Native DirectX support
+[ADDED] Native shader caching
+[ADDED] Tools UI (Interface)
+[ADDED] Event calendar (Tools)
+[ADDED] Crafting menu (Tools)
+[ADDED] Task notes (Tools)
+[ADDED] World map (Tools)
+[ADDED] Casette player (Tools)
+[ADDED] New game mode: Darkness
+[ADDED] New game mode: Ironman
+[ADDED] New map: School (Area 05)
+[ADDED] New map: Highway (Area 05)
+[ADDED] New map: Outpost (Area 05)
+[ADDED] New map: Terminal (Vostok)
+[ADDED] New shelter: Attic
+[ADDED] New shelter: Bunker
+[ADDED] New shelter: Tent
+[ADDED] New shelter: Classroom
+[ADDED] New trader: Doctor
+[ADDED] New trader: Gunsmith
+[ADDED] New boss: Punisher
+[ADDED] New character: Cat
+[ADDED] New event: Trader Return
+[ADDED] New event: Fighter Jets
+[ADDED] New event: Missing Cat
+[ADDED] New event: Bandit Boss
+[ADDED] New event: Airdrops
+[ADDED] New event: BTR
+[ADDED] New event: Attack Helicopters
+[ADDED] New event: Crash Sites
+[ADDED] New event: Outpost Compromised
+[ADDED] New event: Trader Escape
+[ADDED] New event: Transmission
+[ADDED] New task: Prime Time
+[ADDED] New task: Coffee Reserve
+[ADDED] New task: Sweaty Business
+[ADDED] New task: Homemade
+[ADDED] New task: Nasty Draft
+[ADDED] New task: Steady Hands
+[ADDED] New task: Bookworm
+[ADDED] New task: Dice Master
+[ADDED] New task: Night Surgery
+[ADDED] New task: Infections
+[ADDED] New task: Hypovolemia
+[ADDED] New task: Mouth Organ
+[ADDED] New task: Patient Report
+[ADDED] New task: Substance
+[ADDED] New task: Bloodsuckers
+[ADDED] New task: Warm Meal
+[ADDED] New task: Nordic Trade
+[ADDED] New task: Big Blades
+[ADDED] New task: Ammo Delivery
+[ADDED] New task: Weapon Delivery
+[ADDED] New task: Medic
+[ADDED] New task: Home Collection
+[ADDED] New task: Everyman's Rights
+[ADDED] New task: Hitman
+[ADDED] New weapon: RK-62
+[ADDED] New weapon: RK-62M
+[ADDED] New weapon: M4A1
+[ADDED] New weapon: K416
+[ADDED] New weapon: P3
+[ADDED] New attachment: AN-15
+[ADDED] New item: KAR-21 Barrel
+[ADDED] New item: Flame Beanie
+[ADDED] New item: M62 Cap
+[ADDED] New item: Water Bottle
+[ADDED] New item: AFAK
+[ADDED] New item: Thermal Blanket
+[ADDED] New item: Saline
+[ADDED] New item: Antiseptic
+[ADDED] New item: Wipes
+[ADDED] New item: Tissues
+[ADDED] New item: Deodorant
+[ADDED] New item: Map
+[ADDED] New item: Map (Tactical)
+[ADDED] New item: Weapon Repair Kit
+[ADDED] New item: Tackle Box
+[ADDED] New item: Oil Filter
+[ADDED] New item: Coffee Filters
+[ADDED] New item: Water Lock
+[ADDED] New item: Lumber
+[ADDED] New item: Pillow
+[ADDED] New item: Blanket
+[ADDED] New item: Sticks
+[ADDED] New item: Rags
+[ADDED] New item: Casette (OST)
+[ADDED] New item: Casette (Electrofolk)
+[ADDED] New item: Casette (Symphony)
+[ADDED] New item: Casette (Radio Hits)
+[ADDED] New item: Attic Key
+[ADDED] New item: Bunker Key
+[ADDED] New item: Classroom Key
+[ADDED] New item: Cellar Key
+[ADDED] New item: Gymnasium Key
+[ADDED] New item: Tunnel Key
+[ADDED] New furniture: Pallet
+[ADDED] New furniture: Television
+[ADDED] New furniture: Metal Shelf
+[ADDED] New furniture: Target Stand
+[ADDED] New furniture: Sign (Border Zone)
+[ADDED] New furniture: Poster (Posture)
+[ADDED] New furniture: Trolley (Small)
+[ADDED] New furniture: Trolley (Tall)
+[ADDED] New furniture: Chair (School)
+[ADDED] New furniture: Cabinet (Office)
+[ADDED] New furniture: Desk (Office)
+[ADDED] New recipe: Energy Drink
+[ADDED] New recipe: Brewed Coffee
+[ADDED] New recipe: Cooked Pea Soup
+[ADDED] New recipe: Cooked Tomato Soup
+[ADDED] New recipe: Cooked Fish Soup
+[ADDED] New recipe: Cooked Meatballs
+[ADDED] New recipe: Kompot
+[ADDED] New recipe: Kilju
+[ADDED] New recipe: Improvised Bandage
+[ADDED] New recipe: Improvised Tourniquet
+[ADDED] New recipe: Improvised Splint
+[ADDED] New recipe: Weapon Repair
+[ADDED] New recipe: KAR-21 Upgrade
+[ADDED] New recipe: Cooking Station
+[ADDED] New recipe: Civilian Bed
+[ADDED] New recipe: Nomad Bed
+[ADDED] Lore-based game intro when starting a new game
+[ADDED] High-DPI font rendering for 4K/Retina displays
+[ADDED] Extra map border areas to prevent seeing visible map edges
+[ADDED] Different traders have varying base tax levels [100-300%]
+[ADDED] Firing weapons will reduce weapon condition over time
+[ADDED] Low weapon condition can now cause malfunctions
+[ADDED] Weapons can be repaired with Weapon Repair Kit (Crafting)
+[ADDED] Modular magazine support (STANAG) for M4A1 / KM18 / K416
+[ADDED] Modular magazine support (RK) for RK-95 / RK-62 / RK-62M
+[ADDED] AI Hotspots where AI will react to events like Airdrops
+[ADDED] AI can now patrol in Apartment rooms (not just staircases)
+[ADDED] AI Helicopter can now fire rockets at certain scenarios
+[ADDED] AI death sounds will end immediately with ""out of misery"" headshot
+[ADDED] Mines now use runtime spawning and are randomly spawned for each map instance
+[ADDED] Mines can now spawn also directly to map border and slightly beyond
+[ADDED] Liquid-based items can now freeze (Winter)
+[ADDED] Going into water boosts item freezing (Winter)
+[ADDED] Frozen items can be melted with heat sources or shelters (Winter)
+[ADDED] Traders don't accept malfunctioned or frozen items
+[ADDED] Crafting recipes don't accept malfunctioned or frozen items
+[ADDED] Playing music instruments slowly increases Mental over time
+[ADDED] Sleeping now consumes both energy and hydration [-20]
+[ADDED] Sleeping now increases mental [+20]
+[ADDED] Sleeping bags increases Body Temp [+50]
+[ADDED] Blankets, Pillows and Melatonin can now also be used for sleeping
+[ADDED] Using sleeping items other than sleeping bags outside decreases Body Temp [-100] (Winter)
+[ADDED] Outdoor fire sources like firepots can be used for heat based crafting
+[ADDED] Crafting supports reusable tools which are not consumed by recipes
+[ADDED] Separated tutorial tasks which also cover crafting and furniture items
+[ADDED] Furnitures now supports stacking and placing furniture on top each other
+[ADDED] Furnitures now supports magnet mode (Surface Magnet) for snapping to surfaces
+[ADDED] Loot simulations and containers can now use ""Industrial"" spawn types and locations
+[ADDED] Radio audio is now using high-pass filter and more distorted sound
+[ADDED] Changelog and hardware check buttons are added to the main menu
+[ADDED] 3D door handles and interaction handle animations
+[ADDED] If player falls through terrain, fallback system returns player back to the game world
+[ADDED] If item falls through terrain, fallback system prevents item taking CPU resources
+[ADDED] If item falls through shelter, fallback system spawns item directly to inventory
+----------------------------------------
+[FIXED] Ammo check UI frozed when going into water while performing ammo check
+[FIXED] Matches value calculation was not amount-based and could be exploited
+[FIXED] Reloading while loading ammo could cause ammo duplication and exceed ammo limits
+[FIXED] Full item stacks could cause duplication when using fast transfer
+[FIXED] Full item stacks could cause duplication when using context transfer
+[FIXED] Swithing from Trader Tasks to Supply during item delivery kept items selected
+[FIXED] Double clicking Trader Tasks during item delivery kept items selected
+[FIXED] Tetris-grids could cause ghost items and errors at certain screen resolutions
+[FIXED] Simulation time could get stuck 00:00 on certain hardware during loading
+[FIXED] Simulation season could reset from winter to summer on certain hardware during loading
+[FIXED] Equipping weapon directly after grenade throw unequipped the weapon
+[FIXED] Equipping weapon directly after grenade throw could hide the magazine
+[FIXED] Interface context menu size didn't reset horizontally between items
+[FIXED] Player controller could get stuck on Apartments bathtubs
+[FIXED] AI pathfinding could get stuck in multi-floor buildings (Apartments)
+[FIXED] AI pathfinding could clip through staircases (Apartments)
+[FIXED] AI backpacks didn't render at far distances (+100m)
+[FIXED] Weapon audio had distortions / clipping when using full-auto
+[FIXED] Ambient volume didn't affect dynamic ambient SFX
+[FIXED] Summer dynamic ambient SFX could activate on Winter (like mosquitos)
+[FIXED] Auto-stack SFX could trigger when using fast transfer with already max stacks
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Generalist trader lights caused artifacts and leaked outdoor
+[FIXED] Shelter saving allowed corrupted item positions which caused light flickering
+[FIXED] Campfire and fire elements clipped though firepots and fire barrels
+[FIXED] Fire VFX dind't render through Non-PIP scopes
+[FIXED] Tree billboard inconsistencies and exposure levels
+[FIXED] Environment fog was slightly visible inside shelters
+[FIXED] Bullet decals were unstable, flickered and disappeared beyond 25m
+[FIXED] Shooting a scaled nature elements like rocks also scaled to bullet decals
+[FIXED] Generalist trader lights caused artifacts and leaked through a wall
+[FIXED] Multiple HUD messages at the same time overlapped each other
+[FIXED] Multiple ALT-TAB issues where game might not response
+[FIXED] Windowed mode scaling didn't work reliably on single-monitor setups
+[FIXED] Selecter monitor could switch during loading screens on multi-monitor setups
+----------------------------------------
+[CHANGED] Common and Uncommon rarity levels are now merged to Common
+[CHANGED] Legendary item spawn changes changed from 1% to 0.1%
+[CHANGED] Armor plates will now spawn always at full item conditions
+[CHANGED] Random sleep time changed from 4-8 to 6-12
+[CHANGED] Lasers can only be attached to weapons with suitable side/top rails
+[CHANGED] Guards can now also use M4A1 as their default weapon
+[CHANGED] All project and save files now exists directly in AppData/Roaming/[GameName]
+[CHANGED] All exe.files and builds use industry-standard versioning (e.g 0.1.0.0)
+[CHANGED] Certain weapon and attachment names are switched to use pseudo-names
+[CHANGED] Weapon audio uses more realistic tail / echo volumes after firing
+[CHANGED] Multiple changes for AI weapon audio to improve directional and flyby audio
+[CHANGED] Candles no longer cause Burn medical condition when walked on
+[CHANGED] Helicopter model type changed from Mi-8 to Mi-24 (Hind)"	"以下是版本更新内容：
+演示版 [0.0.1.0] -> 抢先体验版 [0.1.0.0]
+----------------------------------------
+构建名称：Road - Build 1
+构建版本：0.1.0.0
+构建类型：正式版
+----------------------------------------
+[新增] 事件系统
+[新增] 多庇护所支持
+[新增] 钥匙与上锁的门
+[新增] 瞄准镜及瞄准镜选项
+[新增] 原生 DirectX 支持
+[新增] 原生着色器缓存
+[新增] 工具界面 (工具)
+[新增] 事件日历 (工具)
+[新增] 合成菜单 (工具)
+[新增] 任务笔记 (工具)
+[新增] 世界地图 (工具)
+[新增] 卡带播放器 (工具)
+[新增] 新游戏模式：黑暗
+[新增] 新游戏模式：铁人模式
+[新增] 新地图：学校（05区）
+[新增] 新地图：高速公路（05区）
+[新增] 新地图：前哨站（05区）
+[新增] 新地图：终端站（沃斯托克）
+[新增] 新避难所：阁楼
+[新增] 新避难所：掩体
+[新增] 新避难所：帐篷
+[新增] 新避难所：教室
+[新增] 新商人：医生
+[新增] 新商人：枪匠
+[新增] 新首领：惩罚者
+[新增] 新角色：猫
+[新增] 新活动：商人回归
+[新增] 新活动：战斗机
+[新增] 新活动：失踪的猫
+[新增] 新事件：匪帮头目
+[新增] 新事件：空投补给
+[新增] 新事件：BTR装甲车
+[新增] 新事件：攻击直升机
+[新增] 新事件：坠机现场
+[新增] 新事件：前哨站失守
+[新增] 新事件：商人逃亡
+[新增] 新事件：通讯信号
+[新增] 新任务：黄金时段
+[新增] 新任务：咖啡储备
+[新增] 新任务：汗流浃背的生意
+[新增] 新任务：自制
+[新增] 新任务：难喝的啤酒
+[新增] 新任务：稳如磐石
+[新增] 新任务：书虫
+[新增] 新任务：骰子大师
+[新增] 新任务：夜间手术
+[新增] 新任务：感染
+[新增] 新任务：低血容量
+[新增] 新任务：口琴
+[新增] 新任务：病患报告
+[新增] 新任务：物质
+[新增] 新任务：吸血鬼
+[新增] 新任务：热餐
+[新增] 新任务：北欧贸易
+[新增] 新任务：巨刃
+[新增] 新任务：弹药运输
+[新增] 新任务：武器运输
+[新增] 新任务：医疗兵
+[新增] 新任务：上门收款
+[新增] 新任务：人人有权
+[新增] 新任务：杀手
+[新增] 新武器：RK-62
+[新增] 新武器：RK-62M
+[新增] 新武器：M4A1
+[新增] 新武器：K416
+[新增] 新武器：P3
+[新增] 新配件：AN-15
+[新增] 新道具：KAR-21 枪管
+[新增] 新道具：火焰帽
+[新增] 新道具：M62 帽子
+[新增] 新道具：水壶
+[新增] 新道具：AFAK
+[新增] 新道具：保暖毯
+[新增] 新道具：生理盐水
+[新增] 新道具：消毒剂
+[新增] 新道具：湿巾
+[新增] 新道具：纸巾
+[新增] 新物品：除臭剂
+[新增] 新物品：地图
+[新增] 新物品：战术地图
+[新增] 新物品：武器维修包
+[新增] 新物品：钓具箱
+[新增] 新物品：机油滤清器
+[新增] 新物品：咖啡滤纸
+[新增] 新物品：水锁
+[新增] 新物品：木材
+[新增] 新物品：枕头
+[新增] 新物品：毯子
+[新增] 新物品：木棍
+[新增] 新物品：破布
+[新增] 新物品：卡带（原声带）
+[新增] 新物品：卡带（电子民谣）
+[新增] 新物品：卡带 (交响乐)
+[新增] 新物品：卡带（电台热门金曲）
+[新增] 新物品：阁楼钥匙
+[新增] 新物品：掩体钥匙
+[新增] 新物品：教室钥匙
+[新增] 新物品：地窖钥匙
+[新增] 新物品：体育馆钥匙
+[新增] 新物品：隧道钥匙
+[新增] 新家具：托盘
+[新增] 新家具：电视机
+[新增] 新家具：金属架
+[新增] 新家具：靶架
+[新增] 新家具：标牌（边境区）
+[新增] 新家具：海报（姿势）
+[新增] 新家具：手推车（小号）
+[新增] 新家具：手推车 （高款）
+[新增] 新家具：椅子（学校）
+[新增] 新家具：柜子（办公室）
+[新增] 新家具：书桌（办公室）
+[新增] 新配方：能量饮料
+[新增] 新配方：现煮咖啡
+[新增] 新配方：煮豌豆汤
+[新增] 新配方：煮番茄汤
+[新增] 新配方：煮鱼汤
+[新增] 新配方：煮肉丸
+[新增] 新配方：果子露
+[新增] 新配方：基尔酒
+[新增] 新配方：简易绷带
+[新增] 新配方：简易止血带
+[新增] 新配方：简易夹板
+[新增] 新配方：武器维修
+[新增] 新配方：KAR-21 升级
+[新增] 新配方：烹饪台
+[新增] 新配方：民用床
+[新增] 新配方：游牧床
+[新增] 新游戏开始时的背景故事介绍
+[新增] 支持 4K/Retina 显示屏的高 DPI 字体渲染
+[新增] 地图边缘区域扩展，防止地图边界可见
+[新增] 不同商人的基础税率各异 [100-300%]
+[新增] 持续射击会随时间推移降低武器状态
+[新增] 武器状态过低可能导致故障
+[新增] 可使用武器维修包（制作）修复武器
+[新增] M4A1 / KM18 / K416 支持模块化弹匣（STANAG）
+[新增] RK-95 / RK-62 / RK-62M 支持模块化弹匣（RK）
+[新增] AI 热点区域，AI 会对空投等事件作出反应
+[新增] AI 现可在公寓房间内巡逻 （不仅限于楼梯）
+[新增] AI直升机现在可在特定情况下发射火箭弹
+[新增] 若AI被爆头击杀，死亡音效将立即结束
+[新增] 地雷现采用运行时生成机制，并在每个地图实例中随机生成
+[新增] 地雷现在也可直接生成在地图边界及稍远处
+[新增] 液态物品现在会结冰 （冬季）
+[新增] 进入水中会加速物品结冰（冬季）
+[新增] 结冰的物品可通过热源或避难所融化（冬季）
+[新增] 商人不再接受故障或结冰的物品
+[新增] 制作配方不再接受故障或结冰的物品
+[新增] 演奏乐器会随时间缓慢提升精神值
+[新增] 睡眠现在会消耗能量和水分 [-20]
+[新增] 睡眠现在会提升精神值 [+20]
+[新增] 睡袋可提升体温 [+50]
+[新增] 毯子、枕头和褪黑素现在也可用于睡眠
+[新增] 在户外使用睡袋以外的睡眠道具会降低体温 [-100] (冬季)
+[新增] 户外火源（如火盆）可用于基于热量的制作
+[新增] 制作系统支持可重复使用的工具，这些工具不会被配方消耗
+[新增] 教程任务已拆分，并新增了制作和家具相关内容
+[新增] 家具现支持堆叠，可将家具放置在彼此之上
+[新增] 家具现支持磁吸模式（表面磁吸），可吸附在表面上
+[新增] 战利品模拟和容器现可使用“工业”生成类型和位置
+[新增] 收音机音频现采用高通滤波器，并增加失真效果
+[新增] 主菜单中新增了更新日志和硬件检测按钮
+[新增] 3D门把手及交互把手动画
+[新增] 若玩家坠入地形下方，回退系统将把玩家送回游戏世界
+[新增] 若物品坠入地形下方，回退系统将阻止该物品占用 CPU 资源
+[新增] 若物品坠入庇护所下方，回退系统将直接将物品生成至背包
+----------------------------------------
+[修复] 在执行弹药检查时进入水中会导致弹药检查界面卡死
+[修复] 匹配值计算未基于数量，可能被利用
+[修复] 在装填弹药时重新装弹可能导致弹药复制并超出弹药上限
+[修复] 使用快速转移时，满堆物品可能导致复制
+[已修复] 使用上下文转移时，满堆叠的物品可能导致重复
+[已修复] 在物品配送过程中从“商人任务”切换至“补给”时，选中的物品会保留
+[已修复] 在物品配送过程中双击“商人任务”时，选中的物品会保留
+[已修复] 在某些屏幕分辨率下，俄罗斯方块式网格可能导致幽灵物品和错误
+[已修复] 在某些硬件上加载时，模拟时间可能卡在 00:00
+[已修复] 在某些硬件上加载时，模拟季节可能从冬季重置为夏季
+[已修复] 投掷手榴弹后立即装备武器会导致武器被卸下
+[已修复] 投榴弹后立即装备武器可能导致弹匣被隐藏
+[已修复] 界面右键菜单在不同项目间切换时，水平尺寸未重置
+[已修复] 玩家角色可能卡在公寓浴缸上
+[已修复] AI 路径规划在多层建筑（公寓）中可能卡住
+[已修复] AI 路径规划可能穿透楼梯（公寓）
+[已修复] 远距离处 AI 的背包未渲染 (+100m)
+[已修复] 全自动射击时武器音效存在失真/剪切现象
+[已修复] 环境音量未影响动态环境音效
+[已修复] 夏季动态环境音效可能在冬季触发（如蚊虫声）
+[已修复] 当已达到最大堆叠数量时，使用快速转移可能触发自动堆叠音效
+[已修复] 单显示器设置下，窗口模式的缩放功能无法稳定运行
+[已修复] 多显示器设置下，加载界面期间选定显示器可能发生切换
+[已修复] 庇护所保存功能允许存在损坏的物品位置，导致灯光闪烁
+[已修复] 多个HUD提示信息同时出现时会相互重叠
+[已修复] 通用商人的灯光会产生视觉异常并向室外泄漏
+[已修复] 避难所保存时允许存在损坏的物品位置，导致灯光闪烁
+[已修复] 篝火和火焰元素会穿透火盆和火桶
+[已修复] 火焰视觉特效无法通过非画中画瞄准镜渲染
+[已修复] 树木贴图不一致及曝光度问题
+[已修复] 避难所内部可见轻微环境雾
+[已修复] 子弹贴花不稳定，在 25 米外会闪烁并消失
+[已修复] 射击岩石等缩放后的自然元素时，子弹贴花也会随之缩放
+[已修复] 通用商人的灯光会产生视觉异常并透过墙壁泄漏
+[已修复] 多个 HUD 消息同时出现时会相互重叠
+[已修复] 多个 ALT-TAB 问题，游戏可能无响应
+[已修复] 单显示器设置下，窗口模式的缩放功能无法稳定运行
+[已修复] 多显示器设置下，加载界面期间选定显示器可能发生切换
+----------------------------------------
+[变更] 普通和稀有稀有度等级现已合并为普通
+[变更] 传奇物品生成概率从 1% 调整为 0.1%
+[变更] 护甲板现在生成时始终处于满状态
+[变更] 随机睡眠时间从 4-8 调整为 6-12
+[更改] 激光器仅可安装在具备合适侧面/顶部导轨的武器上
+[更改] 守卫现在也可将 M4A1 设为默认武器
+[更改] 所有项目和保存文件现直接存于 AppData/Roaming/[游戏名称] 目录下
+[更改] 所有 exe 文件和构建版本均采用行业标准版本号（例如 0.1.0.0）
+[变更] 部分武器及配件名称已改为使用代号
+[变更] 武器射击后的尾音/回声音量更为逼真
+[变更] 对AI武器音效进行了多项调整，以改善方向性及飞越音效
+[变更] 踩踏蜡烛不再触发“灼伤”医疗状态
+[变更] 直升机机型从Mi-8更改为Mi-24（Hind）"
+Scenes/Menu	Modes	Warning	Label	Warning!	警告！
+Scenes/Menu	Modes/Warning	Detail	Label	Existing save files will be deleted	现有存档文件将被删除
+Scenes/Menu	Modes/Buttons	Modes_Enter	Button	Enter the Road	踏上征途
+Scenes/Menu	Modes/Buttons	Modes_Return	Button	← Return	← 返回
+Scenes/Menu	Modes/Difficulty	Header	Label	Difficulty	难度
+Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	Gameplay mode	游戏模式
+Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	Recommended for new players	推荐给新玩家
+Scenes/Menu	Modes/Difficulty/Standard	Name	Label	Standard	标准
+Scenes/Menu	Modes/Difficulty/Standard	Details	Label	"- Random start kit
+- Shelter spawn
+- Starts 08:00 with neutral weather
+- All character vitals 100
+- Permadeath in Vostok"	"- 随机起始包
+- 庇护所出生点
+- 08:00开始，天气为中性
+- 所有角色生命值均为100
+- 沃斯托克地区采用永久死亡机制"
+Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	Darkness	黑暗
+Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Permadeath in Vostok"	"- 无起始装备包
+- 随机出生点
+- 随机开始时间与天气
+- 随机初始生命值
+- 沃斯托克地区永久死亡"
+Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	Select	选择
+Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	Ironman	铁人三项
+Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	"- No start kit
+- Random spawn
+- Random start time & weather
+- Random start vitals
+- Always permadeath"	"- 无初始装备包
+- 随机出生点
+- 随机开始时间与天气
+- 随机初始生命值
+- 永久死亡"
+Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	Select	选择
+Scenes/Menu	Modes/Season	Header	Label	Season	赛季
+Scenes/Menu	Modes/Season/Header	Subheader	Label	Seasonal mode	季节模式
+Scenes/Menu	Modes/Season/Summer	Hint	Label	Recommended for new players	推荐给新玩家
+Scenes/Menu	Modes/Season/Summer	Name	Label	Summer	夏天
+Scenes/Menu	Modes/Season/Summer	Details	Label	"- Summer (365 days)
+- No winter
+- Day & night cycle (2.4h IRL)"	"- 夏季（365天）
+- 无冬季
+- 日夜交替（现实中为2.4小时）"
+Scenes/Menu	Modes/Season/Summer	Select	Button	Select	选择
+Scenes/Menu	Modes/Season/Winter	Name	Label	Winter	冬季
+Scenes/Menu	Modes/Season/Winter	Details	Label	"- No summer
+- Winter (365 days)
+- Day & night cycle (2.4h IRL)"	"- 无夏季
+- 冬季（365天）
+- 日夜交替（现实中为2.4小时）"
+Scenes/Menu	Modes/Season/Winter	Select	Button	Select	选择
+Scenes/Menu	Modes/Season/Dynamic	Name	Label	Dynamic	动态
+Scenes/Menu	Modes/Season/Dynamic	Details	Label	"- Summer / Autumn / Winter / Spring
+- Dynamic season cycle (365 days)
+- Day & night cycle (2.4h IRL)"	"- 夏季 / 秋季 / 冬季 / 春季
+- 动态季节循环（365天）
+- 昼夜循环（2.4小时，现实时间）"
+Scenes/Menu	Modes/Season/Dynamic	Select	Button	Locked	已锁定
+Scenes/Menu	Settings	Header	Label	Settings	设置
+Scenes/Menu	Settings/Header	Subheader	Label	Game options	游戏选项
+UI/Settings	.	Pause	Label	Game Paused	游戏已暂停
+Scenes/Menu	Settings	Settings_Return	Button	← Return	← 返回
+UI/Settings	Warning/Buttons	Exit_Return	Button	← Return	← 返回
+UI/Settings	Warning	Warning	Label	Warning!	警告！
+UI/Settings	Warning/Buttons	Exit_Menu	Button	Continue to Main Menu	返回主菜单
+UI/Settings	Warning/Buttons	Exit_Quit	Button	Quit Game	退出游戏
+UI/Settings	Warning/Warning	Detail	Label	"You are exiting the game outside of the shelter
+Current inventory & equipment will be deleted"	"您即将在避难所外退出游戏
+当前的物品栏和装备将被删除"
+Resources/Inputs	.	Header	Label	Input Settings	输入设置
+Resources/Inputs	Modes/Settings	Mouse	Label	Mouse	鼠标
+Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	"Normal
+"	"正常
+"
+Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	"Inverted
+"	"倒置
+"
+Resources/Inputs	Modes/Settings	Sprint	Label	Sprint	Sprint
+Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	"Hold
+"	"暂停
+"
+Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	"Toggle
+"	"切换
+"
+Resources/Inputs	Modes/Settings	Lean	Label	Lean	精益
+Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
+"	"暂停
+"
+Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
+"	"切换
+"
+Resources/Inputs	Modes/Settings	Aim	Label	Aim	目的
+Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
+"	"暂停
+"
+Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
+"	"切换
+"
+Resources/Inputs	.	Reset	Button	Reset to defaults	恢复默认设置
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	输入示例
+Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	Input Key	输入键
+UI/Settings	Settings/Row_01/Audio	Audio	Label	Audio Settings	音频设置
+UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	Master Volume	主音量
+UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	Ambient Volume	环境音量
+UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	Music Volume	音乐音量
+UI/Settings	Settings/Row_01/Music/Elements	Music	Label	Music Preset	音乐预设
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	"Off
+"	"关闭
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	"Dynamic
+"	"动态
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	"Shelter
+"	"庇护所
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 05
+"	"05区
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
+"	"边界
+"
+UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
+"	"沃斯托克
+"
+UI/Settings	Settings/Row_01/Camera	Camera	Label	Camera Settings	相机设置
+UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	Interpolate	插值
+UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	Field of View	视野
+UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	Headbob	点头
+UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	"Off
+"	"关闭
+"
+UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	"On
+"	"于
+"
+UI/Settings	Settings/Row_01/Mouse	Mouse	Label	Mouse Settings	鼠标设置
+UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	视力灵敏度
+UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	准星灵敏度
+UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	Scope Sensitivity	瞄准镜灵敏度
+UI/Settings	Settings/Row_01/Color	Color	Label	Color Settings	颜色设置
+UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	Interface Scale	界面比例
+UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	HUD Scale	HUD比例尺
+UI/Settings	Settings/Row_01/Image/Elements	Font	Label	Font Scale	字体大小
+UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	Exposure	曝光
+UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	Contrast	对比
+UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	Saturation	饱和度
+UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	图像设置
+UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	锐度
+UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
+UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
+"	"地图
+"
+UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	第一人称射击游戏
+UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	生命体征
+UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	医疗
+UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	安置
+UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	装饰
+UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	UI Tooltip	UI 工具提示
+UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	"On
+"	"于
+"
+UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	Off	关闭
+UI/Settings	Settings/Row_02/PIP	PIP	Label	PIP Scopes	PIP 取景器
+UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	"On
+"	"于
+"
+UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	"Off
+"	"关闭
+"
+UI/Settings	Settings/Row_02/Shadows	Shadows	Label	Detail Shadows	细节阴影
+UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	On	于
+UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	"Off
+"	"关闭
+"
+UI/Settings	Settings/Row_02/Water	Header	Label	Water Reflections	水之倒影
+UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	On	于
+UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
+"	"关闭
+"
+UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	环境光遮蔽
+UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	于
+UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
+"	"关闭
+"
+UI/Settings	Settings/Row_03/Display	Display	Label	Display	显示
+UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	全屏
+UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	窗口化
+UI/Settings	Settings/Row_03/Frames	Frames	Label	Frames	框架
+UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	Vsync	垂直同步
+UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	Unlimited	无限
+UI/Settings	Settings/Row_03/Rendering	Rendering	Label	Render Resolution	渲染分辨率
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	Low	低
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	Medium	中
+UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	High	高
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	Ultra	Ultra
+UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	Native	原生
+UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	Image Sharpness	图像锐度
+UI/Settings	Settings/Row_03/Lighting	Lighting	Label	Lighting Quality	照明质量
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	Low	低
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	Medium	中
+UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	High	高
+UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	Ultra	Ultra
+UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	Anti-aliasing	抗锯齿
+UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	Off	关闭
+UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	SMAA Off	SMAA 关闭
+UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	SMAA On	SMAA 已开启
+UI/Settings	Settings/Row_03/Exit	Exit	Label	Exit	退出
+UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	Main Menu	主菜单
+UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
+"	"退出游戏
+"
+Scenes/Menu	Roadmap	Header	Label	Roadmap	路线图
+Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	即将发布的版本
+Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← 返回
+Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	Build 1 | Road	第1期 | 道路
+Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	Completed	已完成
+Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	"•  Early access launch
+•  Gameplay loop
+•  Expanded maps
+•  Dynamic elements
+•  Multi-shelter support"	"•  抢先体验版上线
+•  游戏循环
+•  扩展地图
+•  动态元素
+•  多避难所支持"
+Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	Build 2 | Nomads	版本 2 | 游牧者
+Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	Q3/2026	2026年第三季度
+Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	"•  Friendly faction
+•  AI vs. AI combat
+•  AI variants
+•  Driver (Trader)
+•  New map & shelter"	"•  友方阵营
+•  AI 対 AI 战斗
+•  AI 变体
+•  驾驶员（商人）
+•  新地图与避难所"
+Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	Build 3 | Signal	版本 3 | Signal
+Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	Q4/2026	2026年第四季度
+Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	"•  Quest system
+•  Lore elements
+•  Civil defence shelters
+•  Grandma (Trader)
+•  New map & shelter"	"•  任务系统
+•  背景设定元素
+•  民防避难所
+•  奶奶（商人）
+•  新地图与避难所"
+Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	Build 4 | Gunslinger	版本 4 | 枪手
+Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	TBA	待定
+Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	"•  Weapon overhaul
+•  Bullet penetration
+•  Modding kits
+•  Trader services
+•  New map & shelter"	"•  武器大修
+•  子弹穿透
+•  改装套件
+•  商人服务
+•  新地图与避难所"
+Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	Build 5 | North	第5期 | 北部
+Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	TBA	待定
+Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	"•  Dynamic season
+•  Train system
+•  Hunting & wildlife
+•  Shaman (Trader)
+•  New map & shelter"	"•  动态季节
+•  火车系统
+•  狩猎与野生动物
+•  萨满（商人）
+•  新地图与庇护所"
+Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	Build 6 | Abyss	第6版 | 深渊
+Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	TBA	待定
+Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	"•  Sea system
+•  Patrol boats
+•  Scuba gear
+•  Fisherman (Trader)
+•  New map & shelter"	"•  海洋系统
+•  巡逻艇
+•  水肺潜水装备
+•  渔民（商人）
+•  新地图与避难所"
+Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	Build 7 | Enigma	第7版 | Enigma
+Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	TBA	待定
+Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	"•  Dialogue system
+•  SIGINT tools
+•  Transmissions
+•  Scientist (Trader)
+•  Vostok shelter"	"•  对话系统
+•  信号情报工具
+•  通讯
+•  科学家（商人）
+•  沃斯托克避难所"
+Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	Build 8 | Silent Night	第8版 | 平安夜
+Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	TBA	待定
+Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	"•  Full questline
+•  World options
+•  Destruction system
+•  FINSOF faction
+•  New map & shelter"	"•  完整任务线
+•  世界设置
+•  破坏系统
+•  FINSOF阵营
+•  新地图与避难所"
+Scenes/Menu	About	About_Return	Button	← Return	← 返回
+Scenes/Menu	About/Game	Info	Label	"Road to Vostok ® is a hardcore single-player survival game set 
+in a post-apocalyptic border zone between Finland and Russia"	"《Road to Vostok ®》是一款硬核单人生存游戏，
+故事背景设定在芬兰与俄罗斯边境的一片末日后的边境地带"
+Scenes/Menu	About	Developer	Label	Developer	开发者
+Scenes/Menu	About	Country	Label	Country of origin	原产国
+Scenes/Menu	About/Country	Info	Label	Finland	芬兰
+Scenes/Menu	About	Founding	Label	Founding date	成立日期
+Scenes/Menu	About/Founding	Info	Label	Feb. 2022	2022年2月
+Scenes/Menu	About	Copyright	Label	Copyright & Legal	版权与法律声明
+Scenes/Menu	About/Copyright	Info	Label	"1. Game Content
+Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
+
+2. Trademarks
+Road to Vostok ® is registered trademark of Road to Vostok Ltd.
+
+3. Engine
+Road to Vostok ® is powered by open source Godot Engine"	"1. 游戏内容
+《通往沃斯托克之路》© 2026 Road to Vostok Ltd. 保留所有权利。
+
+2. 商标
+《通往沃斯托克之路》® 是 Road to Vostok Ltd. 的注册商标。
+
+3. 引擎
+《通往沃斯托克之路》® 由开源 Godot 引擎驱动"
+Scenes/Menu	About	License	Label	Engine License (MIT)	引擎许可协议（MIT）
+Scenes/Menu	About/License	MIT	Label	"This game uses Godot Engine, available under the following license:
+
+Copyright © 2014-present Godot Engine contributors.
+Copyright © 2007-2014 Juan Linietsky, Ariel Manzur.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the ""Software""), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE."	"本游戏使用 Godot Engine，该引擎遵循以下许可协议：
+
+版权所有 © 2014-至今 Godot Engine 贡献者。
+版权所有 © 2007-2014 Juan Linietsky、Ariel Manzur。
+
+特此免费授权任何获得本软件及相关文档文件（以下简称“软件”）副本的人士，
+无限制地处理该软件，包括但不限于使用、复制、修改、合并、发布、分发、
+转授权和/或出售软件副本的权利，并允许软件提供对象
+进行上述操作，但须遵守以下条件：
+
+上述版权声明及本许可声明应包含于
+本软件的所有副本或实质性部分中。
+
+本软件按“原样”提供，不作任何明示或
+默示的保证，包括但不限于对适销性、
+特定用途适用性及不侵权的保证。 在任何情况下，
+作者或版权持有者均不对因本软件、
+本软件的使用或与本软件相关的
+任何索赔、损害赔偿或其他
+责任承担责任，无论该索赔、损害赔偿或其他
+责任是基于合同、侵权或其他原因产生。"
+Resources/Loader	Screen	Label	Label	Loading...	正在加载...
+Resources/Loader	Screen	Label	Label	Loading Intro...	正在加载简介...
+Resources/Loader	Screen	Label	Label	Loading Cabin...	正在加载机舱...
+Resources/Loader	Screen	Label	Label	Loading Tutorial...	正在加载教程...
+Resources/Loader	Screen	Label	Label	Loading Menu...	正在加载菜单...
+Resources/Loader	Screen	Label	Label	Loading Attic...	正在加载阁楼...
+Resources/Loader	Screen	Label	Label	Loading Death...	正在加载死亡……
+Resources/Loader	Screen	Label	Label	Loading Classroom...	正在加载教室...
+Resources/Loader	Screen	Label	Label	Loading Tent...	正在加载帐篷...
+Resources/Loader	Screen	Label	Label	Loading Bunker...	正在加载料仓...
+Resources/Loader	Screen	Label	Label	Loading Village...	正在加载村庄...
+Resources/Loader	Screen	Label	Label	Loading Highway...	正在加载高速公路...
+Resources/Loader	Screen	Label	Label	Loading School...	正在加载学校...
+Resources/Loader	Screen	Label	Label	Loading Outpost...	正在加载前哨站...
+Resources/Loader	Screen	Label	Label	Loading Minefield...	正在加载《地雷阵》...
+Resources/Loader	Screen	Label	Label	Loading Apartments...	正在加载公寓信息...
+Resources/Loader	Screen	Label	Label	Loading Terminal...	正在加载终端...
+Resources/Loader	Screen	Label	Label	Loading Template...	正在加载模板...
+UI/Loading	Screen	Label	Label	Loading shaders...	正在加载着色器...
+Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	跳过简介 [空格键]
+Scenes/Death	Main	Hint	Label	Character died	角色死亡
+Scenes/Death	Main/Buttons	Load	Button	Load game	加载游戏
+Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
+"	"主菜单
+"
+Scenes/Death	Main/Buttons	Quit	Button	"Quit
+"	"退出
+"
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	健康
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	能源
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	补水
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	心理
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	氧气
+UI/HUD	Info	Map	Label	Shelter (Area 05)	避难所（05区）
+UI/Interface	Container/Header	Label	Label	Container	容器
+UI/Interface	Equipment/Header	Label	Label	Equipment	设备
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	背包
+UI/Interface	Equipment/Hints	Rig	Label	Rig	钻井平台
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	头盔
+UI/Interface	Equipment/Hints	Head	Label	Head	标题
+UI/Interface	Equipment/Hints	Torso	Label	Torso	躯干
+UI/Interface	Equipment/Hints	Legs	Label	Legs	腿
+UI/Interface	Equipment/Hints	Belt	Label	Belt	皮带
+UI/Interface	Equipment/Hints	Feet	Label	Feet	脚
+UI/Interface	Equipment/Hints	Hands	Label	Hands	双手
+UI/Interface	Equipment/Hints	Matches	Label	Matches	比赛
+UI/Interface	Equipment/Hints	Light	Label	Light	光
+UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
+UI/Interface	Equipment/Hints	Time	Label	Time	时间
+UI/Interface	Equipment/Hints	Map	Label	Map	地图
+UI/Interface	Equipment/Hints	Player	Label	Player	玩家
+UI/Interface	Character/Header	Label	Label	Character	角色
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	健康
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	能源
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	补水
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	心理
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	猫
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	天
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	收容所
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	任务
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	任务
+UI/Interface	Tools/Header	Label	Label	Tools	工具
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	活动
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	手工制作
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	邻近性
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	任务说明
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	任务备注为空
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	任务说明不可用（教程）
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	世界地图
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	未装备地图
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	地图无法使用（沃斯托克）
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"平移 = [左键]
+缩放 = [滚轮]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	焦点地图
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	卡带播放器
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	未配备卡带播放器
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	本磁带包含授权音乐（内容警告）
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	磁带名称
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	覆盖环境音乐 [开启]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	覆盖环境音乐 [关闭]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	游牧民族
+UI/Interface	Trader/Header	Label	Label	Trader	交易员
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	供应
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	任务
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	姓名：
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	交易员
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	税收：
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	任务：
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	补给：
+UI/Interface	Deal/Header	Label	Label	Deal	交易
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	申请金额 + 税费（欧元）
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	报价金额（欧元）
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	重置
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	接受
+UI/Interface	Supply/Header	Label	Label	Supply	供应
+UI/Interface	Tasks/Header	Label	Label	Tasks	任务
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	家具目录
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	物品栏与你的角色绑定，死亡也会导致物品栏中的物品消失
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	"使用
+"
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	"装备
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	"卸下
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	"卸载
+"
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	"拆分
+"
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	"请
+"
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	"睡眠
+"
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	"转账
+"
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	"下拉
+"
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	"地点
+"
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	"摧毁
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	"删除 [0]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	"删除 [1]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	"删除 [2]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	"删除 [3]
+"
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	咖啡大师
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	耗材
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	传奇
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	物品是指游戏世界中玩家可以拾取的对象。
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	设备：
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	小学
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	状态：
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	重量：
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	值：
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	口径：
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	损坏：
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	渗透：
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	第1级
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	第2级
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	第3级
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	第4级
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	第5级
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	保护：
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	第1级
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	容量：
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	绝缘：
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	健康：
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	能源：
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	补水：
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	心理：
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	体温：
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	嵌套：
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	疗法：
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	兼容产品：
+UI/Elements/Item	Details	Abbreviation	Label	Item	项目
+UI/Profiler	Panel/Margin	Label	Label	Profiler	分析器
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	显示
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	菜谱名称
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	输入：
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	输出：
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	开始输入
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	工艺
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	职责在身
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	添加到笔记
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	删除
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	难度：
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	简单
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"上周我去附近那栋废弃的校舍找医生看了病。他跟我说我得改掉所有“坏习惯”，但这老混蛋自己却抽烟，去他的！
+
+你八成就是那种遇到麻烦就舔薄荷糖的现代嬉皮士，不过如果你碰巧发现了这种东西，记得带上一两包，顺便带点火柴。"
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	交付：
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	接收：
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ 完成此任务后，您将获得庇护所家具
+→ 您的家具位于“家具目录”[装饰模式]中"
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	开始配送
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	暂停配送
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	已送达
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	完成
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	全能型选手重返村庄
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"医生是一位专攻医疗的商人，在05区一栋废弃的校舍内开设了一间临时诊所。
+
+在去探望老奶奶进行“福利探访”后，医生回到这间诊所，准备为伤者提供医疗服务。"
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	显示
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	第1天
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10天后
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	交易者活动
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	活动地点：
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	村庄
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	活动可能性：
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	约5% / 地图实例
+UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	武器卡壳 | 按 [重新装弹]
+UI/HUD	Tooltip	Label	Label	Interaction	交互
+UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 旋转模式
+UI/HUD	Decor/Margin/Elements	Add	Label	[MMB] = Add to Catalog	[MMB] = 添加到目录
+UI/HUD	Decor/Margin/Elements	Catalog	Label	[TAB] = Furniture Catalog	[TAB] = 家具目录
+UI/HUD	Decor/Margin/Elements	Close	Label	[F1] = Close Decor Mode	[F1] = 关闭装饰模式
+UI/HUD	Decor/Margin/Elements/Header	Label	Label	Decor Mode	装饰模式
+UI/HUD	Decor/Margin/Elements	Place	Label	[G] = Place Furniture	[G] = 放置家具
+UI/HUD	Decor/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[滚动] = 调整 / 旋转
+UI/HUD	Decor/Margin/Elements	Magnet	Label	[LMB] = Surface Magnet	[LMB] = 表面磁铁
+UI/HUD	Placement/Margin/Elements/Header	Label	Label	Item Placement	物品放置
+UI/HUD	Placement/Margin/Elements	Place	Label	[G] = Grab / Drop Item	[G] = 拾取/丢弃物品
+UI/HUD	Placement/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[滚动] = 调整 / 旋转
+UI/HUD	Placement/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 旋转模式
+UI/HUD	Placement/Margin/Elements	Orientation	Label	[MMB] = Change Orientation	[MMB] = 更改方向
+UI/HUD	Transition/Elements/Header	Destination	Label	Village	村庄
+UI/HUD	Transition/Elements/Header	Zone	Label	Area 05	05区
+UI/HUD	Transition/Elements/Details	Hint	Label	Demo transition: Skips 2-3 maps	演示过渡：跳过 2-3 张地图
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	Item	项目
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Common)	类型（通用）
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Rare)	类型（稀有）
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Legendary)	类型（传说级）
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	An item is an object within the game world that can be collected by a player.	物品是指游戏世界中玩家可以拾取的对象。
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	Condition:	状态：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	Weight:	重量：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	Value:	值：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	Use time:	使用时间：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	Damage:	损坏：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	Caliber:	口径：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	Magazine:	杂志：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	Capacity:	容量：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	最大栈容量：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	护甲：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	健康：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
+"	"能源：
+"
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	补水：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	体温：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	疗法：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	兼容性：
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  新增家具 [产品目录]
