@@ -6,8 +6,11 @@ Output : <pkg_root>/<locale>/Texture.xlsx (overwritten)
 Differs from Translation:
   - Schema is Where / Sub / Type / method / Text / Translation /
     File Directory / File Name / Reworked by / Contributors / Attribution.
-  - 'method' values: 'replace' (texture file substitution) or 'overlay'
-    (Sprite3D/Decal added on top, original texture untouched).
+  - 'method' values: 'replace' (texture file substitution) or 'blend'
+    (mod overlay PNG composited on top of original via Image.blend_rect
+    at runtime; original PBR maps preserved, mod ships only translated
+    text pixels). 'replace' cells highlighted blue; 'blend' uses default
+    cell style.
   - THICK_RIGHT_HEADERS: Sub (end of grouping), Translation (end of
     translation data), File Name (end of file-metadata block).
   - Group separator columns: Where (thick) / Sub (thin).
@@ -206,9 +209,10 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
     method_col = col_letter("method")
     if method_col:
         rng = f"{method_col}2:{method_col}{end_row}"
+        # 현재 구현된 method 값에 한해 색상 표시.
+        # 'blend' 는 별도 색상 없이 기본 셀로 둠 (드물게 사용).
         for value, bg, fg in [
-            ("replace", BLUE_BG,   BLUE_FG),
-            ("overlay", GREEN_BG,  GREEN_FG),
+            ("replace", BLUE_BG, BLUE_FG),
         ]:
             ws.conditional_formatting.add(rng, _cell_is_rule(f'"{value}"', bg, fg))
 

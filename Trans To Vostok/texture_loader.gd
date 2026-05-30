@@ -279,6 +279,12 @@ func _composite_blend(orig_tex: Texture2D, rel: String) -> Texture2D:
 	var rect: Rect2i = Rect2i(Vector2i.ZERO, overlay_img.get_size())
 	orig_img.blend_rect(overlay_img, rect, Vector2i.ZERO)
 
+	# Mipmap 생성 — 없으면 거리감 렌더링 시 base level 만 사용되어 원본
+	# PCK 텍스처의 mipmap 으로 fallback 되는 현상이 발생 (먼 거리에서
+	# 원본 텍스트가 보이는 증상). generate_mipmaps 는 base 에서 1/2, 1/4 ...
+	# 까지 자동으로 down-sample 한 mip pyramid 를 만들어 줌.
+	orig_img.generate_mipmaps()
+
 	var result: ImageTexture = ImageTexture.create_from_image(orig_img)
 	_blend_cache[rel] = result
 	return result
