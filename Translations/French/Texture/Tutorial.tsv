@@ -1,5 +1,5 @@
-Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
-Tutorial	Billboard	1. Settings	"1. Settings
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Tutorial	Billboard	1. Settings	replace	"1. Settings
 
 Welcome to Road to Vostok Tutorial
 
@@ -28,7 +28,7 @@ Ces paramètres vous permettent de modifier les commandes,
 diverses valeurs système et les options de performances
 
 ?? = Options de performances"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	MuteJack		Performance Icon: Hand-crafted (Reconstruction)		
-Tutorial	Billboard	2. Interface	"2. Interface
+Tutorial	Billboard	2. Interface	replace	"2. Interface
 
 Interface is your main UI which contains elements
 such as inventory, equipment, vitals and stats
@@ -51,7 +51,7 @@ ou une valeur spécifique, vous pouvez utiliser l'info-bulle
 
 Essayez l'info-bulle en ouvrant l'interface
 et en survolant la valeur de santé du personnage"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	MuteJack				
-Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
+Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
 interactable loot containers
@@ -80,7 +80,7 @@ Lorsque vous avez des objets disponibles dans l'interface, vous pouvez
 choisir des actions sur les objets via le menu contextuel [bouton droit de la souris]
 
 Ouvrez un conteneur et essayez le menu contextuel avec les objets"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	MuteJack				
-Tutorial	Billboard	4. Equipment	"4. Equipment
+Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
 and linked to several important character stats
@@ -107,7 +107,7 @@ Vous pouvez activer les emplacements d'équipement en
 y plaçant des objets compatibles
 
 Ouvrez votre sac et essayez d'équiper des objets"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	MuteJack				
-Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
+Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
 negatively affect your character's vital stats
@@ -136,7 +136,7 @@ active et doit être soignée à l'aide d'un objet de soins
 Vous pouvez consulter les causes, les symptômes et les remèdes grâce à l'infobulle
 
 Ouvrez votre inventaire et essayez d'utiliser quelques objets de soins"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	MuteJack				
-Tutorial	Billboard	6. Weapons	"6. Weapons
+Tutorial	Billboard	6. Weapons	replace	"6. Weapons
 
 Weapons are equipment and they use 
 Primary, Secondary, Knife and Grenade slots
@@ -167,7 +167,7 @@ Ouvrez le conteneur, équipez-vous d'une arme et dégainer
 | [Clic droit] = Viser (ADS) | [F] = Mode de tir |
 | [Clic central] = Viser en inclinaison | [X] = Inspecter l'arme |
 | [SCROLL] = Position de l'arme | [SCROLL] = Inspecter la rotation |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	MuteJack				
-Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
+Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
 and caliber-based ammo types
@@ -200,7 +200,7 @@ Ouvrez le conteneur, utilisez l'info-bulle pour vérifier la compatibilité
 des munitions et du chargeur, puis Chargez -> Fixez -> Tirez
 
 [Clic gauche] = Tirer [V] = Vérifier les munitions [CTRL] -> [Clic gauche] = Insérer une balle (fusils à verrou et fusils de chasse)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	MuteJack				
-Tutorial	Billboard	8. Attachments	"8. Attachements
+Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
 suppressors, optics and lasers to them
@@ -229,7 +229,7 @@ vérifier la compatibilité des accessoires et essayez de personnaliser votre ar
 [MOUSETTE] = Niveau de zoom du LPVO
 [ALT] = Optique secondaire
 [T] = Activer/désactiver le laser"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	MuteJack				
-Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
+Tutorial	Billboard	9. Knives & Grenades	replace	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
 
@@ -258,7 +258,7 @@ Vous pouvez préparer un lancer haut avec [Bouton gauche de la souris]
 et un lancer bas avec [Bouton droit de la souris]
 
 Une deuxième pression exécute le lancer et le bouton opposé le réinitialise"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	MuteJack				
-Tutorial	Billboard	10. Armor	"10. Armor
+Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
 helmets, armor plates, and plate carriers (rigs)
@@ -292,7 +292,7 @@ essayez de fixer la plaque de blindage au gilet comme des accessoires
 |NIJ III = Niveau 3| 3. Une pénétration de niveau supérieur brise l'armure immédiatement|
 |NIJ III+ = Niveau 4| 4. Les casques préviennent l'état médical critique « Coup à la tête »|
 |NIJ IV = Niveau 5| 5. Les plaques de blindage préviennent l'état médical critique « Rupture »|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	MuteJack				
-Tutorial	Billboard	11. Traders	"11. Traders
+Tutorial	Billboard	11. Traders	replace	"11. Traders
 
 Traders are in-game characters that allow 
 you to trade items and complete lore related tasks
@@ -319,7 +319,7 @@ des objets de récompense ainsi que des clés pour débloquer de nouveaux abris.
 
 Interagissez avec le marchand généraliste et essayez d'
 échanger quelque chose et d'accomplir une quête."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	MuteJack				
-Tutorial	Billboard	12. AI	"12. AI
+Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
 ocupy different areas of the game world
@@ -346,7 +346,7 @@ des chefs de faction dont l'apparition varie
 
 Les instances de carte peuvent générer jusqu'à 10 IA
 une fois que vous les aurez toutes éliminées, vous aurez la paix"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	MuteJack				
-Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
+Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
 
@@ -373,7 +373,7 @@ grâce à des transitions qui impliquent certains coûts de déplacement
 liés aux caractéristiques du personnage et à la simulation du monde.
 
 Les transitions sont signalées par des drapeaux de transition."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	MuteJack				
-Tutorial	Billboard	14. World Simulation	"14. World Simulation
+Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
 day & night cycles, dynamic weather, 
@@ -404,7 +404,7 @@ aux transitions entre les zones, ce qui augmente la durée de simulation
 Vous pouvez voir l'heure actuelle grâce aux objets liés au temps
 Choisissez un objet lié au temps (réveil) et équipez-le
 *Le temps de simulation reste verrouillé pendant le tutoriel"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	MuteJack				
-Tutorial	Billboard	15. Shelters	"15. Shelters
+Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
 Shelters are safe areas that allows you to save 
 simulation time, character progress and loot
@@ -431,7 +431,7 @@ mode « Placement d'objets » et au mode « Décoration »
 
 Vous pouvez utiliser le mode « Placement d'objets » avec la touche [G] et déplacer 
 les meubles en activant le mode « Décoration » avec la touche [F1]"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	MuteJack				
-Tutorial	Billboard	16. Vostok	"16. Vostok
+Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
 where death results losing all existing progression

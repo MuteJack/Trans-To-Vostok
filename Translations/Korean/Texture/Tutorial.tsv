@@ -1,5 +1,5 @@
-Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
-Tutorial	Billboard	1. Settings	"1. Settings
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Tutorial	Billboard	1. Settings	replace	"1. Settings
 
 Welcome to Road to Vostok Tutorial
 
@@ -28,7 +28,7 @@ Road to Vostok 튜토리얼에 오신 것을 환영합니다.
 및 성능 옵션을 변경할 수 있습니다.
 
 ?? = 성능 옵션 관련"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	MuteJack		Performance Icon: Hand-crafted (Reconstruction)		
-Tutorial	Billboard	2. Interface	"2. Interface
+Tutorial	Billboard	2. Interface	replace	"2. Interface
 
 Interface is your main UI which contains elements
 such as inventory, equipment, vitals and stats
@@ -51,7 +51,7 @@ and point the character health value"	"2. 인터페이스
 
 인터페이스를 열고 캐릭터의 상태값 위에 
 마우스 커서를 올려 툴팁을 표시해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	MuteJack				
-Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
+Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
 interactable loot containers
@@ -80,7 +80,7 @@ Open container and try Context Menu with items"	"3. 전리품 & 아이템
 컨텍스트 메뉴를 열고 아이템 관련 동작을 선택할 수 있습니다.
 
 컨테이너를 열고 아이템 관련 동작을 선택해 보세요"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	MuteJack				
-Tutorial	Billboard	4. Equipment	"4. Equipment
+Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
 and linked to several important character stats
@@ -107,7 +107,7 @@ Open container and try equipping items"	"4. 장비 아이템
 호환되는 아이템을 옮겨 장착해야 합니다.
 
 컨테이너를 열고 아이템을 장착해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	MuteJack				
-Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
+Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
 negatively affect your character's vital stats
@@ -135,7 +135,7 @@ Open container and try using some medical items"	"5. 의료 및 상태
 툴팁을 통해 원인, 증상 및 치료법을 확인할 수 있습니다.
 
 컨테이너를 열고 의료 아이템을 사용해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	MuteJack				
-Tutorial	Billboard	6. Weapons	"6. Weapons
+Tutorial	Billboard	6. Weapons	replace	"6. Weapons
 
 Weapons are equipment and they use 
 Primary, Secondary, Knife and Grenade slots
@@ -166,7 +166,7 @@ Open container, equip a weapon and draw it
 | [우클릭] = 조준 (ADS) | [F] = 사격 모드 변경 (단발, 연발) |
 | [휠버튼] = 기울여 조준 | [X] = 무기 살펴보기 |
 | [스크롤] = 무기 위치 | [X] → [스크롤] = 무기 회전 |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	MuteJack				
-Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
+Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
 and caliber-based ammo types
@@ -200,7 +200,7 @@ and magazine compatibility, Load -> Attach -> Fire
 호환성을 확인한 후, 장전 → 장착 → 발사해 보세요.
 
 [좌클릭] = 사격, [V] = 잔탄 확인, [CTRL] → [LMB] = 탄약 삽입 (볼트 액션 & 산탄총)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	MuteJack				
-Tutorial	Billboard	8. Attachments	"8. Attachements
+Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
 suppressors, optics and lasers to them
@@ -231,7 +231,7 @@ identify attachment compatibility and try customizing
 [스크롤] = LPVO 줌 레벨 변경 (확대/축소)
 [ALT] = 보조 조준경 전환
 [T] = 레이저 토글 (켜기/끄기)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	MuteJack				
-Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
+Tutorial	Billboard	9. Knives & Grenades	replace	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
 
@@ -259,7 +259,7 @@ Second press executes and opposite button resets the throw"	"9. 칼 & 수류탄
 [우클릭]으로 낮게 던지기를 준비할 수 있습니다.
 
 * 두 번 누르면 수류탄을 투척하며, 반대쪽 버튼을 누르면 던지기 준비가 초기화됩니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	MuteJack				
-Tutorial	Billboard	10. Armor	"10. Armor
+Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
 helmets, armor plates, and plate carriers (rigs)
@@ -292,7 +292,7 @@ NIJ IIA	= 레벨 2	2. 피격 시 방어력이 감소하며, 0%가 되면 방어�
 NIJ III 	= 레벨 3	3. 관통력이 더 높을 경우, 방어구가 즉시 파손됩니다
 NIJ III+ = 레벨 4	4. 헬멧은 치명적인 부상(헤드샷)을 방지합니다
 NIJ IV 	= 레벨 5 	5. 방탄판은 치명적인 부상(파열)을 방지합니다"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	MuteJack				
-Tutorial	Billboard	11. Traders	"11. Traders
+Tutorial	Billboard	11. Traders	replace	"11. Traders
 
 Traders are in-game characters that allow 
 you to trade items and complete lore related tasks
@@ -320,7 +320,7 @@ trading something and completing a task"	"11. 상인 (거래)
 
 상인 “잡화상”과 상호작용 [휠클릭]하여
 물건을 거래하고 임무를 완료해 보세요."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	MuteJack				
-Tutorial	Billboard	12. AI	"12. AI
+Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
 ocupy different areas of the game world
@@ -351,7 +351,7 @@ AI는 게임 세계의 서로 다른 지역을 점령하고 있는
 모든 AI를 제거하면 평화가 찾아옵니다.
 
 * 맵 이동 시, AI가 재스폰됩니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	MuteJack				
-Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
+Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
 
@@ -380,7 +380,7 @@ AI와 마찬가지로 게임 세계는 서로 다른 맵과
 맵 이동이 가능한 경로는 전환 깃발로 표시됩니다.
 
 * 전환 깃발: 맵 외곽에 위치한 깃발 형태의 오브젝트"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	MuteJack				
-Tutorial	Billboard	14. World Simulation	"14. World Simulation
+Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
 day & night cycles, dynamic weather, 
@@ -411,7 +411,7 @@ Pick a time item (Alarm Clock) and equip it
 시간 관련 아이템(알람 시계 등)을 찾아, 장착해보세요.
 
 * 튜토리얼 중에는 시뮬레이션 시간이 고정됩니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	MuteJack				
-Tutorial	Billboard	15. Shelters	"15. Shelters
+Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
 Shelters are safe areas that allows you to save 
 simulation time, character progress and loot
@@ -437,7 +437,7 @@ furniture by activating Decor Mode with [F1]"	"15. 은신처
 [F1] 키를 눌러 장식 모드를 활성화하면 가구를 이동할 수 있습니다.
 
 장식 모드에서 [TAB]키를 통해 가구 카탈로그를 열 수 있습니다."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	MuteJack				
-Tutorial	Billboard	16. Vostok	"16. Vostok
+Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
 where death results losing all existing progression

@@ -1,5 +1,5 @@
-Where	Sub	Type	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
-Tutorial	Billboard	1. Settings	"1. Settings
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Tutorial	Billboard	1. Settings	replace	"1. Settings
 
 Welcome to Road to Vostok Tutorial
 
@@ -28,7 +28,7 @@ different system values and performance options
 各項系統數值以及效能選項
 
 ?? = 效能選項"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
-Tutorial	Billboard	2. Interface	"2. Interface
+Tutorial	Billboard	2. Interface	replace	"2. Interface
 
 Interface is your main UI which contains elements
 such as inventory, equipment, vitals and stats
@@ -51,7 +51,7 @@ and point the character health value"	"2. 介面
 
 請開啟介面並將游標移至
 角色生命值處，即可試用工具提示"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
-Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
+Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
 interactable loot containers
@@ -80,7 +80,7 @@ Open container and try Context Menu with items"	"3. 戰利品與物品
 您可以透過 [右鍵] 的快顯選單選擇物品操作
 
 開啟容器並嘗試對物品使用快顯選單"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
-Tutorial	Billboard	4. Equipment	"4. Equipment
+Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
 and linked to several important character stats
@@ -107,7 +107,7 @@ Open container and try equipping items"	"4. 裝備
 將相容的物品拖曳至這些欄位來啟用裝備欄位
 
 打開容器並嘗試裝備物品"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
-Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
+Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
 negatively affect your character's vital stats
@@ -136,7 +136,7 @@ Open container and try using some medical items"	"5. 醫療與狀態
 你可以透過工具提示查看成因、症狀和治療方法
 
 打開背包並嘗試使用一些醫療物品"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
-Tutorial	Billboard	6. Weapons	"6. Weapons
+Tutorial	Billboard	6. Weapons	replace	"6. Weapons
 
 Weapons are equipment and they use 
 Primary, Secondary, Knife and Grenade slots
@@ -167,7 +167,7 @@ Open container, equip a weapon and draw it
 | [右鍵] = 瞄準 (ADS) | [F] = 射擊模式 |
 | [中鍵] = 傾斜瞄準 | [X] = 檢視武器 |
 | [滾輪] = 武器位置 | [滾輪] = 檢視旋轉 |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
-Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
+Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
 and caliber-based ammo types
@@ -200,7 +200,7 @@ and magazine compatibility, Load -> Attach -> Fire
 彈藥與彈匣的相容性，依序進行「裝填」→「裝上」→「開火」
 
 [左鍵] = 開火 [V] = 檢查彈藥 [Ctrl] + [左鍵] = 裝填子彈（栓動步槍與霰彈槍）"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
-Tutorial	Billboard	8. Attachments	"8. Attachements
+Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
 suppressors, optics and lasers to them
@@ -229,7 +229,7 @@ identify attachment compatibility and try customizing
 [滾輪] = LPVO 變焦等級
 [ALT] = 副瞄準鏡
 [T] = 雷射瞄準器開關"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
-Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
+Tutorial	Billboard	9. Knives & Grenades	replace	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
 
@@ -258,7 +258,7 @@ Second press executes and opposite button resets the throw"	"9. 刀具與手榴�
 並使用 [右鍵] 進行低擲
 
 再次按下執行投擲，反向按鍵則重置投擲"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
-Tutorial	Billboard	10. Armor	"10. Armor
+Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
 helmets, armor plates, and plate carriers (rigs)
@@ -293,7 +293,7 @@ try attaching armor plate to the rig like attachments
 |NIJ III = 3級| 3. 更高穿透等級的攻擊會立即破裂護甲|
 |NIJ III+ = 4級| 4. 頭盔可防止頭部中彈導致的危急醫療狀態|
 |NIJ IV = 5級| 5. 防彈板可防止內臟破裂導致的危急醫療狀態|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
-Tutorial	Billboard	11. Traders	"11. Traders
+Tutorial	Billboard	11. Traders	replace	"11. Traders
 
 Traders are in-game characters that allow 
 you to trade items and complete lore related tasks
@@ -320,7 +320,7 @@ trading something and completing a task"	"11. 商人
 
 與商人「通才」互動，嘗試
 進行交易並完成任務"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
-Tutorial	Billboard	12. AI	"12. AI
+Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
 ocupy different areas of the game world
@@ -347,7 +347,7 @@ AI 分為三個敵對陣營，
 
 地圖實例最多可生成 10 名 AI 敵人，
 一旦消滅所有敵人，便能獲得和平"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
-Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
+Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
 
@@ -373,7 +373,7 @@ Transitions are marked with Transition Flags"	"13. 地圖與傳送
 過渡點的移動成本取決於角色生命值及世界模擬狀態
 
 過渡點會以「過渡標記」標示"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
-Tutorial	Billboard	14. World Simulation	"14. World Simulation
+Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
 day & night cycles, dynamic weather, 
@@ -404,7 +404,7 @@ Pick a time item (Alarm Clock) and equip it
 您可透過時間相關道具查看當前時間
 選擇時間道具（例如鬧鐘）並裝備它
 *在教學關卡期間，模擬時間將保持鎖定"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
-Tutorial	Billboard	15. Shelters	"15. Shelters
+Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
 Shelters are safe areas that allows you to save 
 simulation time, character progress and loot
@@ -431,7 +431,7 @@ furniture by activating Decor Mode with [F1]"	"15. 避難所
 
 您可使用 [G] 鍵進行「物品擺放」，
 並透過 [F1] 鍵啟動「裝飾模式」來移動家具"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
-Tutorial	Billboard	16. Vostok	"16. Vostok
+Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
 where death results losing all existing progression

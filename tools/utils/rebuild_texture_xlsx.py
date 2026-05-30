@@ -4,14 +4,16 @@ Source : <project_root>/Translations/<locale>/Texture/*.tsv
 Output : <pkg_root>/<locale>/Texture.xlsx (overwritten)
 
 Differs from Translation:
-  - Schema is Where / Sub / Type / Text / Translation / File Directory /
-    File Name / Reworked by / Contributors / Attribution.
+  - Schema is Where / Sub / Type / method / Text / Translation /
+    File Directory / File Name / Reworked by / Contributors / Attribution.
+  - 'method' values: 'replace' (texture file substitution) or 'overlay'
+    (Sprite3D/Decal added on top, original texture untouched).
   - THICK_RIGHT_HEADERS: Sub (end of grouping), Translation (end of
     translation data), File Name (end of file-metadata block).
   - Group separator columns: Where (thick) / Sub (thin).
   - Duplicate detection: Text / Translation (capitalized; no unique_id).
-  - 'untranslatable' / 'Transliteration' / 'method' columns absent ->
-    those CF blocks silently no-op.
+  - 'untranslatable' / 'Transliteration' columns absent -> those CF
+    blocks silently no-op.
 
 Usage:
     python tools/utils/rebuild_texture_xlsx.py <locale>
@@ -205,11 +207,8 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
     if method_col:
         rng = f"{method_col}2:{method_col}{end_row}"
         for value, bg, fg in [
-            ("substr",  GREEN_BG,  GREEN_FG),
-            ("static",  BLUE_BG,   BLUE_FG),
-            ("ignore",  RED_BG,    RED_FG),
-            ("literal", YELLOW_BG, YELLOW_FG),
-            ("Pattern", YELLOW_BG, RED_FG),
+            ("replace", BLUE_BG,   BLUE_FG),
+            ("overlay", GREEN_BG,  GREEN_FG),
         ]:
             ws.conditional_formatting.add(rng, _cell_is_rule(f'"{value}"', bg, fg))
 
