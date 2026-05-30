@@ -3,11 +3,16 @@
 # 동작 방식:
 #   1. 초기화 시 "res://Trans To Vostok/<locale>/textures/" 를 재귀 스캔
 #   2. 발견된 상대 경로를 _available Dictionary 에 등록
-#   3. 씬 트리 순회 + node_added 시그널로 관심 노드 수집
+#   3. <locale>/texture_meta.json 로드 → 파일별 method 정보 (replace | blend)
+#   4. 씬 트리 순회 + node_added 시그널로 관심 노드 수집
 #      - TextureRect / Sprite2D / Sprite3D 의 .texture
 #      - MeshInstance3D 의 ShaderMaterial 파라미터 (sampler2D)
-#   4. 노드의 원본 텍스처 경로가 _available 에 있으면 번역본으로 교체
-#   5. 원본 참조는 _bindings 에 저장 → shutdown 시 복원
+#   5. 노드의 원본 텍스처 경로가 _available 에 있으면:
+#      - method=replace : 번역본으로 교체 (mod PNG 통째로)
+#      - method=blend   : 원본 위에 mod PNG (투명 배경 + 번역 텍스트) 를
+#                         Image.blend_rect 로 합성. 원본의 PBR 정보 보존,
+#                         mod 측은 본인 작업물 (텍스트 픽셀) 만 ship.
+#   6. 원본 참조는 _bindings 에 저장 → shutdown 시 복원
 #
 # 검증 책임 분리:
 #   - 런타임: 파일 존재 체크만. 없으면 원본 유지 (크래시 없음)
@@ -52,6 +57,14 @@ var _available: Dictionary = {}
 # 이미지 루트: "res://Trans To Vostok/Korean/images/"
 var _texture_root: String = ""
 
+# 메타 정보 (texture_meta.json 으로부터): rel_path -> "replace" | "blend"
+# 항목 없으면 기본 "replace".
+var _meta: Dictionary = {}
+
+# blend 결과 캐시: rel_path -> ImageTexture (한 번 합성하면 동일 sign 모든
+# 인스턴스에서 재사용). 키는 mod-side rel path.
+var _blend_cache: Dictionary = {}
+
 # 바인딩 목록. 각 항목은 타입에 따라 다른 필드:
 #   texture_prop: {type, node(weakref), prop, orig(Texture2D)}
 #   shader_param: {type, material(weakref), param_name, orig(Texture2D)}
@@ -82,11 +95,17 @@ func _initialize() -> void:
 		print("[TextureLoader] No images for locale '%s' — skipping" % _locale)
 		return
 
+	_load_texture_meta()
+
 	_bind_tree(get_tree().root)
 	get_tree().node_added.connect(_on_node_added)
 
-	print("[TextureLoader] Ready. Available=%d, Bindings=%d" % [
-		_available.size(), _bindings.size()
+	var blend_count: int = 0
+	for v in _meta.values():
+		if v == "blend":
+			blend_count += 1
+	print("[TextureLoader] Ready. Available=%d (blend=%d), Bindings=%d" % [
+		_available.size(), blend_count, _bindings.size()
 	])
 
 
@@ -113,6 +132,8 @@ func shutdown() -> void:
 
 	_bindings.clear()
 	_available.clear()
+	_meta.clear()
+	_blend_cache.clear()
 	_initialized = false
 	print("[TextureLoader] Shutdown — %d textures restored" % restored)
 
@@ -149,14 +170,51 @@ func _recursive_scan(rel: String) -> void:
 
 
 # ==========================================
+# 메타 로드 (텍스처별 method)
+# ==========================================
+
+func _load_texture_meta() -> void:
+	_meta.clear()
+	var meta_path: String = "%s/%s/texture_meta.json" % [DATA_BASE, _locale]
+	if not FileAccess.file_exists(meta_path):
+		# 메타 없으면 모든 항목 디폴트 "replace" 로 처리됨
+		return
+	var f: FileAccess = FileAccess.open(meta_path, FileAccess.READ)
+	if f == null:
+		push_warning("[TextureLoader] Could not open %s" % meta_path)
+		return
+	var raw: String = f.get_as_text()
+	f.close()
+	var parsed = JSON.parse_string(raw)
+	if not (parsed is Dictionary):
+		push_warning("[TextureLoader] %s not a JSON object" % meta_path)
+		return
+	for k in parsed.keys():
+		var v = parsed[k]
+		if v is String and (v == "replace" or v == "blend"):
+			_meta[String(k)] = v
+
+
+func _method_for(rel: String) -> String:
+	return _meta.get(rel, "replace")
+
+
+# ==========================================
 # 텍스처 로드 (CheatMenu 패턴 참고)
 # ==========================================
 
 func _load_mod_png(path: String) -> Texture2D:
+	var img: Image = _load_mod_image(path)
+	if img == null:
+		return null
+	return ImageTexture.create_from_image(img)
+
+
+func _load_mod_image(path: String) -> Image:
 	var img: Image = Image.new()
 	var err: int = img.load(path)
 	if err == OK and not img.is_empty():
-		return ImageTexture.create_from_image(img)
+		return img
 
 	# Fallback: raw bytes 를 수동 decode (mod 경로 특수 케이스 대비)
 	if FileAccess.file_exists(path):
@@ -172,8 +230,58 @@ func _load_mod_png(path: String) -> Texture2D:
 			elif ext == "webp":
 				err2 = img2.load_webp_from_buffer(bytes)
 			if err2 == OK and not img2.is_empty():
-				return ImageTexture.create_from_image(img2)
+				return img2
 	return null
+
+
+# ==========================================
+# 텍스처 합성 (blend)
+# ==========================================
+
+# 원본 텍스처 위에 mod overlay PNG 를 alpha-blend 한 합성 ImageTexture 를 반환.
+# 동일 rel 에 대해 한 번만 합성하고 캐시 (여러 sign 인스턴스가 동일 material 공유 시 효율).
+# 실패 시 null. 호출자는 null 일 때 원본 유지 (no-op).
+func _composite_blend(orig_tex: Texture2D, rel: String) -> Texture2D:
+	if _blend_cache.has(rel):
+		return _blend_cache[rel]
+
+	if orig_tex == null:
+		return null
+
+	# 원본 Image 확보. 압축 텍스처 (.ctex) 일 수 있어 get_image() 호출 후 decompress.
+	var orig_img: Image = orig_tex.get_image()
+	if orig_img == null or orig_img.is_empty():
+		push_warning("[TextureLoader] blend: orig texture has no Image for %s" % rel)
+		return null
+	if orig_img.is_compressed():
+		var derr: int = orig_img.decompress()
+		if derr != OK:
+			push_warning("[TextureLoader] blend: failed to decompress orig for %s" % rel)
+			return null
+	if orig_img.get_format() != Image.FORMAT_RGBA8:
+		orig_img.convert(Image.FORMAT_RGBA8)
+
+	# Overlay (mod 측 투명 배경 + 텍스트 PNG)
+	var overlay_img: Image = _load_mod_image(_texture_root + rel)
+	if overlay_img == null:
+		push_warning("[TextureLoader] blend: failed to load overlay %s" % rel)
+		return null
+	if overlay_img.get_format() != Image.FORMAT_RGBA8:
+		overlay_img.convert(Image.FORMAT_RGBA8)
+
+	# Overlay 가 원본과 다른 크기면 경고 후 진행 (좌상단 정렬, 잘리거나 일부만 덮음).
+	# mod 작업 가이드: overlay 는 원본과 동일 해상도여야 자연스러움.
+	if overlay_img.get_size() != orig_img.get_size():
+		push_warning("[TextureLoader] blend: size mismatch for %s orig=%s overlay=%s" % [
+			rel, orig_img.get_size(), overlay_img.get_size()
+		])
+
+	var rect: Rect2i = Rect2i(Vector2i.ZERO, overlay_img.get_size())
+	orig_img.blend_rect(overlay_img, rect, Vector2i.ZERO)
+
+	var result: ImageTexture = ImageTexture.create_from_image(orig_img)
+	_blend_cache[rel] = result
+	return result
 
 
 # ==========================================
@@ -214,9 +322,14 @@ func _try_bind_texture_property(node: Node, prop: String) -> void:
 	var rel: String = _resource_path_to_rel(tex.resource_path)
 	if rel == "" or not _available.has(rel):
 		return
-	var new_tex: Texture2D = _load_mod_png(_texture_root + rel)
+	var new_tex: Texture2D
+	match _method_for(rel):
+		"blend":
+			new_tex = _composite_blend(tex, rel)
+		_:
+			new_tex = _load_mod_png(_texture_root + rel)
 	if new_tex == null:
-		push_warning("[TextureLoader] Failed to load %s" % (_texture_root + rel))
+		push_warning("[TextureLoader] Failed to bind %s" % (_texture_root + rel))
 		return
 	_bindings.append({
 		"type": "texture_prop",
@@ -251,7 +364,12 @@ func _try_bind_shader_material(mat: ShaderMaterial) -> void:
 		var rel: String = _resource_path_to_rel(value.resource_path)
 		if rel == "" or not _available.has(rel):
 			continue
-		var new_tex: Texture2D = _load_mod_png(_texture_root + rel)
+		var new_tex: Texture2D
+		match _method_for(rel):
+			"blend":
+				new_tex = _composite_blend(value, rel)
+			_:
+				new_tex = _load_mod_png(_texture_root + rel)
 		if new_tex == null:
 			continue
 		# 동일 material 의 동일 param 에 이미 바인딩이 있는지 (공유 material 대비)
