@@ -13,7 +13,21 @@ You can access Settings with [ESC]
 Through these settings you can change inputs,
 different system values and performance options
 
-?? = Performance options"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
+?? = Performance options"	"1. 設定
+
+歡迎來到《Road to Vostok》教學
+
+本教學將引導您了解
+最重要的遊戲機制與操作方式
+
+讓我們從設定開始
+
+您可以透過 [ESC] 鍵進入設定
+
+透過這些設定，您可以調整輸入設定、
+各項系統數值以及效能選項
+
+?? = 效能選項"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
 Tutorial	Billboard	2. Interface	"2. Interface
 
 Interface is your main UI which contains elements
@@ -25,7 +39,18 @@ If you want more information about an item, icon
 or specific value, you can use Tooltip
 
 Try Tooltip by opening Interface
-and point the character health value"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
+and point the character health value"	"2. 介面
+
+介面是您的主要使用者介面，其中包含
+諸如物品欄、裝備、生命值及屬性等元素
+
+您可以透過 [TAB] 鍵開啟介面
+
+若想了解某項物品、圖示
+或特定數值的更多資訊，您可以使用工具提示
+
+請開啟介面並將游標移至
+角色生命值處，即可試用工具提示"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
 Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -40,7 +65,21 @@ You can open, pick and interact with [MMB]
 When you have items available in Interface, you can 
 choose item actions with Context Menu [RMB]
 
-Open container and try Context Menu with items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
+Open container and try Context Menu with items"	"3. 戰利品與物品
+
+所有在邏輯上具有儲存空間的物件，
+皆為可互動的戰利品容器
+
+戰利品會生成於這些容器中，
+同時物品也會實體散落於遊戲世界中
+
+
+您可以使用 [中鍵] 來開啟、拾取及與其互動
+
+當介面中有可用物品時，
+您可以透過 [右鍵] 的快顯選單選擇物品操作
+
+開啟容器並嘗試對物品使用快顯選單"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
 Tutorial	Billboard	4. Equipment	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -54,7 +93,20 @@ You can find equipment slots in Interface
 You can activate equipment slots by 
 moving compatible items to them
 
-Open container and try equipping items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
+Open container and try equipping items"	"4. 裝備
+
+裝備是專用的物品欄位，
+並與幾項重要的角色屬性相關聯
+
+裝備可以提升你的負重能力 [CC]，
+並賦予你手電筒和生火等能力
+
+
+你可以在「介面」中找到裝備欄位
+你可以透過
+將相容的物品拖曳至這些欄位來啟用裝備欄位
+
+打開容器並嘗試裝備物品"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
 Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -69,7 +121,21 @@ active and needs to be cured using a medical item
 
 You can see causes, symptoms and cures with Tooltip
 
-Open container and try using some medical items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
+Open container and try using some medical items"	"5. 醫療與狀態
+
+醫療系統是基於會
+對角色生命值造成負面影響的狀態
+
+這些狀態會以醫療圖示呈現
+你可以在介面和HUD中找到它們
+
+
+當醫療圖示變紅時，表示該狀態
+已生效，需要使用醫療物品來治療
+
+你可以透過工具提示查看成因、症狀和治療方法
+
+打開背包並嘗試使用一些醫療物品"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
 Tutorial	Billboard	6. Weapons	"6. Weapons
 
 Weapons are equipment and they use 
@@ -85,7 +151,22 @@ pistols and SMG's can utilize Secondary slot
 Open container, equip a weapon and draw it
 | [RMB] = Aim (ADS) | [F] = Firemode |
 | [MMB] = Canted aim | [X]=Inspect weapon |
-| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
+| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. 武器
+
+武器屬於裝備，並使用
+主武器、副武器、匕首和手榴彈槽位
+
+裝備武器後，可透過按鍵 [1] [2] [3] [4] [5]
+從槽位中拔出或收納武器
+
+
+所有槍械皆可使用主武器槽位，但僅
+手槍和衝鋒槍可使用副武器槽位
+
+開啟背包、裝備武器並拔槍
+| [右鍵] = 瞄準 (ADS) | [F] = 射擊模式 |
+| [中鍵] = 傾斜瞄準 | [X] = 檢視武器 |
+| [滾輪] = 武器位置 | [滾輪] = 檢視旋轉 |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
 Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -102,7 +183,23 @@ or with [R] which fetches a loaded magazine for you
 Open container, use Tooltip to identify the ammo
 and magazine compatibility, Load -> Attach -> Fire
 
-[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
+[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. 彈藥與彈匣
+
+武器系統採用獨立彈匣
+並依據口徑區分彈藥類型
+
+您可透過介面將相容的
+彈藥類型拖曳至彈匣中進行裝填
+
+您可透過右鍵點擊開啟的選單 [RMB] 卸下彈匣
+
+彈匣可手動裝上武器
+或按 [R] 鍵自動取用已裝填的彈匣
+
+開啟裝備欄，透過工具提示確認
+彈藥與彈匣的相容性，依序進行「裝填」→「裝上」→「開火」
+
+[左鍵] = 開火 [V] = 檢查彈藥 [Ctrl] + [左鍵] = 裝填子彈（栓動步槍與霰彈槍）"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
 Tutorial	Billboard	8. Attachments	"8. Attachements
 
 You can customize weapons by attaching 
@@ -117,7 +214,21 @@ identify attachment compatibility and try customizing
 [HOLD CTRL] + [SCROLL] = Optic rail position
 [SCROLL] = LPVO zoom level
 [ALT] = Secondary optic
-[T] = Laser toggle"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
+[T] = Laser toggle"	"8. 配件
+
+您可以透過裝配
+消音器、瞄準鏡和雷射瞄準器來自訂武器
+
+您可以透過介面像更換彈匣一樣
+添加/更換配件，並透過右鍵選單移除
+
+
+開啟裝備介面，透過工具提示或物品懸停時的顏色
+確認配件相容性，並嘗試進行自訂
+[按住 CTRL] + [滾輪] = 瞄準鏡導軌位置
+[滾輪] = LPVO 變焦等級
+[ALT] = 副瞄準鏡
+[T] = 雷射瞄準器開關"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
 Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -132,7 +243,21 @@ grenades with keys [4] and [5]
 You can prepare high throw with [LMB] 
 and low throw with [RMB]
 
-Second press executes and opposite button resets the throw"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
+Second press executes and opposite button resets the throw"	"9. 刀具與手榴彈
+
+裝備刀具時，可按 [3] 鍵拔刀
+
+按 [左鍵] 可進行劈砍攻擊，
+按 [右鍵] 可進行刺擊攻擊
+
+
+你有兩個手榴彈槽位，可透過按鍵 [4] 和 [5] 
+取出手榴彈
+
+可使用 [左鍵] 進行高擲
+並使用 [右鍵] 進行低擲
+
+再次按下執行投擲，反向按鍵則重置投擲"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
 Tutorial	Billboard	10. Armor	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -150,7 +275,24 @@ try attaching armor plate to the rig like attachments
 |NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
 |NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
 |NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
-|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
+|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. 護甲
+
+護甲系統採用符合 NIJ 標準（II-IV 級）的
+頭盔、護甲板及護甲背心（裝備架）
+
+護甲防護等級與
+彈藥／武器的穿透等級直接相關，
+兩者皆可透過工具提示查看
+
+
+開啟裝備欄，裝備頭盔與護甲背心，
+並嘗試將護甲板像配件一樣裝配至背心上
+
+|NIJ II = 1級| 1. 若防護等級等同於穿透等級，護甲可承受3-4發子彈|
+|NIJ IIA = 2級| 2. 每次中彈都會降低護甲狀態，護甲狀態降至0%時即破裂|
+|NIJ III = 3級| 3. 更高穿透等級的攻擊會立即破裂護甲|
+|NIJ III+ = 4級| 4. 頭盔可防止頭部中彈導致的危急醫療狀態|
+|NIJ IV = 5級| 5. 防彈板可防止內臟破裂導致的危急醫療狀態|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
 Tutorial	Billboard	11. Traders	"11. Traders
 
 Traders are in-game characters that allow 
@@ -164,7 +306,20 @@ Completing tasks will lower Trader Tax and provide
 you reward items and keys for unlocking new Shelters
 
 Interact with trader Generalist and try 
-trading something and completing a task"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
+trading something and completing a task"	"11. 商人
+
+商人是遊戲中的角色，可讓
+你進行物品交易並完成與背景故事相關的任務
+
+交易系統基於以物易物的原則，你的目標
+是達成盡可能公平的交易。
+交易結果會綜合考量請求物品的價值、商人稅以及提供物品的價值來計算
+
+完成任務將降低商人稅，並提供
+獎勵物品及用於解鎖新避難所的鑰匙
+
+與商人「通才」互動，嘗試
+進行交易並完成任務"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
 Tutorial	Billboard	12. AI	"12. AI
 
 AI is divided into three hostile factions which
@@ -178,7 +333,20 @@ Each AI faction has different abilities and
 faction bosses with rare spawn changes
 
 Map instances can spawn maximum of 10 AI's
-once you have eliminated all, you will have peace"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
+once you have eliminated all, you will have peace"	"12. AI
+
+AI 分為三個敵對陣營，
+分別佔據遊戲世界的不同區域
+
+|區域05|邊境地帶| 沃斯托克|
+|匪徒|守衛|軍隊|
+|簡單 AI|中等 AI|困難 AI|
+
+每個 AI 陣營擁有不同的能力，
+且陣營首領的生成機制會隨機變化
+
+地圖實例最多可生成 10 名 AI 敵人，
+一旦消滅所有敵人，便能獲得和平"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
 Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -192,7 +360,19 @@ You can travel through these zones and maps
 through Transitions which have certain travel costs 
 related to character vitals and World Simulation
 
-Transitions are marked with Transition Flags"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
+Transitions are marked with Transition Flags"	"13. 地圖與傳送
+
+如同 AI 一樣，遊戲世界被劃分為三個區域，各區域擁有不同的地圖與戰利品池
+
+|起始區 | 分界區 | 永久死亡區 |
+|第 05 區 | 邊境區 | 沃斯托克 |
+|低階戰利品 | 中階戰利品 | 高階戰利品|
+
+
+玩家可透過「過渡點」穿梭於這些區域與地圖之間，
+過渡點的移動成本取決於角色生命值及世界模擬狀態
+
+過渡點會以「過渡標記」標示"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
 Tutorial	Billboard	14. World Simulation	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -208,7 +388,22 @@ map transitions which increases simulation time
 
 You can see current time with time related items 
 Pick a time item (Alarm Clock) and equip it
-*Simulation time stays locked during Tutorial"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
+*Simulation time stays locked during Tutorial"	"14. 世界模擬
+
+遊戲採用世界模擬系統，可生成
+晝夜循環、動態天氣、
+季節變化及隨機事件
+
+模擬速率
+晝夜循環（24小時）= 現實時間 2.4 小時
+
+
+世界模擬與睡眠及
+地圖轉換機制相關聯，這會增加模擬時間
+
+您可透過時間相關道具查看當前時間
+選擇時間道具（例如鬧鐘）並裝備它
+*在教學關卡期間，模擬時間將保持鎖定"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
 Tutorial	Billboard	15. Shelters	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -222,7 +417,20 @@ All Shelters can be customized with
 Item Placement and Decor Mode
 
 You can use Item Placement with [G] and move 
-furniture by activating Decor Mode with [F1]"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
+furniture by activating Decor Mode with [F1]"	"15. 避難所
+
+避難所是安全的區域，可讓您保存
+模擬時間、角色進度及戰利品
+
+避難所需使用鑰匙解鎖，
+您可透過完成任務來獲得鑰匙
+
+
+所有避難所皆可透過
+「物品擺放」與「裝飾模式」進行自訂
+
+您可使用 [G] 鍵進行「物品擺放」，
+並透過 [F1] 鍵啟動「裝飾模式」來移動家具"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
 Tutorial	Billboard	16. Vostok	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -237,4 +445,18 @@ When you travel towards Vostok maps,
 
 When you enter Vostok maps a red 
 Permadeath Skull will also appear 
-in the upper corner of the screen"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		
+in the upper corner of the screen"	"16. 沃斯托克
+
+沃斯托克是一處高風險、高回報的永久死亡區域，
+在此處死亡將導致所有現有進度歸零
+
+本遊戲的永久死亡機制會刪除所有存檔，
+因此你將失去一切
+
+
+當你前往沃斯托克地圖時，
+在進入過渡區前會收到警告
+
+當你進入沃斯托克地圖時，
+螢幕右上角也會出現
+一個紅色的永久死亡骷髏頭"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		

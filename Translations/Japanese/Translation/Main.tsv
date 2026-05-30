@@ -1,45 +1,45 @@
 WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
 Main_Menu	/	Game Title	0	ignore									Road to Vostok		Subtitle(?) of the Game, that Displayed on Main Menu		
 Main_Menu	/	Game Subtitle	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access		Subtitle(?) of the Game, that Displayed on Main Menu		
-Main_Menu	Compatibility		0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility		Text that notice user is running the game as 'Compatibility Mode'		
-Main_Menu	Compatibility		0	substr									Compatibility				
+Main_Menu	Compatibility		0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	互換性	Text that notice user is running the game as 'Compatibility Mode'		
+Main_Menu	Compatibility		0	substr									Compatibility	互換性			
 Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility				
 Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility				
-Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game				
-Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game				
-Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial				
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	新作ゲーム			
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	ゲームを読み込む			
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	チュートリアル			
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
-"				
+"	設定			
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
-"				
+"	ロードマップ			
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
-"				
+"	概要			
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
-"				
-Main_Menu	ChangeLog	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog				
+"	終了			
+Main_Menu	ChangeLog	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	変更履歴			
 Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
-"				
+"	オフ			
 Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
-"				
-Main_Menu	Hardware Check	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check				
+"	について			
+Main_Menu	Hardware Check	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	ハードウェアの確認			
 Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
-"				
+"	オフ			
 Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
-"				
-Main_Menu	Watch Intro	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro				
+"	について			
+Main_Menu	Watch Intro	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	イントロを見る			
 Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
-"				
+"	オフ			
 Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
-"				
-Main_Menu	Menu Music	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music				
+"	について			
+Main_Menu	Menu Music	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	メニュー 音楽			
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
-"				
+"	オフ			
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
-"				
-Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026				
-Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3		"Will not use pattern matching. 
+"	について			
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	「Road to Vostok ®」はRoad to Vostok Ltd.の登録商標です。無断転載を禁じます © 2026			
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	バージョン: 0.1.1.3	"Will not use pattern matching. 
 It will act as the ""canaria (bird)"" for the outdated translation."		
-Main_Menu	ChangeLog	UI_Label	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog				
+Main_Menu	ChangeLog	UI_Label	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	変更履歴			
 Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
 Early Access [0.1.0.0] -> Early Access [0.1.1.3]
 ----------------------------------------
@@ -107,7 +107,74 @@ Hotfix [0.1.1.3]
 [CHANGED] Fallen items drop front of the player vs. inventory (Shelter)
 ----------------------------------------
 [REMOVED] All third-party/obsolete AMD FSR references for stability
-----------------------------------------"				
+----------------------------------------"	"以下の変更が実施されました：
+早期アクセス [0.1.0.0] → 早期アクセス [0.1.1.3]
+----------------------------------------
+ビルド名: Road - Build 1
+ビルドバージョン: 0.1.1.3
+ビルドタイプ: リリース
+----------------------------------------
+ホットフィックス [0.1.1.3]
+[修正] コンテキストアクションの実行中にインターフェースを閉じた場合、死亡することがあった問題を修正 (コンテキスト使用)
+[修正] 同じフレームでインターフェースを閉じた際、コンテキストアクションによりアイテムが破損する問題 (コンテキストアンロード)
+[修正] 同じフレームでインターフェースを閉じた際、コンテキストアクションにより家具が破損する問題 (コンテキスト配置)
+----------------------------------------
+[追加] ハードウェアの問題に対する互換性起動オプション
+[追加] GPUのストール/タイムアウトに対するバッファメモリの増量
+[追加] マップ読み込み時のCPU負荷分散
+[追加] 安定性向上のため、エンジンバージョンをGodot 4.6.2に変更
+[追加] SMAAアンチエイリアシングオプションを追加（設定）
+[追加] 安定性向上のため、画像シャープネスシェーダーを再実装 (設定)
+[追加] 家具の破壊時に誤クリック防止のためセーフガード（左クリック長押し）を導入
+[追加] 夜間でも視認できるよう、エアドロップに緑色のケミライトを使用
+[追加] エアドロップが可変戦利品テーブルに対応 [x3]
+[追加] パニッシャーが可変戦利品テーブルに対応 [x3]
+[追加] パニッシャーの戦利品テーブルを改善し、アイテム数を増加
+[追加] 倒したAIの死体からアイテムを入手できる確率を増加 [25%→75%]
+[追加] 工業系アイテムのスポーンを追加 [オイルフィルター]
+[追加] ターミナルに特殊なクレートとアイテムのスポーンを追加
+[追加] 特殊なクレートからレジェンダリーアイテムも入手可能に
+[追加] 新アイテム：チューインガム
+----------------------------------------
+[修正] シェルターおよびトレーダーエリアでの光や影のちらつき
+[修正] インターフェースを閉じる際に、アクティブなコンテキストメニューがフリーズすることがあった
+[修正] コンテキストメニューがフリーズすると、アイテムが破損したり浮いたりすることがあった
+[修正] アイテム使用中にシェルターのアイテムが戻り、死亡する原因となることがあった
+[修正] 弾薬チェック時に、暗い場所ではカートリッジが光っていた
+[修正] AIがエアドロップのコライダーを通り抜けて移動・攻撃することがあった
+[修正] AIがヘリ墜落現場のコライダーを通り抜けて移動・攻撃することがあった
+[修正] AIがヘリ墜落現場のコライダーに引っかかって動けなくなることがあった
+[修正] 鍵なしで封鎖された高速道路のトンネルを不正利用できた
+[修正] ダークネス／アイアンマンモードのランダムスポーンがトランジション（学校／高速道路）にテレポートしていた
+[修正] AIの射撃精度の不一致および計算ミス
+[修正] コントローラーが村の建物（トイレのドア）に引っかかっていた
+[修正] コントローラーが村のトラクター (納屋)
+[修正済み] コントローラーが村のガレージ（段ボール箱）に引っかかることがある
+[修正済み] コントローラーが学校の建物（商人のテーブル）に引っかかることがある
+[修正済み] コントローラーが学校の建物（複数の椅子）に引っかかることがある
+[修正済み] コントローラーがハイウェイの市場（棚の隙間）に引っかかることがある
+[修正済み] コントローラーがハイウェイの市場（ショッピングカート）に引っかかることがある
+[修正済み] アパートの階段でコントローラーが動かなくなることがあった（死体の頭）
+[修正済み] ターミナルのスロープでコントローラーが動かなくなることがあった（車両基地エリア）
+[修正済み] 軍用BTRが高速で円を描くように走り続けることがあった
+[修正済み] 即席の副木で骨折状態が治癒しなかった
+[修正済み] 医師が自身のクエストアイテム [消毒薬] を販売していた
+[修正] 銃器職人が自身のタスクアイテム [Skrama 200] を販売していた
+[修正] MSAA 8x オプションが設定に保存されなかった
+[修正] チュートリアルの木箱に M78 のマガジンが入っていなかった
+----------------------------------------
+[変更] 重篤な状態 [破裂] の発生確率を低下 [5%→3%]
+[変更] 重篤な状態 [ヘッドショット] の発生確率を低下 [5%→3%]
+[変更] キャラクターの脱水速度を [10%] 低下
+[変更] キャラクターの精神力減少速度を [10%] 低下
+[変更] 猫のバイタル減少速度を [20%] 遅くしました
+[変更] 猫の鳴き声や物音がする頻度を減らしました
+[変更] トレーダー（開始/終了/待機）のボイスが再生される頻度を減らしました
+[変更] レンダリング解像度のオプションを「Low/Native」に変更しました（混乱を軽減するため）
+[変更] ドロップアイテムがインベントリではなくプレイヤーの正面に落ちるように変更しました（シェルター内）
+----------------------------------------
+[削除] 安定性向上のため、すべてのサードパーティ製および廃止されたAMD FSR関連の参照を削除
+----------------------------------------"			
 Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
@@ -332,312 +399,588 @@ Build type: Release
 [CHANGED] Weapon audio uses more realistic tail / echo volumes after firing
 [CHANGED] Multiple changes for AI weapon audio to improve directional and flyby audio
 [CHANGED] Candles no longer cause Burn medical condition when walked on
-[CHANGED] Helicopter model type changed from Mi-8 to Mi-24 (Hind)"		Version 0.1.0.0 (Will be deleted)		
+[CHANGED] Helicopter model type changed from Mi-8 to Mi-24 (Hind)"	"以下の変更が実施されました：
+デモ版 [0.0.1.0] → 早期アクセス版 [0.1.0.0]
+----------------------------------------
+ビルド名：Road - Build 1
+ビルドバージョン：0.1.0.0
+ビルドタイプ：リリース
+----------------------------------------
+[追加] イベントシステム
+[追加] 複数シェルターのサポート
+[追加] 鍵と施錠されたドア
+[追加] PIPスコープとスコープオプション
+[追加] ネイティブDirectXサポート
+[追加] ネイティブシェーダーキャッシュ
+[追加] ツールUI（インターフェース）
+[追加] イベントカレンダー（ツール）
+[追加] クラフトメニュー（ツール）
+[追加] タスクノート（ツール）
+[追加] ワールドマップ（ツール）
+[追加] カセットプレーヤー（ツール）
+[追加] 新しいゲームモード：ダークネス
+[追加] 新しいゲームモード：アイアンマン
+[追加] 新しいマップ：学校（エリア05）
+[追加] 新しいマップ：ハイウェイ（エリア05）
+[追加] 新しいマップ：前哨基地（エリア05）
+[追加] 新しいマップ：ターミナル（ヴォストーク）
+[追加] 新しいシェルター：屋根裏部屋
+[追加] 新しいシェルター：バンカー
+[追加] 新しいシェルター：テント
+[追加] 新しいシェルター：教室
+[追加] 新しい商人：ドクター
+[追加] 新しい商人：ガンスミス
+[追加] 新しいボス：パニッシャー
+[追加] 新しいキャラクター：キャット
+[追加] 新しいイベント：商人の帰還
+[追加] 新しいイベント：戦闘機
+[追加] 新しいイベント：行方不明のキャット
+[追加] 新しいイベント：バンディットボス
+[追加] 新しいイベント：エアドロップ
+[追加] 新しいイベント：BTR
+[追加] 新しいイベント：攻撃ヘリコプター
+[追加] 新しいイベント：墜落現場
+[追加] 新しいイベント：前哨基地の陥落
+[追加] 新しいイベント：商人の脱出
+[追加] 新しいイベント：通信
+[追加] 新しいタスク：プライムタイム
+[追加] 新しいタスク：コーヒー・リザーブ
+[追加] 新しいタスク：汗だくのビジネス
+[追加] 新しいタスク：自家製
+[追加] 新しいタスク：嫌な下り
+[追加] 新しいタスク：安定した手
+[追加] 新しいタスク：読書家
+[追加] 新しいタスク：ダイスの達人
+[追加] 新しいタスク：ナイト・サージェリー
+[追加] 新しいタスク：感染症
+[追加] 新しいタスク：低血容量症
+[追加] 新しいタスク：ハーモニカ
+[追加] 新しいタスク：患者レポート
+[追加] 新しいタスク：物質
+[追加] 新しいタスク：吸血鬼
+[追加] 新しいタスク：温かい食事
+[追加] 新しいタスク：北欧貿易
+[追加] 新しいタスク：ビッグブレード
+[追加] 新しいタスク：弾薬の配達
+[追加] 新しいタスク：武器の配達
+[追加] 新しいタスク：メディック
+[追加] 新しいタスク：ホームコレクション
+[追加] 新しいタスク：万人の権利
+[追加] 新しいタスク：ヒットマン
+[追加] 新しい武器：RK-62
+[追加] 新しい武器：RK-62M
+[追加] 新しい武器：M4A1
+[追加] 新しい武器：K416
+[追加] 新しい武器：P3
+[追加] 新しいアタッチメント：AN-15
+[追加] 新しいアイテム：KAR-21 バレル
+[追加] 新規アイテム：フレイムビーニー
+[追加] 新規アイテム：M62キャップ
+[追加] 新規アイテム：ウォーターボトル
+[追加] 新規アイテム：AFAK
+[追加] 新規アイテム：サーマルブランケット
+[追加] 新規アイテム：生理食塩水
+[追加] 新規アイテム：消毒液
+[追加] 新規アイテム：ウェットティッシュ
+[追加] 新アイテム：ティッシュ
+[追加] 新アイテム：デオドラント
+[追加] 新アイテム：地図
+[追加] 新アイテム：地図（戦術用）
+[追加] 新アイテム：武器修理キット
+[追加] 新アイテム：タックルボックス
+[追加] 新アイテム：オイルフィルター
+[追加] 新規アイテム：コーヒーフィルター
+[追加] 新規アイテム：ウォーターロック
+[追加] 新規アイテム：木材
+[追加] 新規アイテム：枕
+[追加] 新規アイテム：毛布
+[追加] 新規アイテム：棒
+[追加] 新規アイテム：ぼろ布
+[追加] 新規アイテム：カセット（OST）
+[追加] 新規アイテム：カセット（エレクトロフォーク）
+[追加] 新規アイテム：カセット（シンフォニー）
+[追加] 新規アイテム：カセット（ラジオヒット）
+[追加] 新規アイテム：屋根裏部屋の鍵
+[追加] 新規アイテム：バンカーの鍵
+[追加] 新規アイテム：教室の鍵
+[追加] 新規アイテム：地下室の鍵
+[追加] 新規アイテム：体育館の鍵
+[追加] 新規アイテム：トンネルの鍵
+[追加] 新規家具：パレット
+[追加] 新規家具：テレビ
+[追加] 新規家具：金属製棚
+[追加] 新規家具：的スタンド
+[追加] 新規家具：看板（境界地帯）
+[追加] 新しい家具：ポスター（姿勢）
+[追加] 新しい家具：トロリー（小型）
+[追加] 新しい家具：トロリー（大型）
+[追加] 新しい家具：椅子（学校用）
+[追加] 新しい家具：キャビネット（オフィス用）
+[追加] 新しい家具：デスク（オフィス用）
+[追加] 新しいレシピ：エナジードリンク
+[追加] 新しいレシピ：淹れたてコーヒー
+[追加] 新しいレシピ：茹でたエンドウ豆のスープ
+[追加] 新しいレシピ：茹でたトマトのスープ
+[追加] 新しいレシピ：茹でた魚のスープ
+[追加] 新しいレシピ：茹でたミートボール
+[追加] 新しいレシピ：コンポト
+[追加] 新しいレシピ：キルジュ
+[追加] 新しいレシピ：即席包帯
+[追加] 新しいレシピ：即席止血帯
+[追加] 新しいレシピ：即席副子
+[追加] 新しいレシピ：武器の修理
+[追加] 新しいレシピ：KAR-21のアップグレード
+[追加] 新しいレシピ：調理台
+[追加] 新しいレシピ：民間人用ベッド
+[追加] 新しいレシピ：遊牧民用ベッド
+[追加] 新規ゲーム開始時の世界観に基づいたイントロ
+[追加] 4K/Retinaディスプレイ向け高DPIフォントレンダリング
+[追加] マップの端が見えないようにするための余白領域の追加
+[追加] 商人ごとに異なる基本税率 [100-300%]
+[追加] 武器の発砲により、時間の経過とともに武器の状態が低下する
+[追加] 武器の状態が低いと、故障を引き起こすようになった
+[追加] 武器修理キット（クラフト）で武器を修理できるようになった
+[追加] M4A1 / KM18 / K416 へのモジュラーマガジン（STANAG）対応
+[追加] RK-95 / RK-62 / RK-62M 用のモジュラーマガジン対応 (RK)
+[追加] エアードロップなどのイベントに AI が反応するホットスポット
+[追加] AI がアパートの部屋内（階段だけでなく）をパトロールできるようになりました
+[追加] 特定の状況下で AI ヘリコプターがロケット弾を発射できるようになりました
+[追加] 「即死」ヘッドショットでAIの死亡音が即座に終了するようになりました
+[追加] 地雷はランタイム生成となり、マップインスタンスごとにランダムに生成されるようになりました
+[追加] 地雷はマップの境界線上やその少し外側にも生成されるようになりました
+[追加] 液体状のアイテムが凍結するようになりました（冬）
+[追加] 水中に入るとアイテムの凍結が促進されます (冬)
+[追加] 凍結したアイテムは、熱源やシェルターで溶かすことができるようになりました (冬)
+[追加] 商人は、故障したアイテムや凍結したアイテムを受け付けなくなりました
+[追加] クラフトレシピでは、故障したアイテムや凍結したアイテムを使用できなくなりました
+[追加] 楽器を演奏すると、時間の経過とともに精神力が徐々に上昇するようになりました
+[追加] 睡眠時には、エネルギーと水分が共に消費されるようになりました [-20]
+[追加] 睡眠により精神が上昇するようになった [+20]
+[追加] 寝袋を使用すると体温が上昇する [+50]
+[追加] 毛布、枕、メラトニンも睡眠に使用できるようになった
+[追加] 屋外で寝袋以外の睡眠アイテムを使用すると体温が低下する [-100] (冬)
+[追加] ファイアポットなどの屋外の発火源を、熱を必要とするクラフトに使用できるようになりました
+[追加] クラフトにおいて、レシピで消費されない再利用可能なツールがサポートされました
+[追加] クラフトや家具アイテムも網羅した、独立したチュートリアルタスクが追加されました
+[追加] 家具のスタック機能と、家具同士を積み重ねて配置する機能がサポートされました
+[追加] 家具にサーフェスマグネット（表面磁石）モードが追加され、表面にスナップできるようになりました
+[追加] 戦利品シミュレーションとコンテナで、「工業用」のスポーンタイプと配置場所が使用可能になりました
+[追加] ラジオ音声にハイパスフィルターを適用し、より歪んだサウンドになりました
+[追加] メインメニューに「変更履歴」と「ハードウェアチェック」ボタンを追加しました
+[追加] 3Dドアノブと、操作時のハンドルアニメーションを実装しました
+[追加] プレイヤーが地形を通り抜けてしまった場合、フォールバックシステムがプレイヤーをゲームワールドに戻します
+[追加] アイテムが地形を貫通した場合、フォールバックシステムによりアイテムがCPUリソースを消費するのを防止
+[追加] アイテムがシェルターを貫通した場合、フォールバックシステムによりアイテムが直接インベントリにスポーンされる
+----------------------------------------
+[修正] 弾薬チェック中に水中に進入すると、弾薬チェックUIがフリーズする問題を修正
+[修正] マッチの価値計算が数量に基づいておらず、悪用される可能性があった
+[修正] 弾薬の装填中にリロードを行うと、弾薬が複製され、弾薬の上限を超えることがあった
+[修正] アイテムのスタックが満杯の状態で高速転送を使用すると、アイテムが複製されることがあった
+[修正] アイテムのスタックが満杯の状態でコンテキスト転送を使用すると、アイテムが複製されることがあった
+[修正] アイテム配送中に「トレーダーのタスク」から「補給」に切り替えると、アイテムが選択されたままになる
+[修正] アイテム配送中に「トレーダーのタスク」をダブルクリックすると、アイテムが選択されたままになる
+[修正] 特定の画面解像度で、テトリス状のグリッドによりゴーストアイテムやエラーが発生する
+[修正] 特定のハードウェアで、ロード中にシミュレーション時間が00:00で止まることがある
+[修正] 特定のハードウェアで、ロード中にシミュレーションの季節が冬から夏にリセットされる
+[修正] 手榴弾を投げた直後に武器を装備すると、武器が装備解除されていた
+[修正] 手榴弾を投げた直後に武器を装備すると、マガジンが非表示になることがあった
+[修正] アイテム間のインターフェースコンテキストメニューの幅がリセットされなかった
+[修正] プレイヤーの操作がアパートのバスタブで動かなくなることがあった
+[修正] AIの経路探索が、複数階建ての建物（アパート）内で立ち往生することがあった
+[修正] AIの経路探索で階段を貫通することがあった（アパート）
+[修正] 遠距離（+100m）でAIのバックパックが表示されなかった
+[修正] フルオート使用時に武器の音声に歪みやクリッピングが発生していた
+[修正] 環境音量設定がダイナミック環境効果音に影響していなかった
+[修正] 夏のダイナミック環境効果音が冬 （蚊など）
+[修正] スタック上限に達している状態で高速転送を使用すると、自動スタック効果音が再生されることがあった
+[修正] シングルモニター環境において、ウィンドウモードのスケーリングが不安定だった
+[修正] マルチモニター環境において、ロード画面中に選択モニターが切り替わることがあった
+[修正] シェルターでのセーブ時にアイテム位置が破損し、ライトのちらつきを引き起こしていた
+[修正] 複数のHUDメッセージが同時に表示されると重なり合う
+[修正] ジェネラリスト・トレーダーの照明がアーティファクトを引き起こし、屋外へ光が漏れていた
+[修正] シェルター保存時にアイテムの位置情報が破損し、光のちらつきが発生していた
+[修正] キャンプファイアや火の要素が、ファイアポットやファイアバレルを貫通していた
+[修正] 非PIPスコープを通して火のVFXがレンダリングされなかった
+[修正] 木のビルボードの不整合と露出レベルの問題
+[修正] シェルター内部で環境フォグがわずかに見える問題
+[修正] 弾丸のデカールが不安定で、25mを超えるとちらついたり消えたりしていた問題
+[修正] 岩などのスケールされた自然要素を撃つと、弾丸のデカールも同様にスケールされて表示される問題
+[修正] ジェネラリスト商人の照明がアーティファクトを引き起こし、壁を透過していた問題
+[修正] 複数のHUDメッセージが同時に表示されると重なり合う
+[修正] ALT-TAB操作時にゲームが応答しなくなる問題が複数発生
+[修正] シングルモニター環境において、ウィンドウモードのスケーリングが不安定だった
+[修正] マルチモニター環境において、ロード画面中に選択モニターが切り替わることがあった
+----------------------------------------
+[変更] レアリティレベル「コモン」と「アンコモン」が統合され、「コモン」となりました
+[変更] レジェンダリーアイテムの出現率が1%から0.1%に変更されました
+[変更] アーマープレートは常に状態が「新品」の状態で出現するようになりました
+[変更] ランダムな睡眠時間が4～8から6～12に変更されました
+[変更] レーザーは、適切なサイド/トップレールを備えた武器にのみ装着可能になりました
+[変更] ガードもM4A1をデフォルト武器として使用できるようになりました
+[変更] すべてのプロジェクトファイルおよびセーブデータは、AppData/Roaming/[ゲーム名] 内に直接保存されるようになりました
+[変更] すべてのexeファイルおよびビルドで、業界標準のバージョン表記（例：0.1.0.0）が採用されました
+[変更] 特定の武器およびアタッチメント名は、擬似名に変更されました
+[変更] 発砲後の武器音に、よりリアルな残響/エコー音量が追加されました
+[変更] AIの武器音に複数の変更を加え、方向性や通過時の音響表現を改善しました
+[変更] ろうそくの上を歩いても、「火傷」の状態異常が発生しなくなりました
+[変更] ヘリコプターの機種がMi-8からMi-24（Hind）に変更されました"	Version 0.1.0.0 (Will be deleted)		
 New Game	Difficulty/Standard	String	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select				
 New Game	/	Button	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected				
-New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected				
+New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	選択済み			
 New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected				
 New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select				
-New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!				
-New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted				
-New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road				
-New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return				
-New Game	Difficulty	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty				
-New Game	Difficulty	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode				
-New Game	Difficulty	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	text	1115798198	Recommended for new players				
-New Game	Difficulty/Standard	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Name	Label	text	1943781324	Standard				
+New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	警告！			
+New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	既存のセーブデータは削除されます			
+New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	道へ進め			
+New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	← 戻る			
+New Game	Difficulty	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	難易度			
+New Game	Difficulty	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode	ゲームプレイモード			
+New Game	Difficulty	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Hint	Label	text	1115798198	Recommended for new players	初心者におすすめ			
+New Game	Difficulty/Standard	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Name	Label	text	1943781324	Standard	標準			
 New Game	Difficulty/Standard	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Details	Label	text	1979679371	"- Random start kit
 - Shelter spawn
 - Starts 08:00 with neutral weather
 - All character vitals 100
-- Permadeath in Vostok"				
-New Game	Difficulty/Darkness	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness				
+- Permadeath in Vostok"	"- ランダムスタートキット
+- シェルターでのスポーン
+- 08:00開始、天候は晴れ
+- 全キャラクターの体力100
+- ボストークではパーマネントデス"			
+New Game	Difficulty/Darkness	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	闇			
 New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	text	113876474	"- No start kit
 - Random spawn
 - Random start time & weather
 - Random start vitals
-- Permadeath in Vostok"				
-New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	text	1533099300	Select				
-New Game	Difficulty/Ironman	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	text	688804211	Ironman				
+- Permadeath in Vostok"	"- スタートキットなし
+- ランダムなスポーン地点
+- ランダムな開始時刻と天候
+- ランダムな開始時の体力・スタミナ・耐久力
+- ヴォストークではパーマネントデス"			
+New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Select	Button	text	1533099300	Select	選択			
+New Game	Difficulty/Ironman	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Name	Label	text	688804211	Ironman	アイアンマン			
 New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	text	35357242	"- No start kit
 - Random spawn
 - Random start time & weather
 - Random start vitals
-- Always permadeath"				
-New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select				
-New Game	Season	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season				
-New Game	Season	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode				
-New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players				
-New Game	Season/Summer	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer				
+- Always permadeath"	"- スタートキットなし
+- ランダムなスポーン地点
+- ランダムな開始時刻と天候
+- ランダムな開始時の体力
+- 常にパーマネントデス"			
+New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select	選択			
+New Game	Season	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	シーズン			
+New Game	Season	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	季節モード			
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players	初心者におすすめ			
+New Game	Season/Summer	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer	夏			
 New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Details	Label	text	745148717	"- Summer (365 days)
 - No winter
-- Day & night cycle (2.4h IRL)"				
-New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Select	Button	text	762513593	Select				
-New Game	Season/Winter	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Name	Label	text	1225530918	Winter				
+- Day & night cycle (2.4h IRL)"	"- 夏（365日）
+- 冬なし
+- 昼夜のサイクル（現実世界では2.4時間）"			
+New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Select	Button	text	762513593	Select	選択			
+New Game	Season/Winter	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Name	Label	text	1225530918	Winter	冬			
 New Game	Season/Winter	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Details	Label	text	1238633642	"- No summer
 - Winter (365 days)
-- Day & night cycle (2.4h IRL)"				
-New Game	Season/Winter	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Select	Button	text	1694427365	Select				
-New Game	Season/Dynamic	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Name	Label	text	1253705311	Dynamic				
+- Day & night cycle (2.4h IRL)"	"- 夏なし
+- 冬（365日）
+- 昼夜サイクル（現実世界では2.4時間）"			
+New Game	Season/Winter	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Winter	Select	Button	text	1694427365	Select	選択			
+New Game	Season/Dynamic	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Name	Label	text	1253705311	Dynamic	ダイナミック			
 New Game	Season/Dynamic	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Details	Label	text	32667996	"- Summer / Autumn / Winter / Spring
 - Dynamic season cycle (365 days)
-- Day & night cycle (2.4h IRL)"				
-New Game	Season/Dynamic	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Select	Button	text	338862948	Locked				
-Settings	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Header	Label	text	610266802	Settings				
-Settings	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings/Header	Subheader	Label	text	1190483174	Game options				
-Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	.	Pause	Label	text	1032650120	Game Paused				
-Settings	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Settings_Return	Button	text	1591782435	← Return				
-Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Return	Button	text	1846128635	← Return				
-Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning	Warning	Label	text	942708465	Warning!				
-Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Menu	Button	text	46679138	Continue to Main Menu				
-Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game				
+- Day & night cycle (2.4h IRL)"	"- 夏 / 秋 / 冬 / 春
+- ダイナミックな季節の移り変わり（365日）
+- 昼夜サイクル（実時間2.4時間）"			
+New Game	Season/Dynamic	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Dynamic	Select	Button	text	338862948	Locked	ロック中			
+Settings	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Header	Label	text	610266802	Settings	設定			
+Settings	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings/Header	Subheader	Label	text	1190483174	Game options	ゲーム設定			
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	.	Pause	Label	text	1032650120	Game Paused	ゲームが一時停止しました			
+Settings	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Settings	Settings_Return	Button	text	1591782435	← Return	← 戻る			
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Return	Button	text	1846128635	← Return	← 戻る			
+Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning	Warning	Label	text	942708465	Warning!	警告！			
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Menu	Button	text	46679138	Continue to Main Menu	メインメニューに戻る			
+Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game	ゲームを終了する			
 Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning/Warning	Detail	Label	text	2090207802	"You are exiting the game outside of the shelter
-Current inventory & equipment will be deleted"				
-Settings	Input Settings	Section Title	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings				
-Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse				
+Current inventory & equipment will be deleted"	"シェルターの外でゲームを終了します
+現在の所持品と装備は削除されます"			
+Settings	Input Settings	Section Title	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings	入力設定			
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse	マウス			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	text	907110992	"Normal
-"				
+"	通常			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	text	1620747805	"Inverted
-"				
-Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint				
+"	反転			
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint	スプリント			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	text	547331103	"Hold
-"				
+"	保留			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	text	503096142	"Toggle
-"				
-Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean				
+"	切り替え			
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean	リーン			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	text	2100503869	"Hold
-"				
+"	保留			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
-"				
-Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim				
+"	切り替え			
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	目的			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
-"				
+"	保留			
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
-"				
-Settings	Input Settings	Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults				
-Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input				
-Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key		Dynamically Changed on Inputs.gd		
-Settings	#Not Checked	String	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...		Dynamically Changed on Inputs.gd		
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.right	dict		33	Right				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.crouch	dict		34	Crouch				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.jump	dict		35	Jump				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.sprint	dict		36	Sprint				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_high	dict		44	Raise Weapon				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interact	dict		55	Interact				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interface	dict		63	Interface				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_rotate	dict		64	Rotate Item				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip				
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop				
-Settings	Input Settings	Elements	0	substr									Left Mouse Button		I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	substr									Right Mouse Button		I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	substr									Middle Mouse Button		I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Up		I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Down		I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1		I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2		I can't find those texts. Maybe dependent on Godot Engine.		
-Settings	Audio Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings				
-Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume				
-Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume				
-Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume				
-Settings	Audio Settings/Music Preset	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset				
+"	切り替え			
+Settings	Input Settings	Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults	初期設定に戻す			
+Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input	入力例			
+Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key	入力キー	Dynamically Changed on Inputs.gd		
+Settings	#Not Checked	String	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	キーを押して割り当ててください...	Dynamically Changed on Inputs.gd		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward	次へ			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward	戻る			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left	左			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.right	dict		33	Right	その通り			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.crouch	dict		34	Crouch	クラウチ			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.jump	dict		35	Jump	ジャンプ			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.sprint	dict		36	Sprint	スプリント			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left	左寄り			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right	右に傾く			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary	プライマリの描画			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	セカンダリを描画			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife	引き鉋			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1	手榴弾1を投げる			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2	手榴弾を投げる 2			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_high	dict		44	Raise Weapon	武器を構える			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon	武器を下げる			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim	目的			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim	傾斜した照準			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	火			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload	再読み込み			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check	弾薬確認			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	ファイアモード			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon	武器を点検する			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert	挿入の準備			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge	カートリッジを挿入してください			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interact	dict		55	Interact	交流する			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	場所			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	デコレーションモード			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	懐中電灯			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	NVG			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	レーザー			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	レールの動き			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	二次光学系			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.interface	dict		63	Interface	インターフェース			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_rotate	dict		64	Rotate Item	アイテムを回転			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	高速転送			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	即装備			
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	ファスト・ドロップ			
+Settings	Input Settings	Elements	0	substr									Left Mouse Button	マウスの左ボタン	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Right Mouse Button	マウスの右ボタン	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Middle Mouse Button	マウスの中ボタン	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	マウスホイールを上にスクロール	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	マウスホイールを下にスクロール	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	マウスの親指ボタン 1	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	マウスの親指ボタン 2	I can't find those texts. Maybe dependent on Godot Engine.		
+Settings	Audio Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	オーディオ設定			
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	マスターボリューム			
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	周囲の音量			
+Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume	音楽の音量			
+Settings	Audio Settings/Music Preset	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset	音楽プリセット			
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	text	1157664360	"Off
-"				
+"	オフ			
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	text	145862675	"Dynamic
-"				
+"	ダイナミック			
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
-"				
+"	シェルター			
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
-"				
+"	エリア05			
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
-"		"다음 사항에 대해서 번역에 주의하세요:
+"	国境	"다음 사항에 대해서 번역에 주의하세요:
 해당 버튼의 'Border'은 'Border Zone'을 의미합니다"		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
-"				
-Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings				
-Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate				
-Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View				
-Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob				
+"	ボストーク			
+Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	カメラの設定			
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	補間する			
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	視野			
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob	ヘッドボブ			
 Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	text	1097446784	"Off
-"				
+"	オフ			
 Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	text	875405842	"On
-"				
-Settings	Mouse Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings				
-Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity				
-Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity				
-Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity				
-Settings	Color Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings				
-Settings	UI Scaling	Section Title	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]				
-Settings	UI Scaling	Section Title	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling				
-Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale				
-Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale				
-Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Font	Label	text	1601276621	Font Scale				
-Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	text	1627739783	Exposure				
-Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	text	1493783365	Contrast				
-Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation				
-Settings	Image Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	Image Settings				
-Settings	Image Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text	924067924	Sharpness				
-Settings	HUD	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD				
+"	について			
+Settings	Mouse Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings	マウスの設定			
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity	表示感度			
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity	照準感度			
+Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity	測定範囲感度			
+Settings	Color Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings	色設定			
+Settings	UI Scaling	Section Title	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]	UIの拡大縮小 [近日公開予定]			
+Settings	UI Scaling	Section Title	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	UIの拡大縮小			
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale	インターフェースのスケール			
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale	HUDスケール			
+Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Font	Label	text	1601276621	Font Scale	フォントサイズ			
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	text	1627739783	Exposure	露出			
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	text	1493783365	Contrast	コントラスト			
+Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation	飽和			
+Settings	Image Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	Image Settings	画像設定			
+Settings	Image Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text	924067924	Sharpness	シャープネス			
+Settings	HUD	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD	住宅都市開発省（HUD）			
 Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	text	384487481	"Map
-"				
-Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS				
-Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals				
-Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical				
-Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	text	1947205630	Placement				
-Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor				
-Settings	UI Tooltip	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip				
+"	地図			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS	FPS			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals	バイタルサイン			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical	医療			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	text	1947205630	Placement	配置			
+Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor	インテリア			
+Settings	UI Tooltip	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip	UIのツールチップ			
 Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	text	218441862	"On
-"				
-Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off				
-Settings	PIP Scopes	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes				
+"	について			
+Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off	オフ			
+Settings	PIP Scopes	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes	PIPスコープ			
 Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	text	1683999774	"On
-"				
+"	について			
 Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	text	1913543227	"Off
-"				
-Settings	Detail Shadows	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows				
-Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On				
+"	オフ			
+Settings	Detail Shadows	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows	ディテールシャドウ			
+Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On	について			
 Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	text	509666701	"Off
-"				
-Settings	Water Reflections	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections				
-Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On				
+"	オフ			
+Settings	Water Reflections	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections	水面に映る景色			
+Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On	について			
 Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	text	1217670336	"Off
-"				
-Settings	Ambient Occlusion	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion				
-Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On				
+"	オフ			
+Settings	Ambient Occlusion	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	アンビエントオクルージョン			
+Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	について			
 Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
-"				
-Settings	Display	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display				
-Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen				
-Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed				
-Settings	Display	Element	0	pattern									Monitor: {idx}				
-Settings	Display	Element	0	pattern									Window: {percent}%				
-Settings	Frames	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames				
+"	オフ			
+Settings	Display	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	表示			
+Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	全画面表示			
+Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	ウィンドウ表示			
+Settings	Display	Element	0	pattern									Monitor: {idx}	Monitor: {idx}			
+Settings	Display	Element	0	pattern									Window: {percent}%	Window: {percent}%			
+Settings	Frames	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames	Frames	Label	text	295331903	Frames	フレーム			
 Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_60	Button	text	137610325	60				
 Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_120	Button	text	1049440983	120				
 Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_200	Button	text	1243526225	200				
 Settings	Frames	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	FPS_300	Button	text	2062662255	300				
-Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	text	1956572514	Vsync				
-Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited				
-Settings	Render Resolution	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution				
-Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low				
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium		Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High		Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra		Depricated in 0.1.1.3, will be deleted		
-Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native				
-Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness				
-Settings	Lighting Quality	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality				
-Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	text	1856829880	Low				
-Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	text	1240839901	Medium				
-Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	text	1338458648	High				
-Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	text	1687334721	Ultra				
-Settings	Anti-aliasing	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	text	2029165260	Anti-aliasing				
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	text	1644486263	Off				
+Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Vsync	Button	text	1956572514	Vsync	Vsync			
+Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	無制限			
+Settings	Render Resolution	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	レンダリング解像度			
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	低			
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	中	Depricated in 0.1.1.3, will be deleted		
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	高い	Depricated in 0.1.1.3, will be deleted		
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	ウルトラ	Depricated in 0.1.1.3, will be deleted		
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	ネイティブ			
+Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	画像の鮮明さ			
+Settings	Lighting Quality	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	照明の質			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Low	Button	text	1856829880	Low	低			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Medium	Button	text	1240839901	Medium	中			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_High	Button	text	1338458648	High	高い			
+Settings	Lighting Quality	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting/Settings	L_Ultra	Button	text	1687334721	Ultra	ウルトラ			
+Settings	Anti-aliasing	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing	Antialiasing	Label	text	2029165260	Anti-aliasing	アンチエイリアシング			
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_Off	Button	text	1644486263	Off	オフ			
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x				
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off				
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On				
-Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit				
-Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu				
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	SMAA オフ			
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	SMAA オン			
+Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	終了			
+Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	メインメニュー			
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
-"				
-Roadmap	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap				
-Roadmap	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds				
-Roadmap	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return				
-Roadmap	Build 1	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road				
-Roadmap	Build 1	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed				
+"	ゲームを終了する			
+Roadmap	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	ロードマップ			
+Roadmap	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	今後のビルド			
+Roadmap	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	← 戻る			
+Roadmap	Build 1	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Name	Label	text	1370117663	Build 1 | Road	ビルド 1 | 道路			
+Roadmap	Build 1	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Date	Label	text	1764579441	Completed	完了			
 Roadmap	Build 1	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_01	Content	Label	text	744617097	"•  Early access launch
 •  Gameplay loop
 •  Expanded maps
 •  Dynamic elements
-•  Multi-shelter support"				
-Roadmap	Build 2	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads				
-Roadmap	Build 2	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026				
+•  Multi-shelter support"	"•  早期アクセス開始
+•  ゲームプレイループ
+•  マップの拡張
+•  ダイナミック要素
+•  複数シェルターの対応"			
+Roadmap	Build 2	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Name	Label	text	1993826244	Build 2 | Nomads	ビルド2 | ノマド			
+Roadmap	Build 2	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Date	Label	text	767804964	Q3/2026	2026年第3四半期			
 Roadmap	Build 2	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_02	Details	Label	text	1826473906	"•  Friendly faction
 •  AI vs. AI combat
 •  AI variants
 •  Driver (Trader)
-•  New map & shelter"				
-Roadmap	Build 3	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal				
-Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026				
+•  New map & shelter"	"•  味方勢力
+•  AI対AIの戦闘
+•  AIのバリエーション
+•  ドライバー（トレーダー）
+•  新マップとシェルター"			
+Roadmap	Build 3	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Name	Label	text	1646155276	Build 3 | Signal	ビルド 3 | Signal			
+Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Date	Label	text	805037100	Q4/2026	2026年第4四半期			
 Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_03	Details	Label	text	1971995323	"•  Quest system
 •  Lore elements
 •  Civil defence shelters
 •  Grandma (Trader)
-•  New map & shelter"				
-Roadmap	Build 4	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger				
-Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA				
+•  New map & shelter"	"•  クエストシステム
+•  世界観要素
+•  防空壕
+•  おばあさん（商人）
+•  新マップ＆防空壕"			
+Roadmap	Build 4	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	ビルド4 | ガンスリンガー			
+Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	未定			
 Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
 •  Bullet penetration
 •  Modding kits
 •  Trader services
-•  New map & shelter"				
-Roadmap	Build 5	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North				
-Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA				
+•  New map & shelter"	"•  武器のオーバーホール
+•  弾丸の貫通力
+•  改造キット
+•  トレーダーのサービス
+•  新マップとシェルター"			
+Roadmap	Build 5	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Name	Label	text	1556035428	Build 5 | North	ビルド5 | 北部			
+Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Date	Label	text	1898265373	TBA	未定			
 Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_05	Details	Label	text	1603967771	"•  Dynamic season
 •  Train system
 •  Hunting & wildlife
 •  Shaman (Trader)
-•  New map & shelter"				
-Roadmap	Build 6	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss				
-Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA				
+•  New map & shelter"	"•  ダイナミックな季節
+•  鉄道システム
+•  狩猟と野生生物
+•  シャーマン（商人）
+•  新しいマップとシェルター"			
+Roadmap	Build 6	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	ビルド6 | アビス			
+Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	未定			
 Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
 •  Patrol boats
 •  Scuba gear
 •  Fisherman (Trader)
-•  New map & shelter"				
-Roadmap	Build 7	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma				
-Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA				
+•  New map & shelter"	"•  海洋システム
+•  巡視艇
+•  スキューバダイビング用具
+•  漁師（商人）
+•  新マップ＆避難所"			
+Roadmap	Build 7	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	ビルド 7 | エニグマ			
+Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	未定			
 Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
 •  SIGINT tools
 •  Transmissions
 •  Scientist (Trader)
-•  Vostok shelter"				
-Roadmap	Build 8	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night				
-Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA				
+•  Vostok shelter"	"•  対話システム
+•  SIGINTツール
+•  通信
+•  科学者（トレーダー）
+•  ボストーク・シェルター"			
+Roadmap	Build 8	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	ビルド8 | サイレント・ナイト			
+Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	未定			
 Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
 •  World options
 •  Destruction system
 •  FINSOF faction
-•  New map & shelter"				
-About	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return				
+•  New map & shelter"	"•  クエストライン一式
+•  ワールド設定
+•  破壊システム
+•  FINSOF派閥
+•  新マップ＆シェルター"			
+About	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	← 戻る			
 About	Road to Vostok	Section Title	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok				
 About	Road to Vostok	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
-in a post-apocalyptic border zone between Finland and Russia"				
-About	Developer	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer				
+in a post-apocalyptic border zone between Finland and Russia"	"『Road to Vostok ®』は、フィンランドとロシアの国境地帯を舞台にした、
+ポストアポカリプス世界が舞台のハードコアなシングルプレイヤー・サバイバルゲームです"			
+About	Developer	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	開発者			
 About	Developer	String	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.				
-About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin				
-About	Country of origin	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland				
-About	Founding date	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date				
-About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022				
-About	Copyright & Legal	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal				
+About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	原産国			
+About	Country of origin	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	フィンランド			
+About	Founding date	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	設立日			
+About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	2022年2月			
+About	Copyright & Legal	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	著作権および法的情報			
 About	Copyright & Legal	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
 Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
 
@@ -645,8 +988,15 @@ Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
 Road to Vostok ® is registered trademark of Road to Vostok Ltd.
 
 3. Engine
-Road to Vostok ® is powered by open source Godot Engine"				
-About	Engine License (MIT)	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)				
+Road to Vostok ® is powered by open source Godot Engine"	"1. ゲームコンテンツ
+Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
+
+2. 商標
+Road to Vostok ® は Road to Vostok Ltd. の登録商標です。
+
+3. エンジン
+Road to Vostok ® はオープンソースの Godot Engine を採用しています。"			
+About	Engine License (MIT)	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	エンジンライセンス（MIT）			
 About	Engine License (MIT)	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/License	MIT	Label	text	921896888	"This game uses Godot Engine, available under the following license:
 
 Copyright © 2014-present Godot Engine contributors.
@@ -668,82 +1018,103 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE."				
-Loading	/	String	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...				
-			0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...				
-Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	#Not Checked	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...		Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Intro	/	String	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]				
-Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]				
+SOFTWARE."	"本ゲームはGodot Engineを使用しており、以下のライセンスに基づいて提供されています：
+
+Copyright © 2014-現在 Godot Engine 貢献者。
+Copyright © 2007-2014 Juan Linietsky, Ariel Manzur。
+
+本ソフトウェアおよび関連するドキュメントファイル（以下「本ソフトウェア」という）の
+コピーを入手した者に対し、以下の条件に従うことを条件として、本ソフトウェアを
+制限なく利用する権利（本ソフトウェアのコピーを使用、複製、改変、統合、公開、
+頒布、サブライセンス、および／または販売する権利を含むが、これらに限定されない）
+ならびに本ソフトウェアの提供を受けた者に対し同様の行為を許可する権利を、
+無償で付与する。
+
+本ソフトウェアのすべての複製物またはその主要な部分には、
+上記の著作権表示および本許諾表示を含めるものとします。
+
+本ソフトウェアは「現状有姿」で提供され、商品性、特定目的への適合性、および
+非侵害性を含むがこれらに限定されない、明示的または黙示的ないかなる種類の保証も
+行われません。 いかなる場合においても、
+著作者または著作権者は、契約、不法行為、その他いかなる法的根拠に基づくものであれ、
+本ソフトウェア、または本ソフトウェアの使用もしくはその他の取り扱いから、
+あるいはそれらに関連して生じるいかなる請求、損害、その他の
+責任についても、一切の責任を負わないものとします。"			
+Loading	/	String	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	読み込み中...			
+			0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	読み込み中...			
+Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...	Loading {scene}...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	イントロを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	キャビンを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	チュートリアルを読み込んでいます...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	メニューを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	屋根裏部屋の読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	「死」を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	教室を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	テントを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	バンカーを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	村を読み込んでいます...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	高速道路を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	学校を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	「アウトポスト」を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	地雷原を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	アパートメントを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	ターミナルを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	テンプレートを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	#Not Checked	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	シェーダーを読み込んでいます...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Intro	/	String	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	イントロをスキップ [スペース]			
+Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	イントロをスキップ [スペース]			
 Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]				
 Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]				
-Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died				
-Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted				
-Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died				
-Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game				
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	キャラクターが死亡しました			
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	保存されたファイルがすべて削除されました			
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	キャラクターが死亡しました			
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	ゲームを読み込む			
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
-"				
+"	メインメニュー			
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
-"				
-/	Scene	Name	0	substr									Intro				
-/	Scene	Name	0	substr									Cabin		Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Shelter				
-/	Scene	Name	0	substr									Tutorial				
-/	Scene	Name	0	substr									Menu				
-/	Scene	Name	0	substr									Attic		Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Death				
-/	Scene	Name	0	substr									Classroom		Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Tent		Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Bunker		Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Village				
-/	Scene	Name	0	substr									Area 05				
-/	Scene	Name	0	substr									Highway				
-/	Scene	Name	0	substr									School				
-/	Scene	Name	0	substr									Outpost				
-/	Scene	Name	0	substr									Border Zone				
-/	Scene	Name	0	substr									Minefield				
-/	Scene	Name	0	substr									Apartments				
-/	Scene	Name	0	substr									Terminal				
-/	Scene	ToolTip	0	substr									Tutorial Exit				
-/	Scene	Name	0	substr									Template				
-/	Scene	#Not Checked	0	substr									shaders				
-NPC	Traders	Name	0	substr									Trader				
-NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist				
-NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor				
-NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith				
-NPC	Traders	Name	0	substr									Driver				
-NPC	Traders	Name	0	substr									Grandma				
-NPC	Traders	Name	0	substr									Shaman				
-NPC	Traders	Name	0	substr									Fisherman				
-NPC	Traders	Name	0	substr									Scientist				
-NPC	Hostile	Name	0	substr									Bandit		Hostile NPC faction spawned in Area 05;		
-NPC	Hostile	Name	0	substr									Guards		Hostile NPC faction spawned in Border Zone;		
-NPC	Hostile	Name	0	substr									Military		Hostile NPC faction spawned in Vostok;		
-NPC	Elite	Name	0	substr									Punisher		Hostile Elite(Boss) NPC spawned in Area 05;		
-/	Weather	Dictionary	0	substr									Neutral				
-/	Weather	Dictionary	0	substr									Overcast				
-/	Weather	Dictionary	0	substr									Rain				
-/	Weather	Dictionary	0	substr									Storm				
-/	Material	Dictionary	0	substr									Generic				
-/	Material	Dictionary	0	substr									Wood				
-/	Material	Dictionary	0	substr									Metal				
-/	Material	Dictionary	0	substr									Concrete				
-/	Material	Dictionary	0	substr									Rock				
-/	Material	Dictionary	0	substr									Vostok				
+"	終了			
+/	Scene	Name	0	substr									Intro	はじめに			
+/	Scene	Name	0	substr									Cabin	キャビン	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Shelter	シェルター			
+/	Scene	Name	0	substr									Tutorial	チュートリアル			
+/	Scene	Name	0	substr									Menu	メニュー			
+/	Scene	Name	0	substr									Attic	屋根裏部屋	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Death	死			
+/	Scene	Name	0	substr									Classroom	教室	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Tent	テント	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Bunker	バンカー	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Village	村			
+/	Scene	Name	0	substr									Area 05	エリア05			
+/	Scene	Name	0	substr									Highway	高速道路			
+/	Scene	Name	0	substr									School	学校			
+/	Scene	Name	0	substr									Outpost	前哨基地			
+/	Scene	Name	0	substr									Border Zone	国境地帯			
+/	Scene	Name	0	substr									Minefield	地雷原			
+/	Scene	Name	0	substr									Apartments	アパート			
+/	Scene	Name	0	substr									Terminal	ターミナル			
+/	Scene	ToolTip	0	substr									Tutorial Exit	チュートリアルの終了			
+/	Scene	Name	0	substr									Template	テンプレート			
+/	Scene	#Not Checked	0	substr									shaders	シェーダー			
+NPC	Traders	Name	0	substr									Trader	トレーダー			
+NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	ジェネラリスト			
+NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	医師			
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	銃器職人			
+NPC	Traders	Name	0	substr									Driver	ドライバー			
+NPC	Traders	Name	0	substr									Grandma	おばあちゃん			
+NPC	Traders	Name	0	substr									Shaman	シャーマン			
+NPC	Traders	Name	0	substr									Fisherman	漁師			
+NPC	Traders	Name	0	substr									Scientist	科学者			
+NPC	Hostile	Name	0	substr									Bandit	バンディット	Hostile NPC faction spawned in Area 05;		
+NPC	Hostile	Name	0	substr									Guards	警備員	Hostile NPC faction spawned in Border Zone;		
+NPC	Hostile	Name	0	substr									Military	軍事	Hostile NPC faction spawned in Vostok;		
+NPC	Elite	Name	0	substr									Punisher	パニッシャー	Hostile Elite(Boss) NPC spawned in Area 05;		
+/	Weather	Dictionary	0	substr									Neutral	中立			
+/	Weather	Dictionary	0	substr									Overcast	曇り			
+/	Weather	Dictionary	0	substr									Rain	雨			
+/	Weather	Dictionary	0	substr									Storm	嵐			
+/	Material	Dictionary	0	substr									Generic	一般			
+/	Material	Dictionary	0	substr									Wood	木材			
+/	Material	Dictionary	0	substr									Metal	金属			
+/	Material	Dictionary	0	substr									Concrete	コンクリート			
+/	Material	Dictionary	0	substr									Rock	ロック			
+/	Material	Dictionary	0	substr									Vostok	ボストーク			

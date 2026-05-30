@@ -13,7 +13,21 @@ You can access Settings with [ESC]
 Through these settings you can change inputs,
 different system values and performance options
 
-?? = Performance options"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
+?? = Performance options"	"1. Configuración
+
+Bienvenido al tutorial de Road to Vostok
+
+Este tutorial te guiará a través de las
+mecánicas y controles más importantes del juego
+
+Empecemos por la configuración
+
+Puedes acceder a la configuración con [ESC]
+
+A través de esta configuración puedes modificar las entradas,
+diferentes valores del sistema y las opciones de rendimiento
+
+?? = Opciones de rendimiento"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
 Tutorial	Billboard	2. Interface	"2. Interface
 
 Interface is your main UI which contains elements
@@ -25,7 +39,18 @@ If you want more information about an item, icon
 or specific value, you can use Tooltip
 
 Try Tooltip by opening Interface
-and point the character health value"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
+and point the character health value"	"2. Interfaz
+
+La interfaz es tu interfaz de usuario principal, que contiene elementos
+como el inventario, el equipamiento, los signos vitales y las estadísticas
+
+Puedes acceder a la interfaz con la tecla [TAB]
+
+Si quieres más información sobre un objeto, un ícono
+o un valor específico, puedes usar la ventana emergente
+
+Prueba la ventana emergente abriendo la interfaz
+y colocando el cursor sobre el valor de salud del personaje"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
 Tutorial	Billboard	3. Loot & Items	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -40,7 +65,21 @@ You can open, pick and interact with [MMB]
 When you have items available in Interface, you can 
 choose item actions with Context Menu [RMB]
 
-Open container and try Context Menu with items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
+Open container and try Context Menu with items"	"3. Botín y objetos
+
+Todos los objetos que, lógicamente, cuentan con espacio de almacenamiento son 
+contenedores de botín con los que se puede interactuar
+
+El botín se genera en estos contenedores y los objetos 
+también se distribuyen físicamente por el mundo del juego
+
+
+Puedes abrir, recoger e interactuar con [botón central del ratón]
+
+Cuando tengas objetos disponibles en la interfaz, podrás 
+seleccionar acciones para los objetos mediante el menú contextual [botón derecho del ratón]
+
+Abre un contenedor y prueba el menú contextual con los objetos"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
 Tutorial	Billboard	4. Equipment	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -54,7 +93,20 @@ You can find equipment slots in Interface
 You can activate equipment slots by 
 moving compatible items to them
 
-Open container and try equipping items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
+Open container and try equipping items"	"4. Equipo
+
+Las ranuras de equipo son espacios destinados a objetos específicos 
+y están vinculadas a varias estadísticas importantes del personaje
+
+El equipo puede aumentar tu capacidad de carga [CC] 
+y otorgarte habilidades como la linterna y la de hacer fuego
+
+
+Puedes encontrar las ranuras de equipo en la interfaz
+Puedes activar las ranuras de equipo 
+arrastrando objetos compatibles a ellas
+
+Abre el contenedor e intenta equipar objetos"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
 Tutorial	Billboard	5. Medical & Conditions	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -69,7 +121,21 @@ active and needs to be cured using a medical item
 
 You can see causes, symptoms and cures with Tooltip
 
-Open container and try using some medical items"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
+Open container and try using some medical items"	"5. Medicina y afecciones
+
+El sistema médico se basa en afecciones que 
+afectan negativamente a las estadísticas vitales de tu personaje
+
+Estas afecciones se representan mediante iconos médicos 
+y puedes encontrarlas en la interfaz y el HUD
+
+
+Cuando un icono médico se vuelve rojo, la afección está 
+activa y debe curarse con un objeto médico
+
+Puedes ver las causas, los síntomas y los tratamientos en la descripción emergente
+
+Abre el inventario y prueba a usar algunos objetos médicos"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
 Tutorial	Billboard	6. Weapons	"6. Weapons
 
 Weapons are equipment and they use 
@@ -85,7 +151,22 @@ pistols and SMG's can utilize Secondary slot
 Open container, equip a weapon and draw it
 | [RMB] = Aim (ADS) | [F] = Firemode |
 | [MMB] = Canted aim | [X]=Inspect weapon |
-| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
+| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. Armas
+
+Las armas son parte del equipamiento y ocupan 
+las ranuras de arma principal, arma secundaria, cuchillo y granadas
+
+Cuando se equipa un arma, puedes desenfundarla 
+y volver a enfundarla desde las ranuras con las teclas [1] [2] [3] [4] [5]
+
+
+Todas las armas de fuego pueden ocupar la ranura de arma principal, pero solo 
+las pistolas y las metralletas pueden ocupar la ranura de arma secundaria
+
+Abre el contenedor, equipa un arma y desenfúndala
+| [Botón derecho del ratón] = Apuntar (ADS) | [F] = Modo de disparo |
+| [Botón central del ratón] = Apuntar inclinado | [X] = Inspeccionar arma |
+| [Rueda del ratón] = Posición del arma | [Rueda del ratón] = Inspeccionar rotación |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
 Tutorial	Billboard	7. Ammo & Magazines	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -102,7 +183,23 @@ or with [R] which fetches a loaded magazine for you
 Open container, use Tooltip to identify the ammo
 and magazine compatibility, Load -> Attach -> Fire
 
-[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
+[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. Munición y cargadores
+
+El sistema de armas utiliza cargadores independientes
+y tipos de munición según el calibre
+
+Puedes cargar un cargador moviendo un tipo de munición compatible
+al cargador mediante la interfaz
+
+Puedes descargar un cargador con el menú contextual [botón derecho del ratón]
+
+Los cargadores se pueden acoplar a las armas manualmente
+o con [R], lo que te proporciona un cargador cargado
+
+Abre el contenedor, usa la información sobre herramientas para identificar
+la compatibilidad de la munición y el cargador, Cargar -> Acoplar -> Disparar
+
+[Botón izquierdo del ratón] = Disparar [V] = Comprobación de munición [CTRL] -> [Botón izquierdo del ratón] = Inserción de bala (rifles y escopetas)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
 Tutorial	Billboard	8. Attachments	"8. Attachements
 
 You can customize weapons by attaching 
@@ -117,7 +214,21 @@ identify attachment compatibility and try customizing
 [HOLD CTRL] + [SCROLL] = Optic rail position
 [SCROLL] = LPVO zoom level
 [ALT] = Secondary optic
-[T] = Laser toggle"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
+[T] = Laser toggle"	"8. Accesorios
+
+Puedes personalizar las armas acoplándoles 
+silenciadores, miras ópticas y láseres
+
+Puedes añadir o cambiar accesorios, como cargadores, 
+a través de la interfaz, y quitarlos mediante el menú contextual
+
+
+Abre el contenedor, usa la información sobre herramientas o los colores al pasar el cursor sobre los objetos para 
+identificar la compatibilidad de los accesorios e intenta personalizarlos
+[MANTENER CTRL] + [RUEDA DEL RATÓN] = Posición del riel óptico
+[RUEDA DEL RATÓN] = Nivel de zoom del LPVO
+[ALT] = Óptica secundaria
+[T] = Activar/desactivar el láser"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
 Tutorial	Billboard	9. Knives & Grenades	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -132,7 +243,21 @@ grenades with keys [4] and [5]
 You can prepare high throw with [LMB] 
 and low throw with [RMB]
 
-Second press executes and opposite button resets the throw"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
+Second press executes and opposite button resets the throw"	"9. Cuchillos y granadas
+
+Cuando llevas un cuchillo equipado, puedes desenfundarlo con la tecla [3]
+
+Puedes realizar un ataque de corte con [botón izquierdo del ratón] 
+y un ataque de puñalada con [botón derecho del ratón]
+
+
+Tienes dos ranuras para granadas y puedes sacar 
+las granadas con las teclas [4] y [5]
+
+Puedes preparar un lanzamiento alto con [botón izquierdo del ratón] 
+y un lanzamiento bajo con [botón derecho del ratón]
+
+Al presionar por segunda vez se ejecuta el lanzamiento y al presionar el botón opuesto se reinicia"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
 Tutorial	Billboard	10. Armor	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -150,7 +275,23 @@ try attaching armor plate to the rig like attachments
 |NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
 |NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
 |NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
-|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
+|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. Armadura
+
+El sistema de armadura se basa en cascos, placas de armadura y chalecos portaplacas (rigs) con clasificación NIJ (II-IV)
+
+El nivel de protección de la armadura está directamente vinculado
+al nivel de penetración de la munición/arma, lo cual
+se puede consultar mediante la información sobre herramientas
+
+
+Abre el contenedor, equípate con el casco y el portaplacas y
+intenta acoplar la placa de armadura al rig como si fuera un accesorio
+
+|NIJ II = Nivel 1| 1. Si la protección iguala la penetración, la armadura puede soportar 3-4 disparos|
+|NIJ IIA = Nivel 2| 2. Cada impacto reduce el estado de la armadura; la armadura se rompe al 0 %|
+|NIJ III = Nivel 3| 3. Una penetración de nivel superior rompe la armadura inmediatamente|
+|NIJ III+ = Nivel 4| 4. Los cascos previenen la condición médica crítica «Disparo en la cabeza»|
+|NIJ IV = Nivel 5| 5. Las placas de blindaje previenen la condición médica crítica «Ruptura»|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
 Tutorial	Billboard	11. Traders	"11. Traders
 
 Traders are in-game characters that allow 
@@ -164,7 +305,20 @@ Completing tasks will lower Trader Tax and provide
 you reward items and keys for unlocking new Shelters
 
 Interact with trader Generalist and try 
-trading something and completing a task"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
+trading something and completing a task"	"11. Comerciantes
+
+Los comerciantes son personajes del juego que te permiten 
+intercambiar objetos y completar misiones relacionadas con la historia
+
+El sistema de intercambio se basa en el trueque, donde tu objetivo 
+es llegar a un acuerdo lo más equilibrado posible.
+El trato se calcula entre los valores de los objetos solicitados, el impuesto del comerciante y los valores de los objetos ofrecidos.
+
+Completar tareas reducirá el impuesto del comerciante y te proporcionará 
+objetos de recompensa y llaves para desbloquear nuevos refugios.
+
+Interactúa con el comerciante Generalista e intenta 
+intercambiar algo y completar una tarea."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
 Tutorial	Billboard	12. AI	"12. AI
 
 AI is divided into three hostile factions which
@@ -178,7 +332,20 @@ Each AI faction has different abilities and
 faction bosses with rare spawn changes
 
 Map instances can spawn maximum of 10 AI's
-once you have eliminated all, you will have peace"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
+once you have eliminated all, you will have peace"	"12. IA
+
+La IA se divide en tres facciones hostiles que
+ocupan diferentes zonas del mundo del juego
+
+|Área 05|Zona Fronteriza| Vostok|
+|Bandidos|Guardias|Militares|
+|IA Fácil|IA Media|IA Difícil|
+
+Cada facción de IA tiene habilidades diferentes y
+jefes de facción con cambios de aparición poco comunes
+
+Las instancias del mapa pueden generar un máximo de 10 IA
+una vez que hayas eliminado a todas, tendrás paz"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
 Tutorial	Billboard	13. Maps & Transitions	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -192,7 +359,20 @@ You can travel through these zones and maps
 through Transitions which have certain travel costs 
 related to character vitals and World Simulation
 
-Transitions are marked with Transition Flags"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
+Transitions are marked with Transition Flags"	"13. Mapas y transiciones
+
+Al igual que la IA, el mundo del juego se divide en tres zonas que cuentan con diferentes mapas y conjuntos de botín
+
+|Zona inicial | Zona divisoria | Zona de muerte permanente |
+|Área 05 | Zona fronteriza | Vostok |
+|Botín de bajo nivel | Botín de nivel medio | Botín de alto nivel|
+
+
+Puedes viajar a través de estas zonas y mapas 
+mediante transiciones que tienen ciertos costos de viaje 
+relacionados con los valores vitales del personaje y la simulación del mundo.
+
+Las transiciones están marcadas con banderas de transición"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
 Tutorial	Billboard	14. World Simulation	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -208,7 +388,22 @@ map transitions which increases simulation time
 
 You can see current time with time related items 
 Pick a time item (Alarm Clock) and equip it
-*Simulation time stays locked during Tutorial"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
+*Simulation time stays locked during Tutorial"	"14. Simulación del mundo
+
+El juego utiliza la simulación del mundo, que genera 
+ciclos de día y noche, clima dinámico, 
+estaciones del año y eventos aleatorios
+
+Velocidad de simulación
+Ciclo de día y noche (24 h) = 2,4 h en la vida real
+
+
+La simulación del mundo está vinculada al sueño y a 
+las transiciones entre mapas, lo que aumenta el tiempo de simulación
+
+Puedes ver la hora actual con objetos relacionados con el tiempo
+Elige un objeto de tiempo (despertador) y equípalo
+*El tiempo de simulación permanece bloqueado durante el tutorial"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
 Tutorial	Billboard	15. Shelters	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -222,7 +417,20 @@ All Shelters can be customized with
 Item Placement and Decor Mode
 
 You can use Item Placement with [G] and move 
-furniture by activating Decor Mode with [F1]"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
+furniture by activating Decor Mode with [F1]"	"15. Refugios
+
+Los refugios son zonas seguras que te permiten guardar 
+el tiempo de simulación, el progreso del personaje y el botín
+
+Los refugios se pueden desbloquear con llaves 
+que se obtienen al completar tareas
+
+
+Todos los refugios se pueden personalizar con 
+la función de colocación de objetos y el modo de decoración
+
+Puedes usar la función de colocación de objetos con [G] y mover 
+los muebles activando el modo de decoración con [F1]"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
 Tutorial	Billboard	16. Vostok	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -237,4 +445,18 @@ When you travel towards Vostok maps,
 
 When you enter Vostok maps a red 
 Permadeath Skull will also appear 
-in the upper corner of the screen"		\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		
+in the upper corner of the screen"	"16. Vostok
+
+Vostok es una zona de muerte permanente de alto riesgo y alta recompensa 
+en la que morir implica perder todo el progreso acumulado
+
+La muerte permanente en este juego borra todos los archivos guardados, 
+por lo que pierdes absolutamente todo
+
+
+Cuando te diriges hacia los mapas de Vostok,
+ se te advierte antes de la Transición
+
+Al entrar en los mapas de Vostok, 
+también aparecerá una calavera roja de muerte permanente 
+en la esquina superior de la pantalla"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		

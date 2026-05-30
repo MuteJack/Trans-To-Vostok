@@ -1,103 +1,139 @@
 WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
-Events	PlaceHolder	Name	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Title	Label	text	2075173674	Generalist returns to Village		Place holder text. Don't need to Translate		
+Events	PlaceHolder	Name	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Title	Label	text	2075173674	Generalist returns to Village	全能型選手重返村莊	Place holder text. Don't need to Translate		
 Events	PlaceHolder	Type	0	ignore									Trader		Place holder text. Don't need to Translate		
 Events	PlaceHolder	Description	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Description	Label	text	1534808090	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
 
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."		Place holder text. Don't need to Translate		
-Events	/	Button	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Show	Button	text	728466319	Show				
-Events	/	Day	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Day	Label	text	826758355	Day 1				
-Events	/	Day	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}				
-Events	/	Day Left	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Status	Label	text	1150425844	In 10 days		Place holder text. Don't need to Translate. Use Pattern instead		
-Events	/	Day Left	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days				
-Events	/	Type	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event				
-Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event		I don't know why is this string use lower case (event).		
-Events	/	Type	0	substr									Trader Event				
-Events	/	Type	0	substr									Dynamic Event				
-Events	/	Type	0	substr									Special Event				
-Events	/	Type	0	substr									Dynamic				
-Events	/	Type	0	substr									Special				
-Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Location	Label	text	1817711349	Event location:				
-Events	/	Location	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	text	1530040464	Village				
-Events	/	Location	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Possibility	Label	text	873648025	Event possibility:				
-Events	/	Percent	0	substr	Scripts/Event	gd			possibility.get_child(0).text	literal		50	Guaranteed				
-Events	/	Percent	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	text	1762783310	~5% / map instance		"Dynamically Changed on Event.gd
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"「醫生」是一位專精於醫療的交易商，他在第05區一棟廢棄的校舍內開設了一間臨時診所。
+
+在前往探望「奶奶」進行「關懷訪視」後，醫生回到這間診所，準備為受傷的人們提供醫療服務。"	Place holder text. Don't need to Translate		
+Events	/	Button	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Show	Button	text	728466319	Show	顯示			
+Events	/	Day	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Day	Label	text	826758355	Day 1	第 1 天			
+Events	/	Day	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}	Day {str}			
+Events	/	Day Left	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Status	Label	text	1150425844	In 10 days	10天後	Place holder text. Don't need to Translate. Use Pattern instead		
+Events	/	Day Left	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days	In {str} Days			
+Events	/	Type	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event	{type} Event			
+Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	交易者活動	I don't know why is this string use lower case (event).		
+Events	/	Type	0	substr									Trader Event	交易者活動			
+Events	/	Type	0	substr									Dynamic Event	動態活動			
+Events	/	Type	0	substr									Special Event	特別活動			
+Events	/	Type	0	substr									Dynamic	動態			
+Events	/	Type	0	substr									Special	特別版			
+Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Location	Label	text	1817711349	Event location:	活動地點：			
+Events	/	Location	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	text	1530040464	Village	村莊			
+Events	/	Location	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Possibility	Label	text	873648025	Event possibility:	活動可能性：			
+Events	/	Percent	0	substr	Scripts/Event	gd			possibility.get_child(0).text	literal		50	Guaranteed	保證			
+Events	/	Percent	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	text	1762783310	~5% / map instance	約 5% / 地圖實例	"Dynamically Changed on Event.gd
 Maybe a Placeholder"		
-Events	/	Percent	0	pattern	Scripts/Event	gd			possibility.get_child(0).text	concat		52	~{str}% / map instance				
-Events	List/Day1	Name	0	literal	Events/List/D1_Generalist	tres					name		Generalist returns to Village				
+Events	/	Percent	0	pattern	Scripts/Event	gd			possibility.get_child(0).text	concat		52	~{str}% / map instance	~{str}% / map instance			
+Events	List/Day1	Name	0	literal	Events/List/D1_Generalist	tres					name		Generalist returns to Village	全能型選手重返村莊			
 Events	List/Day1	Type	0	ignore	Events/List/D1_Generalist	tres					type		Trader				
 Events	List/Day1	Description	0	literal	Events/List/D1_Generalist	tres					description		"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
 
-After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."				
-Events	List/Day2	Name	0	literal	Events/List/D2_Doctor	tres					name		Doctor returns to School				
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"Generalist 是一位「樣樣通」的商人，他在 05 區的 Village 車庫大樓內經營一家小店，專營日常用品。
+
+經過短暫的休息調整後，Generalist 已重新開業，準備以合理的價格為忠實顧客提供服務。"			
+Events	List/Day2	Name	0	literal	Events/List/D2_Doctor	tres					name		Doctor returns to School	醫生重返校園			
 Events	List/Day2	Type	0	ignore	Events/List/D2_Doctor	tres					type		Trader				
 Events	List/Day2	Description	0	literal	Events/List/D2_Doctor	tres					description		"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
 
-After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."				
-Events	List/Day3	Name	0	literal	Events/List/D3_Fighters	tres					name		Fighter Jets				
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"「醫生」是一位專精於醫療的商人，他在第05區一棟廢棄的校舍內開設了一間臨時診所。
+
+在探訪「奶奶」進行「安康確認」後，醫生回到診所，準備為傷者提供醫療服務。"			
+Events	List/Day3	Name	0	literal	Events/List/D3_Fighters	tres					name		Fighter Jets	戰鬥機			
 Events	List/Day3	Type	0	ignore	Events/List/D3_Fighters	tres					type		Dynamic				
 Events	List/Day3	Description	0	literal	Events/List/D3_Fighters	tres					description		"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
 
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."				
-Events	List/Day4	Name	0	literal	Events/List/D4_Cat	tres					name		Missing Cat				
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"在第05區疏散及邊境區非軍事化後，局勢開始朝錯誤方向發展，亟需展現武力。
+
+芬蘭軍方將開始派遣戰鬥機進行非致命性、高能見度的空中巡邏，這些戰機將頻繁現身於天際。"			
+Events	List/Day4	Name	0	literal	Events/List/D4_Cat	tres					name		Missing Cat	走失的貓			
 Events	List/Day4	Type	0	ignore	Events/List/D4_Cat	tres					type		Special				
 Events	List/Day4	Description	0	literal	Events/List/D4_Cat	tres					description		"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
 
 A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
 
-Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."				
-Events	List/Day5	Name	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05				
+Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"一架戰鬥機發出的音爆嚇跑了奶奶的貓，導致牠失蹤。
+
+幾天前，遊牧民在前哨站發現這隻貓在四處遊蕩，並設法用某種箱子將牠捕獲。當遊牧民正要將貓送回給奶奶時，遭到匪徒伏擊，匪徒似乎搶走了那個箱子。
+
+當地居民目睹匪徒以殘忍的方式將箱子拋來拋去，最後將箱子遺棄在某處。"			
+Events	List/Day5	Name	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05	「懲罰者」抵達第05區			
 Events	List/Day5	Type	0	ignore	Events/List/D5_Punisher	tres					type		Dynamic				
 Events	List/Day5	Description	0	literal	Events/List/D5_Punisher	tres					description		"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
 
-Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."				
-Events	List/Day6	Name	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05				
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"「懲罰者」是芬蘭犯罪世界中一名匪幫頭目，也是令人聞風喪膽的討債人。
+
+懲罰者與他的手下竊取了一輛當地警用廂型車，正駕車在第05區內四處巡邏。"			
+Events	List/Day6	Name	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05	空投物資已送達第05區			
 Events	6	Type	0	ignore	Events/List/D6_Airdrops	tres					type		Dynamic				
 Events	List/Day6	Description	0	literal	Events/List/D6_Airdrops	tres					description		"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
 
-Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."				
-Events	List/Day7	Name	0	literal	Events/List/D7_BTR	tres					name		BTR Patrols				
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"經過長時間的延遲，芬蘭軍方已再次開始向第05區進行空投。
+
+空投物資通常包含醫療用品、消耗品及其他相關生存裝備等人道主義援助物資。"			
+Events	List/Day7	Name	0	literal	Events/List/D7_BTR	tres					name		BTR Patrols	BTR 巡邏			
 Events	List/Day7	Type	0	ignore	Events/List/D7_BTR	tres					type		Dynamic				
 Events	List/Day7	Description	0	literal	Events/List/D7_BTR	tres					description		"The military faction has started to use armored vehicles in the Vostok area.
 
-Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."				
-Events	List/Day8	Name	0	literal	Events/List/D8_Helicopters	tres					name		Attack Helicopters				
+Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"軍事派系已開始在沃斯托克地區使用裝甲車輛。
+
+軍用BTR裝甲車配備重機槍，並已於主要道路及關鍵地點展開巡邏。"			
+Events	List/Day8	Name	0	literal	Events/List/D8_Helicopters	tres					name		Attack Helicopters	攻擊直升機			
 Events	List/Day8	Type	0	ignore	Events/List/D8_Helicopters	tres					type		Dynamic				
 Events	List/Day8	Description	0	literal	Events/List/D8_Helicopters	tres					description		"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
 
-While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."				
-Events	List/Day9	Name	0	literal	Events/List/D9_Crashes	tres					name		Helicopter Crash Sites				
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"邊境區的非軍事化狀態正逐漸瓦解，顯然以往的規則已不再適用。
+
+儘管官方消息來源聲稱一切如常，但攻擊直升機已開始在邊境區附近頻繁巡邏，並出現侵犯領空的情況。"			
+Events	List/Day9	Name	0	literal	Events/List/D9_Crashes	tres					name		Helicopter Crash Sites	直升機墜毀地點			
 Events	List/Day9	Type	0	ignore	Events/List/D9_Crashes	tres					type		Dynamic				
 Events	List/Day9	Description	0	literal	Events/List/D9_Crashes	tres					description		"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
 
-Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."				
-Events	List/Day10	Name	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost		"Please pay attention to the following points when translating
+Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"在領空遭侵犯後，空中衝突在所難免，邊境兩側皆有多架攻擊直升機遭擊落。
+
+直升機墜毀地點散佈於多處，且內含高價值戰利品，這也使這些地點成為 AI 活動的熱點。"			
+Events	List/Day10	Name	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost	槍匠重返前哨站	"Please pay attention to the following points when translating
 `Outpost`
 `Gunsmith`는 NPC의 고유 명사입니다."		
 Events	List/Day10	Type	0	ignore	Events/List/D10_Gunsmith	tres					type		Trader				
 Events	List/Day10	Description	0	literal	Events/List/D10_Gunsmith	tres					description		"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
 
-Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."				
-Events	List/Day20	Name	0	literal	Events/List/D20_Outpost	tres					name		Outpost gets compromised				
+Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"「槍匠」是一位商人，他在前哨站其中一座碉堡內經營武器儲藏室，專精於一切與槍械相關的事物。
+
+槍匠已失蹤數月，但據傳聞，他當時是前往邊境另一側進行「商務旅行」，如今已回到他鍾愛的 05 區碉堡。"			
+Events	List/Day20	Name	0	literal	Events/List/D20_Outpost	tres					name		Outpost gets compromised	前哨站遭到入侵			
 Events	List/Day20	Type	0	ignore	Events/List/D20_Outpost	tres					type		Dynamic				
 Events	List/Day20	Description	0	literal	Events/List/D20_Outpost	tres					description		"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
 
 Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
 
-News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."				
-Events	List/Day30	Name	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05				
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"鑑於先前發生的事件，邊境區的局勢正迅速升級，周邊地區也將面臨連帶影響。
+
+軍用裝甲運兵車現已能進入「前哨站」地圖，而第05區不再被視為安全區域。
+
+這則消息在第05區的當地居民與商人之間迅速傳開，但第05區外的媒體與當局卻僅將其視為謠言。"			
+Events	List/Day30	Name	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05	交易員離開第05區			
 Events	List/Day30	Type	0	ignore	Events/List/D30_Escape	tres					type		Trader				
 Events	List/Day30	Description	0	literal	Events/List/D30_Escape	tres					description		"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
 
-It seems that the traders are doing this as a temporary measure and will return if and when things calm down."				
-Events	List/Day40	Name	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05				
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"前哨站遭滲透後，所有商人開始做準備並撤離第05區。
+
+看來商人們此舉只是權宜之計，待局勢平息後便會返回。"			
+Events	List/Day40	Name	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05	商人重返第05區			
 Events	List/Day40	Type	0	ignore	Events/List/D40_Return	tres					type		Trader				
 Events	List/Day40	Description	0	literal	Events/List/D40_Return	tres					description		"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
 
-All traders are returning back to Area 05."				
-Events	List/Day50	Name	0	literal	Events/List/D50_Transmission	tres					name		Transmission				
+All traders are returning back to Area 05."	"近期局勢的升級似乎已告停息，第05區並未陷入全面混亂。
+
+所有商人正陸續返回第05區。"			
+Events	List/Day50	Name	0	literal	Events/List/D50_Transmission	tres					name		Transmission	變速箱			
 Events	List/Day50	Type	0	ignore	Events/List/D50_Transmission	tres					type		Special				
 Events	List/Day50	Description	0	literal	Events/List/D50_Transmission	tres					description		"The signal that started it all has suddenly reappeared.
 
 The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
 
-This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."				
+This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"一切的起因——那個訊號——突然再次出現。
+
+這道訊號正干擾著無線電廣播，並可在所有常用頻率上收聽。
+
+這是「搶先體驗版 [Build 1]」的最後一項事件。後續的事件與故事將在未來的版本中繼續展開。"			
