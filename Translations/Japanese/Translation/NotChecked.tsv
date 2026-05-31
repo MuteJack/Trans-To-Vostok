@@ -16,6 +16,6 @@ WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type
 			1	ignore	Loot/Simulations/LS_Military	tscn	Loot/Simulations/LS_Military	.	Label	Label3D	text	796229169	LS_MILITARY		For Debug Only			
 			0	substr									Indoors	屋内				
 			0	substr									Indoor	屋内				
-			0	substr									Mine	私				
+			0	substr									Mine	地雷				
 			0	substr									Lure	ルアー				
 			0	substr									(Military)	（軍事）				

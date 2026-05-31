@@ -6,12 +6,12 @@ Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboa
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate					
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate					
 Assets	Containers/Crate_Wood_Tutorial		0	ignore	Assets/Crate_Wood/Crate_Wood_Tutorial	tscn	Assets/Crate_Wood/Crate_Wood_Tutorial		Crate_Wood_Tutorial	Node3D	containerName	238444265	Tutorial Crate					
-Assets	Containers/Box_Electric		0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	電気箱				
-Assets	Containers/Cabinet_Medical		0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet	薬箱				
+Assets	Containers/Box_Electric		0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	電動ボックス				
+Assets	Containers/Cabinet_Medical		0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet	メディカルキャビネット				
 Assets	Containers/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tscn	Assets/Cabinet_Medical/Cabinet_Medical_F		Cabinet_Medical_F	Node3D	containerName	2092602420	Medical Cabinet					
 Assets	Containers/Cabinet_Office		0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	Assets/Cabinet_Office/Cabinet_Office		Cabinet_Office	Node3D	containerName	1131051434	Office Cabinet	オフィス用キャビネット				
 Assets	Containers/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet					
-Assets	Containers/Cabinet_Wood		0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet	内閣				
+Assets	Containers/Cabinet_Wood		0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet	キャビネット				
 Assets	Containers/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet					
 Assets	Containers/AI_Container		0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	死体				
 Assets	Containers/Corpse_Bandit_Flat_A		0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse	盗賊の死体				
@@ -23,9 +23,9 @@ Assets	Containers/Corpse_Bandit_Ledge_C		0	ignore	Assets/Corpse/Corpse_Bandit_Le
 Assets	Containers/Corpse_Bandit_Wall_A		0	ignore	Assets/Corpse/Corpse_Bandit_Wall_A	tscn	Assets/Corpse/Corpse_Bandit_Wall_A		Corpse_Bandit_Wall_A	Node3D	containerName	785157205	Bandit Corpse					
 Assets	Containers/Corpse_Bandit_Wall_B		0	ignore	Assets/Corpse/Corpse_Bandit_Wall_B	tscn	Assets/Corpse/Corpse_Bandit_Wall_B		Corpse_Bandit_Wall_B	Node3D	containerName	688220610	Bandit Corpse					
 Assets	Containers/Corpse_Bandit_Wall_C		0	ignore	Assets/Corpse/Corpse_Bandit_Wall_C	tscn	Assets/Corpse/Corpse_Bandit_Wall_C		Corpse_Bandit_Wall_C	Node3D	containerName	1035032452	Bandit Corpse					
-Assets	Containers/Crate_Military		0	substr	Assets/Crate_Military/Crate_Military	tscn	Assets/Crate_Military/Crate_Military		Crate_Military	Node3D	containerName	768748623	Crate Military	クレート・ミリタリー				
+Assets	Containers/Crate_Military		0	substr	Assets/Crate_Military/Crate_Military	tscn	Assets/Crate_Military/Crate_Military		Crate_Military	Node3D	containerName	768748623	Crate Military	木箱（軍用）				
 Assets	Containers/Crate_Military_F		0	ignore	Assets/Crate_Military/Crate_Military_F	tscn	Assets/Crate_Military/Crate_Military_F		Crate_Military_F	Node3D	containerName	824422604	Crate Military					
-Assets	Containers/Crate_Special		0	substr	Assets/Crate_Special/Crate_Special	tscn	Assets/Crate_Special/Crate_Special		Crate_Special	Node3D	containerName	492335792	Crate Special	クレート特選				
+Assets	Containers/Crate_Special		0	substr	Assets/Crate_Special/Crate_Special	tscn	Assets/Crate_Special/Crate_Special		Crate_Special	Node3D	containerName	492335792	Crate Special	クレート（スペシャル）				
 Assets	Containers/Crate_Special_F		0	ignore	Assets/Crate_Special/Crate_Special_F	tscn	Assets/Crate_Special/Crate_Special_F		Crate_Special_F	Node3D	containerName	887499979	Crate Special					
 Assets	Containers/Crate_Wood		0	substr	Assets/Crate_Wood/Crate_Wood	tscn	Assets/Crate_Wood/Crate_Wood		Crate_Wood	Node3D	containerName	1173126166	Wooden Crate	木箱				
 Assets	Containers/Crate_Wood_Covered_B		0	ignore	Assets/Crate_Wood/Crate_Wood_Covered_B	tscn	Assets/Crate_Wood/Crate_Wood_Covered_B		Crate_Wood_Covered_B	Node3D	containerName	1131964192	Wooden Crate					
@@ -39,12 +39,12 @@ Assets	Containers/Debris_Garbage_Pile_C		0	ignore	Assets/Debris/Garbage/Debris_G
 Assets	Containers/Debris_Garbage_Wall_A		0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_A	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_A		Debris_Garbage_Wall_A	Node3D	containerName	1834054132	Garbage					
 Assets	Containers/Debris_Garbage_Wall_B		0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_B	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_B		Debris_Garbage_Wall_B	Node3D	containerName	1035194553	Garbage					
 Assets	Containers/Debris_Garbage_Wall_C		0	ignore	Assets/Debris/Garbage/Debris_Garbage_Wall_C	tscn	Assets/Debris/Garbage/Debris_Garbage_Wall_C		Debris_Garbage_Wall_C	Node3D	containerName	1706130774	Garbage					
-Assets	Containers/Fireplace_Tower		0	substr	Assets/Fireplace_Tower/Fireplace_Tower	tscn	Assets/Fireplace_Tower/Fireplace_Tower		Fireplace_Tower	Node3D	containerName	1176528873	Fireplace	暖炉				
+Assets	Containers/Fireplace_Tower		0	substr	Assets/Fireplace_Tower/Fireplace_Tower	tscn	Assets/Fireplace_Tower/Fireplace_Tower		Fireplace_Tower	Node3D	containerName	1176528873	Fireplace	たき火				
 Assets	Containers/Freezer		0	substr	Assets/Freezer/Freezer	tscn	Assets/Freezer/Freezer		Freezer	Node3D	containerName	76841885	Freezer	冷凍庫				
 Assets	Containers/Freezer_F		0	ignore	Assets/Freezer/Freezer_F	tscn	Assets/Freezer/Freezer_F		Freezer_F	Node3D	containerName	245820146	Freezer					
 Assets	Containers/Fridge		0	substr	Assets/Fridge/Fridge	tscn	Assets/Fridge/Fridge		Fridge	Node3D	containerName	1984538983	Fridge	冷蔵庫				
 Assets	Containers/Fridge_F		0	ignore	Assets/Fridge/Fridge_F	tscn	Assets/Fridge/Fridge_F		Fridge_F	Node3D	containerName	744500531	Fridge					
-Assets	Containers/Fusebox		0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox	配電盤				
+Assets	Containers/Fusebox		0	substr	Assets/Fusebox/Fusebox	tscn	Assets/Fusebox/Fusebox		Fusebox	Node3D	containerName	1531362094	Fusebox	ヒューズボックス				
 Assets	Containers/Locker		0	substr	Assets/Locker/Locker	tscn	Assets/Locker/Locker		Locker	Node3D	containerName	1052007662	Locker	ロッカー				
 Assets	Containers/Locker_F		0	ignore	Assets/Locker/Locker_F	tscn	Assets/Locker/Locker_F		Locker_F	Node3D	containerName	1740209526	Locker					
 Assets	Containers/Mailbox		0	substr	Assets/Mailbox/Mailbox	tscn	Assets/Mailbox/Mailbox		Mailbox	Node3D	containerName	276598480	Mailbox	メールボックス				
@@ -59,68 +59,68 @@ Assets	Containers/Tent_Civilian_F		0	ignore	Assets/Tent_Civilian/Tent_Civilian_F
 Assets	Containers/Tent_Civilian_R		0	ignore	Assets/Tent_Civilian/Tent_Civilian_R	tscn	Assets/Tent_Civilian/Tent_Civilian_R		Tent_Civilian_R	Node3D	containerName	177370949	Tent		"Duplicated with SceneName ""Tent"""			
 Assets	Furnitures	type	0	substr									Furniture	家具				
 Assets	Furnitures	type	0	substr									Furnitures	家具				
-Assets	Furnitures/Bed_Civilian_F		0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					name		Bed (Civilian)	ベッド（一般用）				
+Assets	Furnitures/Bed_Civilian_F		0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					name		Bed (Civilian)	ベッド（一般）				
 Assets	Furnitures/Bed_Civilian_F		0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					inventory		Bed (Civilian)					
 Assets	Furnitures/Bed_Civilian_F		0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					rotated		Bed (Civilian)					
 Assets	Furnitures/Bed_Civilian_F		0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					equipment		Bed (Civilian)					
-Assets	Furnitures/Bed_Civilian_F		0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.	ベッドC				
+Assets	Furnitures/Bed_Civilian_F		0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.	ベッド C.				
 Assets	Furnitures/Bed_Nomad_F		0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					name		Bed (Nomad)	ベッド（ノマド）				
 Assets	Furnitures/Bed_Nomad_F		0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					inventory		Bed (Nomad)					
 Assets	Furnitures/Bed_Nomad_F		0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					rotated		Bed (Nomad)					
 Assets	Furnitures/Bed_Nomad_F		0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					equipment		Bed (Nomad)					
-Assets	Furnitures/Bed_Nomad_F		0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.	ベッド・N.				
-Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)	内閣（医療担当）				
+Assets	Furnitures/Bed_Nomad_F		0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.	ベッド N.				
+Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)	キャビネット（医療）				
 Assets	Furnitures/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					inventory		Cabinet (Medical)					
 Assets	Furnitures/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					rotated		Cabinet (Medical)					
 Assets	Furnitures/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					equipment		Cabinet (Medical)					
-Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.	キャビネットM.				
-Assets	Furnitures/Cabinet_Office_F		0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					name		Cabinet (Office)	内閣（事務局）				
+Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.	キャビネット M.				
+Assets	Furnitures/Cabinet_Office_F		0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					name		Cabinet (Office)	キャビネット（オフィス）				
 Assets	Furnitures/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					inventory		Cabinet (Office)					
 Assets	Furnitures/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					rotated		Cabinet (Office)					
 Assets	Furnitures/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					equipment		Cabinet (Office)					
-Assets	Furnitures/Cabinet_Office_F		0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0	キャビネット。 0				
+Assets	Furnitures/Cabinet_Office_F		0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0	キャビネット 0.				
 Assets	Furnitures/Cabinet_Wood_F		0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					name		Cabinet (Wood)	キャビネット（木製）				
 Assets	Furnitures/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					inventory		Cabinet (Wood)					
 Assets	Furnitures/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					rotated		Cabinet (Wood)					
 Assets	Furnitures/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					equipment		Cabinet (Wood)					
-Assets	Furnitures/Cabinet_Wood_F		0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.	キャビネットW.				
+Assets	Furnitures/Cabinet_Wood_F		0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.	キャビネット W.				
 Assets	Furnitures/Carpet_Persian_F		0	substr	Assets/Carpet/Carpet_Persian_F	tres					name		Carpet (Persian)	カーペット（ペルシャ絨毯）				
 Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres					inventory		Carpet (Persian)					
-Assets	Furnitures/Carpet_Persian_F		0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.	カーペット・P				
+Assets	Furnitures/Carpet_Persian_F		0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.	カーペット P.				
 Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres					equipment		Carpet (Persian)					
 Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres					display		Carpet P.					
 Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					name		Carpet (Rag)	カーペット（ラグ）				
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					inventory		Carpet (Rag)					
-Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	カーペット・R.				
+Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	カーペット R.				
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					equipment		Carpet (Rag)					
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					display		Carpet R.					
-Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)	椅子（オフィス用）				
+Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)	椅子（オフィス）				
 Assets	Furnitures/Chair_Office_F		0	ignore	Assets/Chair_Office/Chair_Office_F	tres					inventory		Chair (Office)					
 Assets	Furnitures/Chair_Office_F		0	ignore	Assets/Chair_Office/Chair_Office_F	tres					rotated		Chair (Office)					
 Assets	Furnitures/Chair_Office_F		0	ignore	Assets/Chair_Office/Chair_Office_F	tres					equipment		Chair (Office)					
-Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.	O.委員長				
-Assets	Furnitures/Chair_School_F		0	substr	Assets/Chair_School/Chair_School_F	tres					name		Chair (School)	学部長				
+Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.	椅子 O.				
+Assets	Furnitures/Chair_School_F		0	substr	Assets/Chair_School/Chair_School_F	tres					name		Chair (School)	チェア（学校）				
 Assets	Furnitures/Chair_School_F		0	ignore	Assets/Chair_School/Chair_School_F	tres					inventory		Chair (School)					
 Assets	Furnitures/Chair_School_F		0	ignore	Assets/Chair_School/Chair_School_F	tres					rotated		Chair (School)					
 Assets	Furnitures/Chair_School_F		0	ignore	Assets/Chair_School/Chair_School_F	tres					equipment		Chair (School)					
-Assets	Furnitures/Chair_School_F		0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.	S.委員長				
+Assets	Furnitures/Chair_School_F		0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.	椅子 S.				
 Assets	Furnitures/Chair_Sun		0	substr	Assets/Chair_Sun/Chair_Sun	tres					name		Sun Chair	サンチェア				
-Assets	Furnitures/Chair_Sun		0	substr	Assets/Chair_Sun/Chair_Sun	tres					display		S. Chair	S. 議長				
+Assets	Furnitures/Chair_Sun		0	substr	Assets/Chair_Sun/Chair_Sun	tres					display		S. Chair	S.チェア				
 Assets	Furnitures/Crate_Military_F		0	substr	Assets/Crate_Military/Crate_Military_F	tres					name		Crate (Military)	木箱（軍用）				
 Assets	Furnitures/Crate_Military_F		0	ignore	Assets/Crate_Military/Crate_Military_F	tres					inventory		Crate (Military)					
 Assets	Furnitures/Crate_Military_F		0	ignore	Assets/Crate_Military/Crate_Military_F	tres					rotated		Crate (Military)					
 Assets	Furnitures/Crate_Military_F		0	ignore	Assets/Crate_Military/Crate_Military_F	tres					equipment		Crate (Military)					
-Assets	Furnitures/Crate_Military_F		0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.	クレート・M				
+Assets	Furnitures/Crate_Military_F		0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.	木箱 M.				
 Assets	Furnitures/Crate_Special_F		0	substr	Assets/Crate_Special/Crate_Special_F	tres					name		Crate (Special)	クレート（スペシャル）				
 Assets	Furnitures/Crate_Special_F		0	ignore	Assets/Crate_Special/Crate_Special_F	tres					inventory		Crate (Special)					
 Assets	Furnitures/Crate_Special_F		0	ignore	Assets/Crate_Special/Crate_Special_F	tres					rotated		Crate (Special)					
 Assets	Furnitures/Crate_Special_F		0	ignore	Assets/Crate_Special/Crate_Special_F	tres					equipment		Crate (Special)					
-Assets	Furnitures/Crate_Special_F		0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.	クレート・S.				
+Assets	Furnitures/Crate_Special_F		0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.	クレート S.				
 Assets	Furnitures/Cupboard_F		0	substr	Assets/Cupboard/Cupboard_F	tres					name		Cupboard	食器棚				
 Assets	Furnitures/Cupboard_F		0	ignore	Assets/Cupboard/Cupboard_F	tres					inventory		Cupboard					
 Assets	Furnitures/Cupboard_F		0	ignore	Assets/Cupboard/Cupboard_F	tres					rotated		Cupboard					
 Assets	Furnitures/Cupboard_F		0	ignore	Assets/Cupboard/Cupboard_F	tres					equipment		Cupboard					
-Assets	Furnitures/Cupboard_F		0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board	C. 理事会				
+Assets	Furnitures/Cupboard_F		0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board	C. 棚				
 Assets	Furnitures/Curtain_Long_F		0	substr	Assets/Curtains/Curtain_Long_F	tres					name		Curtain (Long)	カーテン（ロング）				
 Assets	Furnitures/Curtain_Long_F		0	ignore	Assets/Curtains/Curtain_Long_F	tres					inventory		Curtain (Long)					
 Assets	Furnitures/Curtain_Long_F		0	substr	Assets/Curtains/Curtain_Long_F	tres					rotated		Curtain L.	カーテン・L.				

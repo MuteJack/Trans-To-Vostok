@@ -3,10 +3,10 @@ Inventory	Item/Weapon/Button	Button	0	substr	Scripts/Actions	gd			unload.text	li
 Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Actions	gd			unload.text	literal		58	Unload				
 Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Context	gd			unloadButton.text	literal		87	Unload				
 Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Context	gd			unloadButton.text	literal		94	Unload				
-Inventory	Item/Weapon/Button	Button	0	substr	Scripts/Context	gd			unloadButton.text	literal		101	Clear Chamber	クリアチャンバー			
+Inventory	Item/Weapon/Button	Button	0	substr	Scripts/Context	gd			unloadButton.text	literal		101	Clear Chamber	チャンバーをクリア			
 Inventory	Item/Equipments	Button	0	substr	Scripts/Actions	gd			equip.text	literal		92	Unequip	装備解除			
 Inventory	Item/Equipments	Button	0	substr	Scripts/Actions	gd			equip.text	literal		94	Equip	装備			
-Inventory	Item	Button	0	pattern	Scripts/Actions	gd			take.text	concat		77	Take ({str})	Take ({str})			
+Inventory	Item	Button	0	pattern	Scripts/Actions	gd			take.text	concat		77	Take ({str})	取る ({str})			
 Inventory	Item	Button	0	ignore	Scripts/Context	gd			takeButton.text	concat		114	Take ({str})				
 Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		81	Show	表示			
 Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		86	Hide	非表示			
@@ -23,32 +23,32 @@ Inventory	Tasks	ToolTip	0	ignore	Scripts/Task	gd			addButton.text	literal		240	A
 Inventory	Tasks	String	0	substr	Scripts/Task	gd			removeButton.text	literal		235	Remove	削除			
 Inventory	Tasks	String	0	substr	Scripts/Task	gd			addButton.text	literal		247	Completed	完了			
 Inventory	Tasks	String	0	substr	Scripts/Task	gd			addButton.text	literal		254	Add to Notes	メモに追加			
-Inventory	Item/Ammo	ToolTip	0	pattern	Scripts/Tooltip	gd			penetration.get_child(0).text	concat		148	Level {str}	Level {str}			
+Inventory	Item/Ammo	ToolTip	0	pattern	Scripts/Tooltip	gd			penetration.get_child(0).text	concat		148	Level {str}	レベル {str}			
 Inventory	Item/Armor	ToolTip	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		169	Level {str}				
 Inventory	Item/Armor	ToolTip	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		177	Level {str}				
-Inventory	Item/Food	Button	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen	『アナと雪の女王』	Use button will be replaced for frozen consumable items (instead use button)		
-Inventory	Weapon	Button	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})	Remove ({display})	Remove Attachments		
+Inventory	Item/Food	Button	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen	氷結	Use button will be replaced for frozen consumable items (instead use button)		
+Inventory	Weapon	Button	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})	削除 ({display})	Remove Attachments		
 HUD	Transition	String	0	substr	Scripts/HUD	gd			detailsHint.text	literal		107	Permadeath Zone	パーマネントデス・ゾーン			
 HUD	Door	String	0	substr									[Open]	[開く]			
-HUD	Door	String	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}	Unlock with {name}			
-HUD	Door	String	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}	Open with {name}			
+HUD	Door	String	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}	{name} で解除			
+HUD	Door	String	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}	{name} で開く			
 HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]	ドア [開かない]			
 HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		135	Door [Occupied]	ドア [使用中]			
 HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		138	Door [Close]	ドア [閉じる]			
 HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		140	Door [Open]	ドア [開]			
-HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		142	{containerName} [Locked]	{containerName} [Locked]			
-HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		144	{containerName} [Open]	{containerName} [Open]			
+HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		142	{containerName} [Locked]	{containerName} [ロック中]			
+HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		144	{containerName} [Open]	{containerName} [開く]			
 HUD	Shelter	String	0	substr	Scripts/Bed	gd			gameData.tooltip	literal		52	Sleep (Random sleep: 6-12h)	睡眠（ランダムな睡眠時間：6～12時間）			
 HUD	Electronics	String	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		33	Turn Off	オフにする			
 HUD	Electronics	String	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		35	Turn On	オンにする			
 HUD	Electronics	String	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		62	Radio [Turn Off]	ラジオ [オフ]			
-HUD	Electronics	String	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		64	Radio [Turn On]	ラジオ [電源オン]			
-HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		27	Television [Turn Off]	テレビ [電源オフ]			
-HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		29	Television [Turn On]	テレビ [電源オン]			
+HUD	Electronics	String	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		64	Radio [Turn On]	ラジオ [オン]			
+HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		27	Television [Turn Off]	テレビ [オフ]			
+HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		29	Television [Turn On]	テレビ [オン]			
 HUD	Cat	String	0	substr	Scripts/CatRescue	gd			gameData.tooltip	literal		35	Rescue Cat	保護猫			
 HUD	Cat	String	0	substr	Scripts/CatFeeder	gd			gameData.tooltip	literal		55	Cat is eating, do not disturb	猫が食事中なので、邪魔しないでください			
 HUD	Cat	String	1	ignore	Scripts/CatFeeder	gd			gameData.tooltip	concat		57	Feed cat:\n[{CreateFeedString}]				
 HUD		String	0	substr	Scripts/Fuel	gd			gameData.tooltip	literal		11	Fuel Tank [89%]	燃料タンク [89%]	Maybe not updated yet (hard-coded)		
-HUD		String	0	pattern									Fuel Tank [{percent}%]	Fuel Tank [{percent}%]	Maybe not updated yet (hard-coded)		
+HUD		String	0	pattern									Fuel Tank [{percent}%]	燃料タンク [{percent}%]	Maybe not updated yet (hard-coded)		
 HUD	Cat	String	0	substr									Feed cat:	猫に餌をあげる：			
-Furniture	Furniture	String	0	pattern	Scripts/Item	gd			amount.text	concat		405	Items: {str}	Items: {str}			
+Furniture	Furniture	String	0	pattern	Scripts/Item	gd			amount.text	concat		405	Items: {str}	アイテム: {str}			

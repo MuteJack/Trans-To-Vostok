@@ -34,7 +34,7 @@ Items	Armor/Armor_Plate_IV	name	0	ignore	Items/Armor/Armor_Plate_IV	tres					rot
 Items	Armor/Armor_Plate_IV	name	0	ignore	Items/Armor/Armor_Plate_IV	tres					equipment		Armor Plate				
 Items	Armor/Armor_Plate_IV	type	0	ignore	Items/Armor/Armor_Plate_IV	tres					display		Armor				
 Items	Backpacks	type	0	substr									Backpack	バックパック			
-Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					name		Jääkäri Backpack (Black)	ヤーカリー・バックパック（ブラック）			
+Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					name		Jääkäri Backpack (Black)	ヤーカリ・バックパック（ブラック）			
 Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					inventory		Jääkäri BP.	ヤーカリ BP.			
 Items	Backpacks/Backpack_Jaeger_Black	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					rotated		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_Black	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					equipment		Jääkäri BP.				
@@ -46,7 +46,7 @@ Items	Backpacks/Backpack_Jaeger_Brown	name	0	ignore	Items/Backpacks/Backpack_Jae
 Items	Backpacks/Backpack_Jaeger_Brown	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					equipment		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_Brown	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					display		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_Brown	type	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Brown	tres					type		Backpack				
-Items	Backpacks/Backpack_Jaeger_Green	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					name		Jääkäri Backpack (Green)	ヤーカリー・バックパック（グリーン）			
+Items	Backpacks/Backpack_Jaeger_Green	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					name		Jääkäri Backpack (Green)	ヤーカリ・バックパック（グリーン）			
 Items	Backpacks/Backpack_Jaeger_Green	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					inventory		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_Green	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					rotated		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_Green	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Green	tres					equipment		Jääkäri BP.				
@@ -59,13 +59,13 @@ Items	Backpacks/Backpack_Jaeger_M05	name	0	ignore	Items/Backpacks/Backpack_Jaege
 Items	Backpacks/Backpack_Jaeger_M05	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					display		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_M05	type	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					type		Backpack				
 Items	Backpacks/Backpack_Nomad	name	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					name		Nomad Backpack	ノマド・バックパック			
-Items	Backpacks/Backpack_Nomad	name	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					inventory		Nomad BP.	ノマドBP。			
+Items	Backpacks/Backpack_Nomad	name	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					inventory		Nomad BP.	ノマドBP.			
 Items	Backpacks/Backpack_Nomad	name	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					rotated		Nomad BP.				
 Items	Backpacks/Backpack_Nomad	name	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					equipment		Nomad BP.				
 Items	Backpacks/Backpack_Nomad	name	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					display		Nomad BP.				
 Items	Backpacks/Backpack_Nomad	type	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					type		Backpack				
 Items	Backpacks/Backpack_Patrol	name	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					name		Patrol Backpack	パトロールバックパック			
-Items	Backpacks/Backpack_Patrol	name	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					inventory		Patrol BP.	パトロールBP。			
+Items	Backpacks/Backpack_Patrol	name	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					inventory		Patrol BP.	パトロールBP.			
 Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					rotated		Patrol BP.				
 Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					equipment		Patrol BP.				
 Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					display		Patrol BP.				
