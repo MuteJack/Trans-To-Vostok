@@ -16,7 +16,7 @@ from pathlib import Path
 
 _REPO = Path(__file__).resolve().parent.parent.parent
 LANGUAGES_JSON = _REPO / "tools" / "configs" / "languages.json"
-LOCALE_JSON = _REPO / "Trans To Vostok" / "locale.json"
+LOCALE_JSON = _REPO / "src" / "locale.json"
 
 
 def _load_registry() -> dict:

@@ -39,7 +39,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO = SCRIPT_DIR.parent.parent
 TRANSLATIONS = REPO / "Translations"
-LOCALE_JSON = REPO / "Trans To Vostok" / "locale.json"
+LOCALE_JSON = REPO / "src" / "locale.json"
 
 CATEGORY = "Texture"
 TEMPLATE_LOCALE = "Template"
