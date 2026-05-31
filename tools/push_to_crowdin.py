@@ -19,6 +19,12 @@ Smart push (default):
   Self-correcting: after a successful push, commit the working tree's
   Translations/<locale>/ to refresh the baseline for future pushes.
 
+  --base <rev>: use <rev> (commit / tag / branch / HEAD~N) instead of HEAD
+                as the diff baseline. Useful for first push to a newly-added
+                Crowdin source file: HEAD already has the rows committed,
+                so default HEAD-diff says 'nothing to push' — point --base
+                at the commit before the rows were added.
+
   --force-all: bypass diff and push everything (use rarely; risk of overwrite).
 
 Required setup (one-time):
@@ -110,7 +116,8 @@ def push_one_locale(locale: str, crowdin_id: str, args, tools_dir: Path,
                 print(f"    {path}: {msg}")
             return 1
     else:
-        print(f"\n>>> Computing diff against HEAD")
+        base_ref = args.base or "HEAD"
+        print(f"\n>>> Computing diff against {base_ref}")
         canonical_locale_dir = repo_root / "Translations" / locale
         try:
             to_push = diff_against_head(
@@ -118,6 +125,7 @@ def push_one_locale(locale: str, crowdin_id: str, args, tools_dir: Path,
                 locale=locale,
                 mirror_locale_dir=locale_dir,
                 canonical_locale_dir=canonical_locale_dir,
+                ref=base_ref,
             )
         except subprocess.CalledProcessError as e:
             print(f"[ERROR] git invocation failed: {e}", file=sys.stderr)
@@ -128,7 +136,7 @@ def push_one_locale(locale: str, crowdin_id: str, args, tools_dir: Path,
         print(f"  Rows to push: {n_to_push} (across {n_files} files)")
 
         if n_to_push == 0:
-            print(f"\n[OK] {locale}: Nothing to push - working tree matches HEAD's canonical TSV.")
+            print(f"\n[OK] {locale}: Nothing to push - working tree matches {base_ref}'s canonical TSV.")
             return 0
 
         # 4. Upload diff via SDK
@@ -188,6 +196,15 @@ def main() -> int:
         action="store_true",
         help="Push ALL non-empty rows (bypass HEAD diff). Risk: may overwrite "
              "another contributor's recent edits to rows you didn't intend to change.",
+    )
+    parser.add_argument(
+        "--base",
+        default=None,
+        metavar="REV",
+        help="Use REV (commit / tag / branch) instead of HEAD as the diff baseline. "
+             "Useful when current HEAD already includes the rows you want to push "
+             "(e.g., first push to a newly-added Crowdin source file). Example: "
+             "--base v0.5.3 or --base HEAD~5.",
     )
     args = parser.parse_args()
 

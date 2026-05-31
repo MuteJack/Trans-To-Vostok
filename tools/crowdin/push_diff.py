@@ -19,12 +19,14 @@ import subprocess
 from pathlib import Path
 
 
-def read_head_tsv(repo_root: Path, rel_path: str) -> str | None:
-    """Return the file contents at HEAD for `rel_path` (POSIX path relative
-    to repo_root). Returns None if the file is not in HEAD (new file).
+def read_head_tsv(repo_root: Path, rel_path: str, *, ref: str = "HEAD") -> str | None:
+    """Return the file contents at `ref` for `rel_path` (POSIX path relative
+    to repo_root). Returns None if the file is not in that revision.
+
+    `ref` accepts any git revision spec: branch, tag, commit hash, HEAD~N, etc.
     """
     result = subprocess.run(
-        ["git", "show", f"HEAD:{rel_path}"],
+        ["git", "show", f"{ref}:{rel_path}"],
         cwd=repo_root,
         capture_output=True,
         text=True,
@@ -112,14 +114,20 @@ def diff_against_head(
     locale: str,
     mirror_locale_dir: Path,
     canonical_locale_dir: Path,
+    *,
+    ref: str = "HEAD",
 ) -> dict[str, dict[str, str]]:
-    """Return rows in Mirror that differ from HEAD's canonical TSV.
+    """Return rows in Mirror that differ from `ref`'s canonical TSV.
 
     For each file in mirror_locale_dir (e.g. Translation/Main.tsv):
       - Map to the canonical TSV path: <canonical_locale_dir>/<category>/<sheet>.tsv
-      - Read HEAD's version of that canonical TSV via git
-      - Compute identifier→translation map for HEAD
-      - Compute diff: rows in Mirror but not in HEAD, or with different value
+      - Read `ref`'s version of that canonical TSV via `git show`
+      - Compute identifier→translation map for that revision
+      - Compute diff: rows in Mirror but not in `ref`, or with different value
+
+    `ref` is any git revision spec (default `HEAD`). Use an older commit /
+    tag as baseline to push rows that were added since (useful for first
+    push after a new source file lands on Crowdin).
 
     Returns {file_relpath: {identifier: translation}} ready to upload.
     """
@@ -149,7 +157,7 @@ def diff_against_head(
         if category not in id_func:
             continue
         canonical_rel_path = (canonical_locale_dir / rel).relative_to(repo_root).as_posix()
-        head_text = read_head_tsv(repo_root, canonical_rel_path)
+        head_text = read_head_tsv(repo_root, canonical_rel_path, ref=ref)
         head_rows = parse_canonical_tsv_translations(
             head_text or "", id_func[category], tx_field[category]
         )
