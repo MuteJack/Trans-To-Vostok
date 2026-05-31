@@ -100,6 +100,13 @@ new build / sync tools land alongside.
 
 ### Fixed
 
+- **`info.json[target_game_version]` is now auto-derived from `mod.txt`**
+  (`build_mod_info.py`). The 0.5.3 cycle intended this behavior but the
+  code change never landed — `info.json` was still treated as a hybrid
+  file (hand-edited target_game_version preserved across rebuilds),
+  requiring contributors to keep both files in sync manually. Now mod.txt
+  is the single source of truth for both ModLoader compatibility warnings
+  and the F9 Info tab.
 - **Sign_VT7 / Frame_Highway_Sign path duplication** — the in-world
   directional sign uses `Assets/Frame_Highway/Files/TX_Frame_Highway_Sign_AL.png`,
   but the asset is named `Sign_VT7`. Mod now ships the same overlay PNG
@@ -123,8 +130,9 @@ the new path, documented under **Added** above.
   `sync_texture_schema.py`.
 - `push_to_crowdin.py --base <rev>` and `rebuild_xlsx.py all` extend
   existing tools.
-- `target_game_version` continues to be tracked in both `mod.txt` and
-  `info.json`; bumped target is `0.1.1.3` (no change).
+- `target_game_version` is now sourced from `mod.txt` only (single source
+  of truth); `info.json`'s value is overwritten at build time. Current
+  target is `0.1.1.3` (no change to value).
 - Documentation: `_sheet_order.txt` schema now includes `Signs` and
   `Structures` across all active locales.
 
@@ -1228,10 +1236,11 @@ sync 도구도 함께 추가됩니다.
 
 ### 수정
 
-- **거리에서 표지판이 원본 영문으로 보이는 LOD fallback** —
-  `Image.generate_mipmaps()` 를 `ImageTexture.create_from_image` 전에
-  호출하도록 변경. 이전엔 mipmap 부재로 거리에서 원본 PCK 텍스처의
-  mipmap 으로 fallback.
+- **`info.json[target_game_version]` 이 이제 `mod.txt` 에서 자동 동기화**
+  (`build_mod_info.py`). 0.5.3 사이클에서 의도했던 동작이지만 코드 수정이
+  실제로 반영되지 않아 `info.json` 이 여전히 hybrid 파일 (hand-edit 값
+  보존) 로 동작 → 두 파일을 사람이 동시에 갱신해야 했음. 이제 mod.txt 가
+  단일 진실 (ModLoader 호환 경고 + F9 Info 탭 양쪽 모두) 로 통일.
 - **Sign_VT7 / Frame_Highway_Sign 경로 중복** — 게임 내 도로 안내 표지판은
   실제로 `Assets/Frame_Highway/Files/TX_Frame_Highway_Sign_AL.png` 를
   사용하지만 asset 명은 `Sign_VT7`. mod 가 동일 overlay PNG 를 양쪽
@@ -1242,13 +1251,18 @@ sync 도구도 함께 추가됩니다.
   패턴을 코드가 읽어 적용하도록 fix. 영향받은 2개 파일 (Signs / Structures)
   의 패턴은 Crowdin 웹에서 수동 수정.
 
+LOD 처리 관련 참고: `blend` 방식은 ImageTexture 생성 전에 composite Image
+에 mipmap 을 생성합니다. 이는 이전 버그의 수정이 아니라 (출시 기능이
+regression 된 적 없음) 신규 path 의 필수 구성요소이며, 위 **추가** 섹션에
+명시되어 있습니다.
+
 ### 내부 / 도구
 
 - 신규 도구: `build_texture_meta.py`, `push_source_to_crowdin.py`,
   `sync_texture_schema.py`.
 - 기존 도구 확장: `push_to_crowdin.py --base <rev>`, `rebuild_xlsx.py all`.
-- `target_game_version` 은 `mod.txt` 와 `info.json` 양쪽 유지 (변경
-  없음, `0.1.1.3`).
+- `target_game_version` 은 이제 `mod.txt` 가 단일 진실 — `info.json` 의
+  값은 빌드 시 자동 채워짐 (현재 값: `0.1.1.3`).
 - 문서: `_sheet_order.txt` 스키마에 `Signs` 와 `Structures` 추가됨 (모든
   active locale).
 

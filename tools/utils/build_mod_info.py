@@ -1,11 +1,13 @@
 """Build <pkg_root>/info.json — project-wide metadata consumed by F9 UI's Info tab.
 
-info.json is a hybrid file (read-modify-write):
-  - target_game_version  : HAND-EDITED in info.json itself, preserved by this script
-  - mod_version          : auto from mod.txt        (`version="..."`)
-  - build_date           : auto, today's date (UTC)
+info.json is FULLY GENERATED from upstream sources. Hand-edits are overwritten.
+All fields below auto-fill:
+  - mod_version          : from mod.txt              (`version="..."`)
+  - target_game_version  : from mod.txt              (`target_game_version="..."`)
+                           — single source of truth shared with ModLoader.
+  - build_date           : today's date (UTC)
   - lead_developer / code_contributors / acknowledgments
-                         : auto from AUTHORS.md (sections under `## ...`)
+                         : from AUTHORS.md (sections under `## ...`)
 
 Per-locale data (translation_updated, translators, texture_reworkers, ...)
 lives in `Trans To Vostok/<locale>/credits.json` and is consumed directly
@@ -38,18 +40,29 @@ MOD_ROOT = REPO / "Trans To Vostok"
 INFO_JSON = MOD_ROOT / "info.json"
 
 
-def parse_mod_version(mod_txt: Path) -> str:
+def _parse_mod_txt_field(mod_txt: Path, field: str) -> str:
+    """Read a `key="value"` line from mod.txt's [mod] section. Returns
+    'unknown' if the file or the field is missing."""
     if not mod_txt.exists():
         return "unknown"
     try:
         text = mod_txt.read_text(encoding="utf-8")
     except OSError:
         return "unknown"
+    pattern = re.compile(rf'\s*{re.escape(field)}\s*=\s*"?([^"\n]+?)"?\s*$')
     for line in text.splitlines():
-        m = re.match(r'\s*version\s*=\s*"?([^"\n]+?)"?\s*$', line)
+        m = pattern.match(line)
         if m:
             return m.group(1).strip()
     return "unknown"
+
+
+def parse_mod_version(mod_txt: Path) -> str:
+    return _parse_mod_txt_field(mod_txt, "version")
+
+
+def parse_target_game_version(mod_txt: Path) -> str:
+    return _parse_mod_txt_field(mod_txt, "target_game_version")
 
 
 def parse_authors_by_section(authors_md: Path) -> dict:
@@ -88,26 +101,17 @@ def parse_authors_by_section(authors_md: Path) -> dict:
     return out
 
 
-def load_existing_info() -> dict:
-    if not INFO_JSON.exists():
-        return {}
-    try:
-        return json.loads(INFO_JSON.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as e:
-        print(f"[WARN] Cannot read existing {INFO_JSON.name}: {e}", file=sys.stderr)
-        return {}
-
-
 def build_info(repo_root: Path) -> dict:
-    existing = load_existing_info()
-    target_game_version = existing.get("target_game_version", "unknown")
+    mod_txt = repo_root / "mod.txt"
+    target_game_version = parse_target_game_version(mod_txt)
     if target_game_version == "unknown":
-        print(f"[WARN] target_game_version not set in {INFO_JSON.name}. "
-              "Edit info.json by hand to set it (e.g. \"0.1.1.3\").", file=sys.stderr)
+        print(f"[WARN] target_game_version not set in mod.txt. "
+              "Add `target_game_version=\"0.1.1.3\"` to mod.txt's [mod] section.",
+              file=sys.stderr)
 
     sections = parse_authors_by_section(repo_root / "AUTHORS.md")
     return {
-        "mod_version": parse_mod_version(repo_root / "mod.txt"),
+        "mod_version": parse_mod_version(mod_txt),
         "build_date": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         "target_game_version": target_game_version,
         "lead_developer": sections["lead_developer"],
