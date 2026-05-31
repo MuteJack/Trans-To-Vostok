@@ -1,0 +1,174 @@
+"identifier"	"source_phrase"	"translation"	"context"	"labels"	"max_length"
+"X:TX_Sign_Mines_AL.png:1b82d33f"	"СТОП МІНИ!
+СТОП МИНЫ!"	"출입 금지!
+지뢰 매설 구역"	"\Assets\Sign_Mines\Files"	"Asset;Sign;Caution"	""
+"X:TX_Sign_Public_Road_AL.png:6237f865"	"Yleinen tie
+päättyy"	"사설 관리
+도로 진입 구간"	"\Assets\Sign_Public_Road\Files"	"Asset;Sign;RoadSign"	""
+"X:TX_Sign_School_AL.png:e5a56e65"	"OULUN ALUEELLA
+ASIATON OLESKELU JA
+YMPÄRISTÖÄ HÄIRITSEVÄ KÄYTÖS
+ILTAISIN JA ÖISIN KIELLETTY!
+JÄRJESTYSLAKI 16§"	"학교 구역 내에서는
+저녁 및 야간 시간대의
+무단 출입 또는 체류 행위와
+소란 행위 등을 금지합니다
+- 공공질서유지법 제16조"	"\Assets\Sign_School\Files"	"Asset;Sign;Caution"	""
+"X:TX_Sign_Speedbump_AL.png:b67b2a16"	"Töyssy"	"과속방지턱"	"\Assets\Sign_Speedbump\Files"	"Asset;Sign;RoadSign"	""
+"X:TX_Sign_Village_Crossroads_AL.png:347b1f82"	"KESKUSTA 4
+22 KOTKA"	"도심 까지 4km
+22km 코트카 시"	"\Assets\Sign_Village_Crossroads\Files"	"Asset;Sign;RoadSign"	""
+"X:TX_Sign_VT7_AL.png:77404d94"	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"	"라펜란타
+타아베티
+하미나
+
+피에타리
+상트페테르부르크"	"\Assets\Sign_VT7\Files"	"Asset;Sign;Caution"	""
+"X:TX_Frame_Highway_Sign_AL.png:77404d94"	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"	"라펜란타
+타아베티
+하미나
+
+피에타리
+상트페테르부르크"	"\Assets\Frame_Highway\Files"	"Asset;Sign;Caution"	""
+"X:TX_Sign_Border_Zone_A_AL.png:c25329c4"	"RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY"	"국경 통제 구역
+관계자, 허가증 소지자 외 출입 금지"	"\Assets\Sign_Border_Zone\Files"	"Asset;Sign;Caution"	""
+"X:TX_Sign_Border_Zone_AL.png:f645ba6d"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+접경 지대
+관계자 외, 또는 적절한 허가를 받지 않은 자는 출입할 수 없습니다
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"\Assets\Sign_Border_Zone\Files"	"Asset;Sign;Caution"	""
+"X:TX_Sign_Border_Zone_B_AL.png:f645ba6d"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+접경 지대
+관계자 외, 또는 적절한 허가를 받지 않은 자는 출입할 수 없습니다
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"\Assets\Sign_Border_Zone\Files"	"Asset;Sign;Caution"	""
+"X:TX_Sign_Border_Zone_C_AL.png:172bac53"	"RAJAVYÖHYKE
+
+GRÄNSZON, GRENZZONE, BORDER ZONE, ПОГРАНИЧНАЯ ЗОНА"	"RAJAVYÖHYKE
+
+GRÄNSZON, 접경 지대 (국경), BORDER ZONE, ПОГРАНИЧНАЯ ЗОНА"	"\Assets\Sign_Border_Zone\Files"	"Asset;Sign;Caution"	""
+"X:Icon_Sign_Border_Zone.png:f645ba6d"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+접경 지대
+관계자 외, 또는 적절한 허가를 받지 않은 자는 출입할 수 없습니다
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"\Assets\Sign_Border_Zone\Files"	"Asset;Sign;Caution"	""
+"X:TX_Board_Message_AL.png:a394af0c"	"JÄTSKIAUTO
+2022
+
+Jätskiauto pysähtyy tässä
+
+JOKA KOLMAS VIIKKO
+Lauantai
+
+20.5   17.6   8.7   29.7   19.8   10.9   30.9   21.10
+
+klo. 10.50
+
+Tarkista aikataulut ja reitti osoitteesta roadtovostok.com"	"아이스크림 트럭
+2022년
+
+아이스크림 트럭이 이곳에 방문합니다
+
+매 3주 간격, 토요일
+시간표
+
+20.5 / 17.6 / 8.7 / 29.7 / 19.8 / 10.9 / 30.9 / 21.10
+
+AM. 10:50
+
+자세한 일정과 경로는 roadtovostok.com에서 확인하세요"	"\Assets\Board_Message\Files\"	"Asset;Sign;Notice"	""

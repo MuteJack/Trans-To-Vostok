@@ -1,0 +1,29 @@
+"identifier"	"source_phrase"	"translation"	"context"	"labels"	"max_length"
+"X:TX_Booth_Ticket_AL.png:53cda06d"	"LIPUNMYYNTI"	"LIPUNMYYNTI"	"\Assets\Booth_Ticket\Files\"	"Asset;Structures;Booth"	""
+"X:TX_Box_Electric_AL.png:81129dd9"	"ILMOITUSTEN
+KIINNITTÄMINEN
+KIELLETTY
+
+JÄRJESTYSLAKI 16§"	"ILMOITUSTEN
+KIINNITTÄMINEN
+KIELLETTY
+
+JÄRJESTYSLAKI 16§"	"\Assets\Box_Electric\Files\"	"Asset;Structures;Structure"	""
+"X:TX_Box_Transformer_AL.png:40652616"	"HUOMIO
+
+PIDÄ OVIEN
+EDUSTA AINA
+VAPAANA
+
+Hengenvaara"	"HUOMIO
+
+PIDÄ OVIEN
+EDUSTA AINA
+VAPAANA
+
+Hengenvaara"	"\Assets\Box_Transformer\Files\"	"Asset;Structures;Structure"	""
+"X:TX_Canteen_Details_AL.png:295af2ee"	"SOTILASKOTI
+
+KASSA"	"SOTILASKOTI
+
+KASSA"	"\Assets\Canteen\Files\"	"Asset;Structures;Booth"	""
