@@ -1,0 +1,182 @@
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Asset	Sign	Caution	blend	"СТОП МІНИ!
+СТОП МИНЫ!"	"СТОП МІНИ!
+СТОП МИНЫ!"	\Assets\Sign_Mines\Files	TX_Sign_Mines_AL.png				"Caution Sign that notify the ""MineField"".
+Placed at MineField"	
+Asset	Sign	RoadSign	blend	"Yleinen tie
+päättyy"	"Yleinen tie
+päättyy"	\Assets\Sign_Public_Road\Files	TX_Sign_Public_Road_AL.png				"Road sign that notify the ""End of the Public Road"".
+Placed at Village (front of the Cabin)"	
+Asset	Sign	Caution	blend	"OULUN ALUEELLA
+ASIATON OLESKELU JA
+YMPÄRISTÖÄ HÄIRITSEVÄ KÄYTÖS
+ILTAISIN JA ÖISIN KIELLETTY!
+JÄRJESTYSLAKI 16§"	"OULUN ALUEELLA
+ASIATON OLESKELU JA
+YMPÄRISTÖÄ HÄIRITSEVÄ KÄYTÖS
+ILTAISIN JA ÖISIN KIELLETTY!
+JÄRJESTYSLAKI 16§"	\Assets\Sign_School\Files	TX_Sign_School_AL.png					
+Asset	Sign	RoadSign	blend	Töyssy	Töyssy	\Assets\Sign_Speedbump\Files	TX_Sign_Speedbump_AL.png					
+Asset	Sign	RoadSign	blend	"KESKUSTA 4
+22 KOTKA"	"KESKUSTA 4
+22 KOTKA"	\Assets\Sign_Village_Crossroads\Files	TX_Sign_Village_Crossroads_AL.png					
+Asset	Sign	Caution	blend	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"	\Assets\Sign_VT7\Files	TX_Sign_VT7_AL.png					
+Asset	Sign	Caution	blend	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"	\Assets\Frame_Highway\Files	TX_Frame_Highway_Sign_AL.png					
+Asset	Sign	Caution	blend	"RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY"	"RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY"	\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_A_AL.png					
+Asset	Sign	Caution	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_AL.png				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+Asset	Sign	Caution	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_B_AL.png				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+Asset	Sign	Caution	blend	"RAJAVYÖHYKE
+
+GRÄNSZON, GRENZZONE, BORDER ZONE, ПОГРАНИЧНАЯ ЗОНА"	"RAJAVYÖHYKE
+
+GRÄNSZON, GRENZZONE, BORDER ZONE, ПОГРАНИЧНАЯ ЗОНА"	\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_C_AL.png					
+Asset	Sign	Caution	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	\Assets\Sign_Border_Zone\Files	Icon_Sign_Border_Zone.png				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+Asset	Sign	Notice	blend	"JÄTSKIAUTO
+2022
+
+Jätskiauto pysähtyy tässä
+
+JOKA KOLMAS VIIKKO
+Lauantai
+
+20.5   17.6   8.7   29.7   19.8   10.9   30.9   21.10
+
+klo. 10.50
+
+Tarkista aikataulut ja reitti osoitteesta roadtovostok.com"	"JÄTSKIAUTO
+2022
+
+Jätskiauto pysähtyy tässä
+
+JOKA KOLMAS VIIKKO
+Lauantai
+
+20.5   17.6   8.7   29.7   19.8   10.9   30.9   21.10
+
+klo. 10.50
+
+Tarkista aikataulut ja reitti osoitteesta roadtovostok.com"	\Assets\Board_Message\Files\	TX_Board_Message_AL.png					
