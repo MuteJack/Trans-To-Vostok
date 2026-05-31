@@ -39,7 +39,10 @@ _Auto-generated from each locale's `credits.json` by `tools/utils/build_authors.
 
 ### ChineseSimplified (`Translations/ChineseSimplified/`)
 
-**Lead Translator(s):** _(none yet)_
+_Translation last updated: 2026-05-30T03:31:07+09:00_
+
+**Lead Translator(s):**
+- Mute Jack
 
 **Translator(s):** _(none yet)_
 
@@ -50,7 +53,10 @@ _Auto-generated from each locale's `credits.json` by `tools/utils/build_authors.
 
 ### ChineseTraditional (`Translations/ChineseTraditional/`)
 
-**Lead Translator(s):** _(none yet)_
+_Translation last updated: 2026-05-30T03:32:15+09:00_
+
+**Lead Translator(s):**
+- Mute Jack
 
 **Translator(s):** _(none yet)_
 
@@ -75,7 +81,10 @@ _Translation last updated: 2026-05-10T18:02:31+09:00_
 
 ### German (`Translations/German/`)
 
-**Lead Translator(s):** _(none yet)_
+_Translation last updated: 2026-05-30T03:27:52+09:00_
+
+**Lead Translator(s):**
+- Mute Jack
 
 **Translator(s):** _(none yet)_
 
@@ -86,18 +95,22 @@ _Translation last updated: 2026-05-10T18:02:31+09:00_
 
 ### Japanese (`Translations/Japanese/`)
 
-**Lead Translator(s):** _(none yet)_
+_Translation last updated: 2026-05-30T19:23:48+09:00_
+
+**Lead Translator(s):**
+- Mute Jack
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- Nineblood
 
 **Texture Reworkers:**
 - MuteJack
 
 ### Korean (`Translations/Korean/`)
 
-_Translation last updated: 2026-05-30T02:26:13+09:00_
+_Translation last updated: 2026-05-31T19:16:44+09:00_
 
 **Lead Translator(s):**
 - Mute Jack
@@ -127,7 +140,10 @@ _Translation last updated: 2026-05-10T18:03:51+09:00_
 
 ### Spanish_LatAm (`Translations/Spanish_LatAm/`)
 
-**Lead Translator(s):** _(none yet)_
+_Translation last updated: 2026-05-30T03:28:46+09:00_
+
+**Lead Translator(s):**
+- Mute Jack
 
 **Translator(s):** _(none yet)_
 

@@ -2,9 +2,11 @@
 
 People who contributed to translating Road to Vostok into German. This includes both text translation and texture / image rework.
 
+_Translation last updated: 2026-05-30T03:27:52+09:00_
+
 ## Lead Translator(s)
 
-_(none yet)_
+- Mute Jack
 
 ## Translator(s)
 

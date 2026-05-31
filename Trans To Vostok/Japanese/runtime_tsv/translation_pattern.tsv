@@ -12,12 +12,12 @@ You slept {str} hours	You slept {str} hours
 Cat Fed ({name})	Cat Fed ({name})
 Task Completed: {name}	Task Completed: {name}
 Item Returned: {name}	Item Returned: {name}
-Take ({str})	Take ({str})
-Level {str}	Level {str}
-Remove ({display})	Remove ({display})
-Unlock with {name}	Unlock with {name}
-Open with {name}	Open with {name}
-{containerName} [Locked]	{containerName} [Locked]
-{containerName} [Open]	{containerName} [Open]
-Fuel Tank [{percent}%]	Fuel Tank [{percent}%]
-Items: {str}	Items: {str}
+Take ({str})	取る ({str})
+Level {str}	レベル {str}
+Remove ({display})	削除 ({display})
+Unlock with {name}	{name} で解除
+Open with {name}	{name} で開く
+{containerName} [Locked]	{containerName} [ロック中]
+{containerName} [Open]	{containerName} [開く]
+Fuel Tank [{percent}%]	燃料タンク [{percent}%]
+Items: {str}	アイテム: {str}

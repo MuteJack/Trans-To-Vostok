@@ -2,9 +2,11 @@
 
 People who contributed to translating Road to Vostok into ChineseTraditional. This includes both text translation and texture / image rework.
 
+_Translation last updated: 2026-05-30T03:32:15+09:00_
+
 ## Lead Translator(s)
 
-_(none yet)_
+- Mute Jack
 
 ## Translator(s)
 

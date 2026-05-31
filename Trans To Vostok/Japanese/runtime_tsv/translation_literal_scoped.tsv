@@ -3,45 +3,33 @@ Scenes/Menu	Main/Buttons	New	Button	New game	新作ゲーム
 Scenes/Menu	Main/Buttons	Load	Button	Load game	ゲームを読み込む
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	チュートリアル
 Scenes/Menu	Main/Buttons	Settings	Button	"Settings
-"	"設定
-"
+"	設定
 Scenes/Menu	Main/Buttons	Roadmap	Button	"Roadmap
-"	"ロードマップ
-"
+"	ロードマップ
 Scenes/Menu	Main/Buttons	About	Button	"About
-"	"概要
-"
+"	概要
 Scenes/Menu	Main/Buttons	Quit	Button	"Quit
-"	"終了
-"
+"	終了
 Scenes/Menu	Log	Header	Label	Changelog	変更履歴
 Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 Scenes/Menu	Log/Buttons	Log_On	Button	"On
-"	"について
-"
+"	について
 Scenes/Menu	Hardware	Header	Label	Hardware Check	ハードウェアの確認
 Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
-"	"について
-"
+"	について
 Scenes/Menu	Intro	Header	Label	Watch Intro	イントロを見る
 Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
-"	"について
-"
+"	について
 Scenes/Menu	Music	Header	Label	Menu Music	メニュー 音楽
 Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 Scenes/Menu	Music/Buttons	Music_On	Button	"On
-"	"について
-"
+"	について
 Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	「Road to Vostok ®」はRoad to Vostok Ltd.の登録商標です。無断転載を禁じます © 2026
 Scenes/Menu	.	Version	Label	Version: 0.1.1.3	バージョン: 0.1.1.3
 Scenes/Menu	Changelog/Header	Label	Label	Changelog	変更履歴
@@ -706,32 +694,24 @@ Current inventory & equipment will be deleted"	"シェルターの外でゲー�
 Resources/Inputs	.	Header	Label	Input Settings	入力設定
 Resources/Inputs	Modes/Settings	Mouse	Label	Mouse	マウス
 Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	"Normal
-"	"通常
-"
+"	通常
 Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	"Inverted
-"	"反転
-"
+"	反転
 Resources/Inputs	Modes/Settings	Sprint	Label	Sprint	スプリント
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	"Hold
-"	"保留
-"
+"	保留
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	"Toggle
-"	"切り替え
-"
+"	切り替え
 Resources/Inputs	Modes/Settings	Lean	Label	Lean	リーン
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
-"	"保留
-"
+"	保留
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
-"	"切り替え
-"
+"	切り替え
 Resources/Inputs	Modes/Settings	Aim	Label	Aim	目的
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
-"	"保留
-"
+"	保留
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
-"	"切り替え
-"
+"	切り替え
 Resources/Inputs	.	Reset	Button	Reset to defaults	初期設定に戻す
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	入力例
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	Input Key	入力キー
@@ -741,33 +721,25 @@ UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	Ambient Volume	周囲�
 UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	Music Volume	音楽の音量
 UI/Settings	Settings/Row_01/Music/Elements	Music	Label	Music Preset	音楽プリセット
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	"Dynamic
-"	"ダイナミック
-"
+"	ダイナミック
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	"Shelter
-"	"シェルター
-"
+"	シェルター
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 05
-"	"エリア05
-"
+"	エリア05
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
-"	"国境
-"
+"	国境
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
-"	"ボストーク
-"
+"	ボストーク
 UI/Settings	Settings/Row_01/Camera	Camera	Label	Camera Settings	カメラの設定
 UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	Interpolate	補間する
 UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	Field of View	視野
 UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	Headbob	ヘッドボブ
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	"On
-"	"について
-"
+"	について
 UI/Settings	Settings/Row_01/Mouse	Mouse	Label	Mouse Settings	マウスの設定
 UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	表示感度
 UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	照準感度
@@ -783,8 +755,7 @@ UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	画像設定
 UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	シャープネス
 UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	住宅都市開発省（HUD）
 UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
-"	"地図
-"
+"	地図
 UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	FPS
 UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	バイタルサイン
 UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	医療
@@ -792,31 +763,25 @@ UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	配置
 UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	インテリア
 UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	UI Tooltip	UIのツールチップ
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	"On
-"	"について
-"
+"	について
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	Off	オフ
 UI/Settings	Settings/Row_02/PIP	PIP	Label	PIP Scopes	PIPスコープ
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	"On
-"	"について
-"
+"	について
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 UI/Settings	Settings/Row_02/Shadows	Shadows	Label	Detail Shadows	ディテールシャドウ
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	On	について
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 UI/Settings	Settings/Row_02/Water	Header	Label	Water Reflections	水面に映る景色
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	On	について
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	アンビエントオクルージョン
 UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	について
 UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
-"	"オフ
-"
+"	オフ
 UI/Settings	Settings/Row_03/Display	Display	Label	Display	表示
 UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	全画面表示
 UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	ウィンドウ表示
@@ -842,8 +807,7 @@ UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	SMAA On	SMAA �
 UI/Settings	Settings/Row_03/Exit	Exit	Label	Exit	終了
 UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	Main Menu	メインメニュー
 UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
-"	"ゲームを終了する
-"
+"	ゲームを終了する
 Scenes/Menu	Roadmap	Header	Label	Roadmap	ロードマップ
 Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	今後のビルド
 Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← 戻る
@@ -1027,12 +991,10 @@ Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	イントロをスキップ 
 Scenes/Death	Main	Hint	Label	Character died	キャラクターが死亡しました
 Scenes/Death	Main/Buttons	Load	Button	Load game	ゲームを読み込む
 Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
-"	"メインメニュー
-"
+"	メインメニュー
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
-"	"終了
-"
-UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	健康
+"	終了
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	ヘルス
 UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	エネルギー
 UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	水分補給
 UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	メンタル
@@ -1040,31 +1002,31 @@ UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
 UI/HUD	Stats/Oxygen	Header	Label	Oxygen	酸素
 UI/HUD	Info	Map	Label	Shelter (Area 05)	シェルター（エリア05）
 UI/Interface	Container/Header	Label	Label	Container	コンテナ
-UI/Interface	Equipment/Header	Label	Label	Equipment	設備
-UI/Interface	Equipment/Hints	Backpack	Label	Backpack	リュックサック
+UI/Interface	Equipment/Header	Label	Label	Equipment	装備
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	バックパック
 UI/Interface	Equipment/Hints	Rig	Label	Rig	リグ
 UI/Interface	Equipment/Hints	Helmet	Label	Helmet	ヘルメット
-UI/Interface	Equipment/Hints	Head	Label	Head	見出し
+UI/Interface	Equipment/Hints	Head	Label	Head	頭
 UI/Interface	Equipment/Hints	Torso	Label	Torso	胴体
 UI/Interface	Equipment/Hints	Legs	Label	Legs	脚
 UI/Interface	Equipment/Hints	Belt	Label	Belt	ベルト
 UI/Interface	Equipment/Hints	Feet	Label	Feet	足
 UI/Interface	Equipment/Hints	Hands	Label	Hands	手
-UI/Interface	Equipment/Hints	Matches	Label	Matches	試合
-UI/Interface	Equipment/Hints	Light	Label	Light	光
+UI/Interface	Equipment/Hints	Matches	Label	Matches	マッチ
+UI/Interface	Equipment/Hints	Light	Label	Light	ライト
 UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
-UI/Interface	Equipment/Hints	Time	Label	Time	時間
+UI/Interface	Equipment/Hints	Time	Label	Time	時計
 UI/Interface	Equipment/Hints	Map	Label	Map	地図
 UI/Interface	Equipment/Hints	Player	Label	Player	プレイヤー
 UI/Interface	Character/Header	Label	Label	Character	キャラクター
-UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	健康
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	ヘルス
 UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	エネルギー
 UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	水分補給
 UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	メンタル
 UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
 UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	猫
 UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	日
-UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	避難所
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	シェルター
 UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	タスク
 UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	クエスト
 UI/Interface	Tools/Header	Label	Label	Tools	ツール
@@ -1106,50 +1068,35 @@ UI/Interface	Tasks/Header	Label	Label	Tasks	タスク
 UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	家具カタログ
 UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	カタログはキャラクターに紐付けられており、死亡するとカタログ内のアイテムも消滅します
 UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	"使用
-"
+"	使用
 UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	"装備
-"
+"	装備
 UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	"装備解除
-"
+"	装備解除
 UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	"アンロード
-"
+"	アンロード
 UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	"分割
-"
+"	分割
 UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	"取る
-"
+"	取る
 UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	"睡眠
-"
+"	睡眠
 UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	"転送
-"
+"	転送
 UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	"ドロップ
-"
+"	ドロップ
 UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	"場所
-"
+"	場所
 UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	"破壊する
-"
+"	破壊する
 UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	"[0] を削除
-"
+"	[0] を削除
 UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	"[1] を削除
-"
+"	[1] を削除
 UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	"[2] を削除
-"
+"	[2] を削除
 UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	"[3] を削除
-"
+"	[3] を削除
 UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	コーヒーマスター
 UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	消耗品
 UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	伝説の
@@ -1220,8 +1167,8 @@ UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	イベ�
 UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	村
 UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	イベントの可能性：
 UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	マップインスタンスあたり約5%
-UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	武器が詰まった | [リロード]を押してください
-UI/HUD	Tooltip	Label	Label	Interaction	相互作用
+UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	銃が弾詰まり| [リロード]を押してください
+UI/HUD	Tooltip	Label	Label	Interaction	インタラクト
 UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 回転モード
 UI/HUD	Decor/Margin/Elements	Add	Label	[MMB] = Add to Catalog	[MMB] = カタログに追加
 UI/HUD	Decor/Margin/Elements	Catalog	Label	[TAB] = Furniture Catalog	[TAB] = 家具カタログ
@@ -1229,7 +1176,7 @@ UI/HUD	Decor/Margin/Elements	Close	Label	[F1] = Close Decor Mode	[F1] = デコ�
 UI/HUD	Decor/Margin/Elements/Header	Label	Label	Decor Mode	デコレーションモード
 UI/HUD	Decor/Margin/Elements	Place	Label	[G] = Place Furniture	[G] = 家具を配置する
 UI/HUD	Decor/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[スクロール] = 調整 / 回転
-UI/HUD	Decor/Margin/Elements	Magnet	Label	[LMB] = Surface Magnet	[LMB] = 表面マグネット
+UI/HUD	Decor/Margin/Elements	Magnet	Label	[LMB] = Surface Magnet	[LMB] = 表面に吸着
 UI/HUD	Placement/Margin/Elements/Header	Label	Label	Item Placement	アイテムの配置
 UI/HUD	Placement/Margin/Elements	Place	Label	[G] = Grab / Drop Item	[G] = アイテムの取得／ドロップ
 UI/HUD	Placement/Margin/Elements	Scroll	Label	[SCROLL] = Adjust / Rotate	[スクロール] = 調整 / 回転
@@ -1238,27 +1185,26 @@ UI/HUD	Placement/Margin/Elements	Orientation	Label	[MMB] = Change Orientation	[M
 UI/HUD	Transition/Elements/Header	Destination	Label	Village	村
 UI/HUD	Transition/Elements/Header	Zone	Label	Area 05	エリア05
 UI/HUD	Transition/Elements/Details	Hint	Label	Demo transition: Skips 2-3 maps	デモの切り替え：2～3つのマップをスキップします
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	Item	品目
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Common)	タイプ（一般）
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	Item	アイテム
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Common)	タイプ（コモン）
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Rare)	タイプ（レア）
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Legendary)	タイプ（伝説のポケモン）
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	Type (Legendary)	タイプ（レジェンダリー）
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	An item is an object within the game world that can be collected by a player.	アイテムとは、ゲームの世界内に存在し、プレイヤーが回収できるオブジェクトのことです。
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	Condition:	状態：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	Weight:	重量：
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	Value:	値：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	Value:	価格：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	Use time:	使用時間：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	Damage:	ダメージ：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	Caliber:	口径：
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	Magazine:	雑誌：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	Magazine:	マガジン：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	Capacity:	容量：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	最大スタック数：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	防具：
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	健康：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	ヘルス：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
-"	"エネルギー：
-"
+"	エネルギー：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	水分補給：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	体温：
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	治療法：
-UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	対応機種：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	治療：
+UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	互換性：
 UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  新しい家具を追加しました [カタログ]

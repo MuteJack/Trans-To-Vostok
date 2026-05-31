@@ -44,3 +44,26 @@ Original work without third-party sources. For per-language contributor credit, 
 - `TX_Tutorial_Maps.png`
 - `TX_Tutorial_World.png`
 - `TX_Tutorial_Shelters.png`
+
+### Signs
+
+- `TX_Sign_Mines_AL.png`
+- `TX_Sign_Public_Road_AL.png`
+- `TX_Sign_School_AL.png`
+- `TX_Sign_Speedbump_AL.png`
+- `TX_Sign_Village_Crossroads_AL.png`
+- `TX_Sign_VT7_AL.png`
+- `TX_Frame_Highway_Sign_AL.png`
+- `TX_Sign_Border_Zone_A_AL.png`
+- `TX_Sign_Border_Zone_AL.png`
+- `TX_Sign_Border_Zone_B_AL.png`
+- `TX_Sign_Border_Zone_C_AL.png`
+- `Icon_Sign_Border_Zone.png`
+- `TX_Board_Message_AL.png`
+
+### Structures
+
+- `TX_Booth_Ticket_AL.png`
+- `TX_Box_Electric_AL.png`
+- `TX_Box_Transformer_AL.png`
+- `TX_Canteen_Details_AL.png`

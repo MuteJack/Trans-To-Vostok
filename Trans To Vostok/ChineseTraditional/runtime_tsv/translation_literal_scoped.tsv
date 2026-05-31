@@ -3,45 +3,33 @@ Scenes/Menu	Main/Buttons	New	Button	New game	新遊戲
 Scenes/Menu	Main/Buttons	Load	Button	Load game	載入遊戲
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	教學指南
 Scenes/Menu	Main/Buttons	Settings	Button	"Settings
-"	"設定
-"
+"	設定
 Scenes/Menu	Main/Buttons	Roadmap	Button	"Roadmap
-"	"路線圖
-"
+"	路線圖
 Scenes/Menu	Main/Buttons	About	Button	"About
-"	"關於
-"
+"	關於
 Scenes/Menu	Main/Buttons	Quit	Button	"Quit
-"	"退出
-"
+"	退出
 Scenes/Menu	Log	Header	Label	Changelog	更新日誌
 Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 Scenes/Menu	Log/Buttons	Log_On	Button	"On
-"	"於
-"
+"	於
 Scenes/Menu	Hardware	Header	Label	Hardware Check	硬體檢查
 Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
-"	"於
-"
+"	於
 Scenes/Menu	Intro	Header	Label	Watch Intro	觀看介紹
 Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
-"	"於
-"
+"	於
 Scenes/Menu	Music	Header	Label	Menu Music	選單 音樂
 Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 Scenes/Menu	Music/Buttons	Music_On	Button	"On
-"	"於
-"
+"	於
 Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	Road to Vostok ® 是 Road to Vostok Ltd. 的註冊商標。版權所有 © 2026
 Scenes/Menu	.	Version	Label	Version: 0.1.1.3	版本：0.1.1.3
 Scenes/Menu	Changelog/Header	Label	Label	Changelog	更新日誌
@@ -706,32 +694,24 @@ Current inventory & equipment will be deleted"	"您即將在避難所外退出�
 Resources/Inputs	.	Header	Label	Input Settings	輸入設定
 Resources/Inputs	Modes/Settings	Mouse	Label	Mouse	滑鼠
 Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	"Normal
-"	"正常
-"
+"	正常
 Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	"Inverted
-"	"倒置
-"
+"	倒置
 Resources/Inputs	Modes/Settings	Sprint	Label	Sprint	Sprint
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	"Hold
-"	"暫停
-"
+"	暫停
 Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	"Toggle
-"	"切換
-"
+"	切換
 Resources/Inputs	Modes/Settings	Lean	Label	Lean	精實
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
-"	"暫停
-"
+"	暫停
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
-"	"切換
-"
+"	切換
 Resources/Inputs	Modes/Settings	Aim	Label	Aim	目的
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
-"	"暫停
-"
+"	暫停
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
-"	"切換
-"
+"	切換
 Resources/Inputs	.	Reset	Button	Reset to defaults	還原為預設值
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	Example Input	輸入範例
 Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	Input Key	輸入鍵
@@ -741,33 +721,25 @@ UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	Ambient Volume	環境�
 UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	Music Volume	音樂音量
 UI/Settings	Settings/Row_01/Music/Elements	Music	Label	Music Preset	音樂預設
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	"Dynamic
-"	"動態
-"
+"	動態
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	"Shelter
-"	"庇護所
-"
+"	庇護所
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	"Area 05
-"	"第05區
-"
+"	第05區
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	"Border
-"	"邊界
-"
+"	邊界
 UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	"Vostok
-"	"沃斯托克
-"
+"	沃斯托克
 UI/Settings	Settings/Row_01/Camera	Camera	Label	Camera Settings	相機設定
 UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	Interpolate	插值
 UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	Field of View	視野
 UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	Headbob	頭部晃動
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	"On
-"	"於
-"
+"	於
 UI/Settings	Settings/Row_01/Mouse	Mouse	Label	Mouse Settings	滑鼠設定
 UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	檢視靈敏度
 UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	準星靈敏度
@@ -783,8 +755,7 @@ UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	圖片設定
 UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	銳利度
 UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
 UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
-"	"地圖
-"
+"	地圖
 UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	FPS	第一人稱射擊遊戲
 UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	Vitals	生命徵象
 UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	Medical	醫療
@@ -792,31 +763,25 @@ UI/Settings	Settings/Row_02/HUD/Settings	Placement	Button	Placement	安置
 UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	Decor	裝飾
 UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	UI Tooltip	UI 工具提示
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	"On
-"	"於
-"
+"	於
 UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	Off	關閉
 UI/Settings	Settings/Row_02/PIP	PIP	Label	PIP Scopes	PIP 檢視窗
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	"On
-"	"於
-"
+"	於
 UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 UI/Settings	Settings/Row_02/Shadows	Shadows	Label	Detail Shadows	細節陰影
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	On	於
 UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 UI/Settings	Settings/Row_02/Water	Header	Label	Water Reflections	水之倒影
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	On	於
 UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	環境光遮蔽
 UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	於
 UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
-"	"關閉
-"
+"	關閉
 UI/Settings	Settings/Row_03/Display	Display	Label	Display	顯示
 UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	全螢幕
 UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	視窗模式
@@ -842,8 +807,7 @@ UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	SMAA On	啟用 
 UI/Settings	Settings/Row_03/Exit	Exit	Label	Exit	退出
 UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	Main Menu	主選單
 UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	"Quit Game
-"	"退出遊戲
-"
+"	退出遊戲
 Scenes/Menu	Roadmap	Header	Label	Roadmap	路線圖
 Scenes/Menu	Roadmap/Header	Subheader	Label	Upcoming builds	即將推出的版本
 Scenes/Menu	Roadmap	Roadmap_Return	Button	← Return	← 返回
@@ -1028,11 +992,9 @@ Scenes/Intro	Intro/UI	Hint	Label	Skip Intro [SPACE]	跳過介紹 [空格鍵]
 Scenes/Death	Main	Hint	Label	Character died	角色死亡
 Scenes/Death	Main/Buttons	Load	Button	Load game	載入遊戲
 Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
-"	"主選單
-"
+"	主選單
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
-"	"退出
-"
+"	退出
 UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	健康
 UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	能源
 UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	水分補充
@@ -1107,50 +1069,35 @@ UI/Interface	Tasks/Header	Label	Label	Tasks	任務
 UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	家具型錄
 UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	物品欄與您的角色綁定，死亡也會摧毀物品欄中的物品
 UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	"使用
-"
+"	使用
 UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	"裝備
-"
+"	裝備
 UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	"卸下
-"
+"	卸下
 UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	"卸載
-"
+"	卸載
 UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	"分裂
-"
+"	分裂
 UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	"選取
-"
+"	選取
 UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	"睡眠
-"
+"	睡眠
 UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	"轉帳
-"
+"	轉帳
 UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	"放下
-"
+"	放下
 UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	"地點
-"
+"	地點
 UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	"摧毀
-"
+"	摧毀
 UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	"移除 [0]
-"
+"	移除 [0]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	"移除 [1]
-"
+"	移除 [1]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	"移除 [2]
-"
+"	移除 [2]
 UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	"移除 [3]
-"
+"	移除 [3]
 UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	咖啡大師
 UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	耗材
 UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	傳奇
@@ -1256,8 +1203,7 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	最大堆�
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	護甲：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	健康：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
-"	"能源：
-"
+"	能源：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	水分補充：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	體溫：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	治療方法：

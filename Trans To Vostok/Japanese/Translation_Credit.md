@@ -2,9 +2,11 @@
 
 People who contributed to translating Road to Vostok into Japanese. This includes both text translation and texture / image rework.
 
+_Translation last updated: 2026-05-30T19:23:48+09:00_
+
 ## Lead Translator(s)
 
-_(none yet)_
+- Mute Jack
 
 ## Translator(s)
 
@@ -12,7 +14,7 @@ _(none yet)_
 
 ## Translation Contributors
 
-_(none yet)_
+- Nineblood
 
 ## Texture Reworkers
 
