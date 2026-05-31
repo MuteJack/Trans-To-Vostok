@@ -1,0 +1,30 @@
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Asset	Structures	Booth	blend	LIPUNMYYNTI	티켓 매표소	\Assets\Booth_Ticket\Files\	TX_Booth_Ticket_AL.png	MuteJack			"Caution Sign that notify the ""MineField"".
+Placed at MineField"	
+Asset	Structures	Structure	blend	"ILMOITUSTEN
+KIINNITTÄMINEN
+KIELLETTY
+
+JÄRJESTYSLAKI 16§"	"허가되지 않은
+게시물 무단 부착은
+금지됩니다
+
+공공질서유지법 제 6조"	\Assets\Box_Electric\Files\	TX_Box_Electric_AL.png	MuteJack				
+Asset	Structures	Structure	blend	"HUOMIO
+
+PIDÄ OVIEN
+EDUSTA AINA
+VAPAANA
+
+Hengenvaara"	"주  의  사  항
+
+이곳은 출입구 입니다
+문 앞에 물건을
+적재하지 마십시오 
+
+고압전기주의"	\Assets\Box_Transformer\Files\	TX_Box_Transformer_AL.png	MuteJack				
+Asset	Structures	Booth	blend	"SOTILASKOTI
+
+KASSA"	"군인 복지시설
+
+계 산 대"	\Assets\Canteen\Files\	TX_Canteen_Details_AL.png	MuteJack				
