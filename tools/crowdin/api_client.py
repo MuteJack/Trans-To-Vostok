@@ -17,8 +17,10 @@ Configuration:
   - Auth token: tools/configs/secrets.json:crowdin_personal_token (gitignored)
 """
 import csv
+import fnmatch
 import io
 import json
+import re
 import sys
 import tempfile
 import time
@@ -38,6 +40,7 @@ from utils.secrets import get_crowdin_personal_token
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 CONFIG_PATH = _SCRIPT_DIR / "config.json"
+CROWDIN_YML_PATH = _SCRIPT_DIR.parent.parent / "crowdin.yml"
 
 
 def _load_config() -> dict:
@@ -313,11 +316,56 @@ def _ensure_directory(client, project_id: int, rel_dir: str,
     return new_id
 
 
+def _load_export_patterns() -> list[tuple[str, str]]:
+    """Read crowdin.yml and return (source_glob, translation_pattern) pairs
+    in declaration order.
+
+    crowdin.yml is the historical source of truth for Crowdin CLI; we read
+    it from Python to avoid duplicating the pattern config. Uses a minimal
+    text parser (no pyyaml dep) — handles our quoted-key style:
+        "source": "/Crowdin_Mirror/source/Translation/*.tsv"
+        "translation": "/Crowdin_Mirror/translations/%locale%/Translation/%original_file_name%"
+
+    Returns empty list if crowdin.yml is missing or has no patterns.
+    """
+    if not CROWDIN_YML_PATH.exists():
+        return []
+    text = CROWDIN_YML_PATH.read_text(encoding="utf-8")
+
+    pairs: list[tuple[str, str]] = []
+    rx = re.compile(r'"(source|translation)"\s*:\s*"([^"]+)"')
+    current_source: str | None = None
+    for m in rx.finditer(text):
+        key, value = m.group(1), m.group(2)
+        if key == "source":
+            current_source = value
+        elif key == "translation" and current_source is not None:
+            pairs.append((current_source, value))
+            current_source = None
+    return pairs
+
+
+def _find_export_pattern(crowdin_path: str,
+                         patterns: list[tuple[str, str]]) -> str | None:
+    """Return the translation pattern whose source glob matches crowdin_path.
+    None if no glob matches (caller should fall back to Crowdin's default —
+    or warn, since the default doesn't match our repo layout)."""
+    for src_glob, trans_pattern in patterns:
+        if fnmatch.fnmatch(crowdin_path, src_glob):
+            return trans_pattern
+    return None
+
+
 def add_source_file(client, project_id: int, storage_id: int, name: str,
                     *, directory_id: int | None = None,
-                    scheme: dict[str, int] | None = None) -> int:
+                    scheme: dict[str, int] | None = None,
+                    export_pattern: str | None = None) -> int:
     """Register a new CSV/TSV source file in the Crowdin project.
-    Returns the new file_id."""
+    Returns the new file_id.
+
+    `export_pattern` — if set, controls where translated files land in
+    the build zip (Crowdin's `exportOptions.exportPattern`). Should mirror
+    crowdin.yml; supplied by callers via `_find_export_pattern`."""
     import_options = {
         "firstLineContainsHeader": True,
         "importTranslations":      False,
@@ -334,6 +382,8 @@ def add_source_file(client, project_id: int, storage_id: int, name: str,
     }
     if directory_id is not None:
         kwargs["directoryId"] = directory_id
+    if export_pattern:
+        kwargs["exportOptions"] = {"exportPattern": export_pattern}
 
     resp = client.source_files.add_file(**kwargs)
     return resp["data"]["id"]
@@ -359,14 +409,29 @@ def upload_source_files(source_dir: Path) -> dict:
 
     For each TSV (e.g. source_dir/Texture/Signs.tsv):
         Crowdin path = "{source_prefix}/Texture/Signs.tsv"
-        - if missing → add_source_file
-        - if present → update_source_file (preserves translations)
+        - if missing → add_source_file with exportPattern from crowdin.yml
+        - if present → update_source_file (content only; pattern unchanged
+                       since Crowdin's edit_file path is separate)
 
     Parent directories on Crowdin are created on demand.
+
+    Export patterns come from crowdin.yml. If a glob doesn't match (new
+    category not yet declared in crowdin.yml), a warning is printed and
+    Crowdin's default pattern is used (which won't match our layout).
 
     Returns stats: {"added": int, "updated": int, "errors": list[(rel, msg)]}.
     """
     client, project_id, source_prefix = make_client()
+
+    patterns = _load_export_patterns()
+    if patterns:
+        print(f"Loaded {len(patterns)} export pattern(s) from crowdin.yml:")
+        for src, trans in patterns:
+            print(f"  {src}  →  {trans}")
+    else:
+        print("[WARN] No export patterns parsed from crowdin.yml — "
+              "new files will use Crowdin's default pattern")
+    print()
 
     print(f"Listing source files for project {project_id}...")
     existing_files = list_source_files(client, project_id)
@@ -396,13 +461,19 @@ def upload_source_files(source_dir: Path) -> dict:
             else:
                 dir_id = _ensure_directory(client, project_id, category,
                                            existing_dirs, source_prefix)
+                export_pattern = _find_export_pattern(full, patterns)
+                if export_pattern is None:
+                    print(f"  [WARN] {rel}: no export pattern in crowdin.yml "
+                          f"for {full} — Crowdin default will be used")
                 file_id = add_source_file(
                     client, project_id, storage_id, file_name,
                     directory_id=dir_id, scheme=SOURCE_SCHEME,
+                    export_pattern=export_pattern,
                 )
                 existing_files[full] = file_id  # cache for subsequent ops
                 stats["added"] += 1
-                print(f"  [NEW]  {rel}  (file_id={file_id})")
+                pat_str = f" pattern={export_pattern}" if export_pattern else ""
+                print(f"  [NEW]  {rel}  (file_id={file_id}){pat_str}")
         except Exception as e:
             stats["errors"].append((rel, str(e)))
             print(f"  [ERR]  {rel}  → {e}")
