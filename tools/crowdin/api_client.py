@@ -234,6 +234,182 @@ def upload_translations_diff(
     return stats
 
 
+# ====================================================================
+# Source file management (Template → Crowdin)
+# ====================================================================
+#
+# Column scheme for our source TSVs (output of crowdin/build_source.py).
+# Maps Crowdin's known field names (snake_case as required by the API)
+# to the 0-based column index in our TSV.
+#
+# Crowdin requires both `source_phrase` and `translation` in the scheme.
+# Our Template source TSVs leave column 2 (translation) empty, so no
+# translations are imported — but the scheme still has to declare it.
+SOURCE_SCHEME = {
+    "identifier":    0,
+    "source_phrase": 1,
+    "translation":   2,
+    "context":       3,
+    "labels":        4,
+    "max_length":    5,
+}
+
+
+def list_directories(client, project_id: int) -> dict[str, int]:
+    """Returns {full_path: directory_id} for all directories in project.
+
+    Path is Crowdin's full project-rooted path (leading slash).
+    """
+    out: dict[str, int] = {}
+    offset = 0
+    limit = 500
+    while True:
+        resp = client.source_files.list_directories(
+            projectId=project_id, limit=limit, offset=offset
+        )
+        items = resp.get("data", [])
+        if not items:
+            break
+        for entry in items:
+            data = entry["data"]
+            out[data["path"]] = data["id"]
+        if len(items) < limit:
+            break
+        offset += len(items)
+    return out
+
+
+def create_directory(client, project_id: int, name: str,
+                     parent_directory_id: int | None = None) -> int:
+    """Create a directory under parent_directory_id (None = project root).
+    Returns the new directory's id."""
+    kwargs: dict = {"projectId": project_id, "name": name}
+    if parent_directory_id is not None:
+        kwargs["directoryId"] = parent_directory_id
+    resp = client.source_files.add_directory(**kwargs)
+    return resp["data"]["id"]
+
+
+def _ensure_directory(client, project_id: int, rel_dir: str,
+                      existing_dirs: dict[str, int],
+                      source_prefix: str) -> int | None:
+    """Get-or-create directory at `source_prefix/rel_dir`. Caches into
+    existing_dirs. Returns directory_id, or None for project root."""
+    if not rel_dir:
+        return None  # project root
+    full = f"{source_prefix}/{rel_dir}".rstrip("/")
+    if full in existing_dirs:
+        return existing_dirs[full]
+
+    parts = rel_dir.split("/")
+    name = parts[-1]
+    parent_rel = "/".join(parts[:-1])
+    parent_id = _ensure_directory(client, project_id, parent_rel,
+                                  existing_dirs, source_prefix)
+
+    new_id = create_directory(client, project_id, name,
+                              parent_directory_id=parent_id)
+    existing_dirs[full] = new_id
+    return new_id
+
+
+def add_source_file(client, project_id: int, storage_id: int, name: str,
+                    *, directory_id: int | None = None,
+                    scheme: dict[str, int] | None = None) -> int:
+    """Register a new CSV/TSV source file in the Crowdin project.
+    Returns the new file_id."""
+    import_options = {
+        "firstLineContainsHeader": True,
+        "importTranslations":      False,
+    }
+    if scheme:
+        import_options["scheme"] = scheme
+
+    kwargs: dict = {
+        "projectId":     project_id,
+        "storageId":     storage_id,
+        "name":          name,
+        "type":          "csv",
+        "importOptions": import_options,
+    }
+    if directory_id is not None:
+        kwargs["directoryId"] = directory_id
+
+    resp = client.source_files.add_file(**kwargs)
+    return resp["data"]["id"]
+
+
+def update_source_file(client, project_id: int, file_id: int,
+                       storage_id: int) -> dict:
+    """Replace contents of an existing source file.
+
+    `keep_translations_and_approvals` preserves existing translations whose
+    identifier still matches; new identifiers become new strings; removed
+    identifiers become 'hidden' on Crowdin (recoverable via restore)."""
+    return client.source_files.update_file(
+        projectId=project_id,
+        fileId=file_id,
+        storageId=storage_id,
+        updateOption="keep_translations_and_approvals",
+    )
+
+
+def upload_source_files(source_dir: Path) -> dict:
+    """Upload every TSV under source_dir to Crowdin as source files.
+
+    For each TSV (e.g. source_dir/Texture/Signs.tsv):
+        Crowdin path = "{source_prefix}/Texture/Signs.tsv"
+        - if missing → add_source_file
+        - if present → update_source_file (preserves translations)
+
+    Parent directories on Crowdin are created on demand.
+
+    Returns stats: {"added": int, "updated": int, "errors": list[(rel, msg)]}.
+    """
+    client, project_id, source_prefix = make_client()
+
+    print(f"Listing source files for project {project_id}...")
+    existing_files = list_source_files(client, project_id)
+    existing_dirs = list_directories(client, project_id)
+    print(f"  {len(existing_files)} files, {len(existing_dirs)} directories")
+    print()
+
+    stats = {"added": 0, "updated": 0, "errors": []}
+    tsv_paths = sorted(source_dir.rglob("*.tsv"))
+    print(f"Local source TSVs: {len(tsv_paths)}")
+    print()
+
+    for tsv in tsv_paths:
+        rel = tsv.relative_to(source_dir).as_posix()      # "Texture/Signs.tsv"
+        full = f"{source_prefix}/{rel}"
+        category = rel.rsplit("/", 1)[0] if "/" in rel else ""
+        file_name = tsv.name
+
+        try:
+            storage_id = upload_storage(client, tsv)
+
+            if full in existing_files:
+                update_source_file(client, project_id,
+                                   existing_files[full], storage_id)
+                stats["updated"] += 1
+                print(f"  [UPD]  {rel}  (file_id={existing_files[full]})")
+            else:
+                dir_id = _ensure_directory(client, project_id, category,
+                                           existing_dirs, source_prefix)
+                file_id = add_source_file(
+                    client, project_id, storage_id, file_name,
+                    directory_id=dir_id, scheme=SOURCE_SCHEME,
+                )
+                existing_files[full] = file_id  # cache for subsequent ops
+                stats["added"] += 1
+                print(f"  [NEW]  {rel}  (file_id={file_id})")
+        except Exception as e:
+            stats["errors"].append((rel, str(e)))
+            print(f"  [ERR]  {rel}  → {e}")
+
+    return stats
+
+
 def _build_locale_to_folder_map(client, project_id: int) -> dict[str, str]:
     """Map Crowdin's exported locale codes to our canonical folder names.
 
