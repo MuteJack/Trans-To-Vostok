@@ -40,7 +40,7 @@ from utils.secrets import get_crowdin_personal_token
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 CONFIG_PATH = _SCRIPT_DIR / "config.json"
-CROWDIN_YML_PATH = _SCRIPT_DIR.parent.parent / "crowdin.yml"
+CROWDIN_YML_PATH = _SCRIPT_DIR / "crowdin.yml"
 
 
 def _load_config() -> dict:
