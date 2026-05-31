@@ -12,6 +12,34 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.6.0] — 2026-05-31
+
+- **Added — New rendering path (composite-on-original)**: Beyond the
+  existing full-texture replacement used for Tutorial Billboards, this
+  release adds a second method where only the translated text is
+  replaced while the original sign's weathering, paint scratches, and
+  lighting integration remain untouched. Distance LOD also keeps the
+  translated text (proper mipmaps for the composite). All 16 new
+  texture translations below use this path.
+- **Added — 16 translated textures (Korean)** — road signs and building
+  signage now display in Korean while preserving the original weathered,
+  photo-real look:
+  - Road signs: *Mines*, *Public Road*, *VT7 / Highway directional*,
+    *Border Zone* (4 variants), *School*, *Speedbump*, *Village Crossroads*
+  - *Canteen* sign (Sotilaskoti / KASSA — Finnish military canteen)
+  - *Board_Message*, *Booth_Ticket*, *Box_Electric*, *Box_Transformer*
+  - Inventory icon for *Sign (Border Zone)* furniture item
+- **Improved — Japanese**: 83 strings refined via Crowdin (contributor:
+  Nineblood).
+- **Community**: All other active languages (French, German, Spanish LatAm,
+  Simplified/Traditional Chinese, Portuguese-BR) now have the full Sign +
+  Structure string set available on
+  [Crowdin](https://crowdin.com/project/trans-to-vostok) for community
+  translation. Once a language's text translations land, image workers
+  can produce the per-locale overlay PNGs.
+
+---
+
 ## [0.5.3] — 2026-05-30
 
 - **Added**: **5 new languages** — *Deutsch*, *Español (LatAm)*,
@@ -21,6 +49,9 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
   (~23%) before the monthly translation quota was exhausted. The
   locale ships disabled and will become selectable once the quota
   resets and the remaining strings are translated.
+- **Improved — Korean**: Translation refinements + QA across Tasks
+  (*의뢰*), Tutorial Billboard textures, and assorted UI strings
+  (contributor: gap tal).
 
 ---
 
@@ -199,6 +230,30 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.6.0] — 2026-05-31
+
+- **추가 — 신규 렌더링 방식 (원본 위에 합성)**: 기존 Tutorial Billboards
+  등에 쓰이던 전체 텍스처 교체 (replace) 방식 외에, 번역된 텍스트 부분만
+  덮어쓰고 원본 표지판의 weathering / 긁힘 / 조명 통합을 그대로 유지하는
+  방식이 추가되었습니다. 거리감 LOD 에서도 번역된 텍스트 유지 (합성
+  결과에 대한 mipmap 생성). 아래 16개의 신규 텍스처가 모두 이 방식을
+  사용합니다.
+- **추가 — 한국어 텍스처 16개** — 도로 표지판과 건물 간판이 원본
+  weathering / 조명을 유지한 채 한국어로 합성됩니다:
+  - 도로 표지판: *지뢰 지대*, *공도 종점*, *VT7 / 도로 안내판*, *접경
+    지대* (4개 variation), *학교*, *과속방지턱*, *마을 교차로*
+  - *Canteen 간판* (Sotilaskoti / KASSA — 핀란드군 매점으로 추정)
+  - *Board_Message*, *Booth_Ticket*, *Box_Electric*, *Box_Transformer*
+  - 인벤토리 아이콘 (*Sign (Border Zone)* 가구 아이템용)
+- **개선 — 일본어**: Crowdin 을 통해 83개 string 다듬어짐 (기여자:
+  Nineblood).
+- **커뮤니티**: 다른 active 언어 (프랑스어, 독일어, 스페인어 LatAm,
+  중국어 간/번체, 포르투갈어 BR) 모두 표지판 / 구조물 텍스트 번역이
+  [Crowdin](https://crowdin.com/project/trans-to-vostok) 에 등록됨.
+  텍스트 번역 완료 후 이미지 작업자가 locale 별 overlay PNG 작업 가능.
+
+---
+
 ## [0.5.3] — 2026-05-30
 
 - **추가**: **새로운 5개 언어** — *Deutsch*, *Español (LatAm)*,
@@ -208,6 +263,8 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
   완료 (~23%) 후 월간 quota 한도 도달로 일시 중단.
   현재는 비활성 상태로 출시하며, quota 리셋 후 잔여 분량이 완료되면
   활성화될 예정입니다.
+- **개선 — 한국어**: Task (*의뢰*), Tutorial Billboard 텍스처 등에
+  대한 번역 개선 및 QA 진행 (기여자: gap tal).
 
 ---
 

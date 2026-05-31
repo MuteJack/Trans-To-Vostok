@@ -4,6 +4,130 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.0] — 2026-05-31 (Texture Blend Method + Sign / Structure Textures)
+
+This release introduces a new **`blend` texture method** that composites a
+mod-side overlay PNG on top of the game's original texture at runtime,
+preserving the original's PBR maps (normal, weathering, etc.) while replacing
+only the translated text pixels. Sixteen blend overlays (signs, posters,
+canteen sign, inventory icon, etc.) are shipped for Korean; other active
+locales get the schema rows but empty translations, ready for Crowdin
+contributors. The Texture canonical TSV gains a `method` column and is
+reorganized into four sheets (Tutorial / UI / Signs / Structures). Several
+new build / sync tools land alongside.
+
+### Added
+
+- **`blend` texture method** — alternative to existing `replace`. Mod ships
+  a transparent-background PNG containing only the translated text pixels;
+  at runtime, `texture_loader.gd` reads the original texture's Image,
+  alpha-blends the overlay on top via `Image.blend_rect`, generates mipmaps
+  to keep distant LOD readable, and assigns the composite back to the
+  material's albedo. Two benefits over `replace`: (1) **copyright** — mod
+  ships only original (mod-author) work, never a derivative of the game's
+  texture pixels; (2) **less authoring per sign** — only the text region
+  needs work, the original sign's PBR maps (normal, roughness, weathering)
+  and lighting integration carry through automatically without manual
+  recreation.
+- **Korean blend textures (16)** at `Trans To Vostok/Korean/textures/`:
+  - `Sign_Mines`, `Sign_Public_Road`, `Sign_VT7` (+ `Frame_Highway_Sign`),
+    `Sign_Border_Zone` (4 variants), `Sign_School`, `Sign_Speedbump`,
+    `Sign_Village_Crossroads`
+  - `Canteen_Details` (translates KASSA / SOTILASKOTI on the
+    Finnish-military-canteen building)
+  - `Board_Message`, `Booth_Ticket`, `Box_Electric`, `Box_Transformer`
+  - `Icon_Sign_Border_Zone` (inventory icon)
+- **`method` column on Texture canonical TSV** — values: `replace`
+  (substitute the whole texture) or `blend` (composite overlay onto
+  original). Inserted between `Type` and `Text`. Existing Tutorial Billboards
+  + WorldMap stay as `replace`.
+- **Two new Texture sheets**: `Signs.tsv` (13 rows — road signs) and
+  `Structures.tsv` (4 rows — building / equipment textures with text).
+  All active locales now have 4 Texture sheets: Tutorial / UI / Signs /
+  Structures.
+- **`tools/utils/build_texture_meta.py`** — emits
+  `Trans To Vostok/<locale>/texture_meta.json` mapping each translated
+  texture rel-path to its method (`replace` / `blend`). Consumed at runtime
+  by `texture_loader.gd` for per-texture routing.
+- **`tools/push_source_to_crowdin.py`** — uploads Template's source TSVs to
+  Crowdin via the SDK. Resolves the long-standing TODO: previously, new
+  source files (Signs / Structures) had to be pushed manually via the Java
+  CLI. The new tool reads `crowdin.yml` to apply the correct
+  `exportPattern` to each new file (mirrors `/Crowdin_Mirror/translations/
+  %locale%/<category>/%original_file_name%`).
+- **`tools/utils/sync_texture_schema.py`** — propagates Template's
+  `Texture/*.tsv` structure (sheets + rows) to all active locales,
+  preserving each locale's existing `Translation` / `Reworked by` /
+  `Contributors` / `Attribution`. Use after editing Template to keep all
+  locales in lockstep.
+- **`tools/rebuild_xlsx.py all`** — rebuild xlsx for every locale under
+  `Translations/` in one command.
+- **`tools/push_to_crowdin.py --base <rev>`** — diff against an arbitrary
+  git revision (commit / tag / `HEAD~N`) instead of `HEAD`. Lets you push
+  rows that are already committed (e.g., first push after a fresh source
+  file was added to Crowdin via `push_source_to_crowdin.py`).
+
+### Changed
+
+- **`texture_loader.gd`** — added `_load_texture_meta()`, `_composite_blend()`,
+  and a per-texture routing branch in `_try_bind_texture_property` /
+  `_try_bind_shader_material`. `_blend_cache` keeps composites in memory so
+  multiple instances of the same sign share a single blended ImageTexture.
+- **`tools/utils/rebuild_texture_xlsx.py`** — `method` column gets a
+  conditional-formatting rule (blue for `replace`; `blend` left default).
+  Sample rendering follows the existing Translation TSV CF style.
+- **`tools/build_mod_package.py`** — packaging step now calls
+  `build_texture_meta.py` per locale and includes `texture_meta.json` in
+  the mod zip (step 8 of the packaging loop).
+- **`pull_from_crowdin.py` zip download** — switched from blocking
+  `urlopen().read()` to chunked streaming with a 120-second timeout and
+  per-second progress output. Resolves the prior hang on slow CDN paths.
+- **`api_client.py` source-file upload**:
+  - Adds `list_directories` / `create_directory` / `_ensure_directory`
+    helpers and `add_source_file` / `update_source_file` with the correct
+    `importOptions` (snake_case keys: `identifier`, `source_phrase`,
+    `translation`, `context`, `labels`, `max_length`).
+  - `upload_source_files` reads `crowdin.yml` and applies the matching
+    `exportOptions.exportPattern` to each new file (avoids stray
+    `<locale_code>/Crowdin_Mirror/source/...` directories on pull).
+- **Texture schema sync**: all 8 active locales other than Korean now have
+  the full Tutorial / UI / Signs / Structures layout in their canonical TSV
+  and xlsx. Translation column empty for new entries — Crowdin contributors
+  can pick them up.
+- **Japanese — 83 strings refined** (contributor: Nineblood, via Crowdin).
+  Pulled into `Translations/Japanese/Translation/*.tsv` via
+  `pull_from_crowdin.py Japanese` + `apply_to_repo.py`.
+
+### Fixed
+
+- **Sign_VT7 / Frame_Highway_Sign path duplication** — the in-world
+  directional sign uses `Assets/Frame_Highway/Files/TX_Frame_Highway_Sign_AL.png`,
+  but the asset is named `Sign_VT7`. Mod now ships the same overlay PNG
+  at both paths so the in-game directional sign actually picks up the
+  translation.
+- **Crowdin pull stray directories** (`mods/Trans To Vostok/de/`,
+  `cs/`, `fi/`, …) — caused by newly-uploaded source files lacking an
+  `exportPattern`, which defaulted to Crowdin's `<locale>/<source_path>`.
+  Fixed by reading `crowdin.yml` patterns on push; the 2 affected files
+  (`Signs.tsv`, `Structures.tsv`) had their pattern corrected on Crowdin
+  web manually.
+
+Note on LOD handling: the `blend` method generates mipmaps on the
+composited Image before creating the ImageTexture. This isn't a fix of
+a prior bug (no shipped feature regressed) — it's a required part of
+the new path, documented under **Added** above.
+
+### Internal / Tooling
+
+- New tools: `build_texture_meta.py`, `push_source_to_crowdin.py`,
+  `sync_texture_schema.py`.
+- `push_to_crowdin.py --base <rev>` and `rebuild_xlsx.py all` extend
+  existing tools.
+- `target_game_version` continues to be tracked in both `mod.txt` and
+  `info.json`; bumped target is `0.1.1.3` (no change).
+- Documentation: `_sheet_order.txt` schema now includes `Signs` and
+  `Structures` across all active locales.
+
 ## [0.5.3] — 2026-05-30 (Five New Languages — DeepL Initial Pass)
 
 This release adds **five new locales** as initial DeepL machine-translated
@@ -45,6 +169,9 @@ in `mod.txt` (for ModLoader compatibility warnings) alongside the existing
 
 - **`substr_mode_label` localized for all new locales** in `locale.json`
   (Deutsch / Español LatAm / 日本語 / 简体中文 / 繁體中文 / Русский).
+- **Korean — translation refinements + QA** across Tasks (*의뢰*),
+  Tutorial Billboard textures, and miscellaneous UI strings
+  (contributor: gap tal).
 
 ### Removed
 
@@ -1017,6 +1144,114 @@ First public test version.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
 
+## [0.6.0] — 2026-05-31 (텍스처 Blend 방식 + 표지판 / 구조물 텍스처 추가)
+
+이번 릴리스는 새로운 **`blend` 텍스처 방식**을 도입합니다. mod 측은 투명
+배경 + 번역 텍스트만 담긴 overlay PNG 를 제공하고, 런타임에서 원본 텍스처
+위에 alpha-blend 합성합니다. 원본의 PBR 정보 (normal map, weathering,
+조명 통합) 가 그대로 유지되며, mod 는 본인 작업물 (텍스트 픽셀) 만
+배포하는 방식으로 **잠재적인 저작권 문제를 예방**했습니다. Korean 에 16개의 blendable 텍스처들이
+가 추가되었고 (표지판, 포스터, Sotilaskoti 간판, 인벤토리 아이콘 등),
+다른 active locale 들은 schema 만 적용되어 Crowdin 번역자가 작업할 수 있는
+상태로 준비되었습니다. Texture canonical TSV 는 `method` 컬럼 추가 +
+4시트 (Tutorial / UI / Signs / Structures) 로 재구성. 여러 신규 빌드 /
+sync 도구도 함께 추가됩니다.
+
+### 추가
+
+- **`blend` 텍스처 방식** — 기존 `replace` (전체 텍스처 교체) 의 대안.
+  mod 가 투명 배경 + 번역 텍스트 픽셀만 담은 PNG 를 ship → 런타임에서
+  `texture_loader.gd` 가 원본 텍스처의 Image 를 가져와 `Image.blend_rect`
+  로 alpha-blend → mipmap 생성 후 ImageTexture 로 변환 → material albedo
+  교체. `replace` 대비 두 가지 이점: (1) **저작권** — mod 가 원본 텍스처
+  픽셀을 derivative 형태로 ship 하지 않고 번역 텍스트 픽셀만 ship;
+  (2) **자산당 작업 부담 ↓** — 텍스트 영역만 작업하면 됨, 원본의 PBR
+  (normal map, roughness, weathering) + 조명 통합은 자동으로 유지되어
+  재작업 불필요.
+- **Korean blend 텍스처 16개** (`Trans To Vostok/Korean/textures/`):
+  - `Sign_Mines`, `Sign_Public_Road`, `Sign_VT7` (+ `Frame_Highway_Sign`),
+    `Sign_Border_Zone` (4 변형), `Sign_School`, `Sign_Speedbump`,
+    `Sign_Village_Crossroads`
+  - `Canteen_Details` — Sotilaskoti (핀란드군 매점) 의 KASSA / SOTILASKOTI
+    간판 한국어 합성
+  - `Board_Message`, `Booth_Ticket`, `Box_Electric`, `Box_Transformer`
+  - `Icon_Sign_Border_Zone` (인벤토리 아이콘)
+- **Texture canonical TSV 의 `method` 컬럼** — 값: `replace` / `blend`.
+  `Type` 과 `Text` 사이에 삽입. 기존 Tutorial Billboards + WorldMap 은
+  `replace` 유지.
+- **Texture 의 신규 2개 시트**: `Signs.tsv` (13행 — 도로 표지판) /
+  `Structures.tsv` (4행 — 텍스트 포함 건물/장비 텍스처). 모든 active
+  locale 의 Texture 가 4시트 구조 (Tutorial / UI / Signs / Structures)
+  로 정돈.
+- **`tools/utils/build_texture_meta.py`** (신규) — Texture TSV →
+  `Trans To Vostok/<locale>/texture_meta.json` 생성. 런타임이 method
+  라우팅에 사용.
+- **`tools/push_source_to_crowdin.py`** (신규) — Template 의 source TSV 를
+  Crowdin 에 SDK 로 업로드. 장기 pending TODO 해결. `crowdin.yml` 의
+  export pattern 을 자동 적용해서 신규 source 파일도 정상 export path 로
+  설정됨.
+- **`tools/utils/sync_texture_schema.py`** (신규) — Template 의 Texture
+  TSV 구조 (시트 + 행) 를 모든 active locale 에 propagate. 각 locale 의
+  기존 Translation / Reworked by / Contributors / Attribution 보존.
+- **`tools/rebuild_xlsx.py all`** — `Translations/` 하위 모든 locale 의
+  xlsx 를 한 번에 재생성.
+- **`tools/push_to_crowdin.py --base <rev>`** — diff baseline 으로 임의
+  git 리비전 (commit / tag / `HEAD~N`) 지정 가능. 신규 source 파일 첫
+  push 시 (이미 commit 된 상태에서) HEAD diff 가 비어있는 문제 해결.
+
+### 변경
+
+- **`texture_loader.gd`** — `_load_texture_meta()`, `_composite_blend()`
+  추가 + `_try_bind_texture_property` / `_try_bind_shader_material` 에
+  method 분기. `_blend_cache` 로 같은 sign 의 여러 인스턴스가 동일 합성
+  결과 재사용.
+- **`tools/utils/rebuild_texture_xlsx.py`** — `method` 컬럼에 조건부
+  서식 (replace = 파란색; blend 는 기본 셀).
+- **`tools/build_mod_package.py`** — 패키징 step 8 로 `texture_meta.json`
+  zip 포함 + 각 locale 빌드 시 `build_texture_meta.py` 호출.
+- **`pull_from_crowdin.py` zip 다운로드** — blocking `urlopen().read()`
+  → chunked streaming (120초 timeout + 초당 진행률 출력). 이전 CDN 지연
+  시 hang 문제 해결.
+- **`api_client.py` source-file 업로드**:
+  - `list_directories` / `create_directory` / `_ensure_directory` helper,
+    `add_source_file` / `update_source_file` 추가. import scheme 키는
+    snake_case (`identifier`, `source_phrase`, `translation`, `context`,
+    `labels`, `max_length`).
+  - `upload_source_files` 가 `crowdin.yml` 의 패턴을 읽어 신규 파일에
+    `exportOptions.exportPattern` 자동 적용.
+- **Texture schema sync**: Korean 외 8개 active locale 도 Tutorial / UI /
+  Signs / Structures 4시트 갖춤. 번역 컬럼은 비어있음 (Crowdin 작업
+  대기).
+- **일본어 — 83개 string 다듬어짐** (기여자: Nineblood, Crowdin 경유).
+  `pull_from_crowdin.py Japanese` + `apply_to_repo.py` 로
+  `Translations/Japanese/Translation/*.tsv` 에 반영.
+
+### 수정
+
+- **거리에서 표지판이 원본 영문으로 보이는 LOD fallback** —
+  `Image.generate_mipmaps()` 를 `ImageTexture.create_from_image` 전에
+  호출하도록 변경. 이전엔 mipmap 부재로 거리에서 원본 PCK 텍스처의
+  mipmap 으로 fallback.
+- **Sign_VT7 / Frame_Highway_Sign 경로 중복** — 게임 내 도로 안내 표지판은
+  실제로 `Assets/Frame_Highway/Files/TX_Frame_Highway_Sign_AL.png` 를
+  사용하지만 asset 명은 `Sign_VT7`. mod 가 동일 overlay PNG 를 양쪽
+  경로에 배치.
+- **Crowdin pull stray 디렉토리** (`mods/Trans To Vostok/de/`, `cs/`,
+  `fi/`, ...) — 신규 업로드 source 파일에 `exportPattern` 미설정 → Crowdin
+  의 default 패턴 (`<locale>/<source_path>`) 적용 결과. `crowdin.yml` 의
+  패턴을 코드가 읽어 적용하도록 fix. 영향받은 2개 파일 (Signs / Structures)
+  의 패턴은 Crowdin 웹에서 수동 수정.
+
+### 내부 / 도구
+
+- 신규 도구: `build_texture_meta.py`, `push_source_to_crowdin.py`,
+  `sync_texture_schema.py`.
+- 기존 도구 확장: `push_to_crowdin.py --base <rev>`, `rebuild_xlsx.py all`.
+- `target_game_version` 은 `mod.txt` 와 `info.json` 양쪽 유지 (변경
+  없음, `0.1.1.3`).
+- 문서: `_sheet_order.txt` 스키마에 `Signs` 와 `Structures` 추가됨 (모든
+  active locale).
+
 ## [0.5.3] — 2026-05-30 (신규 5개 언어 — DeepL 1차 기계번역)
 
 이번 릴리스는 **신규 5개 로케일**을 DeepL 1차 기계번역(텍스트만, 텍스처는
@@ -1055,6 +1290,8 @@ DeepL Free 월간 quota 가 패스 도중 소진되었으며, 부분 완료된 R
 
 - **모든 신규 로케일에 대해 `locale.json` 의 `substr_mode_label` 현지화**
   (Deutsch / Español LatAm / 日本語 / 简体中文 / 繁體中文 / Русский).
+- **한국어 — 번역 개선 및 QA** — Task (*의뢰*), Tutorial Billboard
+  텍스처, 기타 UI string 다듬어짐 (기여자: gap tal).
 
 ### 제거
 
