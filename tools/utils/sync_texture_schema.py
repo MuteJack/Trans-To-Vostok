@@ -103,8 +103,8 @@ def _write_tsv(path: Path, header: list[str], rows: list[dict]) -> None:
 def sync_locale(locale: str, *, prune: bool = False) -> dict:
     """Sync one locale's Texture/* TSVs to Template's structure.
     Returns stats dict for reporting."""
-    tpl_dir = TRANSLATIONS / TEMPLATE_LOCALE / CATEGORY
-    loc_dir = TRANSLATIONS / locale / CATEGORY
+    tpl_dir = TRANSLATIONS / TEMPLATE_LOCALE / "tsv" / CATEGORY
+    loc_dir = TRANSLATIONS / locale / "tsv" / CATEGORY
 
     if not tpl_dir.exists():
         return {"error": f"Template/{CATEGORY} missing"}

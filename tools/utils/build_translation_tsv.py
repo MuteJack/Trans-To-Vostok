@@ -51,6 +51,9 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         pass
 
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))  # for sibling locale_paths
+from locale_paths import CANONICAL_SUBDIR  # noqa: E402
+
 SKIP_FILE_PREFIXES = ("~$",)  # Excel lock/temp files
 
 
@@ -164,7 +167,7 @@ def process_locale(input_root: Path, locale: str,
         output_root = input_root
 
     locale_dir = input_root / locale
-    out_locale_dir = output_root / locale
+    out_locale_dir = output_root / locale / CANONICAL_SUBDIR
 
     if not locale_dir.exists():
         print(f"[ERROR] Locale folder not found: {locale_dir}")

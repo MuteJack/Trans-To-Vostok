@@ -93,7 +93,7 @@ def discover_locales(tsv_root: Path) -> list[str]:
 
 def build_locale_category(tsv_root: Path, locale: str, category: str) -> tuple[int, int]:
     """Returns (files_written, rows_written)."""
-    src_dir = tsv_root / locale / category
+    src_dir = tsv_root / locale / "tsv" / category
     out_dir = MIRROR_ROOT / "translations" / locale / category
     if not src_dir.exists():
         return 0, 0

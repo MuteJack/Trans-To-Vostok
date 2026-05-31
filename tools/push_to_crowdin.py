@@ -118,7 +118,7 @@ def push_one_locale(locale: str, crowdin_id: str, args, tools_dir: Path,
     else:
         base_ref = args.base or "HEAD"
         print(f"\n>>> Computing diff against {base_ref}")
-        canonical_locale_dir = repo_root / "Translations" / locale
+        canonical_locale_dir = repo_root / "Translations" / locale / "tsv"
         try:
             to_push = diff_against_head(
                 repo_root=repo_root,

@@ -90,7 +90,7 @@ def discover_locales() -> list[str]:
 
 def apply_locale_category(locale: str, category: str) -> dict:
     src_dir = MIRROR_ROOT / "translations" / locale / category
-    dst_dir = TRANSLATIONS_ROOT / locale / category
+    dst_dir = TRANSLATIONS_ROOT / locale / "tsv" / category
     stats = {"sheets": 0, "updated": 0, "unchanged": 0, "missing_canon": 0}
     if not src_dir.exists():
         return stats

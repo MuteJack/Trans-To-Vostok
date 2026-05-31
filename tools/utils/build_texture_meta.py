@@ -54,7 +54,7 @@ def _normalize_path(file_directory: str, file_name: str) -> str:
 
 
 def build(locale: str) -> int:
-    src_dir = TRANSLATIONS_ROOT / locale / CATEGORY
+    src_dir = TRANSLATIONS_ROOT / locale / "tsv" / CATEGORY
     out_path = PKG_ROOT / locale / OUTPUT_NAME
 
     if not src_dir.exists():

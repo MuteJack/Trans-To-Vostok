@@ -235,7 +235,7 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
 
 
 def build(locale: str) -> int:
-    src_dir = TRANSLATIONS_ROOT / locale / CATEGORY
+    src_dir = TRANSLATIONS_ROOT / locale / "tsv" / CATEGORY
     dst = TRANSLATIONS_ROOT / locale / f"{CATEGORY}.xlsx"
 
     if not src_dir.exists():

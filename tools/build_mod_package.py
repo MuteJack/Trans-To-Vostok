@@ -173,6 +173,7 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
     Returns: (total file count, texture file count)
     """
     pkg_root = mod_root / MOD_NAME
+    translations_root = mod_root / "Translations"
     count = 0
     texture_count = 0
 
@@ -208,16 +209,20 @@ def package_mod(mod_root: Path, locales: list[str], out_path: Path) -> tuple[int
                     count += 1
 
                 # 4. texture folder → Trans To Vostok/<locale>/textures/**
-                # skipped if folder is absent (per-locale optional)
-                textures_dir = locale_dir / TEXTURE_DIR
-                if textures_dir.exists() and textures_dir.is_dir():
-                    for tex_file in sorted(textures_dir.rglob("*")):
+                # Source: Translations/<locale>/textures/ (canonical, hand-authored
+                # PNGs — git-tracked). Per-locale optional; skipped if folder absent.
+                # Inside the zip the path stays at Trans To Vostok/<locale>/textures/
+                # so texture_loader.gd's res://Trans To Vostok/<locale>/textures/ lookup
+                # works unchanged at runtime.
+                src_textures_dir = translations_root / locale / TEXTURE_DIR
+                if src_textures_dir.exists() and src_textures_dir.is_dir():
+                    for tex_file in sorted(src_textures_dir.rglob("*")):
                         if not tex_file.is_file():
                             continue
                         if tex_file.suffix.lower() not in TEXTURE_EXTENSIONS:
                             continue
-                        rel = tex_file.relative_to(locale_dir).as_posix()
-                        zf.write(tex_file, f"{MOD_NAME}/{locale}/{rel}")
+                        rel = tex_file.relative_to(src_textures_dir).as_posix()
+                        zf.write(tex_file, f"{MOD_NAME}/{locale}/{TEXTURE_DIR}/{rel}")
                         count += 1
                         texture_count += 1
 

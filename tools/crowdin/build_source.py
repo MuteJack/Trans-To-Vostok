@@ -108,7 +108,7 @@ CATEGORY_BUILDERS = {
 
 def build_category(category: str) -> tuple[int, int, int]:
     """Returns (files_written, total_rows, dedup_count)."""
-    src_dir = TSV_ROOT / SOURCE_LOCALE / category
+    src_dir = TSV_ROOT / SOURCE_LOCALE / "tsv" / category
     out_dir = MIRROR_ROOT / "source" / category
     builder = CATEGORY_BUILDERS[category]
     if not src_dir.exists():
