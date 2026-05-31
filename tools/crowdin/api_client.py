@@ -447,6 +447,36 @@ def _build_locale_to_folder_map(client, project_id: int) -> dict[str, str]:
     return out
 
 
+def _download_with_progress(url: str, *, timeout: float = 120.0,
+                            chunk_size: int = 64 * 1024) -> bytes:
+    """Stream a URL to bytes with a per-read timeout and progress output.
+
+    urllib's blocking urlopen(url).read() can hang on a slow / stalled CDN
+    (Crowdin redirects to S3 / Amazon CloudFront; some links time-bomb).
+    Reading in chunks lets us print progress and surface stalls.
+    """
+    req = urllib.request.Request(url, headers={"User-Agent": "trans-to-vostok-pull/1.0"})
+    last_print = time.time()
+    with urllib.request.urlopen(req, timeout=timeout) as resp:
+        total = resp.headers.get("Content-Length")
+        total_bytes = int(total) if total and total.isdigit() else None
+        buf = bytearray()
+        while True:
+            chunk = resp.read(chunk_size)
+            if not chunk:
+                break
+            buf.extend(chunk)
+            now = time.time()
+            if now - last_print >= 1.0:
+                if total_bytes:
+                    pct = 100.0 * len(buf) / total_bytes
+                    print(f"    {len(buf):,} / {total_bytes:,} bytes ({pct:.1f}%)")
+                else:
+                    print(f"    {len(buf):,} bytes downloaded")
+                last_print = now
+    return bytes(buf)
+
+
 def download_translations(
     language_id: str | None = None,
     extract_to: Path | None = None,
@@ -506,9 +536,8 @@ def download_translations(
     url = dl["data"]["url"]
 
     print(f"  Downloading zip...")
-    with urllib.request.urlopen(url) as resp:
-        zip_bytes = resp.read()
-    print(f"  Got {len(zip_bytes)} bytes; extracting to {extract_to}")
+    zip_bytes = _download_with_progress(url, timeout=120.0)
+    print(f"  Got {len(zip_bytes):,} bytes; extracting to {extract_to}")
 
     extract_to.mkdir(parents=True, exist_ok=True)
     written = 0
