@@ -8,9 +8,13 @@ mod-side texture.
   - blend   : composite mod overlay PNG on top of the original via
               Image.blend_rect at runtime (preserves PBR maps, ships
               only the translated text portion)
+  - ignore  : asset exists in PCK but is not a translation target.
+              Kept in TSV for completeness validation; not emitted
+              to texture_meta.json (mod ships no PNG for these).
 
-Rows with empty File Directory + File Name are skipped (no asset path
-to key on).
+Rows with empty method are treated as pending (awaiting triage) and
+also skipped. Rows with empty File Directory + File Name are skipped
+(no asset path to key on).
 
 Usage:
     python tools/utils/build_texture_meta.py <locale>
@@ -34,7 +38,8 @@ PKG_ROOT = PROJECT_ROOT / "Trans To Vostok"  # dev-time runtime mod root
 CATEGORY = "Texture"
 OUTPUT_NAME = "texture_meta.json"
 
-VALID_METHODS = {"replace", "blend"}
+RUNTIME_METHODS = {"replace", "blend"}
+VALID_METHODS = RUNTIME_METHODS | {"ignore"}
 
 
 def _normalize_path(file_directory: str, file_name: str) -> str:
@@ -64,6 +69,8 @@ def build(locale: str) -> int:
     meta: dict[str, str] = {}
     duplicates: list[tuple[str, str, str]] = []  # (rel, existing, new)
     invalid: list[tuple[Path, int, str]] = []    # (tsv, row_num, method)
+    ignored = 0
+    pending = 0  # rows with empty method (awaiting triage)
 
     for tsv in sorted(src_dir.glob("*.tsv")):
         with open(tsv, encoding="utf-8") as f:
@@ -71,9 +78,13 @@ def build(locale: str) -> int:
             for row_num, row in enumerate(reader, start=2):
                 method = (row.get("method") or "").strip().lower()
                 if not method:
-                    method = "replace"
+                    pending += 1
+                    continue
                 if method not in VALID_METHODS:
                     invalid.append((tsv, row_num, method))
+                    continue
+                if method == "ignore":
+                    ignored += 1
                     continue
 
                 rel = _normalize_path(
@@ -105,8 +116,15 @@ def build(locale: str) -> int:
         encoding="utf-8",
     )
 
-    counts = {m: sum(1 for v in meta.values() if v == m) for m in VALID_METHODS}
+    counts = {m: sum(1 for v in meta.values() if v == m) for m in RUNTIME_METHODS}
     counts_str = ", ".join(f"{m}={n}" for m, n in counts.items())
+    extras = []
+    if ignored:
+        extras.append(f"ignore={ignored}")
+    if pending:
+        extras.append(f"pending={pending}")
+    if extras:
+        counts_str += ", " + ", ".join(extras) + " (not emitted)"
     print(f"[OK] {locale}: {len(meta)} entries ({counts_str})")
     print(f"     {out_path}")
     return 0
