@@ -9,10 +9,11 @@ Differs from Translation:
   - 'method' values: 'replace' (texture file substitution), 'blend'
     (mod overlay PNG composited on top of original via Image.blend_rect
     at runtime; original PBR maps preserved, mod ships only translated
-    text pixels), or 'ignore' (asset exists in PCK but is not a
+    text pixels), 'ignore' (asset exists in PCK but is not a
     translation target — kept for completeness validation, no PNG
-    shipped). 'replace' highlighted blue; 'ignore' highlighted gray;
-    'blend' uses default cell style.
+    shipped), or 'pending' (explicitly deferred — rework difficult or
+    low-value). 'replace' highlighted blue; 'ignore' gray; 'pending'
+    yellow; 'blend' uses default cell style.
   - THICK_RIGHT_HEADERS: Sub (end of grouping), Translation (end of
     translation data), File Name (end of file-metadata block).
   - Group separator columns: Where (thick) / Sub (thin).
@@ -216,6 +217,7 @@ def _apply_conditional_formatting(ws, header: list, max_row: int) -> None:
         for value, bg, fg in [
             ("replace", BLUE_BG, BLUE_FG),
             ("ignore", GRAY_BG, GRAY_FG),
+            ("pending", YELLOW_BG, YELLOW_FG),
         ]:
             ws.conditional_formatting.add(rng, _cell_is_rule(f'"{value}"', bg, fg))
 

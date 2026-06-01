@@ -11,10 +11,13 @@ mod-side texture.
   - ignore  : asset exists in PCK but is not a translation target.
               Kept in TSV for completeness validation; not emitted
               to texture_meta.json (mod ships no PNG for these).
+  - pending : explicitly deferred — rework would be difficult or
+              low-value, so on hold. Like 'ignore', kept for
+              completeness validation but not emitted to runtime.
 
-Rows with empty method are treated as pending (awaiting triage) and
-also skipped. Rows with empty File Directory + File Name are skipped
-(no asset path to key on).
+Rows with empty method are treated as untriaged (not yet classified)
+and also skipped. Rows with empty File Directory + File Name are
+skipped (no asset path to key on).
 
 Usage:
     python tools/utils/build_texture_meta.py <locale>
@@ -39,7 +42,8 @@ CATEGORY = "Texture"
 OUTPUT_NAME = "texture_meta.json"
 
 RUNTIME_METHODS = {"replace", "blend"}
-VALID_METHODS = RUNTIME_METHODS | {"ignore"}
+NON_RUNTIME_METHODS = {"ignore", "pending"}
+VALID_METHODS = RUNTIME_METHODS | NON_RUNTIME_METHODS
 
 
 def _normalize_path(file_directory: str, file_name: str) -> str:
@@ -69,8 +73,8 @@ def build(locale: str) -> int:
     meta: dict[str, str] = {}
     duplicates: list[tuple[str, str, str]] = []  # (rel, existing, new)
     invalid: list[tuple[Path, int, str]] = []    # (tsv, row_num, method)
-    ignored = 0
-    pending = 0  # rows with empty method (awaiting triage)
+    non_runtime_counts: dict[str, int] = {m: 0 for m in NON_RUNTIME_METHODS}
+    untriaged = 0  # rows with empty method (not yet classified)
 
     for tsv in sorted(src_dir.glob("*.tsv")):
         with open(tsv, encoding="utf-8") as f:
@@ -78,13 +82,13 @@ def build(locale: str) -> int:
             for row_num, row in enumerate(reader, start=2):
                 method = (row.get("method") or "").strip().lower()
                 if not method:
-                    pending += 1
+                    untriaged += 1
                     continue
                 if method not in VALID_METHODS:
                     invalid.append((tsv, row_num, method))
                     continue
-                if method == "ignore":
-                    ignored += 1
+                if method in NON_RUNTIME_METHODS:
+                    non_runtime_counts[method] += 1
                     continue
 
                 rel = _normalize_path(
@@ -118,11 +122,9 @@ def build(locale: str) -> int:
 
     counts = {m: sum(1 for v in meta.values() if v == m) for m in RUNTIME_METHODS}
     counts_str = ", ".join(f"{m}={n}" for m, n in counts.items())
-    extras = []
-    if ignored:
-        extras.append(f"ignore={ignored}")
-    if pending:
-        extras.append(f"pending={pending}")
+    extras = [f"{m}={n}" for m, n in non_runtime_counts.items() if n]
+    if untriaged:
+        extras.append(f"untriaged={untriaged}")
     if extras:
         counts_str += ", " + ", ".join(extras) + " (not emitted)"
     print(f"[OK] {locale}: {len(meta)} entries ({counts_str})")
