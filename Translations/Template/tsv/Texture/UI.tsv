@@ -1,2 +1,59 @@
 Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
 UI	Map	Worldmap	replace	-		UI\Sprites	World_Map.png					
+UI	Main	Background	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Editor	RTV_Dynamic.png				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+UI	Main	Background	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Editor	RTV_Summer.png				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+UI	Main	Background	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Editor	RTV_Winter.png				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	

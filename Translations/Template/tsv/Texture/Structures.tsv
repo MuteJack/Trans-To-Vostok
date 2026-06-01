@@ -1,4 +1,12 @@
 Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Asset	Structures	Container	pending	"STOMER
+
+C/N NO
+35
+
+X-T51050
+BLACK
+18"		\Assets\Airdrop\Files	TX_Airdrop_AL.png					
 Asset	Structures	Booth	blend	LIPUNMYYNTI		\Assets\Booth_Ticket\Files\	TX_Booth_Ticket_AL.png				"Caution Sign that notify the ""MineField"".
 Placed at MineField"	
 Asset	Structures	Structure	blend	"ILMOITUSTEN
@@ -18,27 +26,42 @@ Asset	Structures	Booth	blend	"SOTILASKOTI
 KASSA"		\Assets\Canteen\Files\	TX_Canteen_Details_AL.png					
 Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
 
-Tuore
-kirjolohi"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_A.png					
+TUORE
+KIRJOLOHI
+7
+90kg
+
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_A.png					
 Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
 
 HERNARI
-6-PACK"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_B.png					
+6-PACK
+
+6€
+
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_B.png					
 Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
 
 TONNIKALA
-SÄILYKKEET"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_C.png					
+SÄILYKKEET
+
+1.99€
+
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_C.png					
 Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
 
-KULTA KAHVI
+KULTA
+KAHVI
+
+4.99€
+
 Rajoitettu 2kpl/talous
 
-KALAMIEHEN
-TONNIKALA"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_D.png					
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_D.png					
 Asset	Structures	SignBoard	blend	KESKUSKOULU		\Assets\School\Files	TX_School_Exterior_Details_AL.png				"It is the name of an actual school that existed in the Hamina region (currently closed).
 https://reimari.fi/2018/11/06/keskuskoulu-oli-haminan-suurin/"	
 Asset	Structures	Poster	blend	Tervetuloa Vallikentälle!		\Assets\Stadium\Files	TX_Stadium_Sign_Welcome_AL.png					
-Asset	Structures	Poster	ignore	"Ravintola
+Asset	Structures	Poster	blend	"Ravintola
 RAJAPIRTTI
 
 RENGAS
@@ -71,6 +94,8 @@ YMPYRÄ +
 APTEEKKI"		\Assets\Stadium\Files	TX_Stadium_Signs_AL.png				"This is an advertising poster containing a real or near-real company name.
 
 Do not translate, or keep it to a minimum."	
+			blend	"Happo
+HAMINA 1928"		\Assets\Stadium\Files	TX_Stadium_Trainer_AL.png					
 Asset	Structures	Totem	blend	"KONEKIVÄÄRI- JA 20 MIEHEN MAJOITUSTUNNELI
 ELI LUOLA, TÄHYSTYSKUPU
 
@@ -104,3 +129,74 @@ Instead, explanations for the text that needs to be filled in have been marked w
 To translate this texture, You will need to refer to Korean (created/translated directly by the lead developer) or translations in other languages, or create the text yourself."	
 Asset	Structures	Totem	blend	СЕВЕРОНЕФТЬ		\Assets\Totem_Terminal\Files	TX_Totem_Terminal_AL.png					
 Asset	Structures	Totem	blend	TERVETULOA		\Assets\Totem_Village\Files	TX_Totem_Village_AL.png					
+			blend	"12V2
+
+Varo liikennettä
+Se upp för trafik
+Be aware of traffic
+Vorsicht, Autoverkehr
+Берегись автомобиля
+
+TYÖNNÄ"		\Modular\Doors\Files	TX_Door_Tunnel_AL.png					
+			blend	START HERE		\Terrains\Tutorial\Files	TX_Tutorial_Start.png					
+			blend	PÄÄSY KIELLETTY		\Terrains\Utility\Files	TX_Ribbon_AL.png					
+			pending	"AINA
+
+Esipaine
+0.55 BAR
+12.5 2014"		\Assets\Boiler\Files	TX_Boiler_AL.png					
+			blend	"БУД.
+ВИХ."		\Assets\Bus_Stop_R\Files	TX_Bus_Stop_R_AL.png					
+			pending	"NO GO
+STOP
+
+17"		\Assets\Bunker\Files	TX_Bunker_Door_AL.png					
+			pending	"My Computer
+My Briefcase
+My Documents
+Online Services
+Netwrok Neighborhood
+Recycle Bin
+
+Start
+
+New Connection - HyperTerminal
+File
+Edit
+View
+Call
+Transfer
+Help"		\Assets\Computer\Files	TX_Computer_Screen_AL.png					
+			pending	"HAMINA-KOTKA SATAMA
+KYMENLAAKSON SANOMAT
+
+HaPPO
+HAMINA 1928
+
+HAMINA"		\Assets\Court\Files	TX_Court_AL.png					
+			pending	"# Can not read text (low resolution)
+# Will be updated"		\Assets\Gas_Station\Files	TX_Gas_Station_Payment_AL.png					
+			blend	ТАБАК		\Assets\Kiosk\Files	TX_Kiosk_AL.png					
+			blend	"Hevosharjun
+Maneesi"		\Assets\Manege\Files	TX_Manege_Structure_AL.png					
+			pending	KALAMARKET		\Assets\Market\Files	TX_Market_Gate_AL.png				"KALAMARKET is untranslatable:
+- KALAMARKET is proper-noun
+- There are 3D objects that cannot be translated."	
+			blend	"HaPPo
+HAMINA 1928"		\Assets\Pole_Flag\Files	TX_Flag_Happo_AL.png					
+			pending	KALAMARKET		\Assets\Pole_Flag\Files	TX_Flag_Market_AL.png				"KALAMARKET is untranslatable:
+- KALAMARKET is proper-noun
+- There are 3D objects that cannot be translated."	
+			blend	"SALPAPOLKU
+Virolahti"		\Assets\Pole_Salpa\Files	TX_Pole_Salpa_AL.png					
+			blend	POLISI		\Assets\Police\Files	TX_Police_Exterior_AL.png					
+			blend	VOSTOSAT		\Assets\Satellite_Dish\Files	TX_Satellite_Dish_AL.png					
+			blend	Harvi		\Assets\Sauna\Files	TX_Sauna_Stove_AL.png					
+			blend	SAUNA		\Assets\Sign_Sauna\Files	TX_Sign_Sauna_AL.png					
+			blend	Rinnelaavu		\Assets\Wicket\Files	TX_Wicket_Main_AL.png					
+			pending	"M m maila
+N n norsu
+O o omena
+P p pallo
+W w WC
+X x XLkoko"		\Assets\School\Files	TX_School_Boards_AL.png				Reason for Ignoring: Translation is unnecessary	
