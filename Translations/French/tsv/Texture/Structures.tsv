@@ -28,3 +28,91 @@ Asset	Structures	Booth	blend	"SOTILASKOTI
 KASSA"	"SOTILASKOTI
 
 KASSA"	\Assets\Canteen\Files\	TX_Canteen_Details_AL.png					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+Tuore
+kirjolohi"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_A.png					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+HERNARI
+6-PACK"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_B.png					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+TONNIKALA
+SÄILYKKEET"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_C.png					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+KULTA KAHVI
+Rajoitettu 2kpl/talous
+
+KALAMIEHEN
+TONNIKALA"		\Assets\Market\Files\TX_Market_Board_A.png	TX_Market_Board_D.png					
+Asset	Structures	SignBoard	blend	KESKUSKOULU		\Assets\School\Files	TX_School_Exterior_Details_AL.png				"It is the name of an actual school that existed in the Hamina region (currently closed).
+https://reimari.fi/2018/11/06/keskuskoulu-oli-haminan-suurin/"	
+Asset	Structures	Poster	blend	Tervetuloa Vallikentälle!		\Assets\Stadium\Files	TX_Stadium_Sign_Welcome_AL.png					
+Asset	Structures	Poster	ignore	"Ravintola
+RAJAPIRTTI
+
+RENGAS
+TORPPA
+KUNNARIN JÄLKEEN UUTTA KUMIA ALLE!
+
+TORINKULMA
+Pub & Bar
+Since 1931
+
+INTRA
+SPORT
+
+KATSASTUS
+KARHULA OY
+
+HAMINA
+KÄMPÄT OY
+
+YMPYRÄLOGISTICS
+
+HOTEL
+LEIKAR
+HOTELLI
+
+|H| Rauta
+HAMINA | KOTKA
+
+YMPYRÄ +
+APTEEKKI"		\Assets\Stadium\Files	TX_Stadium_Signs_AL.png				"This is an advertising poster containing a real or near-real company name.
+
+Do not translate, or keep it to a minimum."	
+Asset	Structures	Totem	blend	"KONEKIVÄÄRI- JA 20 MIEHEN MAJOITUSTUNNELI
+ELI LUOLA, TÄHYSTYSKUPU
+
+# 7 lines: Main description of the structure and interior layout
+# 2 + 10 lines: Construction history and additional historical notes
+
+Varoitus:
+# 5 lines: Safety warning
+# 2 bold lines: Entry at your own risk
+
+# Caption: left-top image title
+# 3 lines: left-top image description
+
+# Caption: right-top image title
+# 2 lines: right-top image description
+
+# Caption: middle-bottom image title
+# 5 lines: middle-bottom image description"		\Assets\Totem_Bunker\Files	TX_Totem_Bunker_AL.png				"This is the Korsu 11 guide board.
+
+Although the content is slightly different, it appears that there is a separate original image.
+Please check the photo below:
+https://samipuranen.galleria.fi/kuvat/Salpalinja/Virolahti/Huovinm%C3%A4ki/Korsu+11/IMG_1643.JPG
+
+Or, please search for the following keywords:
+""Salpalinja Virolahti Huovinmäki Korsu 11""
+
+Due to resolution issues with the in-game textures, the original text cannot be verified.
+The text inscribed on the image presumed to be the original, as described above, has not been included due to copyright issues or discrepancies between the actual description and the text.
+
+Instead, explanations for the text that needs to be filled in have been marked with a # symbol.
+To translate this texture, You will need to refer to Korean (created/translated directly by the lead developer) or translations in other languages, or create the text yourself."	
+Asset	Structures	Totem	blend	СЕВЕРОНЕФТЬ		\Assets\Totem_Terminal\Files	TX_Totem_Terminal_AL.png					
+Asset	Structures	Totem	blend	TERVETULOA		\Assets\Totem_Village\Files	TX_Totem_Village_AL.png					
