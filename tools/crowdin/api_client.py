@@ -427,7 +427,7 @@ def upload_source_files(source_dir: Path) -> dict:
     if patterns:
         print(f"Loaded {len(patterns)} export pattern(s) from crowdin.yml:")
         for src, trans in patterns:
-            print(f"  {src}  →  {trans}")
+            print(f"  {src}  ->  {trans}")
     else:
         print("[WARN] No export patterns parsed from crowdin.yml — "
               "new files will use Crowdin's default pattern")
