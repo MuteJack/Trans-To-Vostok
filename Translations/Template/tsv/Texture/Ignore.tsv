@@ -1,664 +1,664 @@
-Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
-AI			ignore			\AI\Bandit\Files	TX_Bandit_01_AL.png					
-AI			ignore			\AI\Bandit\Files	TX_Bandit_02_AL.png					
-AI			ignore			\AI\Bandit\Files	TX_Bandit_03_AL.png					
-AI			ignore			\AI\Bandit\Files	TX_Bandit_04_AL.png					
-AI			ignore			\AI\Bandit\Files	TX_Bandit_NR.png					
-AI			ignore			\AI\Guard\Files	TX_Guard_AL.png					
-AI			ignore			\AI\Guard\Files	TX_Guard_NR.png					
-AI			ignore			\AI\Military\Files	TX_Military_AL.png					
-AI			ignore			\AI\Military\Files	TX_Military_NR.png					
-AI			ignore			\AI\Punisher\Files	TX_Punisher_AL.png					
-AI			ignore			\AI\Punisher\Files	TX_Punisher_NR.png					
-			ignore			\Editor	RTV_Background.png				Reason for ignoring: Text unreadable in-game	
-			ignore			\Editor	RTV_Icon.png					
-			ignore			\Editor	RTV_Loading.png					
-			ignore			\Editor	RTV_Logo.png				Reson for ignoring: Title of the game	
-			ignore			\Editor	RTV_Splash.png					
-			ignore			\Effects\Files	TX_Campfire.png					
-			ignore			\Effects\Files	TX_Decal_Blood.png					
-			ignore			\Effects\Files	TX_Decal_Hit.png					
-			ignore			\Effects\Files	TX_Decal_Knife.png					
-			ignore			\Effects\Files	TX_Explosion.png					
-			ignore			\Effects\Files	TX_Muzzle_Flash.png					
-			ignore			\Effects\Files	TX_Particle.png					
-			ignore			\Effects\Files	TX_Smoke.png					
-			ignore			\Environment\Textures	Aurora.png					
-			ignore			\Environment\Textures	Clouds.png					
-			ignore			\Environment\Textures	Moon.png					
-			ignore			\Environment\Textures	Overcast.png					
-			ignore			\Environment\Water\Files	TX_Water_A_NR.png					
-			ignore			\Environment\Water\Files	TX_Water_B_NR.png					
-UI			ignore			\UI\Sprites	Grabber.png					
-UI			ignore			\UI\Sprites	Icon_Agility.png					
-UI			ignore			\UI\Sprites	Icon_Arm_Stamina.png					
-UI			ignore			\UI\Sprites	Icon_Armor.png					
-UI			ignore			\UI\Sprites	Icon_Bleeding.png					
-UI			ignore			\UI\Sprites	Icon_Burn.png					
-UI			ignore			\UI\Sprites	Icon_Capacity.png					
-UI			ignore			\UI\Sprites	Icon_Coffee.png					
-UI			ignore			\UI\Sprites	Icon_Combine.png					
-UI			ignore			\UI\Sprites	Icon_Combine_Charge.png					
-UI			ignore			\UI\Sprites	Icon_Combine_Load.png					
-UI			ignore			\UI\Sprites	Icon_Dehydration.png					
-UI			ignore			\UI\Sprites	Icon_Dexterity.png					
-UI			ignore			\UI\Sprites	Icon_Dice.png					
-UI			ignore			\UI\Sprites	Icon_DirectX.png					
-UI			ignore			\UI\Sprites	Icon_Electronics.png					
-UI			ignore			\UI\Sprites	Icon_Energy.png					
-UI			ignore			\UI\Sprites	Icon_Exit.png					
-UI			ignore			\UI\Sprites	Icon_Fracture.png					
-UI			ignore			\UI\Sprites	Icon_Frostbite.png					
-UI			ignore			\UI\Sprites	Icon_Frozen.png					
-UI			ignore			\UI\Sprites	Icon_Headshot.png					
-UI			ignore			\UI\Sprites	Icon_Health.png					
-UI			ignore			\UI\Sprites	Icon_Heat.png					
-UI			ignore			\UI\Sprites	Icon_Hide.png					
-UI			ignore			\UI\Sprites	Icon_Insanity.png					
-UI			ignore			\UI\Sprites	Icon_Insulation.png					
-UI			ignore			\UI\Sprites	Icon_Items.png					
-UI			ignore			\UI\Sprites	Icon_Loading.png					
-UI			ignore			\UI\Sprites	Icon_Locked.png					
-UI			ignore			\UI\Sprites	Icon_Magnet.png					
-UI			ignore			\UI\Sprites	Icon_Malfunction.png					
-UI			ignore			\UI\Sprites	Icon_Menace.png					
-UI			ignore			\UI\Sprites	Icon_Object.png					
-UI			ignore			\UI\Sprites	Icon_Overweight.png					
-UI			ignore			\UI\Sprites	Icon_Performance.png					
-UI			ignore			\UI\Sprites	Icon_Poisoning.png					
-UI			ignore			\UI\Sprites	Icon_Protection.png					
-UI			ignore			\UI\Sprites	Icon_Radiation.png					
-UI			ignore			\UI\Sprites	Icon_Returns.png					
-UI			ignore			\UI\Sprites	Icon_Rupture.png					
-UI			ignore			\UI\Sprites	Icon_Shelter.png					
-UI			ignore			\UI\Sprites	Icon_Show.png					
-UI			ignore			\UI\Sprites	Icon_Skull_Half.png					
-UI			ignore			\UI\Sprites	Icon_Skull_Red.png					
-UI			ignore			\UI\Sprites	Icon_Skull_White.png					
-UI			ignore			\UI\Sprites	Icon_Spawn.png					
-UI			ignore			\UI\Sprites	Icon_Starvation.png					
-UI			ignore			\UI\Sprites	Icon_Status.png					
-UI			ignore			\UI\Sprites	Icon_Testbench.png					
-UI			ignore			\UI\Sprites	Icon_Time.png					
-UI			ignore			\UI\Sprites	Icon_Unlocked.png					
-UI			ignore			\UI\Sprites	Icon_Value.png					
-UI			ignore			\UI\Sprites	Icon_Vulkan.png					
-UI			ignore			\UI\Sprites	Icon_Weapon.png					
-UI			ignore			\UI\Sprites	Icon_Weight.png					
-UI			ignore			\UI\Sprites	Icon_Workbench.png					
-UI			ignore			\UI\Sprites	Tile.png					
-			ignore			\Modular\Textures	TX_Checker.png					
-			ignore			\Modular\Textures	TX_Flashlight.png					
-			ignore			\Modular\Textures	TX_Frost.png					
-			ignore			\Modular\Textures	TX_Perlin_Noise_A.png					
-			ignore			\Modular\Textures	TX_Perlin_Noise_B.png					
-			ignore			\Modular\Textures	TX_Perlin_Noise_C.png					
-			ignore			\Modular\Textures	TX_Perlin_Noise_D.png					
-			ignore			\Modular\Textures	TX_Planks_AL.png					
-			ignore			\Modular\Textures	TX_Ripples.png					
-			ignore			\Modular\Textures	TX_Specular.png					
-			ignore			\Modular\Textures	TX_Tarp_A_AL.png					
-			ignore			\Modular\Textures	TX_Tarp_B_AL.png					
-			ignore			\Nature\Grass\Files	TX_Grass_NR.png					
-			ignore			\Nature\Logs\Files	TX_Log_AL.png					
-			ignore			\Nature\Logs\Files	TX_Log_NR.png					
-			ignore			\Nature\Rocks\Files	TX_Moss_AL.png					
-			ignore			\Nature\Rocks\Files	TX_Rock_AL.png					
-			ignore			\Nature\Rocks\Files	TX_Rock_NR.png					
-			ignore			\Nature\Shrubs\Files	TX_Shrub_NR.png					
-			ignore			\Nature\Sticks\Files	TX_Sticks_NR.png					
-			ignore			\Nature\Stones\Files	TX_Stone_AL.png					
-			ignore			\Nature\Stones\Files	TX_Stone_NR.png					
-			ignore			\Nature\Stumps\Files	TX_Stump_AL.png					
-			ignore			\Nature\Stumps\Files	TX_Stump_NR.png					
-			ignore			\Nature\Trees\Files	TX_Tree_Damaged_AL.png					
-			ignore			\Nature\Trees\Files	TX_Tree_Damaged_NR.png					
-			ignore			\Nature\Trees\Files	TX_Tree_Trunk_AL.png					
-			ignore			\Nature\Trees\Files	TX_Tree_Trunk_NR.png					
-			ignore			\Terrains\Apartments\Files	TX_Apartments_Roads.png					
-			ignore			\Terrains\Highway\Files	TX_Highway_Roads.png					
-			ignore			\Terrains\Minefield\Files	TX_Minefield_Roads.png					
-			ignore			\Terrains\Outpost\Files	TX_Outpost_Roads.png					
-			ignore			\Terrains\School\Files	TX_School_Rampart_AL.png					
-			ignore			\Terrains\School\Files	TX_School_Rampart_NR.png					
-			ignore			\Terrains\School\Files	TX_School_Roads.png					
-			ignore			\Terrains\Terminal\Files	TX_Terminal_Pool_AL.png					
-			ignore			\Terrains\Terminal\Files	TX_Terminal_Roads.png					
-			ignore			\Terrains\Textures	TX_Asphalt_AL.png					
-			ignore			\Terrains\Textures	TX_Asphalt_Cracks_AL.png					
-			ignore			\Terrains\Textures	TX_Asphalt_Cracks_NR.png					
-			ignore			\Terrains\Textures	TX_Asphalt_NR.png					
-			ignore			\Terrains\Textures	TX_Baseball_Field_AL.png					
-			ignore			\Terrains\Textures	TX_Bump_NR.png					
-			ignore			\Terrains\Textures	TX_Dirt_AL.png					
-			ignore			\Terrains\Textures	TX_Dirt_NR.png					
-			ignore			\Terrains\Textures	TX_Field_AL.png					
-			ignore			\Terrains\Textures	TX_Field_NR.png					
-			ignore			\Terrains\Textures	TX_Grass_AL.png					
-			ignore			\Terrains\Textures	TX_Grass_Far_AL.png					
-			ignore			\Terrains\Textures	TX_Grass_NR.png					
-			ignore			\Terrains\Textures	TX_Gravel_AL.png					
-			ignore			\Terrains\Textures	TX_Gravel_NR.png					
-			ignore			\Terrains\Textures	TX_Ground_AL.png					
-			ignore			\Terrains\Textures	TX_Ground_NR.png					
-			ignore			\Terrains\Textures	TX_Hay_AL.png					
-			ignore			\Terrains\Textures	TX_Hay_Far_AL.png					
-			ignore			\Terrains\Textures	TX_Hay_NR.png					
-			ignore			\Terrains\Textures	TX_Mask_Noise.png					
-			ignore			\Terrains\Textures	TX_Mask_Overlay.png					
-			ignore			\Terrains\Textures	TX_Mud_AL.png					
-			ignore			\Terrains\Textures	TX_Mud_NR.png					
-			ignore			\Terrains\Textures	TX_Puddle_NR.png					
-			ignore			\Terrains\Textures	TX_Rocks_AL.png					
-			ignore			\Terrains\Textures	TX_Rocks_NR.png					
-			ignore			\Terrains\Textures	TX_Roots_AL.png					
-			ignore			\Terrains\Textures	TX_Roots_NR.png					
-			ignore			\Terrains\Textures	TX_Rubble_AL.png					
-			ignore			\Terrains\Textures	TX_Rubble_NR.png					
-			ignore			\Terrains\Textures	TX_Slabs_AL.png					
-			ignore			\Terrains\Textures	TX_Slabs_NR.png					
-			ignore			\Terrains\Textures	TX_Snow_NR.png					
-			ignore			\Terrains\Village\Files	TX_Village_Roads.png					
-			ignore			\Traders\Doctor\Files	Icon_Doctor.png					
-			ignore			\Traders\Doctor\Files	TX_Doctor_AL.png					
-			ignore			\Traders\Doctor\Files	TX_Doctor_NR.png					
-			ignore			\Traders\Generalist\Files	Icon_Generalist.png					
-			ignore			\Traders\Generalist\Files	TX_Generalist_AL.png					
-			ignore			\Traders\Generalist\Files	TX_Generalist_NR.png					
-			ignore			\Traders\Gunsmith\Files	Icon_Gunsmith.png					
-			ignore			\Traders\Gunsmith\Files	TX_Gunsmith_AL.png					
-			ignore			\Traders\Gunsmith\Files	TX_Gunsmith_NR.png					
-			ignore			\Assets\Airdrop\Files	TX_Parachute_AL.png					
-			ignore			\Assets\Airdrop\Files	TX_Parachute_NR.png					
-			ignore			\Assets\Airduct\Files	TX_Airduct_AL.png					
-			ignore			\Assets\Artillery\Files	TX_Artillery_Base_AL.png					
-			ignore			\Assets\Artillery\Files	TX_Artillery_Cannon_AL.png					
-			ignore			\Assets\Attic\Files	TX_Attic_Interior_AL.png					
-			ignore			\Assets\Attic\Files	TX_Attic_Plywood_AL.png					
-			ignore			\Assets\Attic\Files	TX_Attic_Structure_AL.png					
-			ignore			\Assets\BTR\Files	TX_BTR_Chassis_AL.png					
-			ignore			\Assets\BTR\Files	TX_BTR_Chassis_NR.png					
-			ignore			\Assets\BTR\Files	TX_BTR_Details_AL.png					
-			ignore			\Assets\BTR\Files	TX_BTR_Details_NR.png					
-			ignore			\Assets\BTR\Files	TX_BTR_Tires_AL.png					
-			ignore			\Assets\BTR\Files	TX_BTR_Tires_NR.png					
-			ignore			\Assets\Barn_Village\Files	TX_Barn_Village_Main_AL.png					
-			ignore			\Assets\Barrel_Metal\Files	TX_Barrel_Metal_AL.png					
-			ignore			\Assets\Barrier_Construction\Files	TX_Barrier_Construction_AL.png					
-			ignore			\Assets\Barrier_Highway\Files	TX_Barrier_Highway_AL.png					
-			ignore			\Assets\Basket_Firewood\Files	TX_Basket_Firewood_AL.png					
-			ignore			\Assets\Basketball_Hoop\Files	TX_Basketball_Hoop_Indoor_AL.png					
-			ignore			\Assets\Basketball_Hoop\Files	TX_Basketball_Hoop_Outdoor_AL.png					
-			ignore			\Assets\Bathtub\Files	TX_Bathtub_AL.png					
-			ignore			\Assets\Beam_Highway\Files	TX_Beam_Highway_AL.png					
-			ignore			\Assets\Beam_Road\Files	TX_Beam_Road.png					
-			ignore			\Assets\Bed_Civilian\Files	Icon_Bed_Civilian.png					
-			ignore			\Assets\Bed_Frame\Files	TX_Bed_Frame_AL.png					
-			ignore			\Assets\Bed_Military\Files	TX_Bed_Military_AL.png					
-			ignore			\Assets\Bed_Military\Files	TX_Bed_Military_NR.png					
-			ignore			\Assets\Bed_Nomad\Files	Icon_Bed_Nomad.png					
-			ignore			\Assets\Bench\Files	TX_Bench_A_AL.png					
-			ignore			\Assets\Bench\Files	TX_Bench_B_AL.png					
-			ignore			\Assets\Bookshelf\Files	TX_Bookshelf_AL.png					
-			ignore			\Assets\Box_Planter\Files	TX_Box_Planter_AL.png					
-			ignore			\Assets\Brick_Pile\Files	TX_Brick_Pile_AL.png					
-			ignore			\Assets\Bridge_Highway\Files	TX_Bridge_Highway_AL.png					
-			ignore			\Assets\Bridge_Outpost\Files	TX_Bridge_Outpost_AL.png					
-			ignore			\Assets\Bridge_Rail\Files	TX_Bridge_Rail_AL.png					
-			ignore			\Assets\Bridge_School\Files	TX_Bridge_School_AL.png					
-			ignore			\Assets\Bridge_Village\Files	TX_Bridge_Village_AL.png					
-			ignore			\Assets\Bunker\Files	TX_Bunker_Divider_AL.png					
-			ignore			\Assets\Bunker\Files	TX_Bunker_Floor_AL.png					
-			ignore			\Assets\Bunker\Files	TX_Bunker_Floor_NR.png					
-			ignore			\Assets\Bunker\Files	TX_Bunker_Pipes_AL.png					
-			ignore			\Assets\Bunker\Files	TX_Bunker_Planks_AL.png					
-			ignore			\Assets\Bunker\Files	TX_Bunker_Plywood_AL.png					
-			ignore			\Assets\Bunker\Files	TX_Bunker_Well_AL.png					
-			ignore			\Assets\Bunker_Concrete\Files	TX_Bunker_Concrete_AL.png					
-			ignore			\Assets\CASA\Files	TX_CASA_AL.png					
-			ignore			\Assets\Cabin\Files	TX_Cabin_Details_AL.png					
-			ignore			\Assets\Cabin\Files	TX_Cabin_Exterior_AL.png					
-			ignore			\Assets\Cabin\Files	TX_Cabin_Interior_AL.png					
-			ignore			\Assets\Cabin\Files	TX_Cabin_Porch_AL.png					
-			ignore			\Assets\Cabin\Files	TX_Cabin_Roof_AL.png					
-			ignore			\Assets\Cabinet_Medical\Files	Icon_Cabinet_Medical.png					
-			ignore			\Assets\Cabinet_Medical\Files	TX_Cabinet_Medical_AL.png					
-			ignore			\Assets\Cabinet_Office\Files	Icon_Cabinet_Office.png					
-			ignore			\Assets\Cabinet_Office\Files	TX_Cabinet_Office_AL.png					
-			ignore			\Assets\Cabinet_Wood\Files	Icon_Cabinet_Wood.png					
-			ignore			\Assets\Cabinet_Wood\Files	TX_Cabinet_Wood_AL.png					
-			ignore			\Assets\Cable\Files	TX_Cable_AL.png					
-			ignore			\Assets\Cable_Reel\Files	TX_Cable_Reel_AL.png					
-			ignore			\Assets\Candle\Files	TX_Candle_AL.png					
-			ignore			\Assets\Canteen\Files	TX_Canteen_Counter_AL.png					
-			ignore			\Assets\Canteen\Files	TX_Canteen_Exterior_AL.png					
-			ignore			\Assets\Canteen\Files	TX_Canteen_Interior_AL.png					
-			ignore			\Assets\Canteen\Files	TX_Canteen_Roof_AL.png					
-			ignore			\Assets\Canteen\Files	TX_Canteen_Steps_AL.png					
-			ignore			\Assets\Carpet\Files	Icon_Carpet_Persian.png					
-			ignore			\Assets\Carpet\Files	Icon_Carpet_Rag.png					
-			ignore			\Assets\Carpet\Files	TX_Carpet_Persian_AL.png					
-			ignore			\Assets\Carpet\Files	TX_Carpet_Rag_AL.png					
-			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Exterior_AL.png					
-			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Interior_AL.png					
-			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Roof_AL.png					
-			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Steps_AL.png					
-			ignore			\Assets\Chair_Coffee\Files	TX_Chair_Coffee_AL.png					
-			ignore			\Assets\Chair_Office\Files	Icon_Chair_Office.png					
-			ignore			\Assets\Chair_Office\Files	TX_Chair_Office_AL.png					
-			ignore			\Assets\Chair_School\Files	Icon_Chair_School.png					
-			ignore			\Assets\Chair_School\Files	TX_Chair_School_AL.png					
-			ignore			\Assets\Chair_Sun\Files	Icon_Chair_Sun.png					
-			ignore			\Assets\Chair_Sun\Files	TX_Chair_Sun_AL.png					
-			ignore			\Assets\Chalkboard\Files	TX_Chalkboard_A_AL.png					
-			ignore			\Assets\Chapel\Files	TX_Chapel_Exterior_AL.png					
-			ignore			\Assets\Chapel\Files	TX_Chapel_Interior_AL.png					
-			ignore			\Assets\Clock_School\Files	TX_Clock_School_AL.png					
-			ignore			\Assets\Clothing_Line\Files	TX_Clothing_Line_AL.png					
-			ignore			\Assets\Composter\Files	TX_Composter_AL.png					
-			ignore			\Assets\Computer\Files	TX_Computer_AL.png					
-			ignore			\Assets\Container_Garbage\Files	TX_Container_Garbage_AL.png					
-			ignore			\Assets\Container_Shipping\Files	TX_Container_Shipping_NR.png					
-			ignore			\Assets\Crate_Military\Files	Icon_Crate_Military.png					
-			ignore			\Assets\Crate_Military\Files	TX_Crate_Military_AL.png					
-			ignore			\Assets\Crate_Special\Files	Icon_Crate_Special.png					
-			ignore			\Assets\Crate_Special\Files	TX_Crate_Special_AL.png					
-			ignore			\Assets\Crate_Wood\Files	TX_Crate_Wood_AL.png					
-			ignore			\Assets\Cupboard\Files	Icon_Cupboard.png					
-			ignore			\Assets\Cupboard\Files	TX_Cupboard_AL.png					
-			ignore			\Assets\Curbs\Files	TX_Curb_AL.png					
-			ignore			\Assets\Curtains\Files	Icon_Curtain_Long.png					
-			ignore			\Assets\Curtains\Files	Icon_Curtain_Mini.png					
-			ignore			\Assets\Curtains\Files	TX_Curtain_Long_AL.png					
-			ignore			\Assets\Curtains\Files	TX_Curtain_Rail_AL.png					
-			ignore			\Assets\Curtains\Files	TX_Curtain_Short_AL.png					
-			ignore			\Assets\Dartboard\Files	Icon_Dartboard.png					
-			ignore			\Assets\Dartboard\Files	TX_Dartboard_AL.png					
-			ignore			\Assets\Debris\Garbage\Files	TX_Debris_Garbage_AL.png					
-			ignore			\Assets\Debris\Garbage\Files	TX_Debris_Garbage_NR.png					
-			ignore			\Assets\Debris\Metal\Files	TX_Debris_Metal_AL.png					
-			ignore			\Assets\Debris\Rope\Files	TX_Debris_Rope_AL.png					
-			ignore			\Assets\Debris\Wood\Files	TX_Debris_Wood_AL.png					
-			ignore			\Assets\Desk_School\Files	TX_Desk_School_AL.png					
-			ignore			\Assets\Dock_Pontoon\Files	TX_Dock_Pontoon_AL.png					
-			ignore			\Assets\Drain_Hole\Files	TX_Drain_Hole_AL.png					
-			ignore			\Assets\Fence_Garbage\Files	TX_Fence_Garbage_AL.png					
-			ignore			\Assets\Fence_Highway\Files	TX_Fence_Highway_AL.png					
-			ignore			\Assets\Fence_Military\Files	TX_Fence_Military_AL.png					
-			ignore			\Assets\Fence_PO2\Files	TX_Fence_PO2_AL.png					
-			ignore			\Assets\Fence_Road\Files	TX_Fence_Road_AL.png					
-			ignore			\Assets\Fence_School\Files	TX_Fence_School_AL.png					
-			ignore			\Assets\Fence_Wood\Files	TX_Fence_Wood_AL.png					
-			ignore			\Assets\Fighter_Jet\Files	TX_Fighter_Jet_AL.png					
-			ignore			\Assets\Fireplace_Brick\Files	TX_Fireplace_Brick_AL.png					
-			ignore			\Assets\Fireplace_Tower\Files	TX_Fireplace_Tower_AL.png					
-			ignore			\Assets\Firepot\Files	TX_Firepot_AL.png					
-			ignore			\Assets\Firewood\Files	TX_Firewood_AL.png					
-			ignore			\Assets\Football_Goal\Files	TX_Football_Goal_AL.png					
-			ignore			\Assets\Frame_Highway\Files	TX_Frame_Highway_AL.png					
-			ignore			\Assets\Frame_Hospital\Files	TX_Frame_Hospital_AL.png					
-			ignore			\Assets\Frame_Office\Files	TX_Frame_Office_AL.png					
-			ignore			\Assets\Freezer\Files	Icon_Freezer.png					
-			ignore			\Assets\Freezer\Files	TX_Freezer_AL.png					
-			ignore			\Assets\Fridge\Files	Icon_Fridge.png					
-			ignore			\Assets\Fridge\Files	TX_Fridge_AL.png				Reason for ignoring: Low Resolution	
-			ignore			\Assets\Fusebox\Files	TX_Fusebox_AL.png					
-			ignore			\Assets\Garage_Rural\Files	TX_Garage_Rural_Main_AL.png					
-			ignore			\Assets\Garage_Rural\Files	TX_Garage_Rural_Roof_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Bridge_Concrete_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Bridge_Wood_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Door_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Exterior_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Interior_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Pillars_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Roof_AL.png					
-			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Steps_AL.png					
-			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Canopy_AL.png					
-			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Pump_AL.png					
-			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Tank_AL.png					
-			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Totem_AL.png					
-			ignore			\Assets\Gate_Metal\Files	TX_Gate_Metal_AL.png					
-			ignore			\Assets\Guardrail_Road\Files	TX_Guardrail_Road_AL.png					
-			ignore			\Assets\Gurney\Files	TX_Gurney_AL.png					
-			ignore			\Assets\Gutter\Files	TX_Gutter_AL.png					
-			ignore			\Assets\Hay_Bale\Files	TX_Hay_Bale_AL.png					
-			ignore			\Assets\Hay_Bale\Files	TX_Hay_Bale_NR.png					
-			ignore			\Assets\Hay_Bale\Files	TX_Hay_Stack_AL.png					
-			ignore			\Assets\Hay_Bale\Files	TX_Hay_Stack_NR.png					
-			ignore			\Assets\Hedgehog\Files	TX_Hedgehog_AL.png					
-			ignore			\Assets\Helicopter\Files	TX_Helicopter_Hull_AL.png					
-			ignore			\Assets\Helicopter\Files	TX_Helicopter_Hull_NR.png					
-			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_A_AL.png				Reason for ignoring: Low Resolution	
-			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_A_NR.png					
-			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_B_AL.png				Reason for ignoring: Translation is unnecessary 	
-			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_B_NR.png					
-			ignore			\Assets\Helicopter\Files	TX_Helicopter_Rocket_AL.png					
-			ignore			\Assets\Helicopter\Files	TX_Light_Cone_Noise.png					
-			ignore			\Assets\Hookstrip\Files	TX_Hookstrip_AL.png					
-			ignore			\Assets\Horse\Files	TX_Horse_Body_AL.png					
-			ignore			\Assets\Horse\Files	TX_Horse_Body_NR.png					
-			ignore			\Assets\Horse\Files	TX_Horse_Skeleton_AL.png					
-			ignore			\Assets\Horse\Files	TX_Horse_Skeleton_NR.png					
-			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Exterior_AL.png					
-			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Interior_AL.png					
-			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Roof_AL.png					
-			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Steps_AL.png					
-			ignore			\Assets\House_Village_B\Files	TX_House_Village_B_Exterior_AL.png					
-			ignore			\Assets\House_Village_B\Files	TX_House_Village_B_Roof_AL.png					
-			ignore			\Assets\House_Village_B\Files	TX_House_Village_B_Steps_AL.png					
-			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Balcony_AL.png					
-			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Exterior_AL.png					
-			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Roof_AL.png					
-			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Steps_AL.png					
-			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Exterior_AL.png					
-			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Interior_AL.png					
-			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Roof_AL.png					
-			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Steps_AL.png					
-			ignore			\Assets\House_Village_D\Files	TX_House_Village_D_Exterior_AL.png					
-			ignore			\Assets\House_Village_D\Files	TX_House_Village_D_Roof_AL.png					
-			ignore			\Assets\House_Village_D\Files	TX_House_Village_D_Steps_AL.png					
-			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Exterior_AL.png					
-			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Roof_AL.png					
-			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Stairs_AL.png					
-			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Steps_AL.png					
-			ignore			\Assets\House_Village_F\Files	TX_House_Village_F_Exterior_AL.png					
-			ignore			\Assets\House_Village_F\Files	TX_House_Village_F_Roof_AL.png					
-			ignore			\Assets\House_Village_F\Files	TX_House_Village_F_Steps_AL.png					
-			ignore			\Assets\House_Village_F_Guest\Files	TX_House_Village_F_Guest_Exterior_AL.png					
-			ignore			\Assets\House_Village_F_Guest\Files	TX_House_Village_F_Guest_Roof_AL.png					
-			ignore			\Assets\House_Village_F_Guest\Files	TX_House_Village_F_Guest_Steps_AL.png					
-			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Exterior_AL.png					
-			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Interior_AL.png					
-			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Roof_AL.png					
-			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Steps_AL.png					
-			ignore			\Assets\House_Village_G\Files	TX_House_Village_G_Exterior_AL.png					
-			ignore			\Assets\House_Village_G\Files	TX_House_Village_G_Steps_AL.png					
-			ignore			\Assets\House_Village_G_Guest\Files	TX_House_Village_G_Guest_Exterior_AL.png					
-			ignore			\Assets\House_Village_G_Guest\Files	TX_House_Village_G_Guest_Porch_AL.png					
-			ignore			\Assets\House_Village_G_Guest\Files	TX_House_Village_G_Guest_Roof_AL.png					
-			ignore			\Assets\Ivy_Ladder\Files	TX_Ivy_Ladder_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Balcony_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Canopy_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Chimney_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Exterior_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Roof_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Rooms_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Staircase_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Stairs_AL.png					
-			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Step_AL.png					
-			ignore			\Assets\Lamp_Cellar\Files	TX_Lamp_Cellar_AL.png					
-			ignore			\Assets\Lamp_Floor\Files	TX_Lamp_Floor_AL.png					
-			ignore			\Assets\Lamp_Generic\Files	TX_Lamp_Generic_AL.png					
-			ignore			\Assets\Lamp_Grid\Files	TX_Lamp_Grid_AL.png					
-			ignore			\Assets\Lamp_Rail\Files	TX_Lamp_Rail_AL.png					
-			ignore			\Assets\Lamp_Round\Files	TX_Lamp_Round_AL.png				Reason for Ignoring: Low Resolution	
-			ignore			\Assets\Lantern_Kerosene\Files	TX_Lantern_Kerosine_AL.png					
-			ignore			\Assets\Lantern_Kerosene\Files	TX_Lantern_Kerosine_NR.png					
-			ignore			\Assets\Laptop\Files	TX_Laptop_AL.png					
-			ignore			\Assets\Laptop\Files	TX_Laptop_NR.png					
-			ignore			\Assets\Laptop\Files	TX_Laptop_Screen_AL.png				Reason for Ignoring: Translation is unnecessary	
-			ignore			\Assets\Light_Switch\Files	TX_Light_Switch_AL.png					
-			ignore			\Assets\Locker\Files	Icon_Locker.png					
-			ignore			\Assets\Locker\Files	TX_Locker_AL.png					
-			ignore			\Assets\Logs\Files	TX_Logs_AL.png					
-			ignore			\Assets\Logs\Files	TX_Logs_NR.png					
-			ignore			\Assets\Mailbox\Files	TX_Mailbox_AL.png					
-			ignore			\Assets\Manege\Files	TX_Manege_Door_AL.png					
-			ignore			\Assets\Manege\Files	TX_Manege_Exterior_AL.png					
-			ignore			\Assets\Manege\Files	TX_Manege_Fence_AL.png					
-			ignore			\Assets\Manege\Files	TX_Manege_Interior_AL.png					
-			ignore			\Assets\Manege\Files	TX_Manege_Roof_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Canopy_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Chimney_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Detector_AL.png					
-			ignore	10 TON		\Assets\Market\Files	TX_Market_Dock_AL.png				Reason for Ignoring: Translation is unnecessary	
-			ignore			\Assets\Market\Files	TX_Market_Entrance_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Exterior_A_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Exterior_B_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Interior_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Register_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Rollup_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Roof_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Shelf_A_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Shelf_B_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Slider_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Stairs_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Steps_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Support_AL.png					
-			ignore			\Assets\Market\Files	TX_Market_Toilet_Frame_AL.png					
-			ignore			\Assets\Mattress\Files	TX_Mattress_AL.png					
-			ignore			\Assets\Nightstand\Files	Icon_Nightstand.png					
-			ignore			\Assets\Nightstand\Files	TX_Nightstand_AL.png					
-			ignore			\Assets\Outhouse\Files	TX_Outhouse_AL.png					
-			ignore			\Assets\POM-3\Files	TX_POM-3_AL.png					
-			ignore			\Assets\Painting\Files	Icon_Painting_Lake.png					
-			ignore			\Assets\Painting\Files	TX_Painting_Lake_AL.png					
-			ignore			\Assets\Pallet\Files	Icon_Pallet.png					
-			ignore			\Assets\Pallet\Files	TX_Pallet_AL.png					
-			ignore	2500 KGS		\Assets\Pallet_Jack\Files	TX_Pallet_Jack_AL.png				Reason for Ignoring: Translation is unnecessary	
-			ignore			\Assets\Pile_Cardboard\Files	TX_Pile_Cardboard_AL.png				Reason for Ignoring: Translation is unnecessary	
-			ignore			\Assets\Pipe_Concrete\Files	TX_Pipe_Concrete_AL.png					
-			ignore			\Assets\Pipeline\Files	TX_Pipeline_AB_AL.png					
-			ignore			\Assets\Pipeline\Files	TX_Pipeline_C_AL.png					
-			ignore			\Assets\Pipeline\Files	TX_Pipeline_C_Wrap_AL.png					
-			ignore			\Assets\Pipeline\Files	TX_Pipeline_C_Wrap_NR.png					
-			ignore			\Assets\Pipeline\Files	TX_Pipeline_Ramp_AL.png					
-			ignore			\Assets\Pipeline\Files	TX_Pipeline_Tank_AL.png					
-			ignore			\Assets\Pipeline\Files	TX_Pipeline_Well_AL.png					
-			ignore			\Assets\Planter_Hexa\Files	TX_Planter_Hexa_AL.png					
-			ignore			\Assets\Playground\Files	TX_Playground_Castle_AL.png					
-			ignore			\Assets\Playground\Files	TX_Playground_Ladder_AL.png					
-			ignore			\Assets\Playground\Files	TX_Playground_Rail_AL.png					
-			ignore			\Assets\Playground\Files	TX_Playground_Sandbox_AL.png					
-			ignore			\Assets\Playground\Files	TX_Playground_Swing_AL.png					
-			ignore			\Assets\Plywood\Files	TX_Plywood_AL.png					
-			ignore			\Assets\Pole_Border\Files	TX_Pole_Border_Finland_AL.png					
-			ignore			\Assets\Pole_Border\Files	TX_Pole_Border_Russia_AL.png					
-			ignore			\Assets\Pole_Flag\Files	TX_Flag_Finland_AL.png					
-			ignore			\Assets\Pole_Flag\Files	TX_Flag_NR.png					
-			ignore			\Assets\Pole_Flag\Files	TX_Pole_Flag_AL.png					
-			ignore			\Assets\Pole_Light_Concrete\Files	TX_Pole_Light_Concrete_AL.png					
-			ignore			\Assets\Pole_Light_Metal\Files	TX_Pole_Light_Metal_AL.png					
-			ignore			\Assets\Pole_Light_Wood\Files	TX_Pole_Light_Wood_AL.png					
-			ignore			\Assets\Pole_Roadside\Files	TX_Pole_Roadside_AL.png					
-			ignore			\Assets\Pole_Transformer\Files	TX_Pole_Transformer_AL.png					
-			ignore			\Assets\Pole_Utility\Files	TX_Pole_Utility_AL.png					
-			ignore			\Assets\Police\Files	TX_Police_Exterior_NR.png					
-			ignore			\Assets\Police\Files	TX_Police_Glass_AL.png					
-			ignore			\Assets\Police\Files	TX_Police_Tires_AL.png					
-			ignore			\Assets\Police\Files	TX_Police_Tires_NR.png					
-			ignore			\Assets\Projector\Files	TX_Projector_AL.png				Reason for ignoring: Low Resolution	
-			ignore			\Assets\Projector_Screen\Files	TX_Projector_Screen_AL.png					
-			ignore			\Assets\Rack_Carpet\Files	TX_Rack_Carpet_AL.png					
-			ignore			\Assets\Rack_Coat\Files	Icon_Rack_Coat.png					
-			ignore			\Assets\Rack_Coat\Files	TX_Rack_Coat_AL.png					
-			ignore			\Assets\Radar\Files	TX_Radar_Antenna_AL.png					
-			ignore			\Assets\Radar\Files	TX_Radar_Base_AL.png					
-			ignore			\Assets\Radiator\Files	TX_Radiator_AL.png					
-			ignore			\Assets\Radio\Files	TX_Radio_AL.png				Reason for Ignoring: Translation is unnecessary	
-			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_A_AL.png				Reason for Ignoring: Translation is unnecessary	
-			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_A_NR.png					
-			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_B_AL.png					
-			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_B_NR.png					
-			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_C_AL.png					
-			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_C_NR.png					
-			ignore			\Assets\Railroad\Files	TX_Railroad_AL.png					
-			ignore			\Assets\Rocket\Files	TX_Rocket_AL.png					
-			ignore			\Assets\Rya\Files	Icon_Rya_Maria.png					
-			ignore			\Assets\Rya\Files	TX_Rya_Maria_AL.png					
-			ignore			\Assets\Sandbags\Files	TX_Sandbags_AL.png					
-			ignore			\Assets\Sauna\Files	TX_Sauna_Wood_AL.png					
-			ignore			\Assets\Sawbuck\Files	TX_Sawbuck_AL.png					
-			ignore			\Assets\Scarecrow\Files	TX_Scarecrow_AL.png					
-			ignore			\Assets\Scarecrow\Files	TX_Scarecrow_NR.png					
-			ignore			\Assets\School\Files	TX_School_Benches_AL.png					
-			ignore			\Assets\School\Files	TX_School_Chimney_AL.png					
-			ignore			\Assets\School\Files	TX_School_Exterior_AL.png					
-			ignore			\Assets\School\Files	TX_School_Garage_AL.png					
-			ignore			\Assets\School\Files	TX_School_Gymnasium_AL.png					
-			ignore			\Assets\School\Files	TX_School_Gymnasium_Details_AL.png					
-			ignore			\Assets\School\Files	TX_School_Hallways_AL.png					
-			ignore			\Assets\School\Files	TX_School_Lobby_Details_AL.png					
-			ignore			\Assets\School\Files	TX_School_Roof_AL.png					
-			ignore			\Assets\School\Files	TX_School_Stairs_AL.png					
-			ignore			\Assets\School\Files	TX_School_Steps_AL.png					
-			ignore			\Assets\Shack_A\Files	TX_Shack_A_AL.png					
-			ignore			\Assets\Shack_Brick\Files	TX_Shack_Brick_Exterior_AL.png					
-			ignore			\Assets\Shack_Brick\Files	TX_Shack_Brick_Interior_AL.png					
-			ignore			\Assets\Shack_Brick\Files	TX_Shack_Brick_Roof_AL.png					
-			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sport_Exterior_AL.png					
-			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sport_Interior_AL.png					
-			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sport_Roof_AL.png					
-			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sports_Steps_AL.png					
-			ignore			\Assets\Shelf_Metal\Files	Icon_Shelf_Metal.png					
-			ignore			\Assets\Shelf_Metal\Files	TX_Shelf_Metal_AL.png					
-			ignore			\Assets\Shelf_Wall\Files	Icon_Shelf_Wall.png					
-			ignore			\Assets\Shelf_Wall\Files	TX_Shelf_Wall_AL.png					
-			ignore			\Assets\Shelf_Warehouse\Files	TX_Shelf_Warehouse_AL.png					
-			ignore			\Assets\Shelf_Wood\Files	Icon_Shelf_Wood.png					
-			ignore			\Assets\Shelf_Wood\Files	TX_Shelf_Wood_AL.png					
-			ignore			\Assets\Shopping_Cart\Files	TX_Shopping_Cart_AL.png					
-			ignore			\Assets\Shower\Files	TX_Shower_AL.png					
-			ignore			\Assets\Sign_Children\Files	TX_Sign_Children_AL.png					
-			ignore			\Assets\Sign_Crossing\Files	TX_Sign_Crossing_AL.png					
-			ignore			\Assets\Sign_Curve\Files	TX_Sign_Curve_AL.png					
-			ignore			\Assets\Sign_Exit\Files	TX_Sign_Exit_AL.png					
-			ignore			\Assets\Sign_Railroad\Files	TX_Sign_Railroad_AL.png					
-			ignore			\Assets\Sign_Speed\Files	TX_Sign_Speed_40_AL.png					
-			ignore			\Assets\Sink_Carpet\Files	TX_Sink_Carpet_AL.png					
-			ignore			\Assets\Sink_Toilet\Files	TX_Sink_Toilet_AL.png					
-			ignore			\Assets\Slab_Concrete\Files	TX_Slab_Concrete_AL.png					
-			ignore			\Assets\Sofa_Leather\Files	Icon_Sofa_Leather.png					
-			ignore			\Assets\Sofa_Leather\Files	TX_Sofa_Leather_AL.png					
-			ignore			\Assets\Speedbump\Files	TX_Speedbump_AL.png					
-			ignore			\Assets\Stadium\Files	TX_Stadium_Cover_AL.png					
-			ignore			\Assets\Stadium\Files	TX_Stadium_Light_AL.png					
-			ignore			\Assets\Stadium\Files	TX_Stadium_Seats_AL.png					
-			ignore			\Assets\Stadium\Files	TX_Stadium_Stand_AL.png					
-			ignore			\Assets\Stadium\Files	TX_Stadium_Sweeper_AL.png					
-			ignore			\Assets\Statue_Apartments\Files	TX_Statue_Apartments_Base_AL.png					
-			ignore			\Assets\Statue_Apartments\Files	TX_Statue_Apartments_Sculpt_AL.png					
-			ignore			\Assets\Statue_Apartments\Files	TX_Statue_Apartments_Sculpt_NR.png					
-			ignore			\Assets\Stool_Military\Files	Icon_Stool_Military.png					
-			ignore			\Assets\Stool_Military\Files	TX_Stool_Military_AL.png					
-			ignore			\Assets\Stool_Padded\Files	Icon_Stool_Padded.png					
-			ignore			\Assets\Stool_Padded\Files	TX_Stool_Padded_AL.png					
-			ignore			\Assets\Stove\Files	Icon_Stove.png					
-			ignore			\Assets\Stove\Files	TX_Stove_AL.png				Reason for ignoring: Low Resolution	
-			ignore			\Assets\Stove_Hood\Files	TX_Stove_Hood_AL.png				Reason for Ignoring: Translation is unnecessary	
-			ignore			\Assets\Substation\Files	TX_Substation_AL.png					
-			ignore			\Assets\Table_Cabin\Files	Icon_Table_Cabin.png					
-			ignore			\Assets\Table_Cabin\Files	TX_Table_Cabin_AL.png					
-			ignore			\Assets\Table_Canteen\Files	Icon_Table_Canteen.png					
-			ignore			\Assets\Table_Canteen\Files	TX_Table_Canteen_AL.png					
-			ignore			\Assets\Table_Kitchen\Files	Icon_Table_Kitchen.png					
-			ignore			\Assets\Table_Kitchen\Files	TX_Table_Kitchen_AL.png					
-			ignore			\Assets\Table_Office\Files	Icon_Table_Office.png					
-			ignore			\Assets\Table_Office\Files	TX_Table_Office_AL.png					
-			ignore			\Assets\Table_Round\Files	TX_Table_Round_AL.png					
-			ignore			\Assets\Table_Television\Files	TX_Table_Television_AL.png					
-			ignore			\Assets\Tank_Fuel\Files	TX_Tank_Fuel_AL.png					
-			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Details_AL.png					
-			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Main_AL.png					
-			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Roof_AL.png					
-			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Stand_AL.png					
-			ignore			\Assets\Target_Stand\Files	Icon_Target_Stand.png				Reason for ignoring: Low Resolution	
-			ignore			\Assets\Target_Stand\Files	TX_Target_Stand_AL.png				Reason for ignoring: Low Resolution	
-			ignore			\Assets\Tarp\Files	TX_Tarp_AL.png					
-			ignore			\Assets\Television\Files	Icon_Television.png					
-			ignore			\Assets\Television\Files	TX_Television_Frame_AL.png					
-			ignore			\Assets\Television\Files	TX_Television_Screen_AL.png					
-			ignore			\Assets\Tent\Files	TX_Tent_AL.png					
-			ignore			\Assets\Tent\Files	TX_Tent_Furnace_AL.png					
-			ignore			\Assets\Tent\Files	TX_Tent_Mat_AL.png					
-			ignore			\Assets\Tent\Files	TX_Tent_Mat_NR.png					
-			ignore			\Assets\Tent\Files	TX_Tent_NR.png					
-			ignore			\Assets\Tent_Civilian\Files	TX_Tent_Civilian_F_AL.png					
-			ignore			\Assets\Tent_Civilian\Files	TX_Tent_Civilian_NR.png					
-			ignore			\Assets\Tent_Civilian\Files	TX_Tent_Civilian_R_AL.png					
-			ignore			\Assets\Tire\Files	TX_Tire_AL.png					
-			ignore			\Assets\Tire\Files	TX_Tire_NR.png					
-			ignore			\Assets\Toilet\Files	TX_Toilet_AL.png					
-			ignore			\Assets\Totem_Apartments\Files	TX_Totem_Apartments_AL.png					
-			ignore			\Assets\Totem_Market\Files	TX_Totem_Market_AL.png					
-			ignore			\Assets\Totem_Market\Files	TX_Totem_Market_Wall_AL.png					
-			ignore			\Assets\Tower_Electric\Files	TX_Tower_Electric_AL.png					
-			ignore			\Assets\Tower_Guard\Files	TX_Tower_Guard_Structure_AL.png					
-			ignore			\Assets\Tower_Lookout\Files	TX_Tower_Lookout_AL.png					
-			ignore			\Assets\Tower_Terminal\Files	TX_Tower_Terminal_AL.png					
-			ignore			\Assets\Trailer_Military\Files	TX_Trailer_Military_AL.png					
-			ignore			\Assets\Train_Oil\Files	TX_Train_Oil_Carriage_AL.png					
-			ignore			\Assets\Train_Oil\Files	TX_Train_Oil_Tank_AL.png					
-			ignore			\Assets\Trash_Bin_Concrete\Files	TX_Trash_Bin_Concrete_AL.png					
-			ignore			\Assets\Treehouse\Files	TX_Treehouse_Shack_AL.png					
-			ignore			\Assets\Treehouse\Files	TX_Treehouse_Tree_AL.png					
-			ignore			\Assets\Treehouse\Files	TX_Treehouse_Tree_NR.png					
-			ignore			\Assets\Trolley\Files	Icon_Trolley_Short.png					
-			ignore			\Assets\Trolley\Files	Icon_Trolley_Tall.png					
-			ignore			\Assets\Trolley\Files	TX_Trolley_AL.png					
-			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_AL.png					
-			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_Divider_AL.png					
-			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_Entrance_AL.png					
-			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_Rail_AL.png					
-			ignore			\Assets\Tutorial\Billboards\Files	TX_Sign_Billboard_AL.png					
-			ignore			\Assets\Tutorial\Billboards\Files	TX_Tutorial_Crafting.png					
-			ignore			\Assets\Vehicles\BTR\Files	TX_BTR_AL.png					
-			ignore			\Assets\Vehicles\BTR\Files	TX_BTR_NR.png					
-			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Body_Blue_AL.png					
-			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Body_Red_AL.png					
-			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Body_White_AL.png					
-			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Rims_AL.png					
-			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Tires_AL.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Chassis_AL.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Chassis_NR.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Hull_AL.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Hull_NR.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Launcher_AL.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Launcher_NR.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Pods_AL.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Pods_NR.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Tracks_AL.png					
-			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Tracks_NR.png					
-			ignore			\Assets\Vehicles\Nissan\Files	TX_Nissan_Exterior_AL.png					
-			ignore			\Assets\Vehicles\Nissan\Files	TX_Nissan_Interior_AL.png					
-			ignore			\Assets\Vehicles\PAZ\Files	TX_PAZ_Exterior_AL.png					
-			ignore			\Assets\Vehicles\PAZ\Files	TX_PAZ_Interior_AL.png					
-			ignore			\Assets\Vehicles\PAZ\Files	TX_PAZ_Tires_AL.png					
-			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Chassis_AL.png					
-			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Chassis_NR.png					
-			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Turret_AL.png					
-			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Turret_NR.png					
-			ignore			\Assets\Vehicles\Tractor\Files	TX_Tractor_AL.png					
-			ignore			\Assets\Vehicles\Tractor\Files	TX_Tractor_NR.png					
-			ignore			\Assets\Vehicles\Transporter\Files	TX_Transporter_Exterior_AL.png					
-			ignore			\Assets\Vehicles\Transporter\Files	TX_Transporter_Interior_AL.png					
-			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Cargo\Files	TX_Truck_Trailer_Cargo_AL.png					
-			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Frame\Files	TX_Truck_Trailer_Frame_AL.png					
-			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Fuel\Files	TX_Truck_Trailer_Fuel_AL.png					
-			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Logs\Files	TX_Truck_Trailer_Logs_AL.png					
-			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Chassis_AL.png					
-			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Chassis_NR.png					
-			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Wheels_AL.png					
-			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Wheels_NR.png					
-			ignore			\Assets\Vehicles\Volvo\Files	TX_Volvo_Exterior_AL.png					
-			ignore			\Assets\Vehicles\Volvo\Files	TX_Volvo_Interior_AL.png					
-			ignore			\Assets\Warehouse_Terminal\Files	TX_Warehouse_Terminal_Base_AL.png					
-			ignore			\Assets\Warehouse_Terminal\Files	TX_Warehouse_Terminal_Plates_AL.png					
-			ignore			\Assets\Warehouse_Terminal\Files	TX_Warehouse_Terminal_Structure_AL.png					
-			ignore			\Assets\Weapon_Display\Files	Icon_Weapon_Display.png					
-			ignore			\Assets\Weapon_Display\Files	TX_Weapon_Display_AL.png					
-			ignore			\Assets\Well\Files	TX_Well_AL.png					
-			ignore			\Assets\Wicket\Files	TX_Wicket_Roof_AL.png					
-			ignore			\Modular\Doors\Files	TX_Door_Attic_AL.png					
-			ignore			\Modular\Doors\Files	TX_Door_Metal_AL.png					
-			ignore			\Modular\Doors\Files	TX_Door_Porch_AL.png					
-			ignore			\Modular\Doors\Files	TX_Door_Sauna_AL.png					
-			ignore			\Modular\Doors\Files	TX_Door_Shack_AL.png					
-			ignore			\Modular\Doors\Files	TX_Door_Wood_AL.png					
-			ignore			\Modular\Frames\Files	TX_Frames_Metal_AL.png					
-			ignore			\Modular\Frames\Files	TX_Frames_Wood_AL.png					
-			ignore			\Terrains\Utility\Files	TX_Flag_Transition_AL.png					
-			ignore			\Terrains\Utility\Files	TX_Pole_Ribbon_AL.png					
-			ignore			\Terrains\Utility\Files	TX_Ribbon_Field_AL.png					
-			ignore			\Terrains\Utility\Files	TX_Ribbon_NR.png					
-			ignore			\Terrains\Utility\Files	TX_Wire_NR.png					
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	Reworked by	Contributors	Attribution	Comments	max_length
+AI			ignore			\AI\Bandit\Files	TX_Bandit_01_AL.png	4967228	5862a2f156788c9860059ff64095fa5248619f74d576a5f57b41ba49f3400357					
+AI			ignore			\AI\Bandit\Files	TX_Bandit_02_AL.png	5141638	2b5001a8b0a2e16f49d2f39258447cab78c706abaeff105837f67c5ae4e5ae03					
+AI			ignore			\AI\Bandit\Files	TX_Bandit_03_AL.png	4564615	238d90b8c4144d0e20664198276355d133fee2842611b145beae231617f253b6					
+AI			ignore			\AI\Bandit\Files	TX_Bandit_04_AL.png	4354919	9851c7fd2d718e917242a36459757af6eee8182f730e62ec1cc147abfb238043					
+AI			ignore			\AI\Bandit\Files	TX_Bandit_NR.png	7521321	1ce2d83e5008725c880bfa26c11e3b297c8a0c2ae45fbf43d9a735f46c835fee					
+AI			ignore			\AI\Guard\Files	TX_Guard_AL.png	4142479	c7872252d71d498cba582999bfb775f8bd04f9cbfb3e4841f8bbbe2a22d09a7c					
+AI			ignore			\AI\Guard\Files	TX_Guard_NR.png	5038103	76f7bf6715a93a770b501ed7ff2d29a31d8324fd298b25aed4ea379b3ff2cd3b					
+AI			ignore			\AI\Military\Files	TX_Military_AL.png	5125712	f4bfeae0260e6effa7a5bef9d6502bc442899527a11f65fc7083619ae7ce1fb8					
+AI			ignore			\AI\Military\Files	TX_Military_NR.png	5971684	2be8da3e94cf796c88e5e671b52ce91a9f2d3213b6fe860ad131e6b5d191b985					
+AI			ignore			\AI\Punisher\Files	TX_Punisher_AL.png	4609438	437ec918a800195a7777cddaf892e95cb602af0b2f32db828b6cd063baa32b09					
+AI			ignore			\AI\Punisher\Files	TX_Punisher_NR.png	5592379	4f4e49a950f2e385fb0ff89a14839ab2f9f5002243ce71985e0ec9d646d31491					
+			ignore			\Editor	RTV_Background.png	3470561	3682b7700e1032e7e4b4efddd125a312d98e31a07e44d5e9468fa459ec70ea56				Reason for ignoring: Text unreadable in-game	
+			ignore			\Editor	RTV_Icon.png	96463	8f2b9308aa1795a1fb6cc9dfdf7d9afa019c7acd686f15e18e23a53849fcea9e					
+			ignore			\Editor	RTV_Loading.png	1755080	434ba08112a6f2338d1a336aa81c625b6557f52489ada0dd43ea69fd310dddd4					
+			ignore			\Editor	RTV_Logo.png	34174	94eb47769ab4d3f1333aa8690e096870ac8f4f95822b1938e5bd15bfb2f1b2b5				Reson for ignoring: Title of the game	
+			ignore			\Editor	RTV_Splash.png	3477553	fa6bcc80fb243d90bd92330b2f01c82d0a04d7d8385a65bed847236e9e2dce59					
+			ignore			\Effects\Files	TX_Campfire.png	3092343	355a7dd8f366ae070b71c7ac2489151c295666cc56f642334ac0372bb2880926					
+			ignore			\Effects\Files	TX_Decal_Blood.png	176510	973247c5268809c2ff38828db52cc013dee60788dfe8b430d553df652430277f					
+			ignore			\Effects\Files	TX_Decal_Hit.png	3604	37bfc751c6ca78d4788e3d08afc9c652120cdc74c640d19041662f3b55ac76dd					
+			ignore			\Effects\Files	TX_Decal_Knife.png	748	a9fffa96f22a6da625841c3777abfa51d4ae6677575f7a566de71b4d118bcb22					
+			ignore			\Effects\Files	TX_Explosion.png	2082359	26bf8f3aceabc1968fdbfc0b6d2f29d472f048a3a6d40dbeec58592cc2e6ad8d					
+			ignore			\Effects\Files	TX_Muzzle_Flash.png	101243	4b681a4a77f6d735243ec140fd429bdc20b8dee19f3276afe2219d6c3dfaf2ca					
+			ignore			\Effects\Files	TX_Particle.png	12595	6d38ca7b7f96093982308081094c79b424b9329f2e6a0e83604ce4d743ed811a					
+			ignore			\Effects\Files	TX_Smoke.png	22574	7d7123ef71353ffa82d55b32e26090a0ab12a21769bf1298d37bd81097dda090					
+			ignore			\Environment\Textures	Aurora.png	5746595	6100b07472fb5a3079e1735d9f53e8122c0bbfc1ff0566a579c6a82382ad065d					
+			ignore			\Environment\Textures	Clouds.png	5274328	8ecdab6cf9868af1a772c0ef8d1029bb6ffdfe96485e9fc9a0139f2dd9746fb8					
+			ignore			\Environment\Textures	Moon.png	166986	739422c0c0b23b010aa41f2c2bb539c98bd1d99d1901b8a03cc084b0f9bc6062					
+			ignore			\Environment\Textures	Overcast.png	4530587	0684e3f5d335068abad1a5c248182d408b9ca26f1407ff7237bcf6c89f451ede					
+			ignore			\Environment\Water\Files	TX_Water_A_NR.png	1425836	97adb5f37c8ecb22c4b8feff12e354eea197a7e95d8289ab3d0fea7593b72c8e					
+			ignore			\Environment\Water\Files	TX_Water_B_NR.png	272198	5412fe713f7fd63af0b2d3df24812362aaa17108825d02975baf4d3f5ac0bfc6					
+UI			ignore			\UI\Sprites	Grabber.png	92	26704b56907f827012bb0ce09673a8726501b06392b1a56c2d3d20fde947013b					
+UI			ignore			\UI\Sprites	Icon_Agility.png	6001	11ba0473b76c3167d8e3ab6f0196ead92b8f257cd55e38ab2cf8abbfc70c35cd					
+UI			ignore			\UI\Sprites	Icon_Arm_Stamina.png	4829	80f2a5a46e3176858d6f20587f21b7aeb515cb8b3a5bf34c2878851698909271					
+UI			ignore			\UI\Sprites	Icon_Armor.png	8522	d505d3ebe89f5ef5dad3c6fb3a2ba616b1d26af3def295a27e4ea7badcb18855					
+UI			ignore			\UI\Sprites	Icon_Bleeding.png	8862	a96d7c81d8d55d9943b113471ba67a90f07ce13d75861e2df1c0c8ecb3f54176					
+UI			ignore			\UI\Sprites	Icon_Burn.png	7038	4dde8a3283bb963e0f7adde5fd52320384a94165067225980d3262f57a1dc61c					
+UI			ignore			\UI\Sprites	Icon_Capacity.png	2224	7e5a0b134dd9c6050e3f5e65b5dcf6f34386d5f43a17861a222c05cfa523b9b7					
+UI			ignore			\UI\Sprites	Icon_Coffee.png	2899	6cbfbe2e4299910c5e2dca0c96a092ce9c1cd41a04a53e89b1a52b31f07b9937					
+UI			ignore			\UI\Sprites	Icon_Combine.png	7244	8b9f1cdf49a261ddca13a1eb3c4c647e9cbb16b98c9db8ab45dbe51453554da2					
+UI			ignore			\UI\Sprites	Icon_Combine_Charge.png	2697	87e7d4753a687e583c4f3c672a5683dcf360279d41841deb0280062e91afa593					
+UI			ignore			\UI\Sprites	Icon_Combine_Load.png	4583	bd06bcc7493bfbbb6ddf536298ae833efc04c86144de6ee50a00e157acd61c4e					
+UI			ignore			\UI\Sprites	Icon_Dehydration.png	1697	e977218727722b235f68aa2de640521057d8e1dedbf693e356ddcab5f0bdf1f6					
+UI			ignore			\UI\Sprites	Icon_Dexterity.png	4229	98730a67f4f012fb31d2146ef8a65e257e459f3ac06f4ddf867a6772e57f0820					
+UI			ignore			\UI\Sprites	Icon_Dice.png	8519	89b3e58c359a761cbe481d7ebca1f448bc2cd8a6743c42fd528092051967aca2					
+UI			ignore			\UI\Sprites	Icon_DirectX.png	22527	732647c0cb60960e04d9428b5b3246bee3ce36db51d82394dcaf6e9e70f42305					
+UI			ignore			\UI\Sprites	Icon_Electronics.png	2963	cf4ab2426a734061065a675d08294445bf396ad7af7b70287b58164e278b2971					
+UI			ignore			\UI\Sprites	Icon_Energy.png	4235	8f9a7951314424c59fdb8bf0c51f787d4be2b69b27479688813b987826a11b97					
+UI			ignore			\UI\Sprites	Icon_Exit.png	2682	878c8a193cdf4b18cc9a5f2717eabc143ffac10ad4a2b94a773d77051583c47e					
+UI			ignore			\UI\Sprites	Icon_Fracture.png	4618	cd461726549d19121f58bb9c2b801ffecc84520892f17891c93d6e0e7f2d874d					
+UI			ignore			\UI\Sprites	Icon_Frostbite.png	8383	6aa07858720467e44e94e150ca7eb03811853260a5d41ff2afff83aa7ab14eab					
+UI			ignore			\UI\Sprites	Icon_Frozen.png	5547	178a526d5d82a3a7d30a8e234563b515d0749401d33fb278e89204e4c5073566					
+UI			ignore			\UI\Sprites	Icon_Headshot.png	6707	622aecb54ea43762f6a3664f42d5baf8bbdf314d08dbdb9e0d0789ee904966ad					
+UI			ignore			\UI\Sprites	Icon_Health.png	1612	05e290f94ac530d6cd99218bec27dbe0ec9d8cbc3939997add83715ceb93e8df					
+UI			ignore			\UI\Sprites	Icon_Heat.png	5685	76e06f6bd856ac796ab32fc9db246f999f4aa583de47a2b1e47f7bce346bc455					
+UI			ignore			\UI\Sprites	Icon_Hide.png	6102	4b53bcead99529beced0c643e28311460a6491385259631dc554315a5703740c					
+UI			ignore			\UI\Sprites	Icon_Insanity.png	7264	ab3e15042ed7995203fdcfc55d17e63eeb8b59837d9d8be9a311c44050069e8f					
+UI			ignore			\UI\Sprites	Icon_Insulation.png	3683	dac0c6644853352c75c43380635a22fc8e4391b700a5f23071ada14f154663a5					
+UI			ignore			\UI\Sprites	Icon_Items.png	3659	db05913e24bb67619533171cd0017c9da2157092d06d872774809030a5a11560					
+UI			ignore			\UI\Sprites	Icon_Loading.png	5754	88638cd26463f1ab1b8447a684622d0b58d4ed3e8ef405c21b2f6ca231b30327					
+UI			ignore			\UI\Sprites	Icon_Locked.png	3389	d80d58764a7c149126993b9ac6b8665c68668623e9a1fabddaeb2ea8a5aef3b8					
+UI			ignore			\UI\Sprites	Icon_Magnet.png	11295	0c2816daa55f775992eede1c015020de16edb72c6d1f5217ee9d67ef2370a1a2					
+UI			ignore			\UI\Sprites	Icon_Malfunction.png	4806	873effdea5eff2c4451449f93e89efe1c2d6ee40516c0983c9c42bdda0c0c8bd					
+UI			ignore			\UI\Sprites	Icon_Menace.png	6539	67765e01c175f4b1e6221541efc26816fab6aceaca44fb9ff254929f7fa3142d					
+UI			ignore			\UI\Sprites	Icon_Object.png	3521	44fced368b0538a7cbe66bac908692697e4a6206235c27b10fec75ecbd0507d1					
+UI			ignore			\UI\Sprites	Icon_Overweight.png	7852	9664b42c0c90279a6d6f48b09509ddecbf0cc78743274108445d0f5647ae1d74					
+UI			ignore			\UI\Sprites	Icon_Performance.png	4761	d38c081b0dc1372c5cbaaf5859e1374081e5f41f47419891d3a44d42cbd2f37d					
+UI			ignore			\UI\Sprites	Icon_Poisoning.png	9762	643f728a240401b27764c4a6c3f77c5a198c454a1bd1dbed1dfcdd1319305872					
+UI			ignore			\UI\Sprites	Icon_Protection.png	7298	8e5ffab2036371c42efd7c8cc717a98dffeefa3ca037f1361da48a26639e109e					
+UI			ignore			\UI\Sprites	Icon_Radiation.png	6405	c8cf857936a91aa40fe224c14dae43d0f18a743e357e806ac3f25cf0d5950b93					
+UI			ignore			\UI\Sprites	Icon_Returns.png	8105	ddf16f26b62f6308a669208288f56965a3153a72b6340eec2eec6dcdaad8cbdf					
+UI			ignore			\UI\Sprites	Icon_Rupture.png	6965	e3b3bf3a33b022595059fd66741f0088d8070acd20c06e1aa2d4af3e255d9833					
+UI			ignore			\UI\Sprites	Icon_Shelter.png	4759	102e65617347bf1469a1b3dbd0251e6a8de6efac3c96a8c715cf002dda063435					
+UI			ignore			\UI\Sprites	Icon_Show.png	5577	198ec2666484f12f00e753be55ba01bcf724d9dacab97ea2956a58ddb7dda105					
+UI			ignore			\UI\Sprites	Icon_Skull_Half.png	123697	b35051d51c62cc03288d8857c99bcf58c833a3ce3aa142c98004eb16cac1f91a					
+UI			ignore			\UI\Sprites	Icon_Skull_Red.png	129638	20020cb09e6dbac0752e897c9c03d65d9439c067a8cc83a933184e16cb012f28					
+UI			ignore			\UI\Sprites	Icon_Skull_White.png	119557	3fe60586febbe2930f5a50e87d6029a28c252b9d964e1761efe509f3cc9aabfe					
+UI			ignore			\UI\Sprites	Icon_Spawn.png	11317	a9d7eada9ca03134db984f62dd21d6bb91c76b780e37b15a0bcc9385e882ecdd					
+UI			ignore			\UI\Sprites	Icon_Starvation.png	5035	469c64576a0799f5392ff4792ff85cb9b0af0273175562d31a7d19705fd59c16					
+UI			ignore			\UI\Sprites	Icon_Status.png	4388	edeb7679e3730ac42edcda41b945ad5fc20d1992ce14df306722d531a0b905b3					
+UI			ignore			\UI\Sprites	Icon_Testbench.png	3724	021cb776014d040c30d74d84b566a7ef1c659be172ab4701846eb35ea5002ed0					
+UI			ignore			\UI\Sprites	Icon_Time.png	7556	6545fd9419eb442c462568e3d64d5aec87e82a500bb3b9185fd03d0d01cad9bc					
+UI			ignore			\UI\Sprites	Icon_Unlocked.png	3582	5ba4f5d3059f58ef621bc2e61f510559d699c55115788ee2ff490f376ab29968					
+UI			ignore			\UI\Sprites	Icon_Value.png	2471	dd77c495705b36fe8b085581a920a75abce0197513f7f3c433ee6c4fd0f68c10					
+UI			ignore			\UI\Sprites	Icon_Vulkan.png	36188	9b6ce5a9cd2117fce8ef1f01e96ff9d54f906f877890e5647fbb9e8500210e16					
+UI			ignore			\UI\Sprites	Icon_Weapon.png	4930	a87f4d9e87d2bf8535a10c98ec035e500474c17d80d1a6ec5e03e73481cf7f37					
+UI			ignore			\UI\Sprites	Icon_Weight.png	3230	882c7adc313ccc8a202c8d65db3f438d2626e182db916b99957405e3bb1b65c7					
+UI			ignore			\UI\Sprites	Icon_Workbench.png	3621	aa352567d906e352c67ea71810d05d878ae368bfc8e454630a11c51c53bbb677					
+UI			ignore			\UI\Sprites	Tile.png	242	a6757d2e031f1635cbb09b3edd62ed94571fd59984b43f7b4d719b93120896cc					
+			ignore			\Modular\Textures	TX_Checker.png	21331	0da118a7370491819722dfbacf35dafe097d0a8c3e5dfdfc99803186303b0f81					
+			ignore			\Modular\Textures	TX_Flashlight.png	19207	ec53fb00a399c17dccf057c1975ccd6e4fc76234353d08f77c71db39032aa859					
+			ignore			\Modular\Textures	TX_Frost.png	328932	2814cfed011ab77ac934f86f921bf3a53e7f752fd0769920ea6cc1f0c62edb05					
+			ignore			\Modular\Textures	TX_Perlin_Noise_A.png	874949	62c914242ca7045b4f5135e5b4a4bcc541b2065fa9a341b924afb190e050fa50					
+			ignore			\Modular\Textures	TX_Perlin_Noise_B.png	1265667	160bf583965fa276d4d5ca28b7bbe279d320d574e9665563a1053ef90a2bc6a7					
+			ignore			\Modular\Textures	TX_Perlin_Noise_C.png	879465	d45c355dfdbf22c84b78f8cafe336dd14da3e4c0b4f7b41d0aaa5a04444ea184					
+			ignore			\Modular\Textures	TX_Perlin_Noise_D.png	917758	16cf01176d4619587787aac4691b5cbacb518b69572dee3a9eabbb6d46c0651b					
+			ignore			\Modular\Textures	TX_Planks_AL.png	13475174	85cc82aaae9d503afbb505062c9f604c589f0587c17dd9716e651524436c96fd					
+			ignore			\Modular\Textures	TX_Ripples.png	100446	2c3c8b983a3de8e66533b03443cf958e1271ac031c51a0f42a92a0a4a16f3447					
+			ignore			\Modular\Textures	TX_Specular.png	4915321	39cf4fe8ade1e4d40f7c87b8814b41d3ca8185194bb80741d6cebcce2b7968c2					
+			ignore			\Modular\Textures	TX_Tarp_A_AL.png	3690557	f0fcc6ac01c5119249432810356bb60feb40bab3cc547c0940c440e10248c8dc					
+			ignore			\Modular\Textures	TX_Tarp_B_AL.png	2763965	59f4d859cba049ebed911c19c1908a5494530c263e51a2ba55877982217ab5b3					
+			ignore			\Nature\Grass\Files	TX_Grass_NR.png	801613	6cf6c4cfb19248f45f89b529c707059ae3dc40544722ecd3001989d72ee7cf54					
+			ignore			\Nature\Logs\Files	TX_Log_AL.png	5509506	5ab4b7450d3ea959207e73a028a7b6ed94e4294cc72643673becf9c8b7322af8					
+			ignore			\Nature\Logs\Files	TX_Log_NR.png	6486609	af2907c9fce5479eb6bbc778748950a02e2f3cd592df323eb3f0435ebba16583					
+			ignore			\Nature\Rocks\Files	TX_Moss_AL.png	35063481	68efcfaea24a7a23f401ba2b09e1ef599ff570cd3d26b0fced7253326705e9f9					
+			ignore			\Nature\Rocks\Files	TX_Rock_AL.png	19748853	5907f0d410dcb1cbd44c774169e552bb9a7f709d3a2cb7a51c5f3efe3c8a9955					
+			ignore			\Nature\Rocks\Files	TX_Rock_NR.png	26154538	01006580604ef6b47aeb6c4a83a9deb384a075d7a9ca85c59f41744eabcad8db					
+			ignore			\Nature\Shrubs\Files	TX_Shrub_NR.png	1348982	503105b1015708a948a24da015372b4bd753465ad1983419edd039be01739065					
+			ignore			\Nature\Sticks\Files	TX_Sticks_NR.png	147158	a812a182af53dc6fa6274647e429e3ca427b3a770dcf4b8a1c6a579d56ed97a2					
+			ignore			\Nature\Stones\Files	TX_Stone_AL.png	13664750	313d280cb193a57a07ed1238fc03449e1bdc076ca7bfe6346cea75b773479a12					
+			ignore			\Nature\Stones\Files	TX_Stone_NR.png	4638029	65d8777239d2b4c0651102bef6a43ff61e3eab42baed79ea6e73906a14ba9b65					
+			ignore			\Nature\Stumps\Files	TX_Stump_AL.png	6096150	46725438ea54213b5dcf758d160344455e2353c6b34f475b178568cecd4bdf30					
+			ignore			\Nature\Stumps\Files	TX_Stump_NR.png	1813433	aadfb8169d09df6eaa7048adaafc075d9e4a391fe26691046c7c447de92b91c9					
+			ignore			\Nature\Trees\Files	TX_Tree_Damaged_AL.png	6206445	48eccf13b401e381c1f5d5592dae30fa4d7d196048d65a26f002308c08e3ae47					
+			ignore			\Nature\Trees\Files	TX_Tree_Damaged_NR.png	7109185	c25cdecdfd0d720bced0cafd8761189232d23dbf69eea10787ef9bd667d1710a					
+			ignore			\Nature\Trees\Files	TX_Tree_Trunk_AL.png	13158866	2d56f1f4a410f98b3dc9737a50d4bd7cb105fdd6066ca1b350808c7dc1a7eb56					
+			ignore			\Nature\Trees\Files	TX_Tree_Trunk_NR.png	15454741	fb62860431e12512ec25ede965d708f61334a6065a0c73a817ffd50f41a27be5					
+			ignore			\Terrains\Apartments\Files	TX_Apartments_Roads.png	215760	6f5708037c3551d943a8770cb5f677902148b0708e792ed92cec5ccb68841115					
+			ignore			\Terrains\Highway\Files	TX_Highway_Roads.png	277612	73baea21d4c981cdd5dee514e8e81a5503b2383344050b9ec4233e54d9cfe62c					
+			ignore			\Terrains\Minefield\Files	TX_Minefield_Roads.png	300876	0abb4d514097e37edd3caab47c10f4c056f478364846ac51ec0dcfeb136f7837					
+			ignore			\Terrains\Outpost\Files	TX_Outpost_Roads.png	250953	e4822011f829be3a597383a19ad21ff2c96bbe81d1b8f22cb4853747d0e5bbf9					
+			ignore			\Terrains\School\Files	TX_School_Rampart_AL.png	25106150	91c7d5b85f49185bdf886068752efd416fdad5dbfd8eb604fa3c23039c47ead2					
+			ignore			\Terrains\School\Files	TX_School_Rampart_NR.png	24424880	e7b66f3ff127f5e3d25372ad858b38f88d4a6139402d7d3dc0ff7cf96881c35f					
+			ignore			\Terrains\School\Files	TX_School_Roads.png	368866	cdff74cbf5a00f63dc4d42bb6728642cc06cd7fe69467bcbd18bec572536e042					
+			ignore			\Terrains\Terminal\Files	TX_Terminal_Pool_AL.png	18244284	d4af532b72eef58f88d46d284c2e362173fc408216f9fb9479946e40f56c41db					
+			ignore			\Terrains\Terminal\Files	TX_Terminal_Roads.png	135501	1789a0a63ee33a87b425bd9621cc8b027507aa62cf68a3d700cf9bebeb37376d					
+			ignore			\Terrains\Textures	TX_Asphalt_AL.png	9078734	dc0ea31d57b02b8c43e3ef88f6b53270a083b043afe2c8238fd8a546527c1878					
+			ignore			\Terrains\Textures	TX_Asphalt_Cracks_AL.png	7936904	0477b48ebe60af20e64992f8258b18bc30113b759b2946e0070fdf45bf58e87a					
+			ignore			\Terrains\Textures	TX_Asphalt_Cracks_NR.png	2223330	5d1e43d174fc309bbbf56cff2cca5a0b6f145d9a8937b665787322ea9c244828					
+			ignore			\Terrains\Textures	TX_Asphalt_NR.png	2099947	86e3dc15744e801d54c841478b3c8acf90f332cab003968301712b56f97a3242					
+			ignore			\Terrains\Textures	TX_Baseball_Field_AL.png	7437658	ef1916bbbc5896beeb1191f5694347c43ed5136ecb53c8aee3af695453e09a00					
+			ignore			\Terrains\Textures	TX_Bump_NR.png	1862382	533932c2c1126afa882e62896d12dce821955b1bc4d6bbdcf202c1de29a63c29					
+			ignore			\Terrains\Textures	TX_Dirt_AL.png	8511964	af4ab005ee806057e0185006ae219b016e10d358ab926044396dc6a36fd69ba6					
+			ignore			\Terrains\Textures	TX_Dirt_NR.png	2332617	947daed3a9701a087698613d3d90a3404c413ce5c13b9867d29758f0dd66fb9a					
+			ignore			\Terrains\Textures	TX_Field_AL.png	22212289	ab4efa1b807e50d5bb1532699ccb85ddb411458eda30aee3b45b2f0adc0d917a					
+			ignore			\Terrains\Textures	TX_Field_NR.png	31500115	6a8d946832220577ed25be54b588f4aa6d0d93293a08affae2f8d015e408c4b1					
+			ignore			\Terrains\Textures	TX_Grass_AL.png	7737003	741d42cea9cbd782e1f2253ad11619b6225dba76fee1503373f4d0f69a8b1189					
+			ignore			\Terrains\Textures	TX_Grass_Far_AL.png	2542370	0c5bec2f568a04d7e94df7bd8f7ceae1cdc7faf90d77b91498eeab7c7ce75e34					
+			ignore			\Terrains\Textures	TX_Grass_NR.png	2166940	83ef9acf3a1f90eee14241d9d793638655992664b4c3c640e76be8034a95d899					
+			ignore			\Terrains\Textures	TX_Gravel_AL.png	9092768	4a98216f59b18109d204e269d64c9a1a5b641d878abd88dd0eaee841adee0798					
+			ignore			\Terrains\Textures	TX_Gravel_NR.png	2347743	ab4c30880f2b376c1150dcd0607f9eb15d28d299630560c4cc0c1139fbc18609					
+			ignore			\Terrains\Textures	TX_Ground_AL.png	7424609	b9b8c6ba8e8391f4ac81e8cb586eb94d7e92490217f444dfca9af7e42c262381					
+			ignore			\Terrains\Textures	TX_Ground_NR.png	2355764	3e2ed22fdec1c977501053eb79db70f10633fbb50a9db15bc78af9a2ddac2e19					
+			ignore			\Terrains\Textures	TX_Hay_AL.png	8368678	54c80e4be82229dec6a26b66cd206537786f17f15bda71515b46122df2eacf00					
+			ignore			\Terrains\Textures	TX_Hay_Far_AL.png	2756737	2913cba9bd8b18e0e1a5a6ab92a6fbfc2655be08ff9fdbd186946c030390d0c5					
+			ignore			\Terrains\Textures	TX_Hay_NR.png	2380405	af4ebbdd69da9d18225cb34705954fa32068bcd2b2e57c647e14f046847385be					
+			ignore			\Terrains\Textures	TX_Mask_Noise.png	880583	cceebb5d81b9edb88156dcbf75ae075e22951ede071608a0bfcb55c34c93e942					
+			ignore			\Terrains\Textures	TX_Mask_Overlay.png	768304	542acb96e526b22f9c9f64288ac10dcdd7a7be652f0b043989b0aba1449910db					
+			ignore			\Terrains\Textures	TX_Mud_AL.png	4356090	42b18d877fb8f041833607174261698bfba3c038faab4f58fdd92bbaf7289f70					
+			ignore			\Terrains\Textures	TX_Mud_NR.png	1969312	9d2d1dc5ddc21e622a880e8611bf2a908288d092a9002b02f1953bcdf9e543de					
+			ignore			\Terrains\Textures	TX_Puddle_NR.png	870	0b36ee2c83c6fc2e00b9186cd3d71f11fc93759109dff8df712784a5a025103a					
+			ignore			\Terrains\Textures	TX_Rocks_AL.png	7902110	e7b08d0a8799ff67a1315b6fe937b0b7ea5724340e559d6e75871a6b992e2688					
+			ignore			\Terrains\Textures	TX_Rocks_NR.png	2305599	a4447cbc34b1788485c7ec52da40319f7d1791271562477f2c15823c0151d02c					
+			ignore			\Terrains\Textures	TX_Roots_AL.png	7458386	acc08969c8a158371ebae8d605d9d675c69202ec63705e71da03b7ace899f898					
+			ignore			\Terrains\Textures	TX_Roots_NR.png	2330903	ab5ea34278562f77a51fb774817db85aa99277da315c86f969567f9998d7e6dd					
+			ignore			\Terrains\Textures	TX_Rubble_AL.png	7025055	7e40bce71321d772910feb47f099a9d21180305d368722d07b740d56ea508bfc					
+			ignore			\Terrains\Textures	TX_Rubble_NR.png	2241236	71e4cc86f00a0c5b299eca0cb947a19bc652d3759d329d414117fcd89d55cfbc					
+			ignore			\Terrains\Textures	TX_Slabs_AL.png	8943304	b4337834efde71905d590e41c36cafc3681ed98ce3ee36c4bf55f3ba8ac98f45					
+			ignore			\Terrains\Textures	TX_Slabs_NR.png	2031926	05ecd30e3ac2307297acbefefc92e9cba4c2fccb596f9e3c42b79822acf28011					
+			ignore			\Terrains\Textures	TX_Snow_NR.png	2206482	360dd1c92fa950f0968dbb5ee6e4ef827e9e91d8f8eb8b14fa34af8f2e76823d					
+			ignore			\Terrains\Village\Files	TX_Village_Roads.png	148792	8ae56f448e3f76336d74f19d76391fe6773844f42226c2ee753e2d70742ed2f1					
+			ignore			\Traders\Doctor\Files	Icon_Doctor.png	238429	b59aca2bf6cdd3acf09af7e37364a31d9d161bada6249810c6554237c34a02f4					
+			ignore			\Traders\Doctor\Files	TX_Doctor_AL.png	5090655	f0da9621e00764403c58ae5f7d0e04a2bca7a9042a07b70ac959aaeb48ac826c					
+			ignore			\Traders\Doctor\Files	TX_Doctor_NR.png	5957148	c1f4af642777cf2da4554bd65b886bff56109cbf10e4ea37f7b6e9a0f999cf5d					
+			ignore			\Traders\Generalist\Files	Icon_Generalist.png	268150	daaf4b3d702d4053aa46caa25dacc966d2911537e465deb0f020155c571003ce					
+			ignore			\Traders\Generalist\Files	TX_Generalist_AL.png	5638802	66c53b5bfbc02cf3b028930045aec6e755aa7e190360629163902100cf66a9b8					
+			ignore			\Traders\Generalist\Files	TX_Generalist_NR.png	5977794	4f50fde4bb73722bb0edd807859c1b0bfef7018a63f74e0f88df7fa49a2b903b					
+			ignore			\Traders\Gunsmith\Files	Icon_Gunsmith.png	232225	4cb53b54c3e377fdcdd4e67fb8142266723565ec582742dd318f9f614a3824d4					
+			ignore			\Traders\Gunsmith\Files	TX_Gunsmith_AL.png	4211781	59cfb16b46e24637b6d438565ef6dd44b1859502b7509d40918908c65e404cce					
+			ignore			\Traders\Gunsmith\Files	TX_Gunsmith_NR.png	5701628	b6a9c215dc55e55ca012f6c4d87eee0b5cc795ae500ca625788a12e4b1e7122d					
+			ignore			\Assets\Airdrop\Files	TX_Parachute_AL.png	348099	c3e274a791dd3e8e56101cb2840e3278de458d99ceaabdedb9084435888034b1					
+			ignore			\Assets\Airdrop\Files	TX_Parachute_NR.png	218268	cfae67256e93cdb41d905430940a86265a1ad4a0126fc9bd3fad4625e037bb34					
+			ignore			\Assets\Airduct\Files	TX_Airduct_AL.png	3888330	9fbd3abd082215ea954fbb15e971c4675adc72895ed11bff91777b791decf29b					
+			ignore			\Assets\Artillery\Files	TX_Artillery_Base_AL.png	4672996	59231006283aed8217cac32546e41d4ab1f12b3c9e65a4d599c0a10f5a23ef75					
+			ignore			\Assets\Artillery\Files	TX_Artillery_Cannon_AL.png	5271993	e962a7fc6a5254dae6c61491acd1de6d7c6b580de2c561e227ec59da9ff3945c					
+			ignore			\Assets\Attic\Files	TX_Attic_Interior_AL.png	11172729	2a103822a9f320779b82137a3ec346d07b87c51bb3e288c088e30b437915c492					
+			ignore			\Assets\Attic\Files	TX_Attic_Plywood_AL.png	12838948	9ce43518aae8b65f53687f073a9c6d1ada7d565ce16c6b578b477ecc4f45f351					
+			ignore			\Assets\Attic\Files	TX_Attic_Structure_AL.png	9427363	7a9737a2b429d677a3993381366f5fff4fd467f032b335eabf78518cfe04ff8e					
+			ignore			\Assets\BTR\Files	TX_BTR_Chassis_AL.png	6006383	80cbbfe2a0d96703c5175a442c890f8d217f47fe3fd69a8a2eedd7745f82adcf					
+			ignore			\Assets\BTR\Files	TX_BTR_Chassis_NR.png	6563600	a77a9056ce3a29e1f6bea24105de9f306e383bc8037269213105ef573d3a35dc					
+			ignore			\Assets\BTR\Files	TX_BTR_Details_AL.png	4503209	f955543b7c668a066f3c1734e58e716375bd7dc2930ff17bba9b1741d491a498					
+			ignore			\Assets\BTR\Files	TX_BTR_Details_NR.png	6639805	0c5c541824752648b7ee0ac38b7ba8502f0a0661c557bb41f27e6285f853db92					
+			ignore			\Assets\BTR\Files	TX_BTR_Tires_AL.png	1924364	b501048f85caa5fda8a357c5c1f38d01a06f4136066826ecd0609ccf5fe74f46					
+			ignore			\Assets\BTR\Files	TX_BTR_Tires_NR.png	1528096	78415214caf490382424b4c660c577c969dc7cde1bab3621cf99b306189618b5					
+			ignore			\Assets\Barn_Village\Files	TX_Barn_Village_Main_AL.png	12823298	2182056ce958f75eafc8a17b2249bfc17819dbebab00186f1f6e63efeeab52ef					
+			ignore			\Assets\Barrel_Metal\Files	TX_Barrel_Metal_AL.png	1255506	1d13686ae0841addc54969436bc49f1233dca0dbd39a6f2d0ecda0c68e6e3d59					
+			ignore			\Assets\Barrier_Construction\Files	TX_Barrier_Construction_AL.png	3366704	1cf3e42cc5d536d883876eec7ea92b88d15e66ba3a5cbf46808f176f2f0bb236					
+			ignore			\Assets\Barrier_Highway\Files	TX_Barrier_Highway_AL.png	2226779	f231cd5a4e13ad5f5862bcf48c2ad21b88ff92206fdb0fb4e844bcee5287debb					
+			ignore			\Assets\Basket_Firewood\Files	TX_Basket_Firewood_AL.png	1164296	40c8341afe3db9764b999520ef775da2d3003a5e06aed94d46e08db675a979d1					
+			ignore			\Assets\Basketball_Hoop\Files	TX_Basketball_Hoop_Indoor_AL.png	1194668	d2ac1740387256b2454271da5ef610c85b468b0d63c2890124bce971ed5ab9d7					
+			ignore			\Assets\Basketball_Hoop\Files	TX_Basketball_Hoop_Outdoor_AL.png	4292210	b6d9accf16c62775281c4d6209db6a7fbcfc389812c59a7a922ad2b091f89617					
+			ignore			\Assets\Bathtub\Files	TX_Bathtub_AL.png	1044015	babe62a466dae1b3042e25242879cd5d6559c016e1907388977f89662145be51					
+			ignore			\Assets\Beam_Highway\Files	TX_Beam_Highway_AL.png	848018	dca89248eb6b624ec7e74be9a7cb2ade4b780acbe31b6ca8b77a21f8e6dbe1af					
+			ignore			\Assets\Beam_Road\Files	TX_Beam_Road.png	2145892	61c163b581b43a7e6d6cc8b134fcab691286609e0dc079341b9f54c4b7a7a773					
+			ignore			\Assets\Bed_Civilian\Files	Icon_Bed_Civilian.png	172276	58599bf14b49aaa1ec1636457d0ea31666ac54162b506c90f247c71a4251e86b					
+			ignore			\Assets\Bed_Frame\Files	TX_Bed_Frame_AL.png	689617	3b24ceba335c9235a4faa818da2dbb2300222a65be9ffc046323fb2a686357c9					
+			ignore			\Assets\Bed_Military\Files	TX_Bed_Military_AL.png	4556840	573eada87873879bb46b4acf7ae3e69344a87f288ab74675faf1317175cf62fb					
+			ignore			\Assets\Bed_Military\Files	TX_Bed_Military_NR.png	5114252	1684c0ddc6978b062d915c1fc81490a0afc0d70fdfc10824b7c4a443ea9859e8					
+			ignore			\Assets\Bed_Nomad\Files	Icon_Bed_Nomad.png	140238	13307e5be6d20eca5e266be52e647d3380cd9c8259e846d624167f8b5411d323					
+			ignore			\Assets\Bench\Files	TX_Bench_A_AL.png	574637	6fe27a22d032812bf4c7572b69bb432d8b6507f5917758095f6361c79b610893					
+			ignore			\Assets\Bench\Files	TX_Bench_B_AL.png	1275057	f9595c2b463a81a3bf44f7e7202914720678e85dabebcfa05706db13aaaa3d0b					
+			ignore			\Assets\Bookshelf\Files	TX_Bookshelf_AL.png	4405592	76dfa692c0ca4d3f465501d598ac13b6ee137a289a2096925203db1c421ce01f					
+			ignore			\Assets\Box_Planter\Files	TX_Box_Planter_AL.png	1159334	e2548ba6732ee4dd614fd4b83cd590711ddba6ec50fae8585b2d632bd4952b56					
+			ignore			\Assets\Brick_Pile\Files	TX_Brick_Pile_AL.png	1808169	0aafd2d24273a07cf9030bc7393aeb1d821813bc9446548c1b6daa0f26690953					
+			ignore			\Assets\Bridge_Highway\Files	TX_Bridge_Highway_AL.png	16193080	3984b222f3a77f38eb2d9ced9b4036545d7754b518a4da7d3ec2d7bc92b73065					
+			ignore			\Assets\Bridge_Outpost\Files	TX_Bridge_Outpost_AL.png	14540416	3210a728a47f0ec789057a62f74104170339146908d46f64d49cb853ca5b63de					
+			ignore			\Assets\Bridge_Rail\Files	TX_Bridge_Rail_AL.png	2747051	940da9cb31e1ac2731f8a506808da4d89d8e6220be2fce2757d7fac571e224dd					
+			ignore			\Assets\Bridge_School\Files	TX_Bridge_School_AL.png	16193080	3984b222f3a77f38eb2d9ced9b4036545d7754b518a4da7d3ec2d7bc92b73065					
+			ignore			\Assets\Bridge_Village\Files	TX_Bridge_Village_AL.png	4251056	cbc3bb9535f89ebffe7b65110541cf9070794bffb8095a0205987b6d581fda8c					
+			ignore			\Assets\Bunker\Files	TX_Bunker_Divider_AL.png	5603697	c85d5d3395e865213a14e0500683f5ff3187b80db771713a9e63930e12b94692					
+			ignore			\Assets\Bunker\Files	TX_Bunker_Floor_AL.png	21029870	2ec87fbf96109cc8fa730c5dad6ae883e91edf3c518a16ea81c31477e44ff826					
+			ignore			\Assets\Bunker\Files	TX_Bunker_Floor_NR.png	2239942	5862da0889b3fa4edd244f39ab1cf2fe6d4edf82f035fb87bc89fa34aee039b5					
+			ignore			\Assets\Bunker\Files	TX_Bunker_Pipes_AL.png	4556840	fd93fba7637bb2413538e71b5a6f05e911e105a2d85e03a9f66309e37e5114d6					
+			ignore			\Assets\Bunker\Files	TX_Bunker_Planks_AL.png	3044682	3d7403cbf9f1b7b377b26c0d4da188dc8629cdd683f6b072cf64f18869a5f7d5					
+			ignore			\Assets\Bunker\Files	TX_Bunker_Plywood_AL.png	12838948	9ce43518aae8b65f53687f073a9c6d1ada7d565ce16c6b578b477ecc4f45f351					
+			ignore			\Assets\Bunker\Files	TX_Bunker_Well_AL.png	4845721	361e61348c1e1599206651d8880b3a07841953676bcbd8f982b7e1c4248a47f6					
+			ignore			\Assets\Bunker_Concrete\Files	TX_Bunker_Concrete_AL.png	9441975	82e22b471f3012661fc6c99dfcdd9f04e0371f2b76a573ba7074aced3d581611					
+			ignore			\Assets\CASA\Files	TX_CASA_AL.png	1288198	2aecbdbd1171bcb8c9dc88aa56d2fa2833d719ec419e43f16a1f8f3574b0340d					
+			ignore			\Assets\Cabin\Files	TX_Cabin_Details_AL.png	3920665	8518633fff6ad9f2c8dc30227b3e1b272679e5f71415cf8884eff6a90b191599					
+			ignore			\Assets\Cabin\Files	TX_Cabin_Exterior_AL.png	15656836	ab62e124953f6593776efbcb363e659b1cc6e7e44c44e975392531d8752f70d3					
+			ignore			\Assets\Cabin\Files	TX_Cabin_Interior_AL.png	10387004	121a8310fc9428d87b5087bcab56be779b0cd36debe6e116d0a4688ff96445e3					
+			ignore			\Assets\Cabin\Files	TX_Cabin_Porch_AL.png	3688679	af622344a6e7f25d57476067befeab15b3c2772926cd6c37285d71b43bbe3d37					
+			ignore			\Assets\Cabin\Files	TX_Cabin_Roof_AL.png	3092458	fccdf754287121641bd8e6dd2d4a0b460161e3fcb97fa6fcaff50a57e87d5ffe					
+			ignore			\Assets\Cabinet_Medical\Files	Icon_Cabinet_Medical.png	47150	b635e8c9e9b0de9687a871192cc4a2683ae9214670a14e25ca5eafb339a20f0c					
+			ignore			\Assets\Cabinet_Medical\Files	TX_Cabinet_Medical_AL.png	898963	d20e869e80f3506b42c1e8ae253642945e8a46032c5bfe26e560ca7ceb44ed7a					
+			ignore			\Assets\Cabinet_Office\Files	Icon_Cabinet_Office.png	42764	88b59b3625bf063eb3d34b37661b6eea6c9a2c8a88264b2ba418808fe475f5cb					
+			ignore			\Assets\Cabinet_Office\Files	TX_Cabinet_Office_AL.png	700375	b991624ed7a31bf11ab8b9df6598fe4c20be38959f1e8f1b97be7b58bfde07ee					
+			ignore			\Assets\Cabinet_Wood\Files	Icon_Cabinet_Wood.png	57630	f75e4016bcd9fc39effcffa373e3a27b37b69253f32c35e67d29405b43989466					
+			ignore			\Assets\Cabinet_Wood\Files	TX_Cabinet_Wood_AL.png	753637	7a2f18b6e5513bd82a06043e560f8ee4d36dc7283d07054e2224f5c50d11d760					
+			ignore			\Assets\Cable\Files	TX_Cable_AL.png	175129	8335fa474bfa3c8e9199ecbbee08858ec93c2f4e73cfe10323a5d0ae90656527					
+			ignore			\Assets\Cable_Reel\Files	TX_Cable_Reel_AL.png	3585292	20d1caa6cbad15fe35f4c23c31511eb6d821077b7cf4777306a25c4e784281a2					
+			ignore			\Assets\Candle\Files	TX_Candle_AL.png	672105	2d399d2d000c0e7c14e6fca94d7b398948dd5826da5776567b1c90dce28c4200					
+			ignore			\Assets\Canteen\Files	TX_Canteen_Counter_AL.png	2552046	73a61cf66744c61496c58416cd74db43187b5c7b08be141a280595b50414af83					
+			ignore			\Assets\Canteen\Files	TX_Canteen_Exterior_AL.png	23053092	29118d7fe6a4d69cc239d0fb366a1d47536b2be18f1efb5d089f7d5af1b7067d					
+			ignore			\Assets\Canteen\Files	TX_Canteen_Interior_AL.png	12612509	e1396379b28c32f771b05a39534b5804e80213775b3f74f0d26cbf6f4d69a999					
+			ignore			\Assets\Canteen\Files	TX_Canteen_Roof_AL.png	3564423	154655d13f3c3398d2176818702240ae44db2876137b7ce348a3d48c8a582825					
+			ignore			\Assets\Canteen\Files	TX_Canteen_Steps_AL.png	5036990	9a4bcbbcc0816044b69ad06de6884069ae1668f6f47e55436978dbee58c34c07					
+			ignore			\Assets\Carpet\Files	Icon_Carpet_Persian.png	79518	8b35a97f3988c697e0a58e603b7072dc59ff0020f71a427c8d9e4b0b045c1026					
+			ignore			\Assets\Carpet\Files	Icon_Carpet_Rag.png	68964	8efe2cbdb63645b1d89ab4f79564fc647b97b707cb59ac19aa492761bafa399b					
+			ignore			\Assets\Carpet\Files	TX_Carpet_Persian_AL.png	1095575	df9fc121b0c76aad682b05d88294b5eb26588b702031a4bd085d9f7ac9feaf61					
+			ignore			\Assets\Carpet\Files	TX_Carpet_Rag_AL.png	956547	0d33962ab49a0eeaeb077b6e0e9d83138994d1171be4dcd27608c45a23279451					
+			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Exterior_AL.png	9934081	b5f54235907b29b4aa96c2d29a2b03b3a6cf4bd44f82709c090b578162b80065					
+			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Interior_AL.png	16505214	1addce2c18f31d07d022a503793c2afcd13c38805afdfab2cf0d3e7c862f1412					
+			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Roof_AL.png	4434769	c8298619df3eeb1ac6d0dd4e93f72fbb037f982dbc7701e8d467125dc13b1c1c					
+			ignore			\Assets\Cellar_Village\Files	TX_Cellar_Village_Steps_AL.png	3411118	6729cd0343ead59ca7eebbcb18b09010934354d64eb46e5087d7cefa5016a1d9					
+			ignore			\Assets\Chair_Coffee\Files	TX_Chair_Coffee_AL.png	4404042	cc77f46443656349294de187ce8ca2d772f7b5a6ea24100c9cfb30e9d8becd0c					
+			ignore			\Assets\Chair_Office\Files	Icon_Chair_Office.png	58030	ad4246aa7a5c96c56fbaa834ef34d69e18634db775200052e52640cc6265111b					
+			ignore			\Assets\Chair_Office\Files	TX_Chair_Office_AL.png	930702	e17e28a4b5b2f8cb71ced671118bf7f2ca55cdbf0aed3f30d919bf65b2db187c					
+			ignore			\Assets\Chair_School\Files	Icon_Chair_School.png	33883	c3f8d550125ce060334493f567aa6391e278b836bf08b4ddec4a5f47f8d34931					
+			ignore			\Assets\Chair_School\Files	TX_Chair_School_AL.png	855420	8c159ac73e1044807ece60eab886dd7904d689ea11bfe097169ffac9c8d4e9ac					
+			ignore			\Assets\Chair_Sun\Files	Icon_Chair_Sun.png	121780	89950cce90979e3a61cc533067b5c19001b0fe196010b52f4010df09c31738d1					
+			ignore			\Assets\Chair_Sun\Files	TX_Chair_Sun_AL.png	3675800	dde9fc30575c1dca53333aea6f6fc7562e556df2c57438cbd9672db4b9156b26					
+			ignore			\Assets\Chalkboard\Files	TX_Chalkboard_A_AL.png	1829891	052c3dfb0fb77e13613b82519ef9eeb2f94a6c06a16a6efacbffc109f6027bec					
+			ignore			\Assets\Chapel\Files	TX_Chapel_Exterior_AL.png	20540800	a4b2b00a1b520dae541fa3730fdc0d5f69133c040f41e1b29c296cda2be0e092					
+			ignore			\Assets\Chapel\Files	TX_Chapel_Interior_AL.png	12753366	de68bc2e96be864016189c711fdda33355ee716e235b6dfad8d66ca8ee1f47a5					
+			ignore			\Assets\Clock_School\Files	TX_Clock_School_AL.png	476402	2e898f0175173128d4ed8bbd33836cfcf4273aa79b40bfcad9294628f141b02d					
+			ignore			\Assets\Clothing_Line\Files	TX_Clothing_Line_AL.png	612283	d0e3f013c7f020ad4e5f57159f4ada22299e868eefe3c5d7239eaccfd0ff4d7a					
+			ignore			\Assets\Composter\Files	TX_Composter_AL.png	4415768	28f58b245d3cf457c8e03d11024cf2fb9aa30f012ecff554fb76bf59f4498903					
+			ignore			\Assets\Computer\Files	TX_Computer_AL.png	680033	b21f07321460f2e441ab1dbdef26849d22e3ab3c053da865df61b73da37e9c40					
+			ignore			\Assets\Container_Garbage\Files	TX_Container_Garbage_AL.png	3298591	99e060badcb18145aae2a432d2691d2beca986e3afde85742afb59788099ec1b					
+			ignore			\Assets\Container_Shipping\Files	TX_Container_Shipping_NR.png	4731997	1da07dcd4004f9378b7957b1e59abfbf239d5d775de58d052df83ea63d142f89					
+			ignore			\Assets\Crate_Military\Files	Icon_Crate_Military.png	69541	3fbce80fc5f923adf245302dbb4255f3a892da327f01766b249b9cdf52c8e9c3					
+			ignore			\Assets\Crate_Military\Files	TX_Crate_Military_AL.png	2660552	a362f3b7ece484017eacedf85776b9ae0bf45be8303379489783d934d51c6e55					
+			ignore			\Assets\Crate_Special\Files	Icon_Crate_Special.png	203047	ae9a4886511a2c845cda02f9afbc325b448f7e58d43e59f7857d14a9d884fe4f					
+			ignore			\Assets\Crate_Special\Files	TX_Crate_Special_AL.png	3577016	ff3a53ff049ed5e9412045ae8678ffb01bf928be5734fb0448402b09946e43a8					
+			ignore			\Assets\Crate_Wood\Files	TX_Crate_Wood_AL.png	3059630	1d8b5e34d35d7a2aa25cb55260f97e499dd2752fdbb117b57db85c6d3c707c8f					
+			ignore			\Assets\Cupboard\Files	Icon_Cupboard.png	72099	7b106ae80036ebcabe6b0b2ff70a882970e756fa38b6d0d112f87ef7e0f9dafb					
+			ignore			\Assets\Cupboard\Files	TX_Cupboard_AL.png	3005064	89502c53dfc9a44e5300c898a1b00f134ab7d69638438d383b32d3eced9e1c49					
+			ignore			\Assets\Curbs\Files	TX_Curb_AL.png	652890	f091b1871ea16450b78af4c8fad6ccd6704dd8e1fcffb05bbdff7cab32cf2ce4					
+			ignore			\Assets\Curtains\Files	Icon_Curtain_Long.png	48756	3873f304fa477743c71ae4c53d5b6a34f52bfecae48ecc4f91d3ad5267faadf9					
+			ignore			\Assets\Curtains\Files	Icon_Curtain_Mini.png	36189	8667ba4d0abfbf1ccc4bc92b29e3776c88896ac5f00671f59b68b97bb47673e7					
+			ignore			\Assets\Curtains\Files	TX_Curtain_Long_AL.png	6068986	b0661c4f0cc7edbcfc345bc93fd457fd13737702a75e4af4b16712abab7c51b7					
+			ignore			\Assets\Curtains\Files	TX_Curtain_Rail_AL.png	788455	33c82e2e3d9e6f77d209b9fd5bca9694f7f2ebb8c2afe77e36f6da64f169d972					
+			ignore			\Assets\Curtains\Files	TX_Curtain_Short_AL.png	2637300	21984188b9a5aa14d0bb9801a24768b07a7738826675ff88a5aba56684a1a3e8					
+			ignore			\Assets\Dartboard\Files	Icon_Dartboard.png	215121	8a52c29b54511f085fc3fafd543f5e2a8c3433cf7b9dc20604caf522d092d316					
+			ignore			\Assets\Dartboard\Files	TX_Dartboard_AL.png	1562621	db1ea1abd74b3942cd752be18da15f96a09775fd856bb6e967a6a68afd5671c9					
+			ignore			\Assets\Debris\Garbage\Files	TX_Debris_Garbage_AL.png	182714	9601e81eb1d77c001f0247e411bda2c31ee7be942c330cb4541836e5fb92dd49					
+			ignore			\Assets\Debris\Garbage\Files	TX_Debris_Garbage_NR.png	1322005	a2d3c455278f14cdee59570bdde056192d88773e4054ef89df4e30b1762564b7					
+			ignore			\Assets\Debris\Metal\Files	TX_Debris_Metal_AL.png	1108698	79dc6517bf3396d84b860007149dd1798d5acecd0d6511fc151434926201bbbd					
+			ignore			\Assets\Debris\Rope\Files	TX_Debris_Rope_AL.png	493906	833b1ec8378e60a060e5d8916316c607e24f87ecfacfcd379e0ba7f858946ead					
+			ignore			\Assets\Debris\Wood\Files	TX_Debris_Wood_AL.png	880018	76491790c46d2e02e5eea68bc5bf62dba6a9c6beaa5e23da77c0b7c83e92d2a2					
+			ignore			\Assets\Desk_School\Files	TX_Desk_School_AL.png	841389	142e651a8948107b6a095618250773600e469ad57478ddc1b6fa7cab0d67f1e6					
+			ignore			\Assets\Dock_Pontoon\Files	TX_Dock_Pontoon_AL.png	15163048	50d6dcaffe4ec9cfbffc65b314c153a7278aea5ad74f47012bc248a3230f1f59					
+			ignore			\Assets\Drain_Hole\Files	TX_Drain_Hole_AL.png	672958	0057b017f4045f9181deb623afcdd9375c93434c6b39ae2829e2a5d98cf6e871					
+			ignore			\Assets\Fence_Garbage\Files	TX_Fence_Garbage_AL.png	3928399	53b4fbd446f32f8ff8e47de4098fbe33fa2cd700955e6673fb4e8a00906e83dd					
+			ignore			\Assets\Fence_Highway\Files	TX_Fence_Highway_AL.png	5015463	12229000fa262bb1221ffb337cbf7429469514e2f1734552d5a22ca80771a5e0					
+			ignore			\Assets\Fence_Military\Files	TX_Fence_Military_AL.png	3062126	cea992c24d94365fc9f19d9f1b4c6299f29cbe8fd8508522bee38a7b0188e64b					
+			ignore			\Assets\Fence_PO2\Files	TX_Fence_PO2_AL.png	3952203	0e22dd1ad05682979c6a06f2d38bc3495c3f38caedce2dde768a9034dd3611b8					
+			ignore			\Assets\Fence_Road\Files	TX_Fence_Road_AL.png	766306	a6ab13aa66a08b0a02509590f4bc2ee288928bbc41ce23f0fa7cb953f3c2e55e					
+			ignore			\Assets\Fence_School\Files	TX_Fence_School_AL.png	2686947	819727fabc8c9cc9727ace93c02bb5c7e193b617065d3ac184836538c5924560					
+			ignore			\Assets\Fence_Wood\Files	TX_Fence_Wood_AL.png	2594184	09c7d78717bbd0a43e7542edcf287147a3bddf453625e783113e35a73ca37dda					
+			ignore			\Assets\Fighter_Jet\Files	TX_Fighter_Jet_AL.png	19659	0e7b91df5f4fdfbe3ca7b53900a5c0aa7dc2e3e41cbeed8c6af5a9887a8b6ee2					
+			ignore			\Assets\Fireplace_Brick\Files	TX_Fireplace_Brick_AL.png	3305017	bdddd81951606b0f64f7f2afc0ec2f9af24b275c89bb5e7f6375ab8a7e08f4bc					
+			ignore			\Assets\Fireplace_Tower\Files	TX_Fireplace_Tower_AL.png	3075239	9cd63c5818cd3473bae6d78173c89d5155e89711b29001aa506641e5cf810b34					
+			ignore			\Assets\Firepot\Files	TX_Firepot_AL.png	1164673	d1d6fb848f98dadb155bd15048dc78d4fc43ed37ac9dbf3127178fb547540165					
+			ignore			\Assets\Firewood\Files	TX_Firewood_AL.png	274305	d635a6af00cbb80c9fbb57722954bed0e4c52ea2e440db2e95bab07418181f5c					
+			ignore			\Assets\Football_Goal\Files	TX_Football_Goal_AL.png	1510971	01ede6460252e3038bba0cb37cfd597a76e588480297d4eaa04bbdfd147eba71					
+			ignore			\Assets\Frame_Highway\Files	TX_Frame_Highway_AL.png	2282831	3e3fe2adbd314251cbb9c03779199f2d61b9857aba8fdd8ea6bfbc575e7a9938					
+			ignore			\Assets\Frame_Hospital\Files	TX_Frame_Hospital_AL.png	1762854	6bac9fab9a0130fe56db8740aaa82f151eb8a5476d897f7201ce45e1d779838f					
+			ignore			\Assets\Frame_Office\Files	TX_Frame_Office_AL.png	3684499	e18cda22212a4743847613b7c4cb98a029e8985639711ca8a15a2928f977f94b					
+			ignore			\Assets\Freezer\Files	Icon_Freezer.png	149037	eb24dc1b5a83174940ed5d347ff5fe64b547f34acfbf5a15378027935b0e36d8					
+			ignore			\Assets\Freezer\Files	TX_Freezer_AL.png	1824959	26dce00b3f8972666decbe5998c1880f8a21f0c28e9f151eb32d150b04c95aca					
+			ignore			\Assets\Fridge\Files	Icon_Fridge.png	41215	ef4fe77f817c47e1149987c4f65e9b81cf906955a5580558d2841be6fcaa7c58					
+			ignore			\Assets\Fridge\Files	TX_Fridge_AL.png	859308	e02f609e10b332af102f0386281daeedcb67daf3b85761924b7a5b96da119d2a				Reason for ignoring: Low Resolution	
+			ignore			\Assets\Fusebox\Files	TX_Fusebox_AL.png	907137	875a2d1cfc5a099355bf1c00c761c214734f035bcccc2c73556604bc272fe451					
+			ignore			\Assets\Garage_Rural\Files	TX_Garage_Rural_Main_AL.png	12854232	9299df76dbd75925a08623e4f00c86bf532f62998f3c6d058d00b542e1bf0478					
+			ignore			\Assets\Garage_Rural\Files	TX_Garage_Rural_Roof_AL.png	4498187	6ee6d3d02c32134697fd5db9dba37aa9268b970fd51ad8ca7d55546e9049154e					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Bridge_Concrete_AL.png	18075585	b245373a49d15659b399d508a813ddf6f1bf24c2cb7f3adb0e5d31c976c07e1c					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Bridge_Wood_AL.png	14346101	d181fe3f2daf9a11d25f6da840b0a59f63b1c201f098c28894211a153b425f3e					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Door_AL.png	3280028	f01c2533bc33f8a8c8784c1c62c7a6dc8cd021f0c6b12510b93f31652eb8f199					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Exterior_AL.png	15461909	b9e9f82e81e85d3f04b9330737dfaa386e0ac6aa7fe5ae99bb0e65df6e6cb5e6					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Interior_AL.png	16703798	674176e300d5e692d728c1f068044bb485543b53d66e46f7d747850c2ae42c9c					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Pillars_AL.png	4018811	3fb1a2fc9bcd18e55aeac5dc0fa85addcb4ddedb46889590829c314348f4a9b3					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Roof_AL.png	3692316	c91ff02f0edb9bc3dad6bb20545c65cefc3ecce8b2171199b5cd50cf2133df90					
+			ignore			\Assets\Garage_Village\Files	TX_Garage_Village_Steps_AL.png	4905689	91408dbc1f7fef4fe0e06fbafbba883a0b0df27424dd99c2a3ee3243bbf24026					
+			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Canopy_AL.png	3101027	0d3d1a79ed0c2f3ac12465f227781197b6f5c82a23ed097713c7b9174d4ef6c0					
+			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Pump_AL.png	783304	4d5cf76785f13f91470656c6c70ce08b7fcbecd4abd4b5cd0db57fae022902b5					
+			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Tank_AL.png	4082605	9724a109a3fab022031eccbb6d08d2ac874a68fad68b4a959333fd02d2a7b006					
+			ignore			\Assets\Gas_Station\Files	TX_Gas_Station_Totem_AL.png	2504670	fd340a300fbaee74583e963d5f10e53e92faba7b34d86fff4a70d710674bfb96					
+			ignore			\Assets\Gate_Metal\Files	TX_Gate_Metal_AL.png	4772307	1f075264a7e13c108afde00c9927dcc69058fa16c6a321cf9d445cdbe7f8fa1b					
+			ignore			\Assets\Guardrail_Road\Files	TX_Guardrail_Road_AL.png	722284	67ab905817e8cd2ae3b84c5878a86c817e3906a33c978b3641fb48945bf7a566					
+			ignore			\Assets\Gurney\Files	TX_Gurney_AL.png	2417199	8abe24a9a0efc281646c0b2b0f957c20fa123085f416978d8865fc5a17a66598					
+			ignore			\Assets\Gutter\Files	TX_Gutter_AL.png	777875	06e12af739367cdefafbadc247f27cba01101b89ec97c3211f7e49e39076092c					
+			ignore			\Assets\Hay_Bale\Files	TX_Hay_Bale_AL.png	4533722	dc0b9c482a646bf67ae187506ee411e111c1bb646400156a45616b62ec3a494d					
+			ignore			\Assets\Hay_Bale\Files	TX_Hay_Bale_NR.png	3754922	680d23bcfb2edeefcbb78b5e909192476b9ca731ca245f3b8f20983fe09cb40e					
+			ignore			\Assets\Hay_Bale\Files	TX_Hay_Stack_AL.png	5159303	00f0fc703e830e9df1bda4ccd4813ddc2858ce1713efe6d9d5a2bf8e5453d176					
+			ignore			\Assets\Hay_Bale\Files	TX_Hay_Stack_NR.png	6634645	299925a71246456e0c959ba5c635de6062b2f813e83d75a13acf51b9a2a2841b					
+			ignore			\Assets\Hedgehog\Files	TX_Hedgehog_AL.png	1049170	3309b1f4c551fa820ab342267ff6e79429eda4fb849fe903ed73c310ccdcda14					
+			ignore			\Assets\Helicopter\Files	TX_Helicopter_Hull_AL.png	12316883	4dc241fb27f09e2ab0aa4680a11df52420e11629f2ed9e17dff15936c535dd9a					
+			ignore			\Assets\Helicopter\Files	TX_Helicopter_Hull_NR.png	5390032	65a1ab4728edb33c1e3a4043185b601a12c4e8b76f1d7ee35a8cb035a24d0305					
+			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_A_AL.png	479485	bd66f3b5c3036b66bd6529271c35fbd5aa50169a02f7a808db3cd04cbf74f5dc				Reason for ignoring: Low Resolution	
+			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_A_NR.png	14204	1949b5be56150764006cb6cdf31e77b207059669395651228052b4b1783d32b1					
+			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_B_AL.png	968005	e3bc00bf3f85c0e297da27115587a0ecfe4613b7282aeed151973ef3cce3e0e3				Reason for ignoring: Translation is unnecessary 	
+			ignore			\Assets\Helicopter\Files	TX_Helicopter_Pods_B_NR.png	89764	48c416c0f542ddb55500f87c477a054bd260bd74350ea8267551450bd9474838					
+			ignore			\Assets\Helicopter\Files	TX_Helicopter_Rocket_AL.png	176715	b639fb544d061adfd9658a9b536bbd084f56e1f47cdaf42c48bcccdb294200b8					
+			ignore			\Assets\Helicopter\Files	TX_Light_Cone_Noise.png	140164	54a011f973e13de11352449151d9f127852cb898ed67648a1b780b2fb6133c1a					
+			ignore			\Assets\Hookstrip\Files	TX_Hookstrip_AL.png	448372	c12b7307ce2405cc62dc89f8387b4d0ae00fdd488968d4377bfeb96d8de9403c					
+			ignore			\Assets\Horse\Files	TX_Horse_Body_AL.png	2699378	be7a28e481bbd326cdbca51a7e5f16077786bdfcd82cbff94a5da73c314bb07d					
+			ignore			\Assets\Horse\Files	TX_Horse_Body_NR.png	1666482	51cccfa62ee00161fb4bd58f4490bb9675d5454b3a81daffacf1597d361b7639					
+			ignore			\Assets\Horse\Files	TX_Horse_Skeleton_AL.png	2749941	7d565d050094720f0782e483b37ee0bf423288029ee3abadd9abc275d6541138					
+			ignore			\Assets\Horse\Files	TX_Horse_Skeleton_NR.png	1915393	f11c4ea4489d09093e97dc3c9348f9639be456bcab46e983bf7602f2ab96c09e					
+			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Exterior_AL.png	15014951	b13cbe2e4aaf106d2cea8f2a4c6368824875e6164b03ddbdf839f43a29a5b87e					
+			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Interior_AL.png	16929149	45f7bc5de6a29eef5aa6f6d947fc17d48c2a6d7b14fd97b819a5aa90d8ed0e70					
+			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Roof_AL.png	2692826	a45aec1b11c49646ced4b4aa28f003fc14404fc1b4d2580ed8b3f119f510ed76					
+			ignore			\Assets\House_Village_A\Files	TX_House_Village_A_Steps_AL.png	4893788	c99871ff1a11b65be56fefe115d65244cec9874bd291643ab618890ff29f0865					
+			ignore			\Assets\House_Village_B\Files	TX_House_Village_B_Exterior_AL.png	16881860	21cc65453141ee4f8c9b7d4f3b9b3a603a1e814435a7b1f0c78871f8c07fd330					
+			ignore			\Assets\House_Village_B\Files	TX_House_Village_B_Roof_AL.png	4612875	032edd690d29c53c87a430d5207a7f2b244fb313b86e5c086972349346c0e7f9					
+			ignore			\Assets\House_Village_B\Files	TX_House_Village_B_Steps_AL.png	5492014	719ec78e790e3ccf7646592910eacded431b8ae8e4eda24fbe89d80ee3e1f256					
+			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Balcony_AL.png	3698261	c458ff544e014b6eb67c43a1ee0ef1a90648270dc7d403cafe16164f174b9422					
+			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Exterior_AL.png	14707487	8eba95bc25e2e059b7a22492e48192bbb0d6abf42e3d987786ad2e4d801b8640					
+			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Roof_AL.png	5588554	676394785ad5cb4c04544c7b6570fab2f92eca957f7c20fe9aaea5d643954472					
+			ignore			\Assets\House_Village_C\Files	TX_House_Village_C_Steps_AL.png	4240279	939f8af18291f3c96ee4d4380c13cfc2c140ee32141fa38ea23ed02c821af864					
+			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Exterior_AL.png	14134331	90de5307293313d1cf650ceab7cc39ad8c0756a7e77c1f13d9eae7797921cc8a					
+			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Interior_AL.png	12177007	da2169583e83cb1f1097a995c4e4a7dadcc7b59a1dc747d219e16d1170c0ede4					
+			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Roof_AL.png	1951859	e77f0253e7223d5221a74d5ea61d6678fd3fe3dc4e382788f4d1dc3f1f3f46cc					
+			ignore			\Assets\House_Village_C_Shed\Files	TX_House_Village_C_Shed_Steps_AL.png	716779	5ce5798a0cccb062ceb8c6bbbd065d0d0d2124a442c23a5419a2eb4ad100b032					
+			ignore			\Assets\House_Village_D\Files	TX_House_Village_D_Exterior_AL.png	12247032	041eabc77e62e9e901c673ec6ab9d781a953cc0f2bb80b4b25e84ab574fc9b33					
+			ignore			\Assets\House_Village_D\Files	TX_House_Village_D_Roof_AL.png	2248277	e6dca49ae734550e9dd4e8c7c560c3150250edc9bf8ddde8d2c1f0b73af54c15					
+			ignore			\Assets\House_Village_D\Files	TX_House_Village_D_Steps_AL.png	5134352	1e9783e5b1cacf9e8c01c73ceadb2ad30c1aa6d81bcd6609190104e83b73f621					
+			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Exterior_AL.png	14165090	c7d64b7945182ddaf29d2059271d1bcc7a4a1fe5d69e4310056bbe0a9007fe17					
+			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Roof_AL.png	3687172	7b763495e2a078c682ff320090f8fbd8ab7f8da0f5ce6712dea243c2fed35731					
+			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Stairs_AL.png	3400652	b4c9df0c546bb4e901798756aab667c336c8494b61bdf69b804d446c236d827d					
+			ignore			\Assets\House_Village_E\Files	TX_House_Village_E_Steps_AL.png	5513361	f851d11541b9778c0d9dfc5478679dae49c17b75e9e6f7d9f2fcf4e00e8f7fa7					
+			ignore			\Assets\House_Village_F\Files	TX_House_Village_F_Exterior_AL.png	14589017	ca07cc11149a97f6627bbcd265e1afec20f7c512200a4216d5bdf2098633bee2					
+			ignore			\Assets\House_Village_F\Files	TX_House_Village_F_Roof_AL.png	3945077	a836b7cbb3f5747b29fb995b5a8816f9714257042416b2faf4bcaf029a929d2b					
+			ignore			\Assets\House_Village_F\Files	TX_House_Village_F_Steps_AL.png	3634715	571f427bf828e20c6be0c510fa453512d098867dab0a7743edd16bde8aabe255					
+			ignore			\Assets\House_Village_F_Guest\Files	TX_House_Village_F_Guest_Exterior_AL.png	13832478	0e6cd85aee90b095f4fb19b8748c9dcc2c99e586be2c276361f64fc8ab28ae48					
+			ignore			\Assets\House_Village_F_Guest\Files	TX_House_Village_F_Guest_Roof_AL.png	2235824	23b35e6e782d1183f400f67a334695105c79e8b33fa909d33b2bc2a213eb05f9					
+			ignore			\Assets\House_Village_F_Guest\Files	TX_House_Village_F_Guest_Steps_AL.png	716779	5ce5798a0cccb062ceb8c6bbbd065d0d0d2124a442c23a5419a2eb4ad100b032					
+			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Exterior_AL.png	14383821	c2f71a1ae393fd392f1785e6e8d0ead12a464d2dc8e872565f0ffed401c2c204					
+			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Interior_AL.png	10906565	e00234da818a59772759cb7d7ca473189d6cd4b0c1f1fb548ad7c9f689eef9ab					
+			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Roof_AL.png	2703622	47b99c47648216298a85f98eda828118207144576e2dfc0641994150d7df3dfa					
+			ignore			\Assets\House_Village_F_Shed\Files	TX_House_Village_F_Shed_Steps_AL.png	716779	5ce5798a0cccb062ceb8c6bbbd065d0d0d2124a442c23a5419a2eb4ad100b032					
+			ignore			\Assets\House_Village_G\Files	TX_House_Village_G_Exterior_AL.png	15884021	52f66effc469e9a53e60fdb5dd08a4436c382186133baf629cc54a2aafaeec79					
+			ignore			\Assets\House_Village_G\Files	TX_House_Village_G_Steps_AL.png	3634715	571f427bf828e20c6be0c510fa453512d098867dab0a7743edd16bde8aabe255					
+			ignore			\Assets\House_Village_G_Guest\Files	TX_House_Village_G_Guest_Exterior_AL.png	12243323	0b244102c5d7e6cdd21109f18f36e9d9037277f8a9a0a1e10e97701782929d06					
+			ignore			\Assets\House_Village_G_Guest\Files	TX_House_Village_G_Guest_Porch_AL.png	3877861	1c7d7f14353eaaf1fb259a782992846655c49b1b9dfea97077ab11e8886491e8					
+			ignore			\Assets\House_Village_G_Guest\Files	TX_House_Village_G_Guest_Roof_AL.png	3707447	630bc347b80e7bf6e5cc7ae24fdf2c5aae383a799372cde0d0bf4bf27cd46511					
+			ignore			\Assets\Ivy_Ladder\Files	TX_Ivy_Ladder_AL.png	738832	cbaa57ec54be4eb6c446b87c679fa1671f02cf70851e99590d65d39aabc89964					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Balcony_AL.png	3851700	ec05878fc094496a756ba22264d010e9086dab13fa15f8c6343e4f8f7a6b445b					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Canopy_AL.png	6669370	4afbeb738490b79f6022ca80f126e40b57bbaffbbb4c06332b49538275456dc6					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Chimney_AL.png	5504677	765cb7b1bc350647d58d240c10a06f229ab40398a8d200d5b9e5ff8a496fba7f					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Exterior_AL.png	24074438	bd642730ff4bb71cab7b14e27a0758eb473dc6fbff4c543fcbceeb7853950dfc					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Roof_AL.png	21231622	220e2214235c762a361f5e13db7a71a68b3671fdc1bb9cecfefed2005fd9600f					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Rooms_AL.png	13970949	55f6e6d7ad250d660d077c8f95a3fa083cf0b5df29d992df57c68ef45005e995					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Staircase_AL.png	8356131	41b95eb6b25ee60d1ff75f7371ea82ff0f3c6f08559333d9c57dc0f2b579081c					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Stairs_AL.png	15764979	2e99cda17aca18db12088a84f93505a712678a10680348c4ca20312cfe448933					
+			ignore			\Assets\Khrushchevka\Files	TX_Khrushchevka_Step_AL.png	2991198	1f7392f202dceb15c8befb1209ca56659a9745ec6dff1c13fd53f45e10280763					
+			ignore			\Assets\Lamp_Cellar\Files	TX_Lamp_Cellar_AL.png	253377	1ec45df358a80c827706dbcd58ed400e3f6dd2699e518002380d8bb94be4de8c					
+			ignore			\Assets\Lamp_Floor\Files	TX_Lamp_Floor_AL.png	1206934	8c36eac1f5afbe9487c8ba5c6ee395ab8a6942e911c984cae38baff9f4c7a3ce					
+			ignore			\Assets\Lamp_Generic\Files	TX_Lamp_Generic_AL.png	503751	6188edfd90c880fddd55cece852627ca1648f676fa7d97883afb7994f815db0f					
+			ignore			\Assets\Lamp_Grid\Files	TX_Lamp_Grid_AL.png	848117	da0751d8bb2f81b9aa6379cb8c9820d02a8e334c6d426e0f410d93825d466133					
+			ignore			\Assets\Lamp_Rail\Files	TX_Lamp_Rail_AL.png	271580	e0534e2c4039204594a19a0e033ab08ece031fb8ca48438977ec808a9574e937					
+			ignore			\Assets\Lamp_Round\Files	TX_Lamp_Round_AL.png	763008	cb0e2e977c2639e3759afd737a0ce914aa6921eefe09c4298aed559878fa7dab				Reason for Ignoring: Low Resolution	
+			ignore			\Assets\Lantern_Kerosene\Files	TX_Lantern_Kerosine_AL.png	1037850	ed500874c7418eec1e1c2ab83ec61785473b11164a09ce2c10dd928366540306					
+			ignore			\Assets\Lantern_Kerosene\Files	TX_Lantern_Kerosine_NR.png	1028308	bd4eb1fd3b44206331c66645ae8473d29326c35771e8840cfcc825ce344f5e98					
+			ignore			\Assets\Laptop\Files	TX_Laptop_AL.png	2019002	00219916952901764d0b20d0d675f75b9c25918ac340d2fa6b57ec11e7914719					
+			ignore			\Assets\Laptop\Files	TX_Laptop_NR.png	2730072	1a37c1f9dd97e5d3b723af483920a255b2f81131612eb7584fc899f49bb70d63					
+			ignore			\Assets\Laptop\Files	TX_Laptop_Screen_AL.png	2028008	06052cd07e70c9ec6396958263671946214a5fb041b186fc269b288cc69be3fa				Reason for Ignoring: Translation is unnecessary	
+			ignore			\Assets\Light_Switch\Files	TX_Light_Switch_AL.png	215848	eacaa0de617250a76502de22ca02d7dcf92c0dc5b98a3a23cf7f3e8aca02e663					
+			ignore			\Assets\Locker\Files	Icon_Locker.png	171968	f3c9d0319192df98e0283829efede54b083fe2123c1ff5d27992d40c528ba5a3					
+			ignore			\Assets\Locker\Files	TX_Locker_AL.png	1575323	8b8c88dfa8d83f049b91334cb193e3f0f33af719f73b0e51402b03195a9ee437					
+			ignore			\Assets\Logs\Files	TX_Logs_AL.png	3894020	1e0abccae3319d97db0e49de2851a12c336be0a2cf3b32f396f12c377964f9a0					
+			ignore			\Assets\Logs\Files	TX_Logs_NR.png	5638971	ac829c00de70ce5e30adca782191d670037c452d7cb7b525bab594c74612eef3					
+			ignore			\Assets\Mailbox\Files	TX_Mailbox_AL.png	947631	1fbbfcc757f95b73ca659846b27c9c9931b57b44a3ad037c2a0763c080a78717					
+			ignore			\Assets\Manege\Files	TX_Manege_Door_AL.png	2879846	05603cca39e0c57dafb6a816936ace209599718727d159642f325312508b8e89					
+			ignore			\Assets\Manege\Files	TX_Manege_Exterior_AL.png	13716185	93f789b8e918794426b3b9ac4bc4f13d7ca1051ddf1cbbcb23dad13137a88094					
+			ignore			\Assets\Manege\Files	TX_Manege_Fence_AL.png	4351501	6265eeb63f71c62ad0f37d663b38018ea6149ba3c33cde2ed24489d9c363f93c					
+			ignore			\Assets\Manege\Files	TX_Manege_Interior_AL.png	3515371	a998a827daf7ae90ff87cf01e2b3c6e2a58cf43592ba993e5e996b4de65b2688					
+			ignore			\Assets\Manege\Files	TX_Manege_Roof_AL.png	4435397	926ee823217d8edbd53a9f5156ea39d5d15abf08c77a0b57733d1584f1bb30e7					
+			ignore			\Assets\Market\Files	TX_Market_Canopy_AL.png	3498489	63244ebc2f39c503ffb3bc96d33d0987dcef5ecc3af89612b8ddfcd2feca4419					
+			ignore			\Assets\Market\Files	TX_Market_Chimney_AL.png	4074695	2f4f67f87f9507a3d1929bfc560ca77cc69283e9c85c00870cd52657cc597f0e					
+			ignore			\Assets\Market\Files	TX_Market_Detector_AL.png	528286	ba6161ad7d1075d7037921dfb63323a86754dfc3286505f05dbeadda4aaa2120					
+			ignore	10 TON		\Assets\Market\Files	TX_Market_Dock_AL.png	4726261	b32cb1edeb88cb192ac9707b941365c1f132df5c5eafdfe8cf6bf34b72748c1c				Reason for Ignoring: Translation is unnecessary	
+			ignore			\Assets\Market\Files	TX_Market_Entrance_AL.png	2639292	cc0c45f6510f0dd59b32fc888695863b797d646166fed06f65deb0dadb15b91c					
+			ignore			\Assets\Market\Files	TX_Market_Exterior_A_AL.png	11116799	9ac481c4cfe55b5121c6a98ae848cf5322a972170166a0278e14b1f6bf33def4					
+			ignore			\Assets\Market\Files	TX_Market_Exterior_B_AL.png	3823624	7b3604922f980bc916801187b44e8967f482c61feb272e1533ea1342f449f4dc					
+			ignore			\Assets\Market\Files	TX_Market_Interior_AL.png	18328362	503f95fc4f8cbec02a1130585c54a91bdea3b3ff8836423d951a4cd1f2f98414					
+			ignore			\Assets\Market\Files	TX_Market_Register_AL.png	1961980	560362449ccb7f7a5611b4344e0aec2b91a802cbe0b4fb90b43b2a717815eb03					
+			ignore			\Assets\Market\Files	TX_Market_Rollup_AL.png	3800141	98aad9e44ffdeb685f6c691b5eada08cfcb3170ff18995a7f951ddbe1cd5bf96					
+			ignore			\Assets\Market\Files	TX_Market_Roof_AL.png	8370837	ab90c9958c0e2c2da0e6ba3175c6ac43decdc08c32731b921ea811e6930d5749					
+			ignore			\Assets\Market\Files	TX_Market_Shelf_A_AL.png	2546697	dd9a87d2f2df926c2b2a3ea2b6363c476d84d365402636838c2722226c7c30f9					
+			ignore			\Assets\Market\Files	TX_Market_Shelf_B_AL.png	2477335	75ce9ece4ea478e32e1ddbb1ed6fcce4c0cc58e13b4344733e8babfeaab5a070					
+			ignore			\Assets\Market\Files	TX_Market_Slider_AL.png	2741915	3c030d0b666ceeb8a51410c0d46b38dce27d77fefc5252ae052b87946b158852					
+			ignore			\Assets\Market\Files	TX_Market_Stairs_AL.png	4752578	f816cc84e12c6741a8148bffa32037b9584cad3b5d07382913856e53b7090d55					
+			ignore			\Assets\Market\Files	TX_Market_Steps_AL.png	5073048	d925df8a46b7f74fe86ab32fe838de05ccebb6ba2f754e78c1b9b0b6decb110d					
+			ignore			\Assets\Market\Files	TX_Market_Support_AL.png	10132289	d9ca81105cbc1eec47c23163492c42c3c2229869ffe53def69cf43f238df180c					
+			ignore			\Assets\Market\Files	TX_Market_Toilet_Frame_AL.png	2433015	7959b267b687cd22cc7cb8fbafd747a73e13c06d33cf33d71b0d3339d9507e04					
+			ignore			\Assets\Mattress\Files	TX_Mattress_AL.png	960087	b408e3f4e390255b2703d20ed6ace094e6b59d3ad5cb1a042b1b5125f077e2f6					
+			ignore			\Assets\Nightstand\Files	Icon_Nightstand.png	25140	f6b67c26251609082b19b273819ced83123e58fb1a6f70f1371a753c2b624c5e					
+			ignore			\Assets\Nightstand\Files	TX_Nightstand_AL.png	784152	453ea6ea31892259d3aab7080604e95e73edfd5b2e6f4453a4bcbe7dedfe4baa					
+			ignore			\Assets\Outhouse\Files	TX_Outhouse_AL.png	13632707	2111743f608cb5c23846095a547a372f0abe8e155b6caec27e8b428a322312ad					
+			ignore			\Assets\POM-3\Files	TX_POM-3_AL.png	220832	3b0ff249bd0334d9a4f438c62afdf5aef09f7a0982879e4262782c7d7b34cd5a					
+			ignore			\Assets\Painting\Files	Icon_Painting_Lake.png	59648	d5cf9fb83f66e5021a8b535a3cc119b6c88f6ef9c9d2d345b559fbe573e2e9e5					
+			ignore			\Assets\Painting\Files	TX_Painting_Lake_AL.png	674784	81087438975a285b1dd3387d8d676f0916c0ede11c709492a4b6e072f51c8948					
+			ignore			\Assets\Pallet\Files	Icon_Pallet.png	75675	2b187af8829f84049086b82cef1d5ae82053d7f2dc75fbec699dc6e8259239e2					
+			ignore			\Assets\Pallet\Files	TX_Pallet_AL.png	896819	fdd447c654422ed4b0670446e6f912b14b987ece4c4e3057b3bb34a817753a99					
+			ignore	2500 KGS		\Assets\Pallet_Jack\Files	TX_Pallet_Jack_AL.png	2161233	9c735dc8f70c468b7e4d28afd280017183c64a91917f5b21d848de8e2477c185				Reason for Ignoring: Translation is unnecessary	
+			ignore			\Assets\Pile_Cardboard\Files	TX_Pile_Cardboard_AL.png	469842	67e5b8d69dd4b762a2af2483164b4cedb2ee5a9cee88dea4b66cb8795d0709f2				Reason for Ignoring: Translation is unnecessary	
+			ignore			\Assets\Pipe_Concrete\Files	TX_Pipe_Concrete_AL.png	9061199	7b9ca531ff25213f11bafb8310f10417362d862059961f226a30b96add7d4fca					
+			ignore			\Assets\Pipeline\Files	TX_Pipeline_AB_AL.png	4904254	a4be04e8fa35b225c1304978ad74e7a653d8c46539d41a57983013ce4e5c370a					
+			ignore			\Assets\Pipeline\Files	TX_Pipeline_C_AL.png	14983447	a74dd02756cd87688b5ef22747ca85f8abb45c0e3be2d81574cd5eb124135092					
+			ignore			\Assets\Pipeline\Files	TX_Pipeline_C_Wrap_AL.png	1338324	97168338c89d6a4f0ff8fe6f2d640602a53747105a0e32e57c57b182a4d1f5c6					
+			ignore			\Assets\Pipeline\Files	TX_Pipeline_C_Wrap_NR.png	1661404	8adc9d34499f787f1b853582beb020b8ec84c02613847b86dc2959204ca4986b					
+			ignore			\Assets\Pipeline\Files	TX_Pipeline_Ramp_AL.png	4748513	93948faa9dab4beb13faec439f01618d955dd409fa7f68c8c462f2387f58014a					
+			ignore			\Assets\Pipeline\Files	TX_Pipeline_Tank_AL.png	4120211	445ba5e1accf56b9ed354a733099b7d8bd46aa290e3a84a07fa49c842857cd53					
+			ignore			\Assets\Pipeline\Files	TX_Pipeline_Well_AL.png	4402409	5cf18b02b9a896947501e2496c5f581f8cb916f5af6c89a84962a6b16c389b80					
+			ignore			\Assets\Planter_Hexa\Files	TX_Planter_Hexa_AL.png	1168291	a08f44a7ab1f463604bd6546c4fac59c147c9c4872f8fd2ec6be3c914c492f57					
+			ignore			\Assets\Playground\Files	TX_Playground_Castle_AL.png	4027140	413490cd0c61703d9ba56724c1bfae9f4487c7c7c790a0cb1754915ce50d0b68					
+			ignore			\Assets\Playground\Files	TX_Playground_Ladder_AL.png	1091314	9481c5393f85cb3b814b5511f572ed97ab3cff767da0143a0305b47bb76d5a7d					
+			ignore			\Assets\Playground\Files	TX_Playground_Rail_AL.png	2123028	52f0c4e8876f347f895891f2c5b3b1ba40f2809fb03451683e2bad56f8da29eb					
+			ignore			\Assets\Playground\Files	TX_Playground_Sandbox_AL.png	4129169	22e05845549b9d73c3648f855f4afbe373974e30906cf7ab1597c39a0db2be9f					
+			ignore			\Assets\Playground\Files	TX_Playground_Swing_AL.png	618276	30ede4deea9ee2e7db11190755deafdb7994d95a4717ab81fed1657dd68f64a0					
+			ignore			\Assets\Plywood\Files	TX_Plywood_AL.png	1295213	cba4932df0dc41de2b5e00d68919d98add63db3cc1cb59318ec4162358dc2171					
+			ignore			\Assets\Pole_Border\Files	TX_Pole_Border_Finland_AL.png	1018250	0ae6e8c6b4282eda2a7ee80d0e54de3caca2490ccc0cba87bd362c5b49ee0111					
+			ignore			\Assets\Pole_Border\Files	TX_Pole_Border_Russia_AL.png	894901	4e117ad8ed5b27f99b0874e9703607e6687cb970068ddac6d4075ec37180ef5b					
+			ignore			\Assets\Pole_Flag\Files	TX_Flag_Finland_AL.png	118289	4beaff321b57a6989d9e5827aa26b93adff33732bc4c6864fdc0e48e4e495123					
+			ignore			\Assets\Pole_Flag\Files	TX_Flag_NR.png	118066	031ee465c2d925b9139b1b2c8618311c39cd7fc0738215a429f38a117389be79					
+			ignore			\Assets\Pole_Flag\Files	TX_Pole_Flag_AL.png	780921	4177fe840b5fa03d707ffc30a5dc2c866863bd021db374d17a05799223c593a1					
+			ignore			\Assets\Pole_Light_Concrete\Files	TX_Pole_Light_Concrete_AL.png	2465151	9f575185d951b06a58ce60d1099c020f99b60ec36f91a17a68700d33d343ac9a					
+			ignore			\Assets\Pole_Light_Metal\Files	TX_Pole_Light_Metal_AL.png	781292	16abce566b5703d108dd54fe564467ed79faa5ef0a8609ccd2c7bf7e7d2c3afd					
+			ignore			\Assets\Pole_Light_Wood\Files	TX_Pole_Light_Wood_AL.png	990093	c13436df5ab7db5069a387e5d11c2fa559ba47ba318570caaeb2967fe5c300c1					
+			ignore			\Assets\Pole_Roadside\Files	TX_Pole_Roadside_AL.png	569594	27fc0bf3379502ea8fdaf08e3450682ea3677bf3bbb23c3e09c9d1d4f2de68b7					
+			ignore			\Assets\Pole_Transformer\Files	TX_Pole_Transformer_AL.png	3247592	fe72616b8e56bbb934623b77c91c5a97041e40d52b88c8b07508f1d3b9493cfc					
+			ignore			\Assets\Pole_Utility\Files	TX_Pole_Utility_AL.png	768874	c534794b7621e4d397b0d47ae00ff006dd3aa61a198130181b8808c32bf2b006					
+			ignore			\Assets\Police\Files	TX_Police_Exterior_NR.png	15923371	6aeef1f9316de7ba73331d6e2be9daf6cffe544f58682a6ff0c2fd374a289261					
+			ignore			\Assets\Police\Files	TX_Police_Glass_AL.png	10520472	b3923a05099e88e72d448d674c07bea47af73363eedd2519b039e2883d9d2c3a					
+			ignore			\Assets\Police\Files	TX_Police_Tires_AL.png	8274181	c68bfb40d7994ab70d2a7c108c1ab248431693e90d61493cd5d8ada61aa348e2					
+			ignore			\Assets\Police\Files	TX_Police_Tires_NR.png	13372624	45940736c17362c85ff49e2a3c305202e6c2ed5265947d0fdce14bb6139cf892					
+			ignore			\Assets\Projector\Files	TX_Projector_AL.png	583792	2b698bb2d8a46a69158cdbbabd6ea7021a4d60ba9732ad2a5376942df8629203				Reason for ignoring: Low Resolution	
+			ignore			\Assets\Projector_Screen\Files	TX_Projector_Screen_AL.png	374133	b6253ed9abf28acbad03d68d433f05e4ed50177d6df2538fc7956e5eb3676b7b					
+			ignore			\Assets\Rack_Carpet\Files	TX_Rack_Carpet_AL.png	1566457	27eb6d689f59aa7d02666d21f7d429dbeaf915dc87baed6b379a0c778e2e2656					
+			ignore			\Assets\Rack_Coat\Files	Icon_Rack_Coat.png	16818	94f150ee50c009c85a926e3db209083d4d373c5a5a44e87ab8ad8073eeb5e6b0					
+			ignore			\Assets\Rack_Coat\Files	TX_Rack_Coat_AL.png	922945	d7b11d16ee1c042c29937fe0c1a34c73494a39f46ec1acad7de14c5e5858bd7f					
+			ignore			\Assets\Radar\Files	TX_Radar_Antenna_AL.png	4225717	de52c48d8f94c72d089ac548f60bfd3e5adea929177cbd28667293e8bbdafeca					
+			ignore			\Assets\Radar\Files	TX_Radar_Base_AL.png	20293468	99332fcfc015d6ca15ed16d727ac399873ce5e69cc8ecc38bcb726ac23408a20					
+			ignore			\Assets\Radiator\Files	TX_Radiator_AL.png	710048	bda71cb1fe1600a227b659c1aa55c1c36c4b25a8dfd4ed46c6bd86585c2e210d					
+			ignore			\Assets\Radio\Files	TX_Radio_AL.png	1126421	9b6c75d6d3c7f4cf25cee4804572b752f015c283c6f97fae2f6d87452e0e6539				Reason for Ignoring: Translation is unnecessary	
+			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_A_AL.png	1058744	b52a2db7491a2fb9f0b92d8b5d1082aaf6f9739b102470e45c94b34f56e19455				Reason for Ignoring: Translation is unnecessary	
+			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_A_NR.png	1214158	8a9f649f95bb3c6d9bb919a99d09cdf6c4557337af1bacf0be4dbec6eee7e05c					
+			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_B_AL.png	1055294	ff5b361f4bbe207ee01e07ec49f6c3c6b5bab5097999c2e51d88970ee2b8a5dc					
+			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_B_NR.png	1043175	edbdecb2f2dd6ad879a27df177a89c47a7a119e6c09d8c6f1d842d525f128b9d					
+			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_C_AL.png	821232	bfc1317df7c445e7bfc010d9bfa7f303d9af0984241f37e2982ca010b707874a					
+			ignore			\Assets\Radio_Military\Files	TX_Radio_Military_C_NR.png	1067320	80bb388259deeedb5129eec93133774af812eafe7ffb6c520a32f9c0e3b52edb					
+			ignore			\Assets\Railroad\Files	TX_Railroad_AL.png	4507537	2c70f8e0e3d00c1f0d1321fb31b6dbafad728091cfa69c37ef07bd4ef9bc97ff					
+			ignore			\Assets\Rocket\Files	TX_Rocket_AL.png	586127	fc999e4d816c8683ebcf07e228f17009e94abe64abdd6f28254f0e20d42968b6					
+			ignore			\Assets\Rya\Files	Icon_Rya_Maria.png	75016	a69d800baf0d3a26c6b21c035877be0d5ead388c3c6653b7979b6756519c80cf					
+			ignore			\Assets\Rya\Files	TX_Rya_Maria_AL.png	1181979	2e45bea2f2068d97a0a3279f08c24aa299529285a90c72f429158781fdbbea20					
+			ignore			\Assets\Sandbags\Files	TX_Sandbags_AL.png	1195726	265ee3de7901eae2aa4ead1b09eebf1bd84d7d65294030ed4a1fa145941f012d					
+			ignore			\Assets\Sauna\Files	TX_Sauna_Wood_AL.png	2223019	50b08649eaf777a31bae08a8ed609068979c9be6b1bfb75102f5648a11db6297					
+			ignore			\Assets\Sawbuck\Files	TX_Sawbuck_AL.png	3407703	101cd4cd1314aeeb69ab59d82d586f3d179b5ffca01a82e4b59309c12931a77e					
+			ignore			\Assets\Scarecrow\Files	TX_Scarecrow_AL.png	4505700	ba4e0c0d50b0fedf6ec0c6a22a392e307f7c4493666ec83ce524d1854cdab9f8					
+			ignore			\Assets\Scarecrow\Files	TX_Scarecrow_NR.png	5773639	ba7195befbdea0dc37927356c0888fbe159e3513998259b20569dbc5eac044cc					
+			ignore			\Assets\School\Files	TX_School_Benches_AL.png	789241	930cb32d96308dd83c60f6f1586552311d46ee82a52ae546c4bed5d0825cab9b					
+			ignore			\Assets\School\Files	TX_School_Chimney_AL.png	5704532	38855b10bbb18ea81c6c82ef58eae429f504dd23938bc2813aab92064a3792fd					
+			ignore			\Assets\School\Files	TX_School_Exterior_AL.png	18160087	7f4dea3766f4d4caaee3eeed6138497da5685faee5fc9ed12f75fe861f89b88d					
+			ignore			\Assets\School\Files	TX_School_Garage_AL.png	15080088	cfa8e47d4e73cbafda0f30fbba034a353bf42206edc75e96726e35227d8c8c73					
+			ignore			\Assets\School\Files	TX_School_Gymnasium_AL.png	16604542	00ac1f0a9a4e774b1abd152c9e661ee56ade9366f7df82c54fc6d37c3e228fc8					
+			ignore			\Assets\School\Files	TX_School_Gymnasium_Details_AL.png	3406377	a4b7e7bf20fa84ed853f60d28be1b5e8f5f15c927f49dc4fbaa3275d9e88d0dc					
+			ignore			\Assets\School\Files	TX_School_Hallways_AL.png	13468883	bc80afe90b68dc288b51c832b85ce896a72bb66b614e5eae44407e2e25277796					
+			ignore			\Assets\School\Files	TX_School_Lobby_Details_AL.png	2472465	7b756b7e22a133db2afcdc2166339f9717b485fa8e2fd3e7e579ccc2d04c1c59					
+			ignore			\Assets\School\Files	TX_School_Roof_AL.png	2725988	61de2cd76fb18af870fc8045ff2ed614606eb28a74bb2b9296d9e7b9b5570c12					
+			ignore			\Assets\School\Files	TX_School_Stairs_AL.png	3580871	d96e20f5c28524c374635412f16a0386373d5e3f4d9cf6ab1f2a58084f9a327a					
+			ignore			\Assets\School\Files	TX_School_Steps_AL.png	5033944	653db5c91748a8172f797d6841c1b2db53b4d11f714615afd3b501d57af7fc5c					
+			ignore			\Assets\Shack_A\Files	TX_Shack_A_AL.png	13754667	573433bf11fa149cf08bbc74bc3f468c82acf211bc5adde46f903450674c79e9					
+			ignore			\Assets\Shack_Brick\Files	TX_Shack_Brick_Exterior_AL.png	19120673	9ec3557d6bbe9e4abf3a240eedc74cef8833f15f818b9a68338966cfc1b6dd8a					
+			ignore			\Assets\Shack_Brick\Files	TX_Shack_Brick_Interior_AL.png	5332705	a07ec9a55e26190a7e563294fca0777fa5c9dd680d6a27845b700cd09e62f4ec					
+			ignore			\Assets\Shack_Brick\Files	TX_Shack_Brick_Roof_AL.png	6288875	24fef9cd815d4ab6ad1b9085244103f716b9957dff6740599abb8d483c85937f					
+			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sport_Exterior_AL.png	11376743	3d8c879e44811e1b6ee900ed815d61e4e576eb7948b360f4af15e511a105af31					
+			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sport_Interior_AL.png	14590244	2e66b549806eb115d0e80885a06b8dfc2ad033b19b60008ef7954f8febe8ca08					
+			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sport_Roof_AL.png	2669652	311cce37b8b1674944736047fee4524f81c3b2b1768fbd1a72f29e0a84dcd4bd					
+			ignore			\Assets\Shack_Sport\Files	TX_Shack_Sports_Steps_AL.png	716779	5ce5798a0cccb062ceb8c6bbbd065d0d0d2124a442c23a5419a2eb4ad100b032					
+			ignore			\Assets\Shelf_Metal\Files	Icon_Shelf_Metal.png	194087	bd50dcd35b9d59361bad46b5ae57d0ef2791e8faeb8f7a7374747827598a5bc4					
+			ignore			\Assets\Shelf_Metal\Files	TX_Shelf_Metal_AL.png	3261214	22e1a0c3f25090fad3b17e24a6287430bcae627efe0c39c569e5b371669661ce					
+			ignore			\Assets\Shelf_Wall\Files	Icon_Shelf_Wall.png	14161	4e9a1f659bbc012ea33443e95fccd27fa6e8810b148cb7a62af93dfdf3585332					
+			ignore			\Assets\Shelf_Wall\Files	TX_Shelf_Wall_AL.png	225865	6faf21ea2b89e34b0e97fa6d6958326a53eeb0f01f05da63fbcd8980eca4372b					
+			ignore			\Assets\Shelf_Warehouse\Files	TX_Shelf_Warehouse_AL.png	3911434	cd089c0a5d9df405727060cefe57d613cebaa8d7746f73cf200f80ab4b710d00					
+			ignore			\Assets\Shelf_Wood\Files	Icon_Shelf_Wood.png	189056	0f07d54d12d188f22f3573cbf7c680cc5d4bcf8fa13b7dee6395d87a2c1bb4e8					
+			ignore			\Assets\Shelf_Wood\Files	TX_Shelf_Wood_AL.png	2829504	6a7ba0491ecec78ed9faf9ddddc75e63d223dcf6c80b6c3f876e8431debb5115					
+			ignore			\Assets\Shopping_Cart\Files	TX_Shopping_Cart_AL.png	841456	d55d2c217dda24cc5c73c769e6bca6cad8833ef540183068457214fdbeb14023					
+			ignore			\Assets\Shower\Files	TX_Shower_AL.png	580922	b694675da26459d0c3672b218c89b3c4a0ca365da756184fd3f923d84fe849e1					
+			ignore			\Assets\Sign_Children\Files	TX_Sign_Children_AL.png	785529	3b92d46776f1b74194158a436ff916cfb92160ab5f226773af79bf057ac61313					
+			ignore			\Assets\Sign_Crossing\Files	TX_Sign_Crossing_AL.png	965770	e40d28c8ce0eb7b33298eb3b64fa9156ce996b97e2cbdf49cedb03f2f94ef44f					
+			ignore			\Assets\Sign_Curve\Files	TX_Sign_Curve_AL.png	581780	116baba99e0b5dd91f1934cc3b1e5482589ef015fbd6a9b781cf8085d1b1a244					
+			ignore			\Assets\Sign_Exit\Files	TX_Sign_Exit_AL.png	234766	309cfe1aa1a2ef82e59803e4f6c0ea558e7e68d0443f6e730739072e6c64459b					
+			ignore			\Assets\Sign_Railroad\Files	TX_Sign_Railroad_AL.png	725483	f6678e37738c6c53d3e3a7608b1d98872ba70ad0854e035a53f87d04d65502f1					
+			ignore			\Assets\Sign_Speed\Files	TX_Sign_Speed_40_AL.png	911183	b1d549923f73d28a8b5c33d7ca4ea55b6708c300981dde6c280f2a2dedf7f403					
+			ignore			\Assets\Sink_Carpet\Files	TX_Sink_Carpet_AL.png	946535	243910dbe751c57fe15ba769cb2243190750cd806c5581a4775b678f9991fd6a					
+			ignore			\Assets\Sink_Toilet\Files	TX_Sink_Toilet_AL.png	775143	422396d20f9ee347faa21946e1d2d83f5d05ff42269015b497536a4b9ed98ad2					
+			ignore			\Assets\Slab_Concrete\Files	TX_Slab_Concrete_AL.png	6432483	8e932e1094cc0309d253874cb429bd6518bd3df6366e4f2f2e892d0a870adf45					
+			ignore			\Assets\Sofa_Leather\Files	Icon_Sofa_Leather.png	282562	3858df7be79ae2f3ae974dc5cdd241c00b3918bed361cc6b007fd8219c594d9f					
+			ignore			\Assets\Sofa_Leather\Files	TX_Sofa_Leather_AL.png	2323380	de1e6ca3a7a08fe099387d7331130aa5e9cd0f16c83981b3660a7b6cfe8e26aa					
+			ignore			\Assets\Speedbump\Files	TX_Speedbump_AL.png	219538	a9d66bdb55b803fc3771eac3094137bc2062ad3198dc888234c30b2b366a312e					
+			ignore			\Assets\Stadium\Files	TX_Stadium_Cover_AL.png	4189038	fb62091bcd8fa9f639f2bf8912b8a2e793013188b3ab290f78c48ed5404deb03					
+			ignore			\Assets\Stadium\Files	TX_Stadium_Light_AL.png	3327760	58ddfd314f7c707c25e8dbb50583415c960d1f69c0f7daba690e925d54ec299d					
+			ignore			\Assets\Stadium\Files	TX_Stadium_Seats_AL.png	9995595	bee112ba0a24928e0efb1500a9ab33010e662fd3b149dbfad788b4e3865a7baa					
+			ignore			\Assets\Stadium\Files	TX_Stadium_Stand_AL.png	3448060	3d40b6d6c380f0129f0b40078ebf060f32f58c03731663e82577bbc18c6120e5					
+			ignore			\Assets\Stadium\Files	TX_Stadium_Sweeper_AL.png	1252086	861f4a9be2aaabf627a204108a2f3b4fdcc1866b462a3fa7213fe526cd978856					
+			ignore			\Assets\Statue_Apartments\Files	TX_Statue_Apartments_Base_AL.png	4764146	7842c0da0c7a207ee1d0e53a409698f0681670b1351c776ed6efe26fecfd08fa					
+			ignore			\Assets\Statue_Apartments\Files	TX_Statue_Apartments_Sculpt_AL.png	1455241	fced323f0f11244916a12723713a7034d83346df3a1fd8358c2f6b17ba474714					
+			ignore			\Assets\Statue_Apartments\Files	TX_Statue_Apartments_Sculpt_NR.png	1456042	2a3967887a4ee2041de0171ae8db6e5695174a40eac3fa5312c65ee21fe89dcc					
+			ignore			\Assets\Stool_Military\Files	Icon_Stool_Military.png	31072	7eece70aecd0d352143641d73a9c49f9d8c9b91daa7b0ecfe360ee4f14bb6fd9					
+			ignore			\Assets\Stool_Military\Files	TX_Stool_Military_AL.png	667494	1b8c8f9b7a608d86f36d9fa8dacb0d90b17aec3a76367c842129991e6eb7b235					
+			ignore			\Assets\Stool_Padded\Files	Icon_Stool_Padded.png	29311	cb54492a40945734da297b0793c7c83e5e671fc4521d75cd3eb0b033bfd9afb7					
+			ignore			\Assets\Stool_Padded\Files	TX_Stool_Padded_AL.png	928639	f9ee8949ee503828540d00ad02e07862d7e64a4fb3066edeaa5f89ade6823059					
+			ignore			\Assets\Stove\Files	Icon_Stove.png	98011	ab974842b366691a23d934ad4d93cc5978cbf6836ae59d6c498d374bd8688ffe					
+			ignore			\Assets\Stove\Files	TX_Stove_AL.png	2402461	caf6ee607fcb1f1633a77e61b6acbb54c299d75484bb3e0b7072d5e72950f286				Reason for ignoring: Low Resolution	
+			ignore			\Assets\Stove_Hood\Files	TX_Stove_Hood_AL.png	3076684	5c3c78cf80ce0b7a1dd45812470ff795539515108ebecda65b98632db12ee9bf				Reason for Ignoring: Translation is unnecessary	
+			ignore			\Assets\Substation\Files	TX_Substation_AL.png	4456400	3508b67991eaee713420faba8f67b32f25e0d5e53c82d2e0cb77735ec72bc5b0					
+			ignore			\Assets\Table_Cabin\Files	Icon_Table_Cabin.png	209919	18e3b2f93e77c666f1ce79d699de7376b3a0bbcd50f818353135935eece41d76					
+			ignore			\Assets\Table_Cabin\Files	TX_Table_Cabin_AL.png	2853235	177a781d88f783395da6cc7a76758b408decdd71966a615b7cf03df458e38aca					
+			ignore			\Assets\Table_Canteen\Files	Icon_Table_Canteen.png	70746	5017dbcd8dd48b044eaba49c9a7a6a55054218ae1f5ee829d49a90ace3906012					
+			ignore			\Assets\Table_Canteen\Files	TX_Table_Canteen_AL.png	923630	9af32da8366f7b9dc6ca885fc19d18c569ce621c9ef237090087feb895a4a58d					
+			ignore			\Assets\Table_Kitchen\Files	Icon_Table_Kitchen.png	73892	66acf6bcd6b8e13de728e5702f57a6f5dc0105496090322a4deff8205317ed04					
+			ignore			\Assets\Table_Kitchen\Files	TX_Table_Kitchen_AL.png	3028763	2f6d37d88c9a56fda718f63ecf50f4898e837c392282d7ab51b0fd596869e1df					
+			ignore			\Assets\Table_Office\Files	Icon_Table_Office.png	71508	badd66d495722ccb2a35a1845f0ee33e7edd6f82e10d59c8efa39208ae5c1d14					
+			ignore			\Assets\Table_Office\Files	TX_Table_Office_AL.png	843038	f599df910306d0450a67bb484f3369f8b90be737702107d5f041d973fac087f3					
+			ignore			\Assets\Table_Round\Files	TX_Table_Round_AL.png	2864124	d25438ff6c3e8e479d4aee09efcd5b887b3272cd0888ab64639928e25012956c					
+			ignore			\Assets\Table_Television\Files	TX_Table_Television_AL.png	804834	676c6e6f44d212c160eaf14456b66b2068e3667f7e27c79d4487897f1e9a48bf					
+			ignore			\Assets\Tank_Fuel\Files	TX_Tank_Fuel_AL.png	3777691	f5a7d228e88c49566843d1fd01a9c3816c22a79f1044927ffa098b11a4d63924					
+			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Details_AL.png	10229477	61a416a8cf82be051a8917c5c771e61e333d5ed8dedb090c4facc4d7478242ef					
+			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Main_AL.png	2964381	e2eb6d37e8d83e7847b8260955c1bbf980830d39d678ab2daac97b05cc5e0d50					
+			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Roof_AL.png	21572566	56784e0a6346df8d01e5080ad6d19f0583f7780b0e46de066e9a4b77b88f97c8					
+			ignore			\Assets\Tank_Oil\Files	TX_Tank_Oil_Stand_AL.png	7597925	c6895e6c32ef9abebb7940b451a7709ba3aa6d9c0ee5a234a866a0e98037b88b					
+			ignore			\Assets\Target_Stand\Files	Icon_Target_Stand.png	185385	a2919f4499df00662b504036c749eaaeff90fb6aa27597fb6fd7bfc05fecb482				Reason for ignoring: Low Resolution	
+			ignore			\Assets\Target_Stand\Files	TX_Target_Stand_AL.png	809704	532be6284bda2274816a56f3505c86478a4fb1b9f46d56cad446d21c59af3e6b				Reason for ignoring: Low Resolution	
+			ignore			\Assets\Tarp\Files	TX_Tarp_AL.png	3690557	f0fcc6ac01c5119249432810356bb60feb40bab3cc547c0940c440e10248c8dc					
+			ignore			\Assets\Television\Files	Icon_Television.png	17428	b72a36de84cc834534dca8b9ed2dadee150b20817ee3c2ffbca6cf6307d38683					
+			ignore			\Assets\Television\Files	TX_Television_Frame_AL.png	632364	7567a90918d071ce89457f7acbdf74297a292031ea8f908b83b74c2c770f169d					
+			ignore			\Assets\Television\Files	TX_Television_Screen_AL.png	39247	544603005e01f4d82f8b26ea02f51e2318e4fe7b9bb1962087fe92d351cdad51					
+			ignore			\Assets\Tent\Files	TX_Tent_AL.png	12170537	6c1b5e3c1c9b5a9d6f9ed342b1d6ced23df78d28443bb4314faf01496c4e2bd9					
+			ignore			\Assets\Tent\Files	TX_Tent_Furnace_AL.png	672208	99d214a433d19d3c2e9c18ab44f18631095628484e84069198fccf712d8a021e					
+			ignore			\Assets\Tent\Files	TX_Tent_Mat_AL.png	4024280	ec2f0435b065bf055ce6b2f1e2d6353a47c2250038b4656b25ff2ac8fded7363					
+			ignore			\Assets\Tent\Files	TX_Tent_Mat_NR.png	7046029	23af24d9bec49bd8785f7911d3af2b3dd365f0ad1216c3e516ac6e35a25976a5					
+			ignore			\Assets\Tent\Files	TX_Tent_NR.png	2199759	e36292bad125790025ef8462726e141d5acc6a8d2a6e822c545225aa0f82c9a1					
+			ignore			\Assets\Tent_Civilian\Files	TX_Tent_Civilian_F_AL.png	2228159	10509f7180354850b83f3e15c0c2050e875c7a1ec2661204479c7701d60b8f33					
+			ignore			\Assets\Tent_Civilian\Files	TX_Tent_Civilian_NR.png	3684740	bf228f0ad81d33707ea1c32f95498e3d684896425262c5a1177460c624449821					
+			ignore			\Assets\Tent_Civilian\Files	TX_Tent_Civilian_R_AL.png	2403710	7c76a378bd0a49a3c7ae98391b574a83855d43398e3b967514e49b55d028721c					
+			ignore			\Assets\Tire\Files	TX_Tire_AL.png	1671439	fbbcdfb85360a8046f28b012c3f0b563457f75eead03d7345e9e72e18e0693e6					
+			ignore			\Assets\Tire\Files	TX_Tire_NR.png	225807	39779333473e8b0bb7c003709ad05f32f5d9ff08be5297f04e2c0bb9fa288449					
+			ignore			\Assets\Toilet\Files	TX_Toilet_AL.png	870116	d073b9e5132b255ca497ffb4e1b06235d8b84bbccaaabc737beecda9fe8e994a					
+			ignore			\Assets\Totem_Apartments\Files	TX_Totem_Apartments_AL.png	3831083	4598f0d3ceaacfc802b05d2d054d95af971d785a7e817162b1d3ddfde4cb4c10					
+			ignore			\Assets\Totem_Market\Files	TX_Totem_Market_AL.png	13695810	431576faf1f80b72f9c292912d4363080db8a203fa97f161682564b32c614d99					
+			ignore			\Assets\Totem_Market\Files	TX_Totem_Market_Wall_AL.png	710862	b4c1771df442e75cc22881b8754c9291237194e730648824559075ea3dc21891					
+			ignore			\Assets\Tower_Electric\Files	TX_Tower_Electric_AL.png	1250823	da1a5a28191bfa53736bb536c6f6bdedca37ccfe64b2d6abfa678165b9415f7e					
+			ignore			\Assets\Tower_Guard\Files	TX_Tower_Guard_Structure_AL.png	20064989	72e96d611667d7f7fc62621522a944a461e0ab76ffed3b474d6841d0a56a19e6					
+			ignore			\Assets\Tower_Lookout\Files	TX_Tower_Lookout_AL.png	14018320	6c2c774692d21e60f17f40494b1419634225be90b38306b07e33955cf1ed2ad5					
+			ignore			\Assets\Tower_Terminal\Files	TX_Tower_Terminal_AL.png	11605742	5244e1d47c613ba113c9378f23030ab3962da25a8c0caf97cbcb836b360f85fd					
+			ignore			\Assets\Trailer_Military\Files	TX_Trailer_Military_AL.png	14533747	0af21e82ba0537c982e4c3b33231bc3d493543392f23afd18fad599675508742					
+			ignore			\Assets\Train_Oil\Files	TX_Train_Oil_Carriage_AL.png	2069281	a415d0d6c6f8c2158b6aa44e569cd0042e8196ffdd805b3b146ef14978fa1125					
+			ignore			\Assets\Train_Oil\Files	TX_Train_Oil_Tank_AL.png	3745887	cc74620060814f77e8caa81f0f0834c679fd97dfbcdd2609ec95fcbc2cc41f47					
+			ignore			\Assets\Trash_Bin_Concrete\Files	TX_Trash_Bin_Concrete_AL.png	2714782	341f2ed83a12c003c31639110c34ba7fd8144d6800d9dc4e9f6c217ae5a6e5dd					
+			ignore			\Assets\Treehouse\Files	TX_Treehouse_Shack_AL.png	4285279	8c7da044e0b9bcffc638bc7deee624a09d6f9c53e840ec9e371c8cc55a86079b					
+			ignore			\Assets\Treehouse\Files	TX_Treehouse_Tree_AL.png	10330504	05f1e6b2c1554b95f121c59990c106b11e85292c235add44e9a9f27ceadb6424					
+			ignore			\Assets\Treehouse\Files	TX_Treehouse_Tree_NR.png	3374936	757560ca4587e66248c955650ef0c1872bbc83c0221c98739dcc1fdbc8bf2383					
+			ignore			\Assets\Trolley\Files	Icon_Trolley_Short.png	66412	329bea718be816dd133663f6c2527bcbbd09891eaf0adba63125471f49a0ffbc					
+			ignore			\Assets\Trolley\Files	Icon_Trolley_Tall.png	117088	4734e50ba8f11fba2b7ae77c6e2a696791b0030684b324c635a622df66859dfc					
+			ignore			\Assets\Trolley\Files	TX_Trolley_AL.png	2909549	caaad7df993b5cc378c62b5d61d0fd72e2416ea7bd4519a437c352274c1739aa					
+			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_AL.png	5028436	36b5913718c8151200c68869fb61a686465a7a20762134b869152605185b8158					
+			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_Divider_AL.png	16264755	9654b7463ef423dcdda13907e6879afa0d110b53ea94ece78fca9d77693897ad					
+			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_Entrance_AL.png	10905016	bb5fa311ac47446b59cfc632b2c201e3dd014e47158a1b3d5ad6a81ba0af6dcf					
+			ignore			\Assets\Tunnel_Highway\Files	TX_Tunnel_Highway_Rail_AL.png	459233	beab79004acac94eb85e492eb3419fe79adb09bafa36ddf634f9bfe52108da7e					
+			ignore			\Assets\Tutorial\Billboards\Files	TX_Sign_Billboard_AL.png	2023737	df8c04b06e212c2bbd0b0bc7a0581f397af0d3b362cbb56f48a84ad46541940d					
+			ignore			\Assets\Tutorial\Billboards\Files	TX_Tutorial_Crafting.png	158369	b0af19fb3acc053bccb301e7b85c769bc21b76e4548373b2892f9b9356f1a30d					
+			ignore			\Assets\Vehicles\BTR\Files	TX_BTR_AL.png	29026226	07d8e1e813121bc706e54c1646ef38f46c95896cc34ea5c7fc627c1e98cdf1d9					
+			ignore			\Assets\Vehicles\BTR\Files	TX_BTR_NR.png	7154600	8dbaaede84e25737a15a18280dc90e89b877c77d5c5ffa75d8d004c2d0010011					
+			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Body_Blue_AL.png	2960927	97399730472284c310dcd5aa4c643caf7ef519e901d03d037957a3e0cf3d80c6					
+			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Body_Red_AL.png	2922759	8c287b5422c841a111d4045f3831638db95becb8d2cbc9f5d2f5846129e8f9fa					
+			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Body_White_AL.png	2993112	3e1c74383f38a7c23b607125779ebb981e63e1df3a102d9e16bbc601253108af					
+			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Rims_AL.png	266213	be3c66a9095cac91c9242d8096b67e50b9ba5bd6f5618ec68d74ef500c98737b					
+			ignore			\Assets\Vehicles\Lada\Files	TX_Lada_Tires_AL.png	339565	d72eb42ff272bb47e8c80ede6fd695005419b38912ecedd87813b52e3a1e65ca					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Chassis_AL.png	6679761	b3f41a15aafb4bfe157eb12db78549d6a5752485b5148a96fade5413d4a6897d					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Chassis_NR.png	1490263	3db065d9e1d07757869d0cd8e70ab6e53f7f97f817a47b3099268fbd6712c706					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Hull_AL.png	5971000	65dc1b2120fa8854c5cad7db2f94bf963c6fd74b31d80e05678c9dd70b1ece1b					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Hull_NR.png	1483226	01ba83889f4026e090e9858d166be5a71a14ae4802e1e0a72eea6d3a7b813311					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Launcher_AL.png	5763925	1f635d85e57549456aa995d95ea44972c4858219c6dc224b5a1beb65636f501b					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Launcher_NR.png	1441148	5c3d1a05774412693401028386276fd310cd7cbae445555221d0a4b01f2a9210					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Pods_AL.png	6324157	a5adf470a0092ac1eb5a39f0b7651aa315faf5fbcad8757cf40275494d6a0238					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Pods_NR.png	1450229	bb378d955445de7789710e9865a26b80f13d6adaef06795c8bc95ed2c2e566c1					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Tracks_AL.png	862713	0d87f34f8164e89b691f3008646208005ecafef574d617f19c20a9ccaf15e8f9					
+			ignore			\Assets\Vehicles\MLRS\Files	TX_MLRS_Tracks_NR.png	663971	6d5c8eb866cf83fa11e5b4daf321fc5fe514bf06a8f44617d516c1fe43b23a62					
+			ignore			\Assets\Vehicles\Nissan\Files	TX_Nissan_Exterior_AL.png	10553905	1ef31ce1c6056fda9e3b58c37e7f9c248c3b8915dbe004924ae6d0e5e3d241a8					
+			ignore			\Assets\Vehicles\Nissan\Files	TX_Nissan_Interior_AL.png	4238078	5cd5b4e47c21280254a1e33ae6a7bc59620cc05a1475804c078d1bbbe856211a					
+			ignore			\Assets\Vehicles\PAZ\Files	TX_PAZ_Exterior_AL.png	12061558	9757a96082a655ab69df8878f2392f2228a68581359c607f59705befb9af7103					
+			ignore			\Assets\Vehicles\PAZ\Files	TX_PAZ_Interior_AL.png	2418014	ed532441bc3a81d4c5ee3cd40fab2b269ab9f3cf9aaf4a86eb511442c8c78b31					
+			ignore			\Assets\Vehicles\PAZ\Files	TX_PAZ_Tires_AL.png	1065263	5a98820abe6708e4590472dedfe0662b08ac372a7e6ea65495c2f00d78ddf534					
+			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Chassis_AL.png	6054574	f956cf34a2582879b314e0e15a17b5fc9831d39a6d04fc952076bf12c4b58a4a					
+			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Chassis_NR.png	1456304	414a183ee6b7270ebdfaaf331e33ea9973bd49f2360064387de9a4c87f7594a5					
+			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Turret_AL.png	6664990	61bd2fb1afd12a1b73e9787593b3a9cf2e9308c80e56d6f6114a76510c84a4ee					
+			ignore			\Assets\Vehicles\T-72\Files	TX_T-72_Turret_NR.png	1239612	3e4466d42682afe63115d28674100c0e135332039ca87dee4da12294fdfa76d6					
+			ignore			\Assets\Vehicles\Tractor\Files	TX_Tractor_AL.png	6855570	4a79e083bd95964cb83efd59a52ed85329e0fa17cf6227a0e59c9ce4795e6f7e					
+			ignore			\Assets\Vehicles\Tractor\Files	TX_Tractor_NR.png	6635467	d88bde6c32025df0a781568d2813550eb4d0abc532fb30133aaec990652bb08b					
+			ignore			\Assets\Vehicles\Transporter\Files	TX_Transporter_Exterior_AL.png	19312606	487866b44b5621b64ffdb0279fcd9e8ca9cf1ce436cfb4b79f2f9fa4af71c99b					
+			ignore			\Assets\Vehicles\Transporter\Files	TX_Transporter_Interior_AL.png	13302050	a4e24231504f0b86cf3fb95d9782e5347e1027875bff9a1a2a17290b71ee652a					
+			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Cargo\Files	TX_Truck_Trailer_Cargo_AL.png	4159740	ab1ecb7d8808b84383bd436afc29e258d3f7505757c6ea2b69bf57a00ee9a1a1					
+			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Frame\Files	TX_Truck_Trailer_Frame_AL.png	5721514	aab25d7abbe1ecb05f7ca314b5c7c64119e777db9212cf475167c57cf1f3bac5					
+			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Fuel\Files	TX_Truck_Trailer_Fuel_AL.png	5615638	b9460e759e86f142674a6b8258b767dffdee04151437306b29792a735ec57fcd					
+			ignore			\Assets\Vehicles\Truck_Trailers\Truck_Trailer_Logs\Files	TX_Truck_Trailer_Logs_AL.png	5294006	862057826a705db56d48064a89a02748ddff18d60e5db589f0f0b9ff35f773dc					
+			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Chassis_AL.png	5752362	9e5c4a981109382ebd150752f39288f5399a0a60c592f62f10efd97e76ef8591					
+			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Chassis_NR.png	6431071	56a353020f65e5be54c83bae267861a97f90472c0709782fe39f4f6812313912					
+			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Wheels_AL.png	1475817	e0082ebddda0c5f0fd0fa2452aef773c0627d8ec5b1d297f02f10dfe939018f9					
+			ignore			\Assets\Vehicles\Ural\Files	TX_Ural_Wheels_NR.png	1561943	76e06005ff6f90e54b166042953965d91cde46b5c80bbca64ab0d9139fa89bf5					
+			ignore			\Assets\Vehicles\Volvo\Files	TX_Volvo_Exterior_AL.png	9946346	664ff8aba38a2f6fb137727355fdf7b0fb11b40eb223809dda0f0c2a08968048					
+			ignore			\Assets\Vehicles\Volvo\Files	TX_Volvo_Interior_AL.png	14026591	39671edd920360a70d306203e18967211441ba9709866c8759597f4f4a88ef27					
+			ignore			\Assets\Warehouse_Terminal\Files	TX_Warehouse_Terminal_Base_AL.png	11647119	5638bc7e3d8064b135868c0086549bd452f6c9050749953826663333e0322cd2					
+			ignore			\Assets\Warehouse_Terminal\Files	TX_Warehouse_Terminal_Plates_AL.png	16593151	050242bdd7fc46314f7b7105778fdcbbbc07bea2a22d6bee9835797880aaaa3f					
+			ignore			\Assets\Warehouse_Terminal\Files	TX_Warehouse_Terminal_Structure_AL.png	12253183	2f3652e338a47eba6ad0db9c19f80aee60c657bec389e2f52d9453eee22e6705					
+			ignore			\Assets\Weapon_Display\Files	Icon_Weapon_Display.png	453475	5d57ff1ef4861de65b19818d0cd422bdefe9d3826298d5b92e1ddd59c3660512					
+			ignore			\Assets\Weapon_Display\Files	TX_Weapon_Display_AL.png	8072812	a54016c1f6defdf8c9b56929c5d7086e95c3474e53852b878aead357ad8c2e16					
+			ignore			\Assets\Well\Files	TX_Well_AL.png	4386119	50e133b4b99bc40ff3c585a0deb6d9253d29adb6053c84257985f2c91ab2f2a3					
+			ignore			\Assets\Wicket\Files	TX_Wicket_Roof_AL.png	5763521	2d3f4f0411a5bca59c1f45cd8823b4ded98741fc1b54b234f7f78e3a90dc43bf					
+			ignore			\Modular\Doors\Files	TX_Door_Attic_AL.png	3828613	70a0d8c7f53eddca8f542592cf53b139a57a4cf6ab7003b1e1882c4728b8ab3e					
+			ignore			\Modular\Doors\Files	TX_Door_Metal_AL.png	2872600	77d16624a98b6fc54b9c1987b873ecabbcdd69519c56ccb7e9794429f272e81b					
+			ignore			\Modular\Doors\Files	TX_Door_Porch_AL.png	2101295	426f3d0151df31a95da5b5b95996e1730086ad373cbe30a0777f96e60a529859					
+			ignore			\Modular\Doors\Files	TX_Door_Sauna_AL.png	1993001	e5cfc0fd24afb7608450aad162b42cddd10441faca33ff47918667d40612d567					
+			ignore			\Modular\Doors\Files	TX_Door_Shack_AL.png	2455288	59d3d5bc392ae3914e9619dc7ed2033c897c8df9a1837d3cb385c920bf77a1eb					
+			ignore			\Modular\Doors\Files	TX_Door_Wood_AL.png	2628422	4da1837277b5862ee0e1f9c190fa2b7bf453bbb9ef650007cfd4d776b020d899					
+			ignore			\Modular\Frames\Files	TX_Frames_Metal_AL.png	11967341	a332f4aca1cd471beda34027df3a04a5e2899c7aacf8826ac619fcb95355758a					
+			ignore			\Modular\Frames\Files	TX_Frames_Wood_AL.png	16297148	8270c078492fd7f13f9f22dde7d399da12c6d5452593c6920e31074c034d7505					
+			ignore			\Terrains\Utility\Files	TX_Flag_Transition_AL.png	762394	61bc172a1fae78bd7d8e5fed0892fd073c483bb975a9a80fb64f8aaf5d48151f					
+			ignore			\Terrains\Utility\Files	TX_Pole_Ribbon_AL.png	2672273	cd43fad6494723f5e0ca661c9829e0ba6379eda5a1b32a011d8d2d9b1e259842					
+			ignore			\Terrains\Utility\Files	TX_Ribbon_Field_AL.png	168632	fd5d2eecc44bfcb51c6aa3961d937883de9d33d8fa24572964ce605dbf88f9b0					
+			ignore			\Terrains\Utility\Files	TX_Ribbon_NR.png	77823	cb459745f27906e5a2a02c8e6d26defa4447f7e02fea44c9192dfab0b03abf38					
+			ignore			\Terrains\Utility\Files	TX_Wire_NR.png	53857	787702b01ec5f9b476c442fe07a2d46048889619acb8a1eaad657f20bdd2dfb8					
