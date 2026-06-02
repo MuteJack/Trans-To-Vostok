@@ -1,64 +1,64 @@
-WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
-Weapon	Weapon	String	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]	武器卡壳 | 按 [重新装弹]			
-Weapon	Weapon	Number	1	literal	UI/HUD	tscn	UI/HUD	Magazine/Panel	Count	Label	text	1565790634	0				
-Weapon	Weapon	Number	1	literal	UI/HUD	tscn	UI/HUD	Chamber/Panel	Count	Label	text	343236737	0				
-Interaction	/	String	0	literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction	交互			
-Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]	火 [点燃]			
-Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]	火 [未装备火柴]			
-Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		93	Fire [Extinguish]	火 [扑灭]			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode	[RMB] = 旋转模式			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Add	Label	text	1516803336	[MMB] = Add to Catalog	[MMB] = 添加到目录			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Catalog	Label	text	945705906	[TAB] = Furniture Catalog	[TAB] = 家具目录			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Close	Label	text	299252101	[F1] = Close Decor Mode	[F1] = 关闭装饰模式			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements/Header	Label	Label	text	865843283	Decor Mode	装饰模式			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Place	Label	text	1770403458	[G] = Place Furniture	[G] = 放置家具			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Scroll	Label	text	431027796	[SCROLL] = Adjust / Rotate	[滚动] = 调整 / 旋转			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Magnet	Label	text	813263933	[LMB] = Surface Magnet	[LMB] = 表面磁铁			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements/Header	Label	Label	text	1550753811	Item Placement	物品放置			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Place	Label	text	652634587	[G] = Grab / Drop Item	[G] = 拾取/丢弃物品			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Scroll	Label	text	734941771	[SCROLL] = Adjust / Rotate	[滚动] = 调整 / 旋转			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Switch	Label	text	1302393483	[RMB] = Rotation Mode	[RMB] = 旋转模式			
-Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Orientation	Label	text	14073674	[MMB] = Change Orientation	[MMB] = 更改方向			
-Transition	Transition	String	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Destination	Label	text	1760777710	Village	村庄			
-Transition	Transition	String	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Zone	Label	text	1044890688	Area 05	05区			
-Transition	Transition	Number	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Time	Value	Label	text	1758081540	+4h		Value(Integer) about the cost of Transition. Untranslatable.		
-Transition	Transition	Number	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Energy	Value	Label	text	1436272038	-8		Value(Integer) about the cost of Transition. Untranslatable.		
-Transition	Transition	Number	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Hydration	Value	Label	text	1947628226	-16		Value(Integer) about the cost of Transition. Untranslatable.		
-Transition	Transition	String	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Details	Hint	Label	text	958640207	Demo transition: Skips 2-3 maps	演示过渡：跳过 2-3 张地图	Deprecated String. Maybe only for DEMO Version.		
-Item	Item		0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	text	988715662	Item	项目			
-Item	Item	type	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	text	284423885	Type (Common)	类型（通用）			
-Item	Item	type	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Rare)	类型（稀有）			
-Item	Item	type	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Legendary)	类型（传说级）			
-Item	Item	String	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	text	344439182	An item is an object within the game world that can be collected by a player.	物品是指游戏世界中玩家可以拾取的对象。			
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	text	1418802616	Condition:	状态：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	text	1575206874	Weight:	重量：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	text	913881262	Value:	值：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Value	Value	Label	text	1314691776	100€				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	text	1393351409	Use time:	使用时间：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Use	Value	Label	text	1111351186	10s				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	text	1563649886	Damage:	损坏：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Damage	Value	Label	text	252494766	100				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	text	340357805	Caliber:	口径：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Caliber	Value	Label	text	1709584114	9x19				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	text	2089057817	Magazine:	杂志：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Magazine	Value	Label	text	1286269279	100				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	text	1317579651	Capacity:	容量：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Capacity	Value	Label	text	15745248	+20kg				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	text	1264056674	Max stack:	最大栈容量：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Stack	Value	Label	text	1203542639	x30				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	text	2078401087	Armor:	护甲：			
-Item	Item	Level	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Armor	Value	Label	text	134288100	NIJ III				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	text	973316326	Health:	健康：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Health	Value	Label	text	553960291	+100				
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	Comments	max_length
+Weapon	Weapon	String	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]	2924	武器卡壳 | 按 [重新装弹]			
+Weapon	Weapon	Number	1	literal	UI/HUD	tscn	UI/HUD	Magazine/Panel	Count	Label	text	1565790634	0					
+Weapon	Weapon	Number	1	literal	UI/HUD	tscn	UI/HUD	Chamber/Panel	Count	Label	text	343236737	0					
+Interaction	/	String	0	literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction	2926	交互			
+Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]	2928	火 [点燃]			
+Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]	2930	火 [未装备火柴]			
+Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		93	Fire [Extinguish]	2932	火 [扑灭]			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode	2934	[RMB] = 旋转模式			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Add	Label	text	1516803336	[MMB] = Add to Catalog	2936	[MMB] = 添加到目录			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Catalog	Label	text	945705906	[TAB] = Furniture Catalog	2938	[TAB] = 家具目录			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Close	Label	text	299252101	[F1] = Close Decor Mode	2940	[F1] = 关闭装饰模式			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements/Header	Label	Label	text	865843283	Decor Mode	2942	装饰模式			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Place	Label	text	1770403458	[G] = Place Furniture	2944	[G] = 放置家具			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Scroll	Label	text	431027796	[SCROLL] = Adjust / Rotate	2946	[滚动] = 调整 / 旋转			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Magnet	Label	text	813263933	[LMB] = Surface Magnet	2948	[LMB] = 表面磁铁			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements/Header	Label	Label	text	1550753811	Item Placement	2950	物品放置			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Place	Label	text	652634587	[G] = Grab / Drop Item	2952	[G] = 拾取/丢弃物品			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Scroll	Label	text	734941771	[SCROLL] = Adjust / Rotate	2954	[滚动] = 调整 / 旋转			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Switch	Label	text	1302393483	[RMB] = Rotation Mode	2956	[RMB] = 旋转模式			
+Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Placement/Margin/Elements	Orientation	Label	text	14073674	[MMB] = Change Orientation	2958	[MMB] = 更改方向			
+Transition	Transition	String	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Destination	Label	text	1760777710	Village	2960	村庄			
+Transition	Transition	String	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Header	Zone	Label	text	1044890688	Area 05	2962	05区			
+Transition	Transition	Number	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Time	Value	Label	text	1758081540	+4h			Value(Integer) about the cost of Transition. Untranslatable.		
+Transition	Transition	Number	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Energy	Value	Label	text	1436272038	-8			Value(Integer) about the cost of Transition. Untranslatable.		
+Transition	Transition	Number	1	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Cost/Hydration	Value	Label	text	1947628226	-16			Value(Integer) about the cost of Transition. Untranslatable.		
+Transition	Transition	String	0	literal	UI/HUD	tscn	UI/HUD	Transition/Elements/Details	Hint	Label	text	958640207	Demo transition: Skips 2-3 maps	2964	演示过渡：跳过 2-3 张地图	Deprecated String. Maybe only for DEMO Version.		
+Item	Item		0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Title	Label	text	988715662	Item	2966	项目			
+Item	Item	type	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label	text	284423885	Type (Common)	2968	类型（通用）			
+Item	Item	type	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Rare)	2970	类型（稀有）			
+Item	Item	type	0	literal			UI/Elements/Tooltip	Content/Panel/Margin/VBox	Type	Label			Type (Legendary)	2972	类型（传说级）			
+Item	Item	String	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Info	Label	text	344439182	An item is an object within the game world that can be collected by a player.	2974	物品是指游戏世界中玩家可以拾取的对象。			
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Condition	Label	text	1418802616	Condition:	2976	状态：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Condition	Value	Label	text	308055388	100%					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Weight	Label	text	1575206874	Weight:	2980	重量：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Weight	Value	Label	text	2123849713	100kg					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Value	Label	text	913881262	Value:	2984	值：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Value	Value	Label	text	1314691776	100€					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Use	Label	text	1393351409	Use time:	2986	使用时间：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Use	Value	Label	text	1111351186	10s					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Damage	Label	text	1563649886	Damage:	2988	损坏：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Damage	Value	Label	text	252494766	100					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Caliber	Label	text	340357805	Caliber:	2990	口径：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Caliber	Value	Label	text	1709584114	9x19					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Magazine	Label	text	2089057817	Magazine:	2992	杂志：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Magazine	Value	Label	text	1286269279	100					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Capacity	Label	text	1317579651	Capacity:	2994	容量：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Capacity	Value	Label	text	15745248	+20kg					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	text	1264056674	Max stack:	2996	最大栈容量：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Stack	Value	Label	text	1203542639	x30					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	text	2078401087	Armor:	2998	护甲：			
+Item	Item	Level	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Armor	Value	Label	text	134288100	NIJ III					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	text	973316326	Health:	3000	健康：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Health	Value	Label	text	553960291	+100					
 Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	text	1764317690	"Energy:
-"	能源：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:	补水：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:	体温：			
-Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100				
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:	疗法：			
-Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:	兼容性：			
-Item	Item	String	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U		PlaceHolderText, Don't need to translate (Will be handled by substr).		
+"	3002	能源：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Energy	Value	Label	text	753384033	+100					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	text	1258323277	Hydration:	3004	补水：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Hydration	Value	Label	text	2020813973	+100					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	text	932321752	Body Temp:	3006	体温：			
+Item	Item	Number	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox/Temperature	Value	Label	text	160885125	+100					
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	text	788632593	Cures:	3008	疗法：			
+Item	Item	Label	0	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	text	1254665238	Compatibility:	3010	兼容性：			
+Item	Item	String	1	literal	UI/Elements/Tooltip	tscn	UI/Elements/Tooltip	Content/Panel/Margin/VBox	List	Label	text	89398426	AK-12, AKM, AKS-74U			PlaceHolderText, Don't need to translate (Will be handled by substr).		

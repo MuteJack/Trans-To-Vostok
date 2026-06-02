@@ -1,15 +1,15 @@
-WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
-Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	简单			
-Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	中级			
-Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	难			
-Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	教程任务 1（简单）			
-Tasks	Generalist/Tutorial/01	difficulty	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy				
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	Comments	max_length
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	2786	简单			
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	2788	中级			
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	2790	难			
+Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	2792	教程任务 1（简单）			
+Tasks	Generalist/Tutorial/01	difficulty	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy					
 Tasks	Generalist/Tutorial/01	description	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					description		"Let's start with something simple.
 
 Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
 1. Press Start Delivery
 2. Select Canned Pea Soup
-3. Press Complete"	"我们先从简单的内容开始。
+3. Press Complete"	2794	"我们先从简单的内容开始。
 
 前往“物品”公告板，领取“豌豆罐头汤”。将配送物品放入背包后：
 1. 点击“开始配送”
@@ -18,8 +18,8 @@ Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery i
 'Canned Pea Soup'
 'Start Delivery'
 'Complete'"		
-Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	教程任务 2（复杂）			
-Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate				
+Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	教程任务 2（复杂）			
+Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate					
 Tasks	Generalist/Tutorial/02	description	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
 
 Some tasks might require crafting-based delivery items, like this task requires Meatballs (Cooked), which can only be obtained through crafting.
@@ -35,7 +35,7 @@ In order to craft the Meatballs (Cooked), do the following:
 4. Select Mess Kit, Canned Meatballs and Water Bottle
 5. Press Craft
 
-Now you have successfully crafted the required task item and you can complete the task."	"现在让我们增加一些难度。
+Now you have successfully crafted the required task item and you can complete the task."	2798	"现在让我们增加一些难度。
 
 有些任务可能需要通过制作获得的交付物品，比如这个任务需要“肉丸（熟）”，而这种物品只能通过制作获得。
 
@@ -59,8 +59,8 @@ Now you have successfully crafted the required task item and you can complete th
 'Heat'
 'Firepot'
 'Start Input'"		
-Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	教程任务 3（家具）			
-Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard				
+Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	教程任务 3（家具）			
+Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard					
 Tasks	Generalist/Tutorial/03	description	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
 
 Some items that you might receive from crafting, trading or tasks are Furniture items, which are used for shelter customization.
@@ -75,7 +75,7 @@ Try getting new furniture by completing this task:
 3. Press Complete
 4. Notice the message ""New Furniture Added [Catalog]""
 
-You can learn more about shelter customization and Furniture Catalog from the tutorial billboard called Shelters."	"还有一件事需要了解。
+You can learn more about shelter customization and Furniture Catalog from the tutorial billboard called Shelters."	2802	"还有一件事需要了解。
 
 通过制作、交易或完成任务获得的某些物品属于“家具”类别，可用于自定义庇护所。
 
@@ -99,15 +99,15 @@ You can learn more about shelter customization and Furniture Catalog from the tu
 'Complete'
 'tutorial'
 'Shelters'"		
-Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	黄金时段			
-Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy				
+Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	2804	黄金时段			
+Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy					
 Tasks	Generalist/01	description	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
 
 Nevertheless, you’ve arrived at the prime time, because I’m out of toilet paper and the situation is getting urgent.
 
 Speaking of prime time, I just finished repairing some electronics and I have this fully functional TV ready to go. Mark my words, at the moment, this is the only working TV in Area 05.
 
-If you bring me that toilet paper, the TV is yours. It has all the channels pre-configured, vibrant colors and prime time shows are running as we speak."	"哎哟，哎哟……你肯定就是游牧民上周发现的那个人吧。他们不是把你安排在那间又旧又小的木屋里了吗？我们以前有时会去那里喝得酩酊大醉，打打扑克，但那地方总让我头疼，我敢肯定天花板里肯定有石棉之类的东西。
+If you bring me that toilet paper, the TV is yours. It has all the channels pre-configured, vibrant colors and prime time shows are running as we speak."	2806	"哎哟，哎哟……你肯定就是游牧民上周发现的那个人吧。他们不是把你安排在那间又旧又小的木屋里了吗？我们以前有时会去那里喝得酩酊大醉，打打扑克，但那地方总让我头疼，我敢肯定天花板里肯定有石棉之类的东西。
 
 不过，你来得正是时候，因为我没厕纸了，情况越来越紧急。
 
@@ -118,85 +118,85 @@ If you bring me that toilet paper, the TV is yours. It has all the channels pre-
 'cabin'
 'toilet paper'
 'Area 05'"		
-Tasks	Generalist/02	name	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	坏习惯			
-Tasks	Generalist/02	difficulty	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy				
+Tasks	Generalist/02	name	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	2808	坏习惯			
+Tasks	Generalist/02	difficulty	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy					
 Tasks	Generalist/02	description	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					description		"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
 
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"前阵子，我去附近那所废弃的学校找医生看病。他跟我说我得改掉所有“坏习惯”，但这老混蛋自己不也抽烟吗，去他的！
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	2810	"前阵子，我去附近那所废弃的学校找医生看病。他跟我说我得改掉所有“坏习惯”，但这老混蛋自己不也抽烟吗，去他的！
 
 你八成就是那种现代嬉皮士，遇到麻烦事就只知道舔薄荷糖，不过如果你碰巧发现了这种东西，记得带上一两包，顺便带点火柴。"	"Please pay attention to the following points when translating:
 'Matches' is the plural form of match (match, noun), not match (verb).
 'pack' may means cigarrete, not a cigar"		
-Tasks	Generalist/03	name	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	背痛			
-Tasks	Generalist/03	difficulty	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy				
+Tasks	Generalist/03	name	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	2812	背痛			
+Tasks	Generalist/03	difficulty	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy					
 Tasks	Generalist/03	description	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					description		"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
 
 I usually don't complain, but my fucking back is killing me. Every morning when I wake up, it feels like a gunshot directly to my spine. It won't be long until you're just like me and those cursed French cars.
 
-If you happen to find something that could help with my back, I would highly appreciate it."	"到了我这把年纪，浑身都疼，身体就像那些法国车一样，总是出问题，得不停地修修补补。
+If you happen to find something that could help with my back, I would highly appreciate it."	2814	"到了我这把年纪，浑身都疼，身体就像那些法国车一样，总是出问题，得不停地修修补补。
 
 我平时不爱抱怨，但这该死的背疼得要命。每天早上醒来，感觉就像有人直接朝我的脊椎开了一枪。用不了多久，你也会变成我这样，跟那些该死的法国车一样。
 
 如果你碰巧知道有什么能缓解我背痛的方法，我将不胜感激。"			
-Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	精品咖啡			
-Tasks	Generalist/04	difficulty	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy				
+Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	2816	精品咖啡			
+Tasks	Generalist/04	difficulty	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy					
 Tasks	Generalist/04	description	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					description		"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
 
 If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
 
-As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	"生活中几乎没有什么事情是不可商量的。早上6点的晨间咖啡、中午12点的午间咖啡，以及晚上18点的晚间咖啡。如果涉及体力劳动，期间的咖啡休息时间也是强制性的，基本上可以说是法律规定的。
+As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	2818	"生活中几乎没有什么事情是不可商量的。早上6点的晨间咖啡、中午12点的午间咖啡，以及晚上18点的晚间咖啡。如果涉及体力劳动，期间的咖啡休息时间也是强制性的，基本上可以说是法律规定的。
 
 若想在05区活下去，确保咖啡因源源不断地摄入应是你的首要目标。
 
 事实上，我大概得稍微增加一下战略性咖啡储备了，毕竟最近的消耗量已经超过平均水平了。"	"Please pay attention to the following points when translating:
 'Area 05'"		
-Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	大汗淋漓的生意			
-Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate				
+Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	2820	大汗淋漓的生意			
+Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate					
 Tasks	Generalist/05	description	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
 
 Since air conditioning, showers and running water are just a faint memory from the past, it's important that you maintain personal hygiene and odor control for the sake of the others. You might wonder why not just go wash in the lake or sea? Well, let me tell you why that's a bad idea.
 
 After the initial explosion, these waters are far from refreshing and there's something nasty going on. I have seen so many dead fish lately that my ass is not going into that water, that's for sure and I highly recommend the same for you.
 
-It’s a sweaty business, but we just have to figure out some alternative methods to stay fresh."	"在这里的日子漫长又闷热，尤其是夏天。
+It’s a sweaty business, but we just have to figure out some alternative methods to stay fresh."	2822	"在这里的日子漫长又闷热，尤其是夏天。
 
 由于空调、淋浴和自来水都只是过去模糊的记忆，为了不影响他人，保持个人卫生和控制体味至关重要。你可能会问：为什么不去湖里或海里洗个澡呢？好吧，让我告诉你为什么这是个糟糕的主意。
 
 经历了最初的“爆发”后，这些水早已不复清凉，里面还藏着些恶心的东西。最近我看到太多死鱼了，我的屁股绝对不会碰那水，这一点可以肯定，我也强烈建议你别去。
 
 虽然这活儿干得人汗流浃背，但我们还是得想些别的办法来保持清爽。"			
-Tasks	Generalist/06	name	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman	万能工			
-Tasks	Generalist/06	difficulty	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate				
+Tasks	Generalist/06	name	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman	2824	万能工			
+Tasks	Generalist/06	difficulty	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate					
 Tasks	Generalist/06	description	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					description		"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
 
-I'm getting tired of being her handyman, but I promised to help this one last time."	"你还记得那个仍住在边境区附近的老太太吗？她是个盲人，不管我多少次提醒她别碰电子设备，她还是总爱乱按各种按钮，结果把一切都搞得一团糟！
+I'm getting tired of being her handyman, but I promised to help this one last time."	2826	"你还记得那个仍住在边境区附近的老太太吗？她是个盲人，不管我多少次提醒她别碰电子设备，她还是总爱乱按各种按钮，结果把一切都搞得一团糟！
 
 现在炉子坏了，冷冻柜里的东西都化了，而且收音机似乎又开始“闹脾气”了。更糟的是，上周一场暴风雨中，一棵树直接砸中了她门廊的屋顶，导致屋顶部分坍塌，所以我们现在正面临一堆乱七八糟的问题。
 
 我已经厌倦了当她的维修工，但我答应过这次会帮她最后一次。"	"Please pay attention to the following points when translating:
 'Border Zone'"		
-Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	六块腹肌			
-Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard				
+Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	2828	六块腹肌			
+Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard					
 Tasks	Generalist/07	description	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					description		"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
 
 When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
 
-Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	"每个男人都有个软肋，我的就是温热的廉价啤酒，尤其是在寒冷的冬日清晨。
+Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	2830	"每个男人都有个软肋，我的就是温热的廉价啤酒，尤其是在寒冷的冬日清晨。
 
 冬天一到，你得把它们暖和地贴在身上。听起来可能有点恶心，但相信我，在寒风中四处走动时，你可不想喝到一杯“小麦雪葩”。 腋下或裆部是保暖的最佳位置，那里散发的热量很多，只要方法得当，甚至能让整整一箱啤酒保持温暖。
 
 说到整箱啤酒，我绝对可以带上一箱去公路旅行，正如俗话所说：“路上喝六瓶”。"			
-Tasks	Generalist/08	name	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend	老朋友			
-Tasks	Generalist/08	difficulty	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard				
+Tasks	Generalist/08	name	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend	2832	老朋友			
+Tasks	Generalist/08	difficulty	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard					
 Tasks	Generalist/08	description	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					description		"Want to hear military stories?
 
 Back in the day, when I was doing my conscript service, we still had a few of those KP-31's lying around in the warehouse.
 
 One range day, we actually got a chance to test those. We were not allowed to use full-auto with those drum mags, but when it was my turn, I couldn't resist. I changed the fire mode, squeezed the trigger and 71 rounds of pure magic came out of my barrel.
 
-Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn, I miss that gun. Someday I will once again reunite with my magical old friend, someday..."	"想听听军旅故事吗？
+Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn, I miss that gun. Someday I will once again reunite with my magical old friend, someday..."	2834	"想听听军旅故事吗？
 
 当年我服兵役的时候，仓库里还堆着几把KP-31。
 
@@ -204,30 +204,30 @@ Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn,
 
 有时在梦里，我仍能隐约听到那“哒哒哒”的声响。该死，我真怀念那把枪。总有一天，我会再次与这位神奇的老朋友重逢，总有一天……"	"Please pay attention to the following points when translating:
 'KP-31' is a proper noun (items/weapon)."		
-Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	公路旅行			
-Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard				
+Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	2836	公路旅行			
+Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard					
 Tasks	Generalist/09	description	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					description		"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
 
 Have you ever visited the North? What a shame, that place has remained totally unaffected by all this bullshit. It's like nothing ever happened there. I'm talking about pristine nature, wildlife and crystal-clear rivers for catching those juicy arctic trouts.
 
 I would be already driving there, but those filthy Bandits stole my car battery and a bunch of other items from the trunk, so I'm still stuck here.
 
-Maybe you could help me with this? Bring back my stolen items and I have something special for you."	"我受够了这破地方。我打算来趟北方的单程公路之旅，把这一切苦难都抛在脑后。
+Maybe you could help me with this? Bring back my stolen items and I have something special for you."	2838	"我受够了这破地方。我打算来趟北方的单程公路之旅，把这一切苦难都抛在脑后。
 
 你去过北方吗？真可惜，那地方完全没受这些破事的影响。仿佛那里什么都没发生过似的。我说的可是原始的自然风光、野生动物，还有清澈见底的河流，可以钓到那些鲜美的北极鳟鱼。
 
 要不是那些肮脏的强盗偷走了我的车电池和后备箱里的一堆东西，我早就开车出发了，现在却还被困在这里。
 
 也许你能帮我一把？帮我找回被偷的东西，我会给你一份特别的回报。"			
-Tasks	Generalist/10	name	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade	自制			
-Tasks	Generalist/10	difficulty	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard				
+Tasks	Generalist/10	name	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade	2840	自制			
+Tasks	Generalist/10	difficulty	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard					
 Tasks	Generalist/10	description	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					description		"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
 
 I already had a large batch for him, but since my trip was delayed, I had to make sure the product didn't spoil in my cellar. After a few ""product-quality"" sips, I got carried away and started drinking and now I have nothing left.
 
 I'm going to need a new batch, but I don't have time right now, so perhaps you can cook it. The recipe is really simple, but do not add too much sugar or you're going to ruin the whole thing. Keep it simple, keep it homemade.
 
-If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."	"等我到了北方，我要给萨满一个惊喜，因为他特别喜欢我自制的糖酒。
+If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."	2842	"等我到了北方，我要给萨满一个惊喜，因为他特别喜欢我自制的糖酒。
 
 我本来给他准备了一大罐，但因为行程推迟，我得确保酒窖里的酒不会变质。尝了几口“品鉴”之后，我一不小心就喝多了，现在已经一滴不剩了。
 
@@ -236,93 +236,93 @@ If you can make this new batch for me, I will consider giving you a key to my at
 如果你能帮我酿好这一批，我会考虑把阁楼的钥匙给你，那可比你那间小小的石棉小屋强多了。"	"Please pay attention to the following points when translating:
 `Shaman`
 'Kilju' is a traditional Finnish alcohol"		
-Tasks	Doctor/01	name	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	恶心的草稿			
-Tasks	Doctor/01	difficulty	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy				
+Tasks	Doctor/01	name	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	2844	恶心的草稿			
+Tasks	Doctor/01	difficulty	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy					
 Tasks	Doctor/01	description	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					description		"I haven't seen you here before, you must be a new patient?
 
 Welcome to my improvised clinic. It ain't much, but with these limited resources, it's the best that we've got.
 
 I used to teach health education for elementary students in this school. It was a long time ago, but I have good memories of this place. The building is old and has seen better days, but I'm sure it can be restored when things settle down.
 
-Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	"我以前没在这里见过你，你应该是新来的病人吧？
+Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	2846	"我以前没在这里见过你，你应该是新来的病人吧？
 
 欢迎来到我的临时诊所。虽然条件简陋，但在资源有限的情况下，这已经是我们的最佳选择。
 
 我以前在这所学校给小学生上健康教育课。虽然那是很久以前的事了，但我对这里仍有美好的回忆。 这栋楼很老旧，早已不复当年，但我相信等局势稳定下来，它一定能得到修复。
 
 如今，我最头疼的问题主要是隔热，因为我们的窗户几乎都坏了。特别是在冬天，病人们会觉得有点冷。我想，应急的解决办法大概就是用些胶带把那讨厌的冷风挡住。"			
-Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	稳健之手			
-Tasks	Doctor/02	difficulty	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy				
+Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	2848	稳健之手			
+Tasks	Doctor/02	difficulty	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy					
 Tasks	Doctor/02	description	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					description		"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
 
 Especially in surgeries and working with a scalpel, I often get the shakes and small mistakes here and there are unavoidable. I think it's mostly related to my age, but I have found that smoking a few cigars before the operation keeps my hands more steady.
 
 As a doctor, I do not recommend smoking, but desperate times require desperate actions.
 
-If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."	"我不得不承认，有时我的手眼协调能力和精细动作能力确实有些生疏。
+If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."	2850	"我不得不承认，有时我的手眼协调能力和精细动作能力确实有些生疏。
 
 特别是在手术中使用手术刀时，我经常手抖，难免会犯些小错误。我认为这主要与年龄有关，但我发现，手术前抽几支雪茄能让我的手更稳。
 
 作为一名医生，我不建议吸烟，但非常时期需要非常手段。
 
 如果你碰巧在某处找到几支雪茄，或许能帮我带过来？但千万别告诉全科医生，我刚嘱咐他戒烟，免得引发争议。这件事就我们俩知道。"			
-Tasks	Doctor/03	name	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm	书虫			
-Tasks	Doctor/03	difficulty	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy				
+Tasks	Doctor/03	name	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm	2852	书虫			
+Tasks	Doctor/03	difficulty	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy					
 Tasks	Doctor/03	description	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					description		"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
 
 On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
 
-I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	"在这儿当医生是一份循环往复的工作。我的意思是，有些日子忙得不可开交，有些日子却门可罗雀。
+I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	2854	"在这儿当医生是一份循环往复的工作。我的意思是，有些日子忙得不可开交，有些日子却门可罗雀。
 
 在那些无聊又冷清的日子里，我常把时间花在读书上。这儿的读物相当随意，你无法随心所欲地挑选，所以必须学会适应现有的书籍。
 
 其实我喜欢读各种老书，无论什么题材。无论是童话故事还是宗教书籍，我总能从中发现乐趣。我想我天生就是个书虫。"			
-Tasks	Doctor/04	name	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master	骰子大师			
-Tasks	Doctor/04	difficulty	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy				
+Tasks	Doctor/04	name	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master	2856	骰子大师			
+Tasks	Doctor/04	difficulty	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy					
 Tasks	Doctor/04	description	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					description		"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
 
 Just a few years ago, we often went fishing together, but that poor guy has multiple herniated disks, so fishing trips are no longer an option for him. We still have a few other common hobbies like horse races and gambling.
 
 Like you probably already guessed, only one of those is available nowadays, so our friendship is currently purely built on gambling with card and dice games. However, every time we play dice, he always magically wins and I'm starting to wonder if his dices are rigged somehow, since nobody is that lucky.
 
-You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	"我和“通才”从小就认识。他确实是个脾气古怪的老头，但一旦熟悉起来，倒也还算能忍受。
+You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	2858	"我和“通才”从小就认识。他确实是个脾气古怪的老头，但一旦熟悉起来，倒也还算能忍受。
 
 就在几年前，我们还经常一起去钓鱼，但那可怜的家伙得了多处椎间盘突出，所以钓鱼对他来说已不再是选项。我们还有其他一些共同爱好，比如赛马和赌博。
 
 正如你可能已经猜到的，如今这些爱好中只剩下一项能玩了，所以我们的友谊目前完全建立在纸牌和骰子赌博之上。不过，每次我们玩骰子，他总能神奇地赢，我开始怀疑他的骰子是不是被做过手脚，毕竟没人能那么走运。
 
 你知道吗，如果你碰巧发现那种骰子游戏，给我带一套回来。下次我们玩的时候，就用我的那套。这样一来，我就能排除作弊的可能性，到时候看看谁才是真正的骰子大师。"			
-Tasks	Doctor/05	name	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	夜间手术			
-Tasks	Doctor/05	difficulty	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate				
+Tasks	Doctor/05	name	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	2860	夜间手术			
+Tasks	Doctor/05	difficulty	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate					
 Tasks	Doctor/05	description	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					description		"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
 
 Daytime operations are a walk in the park for me when there's enough light, but at night, it gets more tricky. Operating in dim lighting or sometimes even in total darkness relies more on hand-feel and intuition, but it's always riskier for the patient.
 
-Some sort of bright headlamp would probably solve this issue until the power grid is fully restored. I have tried to find one, but unfortunately no luck so far."	"虽然我并非外科专业，但在处理内脏和人体解剖结构方面，我发现自己相当娴熟。
+Some sort of bright headlamp would probably solve this issue until the power grid is fully restored. I have tried to find one, but unfortunately no luck so far."	2862	"虽然我并非外科专业，但在处理内脏和人体解剖结构方面，我发现自己相当娴熟。
 
 白天光线充足时，手术对我来说简直易如反掌，但到了晚上，情况就变得棘手了。在昏暗的光线甚至完全黑暗的环境中操作，更多地依赖手感和直觉，但这对患者来说总是风险更大的。
 
 在电网完全恢复之前，一款亮度足够的头灯或许能解决这个问题。我曾尝试寻找，但遗憾的是至今未果。"			
-Tasks	Doctor/06	name	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections	感染			
-Tasks	Doctor/06	difficulty	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate				
+Tasks	Doctor/06	name	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections	2864	感染			
+Tasks	Doctor/06	difficulty	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate					
 Tasks	Doctor/06	description	0	literal	Traders/Doctor/Tasks/06_Infections	tres					description		"You know what one of the most common issues is here? It's infections.
 
 When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
 
-I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."	"你知道这里最常见的问题是什么吗？就是感染。
+I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."	2866	"你知道这里最常见的问题是什么吗？就是感染。
 
 卫生条件差加上伤口未清理，简直是细菌和病菌的绝佳温床。只要有患者身上有任何割伤或擦伤，基本上都会自动引发感染。
 
 我手头确实还剩一些治疗感染的医疗物资，但迟早会用完的。一旦用完，这里的死亡率就会急剧上升。"			
-Tasks	Doctor/07	name	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia	低血容量			
-Tasks	Doctor/07	difficulty	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate				
+Tasks	Doctor/07	name	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia	2868	低血容量			
+Tasks	Doctor/07	difficulty	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate					
 Tasks	Doctor/07	description	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					description		"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
 
 After taking a closer look, the reason was simpler than expected. Correct, it was dehydration and a thing that we doctors call hypovolemia.
 
 Hypovolemia is basically a loss of both salt and water content in your body and if it gets really bad, then you're screwed like those Nomads and met with a hypovolemic shock. Fortunately, the treatment for these symptoms is really simple, you just stick a saline solution into a peripheral vein and you're good to go.
 
-Whenever you find those saline bottles, always remember to bring them to me and we will surely find some deal that could work for both of us."	"补水至关重要。就在上周，我发现几名脸色苍白的游牧民蜷缩在森林里，血压偏低。
+Whenever you find those saline bottles, always remember to bring them to me and we will surely find some deal that could work for both of us."	2870	"补水至关重要。就在上周，我发现几名脸色苍白的游牧民蜷缩在森林里，血压偏低。
 
 仔细检查后，原因比预想的要简单。没错，就是脱水，以及我们医生所说的低血容量。
 
@@ -330,30 +330,30 @@ Whenever you find those saline bottles, always remember to bring them to me and 
 
 只要你发现那些生理盐水瓶，记得一定要带给我，我们肯定能达成一笔对双方都有利的交易。"	"Please pay attention to the following points when translating:
 `Nomad'"		
-Tasks	Doctor/08	name	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	口琴			
-Tasks	Doctor/08	difficulty	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard				
+Tasks	Doctor/08	name	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	2872	口琴			
+Tasks	Doctor/08	difficulty	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard					
 Tasks	Doctor/08	description	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					description		"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
 
 I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
 
-It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."	"音乐是最好的抗抑郁良药。在读医之前，我其实曾在海军乐团里吹奏萨克斯和号角，还曾带着那些华丽的金色乐器走遍全国。这确实是一次巨大的职业转变。
+It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."	2874	"音乐是最好的抗抑郁良药。在读医之前，我其实曾在海军乐团里吹奏萨克斯和号角，还曾带着那些华丽的金色乐器走遍全国。这确实是一次巨大的职业转变。
 
 几年前我试着重拾旧乐器，但这需要健康的肺活量，结果我连个像样的声音都吹不出来。我对口琴的热爱和演奏技巧依然在，但我想雪茄已经对我的肺部造成了不可逆的伤害。
 
 虽然从更简单的乐器开始永远不晚，但我需要一种非常小巧的乐器，才适合像我这样的老雪茄客。也许下辈子吧。"			
-Tasks	Doctor/09	name	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report	患者报告			
-Tasks	Doctor/09	difficulty	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard				
+Tasks	Doctor/09	name	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report	2876	患者报告			
+Tasks	Doctor/09	difficulty	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard					
 Tasks	Doctor/09	description	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					description		"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
 
-Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	"疫情刚开始时，我们的医院在短短一小时内就已超负荷运转。我们甚至不得不将学校的体育馆改造成急诊分诊点。
+Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	2878	"疫情刚开始时，我们的医院在短短一小时内就已超负荷运转。我们甚至不得不将学校的体育馆改造成急诊分诊点。
 
 我想我最早的一份病历报告就留在那儿了。我需要那份报告来帮助回忆，毕竟我的记忆力已不如从前。那份报告中的症状和具体细节，在我脑海中开始变得模糊了。
 
 也许你可以去体育馆找找，那里是孩子们以前玩耍和爬绳索的地方。报告应该就在那儿的某个地方。"			
-Tasks	Doctor/10	name	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance	内容			
-Tasks	Doctor/10	difficulty	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard				
+Tasks	Doctor/10	name	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance	2880	内容			
+Tasks	Doctor/10	difficulty	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard					
 Tasks	Doctor/10	description	0	literal	Traders/Doctor/Tasks/10_Substance	tres					description		"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
 
 Acrylonitrile is definitely part of the compound, just as the officials claimed, but I have a theory that it’s only one piece of the puzzle. When burning, acrylonitrile releases toxic gases such as hydrogen cyanide and is classified as a C1 carcinogen, but let me explain my theory.
@@ -362,7 +362,7 @@ These kinds of organic compounds have extremely pungent odors. Since we are talk
 
 This means we are looking at some kind of manufactured substance that is far more toxic. I know it’s just a theory, but there’s only one way to find out, we need to find the source.
 
-Since we know it was delivered in oil tank cars, I would visit the nearest oil terminal and check their samples to see if they really contain oil or something else. These oil sample containers are easy to spot, they look like golden milk jugs and there should be plenty of them."	"当那些罐车爆炸并引发初期火灾时，我确信除了常规的工业化学品外，还掺杂了其他物质。
+Since we know it was delivered in oil tank cars, I would visit the nearest oil terminal and check their samples to see if they really contain oil or something else. These oil sample containers are easy to spot, they look like golden milk jugs and there should be plenty of them."	2882	"当那些罐车爆炸并引发初期火灾时，我确信除了常规的工业化学品外，还掺杂了其他物质。
 
 正如官员们所言，丙烯腈无疑是该化合物的一部分，但我有一个推测：它仅仅是整个谜团中的一环。丙烯腈燃烧时会释放氰化氢等有毒气体，且被列为1类致癌物，但请允许我解释一下我的推测。
 
@@ -371,115 +371,115 @@ Since we know it was delivered in oil tank cars, I would visit the nearest oil t
 这意味着我们面对的是一种毒性远高于丙烯腈的人造物质。 我知道这只是个推测，但要验证真相只有一个办法——我们必须找到源头。
 
 既然已知它是通过油罐车运输的，我会去最近的石油码头，检查他们的样本，看看里面到底是石油还是其他东西。这些油样容器很容易辨认，看起来像金色的牛奶罐，而且数量应该很多。"			
-Tasks	Gunsmith/01	name	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers	吸血鬼			
-Tasks	Gunsmith/01	difficulty	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy				
+Tasks	Gunsmith/01	name	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers	2884	吸血鬼			
+Tasks	Gunsmith/01	difficulty	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy					
 Tasks	Gunsmith/01	description	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					description		"Ain't that something? A new man and a new rifle, always a welcome sight.
 
 Forget the small talk. You want something reliable and cheap? Sure, but a few favors first, since you don't climb the ranks immediately around here. Where should we start? There are definitely some supply runs you could do, but you look a bit flimsy, so maybe you need something simple first. Let me think a moment.
 
 Okay, I have an idea. You know in the summertime, those flying suckers start to piss me off. You would assume those bastards would not get into these bunkers, but trust me, they do. Every single summer, there's buzzing around the clock.
 
-Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."	"这不挺有意思的吗？新来的家伙，还带着把新步枪，这景象总是让人眼前一亮。
+Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."	2886	"这不挺有意思的吗？新来的家伙，还带着把新步枪，这景象总是让人眼前一亮。
 
 闲话少说。你想找点靠谱又便宜的活儿？行，不过得先帮我几忙，毕竟在这儿可不是一上来就能升职的。从哪儿开始呢？确实有些补给任务你可以去干，但你看起来有点单薄，所以也许先从简单点儿的开始比较好。让我想想。
 
 好了，我有个主意。你知道夏天的时候，那些飞来飞去的混蛋总让我火大。你可能会以为那些混蛋进不了这些掩体，但相信我，它们确实能进来。每个夏天，这里都日夜嗡嗡作响。
 
 这活儿正适合你。给我找点东西把那些吸血鬼赶走，然后咱们再聊。"			
-Tasks	Gunsmith/02	name	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	热餐			
-Tasks	Gunsmith/02	difficulty	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy				
+Tasks	Gunsmith/02	name	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	2888	热餐			
+Tasks	Gunsmith/02	difficulty	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy					
 Tasks	Gunsmith/02	description	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					description		"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
 
 Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
 
-It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."	"作为一名军人，我向来习惯吃军用口粮，但即便是我，连续几周吃同样的粥和干粮也实在受不了。
+It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."	2890	"作为一名军人，我向来习惯吃军用口粮，但即便是我，连续几周吃同样的粥和干粮也实在受不了。
 
 以前，这些口粮里至少还有像样的罐头食品，但如今大多数口粮里只有些难吃的肉酱和现代户外食品。那种合成垃圾，我绝对不会往嘴里塞，这点可以肯定。
 
 我已经很久没吃过像样的热饭了。也许这就是你大显身手的时候，我们的合作关系也能更进一步。也许一套装满正宗芬兰豌豆汤、配上一点芥末的餐具，就能解决问题。"	"Please pay attention to the following points when translating:
 `mess kit'"		
-Tasks	Gunsmith/03	name	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	北欧贸易			
-Tasks	Gunsmith/03	difficulty	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate				
+Tasks	Gunsmith/03	name	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	2892	北欧贸易			
+Tasks	Gunsmith/03	difficulty	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate					
 Tasks	Gunsmith/03	description	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					description		"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
 
 Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
 
-However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."	"虽然我不懂瑞典人，但他们确实有三样做得不错：海军强、汽车好、烟草产品棒。不过他们还是有些不对劲，看起来太快乐、太爱社交了。这绝对是不自然的。
+However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."	2894	"虽然我不懂瑞典人，但他们确实有三样做得不错：海军强、汽车好、烟草产品棒。不过他们还是有些不对劲，看起来太快乐、太爱社交了。这绝对是不自然的。
 
 别误会，他们确实是好邻居之类的，但我总觉得不太对劲。也许是因为他们太有钱、总是衣着光鲜，又或许只是因为那冰球文化。
 
 不过，本着睦邻友好的精神，我们可以做一笔公平的交易。我称之为“甜点互换”。你们给我带些瑞典的美味，我就给你们一些芬兰的。这是一笔双赢的交易，某种意义上说，这是一种没有竞争的北欧式贸易。"	"Please pay attention to the following points when translating:
 (Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
 (Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."		
-Tasks	Gunsmith/04	name	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	巨刃			
-Tasks	Gunsmith/04	difficulty	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate				
+Tasks	Gunsmith/04	name	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	2896	巨刃			
+Tasks	Gunsmith/04	difficulty	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate					
 Tasks	Gunsmith/04	description	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					description		"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
 
 When it comes to blades, the rule is the bigger, the better. I myself prefer machetes that are suitable for wood chopping and clearing obstructions in a dense forest. Even though we're not in a jungle here, you still need a big blade since there will be times when you'll wish you had one.
 
-Collecting blades is also an elegant hobby. I do have quite an extensive collection, but there are still a few big blades that I'm missing."	"从一个人随身携带的刀具，往往能看出很多他的为人。如果你看到有人只带一把小折刀，最好离这些人远点。
+Collecting blades is also an elegant hobby. I do have quite an extensive collection, but there are still a few big blades that I'm missing."	2898	"从一个人随身携带的刀具，往往能看出很多他的为人。如果你看到有人只带一把小折刀，最好离这些人远点。
 
 说到刀具，原则就是：越大越好。 我个人偏爱那种适合劈柴、在密林中开路的大砍刀。虽然我们这里不是丛林，但你还是需要一把大刀，因为总会有让你后悔没带上它的时候。
 
 收藏刀具也是一种优雅的爱好。我的收藏相当丰富，但仍有几把大刀是我的收藏中缺失的。"			
-Tasks	Gunsmith/05	name	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery	弹药补给			
-Tasks	Gunsmith/05	difficulty	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate				
+Tasks	Gunsmith/05	name	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery	2900	弹药补给			
+Tasks	Gunsmith/05	difficulty	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate					
 Tasks	Gunsmith/05	description	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					description		"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
 
 When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. Sometimes there are still those annoying customers who seek something more exotic, but it's hard to maintain a stock for every weird request.
 
-Maybe you could do a quick ammo delivery run for me? We could expand the portfolio a bit, so to speak."	"我的库存里几乎涵盖了所有类型的弹药。无论您是喜欢打松鼠还是打人，这里都能满足您的需求。
+Maybe you could do a quick ammo delivery run for me? We could expand the portfolio a bit, so to speak."	2902	"我的库存里几乎涵盖了所有类型的弹药。无论您是喜欢打松鼠还是打人，这里都能满足您的需求。
 
 说到弹药，7.62x39和.223的销量遥遥领先。虽然偶尔还是会有那些讨厌的顾客想找些稀奇古怪的货，但要为每种奇葩需求都备货实在太难了。
 
 要不你帮我跑个弹药配送的快活？这么说吧，我们可以稍微扩充一下产品线。"	"Please pay attention to the following points when translating:
 '7.62x39' and '.223' is untranslatable"		
-Tasks	Gunsmith/06	name	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	武器交付			
-Tasks	Gunsmith/06	difficulty	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate				
+Tasks	Gunsmith/06	name	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	2904	武器交付			
+Tasks	Gunsmith/06	difficulty	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate					
 Tasks	Gunsmith/06	description	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					description		"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
 
 This has led to a situation where I'm constantly out of stock of those Eastern weapons. It's a damn shame, since I always find their products more reliable compared to the Western ones. You see, in the West, we have an incurable disease of making everything tactical. We add rails, dingles and dongles to everything and the end result is a mess that has too many moving parts.
 
-Since I no longer have those networks active, a quick weapon delivery from the other side would be highly appreciated."	"我以前经常在边境另一侧做生意，但如今我的渠道已经断了。
+Since I no longer have those networks active, a quick weapon delivery from the other side would be highly appreciated."	2906	"我以前经常在边境另一侧做生意，但如今我的渠道已经断了。
 
 这导致我手头的那些东方武器总是缺货。这真是太可惜了，因为我一直觉得它们的产品比西方的更可靠。你看，在西方，我们有一种无法治愈的毛病，就是凡事都要搞得“战术化”。 我们给所有东西都加装导轨、挂件和适配器，结果弄得一团糟，活动部件多得离谱。
 
 既然我那些渠道已经不通了，若能从那边快速发来一批武器，我将不胜感激。"	"Please pay attention to the following points when translating:
 Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
 'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."		
-Tasks	Gunsmith/07	name	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	医务人员			
-Tasks	Gunsmith/07	difficulty	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard				
+Tasks	Gunsmith/07	name	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	2908	医务人员			
+Tasks	Gunsmith/07	difficulty	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard					
 Tasks	Gunsmith/07	description	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					description		"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
 
 I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
 
-My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	"在军队里，只有两个角色真正重要：步枪手和医务兵。在我看来，指挥官、炮兵和其他支援单位不过是多余的装饰。
+My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	2910	"在军队里，只有两个角色真正重要：步枪手和医务兵。在我看来，指挥官、炮兵和其他支援单位不过是多余的装饰。
 
 我实际上有一名专属于我的私人医务兵。他是个身手矫健的游牧者，如果需要发起进攻，我们有一套简单的战术。 我们的战术是：我负责射击，如果我中弹，他就把芬太尼棒棒糖塞进我嘴里，然后队伍继续前进。这从来不是为了停止这场疯狂，只是偶尔缓解一下疼痛，然后继续推进。
 
 我的医务兵其实可以多备几根棒棒糖以防万一。我想这些东西应该能在个人急救包（IFAK）里找到，所以如果你碰巧发现几根的话，这对我们来说又是一个做生意的机会。"	"Please pay attention to the following points when translating:
 'Nomad' is a pronoun of one of the faction
 'IFAK' is a pronoun of item (medical)"		
-Tasks	Gunsmith/08	name	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	家居系列			
-Tasks	Gunsmith/08	difficulty	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard				
+Tasks	Gunsmith/08	name	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	2912	家居系列			
+Tasks	Gunsmith/08	difficulty	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard					
 Tasks	Gunsmith/08	description	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					description		"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
 
 My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
 
-Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	"收藏刀具是一回事，但收藏武器则是一门艺术，需要去粗取精。
+Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	2914	"收藏刀具是一回事，但收藏武器则是一门艺术，需要去粗取精。
 
 我个人的家庭收藏涵盖了从16世纪的火枪到1990年代的步枪，但再晚期的枪支我就觉得不入眼了。 目前我的收藏中应该已有超过150支枪械。其中最稀有的，大概是1985年我度假时从国外走私回来的几支土耳其转轮霰弹枪。
 
 目前，我主要关注的是自带消音器的枪械，但一直很难找到这类藏品。尤其有一款东方的枪械我一直很中意，但它似乎总在躲着我。"			
-Tasks	Gunsmith/09	name	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	全民权利			
-Tasks	Gunsmith/09	difficulty	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard				
+Tasks	Gunsmith/09	name	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	2916	全民权利			
+Tasks	Gunsmith/09	difficulty	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard					
 Tasks	Gunsmith/09	description	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					description		"I recently took a hike out to the Border Zone and collected some mushrooms.
 
 In Finland, we have Everyman’s Rights, which grant us the right to use nature regardless of who owns or occupies the area. It’s probably the best law we have.
 
 However, I have to admit that sometimes I step into a grey area and collect stuff that isn't just mushrooms. For example, a few months ago, I found a fallen Border Zone sign in a ditch. Since it was covered in leaves and dirt, I figured it belonged to nature which makes it part of Everyman’s Rights in my mind.
 
-Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	"我最近去边境区徒步，采了一些蘑菇。
+Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	2918	"我最近去边境区徒步，采了一些蘑菇。
 
 在芬兰，我们享有“全民权利”，这赋予了我们使用自然的权利，无论该区域归谁所有或由谁占用。这大概是我们拥有的最好的法律。
 
@@ -487,13 +487,13 @@ Even though this sign is a nice decorative piece, it’s a bit too colorful for 
 
 虽然这块牌子是个不错的装饰品，但对我来说颜色有点太花哨了。你看起来像是会欣赏它的人。也许我们可以做个小交易，但我绝不会用廉价的东西来换它。"	"Please pay attention to the following points when translating:
 Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"		
-Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	杀手			
-Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard				
+Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	2920	杀手			
+Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard					
 Tasks	Gunsmith/10	description	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					description		"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
 
 Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
 
-Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	"在05区，有个我们管他叫“惩罚者”的家伙。他来自芬兰的黑社会，有人说他是某大型摩托车帮派的收债人。
+Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	2922	"在05区，有个我们管他叫“惩罚者”的家伙。他来自芬兰的黑社会，有人说他是某大型摩托车帮派的收债人。
 
 这人时不时就会跑来，为一些莫名其妙的债务讨要该死的欠款。 通常我会在门口就干掉这些小丑，但这家伙硬得像块铁。惩罚者和他那帮手最近还偷了一辆警用面包车，现在甚至有一辆轻型装甲车了。
 

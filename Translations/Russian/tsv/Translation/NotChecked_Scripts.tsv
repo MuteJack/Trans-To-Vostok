@@ -1,54 +1,54 @@
-WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	translation	DESCRIPTION	Comments	max_length
-Inventory	Item/Weapon/Button	Button	0	substr	Scripts/Actions	gd			unload.text	literal		51	Unload	Unload			
-Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Actions	gd			unload.text	literal		58	Unload				
-Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Context	gd			unloadButton.text	literal		87	Unload				
-Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Context	gd			unloadButton.text	literal		94	Unload				
-Inventory	Item/Weapon/Button	Button	0	substr	Scripts/Context	gd			unloadButton.text	literal		101	Clear Chamber	Clear Chamber			
-Inventory	Item/Equipments	Button	0	substr	Scripts/Actions	gd			equip.text	literal		92	Unequip	Unequip			
-Inventory	Item/Equipments	Button	0	substr	Scripts/Actions	gd			equip.text	literal		94	Equip	Equip			
-Inventory	Item	Button	0	pattern	Scripts/Actions	gd			take.text	concat		77	Take ({str})	Take ({str})			
-Inventory	Item	Button	0	ignore	Scripts/Context	gd			takeButton.text	concat		114	Take ({str})				
-Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		81	Show	Show			
-Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		86	Hide	Hide			
-Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		57	Activated	Activated			
-Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		93	Not active	Not active			
-Inventory	Event	String	0	substr	Scripts/Event	gd			location.get_child(0).text	literal		42	All maps & zones	All maps & zones			
-Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		98	Active	Active			
-Inventory	Recipe	Button	0	ignore	Scripts/Recipe	gd			showButton.text	literal		256	Show				
-Inventory	Recipe	Button	0	ignore	Scripts/Recipe	gd			showButton.text	literal		261	Hide				
-Inventory	Recipe	ToolTip	0	substr	Scripts/Recipe	gd			completeButton.text	literal		63	Repair	Repair			
-Inventory	Recipe	ToolTip	0	substr	Scripts/Recipe	gd			completeButton.text	literal		65	Craft	Craft			
-Inventory	Tasks	ToolTip	0	substr	Scripts/Task	gd			addButton.text	literal		219	Added	Added			
-Inventory	Tasks	ToolTip	0	ignore	Scripts/Task	gd			addButton.text	literal		240	Added				
-Inventory	Tasks	String	0	substr	Scripts/Task	gd			removeButton.text	literal		235	Remove	Remove			
-Inventory	Tasks	String	0	substr	Scripts/Task	gd			addButton.text	literal		247	Completed	Завершено			
-Inventory	Tasks	String	0	substr	Scripts/Task	gd			addButton.text	literal		254	Add to Notes	Add to Notes			
-Inventory	Item/Ammo	ToolTip	0	pattern	Scripts/Tooltip	gd			penetration.get_child(0).text	concat		148	Level {str}	Level {str}			
-Inventory	Item/Armor	ToolTip	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		169	Level {str}				
-Inventory	Item/Armor	ToolTip	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		177	Level {str}				
-Inventory	Item/Food	Button	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen	Frozen	Use button will be replaced for frozen consumable items (instead use button)		
-Inventory	Weapon	Button	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})	Remove ({display})	Remove Attachments		
-HUD	Transition	String	0	substr	Scripts/HUD	gd			detailsHint.text	literal		107	Permadeath Zone	Permadeath Zone			
-HUD	Door	String	0	substr									[Open]	[Open]			
-HUD	Door	String	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}	Unlock with {name}			
-HUD	Door	String	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}	Open with {name}			
-HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]	Door [Jammed]			
-HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		135	Door [Occupied]	Door [Occupied]			
-HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		138	Door [Close]	Door [Close]			
-HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		140	Door [Open]	Door [Open]			
-HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		142	{containerName} [Locked]	{containerName} [Locked]			
-HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		144	{containerName} [Open]	{containerName} [Open]			
-HUD	Shelter	String	0	substr	Scripts/Bed	gd			gameData.tooltip	literal		52	Sleep (Random sleep: 6-12h)	Sleep (Random sleep: 6-12h)			
-HUD	Electronics	String	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		33	Turn Off	Turn Off			
-HUD	Electronics	String	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		35	Turn On	Turn On			
-HUD	Electronics	String	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		62	Radio [Turn Off]	Radio [Turn Off]			
-HUD	Electronics	String	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		64	Radio [Turn On]	Radio [Turn On]			
-HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		27	Television [Turn Off]	Television [Turn Off]			
-HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		29	Television [Turn On]	Television [Turn On]			
-HUD	Cat	String	0	substr	Scripts/CatRescue	gd			gameData.tooltip	literal		35	Rescue Cat	Rescue Cat			
-HUD	Cat	String	0	substr	Scripts/CatFeeder	gd			gameData.tooltip	literal		55	Cat is eating, do not disturb	Cat is eating, do not disturb			
-HUD	Cat	String	1	ignore	Scripts/CatFeeder	gd			gameData.tooltip	concat		57	Feed cat:\n[{CreateFeedString}]				
-HUD		String	0	substr	Scripts/Fuel	gd			gameData.tooltip	literal		11	Fuel Tank [89%]	Fuel Tank [89%]	Maybe not updated yet (hard-coded)		
-HUD		String	0	pattern									Fuel Tank [{percent}%]	Fuel Tank [{percent}%]	Maybe not updated yet (hard-coded)		
-HUD	Cat	String	0	substr									Feed cat:	Feed cat:			
-Furniture	Furniture	String	0	pattern	Scripts/Item	gd			amount.text	concat		405	Items: {str}	Items: {str}			
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	Comments	max_length
+Inventory	Item/Weapon/Button	Button	0	substr	Scripts/Actions	gd			unload.text	literal		51	Unload	2700	Unload			
+Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Actions	gd			unload.text	literal		58	Unload					
+Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Context	gd			unloadButton.text	literal		87	Unload					
+Inventory	Item/Weapon/Button	Button	0	ignore	Scripts/Context	gd			unloadButton.text	literal		94	Unload					
+Inventory	Item/Weapon/Button	Button	0	substr	Scripts/Context	gd			unloadButton.text	literal		101	Clear Chamber	2702	Clear Chamber			
+Inventory	Item/Equipments	Button	0	substr	Scripts/Actions	gd			equip.text	literal		92	Unequip	2704	Unequip			
+Inventory	Item/Equipments	Button	0	substr	Scripts/Actions	gd			equip.text	literal		94	Equip	2706	Equip			
+Inventory	Item	Button	0	pattern	Scripts/Actions	gd			take.text	concat		77	Take ({str})	2708	Take ({str})			
+Inventory	Item	Button	0	ignore	Scripts/Context	gd			takeButton.text	concat		114	Take ({str})					
+Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		81	Show	2710	Show			
+Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		86	Hide	2712	Hide			
+Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		57	Activated	2714	Activated			
+Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		93	Not active	2716	Not active			
+Inventory	Event	String	0	substr	Scripts/Event	gd			location.get_child(0).text	literal		42	All maps & zones	2718	All maps & zones			
+Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		98	Active	2720	Active			
+Inventory	Recipe	Button	0	ignore	Scripts/Recipe	gd			showButton.text	literal		256	Show					
+Inventory	Recipe	Button	0	ignore	Scripts/Recipe	gd			showButton.text	literal		261	Hide					
+Inventory	Recipe	ToolTip	0	substr	Scripts/Recipe	gd			completeButton.text	literal		63	Repair	2722	Repair			
+Inventory	Recipe	ToolTip	0	substr	Scripts/Recipe	gd			completeButton.text	literal		65	Craft	2724	Craft			
+Inventory	Tasks	ToolTip	0	substr	Scripts/Task	gd			addButton.text	literal		219	Added	2726	Added			
+Inventory	Tasks	ToolTip	0	ignore	Scripts/Task	gd			addButton.text	literal		240	Added					
+Inventory	Tasks	String	0	substr	Scripts/Task	gd			removeButton.text	literal		235	Remove	2728	Remove			
+Inventory	Tasks	String	0	substr	Scripts/Task	gd			addButton.text	literal		247	Completed	2730	Завершено			
+Inventory	Tasks	String	0	substr	Scripts/Task	gd			addButton.text	literal		254	Add to Notes	2732	Add to Notes			
+Inventory	Item/Ammo	ToolTip	0	pattern	Scripts/Tooltip	gd			penetration.get_child(0).text	concat		148	Level {str}	2734	Level {str}			
+Inventory	Item/Armor	ToolTip	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		169	Level {str}					
+Inventory	Item/Armor	ToolTip	0	ignore	Scripts/Tooltip	gd			protection.get_child(0).text	concat		177	Level {str}					
+Inventory	Item/Food	Button	0	substr	Scripts/Context	gd			useButton.text	literal		41	Frozen	2736	Frozen	Use button will be replaced for frozen consumable items (instead use button)		
+Inventory	Weapon	Button	0	pattern	Scripts/Context	gd			removeButton.text	concat		125	Remove ({display})	2738	Remove ({display})	Remove Attachments		
+HUD	Transition	String	0	substr	Scripts/HUD	gd			detailsHint.text	literal		107	Permadeath Zone	2740	Permadeath Zone			
+HUD	Door	String	0	substr									[Open]	2742	[Open]			
+HUD	Door	String	0	pattern	Scripts/HUD	gd			detailsHint.text	concat		111	Unlock with {name}	2744	Unlock with {name}			
+HUD	Door	String	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open with {name}	2746	Open with {name}			
+HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]	2748	Door [Jammed]			
+HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		135	Door [Occupied]	2750	Door [Occupied]			
+HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		138	Door [Close]	2752	Door [Close]			
+HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		140	Door [Open]	2754	Door [Open]			
+HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		142	{containerName} [Locked]	2756	{containerName} [Locked]			
+HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		144	{containerName} [Open]	2758	{containerName} [Open]			
+HUD	Shelter	String	0	substr	Scripts/Bed	gd			gameData.tooltip	literal		52	Sleep (Random sleep: 6-12h)	2760	Sleep (Random sleep: 6-12h)			
+HUD	Electronics	String	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		33	Turn Off	2762	Turn Off			
+HUD	Electronics	String	0	substr	Scripts/Switch	gd			gameData.tooltip	literal		35	Turn On	2764	Turn On			
+HUD	Electronics	String	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		62	Radio [Turn Off]	2766	Radio [Turn Off]			
+HUD	Electronics	String	0	substr	Scripts/Radio	gd			gameData.tooltip	literal		64	Radio [Turn On]	2768	Radio [Turn On]			
+HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		27	Television [Turn Off]	2770	Television [Turn Off]			
+HUD	Electronics	String	0	substr	Scripts/Television	gd			gameData.tooltip	literal		29	Television [Turn On]	2772	Television [Turn On]			
+HUD	Cat	String	0	substr	Scripts/CatRescue	gd			gameData.tooltip	literal		35	Rescue Cat	2774	Rescue Cat			
+HUD	Cat	String	0	substr	Scripts/CatFeeder	gd			gameData.tooltip	literal		55	Cat is eating, do not disturb	2776	Cat is eating, do not disturb			
+HUD	Cat	String	1	ignore	Scripts/CatFeeder	gd			gameData.tooltip	concat		57	Feed cat:\n[{CreateFeedString}]					
+HUD		String	0	substr	Scripts/Fuel	gd			gameData.tooltip	literal		11	Fuel Tank [89%]	2778	Fuel Tank [89%]	Maybe not updated yet (hard-coded)		
+HUD		String	0	pattern									Fuel Tank [{percent}%]	2780	Fuel Tank [{percent}%]	Maybe not updated yet (hard-coded)		
+HUD	Cat	String	0	substr									Feed cat:	2782	Feed cat:			
+Furniture	Furniture	String	0	pattern	Scripts/Item	gd			amount.text	concat		405	Items: {str}	2784	Items: {str}			

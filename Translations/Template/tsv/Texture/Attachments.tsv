@@ -1,152 +1,152 @@
-Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	Reworked by	Contributors	Attribution	Comments	max_length
-			pending			\Items\0 - Shared	TX_Canned_Food_AL.png	2355818	9dde638d4aedbfa59e6ab2e04593aaa22b746b13efb771ddb85d5eff6f22d7e6					
-			ignore			\Items\0 - Shared	TX_Fleece_Tactical_Sleeves_NR.png	1338214	d6a32e933e2635b07ca0ee3e4abc11dd0d7d4c32e7842214e1669fb3dfa5273f					
-			ignore			\Items\0 - Shared	TX_Jacket_Winter_Sleeves_NR.png	1093380	2ce7f9b7df79667d49dbfb6eb53c47c4741dd6574de75f316e2f975acc4c0789					
-			ignore			\Items\0 - Shared	TX_Windbreaker_Sleeves_NR.png	998642	24cd85d82c7b056b321d67360b6feca7b0a06d987d54129fef1ba674d8478f23					
-			ignore			\Items\Ammo\Ammo_12x70\Files	Icon_Ammo_12x70.png	11692	023a76fa978c0bfb2f420757015437521989dbb612a84f5c12ea0e9539bf603f				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_12x70\Files	TX_Ammo_12x70_AL.png	174004	bb8db4de0034b5f97456bf3bca9781b045147d54aba9c0f4c290130ba1069124				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_223\Files	Icon_Ammo_223.png	11364	14a6306934e9b100152b7c4e8184c4097820927491d6e5444dd59f09e95d310f				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_223\Files	TX_Ammo_223_AL.png	186283	bdcff6f2ccb8ce2657e5b95bdbeed6b420909b5237cb55c6c9231b9909192af3				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_308\Files	Icon_Ammo_308.png	10658	2b38962d2da600173513153f8151caa90a9943c3aa94b4ba86b3048cbf01a5cf				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_308\Files	TX_Ammo_308_AL.png	158696	46dcb252f8995a51738b001d596f4ef233920903726a3be040878a3d1a2b9e64				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_45ACP\Files	Icon_Ammo_45ACP.png	10043	6234d7102b9c56c86fab0b55b958766af35c669522ec0c1f7f1908e5e5b4a255				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_45ACP\Files	TX_Ammo_45ACP_AL.png	154814	7b832714f8afad6a323f1c1f459ad9e67c2936b621190ed23a206cc1012d5bd3				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_46x30\Files	Icon_Ammo_46x30.png	11437	3c7eb1901c0a28eb0c101581d95d1b59b0e3f570b3e61958120bb986e720d142				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_46x30\Files	TX_Ammo_46x30_AL.png	161294	34d045403ed1aabf0b657943108601e08085f42bb084f49a5129b4626282cb18				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_545x39\Files	Icon_Ammo_545x39.png	9952	fec2e604dd96924596f810686e2d0f6584a1b74beff5badfef3883821d76f203				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_545x39\Files	TX_Ammo_545x39_AL.png	152870	88158afae6d7faa4508447f13021f448cfbf08eb54d71e8543cb9b6006f4f311				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_762x39\Files	Icon_Ammo_762x39.png	11270	95702806b52f2acf77dab4cf7b477725d779e83f7014355569946ee844084c2a				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_762x39\Files	TX_Ammo_762x39_AL.png	176391	ec7d2fb347e1dcfef4fa03864d969a9bc3dfe8bef213bf7657aaca4a3ffc96e8				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_762x54R\Files	Icon_Ammo_762x54R.png	9438	322ad3f9759d0ff7b9077c8ddd472d4d2cb9b9c5a13d52f47cda5ebb1453b18a				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_762x54R\Files	TX_Ammo_762x54R.png	159792	355f1d48dada65e8bd1ae06e16364cf3226dfbe25bb26158f68221aa664c463e				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_9x18\Files	Icon_Ammo_9x18.png	10041	970b49c2aac9c6d8be9d1bf36497ff9998aa2021e809b4735e5fb763c109d561				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_9x18\Files	TX_Ammo_9x18_AL.png	137859	b389c97e4f7a3587751102bdf7ff41a06f725fd4d590b4d708b989455ea23490				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_9x19\Files	Icon_Ammo_9x19.png	10221	6c119de396ec2211a2a80bf2ee409f7f54794af91bebbf0a37a8349be4feef4b				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_9x19\Files	TX_Ammo_9x19_AL.png	154878	f04ddb738abcbfc66e91303eeac5a8329e0dddbe938260bd55329fe17db9f9a6				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_9x39\Files	Icon_Ammo_9x39.png	9871	b7caa557249339f9cb0d365021f4afa6f57e70a1708a39d87353fa10498ce76c				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Ammo_9x39\Files	TX_Ammo_9x39_AL.png	143251	ebd506b2a361eb45cfd18c04feb282ad78cdbde474dfbd5f198c1b13b7495e05				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Pistol_Front.png	1623	6121470bbe6be4066bd11280318f48796d2bd5f6520aa16d1de2dd2914b6c013					
-			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Pistol_Side.png	2321	ea16bf91ff21f5d135da12046ee695f38d4bff58716f19e2dc9e8176dbd97894					
-			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Rifle_Front.png	1509	4e52bb869b7e27e4f5cd911254d43b75f62544059a5f4c5ec72f8c861ce9e96e					
-			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Rifle_Side.png	2979	6e07cfef4dbf02c613b34d84cbf046aa06ff82164c925be79cda33a476d7b1c6					
-			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Pistol_AL.png	214680	0ce598cf98b399cbd6a88f7920a823c9f6755d331aef635395412dda6dc65072					
-			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Pistol_NR.png	239074	a24021fad946bb383c712032223c62e24770a3a42355e1b2012b2a52e69e6c13					
-			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Rifle_AL.png	280676	0cfbc60f3215518b827bef86a402edf3ca67f8b8dee2e8aa08c71b4ee78bf3fd					
-			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Rifle_NR.png	289401	d9e90db1209652b21bacfe55cb5cc0a1d9d95eb7d4f29a9cda607a6fc797ede6					
-			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Shotgun_AL.png	203149	c1d47f23cc4e5244eb638ff26e1cf218dc3d02f80c907210ce196bb39ffb2b41					
-			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Shotgun_NR.png	216079	1c2a1e4f4376f4778f21e5f6604004bdf883c53f20e851296420a4bc98d67eff					
-			ignore			\Items\Armor\Files	Icon_Armor_Plate_II.png	38549	51d77cf44e2876ea9ea2361661820f0afa5faed988886ff822c2caa768eb0999				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	Icon_Armor_Plate_III+.png	38632	c0f67ae565f876f40cf264ffec8110a8c49b585434cf2cc6e7eea1fea27a884b				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	Icon_Armor_Plate_III.png	38598	977cc54390a8697721a9e43996c960c0ee61f6dfbb7b4558fb05e0d5da9bc0ce				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	Icon_Armor_Plate_IIIA.png	38844	26b62b43e956bc1aa1cd9ccbd93603d3791eb81fd0cc1030301f4034382345e9				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	Icon_Armor_Plate_IV.png	41262	ee731e19940d372abc611594321e6692fa9b37deaac0e37e4306b5ba093362d8				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	TX_Armor_Plate_III+_AL.png	285399	1bd505f22760906fdcf8ea12304fcb13379d3af14d88c07d7c696ffe29231f82				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	TX_Armor_Plate_IIIA_AL.png	285536	262f101547bc4cb0e16ed38350a9934b60ee73b00fa691e5469dcbc12a13931b				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	TX_Armor_Plate_III_AL.png	286042	72cd6b0ccadc2168ac06b3422b037a945b0532ba32e5b1f553230575cfb8590f				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	TX_Armor_Plate_II_AL.png	286818	1b78d2a08235611e2f184ec28e6e92f41cb6fb1c1085ca0240afd134328ed781				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Armor\Files	TX_Armor_Plate_IV_AL.png	299271	4405a838c2b6c4ef5931091ac489ec8314a9ae6c524062f768ce793b8fd05c24				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Attachments\ACOG\Files	Icon_ACOG.png	16209	803ea851c5069285a524ba266c35f90a36097b28e1769d4d32dfb03b282e30bf					
-			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_AL.png	2203021	1371eb973236ca7cbc8d67f0c30fc024dd568de77005433cfc40850813611a32					
-			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_AO.png	192317	e1600af3ad3d85506223b1b948a5cfd3927c5c18b83746dbeb4f581705c6a59b					
-			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_NR.png	1065511	97113cabdf6bd3535dc8f4114e61800b2fdcf19db56921fd5fa26c8a69bba3d8					
-			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_Reticle.png	25460	88fb3791ccd824a3593fe5eb4c00349d7c833168bafe573603ff869c0fab1c62					
-			ignore			\Items\Attachments\ANPEQ\Files	Icon_ANPEQ_Side.png	10643	3839e9f3550a9317e20a109367f87aef41d8dd206f4ed49c37224102bc7bffc3				Reason for ignoring: Low resolution	
-			ignore			\Items\Attachments\ANPEQ\Files	Icon_ANPEQ_Top.png	5440	71d1ef81cd21e55a1f4cb8854d5a46e124a97b4c9071f2f6cd13b6f622f77788					
-			pending			\Items\Attachments\ANPEQ\Files	TX_ANPEQ_AL.png	1086545	e9e44fe0fa64c9f3cad743090fab97d5f83cd6081bf1fc7c8e293807d20cc1c4					
-			ignore			\Items\Attachments\ANPEQ\Files	TX_ANPEQ_NR.png	1547895	fb0f4ae69526cddd0df03d69b3b47a797b66cecefc90e2b77af6da35d1163e13					
-			ignore			\Items\Attachments\Common\Lasers\Files	TX_Laser_Alpha.png	34994	e27eac95794c443b5ecafc9538442c31cf2ffb1efee1b0ae1c9ff50e70700b1b					
-			ignore			\Items\Attachments\Common\Lasers\Files	TX_Laser_Noise.png	172565	22b07a9d4ac914e3656c9a6b47fe669d76c899c51ad0612757cc47940a70af42					
-			ignore			\Items\Attachments\Common\Optics	TX_RDS.png	3743	85088386c9b6df12b771e0797abf5d5c73e4f07cedd9d13c1292d9116e8bad14					
-			ignore			\Items\Attachments\EXPS\Files	Icon_EXPS.png	9621	3cf45990c930dc3ce6a823435dcb87880135f66afce37606beebc75590268f1c					
-			pending			\Items\Attachments\EXPS\Files	TX_EXPS_AL.png	2002772	159a2b0d21b5f3881bd70a497f1d191f11d4bb1ab1d4a6c9d457089fde215c94					
-			ignore			\Items\Attachments\EXPS\Files	TX_EXPS_NR.png	1221188	07e8e1e7eabb68cb4bf6fed23b0f0b23a2aba424553fbd8f92966545ae321dd2					
-			ignore			\Items\Attachments\EXPS\Files	TX_EXPS_Reticle.png	6150	1f2938e5a1a37f5f524b1530448926236bb5677f17ffce36d8cec91de0a85657					
-			ignore			\Items\Attachments\HMR\Files	Icon_HMR.png	15928	febd8836c81c536334ed9a3bc747d4bef33db063f621a009dce840b796938237					
-			ignore			\Items\Attachments\HMR\Files	TX_HMR_AL.png	1992631	4249e7885cd63310ec5090de24cc8f2ea5342ee21e423152357a52ac5c1d9871					
-			ignore			\Items\Attachments\HMR\Files	TX_HMR_AO.png	209576	2eebeab6c9aa4e2620dc983e404b462d2837451c6e1f9ef8adf09577a711d219					
-			ignore			\Items\Attachments\HMR\Files	TX_HMR_NR.png	1150032	37b7d782b8223c27d7daf2ee7cca9b924880fce4c50363595ea1615baeca3d0e					
-			ignore			\Items\Attachments\HMR\Files	TX_HMR_Reticle.png	9155	177773ce0ce5ff4db8f103bd6a3bae191a73c957ddd12bb159b22e85a6b4b35d					
-			ignore			\Items\Attachments\Hybrid\Files	Icon_Hybrid.png	7937	fa64b933099c58e658d07eff45a513b0b44f702b5c74b525860833d413868547					
-			ignore			\Items\Attachments\Hybrid\Files	TX_Hybrid_AL.png	142256	73d774b0cad0eaac438643ddaab7534d36eb803950e8c9749eae2f9eb4b03ab8					
-			ignore			\Items\Attachments\Hybrid\Files	TX_Hybrid_NR.png	124079	bc127586bdabf834520c2e5ffcb5f5e7db69859b94ab769bf8847907d0e28011					
-			ignore			\Items\Attachments\Kobra\Files	Icon_Kobra.png	10699	92140d3ad1d9b57daaf068f4732cc9c575ca3b86ac705a6a7b0d92e0acf4422b					
-			ignore			\Items\Attachments\Kobra\Files	TX_Kobra_AL.png	2624906	b4ac1a8cbefb4da4bc95e9f4dab86cddf7b713856b3ad5a5bf05095b807690a1					
-			ignore			\Items\Attachments\Kobra\Files	TX_Kobra_NR.png	1442792	45a01b44245bd2897ec2dd6def2ab9c8a3ef14b48891ec81d64f3f56ba68e07a					
-			ignore			\Items\Attachments\Kobra\Files	TX_Kobra_Reticle.png	1552	a079fa08afe11e31f411dedcaca8beecf4efd0b35d198866fec1615b6c94f148					
-			ignore			\Items\Attachments\Leopard\Files	Icon_Leopard.png	23115	f133e6870f1bc667c437320036fde5edb2eea16dc12a894f082e6e999019b1c4					
-			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_AL.png	3248725	5b451265613585c239c1845c51b95b7fd93dc5b3e5d1e6e5977e7998fc77b492				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_AO.png	153045	c7e643c49dae1b2522c3f3edfd1bdc6f1b705c6b04e6106ad7d5f70748244c9f					
-			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_NR.png	6406561	7b57b6b6b565f9a13e52dd9af8f3aded760eff76ee523a62bae2977094ca974a					
-			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_Reticle.png	83877	40329402d282cfeb9c04daeb198948e5ed3639ed63d11e9bc0ede1bd697bd5ec					
-			ignore			\Items\Attachments\MRO\Files	Icon_MRO.png	7196	efc8122bd9c920defd3403c622f5e59ea0661ef1cd8c00678019598d8ca49305					
-			ignore			\Items\Attachments\MRO\Files	TX_MRO_AL.png	756298	5f40c52180099c41178e506b491ae82fbb19d6a09fe3cd9d5fe4657ffd5045a6					
-			ignore			\Items\Attachments\MRO\Files	TX_MRO_Mount_AL.png	807503	da5ba65e015b0776d669388d513646c5922d6d1b377efb9977151b5d798003da					
-			ignore			\Items\Attachments\MRO\Files	TX_MRO_Mount_NR.png	1351599	c9dd9f60b3b9444cf4840b6eff93bb94ec916b5b864401819953273515a36ac5					
-			ignore			\Items\Attachments\MRO\Files	TX_MRO_NR.png	1379189	2dfcb5e07d19eefa08ce28820d641e9a3eb20f6869a1ba983c06bf4e6c025824					
-			ignore			\Items\Attachments\Micro\Files	Icon_Micro.png	6257	e1b550eca6d65713c44677b909335e1a7c4dcd3a85c496b55e513db95416fdab					
-			ignore			\Items\Attachments\Micro\Files	TX_Micro_AL.png	569356	8ffeb693941482238f168d29edb46e5f87bb84537fa92c7ebdd0c0d48b360b9f					
-			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_High_AL.png	586961	dfd4261ad0615e8ca9cc0ff254af11b55545acd25d0f90f0d0f3cccf140fc589					
-			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_High_NR.png	284999	69d8d461d8b6d67d073b580fa62f5c8cda23eccc296b41f96cc35d0b5f7d26cf					
-			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_Low_AL.png	623107	3fdaae55a7f26c4c731bde31f7c6c3fd9fe3dbbe9b6dc43e5a692e8d81f1500c					
-			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_Low_NR.png	289296	1e0b3cac75ee9341cd2931db5b2ef06507abac78d6ca936d09493e2662d4ed6c					
-			ignore			\Items\Attachments\Micro\Files	TX_Micro_NR.png	1252060	30f9e2f22da711a6f38b2f0d2b800bc4c6b9874368b8e9474443c95d9049bc9a					
-			ignore			\Items\Attachments\Monster\Files	Icon_Monster.png	7447	880cf420125e8f3df10ddcfcc48ad68404167ab1341ec958faab1cae894c77a8					
-			ignore			\Items\Attachments\Monster\Files	TX_Monster_AL.png	250250	1800735ad4df6d4be1e2ac1e5ee8cfda348d0df8ff275f0378e90dfa55219666					
-			ignore			\Items\Attachments\Monster\Files	TX_Monster_NR.png	275071	58ebd1b5220aea537439f3fe2a8bc93d0af97d2a47f0e0c7f2ce634eb4fc23df					
-			ignore			\Items\Attachments\Navy\Files	Icon_Navy.png	6900	a1da3ec9dbf4583cc8563565ec47793d7264a28fe903074126f17882d76f8b4e					
-			ignore			\Items\Attachments\Navy\Files	TX_Navy_AL.png	210399	5cc2ea5f6775a5cdb9828eb5cf17cc22c1f0e9e5232f81b60a7463bed60778e3					
-			ignore			\Items\Attachments\Navy\Files	TX_Navy_NR.png	99345	ac1986e320940613ff740dba1ab3e03bc730720bc862f39347269d12553072e0					
-			ignore			\Items\Attachments\OZ5\Files	Icon_OZ5.png	11926	6f01ad9d3da001a99400d03bb80e89596624d327ac64d711b3e49bf26e9d12f9					
-			ignore			\Items\Attachments\OZ5\Files	TX_OZ5_AL.png	628145	24dd22725b992f756bbbfbfa47f266e4ead3e8564f37c7a101396154796f4ed5					
-			ignore			\Items\Attachments\OZ5\Files	TX_OZ5_NR.png	204853	e8feaaf4e5031a4e08512e44ba896da57ba8362bf234769b85f71c90b04ac50a					
-			ignore			\Items\Attachments\PBS\Files	Icon_PBS.png	11299	6e51b51ff99846f370fc63620e04dd4abfa6029517583de51e40b58ab4e468b2					
-			ignore			\Items\Attachments\PBS\Files	TX_PBS_AL.png	232183	299b58ec24df9628f60ff7c563f17d5ecc54f460dbd1a9ea795600e7ee567177					
-			ignore			\Items\Attachments\PBS\Files	TX_PBS_NR.png	270525	f032dfe84ddc043820164e99670103a93036ade55998f35118b75746367cad73					
-			ignore			\Items\Attachments\POSP\Files	Icon_POSP.png	18286	6b94a89ec4b7d151dd003785eae6b35e03a669a637237c773ad7d594c61bbc78					
-			ignore			\Items\Attachments\POSP\Files	TX_POSP_AL.png	2498589	c2e3c6681284541a4cc8378d3266aee0cdaed1caa73c124128a0c06491b5b7d7					
-			ignore			\Items\Attachments\POSP\Files	TX_POSP_AO.png	178684	18938940f5bc9f020bfcd8b5451bcc0f4eb36c5f193f9062591e7525a4b425b2					
-			ignore			\Items\Attachments\POSP\Files	TX_POSP_NR.png	5982686	0611526b550aefcf983517bd69841c2d0cf605bf201719ac9eec2a16fe2aafa5					
-			ignore			\Items\Attachments\POSP\Files	TX_POSP_Reticle.png	20933	0d07f46f5c9825615d5278ebcc22bd76a2962ded210138e4b6e60ede8dce67c7					
-			ignore			\Items\Attachments\PRO\Files	Icon_PRO.png	12361	6dee00f8645cb1c98276c7355730b13ac93c87d005e3e8c3fe7c01894c4d668c					
-			ignore			\Items\Attachments\PRO\Files	TX_PRO_Body_AL.png	832823	7f38b99e2f096549b10e4e10bc10b103ef8b74ad9da5a96f5ee7a9146c2ecf1a					
-			ignore			\Items\Attachments\PRO\Files	TX_PRO_Body_NR.png	852655	4dcf5ab45c36bf0d7fbd689549dc6318c3ecbe4db0a4534997b3012c16eabbbe					
-			ignore			\Items\Attachments\PRO\Files	TX_PRO_Details_AL.png	944706	e90e9008be475148c450bb2aeb0c12820d67fbfd83e772414ad35a8944879585					
-			ignore			\Items\Attachments\PRO\Files	TX_PRO_Details_NR.png	311052	020b240afd048f75d38b548c77b38368f91773bcbd42eca3084ef81fea89aaed					
-			ignore			\Items\Attachments\PRO\Files	TX_PRO_Mount_AL.png	800671	39644a3ff29d13618cccd719fef593ee1064cbdb739ec4785895d3bcac4faaf1					
-			ignore			\Items\Attachments\PRO\Files	TX_PRO_Mount_NR.png	825397	62c435dba7397d1da7551bf82e9a742c0b246b7df6b7200faf001cfb8c33a83c					
-			ignore			\Items\Attachments\PTN\Files	Icon_PTN.png	9910	a3a039465f4907f1a2d5fd0439fca06f7d74463220eb68e483f24b116e239795					
-			ignore			\Items\Attachments\PTN\Files	TX_PTN_AL.png	1014547	a625f6272fee243cf6aa055d658c20c0f99852101a22780fe642d06be4fb85ef					
-			ignore			\Items\Attachments\PTN\Files	TX_PTN_NR.png	367165	adad0f8f4bb469ab9d5e84d09218429339629b01e6f038b04775d1df1c53d1ec					
-			ignore			\Items\Attachments\PU\Files	Icon_PU.png	15786	48b666093b1241e9abfd6ca0b6500fa38fed0eb2be3484b9cfe23a5c5487b314					
-			ignore			\Items\Attachments\PU\Files	TX_PU_AL.png	3285214	809d20ca0429236ecbeaba5391cdb11a50f6fa8124d7982a6f68a6a78221d2fb					
-			ignore			\Items\Attachments\PU\Files	TX_PU_AO.png	182336	48908faa9a02f3dd3562bb47fd3b3e26a0c772ee2ad782199b314f3953f4183f					
-			ignore			\Items\Attachments\PU\Files	TX_PU_NR.png	1089567	99508b14ddd0848e5b0625ee32fe6a409e66faba7c13e6d5e8e1e023afa37f29					
-			ignore			\Items\Attachments\PU\Files	TX_PU_Reticle.png	5569	5433860c5ce4fc57d1ff93eb95b539080d45c82566f690ab0ea684ee31d82b27					
-			ignore			\Items\Attachments\RMR\Files	Icon_RMR.png	5463	451750d82f7fa5fa90d1604db292480f44041259b1350a10e6ad8a2ae3a247c8					
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	identifier	Reworked by	Contributors	Attribution	Comments	max_length
+			pending			\Items\0 - Shared	TX_Canned_Food_AL.png	2355818	9dde638d4aedbfa59e6ab2e04593aaa22b746b13efb771ddb85d5eff6f22d7e6						
+			ignore			\Items\0 - Shared	TX_Fleece_Tactical_Sleeves_NR.png	1338214	d6a32e933e2635b07ca0ee3e4abc11dd0d7d4c32e7842214e1669fb3dfa5273f						
+			ignore			\Items\0 - Shared	TX_Jacket_Winter_Sleeves_NR.png	1093380	2ce7f9b7df79667d49dbfb6eb53c47c4741dd6574de75f316e2f975acc4c0789						
+			ignore			\Items\0 - Shared	TX_Windbreaker_Sleeves_NR.png	998642	24cd85d82c7b056b321d67360b6feca7b0a06d987d54129fef1ba674d8478f23						
+			ignore			\Items\Ammo\Ammo_12x70\Files	Icon_Ammo_12x70.png	11692	023a76fa978c0bfb2f420757015437521989dbb612a84f5c12ea0e9539bf603f					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_12x70\Files	TX_Ammo_12x70_AL.png	174004	bb8db4de0034b5f97456bf3bca9781b045147d54aba9c0f4c290130ba1069124					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_223\Files	Icon_Ammo_223.png	11364	14a6306934e9b100152b7c4e8184c4097820927491d6e5444dd59f09e95d310f					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_223\Files	TX_Ammo_223_AL.png	186283	bdcff6f2ccb8ce2657e5b95bdbeed6b420909b5237cb55c6c9231b9909192af3					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_308\Files	Icon_Ammo_308.png	10658	2b38962d2da600173513153f8151caa90a9943c3aa94b4ba86b3048cbf01a5cf					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_308\Files	TX_Ammo_308_AL.png	158696	46dcb252f8995a51738b001d596f4ef233920903726a3be040878a3d1a2b9e64					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_45ACP\Files	Icon_Ammo_45ACP.png	10043	6234d7102b9c56c86fab0b55b958766af35c669522ec0c1f7f1908e5e5b4a255					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_45ACP\Files	TX_Ammo_45ACP_AL.png	154814	7b832714f8afad6a323f1c1f459ad9e67c2936b621190ed23a206cc1012d5bd3					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_46x30\Files	Icon_Ammo_46x30.png	11437	3c7eb1901c0a28eb0c101581d95d1b59b0e3f570b3e61958120bb986e720d142					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_46x30\Files	TX_Ammo_46x30_AL.png	161294	34d045403ed1aabf0b657943108601e08085f42bb084f49a5129b4626282cb18					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_545x39\Files	Icon_Ammo_545x39.png	9952	fec2e604dd96924596f810686e2d0f6584a1b74beff5badfef3883821d76f203					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_545x39\Files	TX_Ammo_545x39_AL.png	152870	88158afae6d7faa4508447f13021f448cfbf08eb54d71e8543cb9b6006f4f311					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_762x39\Files	Icon_Ammo_762x39.png	11270	95702806b52f2acf77dab4cf7b477725d779e83f7014355569946ee844084c2a					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_762x39\Files	TX_Ammo_762x39_AL.png	176391	ec7d2fb347e1dcfef4fa03864d969a9bc3dfe8bef213bf7657aaca4a3ffc96e8					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_762x54R\Files	Icon_Ammo_762x54R.png	9438	322ad3f9759d0ff7b9077c8ddd472d4d2cb9b9c5a13d52f47cda5ebb1453b18a					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_762x54R\Files	TX_Ammo_762x54R.png	159792	355f1d48dada65e8bd1ae06e16364cf3226dfbe25bb26158f68221aa664c463e					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_9x18\Files	Icon_Ammo_9x18.png	10041	970b49c2aac9c6d8be9d1bf36497ff9998aa2021e809b4735e5fb763c109d561					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_9x18\Files	TX_Ammo_9x18_AL.png	137859	b389c97e4f7a3587751102bdf7ff41a06f725fd4d590b4d708b989455ea23490					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_9x19\Files	Icon_Ammo_9x19.png	10221	6c119de396ec2211a2a80bf2ee409f7f54794af91bebbf0a37a8349be4feef4b					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_9x19\Files	TX_Ammo_9x19_AL.png	154878	f04ddb738abcbfc66e91303eeac5a8329e0dddbe938260bd55329fe17db9f9a6					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_9x39\Files	Icon_Ammo_9x39.png	9871	b7caa557249339f9cb0d365021f4afa6f57e70a1708a39d87353fa10498ce76c					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Ammo_9x39\Files	TX_Ammo_9x39_AL.png	143251	ebd506b2a361eb45cfd18c04feb282ad78cdbde474dfbd5f198c1b13b7495e05					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Pistol_Front.png	1623	6121470bbe6be4066bd11280318f48796d2bd5f6520aa16d1de2dd2914b6c013						
+			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Pistol_Side.png	2321	ea16bf91ff21f5d135da12046ee695f38d4bff58716f19e2dc9e8176dbd97894						
+			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Rifle_Front.png	1509	4e52bb869b7e27e4f5cd911254d43b75f62544059a5f4c5ec72f8c861ce9e96e						
+			ignore			\Items\Ammo\Cartridges\Files	Icon_Cartridge_Rifle_Side.png	2979	6e07cfef4dbf02c613b34d84cbf046aa06ff82164c925be79cda33a476d7b1c6						
+			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Pistol_AL.png	214680	0ce598cf98b399cbd6a88f7920a823c9f6755d331aef635395412dda6dc65072						
+			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Pistol_NR.png	239074	a24021fad946bb383c712032223c62e24770a3a42355e1b2012b2a52e69e6c13						
+			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Rifle_AL.png	280676	0cfbc60f3215518b827bef86a402edf3ca67f8b8dee2e8aa08c71b4ee78bf3fd						
+			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Rifle_NR.png	289401	d9e90db1209652b21bacfe55cb5cc0a1d9d95eb7d4f29a9cda607a6fc797ede6						
+			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Shotgun_AL.png	203149	c1d47f23cc4e5244eb638ff26e1cf218dc3d02f80c907210ce196bb39ffb2b41						
+			ignore			\Items\Ammo\Cartridges\Files	TX_Cartridge_Shotgun_NR.png	216079	1c2a1e4f4376f4778f21e5f6604004bdf883c53f20e851296420a4bc98d67eff						
+			ignore			\Items\Armor\Files	Icon_Armor_Plate_II.png	38549	51d77cf44e2876ea9ea2361661820f0afa5faed988886ff822c2caa768eb0999					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	Icon_Armor_Plate_III+.png	38632	c0f67ae565f876f40cf264ffec8110a8c49b585434cf2cc6e7eea1fea27a884b					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	Icon_Armor_Plate_III.png	38598	977cc54390a8697721a9e43996c960c0ee61f6dfbb7b4558fb05e0d5da9bc0ce					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	Icon_Armor_Plate_IIIA.png	38844	26b62b43e956bc1aa1cd9ccbd93603d3791eb81fd0cc1030301f4034382345e9					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	Icon_Armor_Plate_IV.png	41262	ee731e19940d372abc611594321e6692fa9b37deaac0e37e4306b5ba093362d8					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	TX_Armor_Plate_III+_AL.png	285399	1bd505f22760906fdcf8ea12304fcb13379d3af14d88c07d7c696ffe29231f82					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	TX_Armor_Plate_IIIA_AL.png	285536	262f101547bc4cb0e16ed38350a9934b60ee73b00fa691e5469dcbc12a13931b					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	TX_Armor_Plate_III_AL.png	286042	72cd6b0ccadc2168ac06b3422b037a945b0532ba32e5b1f553230575cfb8590f					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	TX_Armor_Plate_II_AL.png	286818	1b78d2a08235611e2f184ec28e6e92f41cb6fb1c1085ca0240afd134328ed781					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Armor\Files	TX_Armor_Plate_IV_AL.png	299271	4405a838c2b6c4ef5931091ac489ec8314a9ae6c524062f768ce793b8fd05c24					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Attachments\ACOG\Files	Icon_ACOG.png	16209	803ea851c5069285a524ba266c35f90a36097b28e1769d4d32dfb03b282e30bf						
+			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_AL.png	2203021	1371eb973236ca7cbc8d67f0c30fc024dd568de77005433cfc40850813611a32						
+			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_AO.png	192317	e1600af3ad3d85506223b1b948a5cfd3927c5c18b83746dbeb4f581705c6a59b						
+			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_NR.png	1065511	97113cabdf6bd3535dc8f4114e61800b2fdcf19db56921fd5fa26c8a69bba3d8						
+			ignore			\Items\Attachments\ACOG\Files	TX_ACOG_Reticle.png	25460	88fb3791ccd824a3593fe5eb4c00349d7c833168bafe573603ff869c0fab1c62						
+			ignore			\Items\Attachments\ANPEQ\Files	Icon_ANPEQ_Side.png	10643	3839e9f3550a9317e20a109367f87aef41d8dd206f4ed49c37224102bc7bffc3					Reason for ignoring: Low resolution	
+			ignore			\Items\Attachments\ANPEQ\Files	Icon_ANPEQ_Top.png	5440	71d1ef81cd21e55a1f4cb8854d5a46e124a97b4c9071f2f6cd13b6f622f77788						
+			pending			\Items\Attachments\ANPEQ\Files	TX_ANPEQ_AL.png	1086545	e9e44fe0fa64c9f3cad743090fab97d5f83cd6081bf1fc7c8e293807d20cc1c4						
+			ignore			\Items\Attachments\ANPEQ\Files	TX_ANPEQ_NR.png	1547895	fb0f4ae69526cddd0df03d69b3b47a797b66cecefc90e2b77af6da35d1163e13						
+			ignore			\Items\Attachments\Common\Lasers\Files	TX_Laser_Alpha.png	34994	e27eac95794c443b5ecafc9538442c31cf2ffb1efee1b0ae1c9ff50e70700b1b						
+			ignore			\Items\Attachments\Common\Lasers\Files	TX_Laser_Noise.png	172565	22b07a9d4ac914e3656c9a6b47fe669d76c899c51ad0612757cc47940a70af42						
+			ignore			\Items\Attachments\Common\Optics	TX_RDS.png	3743	85088386c9b6df12b771e0797abf5d5c73e4f07cedd9d13c1292d9116e8bad14						
+			ignore			\Items\Attachments\EXPS\Files	Icon_EXPS.png	9621	3cf45990c930dc3ce6a823435dcb87880135f66afce37606beebc75590268f1c						
+			pending			\Items\Attachments\EXPS\Files	TX_EXPS_AL.png	2002772	159a2b0d21b5f3881bd70a497f1d191f11d4bb1ab1d4a6c9d457089fde215c94						
+			ignore			\Items\Attachments\EXPS\Files	TX_EXPS_NR.png	1221188	07e8e1e7eabb68cb4bf6fed23b0f0b23a2aba424553fbd8f92966545ae321dd2						
+			ignore			\Items\Attachments\EXPS\Files	TX_EXPS_Reticle.png	6150	1f2938e5a1a37f5f524b1530448926236bb5677f17ffce36d8cec91de0a85657						
+			ignore			\Items\Attachments\HMR\Files	Icon_HMR.png	15928	febd8836c81c536334ed9a3bc747d4bef33db063f621a009dce840b796938237						
+			ignore			\Items\Attachments\HMR\Files	TX_HMR_AL.png	1992631	4249e7885cd63310ec5090de24cc8f2ea5342ee21e423152357a52ac5c1d9871						
+			ignore			\Items\Attachments\HMR\Files	TX_HMR_AO.png	209576	2eebeab6c9aa4e2620dc983e404b462d2837451c6e1f9ef8adf09577a711d219						
+			ignore			\Items\Attachments\HMR\Files	TX_HMR_NR.png	1150032	37b7d782b8223c27d7daf2ee7cca9b924880fce4c50363595ea1615baeca3d0e						
+			ignore			\Items\Attachments\HMR\Files	TX_HMR_Reticle.png	9155	177773ce0ce5ff4db8f103bd6a3bae191a73c957ddd12bb159b22e85a6b4b35d						
+			ignore			\Items\Attachments\Hybrid\Files	Icon_Hybrid.png	7937	fa64b933099c58e658d07eff45a513b0b44f702b5c74b525860833d413868547						
+			ignore			\Items\Attachments\Hybrid\Files	TX_Hybrid_AL.png	142256	73d774b0cad0eaac438643ddaab7534d36eb803950e8c9749eae2f9eb4b03ab8						
+			ignore			\Items\Attachments\Hybrid\Files	TX_Hybrid_NR.png	124079	bc127586bdabf834520c2e5ffcb5f5e7db69859b94ab769bf8847907d0e28011						
+			ignore			\Items\Attachments\Kobra\Files	Icon_Kobra.png	10699	92140d3ad1d9b57daaf068f4732cc9c575ca3b86ac705a6a7b0d92e0acf4422b						
+			ignore			\Items\Attachments\Kobra\Files	TX_Kobra_AL.png	2624906	b4ac1a8cbefb4da4bc95e9f4dab86cddf7b713856b3ad5a5bf05095b807690a1						
+			ignore			\Items\Attachments\Kobra\Files	TX_Kobra_NR.png	1442792	45a01b44245bd2897ec2dd6def2ab9c8a3ef14b48891ec81d64f3f56ba68e07a						
+			ignore			\Items\Attachments\Kobra\Files	TX_Kobra_Reticle.png	1552	a079fa08afe11e31f411dedcaca8beecf4efd0b35d198866fec1615b6c94f148						
+			ignore			\Items\Attachments\Leopard\Files	Icon_Leopard.png	23115	f133e6870f1bc667c437320036fde5edb2eea16dc12a894f082e6e999019b1c4						
+			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_AL.png	3248725	5b451265613585c239c1845c51b95b7fd93dc5b3e5d1e6e5977e7998fc77b492					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_AO.png	153045	c7e643c49dae1b2522c3f3edfd1bdc6f1b705c6b04e6106ad7d5f70748244c9f						
+			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_NR.png	6406561	7b57b6b6b565f9a13e52dd9af8f3aded760eff76ee523a62bae2977094ca974a						
+			ignore			\Items\Attachments\Leopard\Files	TX_Leopard_Reticle.png	83877	40329402d282cfeb9c04daeb198948e5ed3639ed63d11e9bc0ede1bd697bd5ec						
+			ignore			\Items\Attachments\MRO\Files	Icon_MRO.png	7196	efc8122bd9c920defd3403c622f5e59ea0661ef1cd8c00678019598d8ca49305						
+			ignore			\Items\Attachments\MRO\Files	TX_MRO_AL.png	756298	5f40c52180099c41178e506b491ae82fbb19d6a09fe3cd9d5fe4657ffd5045a6						
+			ignore			\Items\Attachments\MRO\Files	TX_MRO_Mount_AL.png	807503	da5ba65e015b0776d669388d513646c5922d6d1b377efb9977151b5d798003da						
+			ignore			\Items\Attachments\MRO\Files	TX_MRO_Mount_NR.png	1351599	c9dd9f60b3b9444cf4840b6eff93bb94ec916b5b864401819953273515a36ac5						
+			ignore			\Items\Attachments\MRO\Files	TX_MRO_NR.png	1379189	2dfcb5e07d19eefa08ce28820d641e9a3eb20f6869a1ba983c06bf4e6c025824						
+			ignore			\Items\Attachments\Micro\Files	Icon_Micro.png	6257	e1b550eca6d65713c44677b909335e1a7c4dcd3a85c496b55e513db95416fdab						
+			ignore			\Items\Attachments\Micro\Files	TX_Micro_AL.png	569356	8ffeb693941482238f168d29edb46e5f87bb84537fa92c7ebdd0c0d48b360b9f						
+			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_High_AL.png	586961	dfd4261ad0615e8ca9cc0ff254af11b55545acd25d0f90f0d0f3cccf140fc589						
+			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_High_NR.png	284999	69d8d461d8b6d67d073b580fa62f5c8cda23eccc296b41f96cc35d0b5f7d26cf						
+			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_Low_AL.png	623107	3fdaae55a7f26c4c731bde31f7c6c3fd9fe3dbbe9b6dc43e5a692e8d81f1500c						
+			ignore			\Items\Attachments\Micro\Files	TX_Micro_Mount_Low_NR.png	289296	1e0b3cac75ee9341cd2931db5b2ef06507abac78d6ca936d09493e2662d4ed6c						
+			ignore			\Items\Attachments\Micro\Files	TX_Micro_NR.png	1252060	30f9e2f22da711a6f38b2f0d2b800bc4c6b9874368b8e9474443c95d9049bc9a						
+			ignore			\Items\Attachments\Monster\Files	Icon_Monster.png	7447	880cf420125e8f3df10ddcfcc48ad68404167ab1341ec958faab1cae894c77a8						
+			ignore			\Items\Attachments\Monster\Files	TX_Monster_AL.png	250250	1800735ad4df6d4be1e2ac1e5ee8cfda348d0df8ff275f0378e90dfa55219666						
+			ignore			\Items\Attachments\Monster\Files	TX_Monster_NR.png	275071	58ebd1b5220aea537439f3fe2a8bc93d0af97d2a47f0e0c7f2ce634eb4fc23df						
+			ignore			\Items\Attachments\Navy\Files	Icon_Navy.png	6900	a1da3ec9dbf4583cc8563565ec47793d7264a28fe903074126f17882d76f8b4e						
+			ignore			\Items\Attachments\Navy\Files	TX_Navy_AL.png	210399	5cc2ea5f6775a5cdb9828eb5cf17cc22c1f0e9e5232f81b60a7463bed60778e3						
+			ignore			\Items\Attachments\Navy\Files	TX_Navy_NR.png	99345	ac1986e320940613ff740dba1ab3e03bc730720bc862f39347269d12553072e0						
+			ignore			\Items\Attachments\OZ5\Files	Icon_OZ5.png	11926	6f01ad9d3da001a99400d03bb80e89596624d327ac64d711b3e49bf26e9d12f9						
+			ignore			\Items\Attachments\OZ5\Files	TX_OZ5_AL.png	628145	24dd22725b992f756bbbfbfa47f266e4ead3e8564f37c7a101396154796f4ed5						
+			ignore			\Items\Attachments\OZ5\Files	TX_OZ5_NR.png	204853	e8feaaf4e5031a4e08512e44ba896da57ba8362bf234769b85f71c90b04ac50a						
+			ignore			\Items\Attachments\PBS\Files	Icon_PBS.png	11299	6e51b51ff99846f370fc63620e04dd4abfa6029517583de51e40b58ab4e468b2						
+			ignore			\Items\Attachments\PBS\Files	TX_PBS_AL.png	232183	299b58ec24df9628f60ff7c563f17d5ecc54f460dbd1a9ea795600e7ee567177						
+			ignore			\Items\Attachments\PBS\Files	TX_PBS_NR.png	270525	f032dfe84ddc043820164e99670103a93036ade55998f35118b75746367cad73						
+			ignore			\Items\Attachments\POSP\Files	Icon_POSP.png	18286	6b94a89ec4b7d151dd003785eae6b35e03a669a637237c773ad7d594c61bbc78						
+			ignore			\Items\Attachments\POSP\Files	TX_POSP_AL.png	2498589	c2e3c6681284541a4cc8378d3266aee0cdaed1caa73c124128a0c06491b5b7d7						
+			ignore			\Items\Attachments\POSP\Files	TX_POSP_AO.png	178684	18938940f5bc9f020bfcd8b5451bcc0f4eb36c5f193f9062591e7525a4b425b2						
+			ignore			\Items\Attachments\POSP\Files	TX_POSP_NR.png	5982686	0611526b550aefcf983517bd69841c2d0cf605bf201719ac9eec2a16fe2aafa5						
+			ignore			\Items\Attachments\POSP\Files	TX_POSP_Reticle.png	20933	0d07f46f5c9825615d5278ebcc22bd76a2962ded210138e4b6e60ede8dce67c7						
+			ignore			\Items\Attachments\PRO\Files	Icon_PRO.png	12361	6dee00f8645cb1c98276c7355730b13ac93c87d005e3e8c3fe7c01894c4d668c						
+			ignore			\Items\Attachments\PRO\Files	TX_PRO_Body_AL.png	832823	7f38b99e2f096549b10e4e10bc10b103ef8b74ad9da5a96f5ee7a9146c2ecf1a						
+			ignore			\Items\Attachments\PRO\Files	TX_PRO_Body_NR.png	852655	4dcf5ab45c36bf0d7fbd689549dc6318c3ecbe4db0a4534997b3012c16eabbbe						
+			ignore			\Items\Attachments\PRO\Files	TX_PRO_Details_AL.png	944706	e90e9008be475148c450bb2aeb0c12820d67fbfd83e772414ad35a8944879585						
+			ignore			\Items\Attachments\PRO\Files	TX_PRO_Details_NR.png	311052	020b240afd048f75d38b548c77b38368f91773bcbd42eca3084ef81fea89aaed						
+			ignore			\Items\Attachments\PRO\Files	TX_PRO_Mount_AL.png	800671	39644a3ff29d13618cccd719fef593ee1064cbdb739ec4785895d3bcac4faaf1						
+			ignore			\Items\Attachments\PRO\Files	TX_PRO_Mount_NR.png	825397	62c435dba7397d1da7551bf82e9a742c0b246b7df6b7200faf001cfb8c33a83c						
+			ignore			\Items\Attachments\PTN\Files	Icon_PTN.png	9910	a3a039465f4907f1a2d5fd0439fca06f7d74463220eb68e483f24b116e239795						
+			ignore			\Items\Attachments\PTN\Files	TX_PTN_AL.png	1014547	a625f6272fee243cf6aa055d658c20c0f99852101a22780fe642d06be4fb85ef						
+			ignore			\Items\Attachments\PTN\Files	TX_PTN_NR.png	367165	adad0f8f4bb469ab9d5e84d09218429339629b01e6f038b04775d1df1c53d1ec						
+			ignore			\Items\Attachments\PU\Files	Icon_PU.png	15786	48b666093b1241e9abfd6ca0b6500fa38fed0eb2be3484b9cfe23a5c5487b314						
+			ignore			\Items\Attachments\PU\Files	TX_PU_AL.png	3285214	809d20ca0429236ecbeaba5391cdb11a50f6fa8124d7982a6f68a6a78221d2fb						
+			ignore			\Items\Attachments\PU\Files	TX_PU_AO.png	182336	48908faa9a02f3dd3562bb47fd3b3e26a0c772ee2ad782199b314f3953f4183f						
+			ignore			\Items\Attachments\PU\Files	TX_PU_NR.png	1089567	99508b14ddd0848e5b0625ee32fe6a409e66faba7c13e6d5e8e1e023afa37f29						
+			ignore			\Items\Attachments\PU\Files	TX_PU_Reticle.png	5569	5433860c5ce4fc57d1ff93eb95b539080d45c82566f690ab0ea684ee31d82b27						
+			ignore			\Items\Attachments\RMR\Files	Icon_RMR.png	5463	451750d82f7fa5fa90d1604db292480f44041259b1350a10e6ad8a2ae3a247c8						
 			pending	"WARRANTY
 VOID
-IF REMOVED"		\Items\Attachments\RMR\Files	TX_RMR_AL.png	281319	090b58f89911be91c3c22d261fdd5adf2adf18f9930165a34e7e6fdc6575656c					
-			ignore			\Items\Attachments\RMR\Files	TX_RMR_NR.png	269290	96416793efbac93454bc03c77bb4e27c42eb07945db53e62e7b04800057e1da1					
-			ignore			\Items\Attachments\Rider\Files	Icon_Rider.png	4959	1660b971059a9cc9a24738d411c1772631ab97853d139578cf4b37be4bb59b71					
-			ignore			\Items\Attachments\Rider\Files	TX_Rider_AL.png	122176	b271c0a7b571a8099b22f441fda49e5185b25d81a8a6a12831e7dc878111218f					
-			ignore			\Items\Attachments\Rider\Files	TX_Rider_NR.png	300538	7c3e47a035eeff4b8dcdcdcd52157a3725deb4b4b74ce5be539b46a17179a646					
-			ignore			\Items\Attachments\SOCOM\Files	Icon_SOCOM.png	6159	656ebec2b54cdac351ad7063728292c33766f86ae3d62e6816ec1ff871577247					
-			ignore			\Items\Attachments\SOCOM\Files	TX_SOCOM_AL.png	77006	ce2d8666bea0229f4fd32f333899468dcd0f7a34870991644fde771cc7b3cd81					
-			ignore			\Items\Attachments\SOCOM\Files	TX_SOCOM_NR.png	247351	3b2c3f879a3ab0fd8a3cf28837401d24382066ff471044cc44bbed76be249f06					
-			ignore			\Items\Attachments\SRO\Files	Icon_SRO.png	5920	70c0b50e2e6692b37194ac6e95a96bffce7190dc0793d1227f8dbe741863995a					
-			ignore			\Items\Attachments\SRO\Files	TX_SRO_AL.png	258704	1689ab602b98ab55791fbbb6c50b081cbbdf63d7df4e2a21a75f56dc38db918e					
-			ignore			\Items\Attachments\SRO\Files	TX_SRO_NR.png	252572	07ea533a4d16fb6711aa83a0fc48b610939b907208f760fa0009fae6054fd438					
-			ignore			\Items\Attachments\Salvo\Files	Icon_Salvo.png	10208	e0e4ff645bc6f008010f4d9fa0e45762121937b84a4c245c5332bbefdb094f1d					
-			ignore			\Items\Attachments\Salvo\Files	TX_Salvo_AL.png	217426	7c6c2f4d83dd83162ab51d444b1fd5643baf9adca7e4fea8559cb2691d8ddf26					
-			ignore			\Items\Attachments\Salvo\Files	TX_Salvo_NR.png	300797	4919d3f8949a5c1e370eaeca35d6c483218274fece94ba4b93c863fc454c31cc					
-			ignore			\Items\Attachments\Thor\Files	Icon_Thor.png	7250	4bf17cef385a144c2da8a37201add9175f9599d6c3670067182a68d363dcc709					
-			ignore			\Items\Attachments\Thor\Files	TX_Thor_AL.png	195184	10fb0b56653e2a9c20bbaaf70528afb5510c7bbfded1c99848135e83b070025e					
-			ignore			\Items\Attachments\Thor\Files	TX_Thor_NR.png	179191	cabe89bf678ad3dcb09fdea66d68238291c2b0ee4211e96f0789d8fac39e3620					
-			ignore			\Items\Attachments\Vudu\Files	Icon_Vudu.png	19094	af7057bb7be3a3157dc151e3ff977f8e1e12b2fead870bfbc908c017a0ceb3f8					
-			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_AL.png	3229196	00a7f6414decd66f9edee239e6fe9a8cb93cf2435bb44bbefedfe89e8343ec34				Reason for ignoring: Translation is unnecessary	
-			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_AO.png	155361	913dd97d4638d76b6a7a309fa7066d8f5de98de33cd896c60141bec85ff48362					
-			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Mount_AL.png	828740	3b5054bd59b3b6c8f8270801ead7e908b7319b6e45ff8549534f63036d85673d					
-			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Mount_AO.png	165966	375005a863046b07e82e5da968142da9aa770541cceaa2b86b72656b6d555e5c					
-			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Mount_NR.png	6219345	336b693c06138fa1603a9518cfbebb99841d8539f8bb89c87204a900ae6d9b36					
-			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_NR.png	5400052	c5ad570d46ac942e0d2a073744838d40b767c656d4a3d565bacf7a0da8f2b2b2					
-			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Reticle.png	2436479	374b8df1626486a95331d47f0de258b9e35b5241b5f0fb0528bab1851a9704d4					
+IF REMOVED"		\Items\Attachments\RMR\Files	TX_RMR_AL.png	281319	090b58f89911be91c3c22d261fdd5adf2adf18f9930165a34e7e6fdc6575656c	3069					
+			ignore			\Items\Attachments\RMR\Files	TX_RMR_NR.png	269290	96416793efbac93454bc03c77bb4e27c42eb07945db53e62e7b04800057e1da1						
+			ignore			\Items\Attachments\Rider\Files	Icon_Rider.png	4959	1660b971059a9cc9a24738d411c1772631ab97853d139578cf4b37be4bb59b71						
+			ignore			\Items\Attachments\Rider\Files	TX_Rider_AL.png	122176	b271c0a7b571a8099b22f441fda49e5185b25d81a8a6a12831e7dc878111218f						
+			ignore			\Items\Attachments\Rider\Files	TX_Rider_NR.png	300538	7c3e47a035eeff4b8dcdcdcd52157a3725deb4b4b74ce5be539b46a17179a646						
+			ignore			\Items\Attachments\SOCOM\Files	Icon_SOCOM.png	6159	656ebec2b54cdac351ad7063728292c33766f86ae3d62e6816ec1ff871577247						
+			ignore			\Items\Attachments\SOCOM\Files	TX_SOCOM_AL.png	77006	ce2d8666bea0229f4fd32f333899468dcd0f7a34870991644fde771cc7b3cd81						
+			ignore			\Items\Attachments\SOCOM\Files	TX_SOCOM_NR.png	247351	3b2c3f879a3ab0fd8a3cf28837401d24382066ff471044cc44bbed76be249f06						
+			ignore			\Items\Attachments\SRO\Files	Icon_SRO.png	5920	70c0b50e2e6692b37194ac6e95a96bffce7190dc0793d1227f8dbe741863995a						
+			ignore			\Items\Attachments\SRO\Files	TX_SRO_AL.png	258704	1689ab602b98ab55791fbbb6c50b081cbbdf63d7df4e2a21a75f56dc38db918e						
+			ignore			\Items\Attachments\SRO\Files	TX_SRO_NR.png	252572	07ea533a4d16fb6711aa83a0fc48b610939b907208f760fa0009fae6054fd438						
+			ignore			\Items\Attachments\Salvo\Files	Icon_Salvo.png	10208	e0e4ff645bc6f008010f4d9fa0e45762121937b84a4c245c5332bbefdb094f1d						
+			ignore			\Items\Attachments\Salvo\Files	TX_Salvo_AL.png	217426	7c6c2f4d83dd83162ab51d444b1fd5643baf9adca7e4fea8559cb2691d8ddf26						
+			ignore			\Items\Attachments\Salvo\Files	TX_Salvo_NR.png	300797	4919d3f8949a5c1e370eaeca35d6c483218274fece94ba4b93c863fc454c31cc						
+			ignore			\Items\Attachments\Thor\Files	Icon_Thor.png	7250	4bf17cef385a144c2da8a37201add9175f9599d6c3670067182a68d363dcc709						
+			ignore			\Items\Attachments\Thor\Files	TX_Thor_AL.png	195184	10fb0b56653e2a9c20bbaaf70528afb5510c7bbfded1c99848135e83b070025e						
+			ignore			\Items\Attachments\Thor\Files	TX_Thor_NR.png	179191	cabe89bf678ad3dcb09fdea66d68238291c2b0ee4211e96f0789d8fac39e3620						
+			ignore			\Items\Attachments\Vudu\Files	Icon_Vudu.png	19094	af7057bb7be3a3157dc151e3ff977f8e1e12b2fead870bfbc908c017a0ceb3f8						
+			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_AL.png	3229196	00a7f6414decd66f9edee239e6fe9a8cb93cf2435bb44bbefedfe89e8343ec34					Reason for ignoring: Translation is unnecessary	
+			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_AO.png	155361	913dd97d4638d76b6a7a309fa7066d8f5de98de33cd896c60141bec85ff48362						
+			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Mount_AL.png	828740	3b5054bd59b3b6c8f8270801ead7e908b7319b6e45ff8549534f63036d85673d						
+			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Mount_AO.png	165966	375005a863046b07e82e5da968142da9aa770541cceaa2b86b72656b6d555e5c						
+			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Mount_NR.png	6219345	336b693c06138fa1603a9518cfbebb99841d8539f8bb89c87204a900ae6d9b36						
+			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_NR.png	5400052	c5ad570d46ac942e0d2a073744838d40b767c656d4a3d565bacf7a0da8f2b2b2						
+			ignore			\Items\Attachments\Vudu\Files	TX_Vudu_Reticle.png	2436479	374b8df1626486a95331d47f0de258b9e35b5241b5f0fb0528bab1851a9704d4						
