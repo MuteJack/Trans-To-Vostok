@@ -45,13 +45,13 @@ Trans To Vostok/
 Road to Vostok의 메인 패키지 파일:
 
 ```
-{Game Directory}/Road to Vostok.pck
+{Game Directory}/RTV.pck
 ```
 
 경로 예시:
 
-- C 드라이브: `C:\Program Files (x86)\Steam\steamapps\common\Road to Vostok\Road to Vostok.pck`
-- D 드라이브: `D:\SteamLibrary\steamapps\common\Road to Vostok\Road to Vostok.pck`
+- C 드라이브: `C:\Program Files (x86)\Steam\steamapps\common\Road to Vostok\RTV.pck`
+- D 드라이브: `D:\SteamLibrary\steamapps\common\Road to Vostok\RTV.pck`
 
 게임 버전이 업데이트되면 이 파일도 갱신됨 → 매 업데이트마다 재추출 필요.
 
@@ -64,7 +64,7 @@ PowerShell에서:
 ```powershell
 cd "C:\Program Files (x86)\Steam\steamapps\common\Road to Vostok\mods/Trans To Vostok"
 # 또는 cd "D:/SteamLibrary/steamapps/common/Road to Vostok/mods/Trans To Vostok"
-$pck = "../../Road to Vostok.pck"
+$pck = "../../RTV.pck"
 & "tools/3rd_party/gdre_tools/gdre_tools.exe" --headless --recover="$pck" --output-dir=".tmp/pck_recovered"
 ```
 
