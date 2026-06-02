@@ -1,4 +1,4 @@
-Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	identifier	Reworked by	Contributors	Attribution	Comments	max_length
 Tutorial	Billboard	1. Settings	replace	"1. Settings
 
 Welcome to Road to Vostok Tutorial
@@ -27,7 +27,7 @@ Du kannst die Einstellungen mit [ESC] aufrufen
 Über diese Einstellungen kannst du die Eingaben,
 verschiedene Systemwerte und Leistungsoptionen anpassen
 
-?? = Leistungsoptionen"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
+?? = Leistungsoptionen"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	97428	178dd2be533d477e3d81e7b729e86ae16e87f8e0cd32e2643a019812c3335afc	428			Performance Icon: Hand-crafted (Reconstruction)		
 Tutorial	Billboard	2. Interface	replace	"2. Interface
 
 Interface is your main UI which contains elements
@@ -50,7 +50,7 @@ Wenn du weitere Informationen zu einem Gegenstand, einem Symbol
 oder einem bestimmten Wert erhalten möchtest, kannst du den Tooltip verwenden.
 
 Probiere den Tooltip aus, indem du die Benutzeroberfläche öffnest
-und mit der Maus auf den Gesundheitswert des Charakters zeigst."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
+und mit der Maus auf den Gesundheitswert des Charakters zeigst."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430					
 Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -79,7 +79,7 @@ Du kannst sie mit [MMB] öffnen, aufheben und mit ihnen interagieren
 Wenn du Gegenstände im Interface zur Verfügung hast, kannst du 
 mit dem Kontextmenü [RMB] Aktionen für die Gegenstände auswählen
 
-Öffne einen Container und probiere das Kontextmenü mit den Gegenständen aus"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
+Öffne einen Container und probiere das Kontextmenü mit den Gegenständen aus"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432					
 Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -106,7 +106,7 @@ Du findest die Ausrüstungsplätze im Interface
 Du kannst Ausrüstungsplätze aktivieren, indem du 
 kompatible Gegenstände dorthin verschiebst
 
-Öffne den Rucksack und versuche, Gegenstände auszurüsten"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
+Öffne den Rucksack und versuche, Gegenstände auszurüsten"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434					
 Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -135,7 +135,7 @@ aktiv und muss mit einem medizinischen Gegenstand geheilt werden
 
 Ursachen, Symptome und Heilungsmöglichkeiten kannst du über den Tooltip einsehen
 
-Öffne den Rucksack und probiere aus, einige medizinische Gegenstände zu verwenden"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
+Öffne den Rucksack und probiere aus, einige medizinische Gegenstände zu verwenden"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	114610	29640b5b62915aa772eb0feb9865b1632266528fed3282921c25a3a67f523fbf	436					
 Tutorial	Billboard	6. Weapons	replace	"6. Weapons
 
 Weapons are equipment and they use 
@@ -166,7 +166,7 @@ Pistolen und Maschinenpistolen können den Sekundär-Slot nutzen
 Öffne das Inventar, rüste eine Waffe aus und ziehe sie
 | [RMB] = Zielen (ADS) | [F] = Feuermodus |
 | [MMB] = Schräges Zielen | [X] = Waffe inspizieren |
-| [SCROLL] = Waffenposition | [SCROLL] = Rotation inspizieren |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
+| [SCROLL] = Waffenposition | [SCROLL] = Rotation inspizieren |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	120113	501bb46461dbe98d0da71d9cb65f92a724e9720388ce255d36a4a1e84b8bb2ed	438					
 Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -200,7 +200,7 @@ oder mit [R], wodurch ein geladenes Magazin für dich geholt wird
 Öffne den Behälter, benutze den Tooltip, um die Kompatibilität von Munition
 und Magazin zu überprüfen, Laden -> Anbringen -> Feuern
 
-[LMB] = Feuern [V] = Munitionscheck [STRG] -> [LMB] = Kugel einlegen (Repetierbüchsen & Schrotflinten)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
+[LMB] = Feuern [V] = Munitionscheck [STRG] -> [LMB] = Kugel einlegen (Repetierbüchsen & Schrotflinten)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440					
 Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
@@ -229,7 +229,7 @@ die Kompatibilität von Aufsätzen zu erkennen und Anpassungen vorzunehmen
 [STRG gedrückt halten] + [SCROLL] = Position der Optikschiene
 [SCROLL] = LPVO-Zoomstufe
 [ALT] = Sekundäre Optik
-[T] = Laser ein-/ausschalten"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
+[T] = Laser ein-/ausschalten"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	111354	ab59b8fe1bebc497a8108a0558837c9de63e625fb2613d45e62ee987a7d9f01f	442					
 Tutorial	Billboard	9. Knives & Grenades	replace	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -258,7 +258,7 @@ Granaten mit den Tasten [4] und [5] ziehen
 Du kannst einen hohen Wurf mit [LMB] 
 und einen niedrigen Wurf mit [RMB] vorbereiten
 
-Ein zweiter Druck führt den Wurf aus, der entgegengesetzte Knopf setzt den Wurf zurück"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
+Ein zweiter Druck führt den Wurf aus, der entgegengesetzte Knopf setzt den Wurf zurück"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -293,7 +293,7 @@ versuche, die Panzerplatte wie Zubehörteile am Rigg zu befestigen
 |NIJ IIA = Stufe 2| 2. Jeder Treffer verringert den Zustand der Panzerung; die Panzerung bricht bei 0 %|
 |NIJ III = Stufe 3| 3. Durchschläge höherer Stufen zerstören die Panzerung sofort|
 |NIJ III+ = Stufe 4| 4. Helme verhindern den kritischen Gesundheitszustand „Kopfschuss“|
-|NIJ IV = Stufe 5| 5. Panzerplatten verhindern den kritischen Gesundheitszustand „Ruptur“|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
+|NIJ IV = Stufe 5| 5. Panzerplatten verhindern den kritischen Gesundheitszustand „Ruptur“|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	142342	34e1fed9502c316d573a33416794aa3b9ff8b50fa1ef551fa9d3b5aa70cd7e4b	446					
 Tutorial	Billboard	11. Traders	replace	"11. Traders
 
 Traders are in-game characters that allow 
@@ -320,7 +320,7 @@ Das Erfüllen von Aufgaben senkt die Händlergebühr und verschafft
 dir Belohnungsgegenstände sowie Schlüssel zum Freischalten neuer Zufluchtsorte.
 
 Interagiere mit dem Händler „Generalist“ und versuche, 
-etwas zu tauschen und eine Aufgabe zu erfüllen."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
+etwas zu tauschen und eine Aufgabe zu erfüllen."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448					
 Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
@@ -347,7 +347,7 @@ Jede KI-Fraktion verfügt über unterschiedliche Fähigkeiten und
 Fraktionsbosse mit seltenen Spawn-Änderungen
 
 In Karteninstanzen können maximal 10 KI-Einheiten erscheinen
-Sobald du alle eliminiert hast, herrscht Frieden"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
+Sobald du alle eliminiert hast, herrscht Frieden"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -374,7 +374,7 @@ Du kannst diese Zonen und Karten
 über Übergänge durchqueren, für die bestimmte Reisekosten anfallen, 
 die von den Lebenswerten des Charakters und der Welt-Simulation abhängen.
 
-Übergänge sind mit Übergangsflaggen gekennzeichnet"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
+Übergänge sind mit Übergangsflaggen gekennzeichnet"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452					
 Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -405,7 +405,7 @@ Kartenübergängen verknüpft, was die Simulationszeit verlängert
 
 Du kannst die aktuelle Zeit mit zeitbezogenen Gegenständen sehen
 Wähle einen Zeitgegenstand (Wecker) aus und rüste ihn aus
-*Die Simulationszeit bleibt während des Tutorials gesperrt"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
+*Die Simulationszeit bleibt während des Tutorials gesperrt"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	112331	8dc5a8b2700b0b9138de2fda7e32a39d4d0d39d918c0af1c9e8ec55eed5bcff8	454					
 Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -432,7 +432,7 @@ Alle Zufluchtsorte können mit
 dem Objektplatzierungs- und Dekorationsmodus angepasst werden
 
 Du kannst die Objektplatzierung mit [G] nutzen und 
-Möbel verschieben, indem du den Dekorationsmodus mit [F1] aktivierst"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
+Möbel verschieben, indem du den Dekorationsmodus mit [F1] aktivierst"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -461,4 +461,4 @@ Wenn du dich in Richtung der Vostok-Karten bewegst,
 
 Wenn du die Vostok-Karten betrittst, erscheint außerdem ein roter 
 Permadeath-Totenkopf 
-in der oberen Ecke des Bildschirms"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		
+in der oberen Ecke des Bildschirms"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	133093	89aa042f03d887306ba4bbef3e80754a70d63456d1937ed6dd6f094ead87092f	458			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		

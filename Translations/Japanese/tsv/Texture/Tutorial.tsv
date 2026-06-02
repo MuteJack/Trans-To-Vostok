@@ -1,4 +1,4 @@
-Where	Sub	Type	method	Text	Translation	File Directory	File Name	Reworked by	Contributors	Attribution	Comments	max_length
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	identifier	Reworked by	Contributors	Attribution	Comments	max_length
 Tutorial	Billboard	1. Settings	replace	"1. Settings
 
 Welcome to Road to Vostok Tutorial
@@ -27,7 +27,7 @@ different system values and performance options
 この設定画面では、入力設定や
 各種システム値、パフォーマンスオプションを変更できます
 
-?? = パフォーマンスオプション"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png			Performance Icon: Hand-crafted (Reconstruction)		
+?? = パフォーマンスオプション"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	97428	178dd2be533d477e3d81e7b729e86ae16e87f8e0cd32e2643a019812c3335afc	428			Performance Icon: Hand-crafted (Reconstruction)		
 Tutorial	Billboard	2. Interface	replace	"2. Interface
 
 Interface is your main UI which contains elements
@@ -51,7 +51,7 @@ and point the character health value"	"2. インターフェース
 詳細を知りたい場合は、ツールチップを使用できます。
 
 インターフェースを開き、キャラクターの
-体力値にカーソルを合わせて、ツールチップを試してみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png					
+体力値にカーソルを合わせて、ツールチップを試してみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430					
 Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -80,7 +80,7 @@ Open container and try Context Menu with items"	"3. 戦利品とアイテム
 インターフェースにアイテムが表示されている場合は、
 コンテキストメニュー [RMB] からアイテムのアクションを選択できます
 
-コンテナを開き、アイテムに対してコンテキストメニューを試してみてください"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png					
+コンテナを開き、アイテムに対してコンテキストメニューを試してみてください"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432					
 Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -107,7 +107,7 @@ Open container and try equipping items"	"4. 装備
 対応するアイテムをスロットにドラッグ＆ドロップすることで、
 装備を有効化できます。
 
-コンテナを開き、アイテムを装備してみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png					
+コンテナを開き、アイテムを装備してみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434					
 Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -137,7 +137,7 @@ Open container and try using some medical items"	"5. 医療と状態異常
 
 ツールチップで原因、症状、治療法を確認できます
 
-コンテナを開き、医療アイテムを使ってみてください"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png					
+コンテナを開き、医療アイテムを使ってみてください"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	114610	29640b5b62915aa772eb0feb9865b1632266528fed3282921c25a3a67f523fbf	436					
 Tutorial	Billboard	6. Weapons	replace	"6. Weapons
 
 Weapons are equipment and they use 
@@ -169,7 +169,7 @@ Open container, equip a weapon and draw it
 コンテナを開き、武器を装備して抜刀する
 | [右クリック] = 照準 (ADS) | [F] = 発射モード |
 | [中クリック] = 傾斜照準 | [X] = 武器の詳細 |
-| [スクロール] = 武器の位置 | [スクロール] = 回転の確認 |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png					
+| [スクロール] = 武器の位置 | [スクロール] = 回転の確認 |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	120113	501bb46461dbe98d0da71d9cb65f92a724e9720388ce255d36a4a1e84b8bb2ed	438					
 Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -202,7 +202,7 @@ and magazine compatibility, Load -> Attach -> Fire
 コンテナを開き、ツールチップで弾薬と
 マガジンの互換性を確認した後、「装填」→「装着」→「発射」の順で行ってください
 
-[左クリック] = 発射 [V] = 弾薬確認 [Ctrl] + [左クリック] = 弾丸挿入（ボルトアクション銃およびショットガン）"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png					
+[左クリック] = 発射 [V] = 弾薬確認 [Ctrl] + [左クリック] = 弾丸挿入（ボルトアクション銃およびショットガン）"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440					
 Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
@@ -231,7 +231,7 @@ identify attachment compatibility and try customizing
 [CTRLキーを押したまま] + [スクロール] = 光学サイトレールの位置
 [スクロール] = LPVOのズームレベル
 [ALT] = セカンダリ光学サイト
-[T] = レーザーのオン/オフ"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png					
+[T] = レーザーのオン/オフ"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	111354	ab59b8fe1bebc497a8108a0558837c9de63e625fb2613d45e62ee987a7d9f01f	442					
 Tutorial	Billboard	9. Knives & Grenades	replace	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -260,7 +260,7 @@ Second press executes and opposite button resets the throw"	"9. ナイフと手�
 [LMB]で高投擲、
 [RMB]で低投擲の準備ができます
 
-ボタンを2度押すと投擲が実行され、反対のボタンを押すとリセットされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png					
+ボタンを2度押すと投擲が実行され、反対のボタンを押すとリセットされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -295,7 +295,7 @@ try attaching armor plate to the rig like attachments
 |NIJ IIA = レベル2| 2. 被弾ごとに装甲状態が低下し、0%で破壊される|
 |NIJ III = レベル3| 3. より高いレベルの貫通力を持つ弾丸は即座に装甲を破壊する|
 |NIJ III+ = レベル4| 4. ヘルメットはヘッドショットによる重篤な状態を防止する|
-|NIJ IV = レベル5| 5. 装甲プレートは内臓破裂による重篤な状態を防止する|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png					
+|NIJ IV = レベル5| 5. 装甲プレートは内臓破裂による重篤な状態を防止する|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	142342	34e1fed9502c316d573a33416794aa3b9ff8b50fa1ef551fa9d3b5aa70cd7e4b	446					
 Tutorial	Billboard	11. Traders	replace	"11. Traders
 
 Traders are in-game characters that allow 
@@ -322,7 +322,7 @@ trading something and completing a task"	"11. トレーダー
 報酬アイテムや新しいシェルターを解放するための鍵が獲得できます。
 
 商人「ジェネラリスト」と対話し、
-何かを取引したり、クエストを完了したりしてみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png					
+何かを取引したり、クエストを完了したりしてみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448					
 Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
@@ -349,7 +349,7 @@ AIは3つの敵対勢力に分かれており、
 派閥ボスも稀に出現します
 
 マップインスタンスには最大10体のAIが出現します
-すべてを倒せば、平和が訪れます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png					
+すべてを倒せば、平和が訪れます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -376,7 +376,7 @@ AIと同様に、ゲームワールドは3つのゾーンに分かれており�
 キャラクターのバイタル値やワールドシミュレーションに関連した
 一定の移動コストを要する「トランジション」を利用します
 
-トランジションはトランジションフラグで表示されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png					
+トランジションはトランジションフラグで表示されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452					
 Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -408,7 +408,7 @@ Pick a time item (Alarm Clock) and equip it
 
 時間に関連するアイテムを使用すると、現在の時刻を確認できます
 時間関連のアイテム（目覚まし時計など）を選んで装備してください
-*チュートリアル中はシミュレーション時間が固定されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png					
+*チュートリアル中はシミュレーション時間が固定されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	112331	8dc5a8b2700b0b9138de2fda7e32a39d4d0d39d918c0af1c9e8ec55eed5bcff8	454					
 Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -431,7 +431,7 @@ furniture by activating Decor Mode with [F1]"	"15. シェルター
 
 すべてのシェルターは、「アイテム配置」と「装飾モード」を使ってカスタマイズできます。
 
-[G]キーで「アイテム配置」を使用し、[F1]キーで「装飾モード」を有効にして家具を移動させることができます。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png					
+[G]キーで「アイテム配置」を使用し、[F1]キーで「装飾モード」を有効にして家具を移動させることができます。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -460,4 +460,4 @@ in the upper corner of the screen"	"16. ボストーク
 
 ヴォストークのマップに入ると、
 画面の右上に赤い
-パーマネントデスの髑髏マークも表示されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		
+パーマネントデスの髑髏マークも表示されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	133093	89aa042f03d887306ba4bbef3e80754a70d63456d1937ed6dd6f094ead87092f	458			Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		
