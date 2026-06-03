@@ -411,7 +411,7 @@ UI			ignore			\UI\Sprites	Tile.png	242	a6757d2e031f1635cbb09b3edd62ed94571fd5998
 			ignore			\Assets\Market\Files	TX_Market_Canopy_AL.png	3498489	63244ebc2f39c503ffb3bc96d33d0987dcef5ecc3af89612b8ddfcd2feca4419						
 			ignore			\Assets\Market\Files	TX_Market_Chimney_AL.png	4074695	2f4f67f87f9507a3d1929bfc560ca77cc69283e9c85c00870cd52657cc597f0e						
 			ignore			\Assets\Market\Files	TX_Market_Detector_AL.png	528286	ba6161ad7d1075d7037921dfb63323a86754dfc3286505f05dbeadda4aaa2120						
-			ignore	10 TON		\Assets\Market\Files	TX_Market_Dock_AL.png	4726261	b32cb1edeb88cb192ac9707b941365c1f132df5c5eafdfe8cf6bf34b72748c1c	3073				Reason for Ignoring: Translation is unnecessary	
+			ignore	10 TON	10 TON	\Assets\Market\Files	TX_Market_Dock_AL.png	4726261	b32cb1edeb88cb192ac9707b941365c1f132df5c5eafdfe8cf6bf34b72748c1c	3073				Reason for Ignoring: Translation is unnecessary	
 			ignore			\Assets\Market\Files	TX_Market_Entrance_AL.png	2639292	cc0c45f6510f0dd59b32fc888695863b797d646166fed06f65deb0dadb15b91c						
 			ignore			\Assets\Market\Files	TX_Market_Exterior_A_AL.png	11116799	9ac481c4cfe55b5121c6a98ae848cf5322a972170166a0278e14b1f6bf33def4						
 			ignore			\Assets\Market\Files	TX_Market_Exterior_B_AL.png	3823624	7b3604922f980bc916801187b44e8967f482c61feb272e1533ea1342f449f4dc						
@@ -435,7 +435,7 @@ UI			ignore			\UI\Sprites	Tile.png	242	a6757d2e031f1635cbb09b3edd62ed94571fd5998
 			ignore			\Assets\Painting\Files	TX_Painting_Lake_AL.png	674784	81087438975a285b1dd3387d8d676f0916c0ede11c709492a4b6e072f51c8948						
 			ignore			\Assets\Pallet\Files	Icon_Pallet.png	75675	2b187af8829f84049086b82cef1d5ae82053d7f2dc75fbec699dc6e8259239e2						
 			ignore			\Assets\Pallet\Files	TX_Pallet_AL.png	896819	fdd447c654422ed4b0670446e6f912b14b987ece4c4e3057b3bb34a817753a99						
-			ignore	2500 KGS		\Assets\Pallet_Jack\Files	TX_Pallet_Jack_AL.png	2161233	9c735dc8f70c468b7e4d28afd280017183c64a91917f5b21d848de8e2477c185	3075				Reason for Ignoring: Translation is unnecessary	
+			ignore	2500 KGS	2500 KGS	\Assets\Pallet_Jack\Files	TX_Pallet_Jack_AL.png	2161233	9c735dc8f70c468b7e4d28afd280017183c64a91917f5b21d848de8e2477c185	3075				Reason for Ignoring: Translation is unnecessary	
 			ignore			\Assets\Pile_Cardboard\Files	TX_Pile_Cardboard_AL.png	469842	67e5b8d69dd4b762a2af2483164b4cedb2ee5a9cee88dea4b66cb8795d0709f2					Reason for Ignoring: Translation is unnecessary	
 			ignore			\Assets\Pipe_Concrete\Files	TX_Pipe_Concrete_AL.png	9061199	7b9ca531ff25213f11bafb8310f10417362d862059961f226a30b96add7d4fca						
 			ignore			\Assets\Pipeline\Files	TX_Pipeline_AB_AL.png	4904254	a4be04e8fa35b225c1304978ad74e7a653d8c46539d41a57983013ce4e5c370a						
