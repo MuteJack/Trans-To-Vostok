@@ -29,6 +29,8 @@ REPO = TOOLS_DIR.parent                                    # repo root
 
 sys.path.insert(0, str(TOOLS_DIR))
 from crowdin.identifier import (
+    temp_id_for_translation,
+    temp_id_for_texture,
     make_translation_id,
     make_texture_id,
 )
@@ -72,29 +74,79 @@ def _join_labels(*values: str) -> str:
     return ";".join(v.strip() for v in values if v and v.strip())
 
 
+def _identifier_for(row: dict, fallback_fn) -> str:
+    """Prefer the TSV's `identifier` column (numeric_id assigned by Crowdin,
+    or a `tmp:` bootstrap value from register_new_strings.py). Fall back to a
+    fresh temp_id only for rows that completely lack an identifier — this
+    path is for safety; the canonical flow is register → push → fetch.
+    Returns "" for rows that should not be pushed (ignore / empty text)."""
+    cid = (row.get("identifier") or "").strip()
+    if cid:
+        return cid
+    return fallback_fn(row)
+
+
+def _compose_context(location_hint: str, description: str) -> str:
+    """Combine the row's DESCRIPTION with a human-readable location hint.
+
+    Order is `<description>\\n<location_hint>` (description first) on purpose:
+    Crowdin's importer applies a strip heuristic to the first line of a
+    multi-line context value when that line looks like a path or composite
+    identifier (treats it as a stale auto-tag and removes it). Putting the
+    description first puts non-path-like content on the first line, so the
+    strip never fires.
+
+    Crowdin still auto-prepends `<identifier>\\n` on top, giving a final
+    stored context of `<numeric_id>\\n<description>\\n<location_hint>`. For
+    rows without a description we collapse to a single-line `<location_hint>`
+    (also exempt from the multi-line strip).
+    """
+    parts = [p for p in (description, location_hint) if p]
+    return "\n".join(parts)
+
+
+def _translation_location_hint(row: dict) -> str:
+    """Legacy `T:filename:parent:name:type:property:unique_id:sha1` composite.
+
+    Used as a per-row position marker in the context column. Crowdin's web
+    editor preserves this format when the value is saved manually, so we
+    send it via file import as a second-line context value (after the
+    DESCRIPTION) and hope the strip heuristic only targets the first line.
+    """
+    return make_translation_id(row)
+
+
+def _texture_location_hint(row: dict) -> str:
+    """Legacy `X:<File_Name>:<sha1(Text)>` composite — same rationale as
+    `_translation_location_hint`."""
+    return make_texture_id(row)
+
+
 def _row_to_translation_source(row: dict) -> dict | None:
-    cid = make_translation_id(row)
+    cid = _identifier_for(row, temp_id_for_translation)
     if not cid:
         return None
     return {
         "identifier": cid,
         "source_phrase": row.get("text", ""),
         "translation": "",
-        "context": row.get("DESCRIPTION", ""),
+        "context": _compose_context(_translation_location_hint(row),
+                                    row.get("DESCRIPTION", "")),
         "labels": _join_labels(row.get("WHERE", ""), row.get("SUB", ""), row.get("KIND", "")),
         "max_length": (row.get("max_length") or "").strip(),
     }
 
 
 def _row_to_texture_source(row: dict) -> dict | None:
-    cid = make_texture_id(row)
+    cid = _identifier_for(row, temp_id_for_texture)
     if not cid:
         return None
     return {
         "identifier": cid,
         "source_phrase": row.get("Text", ""),
         "translation": "",
-        "context": row.get("File Directory", ""),  # texture has no DESCRIPTION; use directory hint
+        "context": _compose_context(_texture_location_hint(row),
+                                    row.get("File Directory", "")),
         "labels": _join_labels(row.get("Where", ""), row.get("Sub", ""), row.get("Type", "")),
         "max_length": (row.get("max_length") or "").strip(),
     }

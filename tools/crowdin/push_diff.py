@@ -69,8 +69,9 @@ def parse_tsv_translations(text: str) -> dict[str, str]:
 def parse_canonical_tsv_translations(text: str, id_func, tx_field: str) -> dict[str, str]:
     """Parse a canonical TSV (the one in Translations/<locale>/<cat>/<sheet>.tsv).
 
-    Canonical TSV doesn't have a precomputed `identifier` column — the
-    identifier is derived from structural columns via `id_func(row_dict)`.
+    Prefer the `identifier` column when present (post-migration TSVs carry
+    the numeric_id / tmp: identifier). Fall back to `id_func(row_dict)` for
+    older git refs predating the identifier-column migration (2026-06-03).
     `tx_field` is the column name holding the translation ("translation"
     for Translation, "Translation" for Texture).
     """
@@ -83,12 +84,17 @@ def parse_canonical_tsv_translations(text: str, id_func, tx_field: str) -> dict[
     if tx_field not in header:
         return {}
     tx_idx = header.index(tx_field)
+    id_idx = header.index("identifier") if "identifier" in header else None
     out: dict[str, str] = {}
     for r in rows[1:]:
         while len(r) < len(header):
             r.append("")
-        row_dict = dict(zip(header, r))
-        ident = id_func(row_dict)
+        if id_idx is not None:
+            ident = r[id_idx].strip()
+        else:
+            ident = ""
+        if not ident:
+            ident = id_func(dict(zip(header, r)))
         if not ident:
             continue
         tx = r[tx_idx]

@@ -32,8 +32,8 @@ REPO = TOOLS_DIR.parent
 
 sys.path.insert(0, str(TOOLS_DIR))
 from crowdin.identifier import (
-    make_translation_id,
-    make_texture_id,
+    temp_id_for_translation,
+    temp_id_for_texture,
 )
 
 TRANSLATIONS_ROOT = REPO / "Translations"
@@ -49,10 +49,18 @@ TRANSLATION_FIELD = {
     "Texture": "Translation",
 }
 
-ID_FUNC = {
-    "Translation": make_translation_id,
-    "Texture": make_texture_id,
+FALLBACK_ID_FUNC = {
+    "Translation": temp_id_for_translation,
+    "Texture": temp_id_for_texture,
 }
+
+
+def _identifier_for(row: dict, fallback_fn) -> str:
+    """Prefer TSV identifier column; fall back to fresh temp_id for unsynced rows."""
+    cid = (row.get("identifier") or "").strip()
+    if cid:
+        return cid
+    return fallback_fn(row)
 
 
 def _load_tsv(path: Path) -> tuple[list[str], list[list[str]]]:
@@ -98,7 +106,7 @@ def apply_locale_category(locale: str, category: str) -> dict:
         print(f"  [WARN] {locale}/{category}: canonical dir missing")
         return stats
 
-    id_func = ID_FUNC[category]
+    fallback_fn = FALLBACK_ID_FUNC[category]
     tx_field = TRANSLATION_FIELD[category]
 
     for src_tsv in sorted(src_dir.glob("*.tsv")):
@@ -132,7 +140,7 @@ def apply_locale_category(locale: str, category: str) -> dict:
         seen_cids: set[str] = set()
         for r in dst_rows:
             row_dict = dict(zip(dst_header, r))
-            cid = id_func(row_dict)
+            cid = _identifier_for(row_dict, fallback_fn)
             if not cid:
                 continue
             seen_cids.add(cid)
