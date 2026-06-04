@@ -1043,79 +1043,79 @@ SOFTWARE."	2516	"В этой игре используется движок Godo
 Loading	/	String	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	2518	Загрузка...			
 			0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	2520	Загрузка...			
 Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...	2522	Loading {scene}...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	2524	Loading Intro...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	2526	Loading Cabin...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	2528	Loading Tutorial...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	2530	Loading Menu...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	2532	Loading Attic...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	2534	Loading Death...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	2536	Loading Classroom...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	2538	Loading Tent...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	2540	Loading Bunker...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	2542	Loading Village...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	2544	Loading Highway...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	2546	Loading School...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	2548	Loading Outpost...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	2550	Loading Minefield...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	2552	Loading Apartments...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	2554	Loading Terminal...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	2556	Loading Template...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Loading	/	#Not Checked	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	2558	Loading shaders...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
-Intro	/	String	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	2560	Skip Intro [SPACE]			
-Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	2562	Skip Intro [SPACE]			
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	2524	Загрузка вступления...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	2526	Загрузка убежища...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	2528	Загрузка обучения...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	2530	Загрузка меню...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	2532	Загрузка чердака...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	2534	Загрузка смерти...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	2536	Загрузка класса...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	2538	Загрузка палатки...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	2540	Загрузка бункера...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	2542	Загрузка деревни...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	2544	Загрузка шоссе...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	2546	Загрузка школы...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	2548	Загрузка аванпоста...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	2550	Загрузка минного поля...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	2552	Загрузка жилого комплекса...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	2554	Загрузка терминала...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	2556	Загрузка шаблона...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Loading	/	#Not Checked	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	2558	Загрузка шейдеров...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String		
+Intro	/	String	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	2560	Пропустить вступление [ПРОБЕЛ]			
+Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	2562	Пропустить вступление [ПРОБЕЛ]			
 Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]					
 Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]					
-Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	2564	Character died			
-Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	2566	All save files deleted			
-Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	2568	Character died			
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	2564	Персонаж умер			
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	2566	Все файлы сохранений удалены			
+Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	2568	Персонаж умер			
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	2570	Загрузить игру			
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
-"	2572	"Main Menu
+"	2572	"Главное меню
 "			
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
 "	2574	Выйти			
-/	Scene	Name	0	substr									Intro	2576	Intro			
-/	Scene	Name	0	substr									Cabin	2578	Cabin	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Shelter	2580	Shelter			
+/	Scene	Name	0	substr									Intro	2576	Вступление			
+/	Scene	Name	0	substr									Cabin	2578	Убежище	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Shelter	2580	Укрытие			
 /	Scene	Name	0	substr									Tutorial	2582	Учебное пособие			
-/	Scene	Name	0	substr									Menu	2584	Menu			
-/	Scene	Name	0	substr									Attic	2586	Attic	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Death	2588	Death			
-/	Scene	Name	0	substr									Classroom	2590	Classroom	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Tent	2592	Tent	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Bunker	2594	Bunker	Defined at Loader.gd: const shelters		
-/	Scene	Name	0	substr									Village	2596	Village			
-/	Scene	Name	0	substr									Area 05	2598	Area 05			
-/	Scene	Name	0	substr									Highway	2600	Highway			
-/	Scene	Name	0	substr									School	2602	School			
-/	Scene	Name	0	substr									Outpost	2604	Outpost			
-/	Scene	Name	0	substr									Border Zone	2606	Border Zone			
-/	Scene	Name	0	substr									Minefield	2608	Minefield			
-/	Scene	Name	0	substr									Apartments	2610	Apartments			
-/	Scene	Name	0	substr									Terminal	2612	Terminal			
-/	Scene	ToolTip	0	substr									Tutorial Exit	2614	Tutorial Exit			
-/	Scene	Name	0	substr									Template	2616	Template			
-/	Scene	#Not Checked	0	substr									shaders	2618	shaders			
-NPC	Traders	Name	0	substr									Trader	2620	Trader			
-NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	Generalist			
-NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	Doctor			
-NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	Gunsmith			
-NPC	Traders	Name	0	substr									Driver	2628	Driver			
-NPC	Traders	Name	0	substr									Grandma	2630	Grandma			
-NPC	Traders	Name	0	substr									Shaman	2632	Shaman			
-NPC	Traders	Name	0	substr									Fisherman	2634	Fisherman			
-NPC	Traders	Name	0	substr									Scientist	2636	Scientist			
-NPC	Hostile	Name	0	substr									Bandit	2638	Bandit	Hostile NPC faction spawned in Area 05;		
-NPC	Hostile	Name	0	substr									Guards	2640	Guards	Hostile NPC faction spawned in Border Zone;		
-NPC	Hostile	Name	0	substr									Military	2642	Military	Hostile NPC faction spawned in Vostok;		
-NPC	Elite	Name	0	substr									Punisher	2644	Punisher	Hostile Elite(Boss) NPC spawned in Area 05;		
-/	Weather	Dictionary	0	substr									Neutral	2646	Neutral			
-/	Weather	Dictionary	0	substr									Overcast	2648	Overcast			
-/	Weather	Dictionary	0	substr									Rain	2650	Rain			
-/	Weather	Dictionary	0	substr									Storm	2652	Storm			
-/	Material	Dictionary	0	substr									Generic	2654	Generic			
-/	Material	Dictionary	0	substr									Wood	2656	Wood			
-/	Material	Dictionary	0	substr									Metal	2658	Metal			
-/	Material	Dictionary	0	substr									Concrete	2660	Concrete			
-/	Material	Dictionary	0	substr									Rock	2662	Rock			
+/	Scene	Name	0	substr									Menu	2584	Меню			
+/	Scene	Name	0	substr									Attic	2586	Чердак	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Death	2588	Смерть			
+/	Scene	Name	0	substr									Classroom	2590	Класс	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Tent	2592	Палатка	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Bunker	2594	Бункер	Defined at Loader.gd: const shelters		
+/	Scene	Name	0	substr									Village	2596	Деревня			
+/	Scene	Name	0	substr									Area 05	2598	Зона 05			
+/	Scene	Name	0	substr									Highway	2600	Шоссе			
+/	Scene	Name	0	substr									School	2602	Школа			
+/	Scene	Name	0	substr									Outpost	2604	Аванпост			
+/	Scene	Name	0	substr									Border Zone	2606	Пограничная зона			
+/	Scene	Name	0	substr									Minefield	2608	Минное поле			
+/	Scene	Name	0	substr									Apartments	2610	Жилые комплексы			
+/	Scene	Name	0	substr									Terminal	2612	Терминал			
+/	Scene	ToolTip	0	substr									Tutorial Exit	2614	Выйти из обучения			
+/	Scene	Name	0	substr									Template	2616	Шаблон			
+/	Scene	#Not Checked	0	substr									shaders	2618	шейдеры			
+NPC	Traders	Name	0	substr									Trader	2620	Торговец			
+NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	Универсал			
+NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	Доктор			
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	Оружейник			
+NPC	Traders	Name	0	substr									Driver	2628	Водитель			
+NPC	Traders	Name	0	substr									Grandma	2630	Бабуля			
+NPC	Traders	Name	0	substr									Shaman	2632	Шаман			
+NPC	Traders	Name	0	substr									Fisherman	2634	Рыбак			
+NPC	Traders	Name	0	substr									Scientist	2636	Учёный			
+NPC	Hostile	Name	0	substr									Bandit	2638	Бандит	Hostile NPC faction spawned in Area 05;		
+NPC	Hostile	Name	0	substr									Guards	2640	Охрана	Hostile NPC faction spawned in Border Zone;		
+NPC	Hostile	Name	0	substr									Military	2642	Армия	Hostile NPC faction spawned in Vostok;		
+NPC	Elite	Name	0	substr									Punisher	2644	Каратель	Hostile Elite(Boss) NPC spawned in Area 05;		
+/	Weather	Dictionary	0	substr									Neutral	2646	Нейтральный			
+/	Weather	Dictionary	0	substr									Overcast	2648	Пасмурно			
+/	Weather	Dictionary	0	substr									Rain	2650	Дождь			
+/	Weather	Dictionary	0	substr									Storm	2652	Шторм			
+/	Material	Dictionary	0	substr									Generic	2654	Обычный			
+/	Material	Dictionary	0	substr									Wood	2656	Древесина			
+/	Material	Dictionary	0	substr									Metal	2658	Металл			
+/	Material	Dictionary	0	substr									Concrete	2660	Бетон			
+/	Material	Dictionary	0	substr									Rock	2662	Камень			
 /	Material	Dictionary	0	substr									Vostok	2664	Vostok			

@@ -14,8 +14,8 @@ WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type
 			1	ignore	Loot/Simulations/LS_Civilian	tscn	Loot/Simulations/LS_Civilian	.	Label	Label3D	text	10457625	LS_CIVILIAN			For Debug Only			
 			1	ignore	Loot/Simulations/LS_Industrial	tscn	Loot/Simulations/LS_Industrial	.	Label	Label3D	text	10457625	LS_INDUSTRIAL			For Debug Only			
 			1	ignore	Loot/Simulations/LS_Military	tscn	Loot/Simulations/LS_Military	.	Label	Label3D	text	796229169	LS_MILITARY			For Debug Only			
-			0	substr									Indoors	2690	Indoors				
-			0	substr									Indoor	2692	Indoor				
-			0	substr									Mine	2694	Mine				
-			0	substr									Lure	2696	Lure				
-			0	substr									(Military)	2698	(Military)				
+			0	substr									Indoors	2690	Внутри				
+			0	substr									Indoor	2692	В помещении				
+			0	substr									Mine	2694	Шахта				
+			0	substr									Lure	2696	Приманка				
+			0	substr									(Military)	2698	(Военное)				
