@@ -14,9 +14,9 @@ Input convention (Phase 1):
     all        every locale with enabled=true (English/Template excluded)
 
 Usage:
-    python tools/rebuild_xlsx_new.py Korean
-    python tools/rebuild_xlsx_new.py Template
-    python tools/rebuild_xlsx_new.py all
+    python tools/rebuild_xlsx.py Korean
+    python tools/rebuild_xlsx.py Template
+    python tools/rebuild_xlsx.py all
 """
 import argparse
 import subprocess
@@ -96,7 +96,7 @@ def main(argv: list[str]) -> int:
             return 1
         locales = [args.locale]
 
-    _say(f"=== rebuild_xlsx_new ({len(locales)} target(s)) ===")
+    _say(f"=== rebuild_xlsx ({len(locales)} target(s)) ===")
     _say(f"  Targets: {', '.join(locales)}")
     _say()
 

@@ -28,8 +28,8 @@ Input convention (Phase 3):
   Template   rejected — Template is never built.
 
 Usage:
-  python tools/build_mod_package_new.py Korean
-  python tools/build_mod_package_new.py all
+  python tools/build_mod_package.py Korean
+  python tools/build_mod_package.py all
 """
 import argparse
 import subprocess
@@ -101,7 +101,7 @@ def main(argv: list[str]) -> int:
         _say(f"[ERROR] locale directory not found: Translations/{args.locale}")
         return 1
 
-    _say(f"=== Phase 3: build_mod_package_new ({args.locale}) ===")
+    _say(f"=== Phase 3: build_mod_package ({args.locale}) ===")
     _say()
 
     # 1. clear staging

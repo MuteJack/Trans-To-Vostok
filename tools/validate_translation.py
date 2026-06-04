@@ -33,8 +33,8 @@ Exit code (aggregated across all locales and all steps):
   1  one or more Critical-level findings
 
 Usage:
-  python tools/validate_translation_new.py Korean
-  python tools/validate_translation_new.py all
+  python tools/validate_translation.py Korean
+  python tools/validate_translation.py all
 """
 import argparse
 import json

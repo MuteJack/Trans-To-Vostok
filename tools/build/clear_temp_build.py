@@ -3,7 +3,7 @@
 Removes the entire .tmp/temp_build/ tree so the next dry-run build
 starts from a clean state. No-op if the directory does not exist.
 
-Used by build_mod_package_new.py as the first step of the dry-run
+Used by build_mod_package.py as the first step of the dry-run
 build pipeline.
 
 Usage:

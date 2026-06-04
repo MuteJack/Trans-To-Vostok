@@ -30,7 +30,7 @@ tools/validate_Template.py
 1. 번역 수정:
 사람에 의해 진행
    1. canonical tsv파일을 xlsx로 빌드
-   tools/rebuild_xlsx_new.py locale
+   tools/rebuild_xlsx.py locale
       1. tools/translation/rebuild_translation_xlsx.py locale:
       2. tools/translation/rebuild_texture_xlsx.py locale:
    2. 사람이 편집:
@@ -69,7 +69,7 @@ tools/validate_translation.py
       2. .tmp/temp_build/Trans To Vostok/{locale}/runtime_tsv/ 의 tsv파일을 검증
       tools/build/check_runtime_tsv_conflict.py locale --dry-run
 3. 모드 빌드:
-   tools/build_mod_package_new.py locale
+   tools/build_mod_package.py locale
    1. runtime_tsv 빌드 :
    (/Trans To Vostok/{locale}/runtime_tsv/)
       1. tools/build/build_runtime_tsv.py locale
