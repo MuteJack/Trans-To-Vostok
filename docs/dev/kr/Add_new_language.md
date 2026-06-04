@@ -67,7 +67,7 @@ Copy-Item -Recurse "Translations/Template" "Translations/$loc"
 한 번에 export → DeepL → import:
 
 ```powershell
-python tools/machine_translation_deepl.py French
+python tools/translator/machine_translation_deepl.py French
 ```
 
 ### 옵션
@@ -166,7 +166,7 @@ python tools/build_mod_package.py
 DeepL 호출이 일부 실패 (네트워크 / 쿼터 등) 시 그냥 다시 돌리면 됨:
 
 ```powershell
-python tools/utils/translate_with_deepl.py FR --source French
+python tools/translator/translate_with_deepl.py FR --source French
 ```
 
 원문 텍스트를 키로 성공 항목 보존 → 실패 / 신규 항목만 재시도.

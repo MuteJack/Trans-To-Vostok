@@ -1,12 +1,13 @@
-"""Phase 1 step 1 wrapper — rebuild Translation.xlsx + Texture.xlsx from canonical TSVs.
+"""Phase 1 step 3 wrapper — convert Translation.xlsx + Texture.xlsx to canonical TSVs.
 
-Calls the per-category builders in tools/translation/ for each target:
-    tools/translation/rebuild_translation_xlsx.py <locale>
-    tools/translation/rebuild_texture_xlsx.py     <locale>
+Calls the per-category exporters in tools/translation/ for each target:
+    tools/translation/build_translation_tsv.py <locale>
+    tools/translation/build_texture_tsv.py     <locale>
 
-Each builder writes to Translations/<locale>/<Category>.xlsx (overwrites
-existing file). If a category's TSV folder is missing for the locale,
-that builder prints [SKIP] and returns 0 (not treated as failure).
+Each exporter reads Translations/<locale>/<Category>.xlsx and writes to
+Translations/<locale>/tsv/<Category>/<sheet>.tsv. Locale-specific xlsx
+missing for either category is handled per-exporter (prints [SKIP] and
+returns 0).
 
 Input convention (Phase 1):
     <locale>   single locale
@@ -14,9 +15,9 @@ Input convention (Phase 1):
     all        every locale with enabled=true (English/Template excluded)
 
 Usage:
-    python tools/rebuild_xlsx.py Korean
-    python tools/rebuild_xlsx.py Template
-    python tools/rebuild_xlsx.py all
+    python tools/build_canonical_tsv.py Korean
+    python tools/build_canonical_tsv.py Template
+    python tools/build_canonical_tsv.py all
 """
 import argparse
 import subprocess
@@ -40,8 +41,8 @@ sys.path.insert(0, str(SCRIPT_DIR))
 from helper.helper_locale_config import load_locales  # noqa: E402
 
 SUB_TOOLS = [
-    TRANSLATION_DIR / "rebuild_translation_xlsx.py",
-    TRANSLATION_DIR / "rebuild_texture_xlsx.py",
+    TRANSLATION_DIR / "build_translation_tsv.py",
+    TRANSLATION_DIR / "build_texture_tsv.py",
 ]
 TEMPLATE_LOCALE = "Template"
 SOURCE_LOCALE = "English"
@@ -60,7 +61,7 @@ def _discover_enabled_locales() -> list[str]:
     return out
 
 
-def _rebuild_one(locale: str) -> list[str]:
+def _run_one(locale: str) -> list[str]:
     """Run every sub-tool for one locale. Returns list of failed sub-tool names."""
     failed: list[str] = []
     for tool in SUB_TOOLS:
@@ -96,13 +97,13 @@ def main(argv: list[str]) -> int:
             return 1
         locales = [args.locale]
 
-    _say(f"=== rebuild_xlsx ({len(locales)} target(s)) ===")
+    _say(f"=== build_canonical_tsv ({len(locales)} target(s)) ===")
     _say(f"  Targets: {', '.join(locales)}")
     _say()
 
     any_failed: list[tuple[str, list[str]]] = []
     for locale in locales:
-        failed = _rebuild_one(locale)
+        failed = _run_one(locale)
         if failed:
             any_failed.append((locale, failed))
 

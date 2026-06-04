@@ -1,6 +1,6 @@
 """Validate Texture canonical TSV (or xlsx) against parsed_textures/textures.tsv.
 
-`parsed_textures/textures.tsv` (output of `tools/utils/parse_textures.py`) is
+`parsed_textures/textures.tsv` (output of `tools/parse/parse_textures.py`) is
 the PCK source of truth: every recovered PNG is cataloged with its size +
 sha256. This validator joins each Texture row by (File Directory, File Name)
 and reports inconsistencies.
@@ -244,7 +244,7 @@ def main(argv: list[str]) -> int:
 
     if not PARSED_TEXTURES_TSV.exists():
         print(f"[ERROR] PCK catalog not found: {PARSED_TEXTURES_TSV.relative_to(REPO)}")
-        print(f"        Run: python tools/utils/parse_textures.py")
+        print(f"        Run: python tools/parse/parse_textures.py")
         return 1
 
     pck = load_pck_catalog()

@@ -1,5 +1,5 @@
 {
-  "_comment": "Master language registry. Maps locale folder name (used in Translations/<dir>/) to external service codes. Tools resolve dir-name -> codes via tools/utils/locale_config.py. Adding a new language: add an entry here, then register the active locale in Trans To Vostok/locale.json. crowdin_id values are BCP-47 short codes — adjust if your Crowdin project uses regional variants (e.g. fr-FR instead of fr). `default_source` declares the linguistic source language: tools exclude it as a translation target (DeepL / Crowdin push / pull).",
+  "_comment": "Master language registry. Maps locale folder name (used in Translations/<dir>/) to external service codes. Tools resolve dir-name -> codes via tools/helper/helper_locale_config.py. Adding a new language: add an entry here, then register the active locale in Trans To Vostok/locale.json. crowdin_id values are BCP-47 short codes — adjust if your Crowdin project uses regional variants (e.g. fr-FR instead of fr). `default_source` declares the linguistic source language: tools exclude it as a translation target (DeepL / Crowdin push / pull).",
   "default_source": "English",
   "languages": {
     "English":            { "deepl_id": null,      "crowdin_id": "en"    },

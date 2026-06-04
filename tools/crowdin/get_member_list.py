@@ -41,7 +41,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 sys.path.insert(0, str(TOOLS_DIR))
 from crowdin.api_client import make_client
-from utils.locale_config import load_crowdin_locale_map
+from helper.helper_locale_config import load_crowdin_locale_map
 
 from crowdin_api.api_resources.reports.enums import Format
 from crowdin_api.sorting import Sorting, SortingOrder, SortingRule
@@ -205,7 +205,7 @@ def update_credits_for_locale(client, project_id: int, locale: str, lang_id: str
         translation_updated = datetime.now(timezone.utc).astimezone().isoformat(timespec="seconds")
 
     # Overwrite only the fields this script owns; preserve any other field
-    # (e.g. Texture_reworker, set by tools/utils/get_texture_credits.py).
+    # (e.g. Texture_reworker, set by tools/build/get_texture_credits.py).
     new_credits = dict(existing)
     new_credits["translation_updated"] = translation_updated
     new_credits["Translator"] = buckets
