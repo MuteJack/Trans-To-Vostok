@@ -250,7 +250,7 @@ def main(argv: list[str]) -> int:
               f"— Translation checks skipped. Run tools/parse_translatables.py first.")
     if not have_texture_parse:
         print(f"[WARN] parsed_textures/textures.tsv not found "
-              f"— Texture checks skipped. Run tools/utils/parse_textures.py first.")
+              f"— Texture checks skipped. Run tools/parse/parse_textures.py first.")
     if not (have_translation_parse or have_texture_parse):
         return 1
 

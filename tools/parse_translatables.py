@@ -1,7 +1,7 @@
 """
 Run all translatable-text parsers sequentially.
 
-Wraps the three parsers under tools/utils/:
+Wraps the three parsers under tools/parse/:
     1. parse_tscn_text.py  - extract text from .tscn scene files
     2. parse_tres_text.py  - extract text from .tres resource files
     3. parse_gd_text.py    - extract UI strings from .gd scripts
@@ -9,7 +9,7 @@ Wraps the three parsers under tools/utils/:
 Each parser uses its own default input/output paths
 (<mod_root>/.tmp/pck_recovered/ -> <mod_root>/.tmp/parsed_text/).
 For custom paths, run a parser directly:
-    python tools/utils/parse_tscn_text.py <src> <out>
+    python tools/parse/parse_tscn_text.py <src> <out>
 
 Usage:
     python tools/parse_translatables.py
@@ -35,16 +35,16 @@ PARSERS = [
 
 def main() -> int:
     script_dir = Path(__file__).resolve().parent
-    utils_dir = script_dir / "utils"
+    parse_dir = script_dir / "parse"
 
-    if not utils_dir.exists():
-        print(f"[ERROR] utils directory not found: {utils_dir}")
+    if not parse_dir.exists():
+        print(f"[ERROR] parse directory not found: {parse_dir}")
         return 1
 
     failed: list[str] = []
 
     for idx, (script_name, description) in enumerate(PARSERS, start=1):
-        script_path = utils_dir / script_name
+        script_path = parse_dir / script_name
         if not script_path.exists():
             print(f"[ERROR] Parser not found: {script_path}")
             failed.append(script_name)
