@@ -20,9 +20,9 @@ Locale-specific columns whose values come from the locale (preserved):
 All other columns are sourced from Template (single source of truth).
 
 Usage:
-    python tools/utils/sync_texture_schema.py              # all active locales (locale.json)
-    python tools/utils/sync_texture_schema.py Korean French  # specific locales
-    python tools/utils/sync_texture_schema.py --prune     # also delete orphans
+    python tools/translation/sync_texture_schema.py              # all active locales (locale.json)
+    python tools/translation/sync_texture_schema.py Korean French  # specific locales
+    python tools/translation/sync_texture_schema.py --prune     # also delete orphans
 """
 import argparse
 import csv
