@@ -64,7 +64,7 @@ CONFIDENCE = {"tscn": "HIGH", "scn": "HIGH", "tres": "MEDIUM", "gd": "LOW"}
 SAMPLE_LIMIT = 8
 
 sys.path.insert(0, str(REPO / "tools"))
-from utils.helper_translation_common import (
+from helper.helper_translation_common import (
     load_tsv_index,
     load_tres_text_set,
     load_gd_text_set,

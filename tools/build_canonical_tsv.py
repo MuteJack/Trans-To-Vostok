@@ -38,7 +38,7 @@ TRANSLATIONS_ROOT = REPO / "Translations"
 TRANSLATION_DIR = SCRIPT_DIR / "translation"
 
 sys.path.insert(0, str(SCRIPT_DIR))
-from utils.locale_config import load_locales  # noqa: E402
+from helper.helper_locale_config import load_locales  # noqa: E402
 
 SUB_TOOLS = [
     TRANSLATION_DIR / "build_translation_tsv.py",

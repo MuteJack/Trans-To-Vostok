@@ -50,7 +50,7 @@ except ImportError:
     sys.exit(1)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from utils.secrets import get_deepl_api_key
+from helper.helper_secrets import get_deepl_api_key
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:

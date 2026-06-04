@@ -28,7 +28,7 @@ from openpyxl.styles import Border, Side, PatternFill, Font, Alignment
 from openpyxl.formatting.rule import CellIsRule, FormulaRule
 from openpyxl.utils import get_column_letter
 
-SCRIPT_DIR = Path(__file__).resolve().parent           # tools/utils
+SCRIPT_DIR = Path(__file__).resolve().parent           # tools/translation
 PROJECT_ROOT = SCRIPT_DIR.parent.parent                 # mods/Trans To Vostok
 TRANSLATIONS_ROOT = PROJECT_ROOT / "Translations"
 WIDTH_POLICY = PROJECT_ROOT / "tools" / "configs" / "width.json"

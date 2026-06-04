@@ -54,7 +54,7 @@ REPO = TOOLS_DIR.parent
 TRANSLATIONS_ROOT = REPO / "Translations"
 
 sys.path.insert(0, str(TOOLS_DIR))
-from utils.locale_config import load_locales  # noqa: E402
+from helper.helper_locale_config import load_locales  # noqa: E402
 
 CATEGORY = "Translation"
 XLSX_NAME = f"{CATEGORY}.xlsx"

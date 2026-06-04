@@ -45,7 +45,7 @@ REPO = TOOLS_DIR.parent
 
 sys.path.insert(0, str(TOOLS_DIR))
 from crowdin.api_client import make_client
-from utils.locale_config import load_crowdin_locale_map, default_source_locale
+from helper.helper_locale_config import load_crowdin_locale_map, default_source_locale
 
 GLOSSARY_DIR_NAME = "Glossary"
 SHEET = "Main.tsv"

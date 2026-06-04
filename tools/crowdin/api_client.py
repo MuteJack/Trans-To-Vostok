@@ -36,7 +36,7 @@ except ImportError:
     raise
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from utils.secrets import get_crowdin_personal_token
+from helper.helper_secrets import get_crowdin_personal_token
 
 _SCRIPT_DIR = Path(__file__).resolve().parent
 CONFIG_PATH = _SCRIPT_DIR / "config.json"

@@ -40,7 +40,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from utils.locale_config import load_crowdin_locale_map
+from helper.helper_locale_config import load_crowdin_locale_map
 
 
 def run(cmd: list, cwd: Path) -> bool:

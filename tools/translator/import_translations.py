@@ -57,7 +57,7 @@ except ImportError:
     sys.exit(1)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from utils.locale_config import dir_to_deepl_id, default_source_locale
+from helper.helper_locale_config import dir_to_deepl_id, default_source_locale
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:

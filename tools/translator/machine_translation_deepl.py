@@ -28,7 +28,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-from utils.locale_config import dir_to_deepl_id, default_source_locale
+from helper.helper_locale_config import dir_to_deepl_id, default_source_locale
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
@@ -39,7 +39,7 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 # DeepL language codes are resolved from tools/configs/languages.json via
-# utils/locale_config.dir_to_deepl_id(). To add support for a new
+# helper/helper_locale_config.dir_to_deepl_id(). To add support for a new
 # language, register it in languages.json.
 # DeepL target language list: https://developers.deepl.com/docs/getting-started/supported-languages
 

@@ -52,7 +52,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from utils.locale_config import load_crowdin_locale_map
+from helper.helper_locale_config import load_crowdin_locale_map
 
 
 def run(cmd: list, cwd: Path) -> bool:
@@ -252,7 +252,7 @@ def main() -> int:
     print()
     print(f"  Note: working tree Translations/ untouched.")
     print(f"        To share canonical TSV via PR, run for each locale:")
-    print(f"          python tools/utils/build_translation_tsv.py <locale>")
+    print(f"          python tools/build_canonical_tsv.py <locale>")
     print(f"          git add Translations/<locale>/ && git commit -m \"<msg>\"")
     return 0
 

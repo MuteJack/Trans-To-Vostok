@@ -364,7 +364,7 @@ def write_tsv(out_path: Path, rows: list[dict]) -> None:
 
 def main():
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
+    # script_dir = mods/Trans To Vostok/tools/parse
     mod_root = script_dir.parent.parent
 
     # load parse_list_gd.json (located in tools/, one level up from utils/)

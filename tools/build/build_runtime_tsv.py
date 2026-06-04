@@ -57,7 +57,7 @@ REPO = TOOLS_DIR.parent
 
 sys.path.insert(0, str(TOOLS_DIR))
 
-from utils.helper_translation_common import (
+from helper.helper_translation_common import (
     validate_xlsx,
     load_all_translation_sheets,
     load_metadata,

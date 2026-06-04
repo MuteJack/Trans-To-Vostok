@@ -41,7 +41,7 @@ TOOLS_DIR = SCRIPT_DIR.parent
 REPO = TOOLS_DIR.parent
 
 sys.path.insert(0, str(TOOLS_DIR))
-from utils.locale_config import load_locales  # noqa: E402
+from helper.helper_locale_config import load_locales  # noqa: E402
 
 MOD_ROOT = REPO / "Trans To Vostok"
 DRY_RUN_ROOT = REPO / ".tmp" / "temp_build" / "Trans To Vostok"

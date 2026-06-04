@@ -236,7 +236,7 @@ def _build_per_file_extras(config: dict) -> dict:
 
 def main():
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
+    # script_dir = mods/Trans To Vostok/tools/parse
     mod_root = script_dir.parent.parent
     default_src = (mod_root / ".tmp" / "pck_recovered").resolve()
     default_out = (mod_root / ".tmp" / "parsed_text").resolve()

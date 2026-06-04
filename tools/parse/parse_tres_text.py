@@ -438,7 +438,7 @@ def main() -> int:
 
     # path basis
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
+    # script_dir = mods/Trans To Vostok/tools/parse
     mod_root = script_dir.parent.parent       # mods/Trans To Vostok
     pck_root = (mod_root / ".tmp" / "pck_recovered").resolve()
     parsed_dir = (mod_root / ".tmp" / "parsed_text").resolve()
