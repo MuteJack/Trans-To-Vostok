@@ -38,12 +38,12 @@ Note: lookup is by exact text match on the row's text column. The unique.tsv
 contains (text, translation) pairs.
 
 Usage:
-    python tools/utils/import_translations.py <target_locale> [--deepl-lang <code>] [--source <locale>]
+    python tools/translator/import_translations.py <target_locale> [--deepl-lang <code>] [--source <locale>]
 
 Examples:
-    python tools/utils/import_translations.py French --deepl-lang FR
-    python tools/utils/import_translations.py Japanese --deepl-lang JA
-    python tools/utils/import_translations.py French                 # deepl-lang defaults to FR
+    python tools/translator/import_translations.py French --deepl-lang FR
+    python tools/translator/import_translations.py Japanese --deepl-lang JA
+    python tools/translator/import_translations.py French                 # deepl-lang defaults to FR
 """
 import argparse
 import csv

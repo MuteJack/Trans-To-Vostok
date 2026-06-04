@@ -106,7 +106,7 @@ clear those columns first.
 A single command runs export -> DeepL -> import for the locale:
 
 ```
-python tools/machine_translation_deepl.py French
+python tools/translator/machine_translation_deepl.py French
 ```
 
 Optional flags:

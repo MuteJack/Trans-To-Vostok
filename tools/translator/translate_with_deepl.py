@@ -258,7 +258,7 @@ def main() -> int:
     target_lang, source_locale, limit, dry_run = parsed
 
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
+    # script_dir = mods/Trans To Vostok/tools/translator
     tools_dir = script_dir.parent
     mod_root = tools_dir.parent
     base = mod_root / ".tmp" / "unique_text" / source_locale
@@ -267,7 +267,7 @@ def main() -> int:
 
     if not unique_path.exists():
         print(f"[ERROR] unique.tsv not found: {unique_path}")
-        print(f"Run first: python tools/utils/export_unique_text.py {source_locale}")
+        print(f"Run first: python tools/translator/helper/export_unique_text.py {source_locale}")
         return 1
 
     api_key = load_api_key()

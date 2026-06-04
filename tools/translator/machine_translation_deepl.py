@@ -1,10 +1,10 @@
 """
 Run the full DeepL translation pipeline for a target locale.
 
-Sequentially calls the 3 utils scripts:
-    1. tools/utils/export_unique_text.py <target_locale>
-    2. tools/utils/translate_with_deepl.py <DEEPL_LANG> --source <target_locale>
-    3. tools/utils/import_translations.py <target_locale>
+Sequentially calls the 3 sibling scripts:
+    1. tools/translator/helper/export_unique_text.py <target_locale>
+    2. tools/translator/translate_with_deepl.py <DEEPL_LANG> --source <target_locale>
+    3. tools/translator/import_translations.py <target_locale>
 
 Each step short-circuits on failure (stops the pipeline). Resume is built
 into individual steps:
@@ -13,12 +13,12 @@ into individual steps:
     - import skips already-translated rows in xlsx
 
 Usage:
-    python tools/machine_translation_deepl.py <target_locale> [--deepl-lang <code>] [--limit N] [--dry-run]
+    python tools/translator/machine_translation_deepl.py <target_locale> [--deepl-lang <code>] [--limit N] [--dry-run]
 
 Examples:
-    python tools/machine_translation_deepl.py French
-    python tools/machine_translation_deepl.py French --deepl-lang FR --limit 10
-    python tools/machine_translation_deepl.py Japanese --dry-run
+    python tools/translator/machine_translation_deepl.py French
+    python tools/translator/machine_translation_deepl.py French --deepl-lang FR --limit 10
+    python tools/translator/machine_translation_deepl.py Japanese --dry-run
 
 DeepL language codes: see https://developers.deepl.com/docs/getting-started/supported-languages
 """
@@ -27,7 +27,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from utils.locale_config import dir_to_deepl_id, default_source_locale
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
@@ -99,7 +99,7 @@ def main() -> int:
         )
         return 1
 
-    script_dir = Path(__file__).resolve().parent  # mods/Trans To Vostok/tools
+    script_dir = Path(__file__).resolve().parent  # mods/Trans To Vostok/tools/translator
 
     print(f"Target locale  : {target_locale}")
     print(f"DeepL language : {deepl_lang}")
@@ -112,14 +112,14 @@ def main() -> int:
     # Step 1: export unique text
     if not run_step(
         "[1/3] Export unique source texts",
-        [sys.executable, "utils/export_unique_text.py", target_locale],
+        [sys.executable, "helper/export_unique_text.py", target_locale],
         cwd=script_dir,
     ):
         return 1
 
     # Step 2: DeepL translate
     translate_cmd = [
-        sys.executable, "utils/translate_with_deepl.py", deepl_lang,
+        sys.executable, "translate_with_deepl.py", deepl_lang,
         "--source", target_locale,
     ]
     if args.limit:
@@ -139,7 +139,7 @@ def main() -> int:
     else:
         if not run_step(
             "[3/3] Import translations into xlsx",
-            [sys.executable, "utils/import_translations.py", target_locale,
+            [sys.executable, "import_translations.py", target_locale,
              "--deepl-lang", deepl_lang],
             cwd=script_dir,
         ):

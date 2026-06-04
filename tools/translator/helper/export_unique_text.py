@@ -22,11 +22,11 @@ Output (under <mod_root>/.tmp/unique_text/<target_locale>/):
     stats.txt      human-readable summary
 
 Usage:
-    python tools/utils/export_unique_text.py <target_locale>
+    python tools/translator/helper/export_unique_text.py <target_locale>
 
 Example:
-    python tools/utils/export_unique_text.py French
-    python tools/utils/export_unique_text.py Japanese
+    python tools/translator/helper/export_unique_text.py French
+    python tools/translator/helper/export_unique_text.py Japanese
 """
 import csv
 import sys
@@ -279,15 +279,15 @@ def write_stats(path: Path, stats: dict, unique: list[dict], mapping: list[dict]
 def main() -> int:
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     if not args:
-        print("Usage: python tools/utils/export_unique_text.py <target_locale>")
-        print("Example: python tools/utils/export_unique_text.py French")
+        print("Usage: python tools/translator/helper/export_unique_text.py <target_locale>")
+        print("Example: python tools/translator/helper/export_unique_text.py French")
         return 1
 
     target_locale = args[0]
 
     script_dir = Path(__file__).resolve().parent
-    # script_dir = mods/Trans To Vostok/tools/utils
-    mod_root = script_dir.parent.parent
+    # script_dir = mods/Trans To Vostok/tools/translator/helper
+    mod_root = script_dir.parent.parent.parent
     translations_root = mod_root / "Translations"
     locale_dir = translations_root / target_locale
     out_dir = mod_root / ".tmp" / "unique_text" / target_locale
