@@ -85,38 +85,32 @@ README/
 
 ## Tools (`tools/`)
 
-### Entry-point tools (run directly)
+### Entry-point orchestrators (run directly)
 
 | Tool | Role |
 | --- | --- |
-| `build_mod_package.py` | Build final mod zip (validate + textures + runtime_tsv) |
+| `validate_Template.py` | Phase 0 — Template validation pipeline (9 checks) |
+| `validate_translation.py` | Phase 2 — locale validation pipeline (10 checks, per locale or `all`) |
+| `build_mod_package.py` | Phase 3 — mod ZIP build (clear staging → dry build → ZIP → promote runtime_tsv) |
 | `parse_translatables.py` | Run all 3 text-extraction parsers (`parse_tscn` / `parse_tres` / `parse_gd`) sequentially |
-| `machine_translation_deepl.py` | DeepL pipeline for a target locale (export → translate → import) |
-| `validate_translation.py` | xlsx schema / duplicate / match validation (partial mode if parsed_text is absent) |
-| `check_untranslated.py` | Translation gap / coverage report (incl. `DRIFTED` rows) |
-| `check_duplicate.py` | Pre-build duplicate-key detector (xlsx-only) |
-| `check_conflict.py` | Conflict detection (same source text, different translations) |
-| `check_old_translation.py` | Detect stale translations from removed game content |
-| `rebuild_xlsx.py` | TSV → xlsx for a locale (Translation / Texture batch) |
+| `validate_texture.py` | Texture canonical TSV vs PCK extraction validation |
+| `rebuild_xlsx.py` | Canonical TSV → xlsx wrapper (Translation + Texture) |
+| `build_canonical_tsv.py` | xlsx → canonical TSV wrapper (Translation + Texture) |
+| `push_to_crowdin.py` / `pull_from_crowdin.py` / `push_source_to_crowdin.py` | Crowdin sync |
+| `translator/machine_translation_deepl.py` | DeepL pipeline for a target locale (export → translate → import) |
 
-### Utilities (`tools/utils/` — invoked by the above)
+### Tool categories (sub-steps invoked by the orchestrators above)
 
-| Tool | Role |
+| Folder | Role |
 | --- | --- |
-| `utils/parse_tscn_text.py` | Parse `.tscn` scenes for translatable text |
-| `utils/parse_tres_text.py` | Parse `.tres` resources for translatable text |
-| `utils/parse_gd_text.py` | Parse `.gd` scripts for UI strings |
-| `utils/export_unique_text.py` | Extract deduplicated source texts from a locale's xlsx |
-| `utils/translate_with_deepl.py` | DeepL API caller (placeholder protection + XML escape) |
-| `utils/import_translations.py` | Write DeepL results back into the locale's xlsx files |
-| `utils/build_runtime_tsv.py` | xlsx → runtime TSV (after validation passes) |
-| `utils/build_attributions.py` | `Texture.xlsx` → `Texture_Attribution.md` |
-| `utils/build_translation_credit.py` | Per-locale `Translation_Credit.md` |
-| `utils/build_authors.py` | Update the auto-generated Translators section of `AUTHORS.md` |
-| `utils/build_translation_tsv.py` | Locale xlsx → per-sheet TSV under `Translations/<locale>/<file>/` (git-diff visibility) |
-| `utils/build_mod_info.py` | Generate `<pkg_root>/info.json` (version + build date + contributors) for the F9 Info tab |
-| `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (formatting / widths / conditional formatting applied) |
-| `utils/rebuild_texture_xlsx.py` | TSV → Texture.xlsx |
+| `tools/build/` | Phase 3 build sub-steps (`build_runtime_tsv`, `check_runtime_tsv_conflict`, `build_*`, `get_texture_credits`, `pack_mod_zip`) + staging helpers (`clear_temp_build`, `copy_runtime_tsv_from_temp`) |
+| `tools/validation/` | Phase 0/2 check tools (`check_required_cols`, `check_duplicates`, `check_whitespace_text`, `check_whitespace_translated`, `check_diff_with_Template`, `check_deprecated`, `check_missing`, `check_flag`, `check_method`, `check_conflict`) |
+| `tools/translation/` | Per-category xlsx ↔ canonical TSV builders (`rebuild_translation_xlsx`, `rebuild_texture_xlsx`, `build_translation_tsv`, `build_texture_tsv`) + `sync_texture_schema` |
+| `tools/translator/` | DeepL pipeline (`translate_with_deepl`, `import_translations`) + `helper/export_unique_text` |
+| `tools/parse/` | Godot source / PCK parsers (`parse_tscn_text`, `parse_tres_text`, `parse_gd_text`, `parse_textures`, `hash_textures`) |
+| `tools/helper/` | Shared utility modules (`helper_translation_common`, `helper_locale_config`, `helper_secrets`) |
+| `tools/crowdin/` | Crowdin API helpers |
+| `tools/configs/` | Config files (languages.json, width.json, secrets.json, parse_list_*.json) |
 
 ---
 
@@ -280,38 +274,32 @@ README/
 
 ## 도구 (`tools/`)
 
-### 진입점 도구 (직접 실행)
+### 진입점 orchestrator (직접 실행)
 
 | 도구 | 역할 |
 | --- | --- |
-| `build_mod_package.py` | 최종 모드 zip 패키지 빌드 (검증 + textures + runtime_tsv) |
-| `parse_translatables.py` | 텍스트 추출 파서 3 종 (`parse_tscn` / `parse_tres` / `parse_gd`) 일괄 실행 |
-| `machine_translation_deepl.py` | 대상 locale 의 DeepL 파이프라인 (export → translate → import) |
-| `validate_translation.py` | xlsx 스키마 / 중복 / 매칭 검증 (parsed_text 부재 시 partial mode) |
-| `check_untranslated.py` | 번역 누락 / 커버리지 리포트 (`DRIFTED` 행 포함) |
-| `check_duplicate.py` | 빌드 전 중복 키 사전 검사 (xlsx 단독) |
-| `check_conflict.py` | 번역 충돌 검사 (같은 원문, 다른 번역) |
-| `check_old_translation.py` | 게임 업데이트로 사라진 옛 번역 감지 |
-| `rebuild_xlsx.py` | locale 의 TSV → xlsx 일괄 재빌드 (Translation/Texture) |
+| `validate_Template.py` | Phase 0 — Template 검증 파이프라인 (9개 check) |
+| `validate_translation.py` | Phase 2 — locale 검증 파이프라인 (10개 check, locale 단위 또는 `all`) |
+| `build_mod_package.py` | Phase 3 — 모드 ZIP 빌드 (staging 정리 → dry build → ZIP → runtime_tsv promote) |
+| `parse_translatables.py` | 텍스트 추출 파서 3종 (`parse_tscn` / `parse_tres` / `parse_gd`) 일괄 실행 |
+| `validate_texture.py` | Texture canonical TSV vs PCK 추출 결과 검증 |
+| `rebuild_xlsx.py` | canonical TSV → xlsx wrapper (Translation + Texture) |
+| `build_canonical_tsv.py` | xlsx → canonical TSV wrapper (Translation + Texture) |
+| `push_to_crowdin.py` / `pull_from_crowdin.py` / `push_source_to_crowdin.py` | Crowdin 동기화 |
+| `translator/machine_translation_deepl.py` | 대상 locale 의 DeepL 파이프라인 (export → translate → import) |
 
-### 유틸리티 (`tools/utils/` — 위 도구가 호출)
+### 도구 카테고리 (위 orchestrator 가 호출)
 
-| 도구 | 역할 |
+| 폴더 | 역할 |
 | --- | --- |
-| `utils/parse_tscn_text.py` | `.tscn` 씬 파일 → 번역 대상 텍스트 추출 |
-| `utils/parse_tres_text.py` | `.tres` 리소스 → 번역 대상 텍스트 추출 |
-| `utils/parse_gd_text.py` | `.gd` 스크립트 → UI 문자열 추출 |
-| `utils/export_unique_text.py` | locale xlsx 에서 중복 제거된 source 텍스트 추출 |
-| `utils/translate_with_deepl.py` | DeepL API 호출 (placeholder 보호 + XML escape) |
-| `utils/import_translations.py` | DeepL 결과를 locale xlsx 에 반영 |
-| `utils/build_runtime_tsv.py` | xlsx → 런타임 TSV 빌드 (검증 통과 시) |
-| `utils/build_attributions.py` | `Texture.xlsx` → `Texture_Attribution.md` 자동 생성 |
-| `utils/build_translation_credit.py` | locale 별 `Translation_Credit.md` 생성 |
-| `utils/build_authors.py` | `AUTHORS.md` 의 자동 생성 Translators 섹션 갱신 |
-| `utils/build_translation_tsv.py` | locale xlsx → 시트별 TSV (`Translations/<locale>/<file>/`) — git diff 가독성 |
-| `utils/build_mod_info.py` | F9 Info 탭이 사용하는 `<pkg_root>/info.json` 생성 (version + build date + contributors) |
-| `utils/rebuild_translation_xlsx.py` | TSV → Translation.xlsx (서식 / 너비 / 조건부 서식 일괄 적용) |
-| `utils/rebuild_texture_xlsx.py` | TSV → Texture.xlsx |
+| `tools/build/` | Phase 3 빌드 sub-step (`build_runtime_tsv`, `check_runtime_tsv_conflict`, `build_*`, `get_texture_credits`, `pack_mod_zip`) + staging helper (`clear_temp_build`, `copy_runtime_tsv_from_temp`) |
+| `tools/validation/` | Phase 0/2 검증 도구 (`check_required_cols`, `check_duplicates`, `check_whitespace_text`, `check_whitespace_translated`, `check_diff_with_Template`, `check_deprecated`, `check_missing`, `check_flag`, `check_method`, `check_conflict`) |
+| `tools/translation/` | 카테고리별 xlsx ↔ canonical TSV 빌더 (`rebuild_translation_xlsx`, `rebuild_texture_xlsx`, `build_translation_tsv`, `build_texture_tsv`) + `sync_texture_schema` |
+| `tools/translator/` | DeepL 파이프라인 (`translate_with_deepl`, `import_translations`) + `helper/export_unique_text` |
+| `tools/parse/` | Godot 소스 / PCK 파서 (`parse_tscn_text`, `parse_tres_text`, `parse_gd_text`, `parse_textures`, `hash_textures`) |
+| `tools/helper/` | 공통 utility module (`helper_translation_common`, `helper_locale_config`, `helper_secrets`) |
+| `tools/crowdin/` | Crowdin API helper |
+| `tools/configs/` | 설정 파일 (languages.json, width.json, secrets.json, parse_list_*.json) |
 
 ---
 

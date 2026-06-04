@@ -29,7 +29,7 @@
 ```powershell
 # (선택) Korean에서 변경된 게 있다면 먼저 Template TSV에 sync
 python d:/tmp/sync_locale_to_korean.py Template --apply
-# (sync 도구는 정착되면 tools/utils/로 이동 예정)
+# (Template TSV 구조 동기화: tools/translation/sync_texture_schema.py)
 
 # Template TSV → Template xlsx 재빌드 (현재 서식 / 너비 / 조건부 서식 자동 적용)
 python tools/rebuild_xlsx.py Template
@@ -78,7 +78,7 @@ python tools/translator/machine_translation_deepl.py French
 | `--limit 10`      | 처음 10개만 번역 (스모크 테스트)                                    |
 | `--dry-run`       | export까지만 + 무엇이 번역될지 표시. API 호출 / import 스킵         |
 
-### 내부 단계 (`tools/utils/` 의 3개 스크립트 chained)
+### 내부 단계 (`tools/translator/` + `tools/translator/helper/` 의 3개 스크립트 chained)
 
 1. **`export_unique_text.py French`**
    - `Translation.xlsx` / `Texture.xlsx` 스캔

@@ -117,7 +117,8 @@ Optional flags:
 | `--limit 10` | Translate only the first 10 unique texts (smoke test before full run) |
 | `--dry-run` | Run export + show what would be translated; skip API call and import |
 
-Internally the orchestrator chains three steps in `tools/utils/`:
+Internally the orchestrator chains three steps in `tools/translator/`
+(helper step in `tools/translator/helper/`):
 
 1. **`export_unique_text.py French`** — scans `Translation.xlsx`,
    `Texture.xlsx`. Filters skip ignore/pattern/untranslatable rows

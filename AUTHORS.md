@@ -5,7 +5,7 @@ It is referenced by `NOTICE` (Apache 2.0) and the CC BY 4.0 licenses for
 translation and texture content.
 
 The **Translators** section below is auto-generated from each locale's
-`Trans To Vostok/<locale>/credits.json` by `tools/utils/build_authors.py`.
+`Trans To Vostok/<locale>/credits.json` by `tools/build/build_authors.py`.
 Do not edit it manually — the manual sections (Author / Lead Developer,
 Code Contributors, Acknowledgments) are preserved across regenerations
 via the BEGIN/END markers below.

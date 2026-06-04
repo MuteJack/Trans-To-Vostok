@@ -177,7 +177,7 @@ xlsx에는 단일 status flag만 유지:
   - check_whitespace (text ↔ translation 앞뒤 공백/줄바꿈 매칭)
   - check_duplicates / check_duplicates_cross_sheet
 
-### Runtime TSV 분류 (`tools/utils/build_runtime_tsv.py`)
+### Runtime TSV 분류 (`tools/build/build_runtime_tsv.py`)
 
 빌드 결과는 6개 TSV로 분리:
 
