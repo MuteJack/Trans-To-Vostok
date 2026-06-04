@@ -61,7 +61,7 @@ KNOWN_FILETYPES = SCENE_FILETYPES | {"tres", "gd"}
 SAMPLE_LIMIT = 10
 
 sys.path.insert(0, str(REPO / "tools"))
-from validate_translation import (
+from utils.helper_translation_common import (
     load_tsv_index,
     load_tres_text_set,
     load_gd_text_set,

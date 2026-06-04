@@ -32,11 +32,6 @@ Validation flags forwarded to validate_xlsx:
   --soft     TSV-match failure -> WARNING (continue) instead of ERROR
   --ignore   Skip the validate_xlsx pre-check entirely
 
-The new tools/build/build_runtime_tsv.py replaces the legacy entry point
-at tools/utils/build_runtime_tsv.py; both currently share helper
-functions (classify_rows, write_tsv, ...) imported from the legacy
-module until the cleanup commit moves them here.
-
 Usage:
   python tools/build/build_runtime_tsv.py Korean
   python tools/build/build_runtime_tsv.py Korean --dry-run
@@ -61,21 +56,123 @@ TOOLS_DIR = SCRIPT_DIR.parent
 REPO = TOOLS_DIR.parent
 
 sys.path.insert(0, str(TOOLS_DIR))
-sys.path.insert(0, str(TOOLS_DIR / "utils"))
 
-# Shared helpers (live in the legacy module for now)
-from build_runtime_tsv import (
-    classify_rows,
-    write_tsv,
-    COLUMNS_SCOPED,
-    COLUMNS_GLOBAL,
-)
-from validate_translation import (
+from utils.helper_translation_common import (
     validate_xlsx,
     load_all_translation_sheets,
     load_metadata,
     _effective_method,
 )
+
+
+# TSV with context (static / scoped literal / scoped pattern)
+COLUMNS_SCOPED = ["location", "parent", "name", "type", "text", "translation"]
+# Global TSV (literal / pattern)
+COLUMNS_GLOBAL = ["text", "translation"]
+BOOL_TRUE = {"1", "true"}
+
+
+def classify_rows(rows: list[dict]) -> tuple[dict, dict]:
+    """Classify rows into runtime buckets.
+
+    Exclusion conditions:
+        - method=ignore               (operational exclusion)
+        - untranslatable=1            (untranslatable text)
+        - empty translation           (untranslated)
+
+    Returns:
+        buckets: { bucket_name: [row, ...], ... }
+        stats:   { bucket_name: count, ..., "excluded_ignore": N, ... }
+    """
+    buckets: dict[str, list] = {
+        "static": [],
+        "literal_scoped": [],
+        "pattern_scoped": [],
+        "literal_global": [],
+        "pattern_global": [],
+        "substr": [],
+    }
+    stats = {
+        "total": len(rows),
+        "excluded_ignore": 0,
+        "excluded_untranslatable": 0,
+        "excluded_untranslated": 0,
+    }
+    for name in buckets.keys():
+        stats[name] = 0
+
+    for row in rows:
+        effective = _effective_method(row)
+        if effective == "ignore":
+            stats["excluded_ignore"] += 1
+            continue
+
+        if row.get("untranslatable", "").strip().lower() in BOOL_TRUE:
+            stats["excluded_untranslatable"] += 1
+            continue
+
+        if row.get("translation", "") == "":
+            stats["excluded_untranslated"] += 1
+            continue
+        location = row.get("location", "").strip()
+
+        if effective == "static":
+            buckets["static"].append(row)
+            stats["static"] += 1
+        elif effective == "literal":
+            if location:
+                buckets["literal_scoped"].append(row)
+                stats["literal_scoped"] += 1
+            else:
+                buckets["literal_global"].append(row)
+                stats["literal_global"] += 1
+        elif effective == "pattern":
+            if location:
+                buckets["pattern_scoped"].append(row)
+                stats["pattern_scoped"] += 1
+            else:
+                buckets["pattern_global"].append(row)
+                stats["pattern_global"] += 1
+        elif effective == "substr":
+            buckets["substr"].append(row)
+            # substr -> also write to literal_global (fast hit at tier 4 on exact match)
+            text = row.get("text", "")
+            translation = row.get("translation", "")
+            conflict = False
+            for existing in buckets["literal_global"]:
+                if existing.get("text", "") == text and existing.get("translation", "") != translation:
+                    conflict = True
+                    print(
+                        f"[WARN] substr/literal translation conflict: text={text!r} "
+                        f"(substr={translation!r} vs literal={existing.get('translation', '')!r})",
+                        file=sys.stderr,
+                    )
+                    break
+            if not conflict:
+                buckets["literal_global"].append(row)
+            stats["substr"] += 1
+
+    return buckets, stats
+
+
+def write_tsv(out_path: Path, columns: list[str], rows: list[dict]) -> None:
+    """Write TSV atomically."""
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp_path = out_path.with_suffix(out_path.suffix + ".tmp")
+    try:
+        with open(tmp_path, "w", encoding="utf-8", newline="") as f:
+            writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
+            writer.writerow(columns)
+            for row in rows:
+                writer.writerow([row.get(c, "") for c in columns])
+        tmp_path.replace(out_path)
+    except Exception:
+        if tmp_path.exists():
+            try:
+                tmp_path.unlink()
+            except OSError:
+                pass
+        raise
 
 
 TRANSLATIONS = REPO / "Translations"
