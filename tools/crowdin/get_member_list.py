@@ -177,17 +177,37 @@ def update_credits_for_locale(client, project_id: int, locale: str, lang_id: str
     last_activity = fetch_last_activity(client, project_id, lang_id)
 
     buckets: dict[str, list[str]] = {"Leader": [], "Translator": [], "Contributor": []}
-    seen: set[str] = set()
+    seen_names: set[str] = set()
+    seen_uids: set[int] = set()
     for m in members:
         uid = m.get("id")
         cls = classify(m, lang_id, top.get(uid) if isinstance(uid, int) else None)
         if not cls:
             continue
         name = display_name(m)
-        if name in seen:
+        if name in seen_names:
             continue
-        seen.add(name)
+        seen_names.add(name)
+        if isinstance(uid, int):
+            seen_uids.add(uid)
         buckets[cls].append(name)
+
+    # Catch users not in the members list (e.g. project-wide Developer role
+    # has no per-language permission, so list_project_members may omit them)
+    # but who have actual translation activity for this language.
+    # Use uid dedup to avoid double-counting when the two APIs return
+    # slightly different display names for the same person.
+    for uid, activity in top.items():
+        if activity.get("translated", 0) <= 0:
+            continue
+        if uid in seen_uids:
+            continue
+        name = display_name(activity)
+        if not name or name in seen_names:
+            continue
+        seen_names.add(name)
+        seen_uids.add(uid)
+        buckets["Contributor"].append(name)
 
     credits_path = MOD_ROOT / locale / CREDITS_FILE
     existing: dict = {}

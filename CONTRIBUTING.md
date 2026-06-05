@@ -15,30 +15,33 @@ locale you contributed to) **automatically** on the next build. Do NOT
 edit `AUTHORS.md` directly — the Translators section is regenerated on
 every build, and any direct edits there will be overwritten.
 
-To be credited, edit the appropriate xlsx file:
-
 ### As a translator (text)
 
-Edit `Translations/<locale>/Translation.xlsx` → **MetaData** sheet:
+Translate via **Crowdin**. Credit is determined automatically by your
+Crowdin role for the language:
 
-| Role         | Field in MetaData          |
-| ------------ | -------------------------- |
-| Lead         | `Translator`               |
-| Contributor  | `Contributor (Translate)`  |
+| Crowdin role | Credit label |
+| --- | --- |
+| Owner / Manager / Language Coordinator | Lead Translator(s) |
+| Proofreader | Translator(s) |
+| Translator (Member) with at least one translation | Translation Contributors |
 
-For multiple names in one cell, separate by **line breaks** (`Alt+Enter`
-inside the cell in Excel).
+No manual file editing needed — the maintainer runs `get_member_list.py`
+before each release to pull the current Crowdin member list into
+`credits.json`.
 
 ### As a texture / image worker
 
-Edit `Translations/<locale>/Texture.xlsx`:
+Contact the maintainer to be added. Once added, edit
+`Translations/<locale>/Texture.xlsx`:
 
 | Role           | Column in any sheet  |
 | -------------- | -------------------- |
 | Primary rework | `Reworked by`        |
 | Secondary help | `Contributors`       |
 
-Same rule for multiple names: line break (`Alt+Enter`) inside the cell.
+For multiple names in one cell, separate by **line breaks** (`Alt+Enter`
+inside the cell in Excel).
 
 ### As a code contributor (Python tools / GDScript)
 
@@ -53,19 +56,6 @@ entry under the **Code Contributors** section using this format:
 
 This section sits OUTSIDE the auto-generated markers, so it is
 preserved across builds.
-
----
-
-## After editing
-
-Run the build to regenerate the credit files:
-
-```
-python tools/build_mod_package.py
-```
-
-Or just commit the xlsx changes — the maintainer will run the build at
-release time.
 
 ---
 
