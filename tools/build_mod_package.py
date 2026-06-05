@@ -1,26 +1,25 @@
-"""Phase 3 orchestrator — build the mod entirely in .tmp/temp_build/, then promote runtime_tsv.
+"""Phase 3 orchestrator — build the mod and package it as a ZIP.
 
-Pipeline (all build steps run with --dry-run so deploy stays untouched
-until the final promote step):
+Pipeline:
 
-  1. clear_temp_build.py                        (wipe staging dir)
+  1. clear_temp_build.py
   2. per-locale, in order:
-        build_runtime_tsv.py <locale> --dry-run --ignore
-        check_runtime_tsv_conflict.py <locale> --dry-run
-        get_texture_credits.py <locale> --dry-run
-        build_attributions.py <locale> --dry-run
-        build_translation_credit.py <locale> --dry-run
-        build_texture_meta.py <locale> --dry-run
+        build_runtime_tsv.py <locale> --ignore  [+ --dry-run if staging]
+        check_runtime_tsv_conflict.py <locale>  [+ --dry-run if staging]
+        get_texture_credits.py <locale>         [+ --dry-run if staging]
+        build_attributions.py <locale>          [+ --dry-run if staging]
+        build_translation_credit.py <locale>    [+ --dry-run if staging]
+        build_texture_meta.py <locale>          [+ --dry-run if staging]
   3. global (once):
-        build_authors.py --dry-run
-        build_mod_info.py --dry-run
-  4. pack_mod_zip.py <locale> --dry-run          (reads staging, writes
-                                                  .tmp/temp_build/Trans To Vostok.zip)
-  5. copy_runtime_tsv_from_temp.py <locale>      (promote runtime_tsv -> deploy)
+        build_authors.py                        [+ --dry-run if staging]
+        build_mod_info.py                       [+ --dry-run if staging]
+  4. pack_mod_zip.py <locale>                   [+ --dry-run if staging]
+  5. copy_runtime_tsv_from_temp.py <locale>     (only with --promote)
 
-Step 2 is invoked once with the orchestrator's locale arg (the sub-tools
-handle the locale/'all' convention internally). Step 5 is the only step
-that touches the deploy tree.
+Modes:
+  (default)   sub-tools write directly to deploy path; zip -> mods/
+  --dry-run   sub-tools write to .tmp/temp_build/ only; no promote
+  --promote   sub-tools write to .tmp/temp_build/, then promote to deploy
 
 Input convention (Phase 3):
   <locale>   single locale
@@ -30,6 +29,8 @@ Input convention (Phase 3):
 Usage:
   python tools/build_mod_package.py Korean
   python tools/build_mod_package.py all
+  python tools/build_mod_package.py all --dry-run
+  python tools/build_mod_package.py all --promote
 """
 import argparse
 import subprocess
@@ -53,22 +54,22 @@ TEMPLATE_LOCALE = "Template"
 sys.path.insert(0, str(SCRIPT_DIR))
 from helper.helper_log import setup_logpath, make_log_path  # noqa: E402
 
-# (label, script_path, locale-aware?, extra_args)
+# (label, script_path, extra_args)  — --dry-run added conditionally at runtime
 PER_LOCALE_STEPS: list[tuple[str, Path, list[str]]] = [
-    ("build_runtime_tsv",            BUILD_DIR / "build_runtime_tsv.py",            ["--dry-run", "--ignore"]),
-    ("check_runtime_tsv_conflict",   BUILD_DIR / "check_runtime_tsv_conflict.py",   ["--dry-run"]),
-    ("get_texture_credits",          BUILD_DIR / "get_texture_credits.py",          ["--dry-run"]),
-    ("build_attributions",           BUILD_DIR / "build_attributions.py",           ["--dry-run"]),
-    ("build_translation_credit",     BUILD_DIR / "build_translation_credit.py",     ["--dry-run"]),
-    ("build_texture_meta",           BUILD_DIR / "build_texture_meta.py",           ["--dry-run"]),
+    ("build_runtime_tsv",            BUILD_DIR / "build_runtime_tsv.py",            ["--ignore"]),
+    ("check_runtime_tsv_conflict",   BUILD_DIR / "check_runtime_tsv_conflict.py",   []),
+    ("get_texture_credits",          BUILD_DIR / "get_texture_credits.py",          []),
+    ("build_attributions",           BUILD_DIR / "build_attributions.py",           []),
+    ("build_translation_credit",     BUILD_DIR / "build_translation_credit.py",     []),
+    ("build_texture_meta",           BUILD_DIR / "build_texture_meta.py",           []),
 ]
 
 GLOBAL_STEPS: list[tuple[str, Path, list[str]]] = [
-    ("build_authors",   BUILD_DIR / "build_authors.py",   ["--dry-run"]),
-    ("build_mod_info",  BUILD_DIR / "build_mod_info.py",  ["--dry-run"]),
+    ("build_authors",   BUILD_DIR / "build_authors.py",   []),
+    ("build_mod_info",  BUILD_DIR / "build_mod_info.py",  []),
 ]
 
-PACK_STEP = ("pack_mod_zip", BUILD_DIR / "pack_mod_zip.py", ["--dry-run"])
+PACK_STEP = ("pack_mod_zip", BUILD_DIR / "pack_mod_zip.py", [])
 PROMOTE_STEP = ("copy_runtime_tsv_from_temp", BUILD_DIR / "copy_runtime_tsv_from_temp.py", [])
 CLEAR_STEP = ("clear_temp_build", BUILD_DIR / "clear_temp_build.py", [])
 
@@ -97,18 +98,17 @@ def main(argv: list[str]) -> int:
     )
     parser.add_argument("locale", help="Locale name or 'all'")
     parser.add_argument("--dry-run", action="store_true",
-                        help="Skip the promote step (runtime_tsv stays in staging only). "
-                             "Default promote is disabled.")
-    parser.add_argument("--promote", action="store_true", default=None,
-                        help="Force promote runtime_tsv to deploy. "
-                             "Default: True unless --dry-run.")
+                        help="Write to .tmp/temp_build/ only; no promote.")
+    parser.add_argument("--promote", action="store_true",
+                        help="Write to .tmp/temp_build/, then promote runtime_tsv to deploy.")
     parser.add_argument("--logpath", default=None,
                         help="Append stdout/stderr to this log file. "
                              "If omitted, a fresh log is created at "
                              ".log/build_mod_package_<timestamp>.log")
     args = parser.parse_args(argv[1:])
 
-    promote = args.promote if args.promote is not None else (not args.dry_run)
+    use_staging = args.dry_run or args.promote
+    dry_run_flags = ["--dry-run"] if use_staging else []
 
     log_path = Path(args.logpath) if args.logpath else make_log_path(REPO, "build_mod_package")
     setup_logpath(str(log_path))
@@ -122,9 +122,10 @@ def main(argv: list[str]) -> int:
         _say(f"[ERROR] locale directory not found: Translations/{args.locale}")
         return 1
 
+    mode = "dry-run" if args.dry_run else ("promote" if args.promote else "direct")
     _say(f"=== Phase 3: build_mod_package ({args.locale}) ===")
-    _say(f"  log:     {log_path.relative_to(REPO)}")
-    _say(f"  promote: {promote}{'  (--dry-run)' if args.dry_run else ''}")
+    _say(f"  log:  {log_path.relative_to(REPO)}")
+    _say(f"  mode: {mode}")
     _say()
 
     # 1. clear staging
@@ -134,29 +135,29 @@ def main(argv: list[str]) -> int:
         _say("[ERROR] clear_temp_build failed; aborting.")
         return 1
 
-    # 2. per-locale build (sub-tools handle 'all' internally)
+    # 2. per-locale build
     for label, script, extra in PER_LOCALE_STEPS:
-        rc = _run(label, script, [args.locale] + extra, log_path=log_path)
+        rc = _run(label, script, [args.locale] + extra + dry_run_flags, log_path=log_path)
         if rc != 0:
             _say(f"[ERROR] {label} failed; aborting.")
             return 1
 
     # 3. global metadata
     for label, script, extra in GLOBAL_STEPS:
-        rc = _run(label, script, extra, log_path=log_path)
+        rc = _run(label, script, extra + dry_run_flags, log_path=log_path)
         if rc != 0:
             _say(f"[ERROR] {label} failed; aborting.")
             return 1
 
-    # 4. pack ZIP from staging
+    # 4. pack ZIP
     label, script, extra = PACK_STEP
-    rc = _run(label, script, [args.locale] + extra, log_path=log_path)
+    rc = _run(label, script, [args.locale] + extra + dry_run_flags, log_path=log_path)
     if rc != 0:
         _say(f"[ERROR] {label} failed; aborting.")
         return 1
 
-    # 5. promote runtime_tsv -> deploy (skipped when promote=False)
-    if promote:
+    # 5. promote staging -> deploy (only with --promote)
+    if args.promote:
         label, script, extra = PROMOTE_STEP
         rc = _run(label, script, [args.locale] + extra, log_path=log_path)
         if rc != 0:
@@ -165,11 +166,12 @@ def main(argv: list[str]) -> int:
 
     _say("=" * 60)
     _say(f"Build complete: {args.locale}")
-    _say(f"  ZIP:           .tmp/temp_build/Trans To Vostok.zip (staging)")
-    if promote:
-        _say(f"  runtime_tsv:   promoted to Trans To Vostok/<locale>/runtime_tsv/ (deploy)")
+    if use_staging:
+        _say(f"  ZIP: .tmp/temp_build/Trans To Vostok.zip")
     else:
-        _say(f"  runtime_tsv:   staging only (promote skipped — use --promote to deploy)")
+        _say(f"  ZIP: ../Trans To Vostok.zip  (mods/)")
+    if args.promote:
+        _say(f"  runtime_tsv: promoted to Trans To Vostok/<locale>/runtime_tsv/")
     return 0
 
 
