@@ -50,7 +50,7 @@ Assets	Containers/Locker_F		0	ignore	Assets/Locker/Locker_F	tscn	Assets/Locker/L
 Assets	Containers/Mailbox		0	substr	Assets/Mailbox/Mailbox	tscn	Assets/Mailbox/Mailbox		Mailbox	Node3D	containerName	276598480	Mailbox	496	Почтовый ящик			
 Assets	Containers/Nightstand		0	substr	Assets/Nightstand/Nightstand	tscn	Assets/Nightstand/Nightstand		Nightstand	Node3D	containerName	1977643928	Nightstand	498	Прикроватная тумбочка			
 Assets	Containers/Nightstand_F		0	ignore	Assets/Nightstand/Nightstand_F	tscn	Assets/Nightstand/Nightstand_F		Nightstand_F	Node3D	containerName	509230477	Nightstand					
-Assets	Containers/Pile_Cardboard_A		0	substr	Assets/Pile_Cardboard/Pile_Cardboard_A	tscn	Assets/Pile_Cardboard/Pile_Cardboard_A		Pile_Cardboard_A	Node3D	containerName	509230477	Boxes	500	Ящики			
+Assets	Containers/Pile_Cardboard_A		0	substr	Assets/Pile_Cardboard/Pile_Cardboard_A	tscn	Assets/Pile_Cardboard/Pile_Cardboard_A		Pile_Cardboard_A	Node3D	containerName	1284452452	Boxes	500	Ящики			
 Assets	Containers/Pile_Cardboard_B		0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_B	tscn	Assets/Pile_Cardboard/Pile_Cardboard_B		Pile_Cardboard_B	Node3D	containerName	1215483040	Boxes					
 Assets	Containers/Pile_Cardboard_C		0	ignore	Assets/Pile_Cardboard/Pile_Cardboard_C	tscn	Assets/Pile_Cardboard/Pile_Cardboard_C		Pile_Cardboard_C	Node3D	containerName	870636015	Boxes					
 Assets	Containers/Stove		0	substr	Assets/Stove/Stove	tscn	Assets/Stove/Stove		Stove	Node3D	containerName	781697413	Stove	502	Плита			
