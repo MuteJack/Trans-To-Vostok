@@ -106,6 +106,12 @@ are fixed.
 
 - **`tools/utils/` (old layout)** — all contents either migrated to the new
   subdirectories or deleted as dead code (`75a0010`, `78d7dfe`).
+- **`metadata.tsv` runtime file** — dead artifact left over from pre-0.5.2
+  when `Translation.xlsx` had a MetaData sheet. `load_metadata()` returned
+  `{}` after the sheet was removed, so the file was generated with a header
+  row only and never read by any GDScript. `build_runtime_tsv.py` no longer
+  generates it; `pack_mod_zip.py` no longer requires it; existing per-locale
+  copies under `Trans To Vostok/*/runtime_tsv/metadata.tsv` deleted.
 
 ### Internal / Tooling
 
@@ -1359,6 +1365,12 @@ Sync / 빌드 관련 여러 버그 수정.
 
 - **`tools/utils/` (구 구조)** — 모든 내용이 신규 하위 디렉터리로 이전되거나
   dead code 로 삭제 (`75a0010`, `78d7dfe`).
+- **`metadata.tsv` 런타임 파일** — 0.5.2 이전 `Translation.xlsx` 에 MetaData
+  시트가 있던 시절의 잔재. 시트 제거 후 `load_metadata()` 가 `{}` 를 반환해
+  헤더 행만 있는 빈 파일이 생성되고 있었으며, GDScript 어디서도 읽히지 않음.
+  `build_runtime_tsv.py` 에서 생성 코드 제거, `pack_mod_zip.py` 에서 필수
+  파일 목록에서 제거, 기존 `Trans To Vostok/*/runtime_tsv/metadata.tsv` 9개
+  파일 삭제.
 
 ### 내부 / 도구
 
