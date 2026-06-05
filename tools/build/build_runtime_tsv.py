@@ -35,6 +35,7 @@ Validation flags forwarded to validate_xlsx:
 Usage:
   python tools/build/build_runtime_tsv.py Korean
   python tools/build/build_runtime_tsv.py Korean --dry-run
+  python tools/build/build_runtime_tsv.py all --dry-run
   python tools/build/build_runtime_tsv.py Korean --soft
   python tools/build/build_runtime_tsv.py Korean --ignore
 """
@@ -63,6 +64,7 @@ from helper.helper_translation_common import (
     load_metadata,
     _effective_method,
 )
+from helper.helper_locale_config import load_locales  # noqa: E402
 from helper.helper_log import setup_logpath  # noqa: E402
 
 
@@ -181,6 +183,16 @@ PKG_ROOT = REPO / "Trans To Vostok"
 DRY_RUN_ROOT = REPO / ".tmp" / "temp_build" / "Trans To Vostok"
 PARSED_TEXT = REPO / ".tmp" / "parsed_text"
 TEMPLATE_LOCALE = "Template"
+SOURCE_LOCALE = "English"
+
+
+def _discover_enabled_locales() -> list[str]:
+    out: list[str] = []
+    for loc in load_locales():
+        name = loc.get("dir")
+        if loc.get("enabled") and name and name not in (SOURCE_LOCALE, TEMPLATE_LOCALE):
+            out.append(name)
+    return out
 
 
 def _resolve_output_dir(locale: str, dry_run: bool) -> Path:
@@ -372,6 +384,19 @@ def main(argv: list[str]) -> int:
                              "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
     setup_logpath(args.logpath, label=Path(__file__).stem)
+
+    if args.locale == "all":
+        locales = _discover_enabled_locales()
+        if not locales:
+            print("[ERROR] no enabled locales found in src/locale.json", file=sys.stderr)
+            return 1
+        overall = 0
+        for loc in locales:
+            rc = build(loc, dry_run=args.dry_run, soft=args.soft,
+                       ignore_validation=args.ignore)
+            if rc != 0:
+                overall = rc
+        return overall
 
     return build(args.locale, dry_run=args.dry_run, soft=args.soft,
                  ignore_validation=args.ignore)
