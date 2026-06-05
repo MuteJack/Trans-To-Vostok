@@ -98,13 +98,13 @@ Trans To Vostok의 **모든 번역 기여는 Crowdin 웹사이트를 기본 진�
 
 번역 저장 시 Crowdin이 **QA 체크**를 수행합니다. 일부 항목은 저장을 차단할 수 있습니다(`Review Issues to save`).
 
-| QA 항목                       | 의미                                       | 일반적인 대처                                    |
-| ----------------------------- | ------------------------------------------ | ------------------------------------------------ |
-| **Numbers consistency**       | 원문의 숫자가 번역에서 빠지거나 추가됨     | 숫자 보존이 원칙. 의역이라면 `Save anyway`       |
-| **Punctuation consistency**   | 괄호 / 따옴표 등 문장부호가 매칭되지 않음  | 동일. 한국어 관용 표현이라면 `Save anyway`       |
-| **Tags consistency**          | `{0}`, `%s` 같은 placeholder 누락 / 변경   | **반드시 보존합니다**. 게임이 깨질 수 있습니다.  |
-| **Spaces around variables**   | placeholder 주변 공백이 어긋남             | 원문에 맞춥니다.                                 |
-| **Translation length**        | 번역이 너무 길거나 짧음                    | 권장 길이를 넘으면 UI 잘림 우려 — 최대한 줄입니다.|
+| QA 항목                           | 의미                                         | 일반적인 대처                                         |
+| --------------------------------- | -------------------------------------------- | ----------------------------------------------------- |
+| **Numbers consistency**     | 원문의 숫자가 번역에서 빠지거나 추가됨       | 숫자 보존이 원칙. 의역이라면 `Save anyway`          |
+| **Punctuation consistency** | 괄호 / 따옴표 등 문장부호가 매칭되지 않음    | 동일. 한국어 관용 표현이라면 `Save anyway`          |
+| **Tags consistency**        | `{0}`, `%s` 같은 placeholder 누락 / 변경 | **반드시 보존합니다**. 게임이 깨질 수 있습니다. |
+| **Spaces around variables** | placeholder 주변 공백이 어긋남               | 원문에 맞춥니다.                                      |
+| **Translation length**      | 번역이 너무 길거나 짧음                      | 권장 길이를 넘으면 UI 잘림 우려 — 최대한 줄입니다.   |
 
 ### 4-1. `Save anyway`를 사용해도 되는 경우
 
@@ -147,13 +147,13 @@ Editor 우측 패널에 DeepL 등 기계 번역 결과가 표시될 수 있습�
 ## 6. 검수 흐름과 인게임 반영 시점
 
 ```
-[번역가] Crowdin Editor에서 번역 입력
+[Translator] Crowdin Editor에서 번역 입력
     ↓
 [Proofreader] Crowdin Editor에서 ✓ Approve
     ↓
-[메인테이너] 주기적으로 pull_from_crowdin → git commit
+[Administator] 주기적으로 pull_from_crowdin → git commit
     ↓
-[다음 모드 빌드] 게임에 반영
+[Administator] 다음 버전의 모드에 반영/빌드 후 배포
 ```
 
 - 본인이 입력한 번역은 **즉시 Crowdin에 반영**되며, 다른 번역가/검수자에게 보입니다.
