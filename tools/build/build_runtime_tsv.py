@@ -3,7 +3,6 @@
 This is the locale-side build step that takes the canonical translation
 data and emits the runtime TSV bundle the in-game translator consumes:
 
-    metadata.tsv
     translation_static.tsv
     translation_literal_scoped.tsv
     translation_pattern_scoped.tsv
@@ -61,7 +60,6 @@ sys.path.insert(0, str(TOOLS_DIR))
 from helper.helper_translation_common import (
     validate_xlsx,
     load_all_translation_sheets,
-    load_metadata,
     _effective_method,
 )
 from helper.helper_locale_config import load_locales  # noqa: E402
@@ -336,20 +334,8 @@ def build(locale: str, *, dry_run: bool, soft: bool, ignore_validation: bool) ->
     runtime_dir = _resolve_output_dir(locale, dry_run)
     runtime_dir.mkdir(parents=True, exist_ok=True)
 
-    # 4. metadata.tsv
-    print(f"[4/5] Writing metadata.tsv -> {runtime_dir.relative_to(REPO)}")
-    meta = load_metadata(xlsx_path)
-    meta_path = runtime_dir / "metadata.tsv"
-    with open(meta_path, "w", encoding="utf-8", newline="") as f:
-        writer = csv.writer(f, delimiter="\t", quoting=csv.QUOTE_MINIMAL)
-        writer.writerow(["field", "value"])
-        for k, v in meta.items():
-            writer.writerow([k, v])
-    print(f"  -> {meta_path.relative_to(REPO)} ({len(meta)} fields)")
-    print()
-
-    # 5. write TSV buckets
-    print(f"[5/5] Writing runtime TSVs -> {runtime_dir.relative_to(REPO)}")
+    # 4. write TSV buckets
+    print(f"[4/4] Writing runtime TSVs -> {runtime_dir.relative_to(REPO)}")
     outputs = [
         ("translation_static.tsv",         COLUMNS_SCOPED, buckets["static"]),
         ("translation_literal_scoped.tsv", COLUMNS_SCOPED, buckets["literal_scoped"]),
@@ -363,7 +349,7 @@ def build(locale: str, *, dry_run: bool, soft: bool, ignore_validation: bool) ->
         write_tsv(path, columns, rows)
         print(f"  -> {path.relative_to(REPO)} ({len(rows)} rows)")
     print()
-    print(f"Done. ({len(outputs) + 1} files in {runtime_dir.relative_to(REPO)})")
+    print(f"Done. ({len(outputs)} files in {runtime_dir.relative_to(REPO)})")
     return 0
 
 

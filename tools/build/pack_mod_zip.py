@@ -73,7 +73,6 @@ GENERATED_FILES = ["info.json"]
 
 RUNTIME_TSV_DIR = "runtime_tsv"
 RUNTIME_TSV_FILES = [
-    "metadata.tsv",
     "translation_static.tsv",
     "translation_literal_scoped.tsv",
     "translation_pattern_scoped.tsv",
