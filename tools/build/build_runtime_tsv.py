@@ -371,7 +371,7 @@ def main(argv: list[str]) -> int:
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
-    setup_logpath(args.logpath)
+    setup_logpath(args.logpath, label=Path(__file__).stem)
 
     return build(args.locale, dry_run=args.dry_run, soft=args.soft,
                  ignore_validation=args.ignore)

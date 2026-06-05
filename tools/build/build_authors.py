@@ -205,7 +205,7 @@ def main(argv: list[str]) -> int:
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
-    setup_logpath(args.logpath)
+    setup_logpath(args.logpath, label=Path(__file__).stem)
 
     if not MOD_ROOT.exists():
         _say(f"[ERROR] Mod root not found: {MOD_ROOT}")

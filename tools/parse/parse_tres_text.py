@@ -441,7 +441,7 @@ def main() -> int:
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
     args = parser.parse_args()
-    setup_logpath(args.logpath)
+    setup_logpath(args.logpath, label=Path(__file__).stem)
 
     # path basis
     script_dir = Path(__file__).resolve().parent

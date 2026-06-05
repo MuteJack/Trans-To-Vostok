@@ -144,7 +144,7 @@ def main(argv: list[str]) -> int:
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
-    setup_logpath(args.logpath)
+    setup_logpath(args.logpath, label=Path(__file__).stem)
 
     out_path = DRY_RUN_INFO_JSON if args.dry_run else INFO_JSON
 

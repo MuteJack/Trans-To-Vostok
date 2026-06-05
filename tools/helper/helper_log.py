@@ -44,15 +44,23 @@ class Tee:
         return self.stream.fileno()
 
 
-def setup_logpath(logpath: str | None) -> None:
+def setup_logpath(logpath: str | None, label: str = "tool") -> None:
     """Wrap sys.stdout / sys.stderr in a Tee writing to logpath.
 
     Append mode — orchestrator opens the file with a header line, then
     every sub-tool appends as it runs. No-op if logpath is None.
+
+    If logpath points to an existing directory (or has no file extension
+    and does not yet exist), a timestamped file is auto-created inside it:
+        <dir>/<label>_YYYYMMDD_HHMMSS.log
     """
     if not logpath:
         return
     path = Path(logpath)
+    if path.is_dir() or (not path.suffix and not path.exists()):
+        from datetime import datetime
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        path = path / f"{label}_{timestamp}.log"
     path.parent.mkdir(parents=True, exist_ok=True)
     log_file = open(path, "a", encoding="utf-8")
     sys.stdout = Tee(sys.stdout, log_file)

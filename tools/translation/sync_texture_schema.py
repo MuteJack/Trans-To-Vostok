@@ -20,9 +20,14 @@ Locale-specific columns whose values come from the locale (preserved):
 All other columns are sourced from Template (single source of truth).
 
 Usage:
-    python tools/translation/sync_texture_schema.py              # all active locales (locale.json)
+    python tools/translation/sync_texture_schema.py              # all active locales
+    python tools/translation/sync_texture_schema.py all          # same (keyword)
     python tools/translation/sync_texture_schema.py Korean French  # specific locales
     python tools/translation/sync_texture_schema.py --prune     # also delete orphans
+
+Note: 'all' is a CLI keyword that expands to all enabled locales in locale.json.
+Translations/all/ is not treated as a locale — it mirrors Template content and is
+not processed by build tools.
 """
 import argparse
 import csv
@@ -65,8 +70,6 @@ def _row_key(row: dict) -> tuple[str, str]:
 
 
 def _load_active_locales() -> list[str]:
-    """Return list of `dir` names for locales with enabled=true,
-    excluding English (source language, no translation files needed)."""
     if not LOCALE_JSON.exists():
         raise SystemExit(f"locale.json not found at {LOCALE_JSON}")
     data = json.loads(LOCALE_JSON.read_text(encoding="utf-8"))
@@ -218,9 +221,12 @@ def main(argv: list[str]) -> int:
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
-    setup_logpath(args.logpath)
+    setup_logpath(args.logpath, label=Path(__file__).stem)
 
-    locales = args.locales if args.locales else _load_active_locales()
+    if not args.locales or (len(args.locales) == 1 and args.locales[0].lower() == "all"):
+        locales = _load_active_locales()
+    else:
+        locales = args.locales
 
     print(f"Syncing {CATEGORY} schema  Template -> {len(locales)} locale(s)")
     print(f"  Locales    : {', '.join(locales)}")

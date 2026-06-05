@@ -176,7 +176,7 @@ def main(argv: list[str]) -> int:
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
-    setup_logpath(args.logpath)
+    setup_logpath(args.logpath, label=Path(__file__).stem)
 
     if args.locale == TEMPLATE_LOCALE:
         _say(f"[ERROR] {TEMPLATE_LOCALE} is not a valid argument for this build step.")

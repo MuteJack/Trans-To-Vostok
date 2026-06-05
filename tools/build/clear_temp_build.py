@@ -44,7 +44,7 @@ def main(argv: list[str]) -> int:
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
-    setup_logpath(args.logpath)  # reject extras
+    setup_logpath(args.logpath, label=Path(__file__).stem)  # reject extras
 
     _say("=== clear_temp_build ===")
     if not TEMP_BUILD.exists():
