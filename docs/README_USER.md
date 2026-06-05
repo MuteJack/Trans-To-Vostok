@@ -9,10 +9,10 @@
 - **日本語** (Prototyped, texture pending)
 - **简体中文** (Prototyped, texture pending)
 - **繁體中文** (Prototyped, texture pending)
+- **Русский** (Prototyped, texture pending)
 
 > Most non-Korean languages started as DeepL machine-translated drafts.
-> Community refinement via [Crowdin](https://crowdin.com/project/trans-to-vostok)
-> is welcome.
+> Community refinement via [Crowdin](https://crowdin.com/project/trans-to-vostok) is welcome.
 
 **Compatible mods** (tested — but compatibility may not always be guaranteed)
 
@@ -135,10 +135,11 @@ It aims to deliver **complete, non-missing translation** across all translatable
 3. **French (Français)**: Added in v0.4.0 — initial pass via DeepL machine translation (text only; texture translation pending).
 4. **Português (Brasil)**: Added in v0.5.1 — Prototyped via Machine Translation (DeepL) (text only; texture pending).
 5. **Deutsch / Español (LatAm) / 日本語 / 简体中文 / 繁體中文**: Added in v0.5.3 — Prototyped via Machine Translation (DeepL) (text only; texture pending).
-6. **Русский / Italiano**: Pending due to a DeepL API quota exceeded. Scheduled to be added in June.
-7. And other languages will be added as quota / community demand allow.
+6. **Русский**: Prototyped via Machine Translation (DeepL) (text only; texture pending).
+7. **Italiano** and other languages will be added as quota / community demand allow.
 
 **Want to contribute or request a language?**
+
 - Translation contributions (any language listed above): join on [Crowdin](https://crowdin.com/project/trans-to-vostok) and start translating in the browser — no setup required.
 - New language request or general feedback: submit a GitHub issue (to be published).
 
@@ -161,6 +162,7 @@ Per-locale translator credit (text + texture) is in **`Trans To Vostok/<locale>/
 - **日本語** (프로토타입, 텍스처 미적용)
 - **简体中文** (프로토타입, 텍스처 미적용)
 - **繁體中文** (프로토타입, 텍스처 미적용)
+- **Русский / 러시아어** (프로토타입, 텍스처 미적용)
 
 > 한국어 외 대부분은 DeepL 기계번역으로 시작된 초안 상태입니다.
 > [Crowdin](https://crowdin.com/project/trans-to-vostok)에서
@@ -285,10 +287,11 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 3. **프랑스어 (Français)**: v0.4.0 추가 — DeepL 1차 기계번역 (텍스트만, 텍스처 미적용).
 4. **포르투갈어 (Português / Brasil)**: v0.5.1 추가 — DeepL 1차 기계번역 (텍스트만, 텍스처 미적용).
 5. **독일어 (Deutsch) / 스페인어 LatAm (Español) / 일본어 (日本語) / 중국어 간체 (简体中文) / 중국어 번체 (繁體中文)**: v0.5.3 추가 — DeepL 1차 기계번역 (텍스트만, 텍스처 미적용). Crowdin 커뮤니티 검수 환영.
-6. **러시아어 (Русский)**: DeepL 번역 부분 완료 (quota 한도로 일시 중단). 잔여 부분 완료 시 활성화 예정.
+6. **러시아어 (Русский)**: DeepL 1차 기계번역 (텍스트만, 텍스처 미적용).
 7. **이탈리아어 (Italiano)** 및 그 외 언어: quota / 커뮤니티 수요에 따라 추가 예정.
 
 **번역 기여 또는 새 언어 요청**:
+
 - 위 언어의 번역 기여: [Crowdin](https://crowdin.com/project/trans-to-vostok)에서 가입 후 브라우저에서 바로 작업 (별도 셋업 불필요).
 - 새 언어 요청 / 일반 피드백: GitHub 이슈로 요청해 주세요 (차후 공개 예정).
 
