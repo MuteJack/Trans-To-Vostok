@@ -1,0 +1,5 @@
+# xlsx files are local authoring artifacts (gitignored).
+# Canonical content lives in <locale>/<category>/*.tsv (committed).
+*.xlsx
+~$*.xlsx
+.log/

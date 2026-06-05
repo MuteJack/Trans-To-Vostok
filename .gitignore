@@ -1,0 +1,8 @@
+.*
+!.gitignore
+!.gitattributes
+~$*
+__pycache__/*
+*.pyc
+_NOTE/*
+secrets.json
