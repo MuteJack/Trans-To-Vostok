@@ -50,6 +50,9 @@ REPO = SCRIPT_DIR.parent
 TRANSLATIONS_ROOT = REPO / "Translations"
 TEMPLATE_LOCALE = "Template"
 
+sys.path.insert(0, str(SCRIPT_DIR))
+from helper.helper_log import setup_logpath, make_log_path  # noqa: E402
+
 # (label, script_path, locale-aware?, extra_args)
 PER_LOCALE_STEPS: list[tuple[str, Path, list[str]]] = [
     ("build_runtime_tsv",            BUILD_DIR / "build_runtime_tsv.py",            ["--dry-run", "--ignore"]),
@@ -74,12 +77,15 @@ def _say(msg: str = "") -> None:
     print(msg, flush=True)
 
 
-def _run(label: str, script: Path, args: list[str]) -> int:
+def _run(label: str, script: Path, args: list[str], log_path: Path | None = None) -> int:
     _say(f"--- {label} {' '.join(args)} ---")
     if not script.exists():
         _say(f"[ERROR] step script missing: {script.relative_to(REPO)}")
         return 1
-    rc = subprocess.run([sys.executable, str(script)] + args).returncode
+    cmd = [sys.executable, str(script)] + args
+    if log_path is not None:
+        cmd += ["--logpath", str(log_path)]
+    rc = subprocess.run(cmd).returncode
     _say()
     return rc
 
@@ -90,7 +96,22 @@ def main(argv: list[str]) -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("locale", help="Locale name or 'all'")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Skip the promote step (runtime_tsv stays in staging only). "
+                             "Default promote is disabled.")
+    parser.add_argument("--promote", action="store_true", default=None,
+                        help="Force promote runtime_tsv to deploy. "
+                             "Default: True unless --dry-run.")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file. "
+                             "If omitted, a fresh log is created at "
+                             ".log/build_mod_package_<timestamp>.log")
     args = parser.parse_args(argv[1:])
+
+    promote = args.promote if args.promote is not None else (not args.dry_run)
+
+    log_path = Path(args.logpath) if args.logpath else make_log_path(REPO, "build_mod_package")
+    setup_logpath(str(log_path))
 
     if args.locale == TEMPLATE_LOCALE:
         _say(f"[ERROR] {TEMPLATE_LOCALE} is not a valid argument for this orchestrator.")
@@ -102,46 +123,53 @@ def main(argv: list[str]) -> int:
         return 1
 
     _say(f"=== Phase 3: build_mod_package ({args.locale}) ===")
+    _say(f"  log:     {log_path.relative_to(REPO)}")
+    _say(f"  promote: {promote}{'  (--dry-run)' if args.dry_run else ''}")
     _say()
 
     # 1. clear staging
-    rc = _run(*CLEAR_STEP)
+    label, script, extra = CLEAR_STEP
+    rc = _run(label, script, extra, log_path=log_path)
     if rc != 0:
         _say("[ERROR] clear_temp_build failed; aborting.")
         return 1
 
     # 2. per-locale build (sub-tools handle 'all' internally)
     for label, script, extra in PER_LOCALE_STEPS:
-        rc = _run(label, script, [args.locale] + extra)
+        rc = _run(label, script, [args.locale] + extra, log_path=log_path)
         if rc != 0:
             _say(f"[ERROR] {label} failed; aborting.")
             return 1
 
     # 3. global metadata
     for label, script, extra in GLOBAL_STEPS:
-        rc = _run(label, script, extra)
+        rc = _run(label, script, extra, log_path=log_path)
         if rc != 0:
             _say(f"[ERROR] {label} failed; aborting.")
             return 1
 
     # 4. pack ZIP from staging
     label, script, extra = PACK_STEP
-    rc = _run(label, script, [args.locale] + extra)
+    rc = _run(label, script, [args.locale] + extra, log_path=log_path)
     if rc != 0:
         _say(f"[ERROR] {label} failed; aborting.")
         return 1
 
-    # 5. promote runtime_tsv -> deploy
-    label, script, extra = PROMOTE_STEP
-    rc = _run(label, script, [args.locale] + extra)
-    if rc != 0:
-        _say(f"[ERROR] {label} failed; aborting.")
-        return 1
+    # 5. promote runtime_tsv -> deploy (skipped when promote=False)
+    if promote:
+        label, script, extra = PROMOTE_STEP
+        rc = _run(label, script, [args.locale] + extra, log_path=log_path)
+        if rc != 0:
+            _say(f"[ERROR] {label} failed; aborting.")
+            return 1
 
     _say("=" * 60)
     _say(f"Build complete: {args.locale}")
     _say(f"  ZIP:           .tmp/temp_build/Trans To Vostok.zip (staging)")
-    _say(f"  runtime_tsv:   promoted to Trans To Vostok/<locale>/runtime_tsv/ (deploy)")
+    if promote:
+        _say(f"  runtime_tsv:   promoted to Trans To Vostok/<locale>/runtime_tsv/ (deploy)")
+    else:
+        _say(f"  runtime_tsv:   staging only (promote skipped — use --promote to deploy)")
     return 0
 
 

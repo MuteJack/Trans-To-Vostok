@@ -55,6 +55,7 @@ TRANSLATIONS_ROOT = REPO / "Translations"
 
 sys.path.insert(0, str(TOOLS_DIR))
 from helper.helper_locale_config import load_locales  # noqa: E402
+from helper.helper_log import setup_logpath  # noqa: E402
 
 CATEGORY = "Translation"
 XLSX_NAME = f"{CATEGORY}.xlsx"
@@ -195,7 +196,11 @@ def main(argv: list[str]) -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("locale", help="Locale name, 'Template', or 'all'")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if args.locale == "all":
         locales = _discover_enabled_locales()

@@ -63,6 +63,7 @@ from helper.helper_translation_common import (
     load_metadata,
     _effective_method,
 )
+from helper.helper_log import setup_logpath  # noqa: E402
 
 
 # TSV with context (static / scoped literal / scoped pattern)
@@ -366,7 +367,11 @@ def main(argv: list[str]) -> int:
                         help="TSV match failure -> WARNING (continue) instead of ERROR")
     parser.add_argument("--ignore", action="store_true",
                         help="Skip validate_xlsx pre-check")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     return build(args.locale, dry_run=args.dry_run, soft=args.soft,
                  ignore_validation=args.ignore)

@@ -69,6 +69,7 @@ from helper.helper_translation_common import (
     load_tres_text_set,
     load_gd_text_set,
 )
+from helper.helper_log import setup_logpath  # noqa: E402
 
 
 class Issue(NamedTuple):
@@ -253,7 +254,11 @@ def main(argv: list[str]) -> int:
         "locale",
         help="Locale name (e.g. Korean), 'Template', or 'all'",
     )
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if args.locale == "all":
         locales = _discover_locales()

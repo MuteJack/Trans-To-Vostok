@@ -38,6 +38,7 @@ TRANSLATION_DIR = SCRIPT_DIR / "translation"
 
 sys.path.insert(0, str(SCRIPT_DIR))
 from helper.helper_locale_config import load_locales  # noqa: E402
+from helper.helper_log import setup_logpath, make_log_path  # noqa: E402
 
 SUB_TOOLS = [
     TRANSLATION_DIR / "rebuild_translation_xlsx.py",
@@ -78,7 +79,16 @@ def main(argv: list[str]) -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("locale", help="Locale name, 'Template', or 'all'")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file. "
+                             "If omitted, a fresh log is created at "
+                             ".log/rebuild_xlsx_<timestamp>.log")
     args = parser.parse_args(argv[1:])
+
+    log_path = Path(args.logpath) if args.logpath else make_log_path(REPO, "rebuild_xlsx")
+    setup_logpath(str(log_path))
+    _say(f"  log: {log_path.relative_to(REPO)}")
+    _say()
 
     for tool in SUB_TOOLS:
         if not tool.exists():

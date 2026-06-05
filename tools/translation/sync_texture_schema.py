@@ -30,6 +30,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from helper.helper_log import setup_logpath  # noqa: E402
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -211,7 +214,11 @@ def main(argv: list[str]) -> int:
         "--prune", action="store_true",
         help="Remove rows/sheets present in locale but not in Template",
     )
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     locales = args.locales if args.locales else _load_active_locales()
 

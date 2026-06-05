@@ -33,6 +33,9 @@ from collections import defaultdict
 from pathlib import Path
 from typing import NamedTuple
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from helper.helper_log import setup_logpath  # noqa: E402
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -174,7 +177,11 @@ def main(argv: list[str]) -> int:
         "locale",
         help="Locale name (e.g. Korean) or 'all' — Template is skipped (no translations)",
     )
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if args.locale == "all":
         locales = _discover_locales()

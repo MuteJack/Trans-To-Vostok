@@ -29,6 +29,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from helper.helper_locale_config import dir_to_deepl_id, default_source_locale
+from helper.helper_log import setup_logpath  # noqa: E402
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
@@ -76,7 +77,11 @@ def main() -> int:
         "--dry-run", action="store_true",
         help="Run export + show plan; skip DeepL API call and import"
     )
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args()
+    setup_logpath(args.logpath)
 
     target_locale = args.target_locale
 

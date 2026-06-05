@@ -56,6 +56,9 @@ REPO = SCRIPT_DIR.parent
 LOCALE_JSON = REPO / "src" / "locale.json"
 TEMPLATE_LOCALE = "Template"
 
+sys.path.insert(0, str(SCRIPT_DIR))
+from helper.helper_log import setup_logpath, make_log_path  # noqa: E402
+
 # (label, script_path, extra_args, workflow_severity)
 CHECKS: list[tuple[str, Path, list[str], str]] = [
     # 2.1 source checks
@@ -97,7 +100,7 @@ def _discover_enabled_locales() -> list[str]:
     return out
 
 
-def _run_locale(locale: str) -> tuple[str, list[tuple[str, str, int]]]:
+def _run_locale(locale: str, log_path: Path) -> tuple[str, list[tuple[str, str, int]]]:
     """Run all checks for one locale. Return (triggered_severity, results)."""
     _say(f"=== Locale: {locale} ({len(CHECKS)} steps) ===")
     _say()
@@ -112,7 +115,7 @@ def _run_locale(locale: str) -> tuple[str, list[tuple[str, str, int]]]:
             continue
 
         _say(f"--- [{idx}/{len(CHECKS)}] {label} ({severity}) ---")
-        cmd = [sys.executable, str(script), locale] + extra_args
+        cmd = [sys.executable, str(script), locale, "--logpath", str(log_path)] + extra_args
         completed = subprocess.run(cmd)
         _say()
         results.append((label, severity, completed.returncode))
@@ -141,7 +144,14 @@ def main(argv: list[str]) -> int:
         "locale",
         help="Locale name (e.g. Korean) or 'all'",
     )
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file. "
+                             "If omitted, a fresh log is created at "
+                             ".log/validate_translation_<timestamp>.log")
     args = parser.parse_args(argv[1:])
+
+    log_path = Path(args.logpath) if args.logpath else make_log_path(REPO, "validate_translation")
+    setup_logpath(str(log_path))
 
     if args.locale == TEMPLATE_LOCALE:
         _say("[ERROR] Template is not a valid argument for this orchestrator.")
@@ -163,12 +173,13 @@ def main(argv: list[str]) -> int:
 
     _say(f"=== Phase 2: Locale Validation ({len(locales)} locale(s)) ===")
     _say(f"  Locales: {', '.join(locales)}")
+    _say(f"  log: {log_path.relative_to(REPO)}")
     _say()
 
     per_locale_results: list[tuple[str, str, list[tuple[str, str, int]]]] = []
     overall = "OK"
     for locale in locales:
-        triggered, results = _run_locale(locale)
+        triggered, results = _run_locale(locale, log_path)
         _print_locale_summary(locale, results, triggered)
         _say()
         per_locale_results.append((locale, triggered, results))

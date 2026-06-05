@@ -39,6 +39,7 @@ TRANSLATION_DIR = SCRIPT_DIR / "translation"
 
 sys.path.insert(0, str(SCRIPT_DIR))
 from helper.helper_locale_config import load_locales  # noqa: E402
+from helper.helper_log import setup_logpath, make_log_path  # noqa: E402
 
 SUB_TOOLS = [
     TRANSLATION_DIR / "build_translation_tsv.py",
@@ -61,12 +62,15 @@ def _discover_enabled_locales() -> list[str]:
     return out
 
 
-def _run_one(locale: str) -> list[str]:
+def _run_one(locale: str, log_path: Path | None = None) -> list[str]:
     """Run every sub-tool for one locale. Returns list of failed sub-tool names."""
     failed: list[str] = []
     for tool in SUB_TOOLS:
         _say(f"=== {tool.name} {locale} ===")
-        rc = subprocess.run([sys.executable, str(tool), locale]).returncode
+        cmd = [sys.executable, str(tool), locale]
+        if log_path is not None:
+            cmd += ["--logpath", str(log_path)]
+        rc = subprocess.run(cmd).returncode
         if rc != 0:
             failed.append(tool.name)
         _say()
@@ -79,7 +83,16 @@ def main(argv: list[str]) -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("locale", help="Locale name, 'Template', or 'all'")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file. "
+                             "If omitted, a fresh log is created at "
+                             ".log/build_canonical_tsv_<timestamp>.log")
     args = parser.parse_args(argv[1:])
+
+    log_path = Path(args.logpath) if args.logpath else make_log_path(REPO, "build_canonical_tsv")
+    setup_logpath(str(log_path))
+    _say(f"  log: {log_path.relative_to(REPO)}")
+    _say()
 
     for tool in SUB_TOOLS:
         if not tool.exists():
@@ -103,7 +116,7 @@ def main(argv: list[str]) -> int:
 
     any_failed: list[tuple[str, list[str]]] = []
     for locale in locales:
-        failed = _run_one(locale)
+        failed = _run_one(locale, log_path=log_path)
         if failed:
             any_failed.append((locale, failed))
 

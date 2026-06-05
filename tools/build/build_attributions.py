@@ -46,6 +46,7 @@ REPO = TOOLS_DIR.parent
 
 sys.path.insert(0, str(TOOLS_DIR))
 from helper.helper_locale_config import load_locales  # noqa: E402
+from helper.helper_log import setup_logpath  # noqa: E402
 
 MOD_ROOT = REPO / "Trans To Vostok"
 DRY_RUN_ROOT = REPO / ".tmp" / "temp_build" / "Trans To Vostok"
@@ -200,7 +201,11 @@ def main(argv: list[str]) -> int:
     parser.add_argument("locale", help="Locale name or 'all'")
     parser.add_argument("--dry-run", action="store_true",
                         help="Output to .tmp/temp_build/Trans To Vostok/<locale>/ instead of deploy path")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if args.locale == TEMPLATE_LOCALE:
         _say(f"[ERROR] {TEMPLATE_LOCALE} is not a valid argument for this build step.")

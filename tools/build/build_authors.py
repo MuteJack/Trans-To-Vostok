@@ -36,6 +36,9 @@ import json
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from helper.helper_log import setup_logpath  # noqa: E402
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -198,7 +201,11 @@ def main(argv: list[str]) -> int:
     )
     parser.add_argument("--dry-run", action="store_true",
                         help="Output to .tmp/temp_build/AUTHORS.md instead of deploy path")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if not MOD_ROOT.exists():
         _say(f"[ERROR] Mod root not found: {MOD_ROOT}")

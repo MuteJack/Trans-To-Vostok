@@ -41,6 +41,9 @@ import csv
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[0]))
+from helper.helper_log import setup_logpath  # noqa: E402
+
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -240,7 +243,11 @@ def main(argv: list[str]) -> int:
                         help="Read Texture.xlsx directly (default: canonical TSV)")
     parser.add_argument("--report", action="store_true",
                         help="Also write detailed TSV report under .tmp/")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if not PARSED_TEXTURES_TSV.exists():
         print(f"[ERROR] PCK catalog not found: {PARSED_TEXTURES_TSV.relative_to(REPO)}")

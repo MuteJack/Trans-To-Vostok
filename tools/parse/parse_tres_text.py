@@ -43,6 +43,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from helper.helper_log import setup_logpath  # noqa: E402
+
 # Windows console Korean output support
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
@@ -434,7 +437,11 @@ def main() -> int:
     parser.add_argument("--config", help=f"Path to parse_list_tres.json (default: tools/{DEFAULT_CONFIG_NAME})")
     parser.add_argument("--input", help="Single job mode: target directory (recursive)")
     parser.add_argument("--fields", help="Single job mode: fields to extract (comma-separated)")
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args()
+    setup_logpath(args.logpath)
 
     # path basis
     script_dir = Path(__file__).resolve().parent

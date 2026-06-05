@@ -49,6 +49,9 @@ TRANSLATIONS = REPO / "Translations"
 LOCALE_JSON = REPO / "src" / "locale.json"
 TEMPLATE_LOCALE = "Template"
 
+sys.path.insert(0, str(REPO / "tools"))
+from helper.helper_log import setup_logpath  # noqa: E402
+
 REQUIRED_COLUMNS: dict[str, list[str]] = {
     "Translation": [
         "identifier",
@@ -135,7 +138,10 @@ def main(argv: list[str]) -> int:
         "locale",
         help="Locale name (e.g. Korean, French), 'Template', or 'all'",
     )
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file (used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if args.locale == "all":
         locales = _discover_locales()

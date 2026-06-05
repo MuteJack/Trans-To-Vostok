@@ -33,6 +33,10 @@ Usage:
 """
 import argparse
 import csv
+
+import sys as _sys_helper_log  # noqa: E402
+_sys_helper_log.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from helper.helper_log import setup_logpath  # noqa: E402
 import json
 import sys
 from collections import defaultdict
@@ -199,7 +203,11 @@ def main(argv: list[str]) -> int:
         "--samples", type=int, default=SAMPLE_LIMIT,
         help=f"Max conflict groups to print per locale (default {SAMPLE_LIMIT})",
     )
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file "
+                             "(used by orchestrator)")
     args = parser.parse_args(argv[1:])
+    setup_logpath(args.logpath)
 
     if args.locale == TEMPLATE_LOCALE:
         print("Template has no translations — nothing to check.")

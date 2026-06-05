@@ -35,14 +35,19 @@ Exit code:
 Usage:
   python tools/validate_Template.py
 """
+import argparse
 import subprocess
 import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).resolve().parent
+REPO = SCRIPT_DIR.parent
 VALIDATION_DIR = SCRIPT_DIR / "validation"
 BUILD_DIR = SCRIPT_DIR / "build"
 TARGET = "Template"
+
+sys.path.insert(0, str(SCRIPT_DIR))
+from helper.helper_log import setup_logpath, make_log_path  # noqa: E402
 
 # (label, script_path, extra_args, workflow_severity)
 CHECKS: list[tuple[str, Path, list[str], str]] = [
@@ -67,7 +72,19 @@ def _say(msg: str = "") -> None:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--logpath", default=None,
+                        help="Append stdout/stderr to this log file. "
+                             "If omitted, a fresh log is created at "
+                             ".log/validate_Template_<timestamp>.log")
+    args = parser.parse_args()
+
+    log_path = Path(args.logpath) if args.logpath else make_log_path(REPO, "validate_Template")
+    setup_logpath(str(log_path))
+
     _say(f"=== Phase 0: {TARGET} Validation ({len(CHECKS)} steps) ===")
+    _say(f"  log: {log_path.relative_to(REPO)}")
     _say()
 
     results: list[tuple[str, str, int]] = []  # (label, severity, exit_code)
@@ -77,7 +94,7 @@ def main() -> int:
             return 1
 
         _say(f"--- [{idx}/{len(CHECKS)}] {label} ({severity}) ---")
-        cmd = [sys.executable, str(script), TARGET] + extra_args
+        cmd = [sys.executable, str(script), TARGET, "--logpath", str(log_path)] + extra_args
         completed = subprocess.run(cmd)
         _say()
         results.append((label, severity, completed.returncode))
