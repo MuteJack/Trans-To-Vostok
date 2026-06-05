@@ -17,7 +17,7 @@ Level {str}	Level {str}
 Remove ({display})	Remove ({display})
 Unlock with {name}	Unlock with {name}
 Open with {name}	Open with {name}
-{containerName} [Locked]	{containerName} [Bloqueado]
+{containerName} [Locked]	{containerName} [Locked]
 {containerName} [Open]	{containerName} [Open]
 Fuel Tank [{percent}%]	Fuel Tank [{percent}%]
-Items: {str}	Itens: {str}
+Items: {str}	Items: {str}

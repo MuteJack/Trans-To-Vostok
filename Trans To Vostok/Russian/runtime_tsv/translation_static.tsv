@@ -1,0 +1,608 @@
+location	parent	name	type	text	translation
+Scenes/Menu	.	Compatibility	Label	Compatibility	Совместимость
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Масштабирование интерфейса [Скоро будет доступно]
+UI/Interface	Equipment/Hints	Knife	Label	Knife	Нож
+UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Граната
+UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Граната
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	Тепло
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	Расположенный рядом элемент крафта, необходимый для некоторых рецептов приготовления пищи.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	Требование близости
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	Верстак
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	Расположенный рядом элемент крафта, необходимый для некоторых строительных рецептов.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	Требование близости
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	Испытательный стенд
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	Расположенный рядом элемент крафта, необходимый для некоторых электронных рецептов.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	Требование близости
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	Укрытие
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	Расположенный рядом элемент крафта, необходимый для некоторых рецептов изготовления мебели.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	Требование близости
+UI/Interface	Trader/Panel	Info		Trader	Торговец
+UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	Грузоподъёмность
+UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	Значение грузоподъёмности (кг) всех предметов снаряжения.
+UI/Interface	Inventory/Header/Capacity	Info		Inventory Stat	Характеристика инвентаря
+UI/Interface	Inventory/Header/Weight	Info		Inventory Weight	Вес инвентаря
+UI/Interface	Inventory/Header/Weight	Info		A weight value (kg) of all inventory items.	Значение веса (кг) всех предметов в инвентаре.
+UI/Interface	Inventory/Header/Weight	Info		Inventory Stat	Характеристика инвентаря
+UI/Interface	Inventory/Header/Value	Info		Inventory Value	Стоимость инвентаря
+UI/Interface	Inventory/Header/Value	Info		A price value (€) of all inventory items.	Ценовое значение (€) всех предметов в инвентаре.
+UI/Interface	Inventory/Header/Value	Info		Inventory Stat	Характеристика инвентаря
+UI/Interface	Container/Header/Weight	Info		Container Weight	Вес контейнера
+UI/Interface	Container/Header/Weight	Info		A weight value (kg) of all container items.	Значение веса (кг) всех предметов в контейнере.
+UI/Interface	Container/Header/Weight	Info		Container Stat	Характеристика контейнера
+UI/Interface	Container/Header/Value	Info		Container Value	Стоимость контейнера
+UI/Interface	Container/Header/Value	Info		A price value (€) of all container items.	Ценовое значение (€) всех предметов в контейнере.
+UI/Interface	Container/Header/Value	Info		Container Stat	Характеристика контейнера
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Carry Capacity	Грузоподъёмность
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		"A weight capacity value (kg) of how much inventory weight you can carry.
+
+Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
+
+Carry Capacity by default is 10kg"	"Максимальный вес (кг) инвентаря, который вы можете нести.
+
+Грузоподъёмность увеличивается при надевании предметов с положительной характеристикой грузоподъёмности, таких как рюкзаки, разгрузки или одежда.
+
+Грузоподъёмность по умолчанию составляет 10 кг"
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	Характеристика снаряжения
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	Стоимость снаряжения
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	Ценовое значение (€) всех предметов снаряжения.
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	Характеристика снаряжения
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	Утепление
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
+
+Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
+
+Insulation increases when you equip clothing items with a positive insulation stat.
+
+Insulation examples:
+[100] = B. Temp decrease fully stopped
+[50] = B. Temp decrease slowed by 50%
+[0] = B. Temp decreases at default rate"	"Тепловая защита одежды от холода.
+
+Утепление связано с показателем Темп. тела: утепление снижает скорость падения Темп. тела зимой.
+
+Утепление увеличивается при надевании предметов одежды с положительной характеристикой утепления.
+
+Примеры утепления:
+[100] = падение Темп. тела полностью остановлено
+[50] = падение Темп. тела замедлено на 50%
+[0] = Темп. тела падает с обычной скоростью"
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Equipment Stat	Характеристика снаряжения
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Dexterity	Ловкость
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		"An inertia-based value of how quickly you can move and do certain actions.
+
+Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
+
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	"Значение инерции, определяющее скорость передвижения и выполнения определённых действий.
+
+Ловкость влияет на скорость передвижения и обращение с оружием: прицеливание и перезарядку.
+
+Ловкость снижается при надевании тяжёлых или неэргономичных предметов с отрицательной характеристикой ловкости."
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	Характеристика снаряжения
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Menace	Угроза
+UI/Interface	Equipment/Stats/Elements/Menace	Info		"An intimidation value of how threatening AI sees your character and equipment.
+
+When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
+
+Menace increases when you equip items such as special clothing with a positive Menace stat.
+
+Menace only affects low-tier AI (Bandits)."	"Значение запугивания, определяющее, насколько угрожающим ИИ воспринимает вашего персонажа и снаряжение.
+
+При высоком значении Угрозы ИИ реже применяет агрессивное или атакующее поведение против вас.
+
+Угроза увеличивается при надевании особых предметов одежды с положительной характеристикой угрозы.
+
+Угроза влияет только на ИИ низшего уровня (Бандиты)."
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	Характеристика снаряжения
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		CBRN	РХБЯ
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		"A protection value against chemical, biological, radiological and nuclear threats.
+
+CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
+
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	"Значение защиты от химических, биологических, радиологических и ядерных угроз.
+
+РХБЯ связана с показателем Здоровья: РХБЯ снижает скорость падения Здоровья при нахождении в опасных зонах или контакте с опасными материалами.
+
+РХБЯ увеличивается при надевании особой одежды или защитных масок с положительной характеристикой РХБЯ."
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		Equipment Stat	Характеристика снаряжения
+UI/Interface	Character/Vitals/Elements/Health	Info		Health	Здоровье
+UI/Interface	Character/Vitals/Elements/Health	Info		"Your main vital for staying alive.
+
+Health decreases with damages and active medical conditions.
+
+Health increases with certain medical items such as Bandages and Medkits.
+
+Health [0] -> Character dies"	"Главный показатель выживания.
+
+Здоровье снижается при получении урона и активных медицинских состояниях.
+
+Здоровье повышается с помощью определённых медицинских предметов, таких как бинты и аптечки.
+
+Здоровье [0] -> Персонаж умирает"
+UI/Interface	Character/Vitals/Elements/Health	Info		Vital	Показатель
+UI/Interface	Character/Vitals/Elements/Energy	Info		Energy	Энергия
+UI/Interface	Character/Vitals/Elements/Energy	Info		"Your hunger and energy level.
+
+Energy decreases over time and using map transitions with Energy Cost.
+
+Energy increases with certain consumables such as food.
+
+Energy [0] -> Starvation (Condition)"	"Ваш уровень голода и энергии.
+
+Энергия снижается со временем и при переходах между локациями с затратами энергии.
+
+Энергия повышается при употреблении определённых расходников, например еды.
+
+Энергия [0] -> Голодание (Состояние)"
+UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	Показатель
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	Гидратация
+UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
+
+Hydration decreases over time and using map transitions with Hydration Cost. 
+
+Certain dry or salty consumables may also decrease Hydration.
+
+Hydration increases with certain consumables such as drinks.
+
+Hydration [0] -> Dehydration (Condition)"	"Ваш уровень жажды и гидратации.
+
+Гидратация снижается со временем и при переходах между локациями с затратами гидратации.
+
+Некоторые сухие или солёные расходники также могут снижать Гидратацию.
+
+Гидратация повышается при употреблении определённых расходников, например напитков.
+
+Гидратация [0] -> Обезвоживание (Состояние)"
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	Показатель
+UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	Психика
+UI/Interface	Character/Vitals/Elements/Mental	Info		"Your happiness and sanity level.
+
+Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
+
+Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
+
+Mental [0] -> Insanity (Condition)"	"Ваш уровень счастья и рассудка.
+
+Психика снижается со временем и при употреблении неприятных расходников. При наличии активного медицинского состояния скорость снижения увеличивается в 2 раза.
+
+Психика повышается при использовании комфортных предметов: снеков, горячих блюд и пороков вроде алкоголя или никотина.
+
+Психика [0] -> Безумие (Состояние)"
+UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	Показатель
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	Темп. тела
+UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
+
+Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
+
+Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
+
+Body Temp [0] -> Frostbite (Condition)"	"Ваш уровень тепла и температуры тела.
+
+Темп. тела снижается со временем зимой. Скорость снижения можно уменьшить, находясь в помещении или надев одежду с положительной характеристикой утепления.
+
+Темп. тела повышается в Укрытии или рядом с источниками тепла, такими как костры. Некоторые предметы обогрева — например, грелки или космические одеяла — также повышают Темп. тела.
+
+Темп. тела [0] -> Обморожение (Состояние)"
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	Показатель
+UI/Interface	Character/Vitals/Elements/Cat	Info		Cat	Кот
+UI/Interface	Character/Vitals/Elements/Cat	Info		"Grandma's cat health level.
+
+Cat health activates if you decide to rescue the Cat and bring her to your shelter.
+
+Cat health decreases over time.
+
+Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
+
+Cat [0] -> Cat dies"	"Уровень здоровья кота бабушки.
+
+Здоровье кота активируется, если вы решите спасти кота и привести его в своё укрытие.
+
+Здоровье кота снижается со временем.
+
+Здоровье кота повышается при кормлении кота расходниками, такими как кошачий корм или консервированный тунец.
+
+Кот [0] -> Кот умирает"
+UI/Interface	Character/Vitals/Elements/Cat	Info		Vital	Показатель
+UI/Interface	Character/Medical/Elements/Overweight	Info		"A condition where you are carrying too much weight and movement becomes unsustainable.
+
+Causes:
+- Inventory Weight > Carry Capacity
+
+Symptoms
+- All stamina consumption [+50%]
+- All stamina regeneration [Blocked]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures:
+- Inventory Weight < Carry Capacity"	"Состояние, при котором вы несёте слишком много веса и передвижение становится невозможным.
+
+Причины:
+- Вес инвентаря > Грузоподъёмность
+
+Симптомы
+- Расход выносливости [+50%]
+- Восстановление выносливости [Заблокировано]
+- Скорость передвижения [-50%]
+- Высота прыжка [-50%]
+
+Лечение:
+- Вес инвентаря < Грузоподъёмность"
+UI/Interface	Character/Medical/Elements/Overweight	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Starvation	Info		Starvation	Голодание
+UI/Interface	Character/Medical/Elements/Starvation	Info		"A condition where you have a lack of calories and essential nutrients.
+
+Causes:
+- Energy [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- Stamina consumption [+50%]
+- Stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"Состояние, при котором организму не хватает калорий и необходимых питательных веществ.
+
+Причины:
+- Энергия [0]
+
+Симптомы:
+- Здоровье [-1 ед. / 10 сек]
+- Расход выносливости [+50%]
+- Восстановление выносливости [-50%]
+
+Лечение:
+- Расходники"
+UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	Обезвоживание
+UI/Interface	Character/Medical/Elements/Dehydration	Info		"A condition where your body doesn't have enough fluids to function normally.
+
+Causes:
+- Hydration [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+- All stamina consumption [+50%]
+- All stamina regeneration [-50%]
+
+Cures:
+- Consumables"	"Состояние, при котором организму не хватает жидкости для нормального функционирования.
+
+Причины:
+- Гидратация [0]
+
+Симптомы:
+- Здоровье [-1 ед. / 10 сек]
+- Расход выносливости [+50%]
+- Восстановление выносливости [-50%]
+
+Лечение:
+- Расходники"
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Bleeding	Кровотечение
+UI/Interface	Character/Medical/Elements/Bleeding	Info		"A condion where you have a minor bleeding from small cuts or scrapes.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+- Razor wire
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures: 
+- Bandage
+- Tourniquet
+- Medkit
+- IFAK / AFAK"	"Состояние, при котором у вас небольшое кровотечение от порезов или ссадин.
+
+Причины: 
+- Урон от оружия
+- Урон от взрыва
+- Урон от падения
+- Колючая проволока
+
+Симптомы:
+- Здоровье [-1 ед. / 5 сек]
+
+Лечение: 
+- Бинт
+- Жгут
+- Аптечка
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Fracture	Info		Fracture	Перелом
+UI/Interface	Character/Medical/Elements/Fracture	Info		"A condition where you have a partial or complete break in the bone.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+- Fall damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+- Movement speed [-50%]
+- Jump height [-50%]
+
+Cures: 
+- Splint
+- Medkit
+- IFAK / AFAK"	"Состояние, при котором у вас частичный или полный перелом кости.
+
+Причины: 
+- Урон от оружия
+- Урон от взрыва
+- Урон от падения
+
+Симптомы:
+- Здоровье [-1 ед. / 5 сек]
+- Скорость передвижения [-50%]
+- Высота прыжка [-50%]
+
+Лечение: 
+- Шина
+- Аптечка
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Burn	Info		Burn	Ожог
+UI/Interface	Character/Medical/Elements/Burn	Info		"A condition where you have a tissue damage from intense heat or high-voltage electric current.
+
+Causes:
+- Fire damage
+- Electrical damage
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Balm
+- Lotion
+- Medkit
+- IFAK / AFAK"	"Состояние, при котором ткани повреждены интенсивным жаром или высоковольтным электрическим током.
+
+Причины:
+- Урон от огня
+- Урон от электричества
+
+Симптомы:
+- Здоровье [-1 ед. / 5 сек]
+
+Лечение:
+- Бальзам
+- Лосьон
+- Аптечка
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Burn	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Frostbite	Обморожение
+UI/Interface	Character/Medical/Elements/Frostbite	Info		"A condition where you have hypothermia or body part freezes from cold exposure.
+
+Causes: 
+- Body temperature [0]
+
+Symptoms:
+- Health [-1 unit / 5 sec]
+
+Cures:
+- Fire sources
+- Sleeping Bag
+- Thermal Blanket"	"Состояние, при котором у вас переохлаждение или части тела замерзают от воздействия холода.
+
+Причины: 
+- Темп. тела [0]
+
+Симптомы:
+- Здоровье [-1 ед. / 5 сек]
+
+Лечение:
+- Источники огня
+- Спальный мешок
+- Термоодеяло"
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Insanity	Info		Insanity	Безумие
+UI/Interface	Character/Medical/Elements/Insanity	Info		"A condition where your sanity breaks and you start having dark thoughts.
+
+Causes: 
+- Mental [0]
+
+Symptoms:
+- Health [-1 unit / 10 sec]
+
+Cures:
+- Consumables
+- Sleeping
+- Fire sources
+- Instruments"	"Состояние, при котором ваш рассудок ломается и вас начинают одолевать мрачные мысли.
+
+Причины: 
+- Психика [0]
+
+Симптомы:
+- Здоровье [-1 ед. / 10 сек]
+
+Лечение:
+- Расходники
+- Сон
+- Источники огня
+- Инструменты"
+UI/Interface	Character/Medical/Elements/Insanity	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Poisoning	Отравление
+UI/Interface	Character/Medical/Elements/Poisoning	Info		"A condition where toxic substance entered your digestion or lungs.
+
+Causes:
+- Chemical damage
+- Toxic consumables
+
+Symptoms:
+- Health [-1 unit / 2 sec]
+
+Cures:
+- Medkit
+- AFAK"	"Состояние, при котором токсичное вещество попало в пищеварительный тракт или лёгкие.
+
+Причины:
+- Химический урон
+- Токсичные расходники
+
+Симптомы:
+- Здоровье [-1 ед. / 2 сек]
+
+Лечение:
+- Аптечка
+- AFAK"
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Rupture	Info		Rupture	Разрыв
+UI/Interface	Character/Medical/Elements/Rupture	Info		"A critical condition where you have a catastrofal bleeding or major internal wound.
+
+Causes: 
+- Weapon damage
+- Explosion damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"Критическое состояние с катастрофическим кровотечением или тяжёлым внутренним ранением.
+
+Причины: 
+- Урон от оружия
+- Урон от взрыва
+
+Симптомы:
+- Здоровье [-1 ед. / 1 сек]
+
+Лечение:
+- Аптечка
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Rupture	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Medical/Elements/Headshot	Info		Headshot	Выстрел в голову
+UI/Interface	Character/Medical/Elements/Headshot	Info		"A critical condition where you have a major head related wound.
+
+Causes: 
+- Weapon damage
+
+Symptoms:
+- Health [-1 unit / 1 sec]
+
+Cures:
+- Medkit
+- IFAK / AFAK"	"Критическое состояние с тяжёлым ранением головы.
+
+Причины: 
+- Урон от оружия
+
+Симптомы:
+- Здоровье [-1 ед. / 1 сек]
+
+Лечение:
+- Аптечка
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Headshot	Info		Medical Condition	Медицинское состояние
+UI/Interface	Character/Stats/Elements/Day	Info		Day	День
+UI/Interface	Character/Stats/Elements/Day	Info		"Number of Days survived.
+
+New day begins at 00:00 midnight and certain amount of days will unlock new game events.
+
+Upcoming events can be displayed by using the Events tool."	"Количество пережитых дней.
+
+Новый день начинается в 00:00, и по достижении определённого количества дней разблокируются новые игровые события.
+
+Предстоящие события можно просмотреть с помощью инструмента «События»."
+UI/Interface	Character/Stats/Elements/Day	Info		Progression Stat	Статистика прогресса
+UI/Interface	Character/Stats/Elements/Shelters	Info		Shelters	Укрытия
+UI/Interface	Character/Stats/Elements/Shelters	Info		"Number of Shelters unlocked.
+
+Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
+
+New game starts with two unlocked Shelters called Cabin and Tent.
+
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	"Количество разблокированных укрытий.
+
+Укрытия — безопасные зоны для сохранения прогресса и добычи. В игровом мире есть несколько укрытий, различающихся по теме, размеру и возможностям кастомизации.
+
+Новая игра начинается с двумя разблокированными укрытиями: Домик и Палатка.
+
+Дополнительные укрытия можно разблокировать с помощью ключей, которые получают за выполнение заданий у различных торговцев."
+UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	Статистика прогресса
+UI/Interface	Character/Stats/Elements/Tasks	Info		Tasks	Задания
+UI/Interface	Character/Stats/Elements/Tasks	Info		"Number of Tasks completed.
+
+Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
+
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"Количество выполненных заданий.
+
+Задания — это предметные поручения от торговцев. Задания могут быть взаимосвязаны между несколькими торговцами и иногда требуют непредметов, создаваемых через крафт.
+
+Задания влияют на снижение цен (налог торговца) и дают ключи для разблокировки новых укрытий и особых комнат."
+UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	Статистика прогресса
+UI/Interface	Character/Stats/Elements/Quests	Info		Quests	Квесты
+UI/Interface	Character/Stats/Elements/Quests	Info		"Number of Quests completed.
+
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"Количество выполненных квестов.
+
+Квесты — лорные миссии от торговцев. Квесты могут быть взаимосвязаны между несколькими торговцами и для их начала могут потребоваться определённые события."
+UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	Статистика прогресса
+UI/Interface	Character/Stats/Elements/CDS	Info		Civil Defence Shelters	Бункеры гражданской обороны
+UI/Interface	Character/Stats/Elements/CDS	Info		"Number of CDS completed.
+
+Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
+
+After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
+
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	"Количество выполненных БГО.
+
+Бункеры гражданской обороны (БГО) — бетонные бункеры и подземные объекты, предназначенные для защиты от военных угроз.
+
+После эвакуации Зоны 05 эти БГО были захвачены, а большая часть снаряжения внутри разграблена.
+
+Чтобы завершить БГО, нужно уничтожить враждебных противников и включить аварийное радио экстренного вещания."
+UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	Статистика прогресса
+UI/Interface	Character/Stats/Elements/?	Info		Silent Night	Тихая ночь
+UI/Interface	Character/Stats/Elements/?	Info		"There will be a silent night when all fades away.
+
+When you look up, you see the North Star, your only light in the darkness.
+
+This light reminds you of home, a place where you came from and where you will return.
+
+You feel safe, a peaceful moment that feels like the ending you wanted.
+
+Then your last light disappears, the sky turns red and the silence breaks."	"Наступит тихая ночь, когда всё растворится во тьме.
+
+Подняв взгляд, ты увидишь Полярную звезду — единственный свет во мраке.
+
+Этот свет напоминает тебе о доме — месте, откуда ты пришёл и куда вернёшься.
+
+Ты чувствуешь себя в безопасности, в этом мирном мгновении, похожем на желанный конец.
+
+Затем твой последний огонь гаснет, небо становится алым, и тишина разрывается."
+UI/Interface	Character/Stats/Elements/?	Info		Special Event	Особое событие
+UI/Interface	Supply/Header/Value	Info		Supply Value	Стоимость поставок
+UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	Ценовое значение (€) всех предметов поставок.
+UI/Interface	Supply/Header/Value	Info		Trader Stat	Характеристика торговца
+UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
+
+Name: Commonly known name among locals.
+Tax: Price multiplier for supply items.
+Tasks: Number of completed tasks.
+Resupply: Time when supply resets."	"Дружелюбный NPC с торговыми поставками, заданиями и специализированными услугами.
+
+Имя: широко известное имя среди местных.
+Налог: множитель цены на товары.
+Задания: количество выполненных заданий.
+Пополнение: время сброса поставок."
+UI/Interface	Trader/Panel	Info		Trader Info	Информация о торговце
+UI/Interface	Deal/Panel	Info		Deal	Сделка
+UI/Interface	Deal/Panel	Info		"A deal balance meter which compares selected item values.
+
+Requsted Value (€) is calculated from selected Supply items with Tax added.
+
+Offer Value (€) is calculated from selected Inventory items.
+
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	"Измеритель баланса сделки, сравнивающий стоимость выбранных предметов.
+
+Запрашиваемая стоимость (€) рассчитывается из выбранных предметов поставок с учётом налога.
+
+Предлагаемая стоимость (€) рассчитывается из выбранных предметов инвентаря.
+
+Сделку можно принять, когда измеритель находится в зелёной зоне — это означает, что предлагаемая стоимость соответствует или превышает запрашиваемую стоимость с налогом."
+UI/Interface	Deal/Panel	Info		Deal Meter	Измеритель сделки
