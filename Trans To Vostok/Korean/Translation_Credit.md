@@ -14,8 +14,8 @@ _(none yet)_
 
 ## Translation Contributors
 
-- MuteJack_Tester
 - gap tal
+- MuteJack_Tester
 
 ## Texture Reworkers
 
@@ -23,4 +23,4 @@ _(none yet)_
 
 ---
 
-_Auto-generated from `Trans To Vostok/<locale>/credits.json` by `tools/utils/build_translation_credit.py`. Do not edit manually — credits.json is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/utils/get_texture_credits.py` (texture rework from Texture.xlsx)._
+_Auto-generated from `Trans To Vostok/<locale>/credits.json` by `tools/build/build_translation_credit.py`. Do not edit manually - credits.json is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/build/get_texture_credits.py` (texture rework from Texture.xlsx)._

@@ -2,7 +2,7 @@
 
 People who contributed to translating Road to Vostok into Portuguese_BR. This includes both text translation and texture / image rework.
 
-_Translation last updated: 2026-05-10T18:03:51+09:00_
+_Translation last updated: 2026-06-03T23:23:59+09:00_
 
 ## Lead Translator(s)
 
@@ -14,7 +14,7 @@ _(none yet)_
 
 ## Translation Contributors
 
-_(none yet)_
+- Mute Jack (MuteJack)
 
 ## Texture Reworkers
 
@@ -22,4 +22,4 @@ _(none yet)_
 
 ---
 
-_Auto-generated from `Trans To Vostok/<locale>/credits.json` by `tools/utils/build_translation_credit.py`. Do not edit manually — credits.json is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/utils/get_texture_credits.py` (texture rework from Texture.xlsx)._
+_Auto-generated from `Trans To Vostok/<locale>/credits.json` by `tools/build/build_translation_credit.py`. Do not edit manually - credits.json is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/build/get_texture_credits.py` (texture rework from Texture.xlsx)._

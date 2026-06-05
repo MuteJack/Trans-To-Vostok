@@ -1,8 +1,8 @@
-# ChineseSimplified Translation Credits
+# Russian Translation Credits
 
-People who contributed to translating Road to Vostok into ChineseSimplified. This includes both text translation and texture / image rework.
+People who contributed to translating Road to Vostok into Russian. This includes both text translation and texture / image rework.
 
-_Translation last updated: 2026-05-30T03:31:07+09:00_
+_Translation last updated: 2026-06-05T07:09:27+09:00_
 
 ## Lead Translator(s)
 
@@ -15,6 +15,7 @@ _(none yet)_
 ## Translation Contributors
 
 - Mute Jack (MuteJack)
+- Speech (Speech100)
 
 ## Texture Reworkers
 

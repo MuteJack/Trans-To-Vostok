@@ -35,7 +35,7 @@ Thanks to:
 
 ## Translators
 
-_Auto-generated from each locale's `credits.json` by `tools/utils/build_authors.py`. credits.json itself is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/utils/get_texture_credits.py` (texture rework from Texture.xlsx)._
+_Auto-generated from each locale's `credits.json` by `tools/build/build_authors.py`. credits.json itself is updated by `tools/crowdin/get_member_list.py` (translator roles from Crowdin) and `tools/build/get_texture_credits.py` (texture rework from Texture.xlsx)._
 
 ### ChineseSimplified (`Translations/ChineseSimplified/`)
 
@@ -46,7 +46,8 @@ _Translation last updated: 2026-05-30T03:31:07+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- Mute Jack (MuteJack)
 
 **Texture Reworkers:**
 - MuteJack
@@ -60,7 +61,8 @@ _Translation last updated: 2026-05-30T03:32:15+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- Mute Jack (MuteJack)
 
 **Texture Reworkers:**
 - MuteJack
@@ -74,7 +76,8 @@ _Translation last updated: 2026-05-10T18:02:31+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- Mute Jack (MuteJack)
 
 **Texture Reworkers:**
 - MuteJack
@@ -88,7 +91,8 @@ _Translation last updated: 2026-05-30T03:27:52+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- Mute Jack (MuteJack)
 
 **Texture Reworkers:**
 - MuteJack
@@ -104,6 +108,8 @@ _Translation last updated: 2026-05-30T19:23:48+09:00_
 
 **Translation Contributors:**
 - Nineblood
+- Mute Jack (MuteJack)
+- Nineblood (newnoxnineblood)
 
 **Texture Reworkers:**
 - MuteJack
@@ -118,22 +124,39 @@ _Translation last updated: 2026-05-31T19:16:44+09:00_
 **Translator(s):** _(none yet)_
 
 **Translation Contributors:**
-- MuteJack_Tester
 - gap tal
+- MuteJack_Tester
 
 **Texture Reworkers:**
 - MuteJack
 
 ### Portuguese_BR (`Translations/Portuguese_BR/`)
 
-_Translation last updated: 2026-05-10T18:03:51+09:00_
+_Translation last updated: 2026-06-03T23:23:59+09:00_
 
 **Lead Translator(s):**
 - Mute Jack
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- Mute Jack (MuteJack)
+
+**Texture Reworkers:**
+- MuteJack
+
+### Russian (`Translations/Russian/`)
+
+_Translation last updated: 2026-06-05T07:09:27+09:00_
+
+**Lead Translator(s):**
+- Mute Jack
+
+**Translator(s):** _(none yet)_
+
+**Translation Contributors:**
+- Mute Jack (MuteJack)
+- Speech (Speech100)
 
 **Texture Reworkers:**
 - MuteJack
@@ -147,7 +170,8 @@ _Translation last updated: 2026-05-30T03:28:46+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- Mute Jack (MuteJack)
 
 **Texture Reworkers:**
 - MuteJack
