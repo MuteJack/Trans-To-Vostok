@@ -1,9 +1,9 @@
-WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	Comments	max_length
-Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	2786	Einfach			
-Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	2788	Mittelstufe			
-Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	2790	Schwer			
-Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	2792	Übungsaufgabe 1 (einfach)			
-Tasks	Generalist/Tutorial/01	difficulty	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy					
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	max_length
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	2786	Einfach		
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	2788	Mittelstufe		
+Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	2790	Schwer		
+Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	2792	Übungsaufgabe 1 (einfach)		
+Tasks	Generalist/Tutorial/01	difficulty	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy				
 Tasks	Generalist/Tutorial/01	description	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					description		"Let's start with something simple.
 
 Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
@@ -17,9 +17,9 @@ Geh zur Liefertafel und wähle „Erbsensuppe in der Dose“ aus. Sobald du den 
 3. Klicke auf „Abschließen“"	"Please pay attention to the following points when translating:
 'Canned Pea Soup'
 'Start Delivery'
-'Complete'"		
-Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	Übungsaufgabe 2 (komplex)			
-Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate					
+'Complete'"	
+Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	Übungsaufgabe 2 (komplex)		
+Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate				
 Tasks	Generalist/Tutorial/02	description	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
 
 Some tasks might require crafting-based delivery items, like this task requires Meatballs (Cooked), which can only be obtained through crafting.
@@ -58,9 +58,9 @@ Nun hast du den erforderlichen Aufgabengegenstand erfolgreich hergestellt und ka
 'matches'
 'Heat'
 'Firepot'
-'Start Input'"		
-Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	Übungsaufgabe 3 (Möbel)			
-Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard					
+'Start Input'"	
+Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	Übungsaufgabe 3 (Möbel)		
+Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard				
 Tasks	Generalist/Tutorial/03	description	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
 
 Some items that you might receive from crafting, trading or tasks are Furniture items, which are used for shelter customization.
@@ -98,9 +98,9 @@ Mehr über die Anpassung von Unterkünften und den Möbelkatalog erfährst du au
 'Potato'
 'Complete'
 'tutorial'
-'Shelters'"		
-Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	2804	Primetime			
-Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy					
+'Shelters'"	
+Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	2804	Primetime		
+Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy				
 Tasks	Generalist/01	description	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
 
 Nevertheless, you’ve arrived at the prime time, because I’m out of toilet paper and the situation is getting urgent.
@@ -117,18 +117,18 @@ Wenn du mir das Toilettenpapier bringst, gehört der Fernseher dir. Alle Kanäle
 'Nomad'
 'cabin'
 'toilet paper'
-'Area 05'"		
-Tasks	Generalist/02	name	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	2808	Schlechte Gewohnheiten			
-Tasks	Generalist/02	difficulty	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy					
+'Area 05'"	
+Tasks	Generalist/02	name	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	2808	Schlechte Gewohnheiten		
+Tasks	Generalist/02	difficulty	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy				
 Tasks	Generalist/02	description	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					description		"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	2810	"Vor einer Weile war ich bei dem Arzt in der verlassenen Schule hier in der Nähe. Er meinte, ich solle all meine „schlechten Angewohnheiten“ ablegen, aber der alte Scheißkerl raucht selbst, also scheiß auf ihn!
 
 Du bist wahrscheinlich nur einer dieser modernen Hippies, die nur Minzpastillen lutschen, wenn es mal hart auf hart kommt, aber falls du zufällig eine davon findest, bring ein oder zwei Packungen und ein paar Streichhölzer mit."	"Please pay attention to the following points when translating:
 'Matches' is the plural form of match (match, noun), not match (verb).
-'pack' may means cigarrete, not a cigar"		
-Tasks	Generalist/03	name	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	2812	Rückenschmerzen			
-Tasks	Generalist/03	difficulty	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy					
+'pack' may means cigarrete, not a cigar"	
+Tasks	Generalist/03	name	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	2812	Rückenschmerzen		
+Tasks	Generalist/03	difficulty	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy				
 Tasks	Generalist/03	description	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					description		"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
 
 I usually don't complain, but my fucking back is killing me. Every morning when I wake up, it feels like a gunshot directly to my spine. It won't be long until you're just like me and those cursed French cars.
@@ -137,9 +137,9 @@ If you happen to find something that could help with my back, I would highly app
 
 Normalerweise beschwere ich mich nicht, aber mein verdammter Rücken bringt mich um. Jeden Morgen, wenn ich aufwache, fühlt es sich an wie ein Schuss direkt in die Wirbelsäule. Es wird nicht mehr lange dauern, bis du genauso bist wie ich und diese verfluchten französischen Autos.
 
-Falls du zufällig etwas findest, das meinem Rücken helfen könnte, wäre ich dir sehr dankbar."			
-Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	2816	Kaffee-Reserve			
-Tasks	Generalist/04	difficulty	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy					
+Falls du zufällig etwas findest, das meinem Rücken helfen könnte, wäre ich dir sehr dankbar."		
+Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	2816	Kaffee-Reserve		
+Tasks	Generalist/04	difficulty	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy				
 Tasks	Generalist/04	description	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					description		"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
 
 If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
@@ -149,9 +149,9 @@ As a matter of fact, I should probably increase my strategic coffee reserve a bi
 Wenn man hier in Area 05 am Leben bleiben will, sollte die ständige Zufuhr von Koffein das oberste Ziel sein.
 
 Eigentlich sollte ich meine strategische Kaffeevorratsreserve wohl ein wenig aufstocken, da der Verbrauch in letzter Zeit über dem Durchschnitt lag."	"Please pay attention to the following points when translating:
-'Area 05'"		
-Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	2820	Ein schweißtreibendes Geschäft			
-Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate					
+'Area 05'"	
+Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	2820	Ein schweißtreibendes Geschäft		
+Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate				
 Tasks	Generalist/05	description	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
 
 Since air conditioning, showers and running water are just a faint memory from the past, it's important that you maintain personal hygiene and odor control for the sake of the others. You might wonder why not just go wash in the lake or sea? Well, let me tell you why that's a bad idea.
@@ -164,9 +164,9 @@ Da Klimaanlagen, Duschen und fließendes Wasser nur noch eine blasse Erinnerung 
 
 Nach der anfänglichen Explosion sind diese Gewässer alles andere als erfrischend, und da geht etwas Ekliges vor sich. Ich habe in letzter Zeit so viele tote Fische gesehen, dass ich mich auf keinen Fall ins Wasser wage, das steht fest, und ich rate dir dringend, es mir gleichzutun.
 
-Es ist eine schweißtreibende Angelegenheit, aber wir müssen einfach alternative Methoden finden, um frisch zu bleiben."			
-Tasks	Generalist/06	name	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman	2824	Handwerker			
-Tasks	Generalist/06	difficulty	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate					
+Es ist eine schweißtreibende Angelegenheit, aber wir müssen einfach alternative Methoden finden, um frisch zu bleiben."		
+Tasks	Generalist/06	name	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					name		Handyman	2824	Handwerker		
+Tasks	Generalist/06	difficulty	0	ignore	Traders/Generalist/Tasks/06_Handyman	tres					difficulty		Intermediate				
 Tasks	Generalist/06	description	0	literal	Traders/Generalist/Tasks/06_Handyman	tres					description		"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
@@ -176,9 +176,9 @@ I'm getting tired of being her handyman, but I promised to help this one last ti
 Jetzt ist der Herd kaputt, der Gefrierschrank ist geschmolzen und anscheinend „spielt“ das Radio wieder einmal verrückt. Obendrein ist während eines Sturms letzte Woche ein Baum direkt auf das Dach ihrer Veranda gefallen, das nun teilweise eingestürzt ist, sodass wir es mit einem riesigen Chaos zu tun haben.
 
 Ich habe es langsam satt, ihr Handwerker zu sein, aber ich habe versprochen, ihr ein letztes Mal zu helfen."	"Please pay attention to the following points when translating:
-'Border Zone'"		
-Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	2828	Sixpack			
-Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard					
+'Border Zone'"	
+Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	2828	Sixpack		
+Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard				
 Tasks	Generalist/07	description	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					description		"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
 
 When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
@@ -187,9 +187,9 @@ Speaking of six-packs, I could definitely take one for my road trip, six for the
 
 Wenn der Winter kommt, muss man sie warm und nah am Körper halten. Das klingt vielleicht eklig, aber glaub mir, du willst kein Weizensorbet trinken, wenn du in der Kälte unterwegs bist. Die Achselhöhlen oder der Schritt sind die besten Stellen, um sie warm zu halten – dort strahlt man viel Wärme ab, und wenn man es richtig anstellt, kann man ein ganzes Sixpack warmhalten.
 
-Apropos Sixpack: Ich könnte definitiv eins für meinen Roadtrip mitnehmen – sechs für unterwegs, wie man so schön sagt."			
-Tasks	Generalist/08	name	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend	2832	Alter Freund			
-Tasks	Generalist/08	difficulty	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard					
+Apropos Sixpack: Ich könnte definitiv eins für meinen Roadtrip mitnehmen – sechs für unterwegs, wie man so schön sagt."		
+Tasks	Generalist/08	name	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend	2832	Alter Freund		
+Tasks	Generalist/08	difficulty	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard				
 Tasks	Generalist/08	description	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					description		"Want to hear military stories?
 
 Back in the day, when I was doing my conscript service, we still had a few of those KP-31's lying around in the warehouse.
@@ -203,9 +203,9 @@ Damals, als ich meinen Wehrdienst absolvierte, lagen im Lager noch ein paar dies
 An einem Schießtag hatten wir tatsächlich die Gelegenheit, sie auszuprobieren. Wir durften mit diesen Trommelmagazinen zwar nicht vollautomatisch schießen, aber als ich an der Reihe war, konnte ich einfach nicht widerstehen. Ich stellte den Feuermodus um, drückte den Abzug und 71 Schuss pure Magie schossen aus meinem Lauf.
 
 Manchmal höre ich dieses „prat-prat-prat“-Geräusch noch immer leise in meinen Träumen. Verdammt, ich vermisse diese Waffe. Eines Tages werde ich mich wieder mit meinem magischen alten Freund vereinen, eines Tages..."	"Please pay attention to the following points when translating:
-'KP-31' is a proper noun (items/weapon)."		
-Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	2836	Autoreise			
-Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard					
+'KP-31' is a proper noun (items/weapon)."	
+Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	2836	Autoreise		
+Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard				
 Tasks	Generalist/09	description	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					description		"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
 
 Have you ever visited the North? What a shame, that place has remained totally unaffected by all this bullshit. It's like nothing ever happened there. I'm talking about pristine nature, wildlife and crystal-clear rivers for catching those juicy arctic trouts.
@@ -218,9 +218,9 @@ Warst du schon mal im Norden? Was für eine Schande, dieser Ort ist von all dem 
 
 Ich wäre schon längst auf dem Weg dorthin, aber diese dreckigen Banditen haben meine Autobatterie und einen Haufen anderer Sachen aus dem Kofferraum geklaut, also sitze ich immer noch hier fest.
 
-Vielleicht könntest du mir dabei helfen? Bring mir meine gestohlenen Sachen zurück, und ich habe etwas Besonderes für dich."			
-Tasks	Generalist/10	name	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade	2840	Selbstgemacht			
-Tasks	Generalist/10	difficulty	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard					
+Vielleicht könntest du mir dabei helfen? Bring mir meine gestohlenen Sachen zurück, und ich habe etwas Besonderes für dich."		
+Tasks	Generalist/10	name	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					name		Homemade	2840	Selbstgemacht		
+Tasks	Generalist/10	difficulty	0	ignore	Traders/Generalist/Tasks/10_Homemade	tres					difficulty		Hard				
 Tasks	Generalist/10	description	0	literal	Traders/Generalist/Tasks/10_Homemade	tres					description		"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
 
 I already had a large batch for him, but since my trip was delayed, I had to make sure the product didn't spoil in my cellar. After a few ""product-quality"" sips, I got carried away and started drinking and now I have nothing left.
@@ -235,9 +235,9 @@ Ich brauche eine neue Charge, aber ich habe gerade keine Zeit, also könntest du
 
 Wenn du diese neue Charge für mich zubereiten kannst, werde ich dir einen Schlüssel zu meinem Dachboden geben – das wäre eine ziemliche Verbesserung gegenüber deiner kleinen Asbesthütte."	"Please pay attention to the following points when translating:
 `Shaman`
-'Kilju' is a traditional Finnish alcohol"		
-Tasks	Doctor/01	name	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	2844	Unangenehmer Luftzug			
-Tasks	Doctor/01	difficulty	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy					
+'Kilju' is a traditional Finnish alcohol"	
+Tasks	Doctor/01	name	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	2844	Unangenehmer Luftzug		
+Tasks	Doctor/01	difficulty	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy				
 Tasks	Doctor/01	description	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					description		"I haven't seen you here before, you must be a new patient?
 
 Welcome to my improvised clinic. It ain't much, but with these limited resources, it's the best that we've got.
@@ -250,9 +250,9 @@ Willkommen in meiner provisorischen Klinik. Es ist nicht viel, aber mit diesen b
 
 Früher habe ich an dieser Schule Gesundheitserziehung für Grundschüler unterrichtet. Das ist schon lange her, aber ich habe gute Erinnerungen an diesen Ort. Das Gebäude ist alt und hat schon bessere Tage gesehen, aber ich bin sicher, dass es wiederhergestellt werden kann, wenn sich die Lage beruhigt hat.
 
-Derzeit mache ich mir vor allem Gedanken um die Wärmedämmung, da unsere Fenster so gut wie weg sind. Besonders im Winter ist es für meine Patienten etwas kühl. Ich denke, als Notlösung würde ein bisschen Klebeband reichen, um den lästigen Luftzug in Schach zu halten."			
-Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	2848	Sichere Hände			
-Tasks	Doctor/02	difficulty	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy					
+Derzeit mache ich mir vor allem Gedanken um die Wärmedämmung, da unsere Fenster so gut wie weg sind. Besonders im Winter ist es für meine Patienten etwas kühl. Ich denke, als Notlösung würde ein bisschen Klebeband reichen, um den lästigen Luftzug in Schach zu halten."		
+Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	2848	Sichere Hände		
+Tasks	Doctor/02	difficulty	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy				
 Tasks	Doctor/02	description	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					description		"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
 
 Especially in surgeries and working with a scalpel, I often get the shakes and small mistakes here and there are unavoidable. I think it's mostly related to my age, but I have found that smoking a few cigars before the operation keeps my hands more steady.
@@ -265,9 +265,9 @@ Vor allem bei Operationen und beim Umgang mit dem Skalpell fangen meine Hände o
 
 Als Arzt empfehle ich das Rauchen zwar nicht, aber verzweifelte Zeiten erfordern verzweifelte Maßnahmen.
 
-Falls du irgendwo ein paar Zigarren findest, könntest du mir die vielleicht vorbeibringen? Aber sag dem Generalisten nichts davon, ich habe ihm gerade gesagt, er solle mit dem Rauchen aufhören, damit wir keine kontroversen Leitlinien schaffen. Das bleibt unter uns."			
-Tasks	Doctor/03	name	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm	2852	Bücherwurm			
-Tasks	Doctor/03	difficulty	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy					
+Falls du irgendwo ein paar Zigarren findest, könntest du mir die vielleicht vorbeibringen? Aber sag dem Generalisten nichts davon, ich habe ihm gerade gesagt, er solle mit dem Rauchen aufhören, damit wir keine kontroversen Leitlinien schaffen. Das bleibt unter uns."		
+Tasks	Doctor/03	name	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm	2852	Bücherwurm		
+Tasks	Doctor/03	difficulty	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy				
 Tasks	Doctor/03	description	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					description		"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
 
 On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
@@ -276,9 +276,9 @@ I actually like to read all kinds of old books, no matter the subject. Whether i
 
 An diesen langweiligen, ruhigen Tagen verbringe ich meine Zeit oft mit Lesen. Die Lektüre hier ist ziemlich zufällig – man kann sich nicht wirklich aussuchen, was man liest, also muss man lernen, sich an die verfügbare Literatur anzupassen.
 
-Eigentlich lese ich gerne alle Arten von alten Büchern, egal zu welchem Thema. Ob Kindergeschichten oder Religion – ich finde es immer interessant. Ich glaube, ich bin von Natur aus ein kleiner Bücherwurm."			
-Tasks	Doctor/04	name	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master	2856	Würfelmeister			
-Tasks	Doctor/04	difficulty	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy					
+Eigentlich lese ich gerne alle Arten von alten Büchern, egal zu welchem Thema. Ob Kindergeschichten oder Religion – ich finde es immer interessant. Ich glaube, ich bin von Natur aus ein kleiner Bücherwurm."		
+Tasks	Doctor/04	name	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master	2856	Würfelmeister		
+Tasks	Doctor/04	difficulty	0	ignore	Traders/Doctor/Tasks/04_Dice_Master	tres					difficulty		Easy				
 Tasks	Doctor/04	description	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					description		"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
 
 Just a few years ago, we often went fishing together, but that poor guy has multiple herniated disks, so fishing trips are no longer an option for him. We still have a few other common hobbies like horse races and gambling.
@@ -291,9 +291,9 @@ Noch vor ein paar Jahren sind wir oft zusammen angeln gegangen, aber der arme Ke
 
 Wie du wahrscheinlich schon erraten hast, ist heutzutage nur noch eines davon möglich, also basiert unsere Freundschaft derzeit ausschließlich auf Glücksspielen mit Karten und Würfeln. Allerdings gewinnt er jedes Mal, wenn wir würfeln, auf magische Weise, und ich frage mich langsam, ob seine Würfel irgendwie manipuliert sind, denn niemand hat so viel Glück.
 
-Weißt du was? Falls du zufällig eines dieser Würfelspiele findest, bring mir eins mit. Wenn wir das nächste Mal spielen, wird es mit meinem Set sein. So kann ich die Möglichkeit des Betrugs ausschließen und wir werden sehen, wer der wahre Würfelmeister ist."			
-Tasks	Doctor/05	name	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	2860	Nachtdienst			
-Tasks	Doctor/05	difficulty	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate					
+Weißt du was? Falls du zufällig eines dieser Würfelspiele findest, bring mir eins mit. Wenn wir das nächste Mal spielen, wird es mit meinem Set sein. So kann ich die Möglichkeit des Betrugs ausschließen und wir werden sehen, wer der wahre Würfelmeister ist."		
+Tasks	Doctor/05	name	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	2860	Nachtdienst		
+Tasks	Doctor/05	difficulty	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate				
 Tasks	Doctor/05	description	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					description		"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
 
 Daytime operations are a walk in the park for me when there's enough light, but at night, it gets more tricky. Operating in dim lighting or sometimes even in total darkness relies more on hand-feel and intuition, but it's always riskier for the patient.
@@ -302,9 +302,9 @@ Some sort of bright headlamp would probably solve this issue until the power gri
 
 Operationen bei Tageslicht sind für mich ein Kinderspiel, wenn genug Licht da ist, aber nachts wird es schwieriger. Bei schwacher Beleuchtung oder manchmal sogar in völliger Dunkelheit ist man mehr auf Tastsinn und Intuition angewiesen, aber für den Patienten ist es immer riskanter.
 
-Eine Art heller Stirnlampe würde dieses Problem wahrscheinlich lösen, bis das Stromnetz wieder vollständig funktioniert. Ich habe versucht, eine zu finden, aber leider bisher ohne Erfolg."			
-Tasks	Doctor/06	name	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections	2864	Infektionen			
-Tasks	Doctor/06	difficulty	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate					
+Eine Art heller Stirnlampe würde dieses Problem wahrscheinlich lösen, bis das Stromnetz wieder vollständig funktioniert. Ich habe versucht, eine zu finden, aber leider bisher ohne Erfolg."		
+Tasks	Doctor/06	name	0	literal	Traders/Doctor/Tasks/06_Infections	tres					name		Infections	2864	Infektionen		
+Tasks	Doctor/06	difficulty	0	ignore	Traders/Doctor/Tasks/06_Infections	tres					difficulty		Intermediate				
 Tasks	Doctor/06	description	0	literal	Traders/Doctor/Tasks/06_Infections	tres					description		"You know what one of the most common issues is here? It's infections.
 
 When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
@@ -313,9 +313,9 @@ I do still have some medical supplies left for infections, but those will run ou
 
 Schlechte Hygiene und ungepflegte Wunden sind eine perfekte Kombination für Bakterien und Keime. Wann immer ein Patient Schnittwunden oder Schürfwunden hat, kommt es so gut wie immer automatisch zu einer Infektion.
 
-Ich habe zwar noch einige medizinische Vorräte gegen Infektionen, aber die werden früher oder später aufgebraucht sein. Sobald das passiert, wird die Sterblichkeitsrate hier eine düstere Wendung nehmen."			
-Tasks	Doctor/07	name	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia	2868	Hypovolämie			
-Tasks	Doctor/07	difficulty	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate					
+Ich habe zwar noch einige medizinische Vorräte gegen Infektionen, aber die werden früher oder später aufgebraucht sein. Sobald das passiert, wird die Sterblichkeitsrate hier eine düstere Wendung nehmen."		
+Tasks	Doctor/07	name	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					name		Hypovolemia	2868	Hypovolämie		
+Tasks	Doctor/07	difficulty	0	ignore	Traders/Doctor/Tasks/07_Hypovolemia	tres					difficulty		Intermediate				
 Tasks	Doctor/07	description	0	literal	Traders/Doctor/Tasks/07_Hypovolemia	tres					description		"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
 
 After taking a closer look, the reason was simpler than expected. Correct, it was dehydration and a thing that we doctors call hypovolemia.
@@ -329,9 +329,9 @@ Nach genauerer Untersuchung stellte sich heraus, dass der Grund einfacher war al
 Hypovolämie ist im Grunde ein Verlust sowohl von Salz als auch von Wasser im Körper, und wenn es richtig schlimm wird, dann bist du aufgeschmissen wie diese Nomaden und erlebst einen hypovolämischen Schock. Glücklicherweise ist die Behandlung dieser Symptome wirklich einfach: Man spritzt einfach eine Kochsalzlösung in eine periphere Vene und schon ist alles wieder gut.
 
 Wann immer du solche Kochsalzlösungsflaschen findest, denk immer daran, sie mir zu bringen, und wir werden sicher eine Vereinbarung finden, die für uns beide funktioniert."	"Please pay attention to the following points when translating:
-`Nomad'"		
-Tasks	Doctor/08	name	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	2872	Mundharmonika			
-Tasks	Doctor/08	difficulty	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard					
+`Nomad'"	
+Tasks	Doctor/08	name	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	2872	Mundharmonika		
+Tasks	Doctor/08	difficulty	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard				
 Tasks	Doctor/08	description	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					description		"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
 
 I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
@@ -340,9 +340,9 @@ It's never too late to start with an easier instrument, but I would need somethi
 
 Vor ein paar Jahren habe ich versucht, meine alten Instrumente wieder zu spielen, aber dafür braucht man gesunde Lungen, und so brachte ich nicht einmal mehr einen Ton aus den verdammten Dingern heraus. Meine Leidenschaft für Mundharmonikas und meine musikalischen Fähigkeiten sind noch da, aber ich glaube, die Zigarren haben ihren Schaden bereits angerichtet.
 
-Es ist nie zu spät, mit einem einfacheren Instrument anzufangen, aber ich bräuchte etwas ganz Kleines, das für einen alten Zigarrenmann wie mich geeignet ist. Vielleicht im nächsten Leben."			
-Tasks	Doctor/09	name	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report	2876	Patientenbericht			
-Tasks	Doctor/09	difficulty	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard					
+Es ist nie zu spät, mit einem einfacheren Instrument anzufangen, aber ich bräuchte etwas ganz Kleines, das für einen alten Zigarrenmann wie mich geeignet ist. Vielleicht im nächsten Leben."		
+Tasks	Doctor/09	name	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					name		Patient Report	2876	Patientenbericht		
+Tasks	Doctor/09	difficulty	0	ignore	Traders/Doctor/Tasks/09_Patient_Report	tres					difficulty		Hard				
 Tasks	Doctor/09	description	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tres					description		"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
@@ -351,9 +351,9 @@ Maybe you could search the gymnasium, the place where the kids used to play and 
 
 Ich glaube, ich habe dort einen meiner allerersten Patientenberichte liegen lassen. Ich brauche diesen Bericht, um mein Gedächtnis aufzufrischen, da es nicht mehr das ist, was es einmal war. Die Symptome und genauen Details aus diesem Bericht verschwimmen langsam in meiner Erinnerung.
 
-Vielleicht könntest du in der Turnhalle suchen, dort, wo die Kinder früher gespielt und auf Seilen geklettert sind. Er sollte irgendwo dort sein."			
-Tasks	Doctor/10	name	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance	2880	Inhalt			
-Tasks	Doctor/10	difficulty	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard					
+Vielleicht könntest du in der Turnhalle suchen, dort, wo die Kinder früher gespielt und auf Seilen geklettert sind. Er sollte irgendwo dort sein."		
+Tasks	Doctor/10	name	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance	2880	Inhalt		
+Tasks	Doctor/10	difficulty	0	ignore	Traders/Doctor/Tasks/10_Substance	tres					difficulty		Hard				
 Tasks	Doctor/10	description	0	literal	Traders/Doctor/Tasks/10_Substance	tres					description		"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
 
 Acrylonitrile is definitely part of the compound, just as the officials claimed, but I have a theory that it’s only one piece of the puzzle. When burning, acrylonitrile releases toxic gases such as hydrogen cyanide and is classified as a C1 carcinogen, but let me explain my theory.
@@ -370,9 +370,9 @@ Diese Art von organischen Verbindungen hat einen extrem stechenden Geruch. Da es
 
 Das bedeutet, dass wir es mit einer künstlich hergestellten Substanz zu tun haben, die weitaus giftiger ist. Ich weiß, es ist nur eine Theorie, aber es gibt nur einen Weg, das herauszufinden: Wir müssen die Quelle finden.
 
-Da wir wissen, dass es in Öltankwagen transportiert wurde, würde ich den nächstgelegenen Ölterminal aufsuchen und deren Proben untersuchen, um festzustellen, ob sie wirklich Öl oder etwas anderes enthalten. Diese Ölprobenbehälter sind leicht zu erkennen, sie sehen aus wie goldene Milchkannen und es sollte reichlich davon vorhanden sein."			
-Tasks	Gunsmith/01	name	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers	2884	Blutsauger			
-Tasks	Gunsmith/01	difficulty	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy					
+Da wir wissen, dass es in Öltankwagen transportiert wurde, würde ich den nächstgelegenen Ölterminal aufsuchen und deren Proben untersuchen, um festzustellen, ob sie wirklich Öl oder etwas anderes enthalten. Diese Ölprobenbehälter sind leicht zu erkennen, sie sehen aus wie goldene Milchkannen und es sollte reichlich davon vorhanden sein."		
+Tasks	Gunsmith/01	name	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					name		Bloodsuckers	2884	Blutsauger		
+Tasks	Gunsmith/01	difficulty	0	ignore	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					difficulty		Easy				
 Tasks	Gunsmith/01	description	0	literal	Traders/Gunsmith/Tasks/01_Bloodsuckers	tres					description		"Ain't that something? A new man and a new rifle, always a welcome sight.
 
 Forget the small talk. You want something reliable and cheap? Sure, but a few favors first, since you don't climb the ranks immediately around here. Where should we start? There are definitely some supply runs you could do, but you look a bit flimsy, so maybe you need something simple first. Let me think a moment.
@@ -385,9 +385,9 @@ Vergiss den Smalltalk. Du willst was Zuverlässiges und Billiges? Klar, aber ers
 
 Okay, ich habe eine Idee. Weißt du, im Sommer fangen diese fliegenden Mistkerle an, mich zu nerven. Man würde meinen, diese Mistkerle würden nicht in diese Bunker kommen, aber glaub mir, das tun sie. Jeden einzelnen Sommer summt es hier rund um die Uhr.
 
-Hier ist eine passende Aufgabe für dich. Besorg mir etwas, um diese Blutsauger loszuwerden, und dann reden wir weiter."			
-Tasks	Gunsmith/02	name	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	2888	Warme Mahlzeit			
-Tasks	Gunsmith/02	difficulty	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy					
+Hier ist eine passende Aufgabe für dich. Besorg mir etwas, um diese Blutsauger loszuwerden, und dann reden wir weiter."		
+Tasks	Gunsmith/02	name	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	2888	Warme Mahlzeit		
+Tasks	Gunsmith/02	difficulty	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy				
 Tasks	Gunsmith/02	description	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					description		"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
 
 Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
@@ -397,9 +397,9 @@ It has been a while since I have seen a proper warm meal. Maybe this is your mom
 Früher enthielten diese Rationen wenigstens ordentliche Konserven, aber heutzutage besteht der Großteil nur noch aus ekligem Fleischbrei und modernem Outdoor-Essen. Dieses synthetische Zeug stecke ich mir sicher nicht in den Mund.
 
 Es ist schon eine Weile her, dass ich eine richtige warme Mahlzeit gesehen habe. Vielleicht ist das Ihre Chance zu glänzen und unsere berufliche Beziehung könnte den nächsten Schritt nach vorne machen. Vielleicht würde ein Essgeschirr mit richtiger finnischer Erbsensuppe und etwas Senf dazu den Zweck erfüllen."	"Please pay attention to the following points when translating:
-`mess kit'"		
-Tasks	Gunsmith/03	name	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	2892	Nordic Trade			
-Tasks	Gunsmith/03	difficulty	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate					
+`mess kit'"	
+Tasks	Gunsmith/03	name	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	2892	Nordic Trade		
+Tasks	Gunsmith/03	difficulty	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate				
 Tasks	Gunsmith/03	description	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					description		"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
 
 Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
@@ -410,9 +410,9 @@ Versteht mich nicht falsch, sie sind gute Nachbarn und so, aber ich weiß nicht.
 
 Im Sinne guter Nachbarschaft könnten wir jedoch einen fairen Tausch vereinbaren. Ich nenne das „Desserttausch“. Bringt mir ein paar dieser schwedischen Köstlichkeiten, und ich gebe euch ein paar finnische. Das ist ein Deal, bei dem es nur Gewinner gibt – gewissermaßen ein nordischer Handel ohne jegliche Rivalität."	"Please pay attention to the following points when translating:
 (Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
-(Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."		
-Tasks	Gunsmith/04	name	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	2896	Große Klingen			
-Tasks	Gunsmith/04	difficulty	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate					
+(Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."	
+Tasks	Gunsmith/04	name	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	2896	Große Klingen		
+Tasks	Gunsmith/04	difficulty	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate				
 Tasks	Gunsmith/04	description	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					description		"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
 
 When it comes to blades, the rule is the bigger, the better. I myself prefer machetes that are suitable for wood chopping and clearing obstructions in a dense forest. Even though we're not in a jungle here, you still need a big blade since there will be times when you'll wish you had one.
@@ -421,9 +421,9 @@ Collecting blades is also an elegant hobby. I do have quite an extensive collect
 
 Was Klingen angeht, gilt: Je größer, desto besser. Ich selbst bevorzuge Macheten, die sich zum Holzhacken und zum Roden von Hindernissen in einem dichten Wald eignen. Auch wenn wir uns hier nicht im Dschungel befinden, braucht man dennoch eine große Klinge, da es Momente geben wird, in denen man sich wünscht, man hätte eine.
 
-Das Sammeln von Klingen ist zudem ein elegantes Hobby. Ich besitze zwar eine recht umfangreiche Sammlung, aber es fehlen mir noch ein paar große Klingen."			
-Tasks	Gunsmith/05	name	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery	2900	Munitionslieferung			
-Tasks	Gunsmith/05	difficulty	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate					
+Das Sammeln von Klingen ist zudem ein elegantes Hobby. Ich besitze zwar eine recht umfangreiche Sammlung, aber es fehlen mir noch ein paar große Klingen."		
+Tasks	Gunsmith/05	name	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					name		Ammo Delivery	2900	Munitionslieferung		
+Tasks	Gunsmith/05	difficulty	0	ignore	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					difficulty		Intermediate				
 Tasks	Gunsmith/05	description	0	literal	Traders/Gunsmith/Tasks/05_Ammo_Delivery	tres					description		"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
 
 When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. Sometimes there are still those annoying customers who seek something more exotic, but it's hard to maintain a stock for every weird request.
@@ -433,9 +433,9 @@ Maybe you could do a quick ammo delivery run for me? We could expand the portfol
 Was Munition angeht, sind 7,62x39 und .223 mit großem Abstand die Verkaufsschlager. Manchmal gibt es immer noch diese nervigen Kunden, die nach etwas Exotischerem suchen, aber es ist schwer, für jede seltsame Anfrage einen Vorrat zu führen.
 
 Vielleicht könntest du für mich eine kurze Munitionslieferung übernehmen? Wir könnten sozusagen das Sortiment ein wenig erweitern."	"Please pay attention to the following points when translating:
-'7.62x39' and '.223' is untranslatable"		
-Tasks	Gunsmith/06	name	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	2904	Waffenlieferung			
-Tasks	Gunsmith/06	difficulty	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate					
+'7.62x39' and '.223' is untranslatable"	
+Tasks	Gunsmith/06	name	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	2904	Waffenlieferung		
+Tasks	Gunsmith/06	difficulty	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate				
 Tasks	Gunsmith/06	description	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					description		"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
 
 This has led to a situation where I'm constantly out of stock of those Eastern weapons. It's a damn shame, since I always find their products more reliable compared to the Western ones. You see, in the West, we have an incurable disease of making everything tactical. We add rails, dingles and dongles to everything and the end result is a mess that has too many moving parts.
@@ -446,9 +446,9 @@ Das hat dazu geführt, dass mir diese Waffen aus dem Osten ständig ausgehen. Da
 
 Da meine Netzwerke nicht mehr aktiv sind, wäre ich für eine schnelle Waffenlieferung von der anderen Seite sehr dankbar."	"Please pay attention to the following points when translating:
 Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
-'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."		
-Tasks	Gunsmith/07	name	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	2908	Sanitäter			
-Tasks	Gunsmith/07	difficulty	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard					
+'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."	
+Tasks	Gunsmith/07	name	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	2908	Sanitäter		
+Tasks	Gunsmith/07	difficulty	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard				
 Tasks	Gunsmith/07	description	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					description		"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
 
 I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
@@ -459,9 +459,9 @@ Ich habe sogar einen persönlichen Sanitäter nur für mich allein. Er ist ein g
 
 Mein Sanitäter könnte tatsächlich ein paar zusätzliche Lutscher gebrauchen, nur für den Fall. Ich glaube, die findet man in IFAKs, also wenn ihr zufällig ein paar davon findet, ergibt sich für uns wieder eine Geschäftsmöglichkeit."	"Please pay attention to the following points when translating:
 'Nomad' is a pronoun of one of the faction
-'IFAK' is a pronoun of item (medical)"		
-Tasks	Gunsmith/08	name	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	2912	Startseite Kollektion			
-Tasks	Gunsmith/08	difficulty	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard					
+'IFAK' is a pronoun of item (medical)"	
+Tasks	Gunsmith/08	name	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	2912	Startseite Kollektion		
+Tasks	Gunsmith/08	difficulty	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard				
 Tasks	Gunsmith/08	description	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					description		"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
 
 My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
@@ -470,9 +470,9 @@ Currently, my main focus is on integrally suppressed pieces, but I've had a hard
 
 Meine persönliche Sammlung zu Hause reicht von Musketen aus dem 16. Jahrhundert bis hin zu Gewehren aus den 1990er Jahren, aber alles, was darüber hinausgeht, finde ich geschmacklos. Ich glaube, ich habe bisher mehr als 150 Waffen in meiner Sammlung. Die exotischsten sind wahrscheinlich ein paar türkische Revolverflinten, die ich 1985 von einer Urlaubsreise mitgeschmuggelt habe.
 
-Derzeit liegt mein Hauptaugenmerk auf Waffen mit integriertem Schalldämpfer, aber es fällt mir schwer, solche zu finden. Es gibt insbesondere eine aus dem Osten, die ich im Auge habe, aber sie versteckt sich immer wieder vor mir."			
-Tasks	Gunsmith/09	name	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	2916	Das Recht jedes Bürgers			
-Tasks	Gunsmith/09	difficulty	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard					
+Derzeit liegt mein Hauptaugenmerk auf Waffen mit integriertem Schalldämpfer, aber es fällt mir schwer, solche zu finden. Es gibt insbesondere eine aus dem Osten, die ich im Auge habe, aber sie versteckt sich immer wieder vor mir."		
+Tasks	Gunsmith/09	name	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	2916	Das Recht jedes Bürgers		
+Tasks	Gunsmith/09	difficulty	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard				
 Tasks	Gunsmith/09	description	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					description		"I recently took a hike out to the Border Zone and collected some mushrooms.
 
 In Finland, we have Everyman’s Rights, which grant us the right to use nature regardless of who owns or occupies the area. It’s probably the best law we have.
@@ -486,9 +486,9 @@ In Finnland gibt es das „Jedermannsrecht“, das uns das Recht gewährt, die N
 Allerdings muss ich zugeben, dass ich manchmal in eine Grauzone gerate und Dinge sammle, die nicht nur Pilze sind. Vor ein paar Monaten habe ich zum Beispiel ein umgestürztes „Border Zone“-Schild in einem Graben gefunden. Da es mit Laub und Schmutz bedeckt war, dachte ich mir, dass es zur Natur gehört und somit in meinen Augen unter das Jedermannsrecht fällt.
 
 Auch wenn dieses Schild ein hübsches Deko-Stück ist, ist es für meinen Geschmack etwas zu bunt. Du scheinst jemand zu sein, der das zu schätzen weiß. Vielleicht können wir einen kleinen Tausch dafür machen, aber ich gebe es nicht für irgendetwas Billiges her."	"Please pay attention to the following points when translating:
-Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"		
-Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	2920	Hitman			
-Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard					
+Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"	
+Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	2920	Hitman		
+Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard				
 Tasks	Gunsmith/10	description	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					description		"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
 
 Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
@@ -499,4 +499,4 @@ Ab und zu taucht dieser Typ auf und verlangt verdammte Zahlungen für irgendwelc
 
 Jemand muss dieser Clownshow ein Ende bereiten, also brauche ich im Grunde einen Auftragskiller. Bring mir seinen Kopf oder irgendetwas anderes, das beweist, dass er tot ist, und ich gebe dir die Schlüssel zu meinem Lagerbunker."	"Please pay attention to the following points when translating:
 'Area 05'
-'Purnisher' is a pronoun for a hostile NPC"		
+'Purnisher' is a pronoun for a hostile NPC"	

@@ -12,10 +12,9 @@ Per-row logic (per file, columns vary; checks adapted by config):
          skip (preserve human edits / curated entries / previous runs)
     2. If untranslatable == "1" (only when column exists):
          translation = text (copy original)
-         Comments NOT updated (it's a copy, not a machine translation)
     3. Else if method == "ignore" (only when column exists):
          look up text in translated TSV (text-based)
-         if found, use that translation; append `#Machine Translated` to Comments
+         if found, use that translation
          if not found, fallback: copy text to translation
          (an ignore row is usually a duplicate of a non-ignore row whose text
           was translated; reusing that translation keeps the xlsx complete)
@@ -31,7 +30,7 @@ Per-row logic (per file, columns vary; checks adapted by config):
          translations are preserved by step 1.
     5. Else (regular: static / literal / substr / Texture):
          look up text in translated TSV
-         if found, write translation; append `#Machine Translated` to Comments
+         if found, write translation
 
 Note: lookup is by exact text match on the row's text column. The unique.tsv
 / mapping.tsv files are not needed here — translated_<TARGET>.tsv already
@@ -69,16 +68,6 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
 
 
 BOOL_TRUE = {"1", "true"}
-MT_MARKER = "#Machine Translated"
-
-
-def append_marker(existing: str, marker: str) -> str:
-    existing = existing or ""
-    if marker in existing:
-        return existing
-    if existing.strip():
-        return existing + "\n" + marker
-    return marker
 
 # Per-xlsx column configuration (None = column not present in this file)
 XLSX_FILES = [
@@ -88,7 +77,6 @@ XLSX_FILES = [
         "trans_col": "translation",
         "method_col": "method",
         "untrans_col": "untranslatable",
-        "comments_col": "Comments",
     },
     {
         "name": "Texture.xlsx",
@@ -96,7 +84,6 @@ XLSX_FILES = [
         "trans_col": "Translation",
         "method_col": None,
         "untrans_col": None,
-        "comments_col": "Comments",
     },
 ]
 
@@ -172,7 +159,6 @@ def import_to_xlsx(target_xlsx: Path, cfg: dict, translated_map: dict[str, dict]
 
             method_col = header.get(cfg["method_col"]) if cfg.get("method_col") else None
             untrans_col = header.get(cfg["untrans_col"]) if cfg.get("untrans_col") else None
-            comments_col = header.get(cfg["comments_col"]) if cfg.get("comments_col") else None
 
             for row_idx in range(2, ws.max_row + 1):
                 stats["rows_total"] += 1
@@ -221,10 +207,6 @@ def import_to_xlsx(target_xlsx: Path, cfg: dict, translated_map: dict[str, dict]
                     continue
 
                 ws.cell(row_idx, trans_col).value = entry["translation"]
-                if comments_col is not None:
-                    existing = ws.cell(row_idx, comments_col).value
-                    new_val = append_marker(str(existing) if existing is not None else "", MT_MARKER)
-                    ws.cell(row_idx, comments_col).value = new_val
                 if entry["status"] == "placeholder_lost":
                     stats["rows_placeholder_warning"] += 1
 

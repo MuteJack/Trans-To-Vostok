@@ -1,311 +1,311 @@
-WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	Comments		max_length
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	748	Здоровье				
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100			Value(Integer) about the Vital. Untranslatable.			
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	750	Энергия				
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100			Value(Integer) about the Vital. Untranslatable.			
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	752	Гидратация				
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100			Value(Integer) about the Vital. Untranslatable.			
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	754	Психика				
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100			Value(Integer) about the Vital. Untranslatable.			
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	756	Темп. тела				
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100			Value(Integer) about the Vital. Untranslatable.			
-HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	Кислород				
-HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:						
-HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			Value(Integer) about the FPS. Untranslatable.			
-HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	Укрытие (Зона 05)				
-Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	Инвентарь				
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			Value(Float) about Capacity. Untranslatable.			
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			Value(Float) about Weight. Untranslatable.			
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000			Value(Float) about Value(Money). Untranslatable.			
-Inventory	#Not Checked	Name	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	764	Контейнер				
-Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0			Value(Float) about Weight. Untranslatable.			
-Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000			Value(Float) about Weight. Untranslatable.			
-Inventory	Equipment	Name	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	766	Снаряжение				
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg			Value(Float) about Capacity. Untranslatable.			
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000			Value(Float) about Value. Untranslatable.			
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100			Value(Float) about Insulation. Untranslatable.			
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A			Value(Float) about Dexterity. Untranslatable.			
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A			Value(Float) about Menace. Untranslatable.			
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A			Value(Float) about CBRN. Untranslatable.			
-Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	Основное	Inventory Slot for Primary Weapon			
-Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	Вторичное	Inventory Slot for Secondory Weapon			
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	Нож	Inventory Slot for Knife			
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	Граната	Inventory Slot for Grenade1			
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	Граната	Inventory Slot for Grenade2			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	Рюкзак	Inventory Slot for Backpack			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	Разгрузка	Inventory Slot for Rig(Vest)			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	Шлем	Inventory Slot for Helmet			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	784	Голова	Inventory Slot for Hat/Cap			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	786	Туловище	Inventory Slot for Jacket			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	788	Ноги	Inventory Slot for Pants			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	790	Пояс	Inventory Slot for Belt			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	792	Ступни	Inventory Slot for Shoes			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	794	Руки	Inventory Slot for Gloves			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	796	Спички	Inventory Slot for Matches(lighter)			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	798	Фонарь	Inventory Slot for FlashLight			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	800	NVG	Inventory Slot for Night Vision Goggle (NVG)			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	802	Время	Inventory Slot for Clock(Time)			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	804	Карта	Inventory Slot for Map			
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	806	Плеер	"Inventory Slot for Carest/MP3 ""Player"""			
-Inventory	Vitals	Dictionary	0	substr									Vital	808	Показатель	allow conflict			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	810	Персонаж				
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	812	Здоровье	Player's Status about Health Point (HP)			
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100						
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	814	Энергия	Player's Status about Energy			
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100						
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	816	Гидратация	Player's Status about Hydration (Water)			
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100						
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	818	Психика	Player's Status about Mental			
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100						
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	Темп. тела	Player's Status about Body Temparature			
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100						
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	822	Кот	Cat's Status			
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100						
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	824	День	Number of days the player survived			
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00						
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	826	Укрытия	Number of Shelters that unlocked			
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00						
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	828	Задания	Number of Tasks that cleared			
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00						
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	830	Квесты	Number of Quests that cleard			
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00						
-Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS			Number of Civil Defence Shelters (Not Updated yet)			
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00						
-Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?			Wating for Update			
-Inventory	Stats	Number	1	ignore									?			Wating for Update			
-Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	Инструменты				
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	События				
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	Крафт				
-Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	Близость				
-Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	Заметки заданий				
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION		max_length
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	748	Здоровье			
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100			Value(Integer) about the Vital. Untranslatable.		
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	750	Энергия			
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100			Value(Integer) about the Vital. Untranslatable.		
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	752	Гидратация			
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100			Value(Integer) about the Vital. Untranslatable.		
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	754	Психика			
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100			Value(Integer) about the Vital. Untranslatable.		
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	756	Темп. тела			
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100			Value(Integer) about the Vital. Untranslatable.		
+HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	Кислород			
+HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:					
+HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			Value(Integer) about the FPS. Untranslatable.		
+HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	Укрытие (Зона 05)			
+Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	Инвентарь			
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			Value(Float) about Capacity. Untranslatable.		
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			Value(Float) about Weight. Untranslatable.		
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000			Value(Float) about Value(Money). Untranslatable.		
+Inventory	#Not Checked	Name	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	764	Контейнер			
+Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0			Value(Float) about Weight. Untranslatable.		
+Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000			Value(Float) about Weight. Untranslatable.		
+Inventory	Equipment	Name	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	766	Снаряжение			
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg			Value(Float) about Capacity. Untranslatable.		
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000			Value(Float) about Value. Untranslatable.		
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100			Value(Float) about Insulation. Untranslatable.		
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A			Value(Float) about Dexterity. Untranslatable.		
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A			Value(Float) about Menace. Untranslatable.		
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A			Value(Float) about CBRN. Untranslatable.		
+Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	Основное	Inventory Slot for Primary Weapon		
+Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	Вторичное	Inventory Slot for Secondory Weapon		
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	Нож	Inventory Slot for Knife		
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	Граната	Inventory Slot for Grenade1		
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	Граната	Inventory Slot for Grenade2		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	Рюкзак	Inventory Slot for Backpack		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	Разгрузка	Inventory Slot for Rig(Vest)		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	Шлем	Inventory Slot for Helmet		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	784	Голова	Inventory Slot for Hat/Cap		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	786	Туловище	Inventory Slot for Jacket		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	788	Ноги	Inventory Slot for Pants		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	790	Пояс	Inventory Slot for Belt		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	792	Ступни	Inventory Slot for Shoes		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	794	Руки	Inventory Slot for Gloves		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	796	Спички	Inventory Slot for Matches(lighter)		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	798	Фонарь	Inventory Slot for FlashLight		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	800	NVG	Inventory Slot for Night Vision Goggle (NVG)		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	802	Время	Inventory Slot for Clock(Time)		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	804	Карта	Inventory Slot for Map		
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	806	Плеер	"Inventory Slot for Carest/MP3 ""Player"""		
+Inventory	Vitals	Dictionary	0	substr									Vital	808	Показатель	allow conflict		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	810	Персонаж			
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	812	Здоровье	Player's Status about Health Point (HP)		
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100					
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	814	Энергия	Player's Status about Energy		
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100					
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	816	Гидратация	Player's Status about Hydration (Water)		
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100					
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	818	Психика	Player's Status about Mental		
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100					
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	Темп. тела	Player's Status about Body Temparature		
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100					
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	822	Кот	Cat's Status		
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100					
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	824	День	Number of days the player survived		
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00					
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	826	Укрытия	Number of Shelters that unlocked		
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00					
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	828	Задания	Number of Tasks that cleared		
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00					
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	830	Квесты	Number of Quests that cleard		
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00					
+Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS			Number of Civil Defence Shelters (Not Updated yet)		
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00					
+Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?			Wating for Update		
+Inventory	Stats	Number	1	ignore									?			Wating for Update		
+Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	Инструменты			
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	События			
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	Крафт			
+Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	Близость			
+Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	Заметки заданий			
 Inventory	Tools/Task Note	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty	842	Заметки заданий пусты	"Task Note will only display this Strings when there's any task added in the Task Note.
-It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"			
+It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"		
 Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	Заметки заданий недоступны (Обучение)	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
-Dynamically changed by Scripts/Interface.gd: notesHint.text"			
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	Заметки заданий пусты				
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	Заметки заданий недоступны (Обучение)				
-Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	Карта мира				
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	Карта не надета				
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	Карта недоступна (Vostok)				
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	Карта не надета				
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	Карта недоступна (Vostok)				
+Dynamically changed by Scripts/Interface.gd: notesHint.text"		
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	Заметки заданий пусты			
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	Заметки заданий недоступны (Обучение)			
+Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	Карта мира			
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	Карта не надета			
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	Карта недоступна (Vostok)			
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	Карта не надета			
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	Карта недоступна (Vostok)			
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
 Zoom = [SCROLL]"	860	"Перемещение = [LMB]
-Масштаб = [SCROLL]"				
-Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	862	Центрировать карту	Focuse the Map to Player's Location			
-Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	864	Кассетный плеер				
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	Кассетный плеер не надет				
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	Кассетный плеер не надет				
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	Кассетный плеер разряжен 0%, зарядите плеер				
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	Кассетный плеер пуст, вставьте кассету				
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	Эта кассета содержит лицензионную музыку (предупреждение о контенте)				
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	Название кассеты				
-Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%						
-Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪						
-Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	878	Заглушить фоновую музыку [ВКЛ]	Casette will Overide the Ambient Music when it's ON			
+Масштаб = [SCROLL]"			
+Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	862	Центрировать карту	Focuse the Map to Player's Location		
+Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	864	Кассетный плеер			
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	Кассетный плеер не надет			
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	Кассетный плеер не надет			
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	Кассетный плеер разряжен 0%, зарядите плеер			
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	Кассетный плеер пуст, вставьте кассету			
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	Эта кассета содержит лицензионную музыку (предупреждение о контенте)			
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	Название кассеты			
+Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%					
+Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪					
+Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	878	Заглушить фоновую музыку [ВКЛ]	Casette will Overide the Ambient Music when it's ON		
 Inventory	Tools/Casette	Button	0	literal			UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button			Override Ambient Music [OFF]	880	Заглушить фоновую музыку [ВЫКЛ]	"Casette will Overide the Ambient Music when it's ON.
-Dynamically changed by Scripts/Audio.gd"			
-Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	882	Заглушить фоновую музыку [ВКЛ]				
-Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	884	Заглушить фоновую музыку [ВЫКЛ]				
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	886	Кочевники				
-Traders	Traders	Title	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	888	Торговец				
-Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	890	Поставки				
-Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	892	Задания				
-Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	894	Имя:				
+Dynamically changed by Scripts/Audio.gd"		
+Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	882	Заглушить фоновую музыку [ВКЛ]			
+Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	884	Заглушить фоновую музыку [ВЫКЛ]			
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	886	Кочевники			
+Traders	Traders	Title	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	888	Торговец			
+Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	890	Поставки			
+Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	892	Задания			
+Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	894	Имя:			
 Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Name	Value	Label	text	191837597	Trader	896	Торговец	"Dynamically Changed as Traders/{name}/{name}.tres file's name field
-by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"			
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	898	Налог:				
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%						
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	900	Задания:				
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10						
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	Пополнение:				
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00						
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	904	Сделка				
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	906	Запрашиваемая стоимость + налог (€)				
-Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0						
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	908	Предлагаемая стоимость (€)				
-Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0						
-Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	910	Сбросить				
-Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	912	Принять				
-Traders	Supply	String	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	914	Поставки				
-Traders	Supply	Number	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000						
-Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	916	Задания				
-Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	Каталог мебели				
-Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	Каталог привязан к вашему персонажу — гибель также уничтожит предметы из каталога				
+by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"		
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	898	Налог:			
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%					
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	900	Задания:			
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10					
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	Пополнение:			
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00					
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	904	Сделка			
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	906	Запрашиваемая стоимость + налог (€)			
+Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0					
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	908	Предлагаемая стоимость (€)			
+Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0					
+Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	910	Сбросить			
+Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	912	Принять			
+Traders	Supply	String	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	914	Поставки			
+Traders	Supply	Number	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000					
+Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	916	Задания			
+Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	Каталог мебели			
+Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	Каталог привязан к вашему персонажу — гибель также уничтожит предметы из каталога			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
 "	922	"Использовать
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
 "	924	"Экипировать
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
 "	926	"Снять
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
 "	928	"Разгрузить
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
 "	930	"Разделить
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
 "	932	"Взять
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
 "	934	"Спать
-"				
-Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	Спать				
+"			
+Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	Спать			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
 "	938	"Передать
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
 "	940	"Выбросить
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
 "	942	"Разместить
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
 "	944	"Уничтожить
-"				
-Inventory	Item	Button	0	pattern									Remove {name}	946	Remove {name}				
+"			
+Inventory	Item	Button	0	pattern									Remove {name}	946	Remove {name}			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
 "	948	"Убрать [0]
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
 "	950	"Убрать [1]
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
 "	952	"Убрать [2]
-"				
+"			
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
 "	954	"Убрать [3]
-"				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	Coffeemaster				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	Расходник				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	Легендарный				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	962	Предмет — объект в игровом мире, который может быть подобран игроком.				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	964	Снаряжение:				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	966	Основное				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	968	Состояние:				
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	970	Вес:				
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	972	Стоимость:				
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	974	Калибр:				
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	976	Урон:				
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	978	Пробитие:				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	Уровень 1				
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 2	982	Уровень 2				
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 3	984	Уровень 3				
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 4	986	Уровень 4				
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 5	988	Уровень 5				
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label		1220649414	Protection:	990	Защита:				
-Inventory	Item	String	0	pattern									Level {no}	992	Level {no}				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	Уровень 1				
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 2	996	Уровень 2				
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 3	998	Уровень 3				
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 4	1000	Уровень 4				
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 5	1002	Уровень 5				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	Ёмкость:				
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	1006	Утепление:				
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	1008	Здоровье:				
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	1010	Энергия:				
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	1012	Гидратация:				
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	1014	Психика:				
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	1016	Темп. тела:				
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10						
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	1018	Вложение:				
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine			PlaceHolderText, Don't need to translate (Will be handled by substr).			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	Лечит:				
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	1022	Совместимые предметы:				
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG			PlaceHolderText, Don't need to translate (Will be handled by substr).			
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	Требуется источник тепла				
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	Требуется верстак				
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	Требуется укрытие				
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	1030	Предмет				
-Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%						
-Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1						
-Inventory	#Not Checked	String	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	1032	Профайлер	Developer Only			
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	Показать				
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	1036	Название рецепта				
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00						
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	1038	Вход:				
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).			
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	1040	Выход:				
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).			
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	Начать загрузку				
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	Начать загрузку				
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input						
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input						
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input						
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	Остановить загрузку				
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	Сбросить загрузку				
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	Изготовить				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	Тепло				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	Расположенный рядом элемент крафта, необходимый для некоторых рецептов приготовления пищи.				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	Требование близости				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	Верстак				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	Расположенный рядом элемент крафта, необходимый для некоторых строительных рецептов.				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	Требование близости				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	Испытательный стенд	I can't find this. Maybe not updated in 1.0.0 version yet.			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	Расположенный рядом элемент крафта, необходимый для некоторых электронных рецептов.	I can't find this. Maybe not updated in 1.0.0 version yet.			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	Требование близости	I can't find this. Maybe not updated in 1.0.0 version yet.			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	Укрытие				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	Расположенный рядом элемент крафта, необходимый для некоторых рецептов изготовления мебели.				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	Требование близости				
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	Торговец				
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	Долг зовёт	PlaceHolder			
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	1080	Добавить в Заметки				
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	1082	Убрать				
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	1084	Сложность:				
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	1086	Лёгкий				
+"			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	Coffeemaster			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	Расходник			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	Легендарный			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	962	Предмет — объект в игровом мире, который может быть подобран игроком.			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	964	Снаряжение:			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	966	Основное			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	968	Состояние:			
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	970	Вес:			
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	972	Стоимость:			
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	974	Калибр:			
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	976	Урон:			
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	978	Пробитие:			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	Уровень 1			
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 2	982	Уровень 2			
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 3	984	Уровень 3			
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 4	986	Уровень 4			
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label		1801991368	Level 5	988	Уровень 5			
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label		1220649414	Protection:	990	Защита:			
+Inventory	Item	String	0	pattern									Level {no}	992	Level {no}			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	Уровень 1			
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 2	996	Уровень 2			
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 3	998	Уровень 3			
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 4	1000	Уровень 4			
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label		357478276	Level 5	1002	Уровень 5			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	Ёмкость:			
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	1006	Утепление:			
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	1008	Здоровье:			
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	1010	Энергия:			
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	1012	Гидратация:			
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	1014	Психика:			
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	1016	Темп. тела:			
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10					
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	1018	Вложение:			
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine			PlaceHolderText, Don't need to translate (Will be handled by substr).		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	Лечит:			
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	1022	Совместимые предметы:			
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG			PlaceHolderText, Don't need to translate (Will be handled by substr).		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	Требуется источник тепла			
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	Требуется верстак			
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	Требуется укрытие			
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	1030	Предмет			
+Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%					
+Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1					
+Inventory	#Not Checked	String	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	1032	Профайлер	Developer Only		
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	Показать			
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	1036	Название рецепта			
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00					
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	1038	Вход:			
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	1040	Выход:			
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	Начать загрузку			
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	Начать загрузку			
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input					
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input					
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input					
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	Остановить загрузку			
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	Сбросить загрузку			
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	Изготовить			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	Тепло			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	Расположенный рядом элемент крафта, необходимый для некоторых рецептов приготовления пищи.			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	Требование близости			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	Верстак			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	Расположенный рядом элемент крафта, необходимый для некоторых строительных рецептов.			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	Требование близости			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	Испытательный стенд	I can't find this. Maybe not updated in 1.0.0 version yet.		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	Расположенный рядом элемент крафта, необходимый для некоторых электронных рецептов.	I can't find this. Maybe not updated in 1.0.0 version yet.		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	Требование близости	I can't find this. Maybe not updated in 1.0.0 version yet.		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	Укрытие			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	Расположенный рядом элемент крафта, необходимый для некоторых рецептов изготовления мебели.			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	Требование близости			
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	Торговец			
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	Долг зовёт	PlaceHolder		
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	1080	Добавить в Заметки			
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	1082	Убрать			
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	1084	Сложность:			
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	1086	Лёгкий			
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Description	Label	text	1563024386	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	1088	"На прошлой неделе я навестил Доктора в той заброшенной школе неподалёку. Он сказал, что мне следует избавиться от всех ""вредных привычек"", но сам старый хрыч при этом курит — так что плевать на него!
 
-Ты, скорее всего, один из тех современных хиппи, которые в трудную минуту лишь лижут мятные пастилки, но если вдруг найдёшь одну такую — принеси пачку-другую и ещё спички."				
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	1090	Доставить:				
-Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	Получить:				
-Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).			
+Ты, скорее всего, один из тех современных хиппи, которые в трудную минуту лишь лижут мятные пастилки, но если вдруг найдёшь одну такую — принеси пачку-другую и ещё спички."			
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	1090	Доставить:			
+Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	Получить:			
+Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
 → Your furniture is located in Furniture Catalog [Decor Mode]"	1094	"→ За это задание вы получите мебель для укрытия
-→ Ваша мебель находится в Каталоге мебели [Режим декора]"				
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	Начать доставку				
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	Начать доставку				
-Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery						
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	Остановить доставку				
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	Остановить доставку				
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	Доставлено				
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	Доставлено				
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	Завершить				
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶						
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen						
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30						
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	1110	Грузоподъёмность				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	Значение грузоподъёмности (кг) всех предметов снаряжения.				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	1114	Характеристика инвентаря				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	1116	Вес инвентаря				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	Значение веса (кг) всех предметов в инвентаре.				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	1120	Характеристика инвентаря				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	1122	Стоимость инвентаря				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	Ценовое значение (€) всех предметов в инвентаре.				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	1126	Характеристика инвентаря				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	1128	Вес контейнера				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	Значение веса (кг) всех предметов в контейнере.				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	1132	Характеристика контейнера				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	1134	Стоимость контейнера				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	Ценовое значение (€) всех предметов в контейнере.				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	1138	Характеристика контейнера				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	Грузоподъёмность				
+→ Ваша мебель находится в Каталоге мебели [Режим декора]"			
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	Начать доставку			
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	Начать доставку			
+Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery					
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	Остановить доставку			
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	Остановить доставку			
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	Доставлено			
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	Доставлено			
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	Завершить			
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶					
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen					
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30					
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	1110	Грузоподъёмность			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	Значение грузоподъёмности (кг) всех предметов снаряжения.			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	1114	Характеристика инвентаря			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	1116	Вес инвентаря			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	Значение веса (кг) всех предметов в инвентаре.			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	1120	Характеристика инвентаря			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	1122	Стоимость инвентаря			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	Ценовое значение (€) всех предметов в инвентаре.			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	1126	Характеристика инвентаря			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	1128	Вес контейнера			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	Значение веса (кг) всех предметов в контейнере.			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	1132	Характеристика контейнера			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	1134	Стоимость контейнера			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	Ценовое значение (€) всех предметов в контейнере.			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	1138	Характеристика контейнера			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	Грузоподъёмность			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		info	825286726	"A weight capacity value (kg) of how much inventory weight you can carry.
 
 Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
@@ -314,12 +314,12 @@ Carry Capacity by default is 10kg"	1142	"Максимальный вес (кг) 
 
 Грузоподъёмность увеличивается при надевании предметов с положительной характеристикой грузоподъёмности, таких как рюкзаки, разгрузки или одежда.
 
-Грузоподъёмность по умолчанию составляет 10 кг"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	Характеристика снаряжения				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	Стоимость снаряжения				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	Ценовое значение (€) всех предметов снаряжения.				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	Характеристика снаряжения				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	Утепление				
+Грузоподъёмность по умолчанию составляет 10 кг"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	Характеристика снаряжения			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	Стоимость снаряжения			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	Ценовое значение (€) всех предметов снаряжения.			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	Характеристика снаряжения			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	Утепление			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		info	1800952039	"A clothing-based thermal protection value against cold.
 
 Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
@@ -338,9 +338,9 @@ Insulation examples:
 Примеры утепления:
 [100] = падение Темп. тела полностью остановлено
 [50] = падение Темп. тела замедлено на 50%
-[0] = Темп. тела падает с обычной скоростью"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	Характеристика снаряжения				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	1158	Ловкость				
+[0] = Темп. тела падает с обычной скоростью"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	Характеристика снаряжения			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	1158	Ловкость			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		info	550854834	"An inertia-based value of how quickly you can move and do certain actions.
 
 Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
@@ -349,9 +349,9 @@ Dexterity decreases when you equip heavy or unergonomic items with a negative de
 
 Ловкость влияет на скорость передвижения и обращение с оружием: прицеливание и перезарядку.
 
-Ловкость снижается при надевании тяжёлых или неэргономичных предметов с отрицательной характеристикой ловкости."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	Характеристика снаряжения				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	Угроза				
+Ловкость снижается при надевании тяжёлых или неэргономичных предметов с отрицательной характеристикой ловкости."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	Характеристика снаряжения			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	Угроза			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		info	1925451931	"An intimidation value of how threatening AI sees your character and equipment.
 
 When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
@@ -364,10 +364,10 @@ Menace only affects low-tier AI (Bandits)."	1166	"Значение запуги�
 
 Угроза увеличивается при надевании особых предметов одежды с положительной характеристикой угрозы.
 
-Угроза влияет только на ИИ низшего уровня (Бандиты)."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	Характеристика снаряжения				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	РХБЯ				
-Inventory	Stats	String	0	substr									CBRN	1172	РХБЯ				
+Угроза влияет только на ИИ низшего уровня (Бандиты)."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	Характеристика снаряжения			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	РХБЯ			
+Inventory	Stats	String	0	substr									CBRN	1172	РХБЯ			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		info	215856199	"A protection value against chemical, biological, radiological and nuclear threats.
 
 CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
@@ -376,9 +376,9 @@ CBRN increases when you equip items such as special clothing or protective masks
 
 РХБЯ связана с показателем Здоровья: РХБЯ снижает скорость падения Здоровья при нахождении в опасных зонах или контакте с опасными материалами.
 
-РХБЯ увеличивается при надевании особой одежды или защитных масок с положительной характеристикой РХБЯ."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	Характеристика снаряжения				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	1178	Здоровье				
+РХБЯ увеличивается при надевании особой одежды или защитных масок с положительной характеристикой РХБЯ."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	Характеристика снаряжения			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	1178	Здоровье			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		info	2025955860	"Your main vital for staying alive.
 
 Health decreases with damages and active medical conditions.
@@ -391,9 +391,9 @@ Health [0] -> Character dies"	1180	"Главный показатель выжи
 
 Здоровье повышается с помощью определённых медицинских предметов, таких как бинты и аптечки.
 
-Здоровье [0] -> Персонаж умирает"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	1182	Показатель				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	1184	Энергия				
+Здоровье [0] -> Персонаж умирает"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	1182	Показатель			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	1184	Энергия			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		info	256184	"Your hunger and energy level.
 
 Energy decreases over time and using map transitions with Energy Cost.
@@ -406,9 +406,9 @@ Energy [0] -> Starvation (Condition)"	1186	"Ваш уровень голода �
 
 Энергия повышается при употреблении определённых расходников, например еды.
 
-Энергия [0] -> Голодание (Состояние)"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	1188	Показатель				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	1190	Гидратация				
+Энергия [0] -> Голодание (Состояние)"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	1188	Показатель			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	1190	Гидратация			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		info	1778216863	"Your thirst and hydration level.
 
 Hydration decreases over time and using map transitions with Hydration Cost. 
@@ -425,9 +425,9 @@ Hydration [0] -> Dehydration (Condition)"	1192	"Ваш уровень жажды
 
 Гидратация повышается при употреблении определённых расходников, например напитков.
 
-Гидратация [0] -> Обезвоживание (Состояние)"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	Показатель				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	1196	Психика				
+Гидратация [0] -> Обезвоживание (Состояние)"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	Показатель			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	1196	Психика			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		info	1524485513	"Your happiness and sanity level.
 
 Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
@@ -440,9 +440,9 @@ Mental [0] -> Insanity (Condition)"	1198	"Ваш уровень счастья �
 
 Психика повышается при использовании комфортных предметов: снеков, горячих блюд и пороков вроде алкоголя или никотина.
 
-Психика [0] -> Безумие (Состояние)"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	Показатель				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	Темп. тела				
+Психика [0] -> Безумие (Состояние)"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	Показатель			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	Темп. тела			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
 
 Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
@@ -455,9 +455,9 @@ Body Temp [0] -> Frostbite (Condition)"	1204	"Ваш уровень тепла �
 
 Темп. тела повышается в Укрытии или рядом с источниками тепла, такими как костры. Некоторые предметы обогрева — например, грелки или космические одеяла — также повышают Темп. тела.
 
-Темп. тела [0] -> Обморожение (Состояние)"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	Показатель				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	Кот				
+Темп. тела [0] -> Обморожение (Состояние)"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	Показатель			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	Кот			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		info	2119249152	"Grandma's cat health level.
 
 Cat health activates if you decide to rescue the Cat and bring her to your shelter.
@@ -474,9 +474,9 @@ Cat [0] -> Cat dies"	1210	"Уровень здоровья кота бабушк
 
 Здоровье кота повышается при кормлении кота расходниками, такими как кошачий корм или консервированный тунец.
 
-Кот [0] -> Кот умирает"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	Показатель				
-Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	Перегрузка				
+Кот [0] -> Кот умирает"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	Показатель			
+Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	Перегрузка			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		info	1472180750	"A condition where you are carrying too much weight and movement becomes unsustainable.
 
 Causes:
@@ -501,9 +501,9 @@ Cures:
 - Высота прыжка [-50%]
 
 Лечение:
-- Вес инвентаря < Грузоподъёмность"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	1220	Голодание				
+- Вес инвентаря < Грузоподъёмность"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	1220	Голодание			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		info	1549426522	"A condition where you have a lack of calories and essential nutrients.
 
 Causes:
@@ -526,9 +526,9 @@ Cures:
 - Восстановление выносливости [-50%]
 
 Лечение:
-- Расходники"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	1226	Обезвоживание				
+- Расходники"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	1226	Обезвоживание			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		info	986386791	"A condition where your body doesn't have enough fluids to function normally.
 
 Causes:
@@ -551,9 +551,9 @@ Cures:
 - Восстановление выносливости [-50%]
 
 Лечение:
-- Расходники"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	1232	Кровотечение				
+- Расходники"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	1232	Кровотечение			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		info	1768354194	"A condion where you have a minor bleeding from small cuts or scrapes.
 
 Causes: 
@@ -584,9 +584,9 @@ Cures:
 - Бинт
 - Жгут
 - Аптечка
-- IFAK / AFAK"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	1238	Перелом				
+- IFAK / AFAK"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	1238	Перелом			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		info	139365606	"A condition where you have a partial or complete break in the bone.
 
 Causes: 
@@ -617,11 +617,11 @@ Cures:
 Лечение: 
 - Шина
 - Аптечка
-- IFAK / AFAK"				
-Inventory	Stats	String	0	substr									Explosion	1242	Взрыв				
-Inventory	Stats	String	0	substr									Fall	1244	Падение				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	Ожог				
+- IFAK / AFAK"			
+Inventory	Stats	String	0	substr									Explosion	1242	Взрыв			
+Inventory	Stats	String	0	substr									Fall	1244	Падение			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	Ожог			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		info	275854551	"A condition where you have a tissue damage from intense heat or high-voltage electric current.
 
 Causes:
@@ -648,9 +648,9 @@ Cures:
 - Бальзам
 - Лосьон
 - Аптечка
-- IFAK / AFAK"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	1254	Обморожение				
+- IFAK / AFAK"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	1254	Обморожение			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		info	24250462	"A condition where you have hypothermia or body part freezes from cold exposure.
 
 Causes: 
@@ -673,9 +673,9 @@ Cures:
 Лечение:
 - Источники огня
 - Спальный мешок
-- Термоодеяло"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	1260	Безумие				
+- Термоодеяло"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	1260	Безумие			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		info	1233339607	"A condition where your sanity breaks and you start having dark thoughts.
 
 Causes: 
@@ -700,9 +700,9 @@ Cures:
 - Расходники
 - Сон
 - Источники огня
-- Инструменты"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	1266	Отравление				
+- Инструменты"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	1266	Отравление			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		info	379297031	"A condition where toxic substance entered your digestion or lungs.
 
 Causes:
@@ -725,9 +725,9 @@ Cures:
 
 Лечение:
 - Аптечка
-- AFAK"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	1272	Разрыв				
+- AFAK"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	1272	Разрыв			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		info	71304217	"A critical condition where you have a catastrofal bleeding or major internal wound.
 
 Causes: 
@@ -750,9 +750,9 @@ Cures:
 
 Лечение:
 - Аптечка
-- IFAK / AFAK"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	1278	Выстрел в голову				
+- IFAK / AFAK"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	1278	Выстрел в голову			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		info	1309688651	"A critical condition where you have a major head related wound.
 
 Causes: 
@@ -773,10 +773,10 @@ Cures:
 
 Лечение:
 - Аптечка
-- IFAK / AFAK"				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	Медицинское состояние				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	1284	День				
-Inventory	Stats	String	0	substr									Day	1286	День				
+- IFAK / AFAK"			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	Медицинское состояние			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	1284	День			
+Inventory	Stats	String	0	substr									Day	1286	День			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		info	1507600508	"Number of Days survived.
 
 New day begins at 00:00 midnight and certain amount of days will unlock new game events.
@@ -785,9 +785,9 @@ Upcoming events can be displayed by using the Events tool."	1288	"Количес
 
 Новый день начинается в 00:00, и по достижении определённого количества дней разблокируются новые игровые события.
 
-Предстоящие события можно просмотреть с помощью инструмента «События»."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	Статистика прогресса				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	1292	Укрытия				
+Предстоящие события можно просмотреть с помощью инструмента «События»."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	Статистика прогресса			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	1292	Укрытия			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		info	821447952	"Number of Shelters unlocked.
 
 Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
@@ -800,9 +800,9 @@ Additional Shelters can be unlocked with keys which you acquire by completing Ta
 
 Новая игра начинается с двумя разблокированными укрытиями: Домик и Палатка.
 
-Дополнительные укрытия можно разблокировать с помощью ключей, которые получают за выполнение заданий у различных торговцев."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	Статистика прогресса				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	Задания				
+Дополнительные укрытия можно разблокировать с помощью ключей, которые получают за выполнение заданий у различных торговцев."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	Статистика прогресса			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	Задания			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		info	1384285326	"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
@@ -811,16 +811,16 @@ Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to un
 
 Задания — это предметные поручения от торговцев. Задания могут быть взаимосвязаны между несколькими торговцами и иногда требуют непредметов, создаваемых через крафт.
 
-Задания влияют на снижение цен (налог торговца) и дают ключи для разблокировки новых укрытий и особых комнат."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	Статистика прогресса				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	Квесты				
+Задания влияют на снижение цен (налог торговца) и дают ключи для разблокировки новых укрытий и особых комнат."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	Статистика прогресса			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	Квесты			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		info	1702334479	"Number of Quests completed.
 
 Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	1306	"Количество выполненных квестов.
 
-Квесты — лорные миссии от торговцев. Квесты могут быть взаимосвязаны между несколькими торговцами и для их начала могут потребоваться определённые события."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	Статистика прогресса				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	1310	Бункеры гражданской обороны				
+Квесты — лорные миссии от торговцев. Квесты могут быть взаимосвязаны между несколькими торговцами и для их начала могут потребоваться определённые события."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	Статистика прогресса			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	1310	Бункеры гражданской обороны			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		info	2004804582	"Number of CDS completed.
 
 Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
@@ -833,9 +833,9 @@ You can complete a CDS by clearing out the hostile enemies and connecting the CD
 
 После эвакуации Зоны 05 эти БГО были захвачены, а большая часть снаряжения внутри разграблена.
 
-Чтобы завершить БГО, нужно уничтожить враждебных противников и включить аварийное радио экстренного вещания."				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	Статистика прогресса				
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	Тихая ночь				
+Чтобы завершить БГО, нужно уничтожить враждебных противников и включить аварийное радио экстренного вещания."			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	Статистика прогресса			
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	Тихая ночь			
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		info	1661761957	"There will be a silent night when all fades away.
 
 When you look up, you see the North Star, your only light in the darkness.
@@ -852,11 +852,11 @@ Then your last light disappears, the sky turns red and the silence breaks."	1318
 
 Ты чувствуешь себя в безопасности, в этом мирном мгновении, похожем на желанный конец.
 
-Затем твой последний огонь гаснет, небо становится алым, и тишина разрывается."				
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	Особое событие				
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	1322	Стоимость поставок				
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	Ценовое значение (€) всех предметов поставок.				
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	Характеристика торговца				
+Затем твой последний огонь гаснет, небо становится алым, и тишина разрывается."			
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	Особое событие			
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	1322	Стоимость поставок			
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	Ценовое значение (€) всех предметов поставок.			
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	Характеристика торговца			
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		info	844527464	"A friendly NPC with trading supply, tasks and specialized services.
 
 Name: Commonly known name among locals.
@@ -867,9 +867,9 @@ Resupply: Time when supply resets."	1328	"Дружелюбный NPC с торг
 Имя: широко известное имя среди местных.
 Налог: множитель цены на товары.
 Задания: количество выполненных заданий.
-Пополнение: время сброса поставок."				
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	Информация о торговце				
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	Сделка				
+Пополнение: время сброса поставок."			
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	Информация о торговце			
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	Сделка			
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		info	1021981031	"A deal balance meter which compares selected item values.
 
 Requsted Value (€) is calculated from selected Supply items with Tax added.
@@ -882,5 +882,5 @@ Deal can be accepted when Deal Meter is within green area which means Offer Valu
 
 Предлагаемая стоимость (€) рассчитывается из выбранных предметов инвентаря.
 
-Сделку можно принять, когда измеритель находится в зелёной зоне — это означает, что предлагаемая стоимость соответствует или превышает запрашиваемую стоимость с налогом."				
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	Измеритель сделки				
+Сделку можно принять, когда измеритель находится в зелёной зоне — это означает, что предлагаемая стоимость соответствует или превышает запрашиваемую стоимость с налогом."			
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	Измеритель сделки			

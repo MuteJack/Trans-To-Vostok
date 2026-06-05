@@ -59,12 +59,8 @@ LOCALE_JSON = REPO / "src" / "locale.json"
 TEMPLATE_LOCALE = "Template"
 
 LOCALE_SPECIFIC: dict[str, set[str]] = {
-    # `Comments` is treated as locale-specific for now — translators routinely
-    # leave per-row notes that legitimately differ from Template. Tracking
-    # genuine Template-side Comments drift requires a smarter check (see
-    # memory/todo_comments_drift.md).
-    "Translation": {"translation", "Comments"},
-    "Texture":     {"Translation", "Reworked by", "Contributors", "Attribution", "Comments"},
+    "Translation": {"translation"},
+    "Texture":     {"Translation", "Reworked by", "Contributors", "Attribution"},
 }
 
 CRITICAL = "Critical"

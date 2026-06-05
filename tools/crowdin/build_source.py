@@ -146,7 +146,7 @@ def _row_to_texture_source(row: dict) -> dict | None:
         "source_phrase": row.get("Text", ""),
         "translation": "",
         "context": _compose_context(_texture_location_hint(row),
-                                    row.get("File Directory", "")),
+                                    row.get("DESCRIPTION", "")),
         "labels": _join_labels(row.get("Where", ""), row.get("Sub", ""), row.get("Type", "")),
         "max_length": (row.get("max_length") or "").strip(),
     }

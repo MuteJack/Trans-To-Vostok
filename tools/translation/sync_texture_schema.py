@@ -8,7 +8,7 @@ Translations/<locale>/Texture/* to mirror Template's structure:
   - Preserve locale's existing Translation, Reworked by, Contributors,
     Attribution for rows that already match (key = File Dir + File Name)
   - Update structural columns (Where, Sub, Type, method, Text,
-    File Directory, File Name, Comments, max_length) from Template
+    File Directory, File Name, DESCRIPTION, max_length) from Template
   - Sync _sheet_order.txt to match Template
 
 Rows present in locale but missing from Template are KEPT by default
