@@ -12,6 +12,14 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.6.1] — 2026-06-06
+
+- **Added**: **Russian** (*Русский*) language is now available in the F9
+  language list. Initial machine-translated pass (text only; texture
+  translation pending).
+
+---
+
 ## [0.6.0] — 2026-05-31
 
 - **Added — New rendering path (composite-on-original)**: Beyond the
@@ -227,6 +235,13 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 ## 알려진 문제
 
 - _(현재 없음)_
+
+---
+
+## [0.6.1] — 2026-06-06
+
+- **추가**: **러시아어** (*Русский*)가 F9 언어 선택 목록에 추가되었습니다.
+  DeepL 1차 기계번역 (텍스트만; 텍스처는 추후 작업 예정).
 
 ---
 

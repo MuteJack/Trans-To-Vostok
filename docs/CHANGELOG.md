@@ -4,6 +4,118 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.1] — 2026-06-06 (Tooling Refactor + Validation System + Russian)
+
+Russian locale flips to enabled. A major tooling restructure splits the
+monolithic `tools/utils/` into purpose-specific subdirectories, moves
+GDScript sources and canonical TSVs to cleaner paths, and introduces an
+8-tool validation suite covering every concern in the canonical-TSV
+workflow. A Crowdin numeric `identifier` column replaces the old
+compound-key approach as the primary row key. Several sync / build bugs
+are fixed.
+
+### Added
+
+- **Russian locale enabled** — `locale.json` `enabled: false → true`.
+  Full DeepL initial pass complete. Text only; texture translation pending.
+- **`tools/validation/` — 8-tool validation suite** (`a61d2a6`):
+  - `check_required_cols.py` — required columns per category
+  - `check_duplicates.py` — row clones by structural key
+  - `check_whitespace_text.py` — `text` col vs parser whitespace
+  - `check_deprecated.py` — xlsx rows absent from parser
+  - `check_missing.py` — parser entries absent from xlsx
+  - `check_diff_with_Template.py` — row-level drift Template ↔ locale
+  - `check_whitespace_translated.py` — `text` ↔ `translation` whitespace mismatch
+  - `check_conflict.py` — same source text, different translations
+- **`tools/validation/validate_texture.py`** — texture-specific validation (`d76f7f1`).
+- **Phase 0–3 workflow orchestrators** (`80608ab`) — top-level scripts that
+  chain validation + build steps; `--dry-run` build pipeline wired up.
+- **`tools/translation/sync_translation_schema.py`** (`5cc304b`) — propagates
+  Template's Translation TSV structure (rows + columns) to all active
+  locales, preserving each locale's `translation` column. Mirrors
+  `sync_texture_schema.py` for the Translation category.
+- **`identifier` column** (`813a409`) — Crowdin's numeric ID is now the
+  primary row key for Translation TSVs, replacing the previous compound
+  `(filename, parent, name, type, property, unique_id)` key. Crowdin tools
+  switched to use this column (`490bbd8`).
+- **`tools/parse/parse_textures.py`** (`a0a5776`) — parses translatable texture
+  entries from game source.
+- **`tools/helper/helper_log.py`** (`7f5ddb9`) — shared `setup_logpath()` /
+  `make_log_path()` helpers; 29 tool files updated to pass
+  `label=Path(__file__).stem` for tool-specific log filenames.
+- **`build_mod_package.py`: `--promote` flag** (`7f5ddb9`) — staging build
+  (`--dry-run` to sub-tools) followed by explicit promote to deploy path.
+- **`.gitattributes`** (`3d88a22`) — `*.tsv / *.json / *.py / *.md / *.gd`
+  normalized to LF; xlsx / png / jpg / webp / zip marked binary. Eliminates
+  CRLF→LF noise in `git diff` on Windows (`core.autocrlf=true`).
+- **Texture.xlsx — full texture registry for game version 0.1.1.3** (`689bf4b`)
+  — all translatable textures registered; `ignore` and `pending` methods
+  added for Texture rows (`501ba79`, `33bf6fc`).
+- **Texture image size + hash columns** (`82e4d8a`) — stored in Texture.xlsx
+  for validation use.
+
+### Changed
+
+- **`tools/utils/` split into purpose-specific subdirectories**:
+  - `tools/helper/` — shared helper modules (`5aacfee`)
+  - `tools/translation/` — Translation / Texture sync tools (`4b7d90d`)
+  - `tools/translator/` — DeepL machine-translation pipeline (`0dfce2e`)
+  - `tools/parse/` — game-source parsing utilities (`216cfc6`)
+- **GDScript sources moved** — `/Trans To Vostok/*.gd` → `/src/` (`156f34f`).
+- **Canonical TSV path** — `Translation/{locale}/{filename}/` →
+  `Translations/{locale}/tsv/{category}/` (`81262f7`).
+- **Locale texture path** — `/Trans To Vostok/{locale}/textures/` →
+  `Translations/{locale}/textures/` (`81262f7`).
+- **`crowdin.yml`** moved from repo root to `tools/crowdin/` (`feaffc4`).
+- **`comments` column removed; `Description` column retained** (`c2d70bb`) —
+  the two columns carried the same role; `comments` deleted,
+  `Description` kept as the unified field for both Translation and Texture.
+- **`build_mod_package.py`: `--dry-run` now propagates to sub-tools** (`bc640fd`)
+  — was hardcoded in every step; sub-tools now receive `--dry-run` only when
+  the orchestrator is invoked with `--dry-run` or `--promote`.
+- **`sync_translation_schema.py`: `_row_key` uses `text` as tiebreaker** —
+  rows sharing the same `(filename, parent, name, type, property, unique_id)`
+  but different `text` (e.g. two properties on the same node) no longer
+  collide and swap translations.
+- **`sync_texture_schema.py`**: `all` keyword expands to all enabled locales
+  (`4104c41`); extra-dir auto-discovery removed — `Translations/all/` is no
+  longer picked up as a sync target.
+
+### Fixed
+
+- **`build_runtime_tsv.py`: `all` keyword not handled** (`bad4e9a`) — passing
+  `all` tried to open `Translations/all/Translation.xlsx`; now expands to
+  all enabled locales.
+- **`push_to_crowdin.py`: stale helper import path** (`9e6caa6`) — still
+  importing from `tools/utils/` after the rename to `tools/helper/`.
+- **`build_mod_info.py`: `target_game_version` not written** (`7fd50df`) —
+  the field was not being auto-derived from `mod.txt` and populated into
+  `info.json` on build.
+- **Template Translation TSVs: spurious empty column at index 17** — unnamed
+  column causing an extra tab on every row in `Assets`, `Interface`,
+  `Messages`, `NotChecked`; removed.
+- **Template wrong `unique_id`** (`6824120`) — incorrect uid on one Template
+  row corrected.
+- **`setup_logpath`: `PermissionError` on directory path** (`4104c41`) —
+  passing a directory to `--logpath` now auto-generates a timestamped
+  filename inside it.
+- **Unicode `→` in source caused encoding errors** (`9ce1f7a`) — replaced
+  with ASCII `->` across affected files.
+
+### Removed
+
+- **`tools/utils/` (old layout)** — all contents either migrated to the new
+  subdirectories or deleted as dead code (`75a0010`, `78d7dfe`).
+
+### Internal / Tooling
+
+- `helper_translation_common.py` (`2789ca8`) — validation helpers consolidated
+  into a shared module consumed by both `build_runtime_tsv.py` and the new
+  `tools/validation/` suite.
+- Docs restructured / renamed (`e0eb2de`, `13e7767`, `ed8a7d7`).
+
+---
+
 ## [0.6.0] — 2026-05-31 (Texture Blend Method + Sign / Structure Textures)
 
 This release introduces a new **`blend` texture method** that composites a
@@ -1151,6 +1263,110 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.6.1] — 2026-06-06 (도구 리팩터링 + 검증 시스템 + Russian 활성화)
+
+Russian locale 활성화. 단일 `tools/utils/`를 목적별 하위 디렉터리로 분리하고,
+GDScript 소스와 캐노니컬 TSV 를 정돈된 경로로 이동하는 대규모 도구 구조 개편.
+캐노니컬 TSV 워크플로우의 모든 검증 항목을 담당하는 8종 검증 도구 모음 신설.
+기존 복합 키 방식을 대체하는 Crowdin 숫자 `identifier` 컬럼 도입.
+Sync / 빌드 관련 여러 버그 수정.
+
+### 추가
+
+- **Russian locale 활성화** — `locale.json` `enabled: false → true`.
+  DeepL 초기 번역 완료. 텍스트만; 텍스처 번역 추후 예정.
+- **`tools/validation/` — 8종 검증 도구 모음** (`a61d2a6`):
+  - `check_required_cols.py` — 카테고리별 필수 컬럼 확인
+  - `check_duplicates.py` — 구조 키 기준 중복 행 탐지
+  - `check_whitespace_text.py` — `text` 컬럼과 파서 whitespace 비교
+  - `check_deprecated.py` — 파서에 없는 xlsx 행 (deprecated 항목)
+  - `check_missing.py` — xlsx에 없는 파서 항목 (누락 번역)
+  - `check_diff_with_Template.py` — Template ↔ locale 행 단위 drift
+  - `check_whitespace_translated.py` — `text` ↔ `translation` whitespace 불일치
+  - `check_conflict.py` — 동일 원문, 다른 번역 충돌
+- **`tools/validation/validate_texture.py`** — 텍스처 전용 검증 (`d76f7f1`).
+- **Phase 0–3 workflow 오케스트레이터** (`80608ab`) — 검증 + 빌드 단계를
+  연결하는 상위 스크립트; `--dry-run` 빌드 파이프라인 연결.
+- **`tools/translation/sync_translation_schema.py`** (`5cc304b`) — Template 의
+  Translation TSV 구조 (행 + 컬럼) 를 모든 active locale 에 propagate.
+  각 locale 의 `translation` 컬럼 보존. `sync_texture_schema.py` 의
+  Translation 카테고리 대응 도구.
+- **`identifier` 컬럼** (`813a409`) — Crowdin 숫자 ID 를 Translation TSV 의
+  주키로 사용. 기존 복합 키 `(filename, parent, name, type, property,
+  unique_id)` 방식 대체. Crowdin 도구도 이 컬럼 기반으로 전환 (`490bbd8`).
+- **`tools/parse/parse_textures.py`** (`a0a5776`) — 게임 소스에서 번역 대상
+  텍스처 항목 파싱.
+- **`tools/helper/helper_log.py`** (`7f5ddb9`) — 공유 `setup_logpath()` /
+  `make_log_path()` 헬퍼; 29개 도구 파일에 `label=Path(__file__).stem`
+  전달 추가 (도구별 로그 파일명 자동 생성).
+- **`build_mod_package.py`: `--promote` 플래그** (`7f5ddb9`) — staging 빌드
+  (`--dry-run` 전파) 후 deploy 경로로 명시적 promote.
+- **`.gitattributes`** (`3d88a22`) — `*.tsv / *.json / *.py / *.md / *.gd`
+  LF 정규화; xlsx / png / jpg / webp / zip binary 지정. Windows
+  `core.autocrlf=true` 환경에서 CRLF→LF 로 인한 `git diff` 노이즈 제거.
+- **Texture.xlsx — 게임 버전 0.1.1.3 기준 텍스처 전체 등록** (`689bf4b`)
+  — 번역 대상 텍스처 모두 등록; Texture 행에 `ignore` / `pending` method
+  추가 (`501ba79`, `33bf6fc`).
+- **텍스처 이미지 크기 + 해시 컬럼** (`82e4d8a`) — 검증용으로 Texture.xlsx 에 저장.
+
+### 변경
+
+- **`tools/utils/` 목적별 하위 디렉터리 분리**:
+  - `tools/helper/` — 공유 헬퍼 모듈 (`5aacfee`)
+  - `tools/translation/` — Translation / Texture sync 도구 (`4b7d90d`)
+  - `tools/translator/` — DeepL 기계번역 파이프라인 (`0dfce2e`)
+  - `tools/parse/` — 게임 소스 파싱 유틸리티 (`216cfc6`)
+- **GDScript 소스 이동** — `/Trans To Vostok/*.gd` → `/src/` (`156f34f`).
+- **캐노니컬 TSV 경로 변경** — `Translation/{locale}/{filename}/` →
+  `Translations/{locale}/tsv/{category}/` (`81262f7`).
+- **locale 텍스처 경로 변경** — `/Trans To Vostok/{locale}/textures/` →
+  `Translations/{locale}/textures/` (`81262f7`).
+- **`crowdin.yml`** — repo root → `tools/crowdin/` 이동 (`feaffc4`).
+- **`comments` 컬럼 제거; `Description` 컬럼으로 통합** (`c2d70bb`) —
+  두 컬럼의 역할이 동일해 `comments` 삭제, `Description` 을 Translation /
+  Texture 공통 필드로 유지.
+- **`build_mod_package.py`: `--dry-run` 조건부 전파** (`bc640fd`) —
+  모든 step 에 하드코딩되어 있던 `--dry-run` 제거; 오케스트레이터에
+  `--dry-run` 또는 `--promote` 가 있을 때만 sub-tool 에 전달.
+- **`sync_translation_schema.py`: `_row_key` 에 `text` 보조 키 추가** —
+  `(filename, parent, name, type, property, unique_id)` 가 같고 `text` 만
+  다른 행 (예: 동일 노드의 두 property) 이 같은 키에 충돌해 번역이 교환되던
+  버그 수정.
+- **`sync_texture_schema.py`**: `all` 키워드가 모든 enabled locale 로 확장
+  (`4104c41`); extra-dir 자동 탐색 제거 — `Translations/all/` 이 sync 대상
+  으로 잘못 포함되던 문제 해결.
+
+### 수정
+
+- **`build_runtime_tsv.py`: `all` 키워드 미처리** (`bad4e9a`) — `all` 전달 시
+  `Translations/all/Translation.xlsx` 를 열려다 실패; 모든 enabled locale
+  로 확장하도록 수정.
+- **`push_to_crowdin.py`: 헬퍼 import 경로 오류** (`9e6caa6`) — `tools/utils/`
+  → `tools/helper/` 이름 변경 후에도 구 경로를 참조하던 문제 수정.
+- **`build_mod_info.py`: `target_game_version` 미기록** (`7fd50df`) —
+  `mod.txt` 에서 자동 파생해 `info.json` 에 기록되지 않던 문제 수정.
+- **Template Translation TSV: index 17 빈 컬럼** — `Assets`, `Interface`,
+  `Messages`, `NotChecked` 의 모든 행에 불필요한 탭이 추가되던 unnamed
+  컬럼 제거.
+- **Template 잘못된 `unique_id`** (`6824120`) — Template 행 하나의 uid 오류 수정.
+- **`setup_logpath`: 디렉터리 경로 전달 시 `PermissionError`** (`4104c41`) —
+  `--logpath` 에 디렉터리 경로를 전달하면 이제 디렉터리 내에 타임스탬프
+  파일명을 자동 생성.
+- **소스 내 유니코드 `→` 인코딩 오류** (`9ce1f7a`) — ASCII `->` 로 대체.
+
+### 제거
+
+- **`tools/utils/` (구 구조)** — 모든 내용이 신규 하위 디렉터리로 이전되거나
+  dead code 로 삭제 (`75a0010`, `78d7dfe`).
+
+### 내부 / 도구
+
+- `helper_translation_common.py` (`2789ca8`) — 검증 헬퍼를 공유 모듈로 통합.
+  `build_runtime_tsv.py` 및 신규 `tools/validation/` 모두 이 모듈을 사용.
+- 문서 구조 개편 / 이름 정리 (`e0eb2de`, `13e7767`, `ed8a7d7`).
+
+---
 
 ## [0.6.0] — 2026-05-31 (텍스처 Blend 방식 + 표지판 / 구조물 텍스처 추가)
 
