@@ -1,0 +1,102 @@
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	identifier	Reworked by	Contributors	Attribution	DESCRIPTION	max_length
+Asset	Sign	Caution	blend	"СТОП МІНИ!
+СТОП МИНЫ!"		\Assets\Sign_Mines\Files	TX_Sign_Mines_AL.png	194404	4650480d991964f3c21adf0f9490097aaf13a487cb92cdcc8c6143bfdee68978	3011				"Caution Sign that notify the ""MineField"".
+Placed at MineField"	
+Asset	Sign	RoadSign	blend	"Yleinen tie
+päättyy"		\Assets\Sign_Public_Road\Files	TX_Sign_Public_Road_AL.png	3227798	bbc8f094c4cc3d1eeff582c6e3075ac7da729cdf659187752f8c6e83ee22f1f9	3013				"Road sign that notify the ""End of the Public Road"".
+Placed at Village (front of the Cabin)"	
+Asset	Sign	Caution	blend	"OULUN ALUEELLA
+ASIATON OLESKELU JA
+YMPÄRISTÖÄ HÄIRITSEVÄ KÄYTÖS
+ILTAISIN JA ÖISIN KIELLETTY!
+JÄRJESTYSLAKI 16§"		\Assets\Sign_School\Files	TX_Sign_School_AL.png	202261	91cf7dcf4dbe355e12c86ecfb769f9c2d8c27c318073b8bf3262bff5b7130324	3015					
+Asset	Sign	RoadSign	blend	Töyssy		\Assets\Sign_Speedbump\Files	TX_Sign_Speedbump_AL.png	1135319	5236fd31cbc709c31dbf57daaa48d67d9b3e8e2585dce7ce2b2b6071303bf3de	3017					
+Asset	Sign	RoadSign	blend	"KESKUSTA 4
+22 KOTKA"		\Assets\Sign_Village_Crossroads\Files	TX_Sign_Village_Crossroads_AL.png	833793	fe5e0f5e29971349e80d3accc928fbf11ee77f319278590f6e0ebb2f7d487a41	3019					
+Asset	Sign	Caution	blend	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"		\Assets\Sign_VT7\Files	TX_Sign_VT7_AL.png	695580	55a9aba79f6df65079619eef3e32f43e6d78b680a9d4ee95e718c25ea2cf13d3	3021					
+Asset	Sign	Caution	blend	"LAPPEENRANTA
+TAAVETTI
+HAMINA
+
+PIETARI
+ST PETERSBURG"		\Assets\Frame_Highway\Files	TX_Frame_Highway_Sign_AL.png	2311148	889a061a8828897619df6c710891c1463316c6fd55e5eaee41370547941321b1	3023					
+Asset	Sign	Caution	blend	"RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY"		\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_A_AL.png	884251	6ba37b1f85951b637a1f6bc266742ad2b5a14a66e70814d652f505795fd1af02	3025					
+Asset	Sign	Caution	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_AL.png	3319487	c618a1963a4aeac5e49e5645ff7922d22f20bdcf64dce4080db59a315ebc6777	3027				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+Asset	Sign	Caution	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_B_AL.png	1315319	205aa3f04c5faf45a3a31a8c82778fd060350bd6836cf528cfcdfc0c845bb091	3029				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+Asset	Sign	Caution	blend	"RAJAVYÖHYKE
+
+GRÄNSZON, GRENZZONE, BORDER ZONE, ПОГРАНИЧНАЯ ЗОНА"		\Assets\Sign_Border_Zone\Files	TX_Sign_Border_Zone_C_AL.png	964706	cf0d69e4467965198e03e9ee566185d3d8ec8caeec43bda5d6b3d450cee73021	3031					
+Asset	Sign	s	blend	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Assets\Sign_Border_Zone\Files	Icon_Sign_Border_Zone.png	91414	b0b96bdb74a24eb4de941c0764cdc10400915adce7100f7889c3284db4ea809f	3033				"This is a sign displaying Finnish, Swedish, German, English, and Russian.
+
+Please translate only one of these into your native language."	
+Asset	Sign	Notice	blend	"JÄTSKIAUTO
+2022
+
+Jätskiauto pysähtyy tässä
+
+JOKA KOLMAS VIIKKO
+Lauantai
+
+20.5   17.6   8.7   29.7   19.8   10.9   30.9   21.10
+
+klo. 10.50
+
+Tarkista aikataulut ja reitti osoitteesta roadtovostok.com"		\Assets\Board_Message\Files\	TX_Board_Message_AL.png	3637067	82debfcaa75e28d324a2f5cef0cd7560353235ee51752f2376d37aed35af745e	3035					
