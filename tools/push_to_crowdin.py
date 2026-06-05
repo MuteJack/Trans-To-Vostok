@@ -1,19 +1,17 @@
-"""Power-user wrapper: push xlsx translations -> Crowdin (Python-only, no CLI).
+"""Push canonical TSV translations -> Crowdin (Python-only, no CLI).
 
-Combines four steps per locale:
-  1. utils/build_translation_tsv.py --output-root .tmp/...   xlsx -> ephemeral TSV
-  2. crowdin/build_translations.py --tsv-root .tmp/...       ephemeral TSV -> Crowdin_Mirror
-  3. Diff vs HEAD                                            (smart push: only changed rows)
-  4. Crowdin SDK upload (minimal TSV per file)               Crowdin_Mirror -> Crowdin server
+Combines three steps per locale:
+  1. crowdin/build_translations.py          canonical TSV -> Crowdin_Mirror
+  2. Diff vs HEAD                           (smart push: only changed rows)
+  3. Crowdin SDK upload (minimal TSV)       Crowdin_Mirror -> Crowdin server
 
-The working tree's Translations/<locale>/<cat>/*.tsv is NOT modified by this
-command -- canonical TSV in working tree always reflects the last commit (HEAD),
-giving a stable diff baseline shared by all contributors.
+Reads Translations/<locale>/tsv/ directly — run build_canonical_tsv.py
+first if you need to sync xlsx changes to canonical TSV beforehand.
 
 Smart push (default):
   Diff is computed against the last GIT-COMMITTED canonical TSV
   (Translations/<locale>/<cat>/*.tsv at HEAD). Only rows whose translation
-  changed since last commit are uploaded -- rows you didn't touch stay
+  changed since last commit are uploaded — rows you didn't touch stay
   untouched on Crowdin, so other contributors' edits aren't overwritten.
 
   Self-correcting: after a successful push, commit the working tree's
@@ -37,7 +35,6 @@ No Crowdin CLI / Java install required.
 Usage:
     python tools/push_to_crowdin.py Korean           # one locale
     python tools/push_to_crowdin.py all              # all locales (explicit keyword)
-    python tools/push_to_crowdin.py French --skip-tsv
     python tools/push_to_crowdin.py Korean --auto-approve
     python tools/push_to_crowdin.py Korean --force-all
     python tools/push_to_crowdin.py all --force-all  # all locales + force-all
@@ -62,27 +59,16 @@ def run(cmd: list, cwd: Path) -> bool:
 
 
 def push_one_locale(locale: str, crowdin_id: str, args, tools_dir: Path,
-                    repo_root: Path, ephemeral_tsv_root: Path) -> int:
+                    repo_root: Path) -> int:
     """Push a single locale. Returns 0 on success, non-zero on error."""
     print(f"\n{'=' * 60}")
     print(f"=== {locale} -> {crowdin_id} ===")
     print('=' * 60)
 
-    # 1. xlsx -> ephemeral canonical TSV (NOT working tree)
-    if not args.skip_tsv:
-        if not run(
-            [sys.executable, "utils/build_translation_tsv.py", locale,
-             "--output-root", str(ephemeral_tsv_root)],
-            cwd=tools_dir,
-        ):
-            print(f"\n[ERROR] {locale}: xlsx -> TSV step failed", file=sys.stderr)
-            return 1
-
-    # 2. ephemeral canonical TSV -> Crowdin_Mirror
+    # 1. canonical TSV -> Crowdin_Mirror
     if not args.skip_mirror:
         if not run(
-            [sys.executable, "crowdin/build_translations.py", locale,
-             "--tsv-root", str(ephemeral_tsv_root)],
+            [sys.executable, "crowdin/build_translations.py", locale],
             cwd=tools_dir,
         ):
             print(f"\n[ERROR] {locale}: TSV -> Crowdin_Mirror step failed", file=sys.stderr)
@@ -177,11 +163,6 @@ def main() -> int:
              f"Required -- bare invocation is rejected to prevent accidental mass push.",
     )
     parser.add_argument(
-        "--skip-tsv",
-        action="store_true",
-        help="Skip xlsx -> canonical TSV step (assume Translations/<locale>/<cat>/*.tsv is current)",
-    )
-    parser.add_argument(
         "--skip-mirror",
         action="store_true",
         help="Skip canonical TSV -> Crowdin_Mirror step",
@@ -227,7 +208,6 @@ def main() -> int:
 
     tools_dir = Path(__file__).resolve().parent
     repo_root = tools_dir.parent
-    ephemeral_tsv_root = repo_root / ".tmp" / "canonical_for_crowdin"
 
     targets = list(locale_map.keys()) if push_all else [args.locale]
 
@@ -237,7 +217,6 @@ def main() -> int:
         rc = push_one_locale(
             locale=locale, crowdin_id=crowdin_id, args=args,
             tools_dir=tools_dir, repo_root=repo_root,
-            ephemeral_tsv_root=ephemeral_tsv_root,
         )
         if rc != 0:
             failed.append(locale)
@@ -249,11 +228,6 @@ def main() -> int:
         print(f"          Failed: {', '.join(failed)}")
         return 1
     print(f"[OK] {len(targets)} locale(s) pushed: {', '.join(targets)}")
-    print()
-    print(f"  Note: working tree Translations/ untouched.")
-    print(f"        To share canonical TSV via PR, run for each locale:")
-    print(f"          python tools/build_canonical_tsv.py <locale>")
-    print(f"          git add Translations/<locale>/ && git commit -m \"<msg>\"")
     return 0
 
 
