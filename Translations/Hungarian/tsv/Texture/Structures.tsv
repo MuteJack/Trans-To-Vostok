@@ -1,0 +1,202 @@
+Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	identifier	Reworked by	Contributors	Attribution	DESCRIPTION	max_length
+Asset	Structures	Container	pending	"STOMER
+
+C/N NO
+35
+
+X-T51050
+BLACK
+18"		\Assets\Airdrop\Files	TX_Airdrop_AL.png	4165420	397907f1d25807d6f524925a8b124a2faf86af0ab1b512ea1d46ff5139d1fd17	3231					
+Asset	Structures	Booth	blend	LIPUNMYYNTI		\Assets\Booth_Ticket\Files\	TX_Booth_Ticket_AL.png	4645340	5659dc9db37ef834fbbe73c4fc14f1ece622290cf6f473ebaed5db784176b8ee	3037				"Caution Sign that notify the ""MineField"".
+Placed at MineField"	
+Asset	Structures	Structure	blend	"ILMOITUSTEN
+KIINNITTÄMINEN
+KIELLETTY
+
+JÄRJESTYSLAKI 16§"		\Assets\Box_Electric\Files\	TX_Box_Electric_AL.png	2908602	c6cb8c2c4ed8b2829e2ad534d8724c7054af1939c7d416994ab6b17c5b96f4cb	3039					
+Asset	Structures	Structure	blend	"HUOMIO
+
+PIDÄ OVIEN
+EDUSTA AINA
+VAPAANA
+
+Hengenvaara"		\Assets\Box_Transformer\Files\	TX_Box_Transformer_AL.png	2417990	4767222158963e2d2f579a13e33986b940aeefa8acecd75ece04f76ddeed7b58	3041					
+Asset	Structures	Booth	blend	"SOTILASKOTI
+
+KASSA"		\Assets\Canteen\Files\	TX_Canteen_Details_AL.png	3762488	3a0b1e9d7ee169e2adf6bdf8bd3d072b3adb695cb5d87524dd3a1a81fe0e58a3	3043					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+TUORE
+KIRJOLOHI
+7
+90kg
+
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_A.png	617887	61280761c080d32b8985a464be5762036c92404de8260f6d874f261c6b6ad528	3233					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+HERNARI
+6-PACK
+
+6€
+
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_B.png	617460	3633c0484b46803dee85cce4b45aefdb8c026da713bb862786d249fe9c6cee82	3235					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+TONNIKALA
+SÄILYKKEET
+
+1.99€
+
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_C.png	624408	1725fab2042b7acd146aaeccbfbb980186dae2b87de25c17716123b9dab8187f	3237					
+Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
+
+KULTA
+KAHVI
+
+4.99€
+
+Rajoitettu 2kpl/talous
+
+KALAMARKET"		\Assets\Market\Files	TX_Market_Board_D.png	635985	c3683de41a20ad0d22b94f33e22e6619c4fc61088d5535a5dee4fac0f8a8cbeb	3239					
+Asset	Structures	SignBoard	blend	KESKUSKOULU		\Assets\School\Files	TX_School_Exterior_Details_AL.png	1188629	51102f8523886999783606d1117cc5cba648cc5fd2c5a9eb9d2eda021df6f635	3057				"It is the name of an actual school that existed in the Hamina region (currently closed).
+https://reimari.fi/2018/11/06/keskuskoulu-oli-haminan-suurin/"	
+Asset	Structures	Poster	blend	Tervetuloa Vallikentälle!		\Assets\Stadium\Files	TX_Stadium_Sign_Welcome_AL.png	3701523	e67c13e47307f6bf6b412c236201dfccc33c3ebcb3fef747c1b7c5028af19457	3059					
+Asset	Structures	Poster	blend	"Ravintola
+RAJAPIRTTI
+
+RENGAS
+TORPPA
+KUNNARIN JÄLKEEN UUTTA KUMIA ALLE!
+
+TORINKULMA
+Pub & Bar
+Since 1931
+
+INTRA
+SPORT
+
+KATSASTUS
+KARHULA OY
+
+HAMINA
+KÄMPÄT OY
+
+YMPYRÄLOGISTICS
+
+HOTEL
+LEIKAR
+HOTELLI
+
+|H| Rauta
+HAMINA | KOTKA
+
+YMPYRÄ +
+APTEEKKI"		\Assets\Stadium\Files	TX_Stadium_Signs_AL.png	3072553	f04d3f681dc5124a29686523a6f201c6795f1932231b01c73fb55c340a4520ab	3061				"This is an advertising poster containing a real or near-real company name.
+
+Do not translate, or keep it to a minimum."	
+			blend	"Happo
+HAMINA 1928"		\Assets\Stadium\Files	TX_Stadium_Trainer_AL.png	820107	d2aec9a1593b18cb625b60f75da92c3038bf50c5dca63d9915ecb6447df3f5a8	3241					
+Asset	Structures	Totem	blend	"KONEKIVÄÄRI- JA 20 MIEHEN MAJOITUSTUNNELI
+ELI LUOLA, TÄHYSTYSKUPU
+
+# 7 lines: Main description of the structure and interior layout
+# 2 + 10 lines: Construction history and additional historical notes
+
+Varoitus:
+# 5 lines: Safety warning
+# 2 bold lines: Entry at your own risk
+
+# Caption: left-top image title
+# 3 lines: left-top image description
+
+# Caption: right-top image title
+# 2 lines: right-top image description
+
+# Caption: middle-bottom image title
+# 5 lines: middle-bottom image description"		\Assets\Totem_Bunker\Files	TX_Totem_Bunker_AL.png	1429993	393502268c03011bdd50aa41dc4abd142838abb2655b483a3c3107ee1ea7ba44	3063				"This is the Korsu 11 guide board.
+
+Although the content is slightly different, it appears that there is a separate original image.
+Please check the photo below:
+https://samipuranen.galleria.fi/kuvat/Salpalinja/Virolahti/Huovinm%C3%A4ki/Korsu+11/IMG_1643.JPG
+
+Or, please search for the following keywords:
+""Salpalinja Virolahti Huovinmäki Korsu 11""
+
+Due to resolution issues with the in-game textures, the original text cannot be verified.
+The text inscribed on the image presumed to be the original, as described above, has not been included due to copyright issues or discrepancies between the actual description and the text.
+
+Instead, explanations for the text that needs to be filled in have been marked with a # symbol.
+To translate this texture, You will need to refer to Korean (created/translated directly by the lead developer) or translations in other languages, or create the text yourself."	
+Asset	Structures	Totem	blend	СЕВЕРОНЕФТЬ		\Assets\Totem_Terminal\Files	TX_Totem_Terminal_AL.png	4508491	251a89467996d16059171329bad64fd7e7bb48163ca054a9d4b33f75c10aed35	3065					
+Asset	Structures	Totem	blend	TERVETULOA		\Assets\Totem_Village\Files	TX_Totem_Village_AL.png	5121874	53e0a853c8bd7bbf537dbfb678d3b618c8f17fe0dec07efd64996a256817e755	3067					
+			blend	"12V2
+
+Varo liikennettä
+Se upp för trafik
+Be aware of traffic
+Vorsicht, Autoverkehr
+Берегись автомобиля
+
+TYÖNNÄ"		\Modular\Doors\Files	TX_Door_Tunnel_AL.png	3452073	b07bdc0a4d95b9276e3fe29f98ff7a704c787ae3a5e0f223ca202b9f3fdbd59b	3243					
+			blend	START HERE		\Terrains\Tutorial\Files	TX_Tutorial_Start.png	23353	e9a45e8eb1114765195620dc009d72a0af5dcff0cddb6cb8413313d9f1e9f878	3245					
+			blend	PÄÄSY KIELLETTY		\Terrains\Utility\Files	TX_Ribbon_AL.png	109306	56123ef6e9d851cc7013c12a44dba58972eaa76977fb931ff13c5b7b9a2c6ea4	3247					
+			pending	"AINA
+
+Esipaine
+0.55 BAR
+12.5 2014"		\Assets\Boiler\Files	TX_Boiler_AL.png	2715242	623a8bc9ab460d2f705c4afcaa0fc8c263b2ab16b232935104acb8300bf61efd	3249					
+			blend	"БУД.
+ВИХ."		\Assets\Bus_Stop_R\Files	TX_Bus_Stop_R_AL.png	3802099	51a6489aadb1892347e7c5ec0395978be201c13932f47ef01f6db72fffd8a2f8	3251					
+			pending	"NO GO
+STOP
+
+17"		\Assets\Bunker\Files	TX_Bunker_Door_AL.png	1568370	d5a20af9ee4bb31f4e792954e113ddb2df048f8a82f519668cca1dc8ffafdb07	3253					
+			pending	"My Computer
+My Briefcase
+My Documents
+Online Services
+Netwrok Neighborhood
+Recycle Bin
+
+Start
+
+New Connection - HyperTerminal
+File
+Edit
+View
+Call
+Transfer
+Help"		\Assets\Computer\Files	TX_Computer_Screen_AL.png	32682	82fbeb1e3dd74053e199a3fedbcf866dac6b0a6629ab0eb3dd56288252e22e78	3255					
+			pending	"HAMINA-KOTKA SATAMA
+KYMENLAAKSON SANOMAT
+
+HaPPO
+HAMINA 1928
+
+HAMINA"		\Assets\Court\Files	TX_Court_AL.png	338920	fa8f265a4c1cec78a626a48ee4f3f2f4cd9cd9e9c8f47f754b7d4403d398c729	3257					
+			pending	"# Can not read text (low resolution)
+# Will be updated"		\Assets\Gas_Station\Files	TX_Gas_Station_Payment_AL.png	827106	308fae9c81749a409cb3dfc6d7be4a4fcbd957e595df026e47a72f29827d3a0d	3259					
+			blend	ТАБАК		\Assets\Kiosk\Files	TX_Kiosk_AL.png	15081775	1fbf2497a4cf11c890b346bdc29071c1c3ccb8ef10c088ce7dfea1011f797e0f	3261					
+			blend	"Hevosharjun
+Maneesi"		\Assets\Manege\Files	TX_Manege_Structure_AL.png	2992615	0c50e9b6359b60190903c99327bfbda3c20c7a88d124808245fc7c3d54a072b9	3263					
+			pending	KALAMARKET		\Assets\Market\Files	TX_Market_Gate_AL.png	1754600	98963dab9d227dc4ea54bd4440df5fce6e07ffc2c1685f47e5e33b17c0ee2a61	3265				"KALAMARKET is untranslatable:
+- KALAMARKET is proper-noun
+- There are 3D objects that cannot be translated."	
+			blend	"HaPPo
+HAMINA 1928"		\Assets\Pole_Flag\Files	TX_Flag_Happo_AL.png	132579	a4b273e2b30b64fac546266173949979bf645fe08364c987832b9911053e9c44	3267					
+			pending	KALAMARKET		\Assets\Pole_Flag\Files	TX_Flag_Market_AL.png	142968	ee55bcccf2979f5b075e3736a7a8d2a20f8290c849a02fe471bf4822d0ce5e01	3269				"KALAMARKET is untranslatable:
+- KALAMARKET is proper-noun
+- There are 3D objects that cannot be translated."	
+			blend	"SALPAPOLKU
+Virolahti"		\Assets\Pole_Salpa\Files	TX_Pole_Salpa_AL.png	1489141	d3060096b034f662b56678d28572eca523371672980ec7bd6f68a8ecf16d154f	3271					
+			blend	POLISI		\Assets\Police\Files	TX_Police_Exterior_AL.png	19018236	f345703db7b4cec2b5e447ee898036cdc5ace9d6321c63c07dd867d76b66fafd	3273					
+			blend	VOSTOSAT		\Assets\Satellite_Dish\Files	TX_Satellite_Dish_AL.png	728085	35da8d144aed7ae1b486bf3a547c8ae7068b9d732a4bbbdfa2392c3bce4b0b63	3275					
+			blend	Harvi		\Assets\Sauna\Files	TX_Sauna_Stove_AL.png	771924	1eb85c2a9d9430d53a1ca228807c9bb6adc92348ca528fe0a84267a0af9687e8	3277					
+			blend	SAUNA		\Assets\Sign_Sauna\Files	TX_Sign_Sauna_AL.png	261215	4132a720e04005aa1a7a0238a6bff6a73be6632261ed4d96a00ec1e8cdab7bd9	3279					
+			blend	Rinnelaavu		\Assets\Wicket\Files	TX_Wicket_Main_AL.png	13967803	db498f3b4bf7d5f36cea1400885dc6bfb12689f2cf7878effac12140a32b0e0d	3281					
+			pending	"M m maila
+N n norsu
+O o omena
+P p pallo
+W w WC
+X x XLkoko"		\Assets\School\Files	TX_School_Boards_AL.png	2845559	649ec3faa9aca9d6a291c29cc8973b648fe4efb40939756420bcf518c6c3821c	3283				Reason for Ignoring: Translation is unnecessary	
