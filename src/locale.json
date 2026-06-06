@@ -79,6 +79,14 @@
       "message": "Выберите язык",
       "substr_mode_label": "Режим Substr (не рекомендуется — включать только если после обновления игры многие тексты остаются непереведёнными)",
       "enabled": true
+    },
+    {
+      "locale": "Hungarian",
+      "dir": "Hungarian",
+      "display": "Magyar",
+      "message": "Válasszon nyelvet",
+      "substr_mode_label": "Substr Mód (nem ajánlott — csak akkor kapcsolja be, ha a játék frissítése után számos szöveg nem lett lefordítva)",
+      "enabled": true
     }
   ]
 }
