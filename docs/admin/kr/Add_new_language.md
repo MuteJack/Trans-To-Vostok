@@ -46,17 +46,14 @@ Step 1에서 Template.xlsx가 fresh로 만들어졌으니, 새 locale은 Templat
 ```powershell
 $loc = "French"   # 추가할 locale 폴더 이름으로 변경
 
-# 1. xlsx 폴더 복사 (Translation.xlsx / Texture.xlsx 등)
-Copy-Item -Recurse "Trans To Vostok/Template" "Trans To Vostok/$loc"
-
-# 2. TSV 복사 (git diff용 shadow, 처음부터 동기화 상태로 시작)
+# xlsx (Translation.xlsx / Texture.xlsx) + tsv/ 전체 복사
 Copy-Item -Recurse "Translations/Template" "Translations/$loc"
 ```
 
 결과:
 
 - `Translations/French/Translation.xlsx` / `Texture.xlsx` (Template과 동일, 서식 적용 완료)
-- `Translations/French/Translation/*.tsv` (Korean 구조 + translation 컬럼 빈 값)
+- `Translations/French/tsv/Translation/*.tsv` (Korean 구조 + translation 컬럼 빈 값)
 
 > Template TSV/xlsx는 Korean을 source-of-truth로 sync된 상태 — 모든 메타데이터 (행 구조 / WHERE/SUB/KIND / filename 등)가 Korean과 일치하고 quality flag는 0, translation은 빈 값. DeepL이 채울 준비 완료.
 
@@ -108,7 +105,7 @@ python tools/translator/machine_translation_deepl.py French
 
 ## 5. Step 4 — `locale.json` 등록
 
-`Trans To Vostok/locale.json` 에 새 항목 추가:
+`src/locale.json` 에 새 항목 추가:
 
 ```json
 {
@@ -116,7 +113,7 @@ python tools/translator/machine_translation_deepl.py French
   "dir": "French",
   "display": "Français",
   "message": "Sélectionnez une langue",
-  "compatible": "Mode compatible (à utiliser si certains textes ne sont pas traduits)",
+  "substr_mode_label": "Mode Substr (non recommandé — pour textes non traduits après une MAJ du jeu)",
   "enabled": true
 }
 ```
@@ -127,7 +124,7 @@ python tools/translator/machine_translation_deepl.py French
 | `dir`        | 폴더명 (위 Step 1에서 만든 이름)                    |
 | `display`    | 게임 내 언어 선택 화면 표시명 (해당 언어 표기 권장) |
 | `message`    | 그 언어의 "언어 선택" 안내 메시지                   |
-| `compatible` | "호환 모드" 안내 텍스트 (일부 미번역 시 사용)       |
+| `substr_mode_label` | "Substr Mode" 안내 텍스트 (게임 업데이트 후 미번역 시 임시 사용) |
 | `enabled`    | 게임에 노출 여부                                    |
 
 ---
@@ -135,7 +132,7 @@ python tools/translator/machine_translation_deepl.py French
 ## 6. Step 5 — Build & 검증
 
 ```powershell
-python tools/build_mod_package.py
+python tools/build_mod_package.py French
 ```
 
 전체 locale에 대해 다음 항목 재생성:
@@ -144,12 +141,12 @@ python tools/build_mod_package.py
 - `Texture_Attribution.md` (locale별)
 - `Translation_Credit.md` (locale별)
 - `AUTHORS.md` 의 자동 섹션 (전체 locale 통합)
-- `Translations/<locale>/<category>/*.tsv` (git diff용 shadow)
+- `Translations/<locale>/tsv/<category>/*.tsv` (git diff용 shadow)
 - 최종 `Trans To Vostok.zip`
 
 확인 사항:
 
-- `Trans To Vostok/French/Translation.xlsx` — translation 컬럼이 채워졌는지
+- `Translations/French/Translation.xlsx` — translation 컬럼이 채워졌는지
 - `Trans To Vostok/French/runtime_tsv/` — runtime 파일 생성 여부
 - `Trans To Vostok.zip` 안에 새 locale 포함 여부
 

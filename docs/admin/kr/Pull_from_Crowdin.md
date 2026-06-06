@@ -178,7 +178,8 @@ git push
 
 ## 7. 다음 단계
 
-- **Push (xlsx → Crowdin)**: 메인테이너 본인이 번역도 직접 한다면 `tools/push_to_crowdin.py` 흐름 참조 (별도 문서 예정)
-- **새 언어 추가 / DeepL 자동 시드**: 별도 문서 예정
+- **Push (번역 → Crowdin)**: 메인테이너 본인이 번역도 직접 한다면 `python tools/push_to_crowdin.py <locale>` 사용
+- **Push (소스 파일 → Crowdin)**: Template에 새 항목 추가 시 → [Push_Source_to_Crowdin.md](Push_Source_to_Crowdin.md)
+- **새 언어 추가 / DeepL 자동 시드**: [Add_new_language.md](Add_new_language.md)
 - **Crowdin Glossary 관리**: 별도 문서 예정
 - **빌드 & 배포**: `tools/build_mod_package.py` (활성 locale 전체 zip 빌드)
