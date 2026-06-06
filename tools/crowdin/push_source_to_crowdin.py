@@ -1,12 +1,12 @@
 """Sync Crowdin source files from Translations/Template/.
 
 Two-step pipeline:
-  1. crowdin/build_source.py        Template TSVs → Crowdin_Mirror/source/<cat>/<sheet>.tsv
-  2. Crowdin SDK upload             Crowdin_Mirror/source/* → Crowdin project
-                                    - Missing files     → add (new strings appear on Crowdin)
-                                    - Existing files    → update (preserves translations
+  1. crowdin/build_source.py        Template TSVs -> Crowdin_Mirror/source/<cat>/<sheet>.tsv
+  2. Crowdin SDK upload             Crowdin_Mirror/source/* -> Crowdin project
+                                    - Missing files     -> add (new strings appear on Crowdin)
+                                    - Existing files    -> update (preserves translations
                                                                   for unchanged ids)
-                                    - Missing dirs      → auto-created
+                                    - Missing dirs      -> auto-created
 
 What this does:
   - Adds NEW source strings (new sign / billboard / sheet) to Crowdin.
@@ -15,28 +15,31 @@ What this does:
   - Directories on Crowdin auto-created to mirror the Template tree.
 
 What this does NOT do:
-  - Does NOT push per-locale translations. Use tools/push_to_crowdin.py for that.
+  - Does NOT push per-locale translations. Use tools/push_to_crowdin.py <locale> for that.
   - Does NOT delete files removed from Template (they're hidden on Crowdin
-    via restore semantics — recoverable; clean them up manually if needed).
+    via restore semantics -- recoverable; clean them up manually if needed).
 
 Required setup:
   - Python deps:    pip install -r tools/requirements.txt
   - Crowdin token:  tools/configs/secrets.json:crowdin_personal_token
                     (token must have Source Files + Storage scope)
 
+Note: This is a maintainer-only operation. Can also be invoked via:
+    python tools/push_to_crowdin.py Template
+
 Usage:
-    python tools/push_source_to_crowdin.py             # build + push
-    python tools/push_source_to_crowdin.py --skip-build  # push only (assumes Crowdin_Mirror/source/ already fresh)
+    python tools/crowdin/push_source_to_crowdin.py
+    python tools/crowdin/push_source_to_crowdin.py --skip-mirror
 """
 import argparse
 import subprocess
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from crowdin.api_client import upload_source_files
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from crowdin.api_client import upload_source_files  # noqa: E402
 
-REPO = Path(__file__).resolve().parent.parent
+REPO = Path(__file__).resolve().parent.parent.parent
 MIRROR_SOURCE_DIR = REPO / "Crowdin_Mirror" / "source"
 
 
@@ -55,16 +58,16 @@ def run_build_source() -> bool:
 def main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--skip-build", action="store_true",
+    parser.add_argument("--skip-mirror", action="store_true",
         help="Skip build_source.py; upload Crowdin_Mirror/source/ as-is")
     args = parser.parse_args(argv[1:])
 
-    if not args.skip_build:
+    if not args.skip_mirror:
         if not run_build_source():
             return 1
 
     if not MIRROR_SOURCE_DIR.exists():
-        print(f"[ERROR] {MIRROR_SOURCE_DIR} missing — run without --skip-build first",
+        print(f"[ERROR] {MIRROR_SOURCE_DIR} missing -- run without --skip-mirror first",
               file=sys.stderr)
         return 1
 

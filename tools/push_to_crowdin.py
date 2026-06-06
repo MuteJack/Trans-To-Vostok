@@ -189,6 +189,21 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    if args.locale == "Template":
+        print("[!] Pushing SOURCE FILES to Crowdin — maintainer-only operation.")
+        print("    This updates source strings for ALL translators on Crowdin.")
+        print("    Incorrect use may disrupt active translations.")
+        answer = input("    Proceed? [y/N] ").strip().lower()
+        if answer != "y":
+            print("Aborted.")
+            return 0
+        tools_dir = Path(__file__).resolve().parent
+        source_script = tools_dir / "crowdin" / "push_source_to_crowdin.py"
+        cmd = [sys.executable, str(source_script)]
+        if args.skip_mirror:
+            cmd.append("--skip-mirror")
+        return subprocess.run(cmd).returncode
+
     push_all = args.locale.strip().lower() == "all"
     if not push_all and args.locale not in locale_map:
         print(f"[ERROR] Unknown locale: {args.locale}", file=sys.stderr)
