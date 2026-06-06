@@ -11,7 +11,7 @@
 - **繁體中文** (프로토타입, 텍스처 미적용)
 - **Русский / 러시아어** (프로토타입, 텍스처 미적용)
 
-> 한국어 외 대부분의 언어는 DeepL/Claude API 기계번역 pre-translated된 초안 상태입니다.
+> 한국어 외 대부분의 언어는 DeepL/Claude API로 기계번역된 초안 상태입니다.
 > 번역 참여는 [Crowdin](https://crowdin.com/project/trans-to-vostok)을 통해 진행되며, 커뮤니티 검수/개선 참여는 언제나 환영입니다.
 
 **호환 모드** (테스트 됨 - 호환성이 항상 보장되지는 않을 수 있음)
@@ -26,11 +26,11 @@
 
 Road to Vostok의 다국어 번역 지원 모드.
 
-> **NOTE:** *해당 모드, 번역 ToolBox (Github)는 현재 개발중에 있습니다.*
+> **NOTE:** *해당 모드, 번역 ToolBox ([GitHub](https://github.com/MuteJack/Trans-to-Vostok))는 현재 개발중에 있습니다.*
 
-> **번역 기여는 **Crowdin**을 통해 받고 있습니다.**
+> **번역 기여는 [Crowdin](https://crowdin.com/project/trans-to-vostok)을 통해 받고 있습니다.**
 > 별도 셋업 없이 브라우저를 통해 바로 참여할 수 있습니다. [Trans to Vostok on Crowdin](https://crowdin.com/project/trans-to-vostok).
-> GitHub의 번역만 변경한 Pull Request는 더 이상 받지 않으니, Crowdin을 이용해 주세요. 
+> [GitHub](https://github.com/MuteJack/Trans-to-Vostok)의 번역만 변경한 Pull Request는 더 이상 받지 않으니, Crowdin을 이용해 주세요. 
 > 개발자가 주기적으로 Crowdin → 저장소로 sync하며 다음 모드 릴리스부터 반영됩니다.
 
 ![3_Trans2Vostok_Main_Korean.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/3_Trans2Vostok_Main_Korean.png)
@@ -102,10 +102,9 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
    | 9    | **substr**                             | 부분 문자열 치환 (최후 fallback) |
 9. Substr Mode (일반 사용에는 권장되지 않음)
 
-   - 게임 업데이트로 tier 1~8 의 구조 매칭이 깨졌을 때의 임시 fallback.
-   - 모든 literal/static entry 를 substr fallback 에도 추가해 부분 매치 적용 범위 확장.
-   - 정밀도가 낮음 (false positive 가능) — 게임 업데이트 후 다수 텍스트가 번역되지 않을 때, 모드 업데이트 전까지의 임시 사용용.
-   - F9 UI 의 체크박스로 on/off.
+   - 게임 업데이트 후 다수 텍스트가 번역되지 않을 때, 모드 업데이트 전까지의 임시 사용 용도.
+   (모든 literal/static entry 를 substr 로 취급)
+   - F9 UI 의 체크박스로 on/off 가능.
 
 ## 3. 설치
 
@@ -132,20 +131,20 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 4. **포르투갈어 (Português / Brasil)**: v0.5.1 추가
 5. **독일어 (Deutsch) / 스페인어 LatAm (Español) / 일본어 (日本語) / 중국어 간체 (简体中文) / 중국어 번체 (繁體中文)**: v0.5.3 추가
 6. **러시아어 (Русский)**: v0.6.1 추가
-7. **이탈리아어 (Italiano) / 헝가리아어 (Hungarian)** : 추가 예정
+7. **이탈리아어 (Italiano) / 헝가리어 (Hungarian)** : 추가 예정
 8. 그 외 언어: 모드 개발 진행도 / 커뮤니티 언어 추가 요청에 따라 점진적으로 추가 예정.
 
 ### 4.1. 텍스트 번역 / 검수 참여 (Crowdin 환경)
 
 모든 번역은 [Crowdin](https://crowdin.com/project/trans-to-vostok)을 중심으로 진행됩니다. 
 - 번역 기여: [Crowdin](https://crowdin.com/project/trans-to-vostok)에서 가입 후 브라우저에서 바로 작업 (별도 셋업 불필요).
-- ToolBox (GitHub Repo)를 통한 번역 지원은 아직 개발중에 있습니다.
+- ToolBox ([GitHub Repo](https://github.com/MuteJack/Trans-to-Vostok))를 통한 번역 지원은 아직 개발중에 있습니다.
 - Credit은 Crowdin에서 설정된 이름으로 자동 추가됩니다.
-- 새 언어 요청 / 일반 피드백: GitHub 이슈로 요청해 주세요 (차후 공개 예정).
+- 새 언어 요청 / 일반 피드백: [GitHub 이슈](https://github.com/MuteJack/Trans-to-Vostok/issues)로 요청해 주세요 (차후 공개 예정).
 
 ### 4.2. 텍스트 번역 (Local 환경, 준비중)
-이것은 개발 지식이 있는 사람들을 위한 환경입니다. (GitHub Repository)
-이것을 이용한 workflow는 현재 보완/docs 작성이 완료되는대로 업데이트될 예정입니다.
+이것은 개발 지식이 있는 사람들을 위한 환경입니다. ([GitHub Repository](https://github.com/MuteJack/Trans-to-Vostok))
+이것을 이용한 workflow는 현재 보완/docs 작성이 완료되는 대로 업데이트될 예정입니다.
 
 ### 4.3. 텍스처 번역
 현재 텍스처는 모두 개발자가 수작업(hand-craft)를 통해 제작되고 있습니다.
@@ -153,7 +152,7 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 - 수작업이므로, 길이 문제 등으로 인해 제작 과정에서 텍스트가 crowdin과는 조금 다르게 반영될 수 있습니다.
 - 번역된 텍스처 제작에 직접 참여하고 싶으신 분은, 해당 workflow에 대해 docs 제작 및 보완중에 있습니다. 
   - 현재로서는 Credit에 남길 이름과 함께 파일을 coldman1224@outlook.com으로 보내주시면 수동으로 Repo에 반영해드리겠습니다.
-  - 또는, 개발 지식 (Git, GitHub)이 있으신 분은 PR (Push Request)을 통해 제출해주세요.
+  - 또는, 개발 지식 (Git, [GitHub](https://github.com/MuteJack/Trans-to-Vostok))이 있으신 분은 PR (Pull Request)을 통해 제출해주세요.
 
 ## 5. 출처 표기 (Attribution)
 
