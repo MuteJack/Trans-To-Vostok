@@ -12,7 +12,7 @@ HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature
 HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	Oxigén		
 HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:				
 HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			Value(Integer) about the FPS. Untranslatable.	
-HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	Menedékhely (Körzet 05 )		
+HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	Menedékhely (Körzet 05)		
 Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	Készlet		
 Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			Value(Float) about Capacity. Untranslatable.	
 Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			Value(Float) about Weight. Untranslatable.	
@@ -76,14 +76,14 @@ Inventory	Stats	Number	1	ignore									?			Wating for Update
 Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	Eszközök		
 Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	Események		
 Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	Készítés		
-Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838			
+Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	Proximity		
 Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	Feladatok		
 Inventory	Tools/Task Note	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty	842	Feladatok listája üres	"Task Note will only display this Strings when there's any task added in the Task Note.
 It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	Feladatok listája üres	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
 Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	A feladatok jegyzete üres		
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	A feladatok jegyzete nem használhatók (Kiképzés)		
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	A feladatok jegyzete nem használható (Kiképzés)		
 Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	Világ térkép		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	Térkép nincs felszerelve		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	Térkép nincs felszerelve		

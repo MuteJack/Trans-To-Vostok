@@ -125,7 +125,9 @@ Where	Sub	Type	method	Text	Translation	File Directory	File Name	size	sha256	iden
 			ignore			\Items\Attachments\RMR\Files	Icon_RMR.png	5463	451750d82f7fa5fa90d1604db292480f44041259b1350a10e6ad8a2ae3a247c8						
 			pending	"WARRANTY
 VOID
-IF REMOVED"		\Items\Attachments\RMR\Files	TX_RMR_AL.png	281319	090b58f89911be91c3c22d261fdd5adf2adf18f9930165a34e7e6fdc6575656c	3069					
+IF REMOVED"	"WARRANTY
+VOID
+IF REMOVED"	\Items\Attachments\RMR\Files	TX_RMR_AL.png	281319	090b58f89911be91c3c22d261fdd5adf2adf18f9930165a34e7e6fdc6575656c	3069					
 			ignore			\Items\Attachments\RMR\Files	TX_RMR_NR.png	269290	96416793efbac93454bc03c77bb4e27c42eb07945db53e62e7b04800057e1da1						
 			ignore			\Items\Attachments\Rider\Files	Icon_Rider.png	4959	1660b971059a9cc9a24738d411c1772631ab97853d139578cf4b37be4bb59b71						
 			ignore			\Items\Attachments\Rider\Files	TX_Rider_AL.png	122176	b271c0a7b571a8099b22f441fda49e5185b25d81a8a6a12831e7dc878111218f						

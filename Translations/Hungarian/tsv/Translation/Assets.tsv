@@ -13,7 +13,7 @@ Assets	Containers/Cabinet_Office		0	substr	Assets/Cabinet_Office/Cabinet_Office	
 Assets	Containers/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tscn	Assets/Cabinet_Office/Cabinet_Office_F		Cabinet_Office_F	Node3D	containerName	1131051434	Office Cabinet				
 Assets	Containers/Cabinet_Wood		0	substr	Assets/Cabinet_Wood/Cabinet_Wood	tscn	Assets/Cabinet_Wood/Cabinet_Wood		Cabinet_Wood	Node3D	containerName	1150379286	Cabinet	472	Szekrény		
 Assets	Containers/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tscn	Assets/Cabinet_Wood/Cabinet_Wood_F		Cabinet_Wood_F	Node3D	containerName	403792679	Cabinet				
-Assets	Containers/AI_Container		0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	474	holttest		
+Assets	Containers/AI_Container		0	substr	AI/Tools/AI_Container	tscn	AI/Tools/AI_Container		AI_Container	Node3D	containerName	699732925	Corpse	474	Holttest		
 Assets	Containers/Corpse_Bandit_Flat_A		0	substr	Assets/Corpse/Corpse_Bandit_Flat_A	tscn	Assets/Corpse/Corpse_Bandit_Flat_A		Corpse_Bandit_Flat_A	Node3D	containerName	1686496210	Bandit Corpse	476	Bandita holttest		
 Assets	Containers/Corpse_Bandit_Flat_B		0	ignore	Assets/Corpse/Corpse_Bandit_Flat_B	tscn	Assets/Corpse/Corpse_Bandit_Flat_B		Corpse_Bandit_Flat_B	Node3D	containerName	1269584548	Bandit Corpse				
 Assets	Containers/Corpse_Bandit_Flat_C		0	ignore	Assets/Corpse/Corpse_Bandit_Flat_C	tscn	Assets/Corpse/Corpse_Bandit_Flat_C		Corpse_Bandit_Flat_C	Node3D	containerName	1419056794	Bandit Corpse				
@@ -155,7 +155,7 @@ Assets	Furnitures/Nightstand_F		0	ignore	Assets/Nightstand/Nightstand_F	tres				
 Assets	Furnitures/Nightstand_F		0	ignore	Assets/Nightstand/Nightstand_F	tres					inventory		Nightstand				
 Assets	Furnitures/Nightstand_F		0	ignore	Assets/Nightstand/Nightstand_F	tres					rotated		Nightstand				
 Assets	Furnitures/Nightstand_F		0	ignore	Assets/Nightstand/Nightstand_F	tres					equipment		Nightstand				
-Assets	Furnitures/Nightstand_F		0	substr	Assets/Nightstand/Nightstand_F	tres					display		N. Stand	572	Kisasztal		
+Assets	Furnitures/Nightstand_F		0	substr	Assets/Nightstand/Nightstand_F	tres					display		N. Stand	572	Kis asztal		
 Assets	Furnitures/Painting_Lake_F		0	substr	Assets/Painting/Painting_Lake_F	tres					name		Painting (Lake)	574	Festmény (Tó)		
 Assets	Furnitures/Painting_Lake_F		0	ignore	Assets/Painting/Painting_Lake_F	tres					inventory		Painting (Lake)				
 Assets	Furnitures/Painting_Lake_F		0	ignore	Assets/Painting/Painting_Lake_F	tres					rotated		Painting (Lake)				

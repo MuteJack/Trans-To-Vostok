@@ -25,14 +25,20 @@ Items	Misc	Books	ignore			\Items\Books\Files	Icon_Book_Children.png	21284	4f706a
 Items	Misc	Books	pending	"KOTIRUOKA
 
 KEITTOKIRJA KOTIA
-JA KOILUA VARTEN"		\Items\Books\Files	Icon_Book_Cooking.png	25182	e3ebb90d8cca51e2fb153ff0620ed5064a5f249c0a3fced449872eb7805ea495	3077					
+JA KOILUA VARTEN"	"KOTIRUOKA
+
+KEITTOKIRJA KOTIA
+JA KOILUA VARTEN"	\Items\Books\Files	Icon_Book_Cooking.png	25182	e3ebb90d8cca51e2fb153ff0620ed5064a5f249c0a3fced449872eb7805ea495	3077					
 Items	Misc	Books	ignore			\Items\Books\Files	Icon_Book_Fishing.png	21816	157f2260d382893174b0136a8f508575b33e8274b4d4836823dd85eeb4520969						
 Items	Misc	Books	ignore			\Items\Books\Files	Icon_Book_Religion.png	20045	a3e89c5d402f8f2a0f4e2f1a6b33c952cebcf32b63e1b44b4d05474b5f5173dd						
 Items	Misc	Books	ignore			\Items\Books\Files	TX_Book_Children_AL.png	317154	18ec1f5cf84cfb339d5c1a3ead0b569d58e489b9de8ee63acc71c5b97674a82d						
 Items	Misc	Books	pending	"KOTIRUOKA
 
 KEITTOKIRJA KOTIA
-JA KOILUA VARTEN"		\Items\Books\Files	TX_Book_Cooking_AL.png	406077	6466b27faa7c8c76aa2cebfe431dd8f4204698ff89950c46b057538ae6348a62	3079					
+JA KOILUA VARTEN"	"KOTIRUOKA
+
+KEITTOKIRJA KOTIA
+JA KOILUA VARTEN"	\Items\Books\Files	TX_Book_Cooking_AL.png	406077	6466b27faa7c8c76aa2cebfe431dd8f4204698ff89950c46b057538ae6348a62	3079					
 Items	Misc	Books	ignore			\Items\Books\Files	TX_Book_Fishing_AL.png	318135	1d334dec57ec8f7b8e9d859c368925aa4446f5a0eebe60a159c20ee68f9b4ec7						
 Items	Misc	Books	ignore			\Items\Books\Files	TX_Book_Religion_AL.png	338561	cc7e07250187874de8b73f6d4a4048f8e5ea101979377208f9dd62e3baa2fa5a						
 Items	Equipments	Clothing	ignore			\Items\Clothing\Beanie_Flame\Files	Icon_Beanie_Flame.png	38019	89721329f0b7ee81d795f08a3f385f1073a25287af407f6de83f0883afcc0628						
@@ -73,7 +79,23 @@ BORDER ZONE
 NO ENTRY WITHOUT SPECIAL PERMIT
 
 ПОГРАНИЧНАЯ ЗОНА
-ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Items\Clothing\Hoodie_Border_Zone\Files	Icon_Hoodie_Border_Zone.png	68013	680f906ef1adf9f6ba94ff0cacf0ac18266c3fd7da95a380e43e4acca4e53238	3081					
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	\Items\Clothing\Hoodie_Border_Zone\Files	Icon_Hoodie_Border_Zone.png	68013	680f906ef1adf9f6ba94ff0cacf0ac18266c3fd7da95a380e43e4acca4e53238	3081					
 Items	Equipments	Clothing	pending	"SEIS
 STOP
 
@@ -90,7 +112,23 @@ BORDER ZONE
 NO ENTRY WITHOUT SPECIAL PERMIT
 
 ПОГРАНИЧНАЯ ЗОНА
-ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"		\Items\Clothing\Hoodie_Border_Zone\Files	TX_Hoodie_Border_Zone_AL.png	860200	a9648c4cb675778c8f53db10b4bb7748419d04234ec19becd3713e59c70a28d0	3083					
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	"SEIS
+STOP
+
+RAJAVYÖHYKE
+PÄÄSY ILMAN LUPAA KIELLETTY
+
+GRÄNSZON
+TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
+
+GRENZZONE
+EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+
+BORDER ZONE
+NO ENTRY WITHOUT SPECIAL PERMIT
+
+ПОГРАНИЧНАЯ ЗОНА
+ВЪЕЗД БЕЗ РАЗРЕШЕНИЯ ЗАПРЕЩАЕТСЯ"	\Items\Clothing\Hoodie_Border_Zone\Files	TX_Hoodie_Border_Zone_AL.png	860200	a9648c4cb675778c8f53db10b4bb7748419d04234ec19becd3713e59c70a28d0	3083					
 Items	Equipments	Clothing	ignore			\Items\Clothing\Hoodie_Border_Zone\Files	TX_Hoodie_Border_Zone_Sleeves_AL.png	3484101	812f651b57a77034e8c2a4aa496aefced0f00efa2c140b465e9ce4d470893395						
 Items	Equipments	Clothing	ignore			\Items\Clothing\Hoodie_Gray\Files	Icon_Hoodie_Gray.png	56665	bee44e32335f8d051531480aa94762bc0b3bcef062f309e665cc9903e843ead2						
 Items	Equipments	Clothing	ignore			\Items\Clothing\Hoodie_Gray\Files	TX_Hoodie_Gray_AL.png	795829	2f936623059ca886590e024349c283ac4f6d0fe25eee63ca647d01f93e663169						
@@ -138,12 +176,20 @@ Items	Consumables	Consumables	pending	"KRIEG-SCHOKOLADE
 
 Die Koffein-Schokolade
 
-16 Ecken Zartbitter"		\Items\Consumables\Chocolate_War\Files	Icon_Chocolate_War.png	14597	d1cc555602c08c9c4fad435aafe32553490a0ae9eebfc92fb1e24a04240bb945	3085				Reason for Pending: Low Resolution	
+16 Ecken Zartbitter"	"KRIEG-SCHOKOLADE
+
+Die Koffein-Schokolade
+
+16 Ecken Zartbitter"	\Items\Consumables\Chocolate_War\Files	Icon_Chocolate_War.png	14597	d1cc555602c08c9c4fad435aafe32553490a0ae9eebfc92fb1e24a04240bb945	3085				Reason for Pending: Low Resolution	
 Items	Consumables	Consumables	pending	"KRIEG-SCHOKOLADE
 
 Die Koffein-Schokolade
 
-16 Ecken Zartbitter"		\Items\Consumables\Chocolate_War\Files	TX_Chocolate_War_AL.png	102286	dd49a8d91684d2627c172a5723b70794d762fcf3ecc513cd6008db935aa52dbe	3087					
+16 Ecken Zartbitter"	"KRIEG-SCHOKOLADE
+
+Die Koffein-Schokolade
+
+16 Ecken Zartbitter"	\Items\Consumables\Chocolate_War\Files	TX_Chocolate_War_AL.png	102286	dd49a8d91684d2627c172a5723b70794d762fcf3ecc513cd6008db935aa52dbe	3087					
 Items	Consumables	Consumables	pending	"Tupakointi on hengenvaarallista
 Rökning kan döda
 
@@ -151,7 +197,14 @@ Tule lopettamaan: www.tupakinfo.fi
 Stöd för att sluta: www.tobaksinfo.fi
 
 VAARA
-SELECTED PREMIUM TOBACCOS"		\Items\Consumables\Cigarettes\Files	Icon_Cigarettes.png	8121	090ccb4b2bb83194d99f10b0550e2e35922bb41900b3978f7f3f96ac70293ea9	3089				"Reason for Ignoring: Low Resolution
+SELECTED PREMIUM TOBACCOS"	"Tupakointi on hengenvaarallista
+Rökning kan döda
+
+Tule lopettamaan: www.tupakinfo.fi
+Stöd för att sluta: www.tobaksinfo.fi
+
+VAARA
+SELECTED PREMIUM TOBACCOS"	\Items\Consumables\Cigarettes\Files	Icon_Cigarettes.png	8121	090ccb4b2bb83194d99f10b0550e2e35922bb41900b3978f7f3f96ac70293ea9	3089				"Reason for Ignoring: Low Resolution
 VAARA is a virtual brand's name (Proper-Noun)."	
 Items	Consumables	Consumables	pending	"Tupakointi on hengenvaarallista
 Rökning kan döda
@@ -163,11 +216,21 @@ VAARA
 SELECTED PREMIUM TOBACCOS
 
 Tupakointi tappaa
-Rökning dödar"		\Items\Consumables\Cigarettes\Files	TX_Cigarettes_AL.png	175998	f0e87672b658eb04552646c81ebdc1491f2fa30f986e61c596b996a6da4782ed	3091				VAARA is a virtual brand's name (Proper-Noun).	
+Rökning dödar"	"Tupakointi on hengenvaarallista
+Rökning kan döda
+
+Tule lopettamaan: www.tupakinfo.fi
+Stöd för att sluta: www.tobaksinfo.fi
+
+VAARA
+SELECTED PREMIUM TOBACCOS
+
+Tupakointi tappaa
+Rökning dödar"	\Items\Consumables\Cigarettes\Files	TX_Cigarettes_AL.png	175998	f0e87672b658eb04552646c81ebdc1491f2fa30f986e61c596b996a6da4782ed	3091				VAARA is a virtual brand's name (Proper-Noun).	
 Items	Consumables	Consumables	ignore			\Items\Consumables\Cigars\Files	Icon_Cigars.png	34699	1b38ee83899569c3d3bd682dca33a9afe4c91dfadceb7d9b33f307b9cc9eb58c					Reason for ignoring: Translation is unnecessary	
 Items	Consumables	Consumables	ignore			\Items\Consumables\Cigars\Files	TX_Cigars_AL.png	850701	952699587848a0e93b61559919eb360512f1583195df764b62b3e7945da3d5a0					Reason for ignoring: Translation is unnecessary	
-Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA Coffee	\Items\Consumables\Coffee\Files	Icon_Coffee.png	26122	d68d7358e7336685ebd29499796f4b5e141d7c28c9c6e1e304446e9ac70288a6	3093				Reason for pending: Translation is unnecessary	
-Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA Coffee	\Items\Consumables\Coffee\Files	TX_Coffee_AL.png	226088	89b2c59c470cea66184e31da678b692f7df06ae22da9d6e902f7bac4ec01f927	3095				Reason for pending: Translation is unnecessary	
+Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA KAHVI	\Items\Consumables\Coffee\Files	Icon_Coffee.png	26122	d68d7358e7336685ebd29499796f4b5e141d7c28c9c6e1e304446e9ac70288a6	3093				Reason for pending: Translation is unnecessary	
+Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA KAHVI	\Items\Consumables\Coffee\Files	TX_Coffee_AL.png	226088	89b2c59c470cea66184e31da678b692f7df06ae22da9d6e902f7bac4ec01f927	3095				Reason for pending: Translation is unnecessary	
 Items	Consumables	Consumables	ignore			\Items\Consumables\Coffee_Brewed\Files	Icon_Coffee_Brewed.png	26650	7541faa450deb7a6334d34fe46bd2d82288f13a37196db61226ecddb99080c40						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Coffee_Brewed\Files	TX_Coffee_Brewed_AL.png	153866	c6dc28f89abd79604f2dfd0a9de970e35a222a296374e48dad3fee0e264d7f93						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Cooked_Fish_Soup\Files	Icon_Cooked_Fish_Soup.png	26487	c0e0f4bbc6d28fbfcc0b82d720846351e82381cc87ab5bb7d453bf5382ad9019						
@@ -197,33 +260,33 @@ Items	Consumables	Consumables	ignore			\Items\Consumables\Kilju\Files	TX_Kilju_A
 Items	Consumables	Consumables	ignore			\Items\Consumables\Kompot\Files	Icon_Kompot.png	28026	8ac9aed9eecd0a016e8d3853973ebcda1b428547ca0c9e00d1dbef4344615917						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Kompot\Files	TX_Kompot_AL.png	233338	9d06eb805638222e163d8c6ee4973fb06d6c6a56e3493a8dd4a11a636fe1443b						
 Items	Consumables	Consumables	pending	"Sinappia
-SENAP"	"Mustard
+SENAP"	"Sinappia
 SENAP"	\Items\Consumables\Mustard\Files	Icon_Mustard.png	11350	2739f6d6bde6720dd7736bd669decc3660f9239254479219869608f89a1a74e3	3097					
 Items	Consumables	Consumables	pending	"Sinappia
-SENAP"	"Mustard
+SENAP"	"Sinappia
 SENAP"	\Items\Consumables\Mustard\Files	TX_Mustard_AL.png	113185	fa675714ab8ea10c0339da63cc21699287aaa375c9dfe4ea570230ea5cf068d4	3099					
 Items	Consumables	Consumables	pending	"Suolapähkinät
 Roasted & Salted
 
 # 3 Lines of Instruction: Can not read
 
-Rapearmakupala"	"Salty Peanuts
+Rapearmakupala"	"Suolapähkinät
 Roasted & Salted
 
 # 3 Lines of Instruction: Can not read
 
-Cruncy Snack"	\Items\Consumables\Peanuts\Files	Icon_Peanuts.png	14286	0ec125d98a94855844abcfc27bcf2706de35373b8508faa944d247301aeee9e0	3101					
+Rapearmakupala"	\Items\Consumables\Peanuts\Files	Icon_Peanuts.png	14286	0ec125d98a94855844abcfc27bcf2706de35373b8508faa944d247301aeee9e0	3101					
 Items	Consumables	Consumables	pending	"Suolapähkinät
 Roasted & Salted
 
 # 3 Lines of Instruction: Can not read
 
-Rapearmakupala"	"Salty Peanuts
+Rapearmakupala"	"Suolapähkinät
 Roasted & Salted
 
 # 3 Lines of Instruction: Can not read
 
-Cruncy Snack"	\Items\Consumables\Peanuts\Files	TX_Peanuts_AL.png	181366	bf597fa4bcea42d6cfb1f00ac5107234b681eaf17fac929993c8494006347ab4	3103					
+Rapearmakupala"	\Items\Consumables\Peanuts\Files	TX_Peanuts_AL.png	181366	bf597fa4bcea42d6cfb1f00ac5107234b681eaf17fac929993c8494006347ab4	3103					
 Items	Consumables	Consumables	ignore			\Items\Consumables\Potato\Files	Icon_Potato.png	9095	1180548f95973143eb1ddd2680f2846fc5ff1ed1c90138c1f70d6361db8c1561						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Potato\Files	TX_Potato_AL.png	69861	98b7a1e16c7a24529cb04a908f1df5b063f518f28d2b161e76d40980d0844b82						
 Items	Consumables	Consumables	pending	"SALMIAKKI
@@ -232,21 +295,21 @@ SALMIAK
 ORIGINAL"	"SALMIAKKI
 Salty liquorice
 
-ORIGINAL "	\Items\Consumables\Salty_Liquorice\Files	Icon_Salty_Liquorice.png	7650	e2ab0a588304a096b78f8f96539ab2124b8bde03dc45e0550c9509938a11ebbe	3105					
+ORIGINAL"	\Items\Consumables\Salty_Liquorice\Files	Icon_Salty_Liquorice.png	7650	e2ab0a588304a096b78f8f96539ab2124b8bde03dc45e0550c9509938a11ebbe	3105					
 Items	Consumables	Consumables	pending	"SALMIAKKI
 SALMIAK
 
 ORIGINAL"	"SALMIAKKI
 Salty liquorice
 
-ORIGINAL "	\Items\Consumables\Salty_Liquorice\Files	TX_Salty_Liquorice_AL.png	172317	9b6d3235362daff3ec1426e95e1a2812905202f59b045016c0e3323e208eca0a	3107					
+ORIGINAL"	\Items\Consumables\Salty_Liquorice\Files	TX_Salty_Liquorice_AL.png	172317	9b6d3235362daff3ec1426e95e1a2812905202f59b045016c0e3323e208eca0a	3107					
 Items	Consumables	Consumables	pending	"NORDENS KUNG
 
 ORIGINAL
-VIT PORTION"	"KING of the NORTH
+VIT PORTION"	"NORDENS KUNG
 
 ORIGINAL
-WHITE PORTION"	\Items\Consumables\Snus\Files	Icon_Snus.png	8363	87ec007311eea87bf8c836a14addac3fba4e3271550087f1456106319dd3625e	3109					
+VIT PORTION"	\Items\Consumables\Snus\Files	Icon_Snus.png	8363	87ec007311eea87bf8c836a14addac3fba4e3271550087f1456106319dd3625e	3109					
 Items	Consumables	Consumables	pending	"NORDENS KUNG
 
 ORIGINAL
@@ -257,35 +320,35 @@ tobaksvara
 skadar hälsan och är
 beroendeframkallande
 
-NORDENS KUNG"	"KING of the NORTH
+NORDENS KUNG"	"NORDENS KUNG
 
 ORIGINAL
-WHITE PORTION
+VIT PORTION
 
-This
-tobacco product 
-damages your health 
-and is addictive
+Denna
+tobaksvara
+skadar hälsan och är
+beroendeframkallande
 
-KING of the NORTH"	\Items\Consumables\Snus\Files	TX_Snus_AL.png	126656	c05768924428a58dc16d9419d12d8fb02b069899c90f7fe9cb516c3726a74ee6	3111					
+NORDENS KUNG"	\Items\Consumables\Snus\Files	TX_Snus_AL.png	126656	c05768924428a58dc16d9419d12d8fb02b069899c90f7fe9cb516c3726a74ee6	3111					
 Items	Consumables	Consumables	pending	"RAKASTA KUPLAJUOMAA
 
 LIMONADI
 
-NÄKISEN VIRVOITUSJUOMATEHDAS"	"LOVED SPARKLING DRINK
+NÄKISEN VIRVOITUSJUOMATEHDAS"	"RAKASTA KUPLAJUOMAA
 
-LEMONADE
+LIMONADI
 
-NÄKINEN SOFT DRINK FACTORY"	\Items\Consumables\Soda_Lemon\Files	Icon_Soda_Lemon.png	10509	4a105969fc611f47c2d884053feb1748be098038a4a063aea375428aa7c3b550	3113					
+NÄKISEN VIRVOITUSJUOMATEHDAS"	\Items\Consumables\Soda_Lemon\Files	Icon_Soda_Lemon.png	10509	4a105969fc611f47c2d884053feb1748be098038a4a063aea375428aa7c3b550	3113					
 Items	Consumables	Consumables	pending	"RAKASTA KUPLAJUOMAA
 
 LIMONADI
 
-NÄKISEN VIRVOITUSJUOMATEHDAS"	"LOVED SPARKLING DRINK
+NÄKISEN VIRVOITUSJUOMATEHDAS"	"RAKASTA KUPLAJUOMAA
 
-LEMONADE
+LIMONADI
 
-NÄKINEN SOFT DRINK FACTORY"	\Items\Consumables\Soda_Lemon\Files	TX_Soda_Lemon_AL.png	221378	8f9e5da969eb17f9de7a7a245eb58783e62fc9680418ae7d31b264f1ccc749aa	3115					
+NÄKISEN VIRVOITUSJUOMATEHDAS"	\Items\Consumables\Soda_Lemon\Files	TX_Soda_Lemon_AL.png	221378	8f9e5da969eb17f9de7a7a245eb58783e62fc9680418ae7d31b264f1ccc749aa	3115					
 Items	Consumables	Consumables	pending	"TALOUS
 SOKERI
 
@@ -294,15 +357,15 @@ STROOSENHE
 Viljelty,
 valmistettu
 ja pakattu
-Suomessa"	"HOUSE
-SUGAR
+Suomessa"	"TALOUS
+SOKERI
 
 STROOSENHE
 
-Grown,
-produced
-and packed
-in Finland"	\Items\Consumables\Sugar\Files	Icon_Sugar.png	17392	1ae6f402979e533060bbb184b469a1bf926a8bb6c5d829fb5a64ee20a07d96cf	3117					
+Viljelty,
+valmistettu
+ja pakattu
+Suomessa"	\Items\Consumables\Sugar\Files	Icon_Sugar.png	17392	1ae6f402979e533060bbb184b469a1bf926a8bb6c5d829fb5a64ee20a07d96cf	3117					
 Items	Consumables	Consumables	pending	"TALOUS
 SOKERI
 
@@ -311,36 +374,34 @@ STROOSENHE
 Viljelty,
 valmistettu
 ja pakattu
-Suomessa"	"HOUSE
-SUGAR
+Suomessa"	"TALOUS
+SOKERI
 
 STROOSENHE
 
-Grown,
-produced
-and packed
-in Finland"	\Items\Consumables\Sugar\Files	TX_Sugar_AL.png	125407	0ee099dc7a0b3d73fa3e99c8e3e3cca6d5f1e543421cbda1b9a43f0b253ae904	3119					
+Viljelty,
+valmistettu
+ja pakattu
+Suomessa"	\Items\Consumables\Sugar\Files	TX_Sugar_AL.png	125407	0ee099dc7a0b3d73fa3e99c8e3e3cca6d5f1e543421cbda1b9a43f0b253ae904	3119					
 Items	Consumables	Consumables	pending	"SUOMALAINEN
 LÄHDE-
-VESI"	"From Finland
-
-SPRING-
-WATER"	\Items\Consumables\Water_Bottle\Files	Icon_Water_Bottle.png	20840	d54ce56cf2956dc219c4bf3c7eca47c27035819f45f6dc630c3ff01f13fb9ec3	3121					
+VESI"	"SUOMALAINEN
+LÄHDE-
+VESI"	\Items\Consumables\Water_Bottle\Files	Icon_Water_Bottle.png	20840	d54ce56cf2956dc219c4bf3c7eca47c27035819f45f6dc630c3ff01f13fb9ec3	3121					
 Items	Consumables	Consumables	pending	"SUOMALAINEN
 LÄHDE-
-VESI"	"From Finland
-
-SPRING-
-WATER"	\Items\Consumables\Water_Bottle\Files	TX_Water_Bottle_AL.png	132791	98565ff7640c1f2d571589c92ea0b2bc4fdf4b2b80888f8df88fdab1d1440bd1	3123					
+VESI"	"SUOMALAINEN
+LÄHDE-
+VESI"	\Items\Consumables\Water_Bottle\Files	TX_Water_Bottle_AL.png	132791	98565ff7640c1f2d571589c92ea0b2bc4fdf4b2b80888f8df88fdab1d1440bd1	3123					
 Items	Consumables	Consumables	pending	"Kotileipurin
 
 Kuivahiiva
 Torrjäst
 
-4 x 11 g"	"HOME BAKER'S
+4 x 11 g"	"Kotileipurin
 
-DRY YEAST
-Dry yeast
+Kuivahiiva
+Torrjäst
 
 4 x 11 g"	\Items\Consumables\Yeast\Files	Icon_Yeast.png	9600	9474174633c3f0693ca6fb3c5054262dc32251db9c80ba07a579a78758a925de	3125					
 Items	Consumables	Consumables	pending	"Kotileipurin
@@ -348,10 +409,10 @@ Items	Consumables	Consumables	pending	"Kotileipurin
 Kuivahiiva
 Torrjäst
 
-4 x 11 g"	"HOME BAKER'S
+4 x 11 g"	"Kotileipurin
 
-DRY YEAST
-Dry yeast
+Kuivahiiva
+Torrjäst
 
 4 x 11 g"	\Items\Consumables\Yeast\Files	TX_Yeast_AL.png	195759	bf5a7ec64817543ef1091f8ee2f7a43efddff20738adce1b6302570a0d0732c0	3127					
 Items	Electronics		ignore			\Items\Electronics\Alarm_Clock\Files	Icon_Alarm_Clock.png	8856	972a23fed1012addb3271eeabdbbe0365313e0904ceb054e3a65b2ab76a4c63c						
@@ -361,15 +422,15 @@ Items	Electronics		pending	"VIRTA+
 ALKALIPARISTO / ALKALISKT BATTERI
 ALKALISK BATTERI"	"VIRTA+
 
-ALKALINE BATTERY
-ALKALINE BATTERIES"	\Items\Electronics\Batteries\Files	Icon_Batteries.png	10286	52073e2235a8197a8b5aa75618462c69d7ffeb947c4207b6fca39a0e91a2b21e	3129					
+ALKALIPARISTO / ALKALISKT BATTERI
+ALKALISK BATTERI"	\Items\Electronics\Batteries\Files	Icon_Batteries.png	10286	52073e2235a8197a8b5aa75618462c69d7ffeb947c4207b6fca39a0e91a2b21e	3129					
 Items	Electronics		pending	"VIRTA+
 
 ALKALIPARISTO / ALKALISKT BATTERI
 ALKALISK BATTERI"	"VIRTA+
 
-ALKALINE BATTERY
-ALKALINE BATTERIES"	\Items\Electronics\Batteries\Files	TX_Batteries_AL.png	222112	116c126fb50b74540a044c53142acdc0db789464386e264988b9b771faca6f3c	3131					
+ALKALIPARISTO / ALKALISKT BATTERI
+ALKALISK BATTERI"	\Items\Electronics\Batteries\Files	TX_Batteries_AL.png	222112	116c126fb50b74540a044c53142acdc0db789464386e264988b9b771faca6f3c	3131					
 Items	Electronics		pending	"POWER FORCE
 BATTERIEN
 
@@ -655,7 +716,7 @@ Items	Electronics		ignore			\Items\Electronics\Narva\Files	TX_Narva_AL.png	25997
 Items	Electronics		ignore			\Items\Electronics\PV7\Files	Icon_PV7.png	28073	dbb5820fd10ae7bbfd9e8be1aa5c774d93a1fbd518932ab55f29686c561c3a41					Reason for ignoring: Translation is unnecessary	
 Items	Electronics		ignore			\Items\Electronics\PV7\Files	TX_PV7_AL.png	965450	efb8da04f8752dc18ff04184245c9fe81e5d64630ba822e6a2088bf16e088915					Reason for ignoring: Translation is unnecessary	
 Items	Electronics		ignore			\Items\Electronics\Polaris\Files	Icon_Polaris.png	8883	9446cdc4d6ef9240e26bf9037a46c86d306e714edbac708baf6373c2877c3eb4						
-Items	Electronics		ignore	POLARIS		\Items\Electronics\Polaris\Files	TX_Polaris_AL.png	204269	ff533a37f1f484895b0e897fb83050266e1ef0ab47715f332b442eee060878c6	3175				Reason for ignoring: Translation is unnecessary	
+Items	Electronics		ignore	POLARIS	POLARIS	\Items\Electronics\Polaris\Files	TX_Polaris_AL.png	204269	ff533a37f1f484895b0e897fb83050266e1ef0ab47715f332b442eee060878c6	3175				Reason for ignoring: Translation is unnecessary	
 Items	Fishing	Fish	ignore			\Items\Fishing\Bream\Files	Icon_Bream.png	61655	6bce15c3e876afc8e64168e8f9b2da1bf8ad385a90596cac93d1aa72793b238b						
 Items	Fishing	Fish	ignore			\Items\Fishing\Bream\Files	TX_Bream_AL.png	2511558	b6779c6f066882a20925b95b1c0010f1ad38959248acdcf57b5845c28195277a						
 Items	Fishing	Fish	ignore			\Items\Fishing\Bream\Files	TX_Bream_NR.png	321033	ffabe6e23fc7707e6ff00209df39e7c9a6c6eaeabe236b04521650bb641efb81						
@@ -688,7 +749,7 @@ Items	Weapon	Grenades	ignore			\Items\Grenades\RGD-5\Files	Icon_RGD-5.png	9210	4
 Items	Weapon	Grenades	ignore			\Items\Grenades\RGD-5\Files	TX_RGD-5_AL.png	1351099	d93fdc3914b212f9daac581dd5531eac987771a032c1c1139c89344681e0c4e8						
 Items	Weapon	Grenades	ignore			\Items\Grenades\RGD-5\Files	TX_RGD-5_NR.png	318520	53a6a8061c835eb85bbdbc11aed562baaedbb6daf1b302e54cb43a253201d392						
 Items	Equipments	Helmets	ignore			\Items\Helmets\Helmet_Police\Files	Icon_Helmet_Police.png	26428	05a59246b0ba24d12e4a768c8d16485d27ebb8b70228c7d1d741349951fae755						
-Items	Equipments	Helmets	pending	POLISI	POLICE	\Items\Helmets\Helmet_Police\Files	TX_Helmet_Police_AL.png	880109	40381ca8b75e08f41853fd6c202383f25b50e46b3e00de97f5931a04722c1f5e	3177					
+Items	Equipments	Helmets	pending	POLISI	POLISI	\Items\Helmets\Helmet_Police\Files	TX_Helmet_Police_AL.png	880109	40381ca8b75e08f41853fd6c202383f25b50e46b3e00de97f5931a04722c1f5e	3177					
 Items	Equipments	Helmets	ignore			\Items\Helmets\SSh-39\Files	Icon_SSh-39.png	26772	7bc69de35ec7f8797b6473b57fa9cff1fdae6a4ba817d64c0337f04e886ac12a						
 Items	Equipments	Helmets	ignore			\Items\Helmets\SSh-39\Files	TX_SSh-39_AL.png	687954	ccd0fb33412d3d40181eceb2b32d5e799446a295cd79032b222c1c32617f0ef4						
 Items	Instruments	Instruments	ignore			\Items\Instruments\Guitar\Files	Icon_Guitar.png	78856	efa6e7c7348872ff6b3e233c21d576368e3644c50bb46f67dcab2b4967548a82						
@@ -696,18 +757,18 @@ Items	Instruments	Instruments	ignore			\Items\Instruments\Guitar\Files	TX_Guitar
 Items	Instruments	Instruments	ignore			\Items\Instruments\Guitar\Files	TX_Guitar_NR.png	572763	13fbbe4471853dfaad14540f933bf0c8d38ed625f9ea00ebc25c2258950ae28a						
 Items	Instruments	Instruments	ignore			\Items\Instruments\Harmonica\Files	Icon_Harmonica.png	7631	026e7d4226001b4b91c87f4aafd77179394cba01c64555321021c456ca8a6516						
 Items	Instruments	Instruments	ignore			\Items\Instruments\Harmonica\Files	TX_Harmonica_AL.png	735355	1e4514eaa7541126d6eb31714efbe66f0e9d28050f61f13b96e63290357cd5dd						
-Items	Keys		pending	ATTIC		\Items\Keys\Files	Icon_Key_Attic.png	5123	e0b15eb447aa91437ee22fae6f9b79a5b962c892ed9873bcc3a289d5b1b8020b	3179					
-Items	Keys		pending	BUNKER		\Items\Keys\Files	Icon_Key_Bunker.png	5191	9e06b8c848e7be63a5b52dd3179c139298c308283178729aa29822033461ee48	3181					
-Items	Keys		pending	CELLAR		\Items\Keys\Files	Icon_Key_Cellar.png	5110	32aaec67c6eaf15954e2060ca06e22a8447e3b406917dd5d874629c298d0f2ba	3183					
-Items	Keys		pending	CLASSROOM		\Items\Keys\Files	Icon_Key_Classroom.png	5246	1f349dcebba4526251d4c0c6eb01c8cdc59b8bfbd788b3f68917c376f065a2be	3185					
-Items	Keys		pending	GYMNASIUM		\Items\Keys\Files	Icon_Key_Gymnasium.png	5285	d28af04a3a31e3780285e1793b59c0cefa516ba982af97e5744813260b06efb5	3187					
-Items	Keys		pending	TUNNEL		\Items\Keys\Files	Icon_Key_Tunnel.png	5308	21a773ed937407217d84cf61772ce394cdd410d42dda949d85c21c629c46111b	3189					
-Items	Keys		pending	ATTIC		\Items\Keys\Files	TX_Key_Attic_AL.png	262948	3bc24db81bb9f7fa6f144ba28eb89f5b2262e4f57599c145777f660089eba6b1	3191					
-Items	Keys		pending	BUNKER		\Items\Keys\Files	TX_Key_Bunker_AL.png	259730	486f00aa77cc0409fcd56789d0b1e0fa88371cd8e9bf3d6069ee49d6fca3f026	3193					
-Items	Keys		pending	CELLAR		\Items\Keys\Files	TX_Key_Cellar_AL.png	264952	9354c9238b654beaad583dac667a64369202e630d4fcc6995e0b6a8030e9455a	3195					
-Items	Keys		pending	CLASSROOM		\Items\Keys\Files	TX_Key_Classroom_AL.png	261042	c6a1e688cc380caef55abb770ae28cfa51f2c370f72362cd665900da31e234f0	3197					
-Items	Keys		pending	GYMNASIUM		\Items\Keys\Files	TX_Key_Gymnasium_AL.png	256764	0f3c2b14b7733d6cad309554863abde164e4bca28372c291b2d93a17e0d4f29d	3199					
-Items	Keys		pending	TUNNEL		\Items\Keys\Files	TX_Key_Tunnel_AL.png	259612	45f1088776f5936451571e5399dfe253be6cf488c3429511af9123631a51bea2	3201					
+Items	Keys		pending	ATTIC	ATTIC	\Items\Keys\Files	Icon_Key_Attic.png	5123	e0b15eb447aa91437ee22fae6f9b79a5b962c892ed9873bcc3a289d5b1b8020b	3179					
+Items	Keys		pending	BUNKER	BUNKER	\Items\Keys\Files	Icon_Key_Bunker.png	5191	9e06b8c848e7be63a5b52dd3179c139298c308283178729aa29822033461ee48	3181					
+Items	Keys		pending	CELLAR	CELLAR	\Items\Keys\Files	Icon_Key_Cellar.png	5110	32aaec67c6eaf15954e2060ca06e22a8447e3b406917dd5d874629c298d0f2ba	3183					
+Items	Keys		pending	CLASSROOM	CLASSROOM	\Items\Keys\Files	Icon_Key_Classroom.png	5246	1f349dcebba4526251d4c0c6eb01c8cdc59b8bfbd788b3f68917c376f065a2be	3185					
+Items	Keys		pending	GYMNASIUM	GYMNASIUM	\Items\Keys\Files	Icon_Key_Gymnasium.png	5285	d28af04a3a31e3780285e1793b59c0cefa516ba982af97e5744813260b06efb5	3187					
+Items	Keys		pending	TUNNEL	TUNNEL	\Items\Keys\Files	Icon_Key_Tunnel.png	5308	21a773ed937407217d84cf61772ce394cdd410d42dda949d85c21c629c46111b	3189					
+Items	Keys		pending	ATTIC	ATTIC	\Items\Keys\Files	TX_Key_Attic_AL.png	262948	3bc24db81bb9f7fa6f144ba28eb89f5b2262e4f57599c145777f660089eba6b1	3191					
+Items	Keys		pending	BUNKER	BUNKER	\Items\Keys\Files	TX_Key_Bunker_AL.png	259730	486f00aa77cc0409fcd56789d0b1e0fa88371cd8e9bf3d6069ee49d6fca3f026	3193					
+Items	Keys		pending	CELLAR	CELLAR	\Items\Keys\Files	TX_Key_Cellar_AL.png	264952	9354c9238b654beaad583dac667a64369202e630d4fcc6995e0b6a8030e9455a	3195					
+Items	Keys		pending	CLASSROOM	CLASSROOM	\Items\Keys\Files	TX_Key_Classroom_AL.png	261042	c6a1e688cc380caef55abb770ae28cfa51f2c370f72362cd665900da31e234f0	3197					
+Items	Keys		pending	GYMNASIUM	GYMNASIUM	\Items\Keys\Files	TX_Key_Gymnasium_AL.png	256764	0f3c2b14b7733d6cad309554863abde164e4bca28372c291b2d93a17e0d4f29d	3199					
+Items	Keys		pending	TUNNEL	TUNNEL	\Items\Keys\Files	TX_Key_Tunnel_AL.png	259612	45f1088776f5936451571e5399dfe253be6cf488c3429511af9123631a51bea2	3201					
 Items	Weapon	Knives	ignore			\Items\Knives\Jaeger_140\Files	Icon_Jaeger_140.png	8203	f3e74615c13e59a3d2c89a49f9a6acd1edcb7ba10951aa92381bcb58846fe79d						
 Items	Weapon	Knives	ignore			\Items\Knives\Jaeger_140\Files	TX_Jaeger_140_AL.png	923942	af97ef69a2b4a98ae69c33bc3c3e684fb54241596cb4ef3a82873eb50b0e1aa8						
 Items	Weapon	Knives	ignore			\Items\Knives\Jaeger_140\Files	TX_Jaeger_140_NR.png	1497762	b8611bb9d1113ec95e77cb0fcfcd07e1df50cec755d5340e4a95ef5960f0a98a						
@@ -721,12 +782,11 @@ Items	Lore		ignore			\Items\Lore\Cat\Files	Icon_Box.png	118115	50e9af5bf81968266
 Items	Lore		ignore			\Items\Lore\Cat\Files	TX_Box_AL.png	3048081	354962e33ac9d61320ec91ce63ec42a2d6d1064377d78ec47b29eb0f046d7d59						
 Items	Lore		ignore			\Items\Lore\Cat\Files	TX_Cat_NR.png	21803621	5e5e83d74e479f0399e3d1f5e9baea65ea626ab0ccc0502bc559427a57486460						
 Items	Lore		pending	"ОБРАЗЕЦ № A-001
-СОБСТВЕННОСТЬ СЕВЕРОНЕФТИ"	"Sample NO: A-001
-
-Property of СЕВЕРОНЕФТИ"	\Items\Lore\Oil_Sample\Files	Icon_Oil_Sample.png	94826	6344c315ec79f97479be7ba7e9b8d231120dce2c3647e01570dd0917190dfa53	3203					
+СОБСТВЕННОСТЬ СЕВЕРОНЕФТИ"	"ОБРАЗЕЦ № A-001
+СОБСТВЕННОСТЬ СЕВЕРОНЕФТИ"	\Items\Lore\Oil_Sample\Files	Icon_Oil_Sample.png	94826	6344c315ec79f97479be7ba7e9b8d231120dce2c3647e01570dd0917190dfa53	3203					
 Items	Lore		pending	"ОБРАЗЕЦ № A-001
-СОБСТВЕННОСТЬ СЕВЕРОНЕФТИ"	"SPECIMEN No. A-001
-PROPERTY OF СЕВЕРОНЕФТЬ"	\Items\Lore\Oil_Sample\Files	TX_Oil_Sample_AL.png	500130	b89e951b8153c400ed848924f12166d177a856eafe11df933534fe1997ad21f0	3205				СЕВЕРОНЕФТЬ = SEVERONEFT	
+СОБСТВЕННОСТЬ СЕВЕРОНЕФТИ"	"ОБРАЗЕЦ № A-001
+СОБСТВЕННОСТЬ СЕВЕРОНЕФТИ"	\Items\Lore\Oil_Sample\Files	TX_Oil_Sample_AL.png	500130	b89e951b8153c400ed848924f12166d177a856eafe11df933534fe1997ad21f0	3205				СЕВЕРОНЕФТЬ = SEVERONEFT	
 Items	Lore		ignore	"Havainnot
 
 Potilaalla havaittavissa voimakasta hengitysteiden ärsytystä (bronkiaalinen)
@@ -761,7 +821,41 @@ Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, et
 elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
 
 Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
-STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."		\Items\Lore\Patient_Report\Files	Icon_Patient_Report.png	28691	e85cf06f64eb4641562a13146ea26526e78d7c852e5a302eeb39ed818e8cf642	3207				Reason for ignoring: Low Resolution	
+STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	"Havainnot
+
+Potilaalla havaittavissa voimakasta hengitysteiden ärsytystä (bronkiaalinen)
+sekä merkittävää pahoinvointia. RR 160/95, p 110, SpO2 88% (huoneilmalla).
+
+Verenkuvassa viitteitä asidoosista. Epäily altistumisesta akryylinitriilille
+sekä sen palamisprosessissa vapautuneelle syaanivedylle (HCN).
+
+Oirekuvaus
+
+Hengitystiet: Voimakas yskä, hengenahdistus (dyspnea).
+Keuhkoissa kuultavissa rahinaa.
+
+Neurologiset oireet: Huimaus, sekavuus ja päänsärky.
+Potilas valittaa ”metallista makua” suussa.
+
+Iho: Lievää syanoosia raajoissa, vaikka iho tuntuu lämpimältä.
+
+Hoitosuunnitelma
+
+Välitön happihoito aloitettu. Seurataan mahdollisia sydänoireita.
+Mikäli tila heikkenee, harkittava vasta-ainemyrkytykseen varalta.
+
+Alueen vesistöjen ja ympäristön tila tarkistettava lisäaltistumisen estämiseksi.
+
+Poikkeavat löydökset
+
+Vaikka akryylinitriili ja syaanivety selittävät osan oireista, potilaan lihasjäykkyys ja pupillien
+poikkeuksellinen supistuminen (mioosi) viittaavat myös johonkin muuhun.
+
+Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, että potilaan
+elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
+
+Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
+STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	\Items\Lore\Patient_Report\Files	Icon_Patient_Report.png	28691	e85cf06f64eb4641562a13146ea26526e78d7c852e5a302eeb39ed818e8cf642	3207				Reason for ignoring: Low Resolution	
 Items	Lore		pending	"Havainnot
 
 Potilaalla havaittavissa voimakasta hengitysteiden ärsytystä (bronkiaalinen)
@@ -796,16 +890,56 @@ Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, et
 elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
 
 Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
-STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."		\Items\Lore\Patient_Report\Files	TX_Patient_Report_AL.png	736092	1b1571a9866b579c794fca02f65d09e56a689130bd5f2aa8240479f2d58107ad	3209					
-Items	Medical		pending	MEDICAL		\Items\Medical\AFAK\Files	Icon_AFAK.png	55283	e0cc6985d035a50e8b41a38db4733f357fbab46627d8c03dda89d29081e880e3	3211					
-Items	Medical		pending	MEDICAL		\Items\Medical\AFAK\Files	TX_AFAK_AL.png	1674849	8e5b2108b2466d753cd18e83ec06f3349187b997830e2dd8066839bda46453a1	3213					
+STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	"Havainnot
+
+Potilaalla havaittavissa voimakasta hengitysteiden ärsytystä (bronkiaalinen)
+sekä merkittävää pahoinvointia. RR 160/95, p 110, SpO2 88% (huoneilmalla).
+
+Verenkuvassa viitteitä asidoosista. Epäily altistumisesta akryylinitriilille
+sekä sen palamisprosessissa vapautuneelle syaanivedylle (HCN).
+
+Oirekuvaus
+
+Hengitystiet: Voimakas yskä, hengenahdistus (dyspnea).
+Keuhkoissa kuultavissa rahinaa.
+
+Neurologiset oireet: Huimaus, sekavuus ja päänsärky.
+Potilas valittaa ”metallista makua” suussa.
+
+Iho: Lievää syanoosia raajoissa, vaikka iho tuntuu lämpimältä.
+
+Hoitosuunnitelma
+
+Välitön happihoito aloitettu. Seurataan mahdollisia sydänoireita.
+Mikäli tila heikkenee, harkittava vasta-ainemyrkytykseen varalta.
+
+Alueen vesistöjen ja ympäristön tila tarkistettava lisäaltistumisen estämiseksi.
+
+Poikkeavat löydökset
+
+Vaikka akryylinitriili ja syaanivety selittävät osan oireista, potilaan lihasjäykkyys ja pupillien
+poikkeuksellinen supistuminen (mioosi) viittaavat myös johonkin muuhun.
+
+Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, että potilaan
+elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
+
+Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
+STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	\Items\Lore\Patient_Report\Files	TX_Patient_Report_AL.png	736092	1b1571a9866b579c794fca02f65d09e56a689130bd5f2aa8240479f2d58107ad	3209					
+Items	Medical		pending	MEDICAL	MEDICAL	\Items\Medical\AFAK\Files	Icon_AFAK.png	55283	e0cc6985d035a50e8b41a38db4733f357fbab46627d8c03dda89d29081e880e3	3211					
+Items	Medical		pending	MEDICAL	MEDICAL	\Items\Medical\AFAK\Files	TX_AFAK_AL.png	1674849	8e5b2108b2466d753cd18e83ec06f3349187b997830e2dd8066839bda46453a1	3213					
 Items	Medical		pending	"14 tabl.
 
 Amoxpro 500 mg
 
 kalvopäällysteiset tabletit / filmdragerade tabletter
 
-amoxicillin."		\Items\Medical\Antibiotics\Files	Icon_Antibiotics.png	6834	cfc321a242c52455c1c48d3f7b1bb30aec815048e65c836dadcd0827b929a86f	3215					
+amoxicillin."	"14 tabl.
+
+Amoxpro 500 mg
+
+kalvopäällysteiset tabletit / filmdragerade tabletter
+
+amoxicillin."	\Items\Medical\Antibiotics\Files	Icon_Antibiotics.png	6834	cfc321a242c52455c1c48d3f7b1bb30aec815048e65c836dadcd0827b929a86f	3215					
 Items	Medical		pending	"14 tabl.
 
 Amoxpro 500 mg
@@ -822,7 +956,23 @@ Säilytä alkuperäispakkauksessa alle 25 °C.
 
 Läs bipacksedeln före användning.
 Förvaras utom syn- och räckhåll för barn.
-Förvaras i originalförpackningen vid högst 25 °C."		\Items\Medical\Antibiotics\Files	TX_Antibiotics_AL.png	137648	5e1cc0545ba0dc23a87d093e3df10a9b4d20b42023a62dca787d35dc86f606bc	3217					
+Förvaras i originalförpackningen vid högst 25 °C."	"14 tabl.
+
+Amoxpro 500 mg
+
+kalvopäällysteiset tabletit / filmdragerade tabletter
+amoxicillin.
+
+1 tabl. sisältää / innehåller
+amoxicillinum trihydricum prod. amoxicillinum 500 mg
+
+Lue pakkausseloste ennen käyttöä.
+Ei lasten ulottuville eikä näkyville.
+Säilytä alkuperäispakkauksessa alle 25 °C.
+
+Läs bipacksedeln före användning.
+Förvaras utom syn- och räckhåll för barn.
+Förvaras i originalförpackningen vid högst 25 °C."	\Items\Medical\Antibiotics\Files	TX_Antibiotics_AL.png	137648	5e1cc0545ba0dc23a87d093e3df10a9b4d20b42023a62dca787d35dc86f606bc	3217					
 Items	Medical		ignore	"Hydrogen peroxide 3%
 
 FINAMEDI
@@ -830,7 +980,14 @@ CHEMICAL
 
 Not for injection
 
-250 ml"		\Items\Medical\Antiseptic\Files	Icon_Antiseptic.png	8798	3e65a36f5960e1045279e14429148a17c9f28674f86ac4fca46853df050cc8d9	3219				Reason for ignoring: Low Resolution	
+250 ml"	"Hydrogen peroxide 3%
+
+FINAMEDI
+CHEMICAL
+
+Not for injection
+
+250 ml"	\Items\Medical\Antiseptic\Files	Icon_Antiseptic.png	8798	3e65a36f5960e1045279e14429148a17c9f28674f86ac4fca46853df050cc8d9	3219				Reason for ignoring: Low Resolution	
 Items	Medical		pending	"Hydrogen peroxide 3%
 
 FINAMEDI
@@ -838,13 +995,23 @@ CHEMICAL
 
 Not for injection
 
-250 ml"		\Items\Medical\Antiseptic\Files	TX_Antiseptic_AL.png	100308	8b19a39a1b7c5c5f93236b343f3cb3717bd0833f66228afd76b0dde833eb59a4	3221					
+250 ml"	"Hydrogen peroxide 3%
+
+FINAMEDI
+CHEMICAL
+
+Not for injection
+
+250 ml"	\Items\Medical\Antiseptic\Files	TX_Antiseptic_AL.png	100308	8b19a39a1b7c5c5f93236b343f3cb3717bd0833f66228afd76b0dde833eb59a4	3221					
 Items	Medical		ignore	"ViTAL
-HUULILLE KÄSILLE KYNSINAUHOILLE"		\Items\Medical\Balm\Files	Icon_Balm.png	6979	ef048e04f2ee33c90f9c3e2a5d7ee8baa62b07cdc75b25cb095068ca3bc499f4	3223				Reason for ignoring: Low Resolution	
+HUULILLE KÄSILLE KYNSINAUHOILLE"	"ViTAL
+HUULILLE KÄSILLE KYNSINAUHOILLE"	\Items\Medical\Balm\Files	Icon_Balm.png	6979	ef048e04f2ee33c90f9c3e2a5d7ee8baa62b07cdc75b25cb095068ca3bc499f4	3223				Reason for ignoring: Low Resolution	
 Items	Medical		pending	"ViTAL
-HUULILLE KÄSILLE KYNSINAUHOILLE"		\Items\Medical\Balm\Files	TX_Balm_AL.png	100801	0aa7b920a1977d42b2f7c8113f93357dcc533e110fb0d57b1dab8600e2c83315	3225				Some texture is unreadable (low resolution)	
+HUULILLE KÄSILLE KYNSINAUHOILLE"	"ViTAL
+HUULILLE KÄSILLE KYNSINAUHOILLE"	\Items\Medical\Balm\Files	TX_Balm_AL.png	100801	0aa7b920a1977d42b2f7c8113f93357dcc533e110fb0d57b1dab8600e2c83315	3225				Some texture is unreadable (low resolution)	
 Items	Medical		pending	"ENSISIDE
-FÖRSTA FÖRBAND"		\Items\Medical\Bandage\Files	Icon_Bandage.png	7941	733b72578e281523c8689e6fcdb8003ce99999213efc5468aa4dd6c332aa297e	3227					
+FÖRSTA FÖRBAND"	"ENSISIDE
+FÖRSTA FÖRBAND"	\Items\Medical\Bandage\Files	Icon_Bandage.png	7941	733b72578e281523c8689e6fcdb8003ce99999213efc5468aa4dd6c332aa297e	3227					
 Items	Medical		pending	"ENSISIDE
 FÖRSTA FÖRBAND
 
@@ -859,7 +1026,21 @@ KÄYTTÖ RUNSAASSA
 VERENVUODOSSA PAINESITEENÄ:
 PEITÄ HAAVA RULLAA TOINEN TYYNYOSA
 PETINSITEEN PÄÄLLE.
-KIINNITÄ TUKEVASTI SITEELLÄ."		\Items\Medical\Bandage\Files	TX_Bandage_AL.png	339170	e3033ab0f84f97b5f33603a413c5f35b26ed57b1f9da93d7e4b0f14f5605ca7d	3229					
+KIINNITÄ TUKEVASTI SITEELLÄ."	"ENSISIDE
+FÖRSTA FÖRBAND
+
+TAI
+
+KÄYTTÖ HAAVAN PETINSITEENÄ:
+KOHDISTA RAAJA.
+PEITÄ HAAVA SOPIVASTI TAITETULLA
+TYYNYOSALLA JA KIINNITÄ SITEELLÄ.
+
+KÄYTTÖ RUNSAASSA
+VERENVUODOSSA PAINESITEENÄ:
+PEITÄ HAAVA RULLAA TOINEN TYYNYOSA
+PETINSITEEN PÄÄLLE.
+KIINNITÄ TUKEVASTI SITEELLÄ."	\Items\Medical\Bandage\Files	TX_Bandage_AL.png	339170	e3033ab0f84f97b5f33603a413c5f35b26ed57b1f9da93d7e4b0f14f5605ca7d	3229					
 Items	Medical		ignore			\Items\Medical\Bandage_Improvised\Files	Icon_Bandage_Improvised.png	5696	1c50fda67cc668f882c62127bc627da5cec5e1eb7731c51918f85fd3dcbe9a2f						
 Items	Medical		pending			\Items\Medical\Cold_Medicine\Files	Icon_Cold_Medicine.png	8366	b51d619a3951279c0d9445333eefe21d8ab2a8b9d2bbedad5911d38dd2d9c719						
 Items	Medical		pending			\Items\Medical\Cold_Medicine\Files	TX_Cold_Medicine_AL.png	148774	40322486b1cb2e34a25e9515e737f43aa1b50eaddbce1c10211f889eaedb2922						
