@@ -1,296 +1,296 @@
-WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION		max_length
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	748	체력			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100		100	Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	750	기력			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100		100	Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	752	수분			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100		100	Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	754	정신력			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100		100	Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	756	체온			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100		100	Value(Integer) about the Vital. Untranslatable.		
-HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	산소			
-HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:		FPS:			
-HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100		100	Value(Integer) about the FPS. Untranslatable.		
-HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	은신처 (05 구역)			
-Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	인벤토리			
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0		10.0	Value(Float) about Capacity. Untranslatable.		
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0		10.0	Value(Float) about Weight. Untranslatable.		
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000		1000	Value(Float) about Value(Money). Untranslatable.		
-Inventory	#Not Checked	Name	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	764	컨테이너			
-Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0		10.0	Value(Float) about Weight. Untranslatable.		
-Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000		1000	Value(Float) about Weight. Untranslatable.		
-Inventory	Equipment	Name	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	766	장비			
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg		10kg	Value(Float) about Capacity. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000		1000	Value(Float) about Value. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100		100	Value(Float) about Insulation. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A		N/A	Value(Float) about Dexterity. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A		N/A	Value(Float) about Menace. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A		N/A	Value(Float) about CBRN. Untranslatable.		
-Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	주무기	Inventory Slot for Primary Weapon		
-Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	보조무기	Inventory Slot for Secondory Weapon		
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	칼	Inventory Slot for Knife		
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	수류탄1	Inventory Slot for Grenade1		
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	수류탄2	Inventory Slot for Grenade2		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	배낭	Inventory Slot for Backpack		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	조끼	Inventory Slot for Rig(Vest)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	헬멧	Inventory Slot for Helmet		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	784	모자	Inventory Slot for Hat/Cap		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	786	외투	Inventory Slot for Jacket		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	788	바지	Inventory Slot for Pants		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	790	벨트	Inventory Slot for Belt		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	792	신발	Inventory Slot for Shoes		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	794	장갑	Inventory Slot for Gloves		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	796	성냥	Inventory Slot for Matches(lighter)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	798	손전등	Inventory Slot for FlashLight		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	800	야투경	Inventory Slot for Night Vision Goggle (NVG)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	802	시계	Inventory Slot for Clock(Time)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	804	지도	Inventory Slot for Map		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	806	음악	"Inventory Slot for Carest/MP3 ""Player"""		
-Inventory	Vitals	Dictionary	0	substr									Vital	808	바이탈	allow conflict		
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	810	캐릭터			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	812	체력	Player's Status about Health Point (HP)		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100		100			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	814	기력	Player's Status about Energy		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100		100			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	816	수분	Player's Status about Hydration (Water)		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100		100			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	818	정신력	Player's Status about Mental		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100		100			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	체온	Player's Status about Body Temparature		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100		100			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	822	고양이	Cat's Status		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100		100			
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	824	생존일	Number of days the player survived		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00		00			
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	826	은신처	Number of Shelters that unlocked		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00		00			
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	828	의뢰 수	Number of Tasks that cleared		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00		00			
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	830	퀘스트	Number of Quests that cleard		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00		00			
-Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS		대피소	Number of Civil Defence Shelters (Not Updated yet)		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00		00			
-Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?		?	Wating for Update		
-Inventory	Stats	Number	1	ignore									?		?	Wating for Update		
-Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	도구			
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	이벤트			
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	제작			
-Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	근접 시설			
-Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	의뢰 노트			
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	max_length
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	748	체력		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100		100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	750	기력		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100		100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	752	수분		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100		100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	754	정신력		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100		100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	756	체온		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100		100	Value(Integer) about the Vital. Untranslatable.	
+HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	산소		
+HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:		FPS:		
+HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100		100	Value(Integer) about the FPS. Untranslatable.	
+HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	은신처 (05 구역)		
+Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	인벤토리		
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0		10.0	Value(Float) about Capacity. Untranslatable.	
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0		10.0	Value(Float) about Weight. Untranslatable.	
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000		1000	Value(Float) about Value(Money). Untranslatable.	
+Inventory	#Not Checked	Name	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	764	컨테이너		
+Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0		10.0	Value(Float) about Weight. Untranslatable.	
+Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000		1000	Value(Float) about Weight. Untranslatable.	
+Inventory	Equipment	Name	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	766	장비		
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg		10kg	Value(Float) about Capacity. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000		1000	Value(Float) about Value. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100		100	Value(Float) about Insulation. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A		N/A	Value(Float) about Dexterity. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A		N/A	Value(Float) about Menace. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A		N/A	Value(Float) about CBRN. Untranslatable.	
+Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	주무기	Inventory Slot for Primary Weapon	
+Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	보조무기	Inventory Slot for Secondory Weapon	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	칼	Inventory Slot for Knife	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	수류탄1	Inventory Slot for Grenade1	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	수류탄2	Inventory Slot for Grenade2	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	배낭	Inventory Slot for Backpack	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	조끼	Inventory Slot for Rig(Vest)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	헬멧	Inventory Slot for Helmet	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	784	모자	Inventory Slot for Hat/Cap	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	786	외투	Inventory Slot for Jacket	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	788	바지	Inventory Slot for Pants	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	790	벨트	Inventory Slot for Belt	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	792	신발	Inventory Slot for Shoes	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	794	장갑	Inventory Slot for Gloves	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	796	성냥	Inventory Slot for Matches(lighter)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	798	손전등	Inventory Slot for FlashLight	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	800	야투경	Inventory Slot for Night Vision Goggle (NVG)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	802	시계	Inventory Slot for Clock(Time)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	804	지도	Inventory Slot for Map	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	806	음악	"Inventory Slot for Carest/MP3 ""Player"""	
+Inventory	Vitals	Dictionary	0	substr									Vital	808	바이탈	allow conflict	
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	810	캐릭터		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	812	체력	Player's Status about Health Point (HP)	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100		100		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	814	기력	Player's Status about Energy	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100		100		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	816	수분	Player's Status about Hydration (Water)	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100		100		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	818	정신력	Player's Status about Mental	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100		100		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	체온	Player's Status about Body Temparature	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100		100		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	822	고양이	Cat's Status	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100		100		
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	824	생존일	Number of days the player survived	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00		00		
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	826	은신처	Number of Shelters that unlocked	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00		00		
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	828	의뢰 수	Number of Tasks that cleared	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00		00		
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	830	퀘스트	Number of Quests that cleard	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00		00		
+Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS		대피소	Number of Civil Defence Shelters (Not Updated yet)	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00		00		
+Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?		?	Wating for Update	
+Inventory	Stats	Number	1	ignore									?		?	Wating for Update	
+Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	도구		
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	이벤트		
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	제작		
+Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	근접 시설		
+Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	의뢰 노트		
 Inventory	Tools/Task Note	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty	842	의뢰 노트가 비어있습니다	"Task Note will only display this Strings when there's any task added in the Task Note.
-It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"		
+It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	의뢰 노트를 사용할 수 없습니다 (튜토리얼)	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
-Dynamically changed by Scripts/Interface.gd: notesHint.text"		
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	의뢰 노트가 비어있습니다			
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	의뢰 노트를 사용할 수 없습니다 (튜토리얼)			
-Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	월드맵			
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	지도가 장착되지 않았습니다			
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	지도를 사용할 수 없습니다 (보스토크)			
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	지도가 장착되지 않았습니다			
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	지도를 사용할 수 없습니다 (보스토크)			
+Dynamically changed by Scripts/Interface.gd: notesHint.text"	
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	의뢰 노트가 비어있습니다		
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	의뢰 노트를 사용할 수 없습니다 (튜토리얼)		
+Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	월드맵		
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	지도가 장착되지 않았습니다		
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	지도를 사용할 수 없습니다 (보스토크)		
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	지도가 장착되지 않았습니다		
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	지도를 사용할 수 없습니다 (보스토크)		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
 Zoom = [SCROLL]"	860	"이동 = [LMB]
-확대 = [SCROLL]"			
-Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	862	현재 위치	Focuse the Map to Player's Location		
-Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	864	카세트 플레이어			
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	카세트 플레이어가 장착되지 않았습니다			
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	카세트 플레이어가 장착되지 않았습니다			
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.			
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	카세트 플레이어가 비어있습니다, 카세트를 넣어주세요.			
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	이 카세트에는 저작권이 있는 음악이 포함되어 있습니다 (콘텐츠 경고)			
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	카세트 이름			
-Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%		🗲 100%			
-Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪		볼륨  🕪			
-Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	878	배경음악 덮어쓰기 [켜기]	Casette will Overide the Ambient Music when it's ON		
+확대 = [SCROLL]"		
+Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	862	현재 위치	Focuse the Map to Player's Location	
+Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	864	카세트 플레이어		
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	카세트 플레이어가 장착되지 않았습니다		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	카세트 플레이어가 장착되지 않았습니다		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	카세트 플레이어가 비어있습니다, 카세트를 넣어주세요.		
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	이 카세트에는 저작권이 있는 음악이 포함되어 있습니다 (콘텐츠 경고)		
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	카세트 이름		
+Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%		🗲 100%		
+Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪		볼륨  🕪		
+Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	878	배경음악 덮어쓰기 [켜기]	Casette will Overide the Ambient Music when it's ON	
 Inventory	Tools/Casette	Button	0	literal			UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button			Override Ambient Music [OFF]	880	배경음악 덮어쓰기 [끄기]	"Casette will Overide the Ambient Music when it's ON.
-Dynamically changed by Scripts/Audio.gd"		
-Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	882	배경음악 덮어쓰기 [켜기]			
-Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	884	배경음악 덮어쓰기 [끄기]			
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	886	방랑자			
-Traders	Traders	Title	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	888	상인			
-Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	890	물자			
-Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	892	의뢰			
-Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	894	이름:			
+Dynamically changed by Scripts/Audio.gd"	
+Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	882	배경음악 덮어쓰기 [켜기]		
+Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	884	배경음악 덮어쓰기 [끄기]		
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	886	방랑자		
+Traders	Traders	Title	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	888	상인		
+Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	890	물자		
+Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	892	의뢰		
+Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	894	이름:		
 Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Name	Value	Label	text	191837597	Trader	896	상인	"Dynamically Changed as Traders/{name}/{name}.tres file's name field
-by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"		
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	898	세금:			
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%		100%			
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	900	의뢰:			
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10		0/10			
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	재보급:			
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00		10:00			
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	904	거래			
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	906	요구 가격 + 세금 (€)			
-Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0		0			
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	908	제안 가격(€)			
-Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0		0			
-Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	910	초기화			
-Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	912	수락			
-Traders	Supply	String	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	914	물자			
-Traders	Supply	Number	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000		1000			
-Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	916	의뢰			
-Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	가구 카탈로그			
-Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.			
+by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"	
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	898	세금:		
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%		100%		
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	900	의뢰:		
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10		0/10		
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	재보급:		
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00		10:00		
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	904	거래		
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	906	요구 가격 + 세금 (€)		
+Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0		0		
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	908	제안 가격(€)		
+Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0		0		
+Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	910	초기화		
+Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	912	수락		
+Traders	Supply	String	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	914	물자		
+Traders	Supply	Number	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000		1000		
+Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	916	의뢰		
+Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	가구 카탈로그		
+Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
-"	922	사용			
+"	922	사용		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
-"	924	장비			
+"	924	장비		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
-"	926	해제			
+"	926	해제		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
-"	928	탄 꺼내기			
+"	928	탄 꺼내기		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
-"	930	나누기			
+"	930	나누기		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
-"	932	잡기			
+"	932	잡기		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
-"	934	수면			
-Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	수면			
+"	934	수면		
+Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	수면		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
-"	938	이동			
+"	938	이동		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
-"	940	버리기			
+"	940	버리기		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
-"	942	배치			
+"	942	배치		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
-"	944	파괴			
-Inventory	Item	Button	0	pattern									Remove {name}	946	{name} 제거			
+"	944	파괴		
+Inventory	Item	Button	0	pattern									Remove {name}	946	{name} 제거		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
-"	948	제거 [0]			
+"	948	제거 [0]		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
-"	950	제거 [1]			
+"	950	제거 [1]		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
-"	952	제거 [2]			
+"	952	제거 [2]		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
-"	954	제거 [3]			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	커피머신			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	소모품			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	전설			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	962	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	964	장비:			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	966	주무기			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	968	상태:			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%		100%			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	970	무게:			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg		100kg			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	972	가치:			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€		100€			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	974	구경:			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19		9x19			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	976	데미지:			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100		100			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	978	관통 등급:			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	레벨 1			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 2	982	레벨 2			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 3	984	레벨 3			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 4	986	레벨 4			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 5	988	레벨 5			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	text	1220649414	Protection:	990	방어 등급:			
-Inventory	Item	String	0	pattern									Level {no}	992	레벨 {no}			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	레벨 1			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 2	996	레벨 2			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 3	998	레벨 3			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 4	1000	레벨 4			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 5	1002	레벨 5			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	용량:			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg		+ 10kg			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	1006	보온:			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10		+10			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	1008	체력:			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10		+10			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	1010	기력:			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10		+10			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	1012	수분:			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10		+10			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	1014	정신력:			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10		+10			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	1016	체온:			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10		+10			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	1018	결합됨:			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine		Hybrid, OZ5, Leopard, Magazine	PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	치료:			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	1022	호환 아이템:			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG		Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG	PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	열원 필요			
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	작업대 필요			
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	은신처 필요			
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	1030	아이템			
-Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%		100%			
-Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1		1			
-Inventory	#Not Checked	String	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	1032	프로파일러	Developer Only		
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	보기			
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	1036	레시피 명			
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00		01:00			
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	1038	입력:			
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	1040	출력:			
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	투입 시작			
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	투입 시작			
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input		투입 시작			
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input		투입 시작			
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input		투입 시작			
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	투입 정지			
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	투입 초기화			
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	제작			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	열원			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	일부 요리 관련 레시피에 필요한 제작 시설입니다.			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	요구 시설 (근접)			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	작업대			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	일부 건설 관련 레시피에 필요한 제작 시설입니다.			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	요구 시설 (근접)			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	테스트벤치	I can't find this. Maybe not updated in 1.0.0 version yet.		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	일부 전자 관련 레시피에 필요한 제작 시설입니다.	I can't find this. Maybe not updated in 1.0.0 version yet.		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	요구 시설 (근접)	I can't find this. Maybe not updated in 1.0.0 version yet.		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	은신처			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	일부 가구 관련 레시피에 필요한 제작 시설입니다.			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	요구 시설 (근접)			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	상인 통계			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	국가의 부름	PlaceHolder		
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	1080	노트에 추가			
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	1082	제거			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	1084	난이도:			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	1086	쉬움			
+"	954	제거 [3]		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	커피머신		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	소모품		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	전설		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	962	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	964	장비:		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	966	주무기		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	968	상태:		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%		100%		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	970	무게:		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg		100kg		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	972	가치:		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€		100€		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	974	구경:		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19		9x19		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	976	데미지:		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100		100		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	978	관통 등급:		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	레벨 1		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 2	982	레벨 2		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 3	984	레벨 3		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 4	986	레벨 4		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 5	988	레벨 5		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	text	1220649414	Protection:	990	방어 등급:		
+Inventory	Item	String	0	pattern									Level {no}	992	레벨 {no}		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	레벨 1		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 2	996	레벨 2		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 3	998	레벨 3		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 4	1000	레벨 4		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 5	1002	레벨 5		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	용량:		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg		+ 10kg		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	1006	보온:		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10		+10		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	1008	체력:		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10		+10		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	1010	기력:		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10		+10		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	1012	수분:		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10		+10		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	1014	정신력:		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10		+10		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	1016	체온:		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10		+10		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	1018	결합됨:		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine		Hybrid, OZ5, Leopard, Magazine	PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	치료:		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	1022	호환 아이템:		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG		Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG	PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	열원 필요		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	작업대 필요		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	은신처 필요		
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	1030	아이템		
+Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%		100%		
+Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1		1		
+Inventory	#Not Checked	String	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	1032	프로파일러	Developer Only	
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	보기		
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	1036	레시피 명		
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00		01:00		
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	1038	입력:		
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	1040	출력:		
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	투입 시작		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	투입 시작		
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input		투입 시작		
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input		투입 시작		
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input		투입 시작		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	투입 정지		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	투입 초기화		
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	제작		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	열원		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	일부 요리 관련 레시피에 필요한 제작 시설입니다.		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	요구 시설 (근접)		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	작업대		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	일부 건설 관련 레시피에 필요한 제작 시설입니다.		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	요구 시설 (근접)		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	테스트벤치	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	일부 전자 관련 레시피에 필요한 제작 시설입니다.	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	요구 시설 (근접)	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	은신처		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	일부 가구 관련 레시피에 필요한 제작 시설입니다.		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	요구 시설 (근접)		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	상인 통계		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	국가의 부름	PlaceHolder	
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	1080	노트에 추가		
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	1082	제거		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	1084	난이도:		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	1086	쉬움		
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Description	Label	text	1563024386	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	1088	"지난주에 근처 버려진 학교 건물에 있는 의사를 찾아갔어. 그는 내 ""나쁜 습관""들을 다 끊으라고 했지만, 그 늙은이는 담배도 피우니까 신경 안 써!
 
-넌 아마 힘든 일이 있을 때만 민트 사탕을 핥아먹는 현대판 히피 중 하나겠지. 하지만 혹시라도 이런 사탕을 발견하면 한두 갑이랑 성냥도 챙겨가."			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	1090	배달:			
-Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	보상:			
-Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).		
+넌 아마 힘든 일이 있을 때만 민트 사탕을 핥아먹는 현대판 히피 중 하나겠지. 하지만 혹시라도 이런 사탕을 발견하면 한두 갑이랑 성냥도 챙겨가."		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	1090	배달:		
+Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	보상:		
+Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
 → Your furniture is located in Furniture Catalog [Decor Mode]"	1094	"→ 이 임무를 완료하면 쉼터용 가구를 획득하게 됩니다.
-→ 획득한 가구는 가구 카탈로그 [장식 모드]에서 확인할 수 있습니다."			
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	배달 시작			
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	배달 시작			
-Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery		배달 시작			
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	배달 종료			
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	배달 종료			
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	배달됨			
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	배달됨			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	완료			
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶		▶			
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen		Junna - Pappa Se Antoi Hevosen			
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30		3:30			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	1110	소지 한도			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	모든 장비 아이템의 소지 용량(kg) 한계입니다.			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	1114	인벤토리 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	1116	인벤토리 무게			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	인벤토리 내 모든 아이템의 무게(kg) 입니다.			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	1120	인벤토리 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	1122	인벤토리 가치			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	인벤토리 내 모든 아이템의 가치(€) 합계입니다.			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	1126	인벤토리 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	1128	보관함 무게			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	보관함 내 모든 아이템의 무게(kg) 합계입니다.			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	1132	보관함 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	1134	보관함 가치			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	보관함 내 모든 아이템의 가치(€) 합계입니다.			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	1138	보관함 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	소지 한도			
+→ 획득한 가구는 가구 카탈로그 [장식 모드]에서 확인할 수 있습니다."		
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	배달 시작		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	배달 시작		
+Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery		배달 시작		
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	배달 종료		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	배달 종료		
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	배달됨		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	배달됨		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	완료		
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶		▶		
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen		Junna - Pappa Se Antoi Hevosen		
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30		3:30		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	1110	소지 한도		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	모든 장비 아이템의 소지 용량(kg) 한계입니다.		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	1114	인벤토리 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	1116	인벤토리 무게		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	인벤토리 내 모든 아이템의 무게(kg) 입니다.		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	1120	인벤토리 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	1122	인벤토리 가치		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	인벤토리 내 모든 아이템의 가치(€) 합계입니다.		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	1126	인벤토리 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	1128	보관함 무게		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	보관함 내 모든 아이템의 무게(kg) 합계입니다.		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	1132	보관함 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	1134	보관함 가치		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	보관함 내 모든 아이템의 가치(€) 합계입니다.		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	1138	보관함 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	소지 한도		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		info	825286726	"A weight capacity value (kg) of how much inventory weight you can carry.
 
 Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
@@ -299,12 +299,12 @@ Carry Capacity by default is 10kg"	1142	"소지품 최대 무게(kg)를 나타�
 
 배낭, 장비, 의류 등 소지량 증가 효과가 있는 아이템을 장착하면 소지품 최대 무게가 증가합니다.
 
-기본 소지품 최대 무게는 10kg입니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	장비 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	장비 가치			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	장착중인 모든 장비 아이템의 가치((€)) 합계입니다.			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	장비 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	보온성			
+기본 소지품 최대 무게는 10kg입니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	장비 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	장비 가치		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	장착중인 모든 장비 아이템의 가치((€)) 합계입니다.		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	장비 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	보온성		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		info	1800952039	"A clothing-based thermal protection value against cold.
 
 Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
@@ -323,9 +323,9 @@ Insulation examples:
 보온성 예시:
 [100] = 체온 감소 완전 정지
 [50] = 체온 감소 50% 감소
-[0] = 체온 정상 속도 유지"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	장비 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	1158	민첩성			
+[0] = 체온 정상 속도 유지"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	장비 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	1158	민첩성		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		info	550854834	"An inertia-based value of how quickly you can move and do certain actions.
 
 Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
@@ -334,9 +334,9 @@ Dexterity decreases when you equip heavy or unergonomic items with a negative de
 
 민첩성은 이동 속도 및 무기 조작(조준, 재장전 등)과 관련이 있습니다.
 
-민첩성 수치가 마이너스인 무겁거나 인체공학적이지 않은 아이템을 장착하면 민첩성이 감소합니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	장비 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	위협 수치			
+민첩성 수치가 마이너스인 무겁거나 인체공학적이지 않은 아이템을 장착하면 민첩성이 감소합니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	장비 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	위협 수치		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		info	1925451931	"An intimidation value of how threatening AI sees your character and equipment.
 
 When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
@@ -349,10 +349,10 @@ Menace only affects low-tier AI (Bandits)."	1166	"AI가 당신의 캐릭터와 �
 
 위협 수치는 특수 의상과 같이 위협 수치가 높은 아이템을 장착하면 증가합니다.
 
-위협은 하위 등급 AI(산적 등)에게만 영향을 미칩니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	장비 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	화생방 수치			
-Inventory	Stats	String	0	substr									CBRN	1172	화생방			
+위협은 하위 등급 AI(산적 등)에게만 영향을 미칩니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	장비 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	화생방 수치		
+Inventory	Stats	String	0	substr									CBRN	1172	화생방		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		info	215856199	"A protection value against chemical, biological, radiological and nuclear threats.
 
 CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
@@ -361,9 +361,9 @@ CBRN increases when you equip items such as special clothing or protective masks
 
 CBRN은 건강(Health)과 연관되어 있으며, 위험 지역이나 물질에 노출될 때 건강 감소 속도를 줄여줍니다.
 
-CBRN은 특수 의복이나 보호 마스크와 같이 CBRN 수치가 높은 아이템을 착용하면 증가합니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	장비 통계			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	1178	체력			
+CBRN은 특수 의복이나 보호 마스크와 같이 CBRN 수치가 높은 아이템을 착용하면 증가합니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	장비 통계		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	1178	체력		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		info	2025955860	"Your main vital for staying alive.
 
 Health decreases with damages and active medical conditions.
@@ -376,9 +376,9 @@ Health [0] -> Character dies"	1180	"생존을 위한 가장 중요한 요소입�
 
 붕대나 구급상자 같은 특정 의료 아이템을 사용하면 체력이 증가합니다.
 
-체력 [0] -> 캐릭터 사망"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	1182	바이탈			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	1184	기력			
+체력 [0] -> 캐릭터 사망"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	1182	바이탈		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	1184	기력		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		info	256184	"Your hunger and energy level.
 
 Energy decreases over time and using map transitions with Energy Cost.
@@ -391,9 +391,9 @@ Energy [0] -> Starvation (Condition)"	1186	"배고픔과 기력 수준.
 
 기력은 음식과 같은 특정 소모품을 섭취하면 증가합니다.
 
-기력 [0] -> 기아 (상태)"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	1188	바이탈			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	1190	수분			
+기력 [0] -> 기아 (상태)"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	1188	바이탈		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	1190	수분		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		info	1778216863	"Your thirst and hydration level.
 
 Hydration decreases over time and using map transitions with Hydration Cost. 
@@ -410,9 +410,9 @@ Hydration [0] -> Dehydration (Condition)"	1192	"수분량 (목마름)에 대한 
 
 음료와 같은 특정 소모품을 섭취하면 수분량이 증가합니다.
 
-수분량 [0] -> 탈수 (상태)"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	바이탈			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	1196	정신력			
+수분량 [0] -> 탈수 (상태)"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	바이탈		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	1196	정신력		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		info	1524485513	"Your happiness and sanity level.
 
 Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
@@ -425,9 +425,9 @@ Mental [0] -> Insanity (Condition)"	1198	"행복도와 정신 건강 수준.
 
 정신 건강은 간식, 따뜻한 식사, 술이나 니코틴 제품 같은 기호품과 같은 위안이 되는 것들을 섭취하면 증가합니다.
 
-정신 건강 [0] -> 광기 (상태)"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	바이탈			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	체온			
+정신 건강 [0] -> 광기 (상태)"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	바이탈		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	체온		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
 
 Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
@@ -440,9 +440,9 @@ Body Temp [0] -> Frostbite (Condition)"	1204	"체온 및 보온 수준.
 
 대피소에 있거나 모닥불과 같은 열원 주변에 있으면 체온이 올라갑니다. 히트팩이나 우주 담요와 같은 특정 열 관련 아이템도 체온을 높여줍니다.
 
-체온 [0] -> 동상 (상태)"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	바이탈			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	고양이			
+체온 [0] -> 동상 (상태)"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	바이탈		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	고양이		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		info	2119249152	"Grandma's cat health level.
 
 Cat health activates if you decide to rescue the Cat and bring her to your shelter.
@@ -459,9 +459,9 @@ Cat [0] -> Cat dies"	1210	"할머니 고양이의 건강 상태.
 
 고양이 사료나 참치캔과 같은 소모품을 주면 건강이 증가합니다.
 
-고양이 [0] -> 고양이 사망"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	바이탈			
-Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	중량 초과			
+고양이 [0] -> 고양이 사망"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	바이탈		
+Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	중량 초과		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		info	1472180750	"A condition where you are carrying too much weight and movement becomes unsustainable.
 
 Causes:
@@ -486,9 +486,9 @@ Cures:
 - 점프 높이 [-50%]
 
 해결 방법:
-- 소지품 무게 < 소지 한도"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	1220	기아			
+- 소지품 무게 < 소지 한도"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	1220	기아		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		info	1549426522	"A condition where you have a lack of calories and essential nutrients.
 
 Causes:
@@ -511,9 +511,9 @@ Cures:
 - 스태미나 회복량 [-50%]
 
 치료법:
-- 소모품"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	1226	탈수			
+- 소모품"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	1226	탈수		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		info	986386791	"A condition where your body doesn't have enough fluids to function normally.
 
 Causes:
@@ -536,9 +536,9 @@ Cures:
 - 모든 스태미나 회복량 [-50%]
 
 치료법:
-- 소모품"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	1232	출혈			
+- 소모품"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	1232	출혈		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		info	1768354194	"A condion where you have a minor bleeding from small cuts or scrapes.
 
 Causes: 
@@ -569,9 +569,9 @@ Cures:
 - 붕대
 - 지혈대
 - 구급상자
-- 응급처치 키트/자립 응급처치 키트"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	1238	골절			
+- 응급처치 키트/자립 응급처치 키트"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	1238	골절		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		info	139365606	"A condition where you have a partial or complete break in the bone.
 
 Causes: 
@@ -602,11 +602,11 @@ Cures:
 치료법:
 - 부목
 - 구급상자
-- 응급처치 키트/자립 응급처치 키트"			
-Inventory	Stats	String	0	substr									Explosion	1242	폭발			
-Inventory	Stats	String	0	substr									Fall	1244	낙하			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	화상			
+- 응급처치 키트/자립 응급처치 키트"		
+Inventory	Stats	String	0	substr									Explosion	1242	폭발		
+Inventory	Stats	String	0	substr									Fall	1244	낙하		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	화상		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		info	275854551	"A condition where you have a tissue damage from intense heat or high-voltage electric current.
 
 Causes:
@@ -633,9 +633,9 @@ Cures:
 - 연고
 - 로션
 - 구급상자
-- 응급처치 키트/자립 응급처치 키트"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	1254	동상			
+- 응급처치 키트/자립 응급처치 키트"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	1254	동상		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		info	24250462	"A condition where you have hypothermia or body part freezes from cold exposure.
 
 Causes: 
@@ -658,9 +658,9 @@ Cures:
 치료법:
 - 불
 - 침낭
-- 보온 담요"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	1260	정신병			
+- 보온 담요"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	1260	정신병		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		info	1233339607	"A condition where your sanity breaks and you start having dark thoughts.
 
 Causes: 
@@ -685,9 +685,9 @@ Cures:
 - 소모품
 - 잠자기
 - 광원
-- 악기"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	1266	중독			
+- 악기"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	1266	중독		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		info	379297031	"A condition where toxic substance entered your digestion or lungs.
 
 Causes:
@@ -710,9 +710,9 @@ Cures:
 
 치료법:
 - 구급상자
-- AFAK"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	1272	파열			
+- AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	1272	파열		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		info	71304217	"A critical condition where you have a catastrofal bleeding or major internal wound.
 
 Causes: 
@@ -735,9 +735,9 @@ Cures:
 
 치료법:
 - 구급상자
-- 응급처치 키트/자립 응급처치 키트"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	1278	헤드샷			
+- 응급처치 키트/자립 응급처치 키트"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	1278	헤드샷		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		info	1309688651	"A critical condition where you have a major head related wound.
 
 Causes: 
@@ -758,10 +758,10 @@ Cures:
 
 치료법:
 - 구급상자
-- IFAK / AFAK"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	질병			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	1284	생존일			
-Inventory	Stats	String	0	substr									Day	1286	일			
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	질병		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	1284	생존일		
+Inventory	Stats	String	0	substr									Day	1286	일		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		info	1507600508	"Number of Days survived.
 
 New day begins at 00:00 midnight and certain amount of days will unlock new game events.
@@ -770,9 +770,9 @@ Upcoming events can be displayed by using the Events tool."	1288	"당신이 생�
 
 하루는 자정(00:00)에 시작되며, 일정 일수가 지나면 새로운 게임 이벤트가 잠금 해제됩니다.
 
-다가오는 이벤트는 이벤트 도구를 사용하여 확인할 수 있습니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	진행도			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	1292	은신처			
+다가오는 이벤트는 이벤트 도구를 사용하여 확인할 수 있습니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	진행도		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	1292	은신처		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		info	821447952	"Number of Shelters unlocked.
 
 Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
@@ -785,9 +785,9 @@ Additional Shelters can be unlocked with keys which you acquire by completing Ta
 
 새 게임은 오두막과 텐트라는 두 개의 은신처가 잠금 해제된 상태로 시작합니다.
 
-추가 은신처는 여러 상인에게서 임무를 완료하여 얻는 열쇠로 잠금 해제할 수 있습니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	진행도			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	의뢰 수			
+추가 은신처는 여러 상인에게서 임무를 완료하여 얻는 열쇠로 잠금 해제할 수 있습니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	진행도		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	의뢰 수		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		info	1384285326	"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
@@ -796,16 +796,16 @@ Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to un
 
 의뢰는 상인에게서 받는 아이템 기반 작업입니다. 임무는 여러 상인 간에 연결될 수 있으며, 제작을 통해 얻을 수 없는 아이템을 필요로 할 수도 있습니다.
 
-의뢰는 거래 가격 인하(상인세) 및 새로운 은신처와 특수 방을 잠금 해제하는 열쇠 획득과 관련이 있습니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	진행도			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	퀘스트 수			
+의뢰는 거래 가격 인하(상인세) 및 새로운 은신처와 특수 방을 잠금 해제하는 열쇠 획득과 관련이 있습니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	진행도		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	퀘스트 수		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		info	1702334479	"Number of Quests completed.
 
 Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	1306	"완료한 퀘스트 수.
 
-퀘스트는 상인들이 제공하는 스토리 기반 임무입니다. 퀘스트는 여러 상인의 퀘스트와 연관될 수 있으며, 특정 이벤트 발생 후에 활성화될 수도 있습니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	진행도			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	1310	민방위 대피소			
+퀘스트는 상인들이 제공하는 스토리 기반 임무입니다. 퀘스트는 여러 상인의 퀘스트와 연관될 수 있으며, 특정 이벤트 발생 후에 활성화될 수도 있습니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	진행도		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	1310	민방위 대피소		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		info	2004804582	"Number of CDS completed.
 
 Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
@@ -818,9 +818,9 @@ You can complete a CDS by clearing out the hostile enemies and connecting the CD
 
 5구역 대피 이후, 이 CDS들은 적에게 점령당했고 내부에 있던 생존 장비 대부분이 도난당했습니다.
 
-CDS를 완료하려면 적을 소탕하고 CDS 비상 방송 라디오를 다시 연결해야 합니다."			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	진행도			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	고요한 밤			
+CDS를 완료하려면 적을 소탕하고 CDS 비상 방송 라디오를 다시 연결해야 합니다."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	진행도		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	고요한 밤		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		info	1661761957	"There will be a silent night when all fades away.
 
 When you look up, you see the North Star, your only light in the darkness.
@@ -837,11 +837,11 @@ Then your last light disappears, the sky turns red and the silence breaks."	1318
 
 당신은 안전하다고 느낍니다. 마치 당신이 원하던 결말과 같이, 평화로운 순간을.
 
-마침내 마지막 빛이 사라지고, 하늘은 붉게 물들며, 고요한 침묵이 깨집니다."			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	특별 이벤트			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	1322	보급품 가치			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	모든 보급품의 상품 가치(€) 입니다.			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	상인 통계			
+마침내 마지막 빛이 사라지고, 하늘은 붉게 물들며, 고요한 침묵이 깨집니다."		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	특별 이벤트		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	1322	보급품 가치		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	모든 보급품의 상품 가치(€) 입니다.		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	상인 통계		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		info	844527464	"A friendly NPC with trading supply, tasks and specialized services.
 
 Name: Commonly known name among locals.
@@ -852,9 +852,9 @@ Resupply: Time when supply resets."	1328	"물품 거래, 의뢰 제공 및 전�
 이름: 지역 주민들이 일반적으로 부르는 이름입니다.
 세금: 물품 가격에 적용되는 배율입니다.
 임무 수: 완료한 의뢰의 개수입니다.
-재보급: 물품 재고가 초기화되는 시간입니다."			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	상인 통계			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	거래			
+재보급: 물품 재고가 초기화되는 시간입니다."		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	상인 통계		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	거래		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		info	1021981031	"A deal balance meter which compares selected item values.
 
 Requsted Value (€) is calculated from selected Supply items with Tax added.
@@ -867,5 +867,5 @@ Deal can be accepted when Deal Meter is within green area which means Offer Valu
 
 제안 가격(€)은 본인의 인벤토리에서 선택한 아이템의 가치로 계산됩니다.
 
-거래 잔액 표시기가 녹색 영역에 있을 때 거래를 수락할 수 있습니다. 녹색 영역은 제안 가격이 요청 가격 + 세금과 같거나 그 이상임을 의미합니다."			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	거래 게이지			
+거래 잔액 표시기가 녹색 영역에 있을 때 거래를 수락할 수 있습니다. 녹색 영역은 제안 가격이 요청 가격 + 세금과 같거나 그 이상임을 의미합니다."		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	거래 게이지		

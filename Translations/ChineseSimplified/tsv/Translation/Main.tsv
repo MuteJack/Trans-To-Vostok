@@ -174,7 +174,7 @@ Hotfix [0.1.1.3]
 [调整] 掉落物品改为出现在玩家正前方而非背包内（避难所）
 ----------------------------------------
 [移除] 移除了所有第三方/过时的 AMD FSR 相关内容以提升稳定性
-----------------------------------------"		
+----------------------------------------"	CHANGELOG for RTV	
 Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
@@ -623,7 +623,8 @@ Build type: Release
 [变更] 武器射击后的尾音/回声音量更为逼真
 [变更] 对AI武器音效进行了多项调整，以改善方向性及飞越音效
 [变更] 踩踏蜡烛不再触发“灼伤”医疗状态
-[变更] 直升机机型从Mi-8更改为Mi-24（Hind）"	Version 0.1.0.0 (Will be deleted)	
+[变更] 直升机机型从Mi-8更改为Mi-24（Hind）"	"CHANGELOG for RTV
+Deprecated (v0.1.0.0)"	
 New Game	Difficulty/Standard	String	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select				
 New Game	/	Button	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected				
 New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	2082	已选中		
@@ -757,7 +758,7 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inter
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	2242	地点		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	2244	装饰模式		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	2246	手电筒		
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	2248	NVG		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	2248	NVG	Recommend to use a Full Form (ex: Night Vision Goggle)	
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	2250	激光		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	2252	轨道移动		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	2254	次级光学系统		
@@ -766,13 +767,13 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	2260	快速传输		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	2262	快速装备		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	2264	快速下拉		
-Settings	Input Settings	Elements	0	substr									Left Mouse Button	2266	鼠标左键	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Right Mouse Button	2268	鼠标右键	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Middle Mouse Button	2270	鼠标中键	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	2272	鼠标滚轮向上	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	2274	鼠标滚轮向下	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	2276	鼠标拇指键 1	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	2278	鼠标拇指键 2	I can't find those texts. Maybe dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Left Mouse Button	2266	鼠标左键	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Right Mouse Button	2268	鼠标右键	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Middle Mouse Button	2270	鼠标中键	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	2272	鼠标滚轮向上	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	2274	鼠标滚轮向下	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	2276	鼠标拇指键 1	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	2278	鼠标拇指键 2	Dependent on Godot Engine.	
 Settings	Audio Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	2280	音频设置		
 Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	2282	主音量		
 Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	2284	环境音量		
@@ -785,12 +786,14 @@ Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settin
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
 "	2294	庇护所		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
-"	2296	05区		
+"	2296	05区	"Please pay attention to the translation regarding the following:
+- 'Area 05' on the button means the location 'Area 05'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
-"	2298	边界	"다음 사항에 대해서 번역에 주의하세요:
-해당 버튼의 'Border'은 'Border Zone'을 의미합니다"	
+"	2298	边界	"Please pay attention to the translation regarding the following:
+- 'Border' on the button means the location 'Border Zone'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
-"	2300	沃斯托克		
+"	2300	沃斯托克	"Please pay attention to the translation regarding the following:
+- 'Vostok' on the button means the location 'Vostok'."	
 Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	2302	相机设置		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	2304	插值		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	2306	视野		
@@ -857,9 +860,9 @@ Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Fr
 Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	2402	无限		
 Settings	Render Resolution	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	2404	渲染分辨率		
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	2406	低		
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	2408	中	Depricated in 0.1.1.3, will be deleted	
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	2410	高	Depricated in 0.1.1.3, will be deleted	
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	2412	Ultra	Depricated in 0.1.1.3, will be deleted	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	2408	中	Deprecated (0.1.0.0)	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	2410	高	Deprecated (0.1.0.0)	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	2412	Ultra	Deprecated (0.1.0.0)	
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	2414	原生		
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	2416	图像锐度		
 Settings	Lighting Quality	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	2418	照明质量		
@@ -872,8 +875,8 @@ Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Ro
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x				
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	2432	SMAA 关闭		
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	2434	SMAA 已开启		
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	2432	SMAA 关闭	"Do not translate ""SMAA"""	
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	2434	SMAA 已开启	"Do not translate ""SMAA"""	
 Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	2436	退出		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	2438	主菜单		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
@@ -1072,41 +1075,47 @@ Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button
 "	2572	主菜单		
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
 "	2574	退出		
-/	Scene	Name	0	substr									Intro	2576	简介		
-/	Scene	Name	0	substr									Cabin	2578	客舱	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Shelter	2580	庇护所		
-/	Scene	Name	0	substr									Tutorial	2582	教程		
-/	Scene	Name	0	substr									Menu	2584	菜单		
-/	Scene	Name	0	substr									Attic	2586	阁楼	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Death	2588	死亡		
-/	Scene	Name	0	substr									Classroom	2590	教室	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Tent	2592	帐篷	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Bunker	2594	掩体	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Village	2596	村庄		
-/	Scene	Name	0	substr									Area 05	2598	05区		
-/	Scene	Name	0	substr									Highway	2600	高速公路		
-/	Scene	Name	0	substr									School	2602	学校		
-/	Scene	Name	0	substr									Outpost	2604	前哨站		
-/	Scene	Name	0	substr									Border Zone	2606	边境地带		
-/	Scene	Name	0	substr									Minefield	2608	雷区		
-/	Scene	Name	0	substr									Apartments	2610	公寓		
-/	Scene	Name	0	substr									Terminal	2612	终端		
-/	Scene	ToolTip	0	substr									Tutorial Exit	2614	教程退出		
-/	Scene	Name	0	substr									Template	2616	模板		
-/	Scene	#Not Checked	0	substr									shaders	2618	着色器		
-NPC	Traders	Name	0	substr									Trader	2620	交易员		
-NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	通才		
-NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	医生		
-NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	枪械师		
-NPC	Traders	Name	0	substr									Driver	2628	驾驶员		
-NPC	Traders	Name	0	substr									Grandma	2630	奶奶		
-NPC	Traders	Name	0	substr									Shaman	2632	萨满		
-NPC	Traders	Name	0	substr									Fisherman	2634	渔夫		
-NPC	Traders	Name	0	substr									Scientist	2636	科学家		
-NPC	Hostile	Name	0	substr									Bandit	2638	强盗	Hostile NPC faction spawned in Area 05;	
-NPC	Hostile	Name	0	substr									Guards	2640	守卫	Hostile NPC faction spawned in Border Zone;	
-NPC	Hostile	Name	0	substr									Military	2642	军事	Hostile NPC faction spawned in Vostok;	
-NPC	Elite	Name	0	substr									Punisher	2644	惩罚者	Hostile Elite(Boss) NPC spawned in Area 05;	
+Scene	/	Name	0	substr									Menu	2584	菜单		
+Scene	/	Name	0	substr									Intro	2576	简介	Intro Scene is loaded when start new game.	
+Scene	/	Name	0	substr									Tutorial	2582	教程	Tutorial Map	
+Scene	/	ToolTip	0	substr									Tutorial Exit	2614	教程退出	"Tooltip Text for the Door for ""Tutorial Exit"""	
+Scene	/	Name	0	substr									Death	2588	死亡		
+Scene	/	#Not Checked	0	substr									Template	2616	模板	# Not checked	
+Scene	/	#Not Checked	0	substr									shaders	2618	着色器	# Not checked	
+Scene	Shelter	Name	0	substr									Shelter	2580	庇护所	Shelter	
+Scene	Shelter	Name	0	substr									Cabin	2578	客舱	"Shelter located at ""Area 05/Village""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Attic	2586	阁楼	"Shelter located at ""Area 05/Village""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Classroom	2590	教室	"Shelter located at ""Area 05/School""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Tent	2592	帐篷	"Shelter located at ""Area 05/Outpost""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Bunker	2594	掩体	"Shelter located at ""Area 05/Outpost""
+Defined at Loader.gd: const shelters"	
+Scene	Area05	Name	0	substr									Area 05	2598	05区	"Location (Area) ""Area 05"""	
+Scene	Area05	Name	0	substr									Village	2596	村庄	"Location under Location ""Area 05"""	
+Scene	Area05	Name	0	substr									Highway	2600	高速公路	"Location under Location ""Area 05"""	
+Scene	Area05	Name	0	substr									School	2602	学校	"Location under Location ""Area 05"""	
+Scene	Outpost	Name	0	substr									Border Zone	2606	边境地带	"Location (Area) ""Border Zone"""	
+Scene	Outpost	Name	0	substr									Outpost	2604	前哨站	"Location under Location ""Border Zone"""	
+Scene	Outpost	Name	0	substr									Minefield	2608	雷区	"Location under Location ""Border Zone"""	
+Scene	Scene	Dictionary	0	substr									Vostok	2664	沃斯托克	"Location (Area) ""Vostok"""	
+Scene	Scene	Name	0	substr									Apartments	2610	公寓	"Location under Location ""Vostok"""	
+Scene	Scene	Name	0	substr									Terminal	2612	终端	"Location under Location ""Vostok"""	
+NPC	Traders	Name	0	substr									Trader	2620	交易员	NPC (Trader)	
+NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	通才	"NPC (Trader) located at ""Area 05/Village"""	
+NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	医生	"NPC (Trader) located at ""Area 05/School"""	
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	枪械师	"NPC (Trader) located at ""Border Zone/Outpost"""	
+NPC	Traders	Name	0	substr									Driver	2628	驾驶员	"NPC (Trader). Will be Updated at ""Build 2"""	
+NPC	Traders	Name	0	substr									Grandma	2630	奶奶	"NPC (Trader). Will be Updated at ""Build 3"""	
+NPC	Traders	Name	0	substr									Shaman	2632	萨满	"NPC (Trader). Will be Updated at ""Build 5"""	
+NPC	Traders	Name	0	substr									Fisherman	2634	渔夫	"NPC (Trader). Will be Updated at ""Build 6"""	
+NPC	Traders	Name	0	substr									Scientist	2636	科学家	"NPC (Trader). Will be Updated at ""Build 7"""	
+NPC	Hostile	Name	0	substr									Bandit	2638	强盗	"Hostile NPC faction spawned in ""Area 05""."	
+NPC	Hostile	Name	0	substr									Guards	2640	守卫	"Hostile NPC faction spawned in ""Border Zone""."	
+NPC	Hostile	Name	0	substr									Military	2642	军事	"Hostile NPC faction spawned in ""Vostok""."	
+NPC	Elite	Name	0	substr									Punisher	2644	惩罚者	"Hostile Elite(Boss) NPC spawned in ""Area 05""."	
 /	Weather	Dictionary	0	substr									Neutral	2646	中立		
 /	Weather	Dictionary	0	substr									Overcast	2648	阴天		
 /	Weather	Dictionary	0	substr									Rain	2650	雨		
@@ -1116,4 +1125,3 @@ NPC	Elite	Name	0	substr									Punisher	2644	惩罚者	Hostile Elite(Boss) NPC 
 /	Material	Dictionary	0	substr									Metal	2658	金属		
 /	Material	Dictionary	0	substr									Concrete	2660	混凝土		
 /	Material	Dictionary	0	substr									Rock	2662	摇滚		
-/	Material	Dictionary	0	substr									Vostok	2664	沃斯托克		

@@ -25,27 +25,38 @@ Events	/	Percent	0	substr	Scripts/Event	gd			possibility.get_child(0).text	liter
 Events	/	Percent	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	text	1762783310	~5% / map instance	688	マップインスタンスあたり約5%	"Dynamically Changed on Event.gd
 Maybe a Placeholder"	
 Events	/	Percent	0	pattern	Scripts/Event	gd			possibility.get_child(0).text	concat		52	~{str}% / map instance	690	~{str}% / map instance		
-Events	List/Day1	Name	0	literal	Events/List/D1_Generalist	tres					name		Generalist returns to Village	692	ジェネラリストがヴィレッジに復帰		
+Events	List/Day1	Name	0	literal	Events/List/D1_Generalist	tres					name		Generalist returns to Village	692	ジェネラリストがヴィレッジに復帰	"Please pay attention to the following points when translating:
+- `Generalist`
+- `Village`"	
 Events	List/Day1	Type	0	ignore	Events/List/D1_Generalist	tres					type		Trader				
 Events	List/Day1	Description	0	literal	Events/List/D1_Generalist	tres					description		"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
 
 After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	694	"ジェネラリストは、エリア05のヴィレッジ・ガレージビル内にある小さな店を営む「何でも屋」の商人で、日用品を専門に扱っています。
 
-少し気分転換をした後、ジェネラリストは再び営業を再開し、常連客に手頃な価格で商品を提供する準備が整いました。"		
-Events	List/Day2	Name	0	literal	Events/List/D2_Doctor	tres					name		Doctor returns to School	696	医師が学校に戻る		
+少し気分転換をした後、ジェネラリストは再び営業を再開し、常連客に手頃な価格で商品を提供する準備が整いました。"	"Please pay attention to the following points when translating:
+- `Generalist`
+- `Village`
+- `Area 05`"	
+Events	List/Day2	Name	0	literal	Events/List/D2_Doctor	tres					name		Doctor returns to School	696	医師が学校に戻る	"Please pay attention to the following points when translating:
+- `school`
+- `Doctor`"	
 Events	List/Day2	Type	0	ignore	Events/List/D2_Doctor	tres					type		Trader				
 Events	List/Day2	Description	0	literal	Events/List/D2_Doctor	tres					description		"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
 
 After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	698	"ドクターは医療を専門とする商人であり、エリア05にある廃校の校舎内に即席の診療所を開いている。
 
-「安否確認」のために祖母を訪ねた後、ドクターは診療所に戻り、負傷者への治療の準備を整える。"		
+「安否確認」のために祖母を訪ねた後、ドクターは診療所に戻り、負傷者への治療の準備を整える。"	"Please pay attention to the following points when translating:
+- `Area 05`
+- `school`
+- `Doctor`"	
 Events	List/Day3	Name	0	literal	Events/List/D3_Fighters	tres					name		Fighter Jets	700	戦闘機		
 Events	List/Day3	Type	0	ignore	Events/List/D3_Fighters	tres					type		Dynamic				
 Events	List/Day3	Description	0	literal	Events/List/D3_Fighters	tres					description		"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
 
 The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	702	"エリア05の避難と国境地帯の非武装化を経て、事態は思わぬ方向へと進み始めており、力による示威行動が必要となっている。
 
-フィンランド軍は、戦闘機による非致死的で視認性の高い低空飛行を頻繁に実施し、空に頻繁に姿を現すことになる。"		
+フィンランド軍は、戦闘機による非致死的で視認性の高い低空飛行を頻繁に実施し、空に頻繁に姿を現すことになる。"	"Please pay attention to the following points when translating:
+- `Area 05`"	
 Events	List/Day4	Name	0	literal	Events/List/D4_Cat	tres					name		Missing Cat	704	行方不明の猫		
 Events	List/Day4	Type	0	ignore	Events/List/D4_Cat	tres					type		Special				
 Events	List/Day4	Description	0	literal	Events/List/D4_Cat	tres					description		"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
@@ -56,35 +67,46 @@ Locals saw the Bandits tossing the box around in a cruel way and eventually leav
 
 数日前、ノマドたちがアウトポストでさまよっているその猫を見つけ、ある種の箱を使って捕まえることに成功した。ノマドたちが猫をおばあちゃんの元へ連れ戻そうとしたところ、バンディットたちに待ち伏せされ、どうやら箱を奪われてしまったようだ。
 
-地元の人々は、バンディットたちがその箱を残酷な方法で投げ回しているのを目撃し、最終的にはどこかに置き去りにしたようだ。"		
-Events	List/Day5	Name	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05	708	パニッシャーがエリア05に到着する		
+地元の人々は、バンディットたちがその箱を残酷な方法で投げ回しているのを目撃し、最終的にはどこかに置き去りにしたようだ。"	"Please pay attention to the following points when translating:
+- `Outpost`
+- `Bandit`
+- `Nomad`
+- `Grandma`"	
+Events	List/Day5	Name	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05	708	パニッシャーがエリア05に到着する	"Please pay attention to the following points when translating:
+- `Area 05`"	
 Events	List/Day5	Type	0	ignore	Events/List/D5_Punisher	tres					type		Dynamic				
 Events	List/Day5	Description	0	literal	Events/List/D5_Punisher	tres					description		"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
 
 Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	710	"パニッシャーは、フィンランドの犯罪界で恐れられている、山賊のボスであり、恐ろしい取り立て屋である。
 
-パニッシャーとその手下たちは、地元の警察のパトカーを盗み出し、エリア05を日常的にパトロールしている。"		
-Events	List/Day6	Name	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05	712	エリア05へエアドロップが届けられる		
+パニッシャーとその手下たちは、地元の警察のパトカーを盗み出し、エリア05を日常的にパトロールしている。"	"Please pay attention to the following points when translating:
+- `Area 05`"	
+Events	List/Day6	Name	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05	712	エリア05へエアドロップが届けられる	"Please pay attention to the following points when translating:
+- `Area 05`"	
 Events	6	Type	0	ignore	Events/List/D6_Airdrops	tres					type		Dynamic				
 Events	List/Day6	Description	0	literal	Events/List/D6_Airdrops	tres					description		"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
 
 Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	714	"長期間の遅れを経て、フィンランド軍は再びエリア05への空輸物資の供給を開始した。
 
-空輸物資には通常、医薬品、消耗品、その他の生存に必要な装備など、人道支援物資が含まれている。"		
-Events	List/Day7	Name	0	literal	Events/List/D7_BTR	tres					name		BTR Patrols	716	BTRパトロール		
+空輸物資には通常、医薬品、消耗品、その他の生存に必要な装備など、人道支援物資が含まれている。"	"Please pay attention to the following points when translating:
+- `Area 05`"	
+Events	List/Day7	Name	0	literal	Events/List/D7_BTR	tres					name		BTR Patrols	716	BTRパトロール	"Please pay attention to the following points when translating:
+- `BTR`"	
 Events	List/Day7	Type	0	ignore	Events/List/D7_BTR	tres					type		Dynamic				
 Events	List/Day7	Description	0	literal	Events/List/D7_BTR	tres					description		"The military faction has started to use armored vehicles in the Vostok area.
 
 Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	718	"軍事勢力がボストーク地区で装甲車両の使用を開始した。
 
-軍用BTRには重機関銃が装備されており、主要道路や重要地点でパトロール隊の姿が確認されている。"		
+軍用BTRには重機関銃が装備されており、主要道路や重要地点でパトロール隊の姿が確認されている。"	"Please pay attention to the following points when translating:
+- `BTR`"	
 Events	List/Day8	Name	0	literal	Events/List/D8_Helicopters	tres					name		Attack Helicopters	720	攻撃ヘリコプター		
 Events	List/Day8	Type	0	ignore	Events/List/D8_Helicopters	tres					type		Dynamic				
 Events	List/Day8	Description	0	literal	Events/List/D8_Helicopters	tres					description		"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
 
 While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	722	"国境地帯の非武装化は崩れつつあり、これまでのルールがもはや通用しないことは明らかだ。
 
-当局は「何も変わっていない」と主張しているが、攻撃ヘリコプターが国境地帯付近で頻繁にパトロールを行い、領空侵犯も発生し始めている。"		
+当局は「何も変わっていない」と主張しているが、攻撃ヘリコプターが国境地帯付近で頻繁にパトロールを行い、領空侵犯も発生し始めている。"	"Please pay attention to the following points when translating:
+- `Border Zone`"	
 Events	List/Day9	Name	0	literal	Events/List/D9_Crashes	tres					name		Helicopter Crash Sites	724	ヘリコプター墜落現場		
 Events	List/Day9	Type	0	ignore	Events/List/D9_Crashes	tres					type		Dynamic				
 Events	List/Day9	Description	0	literal	Events/List/D9_Crashes	tres					description		"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
@@ -92,15 +114,17 @@ Events	List/Day9	Description	0	literal	Events/List/D9_Crashes	tres					descripti
 Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	726	"領空侵犯を受けて、空中での衝突は避けられず、国境の両側で複数の攻撃ヘリコプターが撃墜された。
 
 ヘリコプターの墜落現場は複数の場所に点在しており、高価値の戦利品が含まれているため、AIの活動が活発なホットスポットとなっている。"		
-Events	List/Day10	Name	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost	728	ガンスミスがアウトポストに戻る	"Please pay attention to the following points when translating
-`Outpost`
-`Gunsmith`는 NPC의 고유 명사입니다."	
+Events	List/Day10	Name	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost	728	ガンスミスがアウトポストに戻る	"Please pay attention to the following points when translating:
+- `Outpost`
+- `Gunsmith` is a proper noun (NPC/Trader)"	
 Events	List/Day10	Type	0	ignore	Events/List/D10_Gunsmith	tres					type		Trader				
 Events	List/Day10	Description	0	literal	Events/List/D10_Gunsmith	tres					description		"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
 
 Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	730	"ガンスミスは、前哨基地のバンカー内に武器庫を構える商人であり、銃器に関するあらゆることに精通している。
 
-ガンスミスは数ヶ月間姿を見せなかったが、噂によると、国境の向こう側へ「出張」に行っていたらしい。しかし、今ではエリア05にある愛するバンカーへと戻ってきた。"		
+ガンスミスは数ヶ月間姿を見せなかったが、噂によると、国境の向こう側へ「出張」に行っていたらしい。しかし、今ではエリア05にある愛するバンカーへと戻ってきた。"	"Please pay attention to the following points when translating:
+- `Area 05`
+- `Outpost`"	
 Events	List/Day20	Name	0	literal	Events/List/D20_Outpost	tres					name		Outpost gets compromised	732	前哨基地が陥落した		
 Events	List/Day20	Type	0	ignore	Events/List/D20_Outpost	tres					type		Dynamic				
 Events	List/Day20	Description	0	literal	Events/List/D20_Outpost	tres					description		"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
@@ -111,21 +135,29 @@ News of the event spread quickly among Area 05 locals and traders, but it is onl
 
 軍用BTRが「前哨基地」マップに侵入可能となり、エリア05はもはや安全な場所とは見なされなくなった。
 
-この出来事のニュースはエリア05の住民や商人の間で瞬く間に広まったが、エリア05外のメディアや当局からは単なる噂として扱われている。"		
-Events	List/Day30	Name	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05	736	トレーダーたちがエリア05を去る		
+この出来事のニュースはエリア05の住民や商人の間で瞬く間に広まったが、エリア05外のメディアや当局からは単なる噂として扱われている。"	"Please pay attention to the following points when translating:
+- `Area 05`
+- `Border Zone`
+- `BTR`"	
+Events	List/Day30	Name	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05	736	トレーダーたちがエリア05を去る	"Please pay attention to the following points when translating:
+- `Area 05`"	
 Events	List/Day30	Type	0	ignore	Events/List/D30_Escape	tres					type		Trader				
 Events	List/Day30	Description	0	literal	Events/List/D30_Escape	tres					description		"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
 
 It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	738	"前哨基地が陥落した後、すべての商人たちは準備を整え、エリア05を離れ始めた。
 
-商人たちはこれを一時的な措置として行っているようで、事態が落ち着けば戻ってくるようだ。"		
-Events	List/Day40	Name	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05	740	トレーダーたちがエリア05に戻ってくる		
+商人たちはこれを一時的な措置として行っているようで、事態が落ち着けば戻ってくるようだ。"	"Please pay attention to the following points when translating:
+- `Area 05`
+- `Outpost`"	
+Events	List/Day40	Name	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05	740	トレーダーたちがエリア05に戻ってくる	"Please pay attention to the following points when translating:
+- `Area 05`"	
 Events	List/Day40	Type	0	ignore	Events/List/D40_Return	tres					type		Trader				
 Events	List/Day40	Description	0	literal	Events/List/D40_Return	tres					description		"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
 
 All traders are returning back to Area 05."	742	"最近の事態の悪化は一服したようで、エリア05は完全な混乱状態に陥ることはなかった。
 
-すべての商人がエリア05に戻り始めている。"		
+すべての商人がエリア05に戻り始めている。"	"Please pay attention to the following points when translating:
+- `Area 05`"	
 Events	List/Day50	Name	0	literal	Events/List/D50_Transmission	tres					name		Transmission	744	トランスミッション		
 Events	List/Day50	Type	0	ignore	Events/List/D50_Transmission	tres					type		Special				
 Events	List/Day50	Description	0	literal	Events/List/D50_Transmission	tres					description		"The signal that started it all has suddenly reappeared.

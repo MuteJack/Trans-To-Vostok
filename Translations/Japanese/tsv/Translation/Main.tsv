@@ -174,7 +174,7 @@ Hotfix [0.1.1.3]
 [変更] ドロップアイテムがインベントリではなくプレイヤーの正面に落ちるように変更しました（シェルター内）
 ----------------------------------------
 [削除] 安定性向上のため、すべてのサードパーティ製および廃止されたAMD FSR関連の参照を削除
-----------------------------------------"		
+----------------------------------------"	CHANGELOG for RTV	
 Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
@@ -623,7 +623,8 @@ Build type: Release
 [変更] 発砲後の武器音に、よりリアルな残響/エコー音量が追加されました
 [変更] AIの武器音に複数の変更を加え、方向性や通過時の音響表現を改善しました
 [変更] ろうそくの上を歩いても、「火傷」の状態異常が発生しなくなりました
-[変更] ヘリコプターの機種がMi-8からMi-24（Hind）に変更されました"	Version 0.1.0.0 (Will be deleted)	
+[変更] ヘリコプターの機種がMi-8からMi-24（Hind）に変更されました"	"CHANGELOG for RTV
+Deprecated (v0.1.0.0)"	
 New Game	Difficulty/Standard	String	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select				
 New Game	/	Button	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected				
 New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	2082	選択済み		
@@ -757,7 +758,7 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inter
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	2242	場所		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	2244	デコレーションモード		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	2246	懐中電灯		
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	2248	NVG		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	2248	NVG	Recommend to use a Full Form (ex: Night Vision Goggle)	
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	2250	レーザー		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	2252	レールの動き		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	2254	二次光学系		
@@ -766,13 +767,13 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	2260	高速転送		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	2262	即装備		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	2264	ファスト・ドロップ		
-Settings	Input Settings	Elements	0	substr									Left Mouse Button	2266	マウスの左ボタン	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Right Mouse Button	2268	マウスの右ボタン	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Middle Mouse Button	2270	マウスの中ボタン	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	2272	マウスホイールを上にスクロール	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	2274	マウスホイールを下にスクロール	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	2276	マウスの親指ボタン 1	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	2278	マウスの親指ボタン 2	I can't find those texts. Maybe dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Left Mouse Button	2266	マウスの左ボタン	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Right Mouse Button	2268	マウスの右ボタン	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Middle Mouse Button	2270	マウスの中ボタン	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	2272	マウスホイールを上にスクロール	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	2274	マウスホイールを下にスクロール	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	2276	マウスの親指ボタン 1	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	2278	マウスの親指ボタン 2	Dependent on Godot Engine.	
 Settings	Audio Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	2280	オーディオ設定		
 Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	2282	マスターボリューム		
 Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	2284	周囲の音量		
@@ -785,12 +786,14 @@ Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settin
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
 "	2294	シェルター		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
-"	2296	エリア05		
+"	2296	エリア05	"Please pay attention to the translation regarding the following:
+- 'Area 05' on the button means the location 'Area 05'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
-"	2298	国境	"다음 사항에 대해서 번역에 주의하세요:
-해당 버튼의 'Border'은 'Border Zone'을 의미합니다"	
+"	2298	国境	"Please pay attention to the translation regarding the following:
+- 'Border' on the button means the location 'Border Zone'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
-"	2300	ボストーク		
+"	2300	ボストーク	"Please pay attention to the translation regarding the following:
+- 'Vostok' on the button means the location 'Vostok'."	
 Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	2302	カメラの設定		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	2304	補間する		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	2306	視野		
@@ -857,9 +860,9 @@ Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Fr
 Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	2402	無制限		
 Settings	Render Resolution	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	2404	レンダリング解像度		
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	2406	低		
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	2408	中	Depricated in 0.1.1.3, will be deleted	
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	2410	高い	Depricated in 0.1.1.3, will be deleted	
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	2412	ウルトラ	Depricated in 0.1.1.3, will be deleted	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	2408	中	Deprecated (0.1.0.0)	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	2410	高い	Deprecated (0.1.0.0)	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	2412	ウルトラ	Deprecated (0.1.0.0)	
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	2414	ネイティブ		
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	2416	画像の鮮明さ		
 Settings	Lighting Quality	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	2418	照明の質		
@@ -872,8 +875,8 @@ Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Ro
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x				
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	2432	SMAA オフ		
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	2434	SMAA オン		
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	2432	SMAA オフ	"Do not translate ""SMAA"""	
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	2434	SMAA オン	"Do not translate ""SMAA"""	
 Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	2436	終了		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	2438	メインメニュー		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
@@ -1073,41 +1076,47 @@ Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button
 "	2572	メインメニュー		
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
 "	2574	終了		
-/	Scene	Name	0	substr									Intro	2576	はじめに		
-/	Scene	Name	0	substr									Cabin	2578	キャビン	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Shelter	2580	シェルター		
-/	Scene	Name	0	substr									Tutorial	2582	チュートリアル		
-/	Scene	Name	0	substr									Menu	2584	メニュー		
-/	Scene	Name	0	substr									Attic	2586	屋根裏部屋	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Death	2588	死		
-/	Scene	Name	0	substr									Classroom	2590	教室	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Tent	2592	テント	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Bunker	2594	バンカー	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Village	2596	村		
-/	Scene	Name	0	substr									Area 05	2598	エリア05		
-/	Scene	Name	0	substr									Highway	2600	高速道路		
-/	Scene	Name	0	substr									School	2602	学校		
-/	Scene	Name	0	substr									Outpost	2604	前哨基地		
-/	Scene	Name	0	substr									Border Zone	2606	国境地帯		
-/	Scene	Name	0	substr									Minefield	2608	地雷原		
-/	Scene	Name	0	substr									Apartments	2610	アパート		
-/	Scene	Name	0	substr									Terminal	2612	ターミナル		
-/	Scene	ToolTip	0	substr									Tutorial Exit	2614	チュートリアルの終了		
-/	Scene	Name	0	substr									Template	2616	テンプレート		
-/	Scene	#Not Checked	0	substr									shaders	2618	シェーダー		
-NPC	Traders	Name	0	substr									Trader	2620	トレーダー		
-NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	ジェネラリスト		
-NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	医師		
-NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	銃器職人		
-NPC	Traders	Name	0	substr									Driver	2628	ドライバー		
-NPC	Traders	Name	0	substr									Grandma	2630	おばあちゃん		
-NPC	Traders	Name	0	substr									Shaman	2632	シャーマン		
-NPC	Traders	Name	0	substr									Fisherman	2634	漁師		
-NPC	Traders	Name	0	substr									Scientist	2636	科学者		
-NPC	Hostile	Name	0	substr									Bandit	2638	バンディット	Hostile NPC faction spawned in Area 05;	
-NPC	Hostile	Name	0	substr									Guards	2640	警備員	Hostile NPC faction spawned in Border Zone;	
-NPC	Hostile	Name	0	substr									Military	2642	軍事	Hostile NPC faction spawned in Vostok;	
-NPC	Elite	Name	0	substr									Punisher	2644	パニッシャー	Hostile Elite(Boss) NPC spawned in Area 05;	
+Scene	/	Name	0	substr									Menu	2584	メニュー		
+Scene	/	Name	0	substr									Intro	2576	はじめに	Intro Scene is loaded when start new game.	
+Scene	/	Name	0	substr									Tutorial	2582	チュートリアル	Tutorial Map	
+Scene	/	ToolTip	0	substr									Tutorial Exit	2614	チュートリアルの終了	"Tooltip Text for the Door for ""Tutorial Exit"""	
+Scene	/	Name	0	substr									Death	2588	死		
+Scene	/	#Not Checked	0	substr									Template	2616	テンプレート	# Not checked	
+Scene	/	#Not Checked	0	substr									shaders	2618	シェーダー	# Not checked	
+Scene	Shelter	Name	0	substr									Shelter	2580	シェルター	Shelter	
+Scene	Shelter	Name	0	substr									Cabin	2578	キャビン	"Shelter located at ""Area 05/Village""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Attic	2586	屋根裏部屋	"Shelter located at ""Area 05/Village""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Classroom	2590	教室	"Shelter located at ""Area 05/School""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Tent	2592	テント	"Shelter located at ""Area 05/Outpost""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Bunker	2594	バンカー	"Shelter located at ""Area 05/Outpost""
+Defined at Loader.gd: const shelters"	
+Scene	Area05	Name	0	substr									Area 05	2598	エリア05	"Location (Area) ""Area 05"""	
+Scene	Area05	Name	0	substr									Village	2596	村	"Location under Location ""Area 05"""	
+Scene	Area05	Name	0	substr									Highway	2600	高速道路	"Location under Location ""Area 05"""	
+Scene	Area05	Name	0	substr									School	2602	学校	"Location under Location ""Area 05"""	
+Scene	Outpost	Name	0	substr									Border Zone	2606	国境地帯	"Location (Area) ""Border Zone"""	
+Scene	Outpost	Name	0	substr									Outpost	2604	前哨基地	"Location under Location ""Border Zone"""	
+Scene	Outpost	Name	0	substr									Minefield	2608	地雷原	"Location under Location ""Border Zone"""	
+Scene	Scene	Dictionary	0	substr									Vostok	2664	ボストーク	"Location (Area) ""Vostok"""	
+Scene	Scene	Name	0	substr									Apartments	2610	アパート	"Location under Location ""Vostok"""	
+Scene	Scene	Name	0	substr									Terminal	2612	ターミナル	"Location under Location ""Vostok"""	
+NPC	Traders	Name	0	substr									Trader	2620	トレーダー	NPC (Trader)	
+NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	ジェネラリスト	"NPC (Trader) located at ""Area 05/Village"""	
+NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	医師	"NPC (Trader) located at ""Area 05/School"""	
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	銃器職人	"NPC (Trader) located at ""Border Zone/Outpost"""	
+NPC	Traders	Name	0	substr									Driver	2628	ドライバー	"NPC (Trader). Will be Updated at ""Build 2"""	
+NPC	Traders	Name	0	substr									Grandma	2630	おばあちゃん	"NPC (Trader). Will be Updated at ""Build 3"""	
+NPC	Traders	Name	0	substr									Shaman	2632	シャーマン	"NPC (Trader). Will be Updated at ""Build 5"""	
+NPC	Traders	Name	0	substr									Fisherman	2634	漁師	"NPC (Trader). Will be Updated at ""Build 6"""	
+NPC	Traders	Name	0	substr									Scientist	2636	科学者	"NPC (Trader). Will be Updated at ""Build 7"""	
+NPC	Hostile	Name	0	substr									Bandit	2638	バンディット	"Hostile NPC faction spawned in ""Area 05""."	
+NPC	Hostile	Name	0	substr									Guards	2640	警備員	"Hostile NPC faction spawned in ""Border Zone""."	
+NPC	Hostile	Name	0	substr									Military	2642	軍事	"Hostile NPC faction spawned in ""Vostok""."	
+NPC	Elite	Name	0	substr									Punisher	2644	パニッシャー	"Hostile Elite(Boss) NPC spawned in ""Area 05""."	
 /	Weather	Dictionary	0	substr									Neutral	2646	中立		
 /	Weather	Dictionary	0	substr									Overcast	2648	曇り		
 /	Weather	Dictionary	0	substr									Rain	2650	雨		
@@ -1117,4 +1126,3 @@ NPC	Elite	Name	0	substr									Punisher	2644	パニッシャー	Hostile Elite(B
 /	Material	Dictionary	0	substr									Metal	2658	金属		
 /	Material	Dictionary	0	substr									Concrete	2660	コンクリート		
 /	Material	Dictionary	0	substr									Rock	2662	ロック		
-/	Material	Dictionary	0	substr									Vostok	2664	ボストーク		

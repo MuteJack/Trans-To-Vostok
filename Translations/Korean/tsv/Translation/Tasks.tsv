@@ -15,9 +15,9 @@ Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery i
 1. '배달 시작'을 누르세요.
 2. '완두콩 스프 통조림'를 선택하세요.
 3. '완료'를 누르세요."	"Please pay attention to the following points when translating:
-'Canned Pea Soup'
-'Start Delivery'
-'Complete'"	
+- 'Canned Pea Soup'
+- 'Start Delivery'
+- 'Complete'"	
 Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	튜토리얼 의뢰 2 (복잡함)		
 Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate		보통		
 Tasks	Generalist/Tutorial/02	description	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
@@ -51,14 +51,14 @@ Now you have successfully crafted the required task item and you can complete th
 5. '제작' 버튼을 누릅니다.
 
 이제 의뢰에 필요한 아이템을 성공적으로 제작했으니 의뢰를 완료할 수 있습니다."	"Please pay attention to the following points when translating:
-'Meatballs (Cooked)'
-'Canned Meatballs'
-'Mess Kit'
-'Water Bottle'
-'matches'
-'Heat'
-'Firepot'
-'Start Input'"	
+- 'Meatballs (Cooked)'
+- 'Canned Meatballs'
+- 'Mess Kit'
+- 'Water Bottle'
+- 'matches'
+- 'Heat'
+- 'Firepot'
+- 'Start Input'"	
 Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	튜토리얼 의뢰 (가구)		
 Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard		어려움		
 Tasks	Generalist/Tutorial/03	description	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
@@ -90,15 +90,15 @@ You can learn more about shelter customization and Furniture Catalog from the tu
 4. ""새 가구 추가됨 [카탈로그]"" 메시지가 표시되는지 확인합니다.
 
 은신처 꾸미기와 가구 카탈로그에 대한 자세한 내용은 '은신처'라는 튜토리얼 게시판에서 확인할 수 있습니다."	"Please pay attention to the following points when translating:
-'Furniture'
-'shelter'
-'Furniture Catalog'
-'New Furniture Added [Catalog]'
-'Start Delivery'
-'Potato'
-'Complete'
-'tutorial'
-'Shelters'"	
+- 'Furniture'
+- 'shelter'
+- 'Furniture Catalog'
+- 'New Furniture Added [Catalog]'
+- 'Start Delivery'
+- 'Potato'
+- 'Complete'
+- 'tutorial'
+- 'Shelters'"	
 Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	2804	본방사수		
 Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy		쉬움		
 Tasks	Generalist/01	description	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
@@ -115,10 +115,10 @@ If you bring me that toilet paper, the TV is yours. It has all the channels pre-
 말이 나온 김에, 조금 전에 전자 부품 몇 개를 가지고 완벽하게 작동하는 TV를 하나 장만했네. 명심하게, 지금 이 '05 구역'에서 작동하는 TV는 오직 이것 뿐일거야.
 
 내게 '화장지'를 좀 가져다 준다면, 그 TV는 이제 당신 걸세. 색감도 선명하고, 모든 채널이 미리 설정되어 있지. 무엇보다 가장 중요한건, 지금 우리가 대화하고 있는 이 순간에도 ""황금"" 시간대 방송들이 방영 중이라는거야."	"Please pay attention to the following points when translating:
-'Nomad'
-'cabin'
-'toilet paper'
-'Area 05'"	
+- 'Nomad'
+- 'cabin'
+- 'toilet paper'
+- 'Area 05'"	
 Tasks	Generalist/02	name	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	2808	나쁜 습관		
 Tasks	Generalist/02	difficulty	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy		쉬움		
 Tasks	Generalist/02	description	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					description		"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
@@ -126,8 +126,8 @@ Tasks	Generalist/02	description	0	literal	Traders/Generalist/Tasks/02_Bad_Habits
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	2810	"얼마 전, 근처 버려진 학교에 있는 의사를 만났네. 나보고 ""나쁜 습관""을 모두 끊으라고 하더만, 그 노친네도 뒤에서 담배를 뻑뻑 피우는데 신경 끄라지!
 
 자네도 좀 힘들다 싶으면 민트 사탕이나 집어먹는 어린 놈들같은지는 모르겠네만, 혹시라도 이런걸 찾게 된다면 한두 갑 정도 챙겨주게. 참, 성냥도 함께 말이야."	"Please pay attention to the following points when translating:
-'Matches' is the plural form of match (match, noun), not match (verb).
-'pack' may means cigarrete, not a cigar"	
+- 'Matches' is the plural form of match (match, noun), not match (verb).
+- 'pack' may means cigarrete, not a cigar"	
 Tasks	Generalist/03	name	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	2812	허리 통증		
 Tasks	Generalist/03	difficulty	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy		쉬움		
 Tasks	Generalist/03	description	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					description		"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
@@ -150,7 +150,7 @@ As a matter of fact, I should probably increase my strategic coffee reserve a bi
 이 '05구역'에서 살아남으려면 카페인을 끊임없이 공급받는 것이야말로 최우선 목표가 되어야 해.
 
 사실, 요즘 커피 소비량이 평소보다 많아져서 말이야. ""전략적 커피 비축량""을 좀 늘려야 할 것 같아."	"Please pay attention to the following points when translating:
-'Area 05'"	
+- 'Area 05'"	
 Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	2820	땀내나는 일		
 Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate		보통		
 Tasks	Generalist/05	description	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
@@ -177,7 +177,7 @@ I'm getting tired of being her handyman, but I promised to help this one last ti
 그저께는 가스레인지가 고장 났고, 냉동고는 녹아내렸지, 라디오는 그새 또 말썽이야! 게다가 지난주에 폭풍우가 몰아치면서 나무가 현관 지붕에 쓰러지는 바람에 지붕이 무너져 내렸어. 난장판도 이런 난장판이 없다니까.
 
 그 할멈 수리공 노릇을 하는 것도 이제 지긋지긋하지만, 딱 한 번만 더 도와주기로 했으니 어쩌겠어..."	"Please pay attention to the following points when translating:
-'Border Zone'"	
+- 'Border Zone'"	
 Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	2828	맥주 여섯 캔		
 Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard		어려움		
 Tasks	Generalist/07	description	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					description		"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
@@ -204,7 +204,7 @@ Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn,
 어느 날 사격 훈련을 하면서, 드디어 그 총을 시험해 볼 기회가 생겼어. 드럼 탄창을 사용해서 그런지완전 자동 사격은 못하게 했지만, 내 차례가 다가오자 참을 수가 없더군. 사격 모드를 바꾸고 방아쇠를 당겼더니, 71발의 총알이 내 총구에서 쏟아져 나왔어. 마치 마법처럼 말이야!
 
 젠장, 그 총이 너무 그리워. 아직도 가끔 꿈속에서 그 ""프랏-프랏"" 거리는 소리가 희미하게 들릴 지경이야. 언젠가는 다시 그 옛 친구와 마법같이 다시 만나는 날이 오겠지, 언젠가는…"	"Please pay attention to the following points when translating:
-'KP-31' is a proper noun (items/weapon)."	
+- 'KP-31' is a proper noun (items/weapon)."	
 Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	2836	장거리 여행		
 Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard		어려움		
 Tasks	Generalist/09	description	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					description		"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
@@ -235,8 +235,8 @@ If you can make this new batch for me, I will consider giving you a key to my at
 다시 새로 담가야 하는데 내가 시간이 없어서 말이야, 자네가 대신 좀 만들어 줄 수 있겠나? 레시피는 간단한데, 설탕을 너무 많이 넣으면 망칠 수 있으니 조심하게. 간단하게, 집에서 담그는 것처럼 만들면 돼.
 
 만약 나를 위해 킬유를 만들어 준다면, 이 건물의 다락방 열쇠를 내어주지. 자네의 그 좁아터진 석면 오두막보다는 훨씬 나을 거야."	"Please pay attention to the following points when translating:
-`Shaman`
-'Kilju' is a traditional Finnish alcohol"	
+- `Shaman`
+- 'Kilju' is a traditional Finnish alcohol"	
 Tasks	Doctor/01	name	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	2844	지독한 외풍		
 Tasks	Doctor/01	difficulty	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy		쉬움		
 Tasks	Doctor/01	description	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					description		"I haven't seen you here before, you must be a new patient?
@@ -330,7 +330,7 @@ Whenever you find those saline bottles, always remember to bring them to me and 
 저혈량증은 기본적으로 체내 염분과 수분이 결핍된 상태인데, 이게 심해지면 그 방랑자들처럼 저혈량성 쇼크에 빠질 수 있어요. 다행히도, 이러한 증상에 대한 치료법은 매우 간단해요. 말초 정맥에 생리식염수를 주입하면 금방 회복되거든요.
 
 혹시나 생리식염수 병을 발견하시면 꼭 저에게 가져다주세요. 우리 둘 다 만족할 만한 거래가 될 겁니다."	"Please pay attention to the following points when translating:
-`Nomad'"	
+- `Nomad'"	
 Tasks	Doctor/08	name	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	2872	하모니카		
 Tasks	Doctor/08	difficulty	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard		어려움		
 Tasks	Doctor/08	description	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					description		"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
@@ -398,7 +398,7 @@ It has been a while since I have seen a proper warm meal. Maybe this is your mom
 예전에는 전투식량에 제대로 된 통조림 식품이라도 들어 있었는데, 요즘 전투식량에는 맛대가리 없는 고기 반죽과 패스트푸드 밖에 없어. 그딴 인공 폐기물은 절대로 입에 대지도 않을 거야.
 
 마지막으로 제대로 된 따뜻한 식사를 한 게 언제인지도 기억나지 않아. 어쩌면 이번 기회에 자네가 실력을 발휘해서 우리 관계를 한 단계 더 발전시킬 수 있을지도 모르겠어. 제대로 된 핀란드식 완두콩 수프에 겨자를 곁들여 담은 반합 정도면 괜찮을 것 같군."	"Please pay attention to the following points when translating:
-`mess kit'"	
+- `mess kit'"	
 Tasks	Gunsmith/03	name	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	2892	북유럽 무역		
 Tasks	Gunsmith/03	difficulty	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate		보통		
 Tasks	Gunsmith/03	description	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					description		"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
@@ -410,8 +410,8 @@ However, in the spirit of good neighbors, there's a fair trade we could do. I ca
 아, 오해는 하지 말게. 좋은 이웃이긴 하지만.. 글쎄. 어쩌면 너무 부유해서 옷을 쫙 빼 입고 다녀서인지, 아니면 그놈의 하키 때문인지 잘 모르겠어.
 
 하지만 이웃 좋다는 게 뭔가, 어쩌면 꽤 괜찮은 거래를 하나 제안해 볼 수도 있겠어. 나는 이걸 '디저트 교환'이라고 부른다네. 스웨덴 놈들의 꽤 괜찮은 디저트를 좀 가져다준다면, 나는 핀란드 디저트를 나눠주지. 서로에게 이득이 되는 거래야. 다른 말로 경쟁 없이 즐길 수 있는 북유럽식 무역이라고 할까?"	"Please pay attention to the following points when translating:
-(Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
-(Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."	
+- (Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
+- (Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."	
 Tasks	Gunsmith/04	name	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	2896	커다란 칼날		
 Tasks	Gunsmith/04	difficulty	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate		보통		
 Tasks	Gunsmith/04	description	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					description		"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
@@ -434,7 +434,7 @@ Maybe you could do a quick ammo delivery run for me? We could expand the portfol
 탄약 중에서는 7.62x39와 .223 구경이 내 매출을 책임지는 베스트셀러라고 할 수 있네. 가끔은 좀 특이한 탄약을 찾는 별종들도 있지만, 그런 요청들까지 고려해서 재고를 유지하는 건 꽤나 고역이거든.
 
 잠깐 자네가 나 대신 탄약 배송을 해 주지 않겠나? 그렇게 하면 우리도 취급 품목을 좀 늘려볼 수 있겠어."	"Please pay attention to the following points when translating:
-'7.62x39' and '.223' is untranslatable"	
+- '7.62x39' and '.223' is untranslatable"	
 Tasks	Gunsmith/06	name	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	2904	무기 배달		
 Tasks	Gunsmith/06	difficulty	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate		보통		
 Tasks	Gunsmith/06	description	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					description		"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
@@ -446,8 +446,8 @@ Since I no longer have those networks active, a quick weapon delivery from the o
 덕분에 동구권 무기는 늘 재고가 부족하지, 참 안타까운 일이야. 서방제 물건들에 비하면 그쪽 물건들이 훨씬 믿음직하거든. 자네도 알다시피 서방은 모든 걸 '택티컬'하게 만드는 고질병이 있어. 레일이니 뭐니 온갖 잡동사니들을 주렁주렁 달아대다 보니 엉망진창이 되기 마련이지.
 
 이제 국경 너머와는 인맥이 끊겼으니, 다른 루트로 빠르게 무기를 공급해 준다면 정말 고맙겠어."	"Please pay attention to the following points when translating:
-Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
-'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."	
+- Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
+- 'Network' is used with the same meaning as 'Network of people', not 'Internet Network'."	
 Tasks	Gunsmith/07	name	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	2908	의무병		
 Tasks	Gunsmith/07	difficulty	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard		어려움		
 Tasks	Gunsmith/07	description	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					description		"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
@@ -459,8 +459,8 @@ My medic could actually use a few extra lollipops just in case. I think those ca
 사실, 나는 전담 의무병을 하나 두고 있네. 실력 있는 방랑자야. 우리 둘에게는 돌격할 때 쓰는 간단한 전술이 있어. 만약 내가 사격을 하다가 총에 맞으면, 의무병이 내 입에 펜타닐 사탕을 물려주는 거야. 그러고는 다시 진군을 이어 나가는 거지. 이게 광기를 잠재워주지는 않아, 그저 통증을 잊고 진격하게 해주는 거지.
 
 만일의 사태에 대비해서, 내 의무병 친구에게 사탕이 몇 개 더 필요할 것 같아. IFAK이라 부르는 응급처치 키트 안에 들어있을 거 같은데, 만약 자네가 그걸 찾게 된다면 또 다른 거래의 장이 열리겠지."	"Please pay attention to the following points when translating:
-'Nomad' is a pronoun of one of the faction
-'IFAK' is a pronoun of item (medical)"	
+- 'Nomad' is a pronoun of one of the faction
+- 'IFAK' is a pronoun of item (medical)"	
 Tasks	Gunsmith/08	name	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	2912	소장품		
 Tasks	Gunsmith/08	difficulty	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard		어려움		
 Tasks	Gunsmith/08	description	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					description		"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
@@ -487,7 +487,7 @@ Even though this sign is a nice decorative piece, it’s a bit too colorful for 
 ...솔직히 말하자면, 가끔은 경계가 애매한 구역에 발을 들여 버섯이 아닌 다른 것들을 채집하기도 하네. 예를 들자면, 몇 달 전에는 도랑에서 굴러다니던 접경 지대 표지판을 발견했었네. 나뭇잎과 흙으로 덮여 있었으니 자연의 일부라고 볼 수 있고, 그렇다면 이것도 ""모두의 권리""에 포함된다고 볼 수 있지 않겠나.
 
 이 표지판은 장식용으로도 좋지만, 너무 알록달록해서 내 취향에는 맞지 않는구만. 자네라면 좋아할 같은데, 작은 거래를 해보는건 어떤가. 아, 물론 헐값에 팔 생각은 전혀 없네."	"Please pay attention to the following points when translating:
-Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"	
+- Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"	
 Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	2920	암살자		
 Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard		어려움		
 Tasks	Gunsmith/10	description	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					description		"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
@@ -499,5 +499,5 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 이 녀석은 시도 떄도 없이 나타나서 있지도 않는 빚을 갚으라고 난리를 쳐. 평소같으면 이런 미친놈들은 문 앞에서 쏴버리겠지만, 이 놈들은 더럽게 끈질겨. 최근에는 그 녀석이랑 쫄따구들이 경찰 호송차를 훔쳐서 타고다니니, 이제는 경장갑 차량까지 갖춘 셈이지.
 
 누군가는 이 광대짓을 끝내야만 해. 그런 의미에서, 나는 지금 히트맨이 필요하네. 그놈의 목을 가져오든 뭐든, 그놈이 죽었다는 증거를 가져오면, 내 창고 열쇠를 내어주지."	"Please pay attention to the following points when translating:
-'Area 05'
-'Purnisher' is a pronoun for a hostile NPC"	
+- 'Area 05'
+- 'Purnisher' is a pronoun for a hostile NPC"	

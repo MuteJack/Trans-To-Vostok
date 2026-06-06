@@ -174,7 +174,7 @@ Hotfix [0.1.1.3]
 [GEÄNDERT] Gefallene Gegenstände werden vor dem Spieler statt im Inventar (Unterschlupf) abgelegt
 ----------------------------------------
 [ENTFERNT] Alle Verweise auf AMD FSR von Drittanbietern/veraltete AMD FSR-Verweise aus Stabilitätsgründen
-----------------------------------------"		
+----------------------------------------"	CHANGELOG for RTV	
 Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
@@ -623,7 +623,8 @@ Build-Typ: Release
 [GEÄNDERT] Die Waffengeräusche verwenden nach dem Abfeuern realistischere Nachhall- und Echo-Lautstärken
 [GEÄNDERT] Mehrere Änderungen an den KI-Waffengeräuschen zur Verbesserung der Richtungs- und Vorbeifluggeräusche
 [GEÄNDERT] Kerzen verursachen keine Verbrennungen mehr, wenn man darauf tritt
-[GEÄNDERT] Der Hubschraubermodelltyp wurde von Mi-8 auf Mi-24 (Hind) geändert"	Version 0.1.0.0 (Will be deleted)	
+[GEÄNDERT] Der Hubschraubermodelltyp wurde von Mi-8 auf Mi-24 (Hind) geändert"	"CHANGELOG for RTV
+Deprecated (v0.1.0.0)"	
 New Game	Difficulty/Standard	String	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select				
 New Game	/	Button	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected				
 New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	2082	Ausgewählt		
@@ -757,7 +758,7 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inter
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.place	dict		56	Place	2242	Ort		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.decor	dict		57	Decor Mode	2244	Dekor-Modus		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.flashlight	dict		58	Flashlight	2246	Taschenlampe		
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	2248	NVG		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.nvg	dict		59	NVG	2248	NVG	Recommend to use a Full Form (ex: Night Vision Goggle)	
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.laser	dict		60	Laser	2250	Laser		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.rail_movement	dict		61	Rail Movement	2252	Schienenverkehr		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary_optic	dict		62	Secondary Optic	2254	Sekundäroptik		
@@ -766,13 +767,13 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_transfer	dict		65	Fast Transfer	2260	Schnelle Übertragung		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_equip	dict		66	Fast Equip	2262	Schnell ausrüsten		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.item_drop	dict		67	Fast Drop	2264	Schneller Fall		
-Settings	Input Settings	Elements	0	substr									Left Mouse Button	2266	Linke Maustaste	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Right Mouse Button	2268	Rechte Maustaste	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Middle Mouse Button	2270	Mittlere Maustaste	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	2272	Mausrad nach oben	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	2274	Mausrad nach unten	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	2276	Daumentaste 1 der Maus	I can't find those texts. Maybe dependent on Godot Engine.	
-Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	2278	Daumentaste 2 der Maus	I can't find those texts. Maybe dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Left Mouse Button	2266	Linke Maustaste	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Right Mouse Button	2268	Rechte Maustaste	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Middle Mouse Button	2270	Mittlere Maustaste	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Up	2272	Mausrad nach oben	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Wheel Down	2274	Mausrad nach unten	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 1	2276	Daumentaste 1 der Maus	Dependent on Godot Engine.	
+Settings	Input Settings	Elements	0	substr									Mouse Thumb Button 2	2278	Daumentaste 2 der Maus	Dependent on Godot Engine.	
 Settings	Audio Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio	Audio	Label	text	1599415116	Audio Settings	2280	Audioeinstellungen		
 Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Master	Label	text	316581984	Master Volume	2282	Gesamtlautstärke		
 Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Ambient	Label	text	1011559267	Ambient Volume	2284	Umgebungslautstärke		
@@ -785,12 +786,14 @@ Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settin
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
 "	2294	Unterkunft		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
-"	2296	Bereich 05		
+"	2296	Bereich 05	"Please pay attention to the translation regarding the following:
+- 'Area 05' on the button means the location 'Area 05'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
-"	2298	Grenze	"다음 사항에 대해서 번역에 주의하세요:
-해당 버튼의 'Border'은 'Border Zone'을 의미합니다"	
+"	2298	Grenze	"Please pay attention to the translation regarding the following:
+- 'Border' on the button means the location 'Border Zone'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
-"	2300	Wostok		
+"	2300	Wostok	"Please pay attention to the translation regarding the following:
+- 'Vostok' on the button means the location 'Vostok'."	
 Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	2302	Kameraeinstellungen		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	2304	Interpolieren		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	2306	Sichtfeld		
@@ -857,9 +860,9 @@ Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Fr
 Settings	Frames	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Frames/Settings	Unlimited	Button	text	2076700037	Unlimited	2402	Unbegrenzt		
 Settings	Render Resolution	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering	Rendering	Label	text	181608627	Render Resolution	2404	Renderauflösung		
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Low	Button	text	979294547	Low	2406	Niedrig		
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	2408	Mittel	Depricated in 0.1.1.3, will be deleted	
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	2410	Hoch	Depricated in 0.1.1.3, will be deleted	
-Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	2412	Ultra	Depricated in 0.1.1.3, will be deleted	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Medium	Button	text		Medium	2408	Mittel	Deprecated (0.1.0.0)	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_High	Button	text		High	2410	Hoch	Deprecated (0.1.0.0)	
+Settings	Render Resolution	Button	0	literal			UI/Settings	Settings/Row_03/Rendering/Settings	R_Ultra	Button	text		Ultra	2412	Ultra	Deprecated (0.1.0.0)	
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	R_Native	Button	text	1480129753	Native	2414	Muttersprachler		
 Settings	Render Resolution	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Rendering/Settings	Sharpness	Label	text	408616542	Image Sharpness	2416	Bildschärfe		
 Settings	Lighting Quality	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Lighting	Lighting	Label	text	1754304417	Lighting Quality	2418	Lichtqualität		
@@ -872,8 +875,8 @@ Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Ro
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_2x	Button	text	29844067	MSAA 2x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_4x	Button	text	380447260	MSAA 4x				
 Settings	Anti-aliasing	Button	1	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	MSAA_8x	Button	text	1518996046	MSAA 8x				
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	2432	SMAA aus		
-Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	2434	SMAA ein		
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_Off	Button	text	804158341	SMAA Off	2432	SMAA aus	"Do not translate ""SMAA"""	
+Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Antialiasing/Settings	SMAA_On	Button	text	631942045	SMAA On	2434	SMAA ein	"Do not translate ""SMAA"""	
 Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	2436	Beenden		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	2438	Hauptmenü		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
@@ -1073,41 +1076,47 @@ Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button
 "	2572	Hauptmenü		
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
 "	2574	Beenden		
-/	Scene	Name	0	substr									Intro	2576	Einleitung		
-/	Scene	Name	0	substr									Cabin	2578	Kabine	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Shelter	2580	Unterkunft		
-/	Scene	Name	0	substr									Tutorial	2582	Anleitung		
-/	Scene	Name	0	substr									Menu	2584	Menü		
-/	Scene	Name	0	substr									Attic	2586	Dachboden	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Death	2588	Tod		
-/	Scene	Name	0	substr									Classroom	2590	Klassenzimmer	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Tent	2592	Zelt	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Bunker	2594	Bunker	Defined at Loader.gd: const shelters	
-/	Scene	Name	0	substr									Village	2596	Dorf		
-/	Scene	Name	0	substr									Area 05	2598	Bereich 05		
-/	Scene	Name	0	substr									Highway	2600	Autobahn		
-/	Scene	Name	0	substr									School	2602	Schule		
-/	Scene	Name	0	substr									Outpost	2604	Außenposten		
-/	Scene	Name	0	substr									Border Zone	2606	Grenzgebiet		
-/	Scene	Name	0	substr									Minefield	2608	Minenfeld		
-/	Scene	Name	0	substr									Apartments	2610	Wohnungen		
-/	Scene	Name	0	substr									Terminal	2612	Terminal		
-/	Scene	ToolTip	0	substr									Tutorial Exit	2614	Tutorial beenden		
-/	Scene	Name	0	substr									Template	2616	Vorlage		
-/	Scene	#Not Checked	0	substr									shaders	2618	Shader		
-NPC	Traders	Name	0	substr									Trader	2620	Händler		
-NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	Allrounder		
-NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	Arzt		
-NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	Waffenschmied		
-NPC	Traders	Name	0	substr									Driver	2628	Fahrer		
-NPC	Traders	Name	0	substr									Grandma	2630	Oma		
-NPC	Traders	Name	0	substr									Shaman	2632	Schamane		
-NPC	Traders	Name	0	substr									Fisherman	2634	Fischer		
-NPC	Traders	Name	0	substr									Scientist	2636	Wissenschaftler		
-NPC	Hostile	Name	0	substr									Bandit	2638	Bandit	Hostile NPC faction spawned in Area 05;	
-NPC	Hostile	Name	0	substr									Guards	2640	Wachen	Hostile NPC faction spawned in Border Zone;	
-NPC	Hostile	Name	0	substr									Military	2642	Militär	Hostile NPC faction spawned in Vostok;	
-NPC	Elite	Name	0	substr									Punisher	2644	Der Bestrafer	Hostile Elite(Boss) NPC spawned in Area 05;	
+Scene	/	Name	0	substr									Menu	2584	Menü		
+Scene	/	Name	0	substr									Intro	2576	Einleitung	Intro Scene is loaded when start new game.	
+Scene	/	Name	0	substr									Tutorial	2582	Anleitung	Tutorial Map	
+Scene	/	ToolTip	0	substr									Tutorial Exit	2614	Tutorial beenden	"Tooltip Text for the Door for ""Tutorial Exit"""	
+Scene	/	Name	0	substr									Death	2588	Tod		
+Scene	/	#Not Checked	0	substr									Template	2616	Vorlage	# Not checked	
+Scene	/	#Not Checked	0	substr									shaders	2618	Shader	# Not checked	
+Scene	Shelter	Name	0	substr									Shelter	2580	Unterkunft	Shelter	
+Scene	Shelter	Name	0	substr									Cabin	2578	Kabine	"Shelter located at ""Area 05/Village""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Attic	2586	Dachboden	"Shelter located at ""Area 05/Village""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Classroom	2590	Klassenzimmer	"Shelter located at ""Area 05/School""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Tent	2592	Zelt	"Shelter located at ""Area 05/Outpost""
+Defined at Loader.gd: const shelters"	
+Scene	Shelter	Name	0	substr									Bunker	2594	Bunker	"Shelter located at ""Area 05/Outpost""
+Defined at Loader.gd: const shelters"	
+Scene	Area05	Name	0	substr									Area 05	2598	Bereich 05	"Location (Area) ""Area 05"""	
+Scene	Area05	Name	0	substr									Village	2596	Dorf	"Location under Location ""Area 05"""	
+Scene	Area05	Name	0	substr									Highway	2600	Autobahn	"Location under Location ""Area 05"""	
+Scene	Area05	Name	0	substr									School	2602	Schule	"Location under Location ""Area 05"""	
+Scene	Outpost	Name	0	substr									Border Zone	2606	Grenzgebiet	"Location (Area) ""Border Zone"""	
+Scene	Outpost	Name	0	substr									Outpost	2604	Außenposten	"Location under Location ""Border Zone"""	
+Scene	Outpost	Name	0	substr									Minefield	2608	Minenfeld	"Location under Location ""Border Zone"""	
+Scene	Scene	Dictionary	0	substr									Vostok	2664	Wostok	"Location (Area) ""Vostok"""	
+Scene	Scene	Name	0	substr									Apartments	2610	Wohnungen	"Location under Location ""Vostok"""	
+Scene	Scene	Name	0	substr									Terminal	2612	Terminal	"Location under Location ""Vostok"""	
+NPC	Traders	Name	0	substr									Trader	2620	Händler	NPC (Trader)	
+NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	Allrounder	"NPC (Trader) located at ""Area 05/Village"""	
+NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	Arzt	"NPC (Trader) located at ""Area 05/School"""	
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	Waffenschmied	"NPC (Trader) located at ""Border Zone/Outpost"""	
+NPC	Traders	Name	0	substr									Driver	2628	Fahrer	"NPC (Trader). Will be Updated at ""Build 2"""	
+NPC	Traders	Name	0	substr									Grandma	2630	Oma	"NPC (Trader). Will be Updated at ""Build 3"""	
+NPC	Traders	Name	0	substr									Shaman	2632	Schamane	"NPC (Trader). Will be Updated at ""Build 5"""	
+NPC	Traders	Name	0	substr									Fisherman	2634	Fischer	"NPC (Trader). Will be Updated at ""Build 6"""	
+NPC	Traders	Name	0	substr									Scientist	2636	Wissenschaftler	"NPC (Trader). Will be Updated at ""Build 7"""	
+NPC	Hostile	Name	0	substr									Bandit	2638	Bandit	"Hostile NPC faction spawned in ""Area 05""."	
+NPC	Hostile	Name	0	substr									Guards	2640	Wachen	"Hostile NPC faction spawned in ""Border Zone""."	
+NPC	Hostile	Name	0	substr									Military	2642	Militär	"Hostile NPC faction spawned in ""Vostok""."	
+NPC	Elite	Name	0	substr									Punisher	2644	Der Bestrafer	"Hostile Elite(Boss) NPC spawned in ""Area 05""."	
 /	Weather	Dictionary	0	substr									Neutral	2646	Neutral		
 /	Weather	Dictionary	0	substr									Overcast	2648	Bewölkt		
 /	Weather	Dictionary	0	substr									Rain	2650	Regen		
@@ -1117,4 +1126,3 @@ NPC	Elite	Name	0	substr									Punisher	2644	Der Bestrafer	Hostile Elite(Boss) 
 /	Material	Dictionary	0	substr									Metal	2658	Metall		
 /	Material	Dictionary	0	substr									Concrete	2660	Beton		
 /	Material	Dictionary	0	substr									Rock	2662	Rock		
-/	Material	Dictionary	0	substr									Vostok	2664	Wostok		

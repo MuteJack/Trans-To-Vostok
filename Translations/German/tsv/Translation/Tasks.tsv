@@ -15,9 +15,9 @@ Geh zur Liefertafel und wähle „Erbsensuppe in der Dose“ aus. Sobald du den 
 1. Klicke auf „Lieferung starten“
 2. Wähle „Erbsensuppe in der Dose“ aus
 3. Klicke auf „Abschließen“"	"Please pay attention to the following points when translating:
-'Canned Pea Soup'
-'Start Delivery'
-'Complete'"	
+- 'Canned Pea Soup'
+- 'Start Delivery'
+- 'Complete'"	
 Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	Übungsaufgabe 2 (komplex)		
 Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate				
 Tasks	Generalist/Tutorial/02	description	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
@@ -51,14 +51,14 @@ Um die „Fleischbällchen (gekocht)“ herzustellen, gehe wie folgt vor:
 5. Drücke auf „Herstellen“
 
 Nun hast du den erforderlichen Aufgabengegenstand erfolgreich hergestellt und kannst die Aufgabe abschließen."	"Please pay attention to the following points when translating:
-'Meatballs (Cooked)'
-'Canned Meatballs'
-'Mess Kit'
-'Water Bottle'
-'matches'
-'Heat'
-'Firepot'
-'Start Input'"	
+- 'Meatballs (Cooked)'
+- 'Canned Meatballs'
+- 'Mess Kit'
+- 'Water Bottle'
+- 'matches'
+- 'Heat'
+- 'Firepot'
+- 'Start Input'"	
 Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	Übungsaufgabe 3 (Möbel)		
 Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard				
 Tasks	Generalist/Tutorial/03	description	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
@@ -90,15 +90,15 @@ Versuche, neue Möbel zu erhalten, indem du diese Aufgabe abschließt:
 4. Achte auf die Meldung „Neue Möbel hinzugefügt [Katalog]“
 
 Mehr über die Anpassung von Unterkünften und den Möbelkatalog erfährst du auf der Tutorial-Tafel mit dem Titel „Unterkünfte“."	"Please pay attention to the following points when translating:
-'Furniture'
-'shelter'
-'Furniture Catalog'
-'New Furniture Added [Catalog]'
-'Start Delivery'
-'Potato'
-'Complete'
-'tutorial'
-'Shelters'"	
+- 'Furniture'
+- 'shelter'
+- 'Furniture Catalog'
+- 'New Furniture Added [Catalog]'
+- 'Start Delivery'
+- 'Potato'
+- 'Complete'
+- 'tutorial'
+- 'Shelters'"	
 Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	2804	Primetime		
 Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy				
 Tasks	Generalist/01	description	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
@@ -114,10 +114,10 @@ Trotzdem bist du genau zum richtigen Zeitpunkt gekommen, denn mir ist das Toilet
 Apropos Primetime: Ich habe gerade ein paar elektronische Geräte repariert und habe diesen voll funktionsfähigen Fernseher einsatzbereit. Merke dir meine Worte: Im Moment ist das der einzige funktionierende Fernseher in Area 05.
 
 Wenn du mir das Toilettenpapier bringst, gehört der Fernseher dir. Alle Kanäle sind voreingestellt, die Farben leuchten, und gerade laufen Primetime-Sendungen."	"Please pay attention to the following points when translating:
-'Nomad'
-'cabin'
-'toilet paper'
-'Area 05'"	
+- 'Nomad'
+- 'cabin'
+- 'toilet paper'
+- 'Area 05'"	
 Tasks	Generalist/02	name	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					name		Bad Habits	2808	Schlechte Gewohnheiten		
 Tasks	Generalist/02	difficulty	0	ignore	Traders/Generalist/Tasks/02_Bad_Habits	tres					difficulty		Easy				
 Tasks	Generalist/02	description	0	literal	Traders/Generalist/Tasks/02_Bad_Habits	tres					description		"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
@@ -125,8 +125,8 @@ Tasks	Generalist/02	description	0	literal	Traders/Generalist/Tasks/02_Bad_Habits
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	2810	"Vor einer Weile war ich bei dem Arzt in der verlassenen Schule hier in der Nähe. Er meinte, ich solle all meine „schlechten Angewohnheiten“ ablegen, aber der alte Scheißkerl raucht selbst, also scheiß auf ihn!
 
 Du bist wahrscheinlich nur einer dieser modernen Hippies, die nur Minzpastillen lutschen, wenn es mal hart auf hart kommt, aber falls du zufällig eine davon findest, bring ein oder zwei Packungen und ein paar Streichhölzer mit."	"Please pay attention to the following points when translating:
-'Matches' is the plural form of match (match, noun), not match (verb).
-'pack' may means cigarrete, not a cigar"	
+- 'Matches' is the plural form of match (match, noun), not match (verb).
+- 'pack' may means cigarrete, not a cigar"	
 Tasks	Generalist/03	name	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					name		Backpains	2812	Rückenschmerzen		
 Tasks	Generalist/03	difficulty	0	ignore	Traders/Generalist/Tasks/03_Backpains	tres					difficulty		Easy				
 Tasks	Generalist/03	description	0	literal	Traders/Generalist/Tasks/03_Backpains	tres					description		"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
@@ -149,7 +149,7 @@ As a matter of fact, I should probably increase my strategic coffee reserve a bi
 Wenn man hier in Area 05 am Leben bleiben will, sollte die ständige Zufuhr von Koffein das oberste Ziel sein.
 
 Eigentlich sollte ich meine strategische Kaffeevorratsreserve wohl ein wenig aufstocken, da der Verbrauch in letzter Zeit über dem Durchschnitt lag."	"Please pay attention to the following points when translating:
-'Area 05'"	
+- 'Area 05'"	
 Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	2820	Ein schweißtreibendes Geschäft		
 Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate				
 Tasks	Generalist/05	description	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
@@ -176,7 +176,7 @@ I'm getting tired of being her handyman, but I promised to help this one last ti
 Jetzt ist der Herd kaputt, der Gefrierschrank ist geschmolzen und anscheinend „spielt“ das Radio wieder einmal verrückt. Obendrein ist während eines Sturms letzte Woche ein Baum direkt auf das Dach ihrer Veranda gefallen, das nun teilweise eingestürzt ist, sodass wir es mit einem riesigen Chaos zu tun haben.
 
 Ich habe es langsam satt, ihr Handwerker zu sein, aber ich habe versprochen, ihr ein letztes Mal zu helfen."	"Please pay attention to the following points when translating:
-'Border Zone'"	
+- 'Border Zone'"	
 Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	2828	Sixpack		
 Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard				
 Tasks	Generalist/07	description	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					description		"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
@@ -203,7 +203,7 @@ Damals, als ich meinen Wehrdienst absolvierte, lagen im Lager noch ein paar dies
 An einem Schießtag hatten wir tatsächlich die Gelegenheit, sie auszuprobieren. Wir durften mit diesen Trommelmagazinen zwar nicht vollautomatisch schießen, aber als ich an der Reihe war, konnte ich einfach nicht widerstehen. Ich stellte den Feuermodus um, drückte den Abzug und 71 Schuss pure Magie schossen aus meinem Lauf.
 
 Manchmal höre ich dieses „prat-prat-prat“-Geräusch noch immer leise in meinen Träumen. Verdammt, ich vermisse diese Waffe. Eines Tages werde ich mich wieder mit meinem magischen alten Freund vereinen, eines Tages..."	"Please pay attention to the following points when translating:
-'KP-31' is a proper noun (items/weapon)."	
+- 'KP-31' is a proper noun (items/weapon)."	
 Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	2836	Autoreise		
 Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard				
 Tasks	Generalist/09	description	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					description		"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
@@ -234,8 +234,8 @@ Ich hatte bereits eine große Menge für ihn bereitgestellt, aber da sich meine 
 Ich brauche eine neue Charge, aber ich habe gerade keine Zeit, also könntest du ihn vielleicht kochen. Das Rezept ist wirklich einfach, aber gib nicht zu viel Zucker dazu, sonst ruinierst du das Ganze. Halte es einfach, halte es hausgemacht.
 
 Wenn du diese neue Charge für mich zubereiten kannst, werde ich dir einen Schlüssel zu meinem Dachboden geben – das wäre eine ziemliche Verbesserung gegenüber deiner kleinen Asbesthütte."	"Please pay attention to the following points when translating:
-`Shaman`
-'Kilju' is a traditional Finnish alcohol"	
+- `Shaman`
+- 'Kilju' is a traditional Finnish alcohol"	
 Tasks	Doctor/01	name	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					name		Nasty Draft	2844	Unangenehmer Luftzug		
 Tasks	Doctor/01	difficulty	0	ignore	Traders/Doctor/Tasks/01_Nasty_Draft	tres					difficulty		Easy				
 Tasks	Doctor/01	description	0	literal	Traders/Doctor/Tasks/01_Nasty_Draft	tres					description		"I haven't seen you here before, you must be a new patient?
@@ -329,7 +329,7 @@ Nach genauerer Untersuchung stellte sich heraus, dass der Grund einfacher war al
 Hypovolämie ist im Grunde ein Verlust sowohl von Salz als auch von Wasser im Körper, und wenn es richtig schlimm wird, dann bist du aufgeschmissen wie diese Nomaden und erlebst einen hypovolämischen Schock. Glücklicherweise ist die Behandlung dieser Symptome wirklich einfach: Man spritzt einfach eine Kochsalzlösung in eine periphere Vene und schon ist alles wieder gut.
 
 Wann immer du solche Kochsalzlösungsflaschen findest, denk immer daran, sie mir zu bringen, und wir werden sicher eine Vereinbarung finden, die für uns beide funktioniert."	"Please pay attention to the following points when translating:
-`Nomad'"	
+- `Nomad'"	
 Tasks	Doctor/08	name	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					name		Mouth Organ	2872	Mundharmonika		
 Tasks	Doctor/08	difficulty	0	ignore	Traders/Doctor/Tasks/08_Mouth_Organ	tres					difficulty		Hard				
 Tasks	Doctor/08	description	0	literal	Traders/Doctor/Tasks/08_Mouth_Organ	tres					description		"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
@@ -397,7 +397,7 @@ It has been a while since I have seen a proper warm meal. Maybe this is your mom
 Früher enthielten diese Rationen wenigstens ordentliche Konserven, aber heutzutage besteht der Großteil nur noch aus ekligem Fleischbrei und modernem Outdoor-Essen. Dieses synthetische Zeug stecke ich mir sicher nicht in den Mund.
 
 Es ist schon eine Weile her, dass ich eine richtige warme Mahlzeit gesehen habe. Vielleicht ist das Ihre Chance zu glänzen und unsere berufliche Beziehung könnte den nächsten Schritt nach vorne machen. Vielleicht würde ein Essgeschirr mit richtiger finnischer Erbsensuppe und etwas Senf dazu den Zweck erfüllen."	"Please pay attention to the following points when translating:
-`mess kit'"	
+- `mess kit'"	
 Tasks	Gunsmith/03	name	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					name		Nordic Trade	2892	Nordic Trade		
 Tasks	Gunsmith/03	difficulty	0	ignore	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					difficulty		Intermediate				
 Tasks	Gunsmith/03	description	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	tres					description		"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
@@ -409,8 +409,8 @@ However, in the spirit of good neighbors, there's a fair trade we could do. I ca
 Versteht mich nicht falsch, sie sind gute Nachbarn und so, aber ich weiß nicht. Vielleicht sind sie zu reich und immer gut gekleidet, oder vielleicht liegt es einfach am Eishockey.
 
 Im Sinne guter Nachbarschaft könnten wir jedoch einen fairen Tausch vereinbaren. Ich nenne das „Desserttausch“. Bringt mir ein paar dieser schwedischen Köstlichkeiten, und ich gebe euch ein paar finnische. Das ist ein Deal, bei dem es nur Gewinner gibt – gewissermaßen ein nordischer Handel ohne jegliche Rivalität."	"Please pay attention to the following points when translating:
-(Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
-(Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."	
+- (Korean) `tabaco'는 한국어에서 아이템 이름 'cigarette'와 동일하게 '담배'로 번역되었습니다.
+- (Korean) 한국에서 'cigar'는 'cigarette', 'tabaco'와는 다르게 취급합니다."	
 Tasks	Gunsmith/04	name	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					name		Big Blades	2896	Große Klingen		
 Tasks	Gunsmith/04	difficulty	0	ignore	Traders/Gunsmith/Tasks/04_Big_Blades	tres					difficulty		Intermediate				
 Tasks	Gunsmith/04	description	0	literal	Traders/Gunsmith/Tasks/04_Big_Blades	tres					description		"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
@@ -433,7 +433,7 @@ Maybe you could do a quick ammo delivery run for me? We could expand the portfol
 Was Munition angeht, sind 7,62x39 und .223 mit großem Abstand die Verkaufsschlager. Manchmal gibt es immer noch diese nervigen Kunden, die nach etwas Exotischerem suchen, aber es ist schwer, für jede seltsame Anfrage einen Vorrat zu führen.
 
 Vielleicht könntest du für mich eine kurze Munitionslieferung übernehmen? Wir könnten sozusagen das Sortiment ein wenig erweitern."	"Please pay attention to the following points when translating:
-'7.62x39' and '.223' is untranslatable"	
+- '7.62x39' and '.223' is untranslatable"	
 Tasks	Gunsmith/06	name	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					name		Weapon Delivery	2904	Waffenlieferung		
 Tasks	Gunsmith/06	difficulty	0	ignore	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					difficulty		Intermediate				
 Tasks	Gunsmith/06	description	0	literal	Traders/Gunsmith/Tasks/06_Weapon_Delivery	tres					description		"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
@@ -445,8 +445,8 @@ Since I no longer have those networks active, a quick weapon delivery from the o
 Das hat dazu geführt, dass mir diese Waffen aus dem Osten ständig ausgehen. Das ist verdammt schade, denn ich finde ihre Produkte immer zuverlässiger als die westlichen. Weißt du, im Westen leiden wir unter einer unheilbaren Krankheit, alles taktisch zu gestalten. Wir montieren an alles Schienen, Klammern und Halterungen, und das Endergebnis ist ein Durcheinander mit zu vielen beweglichen Teilen.
 
 Da meine Netzwerke nicht mehr aktiv sind, wäre ich für eine schnelle Waffenlieferung von der anderen Seite sehr dankbar."	"Please pay attention to the following points when translating:
-Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
-'Network'는 'Internet Network'가 아닌 'Network of people'과 같은 의미로 사용됩니다."	
+- Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)
+- 'Network' is used with the same meaning as 'Network of people', not 'Internet Network'."	
 Tasks	Gunsmith/07	name	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					name		Medic	2908	Sanitäter		
 Tasks	Gunsmith/07	difficulty	0	ignore	Traders/Gunsmith/Tasks/07_Medic	tres					difficulty		Hard				
 Tasks	Gunsmith/07	description	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres					description		"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
@@ -458,8 +458,8 @@ My medic could actually use a few extra lollipops just in case. I think those ca
 Ich habe sogar einen persönlichen Sanitäter nur für mich allein. Er ist ein geschickter Nomade, und wir haben eine einfache Taktik, falls eine Angriffsphase nötig wird. Bei unserer Taktik schieße ich, und wenn ich getroffen werde, steckt er mir einen Fentanyl-Lutscher in den Mund, und der Zug rollt weiter. Es ist nie ein Ende des Wahnsinns, nur gelegentliche Schmerzlinderung und weiter vorwärts.
 
 Mein Sanitäter könnte tatsächlich ein paar zusätzliche Lutscher gebrauchen, nur für den Fall. Ich glaube, die findet man in IFAKs, also wenn ihr zufällig ein paar davon findet, ergibt sich für uns wieder eine Geschäftsmöglichkeit."	"Please pay attention to the following points when translating:
-'Nomad' is a pronoun of one of the faction
-'IFAK' is a pronoun of item (medical)"	
+- 'Nomad' is a pronoun of one of the faction
+- 'IFAK' is a pronoun of item (medical)"	
 Tasks	Gunsmith/08	name	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					name		Home Collection	2912	Startseite Kollektion		
 Tasks	Gunsmith/08	difficulty	0	ignore	Traders/Gunsmith/Tasks/08_Home_Collection	tres					difficulty		Hard				
 Tasks	Gunsmith/08	description	0	literal	Traders/Gunsmith/Tasks/08_Home_Collection	tres					description		"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
@@ -486,7 +486,7 @@ In Finnland gibt es das „Jedermannsrecht“, das uns das Recht gewährt, die N
 Allerdings muss ich zugeben, dass ich manchmal in eine Grauzone gerate und Dinge sammle, die nicht nur Pilze sind. Vor ein paar Monaten habe ich zum Beispiel ein umgestürztes „Border Zone“-Schild in einem Graben gefunden. Da es mit Laub und Schmutz bedeckt war, dachte ich mir, dass es zur Natur gehört und somit in meinen Augen unter das Jedermannsrecht fällt.
 
 Auch wenn dieses Schild ein hübsches Deko-Stück ist, ist es für meinen Geschmack etwas zu bunt. Du scheinst jemand zu sein, der das zu schätzen weiß. Vielleicht können wir einen kleinen Tausch dafür machen, aber ich gebe es nicht für irgendetwas Billiges her."	"Please pay attention to the following points when translating:
-Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"	
+- Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"	
 Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	2920	Hitman		
 Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard				
 Tasks	Gunsmith/10	description	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					description		"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
@@ -498,5 +498,5 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 Ab und zu taucht dieser Typ auf und verlangt verdammte Zahlungen für irgendwelche selbst verursachten Schulden. Normalerweise würde ich diese Clowns schon an der Haustür erschießen, aber der hier ist hart wie Stahl. Punisher und seine Handlanger haben kürzlich auch einen Polizeiwagen geklaut, sodass sie jetzt sogar ein leicht gepanzertes Fahrzeug haben.
 
 Jemand muss dieser Clownshow ein Ende bereiten, also brauche ich im Grunde einen Auftragskiller. Bring mir seinen Kopf oder irgendetwas anderes, das beweist, dass er tot ist, und ich gebe dir die Schlüssel zu meinem Lagerbunker."	"Please pay attention to the following points when translating:
-'Area 05'
-'Purnisher' is a pronoun for a hostile NPC"	
+- 'Area 05'
+- 'Purnisher' is a pronoun for a hostile NPC"	

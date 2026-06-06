@@ -1,296 +1,296 @@
-WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION		max_length
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	748	ヘルス			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100			Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	750	エネルギー			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100			Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	752	水分補給			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100			Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	754	メンタル			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100			Value(Integer) about the Vital. Untranslatable.		
-HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	756	体温			
-HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100			Value(Integer) about the Vital. Untranslatable.		
-HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	酸素			
-HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:					
-HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			Value(Integer) about the FPS. Untranslatable.		
-HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	シェルター（エリア05）			
-Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	在庫			
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			Value(Float) about Capacity. Untranslatable.		
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			Value(Float) about Weight. Untranslatable.		
-Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000			Value(Float) about Value(Money). Untranslatable.		
-Inventory	#Not Checked	Name	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	764	コンテナ			
-Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0			Value(Float) about Weight. Untranslatable.		
-Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000			Value(Float) about Weight. Untranslatable.		
-Inventory	Equipment	Name	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	766	装備			
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg			Value(Float) about Capacity. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000			Value(Float) about Value. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100			Value(Float) about Insulation. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A			Value(Float) about Dexterity. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A			Value(Float) about Menace. Untranslatable.		
-Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A			Value(Float) about CBRN. Untranslatable.		
-Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	小学校	Inventory Slot for Primary Weapon		
-Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	セカンダリ	Inventory Slot for Secondory Weapon		
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	ナイフ	Inventory Slot for Knife		
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	手榴弾	Inventory Slot for Grenade1		
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	手榴弾	Inventory Slot for Grenade2		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	バックパック	Inventory Slot for Backpack		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	リグ	Inventory Slot for Rig(Vest)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	ヘルメット	Inventory Slot for Helmet		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	784	頭	Inventory Slot for Hat/Cap		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	786	胴体	Inventory Slot for Jacket		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	788	脚	Inventory Slot for Pants		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	790	ベルト	Inventory Slot for Belt		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	792	足	Inventory Slot for Shoes		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	794	手	Inventory Slot for Gloves		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	796	マッチ	Inventory Slot for Matches(lighter)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	798	ライト	Inventory Slot for FlashLight		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	800	NVG	Inventory Slot for Night Vision Goggle (NVG)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	802	時計	Inventory Slot for Clock(Time)		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	804	地図	Inventory Slot for Map		
-Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	806	プレイヤー	"Inventory Slot for Carest/MP3 ""Player"""		
-Inventory	Vitals	Dictionary	0	substr									Vital	808	バイタル	allow conflict		
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	810	キャラクター			
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	812	ヘルス	Player's Status about Health Point (HP)		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100					
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	814	エネルギー	Player's Status about Energy		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100					
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	816	水分補給	Player's Status about Hydration (Water)		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100					
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	818	メンタル	Player's Status about Mental		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100					
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	体温	Player's Status about Body Temparature		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100					
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	822	猫	Cat's Status		
-Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100					
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	824	日	Number of days the player survived		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00					
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	826	シェルター	Number of Shelters that unlocked		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00					
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	828	タスク	Number of Tasks that cleared		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00					
-Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	830	クエスト	Number of Quests that cleard		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00					
-Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS			Number of Civil Defence Shelters (Not Updated yet)		
-Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00					
-Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?			Wating for Update		
-Inventory	Stats	Number	1	ignore									?			Wating for Update		
-Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	ツール			
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	イベント			
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	クラフト			
-Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	近接			
-Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	タスクに関するメモ			
+WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	max_length
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Header	Label	text	603466053	Health	748	ヘルス		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Health	Value	Label	text	516107320	100			Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	text	670620339	Energy	750	エネルギー		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Energy	Value	Label	text	1917083862	100			Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	text	95381615	Hydration	752	水分補給		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Hydration	Value	Label	text	1020179490	100			Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	text	1182073718	Mental	754	メンタル		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Mental	Value	Label	text	233375463	100			Value(Integer) about the Vital. Untranslatable.	
+HUD	Vitals	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	text	548621046	Body Temp	756	体温		
+HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature	Value	Label	text	783345645	100			Value(Integer) about the Vital. Untranslatable.	
+HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	酸素		
+HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:				
+HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			Value(Integer) about the FPS. Untranslatable.	
+HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	シェルター（エリア05）		
+Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	在庫		
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			Value(Float) about Capacity. Untranslatable.	
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			Value(Float) about Weight. Untranslatable.	
+Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000			Value(Float) about Value(Money). Untranslatable.	
+Inventory	#Not Checked	Name	0	literal	UI/Interface	tscn	UI/Interface	Container/Header	Label	Label	text	933468815	Container	764	コンテナ		
+Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Value	Label	text	1694562359	10.0			Value(Float) about Weight. Untranslatable.	
+Inventory	#Not Checked	Number	1	literal	UI/Interface	tscn	UI/Interface	Container/Header/Value	Value	Label	text	1546545276	1000			Value(Float) about Weight. Untranslatable.	
+Inventory	Equipment	Name	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Header	Label	Label	text	1884293598	Equipment	766	装備		
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Value	Label	text	946326047	10kg			Value(Float) about Capacity. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Value	Label	text	754357259	1000			Value(Float) about Value. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Value	Label	text	2074544507	100			Value(Float) about Insulation. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Value	Label	text	1926333421	N/A			Value(Float) about Dexterity. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Value	Label	text	1502959584	N/A			Value(Float) about Menace. Untranslatable.	
+Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Value	Label	text	1616081859	N/A			Value(Float) about CBRN. Untranslatable.	
+Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	小学校	Inventory Slot for Primary Weapon	
+Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	セカンダリ	Inventory Slot for Secondory Weapon	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	ナイフ	Inventory Slot for Knife	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	手榴弾	Inventory Slot for Grenade1	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	手榴弾	Inventory Slot for Grenade2	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	バックパック	Inventory Slot for Backpack	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	リグ	Inventory Slot for Rig(Vest)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	ヘルメット	Inventory Slot for Helmet	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Head	Label	text	679951874	Head	784	頭	Inventory Slot for Hat/Cap	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Torso	Label	text	1785640336	Torso	786	胴体	Inventory Slot for Jacket	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Legs	Label	text	1393203263	Legs	788	脚	Inventory Slot for Pants	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Belt	Label	text	479737044	Belt	790	ベルト	Inventory Slot for Belt	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Feet	Label	text	204086442	Feet	792	足	Inventory Slot for Shoes	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Hands	Label	text	198457121	Hands	794	手	Inventory Slot for Gloves	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Matches	Label	text	206050872	Matches	796	マッチ	Inventory Slot for Matches(lighter)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Light	Label	text	766698271	Light	798	ライト	Inventory Slot for FlashLight	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	NVG	Label	text	1987230797	NVG	800	NVG	Inventory Slot for Night Vision Goggle (NVG)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Time	Label	text	242410779	Time	802	時計	Inventory Slot for Clock(Time)	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Map	Label	text	1226245073	Map	804	地図	Inventory Slot for Map	
+Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Player	Label	text	387223612	Player	806	プレイヤー	"Inventory Slot for Carest/MP3 ""Player"""	
+Inventory	Vitals	Dictionary	0	substr									Vital	808	バイタル	allow conflict	
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Header	Label	Label	text	1865441360	Character	810	キャラクター		
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Header	Label	text	513186862	Health	812	ヘルス	Player's Status about Health Point (HP)	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Value	Label	text	1295606911	100				
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Header	Label	text	901144411	Energy	814	エネルギー	Player's Status about Energy	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Value	Label	text	1328234008	100				
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	text	732747301	Hydration	816	水分補給	Player's Status about Hydration (Water)	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100				
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	818	メンタル	Player's Status about Mental	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100				
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	体温	Player's Status about Body Temparature	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100				
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	822	猫	Cat's Status	
+Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100				
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Header	Label	text	1109525872	Day	824	日	Number of days the player survived	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Value	Label	text	1240729266	00				
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Header	Label	text	1851257454	Shelters	826	シェルター	Number of Shelters that unlocked	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Value	Label	text	2095489427	00				
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Header	Label	text	1185925254	Tasks	828	タスク	Number of Tasks that cleared	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Value	Label	text	524159291	00				
+Inventory	Stats	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Header	Label	text	388304922	Quests	830	クエスト	Number of Quests that cleard	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Value	Label	text	1544204612	00				
+Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Header	Label	text	805022352	CDS			Number of Civil Defence Shelters (Not Updated yet)	
+Inventory	Stats	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Value	Label	text	844069195	00				
+Inventory	Stats	String	1	literal	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Value	Label	text	555481365	?			Wating for Update	
+Inventory	Stats	Number	1	ignore									?			Wating for Update	
+Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	ツール		
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	イベント		
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	クラフト		
+Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	近接		
+Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	タスクに関するメモ		
 Inventory	Tools/Task Note	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty	842	タスクのメモは空です	"Task Note will only display this Strings when there's any task added in the Task Note.
-It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"		
+It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	タスクノートは利用できません（チュートリアル）	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
-Dynamically changed by Scripts/Interface.gd: notesHint.text"		
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	タスクのメモは空です			
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	タスクノートは利用できません（チュートリアル）			
-Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	世界地図			
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	マップが装備されていません			
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	地図は使用不可（ボストーク）			
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	マップが装備されていません			
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	地図は使用不可（ボストーク）			
+Dynamically changed by Scripts/Interface.gd: notesHint.text"	
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	タスクのメモは空です		
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	タスクノートは利用できません（チュートリアル）		
+Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	世界地図		
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	マップが装備されていません		
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	地図は使用不可（ボストーク）		
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	マップが装備されていません		
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	地図は使用不可（ボストーク）		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
 Zoom = [SCROLL]"	860	"パン = [左クリック]
-ズーム = [スクロール]"			
-Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	862	フォーカスマップ	Focuse the Map to Player's Location		
-Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	864	カセットプレーヤー			
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	カセットプレーヤーは搭載されていません			
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	カセットプレーヤーは搭載されていません			
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	カセットプレーヤーのバッテリー残量 0%、プレーヤーを充電してください			
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	カセットプレーヤーにカセットが入っていません。カセットを入れてください。			
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	このカセットにはライセンス取得済みの楽曲が含まれています（コンテンツに関する注意）			
-Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	カセット名			
-Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%					
-Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪					
-Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	878	BGMの上書き [ON]	Casette will Overide the Ambient Music when it's ON		
+ズーム = [スクロール]"		
+Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	text	2118767671	Focus map	862	フォーカスマップ	Focuse the Map to Player's Location	
+Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	864	カセットプレーヤー		
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	カセットプレーヤーは搭載されていません		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	カセットプレーヤーは搭載されていません		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	カセットプレーヤーのバッテリー残量 0%、プレーヤーを充電してください		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	カセットプレーヤーにカセットが入っていません。カセットを入れてください。		
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	このカセットにはライセンス取得済みの楽曲が含まれています（コンテンツに関する注意）		
+Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	カセット名		
+Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%				
+Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Volume	Label	text	808262872	Volume  🕪				
+Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	text	592940633	Override Ambient Music [ON]	878	BGMの上書き [ON]	Casette will Overide the Ambient Music when it's ON	
 Inventory	Tools/Casette	Button	0	literal			UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button			Override Ambient Music [OFF]	880	BGMの上書き [OFF]	"Casette will Overide the Ambient Music when it's ON.
-Dynamically changed by Scripts/Audio.gd"		
-Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	882	BGMの上書き [ON]			
-Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	884	BGMの上書き [OFF]			
-Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	886	ノマド			
-Traders	Traders	Title	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	888	トレーダー			
-Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	890	供給			
-Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	892	タスク			
-Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	894	名前：			
+Dynamically changed by Scripts/Audio.gd"	
+Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		937	Override Ambient Music [ON]	882	BGMの上書き [ON]		
+Inventory	Tools/Casette	Button	0	substr	Scripts/Interface	gd			overrideButton.text	literal		942	Override Ambient Music [OFF]	884	BGMの上書き [OFF]		
+Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	text	1816980947	Nomads	886	ノマド		
+Traders	Traders	Title	0	literal	UI/Interface	tscn	UI/Interface	Trader/Header	Label	Label	text	1225535409	Trader	888	トレーダー		
+Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Supply	Button	text	668459232	Supply	890	供給		
+Traders	Traders	Button	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Buttons	Tasks	Button	text	1351545789	Tasks	892	タスク		
+Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Name	Label	text	924330186	Name:	894	名前：		
 Traders	Traders	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Name	Value	Label	text	191837597	Trader	896	トレーダー	"Dynamically Changed as Traders/{name}/{name}.tres file's name field
-by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"		
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	898	税金：			
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%					
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	900	業務内容：			
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10					
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	補給：			
-Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00					
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	904	取引			
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	906	請求額（税込）（€）			
-Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0					
-Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	908	オファー金額（€）			
-Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0					
-Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	910	リセット			
-Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	912	同意する			
-Traders	Supply	String	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	914	供給			
-Traders	Supply	Number	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000					
-Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	916	タスク			
-Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	家具カタログ			
-Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	カタログはキャラクターに紐付けられており、死亡するとカタログ内のアイテムも消滅します			
+by Scripts/Interface.gd (var tradername, func UpdateTraderInfo())"	
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tax	Label	text	1262374201	Tax:	898	税金：		
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%				
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	900	業務内容：		
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10				
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	補給：		
+Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00				
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	904	取引		
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	906	請求額（税込）（€）		
+Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Request	Value	Label	text	406005124	0				
+Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Offer	Label	text	1367762677	Offer Value (€)	908	オファー金額（€）		
+Traders	Deal	Number	1	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator/Offer	Value	Label	text	1347382898	0				
+Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Reset	Button	text	1993804430	Reset	910	リセット		
+Traders	Deal	Button	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Buttons	Accept	Button	text	1725440146	Accept	912	同意する		
+Traders	Supply	String	0	literal	UI/Interface	tscn	UI/Interface	Supply/Header	Label	Label	text	939810639	Supply	914	供給		
+Traders	Supply	Number	1	literal	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Value	Label	text	396765070	1000				
+Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label	Label	text	1020392665	Tasks	916	タスク		
+Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	家具カタログ		
+Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	カタログはキャラクターに紐付けられており、死亡するとカタログ内のアイテムも消滅します		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
-"	922	使用			
+"	922	使用		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
-"	924	装備			
+"	924	装備		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
-"	926	装備解除			
+"	926	装備解除		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
-"	928	アンロード			
+"	928	アンロード		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
-"	930	分割			
+"	930	分割		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
-"	932	取る			
+"	932	取る		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
-"	934	睡眠			
-Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	睡眠			
+"	934	睡眠		
+Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	睡眠		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
-"	938	転送			
+"	938	転送		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
-"	940	ドロップ			
+"	940	ドロップ		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
-"	942	場所			
+"	942	場所		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
-"	944	破壊する			
-Inventory	Item	Button	0	pattern									Remove {name}	946	Remove {name}			
+"	944	破壊する		
+Inventory	Item	Button	0	pattern									Remove {name}	946	Remove {name}		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
-"	948	[0] を削除			
+"	948	[0] を削除		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
-"	950	[1] を削除			
+"	950	[1] を削除		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
-"	952	[2] を削除			
+"	952	[2] を削除		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
-"	954	[3] を削除			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	コーヒーマスター			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	消耗品			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	伝説の			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	962	アイテムとは、ゲームの世界内に存在し、プレイヤーが回収できるオブジェクトのことです。			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	964	機材：			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	966	小学校			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	968	状態：			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	970	重量：			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	972	値：			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	974	口径：			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	976	ダメージ：			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	978	浸透：			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	レベル1			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 2	982	レベル2			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 3	984	レベル3			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 4	986	レベル4			
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 5	988	レベル5			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	text	1220649414	Protection:	990	保護：			
-Inventory	Item	String	0	pattern									Level {no}	992	Level {no}			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	レベル1			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 2	996	レベル2			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 3	998	レベル3			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 4	1000	レベル4			
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 5	1002	レベル5			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	容量：			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	1006	断熱材：			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	1008	健康：			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	1010	エネルギー：			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	1012	水分補給：			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	1014	精神面：			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	1016	体温：			
-Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10					
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	1018	ネストされた：			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine			PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	治療法：			
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	1022	対応製品：			
-Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG			PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	加熱が必要			
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	ワークベンチが必要です			
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	シェルターが必要			
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	1030	品目			
-Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%					
-Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1					
-Inventory	#Not Checked	String	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	1032	プロファイラー	Developer Only		
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	表示			
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	1036	レシピ名			
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00					
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	1038	入力：			
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	1040	出力：			
-Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	入力を開始			
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	入力を開始			
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input					
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input					
-Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input					
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	入力を停止			
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	入力をリセット			
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	クラフト			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	熱			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	特定の料理レシピに必要な、近くにあるクラフト素材。			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	近接要件			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	作業台			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	特定の建築系レシピで必要となる、近くにあるクラフト素材。			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	近接要件			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	テストベンチ	I can't find this. Maybe not updated in 1.0.0 version yet.		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	特定の電子機器関連のレシピで必要となる、近くにあるクラフト素材。	I can't find this. Maybe not updated in 1.0.0 version yet.		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	近接要件	I can't find this. Maybe not updated in 1.0.0 version yet.		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	シェルター			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	特定の家具のレシピに必要な、近くにあるクラフト素材。			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	近接要件			
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	トレーダー			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	義務が呼んでいる	PlaceHolder		
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	1080	メモに追加			
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	1082	削除			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	1084	難易度：			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	1086	簡単			
+"	954	[3] を削除		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	コーヒーマスター		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	消耗品		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	伝説の		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	962	アイテムとは、ゲームの世界内に存在し、プレイヤーが回収できるオブジェクトのことです。		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	text	1638564823	Equipment:	964	機材：		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	text	1943983734	Primary	966	小学校		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	text	1555815389	Condition:	968	状態：		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Condition	Value	Label	text	1988299962	100%				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	text	1952577429	Weight:	970	重量：		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Weight	Value	Label	text	1243915241	100kg				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	text	1199163264	Value:	972	値：		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Value	Value	Label	text	57981661	100€				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	text	109526197	Caliber:	974	口径：		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Caliber	Value	Label	text	332676963	9x19				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	976	ダメージ：		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	978	浸透：		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	レベル1		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 2	982	レベル2		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 3	984	レベル3		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 4	986	レベル4		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 5	988	レベル5		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	text	1220649414	Protection:	990	保護：		
+Inventory	Item	String	0	pattern									Level {no}	992	Level {no}		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	レベル1		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 2	996	レベル2		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 3	998	レベル3		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 4	1000	レベル4		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 5	1002	レベル5		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	容量：		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	1006	断熱材：		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Insulation	Value	Label	text	1827825266	+10				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	text	636476059	Health:	1008	健康：		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Health	Value	Label	text	1434473017	+10				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	text	2130075686	Energy:	1010	エネルギー：		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Energy	Value	Label	text	501057241	+10				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	text	346091926	Hydration:	1012	水分補給：		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Hydration	Value	Label	text	721142587	+10				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	text	1325427063	Mental:	1014	精神面：		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Mental	Value	Label	text	1516623848	+10				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	text	1365488273	Body Temp:	1016	体温：		
+Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10				
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	1018	ネストされた：		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine			PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	治療法：		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	1022	対応製品：		
+Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG			PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	加熱が必要		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	ワークベンチが必要です		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	シェルターが必要		
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	1030	品目		
+Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%				
+Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1				
+Inventory	#Not Checked	String	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	1032	プロファイラー	Developer Only	
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	表示		
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	1036	レシピ名		
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00				
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	1038	入力：		
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	1040	出力：		
+Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	入力を開始		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	入力を開始		
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input				
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input				
+Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input				
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	入力を停止		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	入力をリセット		
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	クラフト		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	熱		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	特定の料理レシピに必要な、近くにあるクラフト素材。		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	近接要件		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	作業台		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	特定の建築系レシピで必要となる、近くにあるクラフト素材。		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	近接要件		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	テストベンチ	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	特定の電子機器関連のレシピで必要となる、近くにあるクラフト素材。	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	近接要件	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	シェルター		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	特定の家具のレシピに必要な、近くにあるクラフト素材。		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	近接要件		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	トレーダー		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	義務が呼んでいる	PlaceHolder	
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	1080	メモに追加		
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	1082	削除		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Difficulty	Label	text	1059177519	Difficulty:	1084	難易度：		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	text	299882460	Easy	1086	簡単		
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Description	Label	text	1563024386	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
 
 You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	1088	"先週、近所の廃校になった建物にいる医者のところへ行ったんだ。あいつは俺に「悪い癖」を全部やめるべきだなんて言うけど、あのクソジジイ、自分でもタバコを吸ってるくせに。ふん、知ったことか！
 
-君はたぶん、ピンチの時にミントの錠剤を舐めるだけの、いわゆる現代のヒッピーの一人なんだろうけど、もしこれを見つけたら、パックを1、2箱とマッチも持ってきてくれ。"			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	1090	配信：			
-Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	受信：			
-Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).		
+君はたぶん、ピンチの時にミントの錠剤を舐めるだけの、いわゆる現代のヒッピーの一人なんだろうけど、もしこれを見つけたら、パックを1、2箱とマッチも持ってきてくれ。"		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Input	Label	text	420211971	Deliver:	1090	配信：		
+Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Input	Items	Label	text	1782396431	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).	
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	受信：		
+Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
 → Your furniture is located in Furniture Catalog [Decor Mode]"	1094	"→ このタスクを完了すると、シェルター用家具が手に入ります
-→ 家具は「家具カタログ」[装飾モード] にあります"			
-Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	配送を開始する			
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	配送を開始する			
-Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery					
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	配達停止			
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	配達停止			
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	納品済み			
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	納品済み			
-Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	完了			
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶					
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen					
-Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30					
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	1110	環境収容力			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	全機器の容量値（kg）。			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	1114	ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	1116	在庫重量			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	全在庫品目の重量（kg）。			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	1120	ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	1122	在庫評価額			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	全在庫品目の価格（ユーロ）			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	1126	ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	1128	コンテナ重量			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	すべてのコンテナ内物品の重量（kg）。			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	1132	コンテナの状態			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	1134	コンテナの値			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	すべてのコンテナ項目の価格（ユーロ）			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	1138	コンテナの状態			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	環境収容力			
+→ 家具は「家具カタログ」[装飾モード] にあります"		
+Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	配送を開始する		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	配送を開始する		
+Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery				
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	配達停止		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	配達停止		
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	納品済み		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	納品済み		
+Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	完了		
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶				
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen				
+Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30				
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	1110	環境収容力		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	全機器の容量値（kg）。		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	1114	ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	1116	在庫重量		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	全在庫品目の重量（kg）。		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	1120	ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	1122	在庫評価額		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	全在庫品目の価格（ユーロ）		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	1126	ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	1128	コンテナ重量		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	すべてのコンテナ内物品の重量（kg）。		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	1132	コンテナの状態		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	1134	コンテナの値		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	すべてのコンテナ項目の価格（ユーロ）		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	1138	コンテナの状態		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	環境収容力		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		info	825286726	"A weight capacity value (kg) of how much inventory weight you can carry.
 
 Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
@@ -299,12 +299,12 @@ Carry Capacity by default is 10kg"	1142	"持ち運び可能な荷物の重量上
 
 バックパック、リグ、または「容量」ステータスがプラスの装備品を装備すると、持ち運び可能重量が増加します。
 
-デフォルトの持ち運び可能重量は10kgです。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	装備ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	設備の価値			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	すべての機器の価格（ユーロ）			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	装備ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	断熱			
+デフォルトの持ち運び可能重量は10kgです。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	装備ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	設備の価値		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	すべての機器の価格（ユーロ）		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	装備ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	断熱		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		info	1800952039	"A clothing-based thermal protection value against cold.
 
 Insulation is linked to Body Temp vital, where Insulation reduces Body Temp decrease speed in Winter.
@@ -323,9 +323,9 @@ Insulation examples:
 防寒効果の例：
 [100] = 体温の低下が完全に停止
 [50] = 体温の低下が50%遅くなる
-[0] = 体温がデフォルトの速度で低下する"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	装備ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	1158	器用さ			
+[0] = 体温がデフォルトの速度で低下する"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	装備ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	1158	器用さ		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		info	550854834	"An inertia-based value of how quickly you can move and do certain actions.
 
 Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
@@ -334,9 +334,9 @@ Dexterity decreases when you equip heavy or unergonomic items with a negative de
 
 器用さは、移動速度や、照準やリロードといった武器の操作能力に関連しています。
 
-器用さのステータスがマイナスとなる、重たいアイテムや持ちにくいアイテムを装備すると、器用さは低下します。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	装備ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	脅威			
+器用さのステータスがマイナスとなる、重たいアイテムや持ちにくいアイテムを装備すると、器用さは低下します。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	装備ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	脅威		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		info	1925451931	"An intimidation value of how threatening AI sees your character and equipment.
 
 When you have a high Menace value, AI is less likely to use aggressive or attack-based behaviors against you.
@@ -349,10 +349,10 @@ Menace only affects low-tier AI (Bandits)."	1166	"AIがあなたのキャラク�
 
 威嚇値は、威嚇ステータスがプラスになる特殊な防具などのアイテムを装備すると上昇します。
 
-威嚇値の影響を受けるのは、低レベルのAI（山賊）のみです。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	装備ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	CBRN			
-Inventory	Stats	String	0	substr									CBRN	1172	CBRN			
+威嚇値の影響を受けるのは、低レベルのAI（山賊）のみです。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	装備ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	CBRN		
+Inventory	Stats	String	0	substr									CBRN	1172	CBRN		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		info	215856199	"A protection value against chemical, biological, radiological and nuclear threats.
 
 CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
@@ -361,9 +361,9 @@ CBRN increases when you equip items such as special clothing or protective masks
 
 CBRNは「体力」と関連しており、危険な地域や物質にさらされた際、CBRNが高いほど体力の減少速度が緩やかになります。
 
-CBRNステータスを持つ特殊な防護服や防護マスクなどの装備を身につけると、CBRN値が上昇します。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	装備ステータス			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	1178	健康			
+CBRNステータスを持つ特殊な防護服や防護マスクなどの装備を身につけると、CBRN値が上昇します。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	装備ステータス		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	1178	健康		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		info	2025955860	"Your main vital for staying alive.
 
 Health decreases with damages and active medical conditions.
@@ -376,9 +376,9 @@ Health [0] -> Character dies"	1180	"生存するために最も重要なステ�
 
 包帯や救急キットなどの特定の医療アイテムを使用すると、体力は回復します。
 
-体力 [0] → キャラクターが死亡します"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	1182	不可欠			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	1184	エネルギー			
+体力 [0] → キャラクターが死亡します"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	1182	不可欠		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	1184	エネルギー		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		info	256184	"Your hunger and energy level.
 
 Energy decreases over time and using map transitions with Energy Cost.
@@ -391,9 +391,9 @@ Energy [0] -> Starvation (Condition)"	1186	"空腹度とエネルギー量。
 
 エネルギーは、食料などの特定の消費アイテムを使用することで増加します。
 
-エネルギー [0] → 飢餓（状態異常）"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	1188	不可欠			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	1190	水分補給			
+エネルギー [0] → 飢餓（状態異常）"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	1188	不可欠		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	1190	水分補給		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		info	1778216863	"Your thirst and hydration level.
 
 Hydration decreases over time and using map transitions with Hydration Cost. 
@@ -410,9 +410,9 @@ Hydration [0] -> Dehydration (Condition)"	1192	"喉の渇きと水分補給レ�
 
 飲み物などの特定の消費アイテムを使用すると、水分補給レベルが上昇します。
 
-水分補給レベル [0] → 脱水症状（状態異常）"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	不可欠			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	1196	メンタル			
+水分補給レベル [0] → 脱水症状（状態異常）"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	不可欠		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	1196	メンタル		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		info	1524485513	"Your happiness and sanity level.
 
 Mental decreases over time and with nasty consumables. Any active medical condition makes the decrease speed 2x.
@@ -425,9 +425,9 @@ Mental [0] -> Insanity (Condition)"	1198	"幸福度と精神力。
 
 精神力は、スナックや温かい食事などの癒やしとなるアイテム、あるいはアルコールやニコチン製品などの快楽品によって増加します。
 
-精神力 [0] → 狂気（状態異常）"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	不可欠			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	体温			
+精神力 [0] → 狂気（状態異常）"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	不可欠		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	体温		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
 
 Body Temp decreases over time in Winter. Decrease speed can be reduced by staying indoors or by equipping clothing items with a positive insulation stat.
@@ -440,9 +440,9 @@ Body Temp [0] -> Frostbite (Condition)"	1204	"体温と体温レベルについ�
 
 シェルター内や、焚き火などの熱源のそばにいると体温が上昇します。ヒートパックやスペースブランケットなどの特定の保温アイテムも、体温を上昇させます。
 
-体温 [0] → 凍傷（状態異常）"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	不可欠			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	猫			
+体温 [0] → 凍傷（状態異常）"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	不可欠		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	猫		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		info	2119249152	"Grandma's cat health level.
 
 Cat health activates if you decide to rescue the Cat and bring her to your shelter.
@@ -459,9 +459,9 @@ Cat [0] -> Cat dies"	1210	"おばあちゃんの猫の健康レベル。
 
 キャットフードやツナ缶などのアイテムで猫に餌を与えると、猫の健康状態が回復します。
 
-猫 [0] → 猫が死亡"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	不可欠			
-Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	肥満			
+猫 [0] → 猫が死亡"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	不可欠		
+Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	肥満		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		info	1472180750	"A condition where you are carrying too much weight and movement becomes unsustainable.
 
 Causes:
@@ -486,9 +486,9 @@ Cures:
 - ジャンプ高さ [-50%]
 
 対処法：
-- 所持重量 ＜ 運搬容量"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	1220	飢餓			
+- 所持重量 ＜ 運搬容量"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	1220	飢餓		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		info	1549426522	"A condition where you have a lack of calories and essential nutrients.
 
 Causes:
@@ -511,9 +511,9 @@ Cures:
 - スタミナ回復量 [-50%]
 
 治療法：
-- 消耗品"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	1226	脱水			
+- 消耗品"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	1226	脱水		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		info	986386791	"A condition where your body doesn't have enough fluids to function normally.
 
 Causes:
@@ -536,9 +536,9 @@ Cures:
 - すべてのスタミナ回復 [-50%]
 
 治療法：
-- 消耗品"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	1232	出血			
+- 消耗品"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	1232	出血		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		info	1768354194	"A condion where you have a minor bleeding from small cuts or scrapes.
 
 Causes: 
@@ -569,9 +569,9 @@ Cures:
 - 包帯
 - 止血帯
 - 救急キット
-- IFAK / AFAK"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	1238	骨折			
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	1238	骨折		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		info	139365606	"A condition where you have a partial or complete break in the bone.
 
 Causes: 
@@ -602,11 +602,11 @@ Cures:
 治療法：
 - 副木
 - 救急キット
-- IFAK / AFAK"			
-Inventory	Stats	String	0	substr									Explosion	1242	爆発			
-Inventory	Stats	String	0	substr									Fall	1244	秋			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	バーン			
+- IFAK / AFAK"		
+Inventory	Stats	String	0	substr									Explosion	1242	爆発		
+Inventory	Stats	String	0	substr									Fall	1244	秋		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	バーン		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		info	275854551	"A condition where you have a tissue damage from intense heat or high-voltage electric current.
 
 Causes:
@@ -633,9 +633,9 @@ Cures:
 - バーム
 - ローション
 - 救急キット
-- IFAK / AFAK"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	1254	凍傷			
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	1254	凍傷		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		info	24250462	"A condition where you have hypothermia or body part freezes from cold exposure.
 
 Causes: 
@@ -658,9 +658,9 @@ Cures:
 治療法：
 - 火源
 - 寝袋
-- 保温ブランケット"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	1260	狂気			
+- 保温ブランケット"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	1260	狂気		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		info	1233339607	"A condition where your sanity breaks and you start having dark thoughts.
 
 Causes: 
@@ -685,9 +685,9 @@ Cures:
 - 消耗品
 - 睡眠
 - 火源
-- 楽器"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	1266	中毒			
+- 楽器"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	1266	中毒		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		info	379297031	"A condition where toxic substance entered your digestion or lungs.
 
 Causes:
@@ -710,9 +710,9 @@ Cures:
 
 治療法：
 - 救急キット
-- AFAK"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	1272	破裂			
+- AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	1272	破裂		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		info	71304217	"A critical condition where you have a catastrofal bleeding or major internal wound.
 
 Causes: 
@@ -735,9 +735,9 @@ Cures:
 
 治療法：
 - 救急キット
-- IFAK / AFAK"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	1278	顔面直撃			
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	1278	顔面直撃		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		info	1309688651	"A critical condition where you have a major head related wound.
 
 Causes: 
@@ -758,10 +758,10 @@ Cures:
 
 治療法：
 - 救急キット
-- IFAK / AFAK"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	病状			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	1284	日			
-Inventory	Stats	String	0	substr									Day	1286	日			
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	病状		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	1284	日		
+Inventory	Stats	String	0	substr									Day	1286	日		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		info	1507600508	"Number of Days survived.
 
 New day begins at 00:00 midnight and certain amount of days will unlock new game events.
@@ -770,9 +770,9 @@ Upcoming events can be displayed by using the Events tool."	1288	"生存日数�
 
 新しい日は深夜00:00に始まり、一定の日数が経過すると新しいゲームイベントが解放されます。
 
-今後のイベントは、「イベント」ツールから確認できます。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	進行状況			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	1292	避難所			
+今後のイベントは、「イベント」ツールから確認できます。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	進行状況		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	1292	避難所		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		info	821447952	"Number of Shelters unlocked.
 
 Shelters are safe zones for saving your progression and loot. Game world has multiple shelters and these vary in terms of theme, size and customizability.
@@ -785,9 +785,9 @@ Additional Shelters can be unlocked with keys which you acquire by completing Ta
 
 新規ゲーム開始時には、「キャビン」と「テント」という2つのシェルターが最初から利用可能です。
 
-その他のシェルターは、各商人からのタスクを完了することで入手できる鍵を使ってアンロックできます。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	進行状況			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	タスク			
+その他のシェルターは、各商人からのタスクを完了することで入手できる鍵を使ってアンロックできます。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	進行状況		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	タスク		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		info	1384285326	"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
@@ -796,16 +796,16 @@ Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to un
 
 タスクとは、商人から受けられるアイテムを扱う仕事です。タスクは複数の商人の間で相互に関連している場合があり、また、クラフトに非入手可能なアイテムが必要になることもあります。
 
-タスクは、取引価格の引き下げ（商人税）や、新しいシェルターや特別ルームのロックを解除するための鍵の入手につながります。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	進行状況			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	クエスト			
+タスクは、取引価格の引き下げ（商人税）や、新しいシェルターや特別ルームのロックを解除するための鍵の入手につながります。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	進行状況		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	クエスト		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		info	1702334479	"Number of Quests completed.
 
 Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	1306	"完了したクエストの数。
 
-クエストとは、商人から受けられる物語に基づいた任務のことです。クエストは複数の商人同士で関連している場合があり、利用可能になる前に特定のイベントが発生する必要がある場合があります。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	進行状況			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	1310	民間防空壕			
+クエストとは、商人から受けられる物語に基づいた任務のことです。クエストは複数の商人同士で関連している場合があり、利用可能になる前に特定のイベントが発生する必要がある場合があります。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	進行状況		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	1310	民間防空壕		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		info	2004804582	"Number of CDS completed.
 
 Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed to offer protection against military threats.
@@ -818,9 +818,9 @@ You can complete a CDS by clearing out the hostile enemies and connecting the CD
 
 エリア05からの避難後、これらのCDSは占拠され、内部にあった生存用装備のほとんどが盗まれてしまいました。
 
-CDSをクリアするには、敵を全滅させ、CDSの緊急放送用ラジオの電源を再び入れる必要があります。"			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	進行状況			
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	きよしこの夜			
+CDSをクリアするには、敵を全滅させ、CDSの緊急放送用ラジオの電源を再び入れる必要があります。"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	進行状況		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	きよしこの夜		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		info	1661761957	"There will be a silent night when all fades away.
 
 When you look up, you see the North Star, your only light in the darkness.
@@ -837,11 +837,11 @@ Then your last light disappears, the sky turns red and the silence breaks."	1318
 
 安心感を覚える。それは、あなたが望んでいた結末のような、安らかなひとときだ。
 
-そして、最後の光が消え、空が赤く染まり、静寂が破られる。"			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	特別イベント			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	1322	供給価値			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	すべての供給品目の価格（ユーロ）			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	トレーダー統計			
+そして、最後の光が消え、空が赤く染まり、静寂が破られる。"		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	特別イベント		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	1322	供給価値		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	すべての供給品目の価格（ユーロ）		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	トレーダー統計		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		info	844527464	"A friendly NPC with trading supply, tasks and specialized services.
 
 Name: Commonly known name among locals.
@@ -852,9 +852,9 @@ Resupply: Time when supply resets."	1328	"物資の取引、クエスト、専�
 名前：地元の人々の間で広く知られている名前。
 税金：物資の価格に適用される倍率。
 クエスト：完了したクエストの数。
-再補給：物資が補充される時間。"			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	トレーダー情報			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	取引			
+再補給：物資が補充される時間。"		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	トレーダー情報		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	取引		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		info	1021981031	"A deal balance meter which compares selected item values.
 
 Requsted Value (€) is calculated from selected Supply items with Tax added.
@@ -867,5 +867,5 @@ Deal can be accepted when Deal Meter is within green area which means Offer Valu
 
 「提示額（€）」は、選択された在庫品目から算出されます。
 
-取引メーターが緑色の範囲内にある場合、取引は成立します。これは、提示額が要求額＋税額以上であることを意味します。"			
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	取引メーター			
+取引メーターが緑色の範囲内にある場合、取引は成立します。これは、提示額が要求額＋税額以上であることを意味します。"		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	取引メーター		
