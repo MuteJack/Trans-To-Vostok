@@ -1,0 +1,630 @@
+text	translation
+text	translation
+Compatibility	Kompatibilitás
+Selected	Kiválasztás
+Press key to bind...	Nyomja meg a gombot a hozzárendeléshez...
+Forward	Előre
+Backward	Hátra
+Left	Balra
+Right	Jobbra
+Crouch	Guggolás
+Jump	Ugrás
+Sprint	Futás
+Lean Left	Kitekintés balra 
+Lean Right	Kitekintés jobbra
+Draw Primary	Fő fegyver elővétele
+Draw Secondary	Másodlagosfegyver elővétele
+Draw Knife	Kés elővétele
+Draw Grenade 1	Gránát 1 elővétele
+Draw Grenade 2	Gránát 2 elővétele
+Raise Weapon	Fegyver felemelése
+Lower Weapon	Fegyver leengedése
+Aim	Célzás
+Canted Aim	Döntött célzás
+Fire	Tüzelés
+Reload	Újratöltés
+Ammo Check	Lőszer ellenőrzése
+Firemode	Tűzelési mód
+Inspect Weapon	Fegyverek áttekintése
+Prepare Insert	Előkészítés a behelyezéshez
+Insert Cartridge	A tár behelyezése
+Interact	Kölcsönhatás
+Place	Elengedés
+Decor Mode	Dekor mód
+Flashlight	Zseblámpa
+NVG	Éjjellátó
+Laser	Lézer
+Rail Movement	Sínmozgatás
+Secondary Optic	Kiegészítő célzó
+Interface	Felület
+Rotate Item	Tétel forgatása
+Fast Transfer	Gyors áthelyezés
+Fast Equip	Gyors felszerelés
+Fast Drop	Gyors eldobás
+Left Mouse Button	Bal egérgomb
+Right Mouse Button	Jobb egérgomb
+Middle Mouse Button	Középső egérgomb
+Mouse Wheel Up	Görgő fel
+Mouse Wheel Down	Görgő le
+Mouse Thumb Button 1	Egér hüvelykujj gomb 1
+Mouse Thumb Button 2	Egér hüvelykujj gomb 2
+UI Scaling	UI méretezés
+Loading...	Betöltés...
+All save files deleted	Minden mentési fájl törölve lett
+Character died	A karakter meghalt
+Intro	Bevezető
+Cabin	Faház
+Shelter	Menedék
+Tutorial	Kiképzés
+Menu	Menü
+Attic	Padlás
+Death	Halál
+Classroom	Osztályterem
+Tent	Sátor
+Bunker	Bunker
+Village	Falu
+Area 05	Körzet 05 
+Highway	Autópálya
+School	Iskola
+Outpost	Előőrs
+Border Zone	Határzóna
+Minefield	Aknamező
+Apartments	Apartmanok
+Terminal	Terminál
+Tutorial Exit	Kilépés a kiképzésről
+Template	Készlet (?)
+shaders	árnyas (?)
+Neutral	Semleges
+Overcast	Felhős
+Rain	Eső
+Storm	Vihar
+Generic	Általános
+Wood	Fa
+Metal	Fém
+Concrete	Beton
+Rock	Szikla
+Vostok	Vostok
+Trader	Kereskedő
+Generalist	Szakember
+Doctor	Doktor
+Gunsmith	Fegyverkovács
+Driver	Sofőr
+Grandma	Nagymama
+Shaman	Sámán
+Fisherman	Halász
+Scientist	Tudós
+Bandit	Bandita
+Guards	Őrök
+Military	Hadsereg
+Punisher	A Megtorló
+Inventory	Készlet
+Primary	Elsődleges
+Secondary	Másodlagos
+Vital	Vitalitás
+Task Notes empty	A feladatok jegyzete üres
+Task Notes not available (Tutorial)	A feladatok jegyzete nem használhatók (Kiképzés)
+Map not equipped	Térkép nincs felszerelve
+Map not usable (Vostok)	A térkép nem használható (Vostok)
+Casette Player not equipped	Nincs lejátszó felszerelve
+Casette Player power 0%, recharge player	A lejátszó lemerült, töltse fel.
+Casette Player empty, insert casette	Lejátszó üres, tegyen be egy kazettát.
+Override Ambient Music [ON]	Háttérzene felülírása [Be]
+Override Ambient Music [OFF]	Háttérzene felülírása [Ki]
+Sleep	Alvás
+Level 2	 2.szint
+Level 3	 3.szint
+Level 4	 4.szint
+Level 5	 5.szint
+Heat required	열원 필요
+Workbench required	작업대 필요
+Shelter required	은신처 필요
+Start Input	투입 시작
+Stop Input	투입 정지
+Reset Input	투입 초기화
+Start Delivery	배달 시작
+Stop Delivery	배달 종료
+Delivered	배달됨
+CBRN	화생방
+Overweight	중량 초과
+Explosion	폭발
+Fall	낙하
+Day	Nap
+Easy	Könnyű
+Intermediate	Átlagos
+Hard	Nehéz
+Trader Event	Kereskedői esemény
+Dynamic Event	Dinamikus esemény
+Special Event	Különleges esemény
+Dynamic	Dinamikus
+Special	Különleges
+Guaranteed	Garantált
+Common	Gyakori
+Rare	Ritka
+Legendary	Legendás
+Ammo	Lőszer
+Armor Plate	Páncéllemez
+Armor	Páncél
+Armor Plate {class}	Páncéllemez {class}
+Armor Plate (II)	Páncéllemez (II)
+Armor Plate (III+)	Páncéllemez (III+)
+Armor Plate (III)	Páncéllemez (III)
+Armor Plate (IIIA)	Páncéllemez (IIIA)
+Armor Plate (IV)	Páncéllemez (IV)
+Attachment	Kiegészítő
+Hybrid	Hibrid
+Kobra	Kobra
+Leopard	Leopard
+Micro	Micro
+Monster	Monster
+Thor	Thor
+Backpack	Hátizsák
+Jääkäri Backpack (Black)	Jääkäri hátizsák (fekete)
+Jääkäri BP.	                Jääkäri hátizsák
+Jääkäri Backpack (Brown)	Jääkäri hátizsák (barna)
+Jääkäri Backpack (Green)	Jääkäri hátizsák (zöld)
+Jääkäri Backpack (M05)	        Jääkäri hátizsák (M05)
+Nomad Backpack	Nomád hátizsák
+Nomad BP.	Nomád hátizsák
+Patrol Backpack	Őrjárat hátiszák
+Patrol BP.	Őrjárat hátizsák
+Duffel (Retro)	Duffel (retro)
+R. Duffel	R. Duffel
+Belt Pouch	Övtáska
+Kukkaro (Black)	Övtáska (fekete)
+Kukkaro	        Övtáska
+Kukkaro (Brown)	Övtáska (barna)
+Kukkaro (Green)	Övtáska (zöld)
+Kukkaro (M05)	Övtáska (M05)
+Literature	Irodalom
+Book (Children)	Könyv (gyerekeknek)
+Children	Gyerek
+Book (Cooking)	Könyv (Főzés)
+Cooking	        Főzés
+Book (Fishing)	Könyv (Horgászat)
+Book (Religion)	Könyv (Vallás)
+Religion	Vallás
+Clothing	Ruházat
+Flame Beanie	Flame sapka
+F. Beanie	F. Sapka
+Combat Boots	Bakancs
+C. Boots	Bakancs
+M62 Cap	        M62 sapka
+Tactical Fleece (Brown)	Taktikai polár (barna)
+T. Fleece	T. polár
+Tactical Fleece (Green)	Taktikai polár (zöld)
+Leather Gloves	Bőrkesztyű
+L. Gloves	B.kesztyű
+Work Gloves	Munkáskesztyű
+W. Gloves	M.kesztyű
+Mosquito Hat	Szúnyog kalap
+M. Hat	        Sz. kalap
+Sauna Hat	Szauna sapka
+S. Hat	        Sz. sapka
+Hoodie (Border Zone)	"Kapucnis pulóver (határ)" 
+Hoodie BZ.	"Kapucnis pulóver H)"
+Hoodie B.	"Kapucnis pulóver
+)"
+Hoodie (Gray)	Kapucnis pulóver (szürke)
+Hoodie	        Kapucnis pulóver
+M62 Jacket	M62 Kabát
+M62 J.	        M62 K.
+Santa Jacket	Mikuláskabát
+Santa J.	Mikulásk.
+Winter Jacket (Blue)	Téli kabát (kék)
+Winter Jacket	Téli kabát
+Winter Jacket (Red)	Téli kabát (piros)
+Winter J.	Téli k.
+Jeans (Black)	Farmer
+Jeans	"Farmer (Fekete)"
+Hiking Pants	Túra nadrág
+Hiking P.	Túra n.
+Windbreaker (Black)	Széldzseki (fekete)
+Windbreaker	Széldzseki
+Windbr.	Széldzseki
+Windbreaker (Green)	Széldzseki (zöld)
+Consumables	Fogyóeszközök
+Consumable	Fogyóeszköz
+Drink	Megivás
+Megevés     Megevés
+Eat Raw	Megevés (nyers)
+Eat (Raw)	Megevés (nyers)
+Chew	Rágózás
+Smoke	Elszívni
+Use	Használ
+Beer	Sör
+Empty Can	Üres konzervdoboz
+Can	Doboz
+Canned Meat	Húskonzerv
+Meat	Hús
+Canned Meatballs	Húsgombóckonzerv
+Meatballs	Húsgombóc
+Canned Pea Soup	Borsóleveskonzerv
+Pea Soup	"Boróleves"
+Canned Peaches	Őszibarackkonzerv
+Peaches	Őszibarack
+Canned Pear	Körtekonzerv
+Pear	Körte
+Canned Peas	Borsókonzerv
+Peas	Borsó
+Canned Pineapple Ananászkonzerv
+Pineapple	Ananász
+Canned Tomatoes	Paradicsomkonzerv
+Tomatoes	Paradicsom
+Canned Tuna	Tonhalkonzerv
+Tuna	Tonhal
+Cat Food	Macskakaja
+War Chocolate	Háborús csokoládé
+W. Choco	H.csoki
+Cigarettes	Cigaretta
+Cigs	Cigi
+Cigars	Szivarok
+Coffee	Kávé
+Coffee (Brewed)	Kávé (főzött)
+C. Brewed	F.kávé
+Fish Soup (Cooked)	Halászlé (főtt)
+F. Soup (Cooked)	Halászlé (főtt)
+F. Soup	Halászlé
+Meatballs (Cooked)	Húsgombóc (főtt)
+M. Balls (Cooked)	H.gombóc (főtt)
+M. Balls	Húsgombóc
+Pea Soup (Cooked)	Borsóleves (főtt)
+P. Soup (Cooked)	Borsóleves (főtt)
+P. Soup	Borsóleves
+Tomato Soup (Cooked)	Paradicsomleves (főtt)
+T. Soup (Cooked)	P.leves (főtt)
+T. Soup	P.leves
+Crackers	Keksz
+Energy Drink	Energiaital
+E. Drink	E.ital
+Energy Powder	Energiapor
+E. Powder	E.por
+Field Ration	Hadi élelmiszeradag
+F. Ration	Hadi élelem
+Juice	Üdítő
+Juice (Orange)	Üdítő (Narancs)
+Juice O.	N.üdítő 
+Juice (Pear)	Üdítő (Körte)
+Juice P.	K.üdítő
+Juice (Raspberry) Üdítő (Málna)
+Juice R.	M.üdítő
+Kilju	Kilju
+Kompot	Kompót
+Mustard	Mustár
+Peanuts	Mogyoró
+Potato	Burgonya
+Salty Liquorice	Édesgyökér cukorka
+Salty Liq.	Édesgyökér c.
+Snus	Bagó
+Soda (Lemon)	Szóda (citrom)
+Soda	Szóda
+Soda L.	Szóda c
+Sugar	Cukor
+Water Bottle	Víz
+Water	Víz
+Yeast	Élesztő
+Electronics	Elektronika
+Alarm Clock	Ébresztő óra
+A. Clock	É.óra
+Batteries	Elemek
+Battery	Akkumulátor
+Battery Cables	Akkumulátor kábel
+B. Cables	Akksi kábel
+Casette	Kazetta
+Casette (Electrofolk)	Casette (Electrofolk)
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	Junna - Ruslana
+Junna - Vandringsman	Junna - Vandringsman
+Casette (Nomad)	Kazetta (Nomád)
+Casette (OST)	Kazetta (OST)
+OST - Alive	OST - Alive
+OST - Daybreak	OST - Daybreak
+OST - Far	OST - Far
+OST - Lost	OST - Lost
+OST - Rain	OST - Rain
+OST - Road	OST - Road
+OST - Trailer	OST - Trailer
+OST - Winds	OST - Winds
+Casette (Radio Hits)	Kazetta (Radio Hits)
+Casette (Symphony)	Kazetta (Szimfónia)
+Vostok Symphony	Vostok szimfónia
+Casette Player	Kazetta lejátszó
+C. Player	K.lejátszó
+Coffeemaster	Kávémester
+C. Master	K.mester
+Cooking Station	Főzőpult
+C. Station	Főzőpult
+Hotplate	Rezsó
+Inverter	Inverter
+Narva	Narva
+Polaris	Polaris
+Fish	Hal
+Fishing	Horgászat
+Bream	Kövicsuka
+Fishing Rod	Horgászbot
+F. Rod	H.bot
+Perch	Sügér
+Pike	Csuka
+Roach	Csótány
+Grenade	Gránát
+Helmet	Sisak
+Police Helmet (IIIA)	Rendőr sisak (IIIA)
+Police Helmet	Rendőr sisak
+P. Helmet	R. sisak
+Instrument	Hangszer
+Guitar	Gitár
+Harmonica	Harmónika
+Harmo.	Harmó,
+Key	Kulcs
+Attic Key	Padlás kulcsa
+Attic K.	Padlás k.
+Bunker Key	Bunker kulcsa
+Bunker K.	Bunker k.
+Cellar Key	Pince kulcsa
+Cellar K.	Pince k.
+Classroom Key	Osztályterem kulcsa
+Class. K.	O.terem k.
+Gymnasium Key	Gimnázium kulcsa
+Gym. K.	Gimn.k
+Tunnel Key	Alagút kulcsa
+Tunnel K.	Alagút k.
+Knife	Kés
+Jaeger 140	Jaeger 140
+Jaeger	Jaeger
+Skrama 200	Skrama 200
+Skrama	Skrama
+Skrama 240	Skrama 240
+Lore	Történet
+Cat	Macska
+Oil Sample	Olajminta
+Oil S.	Olajm.
+Patient Report	Beteg karton
+P. Report	Beteg k.
+Heal	Gyógyítás
+Spray	Spray
+Medical	Spray
+Antibiotics	Antibiotikum
+Antibio.	Antibio.
+Antiseptic	Fertőtlenítő
+A. Septic	Fertőtl.
+Balm	Balzsam
+Bandage	Kötszer
+Bandage (Improvised)	Kötszer (rögtönzött)
+Cold Medicine	M.fázás ellen
+C. Med.	Mf. ellen
+Deodorant	Dezodor
+Deodora.	Dezodor
+Gum	Rágó
+Lotion	Testápoló
+Medkit	Elsősegélydoboz
+Melatonin	Melatonin
+Melaton.	Melaton.
+Painkill.	Fáj.csillapító
+Saline	Sóoldat
+Splint	Rögzítősin
+Splint (Improvised)	Rögzítősin (rögtönzött)
+Thermal Blanket	Hőtakaró
+Thermal	Hő
+Tissues	Papírzsebkendő
+Sneeze	Orrfújás
+Tourniquet	Érszorító
+Tourni.	Érszor.
+Tourniquet (Improvised)	Érszorító (rögtönzött)
+Wipes	Törlőkendő
+Wipe	Törlés
+Misc	Egyéb
+ Misc	 Egyéb
+Blanket	Takaró
+Board Game	Táblajáték
+B. Game	T.játék
+Bucket	Vödör
+Coffee Filter	Kávészűrő
+C. Filter	Kávész.
+Duct Tape	Szigszalag
+D. Tape	Sz.szalag
+Happy Stove	Tűzhely
+H. Stove	Tűzhely
+Jerry Can	Kanna
+Jerry C.	Kanna
+Lumber	Deszka
+Map	Térkép
+Map (Tactical)	Térkép (taktikai)
+T. Map	T.térkép
+Matches	Gyufa
+Mat.	Gyufa
+Mattress	Matrac
+Mess Kit	Csajka
+Nails	Szegek
+Oil Filter	Olajszűrő
+O. Filter	O.szűrő
+Pillow	Párna
+Rags	Rongyok
+Sleeping_Bag	Hálózsák
+Sleeping Bag	Hálózsák
+S. Bag	Hálózsák
+Sticks	Botok
+Tackle Box	Horgászláda
+Tackle B.	Horgászláda
+Toilet Paper	WC-papír
+T. Paper	WC-p.
+Toolbox	Szerszámos
+Water Lock	Erjesztődugó
+W. Lock	Erj.dugó
+Weapon Repair Kit	Fegyver javítókészlet
+Repair Kit	Javítókészlet
+Rig	Mellény
+LVPC (Green)	LVPC (Zöld)
+LVPC (Winter)	LVPC (Téli)
+Fishing Vest	Horgászmellény
+F. Vest	Horgászmellény
+Weapon	Fegyver
+Mag.	Tár
+KA-12 Magazine	KA-12 tár
+KA-M Magazine	KA-M tár
+KAS-74U Magazine	KAS-74U tár
+C1911 Magazine	C1911 tár
+G7 Magazine	G7 tár
+KAR-21 Magazine (.223)	KAR-21 tár (.223)
+KAR-21 Magazine (.308)	KAR-21 tár (.308)
+KAR-21 Barrel (.308)	KAR-21 cső (.308)
+KAR-21 Barrel	KAR-21 cső
+Barrel	cső
+KP-31 Drum	KP-31 dobtár
+Drum	Dobtár
+STANAG Magazine	STANAG tár
+M78 Magazine	M78 tár
+Karov	Karov
+Karov Magazine	Karov tár
+Mosin	Mosin
+PM5 Magazine	PM5 tár
+MP7 Magazine	MP7 tár
+P3 Magazine	P3 tár
+RK Magazine	RK tár
+VSD Magazine	VSD tár
+SS Magazine	SS tár
+New Furniture Added [Catalog]	Új bútorok hozzáadva [katalógusba]
+Boss Killed	Főellenség legyőzve
+Cat Rescued	Megmentett macska
+Cat Vital Activated	Macsak életjelei aktíválva
+Cat Died	A macska elpusztult
+You have been spotted!	Észleltek!
+Player Returned	A játékos visszatért
+Airdrop	Légi segélyszállítmány
+Tutorial Crate	Oktatóanyag-csomag
+Electric Box	Villamos kapcsolódoboz
+Medical Cabinet	Gyógyszeres szekrény
+Office Cabinet	Irodai szekrény
+Cabinet	Szekrény
+Corpse	holttest
+Bandit Corpse	Bandita holttest
+Crate Military	Katonai láda
+Crate Special	Speciális láda
+Wooden Crate	Faláda
+Garbage	Szemeteszsákok
+Fireplace	Kandalló
+Freezer	Fagyasztó
+Fridge	Hűtőszekrény
+Fusebox	Biztosítékdoboz
+Locker	Szekrény
+Mailbox	Postaláda
+Nightstand	Éjjeliszekrény
+Boxes	Kartondoboz
+Stove	Tűzhely
+Furniture	Bútor
+Furnitures	Bútorok
+Bed (Civilian)	Ágy (polgári)
+Bed C.	Ágy p.
+Bed (Nomad)	Ágy (nomád)
+Bed N.	Ágy n.
+Cabinet (Medical) Szekrény (orvosi)
+Cabinet M.	Szekrény o.
+Cabinet (Office)	Szekrény (irodai)
+Cabinet. 0	Szekrény i.
+Cabinet (Wood)	Szekrény (fa)
+Cabinet W.	Szekrény f.
+Carpet (Persian)	Szőnyeg (perzsa)
+Carpet P.	Szőnyeg (perzsa)
+Carpet (Rag)	Szőnyeg (rongy)
+Carpet R.	Szőnyeg (rongy)
+Chair (Office)	Szék (iroda)
+Chair O.	Szék (iroda)
+Chair (School)	Szék (iskolai)
+Chair S.	Szék (iskolai)
+Sun Chair	Napozószék
+S. Chair	Napozószék
+Crate (Military)	Láda (katonai)
+Crate M.	Láda (katonai)
+Crate (Special)	Láda (speciális)
+Crate S.	Láda s.
+Cupboard	Szekrény
+C. Board	Szekr.
+Curtain (Long)	Függöny (hosszú)
+Curtain L.	Függöny h.
+Curtain (Mini)	Függöny (mini)
+Curtain M.	Függöny m.
+Dartboard	Darts-tábla
+D. Board	Darts-tábla
+N. Stand	Kisasztal
+Painting (Lake)	Festmény (Tó)
+Painting L.	Festmény (Tó)
+Pallet	Raklap
+Poster (Posture)	Poszter (Helyes testtartás)
+Poster P.	"Poster: Helyes 
+testtartás"
+Rack (Coat)	 Ruhaakasztó (kabát)
+Rack C.	 Ruhaakasztó (kabát)
+Rya (Maria)	 Ő (Maria)
+Rya M.	Ő M.
+Shelf (Metal)	Polc (fém)
+Shelf M.	Polc (fém)
+Shelf (Wall)	Polc (fali)
+Shelf W.	Polc (fali)
+Shelf (Wood)	Polc (fa)
+Sign (Border Zone)	Tábla (határ)
+Sign BZ.	Tábla (határ)
+Sofa (Leather)	Kanapé (bőr)
+Sofa L.	Kanapé (bőr)
+Stool (Military)	Szék (katonai)
+Stool M.	Szék (katonai)
+Stool (Padded)	Szék (párnázott)
+Stool P.	Szék (párnázott)
+Table (Cabin)	Asztal (kabin)
+Table C.	Asztal (kabin)
+Table (Canteen)	Asztal (étkező)
+Table (Kitchen)	Asztal (konyha)
+Table K.	Asztal (konyha)
+Table (Office)	Asztal (iroda)
+Table. O	Asztal (iroda)
+Target Stand	Célállvány
+Target S.	Célállvány
+Television	Televizió
+TV	TV
+Trolley (Short)	Kocsi (rövid)
+Trolley S.	Kocsi (rövid)
+Trolley (Tall)	Kocsi (magas)
+Trolley T.	Kocsi (magas)
+Weapon Display	Fegyverkiállító
+Weapon D.	Fegyverkiállító
+Unload	         Kitárazás
+Clear Chamber	Cső ürítése
+Unequip	Leszerelés
+Equip	Felszerelés
+Show	Mutatás
+Hide	Elrejtés
+Activated	Aktiválva
+Not active	Nincs aktiválva
+All maps & zones	Összes térkép és zóna
+Active	Aktív
+Repair	Javítás
+Craft	Készítés
+Added	Hozzáadva
+Remove	Eltávolítás
+Completed	Befejezve
+Add to Notes	Jegyzetekhez adás
+Frozen	Fagyasztva
+Permadeath Zone	Permadeath Zone (végleges halál)
+[Open]	[Nyitás]
+Door [Jammed]	Ajtó [beragadt]
+Door [Occupied]	Ajtó [Használatban]
+Door [Close]	Ajtó [Bezárás]
+Door [Open]	Ajtó [Nyitás]
+Sleep (Random sleep: 6-12h)	Alvás (véletlenszerű alvás: 6–12 óra)
+Turn Off	Kikapcsolás
+Turn On	Bekapcsolás
+Radio [Turn Off]	Rádió [Kikapcsolás]
+Radio [Turn On]	Rádió [Bekapcsolás]
+Television [Turn Off]	Televízió[Kikapcsolás]
+Television [Turn On]	Televízió [Bekapcsolás]
+Rescue Cat	Megmentett macska
+Cat is eating, do not disturb	A macska éppen eszik. Kérlek, ne zavard!
+Fuel Tank [89%]	Üzemanyagtartály [89%]
+Feed cat:	A macska etetése:
+Indoors	Belső tér
+Indoor	Belső tér
+Mine	Bánya
+Lure	csali
+(Military)	(Katonai)
