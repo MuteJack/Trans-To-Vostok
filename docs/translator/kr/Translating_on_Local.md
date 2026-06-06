@@ -1,7 +1,7 @@
 # 로컬 환경에서의 번역 (인게임 테스트 포함)
 
-> NOTE: 해당 문서는 개발자 기준으로 작성되었습니다. In-Game Testing을 동시에 수행하려는 목적이 아니라면
-> Crowdin 웹페이지에서 번역하는 것을 권장합니다. (docs/Translating_using_crowdin.md 참고)
+> NOTE: In-Game Testing을 동시에 수행하려는 목적이 아니라면
+> Crowdin 웹페이지에서 번역하는 것을 권장합니다. ([Translating_using_crowdin.md](Translating_using_crowdin.md) 참고)
 
 > **번역 데이터의 source of truth는 Crowdin입니다.**
 > 번역 수정에 대한 PR(Pull Request)는 일반적으로 받지 않습니다.
@@ -16,7 +16,7 @@
 
 ## 1. 사전 준비
 
-1. **[Setting_Environments.md](Setting_Environments.md)** 완료
+1. **[Setting_Environments.md](../../developer/kr/Setting_Environments.md)** 완료
    - Python 3.10+ / Git / Excel / Fork & Clone
    - `pip install -r tools/requirements.txt`
    - `secrets.json` 생성 + Crowdin Personal Token 입력 (DeepL 토큰은 선택)
@@ -66,7 +66,7 @@ git merge upstream/master     # 메인테이너의 최신 sync 반영
 python tools/rebuild_xlsx.py Korean
 ```
 로컬 환경에서의 번역 편집, 모드 빌드 파이프라인은 엑셀(.xlsx) 파일을 기준으로 하지만,
-Github에서의 번역 데이터베이스는 TSV 포맷으로 저장/관리됩니다. (Translations/`<locale>/<filename>/<sheetname>`)
+Github에서의 번역 데이터베이스는 TSV 포맷으로 저장/관리됩니다. (Translations/`<locale>/tsv/<category>/`)
 xlsx를 rebuild (tsv -> xlsx)하지 않으면, 번역이 적용되지 않으므로 반드시 수행되어야 합니다.
 xlsx포맷은 불특정 다수가 편집할 경우, 잠재적 보안 위험이 있으므로 별도로 제공되지 않습니다.
 
@@ -111,7 +111,7 @@ xlsx 파일을 편집 후, 아래 명령어를 실행해주세요. Crowdin에 �
 python tools/push_to_crowdin.py Korean
 ```
 
-게임에 표시되는 텍스트가 xlsx에 없으면 새 행을 추가할 수 있습니다. 자세한 방법은 [Translation_Methods.md](../../dev/kr/Translation_Methods.md)를 참조하세요.
+게임에 표시되는 텍스트가 xlsx에 없으면 새 행을 추가할 수 있습니다. 자세한 방법은 [Translation_Methods.md](../../developer/kr/Translation_Methods.md)를 참조하세요.
 
 Translation validation, exact matching 등에 의해 편집 방법이 조금 복잡할 수 있으므로,
 번역 대상 텍스트 누락에 대해서는 가급적 GitHub에 Issue를 등록해 주시는 것을 권장드립니다.
@@ -166,6 +166,6 @@ Translation validation, exact matching 등에 의해 편집 방법이 조금 복
 
 ## 8. 다음 단계
 
-- **Pull Request 흐름** (코드/도구 변경) → [Setting_Environments.md §7](Setting_Environments.md#7-일반-작업-흐름)
-- **새 언어 추가 / DeepL 시드** → [Add_new_language.md](../../dev/kr/Add_new_language.md)
-- **method 자세히** → [Translation_Methods.md](../../dev/kr/Translation_Methods.md)
+- **Pull Request 흐름** (코드/도구 변경) → [Setting_Environments.md §7](../../developer/kr/Setting_Environments.md#7-일반-작업-흐름)
+- **새 언어 추가 / DeepL 시드** → [Add_new_language.md](../../admin/kr/Add_new_language.md)
+- **method 자세히** → [Translation_Methods.md](../../developer/kr/Translation_Methods.md)

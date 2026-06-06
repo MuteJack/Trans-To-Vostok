@@ -186,7 +186,7 @@ python tools/build_mod_package.py Korean French       # 두 locale만
 > ### [Important!!] 번역 수정사항은 PR(Pull Request)로 받지 않습니다
 >
 > 모든 번역 기여는 **Crowdin 웹 UI** 또는 **Crowdin API**를 통해서만 받습니다. (QA, Git Conflict 방지 목적)
-> Translations/ 만 변경한 PR은 머지되지 않으니 [Crowdin 웹사이트를 통한 번역 가이드](Translating_using_crowdin.md) 또는 [로컬 저장소 활용 번역 가이드](Translating_on_Local.md)를 참조하세요.
+> Translations/ 만 변경한 PR은 머지되지 않으니 [Crowdin 웹사이트를 통한 번역 가이드](Translating_using_crowdin.md) 또는 [로컬 저장소 활용 번역 가이드](../../translator/kr/Translating_on_Local.md)를 참조하세요.
 >
 > 이 §7은 **코드/도구/빌드 시스템 변경**(예: `tools/`, `Trans To Vostok/*.gd`, 빌드 스크립트, 가이드 문서)에 한정된 PR 흐름입니다.
 
@@ -236,7 +236,7 @@ python tools/build_mod_package.py Korean French       # 두 locale만
 ## 8. 다음 단계
 
 - **번역만 하고 싶은 경우** → [Translating_using_crowdin.md](Translating_using_crowdin.md) (Crowdin 웹 UI)
-- **번역 작업 + 인게임 테스트** → [Translating_on_Local.md](Translating_on_Local.md) (`pull_from_crowdin` + 빌드 + 테스트)
+- **번역 작업 + 인게임 테스트** → [Translating_on_Local.md](../../translator/kr/Translating_on_Local.md) (`pull_from_crowdin` + 빌드 + 테스트)
 - **새 언어 추가** → [Add_new_language.md](../../dev/kr/Add_new_language.md)
 - **method 가이드 / 매칭 디버깅** → [Translation_Methods.md](../../dev/kr/Translation_Methods.md)
 - **Crowdin → 저장소 sync (메인테이너)** → [Pull_from_Crowdin.md](../../dev/kr/Pull_from_Crowdin.md)
