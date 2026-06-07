@@ -27,7 +27,7 @@ A beállításokat az [ESC] billentyű megnyomásával érheti el.
 A beállításokban módosíthatja a beviteli módot, a
 különféle rendszerváltókat és a teljesítménybeállításokat.
 
-?? = Teljesítménnyel kapcsolatos opciók"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	97428	178dd2be533d477e3d81e7b729e86ae16e87f8e0cd32e2643a019812c3335afc	428					
+?? = Teljesítménnyel kapcsolatos opciók"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	97428	178dd2be533d477e3d81e7b729e86ae16e87f8e0cd32e2643a019812c3335afc	428	MuteJack	Csaba Papp	Performance Icon: Hand-crafted (Reconstruction)		
 Tutorial	Billboard	2. Interface	replace	"2. Interface
 
 Interface is your main UI which contains elements
@@ -52,7 +52,7 @@ elemekről, ikonokról vagy adott értékekről,
 az eszköztippek segítségével ellenőrizheti azokat.
 
 Nyisd meg a felületet, és vidd az egérmutatót a
-karakter állapotértéke fölé az eszköztipp megjelenítéséhez."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430					
+karakter állapotértéke fölé az eszköztipp megjelenítéséhez."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430	MuteJack	Csaba Papp			
 Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -82,7 +82,7 @@ Amikor egy tárgy megjelenik a felületen, a [Jobb egérgomb]
 megnyomásával kiválaszthatja a tárgyhoz kapcsolódó műveleteket, 
 például a használatot, a megszerzést vagy a felszerelést.
 
-Nyisd ki a dobozt, és használd vagy szerezd meg a tárgyat."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432					
+Nyisd ki a dobozt, és használd vagy szerezd meg a tárgyat."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432	MuteJack	Csaba Papp			
 Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -110,7 +110,7 @@ A berendezéshelyeket a felületen lehet ellenőrizni.
 A felszerelés használatához egy kompatibilis
 tárgyat kell elhelyezni az egyes felszerelési helyekre.
 
-Nyisd ki a tartályt, és próbáld meg felszerelni a tárgyat."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434					
+Nyisd ki a tartályt, és próbáld meg felszerelni a tárgyat."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434	MuteJack	Csaba Papp			
 Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -139,7 +139,7 @@ negatív hatással bír, ezért orvosi eszközt kell használnod a kezelésére.
 
 Az eszköztipp segítségével ellenőrizheti az okot, a tüneteket és a kezelést.
 
-Nyisd ki a dobozt, és próbáld meg használni az orvosi eszközt."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	114610	29640b5b62915aa772eb0feb9865b1632266528fed3282921c25a3a67f523fbf	436					
+Nyisd ki a dobozt, és próbáld meg használni az orvosi eszközt."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	114610	29640b5b62915aa772eb0feb9865b1632266528fed3282921c25a3a67f523fbf	436	MuteJack	Csaba Papp			
 Tutorial	Billboard	6. Weapons	replace	"6. Weapons
 
 Weapons are equipment and they use 
@@ -175,7 +175,7 @@ Nyisd ki a dobozt, szereld fel a fegyvert, majd vedd fel.
 
 [F] = Tüzelési mód váltása (egylövéses automata)
 [X] = Fegyvervizsga
-[X] + [Görgetés] = Fegyverforgatás"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	120113	501bb46461dbe98d0da71d9cb65f92a724e9720388ce255d36a4a1e84b8bb2ed	438					
+[X] + [Görgetés] = Fegyverforgatás"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	120113	501bb46461dbe98d0da71d9cb65f92a724e9720388ce255d36a4a1e84b8bb2ed	438	MuteJack	Csaba Papp			
 Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -212,7 +212,7 @@ a tárak kompatibilitását a tooltip segítségével, majd töltsd meg
 és szereld fel → tüzelj.
 
 [Bal klikk] = Tüzelés,         [V] = Lőszer hiányának ellenőrzése, 
-[CTRL] → [LMB] = Lőszer betöltése (zárás és sörétes puskával)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440					
+[CTRL] → [LMB] = Lőszer betöltése (zárás és sörétes puskával)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440	MuteJack	Csaba Papp			
 Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
@@ -244,7 +244,7 @@ Nyisd ki a dobozt, vedd ki a tartozékokat, és szabd testre a fegyveredet.
 [CTRL] + [Görgés] = Scope sin pozíciójának módosítása
 [Görgés] = LPVO nagyítási szint módosítása
 [ALT] = Másodlagos látómező engedélyezése/letiltása
-[T] = Lézer aktiválása/deaktiválása"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	111354	ab59b8fe1bebc497a8108a0558837c9de63e625fb2613d45e62ee987a7d9f01f	442					
+[T] = Lézer aktiválása/deaktiválása"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	111354	ab59b8fe1bebc497a8108a0558837c9de63e625fb2613d45e62ee987a7d9f01f	442	MuteJack	Csaba Papp			
 Tutorial	Billboard	9. Knives & Grenades	replace	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -272,7 +272,7 @@ melyeket a [4] és [5] billentyűkkel lehet kézben tartani.
 A [Bal kattintás] gombbal magasra,
 a [Jobb kattintás] gombbal pedig alacsonyra dobhatsz.
 
-Nyomd meg kétszer a gránát dobásához, majd az ellenkező gombot a dobási készenlét visszaállításához."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
+Nyomd meg kétszer a gránát dobásához, majd az ellenkező gombot a dobási készenlét visszaállításához."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444	MuteJack	Csaba Papp			
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -308,7 +308,7 @@ a mellényhez, akárcsak a fegyver tartozékait.
 |NIJ IIA = 2. szint | A védelem csökken találat esetén, a páncél megszakad, amikor eléri a 0%-ot.|
 |NIJ III = 3. szint | Ha az átütőerő nagyobb, a páncél azonnal megsemmisül.|
 |NIJ III+ = 4. szint | A sisak megvédi a halálos sérüléseket (fejlövéseket).|
-|NIJ IV = 5. szint | A golyóálló lemezek megakadályozzák a halálos sérüléseket (szakadások).|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	142342	34e1fed9502c316d573a33416794aa3b9ff8b50fa1ef551fa9d3b5aa70cd7e4b	446					
+|NIJ IV = 5. szint | A golyóálló lemezek megakadályozzák a halálos sérüléseket (szakadások).|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	142342	34e1fed9502c316d573a33416794aa3b9ff8b50fa1ef551fa9d3b5aa70cd7e4b	446	MuteJack	Csaba Papp			
 Tutorial	Billboard	11. Traders	replace	"11. Traders
 
 Traders are in-game characters that allow 
@@ -336,7 +336,7 @@ Ha teljesíted a küldetést, csökken a kereskedői adó, és
 jutalmat, valamint egy kulcsot szerezhetsz egy új rejtekhely megnyitásához.
 
 Lépj kapcsolatba a ""Gazdaságbolt"" kereskedővel [kattints
-a kerékre], hogy tárgyakat cserélj és küldetéseket teljesíts."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448					
+a kerékre], hogy tárgyakat cserélj és küldetéseket teljesíts."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448	MuteJack	Csaba Papp			
 Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
@@ -365,7 +365,7 @@ frakciófőnökök ritkán jelennek meg.
 Legfeljebb 10 MI jelenik meg térképenként, és a
 béke visszatér, amikor az összes MI megsemmisül.
 
-A mesterséges intelligencia újraéled, amikor pályát váltasz."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
+A mesterséges intelligencia újraéled, amikor pályát váltasz."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450	MuteJack	Csaba Papp			
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -396,7 +396,7 @@ amelyek a karakter vitalitásától és a világ szimulációjától függenek.
 A térképen való mozgást lehetővé tevő útvonalakat
 átmeneti zászlók jelzik.
 
-* Átmeneti zászló: Egy zászló alakú objektum, amely a térkép külső szélén található."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452					
+* Átmeneti zászló: Egy zászló alakú objektum, amely a térkép külső szélén található."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452	MuteJack	Csaba Papp			
 Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -429,7 +429,7 @@ Az aktuális időjárással kapcsolatos eszközökkel ellenőrizheti.
 Kérjük, válasszon ki és szereljen fel egy idővel kapcsolatos
 eszközt (például ébresztőórát).
 
-* A szimulációs idő a bemutató során rögzített."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	112331	8dc5a8b2700b0b9138de2fda7e32a39d4d0d39d918c0af1c9e8ec55eed5bcff8	454					
+* A szimulációs idő a bemutató során rögzített."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	112331	8dc5a8b2700b0b9138de2fda7e32a39d4d0d39d918c0af1c9e8ec55eed5bcff8	454	MuteJack	Csaba Papp			
 Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -455,7 +455,7 @@ Minden rejtekhely díszíthető tárgyak elhelyezésével és díszítési módd
 A [G] billentyű megnyomásával helyezhet el tárgyakat vagy
 bútorokat, a dekorációs mód aktiválásához pedig az [F] billentyű megnyomásával mozgathatja a bútorokat.
 
-A bútorkatalógust a [TAB] billentyűvel nyithatja meg Dekor módban."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
+A bútorkatalógust a [TAB] billentyűvel nyithatja meg Dekor módban."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456	MuteJack	Csaba Papp			
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -484,4 +484,4 @@ Figyelmeztető üzenet jelenik meg
 a Vostok zónába való átlépés előtt.
 
 Amikor belépsz a Vostok zónába, egy piros Permades
-koponya ikon jelenik meg a képernyő felső sarkában."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	133093	89aa042f03d887306ba4bbef3e80754a70d63456d1937ed6dd6f094ead87092f	458					
+koponya ikon jelenik meg a képernyő felső sarkában."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	133093	89aa042f03d887306ba4bbef3e80754a70d63456d1937ed6dd6f094ead87092f	458	MuteJack	Csaba Papp	Permadeath Skull Icon: https://pixabay.com/ko/photos/%eb%91%90%ea%b0%9c%ea%b3%a8-%ea%b3%b5%ed%8f%ac-%ed%95%b4%ea%b3%a8-8964071/		
