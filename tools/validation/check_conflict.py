@@ -33,15 +33,14 @@ Usage:
 """
 import argparse
 import csv
-
-import sys as _sys_helper_log  # noqa: E402
-_sys_helper_log.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from helper.helper_log import setup_logpath  # noqa: E402
 import json
 import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import NamedTuple
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from helper.helper_log import setup_logpath  # noqa: E402
 
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
@@ -244,8 +243,8 @@ def main(argv: list[str]) -> int:
     print()
     print(f"=== Grand Total ===")
     print(f"  Info: {total_conflicts} conflict group(s)")
-    # Info-only: never block builds
-    return 0
+    # Info-only: exit=1 signals findings exist; orchestrator maps Info → exit=0 overall
+    return 1 if total_conflicts > 0 else 0
 
 
 if __name__ == "__main__":
