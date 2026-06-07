@@ -44,6 +44,7 @@ from crowdin.api_client import make_client
 from helper.helper_locale_config import load_crowdin_locale_map
 
 from crowdin_api.api_resources.reports.enums import Format
+from crowdin_api.api_resources.users.enums import ProjectRole
 from crowdin_api.sorting import Sorting, SortingOrder, SortingRule
 
 MOD_ROOT = REPO / "Trans To Vostok"
@@ -103,7 +104,25 @@ def fetch_top_members(client, project_id: int, language_id: str,
     return out
 
 
-def classify(member: dict, lang_id: str, activity: dict | None) -> str | None:
+def fetch_lc_ids(client, project_id: int) -> set[int]:
+    """Return user IDs of all Language Coordinators in this project.
+
+    list_project_members returns 'proofreader' in the permissions dict for LCs,
+    so we use the role filter to get the true LC set and resolve the ambiguity
+    in classify().
+    """
+    resp = client.users.list_project_members(
+        projectId=project_id, role=ProjectRole.LANGUAGE_COORDINATOR, limit=500
+    )
+    return {
+        m["data"]["id"]
+        for m in resp.get("data", [])
+        if isinstance(m["data"].get("id"), int)
+    }
+
+
+def classify(member: dict, lang_id: str, activity: dict | None,
+             lc_ids: frozenset = frozenset()) -> str | None:
     """Return 'Leader' / 'Translator' / 'Contributor' or None (skip)."""
     role = (member.get("role") or "").lower()
     translated = (activity or {}).get("translated", 0)
@@ -120,6 +139,12 @@ def classify(member: dict, lang_id: str, activity: dict | None) -> str | None:
     if lang_role in LEADER_ROLES:
         return "Leader"
     if lang_role == "proofreader":
+        # Crowdin API returns 'proofreader' for both Proofreader and Language
+        # Coordinator roles in the permissions dict. Use the pre-fetched LC set
+        # to distinguish them.
+        uid = member.get("id")
+        if isinstance(uid, int) and uid in lc_ids:
+            return "Leader"
         return "Translator"
     if lang_role in ("translator", "member"):
         return "Contributor" if translated > 0 else None
@@ -166,7 +191,8 @@ def fetch_last_activity(client, project_id: int, language_id: str) -> datetime |
     return latest
 
 
-def update_credits_for_locale(client, project_id: int, locale: str, lang_id: str) -> dict:
+def update_credits_for_locale(client, project_id: int, locale: str, lang_id: str,
+                              lc_ids: frozenset = frozenset()) -> dict:
     """Fetch + classify members, write credits.json. Returns the new credits dict."""
     members_resp = client.users.list_project_members(
         projectId=project_id, languageId=lang_id, limit=500
@@ -181,7 +207,7 @@ def update_credits_for_locale(client, project_id: int, locale: str, lang_id: str
     seen_uids: set[int] = set()
     for m in members:
         uid = m.get("id")
-        cls = classify(m, lang_id, top.get(uid) if isinstance(uid, int) else None)
+        cls = classify(m, lang_id, top.get(uid) if isinstance(uid, int) else None, lc_ids)
         if not cls:
             continue
         name = display_name(m)
@@ -262,12 +288,15 @@ def main(argv: list[str]) -> int:
 
     client, project_id, _ = make_client()
     print(f"Project {project_id}  Locales: {', '.join(locales)}")
+
+    lc_ids = frozenset(fetch_lc_ids(client, project_id))
+    print(f"Language Coordinators: {len(lc_ids)} user(s)")
     print()
 
     for loc, lang_id in locales.items():
         print(f"=== {loc} ({lang_id}) ===")
         try:
-            new = update_credits_for_locale(client, project_id, loc, lang_id)
+            new = update_credits_for_locale(client, project_id, loc, lang_id, lc_ids)
         except Exception as e:
             print(f"  [ERR] {e}", file=sys.stderr)
             return 1
