@@ -135,7 +135,7 @@ Assets	Furnitures/Dartboard_F		0	substr	Assets/Dartboard/Dartboard_F	tres					na
 Assets	Furnitures/Dartboard_F		0	ignore	Assets/Dartboard/Dartboard_F	tres					inventory		Dartboard				
 Assets	Furnitures/Dartboard_F		0	ignore	Assets/Dartboard/Dartboard_F	tres					rotated		Dartboard				
 Assets	Furnitures/Dartboard_F		0	ignore	Assets/Dartboard/Dartboard_F	tres					equipment		Dartboard				
-Assets	Furnitures/Dartboard_F		0	substr	Assets/Dartboard/Dartboard_F	tres					display		D. Board	570	D. 理事会		
+Assets	Furnitures/Dartboard_F		0	substr	Assets/Dartboard/Dartboard_F	tres					display		D. Board	570	D. ボード		
 Assets	Furnitures/Freezer_F		0	ignore	Assets/Freezer/Freezer_F	tres					name		Freezer				
 Assets	Furnitures/Freezer_F		0	ignore	Assets/Freezer/Freezer_F	tres					inventory		Freezer				
 Assets	Furnitures/Freezer_F		0	ignore	Assets/Freezer/Freezer_F	tres					rotated		Freezer				
@@ -176,19 +176,19 @@ Assets	Furnitures/Rack_Coat_F		0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					in
 Assets	Furnitures/Rack_Coat_F		0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					rotated		Rack C.	586	ラックC.		
 Assets	Furnitures/Rack_Coat_F		0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					equipment		Rack (Coat)				
 Assets	Furnitures/Rack_Coat_F		0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					display		Rack C.				
-Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)	588	リヤ（マリア）		
+Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)	588	リイヤ（マリア）		
 Assets	Furnitures/Rya_Maria_F		0	ignore	Assets/Rya/Rya_Maria_F	tres					inventory		Rya (Maria)				
-Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.	590	Rya M.		
+Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.	590	リイヤ M.		
 Assets	Furnitures/Rya_Maria_F		0	ignore	Assets/Rya/Rya_Maria_F	tres					equipment		Rya (Maria)				
 Assets	Furnitures/Rya_Maria_F		0	ignore	Assets/Rya/Rya_Maria_F	tres					display		Rya M.				
 Assets	Furnitures/Shelf_Metal_F		0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					name		Shelf (Metal)	592	棚（金属製）		
 Assets	Furnitures/Shelf_Metal_F		0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					inventory		Shelf (Metal)				
 Assets	Furnitures/Shelf_Metal_F		0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					rotated		Shelf (Metal)				
 Assets	Furnitures/Shelf_Metal_F		0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					equipment		Shelf (Metal)				
-Assets	Furnitures/Shelf_Metal_F		0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.	594	シェルフ・M.		
+Assets	Furnitures/Shelf_Metal_F		0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.	594	棚・M.		
 Assets	Furnitures/Shelf_Wall_F		0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					name		Shelf (Wall)	596	棚（壁掛け）		
 Assets	Furnitures/Shelf_Wall_F		0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					inventory		Shelf (Wall)				
-Assets	Furnitures/Shelf_Wall_F		0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.	598	シェルフ・W.		
+Assets	Furnitures/Shelf_Wall_F		0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.	598	棚・W.		
 Assets	Furnitures/Shelf_Wall_F		0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					equipment		Shelf (Wall)				
 Assets	Furnitures/Shelf_Wall_F		0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					display		Shelf W.			Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
 Assets	Furnitures/Shelf_Wood_F		0	substr	Assets/Shelf_Wood/Shelf_Wood_F	tres					name		Shelf (Wood)	600	棚（木製）		
@@ -200,7 +200,7 @@ Assets	Furnitures/Sign_Border_Zone_F		0	substr	Assets/Sign_Border_Zone/Sign_Bord
 Assets	Furnitures/Sign_Border_Zone_F		0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					inventory		Sign (Border Zone)				
 Assets	Furnitures/Sign_Border_Zone_F		0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					rotated		Sign (Border Zone)				
 Assets	Furnitures/Sign_Border_Zone_F		0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					equipment		Sign (Border Zone)				
-Assets	Furnitures/Sign_Border_Zone_F		0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.	604	BZにサインしてください。		
+Assets	Furnitures/Sign_Border_Zone_F		0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.	604	標識 BZ.		
 Assets	Furnitures/Sofa_Leather_F		0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					name		Sofa (Leather)	606	ソファ（本革）		
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					inventory		Sofa (Leather)				
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					rotated		Sofa (Leather)				

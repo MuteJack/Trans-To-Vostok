@@ -39,7 +39,7 @@ Now you have successfully crafted the required task item and you can complete th
 
 タスクによっては、クラフトで作ったアイテムが必要になる場合があります。例えば、このタスクでは「ミートボール（調理済み）」が必要ですが、これはクラフトでしか入手できません。
 
-「アイテム」パネルを開き、「ミートボールの缶詰」、「メスキット」、「水筒」を選択してください。また、「マッチ」も必要になります。これは「装備」パネルから入手できます。
+「アイテム」パネルを開き、「ミートボールの缶詰」、「軍用飯盒」、「水筒」を選択してください。また、「マッチ」も必要になります。これは「装備」パネルから入手できます。
 
 次に、「ツール」UIの「クラフト」ボタンを使用して、「ミートボール（調理済み）」のレシピを探してください。レシピを確認すると、「熱」という近接要件が表示されています。つまり、このレシピをアンロックするには熱源が必要になります。
 
@@ -47,7 +47,7 @@ Now you have successfully crafted the required task item and you can complete th
 1. ファイアポットに行き、マッチを装備して火をつけます
 2. 「ミートボール（調理済み）」のレシピを開き、熱のシンボルが緑色に変わっていることを確認します
 3. 「入力開始」を押します
-4. メスキット、ミートボール（缶詰）、水筒を選択します
+4. 軍用飯盒、ミートボール（缶詰）、水筒を選択します
 5. 「クラフト」を押します
 
 これで、タスクに必要なアイテムのクラフトに成功し、タスクを完了できます。"	"Please pay attention to the following points when translating:
@@ -138,7 +138,7 @@ If you happen to find something that could help with my back, I would highly app
 普段は文句なんて言わないんだけど、このクソみたいな背中の痛みには本当に参ってる。毎朝目が覚めるたびに、背骨に銃弾を撃ち込まれたような痛みが走るんだ。君もそう遠くないうちに、俺やあの忌々しいフランス車と同じようになるだろうね。
 
 もし、俺の背中の痛みに効くようなものを見つけたら、ぜひ教えてほしい。本当に助かるよ。"		
-Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	2816	コーヒー・リザーブ		
+Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	2816	コーヒーの備蓄		
 Tasks	Generalist/04	difficulty	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy				
 Tasks	Generalist/04	description	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					description		"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
 
@@ -171,7 +171,7 @@ Tasks	Generalist/06	description	0	literal	Traders/Generalist/Tasks/06_Handyman	t
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
 
-I'm getting tired of being her handyman, but I promised to help this one last time."	2826	"国境地帯の近くに今も住んでいるあの年配の女性をご存じですか？彼女は目が見えないのですが、電子機器について何度注意しても、いつもいろんなボタンをいじり回して、結局すべてをめちゃくちゃにしてしまうんです！
+I'm getting tired of being her handyman, but I promised to help this one last time."	2826	"国境地帯の近くに今も住んでいるあの年配の女性を知っているか？彼女は目が見えないのだが、電子機器について何度注意しても、いつもいろんなボタンをいじり回して、結局すべてをめちゃくちゃにしてしまう！
 
 今やコンロは壊れ、冷凍庫の中身は溶け出し、どうやらラジオもまた「調子がおかしい」らしい。さらに先週の嵐で、木が彼女のポーチの屋根に直撃して、屋根が一部崩れてしまった。だから今、私たちは山のような問題を抱えているんだ。
 
@@ -244,11 +244,11 @@ Welcome to my improvised clinic. It ain't much, but with these limited resources
 
 I used to teach health education for elementary students in this school. It was a long time ago, but I have good memories of this place. The building is old and has seen better days, but I'm sure it can be restored when things settle down.
 
-Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	2846	"「ここであなたを見かけたことがありませんね。新しい患者さんでしょうか？」
+Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	2846	"ここであなたを見かけたことがありませんね。新しい患者さんでしょうか？
 
-「私の即席の診療所へようこそ。大したものではありませんが、限られた資源の中では、これが精一杯なのです。」
+私の即席の診療所へようこそ。大したものではありませんが、限られた資源の中では、これが精一杯なのです。
 
-「私は以前、この学校で小学生に保健の授業をしていました。ずいぶん昔のことですが、この場所には良い思い出があります。」 建物は古くて、かつての面影はありませんが、事態が落ち着けばきっと修復できるはずです。
+私は以前、この学校で小学生に保健の授業をしていました。ずいぶん昔のことですが、この場所には良い思い出があります。 建物は古くて、かつての面影はありませんが、事態が落ち着けばきっと修復できるはずです。
 
 最近は、窓がほとんどないため、断熱が最大の悩みです。特に冬場は、患者さんにとって少し寒すぎるかもしれません。応急処置としては、ダクトテープでひどい隙間風を抑えるのが一番だと思います。"		
 Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	2848	確かな手		
@@ -272,9 +272,9 @@ Tasks	Doctor/03	description	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					
 
 On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
 
-I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	2854	"この辺りで医者をしていると、仕事は波がある。つまり、とてつもなく忙しい日もあれば、人影ひとつない日もあるということだ。
+I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	2854	"この辺りで医者をしていると、仕事は波があります。つまり、とてつもなく忙しい日もあれば、人影ひとつない日もあるということですね。
 
-そんな退屈で閑散とした日には、よく読書をして時間を過ごす。この辺りの読み物はかなりランダムで、読みたい本を選べるわけではないので、手に入る本に順応する術を身につけなければならない。
+そんな退屈で閑散とした日には、よく読書をして時間を過ごします。この辺りの読み物はかなりランダムで、読みたい本を選べるわけではないので、手に入る本に順応する術を身につけなければなりません。
 
 実は私は、ジャンルを問わず、あらゆる種類の古い本を読むのが好きです。童話であれ宗教書であれ、いつも興味深く感じます。私は生まれつき、少し本好きなのかもしれません。"		
 Tasks	Doctor/04	name	0	literal	Traders/Doctor/Tasks/04_Dice_Master	tres					name		Dice Master	2856	ダイスマスター		
@@ -285,13 +285,13 @@ Just a few years ago, we often went fishing together, but that poor guy has mult
 
 Like you probably already guessed, only one of those is available nowadays, so our friendship is currently purely built on gambling with card and dice games. However, every time we play dice, he always magically wins and I'm starting to wonder if his dices are rigged somehow, since nobody is that lucky.
 
-You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	2858	"僕とジェネラリストは子供の頃から知り合いだ。彼は間違いなく不機嫌なおじいさんだけど、一度親しくなれば、まあまあ付き合える相手だ。
+You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	2858	"僕とジェネラリストは子供の頃から知り合いです。彼は間違いなく不機嫌なおじいさんだけど、一度親しくなれば、まあまあ付き合える相手です。
 
-ほんの数年前まではよく一緒に釣りに行っていたが、あいつは椎間板ヘルニアをいくつも患っているせいで、もう釣りに行くなんて無理な話だ。それでも、競馬やギャンブルなど、他にも共通の趣味がいくつかある。
+ほんの数年前まではよく一緒に釣りに行っていましたが、あいつは椎間板ヘルニアをいくつも患っているせいで、もう釣りに行くなんて無理な話。それでも、競馬やギャンブルなど、他にも共通の趣味がいくつかあります。
 
-もうお察しの通り、今やそのうちの1つしか楽しめないため、私たちの友情は現在、カードやサイコロを使ったギャンブルだけで成り立っている。しかし、サイコロゲームをするたびに、彼は魔法のように勝ってしまう。誰もそこまで運が良いはずがないから、彼のサイコロは何か仕掛けがあるんじゃないかと思い始めている。
+もうお察しの通り、今やそのうちの1つしか楽しめないため、私たちの友情は現在、カードやサイコロを使ったギャンブルだけで成り立っています。しかし、サイコロゲームをするたびに、彼は魔法のように勝ってしまいます。誰もそこまで運が良いはずがないから、彼のサイコロは何か仕掛けがあるんじゃないかと思い始めています。
 
-ねえ、もしそういうサイコロゲームを見つけたら、僕にも一つ持ってきてくれないか。次に遊ぶ時は、僕のセットでやるつもりだ。そうすれば、不正の可能性を排除できるし、誰が真のサイコロの達人なのかがわかるだろう。"		
+ねえ、もしそういうサイコロゲームを見つけたら、僕にも一つ持ってきてくれませんか。次に遊ぶ時は、僕のセットでやるつもりです。そうすれば、不正の可能性を排除できるし、誰が真のサイコロの達人なのかがわかるでしょう。"		
 Tasks	Doctor/05	name	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	2860	夜間診療		
 Tasks	Doctor/05	difficulty	0	ignore	Traders/Doctor/Tasks/05_Night_Surgery	tres					difficulty		Intermediate				
 Tasks	Doctor/05	description	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					description		"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
@@ -324,9 +324,9 @@ Hypovolemia is basically a loss of both salt and water content in your body and 
 
 Whenever you find those saline bottles, always remember to bring them to me and we will surely find some deal that could work for both of us."	2870	"水分補給は極めて重要です。つい先週も、森の中で丸まっていて、血圧が低下している青白いノマドたちを何人か見つけました。
 
-よく調べてみると、その原因は予想以上に単純でした。その通り、脱水症状と、私たち医師が「血液量減少」と呼ぶ状態でした。
+よく調べてみると、その原因は予想以上に単純でした。その通り、脱水症状と、私たち医師が「循環血液量減少」と呼ぶ状態でした。
 
-血液量減少症とは、基本的に体内の塩分と水分が共に失われる状態のことだ。これがひどくなると、あのノマドたちのようにお手上げ状態になり、血液量減少性ショックに陥ってしまう。幸いなことに、この症状の治療法は実に簡単だ。末梢静脈に生理食塩水を注入すれば、それで事足りる。
+循環血液量減少とは、基本的に体内の塩分と水分が共に失われる状態のことです。これがひどくなると、あのノマドたちのようにお手上げ状態になり、血液量減少性ショックに陥ってしまいます。幸いなことに、この症状の治療法は実に簡単です。末梢静脈に生理食塩水を注入すれば、それで事足ります。
 
 もしあの生理食塩水のボトルを見つけたら、必ず私に持ってきてください。きっと双方にとってメリットのある取引が成立するはずです。"	"Please pay attention to the following points when translating:
 - `Nomad'"	

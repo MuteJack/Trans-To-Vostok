@@ -11,14 +11,14 @@ Inventory	Item	Button	0	ignore	Scripts/Context	gd			takeButton.text	concat		114	
 Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		81	Show	2710	表示		
 Inventory	Event	Button	0	substr	Scripts/Event	gd			showButton.text	literal		86	Hide	2712	非表示		
 Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		57	Activated	2714	有効化		
-Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		93	Not active	2716	非アクティブ		
+Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		93	Not active	2716	無効		
 Inventory	Event	String	0	substr	Scripts/Event	gd			location.get_child(0).text	literal		42	All maps & zones	2718	すべてのマップとゾーン		
-Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		98	Active	2720	アクティブ		
+Inventory	Event	String	0	substr	Scripts/Event	gd			status.text	literal		98	Active	2720	有効		
 Inventory	Recipe	Button	0	ignore	Scripts/Recipe	gd			showButton.text	literal		256	Show				
 Inventory	Recipe	Button	0	ignore	Scripts/Recipe	gd			showButton.text	literal		261	Hide				
 Inventory	Recipe	ToolTip	0	substr	Scripts/Recipe	gd			completeButton.text	literal		63	Repair	2722	修理		
 Inventory	Recipe	ToolTip	0	substr	Scripts/Recipe	gd			completeButton.text	literal		65	Craft	2724	クラフト		
-Inventory	Tasks	ToolTip	0	substr	Scripts/Task	gd			addButton.text	literal		219	Added	2726	追加されました		
+Inventory	Tasks	ToolTip	0	substr	Scripts/Task	gd			addButton.text	literal		219	Added	2726	追加された		
 Inventory	Tasks	ToolTip	0	ignore	Scripts/Task	gd			addButton.text	literal		240	Added				
 Inventory	Tasks	String	0	substr	Scripts/Task	gd			removeButton.text	literal		235	Remove	2728	削除		
 Inventory	Tasks	String	0	substr	Scripts/Task	gd			addButton.text	literal		247	Completed	2730	完了		
@@ -35,7 +35,7 @@ HUD	Door	String	0	pattern	Scripts/Door	gd			gameData.tooltip	concat		131	Open wi
 HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		133	Door [Jammed]	2748	ドア [開かない]		
 HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		135	Door [Occupied]	2750	ドア [使用中]		
 HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		138	Door [Close]	2752	ドア [閉じる]		
-HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		140	Door [Open]	2754	ドア [開]		
+HUD	Door	String	0	substr	Scripts/Door	gd			gameData.tooltip	literal		140	Door [Open]	2754	ドア [開ける]		
 HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		142	{containerName} [Locked]	2756	{containerName} [ロック中]		
 HUD	Container	String	0	pattern	Scripts/LootContainer	gd			gameData.tooltip	concat		144	{containerName} [Open]	2758	{containerName} [開く]		
 HUD	Shelter	String	0	substr	Scripts/Bed	gd			gameData.tooltip	literal		52	Sleep (Random sleep: 6-12h)	2760	睡眠（ランダムな睡眠時間：6～12時間）		

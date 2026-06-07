@@ -2,16 +2,14 @@
   "Texture_reworker": [
     "MuteJack"
   ],
-  "translation_updated": "2026-05-30T19:23:48+09:00",
+  "translation_updated": "2026-06-07T14:30:34+09:00",
   "Translator": {
     "Leader": [
       "Mute Jack"
     ],
-    "Translator": [],
-    "Contributor": [
-      "Nineblood",
-      "Mute Jack (MuteJack)",
-      "Nineblood (newnoxnineblood)"
-    ]
+    "Translator": [
+      "Nineblood"
+    ],
+    "Contributor": []
   }
 }

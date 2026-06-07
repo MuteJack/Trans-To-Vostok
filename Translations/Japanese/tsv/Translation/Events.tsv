@@ -12,13 +12,13 @@ Events	/	Day	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}	660	Day 
 Events	/	Day Left	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Status	Label	text	1150425844	In 10 days	662	10日後	Place holder text. Don't need to Translate. Use Pattern instead	
 Events	/	Day Left	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days	664	In {str} Days		
 Events	/	Type	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event	666	{type} Event		
-Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	668	トレーダー向けイベント	I don't know why is this string use lower case (event).	
-Events	/	Type	0	substr									Trader Event	670	トレーダー向けイベント		
+Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	668	トレーダーイベント	I don't know why is this string use lower case (event).	
+Events	/	Type	0	substr									Trader Event	670	トレーダーイベント		
 Events	/	Type	0	substr									Dynamic Event	672	ダイナミック・イベント		
 Events	/	Type	0	substr									Special Event	674	特別イベント		
 Events	/	Type	0	substr									Dynamic	676	ダイナミック		
 Events	/	Type	0	substr									Special	678	スペシャル		
-Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Location	Label	text	1817711349	Event location:	680	イベント会場：		
+Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Location	Label	text	1817711349	Event location:	680	イベントの場所:		
 Events	/	Location	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	text	1530040464	Village	682	村		
 Events	/	Location	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Possibility	Label	text	873648025	Event possibility:	684	イベントの可能性：		
 Events	/	Percent	0	substr	Scripts/Event	gd			possibility.get_child(0).text	literal		50	Guaranteed	686	保証付き		

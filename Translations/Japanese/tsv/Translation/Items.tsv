@@ -71,7 +71,7 @@ Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Ba
 Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					display		Patrol BP.				
 Items	Backpacks/Backpack_Patrol	type	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					type		Backpack				
 Items	Backpacks/Duffel_Retro	name	0	substr	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					name		Duffel (Retro)	1380	ダッフルバッグ（レトロ）		
-Items	Backpacks/Duffel_Retro	name	0	substr	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					inventory		R. Duffel	1382	R. ダッフェル		
+Items	Backpacks/Duffel_Retro	name	0	substr	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					inventory		R. Duffel	1382	R. ダッフル		
 Items	Backpacks/Duffel_Retro	name	0	ignore	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					rotated		R. Duffel				
 Items	Backpacks/Duffel_Retro	name	0	ignore	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					equipment		R. Duffel				
 Items	Backpacks/Duffel_Retro	name	0	ignore	Items/Backpacks/Duffel_Retro/Duffel_Retro	tres					display		R. Duffel				
@@ -120,7 +120,7 @@ Items	Book/Book_Fishing	name	0	ignore	Items/Books/Book_Fishing	tres					rotated	
 Items	Book/Book_Fishing	name	0	ignore	Items/Books/Book_Fishing	tres					equipment		Fishing			It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)	
 Items	Book/Book_Fishing	name	0	ignore	Items/Books/Book_Fishing	tres					display		Fishing			It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)	
 Items	Book/Book_Fishing	type	0	ignore	Items/Books/Book_Fishing	tres					type		Literature				
-Items	Book/Book_Religion	name	0	substr	Items/Books/Book_Religion	tres					name		Book (Religion)	1408	書籍（宗教）		
+Items	Book/Book_Religion	name	0	substr	Items/Books/Book_Religion	tres					name		Book (Religion)	1408	本（宗教）		
 Items	Book/Book_Religion	name	0	substr	Items/Books/Book_Religion	tres					inventory		Religion	1410	宗教	It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)	
 Items	Book/Book_Religion	name	0	ignore	Items/Books/Book_Religion	tres					rotated		Religion			It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)	
 Items	Book/Book_Religion	name	0	ignore	Items/Books/Book_Religion	tres					equipment		Religion			It is currently substr, but it may need to be promoted to Scope. (e.g., Cook Book or Cooking)	
@@ -181,9 +181,9 @@ Items	Clothing/Hat_Sauna	name	0	substr	Items/Clothing/Hat_Sauna/Hat_Sauna	tres		
 Items	Clothing/Hat_Sauna	name	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					display		S. Hat				
 Items	Clothing/Hat_Sauna	type	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					type		Clothing				
 Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					name		Hoodie (Border Zone)	1446	フーディー（ボーダーゾーン）		
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	1448	フーディー BZ。		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	1448	フーディー BZ.		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					rotated		Hoodie BZ.				
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	フーディー・B		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	フーディー・B.		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					display		Hoodie B.				
 Items	Clothing/Hoodie_Border_Zone	type	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					type		Clothing				
 Items	Clothing/Hoodie_Gray	name	0	substr	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					name		Hoodie (Gray)	1452	フーディ（グレー）		

@@ -5,7 +5,7 @@ Main_Menu	Compatibility		0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	L
 Main_Menu	Compatibility		0	substr									Compatibility	2032	互換性		
 Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility				
 Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility				
-Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	2034	新作ゲーム		
+Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	New	Button	text	593764434	New game	2034	新しくゲームを始める		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	2036	ゲームを読み込む		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	2038	チュートリアル		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
@@ -20,22 +20,22 @@ Main_Menu	ChangeLog	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	L
 Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
 "	2050	オフ		
 Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
-"	2052	について		
+"	2052	オン		
 Main_Menu	Hardware Check	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	2054	ハードウェアの確認		
 Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
 "	2056	オフ		
 Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
-"	2058	について		
+"	2058	オン		
 Main_Menu	Watch Intro	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	2060	イントロを見る		
 Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
 "	2062	オフ		
 Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
-"	2064	について		
+"	2064	オン		
 Main_Menu	Menu Music	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	2066	メニュー 音楽		
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
 "	2068	オフ		
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
-"	2070	について		
+"	2070	オン		
 Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	2072	「Road to Vostok ®」はRoad to Vostok Ltd.の登録商標です。無断転載を禁じます © 2026		
 Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	2074	バージョン: 0.1.1.3	"Will not use pattern matching. 
 It will act as the ""canaria (bird)"" for the outdated translation."	
@@ -627,12 +627,12 @@ Build type: Release
 Deprecated (v0.1.0.0)"	
 New Game	Difficulty/Standard	String	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text	1987105260	Select				
 New Game	/	Button	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Standard	Select	Button	text		Selected				
-New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	2082	選択済み		
+New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	2082	選択		
 New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected				
 New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select				
 New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	2084	警告！		
 New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	2086	既存のセーブデータは削除されます		
-New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	2088	道へ進め		
+New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	2088	道に入る		
 New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	2090	← 戻る		
 New Game	Difficulty	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	2092	難易度		
 New Game	Difficulty	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	text	1785663196	Gameplay mode	2094	ゲームプレイモード		
@@ -647,7 +647,7 @@ New Game	Difficulty/Standard	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes
 - 08:00開始、天候は晴れ
 - 全キャラクターの体力100
 - ボストークではパーマネントデス"		
-New Game	Difficulty/Darkness	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	2102	闇		
+New Game	Difficulty/Darkness	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	2102	ダークネス		
 New Game	Difficulty/Darkness	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	text	113876474	"- No start kit
 - Random spawn
 - Random start time & weather

@@ -1104,7 +1104,7 @@ Scene	Scene	Name	0	substr									Terminal	2612	터미널	"Location under Locati
 NPC	Traders	Name	0	substr									Trader	2620	상인	NPC (Trader)	
 NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	잡화상	"NPC (Trader) located at ""Area 05/Village"""	
 NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	의사	"NPC (Trader) located at ""Area 05/School"""	
-NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	총잡이	"NPC (Trader) located at ""Border Zone/Outpost"""	
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	건스미스	"NPC (Trader) located at ""Border Zone/Outpost"""	
 NPC	Traders	Name	0	substr									Driver	2628	운전사	"NPC (Trader). Will be Updated at ""Build 2"""	
 NPC	Traders	Name	0	substr									Grandma	2630	할머니	"NPC (Trader). Will be Updated at ""Build 3"""	
 NPC	Traders	Name	0	substr									Shaman	2632	샤먼	"NPC (Trader). Will be Updated at ""Build 5"""	

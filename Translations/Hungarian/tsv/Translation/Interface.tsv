@@ -352,7 +352,13 @@ Energy decreases over time and using map transitions with Energy Cost.
 
 Energy increases with certain consumables such as food.
 
-Energy [0] -> Starvation (Condition)"	1186	Energia		
+Energy [0] -> Starvation (Condition)"	1186	"Éhséged és energiaszinted.
+
+Az energia idővel csökken, valamint az energiaköltséggel járó térképek közti áthaladás használata esetén.
+
+Az energia bizonyos fogyóeszközök, például ételek fogyasztásával növelhető.
+
+Energia [0] -> Éhezés (állapot)"		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		type	256184	Vital	1188	Energia		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		title	1778216863	Hydration	1190	Szomjúság		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		info	1778216863	"Your thirst and hydration level.
@@ -510,7 +516,7 @@ Cures:
 - IFAK / AFAK"	1240	Csonttörés		
 Inventory	Stats	String	0	substr									Explosion	1242	폭발		
 Inventory	Stats	String	0	substr									Fall	1244	낙하		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	Csonttörés		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	Égés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		info	275854551	"A condition where you have a tissue damage from intense heat or high-voltage electric current.
 

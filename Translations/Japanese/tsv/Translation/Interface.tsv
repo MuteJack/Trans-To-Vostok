@@ -13,7 +13,7 @@ HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111
 HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:				
 HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			Value(Integer) about the FPS. Untranslatable.	
 HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	シェルター（エリア05）		
-Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	在庫		
+Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	所持品		
 Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			Value(Float) about Capacity. Untranslatable.	
 Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			Value(Float) about Weight. Untranslatable.	
 Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Value	Label	text	935384867	1000			Value(Float) about Value(Money). Untranslatable.	
@@ -84,11 +84,11 @@ Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label
 Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	タスクのメモは空です		
 Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	タスクノートは利用できません（チュートリアル）		
-Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	世界地図		
+Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	ワールドマップ		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	マップが装備されていません		
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	地図は使用不可（ボストーク）		
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	マップは使用不可（ボストーク）		
 Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	マップが装備されていません		
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	地図は使用不可（ボストーク）		
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	マップは使用不可（ボストーク）		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
 Zoom = [SCROLL]"	860	"パン = [左クリック]
 ズーム = [スクロール]"		
