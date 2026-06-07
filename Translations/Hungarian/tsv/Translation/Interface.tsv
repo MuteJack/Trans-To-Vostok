@@ -76,17 +76,17 @@ Inventory	Stats	Number	1	ignore									?			Wating for Update
 Inventory	Tools	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Header	Label	Label	text	1546804398	Tools	832	Eszközök		
 Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	text	1536854974	Events	834	Események		
 Inventory	Tools	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	text	147394670	Crafting	836	Készítés		
-Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	Proximity		
+Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	text	2049901746	Proximity	838	Közelségi		
 Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	Feladatok		
 Inventory	Tools/Task Note	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty	842	Feladatok listája üres	"Task Note will only display this Strings when there's any task added in the Task Note.
 It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
-Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	Feladatok listája üres	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
+Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	Feladatjegyzetek nem érhetők el (Oktatóanyag)	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
 Dynamically changed by Scripts/Interface.gd: notesHint.text"	
 Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	A feladatok jegyzete üres		
 Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	A feladatok jegyzete nem használható (Kiképzés)		
 Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	Világ térkép		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	Térkép nincs felszerelve		
-Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	Térkép nincs felszerelve		
+Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	Térkép nincs felszerelve (Vostok)		
 Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	Térkép nincs felszerelve		
 Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	A térkép nem használható (Vostok)		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
@@ -118,7 +118,7 @@ Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Pane
 Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tax	Value	Label	text	1097602043	100%				
 Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Tasks	Label	text	1480031378	Tasks:	900	Feladatok:		
 Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Tasks	Value	Label	text	473211852	0/10				
-Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	Kínálat frissítése:		
+Traders	Traders/Stat	String	0	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats	Resupply	Label	text	1732497207	Resupply:	902	Kínálat frissülése:		
 Traders	Traders/Stat	Number	1	literal	UI/Interface	tscn	UI/Interface	Trader/Panel/Stats/Resupply	Value	Label	text	2068712959	10:00				
 Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Header	Label	Label	text	1552052318	Deal	904	Csere		
 Traders	Deal	String	0	literal	UI/Interface	tscn	UI/Interface	Deal/Panel/Indicator	Request	Label	text	2073759330	Request Value + Tax (€)	906	Érték + adó (€)		
@@ -192,7 +192,7 @@ Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Mar
 Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 2	996	1.szint		
 Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 3	998	1.szint		
 Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 4	1000	1.szint		
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 5	1002	1.szint		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 5	1002	5. szint		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	Kapacitás:		
 Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg				
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	text	1670132552	Insulation:	1006	Szigetelés:		
@@ -231,22 +231,22 @@ Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	liter
 Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input				
 Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input				
 Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input				
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	투입 정지		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	Összeállítás leállítása		
 Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	투입 초기화		
 Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	Készítés		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	Hőforrás		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	Hőforrás		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	Hőforrás		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	Közelségi követelmény		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	Munkaasztal		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	Munkaasztal		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	Munkaasztal		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	Közelségi követelmény		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	Tesztpad	I can't find this. Maybe not updated in 1.0.0 version yet.	
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	Tesztpad	I can't find this. Maybe not updated in 1.0.0 version yet.	
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	Tesztpad	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	Közelségi követelmény	I can't find this. Maybe not updated in 1.0.0 version yet.	
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	Menedék		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	Menedék		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	Menedék		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	Kereskedői statisztikák		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	Közelségi követelmény		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	Kereskedő		
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	Hív a kötelesség	PlaceHolder	
 Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Add	Button	text	165565985	Add to Notes	1080	Jegyzethez adás		
 Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Title	Remove	Button	text	1151699378	Remove	1082	Eltávolítás		
@@ -270,7 +270,7 @@ Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal	
 Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	Teljesítés indítása		
 Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	배달 종료		
 Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	Teljesítés indítása		
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	배달됨		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	Teljesítve		
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	Kész		
 Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶				
 Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen				
@@ -654,7 +654,12 @@ Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Inf
 Name: Commonly known name among locals.
 Tax: Price multiplier for supply items.
 Tasks: Number of completed tasks.
-Resupply: Time when supply resets."	1328	Kereskedői statisztikák		
+Resupply: Time when supply resets."	1328	"A friendly NPC with trading supply, tasks and specialized services.
+
+Name: Commonly known name among locals.
+Tax: Price multiplier for supply items.
+Tasks: Number of completed tasks.
+Resupply: Time when supply resets."		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	Kereskedői statisztikák		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	Tranzakció		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		info	1021981031	"A deal balance meter which compares selected item values.

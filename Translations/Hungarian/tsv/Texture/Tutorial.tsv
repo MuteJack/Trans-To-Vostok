@@ -13,21 +13,21 @@ You can access Settings with [ESC]
 Through these settings you can change inputs,
 different system values and performance options
 
-?? = Performance options"	"1. Settings
+?? = Performance options"	"1. Játékbeállítások
 
-Welcome to Road to Vostok Tutorial
+Üdvözlünk a Road to Vostok oktatóanyagában!
 
-This Tutorial will guide you through the most
-important game mechanics and controls
+Ebben az oktatóanyagban végigvezetünk a
+legfontosabb irányításokon és játékmechanikákon.
 
-Let's start with settings
+Először nézzük meg a beállításokat.
 
-You can access Settings with [ESC]
+A beállításokat az [ESC] billentyű megnyomásával érheti el.
 
-Through these settings you can change inputs,
-different system values and performance options
+A beállításokban módosíthatja a beviteli módot, a
+különféle rendszerváltókat és a teljesítménybeállításokat.
 
-?? = Performance options"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	97428	178dd2be533d477e3d81e7b729e86ae16e87f8e0cd32e2643a019812c3335afc	428					
+?? = Teljesítménnyel kapcsolatos opciók"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	97428	178dd2be533d477e3d81e7b729e86ae16e87f8e0cd32e2643a019812c3335afc	428					
 Tutorial	Billboard	2. Interface	replace	"2. Interface
 
 Interface is your main UI which contains elements
@@ -39,18 +39,20 @@ If you want more information about an item, icon
 or specific value, you can use Tooltip
 
 Try Tooltip by opening Interface
-and point the character health value"	"2. Interface
+and point the character health value"	"2. Felület
 
-Interface is your main UI which contains elements
-such as inventory, equipment, vitals and stats
+A felhasználói felület a fő felhasználói felület,
+amely olyan elemeket tartalmaz, mint a leltár,
+a felszerelés, az állapot és a statisztikák.
 
-You can access Interfae with [TAB]
+A felületet a [TAB] billentyű megnyomásával érheti el.
 
-If you want more information about an item, icon
-or specific value, you can use Tooltip
+Ha részletes információkat szeretne kapni az
+elemekről, ikonokról vagy adott értékekről,
+az eszköztippek segítségével ellenőrizheti azokat.
 
-Try Tooltip by opening Interface
-and point the character health value"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430					
+Nyisd meg a felületet, és vidd az egérmutatót a
+karakter állapotértéke fölé az eszköztipp megjelenítéséhez."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430					
 Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -67,19 +69,20 @@ choose item actions with Context Menu [RMB]
 
 Open container and try Context Menu with items"	"3. Loot & Items
 
-All objects that logically have storage space are 
-interactable loot containers
+Minden tárolóhellyel rendelkező tárgy
+interaktív zsákmányládák.
 
-Loot is generated to these containers and items 
-are also physically scattered to the game world
+A zsákmány ezekben a ládákban keletkezik, és a tárgyak
+fizikailag szétszórva vannak a világban (a földön stb.).
 
+Nyomd meg az [egér görgő gombját] dobozok
+kinyitásához, tárgyak felvételéhez vagy interakcióhoz.
 
-You can open, pick and interact with [MMB]
+Amikor egy tárgy megjelenik a felületen, a [Jobb egérgomb]
+megnyomásával kiválaszthatja a tárgyhoz kapcsolódó műveleteket, 
+például a használatot, a megszerzést vagy a felszerelést.
 
-When you have items available in Interface, you can 
-choose item actions with Context Menu [RMB]
-
-Open container and try Context Menu with items"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432					
+Nyisd ki a dobozt, és használd vagy szerezd meg a tárgyat."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432					
 Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -93,20 +96,21 @@ You can find equipment slots in Interface
 You can activate equipment slots by 
 moving compatible items to them
 
-Open container and try equipping items"	"4. Equipment
+Open container and try equipping items"	"4. Berendezés
 
-Equipment are dedicated items slots 
-and linked to several important character stats
+A Felszerelés egy erre a célra szolgáló helyen található
+tárgy, amely különféle fontos karakterstatisztikákkal
+van társítva.
 
-Equipment can increase your Carry Capacity [CC] 
-and give you abilities like flashlight and fire making
+A felszerelés viselése növeli a hordozási limit [CC], vagy
+lehetővé teszi olyan funkciók használatát, mint a zseblámpák és a tűzgyújtás.
 
+A berendezéshelyeket a felületen lehet ellenőrizni.
 
-You can find equipment slots in Interface
-You can activate equipment slots by 
-moving compatible items to them
+A felszerelés használatához egy kompatibilis
+tárgyat kell elhelyezni az egyes felszerelési helyekre.
 
-Open container and try equipping items"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434					
+Nyisd ki a tartályt, és próbáld meg felszerelni a tárgyat."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434					
 Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -121,21 +125,21 @@ active and needs to be cured using a medical item
 
 You can see causes, symptoms and cures with Tooltip
 
-Open container and try using some medical items"	"5. Medical & Conditions
+Open container and try using some medical items"	"5. Orvosi és állapotok
 
-Medical system is based on conditions that 
-negatively affect your character's vital stats
+Az orvosi rendszer olyan állapotokon
+alapul, amelyek negatívan befolyásolják
+a karakter statisztikáit.
 
-These conditions are presented as medical icons 
-and you can find them in Interface and HUD
+Ezeket az állapotokat orvosi ikonok jelzik, és
+ellenőrizheti a kezelőfelületet és a HUD-ot.
 
+Ha az orvosi ikon pirosra vált, az azt jelenti, hogy az állapot aktív és
+negatív hatással bír, ezért orvosi eszközt kell használnod a kezelésére.
 
-When a medical icon turns red, the condition is 
-active and needs to be cured using a medical item
+Az eszköztipp segítségével ellenőrizheti az okot, a tüneteket és a kezelést.
 
-You can see causes, symptoms and cures with Tooltip
-
-Open container and try using some medical items"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	114610	29640b5b62915aa772eb0feb9865b1632266528fed3282921c25a3a67f523fbf	436					
+Nyisd ki a dobozt, és próbáld meg használni az orvosi eszközt."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Medical.png	114610	29640b5b62915aa772eb0feb9865b1632266528fed3282921c25a3a67f523fbf	436					
 Tutorial	Billboard	6. Weapons	replace	"6. Weapons
 
 Weapons are equipment and they use 
@@ -151,22 +155,27 @@ pistols and SMG's can utilize Secondary slot
 Open container, equip a weapon and draw it
 | [RMB] = Aim (ADS) | [F] = Firemode |
 | [MMB] = Canted aim | [X]=Inspect weapon |
-| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. Weapons
+| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. Fegyvertárgy
 
-Weapons are equipment and they use 
-Primary, Secondary, Knife and Grenade slots
+A fegyverek olyan felszerelések,
+amelyek elsődleges fegyver, másodlagos fegyver, 
+kés és gránát nyílásokat használnak.
 
-When a weapon is equipped you can draw 
-and holster from slots with keys [1] [2] [3] [4] [5]
+Amikor fegyvert szerelsz fel, az [1] [2] [3] [4] [5] billentyűkkel
+tarthatod vagy veheted a kezedbe a fegyvert a nyílásból.
 
+Minden lőfegyver használhatja az elsődleges fegyvernyílást,
+de csak a pisztolyok és géppisztolyok a másodlagos fegyvernyílást.
 
-Every firearm can use Primary slot but only 
-pistols and SMG's can utilize Secondary slot
+Nyisd ki a dobozt, szereld fel a fegyvert, majd vedd fel.
 
-Open container, equip a weapon and draw it
-| [RMB] = Aim (ADS) | [F] = Firemode |
-| [MMB] = Canted aim | [X]=Inspect weapon |
-| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	120113	501bb46461dbe98d0da71d9cb65f92a724e9720388ce255d36a4a1e84b8bb2ed	438					
+[Jobb kattintás] = Célzás (ADS)
+[Görgőgomb] = Célzáshoz
+[Görgetés] = Fegyver helye
+
+[F] = Tüzelési mód váltása (egylövéses automata)
+[X] = Fegyvervizsga
+[X] + [Görgetés] = Fegyverforgatás"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	120113	501bb46461dbe98d0da71d9cb65f92a724e9720388ce255d36a4a1e84b8bb2ed	438					
 Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
 Weapon system uses seperated magazines
@@ -183,23 +192,27 @@ or with [R] which fetches a loaded magazine for you
 Open container, use Tooltip to identify the ammo
 and magazine compatibility, Load -> Attach -> Fire
 
-[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. Ammo & Magazines
+[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. Lőszerek és folyóiratok
 
-Weapon system uses seperated magazines
-and caliber-based ammo types
+A fegyverrendszerek a fegyvertől függően különböző
+kaliberű lőszert és tárakat igényelnek.
+(pl. a PM5 géppisztoly PM5 tárakat és 9x19 kaliberű lőszert használ.)
 
-You can load a magazine by moving a compatible
-ammo type to the magazine with Interface
+Kompatibilis lőszert tölthetsz a tárba és újratöltheted
+a fegyvert az interfészen keresztül.
 
-You can unload a magazine with Context Menu [RMB]
+A tárra vagy a fegyverre [Jobb gombbal]
+kattintva eltávolíthatod a lőszert a tárból vagy a kamrából.
 
-Magazines can be attached to weapons manually
-or with [R] which fetches a loaded magazine for you
+A tár manuálisan is betölthető, vagy az [R] billentyű
+megnyomásával töltheti (újratöltheti) a tárat.
 
-Open container, use Tooltip to identify the ammo
-and magazine compatibility, Load -> Attach -> Fire
+Nyiss ki egy dobozt vagy felszerelést, ellenőrizd a lőszer és
+a tárak kompatibilitását a tooltip segítségével, majd töltsd meg
+és szereld fel → tüzelj.
 
-[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440					
+[Bal klikk] = Tüzelés,         [V] = Lőszer hiányának ellenőrzése, 
+[CTRL] → [LMB] = Lőszer betöltése (zárás és sörétes puskával)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440					
 Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
@@ -214,21 +227,24 @@ identify attachment compatibility and try customizing
 [HOLD CTRL] + [SCROLL] = Optic rail position
 [SCROLL] = LPVO zoom level
 [ALT] = Secondary optic
-[T] = Laser toggle"	"8. Attachements
+[T] = Laser toggle"	"8. Fegyvertartozékok
 
-You can customize weapons by attaching 
-suppressors, optics and lasers to them
+Testreszabhatod a fegyvereket hangtompítók,
+távcsövek, lézerek és egyebek hozzáadásával.
 
-You can add/swap attachments like magazines 
-with Interface and remove using Context Menu
+A felületen keresztül hozzáadhatsz vagy kicserélhetsz kiegészítőket,
+például tárakat, és eltávolíthatod őket a fegyverre
+[Jobb gombbal] kattintva.
 
+A kompatibilitást a doboz kinyitásával és az eszköztipp megtekintésével,
+vagy a tartozékok fegyverre húzásával ellenőrizheted.
 
-Open container, use Tooltip or item hover colors to 
-identify attachment compatibility and try customizing
-[HOLD CTRL] + [SCROLL] = Optic rail position
-[SCROLL] = LPVO zoom level
-[ALT] = Secondary optic
-[T] = Laser toggle"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	111354	ab59b8fe1bebc497a8108a0558837c9de63e625fb2613d45e62ee987a7d9f01f	442					
+Nyisd ki a dobozt, vedd ki a tartozékokat, és szabd testre a fegyveredet.
+
+[CTRL] + [Görgés] = Scope sin pozíciójának módosítása
+[Görgés] = LPVO nagyítási szint módosítása
+[ALT] = Másodlagos látómező engedélyezése/letiltása
+[T] = Lézer aktiválása/deaktiválása"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	111354	ab59b8fe1bebc497a8108a0558837c9de63e625fb2613d45e62ee987a7d9f01f	442					
 Tutorial	Billboard	9. Knives & Grenades	replace	"9. Knives & Grenades
 
 When a knife is equipped, you can draw it with key [3]
@@ -243,21 +259,20 @@ grenades with keys [4] and [5]
 You can prepare high throw with [LMB] 
 and low throw with [RMB]
 
-Second press executes and opposite button resets the throw"	"9. Knives & Grenades
+Second press executes and opposite button resets the throw"	"9. Kés és gránát
 
-When a knife is equipped, you can draw it with key [3]
+Ha felszereled a kést, akkor [3] kulccsal foghatod a kezedben.
 
-You can use slash attack with [LMB] 
-and stab attack with [RMB]
+A [Bal kattintás] gombbal lesújtasz, a
+[Jobb kattintás] gombbal pedig döfő támadást hajthatsz végre.
 
+Két gránátnyílás található rajta, 
+melyeket a [4] és [5] billentyűkkel lehet kézben tartani.
 
-You have two grenades slots and you can draw 
-grenades with keys [4] and [5]
+A [Bal kattintás] gombbal magasra,
+a [Jobb kattintás] gombbal pedig alacsonyra dobhatsz.
 
-You can prepare high throw with [LMB] 
-and low throw with [RMB]
-
-Second press executes and opposite button resets the throw"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
+Nyomd meg kétszer a gránát dobásához, majd az ellenkező gombot a dobási készenlét visszaállításához."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -275,24 +290,25 @@ try attaching armor plate to the rig like attachments
 |NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
 |NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
 |NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
-|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. Armor
+|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. Páncéltárgy
 
-Armor system is based on NIJ-rated (II-IV)
-helmets, armor plates, and plate carriers (rigs)
+A páncélrendszer NIJ osztályú (II–IV)
+sisakokon, ballisztikus lemezeken és
+lemezhordozókon (mellényeken) alapul.
 
-Armor protection level is directly linked
-to ammo/weapon penetration level which
-both can be checked using Tooltip
+A páncélzat védelmi szintje közvetlenül összefügg
+a lőszer/fegyver átütőerejével, és eszköztippek
+segítségével ellenőrizhető.
 
+Miután kinyitottad a dobozt és felszerelted a sisakot és
+a plate carriert, próbáld meg rögzíteni a ballisztikus lemezeket
+a mellényhez, akárcsak a fegyver tartozékait.
 
-Open container, equip helmet and plate carrier and
-try attaching armor plate to the rig like attachments
-
-|NIJ II = Level 1| 1. If protection matches penetration, armor can take 3-4 shots|
-|NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
-|NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
-|NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
-|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	142342	34e1fed9502c316d573a33416794aa3b9ff8b50fa1ef551fa9d3b5aa70cd7e4b	446					
+|NIJ II = 1. szint | 3–4 lövést bír ki, ha a védelmi szint és az átütőerő azonos.|
+|NIJ IIA = 2. szint | A védelem csökken találat esetén, a páncél megszakad, amikor eléri a 0%-ot.|
+|NIJ III = 3. szint | Ha az átütőerő nagyobb, a páncél azonnal megsemmisül.|
+|NIJ III+ = 4. szint | A sisak megvédi a halálos sérüléseket (fejlövéseket).|
+|NIJ IV = 5. szint | A golyóálló lemezek megakadályozzák a halálos sérüléseket (szakadások).|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	142342	34e1fed9502c316d573a33416794aa3b9ff8b50fa1ef551fa9d3b5aa70cd7e4b	446					
 Tutorial	Billboard	11. Traders	replace	"11. Traders
 
 Traders are in-game characters that allow 
@@ -306,20 +322,21 @@ Completing tasks will lower Trader Tax and provide
 you reward items and keys for unlocking new Shelters
 
 Interact with trader Generalist and try 
-trading something and completing a task"	"11. Traders
+trading something and completing a task"	"11. Kereskedő (kereskedelem)
 
-Traders are in-game characters that allow 
-you to trade items and complete lore related tasks
+A kereskedő egy játékbeli karakter, aki tárgyakat cserélhet
+vagy történettel kapcsolatos küldetéseket hajthat végre.
 
-Trading system is based on bartering where your goal 
-is to make a deal that is as balanced as possible.
-Deal is calculated between request item values, trader tax and offer item values
+A kereskedési rendszer a barteren alapul, és a cél a lehető
+legkiegyensúlyozottabb tranzakciók végrehajtása.
 
-Completing tasks will lower Trader Tax and provide 
-you reward items and keys for unlocking new Shelters
+A tranzakciós árat a kért ár és az adók (kereskedő), valamint kínálati ár (játékos) alapján számítják ki.
 
-Interact with trader Generalist and try 
-trading something and completing a task"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448					
+Ha teljesíted a küldetést, csökken a kereskedői adó, és
+jutalmat, valamint egy kulcsot szerezhetsz egy új rejtekhely megnyitásához.
+
+Lépj kapcsolatba a ""Gazdaságbolt"" kereskedővel [kattints
+a kerékre], hogy tárgyakat cserélj és küldetéseket teljesíts."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448					
 Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
@@ -333,20 +350,22 @@ Each AI faction has different abilities and
 faction bosses with rare spawn changes
 
 Map instances can spawn maximum of 10 AI's
-once you have eliminated all, you will have peace"	"12. AI
+once you have eliminated all, you will have peace"	"12. AI (erő)
 
-AI is divided into three hostile factions which
-ocupy different areas of the game world
+A mesterséges intelligencia három ellenséges erőre oszlik,
+amelyek a játékvilág különböző régióit foglalják el.
 
-|Area05|Border Zone| Vostok|
-|Bandits|Guards|Military|
-|Easy AI|Medium AI|Hard AI|
+|05. zóna|Határzóna|Vostok
+|Bandita|őr|Mesterséges|
+|Egyszerű AI|Közepes AI|Intelligencia AI|
 
-Each AI faction has different abilities and
-faction bosses with rare spawn changes
+Minden MI-frakciónak más képességei vannak, és a
+frakciófőnökök ritkán jelennek meg.
 
-Map instances can spawn maximum of 10 AI's
-once you have eliminated all, you will have peace"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
+Legfeljebb 10 MI jelenik meg térképenként, és a
+béke visszatér, amikor az összes MI megsemmisül.
+
+A mesterséges intelligencia újraéled, amikor pályát váltasz."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -360,20 +379,24 @@ You can travel through these zones and maps
 through Transitions which have certain travel costs 
 related to character vitals and World Simulation
 
-Transitions are marked with Transition Flags"	"13. Maps & Transitions
+Transitions are marked with Transition Flags"	"13. Térképek és átmenetek
 
-Like AI, game world is divided into three zones which have different maps and loot pools
+A mesterséges intelligenciához hasonlóan a játékvilág
+három zónára oszlik, különböző térképekkel
+és zsákmánykészletekkel.
 
-|Starting zone | Divider zone | Permadeath zone |
-|Area 05 | Border Zone | Vostok |
-|Low-tier loot | Medium-tier loot | High-tier loot|
+|Kiindulópont|Felezőpont|Permadeath terület|
+|05. zóna|Határzóna|Vostok|
+|alacsony szintű zsákmány|Közepes szintű zsákmány|Prémium zsákmány|
 
+A zónák és térképek közötti váltás mozgási költségekkel jár, 
+amelyek a karakter vitalitásától és a világ szimulációjától függenek. 
+(A karakter kitartása és hidratáltsága, játékbeli időáramlás)
 
-You can travel through these zones and maps 
-through Transitions which have certain travel costs 
-related to character vitals and World Simulation
+A térképen való mozgást lehetővé tevő útvonalakat
+átmeneti zászlók jelzik.
 
-Transitions are marked with Transition Flags"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452					
+* Átmeneti zászló: Egy zászló alakú objektum, amely a térkép külső szélén található."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452					
 Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -389,22 +412,24 @@ map transitions which increases simulation time
 
 You can see current time with time related items 
 Pick a time item (Alarm Clock) and equip it
-*Simulation time stays locked during Tutorial"	"14. World Simulation
+*Simulation time stays locked during Tutorial"	"14. Világszimuláció
 
-Game uses World Simulation which creates 
-day & night cycles, dynamic weather, 
-seasons and randomized events
+A játék világszimulációt használ a nappalok/éjszakák
+ciklusainak, a dinamikus időjárás- és évszakváltozásoknak,
+valamint a véletlenszerű eseményeknek a megvalósításához.
 
-Simulation rate
-Day & night cycle (24h) = 2.4h IRL
+Szimulációs időszak:
+Nappali/éjszakai ciklus (24 óra) = 2,4 valós óra
 
+A világszimuláció az alváshoz és a térképváltáshoz
+kapcsolódik, és a szimulációs idő ezen műveletek
+révén növekszik.
 
-World Simulation is linked to sleeping and 
-map transitions which increases simulation time
+Az aktuális időjárással kapcsolatos eszközökkel ellenőrizheti.
+Kérjük, válasszon ki és szereljen fel egy idővel kapcsolatos
+eszközt (például ébresztőórát).
 
-You can see current time with time related items 
-Pick a time item (Alarm Clock) and equip it
-*Simulation time stays locked during Tutorial"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	112331	8dc5a8b2700b0b9138de2fda7e32a39d4d0d39d918c0af1c9e8ec55eed5bcff8	454					
+* A szimulációs idő a bemutató során rögzített."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	112331	8dc5a8b2700b0b9138de2fda7e32a39d4d0d39d918c0af1c9e8ec55eed5bcff8	454					
 Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
 Shelters are safe areas that allows you to save 
@@ -418,20 +443,19 @@ All Shelters can be customized with
 Item Placement and Decor Mode
 
 You can use Item Placement with [G] and move 
-furniture by activating Decor Mode with [F1]"	"15. Shelters
+furniture by activating Decor Mode with [F1]"	"15. Rejtekhely
 
-Shelters are safe areas that allows you to save 
-simulation time, character progress and loot
+A rejtekhely egy biztonságos hely, ahol a szimulációs
+időt, a karakter fejlődését és a zsákmányt tárolhatod.
 
-Shelters can be unlocked with keys 
-which you acquire by completing tasks
+Néhány rejtekhely küldetések során megszerzett kulcsokkal nyitható.
 
+Minden rejtekhely díszíthető tárgyak elhelyezésével és díszítési móddal.
 
-All Shelters can be customized with 
-Item Placement and Decor Mode
+A [G] billentyű megnyomásával helyezhet el tárgyakat vagy
+bútorokat, a dekorációs mód aktiválásához pedig az [F] billentyű megnyomásával mozgathatja a bútorokat.
 
-You can use Item Placement with [G] and move 
-furniture by activating Decor Mode with [F1]"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
+A bútorkatalógust a [TAB] billentyűvel nyithatja meg Dekor módban."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -448,16 +472,16 @@ When you enter Vostok maps a red
 Permadeath Skull will also appear 
 in the upper corner of the screen"	"16. Vostok
 
-Vostok is a high-risk, high-reward Permadeath zone 
-where death results losing all existing progression
+A Vostok egy PermaDeath zóna, ahol magas a kockázat, de
+a jutalom is ugyanolyan nagy.
 
-Permadeath in this game deletes all save files, 
-so you lose absolutely everything
+A Permadeath a karakter végleges halálát jelenti.
+Ha egy Permadeath zónában halsz meg,
+a karaktered összes fejlődése lenullázódik,
+és a mentési fájlod törlődik.
 
+Figyelmeztető üzenet jelenik meg
+a Vostok zónába való átlépés előtt.
 
-When you travel towards Vostok maps,
- you are warned before the Transition
-
-When you enter Vostok maps a red 
-Permadeath Skull will also appear 
-in the upper corner of the screen"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	133093	89aa042f03d887306ba4bbef3e80754a70d63456d1937ed6dd6f094ead87092f	458					
+Amikor belépsz a Vostok zónába, egy piros Permades
+koponya ikon jelenik meg a képernyő felső sarkában."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Vostok.png	133093	89aa042f03d887306ba4bbef3e80754a70d63456d1937ed6dd6f094ead87092f	458					

@@ -10,7 +10,7 @@ Events	/	Button	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elemen
 Events	/	Day	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Day	Label	text	826758355	Day 1	658	1 nap		
 Events	/	Day	0	pattern	Scripts/Event	gd			day.text	concat		35	Day {str}	660	{str} Nap		
 Events	/	Day Left	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Status	Label	text	1150425844	In 10 days	662	10 nap múlva	Place holder text. Don't need to Translate. Use Pattern instead	
-Events	/	Day Left	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days	664	{str}nap múlva		
+Events	/	Day Left	0	pattern	Scripts/Event	gd			status.text	concat		62	In {str} Days	664	{str} nap múlva		
 Events	/	Type	0	pattern	Scripts/Event	gd			type.text	concat		37	{type} Event	666	{type} Esemény		
 Events	/	Type	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Type	Label	text	1058335921	Trader event	668	Kereskedői esemény	I don't know why is this string use lower case (event).	
 Events	/	Type	0	substr									Trader Event	670	Kereskedői esemény		

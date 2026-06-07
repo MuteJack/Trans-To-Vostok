@@ -36,7 +36,7 @@ Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons
 "	2068	Ki		
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
 "	2070	Be		
-Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	2072	Egy hardcore egyjátékos túlélőjáték, amelynek hátterét a finn–orosz határvidék képezi a világvége után.		
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	2072	A Road to Vostok ® a Road to Vostok Ltd. bejegyzett védjegye. Minden jog fenntartva © 2026		
 Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	2074	Verzió.: 0.1.1.3	"Will not use pattern matching. 
 It will act as the ""canaria (bird)"" for the outdated translation."	
 Main_Menu	ChangeLog	UI_Label	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	2076	Változások		
@@ -975,8 +975,8 @@ Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Bui
 About	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	About_Return	Button	text	1908499967	← Return	2496	← Vissza		
 About	Road to Vostok	Section Title	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	Game	Label	text	1892643737	Road to Vostok				
 About	Road to Vostok	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
-in a post-apocalyptic border zone between Finland and Russia"	2498	"Road to Vostok ®은 핀란드와 러시아 사이의 종말 이후 접경 지대를
-배경으로 하는 하드코어 싱글 플레이어 생존 게임입니다."		
+in a post-apocalyptic border zone between Finland and Russia"	2498	"A Road to Vostok ® egy hardcore egyjátékos túlélőjáték, 
+amelynek hátterét a finn–orosz határvidék képezi a világvége után"		
 About	Developer	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	2500	개발사		
 About	Developer	String	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.				
 About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	2502	개발국		
