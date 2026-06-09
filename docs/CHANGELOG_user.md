@@ -12,6 +12,19 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.6.2] — 2026-06-10
+
+- **Added**: **Hungarian** (*Magyar*) added to the mod.
+  - Translation provided by: Papp Csaba
+  - 16 Tutorial Billboard textures translated. (Original artwork by Papp Csaba, revised by MuteJack)
+- **Fixed — Korean**:
+  - Translation typo and expression fixes
+  (Gunsmith: 총잡이 → 건스미스; assorted UI / dialog / item text / incorrect line breaks)
+  - Some wording unified (e.g. strings where Task (의뢰) was translated as 임무)
+- **Fixed — Japanese**: Some translation expression fixes. (Fixed by: Nineblood)
+
+---
+
 ## [0.6.1] — 2026-06-06
 
 - **Added**: **Russian** (*Русский*) language is now available in the F9
@@ -235,6 +248,19 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 ## 알려진 문제
 
 - _(현재 없음)_
+
+---
+
+## [0.6.2] — 2026-06-10
+
+- **추가**: **헝가리어** (*Magyar*)가 모드에 추가되었습니다.
+  - 번역 제공: Papp Csaba
+  - Tutorial Billboard 텍스처 16개 번역 추가. (Papp Csaba 원본 제공, MuteJack 수정)
+- **수정 — 한국어**: 
+  - 번역 오타 및 표현 수정
+  (Gunsmith: 총잡이 → 건스미스; 일부 UI / 대사 / 아이템 텍스트 / 잘못된 줄바꿈)
+  - 일부 번역 표현 통일 (예: Task (의뢰)가 임무와 같은 단어로 번역된 string 수정)
+- **수정 — 일본어**: 일부 번역 표현 수정. (수정: Nineblood)
 
 ---
 

@@ -4,6 +4,52 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.2] — 2026-06-10 (Hungarian + Template Sync + Tooling Fixes)
+
+Hungarian is the first community-contributed locale (Papp Csaba).
+16 Tutorial Billboard textures added (original by Papp Csaba, revised by MuteJack).
+All active locale canonical TSVs synchronized to the updated Template.
+Two tooling bugs fixed: Language Coordinator misclassification in credits,
+`check_conflict` hiding results in the validation summary.
+
+### Added
+
+- **Hungarian** (`Magyar`, `dir: Hungarian`) —
+  - Translation provided by: Papp Csaba
+  - Tutorial Billboard textures added:
+  `Translations/Hungarian/textures/Tutorial/Billboards/Files/`.
+  Provided by Papp Csaba, revised by MuteJack.
+
+### Fixed
+
+- `get_member_list.py`: Fixed Language Coordinator being classified as Translator
+- `check_conflict.py`: Fixed bug where conflict validation returned exit=0 even when conflicts were detected in the log
+- `check_conflict.py`: Fixed import order issue introduced during the fix (`NameError: name 'Path' is not defined`)
+
+### Docs
+
+- `README_USER.md`: Moved user-facing README to `README/`, split into README_USER_eng and README_USER_kr
+- `docs/admin/kr/Push_Source_to_Crowdin.md` — Added docs for Crowdin source file push procedure (admin).
+
+### Translation
+
+#### Common
+
+- **Synchronized all locale translation xlsx (canonical TSV) files to Template**
+
+#### Korean:
+
+- Some typo and expression fixes (e.g. `총잡이` → `건스미스` (Gunsmith))
+- Some wording unified (e.g. Task (의뢰) was also translated as 임무 in some rows)
+
+#### Japanese expression refinements:
+- **`docs/translator/kr/Translating_on_Local.md`** — moved from `docs/developer/kr/`;
+  all relative links corrected.
+  `docs/developer/kr/Setting_Environments.md` link path updated.
+  Retained as redirect shim.
+
+---
+
 ## [0.6.1] — 2026-06-06 (Tooling Refactor + Validation System + Russian)
 
 Russian locale flips to enabled. A major tooling restructure splits the
@@ -1269,6 +1315,51 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.6.2] — 2026-06-10 (Hungarian 추가 + Template 동기화 + 도구 버그 수정)
+
+Hungarian 은 첫 커뮤니티 기여 locale (Papp Csaba).
+Tutorial Billboard 텍스처 16개 추가 (Papp Csaba 원본 제공, MuteJack 수정).
+모든 active locale 캐노니컬 TSV 를 업데이트된 Template 에 맞게 동기화.
+도구 버그 2건 수정: credits 의 Language Coordinator 잘못 분류,
+`check_conflict` 가 검증 요약에서 결과를 숨기던 문제.
+
+### 추가
+
+- **Hungarian** (`Magyar`, `dir: Hungarian`) —
+  - 번역 제공: Papp Csaba 
+  - Tutorial Billboard 텍스처 추가:
+  `Translations/Hungarian/textures/Tutorial/Billboards/Files/` 경로.
+  Papp Csaba 제공, MuteJack 수정.
+
+### 수정
+
+- `get_member_list.py`: Language Coordinator 가 Translator 로 분류되던 버그 수정
+- `check_conflict.py`: conflict 검증이 log에서 conflict을 감지해도 0을 return하는 버그 수정
+- `check_conflict.py`: 수정 과정에서 발생한 import 순서 문제 수정 (`NameError: name 'Path' is not defined`)
+
+### docs
+- `README_USER.md`: 사용자용 README를 `README/`로 이동, README_USER_eng와 README_USER_kr 분리
+- `docs/admin/kr/Push_Source_to_Crowdin.md`** — Crowdin 소스 파일 push 절차에 대한 docs 추가 (admin 용).
+
+### 번역
+
+#### 공통
+
+- **전 locale 번역 xlsx 파일 (canonical TSV) 파일을 Template과 동기화**
+
+#### Korean: 
+
+- 일부 오타 및 표현 수정 (예: `총잡이` → `건스미스` (Gunsmith))
+- 일부 단어 표현 통일 (예: Task(의뢰)가 임무로도 번역된 행 존재)
+- 
+#### Japanese 일부 번역 표현 수정:
+- **`docs/translator/kr/Translating_on_Local.md`** — `docs/developer/kr/`
+  에서 이동; 상대 링크 전체 수정.
+  `docs/developer/kr/Setting_Environments.md` 링크 경로 업데이트.
+ redirect shim 으로 유지.
+
+---
 
 ## [0.6.1] — 2026-06-06 (도구 리팩터링 + 검증 시스템 + Russian 활성화)
 
