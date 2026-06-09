@@ -1,12 +1,13 @@
 **지원 언어**
 
 - **English** (게임 기본언어)
-- **Korean / 한국어** (개발자로부터 번역 관리중, 텍스처 작업 완료)
-- **French / Français** (프로토타입, 텍스처 프로토타입)
+- **Korean / 한국어** (1차 번역/테스트 언어, 텍스처 적용)
+- **日本語** / Japaneese (프로토타입, 텍스처 미적용)
+- **Hungarian / Magyar** (튜토리얼 빌보드 텍스처 추가) : Papp Csaba 번역 제공
+- **French / Français** (프로토타입, 튜토리얼 빌보드 텍스처 추가)
 - **Português (Brasil)** (프로토타입, 텍스처 미적용)
 - **Deutsch** (프로토타입, 텍스처 미적용)
 - **Español (LatAm)** (프로토타입, 텍스처 미적용)
-- **日本語** (프로토타입, 텍스처 미적용)
 - **简体中文** (프로토타입, 텍스처 미적용)
 - **繁體中文** (프로토타입, 텍스처 미적용)
 - **Русский / 러시아어** (프로토타입, 텍스처 미적용)
@@ -26,11 +27,13 @@
 
 Road to Vostok의 다국어 번역 지원 모드.
 
-> **NOTE:** *해당 모드, 번역 ToolBox ([GitHub](https://github.com/MuteJack/Trans-to-Vostok))는 현재 개발중에 있습니다.*
+> **NOTE:** *해당 모드, 번역 ToolBox ([GitHub](https://github.com/MuteJack/Trans-to-Vostok))는 현재 개발중에 있습니다.
+> 해당 모드에는 runtime용 tsv파일만 존재하며, 실제 번역 제작에 사용되는 파일을 포함하지 않습니다.
+> 모든 번역은 crowdin을 통해 관리되며, 모드에 포함되는 파일은 GitHub Repository에서 관리됩니다.*
 
 > **번역 기여는 [Crowdin](https://crowdin.com/project/trans-to-vostok)을 통해 받고 있습니다.**
 > 별도 셋업 없이 브라우저를 통해 바로 참여할 수 있습니다. [Trans to Vostok on Crowdin](https://crowdin.com/project/trans-to-vostok).
-> [GitHub](https://github.com/MuteJack/Trans-to-Vostok)의 번역만 변경한 Pull Request는 더 이상 받지 않으니, Crowdin을 이용해 주세요. 
+> [GitHub](https://github.com/MuteJack/Trans-to-Vostok)의 번역만 변경한 Pull Request는 더 이상 받지 않으니, Crowdin을 이용해 주세요.
 > 개발자가 주기적으로 Crowdin → 저장소로 sync하며 다음 모드 릴리스부터 반영됩니다.
 
 ![3_Trans2Vostok_Main_Korean.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/3_Trans2Vostok_Main_Korean.png)
@@ -50,15 +53,15 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
    - 게임 텍스처를 로케일별 번역본으로 런타임에 교체 (예: Tutorial Billboard)
    - 게임 텍스처를 번역된 일부와 런타임에서 합성 (예: 게임의 원본/수정된 에셋을 포함하기 곤란한 Road Sign 등)
    - **참고**: 번역 텍스처는 수작업으로 재구성(hand-crafted)되었으며, 직접 그린 작업물(hand-drawing) 또는 저작권이 없는 애셋이 포함될 수 있어 일부 아이콘이 원본과 조금 다를 수 있습니다 (예: 튜토리얼 빌보드의 Performance 아이콘, Permadeath 해골 아이콘 등).
-![9_Trans2Vostok_Texture_TutorialBillBoard2.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/9_Trans2Vostok_Texture_TutorialBillBoard2.png)
+     ![9_Trans2Vostok_Texture_TutorialBillBoard2.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/9_Trans2Vostok_Texture_TutorialBillBoard2.png)
 3. UI 지원
    - **단축키 `F9`** 로 언어 선택 UI 표시.
    - 게임 재시작 없이 런타임에 언어 전환 가능.
    - 성능 옵션 (배치 크기 / 간격), Whitelist 토글, Mod 호환성 addon 토글, 그리고 옵션인 Substr Mode 모두 이 UI 에서 설정.
-   ![2_Trans2Vostok_Lang_Sel.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/2_Trans2Vostok_Lang_Sel.png)
+     ![2_Trans2Vostok_Lang_Sel.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/2_Trans2Vostok_Lang_Sel.png)
 4. 우선 순위 화이트리스트 (v0.3.1에서 추가)
    - 특정 UI 영역(HUD 맵 이름, 인벤토리, 트레이더 UI 등)을 매 프레임 번역본으로 갱신시킬 경로 키워드 프리셋.
-   - 다른 모드가 게임 텍스트를 매 프레임마다 새로고침되어 기본 batch cycle 이 따라잡지 못하는 경우 (예: 깜빡임), 
+   - 다른 모드가 게임 텍스트를 매 프레임마다 새로고침되어 기본 batch cycle 이 따라잡지 못하는 경우 (예: 깜빡임),
    - F9키를 눌러, UI 의 **Whitelist** 탭을 통해 Toggle 할 수 있습니다. (모든 프리셋에 대한 기본값은 OFF입니다.)
 5. Mod 호환성 Addons (v0.5.0에서 추가)
    - 다른 모드가 도입한 label 패턴 (예: tooltip 마다 prepend 되는 prefix) 을 처리하는 mod 별 런타임 helper.
@@ -103,25 +106,25 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 9. Substr Mode (일반 사용에는 권장되지 않음)
 
    - 게임 업데이트 후 다수 텍스트가 번역되지 않을 때, 모드 업데이트 전까지의 임시 사용 용도.
-   (모든 literal/static entry 를 substr 로 취급)
+     (모든 literal/static entry 를 substr 로 취급)
    - F9 UI 의 체크박스로 on/off 가능.
 
 ## 3. 설치
 
 > **NOTE:** 해당 모드는 MetroMoadLoader 등의 모드로더를 요구합니다.
 
-1. Godot용 **MetroModLoader** 또는 **VostokMods**가 설치되어 있어야 합니다. 
-[https://modworkshop.net/mod/55623](https://modworkshop.net/mod/55623)
-![1776508272457](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/1.Metro_MoadLoader.png)
-1. `Trans To Vostok.zip` 파일을 다운로드 받은 후, 게임의 `mods/` 폴더에 복사합니다.
+1. Godot용 **MetroModLoader** 또는 **VostokMods**가 설치되어 있어야 합니다.
+   [https://modworkshop.net/mod/55623](https://modworkshop.net/mod/55623)
+   ![1776508272457](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/1.Metro_MoadLoader.png)
+2. `Trans To Vostok.zip` 파일을 다운로드 받은 후, 게임의 `mods/` 폴더에 복사합니다.
    예: `C:\Program Files (x86)\Steam\steamapps\common\Road to Vostok\mods\`
    또는: `D:\SteamLibrary\steamapps\common\Road to Vostok\mods\`
-2. 게임을 실행하면 기본 언어(English)로 시작됩니다.
-3. **F9** 키로 언어 선택 UI를 열어 원하는 언어로 전환합니다.
-4. 다른 모드와 함께 사용 중 **일부 텍스트가 깜빡거린다면**, F9 → **Whitelist** 탭에서 해당 프리셋 활성화 (예: ImmersiveXP 의 경우 *HUD Map Label*).
+3. 게임을 실행하면 기본 언어(English)로 시작됩니다.
+4. **F9** 키로 언어 선택 UI를 열어 원하는 언어로 전환합니다.
+5. 다른 모드와 함께 사용 중 **일부 텍스트가 깜빡거린다면**, F9 → **Whitelist** 탭에서 해당 프리셋 활성화 (예: ImmersiveXP 의 경우 *HUD Map Label*).
    - 이는 해당 모드가 특정 텍스트 라벨을 매 프레임마다 갱신하는 문제에서 비롯됩니다.
    - **Whitelist** 는 매 프레임 갱신되는 항목에 대해 "매 프레임마다 계속 재번역"해야 할 대상을 표시하는 체크리스트입니다. (=깜빡임 문제 해소)
-5. 다른 모드와 함께 사용 중 **일부 텍스트가 제대로 번역되지 않는다면**, F9 → **Addons** 탭에서 해당 addon 활성화 (예: *ImmersiveXP* — `\n.\n` / `\n\n` tooltip prefix 처리).
+6. 다른 모드와 함께 사용 중 **일부 텍스트가 제대로 번역되지 않는다면**, F9 → **Addons** 탭에서 해당 addon 활성화 (예: *ImmersiveXP* — `\n.\n` / `\n\n` tooltip prefix 처리).
 
 ## 4. 지원 언어
 
@@ -131,26 +134,31 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 4. **포르투갈어 (Português / Brasil)**: v0.5.1 추가
 5. **독일어 (Deutsch) / 스페인어 LatAm (Español) / 일본어 (日本語) / 중국어 간체 (简体中文) / 중국어 번체 (繁體中文)**: v0.5.3 추가
 6. **러시아어 (Русский)**: v0.6.1 추가
-7. **이탈리아어 (Italiano) / 헝가리어 (Hungarian)** : 추가 예정
-8. 그 외 언어: 모드 개발 진행도 / 커뮤니티 언어 추가 요청에 따라 점진적으로 추가 예정.
+7. **Hungarian (Magyar)**: v0.6.2 추가 (Papp Csaba 번역 제공)
+8. **이탈리아어 (Italiano) / 헝가리어 (Hungarian)** : 추가 예정
+9. 그 외 언어: 모드 개발 진행도 / 커뮤니티 언어 추가 요청에 따라 점진적으로 추가 예정.
 
 ### 4.1. 텍스트 번역 / 검수 참여 (Crowdin 환경)
 
-모든 번역은 [Crowdin](https://crowdin.com/project/trans-to-vostok)을 중심으로 진행됩니다. 
+모든 번역은 [Crowdin](https://crowdin.com/project/trans-to-vostok)을 중심으로 진행됩니다.
+
 - 번역 기여: [Crowdin](https://crowdin.com/project/trans-to-vostok)에서 가입 후 브라우저에서 바로 작업 (별도 셋업 불필요).
 - ToolBox ([GitHub Repo](https://github.com/MuteJack/Trans-to-Vostok))를 통한 번역 지원은 아직 개발중에 있습니다.
 - Credit은 Crowdin에서 설정된 이름으로 자동 추가됩니다.
 - 새 언어 요청 / 일반 피드백: [GitHub 이슈](https://github.com/MuteJack/Trans-to-Vostok/issues)로 요청해 주세요 (차후 공개 예정).
 
 ### 4.2. 텍스트 번역 (Local 환경, 준비중)
+
 이것은 개발 지식이 있는 사람들을 위한 환경입니다. ([GitHub Repository](https://github.com/MuteJack/Trans-to-Vostok))
 이것을 이용한 workflow는 현재 보완/docs 작성이 완료되는 대로 업데이트될 예정입니다.
 
 ### 4.3. 텍스처 번역
+
 현재 텍스처는 모두 개발자가 수작업(hand-craft)를 통해 제작되고 있습니다.
+
 - 텍스처에 들어가게 될 텍스트는 Crowdin에서 Texture/{sheetname}.tsv 를 통해 관리됩니다.
 - 수작업이므로, 길이 문제 등으로 인해 제작 과정에서 텍스트가 crowdin과는 조금 다르게 반영될 수 있습니다.
-- 번역된 텍스처 제작에 직접 참여하고 싶으신 분은, 해당 workflow에 대해 docs 제작 및 보완중에 있습니다. 
+- 번역된 텍스처 제작에 직접 참여하고 싶으신 분은, 해당 workflow에 대해 docs 제작 및 보완중에 있습니다.
   - 현재로서는 Credit에 남길 이름과 함께 파일을 coldman1224@outlook.com으로 보내주시면 수동으로 Repo에 반영해드리겠습니다.
   - 또는, 개발 지식 (Git, [GitHub](https://github.com/MuteJack/Trans-to-Vostok))이 있으신 분은 PR (Pull Request)을 통해 제출해주세요.
 
@@ -158,7 +166,7 @@ UI, 아이템, 퀘스트, 상호작용 등 **게임 내 번역 가능한 부분�
 
 번역된 텍스처(이미지) 에셋은 직접 작업물 / 라이선스-프리 애셋 / 제3자 데이터 출처가 혼합되어 있을 수 있습니다. 각 파일별 출처는 모드 zip 안의 **`Trans To Vostok/<locale>/Texture_Attribution.md`** 에 정리되어 있습니다.
 
-locale별 credit (텍스트 + 텍스처) 는 **`Trans To Vostok/<locale>/Translation_Credit.md`** 에 정리되어 있습니다. 
+locale별 credit (텍스트 + 텍스처) 는 **`Trans To Vostok/<locale>/Translation_Credit.md`** 에 정리되어 있습니다.
 
 프로젝트 전체 저자 / 번역자 / 기여자 명단은 저장소 루트의 `AUTHORS.md` 에 정리되어 있습니다.
 
@@ -180,5 +188,3 @@ locale별 credit (텍스트 + 텍스처) 는 **`Trans To Vostok/<locale>/Transla
 ![8_Trans2Vostok_Texture_TutorialBillBoard1.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/8_Trans2Vostok_Texture_TutorialBillBoard1.png)
 
 ![10_Trans2Vostok_UI_WorldMap_Korean.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/10_Trans2Vostok_UI_WorldMap_Korean.png)
-
-

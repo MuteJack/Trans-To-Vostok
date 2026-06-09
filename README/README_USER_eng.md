@@ -1,12 +1,13 @@
 **Supported Languages**
 
 - **English** (game default)
-- **Korean / 한국어** (Managed by lead developer, texture reworked)
-- **French / Français** (Prototyped, texture prototyped)
+- **Korean / 한국어** (Primary translation/test language, texture reworked)
+- **日本語 / Japanese** (Prototyped, texture pending)
+- **Hungarian / Magyar** (Tutorial Billboard textures added) : Translation by Papp Csaba
+- **French / Français** (Prototyped, Tutorial Billboard textures added)
 - **Português (Brasil)** (Prototyped, texture pending)
 - **Deutsch** (Prototyped, texture pending)
 - **Español (LatAm)** (Prototyped, texture pending)
-- **日本語** (Prototyped, texture pending)
 - **简体中文** (Prototyped, texture pending)
 - **繁體中文** (Prototyped, texture pending)
 - **Русский** (Prototyped, texture pending)
@@ -131,8 +132,9 @@ It aims to deliver **complete, non-missing translation** across all translatable
 4. **Português (Brasil)**: Added in v0.5.1
 5. **Deutsch / Español (LatAm) / 日本語 / 简体中文 / 繁體中文**: Added in v0.5.3
 6. **Русский**: Added in v0.6.1
-7. **Italiano / Hungarian**: Planned
-8. Other languages: To be added based on development progress and community requests.
+7. **Hungarian (Magyar)**: Added in v0.6.2 (translation by Papp Csaba)
+8. **Italiano / Hungarian**: Planned
+9. Other languages: To be added based on development progress and community requests.
 
 ### 4.1. Text Translation / Proofreading (Crowdin)
 
