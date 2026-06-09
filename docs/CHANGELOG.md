@@ -4,6 +4,15 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.3] — 2026-06-10 (Hot Fix: Rebuild)
+
+### Fixed
+
+- Mod rebuilt due to a packaging error in v0.6.2; translation content was not updated in that release.
+- Same packaging error caused MetroModLoader to fail loading the mod.
+
+---
+
 ## [0.6.2] — 2026-06-10 (Hungarian + Template Sync + Tooling Fixes)
 
 Hungarian is the first community-contributed locale (Papp Csaba).
@@ -1315,6 +1324,10 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.6.3] — 2026-06-10 (Hot Fix): 모드를 다시 빌드
+- 모드 빌드 실수로 인하여, 번역 내용이 업데이트되지 않음.
+- 같은 이유로, Metro Mod Loader가 모드를 불러오지 못하는 문제 해결.
 
 ## [0.6.2] — 2026-06-10 (Hungarian 추가 + Template 동기화 + 도구 버그 수정)
 

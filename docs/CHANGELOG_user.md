@@ -12,6 +12,12 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 ---
 
+## [0.6.3] — 2026-06-10
+
+- **Fixed**: Mod rebuilt — a packaging error in v0.6.2 caused translation content not to update and prevented MetroModLoader from loading the mod.
+
+---
+
 ## [0.6.2] — 2026-06-10
 
 - **Added**: **Hungarian** (*Magyar*) added to the mod.
@@ -248,6 +254,12 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 ## 알려진 문제
 
 - _(현재 없음)_
+
+---
+
+## [0.6.3] — 2026-06-10
+
+- **수정**: 모드를 다시 빌드하였습니다 — 0.6.2의 빌드 실수로 인하여 번역 내용이 업데이트되지 않았으며, 같은 이유로 MetroModLoader가 모드를 불러오지 못하던 문제를 해결하였습니다.
 
 ---
 
