@@ -745,14 +745,14 @@ UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	Чувс�
 UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	Чувствительность прицела
 UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	Scope Sensitivity	Диапазон чувствительности
 UI/Settings	Settings/Row_01/Color	Color	Label	Color Settings	Настройки цвета
+UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	Настройки изображения
 UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	Interface Scale	Масштаб интерфейса
+UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	Резкость
 UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	HUD Scale	Шкала HUD
 UI/Settings	Settings/Row_01/Image/Elements	Font	Label	Font Scale	Масштаб шрифта
 UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	Exposure	Воздействие
 UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	Contrast	Контраст
 UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	Saturation	Насыщенность
-UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	Настройки изображения
-UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	Резкость
 UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
 UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
 "	Карта

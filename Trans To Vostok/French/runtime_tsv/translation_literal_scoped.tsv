@@ -745,14 +745,14 @@ UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	Sensibili
 UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	Sensibilité de la visée
 UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	Scope Sensitivity	Sensibilité de la lunette
 UI/Settings	Settings/Row_01/Color	Color	Label	Color Settings	Paramètres de couleur
+UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	Paramètres d'image
 UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	Interface Scale	Échelle d'interface
+UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	Netteté
 UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	HUD Scale	Échelle HUD
 UI/Settings	Settings/Row_01/Image/Elements	Font	Label	Font Scale	Taille de la police
 UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	Exposure	Exposition
 UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	Contrast	Contraste
 UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	Saturation	Saturation
-UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	Paramètres d'image
-UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	Netteté
 UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	HUD
 UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
 "	Carte

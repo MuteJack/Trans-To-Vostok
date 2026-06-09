@@ -2,8 +2,8 @@ location	parent	name	type	text	translation
 Scenes/Menu	.	Compatibility	Label	Compatibility	호환 모드
 UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UI 스케일링 [추가 예정]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	칼
-UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	수류탄1
-UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	수류탄2
+UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	수류탄 1
+UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	수류탄 2
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	열원
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	일부 요리 관련 레시피에 필요한 제작 시설입니다.
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	요구 시설 (근접)
@@ -44,7 +44,7 @@ Carry Capacity by default is 10kg"	"소지품 최대 무게(kg)를 나타내는 
 기본 소지품 최대 무게는 10kg입니다."
 UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	장비 통계
 UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	장비 가치
-UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	장착중인 모든 장비 아이템의 가치((€)) 합계입니다.
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	장착 중인 모든 장비 아이템의 가치(€) 합계입니다.
 UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	장비 통계
 UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	보온성
 UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
@@ -76,7 +76,7 @@ Dexterity decreases when you equip heavy or unergonomic items with a negative de
 
 민첩성은 이동 속도 및 무기 조작(조준, 재장전 등)과 관련이 있습니다.
 
-민첩성 수치가 마이너스인 무겁거나 인체공학적이지 않은 아이템을 장착하면 민첩성이 감소합니다."
+민첩성 수치가 마이너스인, 무겁거나 인체공학적이지 않은 아이템을 장착하면 민첩성이 감소합니다."
 UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	장비 통계
 UI/Interface	Equipment/Stats/Elements/Menace	Info		Menace	위협 수치
 UI/Interface	Equipment/Stats/Elements/Menace	Info		"An intimidation value of how threatening AI sees your character and equipment.
@@ -91,7 +91,7 @@ Menace only affects low-tier AI (Bandits)."	"AI가 당신의 캐릭터와 장비
 
 위협 수치는 특수 의상과 같이 위협 수치가 높은 아이템을 장착하면 증가합니다.
 
-위협은 하위 등급 AI(산적 등)에게만 영향을 미칩니다."
+위협은 하위 등급 AI(밴디트 등)에게만 영향을 미칩니다."
 UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	장비 통계
 UI/Interface	Equipment/Stats/Elements/CBRN	Info		CBRN	화생방 수치
 UI/Interface	Equipment/Stats/Elements/CBRN	Info		"A protection value against chemical, biological, radiological and nuclear threats.
@@ -160,13 +160,13 @@ Mental decreases over time and with nasty consumables. Any active medical condit
 
 Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
 
-Mental [0] -> Insanity (Condition)"	"행복도와 정신 건강 수준.
+Mental [0] -> Insanity (Condition)"	"행복도와 정신 건강 상태입니다.
 
-정신 건강은 시간이 지남에 따라 감소하며, 해로운 음식을 섭취할 때도 감소합니다. 현재 질병이 있는 경우 감소 속도가 두 배로 빨라집니다.
+정신력은 시간이 지남에 따라 감소하며, 해로운 음식을 섭취할 때도 감소합니다. 현재 질병이 있는 경우 감소 속도가 두 배로 빨라집니다.
 
-정신 건강은 간식, 따뜻한 식사, 술이나 니코틴 제품 같은 기호품과 같은 위안이 되는 것들을 섭취하면 증가합니다.
+정신력은 간식, 따뜻한 식사, 술이나 니코틴 제품 같은 기호품과 같은 위안이 되는 것들을 섭취하면 증가합니다.
 
-정신 건강 [0] -> 광기 (상태)"
+정신력 [0] -> 광기 (상태 이상)"
 UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	바이탈
 UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	체온
 UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
@@ -175,13 +175,13 @@ Body Temp decreases over time in Winter. Decrease speed can be reduced by stayin
 
 Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
 
-Body Temp [0] -> Frostbite (Condition)"	"체온 및 보온 수준.
+Body Temp [0] -> Frostbite (Condition)"	"체온 및 보온 수준입니다.
 
-겨울에는 체온이 시간이 지남에 따라 감소합니다. 실내에 머물거나 단열 효과가 있는 옷을 착용하면 체온 감소 속도를 줄일 수 있습니다.
+겨울에는 체온이 시간이 지남에 따라 감소합니다. 실내에 머물거나 단열 효과가 있는 옷을 착용하면 체온이 감소하는 속도를 줄일 수 있습니다.
 
-대피소에 있거나 모닥불과 같은 열원 주변에 있으면 체온이 올라갑니다. 히트팩이나 우주 담요와 같은 특정 열 관련 아이템도 체온을 높여줍니다.
+대피소에 있거나 모닥불과 같은 열원 주변에 있으면 체온이 올라갑니다. 히트팩이나 담요와 같은 특정 열 관련 아이템도 체온을 높여줄 수 있습니다.
 
-체온 [0] -> 동상 (상태)"
+체온 [0] -> 동상 (상태 이상)"
 UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	바이탈
 UI/Interface	Character/Vitals/Elements/Cat	Info		Cat	고양이
 UI/Interface	Character/Vitals/Elements/Cat	Info		"Grandma's cat health level.
@@ -522,23 +522,23 @@ Additional Shelters can be unlocked with keys which you acquire by completing Ta
 
 새 게임은 오두막과 텐트라는 두 개의 은신처가 잠금 해제된 상태로 시작합니다.
 
-추가 은신처는 여러 상인에게서 임무를 완료하여 얻는 열쇠로 잠금 해제할 수 있습니다."
+추가 은신처는 여러 상인에게서 의뢰를 완료하여 얻는 열쇠로 잠금 해제할 수 있습니다."
 UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	진행도
 UI/Interface	Character/Stats/Elements/Tasks	Info		Tasks	의뢰 수
 UI/Interface	Character/Stats/Elements/Tasks	Info		"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
 
-Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"완료된 의뢰의 수 입니다.
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"당신이 완료된 의뢰의 수 입니다.
 
 의뢰는 상인에게서 받는 아이템 기반 작업입니다. 임무는 여러 상인 간에 연결될 수 있으며, 제작을 통해 얻을 수 없는 아이템을 필요로 할 수도 있습니다.
 
-의뢰는 거래 가격 인하(상인세) 및 새로운 은신처와 특수 방을 잠금 해제하는 열쇠 획득과 관련이 있습니다."
+의뢰는 거래 가격 인하(세금) 및 새로운 은신처와 특수한 방을 잠금 해제하는 열쇠 획득과 관련이 있습니다."
 UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	진행도
 UI/Interface	Character/Stats/Elements/Quests	Info		Quests	퀘스트 수
 UI/Interface	Character/Stats/Elements/Quests	Info		"Number of Quests completed.
 
-Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"완료한 퀘스트 수.
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"당신이 완료한 퀘스트 수입니다.
 
 퀘스트는 상인들이 제공하는 스토리 기반 임무입니다. 퀘스트는 여러 상인의 퀘스트와 연관될 수 있으며, 특정 이벤트 발생 후에 활성화될 수도 있습니다."
 UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	진행도
@@ -553,9 +553,9 @@ You can complete a CDS by clearing out the hostile enemies and connecting the CD
 
 민방위 대피소(CDS)는 군사적 위협으로부터 보호하기 위해 설계된 콘크리트 벙커 및 지하 공간입니다.
 
-5구역 대피 이후, 이 CDS들은 적에게 점령당했고 내부에 있던 생존 장비 대부분이 도난당했습니다.
+05 구역 대피 이후, 이러한 대피소들은 적에게 점령당했고 내부에 있던 생존 장비 대부분이 도난당했습니다.
 
-CDS를 완료하려면 적을 소탕하고 CDS 비상 방송 라디오를 다시 연결해야 합니다."
+CDS를 완료하려면 적을 소탕하고 대피소 비상 방송 라디오를 다시 연결해야 합니다."
 UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	진행도
 UI/Interface	Character/Stats/Elements/?	Info		Silent Night	고요한 밤
 UI/Interface	Character/Stats/Elements/?	Info		"There will be a silent night when all fades away.
@@ -568,7 +568,7 @@ You feel safe, a peaceful moment that feels like the ending you wanted.
 
 Then your last light disappears, the sky turns red and the silence breaks."	"모든 것이 사라지는 고요한 밤이 찾아올 것입니다.
 
-하늘을 올려다보면 북극성이 보일 것이며, 그겅시 어둠 속에서 유일한 빛일 겁니다.
+하늘을 올려다보면 북극성이 보일 것이며, 그것이 어둠 속에서 유일한 빛일 겁니다.
 
 그 빛은 고향, 당신이 온 곳이자 돌아갈 곳을 떠올리게 합니다.
 
@@ -588,7 +588,7 @@ Resupply: Time when supply resets."	"물품 거래, 의뢰 제공 및 전문 서
 
 이름: 지역 주민들이 일반적으로 부르는 이름입니다.
 세금: 물품 가격에 적용되는 배율입니다.
-임무 수: 완료한 의뢰의 개수입니다.
+의뢰 수: 완료한 의뢰의 수입니다.
 재보급: 물품 재고가 초기화되는 시간입니다."
 UI/Interface	Trader/Panel	Info		Trader Info	상인 통계
 UI/Interface	Deal/Panel	Info		Deal	거래

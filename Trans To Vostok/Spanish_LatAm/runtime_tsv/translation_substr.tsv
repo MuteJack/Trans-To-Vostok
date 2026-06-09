@@ -52,28 +52,29 @@ Loading...	Cargando...
 Skip Intro [SPACE]	Saltar introducción [BARRA ESPACIADORA]
 All save files deleted	Se han eliminado todos los archivos guardados
 Character died	El personaje ha muerto
-Intro	Introducción
-Cabin	Cabina
-Shelter	Refugio
-Tutorial	Tutorial
 Menu	Menú
-Attic	Ático
+Intro	Introducción
+Tutorial	Tutorial
+Tutorial Exit	Salir del tutorial
 Death	Muerte
+Template	Plantilla
+shaders	sombreadores
+Shelter	Refugio
+Cabin	Cabina
+Attic	Ático
 Classroom	Aula
 Tent	Tienda de campaña
 Bunker	Búnker
-Village	Pueblo
 Area 05	Área 05
+Village	Pueblo
 Highway	Autopista
 School	Escuela
-Outpost	Puesto avanzado
 Border Zone	Zona fronteriza
+Outpost	Puesto avanzado
 Minefield	Campo minado
+Vostok	Vostok
 Apartments	Apartamentos
 Terminal	Terminal
-Tutorial Exit	Salir del tutorial
-Template	Plantilla
-shaders	sombreadores
 Trader	Operador
 Generalist	Generalista
 Doctor	Doctor
@@ -96,7 +97,6 @@ Wood	Madera
 Metal	Metal
 Concrete	Hormigón
 Rock	Rock
-Vostok	Vostok
 Inventory	Inventario
 Primary	Primaria
 Secondary	Secundaria

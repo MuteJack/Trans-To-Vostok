@@ -52,32 +52,33 @@ Loading...	로딩중...
 Skip Intro [SPACE]	인트로 스킵하기 [SPACE]
 All save files deleted	모든 세이브 파일이 삭제되었습니다
 Character died	캐릭터가 사망했습니다
-Intro	인트로
-Cabin	오두막
-Shelter	은신처
-Tutorial	튜토리얼
 Menu	메뉴
-Attic	다락방
+Intro	인트로
+Tutorial	튜토리얼
+Tutorial Exit	튜토리얼 나가기
 Death	죽음
+Template	템플릿
+shaders	셰이더
+Shelter	은신처
+Cabin	오두막
+Attic	다락방
 Classroom	교실
 Tent	텐트
 Bunker	벙커
-Village	마을
 Area 05	05 구역
+Village	마을
 Highway	고속도로
 School	학교
+Border Zone	접경 지대
 Outpost	전초기지
-Border Zone	접경지대
 Minefield	지뢰지대
+Vostok	보스토크
 Apartments	아파트 단지
 Terminal	터미널
-Tutorial Exit	튜토리얼 나가기
-Template	템플릿
-shaders	셰이더
 Trader	상인
 Generalist	잡화상
 Doctor	의사
-Gunsmith	총잡이
+Gunsmith	건스미스
 Driver	운전사
 Grandma	할머니
 Shaman	샤먼
@@ -96,7 +97,6 @@ Wood	나무
 Metal	금속
 Concrete	콘크리트
 Rock	돌
-Vostok	보스토크
 Inventory	인벤토리
 Primary	주무기
 Secondary	보조무기
@@ -107,7 +107,7 @@ Map not equipped	지도가 장착되지 않았습니다
 Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)
 Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
 Casette Player power 0%, recharge player	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.
-Casette Player empty, insert casette	카세트 플레이어가 비어있습니다, 카세트를 넣어주세요.
+Casette Player empty, insert casette	카세트 플레이어가 비어 있습니다, 카세트를 삽입해 주세요.
 Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
 Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
 Sleep	수면
@@ -192,12 +192,9 @@ Mosquito Hat	모기장 모자
 M. Hat	모기 모자.
 Sauna Hat	사우나 모자
 S. Hat	사우나 모자
-Hoodie (Border Zone)	"후드티 (접경 지대
-)"
-Hoodie BZ.	"후드티 (접경 지대
-)"
-Hoodie B.	"후드티 (접경 지대
-)"
+Hoodie (Border Zone)	후드티 (접경 지대)
+Hoodie BZ.	후드티 (접경 지대)
+Hoodie B.	후드티 (접경 지대)
 Hoodie (Gray)	후드티 (그레이)
 Hoodie	후드티
 M62 Jacket	M62 재킷

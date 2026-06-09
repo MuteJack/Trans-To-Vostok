@@ -1,6 +1,6 @@
 text	translation
 Compatibility	互換性
-Selected	選択済み
+Selected	選択
 Press key to bind...	キーを押して割り当ててください...
 Forward	次へ
 Backward	戻る
@@ -52,28 +52,29 @@ Loading...	読み込み中...
 Skip Intro [SPACE]	イントロをスキップ [スペース]
 All save files deleted	保存されたファイルがすべて削除されました
 Character died	キャラクターが死亡しました
-Intro	はじめに
-Cabin	キャビン
-Shelter	シェルター
-Tutorial	チュートリアル
 Menu	メニュー
-Attic	屋根裏部屋
+Intro	はじめに
+Tutorial	チュートリアル
+Tutorial Exit	チュートリアルの終了
 Death	死
+Template	テンプレート
+shaders	シェーダー
+Shelter	シェルター
+Cabin	キャビン
+Attic	屋根裏部屋
 Classroom	教室
 Tent	テント
 Bunker	バンカー
-Village	村
 Area 05	エリア05
+Village	村
 Highway	高速道路
 School	学校
-Outpost	前哨基地
 Border Zone	国境地帯
+Outpost	前哨基地
 Minefield	地雷原
+Vostok	ボストーク
 Apartments	アパート
 Terminal	ターミナル
-Tutorial Exit	チュートリアルの終了
-Template	テンプレート
-shaders	シェーダー
 Trader	トレーダー
 Generalist	ジェネラリスト
 Doctor	医師
@@ -96,15 +97,14 @@ Wood	木材
 Metal	金属
 Concrete	コンクリート
 Rock	ロック
-Vostok	ボストーク
-Inventory	在庫
+Inventory	所持品
 Primary	小学校
 Secondary	セカンダリ
 Vital	バイタル
 Task Notes empty	タスクのメモは空です
 Task Notes not available (Tutorial)	タスクノートは利用できません（チュートリアル）
 Map not equipped	マップが装備されていません
-Map not usable (Vostok)	地図は使用不可（ボストーク）
+Map not usable (Vostok)	マップは使用不可（ボストーク）
 Casette Player not equipped	カセットプレーヤーは搭載されていません
 Casette Player power 0%, recharge player	カセットプレーヤーのバッテリー残量 0%、プレーヤーを充電してください
 Casette Player empty, insert casette	カセットプレーヤーにカセットが入っていません。カセットを入れてください。
@@ -132,7 +132,7 @@ Day	日
 Easy	簡単
 Intermediate	中級
 Hard	難しい
-Trader Event	トレーダー向けイベント
+Trader Event	トレーダーイベント
 Dynamic Event	ダイナミック・イベント
 Special Event	特別イベント
 Dynamic	ダイナミック
@@ -160,7 +160,7 @@ Nomad BP.	ノマドBP.
 Patrol Backpack	パトロールバックパック
 Patrol BP.	パトロールBP.
 Duffel (Retro)	ダッフルバッグ（レトロ）
-R. Duffel	R. ダッフェル
+R. Duffel	R. ダッフル
 Belt Pouch	ベルトポーチ
 Kukkaro (Black)	クッカロ（ブラック）
 Kukkaro	クッカロ
@@ -173,7 +173,7 @@ Children	子供向け
 Book (Cooking)	本（料理）
 Cooking	料理
 Book (Fishing)	本（釣り）
-Book (Religion)	書籍（宗教）
+Book (Religion)	本（宗教）
 Religion	宗教
 Clothing	衣類
 Flame Beanie	フレイム・ビーニー
@@ -193,8 +193,8 @@ M. Hat	M. ハット
 Sauna Hat	サウナ用帽子
 S. Hat	S. ハット
 Hoodie (Border Zone)	フーディー（ボーダーゾーン）
-Hoodie BZ.	フーディー BZ。
-Hoodie B.	フーディー・B
+Hoodie BZ.	フーディー BZ.
+Hoodie B.	フーディー・B.
 Hoodie (Gray)	フーディ（グレー）
 Hoodie	フーディ
 M62 Jacket	M62ジャケット
@@ -484,12 +484,12 @@ Leopard	ヒョウ
 Micro	マイクロ
 Monster	モンスター
 Thor	トール
-New Furniture Added [Catalog]	新着家具を追加しました [カタログ]
+New Furniture Added [Catalog]	新しい家具を追加しました [カタログ]
 Boss Killed	ボスを倒した
 Cat Rescued	猫が救助された
-Cat Vital Activated	キャット・バイタル アクティベート
+Cat Vital Activated	猫のバイタル有効
 Cat Died	猫が死んでしまった
-You have been spotted!	あなたが見つかりました！
+You have been spotted!	発見されました！
 Player Returned	プレイヤーが戻ってきた
 Airdrop	エアドロップ
 Tutorial Crate	チュートリアル・クレート
@@ -545,7 +545,7 @@ Curtain L.	カーテン・L.
 Curtain (Mini)	カーテン（ミニ）
 Curtain M.	カーテン・M.
 Dartboard	ダーツボード
-D. Board	D. 理事会
+D. Board	D. ボード
 N. Stand	N. スタンド
 Painting (Lake)	絵画（湖）
 Painting L.	絵画 L.
@@ -554,15 +554,15 @@ Poster (Posture)	ポスター（姿勢）
 Poster P.	ポスター P.
 Rack (Coat)	ラック（コート用）
 Rack C.	ラックC.
-Rya (Maria)	リヤ（マリア）
-Rya M.	Rya M.
+Rya (Maria)	リイヤ（マリア）
+Rya M.	リイヤ M.
 Shelf (Metal)	棚（金属製）
-Shelf M.	シェルフ・M.
+Shelf M.	棚・M.
 Shelf (Wall)	棚（壁掛け）
-Shelf W.	シェルフ・W.
+Shelf W.	棚・W.
 Shelf (Wood)	棚（木製）
 Sign (Border Zone)	標識（境界区域）
-Sign BZ.	BZにサインしてください。
+Sign BZ.	標識 BZ.
 Sofa (Leather)	ソファ（本革）
 Sofa L.	ソファ L.
 Stool (Military)	スツール（軍用）
@@ -593,12 +593,12 @@ Equip	装備
 Show	表示
 Hide	非表示
 Activated	有効化
-Not active	非アクティブ
+Not active	無効
 All maps & zones	すべてのマップとゾーン
-Active	アクティブ
+Active	有効
 Repair	修理
 Craft	クラフト
-Added	追加されました
+Added	追加された
 Remove	削除
 Completed	完了
 Add to Notes	メモに追加
@@ -608,7 +608,7 @@ Permadeath Zone	パーマネントデス・ゾーン
 Door [Jammed]	ドア [開かない]
 Door [Occupied]	ドア [使用中]
 Door [Close]	ドア [閉じる]
-Door [Open]	ドア [開]
+Door [Open]	ドア [開ける]
 Sleep (Random sleep: 6-12h)	睡眠（ランダムな睡眠時間：6～12時間）
 Turn Off	オフにする
 Turn On	オンにする

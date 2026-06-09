@@ -1,47 +1,53 @@
 location	parent	name	type	text	translation
-Scenes/Menu	.	Compatibility	Label	Compatibility	Kompatibilis mód
+Scenes/Menu	.	Compatibility	Label	Compatibility	Kompatibilitás
 UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UI Méretezés [hamarosan elérhető]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	Kés
-UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Gránát 1
-UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Gránát 2
+UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Gránát
+UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Gránát
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Heat	Hőforrás
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	Hőforrás
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	Hőforrás
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		A nearby crafting element which can be required for certain cooking-based recipes.	Egy közeli kézműves alapanyag, amely bizonyos főzéssel kapcsolatos receptekhez szükséges lehet.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		Proximity Requirement	Közelségi követelmény
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Workbench	Munkaasztal
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	Munkaasztal
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	Munkaasztal
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		A nearby crafting element which can be required for certain construction-based recipes.	Egy kézműves alapanyag, amely bizonyos építési leíráshoz szükséges lehet.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	Közelségi követelmény
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	Tesztpad
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	Tesztpad
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	Tesztpad
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	Egy közeli kézműves alapanyag, amely bizonyos elektronikai alapú leíráshoz szükséges lehet.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	Közelségi követelmény
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	Menedék
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	Menedék
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	Menedék
-UI/Interface	Trader/Panel	Info		Trader	Kereskedői statisztikák
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	Egy közeli kézműves alapanyag, amely bizonyos bútorok elkészítéséhez szükséges lehet.
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	Közelségi követelmény
+UI/Interface	Trader/Panel	Info		Trader	Kereskedő
 UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	Teherbírás
-UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	Teherbírás
+UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	Az összes felszerelés súlya (kg).
 UI/Interface	Inventory/Header/Capacity	Info		Inventory Stat	Teherbírás
 UI/Interface	Inventory/Header/Weight	Info		Inventory Weight	A tárgyak súlya
-UI/Interface	Inventory/Header/Weight	Info		A weight value (kg) of all inventory items.	A tárgyak súlya
+UI/Interface	Inventory/Header/Weight	Info		A weight value (kg) of all inventory items.	Az összes tétel tömege (kg).
 UI/Interface	Inventory/Header/Weight	Info		Inventory Stat	A tárgyak súlya
 UI/Interface	Inventory/Header/Value	Info		Inventory Value	Készletérték
-UI/Interface	Inventory/Header/Value	Info		A price value (€) of all inventory items.	Készletérték
+UI/Interface	Inventory/Header/Value	Info		A price value (€) of all inventory items.	Az összes készlet árértéke (€).
 UI/Interface	Inventory/Header/Value	Info		Inventory Stat	Készletérték
 UI/Interface	Container/Header/Weight	Info		Container Weight	A tároló súlya
-UI/Interface	Container/Header/Weight	Info		A weight value (kg) of all container items.	A tároló súlya
+UI/Interface	Container/Header/Weight	Info		A weight value (kg) of all container items.	Az összes tárolt áru súlya (kg).
 UI/Interface	Container/Header/Weight	Info		Container Stat	A tároló súlya
 UI/Interface	Container/Header/Value	Info		Container Value	A tároló értéke
-UI/Interface	Container/Header/Value	Info		A price value (€) of all container items.	A tároló értéke
+UI/Interface	Container/Header/Value	Info		A price value (€) of all container items.	Az összes tárolt tétel összértéke (€).
 UI/Interface	Container/Header/Value	Info		Container Stat	A tároló értéke
-UI/Interface	Equipment/Stats/Elements/Capacity	Info		Carry Capacity	Tartási korlát
+UI/Interface	Equipment/Stats/Elements/Capacity	Info		Carry Capacity	Teherbírás
 UI/Interface	Equipment/Stats/Elements/Capacity	Info		"A weight capacity value (kg) of how much inventory weight you can carry.
 
 Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
 
-Carry Capacity by default is 10kg"	Tartási korlát
+Carry Capacity by default is 10kg"	"A teherbírás értéke (kg) azt jelzi, hogy mekkora súlyú
+készletet tudsz magaddal vinni.
+
+A teherbírás növekszik, ha olyan tárgyakat veszel fel, mint például hátizsákok, felszerelések
+vagy olyan ruházat, amelynek pozitív teherbírási értéke van.
+
+A teherbírás alapértelmezés szerint 10 kg"
 UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	Tartási korlát
 UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	A felszerelés értéke
-UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	A felszerelés értéke
-UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	A felszerelés értéke
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	Az összes felszerelés árértéke (€).
+UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	Felszerelés statisztikája
 UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	Hőszigetelő képesség
 UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
 
@@ -52,15 +58,30 @@ Insulation increases when you equip clothing items with a positive insulation st
 Insulation examples:
 [100] = B. Temp decrease fully stopped
 [50] = B. Temp decrease slowed by 50%
-[0] = B. Temp decreases at default rate"	Hőszigetelő képesség
-UI/Interface	Equipment/Stats/Elements/Insulation	Info		Equipment Stat	Hőszigetelő képesség
+[0] = B. Temp decreases at default rate"	"A ruházat által biztosított hővédelmi érték a hideg ellen.
+
+A hőszigetelés a testhőmérséklethez kapcsolódik, és télen lassítja a testhőmérséklet csökkenésének sebességét.
+
+A hőszigetelés értéke nő, ha olyan ruhadarabokat viselsz, amelyek pozitív hőszigetelési 
+értékkel rendelkeznek.
+
+Hőszigetelés
+ példák:
+[100] = A testhőmérséklet csökkenése teljesen leáll
+[50] = A testhőmérséklet csökkenése 50%-kal lelassul
+[0] = A testhőmérséklet az alapértelmezett sebességgel csökken"
+UI/Interface	Equipment/Stats/Elements/Insulation	Info		Equipment Stat	Felszerelés statisztikája
 UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Dexterity	Mozgékonyság
 UI/Interface	Equipment/Stats/Elements/Dexterity	Info		"An inertia-based value of how quickly you can move and do certain actions.
 
 Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
 
-Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	Mozgékonyság
-UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	Mozgékonyság
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	"A tehetetlenségen alapuló érték, amely meghatározza, milyen gyorsan tudsz mozogni és bizonyos műveleteket végrehajtani.
+
+Az ügyesség összefügg a mozgási sebességgel és a fegyverek kezelésével, például a célzással és az újratöltéssel.
+
+Az ügyesség csökken, ha olyan nehéz vagy kényelmetlen tárgyakat veszel fel, amelyek negatív ügyességi értéket jelentenek."
+UI/Interface	Equipment/Stats/Elements/Dexterity	Info		Equipment Stat	Felszerelés statisztikája
 UI/Interface	Equipment/Stats/Elements/Menace	Info		Menace	Fenyegetettségi szint
 UI/Interface	Equipment/Stats/Elements/Menace	Info		"An intimidation value of how threatening AI sees your character and equipment.
 
@@ -68,15 +89,26 @@ When you have a high Menace value, AI is less likely to use aggressive or attack
 
 Menace increases when you equip items such as special clothing with a positive Menace stat.
 
-Menace only affects low-tier AI (Bandits)."	Fenyegetettségi szint
-UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	Fenyegetettségi szint
+Menace only affects low-tier AI (Bandits)."	"Az a fenyegetési érték, amely azt mutatja, mennyire veszélyesnek tartja az AI a karakteredet és a felszerelésedet.
+
+Ha magas a fenyegetési értéked, az AI kevésbé hajlamos agresszív vagy támadó magatartást tanúsítani veled szemben.
+
+A fenyegetési érték növekszik, ha olyan tárgyakat viselsz, mint például a pozitív fenyegetési statisztikával rendelkező speciális ruházat.
+
+A fenyegetési érték csak az alacsonyabb szintű AI-ra (banditákra) hat."
+UI/Interface	Equipment/Stats/Elements/Menace	Info		Equipment Stat	Felszerelés statisztikája
 UI/Interface	Equipment/Stats/Elements/CBRN	Info		CBRN	KBSN-értékek
 UI/Interface	Equipment/Stats/Elements/CBRN	Info		"A protection value against chemical, biological, radiological and nuclear threats.
 
 CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
 
-CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	KBSN-értékek
-UI/Interface	Equipment/Stats/Elements/CBRN	Info		Equipment Stat	KBSN-értékek
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	"A Kémiai, Biológiai, Sugárzás és Nukleáris fenyegetések elleni védelmi érték.
+
+A KBSN az Életerőhöz kapcsolódik: a KBSN-érték csökkenti az Életerő
+csökkenésének sebességét, ha veszélyes területeken tartózkodsz vagy veszélyes anyagoknak vagy kitéve.
+
+A KBSN-érték emelkedik, ha olyan felszereléseket viselsz, mint például speciális ruházat vagy védőálarcok, amelyek pozitív KBSN-értékkel rendelkeznek."
+UI/Interface	Equipment/Stats/Elements/CBRN	Info		Equipment Stat	Felszerelés statisztikája
 UI/Interface	Character/Vitals/Elements/Health	Info		Health	Egészség
 UI/Interface	Character/Vitals/Elements/Health	Info		"Your main vital for staying alive.
 
@@ -84,7 +116,13 @@ Health decreases with damages and active medical conditions.
 
 Health increases with certain medical items such as Bandages and Medkits.
 
-Health [0] -> Character dies"	Egészség
+Health [0] -> Character dies"	"Az életben maradáshoz elengedhetetlen.
+
+Az életerő a sérülések és a fennálló betegségek miatt csökken.
+
+Az életerő bizonyos gyógyászati eszközök, például kötszerek és elsősegély-készletek használatával növelhető.
+
+Életerő [0] -> A karakter meghal"
 UI/Interface	Character/Vitals/Elements/Health	Info		Vital	Egészség
 UI/Interface	Character/Vitals/Elements/Energy	Info		Energy	Energia
 UI/Interface	Character/Vitals/Elements/Energy	Info		"Your hunger and energy level.
@@ -93,7 +131,13 @@ Energy decreases over time and using map transitions with Energy Cost.
 
 Energy increases with certain consumables such as food.
 
-Energy [0] -> Starvation (Condition)"	Energia
+Energy [0] -> Starvation (Condition)"	"Éhséged és energiaszinted.
+
+Az energia idővel csökken, valamint az energiaköltséggel járó térképek közti áthaladás használata esetén.
+
+Az energia bizonyos fogyóeszközök, például ételek fogyasztásával növelhető.
+
+Energia [0] -> Éhezés (állapot)"
 UI/Interface	Character/Vitals/Elements/Energy	Info		Vital	Energia
 UI/Interface	Character/Vitals/Elements/Hydration	Info		Hydration	Szomjúság
 UI/Interface	Character/Vitals/Elements/Hydration	Info		"Your thirst and hydration level.
@@ -104,8 +148,17 @@ Certain dry or salty consumables may also decrease Hydration.
 
 Hydration increases with certain consumables such as drinks.
 
-Hydration [0] -> Dehydration (Condition)"	Szomjúság
-UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	Szomjúság
+Hydration [0] -> Dehydration (Condition)"	"A szomjúságod és a hidratáltsági szinted.
+
+A hidratáltság idővel, valamint a „hidratáltsági költségű” térképátmenetek használatával csökken.
+
+Bizonyos száraz vagy sós fogyasztási cikkek szintén csökkenthetik
+a hidratáltságot.
+
+A hidratáltság bizonyos fogyasztási cikkek, például italok fogyasztásával nő.
+
+Hidratáltság [0] -> Kiszáradás (állapot)"
+UI/Interface	Character/Vitals/Elements/Hydration	Info		Vital	Egészség
 UI/Interface	Character/Vitals/Elements/Mental	Info		Mental	Mentál
 UI/Interface	Character/Vitals/Elements/Mental	Info		"Your happiness and sanity level.
 
@@ -113,7 +166,13 @@ Mental decreases over time and with nasty consumables. Any active medical condit
 
 Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
 
-Mental [0] -> Insanity (Condition)"	Mentál
+Mental [0] -> Insanity (Condition)"	"A boldogságod és az elmeállapotod szintje.
+
+Az elmeállapot idővel és káros fogyasztási cikkek hatására romlik. Bármely fennálló egészségügyi probléma 2xen gyorsítja a romlás mértékét.
+
+Az elmeállapot javul olyan megnyugtató tárgyak hatására, mint a harapnivalók, a meleg ételek, valamint olyan káros szokások, mint az alkohol vagy a nikotintartalmú termékek.
+
+Elmeállapot [0] -> Elmezavar (állapot)"
 UI/Interface	Character/Vitals/Elements/Mental	Info		Vital	Mentál
 UI/Interface	Character/Vitals/Elements/Temperature	Info		Body Temp	Testhőmérséklet
 UI/Interface	Character/Vitals/Elements/Temperature	Info		"Your warmth and body temperature level.
@@ -122,8 +181,15 @@ Body Temp decreases over time in Winter. Decrease speed can be reduced by stayin
 
 Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
 
-Body Temp [0] -> Frostbite (Condition)"	Testhőmérséklet
-UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	Testhőmérséklet
+Body Temp [0] -> Frostbite (Condition)"	"Testhőmérsékleted.
+
+Télen a testhőmérséklet idővel csökken. A csökkenés ütemét lassíthatod, ha bent maradsz, vagy olyan ruhadarabokat viselsz, amelyek pozitív hőszigetelő 
+értékkel rendelkeznek.
+
+A testhőmérséklet emelkedik menedékhelyeken, illetve ha hőforrások, például tűz közelében tartózkodsz. Bizonyos hőtermelő eszközök, például hőcsomagok vagy hőtakarók szintén növelik a testhőmérsékletet.
+
+Testhőmérséklet [0] -> Fagyás (állapot)"
+UI/Interface	Character/Vitals/Elements/Temperature	Info		Vital	Egészség
 UI/Interface	Character/Vitals/Elements/Cat	Info		Cat	Macska
 UI/Interface	Character/Vitals/Elements/Cat	Info		"Grandma's cat health level.
 
@@ -133,8 +199,16 @@ Cat health decreases over time.
 
 Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
 
-Cat [0] -> Cat dies"	Macska
-UI/Interface	Character/Vitals/Elements/Cat	Info		Vital	Macska
+Cat [0] -> Cat dies"	"A nagymama macskájának egészségi állapota.
+
+A macska egészségi állapota akkor aktiválódik, ha úgy döntesz, hogy megmented a macskát, és befogadod a menhelyedre.
+
+A macska egészségi állapota idővel romlik.
+
+A macska egészségi állapota javul, ha olyan élelmiszerekkel eteted, mint a macskaeledel vagy a tonhalkonzerv.
+
+Macska [0] -> A macska elpusztul"
+UI/Interface	Character/Vitals/Elements/Cat	Info		Vital	Egészség
 UI/Interface	Character/Medical/Elements/Overweight	Info		"A condition where you are carrying too much weight and movement becomes unsustainable.
 
 Causes:
@@ -160,19 +234,7 @@ Hatások:
 
 Megoldás:
 - A csomag súlya < a megengedett súlyhatár"
-UI/Interface	Character/Medical/Elements/Overweight	Info		Medical Condition	"A csomag súlya olyan nagy, hogy lehetetlen mozogni.
-
-Okok:
-- A csomag súlya > A megengedett súlyhatár
-
-Hatások:
-- Az összes állóképesség-fogyasztás [+50%]
-- Az összes állóképesség-visszatöltés [Blokkolva]
-- Mozgási sebesség [-50%]
-- Ugrásmagasság [-50%]
-
-Megoldás:
-- A csomag súlya < a megengedett súlyhatár"
+UI/Interface	Character/Medical/Elements/Overweight	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Starvation	Info		Starvation	Éhezés
 UI/Interface	Character/Medical/Elements/Starvation	Info		"A condition where you have a lack of calories and essential nutrients.
 
@@ -185,8 +247,18 @@ Symptoms:
 - Stamina regeneration [-50%]
 
 Cures:
-- Consumables"	Éhezés
-UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	Éhezés
+- Consumables"	"Olyan állapot, amikor kalória- és alapvető tápanyaghiányban szenvedsz.
+Okok:
+- Energia [0]
+
+Tünetek:
+- Egészség [-1 egység / 10 másodperc]
+- Állóképesség-fogyasztás [+50%]
+- Állóképesség-regeneráció [-50%]
+
+Gyógymódok:
+- Fogyóeszközök"
+UI/Interface	Character/Medical/Elements/Starvation	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Dehydration	Info		Dehydration	Kiszáradás
 UI/Interface	Character/Medical/Elements/Dehydration	Info		"A condition where your body doesn't have enough fluids to function normally.
 
@@ -199,8 +271,18 @@ Symptoms:
 - All stamina regeneration [-50%]
 
 Cures:
-- Consumables"	Kiszáradás
-UI/Interface	Character/Medical/Elements/Dehydration	Info		Medical Condition	Kiszáradás
+- Consumables"	"Olyan állapot, amikor a szervezetben nincs elegendő folyadék a normális működéshez.
+
+Okok:- Folyadékpótlás [0]
+
+Tünetek:
+- Egészség [-1 egység / 10 másodperc]
+- Minden állóképesség-fogyasztás [+50%]
+- Minden állóképesség-regeneráció [-50%]
+
+Gyógymódok:
+- Fogyóeszközök"
+UI/Interface	Character/Medical/Elements/Dehydration	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Bleeding	Info		Bleeding	Vérzés
 UI/Interface	Character/Medical/Elements/Bleeding	Info		"A condion where you have a minor bleeding from small cuts or scrapes.
 
@@ -217,8 +299,23 @@ Cures:
 - Bandage
 - Tourniquet
 - Medkit
-- IFAK / AFAK"	Vérzés
-UI/Interface	Character/Medical/Elements/Bleeding	Info		Medical Condition	Vérzés
+- IFAK / AFAK"	"Olyan állapot, amikor kisebb vérzés lép fel apró vágások vagy horzsolások miatt.
+
+Okok:
+- Fegyver okozta sérülés
+- Robbanás okozta sérülés
+- Esés okozta sérülés
+- Szögesdrót
+
+Tünetek:
+- Egészség [-1 egység / 5 másodperc]
+
+Gyógymódok:
+- Kötszer
+- Érszorító
+- Elsősegélycsomag
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Bleeding	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Fracture	Info		Fracture	Csonttörés
 UI/Interface	Character/Medical/Elements/Fracture	Info		"A condition where you have a partial or complete break in the bone.
 
@@ -235,8 +332,22 @@ Symptoms:
 Cures: 
 - Splint
 - Medkit
-- IFAK / AFAK"	Csonttörés
-UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	Csonttörés
+- IFAK / AFAK"	"Olyan állapot, amikor a csont részlegesen vagy teljesen eltörik.
+
+Okok:
+- Fegyver okozta sérülés
+- Robbanás okozta sérülés
+- Esés okozta sérülés
+
+Tünetek: -Egészség [-1 egység / 5 másodperc]
+- Mozgási sebesség [-50%]
+- Ugrási magasság [-50%]
+
+Gyógyítás:
+- Rögzítősin
+- Elsősegélycsomag
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Burn	Info		Burn	Égés
 UI/Interface	Character/Medical/Elements/Burn	Info		"A condition where you have a tissue damage from intense heat or high-voltage electric current.
 
@@ -251,8 +362,21 @@ Cures:
 - Balm
 - Lotion
 - Medkit
-- IFAK / AFAK"	Égés
-UI/Interface	Character/Medical/Elements/Burn	Info		Medical Condition	Égés
+- IFAK / AFAK"	"Olyan állapot, amelyben a szövetek erős hőhatás vagy nagyfeszültségű elektromos áram következtében károsodnak.
+
+Okok:
+- Tűzkárosodás
+- Áramütés
+
+Tünetek:
+- Egészség [-1 egység / 5 másodperc]
+
+Gyógymódok:
+- Balzsam
+- Testápoló
+- Elsősegélycsomag
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Burn	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Frostbite	Info		Frostbite	Fagyás
 UI/Interface	Character/Medical/Elements/Frostbite	Info		"A condition where you have hypothermia or body part freezes from cold exposure.
 
@@ -265,8 +389,19 @@ Symptoms:
 Cures:
 - Fire sources
 - Sleeping Bag
-- Thermal Blanket"	Fagyás
-UI/Interface	Character/Medical/Elements/Frostbite	Info		Medical Condition	Fagyás
+- Thermal Blanket"	"Olyan állapot, amikor hipotermiába kerülsz, vagy a hideg hatására testrészeid megfagynak.
+
+Okok:
+- Testhőmérséklet [0]
+
+Tünetek:
+- Egészség [-1 egység / 5 másodperc]
+
+Gyógymódok:
+- Tűzforrások
+- Hálózsák
+- Hőtakaró"
+UI/Interface	Character/Medical/Elements/Frostbite	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Insanity	Info		Insanity	Elmebetegség
 UI/Interface	Character/Medical/Elements/Insanity	Info		"A condition where your sanity breaks and you start having dark thoughts.
 
@@ -280,8 +415,20 @@ Cures:
 - Consumables
 - Sleeping
 - Fire sources
-- Instruments"	Elmebetegség
-UI/Interface	Character/Medical/Elements/Insanity	Info		Medical Condition	Elmebetegség
+- Instruments"	"Olyan állapot, amikor az ember elméje megrendül, és sötét gondolatok kezdenek felmerülni benne.
+
+Okok:
+- Mentál [0]
+
+Tünetek:
+- Egészség [-1 egység / 10 másodperc]
+
+Gyógymódok:
+- Fogyóeszközök
+- Alvás
+- Tűzforrások
+- Hangszerek"
+UI/Interface	Character/Medical/Elements/Insanity	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Poisoning	Info		Poisoning	Mérgezés
 UI/Interface	Character/Medical/Elements/Poisoning	Info		"A condition where toxic substance entered your digestion or lungs.
 
@@ -294,8 +441,19 @@ Symptoms:
 
 Cures:
 - Medkit
-- AFAK"	Mérgezés
-UI/Interface	Character/Medical/Elements/Poisoning	Info		Medical Condition	Mérgezés
+- AFAK"	"Olyan állapot, amikor mérgező anyag jutott az emésztőrendszerbe vagy a tüdőbe.
+
+Okok:
+- Vegyi sérülés
+- Mérgező fogyasztási cikkek
+
+Tünetek:
+- Egészség [-1 egység / 2 másodperc]
+
+Gyógymódok:
+- Elsősegélycsomag
+- AFAK"
+UI/Interface	Character/Medical/Elements/Poisoning	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Rupture	Info		Rupture	Belső vérzés
 UI/Interface	Character/Medical/Elements/Rupture	Info		"A critical condition where you have a catastrofal bleeding or major internal wound.
 
@@ -308,8 +466,19 @@ Symptoms:
 
 Cures:
 - Medkit
-- IFAK / AFAK"	Belső vérzés
-UI/Interface	Character/Medical/Elements/Rupture	Info		Medical Condition	Belső vérzés
+- IFAK / AFAK"	"Kritikus állapot, amelyben katasztrofális vérzés vagy súlyos belső sérülés lép fel.
+
+Okok: 
+- Fegyver okozta sérülés
+- Robbanás okozta sérülés
+
+Tünetek:
+- Életerő [-1 egység / 1 másodperc]
+
+Gyógymódok:
+- Elsősegélycsomag
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Rupture	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Medical/Elements/Headshot	Info		Headshot	Fejlövés
 UI/Interface	Character/Medical/Elements/Headshot	Info		"A critical condition where you have a major head related wound.
 
@@ -321,15 +490,30 @@ Symptoms:
 
 Cures:
 - Medkit
-- IFAK / AFAK"	Fejlövés
-UI/Interface	Character/Medical/Elements/Headshot	Info		Medical Condition	Fejlövés
+- IFAK / AFAK"	"Kritikus állapot, amelyben súlyos,
+a fejhez kapcsolódó sérülésed van.
+
+Okok: 
+- Fegyveres sérülés
+
+Tünetek:
+- Egészség [-1 egység / 1 másodperc]
+
+Gyógyítás:
+- Elsősegélycsomag
+- IFAK / AFAK"
+UI/Interface	Character/Medical/Elements/Headshot	Info		Medical Condition	Egészségi állapot
 UI/Interface	Character/Stats/Elements/Day	Info		Day	Nap
 UI/Interface	Character/Stats/Elements/Day	Info		"Number of Days survived.
 
 New day begins at 00:00 midnight and certain amount of days will unlock new game events.
 
-Upcoming events can be displayed by using the Events tool."	Nap
-UI/Interface	Character/Stats/Elements/Day	Info		Progression Stat	Nap
+Upcoming events can be displayed by using the Events tool."	"Túlélés napjainak száma.
+
+Az új nap éjfélkor, 00:00-kor kezdődik, és egy bizonyos számú nap elteltével új játékesemények válnak elérhetővé.
+
+A közelgő események az „Események” menüpontban tekinthetők meg."
+UI/Interface	Character/Stats/Elements/Day	Info		Progression Stat	Előrehaladási statisztika
 UI/Interface	Character/Stats/Elements/Shelters	Info		Shelters	Menedékek
 UI/Interface	Character/Stats/Elements/Shelters	Info		"Number of Shelters unlocked.
 
@@ -337,20 +521,34 @@ Shelters are safe zones for saving your progression and loot. Game world has mul
 
 New game starts with two unlocked Shelters called Cabin and Tent.
 
-Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	Menedékek
-UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	Menedékek
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	"Feloldott menedékhelyek száma.
+
+A menedékhelyek olyan biztonságos zónák, ahol elmentheted az eddigi eredményeidet és a zsákmányodat. A játékvilágban több menedékhely is található, amelyek témájuk, méretük és testreszabhatóságuk tekintetében eltérnek egymástól.
+
+Az új játék két feloldott
+menedékhellyel indul, amelyek neve „Kunyhó” és „Sátor”.
+
+További menedékhelyeket olyan kulcsokkal lehet feloldani, amelyeket a különböző kereskedőktől kapott feladatok teljesítésével szerezhetsz meg."
+UI/Interface	Character/Stats/Elements/Shelters	Info		Progression Stat	Előrehaladási statisztika
 UI/Interface	Character/Stats/Elements/Tasks	Info		Tasks	Megbízások száma
 UI/Interface	Character/Stats/Elements/Tasks	Info		"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
 
-Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	Megbízások száma
-UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	Megbízások száma
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	"Elvégzett feladatok száma.
+
+A feladatok a kereskedőktől kapott, tárgyakhoz kötődő megbízások. A feladatok több kereskedő között is összekapcsolódhatnak,
+és előfordulhat, hogy a készítéshez nem zsákmányként megszerezhető tárgyakra is szükség van.
+
+A feladatok alacsonyabb kereskedelmi árakhoz (kereskedői adó) kapcsolódnak, valamint új menedékek és speciális helyiségek feloldásához szükséges kulcsok megszerzéséhez."
+UI/Interface	Character/Stats/Elements/Tasks	Info		Progression Stat	Előrehaladási statisztika
 UI/Interface	Character/Stats/Elements/Quests	Info		Quests	A küldetések száma
 UI/Interface	Character/Stats/Elements/Quests	Info		"Number of Quests completed.
 
-Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	A küldetések száma
-UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	A küldetések száma
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	"A teljesített küldetések száma.
+
+A küldetések a kereskedőktől kapható, a történetre épülő feladatok. A küldetések több kereskedő között is összekapcsolódhatnak, és előfordulhat, hogy csak bizonyos események bekövetkezte után válnak elérhetővé."
+UI/Interface	Character/Stats/Elements/Quests	Info		Progression Stat	Előrehaladási statisztika
 UI/Interface	Character/Stats/Elements/CDS	Info		Civil Defence Shelters	Polgári Védelmi Óvóhelyek
 UI/Interface	Character/Stats/Elements/CDS	Info		"Number of CDS completed.
 
@@ -358,8 +556,15 @@ Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed
 
 After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
 
-You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	Polgári Védelmi Óvóhelyek
-UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	Polgári Védelmi Óvóhelyek
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	"Befejezett polgári védelmi óvóhelyek száma.
+
+A Polgári Védelmi Óvóhelyek (PVÓ) olyan betonbunkerok és földalatti helyiségek, amelyeket katonai fenyegetések elleni védelemre terveztek.
+
+A 05-ös körzet kiürítése után ezeket a polgári védelmi óvóhelyeket
+megszállták, és a bennük található túlélőfelszerelések nagy részét ellopták.
+
+Egy polgári védelmi óvóhelyet úgy fejezhetsz be, hogy kiirtod az ellenséges egységeket, és újra bekapcsolod az óvóhely vészhelyzeti rádióadóját."
+UI/Interface	Character/Stats/Elements/CDS	Info		Progression Stat	Előrehaladási statisztika
 UI/Interface	Character/Stats/Elements/?	Info		Silent Night	Csendes éjszaka
 UI/Interface	Character/Stats/Elements/?	Info		"There will be a silent night when all fades away.
 
@@ -369,18 +574,31 @@ This light reminds you of home, a place where you came from and where you will r
 
 You feel safe, a peaceful moment that feels like the ending you wanted.
 
-Then your last light disappears, the sky turns red and the silence breaks."	Csendes éjszaka
-UI/Interface	Character/Stats/Elements/?	Info		Special Event	Csendes éjszaka
+Then your last light disappears, the sky turns red and the silence breaks."	"Lesz egy csendes éjszaka, amikor minden elhalványul.
+
+Ha felnézel, meglátod a Sarkcsillagot, az egyetlen fényt a sötétben.
+
+Ez a fény az otthonra emlékeztet, arra a helyre, ahonnan jöttél, és ahová visszatérsz.
+
+Biztonságban érzed magad, ez a békés pillanat olyan, mintha ez lenne a vágyott vég."
+UI/Interface	Character/Stats/Elements/?	Info		Special Event	Különleges esemény
 UI/Interface	Supply/Header/Value	Info		Supply Value	Az ellátmány értéke
-UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	Az ellátmány értéke
-UI/Interface	Supply/Header/Value	Info		Trader Stat	Az ellátmány értéke
+UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	Az összes tétel ára (€).
+UI/Interface	Supply/Header/Value	Info		Trader Stat	Kereskedői statisztikák
 UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
 
 Name: Commonly known name among locals.
 Tax: Price multiplier for supply items.
 Tasks: Number of completed tasks.
-Resupply: Time when supply resets."	Kereskedői statisztikák
-UI/Interface	Trader/Panel	Info		Trader Info	Kereskedői statisztikák
+Resupply: Time when supply resets."	"Egy barátságos NPC, aki kereskedelmi árukat, feladatokat
+és speciális szolgáltatásokat kínál.
+
+Név: A helyiek körében elterjedt név.
+Adó: Az áruk árának szorzója.
+Feladatok: A teljesített feladatok száma.
+Újratöltés: 
+Az áruk újratöltésének ideje."
+UI/Interface	Trader/Panel	Info		Trader Info	Kereskedői infó
 UI/Interface	Deal/Panel	Info		Deal	Tranzakció
 UI/Interface	Deal/Panel	Info		"A deal balance meter which compares selected item values.
 
@@ -388,5 +606,11 @@ Requsted Value (€) is calculated from selected Supply items with Tax added.
 
 Offer Value (€) is calculated from selected Inventory items.
 
-Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	Tranzakció
-UI/Interface	Deal/Panel	Info		Deal Meter	Tranzakció
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	"Egy üzletkötési mérő, amely összehasonlítja a kiválasztott tételek értékeit.
+
+A kért érték (€) a kiválasztott beszerzési tételekből, adóval együtt kerül kiszámításra.
+
+Az ajánlati érték (€) a kiválasztott raktárkészlet-tételekből kerül kiszámításra.
+
+Az üzlet akkor fogadható el, ha az üzletkötési mérő a zöld tartományban van, ami azt jelenti, hogy az ajánlati érték megegyezik a kért értékkel vagy meghaladja azt az adóval együtt."
+UI/Interface	Deal/Panel	Info		Deal Meter	Ajánlatmérő

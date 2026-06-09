@@ -52,28 +52,29 @@ Loading...	Chargement en cours...
 Skip Intro [SPACE]	Passer l'introduction [ESPACE]
 All save files deleted	Tous les fichiers enregistrés ont été supprimés
 Character died	Le personnage est mort
-Intro	Introduction
-Cabin	Cabine
-Shelter	Refuge
-Tutorial	Tutoriel
 Menu	Menu
-Attic	grenier
+Intro	Introduction
+Tutorial	Tutoriel
+Tutorial Exit	Sortie du tutoriel
 Death	Mort
+Template	Modèle
+shaders	shaders
+Shelter	Refuge
+Cabin	Cabine
+Attic	grenier
 Classroom	Salle de classe
 Tent	Tente
 Bunker	Bunker
-Village	Village
 Area 05	Zone 05
+Village	Village
 Highway	Autoroute
 School	École
-Outpost	Avant-poste
 Border Zone	Zone frontalière
+Outpost	Avant-poste
 Minefield	Champ de mines
+Vostok	Vostok
 Apartments	Appartements
 Terminal	Terminal
-Tutorial Exit	Sortie du tutoriel
-Template	Modèle
-shaders	shaders
 Trader	Trader
 Generalist	Généraliste
 Doctor	Médecin
@@ -96,7 +97,6 @@ Wood	Bois
 Metal	Métal
 Concrete	Béton
 Rock	Rock
-Vostok	Vostok
 Inventory	Stock
 Primary	Primaire
 Secondary	Secondaire

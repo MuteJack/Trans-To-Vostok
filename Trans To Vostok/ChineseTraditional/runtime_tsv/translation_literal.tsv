@@ -52,28 +52,29 @@ Loading...	載入中...
 Skip Intro [SPACE]	跳過介紹 [空格鍵]
 All save files deleted	所有儲存檔已刪除
 Character died	角色死亡
-Intro	簡介
-Cabin	艙室
-Shelter	庇護所
-Tutorial	教學指南
 Menu	選單
-Attic	閣樓
+Intro	簡介
+Tutorial	教學指南
+Tutorial Exit	教學結束
 Death	死亡
+Template	範本
+shaders	著色器
+Shelter	庇護所
+Cabin	艙室
+Attic	閣樓
 Classroom	教室
 Tent	帳篷
 Bunker	掩體
-Village	村莊
 Area 05	第05區
+Village	村莊
 Highway	高速公路
 School	學校
-Outpost	前哨站
 Border Zone	邊境地帶
+Outpost	前哨站
 Minefield	雷區
+Vostok	沃斯托克
 Apartments	公寓
 Terminal	終端機
-Tutorial Exit	教學結束
-Template	範本
-shaders	著色器
 Trader	交易員
 Generalist	通才
 Doctor	醫生
@@ -96,7 +97,6 @@ Wood	木
 Metal	金屬
 Concrete	混凝土
 Rock	搖滾
-Vostok	沃斯托克
 Inventory	庫存
 Primary	小學
 Secondary	中學

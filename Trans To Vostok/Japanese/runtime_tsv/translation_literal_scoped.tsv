@@ -1,5 +1,5 @@
 location	parent	name	type	text	translation
-Scenes/Menu	Main/Buttons	New	Button	New game	新作ゲーム
+Scenes/Menu	Main/Buttons	New	Button	New game	新しくゲームを始める
 Scenes/Menu	Main/Buttons	Load	Button	Load game	ゲームを読み込む
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	チュートリアル
 Scenes/Menu	Main/Buttons	Settings	Button	"Settings
@@ -14,22 +14,22 @@ Scenes/Menu	Log	Header	Label	Changelog	変更履歴
 Scenes/Menu	Log/Buttons	Log_Off	Button	"Off
 "	オフ
 Scenes/Menu	Log/Buttons	Log_On	Button	"On
-"	について
+"	オン
 Scenes/Menu	Hardware	Header	Label	Hardware Check	ハードウェアの確認
 Scenes/Menu	Hardware/Buttons	HW_Off	Button	"Off
 "	オフ
 Scenes/Menu	Hardware/Buttons	HW_On	Button	"On
-"	について
+"	オン
 Scenes/Menu	Intro	Header	Label	Watch Intro	イントロを見る
 Scenes/Menu	Intro/Buttons	Intro_Off	Button	"Off
 "	オフ
 Scenes/Menu	Intro/Buttons	Intro_On	Button	"On
-"	について
+"	オン
 Scenes/Menu	Music	Header	Label	Menu Music	メニュー 音楽
 Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
 "	オフ
 Scenes/Menu	Music/Buttons	Music_On	Button	"On
-"	について
+"	オン
 Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	「Road to Vostok ®」はRoad to Vostok Ltd.の登録商標です。無断転載を禁じます © 2026
 Scenes/Menu	.	Version	Label	Version: 0.1.1.3	バージョン: 0.1.1.3
 Scenes/Menu	Changelog/Header	Label	Label	Changelog	変更履歴
@@ -619,7 +619,7 @@ Build type: Release
 [変更] ヘリコプターの機種がMi-8からMi-24（Hind）に変更されました"
 Scenes/Menu	Modes	Warning	Label	Warning!	警告！
 Scenes/Menu	Modes/Warning	Detail	Label	Existing save files will be deleted	既存のセーブデータは削除されます
-Scenes/Menu	Modes/Buttons	Modes_Enter	Button	Enter the Road	道へ進め
+Scenes/Menu	Modes/Buttons	Modes_Enter	Button	Enter the Road	道に入る
 Scenes/Menu	Modes/Buttons	Modes_Return	Button	← Return	← 戻る
 Scenes/Menu	Modes/Difficulty	Header	Label	Difficulty	難易度
 Scenes/Menu	Modes/Difficulty/Header	Subheader	Label	Gameplay mode	ゲームプレイモード
@@ -634,7 +634,7 @@ Scenes/Menu	Modes/Difficulty/Standard	Details	Label	"- Random start kit
 - 08:00開始、天候は晴れ
 - 全キャラクターの体力100
 - ボストークではパーマネントデス"
-Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	Darkness	闇
+Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	Darkness	ダークネス
 Scenes/Menu	Modes/Difficulty/Darkness	Details	Label	"- No start kit
 - Random spawn
 - Random start time & weather
@@ -745,14 +745,14 @@ UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	Look Sensitivity	表示感
 UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	Aim Sensitivity	照準感度
 UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	Scope Sensitivity	測定範囲感度
 UI/Settings	Settings/Row_01/Color	Color	Label	Color Settings	色設定
+UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	画像設定
 UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	Interface Scale	インターフェースのスケール
+UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	シャープネス
 UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	HUD Scale	HUDスケール
 UI/Settings	Settings/Row_01/Image/Elements	Font	Label	Font Scale	フォントサイズ
 UI/Settings	Settings/Row_01/Color/Settings	Exposure	Label	Exposure	露出
 UI/Settings	Settings/Row_01/Color/Settings	Contrast	Label	Contrast	コントラスト
 UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	Saturation	飽和
-UI/Settings	Settings/Row_01/Image	Image	Label	Image Settings	画像設定
-UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	Sharpness	シャープネス
 UI/Settings	Settings/Row_02/HUD	HUD	Label	HUD	住宅都市開発省（HUD）
 UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	"Map
 "	地図
@@ -1036,9 +1036,9 @@ UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Lab
 UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	タスクに関するメモ
 UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	タスクのメモは空です
 UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	タスクノートは利用できません（チュートリアル）
-UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	世界地図
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	ワールドマップ
 UI/Interface	Tools/Map	Hint	Label	Map not equipped	マップが装備されていません
-UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	地図は使用不可（ボストーク）
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	マップは使用不可（ボストーク）
 UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
 Zoom = [SCROLL]"	"パン = [左クリック]
 ズーム = [スクロール]"
@@ -1162,8 +1162,8 @@ After visiting the Grandma for an ""welfare check"", Doctor returns to this clin
 UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	表示
 UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1日目
 UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10日後
-UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	トレーダー向けイベント
-UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	イベント会場：
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	トレーダーイベント
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	イベントの場所:
 UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	村
 UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	イベントの可能性：
 UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	マップインスタンスあたり約5%

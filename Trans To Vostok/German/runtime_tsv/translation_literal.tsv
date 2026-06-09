@@ -52,28 +52,29 @@ Loading...	Wird geladen...
 Skip Intro [SPACE]	Einleitung überspringen [Leertaste]
 All save files deleted	Alle gespeicherten Dateien wurden gelöscht
 Character died	Der Charakter ist gestorben
-Intro	Einleitung
-Cabin	Kabine
-Shelter	Unterkunft
-Tutorial	Anleitung
 Menu	Menü
-Attic	Dachboden
+Intro	Einleitung
+Tutorial	Anleitung
+Tutorial Exit	Tutorial beenden
 Death	Tod
+Template	Vorlage
+shaders	Shader
+Shelter	Unterkunft
+Cabin	Kabine
+Attic	Dachboden
 Classroom	Klassenzimmer
 Tent	Zelt
 Bunker	Bunker
-Village	Dorf
 Area 05	Bereich 05
+Village	Dorf
 Highway	Autobahn
 School	Schule
-Outpost	Außenposten
 Border Zone	Grenzgebiet
+Outpost	Außenposten
 Minefield	Minenfeld
+Vostok	Wostok
 Apartments	Wohnungen
 Terminal	Terminal
-Tutorial Exit	Tutorial beenden
-Template	Vorlage
-shaders	Shader
 Trader	Händler
 Generalist	Allrounder
 Doctor	Arzt
@@ -96,7 +97,6 @@ Wood	Holz
 Metal	Metall
 Concrete	Beton
 Rock	Rock
-Vostok	Wostok
 Inventory	Bestand
 Primary	Grundschule
 Secondary	Sekundär

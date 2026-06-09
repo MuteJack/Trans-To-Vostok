@@ -52,28 +52,29 @@ Loading...	Carregando...
 Skip Intro [SPACE]	Pular introdução [BARRA DE ESPAÇO]
 All save files deleted	Todos os arquivos salvos foram excluídos
 Character died	O personagem morreu
-Intro	Introdução
-Cabin	Cabine
-Shelter	Abrigo
-Tutorial	Tutorial
 Menu	Menu
-Attic	Sótão
+Intro	Introdução
+Tutorial	Tutorial
+Tutorial Exit	Sair do tutorial
 Death	Morte
+Template	Modelo
+shaders	shaders
+Shelter	Abrigo
+Cabin	Cabine
+Attic	Sótão
 Classroom	Sala de aula
 Tent	Tenda
 Bunker	Bunker
-Village	Aldeia
 Area 05	Área 05
+Village	Aldeia
 Highway	Rodovia
 School	Escola
-Outpost	Posto avançado
 Border Zone	Zona de Fronteira
+Outpost	Posto avançado
 Minefield	Campo minado
+Vostok	Vostok
 Apartments	Apartamentos
 Terminal	Terminal
-Tutorial Exit	Sair do tutorial
-Template	Modelo
-shaders	shaders
 Trader	Operador
 Generalist	Generalista
 Doctor	Médico
@@ -96,7 +97,6 @@ Wood	Madeira
 Metal	Metal
 Concrete	Concreto
 Rock	Rock
-Vostok	Vostok
 Inventory	Estoque
 Primary	Primário
 Secondary	Secundário

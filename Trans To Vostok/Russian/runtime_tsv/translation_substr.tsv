@@ -52,28 +52,29 @@ Loading...	Загрузка...
 Skip Intro [SPACE]	Пропустить вступление [ПРОБЕЛ]
 All save files deleted	Все файлы сохранений удалены
 Character died	Персонаж умер
-Intro	Вступление
-Cabin	Убежище
-Shelter	Укрытие
-Tutorial	Учебное пособие
 Menu	Меню
-Attic	Чердак
+Intro	Вступление
+Tutorial	Учебное пособие
+Tutorial Exit	Выйти из обучения
 Death	Смерть
+Template	Шаблон
+shaders	шейдеры
+Shelter	Укрытие
+Cabin	Убежище
+Attic	Чердак
 Classroom	Класс
 Tent	Палатка
 Bunker	Бункер
-Village	Деревня
 Area 05	Зона 05
+Village	Деревня
 Highway	Шоссе
 School	Школа
-Outpost	Аванпост
 Border Zone	Пограничная зона
+Outpost	Аванпост
 Minefield	Минное поле
+Vostok	Vostok
 Apartments	Жилые комплексы
 Terminal	Терминал
-Tutorial Exit	Выйти из обучения
-Template	Шаблон
-shaders	шейдеры
 Trader	Торговец
 Generalist	Универсал
 Doctor	Доктор
@@ -96,7 +97,6 @@ Wood	Древесина
 Metal	Металл
 Concrete	Бетон
 Rock	Камень
-Vostok	Vostok
 Inventory	Инвентарь
 Primary	Основное
 Secondary	Вторичное
