@@ -180,14 +180,11 @@ Items	Clothing/Hat_Sauna	name	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres		
 Items	Clothing/Hat_Sauna	name	0	substr	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					equipment		S. Hat	1444	사우나 모자		
 Items	Clothing/Hat_Sauna	name	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					display		S. Hat		사우나 모자		
 Items	Clothing/Hat_Sauna	type	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					type		Clothing		의류		
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					name		Hoodie (Border Zone)	1446	"후드티 (접경 지대
-)"		
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	1448	"후드티 (접경 지대
-)"		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					name		Hoodie (Border Zone)	1446	후드티 (접경 지대)		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	1448	후드티 (접경 지대)		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					rotated		Hoodie BZ.		"후드티 (접경 지대
 )"		
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	"후드티 (접경 지대
-)"		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	후드티 (접경 지대)		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					display		Hoodie B.		"후드티 (접경 지대
 )"		
 Items	Clothing/Hoodie_Border_Zone	type	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					type		Clothing		의류		

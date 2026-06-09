@@ -3,7 +3,7 @@ Events	PlaceHolder	Name	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margi
 Events	PlaceHolder	Type	0	ignore									Trader			Place holder text. Don't need to Translate	
 Events	PlaceHolder	Description	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Content	Description	Label	text	1534808090	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
 
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	654	"Doktor egy gyógyszerekre szakosodott kereskedő, aki az 05-ös körzetben egy elhagyatott iskolaépületben működtet egy rögtönzött rendelőt.
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	654	"Doktor egy gyógyszerekre szakosodott kereskedő, aki a 05-ös körzetben egy elhagyatott iskolaépületben működtet egy rögtönzött rendelőt.
 
 Miután „jólét-ellenőrzés” céljából meglátogatta a nagymamát, a doktor visszatér a klinikára, és készen áll a sérültek ellátására."	Place holder text. Don't need to Translate	
 Events	/	Button	0	literal	UI/Elements/Event	tscn	UI/Elements/Event	Margin/Elements/Header	Show	Button	text	728466319	Show	656	Bővebben		
@@ -31,7 +31,7 @@ Events	List/Day1	Name	0	literal	Events/List/D1_Generalist	tres					name		General
 Events	List/Day1	Type	0	ignore	Events/List/D1_Generalist	tres					type		Trader				
 Events	List/Day1	Description	0	literal	Events/List/D1_Generalist	tres					description		"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
 
-After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	694	"A vegyeskereskedő egy sokoldalú kereskedő, aki a 5. körzet falujának garázsépületében egy kis boltot üzemeltet, és főként általános mindennapi cikkeket árul.
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	694	"A vegyeskereskedő egy sokoldalú kereskedő, aki a 05-ös körzet falujának garázsépületében egy kis boltot üzemeltet, és főként általános mindennapi cikkeket árul.
 
 Egy rövid szünet után a vegyeskereskedés újra megnyitotta kapuit, és készen áll arra, hogy törzsvásárlóinak kedvező áron kínálja áruját."	"Please pay attention to the following points when translating:
 - `Generalist`
@@ -43,7 +43,7 @@ Events	List/Day2	Name	0	literal	Events/List/D2_Doctor	tres					name		Doctor retu
 Events	List/Day2	Type	0	ignore	Events/List/D2_Doctor	tres					type		Trader				
 Events	List/Day2	Description	0	literal	Events/List/D2_Doctor	tres					description		"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
 
-After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	698	"Az orvos az orvostudományra szakosodott kereskedő, aki az 5. körzet elhagyatott iskolaépületében működtet egy ideiglenes rendelőt.
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	698	"Az orvos az orvostudományra szakosodott kereskedő, aki a 05-ös körzet elhagyatott iskolaépületében működtet egy ideiglenes rendelőt.
 
 Az orvos, aki elment megnézni, hogy van a nagymama, visszatért a rendelőbe, és befejezte a sérültek ellátására való felkészülést."	"Please pay attention to the following points when translating:
 - `Area 05`
@@ -53,7 +53,7 @@ Events	List/Day3	Name	0	literal	Events/List/D3_Fighters	tres					name		Fighter J
 Events	List/Day3	Type	0	ignore	Events/List/D3_Fighters	tres					type		Dynamic				
 Events	List/Day3	Description	0	literal	Events/List/D3_Fighters	tres					description		"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
 
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	702	"Az 5. körzetből való kivonulás és a határvidék leszerelése után a helyzet romlani kezdett, ezért erődemonstrációra van szükség.
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	702	"A 05-ös körzetből való kivonulás és a határvidék leszerelése után a helyzet romlani kezdett, ezért erődemonstrációra van szükség.
 
 A finn hadsereg harci repülőgépekkel magas kockázatú, nem halálos kimenetelű légi bemutató repüléseket fog tartani, amelyek során gyakran megjelennek a légtérben."	"Please pay attention to the following points when translating:
 - `Area 05`"	
@@ -72,21 +72,21 @@ A falubeliek látták, ahogy a banditák a ládákat ide-oda dobálták, majd v�
 - `Bandit`
 - `Nomad`
 - `Grandma`"	
-Events	List/Day5	Name	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05	708	A Punisher megérkezett az 5. körzetbe	"Please pay attention to the following points when translating:
+Events	List/Day5	Name	0	literal	Events/List/D5_Punisher	tres					name		Punisher arrives to Area 05	708	A Punisher megérkezett a 05-ös körzetbe	"Please pay attention to the following points when translating:
 - `Area 05`"	
 Events	List/Day5	Type	0	ignore	Events/List/D5_Punisher	tres					type		Dynamic				
 Events	List/Day5	Description	0	literal	Events/List/D5_Punisher	tres					description		"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
 
 Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	710	"A Punisher a finn alvilági körökben hírhedt bandavezér és behajtó.
 
-A Punisher és emberei elloptak egy helyi rendőrautót, és azzal járják be a 05. körzetet."	"Please pay attention to the following points when translating:
+A Punisher és emberei elloptak egy helyi rendőrautót, és azzal járják be a 05-ös körzetet."	"Please pay attention to the following points when translating:
 - `Area 05`"	
-Events	List/Day6	Name	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05	712	Légi utánpótlást dobtak le az 5. körzetre	"Please pay attention to the following points when translating:
+Events	List/Day6	Name	0	literal	Events/List/D6_Airdrops	tres					name		Airdrops are delivered to Area 05	712	Légi utánpótlást dobtak le a 05-ös körzetre	"Please pay attention to the following points when translating:
 - `Area 05`"	
 Events	6	Type	0	ignore	Events/List/D6_Airdrops	tres					type		Dynamic				
 Events	List/Day6	Description	0	literal	Events/List/D6_Airdrops	tres					description		"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
 
-Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	714	"Hosszú késedelem után a finn hadsereg újra megkezdte a légi segélyszállítmányok ledobását az 5. körzetbe.
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	714	"Hosszú késedelem után a finn hadsereg újra megkezdte a légi segélyszállítmányok ledobását a 05-ös körzetbe.
 
 A légi segélyszállítmányok általában humanitárius segélycikkeket tartalmaznak, például gyógyszereket, fogyóeszközöket és egyéb túlélési felszereléseket."	"Please pay attention to the following points when translating:
 - `Area 05`"	
@@ -97,7 +97,7 @@ Events	List/Day7	Description	0	literal	Events/List/D7_BTR	tres					description		
 
 Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	718	"A katonai erők megkezdték a páncélozott járművek bevetését a Vostok térségében.
 
-A katonai BTR-ek géppuskákkal vannak felszerelve, és látták őket járőrözni a főutakon és a kulcsfontosságú területeken."	"Please pay attention to the following points when translating:
+A katonai BTR géppuskákkal vannak felszerelve, és látták őket járőrözni a főutakon és a kulcsfontosságú területeken."	"Please pay attention to the following points when translating:
 - `BTR`"	
 Events	List/Day8	Name	0	literal	Events/List/D8_Helicopters	tres					name		Attack Helicopters	720	Harci helikopter		
 Events	List/Day8	Type	0	ignore	Events/List/D8_Helicopters	tres					type		Dynamic				
@@ -114,7 +114,7 @@ Events	List/Day9	Description	0	literal	Events/List/D9_Crashes	tres					descripti
 Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	726	"A légtér megsértését követően a légi harc elkerülhetetlen volt, és a határ mindkét oldalán több harci helikoptert lelőttek.
 
 A helikopterek több helyen zuhantak le, és mivel értékes zsákmányt találtak ott, ezek a helyek az AI tevékenységének fő bázisaivá váltak."		
-Events	List/Day10	Name	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost	728	A fegyverkovács visszatért az előőrsre	"Please pay attention to the following points when translating:
+Events	List/Day10	Name	0	literal	Events/List/D10_Gunsmith	tres					name		Gunsmith returns to Outpost	728	A fegyverkovács visszatért az Előőrsbe	"Please pay attention to the following points when translating:
 - `Outpost`
 - `Gunsmith` is a proper noun (NPC/Trader)"	
 Events	List/Day10	Type	0	ignore	Events/List/D10_Gunsmith	tres					type		Trader				
@@ -125,7 +125,7 @@ Gunsmith was nowhere to be seen for multiple months but according to rumors, he 
 A fegyverkovácsnak hónapokig nyoma veszett, de a pletykák szerint „üzleti útra” indult a határon túlra, és most visszatért a 05-ös körzetben található kedves bunkerébe."	"Please pay attention to the following points when translating:
 - `Area 05`
 - `Outpost`"	
-Events	List/Day20	Name	0	literal	Events/List/D20_Outpost	tres					name		Outpost gets compromised	732	Az előőrs felfedezése		
+Events	List/Day20	Name	0	literal	Events/List/D20_Outpost	tres					name		Outpost gets compromised	732	Az Előőrs felfedezése		
 Events	List/Day20	Type	0	ignore	Events/List/D20_Outpost	tres					type		Dynamic				
 Events	List/Day20	Description	0	literal	Events/List/D20_Outpost	tres					description		"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
 
@@ -133,32 +133,32 @@ Military BTR's can now enter the Outpost map and Area 05 is no longer considered
 
 News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	734	"A közelmúltbeli események következtében a határvidék helyzete gyorsan romlik, és a környező térségek is érezni kezdik ennek hatását.
 
-Mostantól a katonai BTR-ek behatolhatnak az előőrs területére, így az 5. körzet már nem tekinthető biztonságos övezetnek.
+Mostantól a katonai BTR -ek behatolhatnak az Előőrs területére, így a 05-ös körzet már nem tekinthető biztonságos övezetnek.
 
-Ez a hír gyorsan terjedt el az 5. kerület lakói és kereskedői körében, de a kerületen kívüli média és hatóságok egyszerű pletykának tekintik."	"Please pay attention to the following points when translating:
+Ez a hír gyorsan terjedt el a 05-ös körzet lakói és kereskedői körében, de a körzeten kívüli média és hatóságok egyszerű pletykának tekintik."	"Please pay attention to the following points when translating:
 - `Area 05`
 - `Border Zone`
 - `BTR`"	
-Events	List/Day30	Name	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05	736	A kereskedők elhagyják az 5. körzetet	"Please pay attention to the following points when translating:
+Events	List/Day30	Name	0	literal	Events/List/D30_Escape	tres					name		Traders leave Area 05	736	A kereskedők elhagyják a 05-ös körzetet	"Please pay attention to the following points when translating:
 - `Area 05`"	
 Events	List/Day30	Type	0	ignore	Events/List/D30_Escape	tres					type		Trader				
 Events	List/Day30	Description	0	literal	Events/List/D30_Escape	tres					description		"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
 
-It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	738	"Miután az előőrsöt felfedezték, az összes kereskedő befejezte a készülődést, és elindult a 5. körzetből.
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	738	"Miután az Előőrsöt felfedezték, az összes kereskedő befejezte a készülődést, és elindult a 05-ös körzetből.
 
 A kereskedők ezt csak átmeneti megoldásként alkalmazzák, és várhatóan visszatérnek a normális kerékvágásba, amint a helyzet megnyugszik."	"Please pay attention to the following points when translating:
 - `Area 05`
 - `Outpost`"	
-Events	List/Day40	Name	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05	740	A kereskedők visszatértek az 5. körzetbe	"Please pay attention to the following points when translating:
+Events	List/Day40	Name	0	literal	Events/List/D40_Return	tres					name		Traders return to Area 05	740	A kereskedők visszatértek a 05-ös körzetbe	"Please pay attention to the following points when translating:
 - `Area 05`"	
 Events	List/Day40	Type	0	ignore	Events/List/D40_Return	tres					type		Trader				
 Events	List/Day40	Description	0	literal	Events/List/D40_Return	tres					description		"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
 
-All traders are returning back to Area 05."	742	"Úgy tűnik, a helyzet romlása megállt, és az 5. körzet nem süllyedt teljes káoszba.
+All traders are returning back to Area 05."	742	"Úgy tűnik, a helyzet romlása megállt, és a 05-ös körzet nem süllyedt teljes káoszba.
 
-Minden kereskedő visszatér az 5. körzetbe."	"Please pay attention to the following points when translating:
+Minden kereskedő visszatér a 05-öskörzetbe."	"Please pay attention to the following points when translating:
 - `Area 05`"	
-Events	List/Day50	Name	0	literal	Events/List/D50_Transmission	tres					name		Transmission	744	Küldés		
+Events	List/Day50	Name	0	literal	Events/List/D50_Transmission	tres					name		Transmission	744	Adás		
 Events	List/Day50	Type	0	ignore	Events/List/D50_Transmission	tres					type		Special				
 Events	List/Day50	Description	0	literal	Events/List/D50_Transmission	tres					description		"The signal that started it all has suddenly reappeared.
 

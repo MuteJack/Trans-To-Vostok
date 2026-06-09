@@ -59,7 +59,7 @@ Now you have successfully crafted the required task item and you can complete th
 - 'Heat'
 - 'Firepot'
 - 'Start Input'"	
-Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	튜토리얼 의뢰 (가구)		
+Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	튜토리얼 의뢰 3 (가구)		
 Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard		어려움		
 Tasks	Generalist/Tutorial/03	description	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
 
@@ -81,9 +81,9 @@ You can learn more about shelter customization and Furniture Catalog from the tu
 
 가구 아이템을 획득하면 '가구 카탈로그'라는 별도의 인벤토리에 저장되므로 일반 인벤토리에는 나타나지 않습니다.
 
-'가구 카탈로그'는 '은신처' 안에 있을 때만 접근할 수 있으며, 카탈로그가 업데이트될 새 가구 추가됨 [카탈로그]""라는 메시지가 표시됩니다.
+'가구 카탈로그'는 '은신처' 안에 있을 때만 접근할 수 있으며, 카탈로그가 업데이트되면 새 가구 추가됨 [카탈로그]""라는 메시지가 표시됩니다.
 
-다음 임무를 완료하여 새로운 가구를 획득해 보세요.
+다음 의뢰를 완료하여 새로운 가구를 획득해 보세요.
 1. '배달 시작'을 누릅니다.
 2. '감자'를 선택합니다.
 3. '완료'를 누릅니다.
@@ -147,11 +147,11 @@ If you want to remain alive here in Area 05, the constant flow of caffeine shoul
 
 As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	2818	"인생에서 타협할 수 없는 몇 가지가 있지. 아침 6시의 모닝 커피, 점심과 저녁 6시에 마시는 오후 커피는 인생에서 빠질 수 없지. 육체노동을 하는 경우에는 중간중간 커피를 마시면서 쉬는 건 필수야. 이건 사실상 법으로 정해져 있는 거나 마찬가지라고.
 
-이 '05구역'에서 살아남으려면 카페인을 끊임없이 공급받는 것이야말로 최우선 목표가 되어야 해.
+이 '05 구역'에서 살아남으려면 카페인을 끊임없이 공급받는 것이야말로 최우선 목표가 되어야 해.
 
 사실, 요즘 커피 소비량이 평소보다 많아져서 말이야. ""전략적 커피 비축량""을 좀 늘려야 할 것 같아."	"Please pay attention to the following points when translating:
 - 'Area 05'"	
-Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	2820	땀내나는 일		
+Tasks	Generalist/05	name	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					name		Sweaty Business	2820	땀내 나는 일		
 Tasks	Generalist/05	difficulty	0	ignore	Traders/Generalist/Tasks/05_Sweaty_Business	tres					difficulty		Intermediate		보통		
 Tasks	Generalist/05	description	0	literal	Traders/Generalist/Tasks/05_Sweaty_Business	tres					description		"The days out here are long and sweaty, especially in the summertime.
 
@@ -172,7 +172,7 @@ Tasks	Generalist/06	description	0	literal	Traders/Generalist/Tasks/06_Handyman	t
 
 Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
 
-I'm getting tired of being her handyman, but I promised to help this one last time."	2826	"아직 접경지대 근처에 사는 그 노인네 알지? 그 할멈 앞을 잘 못 보는데, 내가 아무리 전자제품 조심히 다루라고 그렇게 말해도 자꾸만 버튼을 만지작거려서 전부 고장 내버린다고!
+I'm getting tired of being her handyman, but I promised to help this one last time."	2826	"아직 접경 지대 근처에 사는 그 노인네 알지? 그 할멈 앞을 잘 못 보는데, 내가 아무리 전자제품 조심히 다루라고 그렇게 말해도 자꾸만 버튼을 만지작거려서 전부 고장 내버린다고!
 
 그저께는 가스레인지가 고장 났고, 냉동고는 녹아내렸지, 라디오는 그새 또 말썽이야! 게다가 지난주에 폭풍우가 몰아치면서 나무가 현관 지붕에 쓰러지는 바람에 지붕이 무너져 내렸어. 난장판도 이런 난장판이 없다니까.
 
@@ -245,14 +245,14 @@ Welcome to my improvised clinic. It ain't much, but with these limited resources
 
 I used to teach health education for elementary students in this school. It was a long time ago, but I have good memories of this place. The building is old and has seen better days, but I'm sure it can be restored when things settle down.
 
-Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	2846	"전에 여기 오신 적은 없는 것 같은데, 새로 오신 환자분이시죠?
+Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	2846	"전에 여기서 본 적은 없는 것 같은데, 새로 오신 환자분이시죠?
 
 제 임시 진료소에 오신 걸 환영합니다. 보잘것없지만, 자원이 부족한 상황에서는 이게 최선이에요.
 
 예전에 이 학교에서 초등학생들에게 보건 교육을 가르쳤었어요. 아주 오래전 일이지만, 이곳에 대한 좋은 추억이 많습니다. 건물은 낡았고 전성기는 지났지만, 상황이 나아지면 복원할 수 있을 거라고 생각해요.
 
 요즘 제 가장 큰 걱정은 단열 문제입니다. 창문이 거의 없어져서 특히 겨울에는 환자들이 좀 춥거든요. 임시방편으로 덕트 테이프를 붙여서 틈새 바람을 막아야 할 것 같습니다."		
-Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	2848	손떨림 방지		
+Tasks	Doctor/02	name	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					name		Steady Hands	2848	손 떨림 방지		
 Tasks	Doctor/02	difficulty	0	ignore	Traders/Doctor/Tasks/02_Steady_Hands	tres					difficulty		Easy		쉬움		
 Tasks	Doctor/02	description	0	literal	Traders/Doctor/Tasks/02_Steady_Hands	tres					description		"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
 
@@ -260,13 +260,13 @@ Especially in surgeries and working with a scalpel, I often get the shakes and s
 
 As a doctor, I do not recommend smoking, but desperate times require desperate actions.
 
-If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."	2850	"솔직히 말해서 가끔씩 손과 눈이 따로 놀고, 손놀림이 예전같지 않다는 걸 인정해야겠어요.
+If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."	2850	"솔직히 말해서 가끔씩 손과 눈이 따로 논다던가, 손놀림이 예전같지 않다는 걸 인정해야겠어요.
 
 특히 수술이나 메스를 다룰 때는 손이 떨리고 자잘한 실수를 저지르곤 하는데, 어쩔 수 없죠. 나이 탓이긴 하지만, 수술 전에 시가를 몇 대 피우면 좀 진정되는 것 같더라고요.
 
 의사로서 흡연을 권장하진 않지만, 이런 상황에서는 어쩔 수 없죠.
 
-혹시 시가를 구할 수 있으면 좀 나눠주시겠어요? 아, 잡화상에게는 비밀로 해 주세요, 방금 전에 담배 좀 그만 피우라고 한 참이거든요. 괜히 싸우고 싶지는 않으니, 이건 우리 둘만의 비밀로 해 줘요."		
+혹시 시가를 구할 수 있으면 좀 나눠주시겠어요? 아, 잡화상에게는 비밀로 해 주세요, 조금 전에 담배 좀 그만 피우라고 한 참이거든요. 괜히 싸우고 싶지는 않으니, 이건 우리 둘만의 비밀로 해 줘요."		
 Tasks	Doctor/03	name	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					name		Bookworm	2852	책벌레		
 Tasks	Doctor/03	difficulty	0	ignore	Traders/Doctor/Tasks/03_Bookworm	tres					difficulty		Easy		쉬움		
 Tasks	Doctor/03	description	0	literal	Traders/Doctor/Tasks/03_Bookworm	tres					description		"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
@@ -350,7 +350,7 @@ I think I left one of my earliest patient reports there. I need that report to h
 
 Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	2878	"사태가 시작됐을 때, 우리 병원은 한 시간 만에 환자로 꽉 찼어요. 결국 학교 체육관을 응급 환자 분류소로 바꿔야 했죠.
 
-제 초기 환자 보고서 중 하나를 거기에 두고 온 것 같아요. 기억이 예전 같지 않다보니, 그 보고서가 필요해요. 증상과 세부 사항이 점점 흐릿해지고 있거든요.
+제 예전 환자 보고서들 중 하나를 거기에 두고 온 것 같아요. 기억력이 예전 같지 않다보니, 그 보고서가 필요해요. 환자들의 증상이라던가 세부 사항들이 점점 기억나지 않거든요.
 
 혹시 체육관에서, 아이들이 로프를 타고 자주 놀던 곳을 찾아봐 줄 수 있을까요? 아마 근처 어딘가에 있을 거예요."		
 Tasks	Doctor/10	name	0	literal	Traders/Doctor/Tasks/10_Substance	tres					name		Substance	2880	원인 물질		
@@ -380,13 +380,13 @@ Forget the small talk. You want something reliable and cheap? Sure, but a few fa
 
 Okay, I have an idea. You know in the summertime, those flying suckers start to piss me off. You would assume those bastards would not get into these bunkers, but trust me, they do. Every single summer, there's buzzing around the clock.
 
-Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."	2886	"놀랍지 않나? 새 병사와 새 소총이라니, 언제나 반가운 광경이지.
+Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."	2886	"놀랍지 않나? 새 병사와 새 소총이라니, 언제나 보기 좋은 광경이지.
 
-잡담은 그만하고. 믿을 만하고 저렴한 걸 원한다고? 좋아, 하지만 내 부탁이 먼저일세. 여기는 자네가 원하는대로 계급장을 바꿔달 수 있는 곳이 아니거든. 어디부터 시작할까? 보급품 운반 같은 것도 있겠지만, 자네가 좀 허약해 보이니 간단한 일부터 시작하는 게 좋겠군. 잠깐 생각해 보자고.
+잡담은 그만하지. 자, 믿을 만하고 저렴한 걸 원한다고? 좋아, 하지만 내 부탁을 먼저 들어줘야겠어. 여기는 자네가 원하는 대로 계급장을 바꿔 달 수 있는 곳이 아니거든. 어디부터 시작해 볼까? 보급품 운반 같은 걸 시킬 수도 있겠지만, 그러기에는 자네가 좀 허약해 보이니 간단한 일부터 시작해 보는 게 좋겠어. 잠깐 생각해 보자고.
 
-그래, 좋은 생각이 났네. 여름이면 그 날아다니는 벌레 놈들이 정말 짜증 나거든. 그 개같은 놈들이 벙커에 들어올 리 없다고 생각하겠지만, 장담컨대 들어와. 매년 여름이면 귀 옆에 달라붙어서 24시간 내내 윙윙거린다고.
+그래, 좋은 생각이 났네. 여름이면 그 날아다니는 벌레 놈들이 정말 짜증 나거든. 그 개같은 놈들이 벙커에 들어올 리 없다고 생각하겠지만, 그놈들은 어떻게 해서든 들어와. 매년 여름이면 귀 옆에 달라붙어서 24시간 내내 윙윙거린다고.
 
-자네에게 딱 맞는 일을 하나 제안하지. 그 흡혈귀들을 없애버릴 방법을 찾아와. 그런 다음에 더 자세히 얘기해 보자고."		
+그런 의미에서, 자네에게 딱 맞는 일을 하나 제안하지. 그 흡혈귀들을 없애버릴 방법을 찾아와. 그런 다음에 더 자세히 얘기해 보자고."		
 Tasks	Gunsmith/02	name	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	2888	따듯한 식사		
 Tasks	Gunsmith/02	difficulty	0	ignore	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					difficulty		Easy		쉬움		
 Tasks	Gunsmith/02	description	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					description		"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
@@ -469,9 +469,9 @@ My personal home collection starts from 1500s-era muskets all the way to 1990s r
 
 Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	2914	"칼 수집은 또 다른 취미지만, 무기 수집은 진정한 가치를 가려내는 예술과 같네.
 
-내 컬렉션에는 1500년대 머스킷부터 1990년대 소총까지 다양하게 있지만, 그 이후의 총들은 워낙 천박해서 못봐주겠더군. 지금까지 150정이 넘는 총을 모았는데, 그중에서도 가장 특별한 놈은 바로 1985년 휴가 때 밀반입한 터키제 리볼버 샷건 몇 자루라 할 수 있지.
+내 컬렉션에는 1500년대 머스킷부터 1990년대 소총까지 다양한 녀석들이 있지만, 요즘 총들은 워낙 천박해서 못 봐주겠더군. 지금까지 150정이 넘는 총을 모았는데, 그중에서도 1985년 휴가 때 밀반입한 터키제 리볼버 샷건 몇 자루가 가장 특별한 놈이라 할 수 있지.
 
-요즘은 소음기가 내장된 총기에 관심을 갖고 있는데, 그런 총을 찾는게 쉽지 않단 말이지. 특히, 요즘 눈독들이고 있는 동구권 물건이 하나 있는데, 통 찾을수가 없다고."		
+요즘은 소음기가 내장된 총기에 관심을 갖고 있는데, 그런 총을 찾는 게 쉽지 않단 말이지. 특히, 요즘 눈독들이고 있는 동구권 물건이 하나 있는데, 통 찾을 수가 없더군."		
 Tasks	Gunsmith/09	name	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	2916	모두의 권리		
 Tasks	Gunsmith/09	difficulty	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard		어려움		
 Tasks	Gunsmith/09	description	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					description		"I recently took a hike out to the Border Zone and collected some mushrooms.
@@ -480,13 +480,13 @@ In Finland, we have Everyman’s Rights, which grant us the right to use nature 
 
 However, I have to admit that sometimes I step into a grey area and collect stuff that isn't just mushrooms. For example, a few months ago, I found a fallen Border Zone sign in a ditch. Since it was covered in leaves and dirt, I figured it belonged to nature which makes it part of Everyman’s Rights in my mind.
 
-Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	2918	"얼마전에 접경 지대에 등산을 가서 버섯을 좀 따왔다네.
+Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	2918	"얼마 전에 접경 지대에 등산을 가서 버섯을 좀 따왔다네.
 
-핀란드에는 누구나 자연을 이용할 권리가 있다는 ""만인의 권리""라는 제도가 있지. 땅의 소유권이나 점유권에 관계없이 누구나 자연을 이용할 수 있도록 보장하는 법인데, 핀란드에서 가장 훌륭한 법이라고 할 수 있지.
+핀란드에는 누구나 자연을 이용할 권리가 있다는 ""만인의 권리""라는 제도가 있지. 땅의 소유권이나 점유권과 관계없이 누구나 자연을 이용할 수 있도록 보장하는 법인데, 그야말로 핀란드에서 가장 훌륭한 법이라고 할 수 있지.
 
-...솔직히 말하자면, 가끔은 경계가 애매한 구역에 발을 들여 버섯이 아닌 다른 것들을 채집하기도 하네. 예를 들자면, 몇 달 전에는 도랑에서 굴러다니던 접경 지대 표지판을 발견했었네. 나뭇잎과 흙으로 덮여 있었으니 자연의 일부라고 볼 수 있고, 그렇다면 이것도 ""모두의 권리""에 포함된다고 볼 수 있지 않겠나.
+..…솔직히 말하자면, 가끔은 경계가 애매한 구역에 발을 들여 버섯이 아닌 다른 것들을 채집하기도 하네. 예를 들자면, 몇 달 전에는 도랑에서 굴러다니던 접경 지대 표지판을 발견했었네. 나뭇잎과 흙으로 덮여 있었으니, 자연의 일부라고 볼 수 있지 않겠나. 그렇다면 이것도 ""모두의 권리""에 포함된다고 볼 수 있지.
 
-이 표지판은 장식용으로도 좋지만, 너무 알록달록해서 내 취향에는 맞지 않는구만. 자네라면 좋아할 같은데, 작은 거래를 해보는건 어떤가. 아, 물론 헐값에 팔 생각은 전혀 없네."	"Please pay attention to the following points when translating:
+이 표지판은 장식용으로도 좋지만, 너무 알록달록해서 내 취향에는 맞지 않는구먼. 자네라면 좋아할 것 같은데, 작은 거래를 해보는 건 어떤가. 아, 물론 헐값에 팔 생각은 전혀 없네."	"Please pay attention to the following points when translating:
 - Depending on the language, there may be confusion regarding the relationship between 'Border' and 'Border Zone'. (e.g., border/border area)"	
 Tasks	Gunsmith/10	name	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres					name		Hitman	2920	암살자		
 Tasks	Gunsmith/10	difficulty	0	ignore	Traders/Gunsmith/Tasks/10_Hitman	tres					difficulty		Hard		어려움		
@@ -496,8 +496,8 @@ Every now and then, this guy steps in and asks for fucking payments for some sel
 
 Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	2922	"05 구역에는 우리가 ""퍼니셔""라고 부르는 놈이 하나 있네. 핀란드 범죄 조직 출신인데, 소문에 따르면 유명 폭주족 갱단의 추심원 역할을 했다더군.
 
-이 녀석은 시도 떄도 없이 나타나서 있지도 않는 빚을 갚으라고 난리를 쳐. 평소같으면 이런 미친놈들은 문 앞에서 쏴버리겠지만, 이 놈들은 더럽게 끈질겨. 최근에는 그 녀석이랑 쫄따구들이 경찰 호송차를 훔쳐서 타고다니니, 이제는 경장갑 차량까지 갖춘 셈이지.
+이 녀석은 시도 때도 없이 나타나서 있지도 않은 빚을 갚으라고 난리를 쳐. 평소 같으면 이런 미친놈들은 문 앞에서 쏴버리겠지만, 이놈들은 더럽게 끈질겨. 최근에는 그 녀석이랑 쫄따구들이 경찰 호송차를 훔쳐서 타고 다니니, 이제는 경장갑 차량까지 갖춘 셈이지.
 
-누군가는 이 광대짓을 끝내야만 해. 그런 의미에서, 나는 지금 히트맨이 필요하네. 그놈의 목을 가져오든 뭐든, 그놈이 죽었다는 증거를 가져오면, 내 창고 열쇠를 내어주지."	"Please pay attention to the following points when translating:
+누군가는 이 광대 짓을 끝내야만 해. 그런 의미에서, 나는 지금 히트맨이 필요하네. 그놈의 목을 가져오든 뭐든, 그놈이 죽었다는 증거를 가져오면, 내 창고 열쇠를 내어주지."	"Please pay attention to the following points when translating:
 - 'Area 05'
 - 'Purnisher' is a pronoun for a hostile NPC"	

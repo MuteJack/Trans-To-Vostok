@@ -791,7 +791,8 @@ Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settin
 "	2296	05 구역	"Please pay attention to the translation regarding the following:
 - 'Area 05' on the button means the location 'Area 05'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
-"	2298	접경지대	"Please pay attention to the translation regarding the following:
+"	2298	"접경 지대
+"	"Please pay attention to the translation regarding the following:
 - 'Border' on the button means the location 'Border Zone'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
 "	2300	보스토크	"Please pay attention to the translation regarding the following:
@@ -1095,7 +1096,7 @@ Scene	Area05	Name	0	substr									Area 05	2598	05 구역	"Location (Area) ""Are
 Scene	Area05	Name	0	substr									Village	2596	마을	"Location under Location ""Area 05"""	
 Scene	Area05	Name	0	substr									Highway	2600	고속도로	"Location under Location ""Area 05"""	
 Scene	Area05	Name	0	substr									School	2602	학교	"Location under Location ""Area 05"""	
-Scene	Outpost	Name	0	substr									Border Zone	2606	접경지대	"Location (Area) ""Border Zone"""	
+Scene	Outpost	Name	0	substr									Border Zone	2606	접경 지대	"Location (Area) ""Border Zone"""	
 Scene	Outpost	Name	0	substr									Outpost	2604	전초기지	"Location under Location ""Border Zone"""	
 Scene	Outpost	Name	0	substr									Minefield	2608	지뢰지대	"Location under Location ""Border Zone"""	
 Scene	Scene	Dictionary	0	substr									Vostok	2664	보스토크	"Location (Area) ""Vostok"""	

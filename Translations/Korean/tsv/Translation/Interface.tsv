@@ -30,8 +30,8 @@ Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/St
 Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	주무기	Inventory Slot for Primary Weapon	
 Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	보조무기	Inventory Slot for Secondory Weapon	
 Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	칼	Inventory Slot for Knife	
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	수류탄1	Inventory Slot for Grenade1	
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	수류탄2	Inventory Slot for Grenade2	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	수류탄 1	Inventory Slot for Grenade1	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	수류탄 2	Inventory Slot for Grenade2	
 Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	배낭	Inventory Slot for Backpack	
 Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	조끼	Inventory Slot for Rig(Vest)	
 Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	헬멧	Inventory Slot for Helmet	
@@ -97,7 +97,7 @@ Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Bu
 Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	카세트 플레이어가 장착되지 않았습니다		
 Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	카세트 플레이어가 장착되지 않았습니다		
 Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.		
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	카세트 플레이어가 비어있습니다, 카세트를 넣어주세요.		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	카세트 플레이어가 비어 있습니다, 카세트를 삽입해 주세요.		
 Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	이 카세트에는 저작권이 있는 음악이 포함되어 있습니다 (콘텐츠 경고)		
 Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	카세트 이름		
 Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%		🗲 100%		
@@ -133,38 +133,53 @@ Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label
 Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	가구 카탈로그		
 Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
-"	922	사용		
+"	922	"사용
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
-"	924	장비		
+"	924	"장비
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
-"	926	해제		
+"	926	"해제
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
-"	928	탄 꺼내기		
+"	928	"탄 꺼내기
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
-"	930	나누기		
+"	930	"나누기
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
-"	932	잡기		
+"	932	"잡기
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
-"	934	수면		
+"	934	"수면
+"		
 Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	수면		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
-"	938	이동		
+"	938	"이동
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
-"	940	버리기		
+"	940	"버리기
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
-"	942	배치		
+"	942	"배치
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
-"	944	파괴		
+"	944	"파괴
+"		
 Inventory	Item	Button	0	pattern									Remove {name}	946	{name} 제거		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
-"	948	제거 [0]		
+"	948	"제거 [0]
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
-"	950	제거 [1]		
+"	950	"제거 [1]
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
-"	952	제거 [2]		
+"	952	"제거 [2]
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
-"	954	제거 [3]		
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	커피머신		
+"	954	"제거 [3]
+"		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	커피 머신		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	소모품		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	전설		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	text	408195277	An item is an object within the game world that can be collected by a player.	962	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.		
@@ -262,7 +277,7 @@ Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Mar
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	보상:		
 Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item		Item, Item, Item, Item	PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	1094	"→ 이 임무를 완료하면 쉼터용 가구를 획득하게 됩니다.
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	1094	"→ 이 의뢰를 완료하면 쉼터용 가구를 획득하게 됩니다.
 → 획득한 가구는 가구 카탈로그 [장식 모드]에서 확인할 수 있습니다."		
 Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	배달 시작		
 Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	배달 시작		
@@ -302,7 +317,7 @@ Carry Capacity by default is 10kg"	1142	"소지품 최대 무게(kg)를 나타�
 기본 소지품 최대 무게는 10kg입니다."		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	장비 통계		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	장비 가치		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	장착중인 모든 장비 아이템의 가치((€)) 합계입니다.		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	장착 중인 모든 장비 아이템의 가치(€) 합계입니다.		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	장비 통계		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	보온성		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		info	1800952039	"A clothing-based thermal protection value against cold.
@@ -334,7 +349,7 @@ Dexterity decreases when you equip heavy or unergonomic items with a negative de
 
 민첩성은 이동 속도 및 무기 조작(조준, 재장전 등)과 관련이 있습니다.
 
-민첩성 수치가 마이너스인 무겁거나 인체공학적이지 않은 아이템을 장착하면 민첩성이 감소합니다."		
+민첩성 수치가 마이너스인, 무겁거나 인체공학적이지 않은 아이템을 장착하면 민첩성이 감소합니다."		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	장비 통계		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	위협 수치		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		info	1925451931	"An intimidation value of how threatening AI sees your character and equipment.
@@ -349,7 +364,7 @@ Menace only affects low-tier AI (Bandits)."	1166	"AI가 당신의 캐릭터와 �
 
 위협 수치는 특수 의상과 같이 위협 수치가 높은 아이템을 장착하면 증가합니다.
 
-위협은 하위 등급 AI(산적 등)에게만 영향을 미칩니다."		
+위협은 하위 등급 AI(밴디트 등)에게만 영향을 미칩니다."		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	장비 통계		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	화생방 수치		
 Inventory	Stats	String	0	substr									CBRN	1172	화생방		
@@ -419,13 +434,13 @@ Mental decreases over time and with nasty consumables. Any active medical condit
 
 Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
 
-Mental [0] -> Insanity (Condition)"	1198	"행복도와 정신 건강 수준.
+Mental [0] -> Insanity (Condition)"	1198	"행복도와 정신 건강 상태입니다.
 
-정신 건강은 시간이 지남에 따라 감소하며, 해로운 음식을 섭취할 때도 감소합니다. 현재 질병이 있는 경우 감소 속도가 두 배로 빨라집니다.
+정신력은 시간이 지남에 따라 감소하며, 해로운 음식을 섭취할 때도 감소합니다. 현재 질병이 있는 경우 감소 속도가 두 배로 빨라집니다.
 
-정신 건강은 간식, 따뜻한 식사, 술이나 니코틴 제품 같은 기호품과 같은 위안이 되는 것들을 섭취하면 증가합니다.
+정신력은 간식, 따뜻한 식사, 술이나 니코틴 제품 같은 기호품과 같은 위안이 되는 것들을 섭취하면 증가합니다.
 
-정신 건강 [0] -> 광기 (상태)"		
+정신력 [0] -> 광기 (상태 이상)"		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	바이탈		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	체온		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
@@ -434,13 +449,13 @@ Body Temp decreases over time in Winter. Decrease speed can be reduced by stayin
 
 Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
 
-Body Temp [0] -> Frostbite (Condition)"	1204	"체온 및 보온 수준.
+Body Temp [0] -> Frostbite (Condition)"	1204	"체온 및 보온 수준입니다.
 
-겨울에는 체온이 시간이 지남에 따라 감소합니다. 실내에 머물거나 단열 효과가 있는 옷을 착용하면 체온 감소 속도를 줄일 수 있습니다.
+겨울에는 체온이 시간이 지남에 따라 감소합니다. 실내에 머물거나 단열 효과가 있는 옷을 착용하면 체온이 감소하는 속도를 줄일 수 있습니다.
 
-대피소에 있거나 모닥불과 같은 열원 주변에 있으면 체온이 올라갑니다. 히트팩이나 우주 담요와 같은 특정 열 관련 아이템도 체온을 높여줍니다.
+대피소에 있거나 모닥불과 같은 열원 주변에 있으면 체온이 올라갑니다. 히트팩이나 담요와 같은 특정 열 관련 아이템도 체온을 높여줄 수 있습니다.
 
-체온 [0] -> 동상 (상태)"		
+체온 [0] -> 동상 (상태 이상)"		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	바이탈		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	고양이		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		info	2119249152	"Grandma's cat health level.
@@ -785,23 +800,23 @@ Additional Shelters can be unlocked with keys which you acquire by completing Ta
 
 새 게임은 오두막과 텐트라는 두 개의 은신처가 잠금 해제된 상태로 시작합니다.
 
-추가 은신처는 여러 상인에게서 임무를 완료하여 얻는 열쇠로 잠금 해제할 수 있습니다."		
+추가 은신처는 여러 상인에게서 의뢰를 완료하여 얻는 열쇠로 잠금 해제할 수 있습니다."		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	진행도		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	의뢰 수		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		info	1384285326	"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
 
-Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	1300	"완료된 의뢰의 수 입니다.
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	1300	"당신이 완료된 의뢰의 수 입니다.
 
 의뢰는 상인에게서 받는 아이템 기반 작업입니다. 임무는 여러 상인 간에 연결될 수 있으며, 제작을 통해 얻을 수 없는 아이템을 필요로 할 수도 있습니다.
 
-의뢰는 거래 가격 인하(상인세) 및 새로운 은신처와 특수 방을 잠금 해제하는 열쇠 획득과 관련이 있습니다."		
+의뢰는 거래 가격 인하(세금) 및 새로운 은신처와 특수한 방을 잠금 해제하는 열쇠 획득과 관련이 있습니다."		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	진행도		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	퀘스트 수		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		info	1702334479	"Number of Quests completed.
 
-Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	1306	"완료한 퀘스트 수.
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	1306	"당신이 완료한 퀘스트 수입니다.
 
 퀘스트는 상인들이 제공하는 스토리 기반 임무입니다. 퀘스트는 여러 상인의 퀘스트와 연관될 수 있으며, 특정 이벤트 발생 후에 활성화될 수도 있습니다."		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	진행도		
@@ -816,9 +831,9 @@ You can complete a CDS by clearing out the hostile enemies and connecting the CD
 
 민방위 대피소(CDS)는 군사적 위협으로부터 보호하기 위해 설계된 콘크리트 벙커 및 지하 공간입니다.
 
-5구역 대피 이후, 이 CDS들은 적에게 점령당했고 내부에 있던 생존 장비 대부분이 도난당했습니다.
+05 구역 대피 이후, 이러한 대피소들은 적에게 점령당했고 내부에 있던 생존 장비 대부분이 도난당했습니다.
 
-CDS를 완료하려면 적을 소탕하고 CDS 비상 방송 라디오를 다시 연결해야 합니다."		
+CDS를 완료하려면 적을 소탕하고 대피소 비상 방송 라디오를 다시 연결해야 합니다."		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	진행도		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	고요한 밤		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		info	1661761957	"There will be a silent night when all fades away.
@@ -831,7 +846,7 @@ You feel safe, a peaceful moment that feels like the ending you wanted.
 
 Then your last light disappears, the sky turns red and the silence breaks."	1318	"모든 것이 사라지는 고요한 밤이 찾아올 것입니다.
 
-하늘을 올려다보면 북극성이 보일 것이며, 그겅시 어둠 속에서 유일한 빛일 겁니다.
+하늘을 올려다보면 북극성이 보일 것이며, 그것이 어둠 속에서 유일한 빛일 겁니다.
 
 그 빛은 고향, 당신이 온 곳이자 돌아갈 곳을 떠올리게 합니다.
 
@@ -851,7 +866,7 @@ Resupply: Time when supply resets."	1328	"물품 거래, 의뢰 제공 및 전�
 
 이름: 지역 주민들이 일반적으로 부르는 이름입니다.
 세금: 물품 가격에 적용되는 배율입니다.
-임무 수: 완료한 의뢰의 개수입니다.
+의뢰 수: 완료한 의뢰의 수입니다.
 재보급: 물품 재고가 초기화되는 시간입니다."		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	상인 통계		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	거래		

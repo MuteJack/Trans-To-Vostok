@@ -1,7 +1,7 @@
 WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	max_length
 Main_Menu	/	Game Title	0	ignore									Road to Vostok			Subtitle(?) of the Game, that Displayed on Main Menu	
 Main_Menu	/	Game Subtitle	0	ignore	Scenes/Menu	tscn	Scenes/Menu	Main	Title	Label	text	1369510248	Early Access			Subtitle(?) of the Game, that Displayed on Main Menu	
-Main_Menu	Compatibility		0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	2030	Kompatibilis mód	Text that notice user is running the game as 'Compatibility Mode'	
+Main_Menu	Compatibility		0	static	Scenes/Menu	tscn	Scenes/Menu	.	Compatibility	Label	text	727651195	Compatibility	2030	Kompatibilitás	Text that notice user is running the game as 'Compatibility Mode'	
 Main_Menu	Compatibility		0	substr									Compatibility	2032	Kompatibilitás		
 Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOff.text	literal		166	Compatibility				
 Main_Menu	Compatibility		0	ignore	Scripts/Settings	gd			AOOn.text	literal		167	Compatibility				
@@ -9,35 +9,47 @@ Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Load	Button	text	731048714	Load game	2036	Játék betöltése		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Tutorial	Button	text	462892253	Tutorial	2038	Kiképzés		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Settings	Button	text	363940271	"Settings
-"	2040	Beállítások		
+"	2040	"Beállítások
+"		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Roadmap	Button	text	768378158	"Roadmap
-"	2042	Ütemterv		
+"	2042	"Ütemterv
+"		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	About	Button	text	1342929674	"About
-"	2044	Névjegy		
+"	2044	"Névjegy
+"		
 Main_Menu	Main Button	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Main/Buttons	Quit	Button	text	1206295517	"Quit
-"	2046	Kilépés		
+"	2046	"Kilépés
+"		
 Main_Menu	ChangeLog	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log	Header	Label	text	346683200	Changelog	2048	Változások		
 Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_Off	Button	text	110288235	"Off
-"	2050	Ki		
+"	2050	"Ki
+"		
 Main_Menu	ChangeLog	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Log/Buttons	Log_On	Button	text	1072724058	"On
-"	2052	Be		
+"	2052	"Be
+"		
 Main_Menu	Hardware Check	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware	Header	Label	text	698499361	Hardware Check	2054	Hardver ellenőrzése		
 Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_Off	Button	text	968786773	"Off
-"	2056	Ki		
+"	2056	"Ki
+"		
 Main_Menu	Hardware Check	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Hardware/Buttons	HW_On	Button	text	2039876731	"On
-"	2058	Be		
+"	2058	"Be
+"		
 Main_Menu	Watch Intro	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro	Header	Label	text	1070243629	Watch Intro	2060	Bevezető megtekintése		
 Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_Off	Button	text	1424495460	"Off
-"	2062	Ki		
+"	2062	"Ki
+"		
 Main_Menu	Watch Intro	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Intro/Buttons	Intro_On	Button	text	685964068	"On
-"	2064	Be		
+"	2064	"Be
+"		
 Main_Menu	Menu Music	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Header	Label	text	1387396245	Menu Music	2066	Menüzene		
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
-"	2068	Ki		
+"	2068	"Ki
+"		
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
-"	2070	Be		
+"	2070	"Be
+"		
 Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	2072	A Road to Vostok ® a Road to Vostok Ltd. bejegyzett védjegye. Minden jog fenntartva © 2026		
-Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	2074	Verzió.: 0.1.1.3	"Will not use pattern matching. 
+Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	2074	Verzió: 0,1,1,3	"Will not use pattern matching. 
 It will act as the ""canaria (bird)"" for the outdated translation."	
 Main_Menu	ChangeLog	UI_Label	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Header	Label	Label	text	618671450	Changelog	2076	Változások		
 Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text	881677409	"Following changes were made from:
@@ -107,74 +119,11 @@ Hotfix [0.1.1.3]
 [CHANGED] Fallen items drop front of the player vs. inventory (Shelter)
 ----------------------------------------
 [REMOVED] All third-party/obsolete AMD FSR references for stability
-----------------------------------------"	2078	"Following changes were made from:
-Early Access [0.1.0.0] -> Early Access [0.1.1.3]
+----------------------------------------"	2078	"A következő változások történtek:
+Korai hozzáférés [0.1.0.0] -> Korai hozzáférés [0.1.1.3]
 ----------------------------------------
-Build name: Road - Build 1
-Build version: 0.1.1.3
-Build type: Release
-----------------------------------------
-Hotfix [0.1.1.3]
-[FIXED] Context actions could cause death when closing Interface at the same frame (Context Use)
-[FIXED] Context actions could corrupt items when closing Interface at the same frame (Context Unload)
-[FIXED] Context actions could corrupt furniture when closing Interface at the same frame (Context Place)
-----------------------------------------
-[ADDED] Compatibility launch option for hardware issues
-[ADDED] Increased buffer memory for GPU stalls/timeouts
-[ADDED] CPU-load distribution when loading into a map
-[ADDED] Engine version switched to Godot 4.6.2 for stability
-[ADDED] Added SMAA anti-aliasing option (Settings)
-[ADDED] Reworked image sharpness shader for stability (Settings)
-[ADDED] Furniture destroy uses safeguard (LMB hold) for misclicks
-[ADDED] Airdrops use green chemlights for night time visibility
-[ADDED] Airdrops now support variable loot tables [x3]
-[ADDED] Punisher now support variable loot tables [x3]
-[ADDED] Punisher loot tables improved with more items
-[ADDED] Killed AI corpse loot possibility increased [25%->75%]
-[ADDED] Additional industrial loot spawns [Oil Filter]
-[ADDED] Terminal has more special crates and loot spawns
-[ADDED] Special crates can also spawn Legendary items
-[ADDED] New item: Chewing Gum
-----------------------------------------
-[FIXED] Flickering lights/shadows in shelters and trader areas
-[FIXED] Active context menu could freeze when closing the Interface
-[FIXED] Frozen context menu could lead to corrupted/floating items
-[FIXED] Shelter item return while using items could cause death
-[FIXED] Cartridges during ammo check were glowing in low lighting
-[FIXED] AI could navigate/attack through airdrop colliders
-[FIXED] AI could navigate/attack through heli crash colliders
-[FIXED] AI could get stuck on heli crash colliders
-[FIXED] Blocked Highway tunnel could be exploited without a key
-[FIXED] Darkness/Ironman random spawn teleported to transition (School/Highway)
-[FIXED] AI firing accuracy inconsistency and miscalculations
-[FIXED] Controller could get stuck on Village building (toilet door)
-[FIXED] Controller could get stuck on Village tractor (barn)
-[FIXED] Controller could get stuck on Village garage (cardboard boxes)
-[FIXED] Controller could get stuck on School building (trader table)
-[FIXED] Controller could get stuck on School building (multiple chairs)
-[FIXED] Controller could get stuck on Highway market (shelf gaps)
-[FIXED] Controller could get stuck on Highway market (shopping carts)
-[FIXED] Controller could get stuck on Apartments staircases (corpse head)
-[FIXED] Controller could get stuck on Terminal ramps (trainyard area)
-[FIXED] Military BTR could stuck driving in circles at fast speed
-[FIXED] Improvised splint didn't heal Fracture condition
-[FIXED] Doctor sold own task items [Antiseptic]
-[FIXED] Gunsmith sold own task items [Skrama 200]
-[FIXED] MSAA 8x option didn't save to preferences
-[FIXED] Tutorial crates didn't contain M78 magazines
-----------------------------------------
-[CHANGED] Critical medical condition [Rupture] possibility lowered [5%->3%]
-[CHANGED] Critical medical condition [Headshot] possibility lowered [5%->3%]
-[CHANGED] Character hydration decrease speed slowed by [10%]
-[CHANGED] Character mental decrease speed slowed by [10%]
-[CHANGED] Cat vital decrease speed slowed by [20%]
-[CHANGED] Cat meows and makes noises less often
-[CHANGED] Trader (Start/End/Idle) voices activate less often
-[CHANGED] Render resolution options changed to Low/Native (less confusion)
-[CHANGED] Fallen items drop front of the player vs. inventory (Shelter)
-----------------------------------------
-[REMOVED] All third-party/obsolete AMD FSR references for stability
-----------------------------------------"	CHANGELOG for RTV	
+Build név: Road - Build 1
+Build verzió: 0.1.1.3"	CHANGELOG for RTV	
 Main_Menu	ChangeLog	Scrollable String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Changelog/Panel/Margin/Scroll	Content	Label	text		"Following changes were made from:
 Demo [0.0.1.0] -> Early Access [0.1.0.0]
 ----------------------------------------
@@ -400,10 +349,10 @@ Build type: Release
 [CHANGED] Multiple changes for AI weapon audio to improve directional and flyby audio
 [CHANGED] Candles no longer cause Burn medical condition when walked on
 [CHANGED] Helicopter model type changed from Mi-8 to Mi-24 (Hind)"	2080	"Following changes were made from:
-Demo [0.0.1.0] -> Early Access [0.1.0.0]
+Demo [] -> Early Access []
 ----------------------------------------
-Build name: Road - Build 1
-Build version: 0.1.0.0
+Build name: Road - Build 
+Build version: 
 Build type: Release
 ----------------------------------------
 [ADDED] Event system
@@ -618,7 +567,7 @@ Build type: Release
 [CHANGED] Lasers can only be attached to weapons with suitable side/top rails
 [CHANGED] Guards can now also use M4A1 as their default weapon
 [CHANGED] All project and save files now exists directly in AppData/Roaming/[GameName]
-[CHANGED] All exe.files and builds use industry-standard versioning (e.g 0.1.0.0)
+[CHANGED] All exe.files and builds use industry-standard versioning 
 [CHANGED] Certain weapon and attachment names are switched to use pseudo-names
 [CHANGED] Weapon audio uses more realistic tail / echo volumes after firing
 [CHANGED] Multiple changes for AI weapon audio to improve directional and flyby audio
@@ -631,7 +580,7 @@ New Game	/	Button	0	substr	Scripts/Mode	gd			select.text	literal		19	Selected	20
 New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		24	Selected				
 New Game	/	Button	0	ignore	Scripts/Mode	gd			select.text	literal		29	Select				
 New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes	Warning	Label	text	1818339096	Warning!	2084	Figyelem!		
-New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	2086	A meglévő mentési fájlok törlésre kerülnek.		
+New Game	/	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Warning	Detail	Label	text	1311789019	Existing save files will be deleted	2086	A meglévő mentési fájlok törlésre kerülnek		
 New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Enter	Button	text	1342819983	Enter the Road	2088	Rálépni az útra		
 New Game	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Buttons	Modes_Return	Button	text	327739041	← Return	2090	← Vissza		
 New Game	Difficulty	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty	Header	Label	text	1142975339	Difficulty	2092	Nehézségi szint		
@@ -643,8 +592,8 @@ New Game	Difficulty/Standard	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes
 - Starts 08:00 with neutral weather
 - All character vitals 100
 - Permadeath in Vostok"	2100	"- A kezdő felszerelés véletlenszerű kiosztása
-- Kezdés a relytekhelyen
-- Reggel 8:00, normál időjárási körülmények
+- Kezdés a menedékben
+- Reggel 08:00 normál időjárási körülmények
 - A karakter összes állapota 100
 - Végleges halál Vostokban"		
 New Game	Difficulty/Darkness	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Darkness	Name	Label	text	357299361	Darkness	2102	Sötétség		
@@ -703,32 +652,40 @@ Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Me
 Settings	/	Button	0	literal	UI/Settings	tscn	UI/Settings	Warning/Buttons	Exit_Quit	Button	text	1053398316	Quit Game	2152	Kilépés a játékból		
 Settings	/	String	0	literal	UI/Settings	tscn	UI/Settings	Warning/Warning	Detail	Label	text	2090207802	"You are exiting the game outside of the shelter
 Current inventory & equipment will be deleted"	2154	"A menedékhelyen kívül szeretnéd befejezni a játékot.
-A jelenlegi tárgyak és felszerelések törlésre kerülnek."		
+A jelenlegi tárgyak és felszerelések törlésre kerülnek"		
 Settings	Input Settings	Section Title	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Header	Label	text	1021342677	Input Settings	2156	Irányítási beállítások		
 Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Mouse	Label	text	1205060240	Mouse	2158	Egér		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Normal	Button	text	907110992	"Normal
-"	2160	Normál		
+"	2160	"Normál
+"		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Mouse_Options	Inverted	Button	text	1620747805	"Inverted
-"	2162	Fordított		
+"	2162	"Fordított
+"		
 Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Sprint	Label	text	1603891433	Sprint	2164	Futás		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Hold	Button	text	547331103	"Hold
-"	2166	Megtartás		
+"	2166	"Megtartás
+"		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Sprint_Options	Sprint_Toggle	Button	text	503096142	"Toggle
-"	2168	Kikapcsolás		
+"	2168	"Kikapcsolás
+"		
 Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Lean	Label	text	684857853	Lean	2170	Dőlés		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	text	2100503869	"Hold
-"	2172	Megtartás		
+"	2172	"Megtartás
+"		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
-"	2174	Kikapcsolás		
+"	2174	"Kikapcsolás
+"		
 Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	2176	Célzás		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
-"	2178	Megtartás		
+"	2178	"Megtartás
+"		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
-"	2180	Kikapcsolás		
+"	2180	"Kikapcsol
+"		
 Settings	Input Settings	Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	.	Reset	Button	text	512436692	Reset to defaults	2182	Visszaállítás alapértékekre		
 Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelAction	Label	text	1524522543	Example Input	2184	Beviteli minta		
 Settings	#Not Checked	String	0	literal	Resources/RemapButton	tscn	Resources/RemapButton	MarginContainer/HBoxContainer	LabelInput	Label	text	465317953	Input Key	2186	Billentyűleütés	Dynamically Changed on Inputs.gd	
-Settings	#Not Checked	String	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	2188	Nyomja meg a gombot a hozzárendeléshez...	Dynamically Changed on Inputs.gd	
+Settings	#Not Checked	String	0	substr	Scripts/Inputs	gd			"button.find_child(""LabelInput"").text"	literal		232	Press key to bind...	2188	Hozzárendelés...	Dynamically Changed on Inputs.gd	
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.forward	dict		30	Forward	2190	Előre		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.backward	dict		31	Backward	2192	Hátra		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.left	dict		32	Left	2194	Balra		
@@ -739,7 +696,7 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.sprin
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_L	dict		37	Lean Left	2204	Kitekintés balra		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.lean_R	dict		38	Lean Right	2206	Kitekintés jobbra		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.primary	dict		39	Draw Primary	2208	Fő fegyver elővétele		
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	2210	Másodlagosfegyver elővétele		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.secondary	dict		40	Draw Secondary	2210	Másodlagos fegyver elővétele		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.knife	dict		41	Draw Knife	2212	Kés elővétele		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_1	dict		42	Draw Grenade 1	2214	Gránát 1 elővétele		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.grenade_2	dict		43	Draw Grenade 2	2216	Gránát 2 elővétele		
@@ -780,36 +737,44 @@ Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/
 Settings	Audio Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Audio/Settings	Music	Label	text	1621547807	Music Volume	2286	Zene hangereje		
 Settings	Audio Settings/Music Preset	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements	Music	Label	text	1106070373	Music Preset	2288	Zenei beállítások		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Off	Button	text	1157664360	"Off
-"	2290	Ki		
+"	2290	"Ki
+"		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Dynamic	Button	text	145862675	"Dynamic
-"	2292	Dinamikus		
+"	2292	"Dinamikus
+"		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Shelter	Button	text	834239374	"Shelter
-"	2294	Menedék		
+"	2294	"Menedék
+"		
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Area_05	Button	text	764521612	"Area 05
-"	2296	Körzet 05	"Please pay attention to the translation regarding the following:
+"	2296	"05-ös körzet
+"	"Please pay attention to the translation regarding the following:
 - 'Area 05' on the button means the location 'Area 05'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Border	Button	text	1230302201	"Border
-"	2298	Határ	"Please pay attention to the translation regarding the following:
+"	2298	"Határ
+"	"Please pay attention to the translation regarding the following:
 - 'Border' on the button means the location 'Border Zone'."	
 Settings	Audio Settings/Music Preset	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Music/Elements/Settings	Music_Vostok	Button	text	467747618	"Vostok
-"	2300	Vostok	"Please pay attention to the translation regarding the following:
+"	2300	"Vostok
+"	"Please pay attention to the translation regarding the following:
 - 'Vostok' on the button means the location 'Vostok'."	
 Settings	Camera Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera	Camera	Label	text	1447811589	Camera Settings	2302	Kamera beállítások		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Interpolate	Label	text	973282705	Interpolate	2304	Interpoláció		
-Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	2306	Látószög (FOV)		
+Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	FOV	Label	text	870732399	Field of View	2306	Látószög		
 Settings	Camera Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements	Headbob	Label	text	1987178160	Headbob	2308	Fejmozgás		
 Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_Off	Button	text	1097446784	"Off
-"	2310	Ki		
+"	2310	"Ki
+"		
 Settings	Camera Settings	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Camera/Elements/Settings	Interpolate_On	Button	text	875405842	"On
-"	2312	Be		
+"	2312	"Be
+"		
 Settings	Mouse Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse	Mouse	Label	text	1232366398	Mouse Settings	2314	Egér beállítások		
 Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Look	Label	text	1455937058	Look Sensitivity	2316	Érzékenység		
 Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Aim	Label	text	1986975582	Aim Sensitivity	2318	Célérzékenység		
 Settings	Mouse Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Mouse/Settings	Scope	Label	text	701789755	Scope Sensitivity	2320	A távcső érzékenysége		
 Settings	Color Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color	Color	Label	text	364141163	Color Settings	2322	Színek beállítása		
 Settings	UI Scaling	Section Title	0	static	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text	1651718328	UI Scaling [Coming Soon]	2324	UI Méretezés [hamarosan elérhető]		
-Settings	UI Scaling	Section Title	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	2326	UI Méretezés [hamarosan elérhető]		
-Settings	Image Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text		Image Settings	2340	UI Méretezés [hamarosan elérhető]	Deprecated (v.0.1.0.0)	
+Settings	UI Scaling	Section Title	0	substr			UI/Settings	Settings/Row_01/Image	Image	Label	text		UI Scaling	2326	UI Méretezés		
+Settings	Image Settings	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image	Image	Label	text		Image Settings	2340	Kép beállítások	Deprecated (v.0.1.0.0)	
 Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	Interface	Label	text	924067924	Interface Scale	2328	Felületarány		
 Settings	Image Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Settings	Sharpness	Label	text		Sharpness	2342	Élesség	Deprecated (v.0.1.0.0)	
 Settings	UI Scaling	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Image/Elements	HUD	Label	text	118931963	HUD Scale	2330	HUD-méret		
@@ -819,7 +784,8 @@ Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/
 Settings	Color Settings	Element	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_01/Color/Settings	Saturation	Label	text	1622870104	Saturation	2338	Telítettség		
 Settings	HUD	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD	HUD	Label	text	1128593681	HUD	2344	HUD		
 Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Map	Button	text	384487481	"Map
-"	2346	Térkép		
+"	2346	"Térkép
+"		
 Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	FPS	Button	text	638805317	FPS	2348	FPS		
 Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Vitals	Button	text	997778180	Vitals	2350	Életjelek		
 Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Medical	Button	text	797858214	Medical	2352	Egészség		
@@ -827,25 +793,31 @@ Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/S
 Settings	HUD	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/HUD/Settings	Decor	Button	text	502088511	Decor	2356	Dekoráció		
 Settings	UI Tooltip	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip	Tooltip	Label	text	1952881397	UI Tooltip	2358	UI Eszköztipp		
 Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_On	Button	text	218441862	"On
-"	2360	Be		
+"	2360	"Be
+"		
 Settings	UI Tooltip	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Tooltip/Settings	Tooltip_Off	Button	text	2115067092	Off	2362	Ki		
 Settings	PIP Scopes	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP	PIP	Label	text	907557627	PIP Scopes	2364	PIP Távcső		
 Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_On	Button	text	1683999774	"On
-"	2366	Be		
+"	2366	"Be
+"		
 Settings	PIP Scopes	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/PIP/Settings	PIP_Off	Button	text	1913543227	"Off
-"	2368	Ki		
+"	2368	"Ki
+"		
 Settings	Detail Shadows	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows	Shadows	Label	text	988659184	Detail Shadows	2370	Részletes árnyékok		
 Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_On	Button	text	543815795	On	2372	Be		
 Settings	Detail Shadows	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Shadows/Settings	Shadows_Off	Button	text	509666701	"Off
-"	2374	Ki		
+"	2374	"Ki
+"		
 Settings	Water Reflections	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water	Header	Label	text	850845642	Water Reflections	2376	Víz tükröződés		
 Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_On	Button	text	1445410068	On	2378	Be		
 Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	text	1217670336	"Off
-"	2380	Ki		
+"	2380	"Ki
+"		
 Settings	Ambient Occlusion	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	2382	Környezeti árnyékolás		
 Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	2384	Be		
 Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
-"	2386	Ki		
+"	2386	"Ki
+"		
 Settings	Display	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	2388	Kijelző		
 Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	2390	Teljes képernyő		
 Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	2392	Ablak		
@@ -880,7 +852,8 @@ Settings	Anti-aliasing	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Ro
 Settings	Exit	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit	Exit	Label	text	1651642691	Exit	2436	Kilépés		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Menu	Button	text	1300543063	Main Menu	2438	Főmenü		
 Settings	Exit	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Exit/Settings	Quit	Button	text	93322745	"Quit Game
-"	2440	Kilépés a játékból		
+"	2440	"Kilépés a játékból
+"		
 Roadmap	/	Page Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Header	Label	text	1972842607	Roadmap	2442	Ütemterv		
 Roadmap	/	Page Subtitle	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Header	Subheader	Label	text	1554993421	Upcoming builds	2444	Készülő verziók		
 Roadmap	/	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap	Roadmap_Return	Button	text	283012031	← Return	2446	← Vissza		
@@ -918,7 +891,7 @@ Roadmap	Build 3	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Bui
 •  Nagymama (kereskedő)
 •  Új térkép és menedékek"		
 Roadmap	Build 4	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Name	Label	text	414089883	Build 4 | Gunslinger	2466	Kiadás 4 | Fegyverforgató		
-Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	2468	Bejelentésre várva		
+Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Date	Label	text	1482061025	TBA	2468	Bejelentésre vár		
 Roadmap	Build 4	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_04	Details	Label	text	1429767460	"•  Weapon overhaul
 •  Bullet penetration
 •  Modding kits
@@ -940,7 +913,7 @@ Roadmap	Build 5	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Bui
 •  Sámán (Kereskedő)
 •  Új térkép és menedékek"		
 Roadmap	Build 6	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Name	Label	text	795440099	Build 6 | Abyss	2478	Kiadás 6 | Mélység		
-Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	2480	Bejelentésre várva		
+Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Date	Label	text	2022885881	TBA	2480	Bejelentésre vár		
 Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_06	Details	Label	text	1847421320	"•  Sea system
 •  Patrol boats
 •  Scuba gear
@@ -951,7 +924,7 @@ Roadmap	Build 6	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Bui
 •  Halász (kereskedő)
 •  Új térkép és menedékek"		
 Roadmap	Build 7	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Name	Label	text	1926599477	Build 7 | Enigma	2484	Kiadás 7 | Enigma		
-Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	2486	Bejelentésre várva		
+Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Date	Label	text	625710534	TBA	2486	Bejelentésre vár		
 Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_07	Details	Label	text	1842036238	"•  Dialogue system
 •  SIGINT tools
 •  Transmissions
@@ -962,7 +935,7 @@ Roadmap	Build 7	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Bui
 •  Tudós (kereskedő)
 •  Vostok menedékhely"		
 Roadmap	Build 8	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Name	Label	text	1469453669	Build 8 | Silent Night	2490	Kiadás 8 | Csendes éj		
-Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	2492	Bejelentésre várva		
+Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Date	Label	text	2087478141	TBA	2492	Bejelentésre vár		
 Roadmap	Build 8	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Roadmap/Builds/Build_08	Details	Label	text	180614459	"•  Full questline
 •  World options
 •  Destruction system
@@ -977,13 +950,13 @@ About	Road to Vostok	Section Title	1	literal	Scenes/Menu	tscn	Scenes/Menu	About	
 About	Road to Vostok	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Game	Info	Label	text	599042053	"Road to Vostok ® is a hardcore single-player survival game set 
 in a post-apocalyptic border zone between Finland and Russia"	2498	"A Road to Vostok ® egy hardcore egyjátékos túlélőjáték, 
 amelynek hátterét a finn–orosz határvidék képezi a világvége után"		
-About	Developer	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	2500	개발사		
+About	Developer	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Developer	Label	text	2047311419	Developer	2500	Fejlesztő		
 About	Developer	String	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	Info	Label	text	1877874887	Road to Vostok Ltd.				
-About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	2502	개발국		
-About	Country of origin	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	2504	핀란드		
-About	Founding date	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	2506	설립일		
-About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	2508	2022년 2월		
-About	Copyright & Legal	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	2510	저작권 & 법률		
+About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	2502	Származási ország		
+About	Country of origin	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	2504	Finnország		
+About	Founding date	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	2506	Alapítás éve		
+About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	2508	2022 február		
+About	Copyright & Legal	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	2510	Szerzői jogok és jogi információk		
 About	Copyright & Legal	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
 Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
 
@@ -991,15 +964,15 @@ Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
 Road to Vostok ® is registered trademark of Road to Vostok Ltd.
 
 3. Engine
-Road to Vostok ® is powered by open source Godot Engine"	2512	"1. 게임 콘텐츠
-Road to Vostok © 2026 Road to Vostok Ltd. 모든 권리 보유.
+Road to Vostok ® is powered by open source Godot Engine"	2512	"1. A játék tartalma
+Road to Vostok © 2026 Road to Vostok Ltd. Minden jog fenntartva.
 
-2. 상표
-Road to Vostok ®은 Road to Vostok Ltd.의 등록 상표입니다.
+2. Védjegy
+Road to Vostok ® Road to Vostok Ltd. bejegyzett védjegye.
 
-3. 게임 엔진
-Road to Vostok ®은 오픈 소스 Godot 엔진으로 구동됩니다."		
-About	Engine License (MIT)	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	2514	게임 엔진 라이센스 (MIT License)		
+3. Motor
+Road to Vostok ®a nyílt forráskódú Godot Engine hajtja"		
+About	Engine License (MIT)	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	License	Label	text	1816856596	Engine License (MIT)	2514	Motor-használati engedély (MIT License)		
 About	Engine License (MIT)	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/License	MIT	Label	text	921896888	"This game uses Godot Engine, available under the following license:
 
 Copyright © 2014-present Godot Engine contributors.
@@ -1035,44 +1008,46 @@ bármely igényért, kárért vagy egyéb felelősségért. A szoftverrel, a szo
 vagy egyéb ügyletekkel kapcsolatban felmerülő bármely felelősségért sem vállal felelősséget."		
 Loading	/	String	0	literal	Resources/Loader	tscn	Resources/Loader	Screen	Label	Label	text	1588621536	Loading...	2518	Betöltés...		
 			0	substr	Scripts/Loader	gd			label.text	literal		364	Loading...	2520	Betöltés...		
-Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...	2522	{scene} Betöltés folyamatban...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	2524	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	2526	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	2528	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	2530	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	2532	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	2534	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	2536	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	2538	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	2540	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	2542	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	2544	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	2546	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	2548	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	2550	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	2552	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	2554	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	2556	Betöltés...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	pattern	Scripts/Loader	gd			label.text	concat		227	Loading {scene}...	2522	Betöltés folyamatban {scene}...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Intro...	2524	Bevezető betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin...	2526	Faház betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	2528	Kiképzés betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	2530	Menü betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	2532	Padlás betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	2534	Halál betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	2536	Osztályterem betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	2538	Sátor betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	2540	Bunker betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	2542	Falu betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Highway...	2544	Autópálya betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading School...	2546	Iskola betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Outpost...	2548	Előőrs betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Minefield...	2550	Aknamező betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Apartments...	2552	Panellakások betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Terminal...	2554	Terminál betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Template...	2556	Készlet betöltése...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
 Loading	/	#Not Checked	0	literal	UI/Loading	tscn	UI/Loading	Screen	Label	Label	text	1018900388	Loading shaders...	2558	A shader betöltése folyamatban...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
 Intro	/	String	0	literal	Scenes/Intro	tscn	Scenes/Intro	Intro/UI	Hint	Label	text	897130389	Skip Intro [SPACE]	2560	Bevezető kihagyása [SPACE]		
-Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	2562	Skip Intro [SPACE]		
+Intro	/	String	0	substr	Scripts/Intro	gd			hint.text	literal		28	Skip Intro [SPACE]	2562	Bevezető kihagyása [SPACE]		
 Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		29	Skip Intro [SPACE]				
 Intro	/	String	0	ignore	Scripts/Intro	gd			hint.text	literal		30	Skip Intro [SPACE]				
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main	Hint	Label	text	1234347869	Character died	2564	A karakter meghalt		
 Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		33	All save files deleted	2566	Minden mentési fájl törölve lett		
 Death	/	String	0	substr	Scripts/Death	gd			hint.text	literal		36	Character died	2568	A karakter meghalt		
-Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	2570	Betöltés		
+Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button	text	1117002096	Load game	2570	Játék betöltése		
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
-"	2572	Főmenü		
+"	2572	"Főmenü
+"		
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
-"	2574	Kilépés		
+"	2574	"Kilépés
+"		
 Scene	/	Name	0	substr									Menu	2584	Menü		
 Scene	/	Name	0	substr									Intro	2576	Bevezető	Intro Scene is loaded when start new game.	
 Scene	/	Name	0	substr									Tutorial	2582	Kiképzés	Tutorial Map	
-Scene	/	ToolTip	0	substr									Tutorial Exit	2614	Kilépés a kiképzésről	"Tooltip Text for the Door for ""Tutorial Exit"""	
+Scene	/	ToolTip	0	substr									Tutorial Exit	2614	Kilépés a kiképzésből	"Tooltip Text for the Door for ""Tutorial Exit"""	
 Scene	/	Name	0	substr									Death	2588	Halál		
-Scene	/	#Not Checked	0	substr									Template	2616	Készlet (?)	# Not checked	
-Scene	/	#Not Checked	0	substr									shaders	2618	árnyas (?)	# Not checked	
+Scene	/	#Not Checked	0	substr									Template	2616	Készlet	# Not checked	
+Scene	/	#Not Checked	0	substr									shaders	2618	árnyékolók	# Not checked	
 Scene	Shelter	Name	0	substr									Shelter	2580	Menedék	Shelter	
 Scene	Shelter	Name	0	substr									Cabin	2578	Faház	"Shelter located at ""Area 05/Village""
 Defined at Loader.gd: const shelters"	
@@ -1084,7 +1059,7 @@ Scene	Shelter	Name	0	substr									Tent	2592	Sátor	"Shelter located at ""Area 
 Defined at Loader.gd: const shelters"	
 Scene	Shelter	Name	0	substr									Bunker	2594	Bunker	"Shelter located at ""Area 05/Outpost""
 Defined at Loader.gd: const shelters"	
-Scene	Area05	Name	0	substr									Area 05	2598	Körzet 05	"Location (Area) ""Area 05"""	
+Scene	Area05	Name	0	substr									Area 05	2598	05-ös körzet	"Location (Area) ""Area 05"""	
 Scene	Area05	Name	0	substr									Village	2596	Falu	"Location under Location ""Area 05"""	
 Scene	Area05	Name	0	substr									Highway	2600	Autópálya	"Location under Location ""Area 05"""	
 Scene	Area05	Name	0	substr									School	2602	Iskola	"Location under Location ""Area 05"""	
@@ -1092,7 +1067,7 @@ Scene	Outpost	Name	0	substr									Border Zone	2606	Határzóna	"Location (Area
 Scene	Outpost	Name	0	substr									Outpost	2604	Előőrs	"Location under Location ""Border Zone"""	
 Scene	Outpost	Name	0	substr									Minefield	2608	Aknamező	"Location under Location ""Border Zone"""	
 Scene	Scene	Dictionary	0	substr									Vostok	2664	Vostok	"Location (Area) ""Vostok"""	
-Scene	Scene	Name	0	substr									Apartments	2610	Apartmanok	"Location under Location ""Vostok"""	
+Scene	Scene	Name	0	substr									Apartments	2610	Panellakások	"Location under Location ""Vostok"""	
 Scene	Scene	Name	0	substr									Terminal	2612	Terminál	"Location under Location ""Vostok"""	
 NPC	Traders	Name	0	substr									Trader	2620	Kereskedő	NPC (Trader)	
 NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	Szakember	"NPC (Trader) located at ""Area 05/Village"""	

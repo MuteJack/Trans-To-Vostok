@@ -12,7 +12,7 @@ HUD	Vitals	Number	1	literal	UI/HUD	tscn	UI/HUD	Stats/Vitals/Elements/Temperature
 HUD	Oxygen	Name	0	literal	UI/HUD	tscn	UI/HUD	Stats/Oxygen	Header	Label	text	1111197778	Oxygen	758	Oxigén		
 HUD	FPS	Name	1	literal	UI/HUD	tscn	UI/HUD	Info	FPS	Label	text	978945884	FPS:				
 HUD	FPS	Number	1	literal	UI/HUD	tscn	UI/HUD	Info/FPS	Frames	Label	text	1878730828	100			Value(Integer) about the FPS. Untranslatable.	
-HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	Menedékhely (Körzet 05)		
+HUD	Map	String	0	literal	UI/HUD	tscn	UI/HUD	Info	Map	Label	text	669948775	Shelter (Area 05)	760	Menedék (05-ös körzet)		
 Inventory	Inventory	Name	0	substr	UI/Interface	tscn	UI/Interface	Inventory/Header	Label	Label	text	1238390815	Inventory	762	Készlet		
 Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Value	Label	text	1550478440	10.0			Value(Float) about Capacity. Untranslatable.	
 Inventory	Inventory	Number	1	literal	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Value	Label	text	869816525	10.0			Value(Float) about Weight. Untranslatable.	
@@ -30,8 +30,8 @@ Inventory	Equipment	Number	1	literal	UI/Interface	tscn	UI/Interface	Equipment/St
 Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Primary	Label	text	1523548177	Primary	768	Elsődleges	Inventory Slot for Primary Weapon	
 Inventory	Equipment	String	0	substr	UI/Interface	tscn	UI/Interface	Equipment/Hints	Secondary	Label	text	1535383739	Secondary	770	Másodlagos	Inventory Slot for Secondory Weapon	
 Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Knife	Label	text	1618456497	Knife	772	Kés	Inventory Slot for Knife	
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	Gránát 1	Inventory Slot for Grenade1	
-Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	Gránát 2	Inventory Slot for Grenade2	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_A	Label	text	2020142644	Grenade	774	Gránát	Inventory Slot for Grenade1	
+Inventory	Equipment	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Hints	Grenade_B	Label	text	225203314	Grenade	776	Gránát	Inventory Slot for Grenade2	
 Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Backpack	Label	text	1404921178	Backpack	778	Hátizsák	Inventory Slot for Backpack	
 Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Rig	Label	text	6646091	Rig	780	Mellény	Inventory Slot for Rig(Vest)	
 Inventory	Equipment	String	0	literal	UI/Interface	tscn	UI/Interface	Equipment/Hints	Helmet	Label	text	460450702	Helmet	782	Sisak	Inventory Slot for Helmet	
@@ -57,7 +57,7 @@ Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vital
 Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Value	Label	text	369882634	100				
 Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Header	Label	text	549949429	Mental	818	Mentál	Player's Status about Mental	
 Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Value	Label	text	1284125401	100				
-Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	Test hőmérséklet	Player's Status about Body Temparature	
+Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	text	513878939	Body Temp	820	Testhőmérséklet	Player's Status about Body Temparature	
 Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Value	Label	text	296811298	100				
 Inventory	Vitals	String	0	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Header	Label	text	1518608138	Cat	822	Macska	Cat's Status	
 Inventory	Vitals	Number	1	literal	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Value	Label	text	1018287444	100				
@@ -80,15 +80,15 @@ Inventory	Tools/Crafting	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/C
 Inventory	Tools/Task Note	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	text	1195357255	Task Notes	840	Feladatok		
 Inventory	Tools/Task Note	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Notes	Hint	Label	text	1203883391	Task Notes empty	842	Feladatok listája üres	"Task Note will only display this Strings when there's any task added in the Task Note.
 It's already defined in scn(node), but also can be Dynamically changed by Scripts/Interface.gd: notesHint.text"	
-Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	Feladatjegyzetek nem érhetők el (Oktatóanyag)	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
+Inventory	Tools/Task Note	String	0	literal			UI/Interface	Tools/Notes	Hint	Label			Task Notes not available (Tutorial)	844	Feladatok listája nem elérhető (Kiképzés)	"Task Note will only display this Strings when there's any task added in the Task Note. But, only for Tutorial.
 Dynamically changed by Scripts/Interface.gd: notesHint.text"	
-Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	A feladatok jegyzete üres		
+Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		790	Task Notes empty	846	A feladatok listája üres		
 Inventory	Tools/Task Note	String	0	substr	Scripts/Interface	gd			notesHint.text	literal		789	Task Notes not available (Tutorial)	848	A feladatok jegyzete nem használható (Kiképzés)		
 Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	text	1552392911	World Map	850	Világ térkép		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text	281957772	Map not equipped	852	Térkép nincs felszerelve		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map	Hint	Label	text		Map not usable (Vostok)	854	Térkép nincs felszerelve (Vostok)		
 Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		804	Map not equipped	856	Térkép nincs felszerelve		
-Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	A térkép nem használható (Vostok)		
+Inventory	Tools/Map	String	0	substr	Scripts/Interface	gd			mapHint.text	literal		814	Map not usable (Vostok)	858	A térkép nem használható ( Vostok)		
 Inventory	Tools/Map	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	text	746211859	"Pan = [LMB]
 Zoom = [SCROLL]"	860	"Mozgás = [LMB]
 Nagyítás = [SCROLL]"		
@@ -96,8 +96,8 @@ Inventory	Tools/Map	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Map/El
 Inventory	Tools/Casette	Button	0	literal	UI/Interface	tscn	UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	text	475687047	Casette Player	864	Kazetta lejátszó		
 Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette	Hint	Label	text	1237181255	Casette Player not equipped	866	Kazetta lejátszó nincs felszerelve		
 Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		864	Casette Player not equipped	868	Nincs lejátszó felszerelve		
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	A lejátszó lemerült, töltse fel.		
-Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	Lejátszó üres, tegyen be egy kazettát.		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		874	Casette Player power 0%, recharge player	870	A lejátszó lemerült 0%, töltse fel		
+Inventory	Tools/Casette	String	0	substr	Scripts/Interface	gd			casetteHint.text	literal		882	Casette Player empty, insert casette	872	Lejátszó üres, tegyen be egy kazettát		
 Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	text	359158951	This casette includes licenced music (Content warning)	874	Ez a kazetta szerzői joggal védett zeneszámokat tartalmaz (tartalomra vonatkozó figyelmeztetés)		
 Inventory	Tools/Casette	String	0	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	text	291200390	Casette Name	876	Kazetta neve		
 Inventory	Tools/Casette	String	1	literal	UI/Interface	tscn	UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Battery/Margin	Condition	Label	text	698750491	🗲 100%				
@@ -133,37 +133,52 @@ Traders	Tasks	String	0	literal	UI/Interface	tscn	UI/Interface	Tasks/Header	Label
 Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Label	Label	text	1805281791	Furniture Catalog	918	Bútor katalógus		
 Inventory	Furniture Catalog	String	0	literal	UI/Interface	tscn	UI/Interface	Catalog/Header	Warning	Label	text	1218775497	Catalog is linked to your character, death will also destroy your catalog items	920	A katalógus a karakteredhez van kötve, a halálod esetén a katalógusban szereplő tárgyak is elvesznek		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Use	Button	text	1176214056	"Use
-"	922	Használat		
+"	922	"Használat
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	text	29815165	"Equip
-"	924	Felszerelés		
+"	924	"Felszerelés
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	text	1416985585	"Unequip
-"	926	Leszerelés		
+"	926	"Leszerelés
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	text	380158919	"Unload
-"	928	Kitárazás		
+"	928	"Kitárazás
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Split	Button	text	1147150984	"Split
-"	930	Elosztás		
+"	930	"Elosztás
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Take	Button	text	1343013049	"Take
-"	932	Vedd		
+"	932	"Vedd
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	text	2093240116	"Sleep
-"	934	Alvás		
+"	934	"Alvás
+"		
 Inventory	Item	Button	0	substr	Scripts/Context	gd			sleepButton.text	literal		133	Sleep	936	Alvás		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	text	221380720	"Transfer
-"	938	Áthelyezés		
+"	938	"Áthelyezés
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	text	843290863	"Drop
-"	940	Eldobás		
+"	940	"Eldobás
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Place	Button	text	741000239	"Place
-"	942	Megfogás		
+"	942	"Megfogás
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	text	855510833	"Destroy
-"	944	Megsemmisítés		
-Inventory	Item	Button	0	pattern									Remove {name}	946	{name} Eltávolítás		
+"	944	"Megsemmisítés
+"		
+Inventory	Item	Button	0	pattern									Remove {name}	946	Eltávolítás {name}		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	text	1308304022	"Remove [0]
-"	948	Eltávolítás [0]		
+"	948	"Eltávolítás [0]
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	text	457191876	"Remove [1]
-"	950	Eltávolítás [1]		
+"	950	"Eltávolítás [1]
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	text	301616661	"Remove [2]
-"	952	Eltávolítás [2]		
+"	952	"Eltávolítás [2]
+"		
 Inventory	Item	Button	0	literal	UI/Interface	tscn	UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	text	541643648	"Remove [3]
-"	954	Eltávolítás [3]		
+"	954	"Eltávolítás [3]
+"		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	text	54863715	Coffeemaster	956	Kávémester		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	text	1647182867	Consumable	958	Fogyóeszköz		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	text	445033009	Legendary	960	Legendás		
@@ -181,17 +196,17 @@ Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Mar
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	text	2142958581	Damage:	976	Sebzés:		
 Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Damage	Value	Label	text	2093143860	100				
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	text	930851184	Penetration:	978	Áthatolás:		
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	1.szint		
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 2	982	1.szint		
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 3	984	1.szint		
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 4	986	1.szint		
-Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 5	988	1.szint		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text	1801991368	Level 1	980	1. szint		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 2	982	2. szint		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 3	984	3. szint		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 4	986	4. szint		
+Inventory	Item	String	0	literal			UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	text		Level 5	988	5. szint		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	text	1220649414	Protection:	990	Védelem:		
 Inventory	Item	String	0	pattern									Level {no}	992	Szint {no}		
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	1.szint		
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 2	996	1.szint		
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 3	998	1.szint		
-Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 4	1000	1.szint		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text	357478276	Level 1	994	1. szint		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 2	996	2. szint		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 3	998	3. szint		
+Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 4	1000	4. szint		
 Inventory	Item	String	0	substr			UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	text		Level 5	1002	5. szint		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	text	118004042	Capacity:	1004	Kapacitás:		
 Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Capacity	Value	Label	text	1374527003	+10kg				
@@ -209,42 +224,42 @@ Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Mar
 Inventory	Item	Number	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Temperature	Value	Label	text	791196740	+10				
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	text	1670705044	Nested:	1018	Kiegészítők:		
 Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Nested	Value	Label	text	930284487	Hybrid, OZ5, Leopard, Magazine			PlaceHolderText, Don't need to translate (Will be handled by substr).	
-Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	Gyógyítja:		
+Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	text	1853227613	Cures:	1020	Erre jó:		
 Inventory	Item	String	0	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	text	1158325453	Compatible Items:	1022	Kompatibilis:		
 Inventory	Item	String	1	literal	UI/Interface	tscn	UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	List	Label	text	784062048	Hybrid, OZ5, Leopard, Magazine, Batteries, ACOG			PlaceHolderText, Don't need to translate (Will be handled by substr).	
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	열원 필요		
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	작업대 필요		
-Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	은신처 필요		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		218	Heat required	1024	Hőforrás szükséges		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		229	Workbench required	1026	Munkapad szükséges		
+Inventory	Tools/Craft	String	0	substr	Scripts/Recipe	gd			inputButton.text	literal		240	Shelter required	1028	Menedék szükséges		
 Inventory	Tools/Craft	String	0	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Abbreviation	Label	text	636382564	Item	1030	Tétel		
 Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Condition	Label	text	964274680	100%				
 Inventory	#Not Checked	String	1	literal	UI/Elements/Item	tscn	UI/Elements/Item	Details	Amount	Label	text	1646293271	1				
 Inventory	#Not Checked	String	0	literal	UI/Profiler	tscn	UI/Profiler	Panel/Margin	Label	Label	text	264383942	Profiler	1032	Profilok	Developer Only	
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	Mutatás		
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Show	Button	text	1535717137	Show	1034	Bővebben		
 Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Title	Label	text	471335200	Recipe Name	1036	Recept neve		
 Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Header	Time	Label	text	868992173	01:00				
 Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Input	Label	text	914823117	Input:	1038	Bevitel:		
 Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Input	Items	Label	text	1416326051	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Craft	String	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content	Output	Label	text	102542488	Output:	1040	Megkap:		
 Inventory	Tools/Craft	String	1	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Output	Items	Label	text	968539697	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).	
-Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	Elkészítés		
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	투입 시작		
+Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	text	615000602	Start Input	1042	Összeállítás		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		214	Start Input	1044	Összeállítás		
 Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		225	Start Input				
 Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		236	Start Input				
 Inventory	Tools/Craft	Button	0	ignore	Scripts/Recipe	gd			inputButton.text	literal		268	Start Input				
 Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		278	Stop Input	1046	Összeállítás leállítása		
-Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	투입 초기화		
+Inventory	Tools/Craft	Button	0	substr	Scripts/Recipe	gd			inputButton.text	literal		289	Reset Input	1048	Összeállítás törlése		
 Inventory	Tools/Craft	Button	0	literal	UI/Elements/Recipe	tscn	UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	text	120533530	Craft	1050	Készítés		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		title	964839395	Heat	1052	Hőforrás		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	Hőforrás		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		info	964839395	A nearby crafting element which can be required for certain cooking-based recipes.	1054	Egy közeli kézműves alapanyag, amely bizonyos főzéssel kapcsolatos receptekhez szükséges lehet.		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Heat	Info		type	964839395	Proximity Requirement	1056	Közelségi követelmény		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		title	1508788255	Workbench	1058	Munkaasztal		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	Munkaasztal		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		info	1508788255	A nearby crafting element which can be required for certain construction-based recipes.	1060	Egy kézműves alapanyag, amely bizonyos építési leíráshoz szükséges lehet.		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		type	1508788255	Proximity Requirement	1062	Közelségi követelmény		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		title	1881824771	Testbench	1064	Tesztpad	I can't find this. Maybe not updated in 1.0.0 version yet.	
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	Tesztpad	I can't find this. Maybe not updated in 1.0.0 version yet.	
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		info	1881824771	A nearby crafting element which can be required for certain electronic-based recipes.	1066	Egy közeli kézműves alapanyag, amely bizonyos elektronikai alapú leíráshoz szükséges lehet.	I can't find this. Maybe not updated in 1.0.0 version yet.	
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		type	1881824771	Proximity Requirement	1068	Közelségi követelmény	I can't find this. Maybe not updated in 1.0.0 version yet.	
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		title	1493501068	Shelter	1070	Menedék		
-Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	Menedék		
+Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		info	1493501068	A nearby crafting element which can be required for certain furniture-based recipes.	1072	Egy közeli kézműves alapanyag, amely bizonyos bútorok elkészítéséhez szükséges lehet.		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		type	1493501068	Proximity Requirement	1074	Közelségi követelmény		
 Inventory	Tools/Crafting	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		title	844527464	Trader	1076	Kereskedő		
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Title	Label	text	1091795131	Duty Calls	1078	Hív a kötelesség	PlaceHolder	
@@ -262,44 +277,50 @@ Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Mar
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Output	Label	text	1194037650	Receive:	1092	Átvéve:		
 Inventory	Tools/Task	String	1	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Output	Items	Label	text	1267225060	Item, Item, Item, Item			PlaceHolderText, Don't need to translate (Will be handled by substr).	
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements	Hint	Label	text	407342033	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	1094	"→ Ebből a feladatból lakberendezési tárgyakat kapsz.
-→ A bútoraid a Bútor katalógusban találhatók [Dekorációs mód]."		
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	1094	"→ Ebből a feladatból lakberendezési tárgyakat kapsz
+→ A bútoraid a Bútor katalógusban találhatók [Dekorációs mód]"		
 Inventory	Tools/Task	Button	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Input	Button	text	1296915111	Start Delivery	1096	Teljesítés indítása		
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	배달 시작		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		267	Start Delivery	1098	Teljesítés indítása		
 Inventory	Tools/Task	Button	0	ignore	Scripts/Task	gd			inputButton.text	literal		291	Start Delivery				
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	Teljesítés indítása		
-Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	배달 종료		
-Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	Teljesítés indítása		
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Stop Delivery	1100	Teljesítés leállítása		
+Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		279	Stop Delivery	1102	Teljesítés leállítása		
+Inventory	Tools/Task	Button	0	literal			UI/Elements/Task	Margin/Elements/Buttons	Input	Button			Delivered	1104	Teljesítve		
 Inventory	Tools/Task	Button	0	substr	Scripts/Task	gd			inputButton.text	literal		303	Delivered	1106	Teljesítve		
 Inventory	Tools/Task	String	0	literal	UI/Elements/Task	tscn	UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	text	1945292143	Complete	1108	Kész		
 Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Play	Button	text	1838614416	▶				
 Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Title	Label	text	1580966612	Junna - Pappa Se Antoi Hevosen				
 Inventory	Tools/Casette	String	1	literal	UI/Elements/Track	tscn	UI/Elements/Track	Margin/Elements/Header	Length	Label	text	112322878	3:30				
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		title	982078202	Carry Capacity	1110	Teherbírás		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	Teherbírás		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		info	982078202	A capacity value (kg) of all equipment items.	1112	Az összes felszerelés súlya (kg).		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Capacity	Info		type	982078202	Inventory Stat	1114	Teherbírás		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		title	1099976304	Inventory Weight	1116	A tárgyak súlya		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	A tárgyak súlya		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		info	1099976304	A weight value (kg) of all inventory items.	1118	Az összes tétel tömege (kg).		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Weight	Info		type	1099976304	Inventory Stat	1120	A tárgyak súlya		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		title	1625059626	Inventory Value	1122	Készletérték		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	Készletérték		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		info	1625059626	A price value (€) of all inventory items.	1124	Az összes készlet árértéke (€).		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Inventory/Header/Value	Info		type	1625059626	Inventory Stat	1126	Készletérték		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		title	555728015	Container Weight	1128	A tároló súlya		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	A tároló súlya		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		info	555728015	A weight value (kg) of all container items.	1130	Az összes tárolt áru súlya (kg).		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Weight	Info		type	555728015	Container Stat	1132	A tároló súlya		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		title	1268234374	Container Value	1134	A tároló értéke		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	A tároló értéke		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		info	1268234374	A price value (€) of all container items.	1136	Az összes tárolt tétel összértéke (€).		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Container/Header/Value	Info		type	1268234374	Container Stat	1138	A tároló értéke		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	Tartási korlát		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		title	825286726	Carry Capacity	1140	Teherbírás		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		info	825286726	"A weight capacity value (kg) of how much inventory weight you can carry.
 
 Carry Capacity increases when you equip items such as backpacks, rigs or clothing with a positive capacity stat.
 
-Carry Capacity by default is 10kg"	1142	Tartási korlát		
+Carry Capacity by default is 10kg"	1142	"A teherbírás értéke (kg) azt jelzi, hogy mekkora súlyú
+készletet tudsz magaddal vinni.
+
+A teherbírás növekszik, ha olyan tárgyakat veszel fel, mint például hátizsákok, felszerelések
+vagy olyan ruházat, amelynek pozitív teherbírási értéke van.
+
+A teherbírás alapértelmezés szerint 10 kg"		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Capacity	Info		type	825286726	Equipment Stat	1144	Tartási korlát		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		title	853719663	Equipment Value	1146	A felszerelés értéke		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	A felszerelés értéke		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	A felszerelés értéke		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		info	853719663	A price value (€) of all equipment items.	1148	Az összes felszerelés árértéke (€).		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Value	Info		type	853719663	Equipment Stat	1150	Felszerelés statisztikája		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		title	1800952039	Insulation	1152	Hőszigetelő képesség		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		info	1800952039	"A clothing-based thermal protection value against cold.
 
@@ -310,15 +331,30 @@ Insulation increases when you equip clothing items with a positive insulation st
 Insulation examples:
 [100] = B. Temp decrease fully stopped
 [50] = B. Temp decrease slowed by 50%
-[0] = B. Temp decreases at default rate"	1154	Hőszigetelő képesség		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	Hőszigetelő képesség		
+[0] = B. Temp decreases at default rate"	1154	"A ruházat által biztosított hővédelmi érték a hideg ellen.
+
+A hőszigetelés a testhőmérséklethez kapcsolódik, és télen lassítja a testhőmérséklet csökkenésének sebességét.
+
+A hőszigetelés értéke nő, ha olyan ruhadarabokat viselsz, amelyek pozitív hőszigetelési 
+értékkel rendelkeznek.
+
+Hőszigetelés
+ példák:
+[100] = A testhőmérséklet csökkenése teljesen leáll
+[50] = A testhőmérséklet csökkenése 50%-kal lelassul
+[0] = A testhőmérséklet az alapértelmezett sebességgel csökken"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Insulation	Info		type	1800952039	Equipment Stat	1156	Felszerelés statisztikája		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		title	550854834	Dexterity	1158	Mozgékonyság		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		info	550854834	"An inertia-based value of how quickly you can move and do certain actions.
 
 Dexterity is linked to movement speed and weapon handling such as aiming and reloading.
 
-Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	1160	Mozgékonyság		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	Mozgékonyság		
+Dexterity decreases when you equip heavy or unergonomic items with a negative dexterity stat."	1160	"A tehetetlenségen alapuló érték, amely meghatározza, milyen gyorsan tudsz mozogni és bizonyos műveleteket végrehajtani.
+
+Az ügyesség összefügg a mozgási sebességgel és a fegyverek kezelésével, például a célzással és az újratöltéssel.
+
+Az ügyesség csökken, ha olyan nehéz vagy kényelmetlen tárgyakat veszel fel, amelyek negatív ügyességi értéket jelentenek."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Dexterity	Info		type	550854834	Equipment Stat	1162	Felszerelés statisztikája		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		title	1925451931	Menace	1164	Fenyegetettségi szint		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		info	1925451931	"An intimidation value of how threatening AI sees your character and equipment.
 
@@ -326,16 +362,27 @@ When you have a high Menace value, AI is less likely to use aggressive or attack
 
 Menace increases when you equip items such as special clothing with a positive Menace stat.
 
-Menace only affects low-tier AI (Bandits)."	1166	Fenyegetettségi szint		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	Fenyegetettségi szint		
+Menace only affects low-tier AI (Bandits)."	1166	"Az a fenyegetési érték, amely azt mutatja, mennyire veszélyesnek tartja az AI a karakteredet és a felszerelésedet.
+
+Ha magas a fenyegetési értéked, az AI kevésbé hajlamos agresszív vagy támadó magatartást tanúsítani veled szemben.
+
+A fenyegetési érték növekszik, ha olyan tárgyakat viselsz, mint például a pozitív fenyegetési statisztikával rendelkező speciális ruházat.
+
+A fenyegetési érték csak az alacsonyabb szintű AI-ra (banditákra) hat."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/Menace	Info		type	1925451931	Equipment Stat	1168	Felszerelés statisztikája		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		title	215856199	CBRN	1170	KBSN-értékek		
-Inventory	Stats	String	0	substr									CBRN	1172	화생방		
+Inventory	Stats	String	0	substr									CBRN	1172	KBSN		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		info	215856199	"A protection value against chemical, biological, radiological and nuclear threats.
 
 CBRN is linked to Health vital, where CBRN reduces the Health decrease speed when you are exposed to hazardous areas or materials.
 
-CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	1174	KBSN-értékek		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	KBSN-értékek		
+CBRN increases when you equip items such as special clothing or protective masks with a positive CBRN stat."	1174	"A Kémiai, Biológiai, Sugárzás és Nukleáris fenyegetések elleni védelmi érték.
+
+A KBSN az Életerőhöz kapcsolódik: a KBSN-érték csökkenti az Életerő
+csökkenésének sebességét, ha veszélyes területeken tartózkodsz vagy veszélyes anyagoknak vagy kitéve.
+
+A KBSN-érték emelkedik, ha olyan felszereléseket viselsz, mint például speciális ruházat vagy védőálarcok, amelyek pozitív KBSN-értékkel rendelkeznek."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Equipment/Stats/Elements/CBRN	Info		type	215856199	Equipment Stat	1176	Felszerelés statisztikája		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		title	2025955860	Health	1178	Egészség		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		info	2025955860	"Your main vital for staying alive.
 
@@ -343,7 +390,13 @@ Health decreases with damages and active medical conditions.
 
 Health increases with certain medical items such as Bandages and Medkits.
 
-Health [0] -> Character dies"	1180	Egészség		
+Health [0] -> Character dies"	1180	"Az életben maradáshoz elengedhetetlen.
+
+Az életerő a sérülések és a fennálló betegségek miatt csökken.
+
+Az életerő bizonyos gyógyászati eszközök, például kötszerek és elsősegély-készletek használatával növelhető.
+
+Életerő [0] -> A karakter meghal"		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Health	Info		type	2025955860	Vital	1182	Egészség		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		title	256184	Energy	1184	Energia		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Energy	Info		info	256184	"Your hunger and energy level.
@@ -369,8 +422,17 @@ Certain dry or salty consumables may also decrease Hydration.
 
 Hydration increases with certain consumables such as drinks.
 
-Hydration [0] -> Dehydration (Condition)"	1192	Szomjúság		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	Szomjúság		
+Hydration [0] -> Dehydration (Condition)"	1192	"A szomjúságod és a hidratáltsági szinted.
+
+A hidratáltság idővel, valamint a „hidratáltsági költségű” térképátmenetek használatával csökken.
+
+Bizonyos száraz vagy sós fogyasztási cikkek szintén csökkenthetik
+a hidratáltságot.
+
+A hidratáltság bizonyos fogyasztási cikkek, például italok fogyasztásával nő.
+
+Hidratáltság [0] -> Kiszáradás (állapot)"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Hydration	Info		type	1778216863	Vital	1194	Egészség		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		title	1524485513	Mental	1196	Mentál		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		info	1524485513	"Your happiness and sanity level.
 
@@ -378,7 +440,13 @@ Mental decreases over time and with nasty consumables. Any active medical condit
 
 Mental increases with comforting items such as snacks, warm meals and vices like alcohol or nicotine products.
 
-Mental [0] -> Insanity (Condition)"	1198	Mentál		
+Mental [0] -> Insanity (Condition)"	1198	"A boldogságod és az elmeállapotod szintje.
+
+Az elmeállapot idővel és káros fogyasztási cikkek hatására romlik. Bármely fennálló egészségügyi probléma 2xen gyorsítja a romlás mértékét.
+
+Az elmeállapot javul olyan megnyugtató tárgyak hatására, mint a harapnivalók, a meleg ételek, valamint olyan káros szokások, mint az alkohol vagy a nikotintartalmú termékek.
+
+Elmeállapot [0] -> Elmezavar (állapot)"		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Mental	Info		type	1524485513	Vital	1200	Mentál		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		title	500385079	Body Temp	1202	Testhőmérséklet		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		info	500385079	"Your warmth and body temperature level.
@@ -387,8 +455,15 @@ Body Temp decreases over time in Winter. Decrease speed can be reduced by stayin
 
 Body Temp increases in Shelter or by staying around heat sources like fires. Certain heat-related items such as Heatpacks or Space Blankets will also increase Body Temp.
 
-Body Temp [0] -> Frostbite (Condition)"	1204	Testhőmérséklet		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	Testhőmérséklet		
+Body Temp [0] -> Frostbite (Condition)"	1204	"Testhőmérsékleted.
+
+Télen a testhőmérséklet idővel csökken. A csökkenés ütemét lassíthatod, ha bent maradsz, vagy olyan ruhadarabokat viselsz, amelyek pozitív hőszigetelő 
+értékkel rendelkeznek.
+
+A testhőmérséklet emelkedik menedékhelyeken, illetve ha hőforrások, például tűz közelében tartózkodsz. Bizonyos hőtermelő eszközök, például hőcsomagok vagy hőtakarók szintén növelik a testhőmérsékletet.
+
+Testhőmérséklet [0] -> Fagyás (állapot)"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Temperature	Info		type	500385079	Vital	1206	Egészség		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		title	2119249152	Cat	1208	Macska		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		info	2119249152	"Grandma's cat health level.
 
@@ -398,21 +473,17 @@ Cat health decreases over time.
 
 Cat health increases when you feed the cat with consumables such as Cat Food or Canned Tuna.
 
-Cat [0] -> Cat dies"	1210	Macska		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	Macska		
-Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	"A csomag súlya olyan nagy, hogy lehetetlen mozogni.
+Cat [0] -> Cat dies"	1210	"A nagymama macskájának egészségi állapota.
 
-Okok:
-- A csomag súlya > A megengedett súlyhatár
+A macska egészségi állapota akkor aktiválódik, ha úgy döntesz, hogy megmented a macskát, és befogadod a menhelyedre.
 
-Hatások:
-- Az összes állóképesség-fogyasztás [+50%]
-- Az összes állóképesség-visszatöltés [Blokkolva]
-- Mozgási sebesség [-50%]
-- Ugrásmagasság [-50%]
+A macska egészségi állapota idővel romlik.
 
-Megoldás:
-- A csomag súlya < a megengedett súlyhatár"		
+A macska egészségi állapota javul, ha olyan élelmiszerekkel eteted, mint a macskaeledel vagy a tonhalkonzerv.
+
+Macska [0] -> A macska elpusztul"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Vitals/Elements/Cat	Info		type	2119249152	Vital	1212	Egészség		
+Inventory	Stats	String	0	substr	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		title	1472180750	Overweight	1214	Túlsúly		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		info	1472180750	"A condition where you are carrying too much weight and movement becomes unsustainable.
 
 Causes:
@@ -438,19 +509,7 @@ Hatások:
 
 Megoldás:
 - A csomag súlya < a megengedett súlyhatár"		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	"A csomag súlya olyan nagy, hogy lehetetlen mozogni.
-
-Okok:
-- A csomag súlya > A megengedett súlyhatár
-
-Hatások:
-- Az összes állóképesség-fogyasztás [+50%]
-- Az összes állóképesség-visszatöltés [Blokkolva]
-- Mozgási sebesség [-50%]
-- Ugrásmagasság [-50%]
-
-Megoldás:
-- A csomag súlya < a megengedett súlyhatár"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Overweight	Info		type	1472180750	Medical Condition	1218	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		title	1549426522	Starvation	1220	Éhezés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		info	1549426522	"A condition where you have a lack of calories and essential nutrients.
 
@@ -463,8 +522,18 @@ Symptoms:
 - Stamina regeneration [-50%]
 
 Cures:
-- Consumables"	1222	Éhezés		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	Éhezés		
+- Consumables"	1222	"Olyan állapot, amikor kalória- és alapvető tápanyaghiányban szenvedsz.
+Okok:
+- Energia [0]
+
+Tünetek:
+- Egészség [-1 egység / 10 másodperc]
+- Állóképesség-fogyasztás [+50%]
+- Állóképesség-regeneráció [-50%]
+
+Gyógymódok:
+- Fogyóeszközök"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Starvation	Info		type	1549426522	Medical Condition	1224	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		title	986386791	Dehydration	1226	Kiszáradás		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		info	986386791	"A condition where your body doesn't have enough fluids to function normally.
 
@@ -477,8 +546,18 @@ Symptoms:
 - All stamina regeneration [-50%]
 
 Cures:
-- Consumables"	1228	Kiszáradás		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	Kiszáradás		
+- Consumables"	1228	"Olyan állapot, amikor a szervezetben nincs elegendő folyadék a normális működéshez.
+
+Okok:- Folyadékpótlás [0]
+
+Tünetek:
+- Egészség [-1 egység / 10 másodperc]
+- Minden állóképesség-fogyasztás [+50%]
+- Minden állóképesség-regeneráció [-50%]
+
+Gyógymódok:
+- Fogyóeszközök"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Dehydration	Info		type	986386791	Medical Condition	1230	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		title	1768354194	Bleeding	1232	Vérzés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		info	1768354194	"A condion where you have a minor bleeding from small cuts or scrapes.
 
@@ -495,8 +574,23 @@ Cures:
 - Bandage
 - Tourniquet
 - Medkit
-- IFAK / AFAK"	1234	Vérzés		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	Vérzés		
+- IFAK / AFAK"	1234	"Olyan állapot, amikor kisebb vérzés lép fel apró vágások vagy horzsolások miatt.
+
+Okok:
+- Fegyver okozta sérülés
+- Robbanás okozta sérülés
+- Esés okozta sérülés
+- Szögesdrót
+
+Tünetek:
+- Egészség [-1 egység / 5 másodperc]
+
+Gyógymódok:
+- Kötszer
+- Érszorító
+- Elsősegélycsomag
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Bleeding	Info		type	1768354194	Medical Condition	1236	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		title	139365606	Fracture	1238	Csonttörés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		info	139365606	"A condition where you have a partial or complete break in the bone.
 
@@ -513,9 +607,23 @@ Symptoms:
 Cures: 
 - Splint
 - Medkit
-- IFAK / AFAK"	1240	Csonttörés		
-Inventory	Stats	String	0	substr									Explosion	1242	폭발		
-Inventory	Stats	String	0	substr									Fall	1244	낙하		
+- IFAK / AFAK"	1240	"Olyan állapot, amikor a csont részlegesen vagy teljesen eltörik.
+
+Okok:
+- Fegyver okozta sérülés
+- Robbanás okozta sérülés
+- Esés okozta sérülés
+
+Tünetek: -Egészség [-1 egység / 5 másodperc]
+- Mozgási sebesség [-50%]
+- Ugrási magasság [-50%]
+
+Gyógyítás:
+- Rögzítősin
+- Elsősegélycsomag
+- IFAK / AFAK"		
+Inventory	Stats	String	0	substr									Explosion	1242	Robbanás		
+Inventory	Stats	String	0	substr									Fall	1244	Leesés/zuhanás		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Fracture	Info		type	139365606	Medical Condition	1246	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		title	275854551	Burn	1248	Égés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		info	275854551	"A condition where you have a tissue damage from intense heat or high-voltage electric current.
@@ -531,8 +639,21 @@ Cures:
 - Balm
 - Lotion
 - Medkit
-- IFAK / AFAK"	1250	Égés		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	Égés		
+- IFAK / AFAK"	1250	"Olyan állapot, amelyben a szövetek erős hőhatás vagy nagyfeszültségű elektromos áram következtében károsodnak.
+
+Okok:
+- Tűzkárosodás
+- Áramütés
+
+Tünetek:
+- Egészség [-1 egység / 5 másodperc]
+
+Gyógymódok:
+- Balzsam
+- Testápoló
+- Elsősegélycsomag
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Burn	Info		type	275854551	Medical Condition	1252	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		title	24250462	Frostbite	1254	Fagyás		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		info	24250462	"A condition where you have hypothermia or body part freezes from cold exposure.
 
@@ -545,8 +666,19 @@ Symptoms:
 Cures:
 - Fire sources
 - Sleeping Bag
-- Thermal Blanket"	1256	Fagyás		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	Fagyás		
+- Thermal Blanket"	1256	"Olyan állapot, amikor hipotermiába kerülsz, vagy a hideg hatására testrészeid megfagynak.
+
+Okok:
+- Testhőmérséklet [0]
+
+Tünetek:
+- Egészség [-1 egység / 5 másodperc]
+
+Gyógymódok:
+- Tűzforrások
+- Hálózsák
+- Hőtakaró"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Frostbite	Info		type	24250462	Medical Condition	1258	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		title	1233339607	Insanity	1260	Elmebetegség		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		info	1233339607	"A condition where your sanity breaks and you start having dark thoughts.
 
@@ -560,8 +692,20 @@ Cures:
 - Consumables
 - Sleeping
 - Fire sources
-- Instruments"	1262	Elmebetegség		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	Elmebetegség		
+- Instruments"	1262	"Olyan állapot, amikor az ember elméje megrendül, és sötét gondolatok kezdenek felmerülni benne.
+
+Okok:
+- Mentál [0]
+
+Tünetek:
+- Egészség [-1 egység / 10 másodperc]
+
+Gyógymódok:
+- Fogyóeszközök
+- Alvás
+- Tűzforrások
+- Hangszerek"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Insanity	Info		type	1233339607	Medical Condition	1264	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		title	379297031	Poisoning	1266	Mérgezés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		info	379297031	"A condition where toxic substance entered your digestion or lungs.
 
@@ -574,8 +718,19 @@ Symptoms:
 
 Cures:
 - Medkit
-- AFAK"	1268	Mérgezés		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	Mérgezés		
+- AFAK"	1268	"Olyan állapot, amikor mérgező anyag jutott az emésztőrendszerbe vagy a tüdőbe.
+
+Okok:
+- Vegyi sérülés
+- Mérgező fogyasztási cikkek
+
+Tünetek:
+- Egészség [-1 egység / 2 másodperc]
+
+Gyógymódok:
+- Elsősegélycsomag
+- AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Poisoning	Info		type	379297031	Medical Condition	1270	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		title	71304217	Rupture	1272	Belső vérzés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		info	71304217	"A critical condition where you have a catastrofal bleeding or major internal wound.
 
@@ -588,8 +743,19 @@ Symptoms:
 
 Cures:
 - Medkit
-- IFAK / AFAK"	1274	Belső vérzés		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	Belső vérzés		
+- IFAK / AFAK"	1274	"Kritikus állapot, amelyben katasztrofális vérzés vagy súlyos belső sérülés lép fel.
+
+Okok: 
+- Fegyver okozta sérülés
+- Robbanás okozta sérülés
+
+Tünetek:
+- Életerő [-1 egység / 1 másodperc]
+
+Gyógymódok:
+- Elsősegélycsomag
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Rupture	Info		type	71304217	Medical Condition	1276	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		title	1309688651	Headshot	1278	Fejlövés		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		info	1309688651	"A critical condition where you have a major head related wound.
 
@@ -601,16 +767,31 @@ Symptoms:
 
 Cures:
 - Medkit
-- IFAK / AFAK"	1280	Fejlövés		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	Fejlövés		
+- IFAK / AFAK"	1280	"Kritikus állapot, amelyben súlyos,
+a fejhez kapcsolódó sérülésed van.
+
+Okok: 
+- Fegyveres sérülés
+
+Tünetek:
+- Egészség [-1 egység / 1 másodperc]
+
+Gyógyítás:
+- Elsősegélycsomag
+- IFAK / AFAK"		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Medical/Elements/Headshot	Info		type	1309688651	Medical Condition	1282	Egészségi állapot		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		title	1507600508	Day	1284	Nap		
 Inventory	Stats	String	0	substr									Day	1286	Nap		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		info	1507600508	"Number of Days survived.
 
 New day begins at 00:00 midnight and certain amount of days will unlock new game events.
 
-Upcoming events can be displayed by using the Events tool."	1288	Nap		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	Nap		
+Upcoming events can be displayed by using the Events tool."	1288	"Túlélés napjainak száma.
+
+Az új nap éjfélkor, 00:00-kor kezdődik, és egy bizonyos számú nap elteltével új játékesemények válnak elérhetővé.
+
+A közelgő események az „Események” menüpontban tekinthetők meg."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Day	Info		type	1507600508	Progression Stat	1290	Előrehaladási statisztika		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		title	821447952	Shelters	1292	Menedékek		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		info	821447952	"Number of Shelters unlocked.
 
@@ -618,20 +799,34 @@ Shelters are safe zones for saving your progression and loot. Game world has mul
 
 New game starts with two unlocked Shelters called Cabin and Tent.
 
-Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	1294	Menedékek		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	Menedékek		
+Additional Shelters can be unlocked with keys which you acquire by completing Tasks from different Traders."	1294	"Feloldott menedékhelyek száma.
+
+A menedékhelyek olyan biztonságos zónák, ahol elmentheted az eddigi eredményeidet és a zsákmányodat. A játékvilágban több menedékhely is található, amelyek témájuk, méretük és testreszabhatóságuk tekintetében eltérnek egymástól.
+
+Az új játék két feloldott
+menedékhellyel indul, amelyek neve „Kunyhó” és „Sátor”.
+
+További menedékhelyeket olyan kulcsokkal lehet feloldani, amelyeket a különböző kereskedőktől kapott feladatok teljesítésével szerezhetsz meg."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Shelters	Info		type	821447952	Progression Stat	1296	Előrehaladási statisztika		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		title	1384285326	Tasks	1298	Megbízások száma		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		info	1384285326	"Number of Tasks completed.
 
 Tasks are item-based jobs from Traders. Tasks can be interconnected between multiple Traders and might also require non-lootable items with crafting.
 
-Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	1300	Megbízások száma		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	Megbízások száma		
+Tasks are linked to cheaper trading prices (Trader Tax) and acquiring keys to unlock new Shelters and special rooms."	1300	"Elvégzett feladatok száma.
+
+A feladatok a kereskedőktől kapott, tárgyakhoz kötődő megbízások. A feladatok több kereskedő között is összekapcsolódhatnak,
+és előfordulhat, hogy a készítéshez nem zsákmányként megszerezhető tárgyakra is szükség van.
+
+A feladatok alacsonyabb kereskedelmi árakhoz (kereskedői adó) kapcsolódnak, valamint új menedékek és speciális helyiségek feloldásához szükséges kulcsok megszerzéséhez."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Tasks	Info		type	1384285326	Progression Stat	1302	Előrehaladási statisztika		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		title	1702334479	Quests	1304	A küldetések száma		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		info	1702334479	"Number of Quests completed.
 
-Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	1306	A küldetések száma		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	A küldetések száma		
+Quests are lore-based missions from Traders. Quests can be interconnected between multiple Traders and might require certain events before becoming available."	1306	"A teljesített küldetések száma.
+
+A küldetések a kereskedőktől kapható, a történetre épülő feladatok. A küldetések több kereskedő között is összekapcsolódhatnak, és előfordulhat, hogy csak bizonyos események bekövetkezte után válnak elérhetővé."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/Quests	Info		type	1702334479	Progression Stat	1308	Előrehaladási statisztika		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		title	2004804582	Civil Defence Shelters	1310	Polgári Védelmi Óvóhelyek		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		info	2004804582	"Number of CDS completed.
 
@@ -639,8 +834,15 @@ Civil Defence Shelters (CDS) are concrete bunkers and underground areas designed
 
 After the Area 05 evacuation, these CDS's were overrun and most of the survival gear inside them were stolen.
 
-You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	1312	Polgári Védelmi Óvóhelyek		
-Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	Polgári Védelmi Óvóhelyek		
+You can complete a CDS by clearing out the hostile enemies and connecting the CDS emergency broadcasting radio back on."	1312	"Befejezett polgári védelmi óvóhelyek száma.
+
+A Polgári Védelmi Óvóhelyek (PVÓ) olyan betonbunkerok és földalatti helyiségek, amelyeket katonai fenyegetések elleni védelemre terveztek.
+
+A 05-ös körzet kiürítése után ezeket a polgári védelmi óvóhelyeket
+megszállták, és a bennük található túlélőfelszerelések nagy részét ellopták.
+
+Egy polgári védelmi óvóhelyet úgy fejezhetsz be, hogy kiirtod az ellenséges egységeket, és újra bekapcsolod az óvóhely vészhelyzeti rádióadóját."		
+Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/CDS	Info		type	2004804582	Progression Stat	1314	Előrehaladási statisztika		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		title	1661761957	Silent Night	1316	Csendes éjszaka		
 Inventory	Stats	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		info	1661761957	"There will be a silent night when all fades away.
 
@@ -650,23 +852,31 @@ This light reminds you of home, a place where you came from and where you will r
 
 You feel safe, a peaceful moment that feels like the ending you wanted.
 
-Then your last light disappears, the sky turns red and the silence breaks."	1318	Csendes éjszaka		
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	Csendes éjszaka		
+Then your last light disappears, the sky turns red and the silence breaks."	1318	"Lesz egy csendes éjszaka, amikor minden elhalványul.
+
+Ha felnézel, meglátod a Sarkcsillagot, az egyetlen fényt a sötétben.
+
+Ez a fény az otthonra emlékeztet, arra a helyre, ahonnan jöttél, és ahová visszatérsz.
+
+Biztonságban érzed magad, ez a békés pillanat olyan, mintha ez lenne a vágyott vég."		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Character/Stats/Elements/?	Info		type	1661761957	Special Event	1320	Különleges esemény		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		title	1910765267	Supply Value	1322	Az ellátmány értéke		
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	Az ellátmány értéke		
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	Az ellátmány értéke		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		info	1910765267	A price value (€) of all supply items.	1324	Az összes tétel ára (€).		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Supply/Header/Value	Info		type	1910765267	Trader Stat	1326	Kereskedői statisztikák		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		info	844527464	"A friendly NPC with trading supply, tasks and specialized services.
 
 Name: Commonly known name among locals.
 Tax: Price multiplier for supply items.
 Tasks: Number of completed tasks.
-Resupply: Time when supply resets."	1328	"A friendly NPC with trading supply, tasks and specialized services.
+Resupply: Time when supply resets."	1328	"Egy barátságos NPC, aki kereskedelmi árukat, feladatokat
+és speciális szolgáltatásokat kínál.
 
-Name: Commonly known name among locals.
-Tax: Price multiplier for supply items.
-Tasks: Number of completed tasks.
-Resupply: Time when supply resets."		
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	Kereskedői statisztikák		
+Név: A helyiek körében elterjedt név.
+Adó: Az áruk árának szorzója.
+Feladatok: A teljesített feladatok száma.
+Újratöltés: 
+Az áruk újratöltésének ideje."		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Trader/Panel	Info		type	844527464	Trader Info	1330	Kereskedői infó		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		title	1021981031	Deal	1332	Tranzakció		
 Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		info	1021981031	"A deal balance meter which compares selected item values.
 
@@ -674,5 +884,11 @@ Requsted Value (€) is calculated from selected Supply items with Tax added.
 
 Offer Value (€) is calculated from selected Inventory items.
 
-Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	1334	Tranzakció		
-Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	Tranzakció		
+Deal can be accepted when Deal Meter is within green area which means Offer Value matches or proceeds Request Value + Tax."	1334	"Egy üzletkötési mérő, amely összehasonlítja a kiválasztott tételek értékeit.
+
+A kért érték (€) a kiválasztott beszerzési tételekből, adóval együtt kerül kiszámításra.
+
+Az ajánlati érték (€) a kiválasztott raktárkészlet-tételekből kerül kiszámításra.
+
+Az üzlet akkor fogadható el, ha az üzletkötési mérő a zöld tartományban van, ami azt jelenti, hogy az ajánlati érték megegyezik a kért értékkel vagy meghaladja azt az adóval együtt."		
+Inventory	Trader	String	0	static	UI/Interface	tscn	UI/Interface	Deal/Panel	Info		type	1021981031	Deal Meter	1336	Ajánlatmérő		

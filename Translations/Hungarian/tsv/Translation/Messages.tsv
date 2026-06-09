@@ -1,12 +1,12 @@
 WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	max_length
 Message	Furniture		0	literal	UI/Elements/Message	tscn	UI/Elements/Message	Panel/Margin	Info	Label	text	1343187841	✓  New Furniture Added [Catalog]	2666	✓  Új bútorok hozzáadva [Katalógus]	PlaceHolder	
-Message	Furniture		0	substr	Scripts/Interface	gd			Loader.Message	literal		1313	New Furniture Added [Catalog]	2668	Új bútorok hozzáadva [katalógusba]		
+Message	Furniture		0	substr	Scripts/Interface	gd			Loader.Message	literal		1313	New Furniture Added [Catalog]	2668	Új bútorok hozzáadva [Katalógus]		
 Message	Furniture		0	ignore	Scripts/Interface	gd			Loader.Message	literal		1471	New Furniture Added [Catalog]				
 Message	Boss		0	substr	Scripts/AI	gd			Loader.Message	literal		1587	Boss Killed	2670	Főellenség legyőzve		
 Message	Sleep		0	pattern	Scripts/Bed	gd			Loader.Message	concat		42	You slept {str} hours	2672	{str} órát aludtam		
 Message	Sleep		0	ignore	Scripts/Interface	gd			Loader.Message	concat		3214	You slept {str} hours				
 Message	Cat		0	pattern	Scripts/CatFeeder	gd			Loader.Message	concat		46	Cat Fed ({name})	2674	Megetettem a macskát ({name})		
-Message	Cat		0	substr	Scripts/CatRescue	gd			Loader.Message	literal		23	Cat Rescued	2676	Megmentett macska		
+Message	Cat		0	substr	Scripts/CatRescue	gd			Loader.Message	literal		23	Cat Rescued	2676	Macska megmentve		
 Message	Cat		0	substr	Scripts/CatRescue	gd			Loader.Message	literal		24	Cat Vital Activated	2678	Macsak életjelei aktíválva		
 Message	Cat		0	substr	Scripts/Character	gd			Loader.Message	literal		145	Cat Died	2680	A macska elpusztult		
 Message	Helicopter		0	substr	Scripts/Helicopter	gd			Loader.Message	literal		310	You have been spotted!	2682	Észleltek!	 I can't find when is this message appears yet, but maybe for a helicopter	

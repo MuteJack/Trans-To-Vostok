@@ -2,7 +2,7 @@ WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type
 Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	2786	Könnyű		
 Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	2788	Átlagos		
 Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	2790	Nehéz		
-Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	2792	1. bemutató feladat (egyszerű)		
+Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	2792	1. Kiképzési feladat (egyszerű)		
 Tasks	Generalist/Tutorial/01	difficulty	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy				
 Tasks	Generalist/Tutorial/01	description	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					description		"Let's start with something simple.
 
@@ -11,14 +11,14 @@ Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery i
 2. Select Canned Pea Soup
 3. Press Complete"	2794	"Kezdjük valami egyszerűvel!
 
-Menj az tárgyak menüjébe, és vedd ki onnan a konzerv borsólevest. Miután a szállítandó tárgyat a táskádba tetted, kövesd az alábbi lépéseket.
-1. 'Kattintson a „Szállítás indítása” gombra.
-2. 'Válassza a „konzerv borsólevest”.
-3. 'Kattintson a „Befejezés” gombra."	"Please pay attention to the following points when translating:
+Menj az tárgyak menüjébe, és vedd ki onnan a konzerv borsólevest. Miután a szállítandó tárgyat a táskádba tetted, kövesd az alábbi lépéseket:
+1. Kattintson az összeállítás gombra
+2. Válassza a konzerv borsólevest
+3. Kattintson a Befejezés gombra"	"Please pay attention to the following points when translating:
 - 'Canned Pea Soup'
 - 'Start Delivery'
 - 'Complete'"	
-Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	Oktatóanyag-megbízás 2 (bonyolult)		
+Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	Kiképzési feladat 2 (bonyolult)		
 Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate				
 Tasks	Generalist/Tutorial/02	description	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
 
@@ -59,7 +59,7 @@ Most, hogy sikeresen elkészítetted a küldetéshez szükséges tárgyakat, bef
 - 'Heat'
 - 'Firepot'
 - 'Start Input'"	
-Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	Oktatóanyag-megbízás (bútorok)		
+Tasks	Generalist/Tutorial/03	name	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					name		Tutorial Task 3 (Furniture)	2800	Kiképzési feladat 3 (bútorok)		
 Tasks	Generalist/Tutorial/03	difficulty	0	ignore	Traders/Generalist/Tutorial/03_Tutorial	tres					difficulty		Hard				
 Tasks	Generalist/Tutorial/03	description	0	literal	Traders/Generalist/Tutorial/03_Tutorial	tres					description		"There's one more thing to learn.
 
@@ -98,7 +98,7 @@ A rejtekhely berendezésével és a bútorkatalógussal kapcsolatos részletes i
 - 'Complete'
 - 'tutorial'
 - 'Shelters'"	
-Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	2804	Ne hagyd ki az élő adást!		
+Tasks	Generalist/01	name	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					name		Prime Time	2804	Ne hagyd ki az élő adást		
 Tasks	Generalist/01	difficulty	0	ignore	Traders/Generalist/Tasks/01_Prime_Time	tres					difficulty		Easy				
 Tasks	Generalist/01	description	0	literal	Traders/Generalist/Tasks/01_Prime_Time	tres					description		"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
 
@@ -106,7 +106,7 @@ Nevertheless, you’ve arrived at the prime time, because I’m out of toilet pa
 
 Speaking of prime time, I just finished repairing some electronics and I have this fully functional TV ready to go. Mark my words, at the moment, this is the only working TV in Area 05.
 
-If you bring me that toilet paper, the TV is yours. It has all the channels pre-configured, vibrant colors and prime time shows are running as we speak."	2806	"Jaj, jaj... Te vagy az a barát, akit a vándorok találtak meg a múlt héten? Nem ők vittek el téged abba a rozoga, szűkös kunyhóba? Mi is szoktunk ott néha inni és pókerezni, de amint beléptünk oda, mindig megfájdult a fejünk. Biztosan azbeszt van a mennyezetben.
+If you bring me that toilet paper, the TV is yours. It has all the channels pre-configured, vibrant colors and prime time shows are running as we speak."	2806	"Jaj, jaj... Te vagy az a srác, akit a vándorok találtak meg a múlt héten? Nem ők vittek el téged abba a rozoga, szűkös kunyhóba? Mi is szoktunk ott néha inni és pókerezni, de amint beléptünk oda, mindig megfájdult a fejünk. Biztosan azbeszt van a mennyezetben.
 
 Mindenesetre jókor jöttél, ebben a rendkívül fontos időben. A helyzet ugyanis nagyon komoly. 
 Mi történt? Mi lehetne fontosabb annál, hogy elfogyott a WC-papír!
@@ -138,7 +138,7 @@ If you happen to find something that could help with my back, I would highly app
 Általában nem szoktam panaszkodni, de ez a rohadt hátam mintha szét akarna szakadni. Minden reggel, amikor kinyitom a szemem, olyan érzésem van, mintha golyót kaptam volna a gerincembe, szinte meghalok a fájdalomtól. Hamarosan te is olyan leszel, mint én, egy rohadt francia autó.
 
 Ha véletlenül találnál valamit, ami enyhítheti a hátfájásomat, hozd el nekem."		
-Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	2816	Kávékínálat		
+Tasks	Generalist/04	name	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					name		Coffee Reserve	2816	Kávé tartalék		
 Tasks	Generalist/04	difficulty	0	ignore	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					difficulty		Easy				
 Tasks	Generalist/04	description	0	literal	Traders/Generalist/Tasks/04_Coffee_Reserve	tres					description		"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
 
@@ -174,7 +174,7 @@ I'm getting tired of being her handyman, but I promised to help this one last ti
 
 Tegnapelőtt elromlott a gáztűzhely, a fagyasztó kiolvadt, a rádió pedig megint meghibásodott! Ráadásul a múlt héten tomboló vihar miatt egy fa rádőlt a bejárati tetőre, és az egész összeomlott. Ennél nagyobb káosz nem is létezik.
 
-Már nagyon elegem van abból, hogy ennek az öregasszonynak a szerelőjét játszom, de mivel megígértem, hogy még egyszer segítek neki, mit tehetnék..."	"Please pay attention to the following points when translating:
+Már nagyon elegem van abból, hogy ennek az öregasszonynak a szerelőjét játszom, de mivel megígértem, hogy még egyszer segítek neki, mit tehetnék."	"Please pay attention to the following points when translating:
 - 'Border Zone'"	
 Tasks	Generalist/07	name	0	literal	Traders/Generalist/Tasks/07_Six_Pack	tres					name		Six Pack	2828	Hat doboz sör		
 Tasks	Generalist/07	difficulty	0	ignore	Traders/Generalist/Tasks/07_Six_Pack	tres					difficulty		Hard				
@@ -457,7 +457,7 @@ Tasks	Gunsmith/08	description	0	literal	Traders/Gunsmith/Tasks/08_Home_Collectio
 
 My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
 
-Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	2914	"A késgyűjtés egy másik hobbi, de a fegyvergyűjtés olyan, mint a művészet, amelynek során ki kell szűrni az igazi értékeket.
+Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	2914	"A késgyűjtés csak egy hobbi, de a fegyvergyűjtés olyan, mint a művészet, amelynek során ki kell szűrni az igazi értékeket.
 
 A gyűjteményemben az 1500-as évekbeli muskétáktól az 1990-es évekbeli puskákig sokféle fegyver található, de az azóta gyártott fegyverek annyira ízléstelenek, hogy nem is bírom nézni őket. Eddig több mint 150 fegyvert gyűjtöttem össze, és ezek közül a legkülönlegesebbek azok a török gyártmányú revolveres sörétes puskák, amelyeket 1985-ben a nyaralásom alatt csempésztem be.
 
@@ -483,7 +483,7 @@ Tasks	Gunsmith/10	description	0	literal	Traders/Gunsmith/Tasks/10_Hitman	tres			
 
 Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
 
-Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	2922	"Az 5. körzetben van egy fickó, akit mi „Punishernek” hívunk. Finn bűnszervezetből származik, és a pletykák szerint egy híres motoros banda behajtójaként dolgozott.
+Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	2922	"A 05-ös körzetben van egy fickó, akit mi „Punishernek” hívunk. Finn bűnszervezetből származik, és a pletykák szerint egy híres motoros banda behajtójaként dolgozott.
 
 Ez a fickó bármikor felbukkan, és olyan adósság miatt ordibál, ami nem is létezik. Általában az ilyen őrülteket az ajtó előtt lelőném, de ezek a rohadékok elképesztően kitartóak. Mostanában az a fickó és a csőcseléke ellopott egy rendőrségi kísérőautót, amivel járkálnak, szóval most már könnyűpáncélos járművel is rendelkeznek.
 

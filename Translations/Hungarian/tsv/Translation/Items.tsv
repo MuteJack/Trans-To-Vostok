@@ -35,7 +35,7 @@ Items	Armor/Armor_Plate_IV	name	0	ignore	Items/Armor/Armor_Plate_IV	tres					equ
 Items	Armor/Armor_Plate_IV	type	0	ignore	Items/Armor/Armor_Plate_IV	tres					display		Armor				
 Items	Backpacks	type	0	substr									Backpack	1360	Hátizsák		
 Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					name		Jääkäri Backpack (Black)	1362	Jääkäri hátizsák (fekete)		
-Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					inventory		Jääkäri BP.	1364	Jääkäri hátizsák		
+Items	Backpacks/Backpack_Jaeger_Black	name	0	substr	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					inventory		Jääkäri BP.	1364	Jääkäri hátizsák.		
 Items	Backpacks/Backpack_Jaeger_Black	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					rotated		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_Black	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					equipment		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_Black	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_Black	tres					display		Jääkäri BP.				
@@ -59,13 +59,13 @@ Items	Backpacks/Backpack_Jaeger_M05	name	0	ignore	Items/Backpacks/Backpack_Jaege
 Items	Backpacks/Backpack_Jaeger_M05	name	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					display		Jääkäri BP.				
 Items	Backpacks/Backpack_Jaeger_M05	type	0	ignore	Items/Backpacks/Backpack_Jaeger/Backpack_Jaeger_M05	tres					type		Backpack				
 Items	Backpacks/Backpack_Nomad	name	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					name		Nomad Backpack	1372	Nomád hátizsák		
-Items	Backpacks/Backpack_Nomad	name	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					inventory		Nomad BP.	1374	Nomád hátizsák		
+Items	Backpacks/Backpack_Nomad	name	0	substr	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					inventory		Nomad BP.	1374	Nomád hátizsák.		
 Items	Backpacks/Backpack_Nomad	name	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					rotated		Nomad BP.				
 Items	Backpacks/Backpack_Nomad	name	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					equipment		Nomad BP.				
 Items	Backpacks/Backpack_Nomad	name	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					display		Nomad BP.				
 Items	Backpacks/Backpack_Nomad	type	0	ignore	Items/Backpacks/Backpack_Nomad/Backpack_Nomad	tres					type		Backpack				
 Items	Backpacks/Backpack_Patrol	name	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					name		Patrol Backpack	1376	Őrjárat hátiszák		
-Items	Backpacks/Backpack_Patrol	name	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					inventory		Patrol BP.	1378	Őrjárat hátizsák		
+Items	Backpacks/Backpack_Patrol	name	0	substr	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					inventory		Patrol BP.	1378	Őrjárat hátizsák.		
 Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					rotated		Patrol BP.				
 Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					equipment		Patrol BP.				
 Items	Backpacks/Backpack_Patrol	name	0	ignore	Items/Backpacks/Backpack_Patrol/Backpack_Patrol	tres					display		Patrol BP.				
@@ -157,7 +157,7 @@ Items	Clothing/Fleece_Tactical_Green	name	0	ignore	Items/Clothing/Fleece_Tactica
 Items	Clothing/Fleece_Tactical_Green	name	0	ignore	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					display		T. Fleece				
 Items	Clothing/Fleece_Tactical_Green	type	0	ignore	Items/Clothing/Fleece_Tactical_Green/Fleece_Tactical_Green	tres					type		Clothing				
 Items	Clothing/Gloves_Leather	name	0	substr	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					name		Leather Gloves	1430	Bőrkesztyű		
-Items	Clothing/Gloves_Leather	name	0	substr	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					inventory		L. Gloves	1432	B.kesztyű		
+Items	Clothing/Gloves_Leather	name	0	substr	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					inventory		L. Gloves	1432	Bőr. k		
 Items	Clothing/Gloves_Leather	name	0	ignore	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					rotated		L. Gloves				
 Items	Clothing/Gloves_Leather	name	0	ignore	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					equipment		L. Gloves				
 Items	Clothing/Gloves_Leather	name	0	ignore	Items/Clothing/Gloves_Leather/Gloves_Leather	tres					display		L. Gloves				
@@ -181,10 +181,9 @@ Items	Clothing/Hat_Sauna	name	0	substr	Items/Clothing/Hat_Sauna/Hat_Sauna	tres		
 Items	Clothing/Hat_Sauna	name	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					display		S. Hat				
 Items	Clothing/Hat_Sauna	type	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres					type		Clothing				
 Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					name		Hoodie (Border Zone)	1446	Kapucnis pulóver (határ)		
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	1448	Kapucnis pulóver H)		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	1448	Kapucnis pulóver.		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					rotated		Hoodie BZ.				
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	"Kapucnis pulóver
-)"		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	Kapucnis pulóver.		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					display		Hoodie B.				
 Items	Clothing/Hoodie_Border_Zone	type	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					type		Clothing				
 Items	Clothing/Hoodie_Gray	name	0	substr	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					name		Hoodie (Gray)	1452	Kapucnis pulóver (szürke)		
@@ -218,7 +217,7 @@ Items	Clothing/Jacket_Winter_Red	name	0	substr	Items/Clothing/Jacket_Winter_Red/
 Items	Clothing/Jacket_Winter_Red	name	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					display		Winter J.				
 Items	Clothing/Jacket_Winter_Red	type	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					type		Clothing				
 Items	Clothing/Jeans_Black	name	0	substr	Items/Clothing/Jeans_Black/Jeans_Black	tres					name		Jeans (Black)	1472	Farmer		
-Items	Clothing/Jeans_Black	name	0	substr	Items/Clothing/Jeans_Black/Jeans_Black	tres					inventory		Jeans	1474	Farmer (Fekete)		
+Items	Clothing/Jeans_Black	name	0	substr	Items/Clothing/Jeans_Black/Jeans_Black	tres					inventory		Jeans	1474	Farmer		
 Items	Clothing/Jeans_Black	name	0	ignore	Items/Clothing/Jeans_Black/Jeans_Black	tres					rotated		Jeans				
 Items	Clothing/Jeans_Black	name	0	ignore	Items/Clothing/Jeans_Black/Jeans_Black	tres					equipment		Jeans				
 Items	Clothing/Jeans_Black	name	0	ignore	Items/Clothing/Jeans_Black/Jeans_Black	tres					display		Jeans				
@@ -232,7 +231,7 @@ Items	Clothing/Pants_Hiking	type	0	ignore	Items/Clothing/Pants_Hiking/Pants_Hiki
 Items	Clothing/Windbreaker_Black	name	0	substr	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					name		Windbreaker (Black)	1480	Széldzseki (fekete)		
 Items	Clothing/Windbreaker_Black	name	0	substr	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					inventory		Windbreaker	1482	Széldzseki		
 Items	Clothing/Windbreaker_Black	name	0	ignore	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					rotated		Windbreaker				
-Items	Clothing/Windbreaker_Black	name	0	substr	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					equipment		Windbr.	1484	Széldzseki		
+Items	Clothing/Windbreaker_Black	name	0	substr	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					equipment		Windbr.	1484	Széldzseki.		
 Items	Clothing/Windbreaker_Black	name	0	ignore	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					display		Windbr.				
 Items	Clothing/Windbreaker_Black	type	0	ignore	Items/Clothing/Windbreaker_Black/Windbreaker_Black	tres					type		Clothing				
 Items	Clothing/Windbreaker_Green	name	0	substr	Items/Clothing/Windbreaker_Green/Windbreaker_Green	tres					name		Windbreaker (Green)	1486	Széldzseki (zöld)		
@@ -245,7 +244,7 @@ Items	Consumables	type	0	substr									Consumables	1488	Fogyóeszközök
 Items	Consumables	type	0	substr									Consumable	1490	Fogyóeszköz		
 Items	Consumables	action	0	substr									Drink	1492	Megivás		
 Items	Consumables	action	0	substr									Eat	1494	Megevés		
-Items	Consumables	action	0	substr									Eat Raw	1496	Megevés (nyers)		
+Items	Consumables	action	0	substr									Eat Raw	1496	Megevés nyersen		
 Items	Consumables	action	0	substr									Eat (Raw)	1498	Megevés (nyers)		
 Items	Consumables	action	0	substr									Chew	1500	Rágózás		
 Items	Consumables	action	0	substr									Smoke	1502	Elszívni		
@@ -281,7 +280,7 @@ Items	Consumables/Canned_Pea_Soup	name	0	substr	Items/Consumables/Canned_Pea_Sou
 Items	Consumables/Canned_Pea_Soup	name	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					inventory		Pea Soup				
 Items	Consumables/Canned_Pea_Soup	name	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					rotated		Pea Soup				
 Items	Consumables/Canned_Pea_Soup	name	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					equipment		Pea Soup				
-Items	Consumables/Canned_Pea_Soup	name	0	substr	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					display		Pea Soup	1522	Boróleves		
+Items	Consumables/Canned_Pea_Soup	name	0	substr	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					display		Pea Soup	1522	Borsóleves		
 Items	Consumables/Canned_Pea_Soup	action	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					phrase		Eat				
 Items	Consumables/Canned_Pea_Soup	type	0	ignore	Items/Consumables/Canned_Pea_Soup/Canned_Pea_Soup	tres					type		Consumables				
 Items	Consumables/Canned_Peaches	name	0	substr	Items/Consumables/Canned_Peaches/Canned_Peaches	tres					name		Canned Peaches	1524	Őszibarackkonzerv		
@@ -334,7 +333,7 @@ Items	Consumables/Cat_Food	name	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tre
 Items	Consumables/Cat_Food	action	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					phrase		Eat				
 Items	Consumables/Cat_Food	type	0	ignore	Items/Consumables/Cat_Food/Cat_Food	tres					type		Consumables				
 Items	Consumables/Chocolate_War	name	0	substr	Items/Consumables/Chocolate_War/Chocolate_War	tres					name		War Chocolate	1550	Háborús csokoládé		
-Items	Consumables/Chocolate_War	name	0	substr	Items/Consumables/Chocolate_War/Chocolate_War	tres					inventory		W. Choco	1552	H.csoki		
+Items	Consumables/Chocolate_War	name	0	substr	Items/Consumables/Chocolate_War/Chocolate_War	tres					inventory		W. Choco	1552	Csoki		
 Items	Consumables/Chocolate_War	name	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					rotated		W. Choco				
 Items	Consumables/Chocolate_War	name	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					equipment		W. Choco				
 Items	Consumables/Chocolate_War	name	0	ignore	Items/Consumables/Chocolate_War/Chocolate_War	tres					display		W. Choco				
@@ -365,7 +364,7 @@ Items	Consumables/Coffee_Brewed	name	0	substr	Items/Consumables/Coffee_Brewed/Co
 Items	Consumables/Coffee_Brewed	name	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					inventory		Coffee (Brewed)				
 Items	Consumables/Coffee_Brewed	name	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					rotated		Coffee (Brewed)				
 Items	Consumables/Coffee_Brewed	name	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					equipment		Coffee (Brewed)				
-Items	Consumables/Coffee_Brewed	name	0	substr	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					display		C. Brewed	1564	F.kávé		
+Items	Consumables/Coffee_Brewed	name	0	substr	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					display		C. Brewed	1564	Kávé		
 Items	Consumables/Coffee_Brewed	action	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					phrase		Drink				
 Items	Consumables/Coffee_Brewed	type	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					type		Consumables				
 Items	Consumables/Cooked_Fish_Soup	name	0	substr	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					name		Fish Soup (Cooked)	1566	Halászlé (főtt)		
@@ -417,7 +416,7 @@ Items	Consumables/Energy_Powder	name	0	ignore	Items/Consumables/Energy_Powder/En
 Items	Consumables/Energy_Powder	name	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					display		E. Powder				
 Items	Consumables/Energy_Powder	action	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					phrase		Chew				
 Items	Consumables/Energy_Powder	type	0	ignore	Items/Consumables/Energy_Powder/Energy_Powder	tres					type		Consumables				
-Items	Consumables/Field_Ration	name	0	substr	Items/Consumables/Field_Ration/Field_Ration	tres					name		Field Ration	1600	Hadi élelmiszeradag		
+Items	Consumables/Field_Ration	name	0	substr	Items/Consumables/Field_Ration/Field_Ration	tres					name		Field Ration	1600	Hadi élelmiszer		
 Items	Consumables/Field_Ration	name	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					inventory		Field Ration				
 Items	Consumables/Field_Ration	name	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					rotated		Field Ration				
 Items	Consumables/Field_Ration	name	0	ignore	Items/Consumables/Field_Ration/Field_Ration	tres					equipment		Field Ration				
@@ -488,7 +487,7 @@ Items	Consumables/Salty_Liquorice	name	0	ignore	Items/Consumables/Salty_Liquoric
 Items	Consumables/Salty_Liquorice	name	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					display		Salty Liq.				
 Items	Consumables/Salty_Liquorice	action	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					phrase		Eat				
 Items	Consumables/Salty_Liquorice	type	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					type		Consumables				
-Items	Consumables/Snus	name	0	substr	Items/Consumables/Snus/Snus	tres					name		Snus	1632	Bagó		
+Items	Consumables/Snus	name	0	substr	Items/Consumables/Snus/Snus	tres					name		Snus	1632	Nasi		
 Items	Consumables/Snus	name	0	ignore	Items/Consumables/Snus/Snus	tres					inventory		Snus				
 Items	Consumables/Snus	name	0	ignore	Items/Consumables/Snus/Snus	tres					rotated		Snus				
 Items	Consumables/Snus	name	0	ignore	Items/Consumables/Snus/Snus	tres					equipment		Snus				
@@ -499,7 +498,7 @@ Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lem
 Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					inventory		Soda	1636	Szóda		
 Items	Consumables/Soda_Lemon	name	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					rotated		Soda				
 Items	Consumables/Soda_Lemon	name	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					equipment		Soda				
-Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					display		Soda L.	1638	Szóda c		
+Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					display		Soda L.	1638	Szóda c.		
 Items	Consumables/Soda_Lemon	action	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					phrase		Drink				
 Items	Consumables/Soda_Lemon	type	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					type		Consumables				
 Items	Consumables/Sugar	name	0	substr	Items/Consumables/Sugar/Sugar	tres					name		Sugar	1640	Cukor		
@@ -509,7 +508,7 @@ Items	Consumables/Sugar	name	0	ignore	Items/Consumables/Sugar/Sugar	tres					equ
 Items	Consumables/Sugar	name	0	ignore	Items/Consumables/Sugar/Sugar	tres					display		Sugar				
 Items	Consumables/Sugar	action	0	ignore	Items/Consumables/Sugar/Sugar	tres					phrase		Eat				
 Items	Consumables/Sugar	type	0	ignore	Items/Consumables/Sugar/Sugar	tres					type		Consumables				
-Items	Consumables/Water_Bottle	name	0	substr	Items/Consumables/Water_Bottle/Water_Bottle	tres					name		Water Bottle	1642	Víz		
+Items	Consumables/Water_Bottle	name	0	substr	Items/Consumables/Water_Bottle/Water_Bottle	tres					name		Water Bottle	1642	Vízespalack		
 Items	Consumables/Water_Bottle	name	0	substr	Items/Consumables/Water_Bottle/Water_Bottle	tres					inventory		Water	1644	Víz		
 Items	Consumables/Water_Bottle	name	0	ignore	Items/Consumables/Water_Bottle/Water_Bottle	tres					rotated		Water				
 Items	Consumables/Water_Bottle	name	0	ignore	Items/Consumables/Water_Bottle/Water_Bottle	tres					equipment		Water				
@@ -630,7 +629,7 @@ Items	Electronics/Inverter	name	0	ignore	Items/Electronics/Inverter/Inverter	tre
 Items	Electronics/Inverter	name	0	ignore	Items/Electronics/Inverter/Inverter	tres					equipment		Inverter				
 Items	Electronics/Inverter	name	0	ignore	Items/Electronics/Inverter/Inverter	tres					display		Inverter				
 Items	Electronics/Inverter	type	0	ignore	Items/Electronics/Inverter/Inverter	tres					type		Electronics				
-Items	Electronics/Narva	name	0	substr	Items/Electronics/Narva/Narva	tres					name		Narva	1724	Narva		
+Items	Electronics/Narva	name	0	substr	Items/Electronics/Narva/Narva	tres					name		Narva	1724	Zseblámpa		
 Items	Electronics/Narva	name	0	ignore	Items/Electronics/Narva/Narva	tres					inventory		Narva				
 Items	Electronics/Narva	name	0	ignore	Items/Electronics/Narva/Narva	tres					rotated		Narva				
 Items	Electronics/Narva	name	0	ignore	Items/Electronics/Narva/Narva	tres					equipment		Narva				
@@ -731,7 +730,7 @@ Items	Instruments/Guitar	name	0	ignore	Items/Instruments/Guitar/Guitar	tres					
 Items	Instruments/Guitar	type	0	ignore	Items/Instruments/Guitar/Guitar	tres					type		Instrument				
 Items	Instruments/Harmonica	name	0	substr	Items/Instruments/Harmonica/Harmonica	tres					name		Harmonica	1758	Harmónika		
 Items	Instruments/Harmonica	name	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					inventory		Harmonica				
-Items	Instruments/Harmonica	name	0	substr	Items/Instruments/Harmonica/Harmonica	tres					rotated		Harmo.	1760	Harmó,		
+Items	Instruments/Harmonica	name	0	substr	Items/Instruments/Harmonica/Harmonica	tres					rotated		Harmo.	1760	Harmó.		
 Items	Instruments/Harmonica	name	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					equipment		Harmonica				
 Items	Instruments/Harmonica	name	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					display		Harmo.				
 Items	Instruments/Harmonica	type	0	ignore	Items/Instruments/Harmonica/Harmonica	tres					type		Instrument				
@@ -761,7 +760,7 @@ Items	Key/Key_Classroom	name	0	ignore	Items/Keys/Key_Classroom	tres					equipmen
 Items	Key/Key_Classroom	name	0	ignore	Items/Keys/Key_Classroom	tres					display		Class. K.				
 Items	Key/Key_Classroom	type	0	ignore	Items/Keys/Key_Classroom	tres					type		Key				
 Items	Key/Key_Gymnasium	name	0	substr	Items/Keys/Key_Gymnasium	tres					name		Gymnasium Key	1780	Gimnázium kulcsa		
-Items	Key/Key_Gymnasium	name	0	substr	Items/Keys/Key_Gymnasium	tres					inventory		Gym. K.	1782	Gimn.k		
+Items	Key/Key_Gymnasium	name	0	substr	Items/Keys/Key_Gymnasium	tres					inventory		Gym. K.	1782	Gimn. k.		
 Items	Key/Key_Gymnasium	name	0	ignore	Items/Keys/Key_Gymnasium	tres					rotated		Gym. K.				
 Items	Key/Key_Gymnasium	name	0	ignore	Items/Keys/Key_Gymnasium	tres					equipment		Gym. K.				
 Items	Key/Key_Gymnasium	name	0	ignore	Items/Keys/Key_Gymnasium	tres					display		Gym. K.				
@@ -791,7 +790,7 @@ Items	Kives/Skrama_240	name	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres				
 Items	Kives/Skrama_240	name	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					equipment		Skrama 240				
 Items	Kives/Skrama_240	name	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					display		Skrama				
 Items	Kives/Skrama_240	type	0	ignore	Items/Knives/Skrama_240/Skrama_240	tres					type		Knife				
-Items	Lore	type	0	substr									Lore	1800	Történet		
+Items	Lore	type	0	substr									Lore	1800	Történelem		
 Items	Lore/Cat	name	0	substr	Items/Lore/Cat/Cat	tres					name		Cat	1802	Macska		
 Items	Lore/Cat	name	0	ignore	Items/Lore/Cat/Cat	tres					inventory		Cat				
 Items	Lore/Cat	name	0	ignore	Items/Lore/Cat/Cat	tres					rotated		Cat				
@@ -799,7 +798,7 @@ Items	Lore/Cat	name	0	ignore	Items/Lore/Cat/Cat	tres					equipment		Cat
 Items	Lore/Cat	name	0	ignore	Items/Lore/Cat/Cat	tres					display		Cat				
 Items	Lore/Cat	type	0	ignore	Items/Lore/Cat/Cat	tres					type		Lore				
 Items	Lore/Oil_Sample	name	0	substr	Items/Lore/Oil_Sample/Oil_Sample	tres					name		Oil Sample	1804	Olajminta		
-Items	Lore/Oil_Sample	name	0	substr	Items/Lore/Oil_Sample/Oil_Sample	tres					inventory		Oil S.	1806	Olajm.		
+Items	Lore/Oil_Sample	name	0	substr	Items/Lore/Oil_Sample/Oil_Sample	tres					inventory		Oil S.	1806	Olajminta.		
 Items	Lore/Oil_Sample	name	0	ignore	Items/Lore/Oil_Sample/Oil_Sample	tres					rotated		Oil Sample				
 Items	Lore/Oil_Sample	name	0	ignore	Items/Lore/Oil_Sample/Oil_Sample	tres					equipment		Oil S.				
 Items	Lore/Oil_Sample	name	0	ignore	Items/Lore/Oil_Sample/Oil_Sample	tres					display		Oil S.				
@@ -932,7 +931,7 @@ Items	Medical/Splint_Improvised	type	0	ignore	Items/Medical/Splint_Improvised/Sp
 Items	Medical/Thermal_Blanket	name	0	substr	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					name		Thermal Blanket	1858	Hőtakaró		
 Items	Medical/Thermal_Blanket	name	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					inventory		Thermal Blanket				
 Items	Medical/Thermal_Blanket	name	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					rotated		Thermal Blanket				
-Items	Medical/Thermal_Blanket	name	0	substr	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					equipment		Thermal	1860	Hő		
+Items	Medical/Thermal_Blanket	name	0	substr	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					equipment		Thermal	1860	Hőtakaró		
 Items	Medical/Thermal_Blanket	name	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					display		Thermal				
 Items	Medical/Thermal_Blanket	action	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					phrase		Use				
 Items	Medical/Thermal_Blanket	type	0	ignore	Items/Medical/Thermal_Blanket/Thermal_Blanket	tres					type		Medical				
@@ -1025,7 +1024,7 @@ Items	Misc/Map_Tactical	name	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres	
 Items	Misc/Map_Tactical	name	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					equipment		T. Map				
 Items	Misc/Map_Tactical	name	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					display		Map (Tactical)				
 Items	Misc/Map_Tactical	type	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					type		Misc				
-Items	Misc/Matches	name	0	substr	Items/Misc/Matches/Matches	tres					name		Matches	1910	Gyufa		
+Items	Misc/Matches	name	0	substr	Items/Misc/Matches/Matches	tres					name		Matches	1910	Gyufák		
 Items	Misc/Matches	name	0	substr	Items/Misc/Matches/Matches	tres					inventory		Mat.	1912	Gyufa		
 Items	Misc/Matches	name	0	ignore	Items/Misc/Matches/Matches	tres					rotated		Mat.				
 Items	Misc/Matches	name	0	ignore	Items/Misc/Matches/Matches	tres					equipment		Mat.				
@@ -1236,7 +1235,7 @@ Items	Weapons/KAR-21_308_Magazine	name	0	ignore	Items/Weapons/KAR-21/KAR-21_308_
 Items	Weapons/KAR-21_308_Magazine	type	0	ignore	Items/Weapons/KAR-21/KAR-21_308_Magazine	tres					type		Attachment				
 Items	Weapons/KAR-21_Barrel	name	0	substr	Items/Weapons/KAR-21/KAR-21_Barrel	tres					name		KAR-21 Barrel (.308)	1982	KAR-21 cső (.308)		
 Items	Weapons/KAR-21_Barrel	name	0	substr	Items/Weapons/KAR-21/KAR-21_Barrel	tres					inventory		KAR-21 Barrel	1984	KAR-21 cső		
-Items	Weapons/KAR-21_Barrel	name	0	substr	Items/Weapons/KAR-21/KAR-21_Barrel	tres					rotated		Barrel	1986	cső		
+Items	Weapons/KAR-21_Barrel	name	0	substr	Items/Weapons/KAR-21/KAR-21_Barrel	tres					rotated		Barrel	1986	Cső		
 Items	Weapons/KAR-21_Barrel	name	0	ignore	Items/Weapons/KAR-21/KAR-21_Barrel	tres					equipment		Barrel				
 Items	Weapons/KAR-21_Barrel	name	0	ignore	Items/Weapons/KAR-21/KAR-21_Barrel	tres					display		Barrel				
 Items	Weapons/KAR-21_Barrel	type	0	ignore	Items/Weapons/KAR-21/KAR-21_Barrel	tres					display		Attachment				

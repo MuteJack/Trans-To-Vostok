@@ -6,7 +6,7 @@ Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboa
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate				
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate				
 Assets	Containers/Crate_Wood_Tutorial		0	ignore	Assets/Crate_Wood/Crate_Wood_Tutorial	tscn	Assets/Crate_Wood/Crate_Wood_Tutorial		Crate_Wood_Tutorial	Node3D	containerName	238444265	Tutorial Crate				
-Assets	Containers/Box_Electric		0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	466	Villamos kapcsolódoboz		
+Assets	Containers/Box_Electric		0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	466	Elektromos kapcsolódoboz		
 Assets	Containers/Cabinet_Medical		0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet	468	Gyógyszeres szekrény		
 Assets	Containers/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tscn	Assets/Cabinet_Medical/Cabinet_Medical_F		Cabinet_Medical_F	Node3D	containerName	2092602420	Medical Cabinet				
 Assets	Containers/Cabinet_Office		0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	Assets/Cabinet_Office/Cabinet_Office		Cabinet_Office	Node3D	containerName	1131051434	Office Cabinet	470	Irodai szekrény		
@@ -63,64 +63,64 @@ Assets	Furnitures/Bed_Civilian_F		0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tr
 Assets	Furnitures/Bed_Civilian_F		0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					inventory		Bed (Civilian)				
 Assets	Furnitures/Bed_Civilian_F		0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					rotated		Bed (Civilian)				
 Assets	Furnitures/Bed_Civilian_F		0	ignore	Assets/Bed_Civilian/Bed_Civilian_F	tres					equipment		Bed (Civilian)				
-Assets	Furnitures/Bed_Civilian_F		0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.	510	Ágy p.		
+Assets	Furnitures/Bed_Civilian_F		0	substr	Assets/Bed_Civilian/Bed_Civilian_F	tres					display		Bed C.	510	Ágy.		
 Assets	Furnitures/Bed_Nomad_F		0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					name		Bed (Nomad)	512	Ágy (nomád)		
 Assets	Furnitures/Bed_Nomad_F		0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					inventory		Bed (Nomad)				
 Assets	Furnitures/Bed_Nomad_F		0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					rotated		Bed (Nomad)				
 Assets	Furnitures/Bed_Nomad_F		0	ignore	Assets/Bed_Nomad/Bed_Nomad_F	tres					equipment		Bed (Nomad)				
-Assets	Furnitures/Bed_Nomad_F		0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.	514	Ágy n.		
-Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)	516	Szekrény (orvosi)		
+Assets	Furnitures/Bed_Nomad_F		0	substr	Assets/Bed_Nomad/Bed_Nomad_F	tres					display		Bed N.	514	Ágy.		
+Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					name		Cabinet (Medical)	516	Szekrény (gyógyszeres)		
 Assets	Furnitures/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					inventory		Cabinet (Medical)				
 Assets	Furnitures/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					rotated		Cabinet (Medical)				
 Assets	Furnitures/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					equipment		Cabinet (Medical)				
-Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.	518	Szekrény o.		
+Assets	Furnitures/Cabinet_Medical_F		0	substr	Assets/Cabinet_Medical/Cabinet_Medical_F	tres					display		Cabinet M.	518	Szekrény.		
 Assets	Furnitures/Cabinet_Office_F		0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					name		Cabinet (Office)	520	Szekrény (irodai)		
 Assets	Furnitures/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					inventory		Cabinet (Office)				
 Assets	Furnitures/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					rotated		Cabinet (Office)				
 Assets	Furnitures/Cabinet_Office_F		0	ignore	Assets/Cabinet_Office/Cabinet_Office_F	tres					equipment		Cabinet (Office)				
-Assets	Furnitures/Cabinet_Office_F		0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0	522	Szekrény i.		
+Assets	Furnitures/Cabinet_Office_F		0	substr	Assets/Cabinet_Office/Cabinet_Office_F	tres					display		Cabinet. 0	522	Szekrény. 0		
 Assets	Furnitures/Cabinet_Wood_F		0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					name		Cabinet (Wood)	524	Szekrény (fa)		
 Assets	Furnitures/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					inventory		Cabinet (Wood)				
 Assets	Furnitures/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					rotated		Cabinet (Wood)				
 Assets	Furnitures/Cabinet_Wood_F		0	ignore	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					equipment		Cabinet (Wood)				
-Assets	Furnitures/Cabinet_Wood_F		0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.	526	Szekrény f.		
+Assets	Furnitures/Cabinet_Wood_F		0	substr	Assets/Cabinet_Wood/Cabinet_Wood_F	tres					display		Cabinet W.	526	Szekrény.		
 Assets	Furnitures/Carpet_Persian_F		0	substr	Assets/Carpet/Carpet_Persian_F	tres					name		Carpet (Persian)	528	Szőnyeg (perzsa)		
 Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres					inventory		Carpet (Persian)				
-Assets	Furnitures/Carpet_Persian_F		0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.	530	Szőnyeg (perzsa)		
+Assets	Furnitures/Carpet_Persian_F		0	substr	Assets/Carpet/Carpet_Persian_F	tres					rotated		Carpet P.	530	Szőnyeg.		
 Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres					equipment		Carpet (Persian)				
 Assets	Furnitures/Carpet_Persian_F		0	ignore	Assets/Carpet/Carpet_Persian_F	tres					display		Carpet P.				
 Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					name		Carpet (Rag)	532	Szőnyeg (rongy)		
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					inventory		Carpet (Rag)				
-Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	534	Szőnyeg (rongy)		
+Assets	Furnitures/Carpet_Rag_F		0	substr	Assets/Carpet/Carpet_Rag_F	tres					rotated		Carpet R.	534	Szőnyeg.		
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					equipment		Carpet (Rag)				
 Assets	Furnitures/Carpet_Rag_F		0	ignore	Assets/Carpet/Carpet_Rag_F	tres					display		Carpet R.				
 Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					name		Chair (Office)	536	Szék (iroda)		
 Assets	Furnitures/Chair_Office_F		0	ignore	Assets/Chair_Office/Chair_Office_F	tres					inventory		Chair (Office)				
 Assets	Furnitures/Chair_Office_F		0	ignore	Assets/Chair_Office/Chair_Office_F	tres					rotated		Chair (Office)				
 Assets	Furnitures/Chair_Office_F		0	ignore	Assets/Chair_Office/Chair_Office_F	tres					equipment		Chair (Office)				
-Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.	538	Szék (iroda)		
+Assets	Furnitures/Chair_Office_F		0	substr	Assets/Chair_Office/Chair_Office_F	tres					display		Chair O.	538	Szék i.		
 Assets	Furnitures/Chair_School_F		0	substr	Assets/Chair_School/Chair_School_F	tres					name		Chair (School)	540	Szék (iskolai)		
 Assets	Furnitures/Chair_School_F		0	ignore	Assets/Chair_School/Chair_School_F	tres					inventory		Chair (School)				
 Assets	Furnitures/Chair_School_F		0	ignore	Assets/Chair_School/Chair_School_F	tres					rotated		Chair (School)				
 Assets	Furnitures/Chair_School_F		0	ignore	Assets/Chair_School/Chair_School_F	tres					equipment		Chair (School)				
-Assets	Furnitures/Chair_School_F		0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.	542	Szék (iskolai)		
+Assets	Furnitures/Chair_School_F		0	substr	Assets/Chair_School/Chair_School_F	tres					display		Chair S.	542	Szék.		
 Assets	Furnitures/Chair_Sun		0	substr	Assets/Chair_Sun/Chair_Sun	tres					name		Sun Chair	544	Napozószék		
 Assets	Furnitures/Chair_Sun		0	substr	Assets/Chair_Sun/Chair_Sun	tres					display		S. Chair	546	Napozószék		
 Assets	Furnitures/Crate_Military_F		0	substr	Assets/Crate_Military/Crate_Military_F	tres					name		Crate (Military)	548	Láda (katonai)		
 Assets	Furnitures/Crate_Military_F		0	ignore	Assets/Crate_Military/Crate_Military_F	tres					inventory		Crate (Military)				
 Assets	Furnitures/Crate_Military_F		0	ignore	Assets/Crate_Military/Crate_Military_F	tres					rotated		Crate (Military)				
 Assets	Furnitures/Crate_Military_F		0	ignore	Assets/Crate_Military/Crate_Military_F	tres					equipment		Crate (Military)				
-Assets	Furnitures/Crate_Military_F		0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.	550	Láda (katonai)		
+Assets	Furnitures/Crate_Military_F		0	substr	Assets/Crate_Military/Crate_Military_F	tres					display		Crate M.	550	Láda.		
 Assets	Furnitures/Crate_Special_F		0	substr	Assets/Crate_Special/Crate_Special_F	tres					name		Crate (Special)	552	Láda (speciális)		
 Assets	Furnitures/Crate_Special_F		0	ignore	Assets/Crate_Special/Crate_Special_F	tres					inventory		Crate (Special)				
 Assets	Furnitures/Crate_Special_F		0	ignore	Assets/Crate_Special/Crate_Special_F	tres					rotated		Crate (Special)				
 Assets	Furnitures/Crate_Special_F		0	ignore	Assets/Crate_Special/Crate_Special_F	tres					equipment		Crate (Special)				
-Assets	Furnitures/Crate_Special_F		0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.	554	Láda s.		
+Assets	Furnitures/Crate_Special_F		0	substr	Assets/Crate_Special/Crate_Special_F	tres					display		Crate S.	554	Láda.		
 Assets	Furnitures/Cupboard_F		0	substr	Assets/Cupboard/Cupboard_F	tres					name		Cupboard	556	Szekrény		
 Assets	Furnitures/Cupboard_F		0	ignore	Assets/Cupboard/Cupboard_F	tres					inventory		Cupboard				
 Assets	Furnitures/Cupboard_F		0	ignore	Assets/Cupboard/Cupboard_F	tres					rotated		Cupboard				
 Assets	Furnitures/Cupboard_F		0	ignore	Assets/Cupboard/Cupboard_F	tres					equipment		Cupboard				
-Assets	Furnitures/Cupboard_F		0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board	558	Szekr.		
+Assets	Furnitures/Cupboard_F		0	substr	Assets/Cupboard/Cupboard_F	tres					display		C. Board	558	Szekrény		
 Assets	Furnitures/Curtain_Long_F		0	substr	Assets/Curtains/Curtain_Long_F	tres					name		Curtain (Long)	560	Függöny (hosszú)		
 Assets	Furnitures/Curtain_Long_F		0	ignore	Assets/Curtains/Curtain_Long_F	tres					inventory		Curtain (Long)				
 Assets	Furnitures/Curtain_Long_F		0	substr	Assets/Curtains/Curtain_Long_F	tres					rotated		Curtain L.	562	Függöny h.		
@@ -128,7 +128,7 @@ Assets	Furnitures/Curtain_Long_F		0	ignore	Assets/Curtains/Curtain_Long_F	tres		
 Assets	Furnitures/Curtain_Long_F		0	ignore	Assets/Curtains/Curtain_Long_F	tres					display		Curtain L.				
 Assets	Furnitures/Curtain_Mini_F		0	substr	Assets/Curtains/Curtain_Mini_F	tres					name		Curtain (Mini)	564	Függöny (mini)		
 Assets	Furnitures/Curtain_Mini_F		0	ignore	Assets/Curtains/Curtain_Mini_F	tres					inventory		Curtain (Mini)				
-Assets	Furnitures/Curtain_Mini_F		0	substr	Assets/Curtains/Curtain_Mini_F	tres					rotated		Curtain M.	566	Függöny m.		
+Assets	Furnitures/Curtain_Mini_F		0	substr	Assets/Curtains/Curtain_Mini_F	tres					rotated		Curtain M.	566	Függöny.		
 Assets	Furnitures/Curtain_Mini_F		0	ignore	Assets/Curtains/Curtain_Mini_F	tres					equipment		Curtain (Mini)				
 Assets	Furnitures/Curtain_Mini_F		0	ignore	Assets/Curtains/Curtain_Mini_F	tres					display		Curtain M.				
 Assets	Furnitures/Dartboard_F		0	substr	Assets/Dartboard/Dartboard_F	tres					name		Dartboard	568	Darts-tábla		
@@ -160,7 +160,7 @@ Assets	Furnitures/Painting_Lake_F		0	substr	Assets/Painting/Painting_Lake_F	tres
 Assets	Furnitures/Painting_Lake_F		0	ignore	Assets/Painting/Painting_Lake_F	tres					inventory		Painting (Lake)				
 Assets	Furnitures/Painting_Lake_F		0	ignore	Assets/Painting/Painting_Lake_F	tres					rotated		Painting (Lake)				
 Assets	Furnitures/Painting_Lake_F		0	ignore	Assets/Painting/Painting_Lake_F	tres					equipment		Painting (Lake)				
-Assets	Furnitures/Painting_Lake_F		0	substr	Assets/Painting/Painting_Lake_F	tres					display		Painting L.	576	Festmény (Tó)		
+Assets	Furnitures/Painting_Lake_F		0	substr	Assets/Painting/Painting_Lake_F	tres					display		Painting L.	576	Festmény.		
 Assets	Furnitures/Pallet_F		0	substr	Assets/Pallet/Pallet_F	tres					name		Pallet	578	Raklap		
 Assets	Furnitures/Pallet_F		0	ignore	Assets/Pallet/Pallet_F	tres					inventory		Pallet				
 Assets	Furnitures/Pallet_F		0	ignore	Assets/Pallet/Pallet_F	tres					rotated		Pallet				
@@ -170,26 +170,26 @@ Assets	Furnitures/Poster_Posture_F		0	substr	Assets/Posters/Poster_Posture_F	tre
 Assets	Furnitures/Poster_Posture_F		0	ignore	Assets/Posters/Poster_Posture_F	tres					inventory		Poster (Posture)				
 Assets	Furnitures/Poster_Posture_F		0	ignore	Assets/Posters/Poster_Posture_F	tres					rotated		Poster (Posture)				
 Assets	Furnitures/Poster_Posture_F		0	ignore	Assets/Posters/Poster_Posture_F	tres					equipment		Poster (Posture)				
-Assets	Furnitures/Poster_Posture_F		0	substr	Assets/Posters/Poster_Posture_F	tres					display		Poster P.	582	"Poster: Helyes 
-testtartás"		
+Assets	Furnitures/Poster_Posture_F		0	substr	Assets/Posters/Poster_Posture_F	tres					display		Poster P.	582	"Poszter: Helyes 
+testtartás."		
 Assets	Furnitures/Rack_Coat_F		0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					name		Rack (Coat)	584	Ruhaakasztó (kabát)		
 Assets	Furnitures/Rack_Coat_F		0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					inventory		Rack (Coat)				
-Assets	Furnitures/Rack_Coat_F		0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					rotated		Rack C.	586	Ruhaakasztó (kabát)		
+Assets	Furnitures/Rack_Coat_F		0	substr	Assets/Rack_Coat/Rack_Coat_F	tres					rotated		Rack C.	586	Ruhaakasztó.		
 Assets	Furnitures/Rack_Coat_F		0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					equipment		Rack (Coat)				
 Assets	Furnitures/Rack_Coat_F		0	ignore	Assets/Rack_Coat/Rack_Coat_F	tres					display		Rack C.				
-Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)	588	Ő (Maria)		
+Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					name		Rya (Maria)	588	(Maria)		
 Assets	Furnitures/Rya_Maria_F		0	ignore	Assets/Rya/Rya_Maria_F	tres					inventory		Rya (Maria)				
-Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.	590	Ő M.		
+Assets	Furnitures/Rya_Maria_F		0	substr	Assets/Rya/Rya_Maria_F	tres					rotated		Rya M.	590	Maria.		
 Assets	Furnitures/Rya_Maria_F		0	ignore	Assets/Rya/Rya_Maria_F	tres					equipment		Rya (Maria)				
 Assets	Furnitures/Rya_Maria_F		0	ignore	Assets/Rya/Rya_Maria_F	tres					display		Rya M.				
 Assets	Furnitures/Shelf_Metal_F		0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					name		Shelf (Metal)	592	Polc (fém)		
 Assets	Furnitures/Shelf_Metal_F		0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					inventory		Shelf (Metal)				
 Assets	Furnitures/Shelf_Metal_F		0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					rotated		Shelf (Metal)				
 Assets	Furnitures/Shelf_Metal_F		0	ignore	Assets/Shelf_Metal/Shelf_Metal_F	tres					equipment		Shelf (Metal)				
-Assets	Furnitures/Shelf_Metal_F		0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.	594	Polc (fém)		
+Assets	Furnitures/Shelf_Metal_F		0	substr	Assets/Shelf_Metal/Shelf_Metal_F	tres					display		Shelf M.	594	Polc.		
 Assets	Furnitures/Shelf_Wall_F		0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					name		Shelf (Wall)	596	Polc (fali)		
 Assets	Furnitures/Shelf_Wall_F		0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					inventory		Shelf (Wall)				
-Assets	Furnitures/Shelf_Wall_F		0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.	598	Polc (fali)		
+Assets	Furnitures/Shelf_Wall_F		0	substr	Assets/Shelf_Wall/Shelf_Wall_F	tres					rotated		Shelf W.	598	Polc.		
 Assets	Furnitures/Shelf_Wall_F		0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					equipment		Shelf (Wall)				
 Assets	Furnitures/Shelf_Wall_F		0	ignore	Assets/Shelf_Wall/Shelf_Wall_F	tres					display		Shelf W.			Why the hell do they both use the same abbreviation? (Shelf (Wood), Shelf (Wall))	
 Assets	Furnitures/Shelf_Wood_F		0	substr	Assets/Shelf_Wood/Shelf_Wood_F	tres					name		Shelf (Wood)	600	Polc (fa)		
@@ -201,22 +201,22 @@ Assets	Furnitures/Sign_Border_Zone_F		0	substr	Assets/Sign_Border_Zone/Sign_Bord
 Assets	Furnitures/Sign_Border_Zone_F		0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					inventory		Sign (Border Zone)				
 Assets	Furnitures/Sign_Border_Zone_F		0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					rotated		Sign (Border Zone)				
 Assets	Furnitures/Sign_Border_Zone_F		0	ignore	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					equipment		Sign (Border Zone)				
-Assets	Furnitures/Sign_Border_Zone_F		0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.	604	Tábla (határ)		
+Assets	Furnitures/Sign_Border_Zone_F		0	substr	Assets/Sign_Border_Zone/Sign_Border_Zone_F	tres					display		Sign BZ.	604	Tábla.		
 Assets	Furnitures/Sofa_Leather_F		0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					name		Sofa (Leather)	606	Kanapé (bőr)		
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					inventory		Sofa (Leather)				
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					rotated		Sofa (Leather)				
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					equipment		Sofa (Leather)				
-Assets	Furnitures/Sofa_Leather_F		0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.	608	Kanapé (bőr)		
+Assets	Furnitures/Sofa_Leather_F		0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.	608	Kanapé.		
 Assets	Furnitures/Stool_Military_F		0	substr	Assets/Stool_Military/Stool_Military_F	tres					name		Stool (Military)	610	Szék (katonai)		
 Assets	Furnitures/Stool_Military_F		0	ignore	Assets/Stool_Military/Stool_Military_F	tres					inventory		Stool (Military)				
 Assets	Furnitures/Stool_Military_F		0	ignore	Assets/Stool_Military/Stool_Military_F	tres					rotated		Stool (Military)				
 Assets	Furnitures/Stool_Military_F		0	ignore	Assets/Stool_Military/Stool_Military_F	tres					equipment		Stool (Military)				
-Assets	Furnitures/Stool_Military_F		0	substr	Assets/Stool_Military/Stool_Military_F	tres					display		Stool M.	612	Szék (katonai)		
+Assets	Furnitures/Stool_Military_F		0	substr	Assets/Stool_Military/Stool_Military_F	tres					display		Stool M.	612	Szék.		
 Assets	Furnitures/Stool_Padded_F		0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					name		Stool (Padded)	614	Szék (párnázott)		
 Assets	Furnitures/Stool_Padded_F		0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					inventory		Stool (Padded)				
 Assets	Furnitures/Stool_Padded_F		0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					rotated		Stool (Padded)				
 Assets	Furnitures/Stool_Padded_F		0	ignore	Assets/Stool_Padded/Stool_Padded_F	tres					equipment		Stool (Padded)				
-Assets	Furnitures/Stool_Padded_F		0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					display		Stool P.	616	Szék (párnázott)		
+Assets	Furnitures/Stool_Padded_F		0	substr	Assets/Stool_Padded/Stool_Padded_F	tres					display		Stool P.	616	Szék.		
 Assets	Furnitures/Stove_F		0	ignore	Assets/Stove/Stove_F	tres					name		Stove				
 Assets	Furnitures/Stove_F		0	ignore	Assets/Stove/Stove_F	tres					inventory		Stove				
 Assets	Furnitures/Stove_F		0	ignore	Assets/Stove/Stove_F	tres					rotated		Stove				
@@ -226,7 +226,7 @@ Assets	Furnitures/Table_Cabin_F		0	substr	Assets/Table_Cabin/Table_Cabin_F	tres	
 Assets	Furnitures/Table_Cabin_F		0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					inventory		Table (Cabin)				
 Assets	Furnitures/Table_Cabin_F		0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					rotated		Table (Cabin)				
 Assets	Furnitures/Table_Cabin_F		0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					equipment		Table (Cabin)				
-Assets	Furnitures/Table_Cabin_F		0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.	620	Asztal (kabin)		
+Assets	Furnitures/Table_Cabin_F		0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.	620	Asztal.		
 Assets	Furnitures/Table_Canteen_F		0	substr	Assets/Table_Canteen/Table_Canteen_F	tres					name		Table (Canteen)	622	Asztal (étkező)		
 Assets	Furnitures/Table_Canteen_F		0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					inventory		Table (Canteen)				
 Assets	Furnitures/Table_Canteen_F		0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					rotated		Table (Canteen)				
@@ -236,17 +236,17 @@ Assets	Furnitures/Table_Kitchen_F		0	substr	Assets/Table_Kitchen/Table_Kitchen_F
 Assets	Furnitures/Table_Kitchen_F		0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					inventory		Table (Kitchen)				
 Assets	Furnitures/Table_Kitchen_F		0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					rotated		Table (Kitchen)				
 Assets	Furnitures/Table_Kitchen_F		0	ignore	Assets/Table_Kitchen/Table_Kitchen_F	tres					equipment		Table (Kitchen)				
-Assets	Furnitures/Table_Kitchen_F		0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					display		Table K.	626	Asztal (konyha)		
+Assets	Furnitures/Table_Kitchen_F		0	substr	Assets/Table_Kitchen/Table_Kitchen_F	tres					display		Table K.	626	Asztal.		
 Assets	Furnitures/Table_Office_F		0	substr	Assets/Table_Office/Table_Office_F	tres					name		Table (Office)	628	Asztal (iroda)		
 Assets	Furnitures/Table_Office_F		0	ignore	Assets/Table_Office/Table_Office_F	tres					inventory		Table (Office)				
 Assets	Furnitures/Table_Office_F		0	ignore	Assets/Table_Office/Table_Office_F	tres					rotated		Table (Office)				
 Assets	Furnitures/Table_Office_F		0	ignore	Assets/Table_Office/Table_Office_F	tres					equipment		Table (Office)				
-Assets	Furnitures/Table_Office_F		0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O	630	Asztal (iroda)		
+Assets	Furnitures/Table_Office_F		0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O	630	Asztal		
 Assets	Furnitures/Target_Stand_F		0	substr	Assets/Target_Stand/Target_Stand_F	tres					name		Target Stand	632	Célállvány		
 Assets	Furnitures/Target_Stand_F		0	ignore	Assets/Target_Stand/Target_Stand_F	tres					inventory		Target Stand				
 Assets	Furnitures/Target_Stand_F		0	ignore	Assets/Target_Stand/Target_Stand_F	tres					rotated		Target Stand				
 Assets	Furnitures/Target_Stand_F		0	ignore	Assets/Target_Stand/Target_Stand_F	tres					equipment		Target Stand				
-Assets	Furnitures/Target_Stand_F		0	substr	Assets/Target_Stand/Target_Stand_F	tres					display		Target S.	634	Célállvány		
+Assets	Furnitures/Target_Stand_F		0	substr	Assets/Target_Stand/Target_Stand_F	tres					display		Target S.	634	Célállvány.		
 Assets	Furnitures/Television_F		0	substr	Assets/Television/Television_F	tres					name		Television	636	Televizió		
 Assets	Furnitures/Television_F		0	ignore	Assets/Television/Television_F	tres					inventory		Television				
 Assets	Furnitures/Television_F		0	ignore	Assets/Television/Television_F	tres					rotated		Television				
@@ -256,14 +256,14 @@ Assets	Furnitures/Trolley_Short_F		0	substr	Assets/Trolley/Trolley_Short_F	tres	
 Assets	Furnitures/Trolley_Short_F		0	ignore	Assets/Trolley/Trolley_Short_F	tres					inventory		Trolley (Short)				
 Assets	Furnitures/Trolley_Short_F		0	ignore	Assets/Trolley/Trolley_Short_F	tres					rotated		Trolley (Short)				
 Assets	Furnitures/Trolley_Short_F		0	ignore	Assets/Trolley/Trolley_Short_F	tres					equipment		Trolley (Short)				
-Assets	Furnitures/Trolley_Short_F		0	substr	Assets/Trolley/Trolley_Short_F	tres					display		Trolley S.	642	Kocsi (rövid)		
+Assets	Furnitures/Trolley_Short_F		0	substr	Assets/Trolley/Trolley_Short_F	tres					display		Trolley S.	642	Kocsi.		
 Assets	Furnitures/Trolley_Tall_F		0	substr	Assets/Trolley/Trolley_Tall_F	tres					name		Trolley (Tall)	644	Kocsi (magas)		
 Assets	Furnitures/Trolley_Tall_F		0	ignore	Assets/Trolley/Trolley_Tall_F	tres					inventory		Trolley (Tall)				
 Assets	Furnitures/Trolley_Tall_F		0	ignore	Assets/Trolley/Trolley_Tall_F	tres					rotated		Trolley (Tall)				
 Assets	Furnitures/Trolley_Tall_F		0	ignore	Assets/Trolley/Trolley_Tall_F	tres					equipment		Trolley (Tall)				
-Assets	Furnitures/Trolley_Tall_F		0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.	646	Kocsi (magas)		
-Assets	Furnitures/Weapon_Display_F		0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					name		Weapon Display	648	Fegyverkiállító		
+Assets	Furnitures/Trolley_Tall_F		0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.	646	Kocsi.		
+Assets	Furnitures/Weapon_Display_F		0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					name		Weapon Display	648	Fegyvertartó		
 Assets	Furnitures/Weapon_Display_F		0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					inventory		Weapon Display				
 Assets	Furnitures/Weapon_Display_F		0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					rotated		Weapon Display				
 Assets	Furnitures/Weapon_Display_F		0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					equipment		Weapon Display				
-Assets	Furnitures/Weapon_Display_F		0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					display		Weapon D.	650	Fegyverkiállító		
+Assets	Furnitures/Weapon_Display_F		0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					display		Weapon D.	650	Fegyvertartó.		
