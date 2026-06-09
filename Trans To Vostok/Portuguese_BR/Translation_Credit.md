@@ -14,7 +14,7 @@ _(none yet)_
 
 ## Translation Contributors
 
-- Mute Jack (MuteJack)
+_(none yet)_
 
 ## Texture Reworkers
 

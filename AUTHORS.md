@@ -46,8 +46,7 @@ _Translation last updated: 2026-05-30T03:31:07+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:**
-- Mute Jack (MuteJack)
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
@@ -61,8 +60,7 @@ _Translation last updated: 2026-05-30T03:32:15+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:**
-- Mute Jack (MuteJack)
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
@@ -76,8 +74,7 @@ _Translation last updated: 2026-05-10T18:02:31+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:**
-- Mute Jack (MuteJack)
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
@@ -91,32 +88,46 @@ _Translation last updated: 2026-05-30T03:27:52+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:**
-- Mute Jack (MuteJack)
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
 
-### Japanese (`Translations/Japanese/`)
+### Hungarian (`Translations/Hungarian/`)
 
-_Translation last updated: 2026-05-30T19:23:48+09:00_
+_Translation last updated: 2026-06-09T20:20:37+09:00_
 
 **Lead Translator(s):**
 - Mute Jack
+- Csaba Papp
 
 **Translator(s):** _(none yet)_
 
 **Translation Contributors:**
+- MuteJack_Tester
+
+**Texture Reworkers:**
+- MuteJack
+- Csaba Papp
+
+### Japanese (`Translations/Japanese/`)
+
+_Translation last updated: 2026-06-07T14:30:34+09:00_
+
+**Lead Translator(s):**
+- Mute Jack
+
+**Translator(s):**
 - Nineblood
-- Mute Jack (MuteJack)
-- Nineblood (newnoxnineblood)
+
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
 
 ### Korean (`Translations/Korean/`)
 
-_Translation last updated: 2026-05-31T19:16:44+09:00_
+_Translation last updated: 2026-06-10T01:40:09+09:00_
 
 **Lead Translator(s):**
 - Mute Jack
@@ -124,8 +135,8 @@ _Translation last updated: 2026-05-31T19:16:44+09:00_
 **Translator(s):** _(none yet)_
 
 **Translation Contributors:**
-- gap tal
 - MuteJack_Tester
+- gap tal
 
 **Texture Reworkers:**
 - MuteJack
@@ -139,8 +150,7 @@ _Translation last updated: 2026-06-03T23:23:59+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:**
-- Mute Jack (MuteJack)
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack
@@ -155,7 +165,6 @@ _Translation last updated: 2026-06-05T07:09:27+09:00_
 **Translator(s):** _(none yet)_
 
 **Translation Contributors:**
-- Mute Jack (MuteJack)
 - Speech (Speech100)
 
 **Texture Reworkers:**
@@ -170,8 +179,7 @@ _Translation last updated: 2026-05-30T03:28:46+09:00_
 
 **Translator(s):** _(none yet)_
 
-**Translation Contributors:**
-- Mute Jack (MuteJack)
+**Translation Contributors:** _(none yet)_
 
 **Texture Reworkers:**
 - MuteJack

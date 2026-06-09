@@ -1,12 +1,13 @@
-# ChineseSimplified Translation Credits
+# Hungarian Translation Credits
 
-People who contributed to translating Road to Vostok into ChineseSimplified. This includes both text translation and texture / image rework.
+People who contributed to translating Road to Vostok into Hungarian. This includes both text translation and texture / image rework.
 
-_Translation last updated: 2026-05-30T03:31:07+09:00_
+_Translation last updated: 2026-06-09T20:20:37+09:00_
 
 ## Lead Translator(s)
 
 - Mute Jack
+- Csaba Papp
 
 ## Translator(s)
 
@@ -14,11 +15,12 @@ _(none yet)_
 
 ## Translation Contributors
 
-_(none yet)_
+- MuteJack_Tester
 
 ## Texture Reworkers
 
 - MuteJack
+- Csaba Papp
 
 ---
 
