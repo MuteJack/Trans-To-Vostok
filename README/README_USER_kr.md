@@ -1,16 +1,16 @@
 **지원 언어**
 
 - **English** (게임 기본언어)
-- **Korean / 한국어** (1차 번역/테스트 언어, 텍스처 적용)
-- **日本語** / Japaneese (프로토타입, 텍스처 미적용)
-- **Hungarian / Magyar** (튜토리얼 빌보드 텍스처 추가) : Papp Csaba 번역 제공
-- **French / Français** (프로토타입, 튜토리얼 빌보드 텍스처 추가)
+- ****한국어** / Korean**(1차 번역/테스트 언어, 텍스처 적용)
+- **日本語 / Japanese**  (튜토리얼 빌보드 텍스처 추가)
+- **Magyar / Hungarian** (튜토리얼 빌보드 텍스처 추가) : Papp Csaba 번역 제공
+- **Français / French** (프로토타입, 튜토리얼 빌보드 텍스처 추가)
 - **Português (Brasil)** (프로토타입, 텍스처 미적용)
-- **Deutsch** (프로토타입, 텍스처 미적용)
-- **Español (LatAm)** (프로토타입, 텍스처 미적용)
-- **简体中文** (프로토타입, 텍스처 미적용)
-- **繁體中文** (프로토타입, 텍스처 미적용)
-- **Русский / 러시아어** (프로토타입, 텍스처 미적용)
+- **Deutsch / German** (프로토타입, 텍스처 미적용)
+- **Español / Spanish (LatAm)** (프로토타입, 텍스처 미적용)
+- **简体中文 / Chineese (Simplified)** (프로토타입, 텍스처 미적용)
+- **繁體中文 / Chineese (Traditional)** (프로토타입, 텍스처 미적용)
+- **Русский / Russian** (프로토타입, 텍스처 미적용)
 
 > 한국어 외 대부분의 언어는 DeepL/Claude API로 기계번역된 초안 상태입니다.
 > 번역 참여는 [Crowdin](https://crowdin.com/project/trans-to-vostok)을 통해 진행되며, 커뮤니티 검수/개선 참여는 언제나 환영입니다.

@@ -1,16 +1,16 @@
 **Supported Languages**
 
-- **English** (game default)
-- **Korean / 한국어** (Primary translation/test language, texture reworked)
-- **日本語 / Japanese** (Prototyped, texture pending)
-- **Hungarian / Magyar** (Tutorial Billboard textures added) : Translation by Papp Csaba
-- **French / Français** (Prototyped, Tutorial Billboard textures added)
+- **English** (game's default)
+- **Korean / 한국어** (Primary Target, texture reworked)
+- **日本語 / Japanese** (Tutorial Billboard textures added)
+- **Magyar / Hungarian** (Tutorial Billboard textures added) : Translation by Papp Csaba
+- **Français / French** (Prototyped, Tutorial Billboard textures added)
 - **Português (Brasil)** (Prototyped, texture pending)
-- **Deutsch** (Prototyped, texture pending)
-- **Español (LatAm)** (Prototyped, texture pending)
-- **简体中文** (Prototyped, texture pending)
-- **繁體中文** (Prototyped, texture pending)
-- **Русский** (Prototyped, texture pending)
+- **Deutsch / German** (Prototyped, texture pending)
+- **Español / Spanish (LatAm)** (Prototyped, texture pending)
+- **简体中文 / Chineese (Simplified)** (Prototyped, texture pending)
+- **繁體中文 / Chineese (Traditional)** (Prototyped, texture pending)
+- **Русский / Russian** (Prototyped, texture pending)
 
 > Most non-Korean languages are machine-translated drafts via DeepL/Claude API.
 > Community refinement via [Crowdin](https://crowdin.com/project/trans-to-vostok) is always welcome.
@@ -51,12 +51,12 @@ It aims to deliver **complete, non-missing translation** across all translatable
    - Replaces game textures with localized versions at runtime (e.g. Tutorial Billboard).
    - Composites translated overlays onto original textures at runtime (e.g. Road Signs — avoids shipping modified or original game assets).
    - **Note**: Translated textures are hand-crafted (reconstructed) and may include hand-drawn work or copyright-free assets, so some icons may differ slightly from the originals (e.g. the Performance icon and Permadeath skull icon on the Tutorial Billboards).
-![9_Trans2Vostok_Texture_TutorialBillBoard2.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/9_Trans2Vostok_Texture_TutorialBillBoard2.png)
+     ![9_Trans2Vostok_Texture_TutorialBillBoard2.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/9_Trans2Vostok_Texture_TutorialBillBoard2.png)
 3. **UI Support**
    - Opens a language selection UI via the **`F9`** hotkey.
    - Switch languages at runtime without restarting the game.
    - Performance options (batch size / interval), Whitelist toggles, Mod-compatibility addon toggles, and the optional Substr Mode are all configured here.
-   ![2_Trans2Vostok_Lang_Sel.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/2_Trans2Vostok_Lang_Sel.png)
+     ![2_Trans2Vostok_Lang_Sel.png](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/2_Trans2Vostok_Lang_Sel.png)
 4. **Priority Whitelist** (added in v0.3.1)
    - Path-keyword presets that force per-frame priority translation for specific UI areas (HUD map label, inventory, trader UI, etc.).
    - When another mod periodically overwrites game text faster than the default batch cycle can keep up (e.g. flickering), enabling the relevant preset eliminates it.
@@ -104,7 +104,7 @@ It aims to deliver **complete, non-missing translation** across all translatable
 9. **Substr Mode** (not recommended for normal use)
 
    - Temporary fallback for when a game update breaks the structural matching of tiers 1–8.
-   (Treats all literal/static entries as substr entries)
+     (Treats all literal/static entries as substr entries)
    - Toggle on/off via checkbox in the F9 UI.
 
 ## 3. Installation
@@ -112,8 +112,8 @@ It aims to deliver **complete, non-missing translation** across all translatable
 > **NOTE:** This mod requires a mod loader such as MetroModLoader.
 
 1. Install **MetroModLoader** or **VostokMods** for Godot:
-[https://modworkshop.net/mod/55623](https://modworkshop.net/mod/55623)
-![1776508272457](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/1.Metro_MoadLoader.png)
+   [https://modworkshop.net/mod/55623](https://modworkshop.net/mod/55623)
+   ![1776508272457](https://raw.githubusercontent.com/MuteJack/Trans-to-Vostok/master/README/image/1.Metro_MoadLoader.png)
 2. Download `Trans To Vostok.zip` and copy it into the game's `mods/` folder.
    e.g. `C:\Program Files (x86)\Steam\steamapps\common\Road to Vostok\mods\`
    or: `D:\SteamLibrary\steamapps\common\Road to Vostok\mods\`
@@ -139,6 +139,7 @@ It aims to deliver **complete, non-missing translation** across all translatable
 ### 4.1. Text Translation / Proofreading (Crowdin)
 
 All translations are managed through [Crowdin](https://crowdin.com/project/trans-to-vostok).
+
 - Contribute translations: Sign up on [Crowdin](https://crowdin.com/project/trans-to-vostok) and start working directly in the browser (no setup required).
 - Contribution support via the ToolBox ([GitHub Repo](https://github.com/MuteJack/Trans-to-Vostok)) is still under development.
 - Credits are automatically added using the name configured on Crowdin.
@@ -152,6 +153,7 @@ A workflow guide will be published once the documentation is complete.
 ### 4.3. Texture Translation
 
 All textures are currently hand-crafted by the lead developer.
+
 - Texture text is managed via Crowdin through `Texture/{sheetname}.tsv`.
 - Due to the hand-crafted nature, text in textures may differ slightly from Crowdin (e.g. length constraints).
 - To contribute translated textures directly, workflow documentation is currently being prepared.
