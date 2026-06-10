@@ -25,7 +25,7 @@ Először nézzük meg a beállításokat.
 A beállításokat az [ESC] billentyű megnyomásával érheti el.
 
 A beállításokban módosíthatja a beviteli módot, a
-különféle rendszerváltókat és a teljesítménybeállításokat.
+különféle rendszerértékeket és a teljesítménybeállításokat.
 
 ?? = Teljesítménnyel kapcsolatos opciók"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Settings.png	97428	178dd2be533d477e3d81e7b729e86ae16e87f8e0cd32e2643a019812c3335afc	428	MuteJack	Csaba Papp	Performance Icon: Hand-crafted (Reconstruction)		
 Tutorial	Billboard	2. Interface	replace	"2. Interface
@@ -39,11 +39,10 @@ If you want more information about an item, icon
 or specific value, you can use Tooltip
 
 Try Tooltip by opening Interface
-and point the character health value"	"2. Felület
+and point the character health value"	"2. Kezelőfelület
 
-A felhasználói felület a fő felhasználói felület,
-amely olyan elemeket tartalmaz, mint a leltár,
-a felszerelés, az állapot és a statisztikák.
+A kezelőfelület a fő felhasználói felület, amely olyan elemeket tartalmaz,
+mint a táska, a felszerelés, az életjelekés a statisztikák
 
 A felületet a [TAB] billentyű megnyomásával érheti el.
 
@@ -51,8 +50,8 @@ Ha részletes információkat szeretne kapni az
 elemekről, ikonokról vagy adott értékekről,
 az eszköztippek segítségével ellenőrizheti azokat.
 
-Nyisd meg a felületet, és vidd az egérmutatót a
-karakter állapotértéke fölé az eszköztipp megjelenítéséhez."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430	MuteJack	Csaba Papp			
+Nyisd meg a Kezelőfelületet, és vidd az egérmutatót a
+karakter állapotértéke fölé az eszköztipp megjelenítéséhez"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430	MuteJack	Csaba Papp			
 Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -67,13 +66,13 @@ You can open, pick and interact with [MMB]
 When you have items available in Interface, you can 
 choose item actions with Context Menu [RMB]
 
-Open container and try Context Menu with items"	"3. Loot & Items
+Open container and try Context Menu with items"	"3. Zsákmány és tárgyak
 
-Minden tárolóhellyel rendelkező tárgy
-interaktív zsákmányládák.
+Minden olyan objektum, amely logikailag tárolóhellyel rendelkezik, 
+kölcsönhatásba léphető zsákmánytároló
 
 A zsákmány ezekben a ládákban keletkezik, és a tárgyak
-fizikailag szétszórva vannak a világban (a földön stb.).
+fizikailag szétszórva vannak a világban pl.: a földön stb..
 
 Nyomd meg az [egér görgő gombját] dobozok
 kinyitásához, tárgyak felvételéhez vagy interakcióhoz.
@@ -82,7 +81,7 @@ Amikor egy tárgy megjelenik a felületen, a [Jobb egérgomb]
 megnyomásával kiválaszthatja a tárgyhoz kapcsolódó műveleteket, 
 például a használatot, a megszerzést vagy a felszerelést.
 
-Nyisd ki a dobozt, és használd vagy szerezd meg a tárgyat."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432	MuteJack	Csaba Papp			
+Nyisd ki a dobozt, és használd vagy szerezd meg a tárgyat"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Items.png	109793	675413455a413a690133e1579f09997829d5fa6a9bdff93322a333f9bf4af28a	432	MuteJack	Csaba Papp			
 Tutorial	Billboard	4. Equipment	replace	"4. Equipment
 
 Equipment are dedicated items slots 
@@ -155,26 +154,26 @@ pistols and SMG's can utilize Secondary slot
 Open container, equip a weapon and draw it
 | [RMB] = Aim (ADS) | [F] = Firemode |
 | [MMB] = Canted aim | [X]=Inspect weapon |
-| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. Fegyvertárgy
+| [SCROLL] = Weapon position | [SCROLL] = Inspect rotation |"	"6. Fegyverek
 
 A fegyverek olyan felszerelések,
 amelyek elsődleges fegyver, másodlagos fegyver, 
-kés és gránát nyílásokat használnak.
+kés és gránát zsebekbe helyezhetőek.
 
 Amikor fegyvert szerelsz fel, az [1] [2] [3] [4] [5] billentyűkkel
-tarthatod vagy veheted a kezedbe a fegyvert a nyílásból.
+tarthatod vagy veheted a kezedbe a fegyvert a zsebből.
 
 Minden lőfegyver használhatja az elsődleges fegyvernyílást,
-de csak a pisztolyok és géppisztolyok a másodlagos fegyvernyílást.
+de a pisztolyok és géppisztolyok csak a másodlagos zsebet.
 
-Nyisd ki a dobozt, szereld fel a fegyvert, majd vedd fel.
+Nyisd ki a tárolót, szereld fel a fegyvert, majd vedd kézbe.
 
-[Jobb kattintás] = Célzás (ADS)
+[Jobb kattintás] = Célzás ADS
 [Görgőgomb] = Célzáshoz
 [Görgetés] = Fegyver helye
 
 [F] = Tüzelési mód váltása (egylövéses automata)
-[X] = Fegyvervizsga
+[X] = Fegyver megtekintése
 [X] + [Görgetés] = Fegyverforgatás"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Weapons.png	120113	501bb46461dbe98d0da71d9cb65f92a724e9720388ce255d36a4a1e84b8bb2ed	438	MuteJack	Csaba Papp			
 Tutorial	Billboard	7. Ammo & Magazines	replace	"7. Ammo & Magazines
 
@@ -192,27 +191,26 @@ or with [R] which fetches a loaded magazine for you
 Open container, use Tooltip to identify the ammo
 and magazine compatibility, Load -> Attach -> Fire
 
-[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. Lőszerek és folyóiratok
+[LMB] = Fire [V] = ammo check [CTRL] -> [LMB] = Bullet insert (Bolts & Shotguns)"	"7. Lőszerek és tárak
 
-A fegyverrendszerek a fegyvertől függően különböző
+A fegyverek a fegyvertől függően különböző
 kaliberű lőszert és tárakat igényelnek.
-(pl. a PM5 géppisztoly PM5 tárakat és 9x19 kaliberű lőszert használ.)
+pl. a PM5 géppisztoly PM5 tárakat és 9x19 kaliberű lőszert használ.
 
-Kompatibilis lőszert tölthetsz a tárba és újratöltheted
-a fegyvert az interfészen keresztül.
+Kompatibilis lőszert tehetsz a tárba és újratöltheted
+a fegyvert a kezelőfelületen keresztül.
 
 A tárra vagy a fegyverre [Jobb gombbal]
-kattintva eltávolíthatod a lőszert a tárból vagy a kamrából.
+kattintva eltávolíthatod a lőszert a tárból vagy a csőből.
 
 A tár manuálisan is betölthető, vagy az [R] billentyű
-megnyomásával töltheti (újratöltheti) a tárat.
+megnyomásával töltheti/újratöltheti a tárat.
 
-Nyiss ki egy dobozt vagy felszerelést, ellenőrizd a lőszer és
-a tárak kompatibilitását a tooltip segítségével, majd töltsd meg
-és szereld fel → tüzelj.
+Nyiss ki egy tárolót vagy felszerelést, ellenőrizd a lőszer és
+a tárak kompatibilitását a tooltip segítségével, majd töltsd meg, helyezd be → tüzelj.
 
-[Bal klikk] = Tüzelés,         [V] = Lőszer hiányának ellenőrzése, 
-[CTRL] → [LMB] = Lőszer betöltése (zárás és sörétes puskával)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440	MuteJack	Csaba Papp			
+[Bal klikk] = Tüzelés, [V] = Lőszer ellenőrzése, 
+[CTRL] → [LMB] = Lőszer betöltése (zárás és sörétes puskánál)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440	MuteJack	Csaba Papp			
 Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
@@ -232,16 +230,16 @@ identify attachment compatibility and try customizing
 Testreszabhatod a fegyvereket hangtompítók,
 távcsövek, lézerek és egyebek hozzáadásával.
 
-A felületen keresztül hozzáadhatsz vagy kicserélhetsz kiegészítőket,
+A kezelőfelületen keresztül hozzáadhatsz vagy kicserélhetsz kiegészítőket,
 például tárakat, és eltávolíthatod őket a fegyverre
 [Jobb gombbal] kattintva.
 
-A kompatibilitást a doboz kinyitásával és az eszköztipp megtekintésével,
+A kompatibilitást a Tároló kinyitásával és az eszköztipp megtekintésével,
 vagy a tartozékok fegyverre húzásával ellenőrizheted.
 
-Nyisd ki a dobozt, vedd ki a tartozékokat, és szabd testre a fegyveredet.
+Nyisd ki a tárokót, vedd ki a tartozékokat, és szabd testre a fegyveredet.
 
-[CTRL] + [Görgés] = Scope sin pozíciójának módosítása
+[CTRL] + [Görgés] = távcsősin pozíciójának módosítása
 [Görgés] = LPVO nagyítási szint módosítása
 [ALT] = Másodlagos látómező engedélyezése/letiltása
 [T] = Lézer aktiválása/deaktiválása"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Attachments.png	111354	ab59b8fe1bebc497a8108a0558837c9de63e625fb2613d45e62ee987a7d9f01f	442	MuteJack	Csaba Papp			
@@ -261,18 +259,18 @@ and low throw with [RMB]
 
 Second press executes and opposite button resets the throw"	"9. Kés és gránát
 
-Ha felszereled a kést, akkor [3] kulccsal foghatod a kezedben.
+Ha felszereled a kést, akkor [3] gombbal foghatod a kezedben.
 
 A [Bal kattintás] gombbal lesújtasz, a
 [Jobb kattintás] gombbal pedig döfő támadást hajthatsz végre.
 
-Két gránátnyílás található rajta, 
+Két gránátzseb található, 
 melyeket a [4] és [5] billentyűkkel lehet kézben tartani.
 
 A [Bal kattintás] gombbal magasra,
 a [Jobb kattintás] gombbal pedig alacsonyra dobhatsz.
 
-Nyomd meg kétszer a gránát dobásához, majd az ellenkező gombot a dobási készenlét visszaállításához."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444	MuteJack	Csaba Papp			
+Nyomd meg kétszer a gránát dobásához, majd az ellenkező gombot a dobási készenlét visszaállításához"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444	MuteJack	Csaba Papp			
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -290,7 +288,7 @@ try attaching armor plate to the rig like attachments
 |NIJ IIA = Level2| 2. Each hit reduces armor condition, armor breaks at 0%|
 |NIJ III = Level 3| 3. Higher lever penetration breaks the armor immediately|
 |NIJ III+ = Level 4| 4. Helmets prevent critical medical condition Headshot|
-|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. Páncéltárgy
+|NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. Páncél
 
 A páncélrendszer NIJ osztályú (II–IV)
 sisakokon, ballisztikus lemezeken és
@@ -300,12 +298,12 @@ A páncélzat védelmi szintje közvetlenül összefügg
 a lőszer/fegyver átütőerejével, és eszköztippek
 segítségével ellenőrizhető.
 
-Miután kinyitottad a dobozt és felszerelted a sisakot és
-a plate carriert, próbáld meg rögzíteni a ballisztikus lemezeket
+Miután kinyitottad a tárolót és felszerelted a sisakot és
+a mellényt, próbáld meg rögzíteni a ballisztikus lemezeket
 a mellényhez, akárcsak a fegyver tartozékait.
 
 |NIJ II = 1. szint | 3–4 lövést bír ki, ha a védelmi szint és az átütőerő azonos.|
-|NIJ IIA = 2. szint | A védelem csökken találat esetén, a páncél megszakad, amikor eléri a 0%-ot.|
+|NIJ IIA = 2. szint | A védelem csökken találat esetén, a páncél átszakad, amikor eléri a 0%-ot.|
 |NIJ III = 3. szint | Ha az átütőerő nagyobb, a páncél azonnal megsemmisül.|
 |NIJ III+ = 4. szint | A sisak megvédi a halálos sérüléseket (fejlövéseket).|
 |NIJ IV = 5. szint | A golyóálló lemezek megakadályozzák a halálos sérüléseket (szakadások).|"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Armor.png	142342	34e1fed9502c316d573a33416794aa3b9ff8b50fa1ef551fa9d3b5aa70cd7e4b	446	MuteJack	Csaba Papp			
@@ -322,12 +320,12 @@ Completing tasks will lower Trader Tax and provide
 you reward items and keys for unlocking new Shelters
 
 Interact with trader Generalist and try 
-trading something and completing a task"	"11. Kereskedő (kereskedelem)
+trading something and completing a task"	"11. Kereskedő
 
-A kereskedő egy játékbeli karakter, aki tárgyakat cserélhet
-vagy történettel kapcsolatos küldetéseket hajthat végre.
+A kereskedő egy játékbeli karakter, akivel tárgyakat cserélhet
+vagy történettel kapcsolatos küldetéseket teljesíthet
 
-A kereskedési rendszer a barteren alapul, és a cél a lehető
+A kereskedési rendszer a cserekereskedelemen alapul, és a cél a lehető
 legkiegyensúlyozottabb tranzakciók végrehajtása.
 
 A tranzakciós árat a kért ár és az adók (kereskedő), valamint kínálati ár (játékos) alapján számítják ki.
@@ -335,8 +333,8 @@ A tranzakciós árat a kért ár és az adók (kereskedő), valamint kínálati 
 Ha teljesíted a küldetést, csökken a kereskedői adó, és
 jutalmat, valamint egy kulcsot szerezhetsz egy új rejtekhely megnyitásához.
 
-Lépj kapcsolatba a ""Gazdaságbolt"" kereskedővel [kattints
-a kerékre], hogy tárgyakat cserélj és küldetéseket teljesíts."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448	MuteJack	Csaba Papp			
+Lépj kapcsolatba a kereskedővel, és próbáld ki a kereskedést, 
+valamint teljesíts egy feladatot"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448	MuteJack	Csaba Papp			
 Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
@@ -350,12 +348,12 @@ Each AI faction has different abilities and
 faction bosses with rare spawn changes
 
 Map instances can spawn maximum of 10 AI's
-once you have eliminated all, you will have peace"	"12. AI (erő)
+once you have eliminated all, you will have peace"	"12. AI
 
 A mesterséges intelligencia három ellenséges erőre oszlik,
 amelyek a játékvilág különböző régióit foglalják el.
 
-|05. zóna|Határzóna|Vostok
+|05-ös körzet|Határzóna|Vostok
 |Bandita|őr|Mesterséges|
 |Egyszerű AI|Közepes AI|Intelligencia AI|
 
@@ -365,7 +363,7 @@ frakciófőnökök ritkán jelennek meg.
 Legfeljebb 10 MI jelenik meg térképenként, és a
 béke visszatér, amikor az összes MI megsemmisül.
 
-A mesterséges intelligencia újraéled, amikor pályát váltasz."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450	MuteJack	Csaba Papp			
+A mesterséges intelligencia újraéled, amikor pályát váltasz"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450	MuteJack	Csaba Papp			
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -379,24 +377,24 @@ You can travel through these zones and maps
 through Transitions which have certain travel costs 
 related to character vitals and World Simulation
 
-Transitions are marked with Transition Flags"	"13. Térképek és átmenetek
+Transitions are marked with Transition Flags"	"13. Térképek és átkelés
 
 A mesterséges intelligenciához hasonlóan a játékvilág
 három zónára oszlik, különböző térképekkel
 és zsákmánykészletekkel.
 
-|Kiindulópont|Felezőpont|Permadeath terület|
-|05. zóna|Határzóna|Vostok|
+|Kiindulópont|Elválasztó sáv|Permadeath terület|
+|05-ös körzet|Határzóna|Vostok|
 |alacsony szintű zsákmány|Közepes szintű zsákmány|Prémium zsákmány|
 
 A zónák és térképek közötti váltás mozgási költségekkel jár, 
 amelyek a karakter vitalitásától és a világ szimulációjától függenek. 
-(A karakter kitartása és hidratáltsága, játékbeli időáramlás)
+(A karakter kitartása és hidratáltsága, játékbeli idő múlása)
 
 A térképen való mozgást lehetővé tevő útvonalakat
 átmeneti zászlók jelzik.
 
-* Átmeneti zászló: Egy zászló alakú objektum, amely a térkép külső szélén található."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452	MuteJack	Csaba Papp			
+* Átmeneti zászló: Egy zászló alakú objektum, amely a térkép külső szélén található"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452	MuteJack	Csaba Papp			
 Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -443,19 +441,19 @@ All Shelters can be customized with
 Item Placement and Decor Mode
 
 You can use Item Placement with [G] and move 
-furniture by activating Decor Mode with [F1]"	"15. Rejtekhely
+furniture by activating Decor Mode with [F1]"	"15. Menedék
 
-A rejtekhely egy biztonságos hely, ahol a szimulációs
+A menedék egy biztonságos hely, ahol a szimulációs
 időt, a karakter fejlődését és a zsákmányt tárolhatod.
 
-Néhány rejtekhely küldetések során megszerzett kulcsokkal nyitható.
+Néhány menedék küldetések során megszerzett kulcsokkal nyitható.
 
-Minden rejtekhely díszíthető tárgyak elhelyezésével és díszítési móddal.
+Minden menedék berendezhető tárgyak elhelyezésével és díszítési móddal.
 
 A [G] billentyű megnyomásával helyezhet el tárgyakat vagy
 bútorokat, a dekorációs mód aktiválásához pedig az [F] billentyű megnyomásával mozgathatja a bútorokat.
 
-A bútorkatalógust a [TAB] billentyűvel nyithatja meg Dekor módban."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456	MuteJack	Csaba Papp			
+A bútorkatalógust a [Tab] billentyűvel nyithatja meg Dekor módban"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456	MuteJack	Csaba Papp			
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 

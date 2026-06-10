@@ -183,7 +183,7 @@ Items	Clothing/Hat_Sauna	type	0	ignore	Items/Clothing/Hat_Sauna/Hat_Sauna	tres		
 Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					name		Hoodie (Border Zone)	1446	フーディー（ボーダーゾーン）		
 Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					inventory		Hoodie BZ.	1448	フーディー BZ.		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					rotated		Hoodie BZ.				
-Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	フーディー・B.		
+Items	Clothing/Hoodie_Border_Zone	name	0	substr	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					equipment		Hoodie B.	1450	フーディー・B。		
 Items	Clothing/Hoodie_Border_Zone	name	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					display		Hoodie B.				
 Items	Clothing/Hoodie_Border_Zone	type	0	ignore	Items/Clothing/Hoodie_Border_Zone/Hoodie_Border_Zone	tres					type		Clothing				
 Items	Clothing/Hoodie_Gray	name	0	substr	Items/Clothing/Hoodie_Gray/Hoodie_Gray	tres					name		Hoodie (Gray)	1452	フーディ（グレー）		
@@ -213,7 +213,7 @@ Items	Clothing/Jacket_Winter_Blue	type	0	ignore	Items/Clothing/Jacket_Winter_Blu
 Items	Clothing/Jacket_Winter_Red	name	0	substr	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					name		Winter Jacket (Red)	1468	ウィンタージャケット（赤）		
 Items	Clothing/Jacket_Winter_Red	name	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					inventory		Winter Jacket				
 Items	Clothing/Jacket_Winter_Red	name	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					rotated		Winter Jacket				
-Items	Clothing/Jacket_Winter_Red	name	0	substr	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					equipment		Winter J.	1470	ウィンター・J.		
+Items	Clothing/Jacket_Winter_Red	name	0	substr	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					equipment		Winter J.	1470	ウィンター J。		
 Items	Clothing/Jacket_Winter_Red	name	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					display		Winter J.				
 Items	Clothing/Jacket_Winter_Red	type	0	ignore	Items/Clothing/Jacket_Winter_Red/Jacket_Winter_Red	tres					type		Clothing				
 Items	Clothing/Jeans_Black	name	0	substr	Items/Clothing/Jeans_Black/Jeans_Black	tres					name		Jeans (Black)	1472	ジーンズ（ブラック）		
@@ -364,7 +364,7 @@ Items	Consumables/Coffee_Brewed	name	0	substr	Items/Consumables/Coffee_Brewed/Co
 Items	Consumables/Coffee_Brewed	name	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					inventory		Coffee (Brewed)				
 Items	Consumables/Coffee_Brewed	name	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					rotated		Coffee (Brewed)				
 Items	Consumables/Coffee_Brewed	name	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					equipment		Coffee (Brewed)				
-Items	Consumables/Coffee_Brewed	name	0	substr	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					display		C. Brewed	1564	C. 醸造		
+Items	Consumables/Coffee_Brewed	name	0	substr	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					display		C. Brewed	1564	C. ドリップ		
 Items	Consumables/Coffee_Brewed	action	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					phrase		Drink				
 Items	Consumables/Coffee_Brewed	type	0	ignore	Items/Consumables/Coffee_Brewed/Coffee_Brewed	tres					type		Consumables				
 Items	Consumables/Cooked_Fish_Soup	name	0	substr	Items/Consumables/Cooked_Fish_Soup/Cooked_Fish_Soup	tres					name		Fish Soup (Cooked)	1566	魚のスープ（調理済み）		
@@ -498,7 +498,7 @@ Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lem
 Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					inventory		Soda	1636	ソーダ		
 Items	Consumables/Soda_Lemon	name	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					rotated		Soda				
 Items	Consumables/Soda_Lemon	name	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					equipment		Soda				
-Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					display		Soda L.	1638	ソーダ・L.		
+Items	Consumables/Soda_Lemon	name	0	substr	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					display		Soda L.	1638	ソーダ・L。		
 Items	Consumables/Soda_Lemon	action	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					phrase		Drink				
 Items	Consumables/Soda_Lemon	type	0	ignore	Items/Consumables/Soda_Lemon/Soda_Lemon	tres					type		Consumables				
 Items	Consumables/Sugar	name	0	substr	Items/Consumables/Sugar/Sugar	tres					name		Sugar	1640	砂糖		
@@ -609,13 +609,13 @@ Items	Electronics/Coffeemaster	name	0	substr	Items/Electronics/Coffeemaster/Coff
 Items	Electronics/Coffeemaster	name	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					inventory		Coffeemaster				
 Items	Electronics/Coffeemaster	name	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					rotated		Coffeemaster				
 Items	Electronics/Coffeemaster	name	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					equipment		Coffeemaster				
-Items	Electronics/Coffeemaster	name	0	substr	Items/Electronics/Coffeemaster/Coffeemaster	tres					display		C. Master	1714	C. 修士		
+Items	Electronics/Coffeemaster	name	0	substr	Items/Electronics/Coffeemaster/Coffeemaster	tres					display		C. Master	1714	C. マスター		
 Items	Electronics/Coffeemaster	type	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					type		Electronics				
 Items	Electronics/Cooking_Station	name	0	substr	Items/Electronics/Cooking_Station/Cooking_Station	tres					name		Cooking Station	1716	調理ステーション		
 Items	Electronics/Cooking_Station	name	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					inventory		Cooking Station				
 Items	Electronics/Cooking_Station	name	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					rotated		Cooking Station				
 Items	Electronics/Cooking_Station	name	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					equipment		Cooking Station				
-Items	Electronics/Cooking_Station	name	0	substr	Items/Electronics/Cooking_Station/Cooking_Station	tres					display		C. Station	1718	C. 駅		
+Items	Electronics/Cooking_Station	name	0	substr	Items/Electronics/Cooking_Station/Cooking_Station	tres					display		C. Station	1718	C. ステーション		
 Items	Electronics/Cooking_Station	type	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					type		Electronics				
 Items	Electronics/Hotplate	name	0	substr	Items/Electronics/Hotplate/Hotplate	tres					name		Hotplate	1720	ホットプレート		
 Items	Electronics/Hotplate	name	0	ignore	Items/Electronics/Hotplate/Hotplate	tres					inventory		Hotplate				
@@ -649,7 +649,7 @@ Items	Electronics/PV7	name	1	ignore	Items/Electronics/PV7/PV7	tres					display		
 Items	Electronics/PV7	type	0	ignore	Items/Electronics/PV7/PV7	tres					type		Electronics				
 Items	Fishing	type	0	substr									Fish	1728	魚		
 Items	Fishing	type	0	substr									Fishing	1730	釣り		
-Items	Fishing/Bream	name	0	substr	Items/Fishing/Bream/Bream	tres					name		Bream	1732	鯛		
+Items	Fishing/Bream	name	0	substr	Items/Fishing/Bream/Bream	tres					name		Bream	1732	タイ		
 Items	Fishing/Bream	name	0	ignore	Items/Fishing/Bream/Bream	tres					inventory		Bream				
 Items	Fishing/Bream	name	0	ignore	Items/Fishing/Bream/Bream	tres					rotated		Bream				
 Items	Fishing/Bream	name	0	ignore	Items/Fishing/Bream/Bream	tres					equipment		Bream				
@@ -676,7 +676,7 @@ Items	Fishing/Pike	name	0	ignore	Items/Fishing/Pike/Pike	tres					equipment		Pik
 Items	Fishing/Pike	name	0	ignore	Items/Fishing/Pike/Pike	tres					display		Pike				
 Items	Fishing/Pike	name	0	ignore	Items/Fishing/Pike/Pike	tres					phrase		Eat Raw				
 Items	Fishing/Pike	type	0	ignore	Items/Fishing/Pike/Pike	tres					type		Fish				
-Items	Fishing/Roach	name	0	substr	Items/Fishing/Roach/Roach	tres					name		Roach	1742	ゴキブリ		
+Items	Fishing/Roach	name	0	substr	Items/Fishing/Roach/Roach	tres					name		Roach	1742	ローチ		
 Items	Fishing/Roach	name	0	ignore	Items/Fishing/Roach/Roach	tres					inventory		Roach				
 Items	Fishing/Roach	name	0	ignore	Items/Fishing/Roach/Roach	tres					rotated		Roach				
 Items	Fishing/Roach	name	0	ignore	Items/Fishing/Roach/Roach	tres					equipment		Roach				
@@ -748,13 +748,13 @@ Items	Key/Key_Bunker	name	0	ignore	Items/Keys/Key_Bunker	tres					equipment		Bun
 Items	Key/Key_Bunker	name	0	ignore	Items/Keys/Key_Bunker	tres					display		Bunker K.				
 Items	Key/Key_Bunker	type	0	ignore	Items/Keys/Key_Bunker	tres					type		Key				
 Items	Key/Key_Cellar	name	0	substr	Items/Keys/Key_Cellar	tres					name		Cellar Key	1772	セラー・キー		
-Items	Key/Key_Cellar	name	0	substr	Items/Keys/Key_Cellar	tres					inventory		Cellar K.	1774	セラーK.		
+Items	Key/Key_Cellar	name	0	substr	Items/Keys/Key_Cellar	tres					inventory		Cellar K.	1774	セラーK。		
 Items	Key/Key_Cellar	name	0	ignore	Items/Keys/Key_Cellar	tres					rotated		Cellar K.				
 Items	Key/Key_Cellar	name	0	ignore	Items/Keys/Key_Cellar	tres					equipment		Cellar K.				
 Items	Key/Key_Cellar	name	0	ignore	Items/Keys/Key_Cellar	tres					display		Cellar K.				
 Items	Key/Key_Cellar	type	0	ignore	Items/Keys/Key_Cellar	tres					type		Key				
 Items	Key/Key_Classroom	name	0	substr	Items/Keys/Key_Classroom	tres					name		Classroom Key	1776	教室の鍵		
-Items	Key/Key_Classroom	name	0	substr	Items/Keys/Key_Classroom	tres					inventory		Class. K.	1778	クラスK		
+Items	Key/Key_Classroom	name	0	substr	Items/Keys/Key_Classroom	tres					inventory		Class. K.	1778	クラスK。		
 Items	Key/Key_Classroom	name	0	ignore	Items/Keys/Key_Classroom	tres					rotated		Class. K.				
 Items	Key/Key_Classroom	name	0	ignore	Items/Keys/Key_Classroom	tres					equipment		Class. K.				
 Items	Key/Key_Classroom	name	0	ignore	Items/Keys/Key_Classroom	tres					display		Class. K.				
@@ -854,7 +854,7 @@ Items	Medical/Bandage_Improvised	name	0	ignore	Items/Medical/Bandage_Improvised/
 Items	Medical/Bandage_Improvised	action	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					phrase		Heal				
 Items	Medical/Bandage_Improvised	type	0	ignore	Items/Medical/Bandage_Improvised/Bandage_Improvised	tres					type		Medical				
 Items	Medical/Cold_Medicine	name	0	substr	Items/Medical/Cold_Medicine/Cold_Medicine	tres					name		Cold Medicine	1832	風邪薬		
-Items	Medical/Cold_Medicine	name	0	substr	Items/Medical/Cold_Medicine/Cold_Medicine	tres					inventory		C. Med.	1834	医学博士		
+Items	Medical/Cold_Medicine	name	0	substr	Items/Medical/Cold_Medicine/Cold_Medicine	tres					inventory		C. Med.	1834	C.薬。		
 Items	Medical/Cold_Medicine	name	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					rotated		C. Med.				
 Items	Medical/Cold_Medicine	name	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					equipment		C. Med.				
 Items	Medical/Cold_Medicine	name	0	ignore	Items/Medical/Cold_Medicine/Cold_Medicine	tres					display		C. Med.				
@@ -1004,7 +1004,7 @@ Items	Misc/Jerry_Can	name	0	substr	Items/Misc/Jerry_Can/Jerry_Can	tres					name	
 Items	Misc/Jerry_Can	name	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					inventory		Jerry Can				
 Items	Misc/Jerry_Can	name	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					rotated		Jerry Can				
 Items	Misc/Jerry_Can	name	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					equipment		Jerry Can				
-Items	Misc/Jerry_Can	name	0	substr	Items/Misc/Jerry_Can/Jerry_Can	tres					display		Jerry C.	1900	ジェリー・C.		
+Items	Misc/Jerry_Can	name	0	substr	Items/Misc/Jerry_Can/Jerry_Can	tres					display		Jerry C.	1900	ジェリー・C。		
 Items	Misc/Jerry_Can	type	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					type		Misc				
 Items	Misc/Lumber	name	0	substr	Items/Misc/Lumber/Lumber	tres					name		Lumber	1902	木材		
 Items	Misc/Lumber	name	0	ignore	Items/Misc/Lumber/Lumber	tres					inventory		Lumber				
@@ -1025,7 +1025,7 @@ Items	Misc/Map_Tactical	name	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres	
 Items	Misc/Map_Tactical	name	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					display		Map (Tactical)				
 Items	Misc/Map_Tactical	type	0	ignore	Items/Misc/Map_Tactical/Map_Tactical	tres					type		Misc				
 Items	Misc/Matches	name	0	substr	Items/Misc/Matches/Matches	tres					name		Matches	1910	試合		
-Items	Misc/Matches	name	0	substr	Items/Misc/Matches/Matches	tres					inventory		Mat.	1912	マテ。		
+Items	Misc/Matches	name	0	substr	Items/Misc/Matches/Matches	tres					inventory		Mat.	1912	マッ。		
 Items	Misc/Matches	name	0	ignore	Items/Misc/Matches/Matches	tres					rotated		Mat.				
 Items	Misc/Matches	name	0	ignore	Items/Misc/Matches/Matches	tres					equipment		Mat.				
 Items	Misc/Matches	name	0	ignore	Items/Misc/Matches/Matches	tres					display		Mat.				
@@ -1042,7 +1042,7 @@ Items	Misc/Mess_Kit	name	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					rotated	
 Items	Misc/Mess_Kit	name	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					equipment		Mess Kit				
 Items	Misc/Mess_Kit	name	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					display		Mess Kit				
 Items	Misc/Mess_Kit	type	0	ignore	Items/Misc/Mess_Kit/Mess_Kit	tres					type		Misc				
-Items	Misc/Nails	name	0	substr	Items/Misc/Nails/Nails	tres					name		Nails	1918	ネイル		
+Items	Misc/Nails	name	0	substr	Items/Misc/Nails/Nails	tres					name		Nails	1918	釘		
 Items	Misc/Nails	name	0	ignore	Items/Misc/Nails/Nails	tres					inventory		Nails				
 Items	Misc/Nails	name	0	ignore	Items/Misc/Nails/Nails	tres					rotated		Nails				
 Items	Misc/Nails	name	0	ignore	Items/Misc/Nails/Nails	tres					equipment		Nails				
@@ -1060,7 +1060,7 @@ Items	Misc/Pillow	name	0	ignore	Items/Misc/Pillow/Pillow	tres					rotated		Pillo
 Items	Misc/Pillow	name	0	ignore	Items/Misc/Pillow/Pillow	tres					equipment		Pillow				
 Items	Misc/Pillow	name	0	ignore	Items/Misc/Pillow/Pillow	tres					display		Pillow				
 Items	Misc/Pillow	type	0	ignore	Items/Misc/Pillow/Pillow	tres					type		Misc				
-Items	Misc/Rags	name	0	substr	Items/Misc/Rags/Rags	tres					name		Rags	1926	ぼろ		
+Items	Misc/Rags	name	0	substr	Items/Misc/Rags/Rags	tres					name		Rags	1926	布切れ		
 Items	Misc/Rags	name	0	ignore	Items/Misc/Rags/Rags	tres					inventory		Rags				
 Items	Misc/Rags	name	0	ignore	Items/Misc/Rags/Rags	tres					rotated		Rags				
 Items	Misc/Rags	name	0	ignore	Items/Misc/Rags/Rags	tres					equipment		Rags				
@@ -1083,7 +1083,7 @@ Items	Misc/Tackle_Box	name	0	substr	Items/Misc/Tackle_Box/Tackle_Box	tres					na
 Items	Misc/Tackle_Box	name	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					inventory		Tackle Box				
 Items	Misc/Tackle_Box	name	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					rotated		Tackle Box				
 Items	Misc/Tackle_Box	name	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					equipment		Tackle Box				
-Items	Misc/Tackle_Box	name	0	substr	Items/Misc/Tackle_Box/Tackle_Box	tres					display		Tackle B.	1938	タックルB.		
+Items	Misc/Tackle_Box	name	0	substr	Items/Misc/Tackle_Box/Tackle_Box	tres					display		Tackle B.	1938	タックルB。		
 Items	Misc/Tackle_Box	type	0	ignore	Items/Misc/Tackle_Box/Tackle_Box	tres					type		Misc				
 Items	Misc/Toilet_Paper	name	0	substr	Items/Misc/Toilet_Paper/Toilet_Paper	tres					name		Toilet Paper	1940	トイレットペーパー		
 Items	Misc/Toilet_Paper	name	0	substr	Items/Misc/Toilet_Paper/Toilet_Paper	tres					inventory		T. Paper	1942	T. ペーパー		
@@ -1097,7 +1097,7 @@ Items	Misc/Toolbox	name	0	ignore	Items/Misc/Toolbox/Toolbox	tres					rotated		To
 Items	Misc/Toolbox	name	0	ignore	Items/Misc/Toolbox/Toolbox	tres					equipment		Toolbox				
 Items	Misc/Toolbox	name	0	ignore	Items/Misc/Toolbox/Toolbox	tres					display		Toolbox				
 Items	Misc/Toolbox	type	0	ignore	Items/Misc/Toolbox/Toolbox	tres					type		Misc				
-Items	Misc/Water_Lock	name	0	substr	Items/Misc/Water_Lock/Water_Lock	tres					name		Water Lock	1946	水封		
+Items	Misc/Water_Lock	name	0	substr	Items/Misc/Water_Lock/Water_Lock	tres					name		Water Lock	1946	ウォーターロック		
 Items	Misc/Water_Lock	name	0	substr	Items/Misc/Water_Lock/Water_Lock	tres					inventory		W. Lock	1948	W. ロック		
 Items	Misc/Water_Lock	name	0	ignore	Items/Misc/Water_Lock/Water_Lock	tres					rotated		W. Lock				
 Items	Misc/Water_Lock	name	0	ignore	Items/Misc/Water_Lock/Water_Lock	tres					equipment		W. Lock				
@@ -1141,7 +1141,7 @@ Items	Rigs/Vest_Fishing	name	0	ignore	Items/Rigs/Vest_Fishing/Vest_Fishing	tres	
 Items	Rigs/Vest_Fishing	name	0	substr	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					display		F. Vest	1962	F. ベスト		
 Items	Rigs/Vest_Fishing	type	0	ignore	Items/Rigs/Vest_Fishing/Vest_Fishing	tres					type		Rig				
 Items	Weapons	type	0	substr									Weapon	1964	武器		
-Items	Weapons	type	0	substr									Mag.	1966	修士（Mag.）		
+Items	Weapons	type	0	substr									Mag.	1966	弾倉。		
 Items	Weapons	type	0	ignore									Attachment				
 Items	Weapons/AK-12	name	1	substr	Items/Weapons/AK-12/AK-12	:			name				KA-12				
 Items	Weapons/AK-12	name	1	ignore	Items/Weapons/AK-12/AK-12	tres					inventory		KA-12				
@@ -1173,7 +1173,7 @@ Items	Weapons/AKS-74U	name	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					rotat
 Items	Weapons/AKS-74U	name	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					equipment		KAS-74U				
 Items	Weapons/AKS-74U	name	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					display		KAS-74U				
 Items	Weapons/AKS-74U	type	1	ignore	Items/Weapons/AKS-74U/AKS-74U	tres					type		Weapon				
-Items	Weapons/AKS-74U_Magazine	name	0	substr	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					name		KAS-74U Magazine	1972	KAS-74U 弾倉		
+Items	Weapons/AKS-74U_Magazine	name	0	substr	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					name		KAS-74U Magazine	1972	KAS-74U マガジン		
 Items	Weapons/AKS-74U_Magazine	name	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					inventory		Mag.				
 Items	Weapons/AKS-74U_Magazine	name	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					rotated		Mag.				
 Items	Weapons/AKS-74U_Magazine	name	0	ignore	Items/Weapons/AKS-74U/AKS-74U_Magazine	tres					equipment		Mag.				
@@ -1197,7 +1197,7 @@ Items	Weapons/Glock_17	name	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					ro
 Items	Weapons/Glock_17	name	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					equipment		G7				
 Items	Weapons/Glock_17	name	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					display		G7				
 Items	Weapons/Glock_17	type	1	ignore	Items/Weapons/Glock_17/Glock_17	tres					type		Weapon				
-Items	Weapons/Glock_17_Magazine	name	0	substr	Items/Weapons/Glock_17/Glock_17_Magazine	tres					name		G7 Magazine	1976	G7マガジン		
+Items	Weapons/Glock_17_Magazine	name	0	substr	Items/Weapons/Glock_17/Glock_17_Magazine	tres					name		G7 Magazine	1976	Glockマガジン		
 Items	Weapons/Glock_17_Magazine	name	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					inventory		Mag.				
 Items	Weapons/Glock_17_Magazine	name	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					rotated		Mag.				
 Items	Weapons/Glock_17_Magazine	name	0	ignore	Items/Weapons/Glock_17/Glock_17_Magazine	tres					equipment		Mag.				
@@ -1215,7 +1215,7 @@ Items	Weapons/KAR-21_223	name	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					
 Items	Weapons/KAR-21_223	name	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					equipment		KAR-21 (.223)				
 Items	Weapons/KAR-21_223	name	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					display		KAR-21				
 Items	Weapons/KAR-21_223	type	1	ignore	Items/Weapons/KAR-21/KAR-21_223	tres					type		Weapon				
-Items	Weapons/KAR-21_223_Magazine	name	0	substr	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					name		KAR-21 Magazine (.223)	1978	KAR-21 弾倉（.223）		
+Items	Weapons/KAR-21_223_Magazine	name	0	substr	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					name		KAR-21 Magazine (.223)	1978	KAR-21 マガジン（.223）		
 Items	Weapons/KAR-21_223_Magazine	name	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					inventory		Mag.				
 Items	Weapons/KAR-21_223_Magazine	name	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					rotated		Mag.				
 Items	Weapons/KAR-21_223_Magazine	name	0	ignore	Items/Weapons/KAR-21/KAR-21_223_Magazine	tres					equipment		Mag.				
@@ -1383,7 +1383,7 @@ Items	Weapons/SVD	name	1	ignore	Items/Weapons/SVD/SVD	tres					rotated		VSD
 Items	Weapons/SVD	name	1	ignore	Items/Weapons/SVD/SVD	tres					equipment		VSD				
 Items	Weapons/SVD	name	1	ignore	Items/Weapons/SVD/SVD	tres					display		VSD				
 Items	Weapons/SVD	type	1	ignore	Items/Weapons/SVD/SVD	tres					type		Weapon				
-Items	Weapons/SVD_Magazine	name	0	substr	Items/Weapons/SVD/SVD_Magazine	tres					name		VSD Magazine	2010	VSDマガジン		
+Items	Weapons/SVD_Magazine	name	0	substr	Items/Weapons/SVD/SVD_Magazine	tres					name		VSD Magazine	2010	SVDマガジン		
 Items	Weapons/SVD_Magazine	name	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					inventory		Mag.				
 Items	Weapons/SVD_Magazine	name	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					rotated		Mag.				
 Items	Weapons/SVD_Magazine	name	0	ignore	Items/Weapons/SVD/SVD_Magazine	tres					equipment		Mag.				
@@ -1505,7 +1505,7 @@ Items	Attachments/Kobra	name	0	ignore	Items/Attachments/Kobra/Kobra	tres					rot
 Items	Attachments/Kobra	name	0	ignore	Items/Attachments/Kobra/Kobra	tres					equipment		Kobra				
 Items	Attachments/Kobra	name	0	ignore	Items/Attachments/Kobra/Kobra	tres					display		Kobra				
 Items	Attachments/Kobra	type	0	ignore	Items/Attachments/Kobra/Kobra	tres					type		Attachment				
-Items	Attachments/Leopard	name	0	substr	Items/Attachments/Leopard/Leopard	tres					name		Leopard	2022	ヒョウ		
+Items	Attachments/Leopard	name	0	substr	Items/Attachments/Leopard/Leopard	tres					name		Leopard	2022	レオパルド		
 Items	Attachments/Leopard	name	0	ignore	Items/Attachments/Leopard/Leopard	tres					inventory		Leopard				
 Items	Attachments/Leopard	name	0	ignore	Items/Attachments/Leopard/Leopard	tres					rotated		Leopard				
 Items	Attachments/Leopard	name	0	ignore	Items/Attachments/Leopard/Leopard	tres					equipment		Leopard				

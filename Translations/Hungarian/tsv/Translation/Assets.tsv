@@ -1,7 +1,7 @@
 WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	max_length
 Assets	Containers/Airdrop		0	substr	Assets/Airdrop/Airdrop	tscn	Assets/Airdrop/Airdrop		Airdrop	RigidBody3D	containerName	746632342	Airdrop	462	Légi segélyszállítmány		
 Assets	Containers/Airdrop_Container		0	ignore	Assets/Airdrop/Airdrop_Container	tscn	Assets/Airdrop/Airdrop_Container		Container	Node3D	containerName	2117731667	Airdrop				
-Assets	Containers/Billboard_Weapons		0	substr	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military		containerName	768748623	Tutorial Crate	464	Oktatóanyag-csomag		
+Assets	Containers/Billboard_Weapons		0	substr	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military		containerName	768748623	Tutorial Crate	464	Oktatóanyag		
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Military_2		containerName	338289279	Tutorial Crate				
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate				
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate				

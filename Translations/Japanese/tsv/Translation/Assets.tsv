@@ -205,7 +205,7 @@ Assets	Furnitures/Sofa_Leather_F		0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tr
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					inventory		Sofa (Leather)				
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					rotated		Sofa (Leather)				
 Assets	Furnitures/Sofa_Leather_F		0	ignore	Assets/Sofa_Leather/Sofa_Leather_F	tres					equipment		Sofa (Leather)				
-Assets	Furnitures/Sofa_Leather_F		0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.	608	ソファ L.		
+Assets	Furnitures/Sofa_Leather_F		0	substr	Assets/Sofa_Leather/Sofa_Leather_F	tres					display		Sofa L.	608	ソファ L。		
 Assets	Furnitures/Stool_Military_F		0	substr	Assets/Stool_Military/Stool_Military_F	tres					name		Stool (Military)	610	スツール（軍用）		
 Assets	Furnitures/Stool_Military_F		0	ignore	Assets/Stool_Military/Stool_Military_F	tres					inventory		Stool (Military)				
 Assets	Furnitures/Stool_Military_F		0	ignore	Assets/Stool_Military/Stool_Military_F	tres					rotated		Stool (Military)				
@@ -225,7 +225,7 @@ Assets	Furnitures/Table_Cabin_F		0	substr	Assets/Table_Cabin/Table_Cabin_F	tres	
 Assets	Furnitures/Table_Cabin_F		0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					inventory		Table (Cabin)				
 Assets	Furnitures/Table_Cabin_F		0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					rotated		Table (Cabin)				
 Assets	Furnitures/Table_Cabin_F		0	ignore	Assets/Table_Cabin/Table_Cabin_F	tres					equipment		Table (Cabin)				
-Assets	Furnitures/Table_Cabin_F		0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.	620	表C.		
+Assets	Furnitures/Table_Cabin_F		0	substr	Assets/Table_Cabin/Table_Cabin_F	tres					display		Table C.	620	テーブルC。		
 Assets	Furnitures/Table_Canteen_F		0	substr	Assets/Table_Canteen/Table_Canteen_F	tres					name		Table (Canteen)	622	テーブル（食堂用）		
 Assets	Furnitures/Table_Canteen_F		0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					inventory		Table (Canteen)				
 Assets	Furnitures/Table_Canteen_F		0	ignore	Assets/Table_Canteen/Table_Canteen_F	tres					rotated		Table (Canteen)				
@@ -240,7 +240,7 @@ Assets	Furnitures/Table_Office_F		0	substr	Assets/Table_Office/Table_Office_F	tr
 Assets	Furnitures/Table_Office_F		0	ignore	Assets/Table_Office/Table_Office_F	tres					inventory		Table (Office)				
 Assets	Furnitures/Table_Office_F		0	ignore	Assets/Table_Office/Table_Office_F	tres					rotated		Table (Office)				
 Assets	Furnitures/Table_Office_F		0	ignore	Assets/Table_Office/Table_Office_F	tres					equipment		Table (Office)				
-Assets	Furnitures/Table_Office_F		0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O	630	表 O		
+Assets	Furnitures/Table_Office_F		0	substr	Assets/Table_Office/Table_Office_F	tres					display		Table. O	630	テーブル O		
 Assets	Furnitures/Target_Stand_F		0	substr	Assets/Target_Stand/Target_Stand_F	tres					name		Target Stand	632	ターゲットスタンド		
 Assets	Furnitures/Target_Stand_F		0	ignore	Assets/Target_Stand/Target_Stand_F	tres					inventory		Target Stand				
 Assets	Furnitures/Target_Stand_F		0	ignore	Assets/Target_Stand/Target_Stand_F	tres					rotated		Target Stand				
@@ -260,7 +260,7 @@ Assets	Furnitures/Trolley_Tall_F		0	substr	Assets/Trolley/Trolley_Tall_F	tres			
 Assets	Furnitures/Trolley_Tall_F		0	ignore	Assets/Trolley/Trolley_Tall_F	tres					inventory		Trolley (Tall)				
 Assets	Furnitures/Trolley_Tall_F		0	ignore	Assets/Trolley/Trolley_Tall_F	tres					rotated		Trolley (Tall)				
 Assets	Furnitures/Trolley_Tall_F		0	ignore	Assets/Trolley/Trolley_Tall_F	tres					equipment		Trolley (Tall)				
-Assets	Furnitures/Trolley_Tall_F		0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.	646	トロリー・T		
+Assets	Furnitures/Trolley_Tall_F		0	substr	Assets/Trolley/Trolley_Tall_F	tres					display		Trolley T.	646	トロリー・T。		
 Assets	Furnitures/Weapon_Display_F		0	substr	Assets/Weapon_Display/Weapon_Display_F	tres					name		Weapon Display	648	武器展示		
 Assets	Furnitures/Weapon_Display_F		0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					inventory		Weapon Display				
 Assets	Furnitures/Weapon_Display_F		0	ignore	Assets/Weapon_Display/Weapon_Display_F	tres					rotated		Weapon Display				

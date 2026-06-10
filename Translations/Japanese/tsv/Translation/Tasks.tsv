@@ -37,17 +37,17 @@ In order to craft the Meatballs (Cooked), do the following:
 
 Now you have successfully crafted the required task item and you can complete the task."	2798	"それでは、もう少し難易度を上げてみましょう。
 
-タスクによっては、クラフトで作ったアイテムが必要になる場合があります。例えば、このタスクでは「ミートボール（調理済み）」が必要ですが、これはクラフトでしか入手できません。
+タスクによっては、クラフトで作ったアイテムが必要になる場合があります。例えば、このタスクではミートボール缶(調理済)が必要ですが、これはクラフトでしか入手できません。
 
-「アイテム」パネルを開き、「ミートボールの缶詰」、「軍用飯盒」、「水筒」を選択してください。また、「マッチ」も必要になります。これは「装備」パネルから入手できます。
+「アイテム」パネルを開き、「ミートボールの缶詰」、「食事キット」、「水筒」を選択してください。また、「マッチ」も必要になります。これは「装備」パネルから入手できます。
 
-次に、「ツール」UIの「クラフト」ボタンを使用して、「ミートボール（調理済み）」のレシピを探してください。レシピを確認すると、「熱」という近接要件が表示されています。つまり、このレシピをアンロックするには熱源が必要になります。
+次に、「ツール」UIの「クラフト」ボタンを使用して、ミートボール(調理済)のレシピを探してください。レシピを確認すると、「熱」という近接要件が表示されています。つまり、このレシピをアンロックするには熱源が必要になります。
 
-「ミートボール（調理済み）」をクラフトするには、以下の手順に従ってください：
+ミートボール缶(調理済)をクラフトするには、以下の手順に従ってください：
 1. ファイアポットに行き、マッチを装備して火をつけます
-2. 「ミートボール（調理済み）」のレシピを開き、熱のシンボルが緑色に変わっていることを確認します
+2. ミートボール缶(調理済)のレシピを開き、熱のシンボルが緑色に変わっていることを確認します
 3. 「入力開始」を押します
-4. 軍用飯盒、ミートボール（缶詰）、水筒を選択します
+4. 食事キット、ミートボールの缶詰、水筒を選択します
 5. 「クラフト」を押します
 
 これで、タスクに必要なアイテムのクラフトに成功し、タスクを完了できます。"	"Please pay attention to the following points when translating:
@@ -144,7 +144,7 @@ Tasks	Generalist/04	description	0	literal	Traders/Generalist/Tasks/04_Coffee_Res
 
 If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
 
-As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	2818	"人生において、絶対に譲れないものはいくつかある。朝6時のコーヒー、昼12時のコーヒー、そして夕方6時のコーヒーだ。肉体労働を伴う場合は、その合間のコーヒーブレイクも必須であり、事実上法律で定められているようなものだ。
+As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	2818	"人生において、絶対に譲れないものはいくつかある。朝6時のコーヒー、昼12時のコーヒー、そして18時のコーヒーだ。肉体労働を伴う場合は、その合間のコーヒーブレイクも必須であり、事実上法律で定められているようなものだ。
 
 エリア05で生き延びたいなら、絶え間ないカフェインの摂取を最優先すべきだ。
 
@@ -185,9 +185,9 @@ When winter comes, you have to keep them warm and close to your body. It may sou
 
 Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	2830	"男には誰しも弱点があるものだが、僕の場合は温かい安ビールだ。特に、凍えるような冬の朝にはたまらない。
 
-冬が来たら、ビールは温かく、体に密着させておく必要がある。ちょっと気持ち悪い話に聞こえるかもしれないが、信じてほしい。寒い中を歩き回っている時に、小麦のシャーベットみたいなビールを飲みたいなんて思わないはずだ。 温めておくのに最適な場所は脇の下か股の間だ。そこからはかなりの熱が放出されるし、うまくやれば6本パックを丸ごと温めておくこともできる。
+冬が来たら、ビールは温かく、体に密着させておく必要がある。ちょっと気持ち悪い話に聞こえるかもしれないが、信じてほしい。寒い中を歩き回っている時に、小麦のシャーベットみたいなビールを飲みたいなんて思わないはずだ。 温めておくのに最適な場所は脇の下か股の間だ。そこからはかなりの熱が放出されるし、うまくやれば六本パックを丸ごと温めておくこともできる。
 
-6本パックといえば、ロードトリップに1パック持って行きたいな。「旅には6本」って言うしな。"		
+六本パックといえば、ロードトリップに一パック持って行きたいな。「旅には六本」って言うしな。"		
 Tasks	Generalist/08	name	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					name		Old Friend	2832	旧友		
 Tasks	Generalist/08	difficulty	0	ignore	Traders/Generalist/Tasks/08_Old_Friend	tres					difficulty		Hard				
 Tasks	Generalist/08	description	0	literal	Traders/Generalist/Tasks/08_Old_Friend	tres					description		"Want to hear military stories?
@@ -202,7 +202,7 @@ Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn,
 
 ある射撃訓練の日、ついにそれを試す機会が巡ってきた。ドラムマガジンを使った全自動射撃は禁止されていたが、自分の番が回ってきた時、我慢できなかった。 射撃モードを切り替え、引き金を引くと、銃身から71発の「魔法」が飛び出した。
 
-今でも夢の中で、あの「パッ、パッ、パッ」という音がかすかに聞こえてくることがある。ああ、あの銃が恋しい。いつか、あの魔法のような古き友と再会できる日を、いつか……"	"Please pay attention to the following points when translating:
+今でも夢の中で、あの「パッ、パッ、パッ」という音がかすかに聞こえてくることがある。ああ、あの銃が恋しい。いつか、あの魔法のような古き友と再会できる日を、いつか…"	"Please pay attention to the following points when translating:
 - 'KP-31' is a proper noun (items/weapon)."	
 Tasks	Generalist/09	name	0	literal	Traders/Generalist/Tasks/09_Road_Trip	tres					name		Road Trip	2836	ロードトリップ		
 Tasks	Generalist/09	difficulty	0	ignore	Traders/Generalist/Tasks/09_Road_Trip	tres					difficulty		Hard				
@@ -289,7 +289,7 @@ You know what, if you happen to find one of those dice games, bring one for me. 
 
 ほんの数年前まではよく一緒に釣りに行っていましたが、あいつは椎間板ヘルニアをいくつも患っているせいで、もう釣りに行くなんて無理な話。それでも、競馬やギャンブルなど、他にも共通の趣味がいくつかあります。
 
-もうお察しの通り、今やそのうちの1つしか楽しめないため、私たちの友情は現在、カードやサイコロを使ったギャンブルだけで成り立っています。しかし、サイコロゲームをするたびに、彼は魔法のように勝ってしまいます。誰もそこまで運が良いはずがないから、彼のサイコロは何か仕掛けがあるんじゃないかと思い始めています。
+もうお察しの通り、今やそのうちの一つしか楽しめないため、私たちの友情は現在、カードやサイコロを使ったギャンブルだけで成り立っています。しかし、サイコロゲームをするたびに、彼は魔法のように勝ってしまいます。誰もそこまで運が良いはずがないから、彼のサイコロは何か仕掛けがあるんじゃないかと思い始めています。
 
 ねえ、もしそういうサイコロゲームを見つけたら、僕にも一つ持ってきてくれませんか。次に遊ぶ時は、僕のセットでやるつもりです。そうすれば、不正の可能性を排除できるし、誰が真のサイコロの達人なのかがわかるでしょう。"		
 Tasks	Doctor/05	name	0	literal	Traders/Doctor/Tasks/05_Night_Surgery	tres					name		Night Surgery	2860	夜間診療		
@@ -347,7 +347,7 @@ Tasks	Doctor/09	description	0	literal	Traders/Doctor/Tasks/09_Patient_Report	tre
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
 
-Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	2878	"事態が発生して間もなく、私たちの病院は1時間足らずで受け入れ上限を超えてしまいました。実際に、学校の体育館を緊急トリアージ会場として転用せざるを得なかったほどです。
+Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	2878	"事態が発生して間もなく、私たちの病院は一時間足らずで受け入れ上限を超えてしまいました。実際に、学校の体育館を緊急トリアージ会場として転用せざるを得なかったほどです。
 
 あの場所に、私が作成した初期の患者報告書の一つを置き忘れたような気がします。記憶力が以前ほどではなくなってしまったので、その報告書があれば記憶を呼び起こすのに役立つはずです。その報告書に記された症状や具体的な詳細が、だんだん曖昧になってきています。
 
@@ -383,7 +383,7 @@ Here's a suitable task for you. Find me something to get rid of those bloodsucke
 
 世間話はいい。信頼できて安いものが欲しいのか？　もちろんいいが、まずはいくつか頼み事を聞いてくれ。このあたりでは、いきなり出世なんてできないからな。どこから始めようか？　物資の調達任務ならいくつかあるが、お前はちょっと頼りない感じだから、まずは簡単な仕事からにしたほうがいいかもな。ちょっと考えさせてくれ。
 
-よし、いい案がある。夏になると、あの飛ぶクソ野郎たちが本当にうざくなるんだ。あいつらがこのバンカーの中に入ってくるなんて思わないだろうが、信じてくれ、入ってくるんだ。毎年夏になると、24時間ブーンと飛び回ってる。
+よし、いい案がある。夏になると、あの飛ぶクソ野郎たちが本当にうざくなるんだ。あいつらがこのバンカーの中に入ってくるなんて思わないだろうが、信じてくれ、入ってくるんだ。毎年夏になると、一日中ブーンと飛び回ってる。
 
 君にぴったりの仕事がある。あの吸血鬼どもを退治する手段を見つけてくれ。それができたら、また話をしよう。"		
 Tasks	Gunsmith/02	name	0	literal	Traders/Gunsmith/Tasks/02_Warm_Meal	tres					name		Warm Meal	2888	温かい食事		
@@ -404,7 +404,7 @@ Tasks	Gunsmith/03	description	0	literal	Traders/Gunsmith/Tasks/03_Nordic_Trade	t
 
 Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
 
-However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."	2894	"スウェーデン人のことはよく分からないけれど、彼らには3つの長所がある。海軍が優秀で、車も良くて、タバコ製品も素晴らしい。それでもどこかおかしい。彼らはあまりにも幸せそうで、社交的すぎる。間違いなく不自然だ。
+However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."	2894	"スウェーデン人のことはよく分からないけれど、彼らには三つの長所がある。海軍が優秀で、車も良くて、タバコ製品も素晴らしい。それでもどこかおかしい。彼らはあまりにも幸せそうで、社交的すぎる。間違いなく不自然だ。
 
 誤解しないでほしい。彼らは良い隣人だし、そういう面もあるんだけど、どうにも分からない。たぶん、彼らは裕福すぎていつも身なりがきちんとしているからか、あるいは単にホッケーのせいなのかもしれない。
 
@@ -453,7 +453,7 @@ Tasks	Gunsmith/07	description	0	literal	Traders/Gunsmith/Tasks/07_Medic	tres				
 
 I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
 
-My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	2910	"軍隊において重要な役割は、ライフル兵と衛生兵の2つだけだ。指揮官や砲兵、その他の支援部隊は、私の考えでは単なる飾り物に過ぎない。
+My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	2910	"軍隊において重要な役割は、ライフル兵と衛生兵の二つだけだ。指揮官や砲兵、その他の支援部隊は、私の考えでは単なる飾り物に過ぎない。
 
 実は、私専用の専属衛生兵がいる。彼は腕利きのノマドで、攻撃フェイズが必要になった時のためのシンプルな戦術を二人で決めている。 その戦術とは、私が撃ち、もし撃たれたら、彼が私の口にフェンタニルのロリポップを放り込み、戦列はそのまま前進し続けるというものだ。狂気を止めることなど決してない。ただ時折痛みを和らげ、突き進むだけだ。
 
@@ -470,7 +470,7 @@ Currently, my main focus is on integrally suppressed pieces, but I've had a hard
 
 私の自宅のコレクションは、1500年代のマスケット銃から1990年代のライフルまで多岐にわたるが、それ以降のものは好ましくない。 今のところ、コレクションは150丁以上あると思う。中でも最も珍しいのは、1985年の休暇旅行で密かに持ち帰った数丁のトルコ製リボルバー式ショットガンだろう。
 
-現在は、サプレッサーが一体型になった銃に注力しているが、なかなか見つからない。特に東洋製の1丁に目をつけているのだが、なかなか手に入らない。"		
+現在は、サプレッサーが一体型になった銃に注力しているが、なかなか見つからない。特に東洋製の一丁に目をつけているのだが、なかなか手に入らない。"		
 Tasks	Gunsmith/09	name	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					name		Everyman's Right	2916	すべての人の権利		
 Tasks	Gunsmith/09	difficulty	0	ignore	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					difficulty		Hard				
 Tasks	Gunsmith/09	description	0	literal	Traders/Gunsmith/Tasks/09_Everymans_Right	tres					description		"I recently took a hike out to the Border Zone and collected some mushrooms.

@@ -35,7 +35,8 @@ Main_Menu	Menu Music	UI Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music	Heade
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_Off	Button	text	560697430	"Off
 "	2068	オフ		
 Main_Menu	Menu Music	Button	0	literal	Scenes/Menu	tscn	Scenes/Menu	Music/Buttons	Music_On	Button	text	676969840	"On
-"	2070	オン		
+"	2070	"オン
+"		
 Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Copyright	Label	text	1615618777	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	2072	「Road to Vostok ®」はRoad to Vostok Ltd.の登録商標です。無断転載を禁じます © 2026		
 Main_Menu	Bottom	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	.	Version	Label	text	982652429	Version: 0.1.1.3	2074	バージョン: 0.1.1.3	"Will not use pattern matching. 
 It will act as the ""canaria (bird)"" for the outdated translation."	
@@ -669,8 +670,8 @@ New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/
 - ランダムな開始時の体力
 - 常にパーマネントデス"		
 New Game	Difficulty/Ironman	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	text	1040458837	Select	2112	選択		
-New Game	Season	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	2114	シーズン		
-New Game	Season	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	2116	季節モード		
+New Game	Season	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season	Header	Label	text	631199784	Season	2114	季節		
+New Game	Season	Section Info	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Header	Subheader	Label	text	1039100468	Seasonal mode	2116	四季モード		
 New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Hint	Label	text	2113406621	Recommended for new players	2118	初心者におすすめ		
 New Game	Season/Summer	SubSection Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Name	Label	text	1022932264	Summer	2120	夏		
 New Game	Season/Summer	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	Modes/Season/Summer	Details	Label	text	745148717	"- Summer (365 days)
@@ -720,7 +721,7 @@ Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources
 "	2172	保留		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	text	2116956234	"Toggle
 "	2174	切り替え		
-Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	2176	目的		
+Settings	Input Settings	Element	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings	Aim	Label	text	2052337548	Aim	2176	照準		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	text	428854233	"Hold
 "	2178	保留		
 Settings	Input Settings	Element Button	0	literal	Resources/Inputs	tscn	Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	text	217711526	"Toggle
@@ -747,10 +748,10 @@ Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapo
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.weapon_low	dict		45	Lower Weapon	2220	武器を下げる		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.aim	dict		46	Aim	2222	目的		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.canted	dict		47	Canted Aim	2224	傾斜した照準		
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	2226	火		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.fire	dict		48	Fire	2226	射撃		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.reload	dict		49	Reload	2228	再読み込み		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.ammo_check	dict		50	Ammo Check	2230	弾薬確認		
-Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	2232	ファイアモード		
+Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.firemode	dict		51	Firemode	2232	射撃モード		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.inspect	dict		52	Inspect Weapon	2234	武器を点検する		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.prepare	dict		53	Prepare Insert	2236	挿入の準備		
 Settings	Input Settings	Scroll Element	0	substr	Scripts/Inputs	gd			inputs.insert	dict		54	Insert Cartridge	2238	カートリッジを挿入してください		
@@ -845,7 +846,8 @@ Settings	Water Reflections	Button	0	literal	UI/Settings	tscn	UI/Settings	Setting
 Settings	Ambient Occlusion	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO	AO	Label	text	75172857	Ambient Occlusion	2382	アンビエントオクルージョン		
 Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	text	405755742	On	2384	について		
 Settings	Ambient Occlusion	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	text	478649488	"Off
-"	2386	オフ		
+"	2386	"オフ
+"		
 Settings	Display	Section Title	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display	Display	Label	text	216736509	Display	2388	表示		
 Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	text	358096211	Fullscreen	2390	全画面表示		
 Settings	Display	Button	0	literal	UI/Settings	tscn	UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	text	737689796	Windowed	2392	ウィンドウ表示		
@@ -982,7 +984,7 @@ About	Developer	String	1	literal	Scenes/Menu	tscn	Scenes/Menu	About/Developer	In
 About	Country of origin	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Country	Label	text	1878134789	Country of origin	2502	原産国		
 About	Country of origin	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Country	Info	Label	text	1071260401	Finland	2504	フィンランド		
 About	Founding date	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Founding	Label	text	2076139329	Founding date	2506	設立日		
-About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	2508	2022年2月		
+About	Founding date	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Founding	Info	Label	text	1503624243	Feb. 2022	2508	2022年二月		
 About	Copyright & Legal	Section Title	0	literal	Scenes/Menu	tscn	Scenes/Menu	About	Copyright	Label	text	1237658650	Copyright & Legal	2510	著作権および法的情報		
 About	Copyright & Legal	String	0	literal	Scenes/Menu	tscn	Scenes/Menu	About/Copyright	Info	Label	text	313325499	"1. Game Content
 Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
@@ -1026,17 +1028,17 @@ SOFTWARE."	2516	"本ゲームはGodot Engineを使用しており、以下のラ
 Copyright © 2014-現在 Godot Engine 貢献者。
 Copyright © 2007-2014 Juan Linietsky, Ariel Manzur。
 
-本ソフトウェアおよび関連するドキュメントファイル（以下「本ソフトウェア」という）の
+本ソフトウェアおよび関連するドキュメントファイル (以下「本ソフトウェア」という) の
 コピーを入手した者に対し、以下の条件に従うことを条件として、本ソフトウェアを
-制限なく利用する権利（本ソフトウェアのコピーを使用、複製、改変、統合、公開、
-頒布、サブライセンス、および／または販売する権利を含むが、これらに限定されない）
+制限なく利用する権利 。本ソフトウェアのコピーを使用、複製、改変、統合、公開、
+頒布、サブライセンス、および／または販売する権利を含むが、これらに限定されない。
 ならびに本ソフトウェアの提供を受けた者に対し同様の行為を許可する権利を、
 無償で付与する。
 
 本ソフトウェアのすべての複製物またはその主要な部分には、
 上記の著作権表示および本許諾表示を含めるものとします。
 
-本ソフトウェアは「現状有姿」で提供され、商品性、特定目的への適合性、および
+本ソフトウェアは現状のままで提供され、商品性、特定目的への適合性、および
 非侵害性を含むがこれらに限定されない、明示的または黙示的ないかなる種類の保証も
 行われません。 いかなる場合においても、
 著作者または著作権者は、契約、不法行為、その他いかなる法的根拠に基づくものであれ、
@@ -1051,8 +1053,8 @@ Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Cabin
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tutorial...	2528	チュートリアルを読み込んでいます...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Menu...	2530	メニューを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Attic...	2532	屋根裏部屋の読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	2534	「死」を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
-Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	2536	教室を読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Death...	2534	「死」を読み込み中…	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
+Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Classroom...	2536	教室を読み込み中…	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Tent...	2538	テントを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Bunker...	2540	バンカーを読み込み中...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
 Loading	/	String	0	literal			Resources/Loader	Screen	Label	Label			Loading Village...	2542	村を読み込んでいます...	Dynamically changed on Scripts/Loader.gd at func LoadScene(scene: String), var scenePath: String	
@@ -1075,7 +1077,8 @@ Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Load	Button
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Menu	Button	text	2017574782	"Main Menu
 "	2572	メインメニュー		
 Death	/	String	0	literal	Scenes/Death	tscn	Scenes/Death	Main/Buttons	Quit	Button	text	246735259	"Quit
-"	2574	終了		
+"	2574	"終了
+"		
 Scene	/	Name	0	substr									Menu	2584	メニュー		
 Scene	/	Name	0	substr									Intro	2576	はじめに	Intro Scene is loaded when start new game.	
 Scene	/	Name	0	substr									Tutorial	2582	チュートリアル	Tutorial Map	
@@ -1107,7 +1110,7 @@ Scene	Scene	Name	0	substr									Terminal	2612	ターミナル	"Location under 
 NPC	Traders	Name	0	substr									Trader	2620	トレーダー	NPC (Trader)	
 NPC	Traders	Name	0	substr	Traders/Generalist/Generalist	tres				name			Generalist	2622	ジェネラリスト	"NPC (Trader) located at ""Area 05/Village"""	
 NPC	Traders	Name	0	substr	Traders/Doctor/Doctor	tres				name			Doctor	2624	医師	"NPC (Trader) located at ""Area 05/School"""	
-NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	銃器職人	"NPC (Trader) located at ""Border Zone/Outpost"""	
+NPC	Traders	Name	0	substr	Traders/Gunsmith/Gunsmith	tres				name			Gunsmith	2626	ガンスミス	"NPC (Trader) located at ""Border Zone/Outpost"""	
 NPC	Traders	Name	0	substr									Driver	2628	ドライバー	"NPC (Trader). Will be Updated at ""Build 2"""	
 NPC	Traders	Name	0	substr									Grandma	2630	おばあちゃん	"NPC (Trader). Will be Updated at ""Build 3"""	
 NPC	Traders	Name	0	substr									Shaman	2632	シャーマン	"NPC (Trader). Will be Updated at ""Build 5"""	
@@ -1115,7 +1118,7 @@ NPC	Traders	Name	0	substr									Fisherman	2634	漁師	"NPC (Trader). Will be U
 NPC	Traders	Name	0	substr									Scientist	2636	科学者	"NPC (Trader). Will be Updated at ""Build 7"""	
 NPC	Hostile	Name	0	substr									Bandit	2638	バンディット	"Hostile NPC faction spawned in ""Area 05""."	
 NPC	Hostile	Name	0	substr									Guards	2640	警備員	"Hostile NPC faction spawned in ""Border Zone""."	
-NPC	Hostile	Name	0	substr									Military	2642	軍事	"Hostile NPC faction spawned in ""Vostok""."	
+NPC	Hostile	Name	0	substr									Military	2642	軍隊	"Hostile NPC faction spawned in ""Vostok""."	
 NPC	Elite	Name	0	substr									Punisher	2644	パニッシャー	"Hostile Elite(Boss) NPC spawned in ""Area 05""."	
 /	Weather	Dictionary	0	substr									Neutral	2646	中立		
 /	Weather	Dictionary	0	substr									Overcast	2648	曇り		

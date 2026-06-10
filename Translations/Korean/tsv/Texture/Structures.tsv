@@ -20,29 +20,29 @@ Asset	Structures	Structure	blend	"ILMOITUSTEN
 KIINNITTÄMINEN
 KIELLETTY
 
-JÄRJESTYSLAKI 16§"	"ILMOITUSTEN
-KIINNITTÄMINEN
-KIELLETTY
+JÄRJESTYSLAKI 16§"	"허가되지 않은
+게시물 무단 부착은
+금지됩니다
 
-JÄRJESTYSLAKI 16§"	\Assets\Box_Electric\Files\	TX_Box_Electric_AL.png	2908602	c6cb8c2c4ed8b2829e2ad534d8724c7054af1939c7d416994ab6b17c5b96f4cb	3039	MuteJack				
+공공질서유지법 제 6조"	\Assets\Box_Electric\Files\	TX_Box_Electric_AL.png	2908602	c6cb8c2c4ed8b2829e2ad534d8724c7054af1939c7d416994ab6b17c5b96f4cb	3039	MuteJack				
 Asset	Structures	Structure	blend	"HUOMIO
 
 PIDÄ OVIEN
 EDUSTA AINA
 VAPAANA
 
-Hengenvaara"	"HUOMIO
+Hengenvaara"	"주  의  사  항
 
-PIDÄ OVIEN
-EDUSTA AINA
-VAPAANA
+이곳은 출입구 입니다
+문 앞에 물건을
+적재하지 마십시오 
 
-Hengenvaara"	\Assets\Box_Transformer\Files\	TX_Box_Transformer_AL.png	2417990	4767222158963e2d2f579a13e33986b940aeefa8acecd75ece04f76ddeed7b58	3041	MuteJack				
+고압전기주의"	\Assets\Box_Transformer\Files\	TX_Box_Transformer_AL.png	2417990	4767222158963e2d2f579a13e33986b940aeefa8acecd75ece04f76ddeed7b58	3041	MuteJack				
 Asset	Structures	Booth	blend	"SOTILASKOTI
 
-KASSA"	"SOTILASKOTI
+KASSA"	"군인 복지시설
 
-KASSA"	\Assets\Canteen\Files\	TX_Canteen_Details_AL.png	3762488	3a0b1e9d7ee169e2adf6bdf8bd3d072b3adb695cb5d87524dd3a1a81fe0e58a3	3043	MuteJack				
+계 산 대"	\Assets\Canteen\Files\	TX_Canteen_Details_AL.png	3762488	3a0b1e9d7ee169e2adf6bdf8bd3d072b3adb695cb5d87524dd3a1a81fe0e58a3	3043	MuteJack				
 Asset	Structures	Poster	blend	"VIIKKOTARJOUKSET!
 
 TUORE

@@ -43,15 +43,15 @@ and point the character health value"	"2. インターフェース
 
 インターフェースは、インベントリ、装備、
 体力、ステータスなどの要素を含む
-メインのUIです。
+メインのUIです
 
 [TAB]キーを押すとインターフェースを表示できます。
 
 アイテム、アイコン、または特定の数値について
-詳細を知りたい場合は、ツールチップを使用できます。
+詳細を知りたい場合は、ツールチップを使用できます
 
 インターフェースを開き、キャラクターの
-体力値にカーソルを合わせて、ツールチップを試してみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430					
+体力値にカーソルを合わせて、ツールチップを試してみてください"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Interface.png	90866	3471fa6ac1e234e4ad0c5ed3658d3e07c259d383bc43d3791929da436303ee37	430					
 Tutorial	Billboard	3. Loot & Items	replace	"3. Loot & Items
 
 All objects that logically have storage space are 
@@ -97,17 +97,17 @@ moving compatible items to them
 Open container and try equipping items"	"4. 装備
 
 装備は専用のアイテムスロットであり、
-キャラクターの重要なステータスと連動しています。
+キャラクターの重要なステータスと連動しています
 
-装備は「運搬容量（CC）」を増やしたり、
-懐中電灯や火おこしなどの能力を付与したりします。
+装備は「運搬容量[CC］」を増やしたり、
+懐中電灯や火おこしなどの能力を付与したりします
 
 
 装備スロットは「インターフェース」から確認できます。
 対応するアイテムをスロットにドラッグ＆ドロップすることで、
-装備を有効化できます。
+装備を有効化できます
 
-コンテナを開き、アイテムを装備してみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434					
+コンテナを開き、アイテムを装備してみてください"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Equipment.png	103322	63cc2673b82a91bc1e9ecb0220e431379f9e965d1e99736684edda3191175fd9	434					
 Tutorial	Billboard	5. Medical & Conditions	replace	"5. Medical & Conditions
 
 Medical system is based on conditions that 
@@ -254,13 +254,13 @@ Second press executes and opposite button resets the throw"	"9. ナイフと手�
 [右クリック] で突き攻撃を行うことができます
 
 
-手榴弾の装備スロットは2つあり、
+手榴弾の装備スロットは二つあり、
 キー[4]と[5]で手榴弾を取り出せます
 
 [LMB]で高投擲、
 [RMB]で低投擲の準備ができます
 
-ボタンを2度押すと投擲が実行され、反対のボタンを押すとリセットされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
+ボタンを二度押すと投擲が実行され、反対のボタンを押すとリセットされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -312,17 +312,17 @@ Interact with trader Generalist and try
 trading something and completing a task"	"11. トレーダー
 
 トレーダーは、アイテムの取引や
-ストーリーに関連するクエストを完了できるゲーム内のキャラクターです。
+ストーリーに関連するクエストを完了できるゲーム内のキャラクターです
 
 取引システムは物々交換を基本としており、
-できるだけ公平な取引を行うことが目的です。
-取引の成立は、要求アイテムの価値、商人税、および提供アイテムの価値に基づいて計算されます。
+できるだけ公平な取引を行うことが目的です
+取引の成立は、要求アイテムの価値、商人税、および提供アイテムの価値に基づいて計算されます
 
 クエストを完了すると、商人税が軽減され、
-報酬アイテムや新しいシェルターを解放するための鍵が獲得できます。
+報酬アイテムや新しいシェルターを解放するための鍵が獲得できます
 
 商人「ジェネラリスト」と対話し、
-何かを取引したり、クエストを完了したりしてみてください。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448					
+何かを取引したり、クエストを完了したりしてみてください"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448					
 Tutorial	Billboard	12. AI	replace	"12. AI
 
 AI is divided into three hostile factions which
@@ -424,14 +424,14 @@ Item Placement and Decor Mode
 You can use Item Placement with [G] and move 
 furniture by activating Decor Mode with [F1]"	"15. シェルター
 
-シェルターは、シミュレーション時間、キャラクターの進行状況、および入手したアイテムを保存できる安全な場所です。
+シェルターは、シミュレーション時間、キャラクターの進行状況、および入手したアイテムを保存できる安全な場所です
 
-シェルターは、タスクを完了することで入手できる鍵を使って解錠できます。
+シェルターは、タスクを完了することで入手できる鍵を使って解錠できます
 
 
-すべてのシェルターは、「アイテム配置」と「装飾モード」を使ってカスタマイズできます。
+すべてのシェルターは、「アイテム配置」と「装飾モード」を使ってカスタマイズできます
 
-[G]キーで「アイテム配置」を使用し、[F1]キーで「装飾モード」を有効にして家具を移動させることができます。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
+[G]キーで「アイテム配置」を使用し、[F1]キーで「装飾モード」を有効にして家具を移動させることができます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 

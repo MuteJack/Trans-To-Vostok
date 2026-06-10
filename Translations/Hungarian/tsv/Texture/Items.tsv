@@ -25,20 +25,20 @@ Items	Misc	Books	ignore			\Items\Books\Files	Icon_Book_Children.png	21284	4f706a
 Items	Misc	Books	pending	"KOTIRUOKA
 
 KEITTOKIRJA KOTIA
-JA KOILUA VARTEN"	"KOTIRUOKA
+JA KOILUA VARTEN"	"HÁZI ÉTELEK
 
-KEITTOKIRJA KOTIA
-JA KOILUA VARTEN"	\Items\Books\Files	Icon_Book_Cooking.png	25182	e3ebb90d8cca51e2fb153ff0620ed5064a5f249c0a3fced449872eb7805ea495	3077					
+FŐZŐKÖNYV AZ OTTHONNAK
+ÉS A KÖZÖSSÉGNEK"	\Items\Books\Files	Icon_Book_Cooking.png	25182	e3ebb90d8cca51e2fb153ff0620ed5064a5f249c0a3fced449872eb7805ea495	3077					
 Items	Misc	Books	ignore			\Items\Books\Files	Icon_Book_Fishing.png	21816	157f2260d382893174b0136a8f508575b33e8274b4d4836823dd85eeb4520969						
 Items	Misc	Books	ignore			\Items\Books\Files	Icon_Book_Religion.png	20045	a3e89c5d402f8f2a0f4e2f1a6b33c952cebcf32b63e1b44b4d05474b5f5173dd						
 Items	Misc	Books	ignore			\Items\Books\Files	TX_Book_Children_AL.png	317154	18ec1f5cf84cfb339d5c1a3ead0b569d58e489b9de8ee63acc71c5b97674a82d						
 Items	Misc	Books	pending	"KOTIRUOKA
 
 KEITTOKIRJA KOTIA
-JA KOILUA VARTEN"	"KOTIRUOKA
+JA KOILUA VARTEN"	"HÁZI ÉTELEK
 
-KEITTOKIRJA KOTIA
-JA KOILUA VARTEN"	\Items\Books\Files	TX_Book_Cooking_AL.png	406077	6466b27faa7c8c76aa2cebfe431dd8f4204698ff89950c46b057538ae6348a62	3079					
+FŐZŐKÖNYV AZ OTTHONNAK
+ÉS A KÖZÖSSÉGNEK"	\Items\Books\Files	TX_Book_Cooking_AL.png	406077	6466b27faa7c8c76aa2cebfe431dd8f4204698ff89950c46b057538ae6348a62	3079					
 Items	Misc	Books	ignore			\Items\Books\Files	TX_Book_Fishing_AL.png	318135	1d334dec57ec8f7b8e9d859c368925aa4446f5a0eebe60a159c20ee68f9b4ec7						
 Items	Misc	Books	ignore			\Items\Books\Files	TX_Book_Religion_AL.png	338561	cc7e07250187874de8b73f6d4a4048f8e5ea101979377208f9dd62e3baa2fa5a						
 Items	Equipments	Clothing	ignore			\Items\Clothing\Beanie_Flame\Files	Icon_Beanie_Flame.png	38019	89721329f0b7ee81d795f08a3f385f1073a25287af407f6de83f0883afcc0628						
@@ -88,8 +88,8 @@ PÄÄSY ILMAN LUPAA KIELLETTY
 GRÄNSZON
 TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
 
-GRENZZONE
-EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+HATÁR
+ENGEDÉLY NÉLKÜL A BELÉPÉS TILOS
 
 BORDER ZONE
 NO ENTRY WITHOUT SPECIAL PERMIT
@@ -121,8 +121,8 @@ PÄÄSY ILMAN LUPAA KIELLETTY
 GRÄNSZON
 TILLTRÄDE UTAN TILLSTÅND FÖRBJUDET
 
-GRENZZONE
-EINTRITT OHNE ENTSPRECHENDE ERLAUBNIS VERBOTEN
+HATÁR
+ENGEDÉLY NÉLKÜL A BELÉPÉS TILOS
 
 BORDER ZONE
 NO ENTRY WITHOUT SPECIAL PERMIT
@@ -176,20 +176,20 @@ Items	Consumables	Consumables	pending	"KRIEG-SCHOKOLADE
 
 Die Koffein-Schokolade
 
-16 Ecken Zartbitter"	"KRIEG-SCHOKOLADE
+16 Ecken Zartbitter"	"HÁBORÚS CSOKOLÁDÉ
 
-Die Koffein-Schokolade
+A koffeines csokoládé
 
-16 Ecken Zartbitter"	\Items\Consumables\Chocolate_War\Files	Icon_Chocolate_War.png	14597	d1cc555602c08c9c4fad435aafe32553490a0ae9eebfc92fb1e24a04240bb945	3085				Reason for Pending: Low Resolution	
+16 darab keserű csokoládé"	\Items\Consumables\Chocolate_War\Files	Icon_Chocolate_War.png	14597	d1cc555602c08c9c4fad435aafe32553490a0ae9eebfc92fb1e24a04240bb945	3085				Reason for Pending: Low Resolution	
 Items	Consumables	Consumables	pending	"KRIEG-SCHOKOLADE
 
 Die Koffein-Schokolade
 
-16 Ecken Zartbitter"	"KRIEG-SCHOKOLADE
+16 Ecken Zartbitter"	"HÁBORÚS CSOKOLÁDÉ
 
-Die Koffein-Schokolade
+A koffeines csokoládé
 
-16 Ecken Zartbitter"	\Items\Consumables\Chocolate_War\Files	TX_Chocolate_War_AL.png	102286	dd49a8d91684d2627c172a5723b70794d762fcf3ecc513cd6008db935aa52dbe	3087					
+16 darab keserű csokoládé"	\Items\Consumables\Chocolate_War\Files	TX_Chocolate_War_AL.png	102286	dd49a8d91684d2627c172a5723b70794d762fcf3ecc513cd6008db935aa52dbe	3087					
 Items	Consumables	Consumables	pending	"Tupakointi on hengenvaarallista
 Rökning kan döda
 
@@ -197,14 +197,15 @@ Tule lopettamaan: www.tupakinfo.fi
 Stöd för att sluta: www.tobaksinfo.fi
 
 VAARA
-SELECTED PREMIUM TOBACCOS"	"Tupakointi on hengenvaarallista
-Rökning kan döda
+SELECTED PREMIUM TOBACCOS"	"A dohányzás
+életveszélyes
+A dohányzás halálos lehet
 
-Tule lopettamaan: www.tupakinfo.fi
-Stöd för att sluta: www.tobaksinfo.fi
+Hagyd abba: www.tupakinfo.fi
+Segítség a leszokáshoz: www.tobaksinfo.fi
 
-VAARA
-SELECTED PREMIUM TOBACCOS"	\Items\Consumables\Cigarettes\Files	Icon_Cigarettes.png	8121	090ccb4b2bb83194d99f10b0550e2e35922bb41900b3978f7f3f96ac70293ea9	3089				"Reason for Ignoring: Low Resolution
+VESZÉLY
+VÁLOGATOTT PREMIUM DOHÁNYFÉLÉK"	\Items\Consumables\Cigarettes\Files	Icon_Cigarettes.png	8121	090ccb4b2bb83194d99f10b0550e2e35922bb41900b3978f7f3f96ac70293ea9	3089				"Reason for Ignoring: Low Resolution
 VAARA is a virtual brand's name (Proper-Noun)."	
 Items	Consumables	Consumables	pending	"Tupakointi on hengenvaarallista
 Rökning kan döda
@@ -216,21 +217,19 @@ VAARA
 SELECTED PREMIUM TOBACCOS
 
 Tupakointi tappaa
-Rökning dödar"	"Tupakointi on hengenvaarallista
-Rökning kan döda
+Rökning dödar"	"A dohányzás
+életveszélyes
+A dohányzás halálos lehet
 
-Tule lopettamaan: www.tupakinfo.fi
-Stöd för att sluta: www.tobaksinfo.fi
+Hagyd abba: www.tupakinfo.fi
+Segítség a leszokáshoz: www.tobaksinfo.fi
 
-VAARA
-SELECTED PREMIUM TOBACCOS
-
-Tupakointi tappaa
-Rökning dödar"	\Items\Consumables\Cigarettes\Files	TX_Cigarettes_AL.png	175998	f0e87672b658eb04552646c81ebdc1491f2fa30f986e61c596b996a6da4782ed	3091				VAARA is a virtual brand's name (Proper-Noun).	
+VESZÉLY
+VÁLOGATOTT PREMIUM DOHÁNYFÉLÉK"	\Items\Consumables\Cigarettes\Files	TX_Cigarettes_AL.png	175998	f0e87672b658eb04552646c81ebdc1491f2fa30f986e61c596b996a6da4782ed	3091				VAARA is a virtual brand's name (Proper-Noun).	
 Items	Consumables	Consumables	ignore			\Items\Consumables\Cigars\Files	Icon_Cigars.png	34699	1b38ee83899569c3d3bd682dca33a9afe4c91dfadceb7d9b33f307b9cc9eb58c					Reason for ignoring: Translation is unnecessary	
 Items	Consumables	Consumables	ignore			\Items\Consumables\Cigars\Files	TX_Cigars_AL.png	850701	952699587848a0e93b61559919eb360512f1583195df764b62b3e7945da3d5a0					Reason for ignoring: Translation is unnecessary	
-Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA KAHVI	\Items\Consumables\Coffee\Files	Icon_Coffee.png	26122	d68d7358e7336685ebd29499796f4b5e141d7c28c9c6e1e304446e9ac70288a6	3093				Reason for pending: Translation is unnecessary	
-Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA KAHVI	\Items\Consumables\Coffee\Files	TX_Coffee_AL.png	226088	89b2c59c470cea66184e31da678b692f7df06ae22da9d6e902f7bac4ec01f927	3095				Reason for pending: Translation is unnecessary	
+Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA KÁVÉ	\Items\Consumables\Coffee\Files	Icon_Coffee.png	26122	d68d7358e7336685ebd29499796f4b5e141d7c28c9c6e1e304446e9ac70288a6	3093				Reason for pending: Translation is unnecessary	
+Items	Consumables	Consumables	pending	KULTA KAHVI	KULTA KÁVÉ	\Items\Consumables\Coffee\Files	TX_Coffee_AL.png	226088	89b2c59c470cea66184e31da678b692f7df06ae22da9d6e902f7bac4ec01f927	3095				Reason for pending: Translation is unnecessary	
 Items	Consumables	Consumables	ignore			\Items\Consumables\Coffee_Brewed\Files	Icon_Coffee_Brewed.png	26650	7541faa450deb7a6334d34fe46bd2d82288f13a37196db61226ecddb99080c40						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Coffee_Brewed\Files	TX_Coffee_Brewed_AL.png	153866	c6dc28f89abd79604f2dfd0a9de970e35a222a296374e48dad3fee0e264d7f93						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Cooked_Fish_Soup\Files	Icon_Cooked_Fish_Soup.png	26487	c0e0f4bbc6d28fbfcc0b82d720846351e82381cc87ab5bb7d453bf5382ad9019						
