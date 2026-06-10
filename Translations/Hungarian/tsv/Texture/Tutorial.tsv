@@ -207,7 +207,8 @@ A tár manuálisan is betölthető, vagy az [R] billentyű
 megnyomásával töltheti/újratöltheti a tárat.
 
 Nyiss ki egy tárolót vagy felszerelést, ellenőrizd a lőszer és
-a tárak kompatibilitását a tooltip segítségével, majd töltsd meg, helyezd be → tüzelj.
+a tárak kompatibilitását a tooltip segítségével,
+majd töltsd meg, helyezd be → tüzelj.
 
 [Bal klikk] = Tüzelés, [V] = Lőszer ellenőrzése, 
 [CTRL] → [LMB] = Lőszer betöltése (zárás és sörétes puskánál)"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440	MuteJack	Csaba Papp			
@@ -230,14 +231,16 @@ identify attachment compatibility and try customizing
 Testreszabhatod a fegyvereket hangtompítók,
 távcsövek, lézerek és egyebek hozzáadásával.
 
-A kezelőfelületen keresztül hozzáadhatsz vagy kicserélhetsz kiegészítőket,
-például tárakat, és eltávolíthatod őket a fegyverre
+A kezelőfelületen keresztül hozzáadhatsz vagy
+kicserélhetsz kiegészítőket, például tárakat,
+és eltávolíthatod őket a fegyverre
 [Jobb gombbal] kattintva.
 
 A kompatibilitást a Tároló kinyitásával és az eszköztipp megtekintésével,
 vagy a tartozékok fegyverre húzásával ellenőrizheted.
 
-Nyisd ki a tárokót, vedd ki a tartozékokat, és szabd testre a fegyveredet.
+Nyisd ki a tárolót, vedd ki a tartozékokat, 
+és szabd testre a fegyveredet.
 
 [CTRL] + [Görgés] = távcsősin pozíciójának módosítása
 [Görgés] = LPVO nagyítási szint módosítása
@@ -270,7 +273,7 @@ melyeket a [4] és [5] billentyűkkel lehet kézben tartani.
 A [Bal kattintás] gombbal magasra,
 a [Jobb kattintás] gombbal pedig alacsonyra dobhatsz.
 
-Nyomd meg kétszer a gránát dobásához, majd az ellenkező gombot a dobási készenlét visszaállításához"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444	MuteJack	Csaba Papp			
+Nyomd meg kétszer a gránát dobásához, majd az ellenkező gombot a dobási készenlét visszaállításához."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444	MuteJack	Csaba Papp			
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -325,13 +328,15 @@ trading something and completing a task"	"11. Kereskedő
 A kereskedő egy játékbeli karakter, akivel tárgyakat cserélhet
 vagy történettel kapcsolatos küldetéseket teljesíthet
 
-A kereskedési rendszer a cserekereskedelemen alapul, és a cél a lehető
-legkiegyensúlyozottabb tranzakciók végrehajtása.
+A kereskedési rendszer a cserekereskedelemen alapul,
+és a cél a lehető legkiegyensúlyozottabb
+tranzakciók végrehajtása.
 
-A tranzakciós árat a kért ár és az adók (kereskedő), valamint kínálati ár (játékos) alapján számítják ki.
+* A tranzakciós árat a kért ár és az adók (kereskedő),valamint kínálati ár (játékos) alapján számítják ki.
 
 Ha teljesíted a küldetést, csökken a kereskedői adó, és
-jutalmat, valamint egy kulcsot szerezhetsz egy új rejtekhely megnyitásához.
+jutalmat, valamint egy kulcsot szerezhetsz 
+egy új rejtekhely megnyitásához.
 
 Lépj kapcsolatba a kereskedővel, és próbáld ki a kereskedést, 
 valamint teljesíts egy feladatot"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Traders.png	115833	bf91bc53d892895605d2c14a0c0f4d4f1c67f7b8b2dc1142d15ca250936f187d	448	MuteJack	Csaba Papp			
@@ -363,7 +368,7 @@ frakciófőnökök ritkán jelennek meg.
 Legfeljebb 10 MI jelenik meg térképenként, és a
 béke visszatér, amikor az összes MI megsemmisül.
 
-A mesterséges intelligencia újraéled, amikor pályát váltasz"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450	MuteJack	Csaba Papp			
+A mesterséges intelligencia újraéled, amikor pályát váltasz."	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450	MuteJack	Csaba Papp			
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -451,9 +456,10 @@ Néhány menedék küldetések során megszerzett kulcsokkal nyitható.
 Minden menedék berendezhető tárgyak elhelyezésével és díszítési móddal.
 
 A [G] billentyű megnyomásával helyezhet el tárgyakat vagy
-bútorokat, a dekorációs mód aktiválásához pedig az [F] billentyű megnyomásával mozgathatja a bútorokat.
+bútorokat, a dekorációs mód aktiválásához pedig az [F1] billentyű 
+megnyomásával mozgathatja a bútorokat.
 
-A bútorkatalógust a [Tab] billentyűvel nyithatja meg Dekor módban"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456	MuteJack	Csaba Papp			
+A bútorkatalógust a [TAB] billentyűvel nyithatja meg Dekor módban"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456	MuteJack	Csaba Papp			
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 

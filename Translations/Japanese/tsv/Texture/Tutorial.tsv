@@ -104,6 +104,7 @@ Open container and try equipping items"	"4. 装備
 
 
 装備スロットは「インターフェース」から確認できます。
+
 対応するアイテムをスロットにドラッグ＆ドロップすることで、
 装備を有効化できます
 
@@ -197,12 +198,15 @@ and magazine compatibility, Load -> Attach -> Fire
 コンテキストメニュー [右クリック] でマガジンを抜くことができます
 
 マガジンは手動で武器に装着するか、
-[R]キーを押して装填済みのマガジンを自動的に取り付けることができます
+[R]キーを押して装填済みのマガジンを
+自動的に取り付けることができます
 
 コンテナを開き、ツールチップで弾薬と
-マガジンの互換性を確認した後、「装填」→「装着」→「発射」の順で行ってください
+マガジンの互換性を確認した後、
+「装填」→「装着」→「発射」の順で行ってください
 
-[左クリック] = 発射 [V] = 弾薬確認 [Ctrl] + [左クリック] = 弾丸挿入（ボルトアクション銃およびショットガン）"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440					
+[左クリック] = 発射 [V] = 弾薬確認
+[Ctrl] + [左クリック] = 弾丸挿入（ボルトアクション銃およびショットガン）"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Ammo.png	136812	9b83d174446ee3d6c286194c33deddd36239f3dc25deec2d77a26e60b58ff3d4	440					
 Tutorial	Billboard	8. Attachments	replace	"8. Attachements
 
 You can customize weapons by attaching 
@@ -223,11 +227,13 @@ identify attachment compatibility and try customizing
 装着して、武器をカスタマイズできます
 
 インターフェースを使ってマガジンなどの
-アタッチメントを追加・交換し、コンテキストメニューで取り外すことができます
+アタッチメントを追加・交換し、
+コンテキストメニューで取り外すことができます
 
 
 コンテナを開き、ツールチップやアイテムのホバー表示の色を確認して
 アタッチメントの互換性を確認し、カスタマイズを試してみてください
+
 [CTRLキーを押したまま] + [スクロール] = 光学サイトレールの位置
 [スクロール] = LPVOのズームレベル
 [ALT] = セカンダリ光学サイト
@@ -260,7 +266,8 @@ Second press executes and opposite button resets the throw"	"9. ナイフと手�
 [LMB]で高投擲、
 [RMB]で低投擲の準備ができます
 
-ボタンを二度押すと投擲が実行され、反対のボタンを押すとリセットされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
+ボタンを二度押すと投擲が実行され、
+反対のボタンを押すとリセットされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Grenades.png	107848	e5148a4c72c630ea886949ddf014d8bd89b3f7fd8cc145998fa0ddc81329d29f	444					
 Tutorial	Billboard	10. Armor	replace	"10. Armor
 
 Armor system is based on NIJ-rated (II-IV)
@@ -281,7 +288,8 @@ try attaching armor plate to the rig like attachments
 |NIJ IV = Level 5| 5. Armor plates prevent critical medical condition Rupture|"	"10. アーマー
 
 アーマーシステムは、NIJ規格（II～IV）に準拠した
-ヘルメット、アーマープレート、プレートキャリア（リグ）に基づいています
+ヘルメット、アーマープレート、
+プレートキャリア（リグ）に基づいています
 
 防具の防御レベルは、
 弾薬や武器の貫通レベルと直接連動しており、
@@ -312,7 +320,8 @@ Interact with trader Generalist and try
 trading something and completing a task"	"11. トレーダー
 
 トレーダーは、アイテムの取引や
-ストーリーに関連するクエストを完了できるゲーム内のキャラクターです
+ストーリーに関連するクエストを完了できる
+ゲーム内のキャラクターです
 
 取引システムは物々交換を基本としており、
 できるだけ公平な取引を行うことが目的です
@@ -336,7 +345,7 @@ Each AI faction has different abilities and
 faction bosses with rare spawn changes
 
 Map instances can spawn maximum of 10 AI's
-once you have eliminated all, you will have peace"	"12. AI
+once you have eliminated all, you will have peace"	"12. AI (勢力)
 
 AIは3つの敵対勢力に分かれており、
 ゲームワールド内の異なるエリアを占拠しています
@@ -349,7 +358,9 @@ AIは3つの敵対勢力に分かれており、
 派閥ボスも稀に出現します
 
 マップインスタンスには最大10体のAIが出現します
-すべてを倒せば、平和が訪れます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
+すべてを倒せば、平和が訪れます
+
+* マップを移動すると、AIがジャスポンされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
@@ -365,7 +376,8 @@ related to character vitals and World Simulation
 
 Transitions are marked with Transition Flags"	"13. マップと移動
 
-AIと同様に、ゲームワールドは3つのゾーンに分かれており、それぞれ異なるマップと戦利品プールが用意されています
+AIと同様に、ゲームワールドは3つのゾーンに分かれており、
+それぞれ異なるマップと戦利品プールが用意されています
 
 |開始ゾーン | 境界ゾーン | パーマネントデスゾーン |
 |エリア05 | ボーダーゾーン | ボストーク |
@@ -376,7 +388,9 @@ AIと同様に、ゲームワールドは3つのゾーンに分かれており�
 キャラクターのバイタル値やワールドシミュレーションに関連した
 一定の移動コストを要する「トランジション」を利用します
 
-トランジションはトランジションフラグで表示されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452					
+トランジションはトランジションフラグで表示されます
+
+* トランジションフラグ：マップの外側にある旗の形のオブジェクト"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Maps.png	115899	1498cb8c187be3e25c7a96435c21e6c9b60cd54caa5cc118cd3ad13c61cc0d93	452					
 Tutorial	Billboard	14. World Simulation	replace	"14. World Simulation
 
 Game uses World Simulation which creates 
@@ -402,12 +416,13 @@ Pick a time item (Alarm Clock) and equip it
 シミュレーションレート
 昼夜のサイクル（24時間）＝現実時間2.4時間
 
-
 ワールドシミュレーションは睡眠や
 マップ移動と連動しており、これによりシミュレーション時間が延長されます
 
 時間に関連するアイテムを使用すると、現在の時刻を確認できます
+
 時間関連のアイテム（目覚まし時計など）を選んで装備してください
+
 *チュートリアル中はシミュレーション時間が固定されます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_World.png	112331	8dc5a8b2700b0b9138de2fda7e32a39d4d0d39d918c0af1c9e8ec55eed5bcff8	454					
 Tutorial	Billboard	15. Shelters	replace	"15. Shelters
 
@@ -424,14 +439,19 @@ Item Placement and Decor Mode
 You can use Item Placement with [G] and move 
 furniture by activating Decor Mode with [F1]"	"15. シェルター
 
-シェルターは、シミュレーション時間、キャラクターの進行状況、および入手したアイテムを保存できる安全な場所です
+シェルターは、シミュレーション時間、
+キャラクターの進行状況、
+および入手したアイテムを保存できる安全な場所です
 
 シェルターは、タスクを完了することで入手できる鍵を使って解錠できます
 
 
 すべてのシェルターは、「アイテム配置」と「装飾モード」を使ってカスタマイズできます
 
-[G]キーで「アイテム配置」を使用し、[F1]キーで「装飾モード」を有効にして家具を移動させることができます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
+[G]キーで「アイテム配置」を使用し、
+[F1]キーで「装飾モード」を有効にして家具を移動させることができます
+
+「装飾モード」で[TAB]キーで家具カタログを開くことができます。"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_Shelters.png	106200	85cb3d64a611d0161f39e177c822e2695ca46d759e619111e2b287aca6870f9a	456					
 Tutorial	Billboard	16. Vostok	replace	"16. Vostok
 
 Vostok is a high-risk, high-reward Permadeath zone 
@@ -448,10 +468,12 @@ When you enter Vostok maps a red
 Permadeath Skull will also appear 
 in the upper corner of the screen"	"16. ボストーク
 
-ヴォストークは、ハイリスク・ハイリターンのパーマネントデスゾーンであり、
+ヴォストークは、
+ハイリスク・ハイリターンのパーマネントデスゾーンであり、
 死亡するとこれまでの進行状況がすべて失われます
 
-このゲームのパーマネントデスではセーブデータがすべて削除されるため、
+このゲームのパーマネントデスでは
+セーブデータがすべて削除されるため、
 すべてを失うことになります
 
 
