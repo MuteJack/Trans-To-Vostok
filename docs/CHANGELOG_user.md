@@ -11,6 +11,17 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 - _(none currently)_
 
 ---
+## [0.6.4] — 2026-06-11
+
+### Japanese
+- Tutorial Billboard textures added
+- Some expression fixes
+
+### Hungarian
+- Tutorial Billboard textures fully revised
+- Some expression fixes
+- 
+---
 
 ## [0.6.3] — 2026-06-10
 
@@ -255,6 +266,18 @@ tooling), see [`CHANGELOG.md`](CHANGELOG.md).
 
 - _(현재 없음)_
 
+---
+
+## [0.6.4] — 2026-06-11
+
+### 일본어
+- 튜토리얼 빌보드 텍스처 추가
+- 일부 표현 수정
+
+### 헝가리어
+- 튜토리얼 빌보드 텍스처 전체 수정
+- 일부 표현 수정
+- 
 ---
 
 ## [0.6.3] — 2026-06-10

@@ -4,6 +4,31 @@ All notable changes to this mod will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [0.6.4] — 2026-06-11 (Japanese Tutorial Billboard Textures)
+
+### Fixed
+
+- Build pipeline tools still referencing xlsx files instead of canonical TSVs (v0.6.2 issue):
+  - `build_mod_package.py`: Removed `--ignore` flag passed to `build_runtime_tsv.py` (was xlsx-validation-only; no longer applicable)
+  - `build_runtime_tsv.py`: Switched source from `Translation.xlsx` to canonical TSV (`tsv/Translation/*.tsv`)
+  - `build_attributions.py`: Switched source from `Texture.xlsx` to canonical TSV (`tsv/Texture/*.tsv`)
+  - `get_texture_credits.py`: Switched source from `Texture.xlsx` to canonical TSV (`tsv/Texture/*.tsv`)
+  - `export_unique_text.py`: Switched source from `Translation.xlsx` / `Texture.xlsx` to canonical TSVs
+
+### Translation
+
+#### Japanese
+
+- Tutorial Billboard textures added
+- Some expression refinements (Crowdin)
+
+#### Hungarian
+
+- Tutorial Billboard textures fully revised
+- Some expression refinements (Crowdin)
+
+---
+
 ## [0.6.3] — 2026-06-10 (Hot Fix: Rebuild)
 
 ### Fixed
@@ -1324,6 +1349,29 @@ First public test version.
 이 모드의 모든 주요 변경사항을 기록합니다.
 
 포맷은 [Keep a Changelog](https://keepachangelog.com/) 을 따릅니다.
+
+## [0.6.4] — 2026-06-11 일본어 튜토리얼 빌보드 텍스처 추가
+
+### 수정
+
+- 일부 도구가 아직 xlsx 파일을 참고하는 문제 수정 (v0.6.2 Issue)
+  - `build_mod_package.py`: `build_runtime_tsv.py` 호출 시 xlsx 검증 전용 `--ignore` 옵션을 전달하던 코드 제거
+  - `build_runtime_tsv.py`: `Translation.xlsx` 대신 canonical TSV (`tsv/Translation/*.tsv`)를 소스로 사용하도록 전환
+  - `build_attributions.py`: `Texture.xlsx` 대신 canonical TSV (`tsv/Texture/*.tsv`)를 소스로 사용하도록 전환
+  - `get_texture_credits.py`: `Texture.xlsx` 대신 canonical TSV (`tsv/Texture/*.tsv`)를 소스로 사용하도록 전환
+  - `export_unique_text.py`: `Translation.xlsx` / `Texture.xlsx` 대신 canonical TSV를 소스로 사용하도록 전환
+
+### 번역
+
+#### Japanese
+
+- Tutorial Billboard Texture 추가
+- 일부 표현 수정 (Crowdin)
+
+#### Hungarian
+
+- Tutorial Billboard Texture 전체 수정
+- 일부 표현 수정 (Crowdin)
 
 ## [0.6.3] — 2026-06-10 (Hot Fix): 모드를 다시 빌드
 - 모드 빌드 실수로 인하여, 번역 내용이 업데이트되지 않음.
