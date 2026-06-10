@@ -1,19 +1,19 @@
 """
-Extract unique source texts from a target locale's xlsx files.
+Extract unique source texts from a target locale's canonical TSV files.
 
-Sources scanned (all under Trans To Vostok/<target_locale>/):
-    - Translation.xlsx   (game text, with method/untranslatable filters)
-    - Texture.xlsx       (image labels — capitalized Text/Translation columns)
+Sources scanned (all under Translations/<target_locale>/):
+    - tsv/Translation/*.tsv   (game text, with method/untranslatable filters)
+    - tsv/Texture/*.tsv       (image labels — capitalized Text/Translation columns)
 
-Filter logic per row (per file's column conventions):
+Filter logic per row (per TSV's column conventions):
     - text must be non-empty
     - translation must be empty (already-translated rows are excluded — saves
       DeepL quota on re-runs and preserves human/curated edits)
-    - method != ignore  (operational exclusion, only for Translation.xlsx)
-    - method != pattern (regex source, only for Translation.xlsx)
-    - untranslatable != 1 (only when the file has that column)
+    - method != ignore  (operational exclusion, only for Translation TSVs)
+    - method != pattern (regex source, only for Translation TSVs)
+    - untranslatable != 1 (only when the TSV has that column)
 
-Then dedupe by exact text (same English source across all files -> single
+Then dedupe by exact text (same English source across all TSVs -> single
 unique entry, ensuring identical DeepL output everywhere).
 
 Output (under <mod_root>/.tmp/unique_text/<target_locale>/):
@@ -32,12 +32,6 @@ import csv
 import sys
 from pathlib import Path
 
-try:
-    import openpyxl  # noqa: F401
-except ImportError:
-    print("ERROR: openpyxl is required. pip install -r tools/requirements.txt", file=sys.stderr)
-    sys.exit(1)
-
 if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -45,28 +39,22 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
     except (AttributeError, Exception):
         pass
 
-try:
-    import openpyxl as _openpyxl  # noqa: F401
-except ImportError:
-    pass  # already checked above
-
 
 BOOL_TRUE = {"1", "true"}
 
-# methods that should NOT be sent to a translator (Translation.xlsx only)
-EXCLUDED_METHODS = {"ignore", "pattern"}
-
-# Per-xlsx column configuration. None == column not present in this file.
-XLSX_FILES = [
+# Per-TSV-directory column configuration. None == column not present.
+TSV_DIRS = [
     {
-        "name": "Translation.xlsx",
+        "name": "Translation",
+        "tsv_dir_rel": Path("tsv") / "Translation",
         "text_col": "text",
         "trans_col": "translation",
         "method_col": "method",
         "untrans_col": "untranslatable",
     },
     {
-        "name": "Texture.xlsx",
+        "name": "Texture",
+        "tsv_dir_rel": Path("tsv") / "Texture",
         "text_col": "Text",
         "trans_col": "Translation",
         "method_col": None,
@@ -88,96 +76,81 @@ def _empty_stats() -> dict:
     }
 
 
-def collect_from_xlsx(xlsx_path: Path, cfg: dict) -> tuple[list[dict], dict]:
-    """Read one xlsx using its column config, return (rows, stats)."""
-    import openpyxl
+def collect_from_tsv_dir(tsv_dir: Path, cfg: dict) -> tuple[list[dict], dict]:
+    """Read one TSV directory using its column config, return (rows, stats)."""
     rows: list[dict] = []
     stats = _empty_stats()
-    if not xlsx_path.exists():
+    if not tsv_dir.exists():
         return rows, stats
 
-    wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
-    try:
-        for sheet_name in wb.sheetnames:
-            if sheet_name == "MetaData":
-                continue
-            ws = wb[sheet_name]
-            iter_rows = ws.iter_rows(values_only=True)
-            header = next(iter_rows, None)
-            if header is None:
-                continue
-            header_map = {
-                str(h).strip(): i for i, h in enumerate(header) if h is not None
-            }
+    for tsv_path in sorted(tsv_dir.glob("*.tsv")):
+        sheet_name = tsv_path.stem
+        try:
+            with open(tsv_path, encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                fieldnames = reader.fieldnames or []
 
-            text_idx = header_map.get(cfg["text_col"])
-            trans_idx = header_map.get(cfg["trans_col"])
-            if text_idx is None or trans_idx is None:
-                continue  # not a translation sheet
+                text_col = cfg["text_col"]
+                trans_col = cfg["trans_col"]
+                if text_col not in fieldnames or trans_col not in fieldnames:
+                    continue  # not a translation sheet
 
-            method_idx = header_map.get(cfg["method_col"]) if cfg["method_col"] else None
-            untrans_idx = header_map.get(cfg["untrans_col"]) if cfg["untrans_col"] else None
+                method_col = cfg["method_col"]
+                untrans_col = cfg["untrans_col"]
+                per_sheet = {"data_rows": 0, "candidates": 0, "candidate_chars": 0}
 
-            per_sheet = {"data_rows": 0, "candidates": 0, "candidate_chars": 0}
+                for row_idx, row in enumerate(reader, start=1):
+                    stats["total_data_rows"] += 1
+                    per_sheet["data_rows"] += 1
 
-            for row_idx, row in enumerate(iter_rows, start=1):
-                if row is None:
-                    continue
-                stats["total_data_rows"] += 1
-                per_sheet["data_rows"] += 1
-
-                text = row[text_idx] if text_idx < len(row) else None
-                if text is None or str(text).strip() == "":
-                    stats["excluded_empty_text"] += 1
-                    continue
-                text = str(text)
-
-                translation = row[trans_idx] if trans_idx < len(row) else None
-                if translation is not None and str(translation).strip() != "":
-                    stats["excluded_already_translated"] += 1
-                    continue
-
-                if untrans_idx is not None:
-                    uval = row[untrans_idx] if untrans_idx < len(row) else None
-                    if uval is not None and str(uval).strip().lower() in BOOL_TRUE:
-                        stats["excluded_untranslatable"] += 1
+                    text = row.get(text_col, "").strip()
+                    if not text:
+                        stats["excluded_empty_text"] += 1
                         continue
 
-                if method_idx is not None:
-                    mval = row[method_idx] if method_idx < len(row) else None
-                    method_str = str(mval).strip().lower() if mval is not None else ""
-                    if method_str == "ignore":
-                        stats["excluded_method_ignore"] += 1
-                        continue
-                    if method_str == "pattern":
-                        stats["excluded_method_pattern"] += 1
+                    if row.get(trans_col, "").strip():
+                        stats["excluded_already_translated"] += 1
                         continue
 
-                rows.append({
-                    "source_file": xlsx_path.name,
-                    "sheet": sheet_name,
-                    "row_in_sheet": row_idx,
-                    "text": text,
-                })
-                stats["candidate_rows"] += 1
-                per_sheet["candidates"] += 1
-                per_sheet["candidate_chars"] += len(text)
+                    if untrans_col:
+                        if row.get(untrans_col, "").strip().lower() in BOOL_TRUE:
+                            stats["excluded_untranslatable"] += 1
+                            continue
 
-            stats["sheets"][f"{xlsx_path.stem}/{sheet_name}"] = per_sheet
-    finally:
-        wb.close()
+                    if method_col:
+                        method_str = row.get(method_col, "").strip().lower()
+                        if method_str == "ignore":
+                            stats["excluded_method_ignore"] += 1
+                            continue
+                        if method_str == "pattern":
+                            stats["excluded_method_pattern"] += 1
+                            continue
+
+                    rows.append({
+                        "source_file": cfg["name"],
+                        "sheet": sheet_name,
+                        "row_in_sheet": row_idx,
+                        "text": text,
+                    })
+                    stats["candidate_rows"] += 1
+                    per_sheet["candidates"] += 1
+                    per_sheet["candidate_chars"] += len(text)
+
+                stats["sheets"][f"{cfg['name']}/{sheet_name}"] = per_sheet
+        except Exception as e:
+            print(f"  [WARN] Cannot read {tsv_path.name}: {e}", file=sys.stderr)
 
     return rows, stats
 
 
 def collect_candidates(locale_dir: Path) -> tuple[list[dict], dict]:
-    """Read all configured xlsx files and merge candidate rows + stats."""
+    """Read all configured TSV directories and merge candidate rows + stats."""
     all_rows: list[dict] = []
     combined = _empty_stats()
 
-    for cfg in XLSX_FILES:
-        xlsx_path = locale_dir / cfg["name"]
-        rows, stats = collect_from_xlsx(xlsx_path, cfg)
+    for cfg in TSV_DIRS:
+        tsv_dir = locale_dir / cfg["tsv_dir_rel"]
+        rows, stats = collect_from_tsv_dir(tsv_dir, cfg)
         all_rows.extend(rows)
         combined["sheets"].update(stats["sheets"])
         for k in ("total_data_rows", "excluded_empty_text", "excluded_already_translated",
@@ -297,21 +270,21 @@ def main() -> int:
         print(f"  Create it first by copying from Template.")
         return 1
 
-    # Report which xlsx files will be scanned
+    # Report which TSV directories will be scanned
     print(f"Locale folder : {locale_dir}")
     print(f"Output folder : {out_dir}")
-    print(f"Scanning xlsx files:")
-    for cfg in XLSX_FILES:
-        p = locale_dir / cfg["name"]
+    print(f"Scanning TSV directories:")
+    for cfg in TSV_DIRS:
+        p = locale_dir / cfg["tsv_dir_rel"]
         marker = "yes" if p.exists() else "absent (skip)"
         print(f"  - {cfg['name']:<20s}  ({marker})")
     print()
 
-    print("[1/3] Scanning sheets...")
+    print("[1/3] Scanning TSVs...")
     try:
         rows, stats = collect_candidates(locale_dir)
     except PermissionError as e:
-        print(f"[ERROR] Cannot read xlsx (file locked? close Excel and retry): {e}")
+        print(f"[ERROR] Cannot read TSV (file locked?): {e}")
         return 1
 
     print(f"  -> {stats['candidate_rows']} candidate rows from {stats['total_data_rows']} total")

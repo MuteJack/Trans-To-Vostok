@@ -1,16 +1,12 @@
-"""Phase 3 step — extract texture rework credits from Texture.xlsx -> credits.json.
+"""Phase 3 step — extract texture rework credits from Texture TSVs -> credits.json.
 
-Reads the `Reworked by` and `Contributors` columns from each sheet of
-`Translations/<locale>/Texture.xlsx` (MetaData sheet skipped), dedupes,
-and writes the unified list to `Trans To Vostok/<locale>/credits.json`'s
-`Texture_reworker` field.
+Reads the `Reworked by` and `Contributors` columns from each TSV file in
+`Translations/<locale>/tsv/Texture/`, dedupes, and writes the unified list
+to `Trans To Vostok/<locale>/credits.json`'s `Texture_reworker` field.
 
 Other credits.json fields (Translator, translation_updated) are
 preserved — this script only owns Texture_reworker. Crowdin/translator
 fields are owned by tools/crowdin/get_member_list.py.
-
-Texture.xlsx is the authoring source for image credits because texture
-work happens locally with image-editing tools, off-Crowdin.
 
 Input convention (Phase 3):
   <locale>   single locale
@@ -22,6 +18,7 @@ Usage:
   python tools/build/get_texture_credits.py all
 """
 import argparse
+import csv
 import json
 import sys
 from pathlib import Path
@@ -32,13 +29,6 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         sys.stderr.reconfigure(encoding="utf-8", errors="replace")
     except (AttributeError, Exception):
         pass
-
-try:
-    import openpyxl
-except ImportError:
-    print("ERROR: openpyxl is required. pip install -r tools/requirements.txt",
-          file=sys.stderr)
-    sys.exit(1)
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -53,7 +43,6 @@ MOD_ROOT = REPO / "Trans To Vostok"
 DRY_RUN_ROOT = REPO / ".tmp" / "temp_build" / "Trans To Vostok"
 TRANSLATIONS_ROOT = REPO / "Translations"
 CREDITS_FILE = "credits.json"
-TEXTURE_XLSX = "Texture.xlsx"
 TEXTURE_REWORKED_COLUMN = "Reworked by"
 TEXTURE_CONTRIBUTORS_COLUMN = "Contributors"
 TEMPLATE_LOCALE = "Template"
@@ -64,63 +53,43 @@ def _say(msg: str = "") -> None:
     print(msg, flush=True)
 
 
-def _split_names(value) -> list[str]:
-    """Split a cell value into trimmed names. Excel allows in-cell newlines (Alt+Enter)."""
-    if value is None:
+def _split_names(value: str) -> list[str]:
+    """Split a cell value into trimmed names (handles embedded newlines)."""
+    if not value:
         return []
-    if not isinstance(value, str):
-        s = str(value).strip()
-        return [s] if s else []
     return [n.strip() for n in value.replace("\r\n", "\n").split("\n") if n.strip()]
 
 
-def collect_texture_credits(xlsx_path: Path) -> list[str]:
-    """Ordered, deduped list of names from `Reworked by` + `Contributors` across all sheets."""
-    if not xlsx_path.exists():
-        return []
-    try:
-        wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
-    except Exception as e:
-        print(f"  [WARN] Cannot read {xlsx_path}: {e}", file=sys.stderr)
-        return []
-
+def collect_texture_credits(tsv_dir: Path) -> list[str]:
+    """Ordered, deduped list of names from `Reworked by` + `Contributors` across all Texture TSVs."""
     seen: set[str] = set()
     out: list[str] = []
-    try:
-        for sheet_name in wb.sheetnames:
-            ws = wb[sheet_name]
-            rows = list(ws.iter_rows(values_only=True))
-            if not rows:
-                continue
-            header = [str(c).strip() if c is not None else "" for c in rows[0]]
-            rb_idx = header.index(TEXTURE_REWORKED_COLUMN) if TEXTURE_REWORKED_COLUMN in header else None
-            co_idx = header.index(TEXTURE_CONTRIBUTORS_COLUMN) if TEXTURE_CONTRIBUTORS_COLUMN in header else None
-            for row in rows[1:]:
-                if row is None:
-                    continue
-                for idx in (rb_idx, co_idx):
-                    if idx is None or idx >= len(row):
-                        continue
-                    for name in _split_names(row[idx]):
-                        if name not in seen:
-                            seen.add(name)
-                            out.append(name)
-    finally:
-        wb.close()
+    for tsv_path in sorted(tsv_dir.glob("*.tsv")):
+        try:
+            with open(tsv_path, encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                for row in reader:
+                    for col in (TEXTURE_REWORKED_COLUMN, TEXTURE_CONTRIBUTORS_COLUMN):
+                        for name in _split_names(row.get(col, "")):
+                            if name not in seen:
+                                seen.add(name)
+                                out.append(name)
+        except Exception as e:
+            print(f"  [WARN] Cannot read {tsv_path.name}: {e}", file=sys.stderr)
     return out
 
 
 def update_credits_for_locale(locale: str, dry_run: bool = False) -> tuple[int, list[str]]:
-    """Read Texture.xlsx, write Texture_reworker field. Preserves other fields.
+    """Read Texture TSVs, write Texture_reworker field. Preserves other fields.
 
     Returns (exit_code, names).
     """
-    xlsx = TRANSLATIONS_ROOT / locale / TEXTURE_XLSX
-    if not xlsx.exists():
-        _say(f"  [SKIP] Texture.xlsx not found: {xlsx.relative_to(REPO)}")
+    tsv_dir = TRANSLATIONS_ROOT / locale / "tsv" / "Texture"
+    if not tsv_dir.exists():
+        _say(f"  [SKIP] Texture TSV dir not found: {tsv_dir.relative_to(REPO)}")
         return 0, []
 
-    names = collect_texture_credits(xlsx)
+    names = collect_texture_credits(tsv_dir)
 
     # input base from deploy; output to dry root when --dry-run
     base_path = MOD_ROOT / locale / CREDITS_FILE

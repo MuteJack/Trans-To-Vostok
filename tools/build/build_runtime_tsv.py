@@ -10,6 +10,8 @@ data and emits the runtime TSV bundle the in-game translator consumes:
     translation_pattern.tsv
     translation_substr.tsv
 
+Source: Translations/<locale>/tsv/Translation/*.tsv  (canonical TSV files)
+
 Output modes:
   default    Trans To Vostok/<locale>/runtime_tsv/   (deploy path)
   --dry-run  .tmp/temp_build/Trans To Vostok/<locale>/runtime_tsv/
@@ -27,16 +29,10 @@ Template handling:
   Template runtime output therefore lands in .tmp/temp_build/Trans To Vostok/Template/
   and is never deployed.
 
-Validation flags forwarded to validate_xlsx:
-  --soft     TSV-match failure -> WARNING (continue) instead of ERROR
-  --ignore   Skip the validate_xlsx pre-check entirely
-
 Usage:
   python tools/build/build_runtime_tsv.py Korean
   python tools/build/build_runtime_tsv.py Korean --dry-run
   python tools/build/build_runtime_tsv.py all --dry-run
-  python tools/build/build_runtime_tsv.py Korean --soft
-  python tools/build/build_runtime_tsv.py Korean --ignore
 """
 import argparse
 import csv
@@ -57,11 +53,7 @@ REPO = TOOLS_DIR.parent
 
 sys.path.insert(0, str(TOOLS_DIR))
 
-from helper.helper_translation_common import (
-    validate_xlsx,
-    load_all_translation_sheets,
-    _effective_method,
-)
+from helper.helper_translation_common import _effective_method
 from helper.helper_locale_config import load_locales  # noqa: E402
 from helper.helper_log import setup_logpath  # noqa: E402
 
@@ -256,14 +248,22 @@ def _dedupe_literal_global(buckets: dict, stats: dict) -> None:
     stats["literal_global"] = len(buckets["literal_global"])
 
 
-def build(locale: str, *, dry_run: bool, soft: bool, ignore_validation: bool) -> int:
-    xlsx_dir = TRANSLATIONS / locale
-    xlsx_path = xlsx_dir / "Translation.xlsx"
-    if not xlsx_dir.exists():
-        print(f"[ERROR] Translations locale folder not found: {xlsx_dir}")
-        return 1
-    if not xlsx_path.exists():
-        print(f"[ERROR] xlsx file not found: {xlsx_path}")
+def _load_tsv_dir(tsv_dir: Path) -> tuple[int, list[dict]]:
+    """Load all *.tsv files from directory. Returns (file_count, merged_rows)."""
+    rows: list[dict] = []
+    file_count = 0
+    for tsv_path in sorted(tsv_dir.glob("*.tsv")):
+        file_count += 1
+        with open(tsv_path, encoding="utf-8", newline="") as f:
+            for row in csv.DictReader(f, delimiter="\t"):
+                rows.append(row)
+    return file_count, rows
+
+
+def build(locale: str, *, dry_run: bool) -> int:
+    tsv_dir = TRANSLATIONS / locale / "tsv" / "Translation"
+    if not tsv_dir.exists():
+        print(f"[ERROR] TSV directory not found: {tsv_dir}")
         return 1
 
     is_template = (locale == TEMPLATE_LOCALE)
@@ -274,37 +274,13 @@ def build(locale: str, *, dry_run: bool, soft: bool, ignore_validation: bool) ->
 
     print(f"=== Build runtime TSV: {locale} {'(dry-run)' if dry_run else ''} ===")
 
-    # 1. validation
-    if ignore_validation:
-        print("[1/5] Validation skipped (--ignore)")
-    else:
-        validate_tsv_dir = PARSED_TEXT if PARSED_TEXT.exists() else None
-        mode = "soft" if soft else "hard"
-        if validate_tsv_dir is None:
-            print(f"[1/5] Validating (partial: parsed_text not found)... ({locale}, {mode})")
-        else:
-            print(f"[1/5] Validating... ({locale}, {mode})")
-        try:
-            result = validate_xlsx(xlsx_path, validate_tsv_dir, soft=soft)
-        except (FileNotFoundError, ValueError) as e:
-            print(f"[ERROR] Validation failed: {e}")
-            return 1
-        print(f"  -> log: {result.log_path}")
-        if not result.ok:
-            print(f"[ERROR] Validation failed: {result.error_count} errors")
-            print("Aborting build.")
-            return 1
-        if result.warning_count > 0:
-            print(f"  {result.warning_count} warnings (continuing)")
-    print()
-
-    # 2. load xlsx
-    print("[2/5] Loading xlsx...")
-    sheets = load_all_translation_sheets(xlsx_path)
-    all_rows: list[dict] = []
-    for _, _, rows in sheets:
-        all_rows.extend(rows)
-    print(f"  -> {len(sheets)} sheets, {len(all_rows)} rows loaded")
+    # 1. load canonical TSVs
+    print("[1/3] Loading canonical TSVs...")
+    file_count, all_rows = _load_tsv_dir(tsv_dir)
+    if file_count == 0:
+        print(f"[ERROR] No TSV files found in {tsv_dir}")
+        return 1
+    print(f"  -> {file_count} files, {len(all_rows)} rows loaded")
 
     # Template synthesis: make every empty translation echo `text` so the
     # downstream classifier doesn't drop the row as "untranslated".
@@ -317,8 +293,8 @@ def build(locale: str, *, dry_run: bool, soft: bool, ignore_validation: bool) ->
         print(f"  Template synthesis: copied text→translation for {synth} rows")
     print()
 
-    # 3. classify
-    print("[3/5] Classifying rows...")
+    # 2. classify
+    print("[2/3] Classifying rows...")
     buckets, stats = classify_rows(all_rows)
     _dedupe_literal_global(buckets, stats)
     for label in ("static", "literal_scoped", "pattern_scoped",
@@ -334,8 +310,8 @@ def build(locale: str, *, dry_run: bool, soft: bool, ignore_validation: bool) ->
     runtime_dir = _resolve_output_dir(locale, dry_run)
     runtime_dir.mkdir(parents=True, exist_ok=True)
 
-    # 4. write TSV buckets
-    print(f"[4/4] Writing runtime TSVs -> {runtime_dir.relative_to(REPO)}")
+    # 3. write TSV buckets
+    print(f"[3/3] Writing runtime TSVs -> {runtime_dir.relative_to(REPO)}")
     outputs = [
         ("translation_static.tsv",         COLUMNS_SCOPED, buckets["static"]),
         ("translation_literal_scoped.tsv", COLUMNS_SCOPED, buckets["literal_scoped"]),
@@ -360,11 +336,7 @@ def main(argv: list[str]) -> int:
     )
     parser.add_argument("locale", help="Locale name (e.g. Korean)")
     parser.add_argument("--dry-run", action="store_true",
-                        help=f"Output to .tmp/temp_build/Trans To Vostok/<locale>/ instead of deploy path")
-    parser.add_argument("--soft", action="store_true",
-                        help="TSV match failure -> WARNING (continue) instead of ERROR")
-    parser.add_argument("--ignore", action="store_true",
-                        help="Skip validate_xlsx pre-check")
+                        help="Output to .tmp/temp_build/Trans To Vostok/<locale>/ instead of deploy path")
     parser.add_argument("--logpath", default=None,
                         help="Append stdout/stderr to this log file "
                              "(used by orchestrator)")
@@ -378,14 +350,12 @@ def main(argv: list[str]) -> int:
             return 1
         overall = 0
         for loc in locales:
-            rc = build(loc, dry_run=args.dry_run, soft=args.soft,
-                       ignore_validation=args.ignore)
+            rc = build(loc, dry_run=args.dry_run)
             if rc != 0:
                 overall = rc
         return overall
 
-    return build(args.locale, dry_run=args.dry_run, soft=args.soft,
-                 ignore_validation=args.ignore)
+    return build(args.locale, dry_run=args.dry_run)
 
 
 if __name__ == "__main__":

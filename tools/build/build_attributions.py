@@ -1,16 +1,16 @@
-"""Phase 3 step — generate Texture_Attribution.md from Texture.xlsx.
+"""Phase 3 step — generate Texture_Attribution.md from Texture TSVs.
 
 This file lists ONLY third-party data source attributions for image
-assets (the `Attribution` column of Texture.xlsx). Person-level credit
+assets (the `Attribution` column of Texture TSVs). Person-level credit
 (Reworked by / Contributors) lives in Translation_Credit.md, generated
 by build_translation_credit.py.
 
-Required columns per sheet:
+Required columns per TSV:
     - File Name
     - Attribution
 
-If Texture.xlsx is absent for a locale, the step is a no-op (locales
-without texture translation are normal).
+If the Texture TSV directory is absent for a locale, the step is a no-op
+(locales without texture translation are normal).
 
 Input convention (Phase 3):
   <locale>   single locale
@@ -22,6 +22,7 @@ Usage:
   python tools/build/build_attributions.py all
 """
 import argparse
+import csv
 import re
 import sys
 from pathlib import Path
@@ -32,12 +33,6 @@ if sys.stdout.encoding and sys.stdout.encoding.lower() not in ("utf-8", "utf8"):
         sys.stderr.reconfigure(encoding="utf-8", errors="replace")
     except (AttributeError, Exception):
         pass
-
-try:
-    import openpyxl
-except ImportError:
-    print("ERROR: openpyxl is required. pip install openpyxl", file=sys.stderr)
-    sys.exit(1)
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
@@ -51,7 +46,6 @@ from helper.helper_log import setup_logpath  # noqa: E402
 MOD_ROOT = REPO / "Trans To Vostok"
 DRY_RUN_ROOT = REPO / ".tmp" / "temp_build" / "Trans To Vostok"
 TRANSLATIONS_ROOT = REPO / "Translations"
-TEXTURE_XLSX = "Texture.xlsx"
 OUTPUT_NAME = "Texture_Attribution.md"
 TEMPLATE_LOCALE = "Template"
 SOURCE_LOCALE = "English"
@@ -64,38 +58,30 @@ def _say(msg: str = "") -> None:
     print(msg, flush=True)
 
 
-def collect_rows(xlsx_path: Path) -> list[dict]:
-    """Collect (sheet, file_name, attribution) rows from all sheets."""
-    wb = openpyxl.load_workbook(xlsx_path, read_only=True)
+def collect_rows(tsv_dir: Path) -> list[dict]:
+    """Collect (sheet, file_name, attribution) rows from all Texture TSVs."""
     rows: list[dict] = []
-    try:
-        for ws in wb.worksheets:
-            header = [c.value for c in ws[1]]
-            try:
-                idx = {col: header.index(col) for col in REQUIRED_COLUMNS}
-            except ValueError as e:
-                _say(f"  [WARN] '{ws.title}' sheet missing required column ({e}), skipping")
-                continue
-
-            for row_no, row in enumerate(ws.iter_rows(values_only=True), 1):
-                if row_no == 1:
+    for tsv_path in sorted(tsv_dir.glob("*.tsv")):
+        sheet_name = tsv_path.stem
+        try:
+            with open(tsv_path, encoding="utf-8", newline="") as f:
+                reader = csv.DictReader(f, delimiter="\t")
+                fieldnames = reader.fieldnames or []
+                missing = [c for c in REQUIRED_COLUMNS if c not in fieldnames]
+                if missing:
+                    _say(f"  [WARN] '{sheet_name}' missing columns {missing}, skipping")
                     continue
-
-                def cell(name: str) -> str:
-                    i = idx[name]
-                    return str(row[i]).strip() if i < len(row) and row[i] is not None else ""
-
-                file_name = cell("File Name")
-                if not file_name:
-                    continue
-
-                rows.append({
-                    "sheet": ws.title,
-                    "file_name": file_name,
-                    "attribution": cell("Attribution"),
-                })
-    finally:
-        wb.close()
+                for row in reader:
+                    file_name = row.get("File Name", "").strip()
+                    if not file_name:
+                        continue
+                    rows.append({
+                        "sheet": sheet_name,
+                        "file_name": file_name,
+                        "attribution": row.get("Attribution", "").strip(),
+                    })
+        except Exception as e:
+            _say(f"  [WARN] Cannot read {tsv_path.name}: {e}")
     return rows
 
 
@@ -115,9 +101,9 @@ def render_markdown(rows: list[dict], locale: str) -> str:
     )
     lines.append("")
     lines.append(
-        f"_Auto-generated from `{locale}/Texture.xlsx` by "
+        f"_Auto-generated from `{locale}/tsv/Texture/` by "
         "`tools/build/build_attributions.py`. Do not edit manually - "
-        "update the xlsx instead._"
+        "update the canonical TSVs instead._"
     )
     lines.append("")
 
@@ -161,12 +147,12 @@ def render_markdown(rows: list[dict], locale: str) -> str:
 
 
 def build_for_locale(locale: str, dry_run: bool = False) -> int:
-    xlsx_path = TRANSLATIONS_ROOT / locale / TEXTURE_XLSX
-    if not xlsx_path.exists():
-        _say(f"  [SKIP] Texture.xlsx not found: {xlsx_path.relative_to(REPO)}")
+    tsv_dir = TRANSLATIONS_ROOT / locale / "tsv" / "Texture"
+    if not tsv_dir.exists():
+        _say(f"  [SKIP] Texture TSV dir not found: {tsv_dir.relative_to(REPO)}")
         return 0
 
-    rows = collect_rows(xlsx_path)
+    rows = collect_rows(tsv_dir)
     sheets = sorted({r["sheet"] for r in rows})
     _say(f"  Loaded {len(rows)} entries from sheets: {', '.join(sheets) or '-'}")
 

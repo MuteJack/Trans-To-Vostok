@@ -4,7 +4,7 @@ Pipeline:
 
   1. clear_temp_build.py
   2. per-locale, in order:
-        build_runtime_tsv.py <locale> --ignore  [+ --dry-run if staging]
+        build_runtime_tsv.py <locale>           [+ --dry-run if staging]
         check_runtime_tsv_conflict.py <locale>  [+ --dry-run if staging]
         get_texture_credits.py <locale>         [+ --dry-run if staging]
         build_attributions.py <locale>          [+ --dry-run if staging]
@@ -56,7 +56,7 @@ from helper.helper_log import setup_logpath, make_log_path  # noqa: E402
 
 # (label, script_path, extra_args)  — --dry-run added conditionally at runtime
 PER_LOCALE_STEPS: list[tuple[str, Path, list[str]]] = [
-    ("build_runtime_tsv",            BUILD_DIR / "build_runtime_tsv.py",            ["--ignore"]),
+    ("build_runtime_tsv",            BUILD_DIR / "build_runtime_tsv.py",            []),
     ("check_runtime_tsv_conflict",   BUILD_DIR / "check_runtime_tsv_conflict.py",   []),
     ("get_texture_credits",          BUILD_DIR / "get_texture_credits.py",          []),
     ("build_attributions",           BUILD_DIR / "build_attributions.py",           []),
