@@ -1,13 +1,13 @@
 text	translation
-Monitor: {idx}	Monitor: {idx}
-Window: {percent}%	Window: {percent}%
-Loading {scene}...	Loading {scene}...
-Remove {name}	Remove {name}
-Level {no}	Level {no}
 Day {str}	Day {str}
 In {str} Days	In {str} Days
 {type} Event	{type} Event
 ~{str}% / map instance	~{str}% / map instance
+Remove {name}	Remove {name}
+Level {no}	Level {no}
+Monitor: {idx}	Monitor: {idx}
+Window: {percent}%	Window: {percent}%
+Loading {scene}...	Loading {scene}...
 You slept {str} hours	{str} 時間眠りました
 Cat Fed ({name})	猫の餌（{name}）
 Task Completed: {name}	タスク完了： {name}

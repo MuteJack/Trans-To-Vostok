@@ -1,4 +1,177 @@
 location	parent	name	type	text	translation
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	Le généraliste revient au Village
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Le Docteur est un marchand spécialisé dans le domaine médical qui tient un dispensaire de fortune dans un bâtiment scolaire abandonné de la Zone 05.
+
+Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Afficher
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	Jour 1
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	Dans 10 jours
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Événement destiné aux traders
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Lieu de l'événement :
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Village
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Possibilité d'événement :
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	environ 5 % / instance de carte
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Santé
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Énergie
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Mental
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Temp.
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Oxygène
+UI/HUD	Info	Map	Label	Shelter (Area 05)	Refuge (Zone 05)
+UI/Interface	Container/Header	Label	Label	Container	Conteneur
+UI/Interface	Equipment/Header	Label	Label	Equipment	Équipement
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Sac à dos
+UI/Interface	Equipment/Hints	Rig	Label	Rig	Plateforme
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	Casque
+UI/Interface	Equipment/Hints	Head	Label	Head	Tête
+UI/Interface	Equipment/Hints	Torso	Label	Torso	Torse
+UI/Interface	Equipment/Hints	Legs	Label	Legs	Jambes
+UI/Interface	Equipment/Hints	Belt	Label	Belt	Ceinture
+UI/Interface	Equipment/Hints	Feet	Label	Feet	Pieds
+UI/Interface	Equipment/Hints	Hands	Label	Hands	Les mains
+UI/Interface	Equipment/Hints	Matches	Label	Matches	Rencontres
+UI/Interface	Equipment/Hints	Light	Label	Light	Lumière
+UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
+UI/Interface	Equipment/Hints	Time	Label	Time	Heure
+UI/Interface	Equipment/Hints	Map	Label	Map	Carte
+UI/Interface	Equipment/Hints	Player	Label	Player	Joueur
+UI/Interface	Character/Header	Label	Label	Character	Personnage
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Santé
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Énergie
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Mental
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Temp.
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Chat
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	Jour
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Refuges
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	Tâches
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	Quêtes
+UI/Interface	Tools/Header	Label	Label	Tools	Outils
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	Événements
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	Artisanat
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	Proximité
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	Notes sur la tâche
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	Notes sur la tâche : vide
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	Notes sur la tâche non disponibles (Tutoriel)
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	Carte du monde
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	Carte non fournie
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	Carte inutilisable (Vostok)
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"Panoramique = [Clic gauche]
+Zoom = [Molette]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	Carte de focalisation
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	Lecteur de cassettes
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	Lecteur de cassettes non disponible
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	Cette cassette contient de la musique sous licence (Avertissement concernant le contenu)
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	Nom de la cassette
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	Ignorer la musique d'ambiance [DÉSACTIVÉ]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	Nomades
+UI/Interface	Trader/Header	Label	Label	Trader	Trader
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	Approvisionnement
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	Tâches
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	Nom :
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	Trader
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	Fiscalité :
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	Tâches :
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	Réapprovisionnement :
+UI/Interface	Deal/Header	Label	Label	Deal	Offre
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	Montant de la demande + taxes (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	Valeur de l'offre (€)
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	Réinitialiser
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	Accepter
+UI/Interface	Supply/Header	Label	Label	Supply	Approvisionnement
+UI/Interface	Tasks/Header	Label	Label	Tasks	Tâches
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Catalogue de mobilier
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	Le catalogue est lié à votre personnage ; si vous mourez, les objets de votre catalogue seront également détruits
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	Utilisation
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	Équiper
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	Déséquiper
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	Décharger
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	Diviser
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	Prends
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	Sommeil
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	Transfert
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	Lâcher
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	Lieu
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	Détruire
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	Supprimer [0]
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	Supprimer [1]
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	Supprimer [2]
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	Supprimer [3]
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Maître du café
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Consommable
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Légendaire
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	Matériel :
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	Primaire
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	État :
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	Poids :
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	Valeur :
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	Calibre :
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	Dommages :
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	Pénétration :
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	Niveau 1
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	Niveau 2
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	Niveau 3
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	Niveau 4
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	Niveau 5
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	Protection :
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	Niveau 1
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Capacité :
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Isolation :
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Santé :
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Énergie :
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Eau :
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Mental :
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Température corporelle :
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Imbriqué :
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Soins :
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Articles compatibles :
+UI/Elements/Item	Details	Abbreviation	Label	Item	Article
+UI/Profiler	Panel/Margin	Label	Label	Profiler	Profilage
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	Afficher
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	Nom de la recette
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	Entrée :
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	Résultat :
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	Commencer la saisie
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	Artisanat
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	Le devoir m'appelle
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	Ajouter aux notes
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	Supprimer
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	Niveau de difficulté :
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	Facile
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"La semaine dernière, je suis allé voir le médecin dans cette école abandonnée du coin. Il m'a dit que je devrais arrêter toutes mes « mauvaises habitudes », mais ce vieux connard fume lui-même, alors qu'il aille se faire voir !
+
+Tu es sûrement juste un de ces hippies des temps modernes qui ne font que sucer des pastilles à la menthe quand ça va mal, mais si jamais tu tombes sur un de ces endroits, apporte un paquet ou deux et des allumettes aussi."
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	Livrer :
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	Recevoir :
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ Vous recevrez des meubles pour votre abri à l'issue de cette mission
+→ Vos meubles se trouvent dans le catalogue de meubles [Mode Décoration]"
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Lancer la livraison
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Suspendre la livraison
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Livré
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Terminer
 Scenes/Menu	Main/Buttons	New	Button	New game	Nouveau jeu
 Scenes/Menu	Main/Buttons	Load	Button	Load game	Charger la partie
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	Tutoriel
@@ -996,179 +1169,7 @@ Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
 "	Menu principal
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
 "	Quitter
-UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Santé
-UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Énergie
-UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
-UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Mental
-UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Temp.
-UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Oxygène
-UI/HUD	Info	Map	Label	Shelter (Area 05)	Refuge (Zone 05)
-UI/Interface	Container/Header	Label	Label	Container	Conteneur
-UI/Interface	Equipment/Header	Label	Label	Equipment	Équipement
-UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Sac à dos
-UI/Interface	Equipment/Hints	Rig	Label	Rig	Plateforme
-UI/Interface	Equipment/Hints	Helmet	Label	Helmet	Casque
-UI/Interface	Equipment/Hints	Head	Label	Head	Tête
-UI/Interface	Equipment/Hints	Torso	Label	Torso	Torse
-UI/Interface	Equipment/Hints	Legs	Label	Legs	Jambes
-UI/Interface	Equipment/Hints	Belt	Label	Belt	Ceinture
-UI/Interface	Equipment/Hints	Feet	Label	Feet	Pieds
-UI/Interface	Equipment/Hints	Hands	Label	Hands	Les mains
-UI/Interface	Equipment/Hints	Matches	Label	Matches	Rencontres
-UI/Interface	Equipment/Hints	Light	Label	Light	Lumière
-UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
-UI/Interface	Equipment/Hints	Time	Label	Time	Heure
-UI/Interface	Equipment/Hints	Map	Label	Map	Carte
-UI/Interface	Equipment/Hints	Player	Label	Player	Joueur
-UI/Interface	Character/Header	Label	Label	Character	Personnage
-UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Santé
-UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Énergie
-UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Eau
-UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Mental
-UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Temp.
-UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Chat
-UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	Jour
-UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Refuges
-UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	Tâches
-UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	Quêtes
-UI/Interface	Tools/Header	Label	Label	Tools	Outils
-UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	Événements
-UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	Artisanat
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	Proximité
-UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	Notes sur la tâche
-UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	Notes sur la tâche : vide
-UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	Notes sur la tâche non disponibles (Tutoriel)
-UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	Carte du monde
-UI/Interface	Tools/Map	Hint	Label	Map not equipped	Carte non fournie
-UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	Carte inutilisable (Vostok)
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
-Zoom = [SCROLL]"	"Panoramique = [Clic gauche]
-Zoom = [Molette]"
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	Carte de focalisation
-UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	Lecteur de cassettes
-UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	Lecteur de cassettes non disponible
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	Cette cassette contient de la musique sous licence (Avertissement concernant le contenu)
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	Nom de la cassette
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	Remplacer la musique d'ambiance [Activé]
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	Ignorer la musique d'ambiance [DÉSACTIVÉ]
-UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	Nomades
-UI/Interface	Trader/Header	Label	Label	Trader	Trader
-UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	Approvisionnement
-UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	Tâches
-UI/Interface	Trader/Panel/Stats	Name	Label	Name:	Nom :
-UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	Trader
-UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	Fiscalité :
-UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	Tâches :
-UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	Réapprovisionnement :
-UI/Interface	Deal/Header	Label	Label	Deal	Offre
-UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	Montant de la demande + taxes (€)
-UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	Valeur de l'offre (€)
-UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	Réinitialiser
-UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	Accepter
-UI/Interface	Supply/Header	Label	Label	Supply	Approvisionnement
-UI/Interface	Tasks/Header	Label	Label	Tasks	Tâches
-UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Catalogue de mobilier
-UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	Le catalogue est lié à votre personnage ; si vous mourez, les objets de votre catalogue seront également détruits
-UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	Utilisation
-UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	Équiper
-UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	Déséquiper
-UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	Décharger
-UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	Diviser
-UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	Prends
-UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	Sommeil
-UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	Transfert
-UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	Lâcher
-UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	Lieu
-UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	Détruire
-UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	Supprimer [0]
-UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	Supprimer [1]
-UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	Supprimer [2]
-UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	Supprimer [3]
-UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Maître du café
-UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Consommable
-UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Légendaire
-UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	Un objet est un élément présent dans l'univers du jeu que le joueur peut ramasser.
-UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	Matériel :
-UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	Primaire
-UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	État :
-UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	Poids :
-UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	Valeur :
-UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	Calibre :
-UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	Dommages :
-UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	Pénétration :
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	Niveau 1
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	Niveau 2
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	Niveau 3
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	Niveau 4
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	Niveau 5
-UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	Protection :
-UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	Niveau 1
-UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Capacité :
-UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Isolation :
-UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Santé :
-UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Énergie :
-UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Eau :
-UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Mental :
-UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Température corporelle :
-UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Imbriqué :
-UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Soins :
-UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Articles compatibles :
-UI/Elements/Item	Details	Abbreviation	Label	Item	Article
-UI/Profiler	Panel/Margin	Label	Label	Profiler	Profilage
-UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	Afficher
-UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	Nom de la recette
-UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	Entrée :
-UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	Résultat :
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	Commencer la saisie
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	Artisanat
-UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	Le devoir m'appelle
-UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	Ajouter aux notes
-UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	Supprimer
-UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	Niveau de difficulté :
-UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	Facile
-UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
-
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"La semaine dernière, je suis allé voir le médecin dans cette école abandonnée du coin. Il m'a dit que je devrais arrêter toutes mes « mauvaises habitudes », mais ce vieux connard fume lui-même, alors qu'il aille se faire voir !
-
-Tu es sûrement juste un de ces hippies des temps modernes qui ne font que sucer des pastilles à la menthe quand ça va mal, mais si jamais tu tombes sur un de ces endroits, apporte un paquet ou deux et des allumettes aussi."
-UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	Livrer :
-UI/Elements/Task	Margin/Elements	Output	Label	Receive:	Recevoir :
-UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ Vous recevrez des meubles pour votre abri à l'issue de cette mission
-→ Vos meubles se trouvent dans le catalogue de meubles [Mode Décoration]"
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Lancer la livraison
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Suspendre la livraison
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Livré
-UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Terminer
-UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	Le généraliste revient au Village
-UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
-
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Le Docteur est un marchand spécialisé dans le domaine médical qui tient un dispensaire de fortune dans un bâtiment scolaire abandonné de la Zone 05.
-
-Après avoir rendu visite à la Grand-mère pour un « contrôle de bien-être », le Docteur retourne à ce dispensaire, prêt à prodiguer des soins médicaux aux blessés."
-UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Afficher
-UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	Jour 1
-UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	Dans 10 jours
-UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Événement destiné aux traders
-UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Lieu de l'événement :
-UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Village
-UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Possibilité d'événement :
-UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	environ 5 % / instance de carte
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Nouveaux meubles ajoutés [Catalogue]
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	Arme enrayée | Appuyez sur [Recharger]
 UI/HUD	Tooltip	Label	Label	Interaction	Interaction
 UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Mode rotation
@@ -1209,4 +1210,3 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Eau :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Temp. :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Soins :
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	Compatibilité :
-UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Nouveaux meubles ajoutés [Catalogue]

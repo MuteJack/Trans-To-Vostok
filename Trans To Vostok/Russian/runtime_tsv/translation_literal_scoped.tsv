@@ -1,4 +1,192 @@
 location	parent	name	type	text	translation
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	Универсал возвращается в Деревню
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Доктор — торговец, специализирующийся на медицине, и ведёт импровизированную клинику внутри заброшенного школьного здания в Зоне 05.
+
+После визита к Бабушке для «проверки благополучия» Доктор возвращается в свою клинику и готов оказывать медицинскую помощь пострадавшим."
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Показать
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	День 1
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	Через 10 дней
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Событие торговца
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Место события:
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Деревня
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Вероятность события:
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / экземпляр карты
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Здоровье
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Энергия
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Гидратация
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Психика
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Темп. тела
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Кислород
+UI/HUD	Info	Map	Label	Shelter (Area 05)	Укрытие (Зона 05)
+UI/Interface	Container/Header	Label	Label	Container	Контейнер
+UI/Interface	Equipment/Header	Label	Label	Equipment	Снаряжение
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Рюкзак
+UI/Interface	Equipment/Hints	Rig	Label	Rig	Разгрузка
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	Шлем
+UI/Interface	Equipment/Hints	Head	Label	Head	Голова
+UI/Interface	Equipment/Hints	Torso	Label	Torso	Туловище
+UI/Interface	Equipment/Hints	Legs	Label	Legs	Ноги
+UI/Interface	Equipment/Hints	Belt	Label	Belt	Пояс
+UI/Interface	Equipment/Hints	Feet	Label	Feet	Ступни
+UI/Interface	Equipment/Hints	Hands	Label	Hands	Руки
+UI/Interface	Equipment/Hints	Matches	Label	Matches	Спички
+UI/Interface	Equipment/Hints	Light	Label	Light	Фонарь
+UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
+UI/Interface	Equipment/Hints	Time	Label	Time	Время
+UI/Interface	Equipment/Hints	Map	Label	Map	Карта
+UI/Interface	Equipment/Hints	Player	Label	Player	Плеер
+UI/Interface	Character/Header	Label	Label	Character	Персонаж
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Здоровье
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Энергия
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Гидратация
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Психика
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Темп. тела
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Кот
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	День
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Укрытия
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	Задания
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	Квесты
+UI/Interface	Tools/Header	Label	Label	Tools	Инструменты
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	События
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	Крафт
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	Близость
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	Заметки заданий
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	Заметки заданий пусты
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	Заметки заданий недоступны (Обучение)
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	Карта мира
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	Карта не надета
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	Карта недоступна (Vostok)
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"Перемещение = [LMB]
+Масштаб = [SCROLL]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	Центрировать карту
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	Кассетный плеер
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	Кассетный плеер не надет
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	Эта кассета содержит лицензионную музыку (предупреждение о контенте)
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	Название кассеты
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	Заглушить фоновую музыку [ВКЛ]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	Заглушить фоновую музыку [ВЫКЛ]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	Кочевники
+UI/Interface	Trader/Header	Label	Label	Trader	Торговец
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	Поставки
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	Задания
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	Имя:
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	Торговец
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	Налог:
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	Задания:
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	Пополнение:
+UI/Interface	Deal/Header	Label	Label	Deal	Сделка
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	Запрашиваемая стоимость + налог (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	Предлагаемая стоимость (€)
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	Сбросить
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	Принять
+UI/Interface	Supply/Header	Label	Label	Supply	Поставки
+UI/Interface	Tasks/Header	Label	Label	Tasks	Задания
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Каталог мебели
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	Каталог привязан к вашему персонажу — гибель также уничтожит предметы из каталога
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	"Использовать
+"
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	"Экипировать
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	"Снять
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	"Разгрузить
+"
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	"Разделить
+"
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	"Взять
+"
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	"Спать
+"
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	"Передать
+"
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	"Выбросить
+"
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	"Разместить
+"
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	"Уничтожить
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	"Убрать [0]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	"Убрать [1]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	"Убрать [2]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	"Убрать [3]
+"
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Coffeemaster
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Расходник
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Легендарный
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	Предмет — объект в игровом мире, который может быть подобран игроком.
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	Снаряжение:
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	Основное
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	Состояние:
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	Вес:
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	Стоимость:
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	Калибр:
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	Урон:
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	Пробитие:
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	Уровень 1
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	Уровень 2
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	Уровень 3
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	Уровень 4
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	Уровень 5
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	Защита:
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	Уровень 1
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Ёмкость:
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Утепление:
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Здоровье:
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Энергия:
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Гидратация:
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Психика:
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Темп. тела:
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Вложение:
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Лечит:
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Совместимые предметы:
+UI/Elements/Item	Details	Abbreviation	Label	Item	Предмет
+UI/Profiler	Panel/Margin	Label	Label	Profiler	Профайлер
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	Показать
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	Название рецепта
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	Вход:
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	Выход:
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	Начать загрузку
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	Изготовить
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	Долг зовёт
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	Добавить в Заметки
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	Убрать
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	Сложность:
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	Лёгкий
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"На прошлой неделе я навестил Доктора в той заброшенной школе неподалёку. Он сказал, что мне следует избавиться от всех ""вредных привычек"", но сам старый хрыч при этом курит — так что плевать на него!
+
+Ты, скорее всего, один из тех современных хиппи, которые в трудную минуту лишь лижут мятные пастилки, но если вдруг найдёшь одну такую — принеси пачку-другую и ещё спички."
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	Доставить:
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	Получить:
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ За это задание вы получите мебель для укрытия
+→ Ваша мебель находится в Каталоге мебели [Режим декора]"
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Начать доставку
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Остановить доставку
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Доставлено
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Завершить
 Scenes/Menu	Main/Buttons	New	Button	New game	Новая игра
 Scenes/Menu	Main/Buttons	Load	Button	Load game	Загрузить игру
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	Учебное пособие
@@ -995,194 +1183,7 @@ Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
 "
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
 "	Выйти
-UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Здоровье
-UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Энергия
-UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Гидратация
-UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Психика
-UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Темп. тела
-UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Кислород
-UI/HUD	Info	Map	Label	Shelter (Area 05)	Укрытие (Зона 05)
-UI/Interface	Container/Header	Label	Label	Container	Контейнер
-UI/Interface	Equipment/Header	Label	Label	Equipment	Снаряжение
-UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Рюкзак
-UI/Interface	Equipment/Hints	Rig	Label	Rig	Разгрузка
-UI/Interface	Equipment/Hints	Helmet	Label	Helmet	Шлем
-UI/Interface	Equipment/Hints	Head	Label	Head	Голова
-UI/Interface	Equipment/Hints	Torso	Label	Torso	Туловище
-UI/Interface	Equipment/Hints	Legs	Label	Legs	Ноги
-UI/Interface	Equipment/Hints	Belt	Label	Belt	Пояс
-UI/Interface	Equipment/Hints	Feet	Label	Feet	Ступни
-UI/Interface	Equipment/Hints	Hands	Label	Hands	Руки
-UI/Interface	Equipment/Hints	Matches	Label	Matches	Спички
-UI/Interface	Equipment/Hints	Light	Label	Light	Фонарь
-UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
-UI/Interface	Equipment/Hints	Time	Label	Time	Время
-UI/Interface	Equipment/Hints	Map	Label	Map	Карта
-UI/Interface	Equipment/Hints	Player	Label	Player	Плеер
-UI/Interface	Character/Header	Label	Label	Character	Персонаж
-UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Здоровье
-UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Энергия
-UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Гидратация
-UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Психика
-UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Темп. тела
-UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Кот
-UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	День
-UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Укрытия
-UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	Задания
-UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	Квесты
-UI/Interface	Tools/Header	Label	Label	Tools	Инструменты
-UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	События
-UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	Крафт
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	Близость
-UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	Заметки заданий
-UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	Заметки заданий пусты
-UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	Заметки заданий недоступны (Обучение)
-UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	Карта мира
-UI/Interface	Tools/Map	Hint	Label	Map not equipped	Карта не надета
-UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	Карта недоступна (Vostok)
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
-Zoom = [SCROLL]"	"Перемещение = [LMB]
-Масштаб = [SCROLL]"
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	Центрировать карту
-UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	Кассетный плеер
-UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	Кассетный плеер не надет
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	Эта кассета содержит лицензионную музыку (предупреждение о контенте)
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	Название кассеты
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	Заглушить фоновую музыку [ВКЛ]
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	Заглушить фоновую музыку [ВЫКЛ]
-UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	Кочевники
-UI/Interface	Trader/Header	Label	Label	Trader	Торговец
-UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	Поставки
-UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	Задания
-UI/Interface	Trader/Panel/Stats	Name	Label	Name:	Имя:
-UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	Торговец
-UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	Налог:
-UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	Задания:
-UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	Пополнение:
-UI/Interface	Deal/Header	Label	Label	Deal	Сделка
-UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	Запрашиваемая стоимость + налог (€)
-UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	Предлагаемая стоимость (€)
-UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	Сбросить
-UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	Принять
-UI/Interface	Supply/Header	Label	Label	Supply	Поставки
-UI/Interface	Tasks/Header	Label	Label	Tasks	Задания
-UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Каталог мебели
-UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	Каталог привязан к вашему персонажу — гибель также уничтожит предметы из каталога
-UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	"Использовать
-"
-UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	"Экипировать
-"
-UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	"Снять
-"
-UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	"Разгрузить
-"
-UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	"Разделить
-"
-UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	"Взять
-"
-UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	"Спать
-"
-UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	"Передать
-"
-UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	"Выбросить
-"
-UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	"Разместить
-"
-UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	"Уничтожить
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	"Убрать [0]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	"Убрать [1]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	"Убрать [2]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	"Убрать [3]
-"
-UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Coffeemaster
-UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Расходник
-UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Легендарный
-UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	Предмет — объект в игровом мире, который может быть подобран игроком.
-UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	Снаряжение:
-UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	Основное
-UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	Состояние:
-UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	Вес:
-UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	Стоимость:
-UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	Калибр:
-UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	Урон:
-UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	Пробитие:
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	Уровень 1
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	Уровень 2
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	Уровень 3
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	Уровень 4
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	Уровень 5
-UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	Защита:
-UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	Уровень 1
-UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Ёмкость:
-UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Утепление:
-UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Здоровье:
-UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Энергия:
-UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Гидратация:
-UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Психика:
-UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Темп. тела:
-UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Вложение:
-UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Лечит:
-UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Совместимые предметы:
-UI/Elements/Item	Details	Abbreviation	Label	Item	Предмет
-UI/Profiler	Panel/Margin	Label	Label	Profiler	Профайлер
-UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	Показать
-UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	Название рецепта
-UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	Вход:
-UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	Выход:
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	Начать загрузку
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	Изготовить
-UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	Долг зовёт
-UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	Добавить в Заметки
-UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	Убрать
-UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	Сложность:
-UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	Лёгкий
-UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
-
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"На прошлой неделе я навестил Доктора в той заброшенной школе неподалёку. Он сказал, что мне следует избавиться от всех ""вредных привычек"", но сам старый хрыч при этом курит — так что плевать на него!
-
-Ты, скорее всего, один из тех современных хиппи, которые в трудную минуту лишь лижут мятные пастилки, но если вдруг найдёшь одну такую — принеси пачку-другую и ещё спички."
-UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	Доставить:
-UI/Elements/Task	Margin/Elements	Output	Label	Receive:	Получить:
-UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ За это задание вы получите мебель для укрытия
-→ Ваша мебель находится в Каталоге мебели [Режим декора]"
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Начать доставку
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Остановить доставку
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Доставлено
-UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Завершить
-UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	Универсал возвращается в Деревню
-UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
-
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Доктор — торговец, специализирующийся на медицине, и ведёт импровизированную клинику внутри заброшенного школьного здания в Зоне 05.
-
-После визита к Бабушке для «проверки благополучия» Доктор возвращается в свою клинику и готов оказывать медицинскую помощь пострадавшим."
-UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Показать
-UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	День 1
-UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	Через 10 дней
-UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Событие торговца
-UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Место события:
-UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Деревня
-UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Вероятность события:
-UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / экземпляр карты
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Добавлена новая мебель [Каталог]
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	Оружие заклинило | Нажмите [Перезарядка]
 UI/HUD	Tooltip	Label	Label	Interaction	Взаимодействие
 UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[ПКМ] = Режим вращения
@@ -1224,4 +1225,3 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Гид�
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Темп. тела:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Лечит:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	Совместимость:
-UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Добавлена новая мебель [Каталог]

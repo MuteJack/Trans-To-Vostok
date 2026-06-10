@@ -1,102 +1,105 @@
 text	translation
-Compatibility	Compatibilidad
-Selected	Seleccionado
-Press key to bind...	Presiona la tecla para asignar...
-Forward	Adelante
-Backward	Atrás
-Left	Izquierda
-Right	Correcto
-Crouch	Agacharse
-Jump	Ir
-Sprint	Sprint
-Lean Left	Inclínate hacia la izquierda
-Lean Right	Inclínate hacia la derecha
-Draw Primary	Sorteo de primaria
-Draw Secondary	Empate en la segunda ronda
-Draw Knife	Cuchillo de desbaste
-Draw Grenade 1	Sacar granada 1
-Draw Grenade 2	Sacar granada 2
-Raise Weapon	Levantar el arma
-Lower Weapon	Arma inferior
-Aim	Objetivo
-Canted Aim	Punto de mira inclinado
-Fire	Fuego
-Reload	Actualizar
-Ammo Check	Comprobación de munición
-Firemode	Modo de fuego
-Inspect Weapon	Inspeccionar arma
-Prepare Insert	Preparar inserción
-Insert Cartridge	Insertar cartucho
-Interact	Interact
-Place	Lugar
-Decor Mode	Modo Decoración
-Flashlight	Linterna
-NVG	NVG
-Laser	Láser
-Rail Movement	Movimiento ferroviario
-Secondary Optic	Óptica secundaria
-Interface	Interfaz
-Rotate Item	Girar elemento
-Fast Transfer	Transferencia rápida
-Fast Equip	Equipamiento rápido
-Fast Drop	Caída rápida
-Left Mouse Button	Botón izquierdo del ratón
-Right Mouse Button	Botón derecho del ratón
-Middle Mouse Button	Botón central del ratón
-Mouse Wheel Up	Rueda del ratón hacia arriba
-Mouse Wheel Down	Rueda del ratón hacia abajo
-Mouse Thumb Button 1	Botón 1 del pulgar del ratón
-Mouse Thumb Button 2	Botón 2 del pulgar del ratón
-UI Scaling	Escalado de la interfaz de usuario
-Loading...	Cargando...
-Skip Intro [SPACE]	Saltar introducción [BARRA ESPACIADORA]
-All save files deleted	Se han eliminado todos los archivos guardados
-Character died	El personaje ha muerto
-Menu	Menú
-Intro	Introducción
-Tutorial	Tutorial
-Tutorial Exit	Salir del tutorial
-Death	Muerte
-Template	Plantilla
-shaders	sombreadores
-Shelter	Refugio
-Cabin	Cabina
-Attic	Ático
-Classroom	Aula
-Tent	Tienda de campaña
-Bunker	Búnker
-Area 05	Área 05
-Village	Pueblo
-Highway	Autopista
-School	Escuela
-Border Zone	Zona fronteriza
-Outpost	Puesto avanzado
-Minefield	Campo minado
-Vostok	Vostok
-Apartments	Apartamentos
-Terminal	Terminal
-Trader	Operador
-Generalist	Generalista
-Doctor	Doctor
-Gunsmith	Armero
-Driver	Conductor
-Grandma	Abuela
-Shaman	Chamán
-Fisherman	Pescador
-Scientist	Científico
-Bandit	Bandido
-Guards	Guardias
-Military	Militar
-Punisher	El Castigador
-Neutral	Neutro
-Overcast	Nublado
-Rain	Lluvia
-Storm	Tormenta
-Generic	Genérico
-Wood	Madera
-Metal	Metal
-Concrete	Hormigón
-Rock	Rock
+Airdrop	Lanzamiento aéreo
+Tutorial Crate	Tutorial Crate
+Electric Box	Caja eléctrica
+Medical Cabinet	Botiquín
+Office Cabinet	Mueble de oficina
+Cabinet	Gabinete
+Corpse	Cadáver
+Bandit Corpse	Cadáver de bandido
+Crate Military	Crate Military
+Crate Special	Oferta especial de jaulas
+Wooden Crate	Caja de madera
+Garbage	Basura
+Fireplace	Chimenea
+Freezer	Congelador
+Fridge	Hielera
+Fusebox	Caja de fusibles
+Locker	Casillero
+Mailbox	Buzón
+Nightstand	Mesita de noche
+Boxes	Cajas
+Stove	Estufa
+Furniture	Muebles
+Furnitures	Muebles
+Bed (Civilian)	Cama (civil)
+Bed C.	Cama C.
+Bed (Nomad)	Cama (Nomad)
+Bed N.	Cama N.
+Cabinet (Medical)	Gabinete (Médico)
+Cabinet M.	Gabinete M.
+Cabinet (Office)	Gabinete (Oficina)
+Cabinet. 0	Gabinete. 0
+Cabinet (Wood)	Armario (de madera)
+Cabinet W.	Gabinete W.
+Carpet (Persian)	Alfombra (persa)
+Carpet P.	Carpet P.
+Carpet (Rag)	Alfombra (de trapo)
+Carpet R.	Carpet R.
+Chair (Office)	Silla (de oficina)
+Chair O.	Presidente O.
+Chair (School)	Cátedra (Facultad)
+Chair S.	Presidente S.
+Sun Chair	Silla Sun
+S. Chair	Presidente de EE. UU.
+Crate (Military)	Caja (militar)
+Crate M.	Crate M.
+Crate (Special)	Caja (especial)
+Crate S.	Crate S.
+Cupboard	Armario
+C. Board	C. Junta Directiva
+Curtain (Long)	Cortina (larga)
+Curtain L.	Cortina L.
+Curtain (Mini)	Cortina (Mini)
+Curtain M.	Curtain M.
+Dartboard	Diapositiva
+D. Board	D. Junta Directiva
+N. Stand	N. Stand
+Painting (Lake)	Pintura (Lago)
+Painting L.	Pintura L.
+Pallet	Palé
+Poster (Posture)	Cartel (Postura)
+Poster P.	Cartel P.
+Rack (Coat)	Perchero (para abrigos)
+Rack C.	Rack C.
+Rya (Maria)	Rya (María)
+Rya M.	Rya M.
+Shelf (Metal)	Estante (de metal)
+Shelf M.	Estante M.
+Shelf (Wall)	Estante (de pared)
+Shelf W.	Estante W.
+Shelf (Wood)	Estante (de madera)
+Sign (Border Zone)	Cartel (Zona fronteriza)
+Sign BZ.	Firma BZ.
+Sofa (Leather)	Sofá (de cuero)
+Sofa L.	Sofá L.
+Stool (Military)	Taburete (militar)
+Stool M.	M. Stool
+Stool (Padded)	Taburete (acolchado)
+Stool P.	Heces P.
+Table (Cabin)	Mesa (cabina)
+Table C.	Tabla C.
+Table (Canteen)	Mesa (comedor)
+Table (Kitchen)	Mesa (de cocina)
+Table K.	Tabla K.
+Table (Office)	Mesa (de oficina)
+Table. O	Tabla. O
+Target Stand	Soporte para dianas
+Target S.	Destino S.
+Television	Televisión
+TV	Televisión
+Trolley (Short)	Carrito (corto)
+Trolley S.	Trolley S.
+Trolley (Tall)	Carrito (alto)
+Trolley T.	Trolley T.
+Weapon Display	Exposición de armas
+Weapon D.	Arma D.
+Trader Event	Evento para traders
+Dynamic Event	Evento dinámico
+Special Event	Evento especial
+Dynamic	Dinámico
+Special	Especial
+Guaranteed	Garantizado
 Inventory	Inventario
 Primary	Primaria
 Secondary	Secundaria
@@ -129,15 +132,6 @@ Overweight	Sobrepeso
 Explosion	Explosión
 Fall	Otoño
 Day	Día
-Easy	Fácil
-Intermediate	Nivel intermedio
-Hard	Difícil
-Trader Event	Evento para traders
-Dynamic Event	Evento dinámico
-Special Event	Evento especial
-Dynamic	Dinámico
-Special	Especial
-Guaranteed	Garantizado
 Common	Común
 Rare	Raro
 Legendary	Legendario
@@ -484,6 +478,104 @@ Leopard	Leopardo
 Micro	Micro
 Monster	Monstruo
 Thor	Thor
+Compatibility	Compatibilidad
+Selected	Seleccionado
+Press key to bind...	Presiona la tecla para asignar...
+Forward	Adelante
+Backward	Atrás
+Left	Izquierda
+Right	Correcto
+Crouch	Agacharse
+Jump	Ir
+Sprint	Sprint
+Lean Left	Inclínate hacia la izquierda
+Lean Right	Inclínate hacia la derecha
+Draw Primary	Sorteo de primaria
+Draw Secondary	Empate en la segunda ronda
+Draw Knife	Cuchillo de desbaste
+Draw Grenade 1	Sacar granada 1
+Draw Grenade 2	Sacar granada 2
+Raise Weapon	Levantar el arma
+Lower Weapon	Arma inferior
+Aim	Objetivo
+Canted Aim	Punto de mira inclinado
+Fire	Fuego
+Reload	Actualizar
+Ammo Check	Comprobación de munición
+Firemode	Modo de fuego
+Inspect Weapon	Inspeccionar arma
+Prepare Insert	Preparar inserción
+Insert Cartridge	Insertar cartucho
+Interact	Interact
+Place	Lugar
+Decor Mode	Modo Decoración
+Flashlight	Linterna
+NVG	NVG
+Laser	Láser
+Rail Movement	Movimiento ferroviario
+Secondary Optic	Óptica secundaria
+Interface	Interfaz
+Rotate Item	Girar elemento
+Fast Transfer	Transferencia rápida
+Fast Equip	Equipamiento rápido
+Fast Drop	Caída rápida
+Left Mouse Button	Botón izquierdo del ratón
+Right Mouse Button	Botón derecho del ratón
+Middle Mouse Button	Botón central del ratón
+Mouse Wheel Up	Rueda del ratón hacia arriba
+Mouse Wheel Down	Rueda del ratón hacia abajo
+Mouse Thumb Button 1	Botón 1 del pulgar del ratón
+Mouse Thumb Button 2	Botón 2 del pulgar del ratón
+UI Scaling	Escalado de la interfaz de usuario
+Loading...	Cargando...
+Skip Intro [SPACE]	Saltar introducción [BARRA ESPACIADORA]
+All save files deleted	Se han eliminado todos los archivos guardados
+Character died	El personaje ha muerto
+Menu	Menú
+Intro	Introducción
+Tutorial	Tutorial
+Tutorial Exit	Salir del tutorial
+Death	Muerte
+Template	Plantilla
+shaders	sombreadores
+Shelter	Refugio
+Cabin	Cabina
+Attic	Ático
+Classroom	Aula
+Tent	Tienda de campaña
+Bunker	Búnker
+Area 05	Área 05
+Village	Pueblo
+Highway	Autopista
+School	Escuela
+Border Zone	Zona fronteriza
+Outpost	Puesto avanzado
+Minefield	Campo minado
+Vostok	Vostok
+Apartments	Apartamentos
+Terminal	Terminal
+Trader	Operador
+Generalist	Generalista
+Doctor	Doctor
+Gunsmith	Armero
+Driver	Conductor
+Grandma	Abuela
+Shaman	Chamán
+Fisherman	Pescador
+Scientist	Científico
+Bandit	Bandido
+Guards	Guardias
+Military	Militar
+Punisher	El Castigador
+Neutral	Neutro
+Overcast	Nublado
+Rain	Lluvia
+Storm	Tormenta
+Generic	Genérico
+Wood	Madera
+Metal	Metal
+Concrete	Hormigón
+Rock	Rock
 New Furniture Added [Catalog]	Se han añadido nuevos muebles [Catálogo]
 Boss Killed	Asesinato del jefe
 Cat Rescued	Gato rescatado
@@ -491,101 +583,11 @@ Cat Vital Activated	Cat Vital Activado
 Cat Died	Murió el gato
 You have been spotted!	¡Te han visto!
 Player Returned	Jugador devuelto
-Airdrop	Lanzamiento aéreo
-Tutorial Crate	Tutorial Crate
-Electric Box	Caja eléctrica
-Medical Cabinet	Botiquín
-Office Cabinet	Mueble de oficina
-Cabinet	Gabinete
-Corpse	Cadáver
-Bandit Corpse	Cadáver de bandido
-Crate Military	Crate Military
-Crate Special	Oferta especial de jaulas
-Wooden Crate	Caja de madera
-Garbage	Basura
-Fireplace	Chimenea
-Freezer	Congelador
-Fridge	Hielera
-Fusebox	Caja de fusibles
-Locker	Casillero
-Mailbox	Buzón
-Nightstand	Mesita de noche
-Boxes	Cajas
-Stove	Estufa
-Furniture	Muebles
-Furnitures	Muebles
-Bed (Civilian)	Cama (civil)
-Bed C.	Cama C.
-Bed (Nomad)	Cama (Nomad)
-Bed N.	Cama N.
-Cabinet (Medical)	Gabinete (Médico)
-Cabinet M.	Gabinete M.
-Cabinet (Office)	Gabinete (Oficina)
-Cabinet. 0	Gabinete. 0
-Cabinet (Wood)	Armario (de madera)
-Cabinet W.	Gabinete W.
-Carpet (Persian)	Alfombra (persa)
-Carpet P.	Carpet P.
-Carpet (Rag)	Alfombra (de trapo)
-Carpet R.	Carpet R.
-Chair (Office)	Silla (de oficina)
-Chair O.	Presidente O.
-Chair (School)	Cátedra (Facultad)
-Chair S.	Presidente S.
-Sun Chair	Silla Sun
-S. Chair	Presidente de EE. UU.
-Crate (Military)	Caja (militar)
-Crate M.	Crate M.
-Crate (Special)	Caja (especial)
-Crate S.	Crate S.
-Cupboard	Armario
-C. Board	C. Junta Directiva
-Curtain (Long)	Cortina (larga)
-Curtain L.	Cortina L.
-Curtain (Mini)	Cortina (Mini)
-Curtain M.	Curtain M.
-Dartboard	Diapositiva
-D. Board	D. Junta Directiva
-N. Stand	N. Stand
-Painting (Lake)	Pintura (Lago)
-Painting L.	Pintura L.
-Pallet	Palé
-Poster (Posture)	Cartel (Postura)
-Poster P.	Cartel P.
-Rack (Coat)	Perchero (para abrigos)
-Rack C.	Rack C.
-Rya (Maria)	Rya (María)
-Rya M.	Rya M.
-Shelf (Metal)	Estante (de metal)
-Shelf M.	Estante M.
-Shelf (Wall)	Estante (de pared)
-Shelf W.	Estante W.
-Shelf (Wood)	Estante (de madera)
-Sign (Border Zone)	Cartel (Zona fronteriza)
-Sign BZ.	Firma BZ.
-Sofa (Leather)	Sofá (de cuero)
-Sofa L.	Sofá L.
-Stool (Military)	Taburete (militar)
-Stool M.	M. Stool
-Stool (Padded)	Taburete (acolchado)
-Stool P.	Heces P.
-Table (Cabin)	Mesa (cabina)
-Table C.	Tabla C.
-Table (Canteen)	Mesa (comedor)
-Table (Kitchen)	Mesa (de cocina)
-Table K.	Tabla K.
-Table (Office)	Mesa (de oficina)
-Table. O	Tabla. O
-Target Stand	Soporte para dianas
-Target S.	Destino S.
-Television	Televisión
-TV	Televisión
-Trolley (Short)	Carrito (corto)
-Trolley S.	Trolley S.
-Trolley (Tall)	Carrito (alto)
-Trolley T.	Trolley T.
-Weapon Display	Exposición de armas
-Weapon D.	Arma D.
+Indoors	En interiores
+Indoor	En interiores
+Mine	Mío
+Lure	Señuelo
+(Military)	(Militar)
 Unload	Descargar
 Clear Chamber	Cámara transparente
 Unequip	Quitar
@@ -620,8 +622,6 @@ Rescue Cat	Gato rescatado
 Cat is eating, do not disturb	El gato está comiendo, no molestar
 Fuel Tank [89%]	Depósito de combustible [89 %]
 Feed cat:	Alimentar al gato:
-Indoors	En interiores
-Indoor	En interiores
-Mine	Mío
-Lure	Señuelo
-(Military)	(Militar)
+Easy	Fácil
+Intermediate	Nivel intermedio
+Hard	Difícil

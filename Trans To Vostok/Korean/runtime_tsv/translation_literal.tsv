@@ -1,4 +1,583 @@
 text	translation
+Airdrop	보급품
+Tutorial Crate	튜토리얼 상자
+Electric Box	배전함
+Medical Cabinet	의료 수납장
+Office Cabinet	사무용 수납장
+Cabinet	수납장
+Corpse	시체
+Bandit Corpse	밴디트 시체
+Crate Military	군용 상자
+Crate Special	특수 상자
+Wooden Crate	나무 상자
+Garbage	쓰레기
+Fireplace	화로
+Freezer	냉동고
+Fridge	냉장고
+Fusebox	퓨즈 박스
+Locker	사물함
+Mailbox	우편함
+Nightstand	협탁
+Boxes	박스
+Stove	스토브
+Furniture	가구
+Furnitures	가구
+Bed (Civilian)	침대 (민간용)
+Bed C.	침대 민간.
+Bed (Nomad)	침대 (방랑자)
+Bed N.	침대 방랑.
+Cabinet (Medical)	수납장 (의료용)
+Cabinet M.	수납장 의료.
+Cabinet (Office)	수납장 (사무용)
+Cabinet. 0	수납장 (사무)
+Cabinet (Wood)	수납장 (나무)
+Cabinet W.	수납장 (나무)
+Carpet (Persian)	카펫 (페르시안)
+Carpet P.	카펫 페르.
+Carpet (Rag)	카펫 (누더기)
+Carpet R.	카펫 (누더기)
+Chair (Office)	의자 (사무용)
+Chair O.	의자 사무.
+Chair (School)	의자 (학교용)
+Chair S.	의자 학교.
+Sun Chair	선베드
+S. Chair	선베드
+Crate (Military)	상자 (군용)
+Crate M.	상자 군용.
+Crate (Special)	상자 (특수)
+Crate S.	상자 특수.
+Cupboard	찬장
+C. Board	찬장
+Curtain (Long)	커튼 (대형)
+Curtain L.	커튼 대형.
+Curtain (Mini)	커튼 (소형)
+Curtain M.	커튼 소형.
+Dartboard	다트판
+D. Board	다트판
+N. Stand	협탁
+Painting (Lake)	그림 (호수)
+Painting L.	그림 호수.
+Pallet	팔레트
+Poster (Posture)	포스터 (바른자세)
+Poster P.	"포스터
+바른자세"
+Rack (Coat)	옷걸이 (코트)
+Rack C.	옷걸이
+Rya (Maria)	융단 (마리아)
+Rya M.	융단 마리아.
+Shelf (Metal)	선반 (철제)
+Shelf M.	선반 (철제)
+Shelf (Wall)	선반 (벽면)
+Shelf W.	선반
+Shelf (Wood)	선반 (나무)
+Sign (Border Zone)	표지판 (접경 지대)
+Sign BZ.	표지판 (접경 지대)
+Sofa (Leather)	소파 (가죽)
+Sofa L.	소파 (가죽)
+Stool (Military)	의자 (군용)
+Stool M.	의자 (군용)
+Stool (Padded)	의자 (쿠션)
+Stool P.	의자 (쿠션)
+Table (Cabin)	테이블 (오두막)
+Table C.	테이블 (오두막)
+Table (Canteen)	테이블 (식당)
+Table (Kitchen)	테이블 (주방)
+Table K.	테이블 (주방)
+Table (Office)	테이블 (사무용)
+Table. O	테이블 (사무용)
+Target Stand	표적 거치대
+Target S.	표적 거치대
+Television	텔레비전
+TV	TV
+Trolley (Short)	트롤리 (소형)
+Trolley S.	트롤리 (소형)
+Trolley (Tall)	트롤리 (대형)
+Trolley T.	트롤리 (대형)
+Weapon Display	무기 진열대
+Weapon D.	무기 진열대
+Trader Event	상인 이벤트
+Dynamic Event	동적 이벤트
+Special Event	특별 이벤트
+Dynamic	동적
+Special	특별
+Guaranteed	보장됨
+Generalist returns to Village	잡화상이 마을에 복귀
+"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
+
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"잡화상은 05 구역 마을 차고 건물 안에 작은 가게를 운영하는 만능 재주꾼 상인으로, 주로 일반 생필품을 판매합니다.
+
+잠시 휴식을 취한 후, 잡화상은 다시 영업을 시작하여 단골 고객들에게 합리적인 가격으로 상품을 제공할 준비를 마쳤습니다."
+Doctor returns to School	의사가 학교에 복귀
+"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
+
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"의사는 의학을 전문으로 하는 상인으로, 05 구역의 버려진 학교 건물 안에 임시 진료소를 운영하고 있습니다.
+
+할머니의 안부를 확인하러 다녀온 의사는 진료소로 돌아와 부상자들을 치료할 준비를 마쳤습니다."
+Fighter Jets	전투기
+"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
+
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"05구역 철수 및 접경 지대 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 불가피해졌습니다.
+
+핀란드군은 전투기를 동원해 상공에 자주 모습을 드러내며, 위협적인 비살상 공중 위력 비행을 시작할 예정입니다."
+Missing Cat	잃어버린 고양이
+"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
+
+A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
+
+Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"할머니의 고양이가 전투기의 굉음에 놀라 도망친 후 사라졌습니다.
+
+며칠 전, 방랑자들이 전초기지를 돌아다니던 고양이를 발견하고 상자 같은 것으로 붙잡았습니다. 하지만 방랑자들이 고양이를 할머니에게 돌려주려던 순간, 밴디트들이 습격하여 상자를 빼앗아 갔습니다.
+
+마을 사람들은 밴디트들이 상자를 마구 던지다가 결국 어딘가에 버려두는 것을 목격했습니다."
+Punisher arrives to Area 05	퍼니셔가 05 구역에 도착
+"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
+
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"퍼니셔는 핀란드 범죄 세계에서 악명 높은 밴디트 두목이자 채권 추심원입니다.
+
+퍼니셔와 그의 부하들은 지역 경찰차를 훔쳐 05구역 곳곳을 누비고 다니고 있습니다."
+Airdrops are delivered to Area 05	공중 보급품이 05 구역에 투하됨
+"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
+
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"오랜 지연 끝에 핀란드군은 05 구역에 대한 공중 구호품 투하를 재개했습니다.
+
+공중 구호품에는 일반적으로 의약품, 소모품 및 기타 생존 장비와 같은 인도적 지원 물품이 포함됩니다."
+BTR Patrols	BTR 순찰
+"The military faction has started to use armored vehicles in the Vostok area.
+
+Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"군 세력이 보스토크 지역에서 장갑차를 사용하기 시작했습니다.
+
+군용 BTR은 중기관총으로 무장하고 있으며, 주요 도로와 핵심 지역에서 순찰하는 모습이 목격되었습니다."
+Attack Helicopters	공격 헬리콥터
+"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
+
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"접경 지대의 비무장화가 무너지기 시작했고, 기존의 규칙들이 더 이상 적용되지 않는다는 것이 명백해지고 있습니다.
+
+공식 소식통은 아무런 변화가 없다고 주장하지만, 공격 헬리콥터들이 접경 지대 인근에서 빈번한 순찰과 영공 침범을 시작했습니다."
+Helicopter Crash Sites	헬리콥터 추락 현장
+"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
+
+Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"영공 침범 이후 공중전은 불가피했으며, 국경 양쪽에서 여러 대의 공격 헬리콥터가 격추되었습니다.
+
+헬리콥터 추락 지점은 여러 곳에 흩어져 있으며, 고가의 전리품이 발견되어 AI 활동의 주요 거점이 되고 있습니다."
+Gunsmith returns to Outpost	건스미스가 전초기지로 복귀
+"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
+
+Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"건스미스는 전초기지 벙커 중 한 곳에 무기 보관소를 운영하며 총기와 관련된 모든 것을 전문적으로 취급하는 상인입니다.
+
+건스미스는 몇 달 동안 자취를 감췄지만, 소문에 따르면 국경 너머로 ""출장""을 갔다가 이제 05 구역에 있는 그의 소중한 벙커로 돌아왔다고 합니다."
+Outpost gets compromised	전초기지 발각
+"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
+
+Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
+
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"최근 사건들로 인해 접경 지대
+의 상황은 급속도로 악화되고 있으며, 인근 지역들도 그 여파에 직면하고 있습니다.
+
+이제 군용 BTR이 전초기지 지역에 진입할 수 있게 되었고, 05 구역은 더 이상 안전지대로 간주되지 않습니다.
+
+이 소식은 05 구역 주민들과 상인들 사이에서 빠르게 퍼져나갔지만, 05 구역 외부의 언론과 당국은 이를 단순한 루머로 여기고 있습니다."
+Traders leave Area 05	상인들이 05 구역을 떠남
+"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
+
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"전초기지가 발각된 후, 모든 상인들이 철수 준비를 하며 05 구역을 떠나기 시작했습니다.
+
+상인들의 철수는 일시적인 조치로 보이며, 상황이 진정되면 다시 돌아올 것입니다."
+Traders return to Area 05	상인들이 05 구역으로 복귀
+"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
+
+All traders are returning back to Area 05."	"최근 사태의 악화세는 진정된 듯하며, 05 구역이 완전한 혼란에 빠지는 상황은 면했습니다.
+
+모든 상인들이 05 구역으로 복귀하고 있습니다."
+Transmission	송신
+"The signal that started it all has suddenly reappeared.
+
+The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
+
+This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"모든 사태의 발단이 된 신호가 갑자기 다시 나타났습니다.
+
+이 신호는 라디오 방송을 방해하고 있으며, 모든 일반 주파수에서 수신 가능합니다.
+
+이것은 얼리 액세스 [빌드 1]의 마지막 이벤트입니다. 이벤트와 스토리는 향후 빌드에서 계속됩니다."
+Inventory	인벤토리
+Primary	주무기
+Secondary	보조무기
+Vital	바이탈
+Task Notes empty	의뢰 노트가 비어있습니다
+Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
+Map not equipped	지도가 장착되지 않았습니다
+Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)
+Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
+Casette Player power 0%, recharge player	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.
+Casette Player empty, insert casette	카세트 플레이어가 비어 있습니다, 카세트를 삽입해 주세요.
+Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
+Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
+Sleep	수면
+Level 2	레벨 2
+Level 3	레벨 3
+Level 4	레벨 4
+Level 5	레벨 5
+Heat required	열원 필요
+Workbench required	작업대 필요
+Shelter required	은신처 필요
+Start Input	투입 시작
+Stop Input	투입 정지
+Reset Input	투입 초기화
+Start Delivery	배달 시작
+Stop Delivery	배달 종료
+Delivered	배달됨
+CBRN	화생방
+Overweight	중량 초과
+Explosion	폭발
+Fall	낙하
+Day	일
+Common	일반
+Rare	희귀
+Legendary	전설
+Armor Plate	방탄판
+Armor	방어구
+Armor Plate {class}	방탄판 {class}
+Armor Plate (II)	방탄판 (II)
+Armor Plate (III+)	방탄판 (III+)
+Armor Plate (III)	방탄판 (III)
+Armor Plate (IIIA)	방탄판 (IIIA)
+Armor Plate (IV)	방탄판 (IV)
+Backpack	배낭
+Jääkäri Backpack (Black)	야카리 배낭 (블랙)
+Jääkäri BP.	야카리 배낭
+Jääkäri Backpack (Brown)	야카리 배낭 (브라운)
+Jääkäri Backpack (Green)	야카리 배낭 (그린)
+Jääkäri Backpack (M05)	야카리 배낭 (M05)
+Nomad Backpack	방랑자 배낭
+Nomad BP.	방랑자 배낭
+Patrol Backpack	패트롤 배낭
+Patrol BP.	패트롤 배낭
+Duffel (Retro)	더플백 (레트로)
+R. Duffel	더플백
+Belt Pouch	벨트 파우치
+Kukkaro (Black)	쿠카로 (블랙)
+Kukkaro	쿠카로
+Kukkaro (Brown)	쿠카로 (브라운)
+Kukkaro (Green)	쿠카로 (그린)
+Kukkaro (M05)	쿠카로 (M05)
+Literature	서적
+Book (Children)	책 (아동용)
+Children	아동
+Book (Cooking)	책 (요리)
+Cooking	요리
+Book (Fishing)	책 (낚시)
+Book (Religion)	책 (종교)
+Religion	종교
+Clothing	의류
+Flame Beanie	플레임 비니
+F. Beanie	플레임 비니
+Combat Boots	전투화
+C. Boots	전투화
+M62 Cap	M62 캡
+Tactical Fleece (Brown)	전술 후리스 (브라운)
+T. Fleece	전술 후리스
+Tactical Fleece (Green)	전술 후리스 (그린)
+Leather Gloves	가죽 장갑
+L. Gloves	가죽 장갑
+Work Gloves	작업용 장갑
+W. Gloves	작업 장갑
+Mosquito Hat	모기장 모자
+M. Hat	모기 모자.
+Sauna Hat	사우나 모자
+S. Hat	사우나 모자
+Hoodie (Border Zone)	후드티 (접경 지대)
+Hoodie BZ.	후드티 (접경 지대)
+Hoodie B.	후드티 (접경 지대)
+Hoodie (Gray)	후드티 (그레이)
+Hoodie	후드티
+M62 Jacket	M62 재킷
+M62 J.	M62 재킷
+Santa Jacket	산타 재킷
+Santa J.	산타 재킷
+Winter Jacket (Blue)	겨울 재킷 (블루)
+Winter Jacket	겨울 재킷
+Winter Jacket (Red)	겨울 재킷 (레드)
+Winter J.	겨울 재킷
+Jeans (Black)	청바지 (블랙)
+Jeans	"청바지
+(블랙)"
+Hiking Pants	등산 바지
+Hiking P.	등산 바지
+Windbreaker (Black)	바람막이 (블랙)
+Windbreaker	바람막이
+Windbr.	바람막이
+Windbreaker (Green)	바람막이 (그린)
+Consumables	소모품
+Consumable	소모품
+Drink	마시기
+Eat	먹기
+Eat Raw	먹기 (날것)
+Eat (Raw)	먹기 (날것)
+Chew	씹기
+Smoke	피우기
+Use	사용
+Beer	맥주
+Empty Can	빈 캔
+Can	캔
+Canned Meat	고기 통조림
+Meat	고기
+Canned Meatballs	미트볼 통조림
+Meatballs	미트볼
+Canned Pea Soup	완두콩 스프 통조림
+Pea Soup	"완두콩
+스프"
+Canned Peaches	복숭아 통조림
+Peaches	복숭아
+Canned Pear	배 통조림
+Pear	배
+Canned Peas	완두콩 통조림
+Peas	완두콩
+Canned Pineapple	파인애플 통조림
+Pineapple	파인애플
+Canned Tomatoes	토마토 통조림
+Tomatoes	토마토
+Canned Tuna	참치 통조림
+Tuna	참치
+Cat Food	고양이 사료
+War Chocolate	군용 초콜릿
+W. Choco	군용 초콜릿
+Cigarettes	담배
+Cigs	담배
+Cigars	시가
+Coffee	커피
+Coffee (Brewed)	커피 (끓임)
+C. Brewed	커피 (끓임)
+Fish Soup (Cooked)	생선 스프 (조리됨)
+F. Soup (Cooked)	생선 스프 (조리됨)
+F. Soup	생선 스프
+Meatballs (Cooked)	미트볼 (조리됨)
+M. Balls (Cooked)	미트볼 (조리됨)
+M. Balls	미트볼
+Pea Soup (Cooked)	완두콩 스프 (조리됨)
+P. Soup (Cooked)	콩 스프 (조리됨)
+P. Soup	콩 스프
+Tomato Soup (Cooked)	토마토 스프 (조리됨)
+T. Soup (Cooked)	토마토 스프 (조리됨)
+T. Soup	토마토 스프
+Crackers	크래커
+Energy Drink	에너지 드링크
+E. Drink	에너지.
+Energy Powder	에너지 파우더
+E. Powder	E.파우더
+Field Ration	전투식량
+F. Ration	전투식량
+Juice	주스
+Juice (Orange)	주스 (오렌지)
+Juice O.	오렌지
+Juice (Pear)	주스 (배)
+Juice P.	배
+Juice (Raspberry)	주스 (라즈베리)
+Juice R.	라즈베리
+Kilju	킬유
+Kompot	과일조림
+Mustard	머스타드
+Peanuts	땅콩
+Potato	감자
+Salty Liquorice	감초사탕
+Salty Liq.	감초사탕
+Snus	씹는 담배
+Soda (Lemon)	소다 (레몬)
+Soda	소다
+Soda L.	레몬소다
+Sugar	설탕
+Water Bottle	물병
+Water	물
+Yeast	이스트
+Electronics	전자제품
+Alarm Clock	알람 시계
+A. Clock	알람시계
+Batteries	배터리
+Battery	배터리
+Battery Cables	배터리 케이블
+B. Cables	배터리 선
+Casette	카세트
+Casette (Electrofolk)	Casette (일렉트로포크)
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	Junna - Ruslana
+Junna - Vandringsman	Junna - Vandringsman
+Casette (Nomad)	카세트 (방랑자)
+Casette (OST)	카세트 (OST)
+OST - Alive	OST - Alive
+OST - Daybreak	OST - Daybreak
+OST - Far	OST - Far
+OST - Lost	OST - Lost
+OST - Rain	OST - Rain
+OST - Road	OST - Road
+OST - Trailer	OST - Trailer
+OST - Winds	OST - Winds
+Casette (Radio Hits)	카세트 (히트곡)
+Casette (Symphony)	카세트 (교향곡)
+Vostok Symphony	보스토크 교향곡
+Casette Player	카세트 플레이어
+C. Player	플레이어
+Coffeemaster	커피머신
+C. Master	커피머신
+Cooking Station	조리대
+C. Station	조리대
+Hotplate	핫플레이트
+Inverter	인버터
+Narva	나르바
+Polaris	폴라리스
+Fish	생선
+Fishing	낚시
+Bream	도미
+Fishing Rod	낚싯대
+F. Rod	낚싯대
+Perch	농어
+Pike	민물고기
+Roach	잉어
+Grenade	수류탄
+Helmet	헬멧
+Police Helmet (IIIA)	경찰 헬멧 (IIIA)
+Police Helmet	경찰 헬멧
+P. Helmet	경찰 헬멧
+Instrument	악기
+Guitar	기타
+Harmonica	하모니카
+Harmo.	하모니카
+Key	열쇠
+Attic Key	다락방 열쇠
+Attic K.	다락방 열쇠
+Bunker Key	벙커 열쇠
+Bunker K.	벙커 열쇠
+Cellar Key	지하실 열쇠
+Cellar K.	지하실 열쇠
+Classroom Key	교실 열쇠
+Class. K.	교실 열쇠
+Gymnasium Key	체육관 열쇠
+Gym. K.	체육관 열쇠
+Tunnel Key	터널 열쇠
+Tunnel K.	터널 열쇠
+Knife	칼
+Jaeger 140	예거 140
+Jaeger	예거
+Skrama 200	스크라마 200
+Skrama	스크라마
+Skrama 240	스크라마 240
+Lore	스토리
+Cat	고양이
+Oil Sample	기름 샘플
+Oil S.	기름 샘플
+Patient Report	환자 보고서
+P. Report	보고서
+Heal	치료
+Spray	뿌리기
+Medical	의료
+Antibiotics	항생제
+Antibio.	항생제
+Antiseptic	소독약
+A. Septic	소독약
+Balm	연고
+Bandage	붕대
+Bandage (Improvised)	붕대 (급조)
+Cold Medicine	감기약
+C. Med.	감기약
+Deodorant	데오드란트
+Deodora.	데오드란트
+Gum	껌
+Lotion	로션
+Medkit	구급상자
+Melatonin	멜라토닌
+Melaton.	멜라토닌
+Painkill.	진통제
+Saline	식염수
+Splint	부목
+Splint (Improvised)	부목 (급조)
+Thermal Blanket	보온 담요
+Thermal	보온 담요
+Tissues	티슈
+Sneeze	코풀기
+Tourniquet	지혈대
+Tourni.	지혈대
+Tourniquet (Improvised)	지혈대 (급조)
+Wipes	물티슈
+Wipe	닦기
+Misc	기타
+Blanket	담요
+Board Game	보드게임
+B. Game	보드게임
+Bucket	양동이
+Coffee Filter	커피 필터
+C. Filter	커피필터
+Duct Tape	덕트 테이프
+D. Tape	덕테이프
+Happy Stove	화로
+H. Stove	화로
+Jerry Can	기름통
+Jerry C.	기름통
+Lumber	목재
+Map	지도
+Map (Tactical)	전술 지도
+T. Map	전술 지도
+Matches	성냥
+Mat.	성냥
+Mattress	매트리스
+Mess Kit	반합
+Nails	못
+Oil Filter	오일 필터
+O. Filter	오일 필터
+Pillow	배게
+Rags	헝겊
+Sleeping_Bag	침낭
+Sleeping Bag	침낭
+S. Bag	침낭
+Sticks	나뭇가지
+Tackle Box	낚시 도구함
+Tackle B.	낚시 도구함
+Toilet Paper	화장지
+T. Paper	화장지
+Toolbox	공구함
+Water Lock	발효 마개
+W. Lock	발효 마개
+Weapon Repair Kit	무기 수리 키트
+Repair Kit	수리 키트
+Rig	조끼
+LVPC (Green)	LVPC (그린)
+LVPC (Winter)	LVPC (겨울)
+Fishing Vest	낚시 조끼
+F. Vest	낚시 조끼
+Weapon	무기
+Mag.	탄창
+KA-12 Magazine	KA-12 탄창
+KA-M Magazine	KA-M 탄창
+KAS-74U Magazine	KAS-74U 탄창
+C1911 Magazine	C1911 탄창
+G7 Magazine	G7 탄창
+KAR-21 Magazine (.223)	KAR-21 탄창 (.223)
+KAR-21 Magazine (.308)	KAR-21 탄창 (.308)
+KAR-21 Barrel (.308)	KAR-21 총열 (.308)
+KAR-21 Barrel	KAR-21 총열
+Barrel	총열
+KP-31 Drum	KP-31 드럼 탄창
+Drum	드럼 탄창
+STANAG Magazine	STANAG 탄창
+M78 Magazine	M78 탄창
+Karov	카로프
+Karov Magazine	Karov 탄창
+Mosin	모신
+PM5 Magazine	PM5 탄창
+MP7 Magazine	MP7 탄창
+P3 Magazine	P3 탄창
+RK Magazine	RK 탄창
+VSD Magazine	VSD 탄창
+SS Magazine	SS 탄창
+Ammo	탄약
+Attachment	부착물
+Hybrid	하이브리드
+Kobra	코브라
+Leopard	레오파드
+Micro	마이크로
+Monster	몬스터
+Thor	토르
 Compatibility	호환성
 Selected	선택됨
 Press key to bind...	키를 입력하세요...
@@ -97,38 +676,52 @@ Wood	나무
 Metal	금속
 Concrete	콘크리트
 Rock	돌
-Inventory	인벤토리
-Primary	주무기
-Secondary	보조무기
-Vital	바이탈
-Task Notes empty	의뢰 노트가 비어있습니다
-Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
-Map not equipped	지도가 장착되지 않았습니다
-Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)
-Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
-Casette Player power 0%, recharge player	카세트 플레이어의 전력이 0% 입니다, 충전해주세요.
-Casette Player empty, insert casette	카세트 플레이어가 비어 있습니다, 카세트를 삽입해 주세요.
-Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
-Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
-Sleep	수면
-Level 2	레벨 2
-Level 3	레벨 3
-Level 4	레벨 4
-Level 5	레벨 5
-Heat required	열원 필요
-Workbench required	작업대 필요
-Shelter required	은신처 필요
-Start Input	투입 시작
-Stop Input	투입 정지
-Reset Input	투입 초기화
-Start Delivery	배달 시작
-Stop Delivery	배달 종료
-Delivered	배달됨
-CBRN	화생방
-Overweight	중량 초과
-Explosion	폭발
-Fall	낙하
-Day	일
+New Furniture Added [Catalog]	새 가구 추가됨 [카탈로그]
+Boss Killed	보스 처치됨
+Cat Rescued	고양이 구조됨
+Cat Vital Activated	고양이 상태 활성화됨
+Cat Died	고양이가 사망했습니다
+You have been spotted!	적발되었습니다!
+Player Returned	플레이어 복귀 됨
+Indoors	실내
+Indoor	실내
+Mine	지뢰
+Lure	루어
+(Military)	(군용)
+Unload	탄 꺼내기
+Clear Chamber	약실 비우기
+Unequip	해제
+Equip	장비
+Show	보기
+Hide	숨기기
+Activated	활성화됨
+Not active	활성화되지 않음
+All maps & zones	모든 지역 및 구역
+Active	활성화
+Repair	수리
+Craft	제작
+Added	추가됨
+Remove	제거
+Completed	완료됨
+Add to Notes	노트에 추가
+Frozen	냉동됨
+Permadeath Zone	퍼마데스 구역 (부활 불가)
+[Open]	[열기]
+Door [Jammed]	문 [막힘]
+Door [Occupied]	문 [사용중]
+Door [Close]	문 [닫기]
+Door [Open]	문 [열기]
+Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)
+Turn Off	끄기
+Turn On	켜기
+Radio [Turn Off]	라디오 [켜기]
+Radio [Turn On]	라디오 [끄기]
+Television [Turn Off]	텔레비전 [끄기]
+Television [Turn On]	텔레비전 [끄기]
+Rescue Cat	고양이 구출
+Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
+Fuel Tank [89%]	연료 탱크 [89%]
+Feed cat:	고양이에게 먹이 주기:
 Easy	쉬움
 Intermediate	보통
 Hard	어려움
@@ -419,7 +1012,6 @@ It's never too late to start with an easier instrument, but I would need somethi
 몇 년 전에 낡은 악기들을 다시 연주해 보려고 했는데, 알다시피 이런건 폐활량이 꽤 좋아야 하잖아요. 이제는 소리조차 못 내겠더라고요. 음악에 대한 열정과 재능은 여전한데, 시가 때문인지 예전 같지 않은 느낌이에요.
 
 다시 시작하기에 늦다는 법은 없지만, 저처럼 나이 든 골초에게 맞는 아주 작은 악기가 필요할 것 같아요. 그게 아니라면 다음 생에나 기약해야겠지요."
-Patient Report	환자 보고서
 "When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
@@ -555,598 +1147,6 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 이 녀석은 시도 때도 없이 나타나서 있지도 않은 빚을 갚으라고 난리를 쳐. 평소 같으면 이런 미친놈들은 문 앞에서 쏴버리겠지만, 이놈들은 더럽게 끈질겨. 최근에는 그 녀석이랑 쫄따구들이 경찰 호송차를 훔쳐서 타고 다니니, 이제는 경장갑 차량까지 갖춘 셈이지.
 
 누군가는 이 광대 짓을 끝내야만 해. 그런 의미에서, 나는 지금 히트맨이 필요하네. 그놈의 목을 가져오든 뭐든, 그놈이 죽었다는 증거를 가져오면, 내 창고 열쇠를 내어주지."
-Trader Event	상인 이벤트
-Dynamic Event	동적 이벤트
-Special Event	특별 이벤트
-Dynamic	동적
-Special	특별
-Guaranteed	보장됨
-Generalist returns to Village	잡화상이 마을에 복귀
-"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
-
-After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"잡화상은 05 구역 마을 차고 건물 안에 작은 가게를 운영하는 만능 재주꾼 상인으로, 주로 일반 생필품을 판매합니다.
-
-잠시 휴식을 취한 후, 잡화상은 다시 영업을 시작하여 단골 고객들에게 합리적인 가격으로 상품을 제공할 준비를 마쳤습니다."
-Doctor returns to School	의사가 학교에 복귀
-"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
-
-After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"의사는 의학을 전문으로 하는 상인으로, 05 구역의 버려진 학교 건물 안에 임시 진료소를 운영하고 있습니다.
-
-할머니의 안부를 확인하러 다녀온 의사는 진료소로 돌아와 부상자들을 치료할 준비를 마쳤습니다."
-Fighter Jets	전투기
-"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
-
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"05구역 철수 및 접경 지대 비무장화 이후 상황이 악화되기 시작했고, 무력시위가 불가피해졌습니다.
-
-핀란드군은 전투기를 동원해 상공에 자주 모습을 드러내며, 위협적인 비살상 공중 위력 비행을 시작할 예정입니다."
-Missing Cat	잃어버린 고양이
-"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
-
-A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
-
-Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"할머니의 고양이가 전투기의 굉음에 놀라 도망친 후 사라졌습니다.
-
-며칠 전, 방랑자들이 전초기지를 돌아다니던 고양이를 발견하고 상자 같은 것으로 붙잡았습니다. 하지만 방랑자들이 고양이를 할머니에게 돌려주려던 순간, 밴디트들이 습격하여 상자를 빼앗아 갔습니다.
-
-마을 사람들은 밴디트들이 상자를 마구 던지다가 결국 어딘가에 버려두는 것을 목격했습니다."
-Punisher arrives to Area 05	퍼니셔가 05 구역에 도착
-"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
-
-Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"퍼니셔는 핀란드 범죄 세계에서 악명 높은 밴디트 두목이자 채권 추심원입니다.
-
-퍼니셔와 그의 부하들은 지역 경찰차를 훔쳐 05구역 곳곳을 누비고 다니고 있습니다."
-Airdrops are delivered to Area 05	공중 보급품이 05 구역에 투하됨
-"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
-
-Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"오랜 지연 끝에 핀란드군은 05 구역에 대한 공중 구호품 투하를 재개했습니다.
-
-공중 구호품에는 일반적으로 의약품, 소모품 및 기타 생존 장비와 같은 인도적 지원 물품이 포함됩니다."
-BTR Patrols	BTR 순찰
-"The military faction has started to use armored vehicles in the Vostok area.
-
-Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"군 세력이 보스토크 지역에서 장갑차를 사용하기 시작했습니다.
-
-군용 BTR은 중기관총으로 무장하고 있으며, 주요 도로와 핵심 지역에서 순찰하는 모습이 목격되었습니다."
-Attack Helicopters	공격 헬리콥터
-"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
-
-While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"접경 지대의 비무장화가 무너지기 시작했고, 기존의 규칙들이 더 이상 적용되지 않는다는 것이 명백해지고 있습니다.
-
-공식 소식통은 아무런 변화가 없다고 주장하지만, 공격 헬리콥터들이 접경 지대 인근에서 빈번한 순찰과 영공 침범을 시작했습니다."
-Helicopter Crash Sites	헬리콥터 추락 현장
-"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
-
-Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"영공 침범 이후 공중전은 불가피했으며, 국경 양쪽에서 여러 대의 공격 헬리콥터가 격추되었습니다.
-
-헬리콥터 추락 지점은 여러 곳에 흩어져 있으며, 고가의 전리품이 발견되어 AI 활동의 주요 거점이 되고 있습니다."
-Gunsmith returns to Outpost	건스미스가 전초기지로 복귀
-"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
-
-Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"건스미스는 전초기지 벙커 중 한 곳에 무기 보관소를 운영하며 총기와 관련된 모든 것을 전문적으로 취급하는 상인입니다.
-
-건스미스는 몇 달 동안 자취를 감췄지만, 소문에 따르면 국경 너머로 ""출장""을 갔다가 이제 05 구역에 있는 그의 소중한 벙커로 돌아왔다고 합니다."
-Outpost gets compromised	전초기지 발각
-"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
-
-Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
-
-News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"최근 사건들로 인해 접경 지대
-의 상황은 급속도로 악화되고 있으며, 인근 지역들도 그 여파에 직면하고 있습니다.
-
-이제 군용 BTR이 전초기지 지역에 진입할 수 있게 되었고, 05 구역은 더 이상 안전지대로 간주되지 않습니다.
-
-이 소식은 05 구역 주민들과 상인들 사이에서 빠르게 퍼져나갔지만, 05 구역 외부의 언론과 당국은 이를 단순한 루머로 여기고 있습니다."
-Traders leave Area 05	상인들이 05 구역을 떠남
-"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
-
-It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"전초기지가 발각된 후, 모든 상인들이 철수 준비를 하며 05 구역을 떠나기 시작했습니다.
-
-상인들의 철수는 일시적인 조치로 보이며, 상황이 진정되면 다시 돌아올 것입니다."
-Traders return to Area 05	상인들이 05 구역으로 복귀
-"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
-
-All traders are returning back to Area 05."	"최근 사태의 악화세는 진정된 듯하며, 05 구역이 완전한 혼란에 빠지는 상황은 면했습니다.
-
-모든 상인들이 05 구역으로 복귀하고 있습니다."
-Transmission	송신
-"The signal that started it all has suddenly reappeared.
-
-The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
-
-This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"모든 사태의 발단이 된 신호가 갑자기 다시 나타났습니다.
-
-이 신호는 라디오 방송을 방해하고 있으며, 모든 일반 주파수에서 수신 가능합니다.
-
-이것은 얼리 액세스 [빌드 1]의 마지막 이벤트입니다. 이벤트와 스토리는 향후 빌드에서 계속됩니다."
-Common	일반
-Rare	희귀
-Legendary	전설
-Armor Plate	방탄판
-Armor	방어구
-Armor Plate {class}	방탄판 {class}
-Armor Plate (II)	방탄판 (II)
-Armor Plate (III+)	방탄판 (III+)
-Armor Plate (III)	방탄판 (III)
-Armor Plate (IIIA)	방탄판 (IIIA)
-Armor Plate (IV)	방탄판 (IV)
-Backpack	배낭
-Jääkäri Backpack (Black)	야카리 배낭 (블랙)
-Jääkäri BP.	야카리 배낭
-Jääkäri Backpack (Brown)	야카리 배낭 (브라운)
-Jääkäri Backpack (Green)	야카리 배낭 (그린)
-Jääkäri Backpack (M05)	야카리 배낭 (M05)
-Nomad Backpack	방랑자 배낭
-Nomad BP.	방랑자 배낭
-Patrol Backpack	패트롤 배낭
-Patrol BP.	패트롤 배낭
-Duffel (Retro)	더플백 (레트로)
-R. Duffel	더플백
-Belt Pouch	벨트 파우치
-Kukkaro (Black)	쿠카로 (블랙)
-Kukkaro	쿠카로
-Kukkaro (Brown)	쿠카로 (브라운)
-Kukkaro (Green)	쿠카로 (그린)
-Kukkaro (M05)	쿠카로 (M05)
-Literature	서적
-Book (Children)	책 (아동용)
-Children	아동
-Book (Cooking)	책 (요리)
-Cooking	요리
-Book (Fishing)	책 (낚시)
-Book (Religion)	책 (종교)
-Religion	종교
-Clothing	의류
-Flame Beanie	플레임 비니
-F. Beanie	플레임 비니
-Combat Boots	전투화
-C. Boots	전투화
-M62 Cap	M62 캡
-Tactical Fleece (Brown)	전술 후리스 (브라운)
-T. Fleece	전술 후리스
-Tactical Fleece (Green)	전술 후리스 (그린)
-Leather Gloves	가죽 장갑
-L. Gloves	가죽 장갑
-Work Gloves	작업용 장갑
-W. Gloves	작업 장갑
-Mosquito Hat	모기장 모자
-M. Hat	모기 모자.
-Sauna Hat	사우나 모자
-S. Hat	사우나 모자
-Hoodie (Border Zone)	후드티 (접경 지대)
-Hoodie BZ.	후드티 (접경 지대)
-Hoodie B.	후드티 (접경 지대)
-Hoodie (Gray)	후드티 (그레이)
-Hoodie	후드티
-M62 Jacket	M62 재킷
-M62 J.	M62 재킷
-Santa Jacket	산타 재킷
-Santa J.	산타 재킷
-Winter Jacket (Blue)	겨울 재킷 (블루)
-Winter Jacket	겨울 재킷
-Winter Jacket (Red)	겨울 재킷 (레드)
-Winter J.	겨울 재킷
-Jeans (Black)	청바지 (블랙)
-Jeans	"청바지
-(블랙)"
-Hiking Pants	등산 바지
-Hiking P.	등산 바지
-Windbreaker (Black)	바람막이 (블랙)
-Windbreaker	바람막이
-Windbr.	바람막이
-Windbreaker (Green)	바람막이 (그린)
-Consumables	소모품
-Consumable	소모품
-Drink	마시기
-Eat	먹기
-Eat Raw	먹기 (날것)
-Eat (Raw)	먹기 (날것)
-Chew	씹기
-Smoke	피우기
-Use	사용
-Beer	맥주
-Empty Can	빈 캔
-Can	캔
-Canned Meat	고기 통조림
-Meat	고기
-Canned Meatballs	미트볼 통조림
-Meatballs	미트볼
-Canned Pea Soup	완두콩 스프 통조림
-Pea Soup	"완두콩
-스프"
-Canned Peaches	복숭아 통조림
-Peaches	복숭아
-Canned Pear	배 통조림
-Pear	배
-Canned Peas	완두콩 통조림
-Peas	완두콩
-Canned Pineapple	파인애플 통조림
-Pineapple	파인애플
-Canned Tomatoes	토마토 통조림
-Tomatoes	토마토
-Canned Tuna	참치 통조림
-Tuna	참치
-Cat Food	고양이 사료
-War Chocolate	군용 초콜릿
-W. Choco	군용 초콜릿
-Cigarettes	담배
-Cigs	담배
-Cigars	시가
-Coffee	커피
-Coffee (Brewed)	커피 (끓임)
-C. Brewed	커피 (끓임)
-Fish Soup (Cooked)	생선 스프 (조리됨)
-F. Soup (Cooked)	생선 스프 (조리됨)
-F. Soup	생선 스프
-Meatballs (Cooked)	미트볼 (조리됨)
-M. Balls (Cooked)	미트볼 (조리됨)
-M. Balls	미트볼
-Pea Soup (Cooked)	완두콩 스프 (조리됨)
-P. Soup (Cooked)	콩 스프 (조리됨)
-P. Soup	콩 스프
-Tomato Soup (Cooked)	토마토 스프 (조리됨)
-T. Soup (Cooked)	토마토 스프 (조리됨)
-T. Soup	토마토 스프
-Crackers	크래커
-Energy Drink	에너지 드링크
-E. Drink	에너지.
-Energy Powder	에너지 파우더
-E. Powder	E.파우더
-Field Ration	전투식량
-F. Ration	전투식량
-Juice	주스
-Juice (Orange)	주스 (오렌지)
-Juice O.	오렌지
-Juice (Pear)	주스 (배)
-Juice P.	배
-Juice (Raspberry)	주스 (라즈베리)
-Juice R.	라즈베리
-Kilju	킬유
-Kompot	과일조림
-Mustard	머스타드
-Peanuts	땅콩
-Potato	감자
-Salty Liquorice	감초사탕
-Salty Liq.	감초사탕
-Snus	씹는 담배
-Soda (Lemon)	소다 (레몬)
-Soda	소다
-Soda L.	레몬소다
-Sugar	설탕
-Water Bottle	물병
-Water	물
-Yeast	이스트
-Electronics	전자제품
-Alarm Clock	알람 시계
-A. Clock	알람시계
-Batteries	배터리
-Battery	배터리
-Battery Cables	배터리 케이블
-B. Cables	배터리 선
-Casette	카세트
-Casette (Electrofolk)	Casette (일렉트로포크)
-Junna - Haavakko	Junna - Haavakko
-Junna - Lempi	Junna - Lempi
-Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla
-Junna - Mukula	Junna - Mukula
-Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen
-Junna - Rautahepo	Junna - Rautahepo
-Junna - Ruslana	Junna - Ruslana
-Junna - Vandringsman	Junna - Vandringsman
-Casette (Nomad)	카세트 (방랑자)
-Casette (OST)	카세트 (OST)
-OST - Alive	OST - Alive
-OST - Daybreak	OST - Daybreak
-OST - Far	OST - Far
-OST - Lost	OST - Lost
-OST - Rain	OST - Rain
-OST - Road	OST - Road
-OST - Trailer	OST - Trailer
-OST - Winds	OST - Winds
-Casette (Radio Hits)	카세트 (히트곡)
-Casette (Symphony)	카세트 (교향곡)
-Vostok Symphony	보스토크 교향곡
-Casette Player	카세트 플레이어
-C. Player	플레이어
-Coffeemaster	커피머신
-C. Master	커피머신
-Cooking Station	조리대
-C. Station	조리대
-Hotplate	핫플레이트
-Inverter	인버터
-Narva	나르바
-Polaris	폴라리스
-Fish	생선
-Fishing	낚시
-Bream	도미
-Fishing Rod	낚싯대
-F. Rod	낚싯대
-Perch	농어
-Pike	민물고기
-Roach	잉어
-Grenade	수류탄
-Helmet	헬멧
-Police Helmet (IIIA)	경찰 헬멧 (IIIA)
-Police Helmet	경찰 헬멧
-P. Helmet	경찰 헬멧
-Instrument	악기
-Guitar	기타
-Harmonica	하모니카
-Harmo.	하모니카
-Key	열쇠
-Attic Key	다락방 열쇠
-Attic K.	다락방 열쇠
-Bunker Key	벙커 열쇠
-Bunker K.	벙커 열쇠
-Cellar Key	지하실 열쇠
-Cellar K.	지하실 열쇠
-Classroom Key	교실 열쇠
-Class. K.	교실 열쇠
-Gymnasium Key	체육관 열쇠
-Gym. K.	체육관 열쇠
-Tunnel Key	터널 열쇠
-Tunnel K.	터널 열쇠
-Knife	칼
-Jaeger 140	예거 140
-Jaeger	예거
-Skrama 200	스크라마 200
-Skrama	스크라마
-Skrama 240	스크라마 240
-Lore	스토리
-Cat	고양이
-Oil Sample	기름 샘플
-Oil S.	기름 샘플
-P. Report	보고서
-Heal	치료
-Spray	뿌리기
-Medical	의료
-Antibiotics	항생제
-Antibio.	항생제
-Antiseptic	소독약
-A. Septic	소독약
-Balm	연고
-Bandage	붕대
-Bandage (Improvised)	붕대 (급조)
-Cold Medicine	감기약
-C. Med.	감기약
-Deodorant	데오드란트
-Deodora.	데오드란트
-Gum	껌
-Lotion	로션
-Medkit	구급상자
-Melatonin	멜라토닌
-Melaton.	멜라토닌
-Painkill.	진통제
-Saline	식염수
-Splint	부목
-Splint (Improvised)	부목 (급조)
-Thermal Blanket	보온 담요
-Thermal	보온 담요
-Tissues	티슈
-Sneeze	코풀기
-Tourniquet	지혈대
-Tourni.	지혈대
-Tourniquet (Improvised)	지혈대 (급조)
-Wipes	물티슈
-Wipe	닦기
-Misc	기타
-Blanket	담요
-Board Game	보드게임
-B. Game	보드게임
-Bucket	양동이
-Coffee Filter	커피 필터
-C. Filter	커피필터
-Duct Tape	덕트 테이프
-D. Tape	덕테이프
-Happy Stove	화로
-H. Stove	화로
-Jerry Can	기름통
-Jerry C.	기름통
-Lumber	목재
-Map	지도
-Map (Tactical)	전술 지도
-T. Map	전술 지도
-Matches	성냥
-Mat.	성냥
-Mattress	매트리스
-Mess Kit	반합
-Nails	못
-Oil Filter	오일 필터
-O. Filter	오일 필터
-Pillow	배게
-Rags	헝겊
-Sleeping_Bag	침낭
-Sleeping Bag	침낭
-S. Bag	침낭
-Sticks	나뭇가지
-Tackle Box	낚시 도구함
-Tackle B.	낚시 도구함
-Toilet Paper	화장지
-T. Paper	화장지
-Toolbox	공구함
-Water Lock	발효 마개
-W. Lock	발효 마개
-Weapon Repair Kit	무기 수리 키트
-Repair Kit	수리 키트
-Rig	조끼
-LVPC (Green)	LVPC (그린)
-LVPC (Winter)	LVPC (겨울)
-Fishing Vest	낚시 조끼
-F. Vest	낚시 조끼
-Weapon	무기
-Mag.	탄창
-KA-12 Magazine	KA-12 탄창
-KA-M Magazine	KA-M 탄창
-KAS-74U Magazine	KAS-74U 탄창
-C1911 Magazine	C1911 탄창
-G7 Magazine	G7 탄창
-KAR-21 Magazine (.223)	KAR-21 탄창 (.223)
-KAR-21 Magazine (.308)	KAR-21 탄창 (.308)
-KAR-21 Barrel (.308)	KAR-21 총열 (.308)
-KAR-21 Barrel	KAR-21 총열
-Barrel	총열
-KP-31 Drum	KP-31 드럼 탄창
-Drum	드럼 탄창
-STANAG Magazine	STANAG 탄창
-M78 Magazine	M78 탄창
-Karov	카로프
-Karov Magazine	Karov 탄창
-Mosin	모신
-PM5 Magazine	PM5 탄창
-MP7 Magazine	MP7 탄창
-P3 Magazine	P3 탄창
-RK Magazine	RK 탄창
-VSD Magazine	VSD 탄창
-SS Magazine	SS 탄창
-Ammo	탄약
-Attachment	부착물
-Hybrid	하이브리드
-Kobra	코브라
-Leopard	레오파드
-Micro	마이크로
-Monster	몬스터
-Thor	토르
 Fire [Ignite]	불 [켜기]
 Fire [Matches not equipped]	불 [성냥이 장착되지 않았습니다]
 Fire [Extinguish]	불 [끄기]
-New Furniture Added [Catalog]	새 가구 추가됨 [카탈로그]
-Boss Killed	보스 처치됨
-Cat Rescued	고양이 구조됨
-Cat Vital Activated	고양이 상태 활성화됨
-Cat Died	고양이가 사망했습니다
-You have been spotted!	적발되었습니다!
-Player Returned	플레이어 복귀 됨
-Airdrop	보급품
-Tutorial Crate	튜토리얼 상자
-Electric Box	배전함
-Medical Cabinet	의료 수납장
-Office Cabinet	사무용 수납장
-Cabinet	수납장
-Corpse	시체
-Bandit Corpse	밴디트 시체
-Crate Military	군용 상자
-Crate Special	특수 상자
-Wooden Crate	나무 상자
-Garbage	쓰레기
-Fireplace	화로
-Freezer	냉동고
-Fridge	냉장고
-Fusebox	퓨즈 박스
-Locker	사물함
-Mailbox	우편함
-Nightstand	협탁
-Boxes	박스
-Stove	스토브
-Furniture	가구
-Furnitures	가구
-Bed (Civilian)	침대 (민간용)
-Bed C.	침대 민간.
-Bed (Nomad)	침대 (방랑자)
-Bed N.	침대 방랑.
-Cabinet (Medical)	수납장 (의료용)
-Cabinet M.	수납장 의료.
-Cabinet (Office)	수납장 (사무용)
-Cabinet. 0	수납장 (사무)
-Cabinet (Wood)	수납장 (나무)
-Cabinet W.	수납장 (나무)
-Carpet (Persian)	카펫 (페르시안)
-Carpet P.	카펫 페르.
-Carpet (Rag)	카펫 (누더기)
-Carpet R.	카펫 (누더기)
-Chair (Office)	의자 (사무용)
-Chair O.	의자 사무.
-Chair (School)	의자 (학교용)
-Chair S.	의자 학교.
-Sun Chair	선베드
-S. Chair	선베드
-Crate (Military)	상자 (군용)
-Crate M.	상자 군용.
-Crate (Special)	상자 (특수)
-Crate S.	상자 특수.
-Cupboard	찬장
-C. Board	찬장
-Curtain (Long)	커튼 (대형)
-Curtain L.	커튼 대형.
-Curtain (Mini)	커튼 (소형)
-Curtain M.	커튼 소형.
-Dartboard	다트판
-D. Board	다트판
-N. Stand	협탁
-Painting (Lake)	그림 (호수)
-Painting L.	그림 호수.
-Pallet	팔레트
-Poster (Posture)	포스터 (바른자세)
-Poster P.	"포스터
-바른자세"
-Rack (Coat)	옷걸이 (코트)
-Rack C.	옷걸이
-Rya (Maria)	융단 (마리아)
-Rya M.	융단 마리아.
-Shelf (Metal)	선반 (철제)
-Shelf M.	선반 (철제)
-Shelf (Wall)	선반 (벽면)
-Shelf W.	선반
-Shelf (Wood)	선반 (나무)
-Sign (Border Zone)	표지판 (접경 지대)
-Sign BZ.	표지판 (접경 지대)
-Sofa (Leather)	소파 (가죽)
-Sofa L.	소파 (가죽)
-Stool (Military)	의자 (군용)
-Stool M.	의자 (군용)
-Stool (Padded)	의자 (쿠션)
-Stool P.	의자 (쿠션)
-Table (Cabin)	테이블 (오두막)
-Table C.	테이블 (오두막)
-Table (Canteen)	테이블 (식당)
-Table (Kitchen)	테이블 (주방)
-Table K.	테이블 (주방)
-Table (Office)	테이블 (사무용)
-Table. O	테이블 (사무용)
-Target Stand	표적 거치대
-Target S.	표적 거치대
-Television	텔레비전
-TV	TV
-Trolley (Short)	트롤리 (소형)
-Trolley S.	트롤리 (소형)
-Trolley (Tall)	트롤리 (대형)
-Trolley T.	트롤리 (대형)
-Weapon Display	무기 진열대
-Weapon D.	무기 진열대
-Unload	탄 꺼내기
-Clear Chamber	약실 비우기
-Unequip	해제
-Equip	장비
-Show	보기
-Hide	숨기기
-Activated	활성화됨
-Not active	활성화되지 않음
-All maps & zones	모든 지역 및 구역
-Active	활성화
-Repair	수리
-Craft	제작
-Added	추가됨
-Remove	제거
-Completed	완료됨
-Add to Notes	노트에 추가
-Frozen	냉동됨
-Permadeath Zone	퍼마데스 구역 (부활 불가)
-[Open]	[열기]
-Door [Jammed]	문 [막힘]
-Door [Occupied]	문 [사용중]
-Door [Close]	문 [닫기]
-Door [Open]	문 [열기]
-Sleep (Random sleep: 6-12h)	잠들기 (랜덤 시간: 6-12h)
-Turn Off	끄기
-Turn On	켜기
-Radio [Turn Off]	라디오 [켜기]
-Radio [Turn On]	라디오 [끄기]
-Television [Turn Off]	텔레비전 [끄기]
-Television [Turn On]	텔레비전 [끄기]
-Rescue Cat	고양이 구출
-Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
-Fuel Tank [89%]	연료 탱크 [89%]
-Feed cat:	고양이에게 먹이 주기:
-Indoors	실내
-Indoor	실내
-Mine	지뢰
-Lure	루어
-(Military)	(군용)

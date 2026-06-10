@@ -1,4 +1,579 @@
 text	translation
+Airdrop	Аирдроп
+Tutorial Crate	Обучающий ящик
+Electric Box	Электрощиток
+Medical Cabinet	Медицинский шкаф
+Office Cabinet	Офисный шкаф
+Cabinet	Шкаф
+Corpse	Труп
+Bandit Corpse	Труп бандита
+Crate Military	Военный ящик
+Crate Special	Особый ящик
+Wooden Crate	Деревянный ящик
+Garbage	Мусор
+Fireplace	Камин
+Freezer	Морозилка
+Fridge	Холодильник
+Fusebox	Щиток с предохранителями
+Locker	Шкафчик
+Mailbox	Почтовый ящик
+Nightstand	Прикроватная тумбочка
+Boxes	Ящики
+Stove	Плита
+Furniture	Мебель
+Furnitures	Мебель
+Bed (Civilian)	Кровать (Гражданская)
+Bed C.	Гражд. кровать.
+Bed (Nomad)	Кровать (Кочевник)
+Bed N.	Кочев. кровать.
+Cabinet (Medical)	Шкаф (Медицинский)
+Cabinet M.	Мед. шкаф.
+Cabinet (Office)	Шкаф (Офисный)
+Cabinet. 0	Офис. шкаф. 0
+Cabinet (Wood)	Шкаф (Деревянный)
+Cabinet W.	Дерев. шкаф.
+Carpet (Persian)	Ковёр (Персидский)
+Carpet P.	Перс. ковёр.
+Carpet (Rag)	Ковёр (Лоскутный)
+Carpet R.	Лоскут. ковёр.
+Chair (Office)	Стул (Офисный)
+Chair O.	Офис. стул.
+Chair (School)	Стул (Школьный)
+Chair S.	Школ. стул.
+Sun Chair	Шезлонг
+S. Chair	Шезлонг
+Crate (Military)	Ящик (Военный)
+Crate M.	Воен. ящик.
+Crate (Special)	Ящик (Особый)
+Crate S.	Особ. ящик.
+Cupboard	Кухонный шкаф
+C. Board	Кух. шкаф
+Curtain (Long)	Штора (Длинная)
+Curtain L.	Длин. штора.
+Curtain (Mini)	Штора (Короткая)
+Curtain M.	Корот. штора.
+Dartboard	Мишень для дартса
+D. Board	Дартс
+N. Stand	Прикров. тумбочка
+Painting (Lake)	Картина (Озеро)
+Painting L.	Картина оз.
+Pallet	Поддон
+Poster (Posture)	Плакат (Осанка)
+Poster P.	Плакат осан.
+Rack (Coat)	Вешалка (пальто)
+Rack C.	Вешалка.
+Rya (Maria)	Рья (Мария)
+Rya M.	Рья М.
+Shelf (Metal)	Полка (Металлическая)
+Shelf M.	Металл. полка.
+Shelf (Wall)	Полка (Настенная)
+Shelf W.	Настен. полка.
+Shelf (Wood)	Полка (Деревянная)
+Sign (Border Zone)	Знак (Пограничная зона)
+Sign BZ.	Знак ПЗ.
+Sofa (Leather)	Диван (Кожаный)
+Sofa L.	Кожан. диван.
+Stool (Military)	Табурет (Военный)
+Stool M.	Воен. табурет.
+Stool (Padded)	Табурет (Мягкий)
+Stool P.	Мягк. табурет.
+Table (Cabin)	Стол (Каютный)
+Table C.	Каютн. стол.
+Table (Canteen)	Стол (Столовая)
+Table (Kitchen)	Стол (Кухонный)
+Table K.	Кухон. стол.
+Table (Office)	Стол (Офисный)
+Table. O	Офис. стол
+Target Stand	Стойка для мишени
+Target S.	Стойка мишени.
+Television	Телевизор
+TV	ТВ
+Trolley (Short)	Тележка (Низкая)
+Trolley S.	Тележка низк.
+Trolley (Tall)	Тележка (Высокая)
+Trolley T.	Тележка выс.
+Weapon Display	Стенд для оружия
+Weapon D.	Стенд оруж.
+Trader Event	Событие торговца
+Dynamic Event	Динамическое событие
+Special Event	Особое событие
+Dynamic	Динамический
+Special	Особое
+Guaranteed	Гарантировано
+Generalist returns to Village	Универсал возвращается в Деревню
+"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
+
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"Универсал — торговец на все руки, который держит небольшой магазин в гаражном здании Деревни в Зоне 05 и специализируется на товарах повседневного спроса.
+
+После небольшого ментального перерыва Универсал снова вернулся к делу и готов обслуживать своих постоянных клиентов по достойным ценам."
+Doctor returns to School	Доктор возвращается в Школу
+"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
+
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"Доктор — торговец, специализирующийся на медицине, и ведёт импровизированную клинику внутри заброшенного школьного здания в Зоне 05.
+
+После визита к Бабушке для «проверки благополучия» Доктор возвращается в свою клинику и готов оказывать медицинскую помощь пострадавшим."
+Fighter Jets	Истребители
+"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
+
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"После эвакуации Зоны 05 и демилитаризации Пограничной Зоны ситуация начала принимать неожиданный оборот, и потребовалась демонстрация силы.
+
+Финские военные начнут выполнять нелетальные показательные облёты на истребителях, которые будут часто появляться в небе."
+Missing Cat	Пропавшая кошка
+"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
+
+A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
+
+Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"Кошка Бабушки пропала после того, как звуковой удар истребителя напугал её, и она убежала.
+
+Несколько дней назад Кочевники нашли кошку, бродящую на Аванпосту, и сумели поймать её с помощью какой-то коробки. Когда Кочевники начали доставлять кошку обратно к Бабушке, на них устроили засаду Бандиты, которые, судя по всему, забрали коробку.
+
+Местные жители видели, как Бандиты жестоко перебрасывали коробку друг другу и в конце концов бросили её где-то."
+Punisher arrives to Area 05	Каратель прибывает в Зону 05
+"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
+
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"Каратель — бандитский босс и внушающий страх сборщик долгов в финском криминальном мире.
+
+Каратель и его приспешники угнали местный полицейский фургон и совершают регулярные объезды по Зоне 05."
+Airdrops are delivered to Area 05	Авиадесантные грузы доставлены в Зону 05
+"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
+
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"После долгой задержки финские военные снова начали доставлять авиадесантные грузы в Зону 05.
+
+Авиадесантные грузы обычно содержат гуманитарную помощь: медикаменты, расходные материалы и другое необходимое снаряжение для выживания."
+BTR Patrols	Патрули БТР
+"The military faction has started to use armored vehicles in the Vostok area.
+
+Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"Военная фракция начала использовать бронированные машины в районе Востока.
+
+Военные БТРы оснащены тяжёлыми пулемётами, и их патрули были замечены на основных дорогах и ключевых объектах."
+Attack Helicopters	Ударные вертолёты
+"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
+
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"Демилитаризация Пограничной Зоны начинает рушиться, и очевидно, что прежние правила больше не действуют.
+
+Хотя официальные источники заверяют, что ничего не изменилось, ударные вертолёты начали совершать частые патрульные облёты и нарушения воздушного пространства вблизи Пограничной Зоны."
+Helicopter Crash Sites	Места крушения вертолётов
+"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
+
+Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"После нарушений воздушного пространства авиационные инциденты стали неизбежны, и несколько ударных вертолётов было сбито по обе стороны границы.
+
+Места крушений вертолётов разбросаны по нескольким локациям и содержат ценный лут, что делает их горячими точками активности ИИ."
+Gunsmith returns to Outpost	Оружейник возвращается на Аванпост
+"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
+
+Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"Оружейник — торговец, который ведёт оружейный склад в одном из бункеров Аванпоста и специализируется на всём, что связано с огнестрельным оружием.
+
+Оружейника не было видно несколько месяцев, но по слухам, он совершал «деловую поездку» на другую сторону границы и теперь вернулся в свой любимый бункер в Зоне 05."
+Outpost gets compromised	Аванпост скомпрометирован
+"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
+
+Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
+
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"Учитывая предыдущие события, ситуация в Пограничной Зоне быстро обостряется, и прилегающие районы ощущают последствия.
+
+Военные БТРы теперь могут входить на карту Аванпоста, и Зона 05 больше не считается безопасной.
+
+Новости о событии быстро распространились среди местных жителей и торговцев Зоны 05, однако за её пределами средства массовой информации и власти считают это лишь слухами."
+Traders leave Area 05	Торговцы покидают Зону 05
+"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
+
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"После того как Аванпост был скомпрометирован, все торговцы начали готовиться к отъезду из Зоны 05.
+
+Похоже, торговцы делают это как временную меру и вернутся, если и когда обстановка успокоится."
+Traders return to Area 05	Торговцы возвращаются в Зону 05
+"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
+
+All traders are returning back to Area 05."	"Эскалация последних событий, похоже, остановилась, и Зона 05 не погрузилась в полный хаос.
+
+Все торговцы возвращаются в Зону 05."
+Transmission	Передача
+"The signal that started it all has suddenly reappeared.
+
+The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
+
+This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"Сигнал, с которого всё началось, внезапно появился снова.
+
+Передача мешает радиовещанию и слышна на всех общих частотах.
+
+Это последнее событие Раннего доступа [Build 1]. События и история продолжатся в следующих сборках."
+Inventory	Инвентарь
+Primary	Основное
+Secondary	Вторичное
+Vital	Показатель
+Task Notes empty	Заметки заданий пусты
+Task Notes not available (Tutorial)	Заметки заданий недоступны (Обучение)
+Map not equipped	Карта не надета
+Map not usable (Vostok)	Карта недоступна (Vostok)
+Casette Player not equipped	Кассетный плеер не надет
+Casette Player power 0%, recharge player	Кассетный плеер разряжен 0%, зарядите плеер
+Casette Player empty, insert casette	Кассетный плеер пуст, вставьте кассету
+Override Ambient Music [ON]	Заглушить фоновую музыку [ВКЛ]
+Override Ambient Music [OFF]	Заглушить фоновую музыку [ВЫКЛ]
+Sleep	Спать
+Level 2	Уровень 2
+Level 3	Уровень 3
+Level 4	Уровень 4
+Level 5	Уровень 5
+Heat required	Требуется источник тепла
+Workbench required	Требуется верстак
+Shelter required	Требуется укрытие
+Start Input	Начать загрузку
+Stop Input	Остановить загрузку
+Reset Input	Сбросить загрузку
+Start Delivery	Начать доставку
+Stop Delivery	Остановить доставку
+Delivered	Доставлено
+CBRN	РХБЯ
+Overweight	Перегрузка
+Explosion	Взрыв
+Fall	Падение
+Day	День
+Common	Обычный
+Rare	Редкий
+Legendary	Легендарный
+Armor Plate	Бронепластина
+Armor	Броня
+Armor Plate {class}	Бронепластина {class}
+Armor Plate (II)	Бронепластина (II)
+Armor Plate (III+)	Бронепластина (III+)
+Armor Plate (III)	Бронепластина (III)
+Armor Plate (IIIA)	Бронепластина (IIIA)
+Armor Plate (IV)	Бронепластина (IV)
+Backpack	Рюкзак
+Jääkäri Backpack (Black)	Рюкзак Jääkäri (чёрный)
+Jääkäri BP.	Рюкз. Jääkäri.
+Jääkäri Backpack (Brown)	Рюкзак Jääkäri (коричневый)
+Jääkäri Backpack (Green)	Рюкзак Jääkäri (зелёный)
+Jääkäri Backpack (M05)	Рюкзак Jääkäri (M05)
+Nomad Backpack	Рюкзак Nomad
+Nomad BP.	Рюкз. Nomad.
+Patrol Backpack	Патрульный рюкзак
+Patrol BP.	Патр. рюкз.
+Duffel (Retro)	Дорожная сумка (ретро)
+R. Duffel	Рет. сумка
+Belt Pouch	Поясная сумка
+Kukkaro (Black)	Kukkaro (чёрный)
+Kukkaro	Kukkaro
+Kukkaro (Brown)	Kukkaro (коричневый)
+Kukkaro (Green)	Kukkaro (зелёный)
+Kukkaro (M05)	Kukkaro (M05)
+Literature	Литература
+Book (Children)	Книга (детская)
+Children	Детская
+Book (Cooking)	Книга (кулинарная)
+Cooking	Кулинария
+Book (Fishing)	Книга (рыбалка)
+Book (Religion)	Книга (религия)
+Religion	Религия
+Clothing	Одежда
+Flame Beanie	Шапка Flame
+F. Beanie	Шапка F
+Combat Boots	Берцы
+C. Boots	Берцы C
+M62 Cap	Кепка M62
+Tactical Fleece (Brown)	Тактический флис (коричневый)
+T. Fleece	Такт. флис
+Tactical Fleece (Green)	Тактический флис (зелёный)
+Leather Gloves	Кожаные перчатки
+L. Gloves	Кож. перч
+Work Gloves	Рабочие перчатки
+W. Gloves	Раб. перч
+Mosquito Hat	Шляпа от комаров
+M. Hat	Шляпа M
+Sauna Hat	Банная шапка
+S. Hat	Шапка S
+Hoodie (Border Zone)	Худи (Border Zone)
+Hoodie BZ.	Худи BZ.
+Hoodie B.	Худи B.
+Hoodie (Gray)	Худи (серое)
+Hoodie	Худи
+M62 Jacket	Куртка M62
+M62 J.	Куртка M62.
+Santa Jacket	Куртка Санты
+Santa J.	Куртка С.
+Winter Jacket (Blue)	Зимняя куртка (синяя)
+Winter Jacket	Зимняя куртка
+Winter Jacket (Red)	Зимняя куртка (красная)
+Winter J.	Зим. куртка.
+Jeans (Black)	Джинсы (чёрные)
+Jeans	Джинсы
+Hiking Pants	Треккинговые штаны
+Hiking P.	Трек. штаны.
+Windbreaker (Black)	Ветровка (чёрная)
+Windbreaker	Ветровка
+Windbr.	Ветровка.
+Windbreaker (Green)	Ветровка (зелёная)
+Consumables	Расходники
+Consumable	Расходник
+Drink	Выпить
+Eat	Съесть
+Eat Raw	Съесть сырым
+Eat (Raw)	Съесть (сырым)
+Chew	Жевать
+Smoke	Курить
+Use	Использовать
+Beer	Пиво
+Empty Can	Пустая банка
+Can	Банка
+Canned Meat	Мясные консервы
+Meat	Мясо
+Canned Meatballs	Консервированные фрикадельки
+Meatballs	Фрикадельки
+Canned Pea Soup	Консервированный гороховый суп
+Pea Soup	Гороховый суп
+Canned Peaches	Консервированные персики
+Peaches	Персики
+Canned Pear	Консервированная груша
+Pear	Груша
+Canned Peas	Консервированный горох
+Peas	Горох
+Canned Pineapple	Консервированный ананас
+Pineapple	Ананас
+Canned Tomatoes	Консервированные томаты
+Tomatoes	Томаты
+Canned Tuna	Консервированный тунец
+Tuna	Тунец
+Cat Food	Кошачий корм
+War Chocolate	Военный шоколад
+W. Choco	Воен. шокол
+Cigarettes	Сигареты
+Cigs	Сигар
+Cigars	Сигары
+Coffee	Кофе
+Coffee (Brewed)	Кофе (заваренный)
+C. Brewed	Кофе завар
+Fish Soup (Cooked)	Рыбный суп (приготовленный)
+F. Soup (Cooked)	Рыб. суп (пригот.)
+F. Soup	Рыб. суп
+Meatballs (Cooked)	Фрикадельки (приготовленные)
+M. Balls (Cooked)	Фрикад. (пригот.)
+M. Balls	Фрикадельки
+Pea Soup (Cooked)	Гороховый суп (приготовленный)
+P. Soup (Cooked)	Горох. суп (пригот.)
+P. Soup	Горох. суп
+Tomato Soup (Cooked)	Томатный суп (приготовленный)
+T. Soup (Cooked)	Томат. суп (пригот.)
+T. Soup	Томат. суп
+Crackers	Крекеры
+Energy Drink	Энергетик
+E. Drink	Энерг
+Energy Powder	Энергетический порошок
+E. Powder	Энерг. порошок
+Field Ration	Полевой паёк
+F. Ration	Пол. паёк
+Juice	Сок
+Juice (Orange)	Сок (апельсиновый)
+Juice O.	Сок апельс.
+Juice (Pear)	Сок (грушевый)
+Juice P.	Сок груш.
+Juice (Raspberry)	Сок (малиновый)
+Juice R.	Сок малин.
+Kilju	Kilju
+Kompot	Компот
+Mustard	Горчица
+Peanuts	Арахис
+Potato	Картофель
+Salty Liquorice	Солёная лакрица
+Salty Liq.	Сол. лакрица.
+Snus	Снюс
+Soda (Lemon)	Газировка (лимонная)
+Soda	Газировка
+Soda L.	Газир. лим.
+Sugar	Сахар
+Water Bottle	Бутылка воды
+Water	Вода
+Yeast	Дрожжи
+Electronics	Электроника
+Alarm Clock	Будильник
+A. Clock	Будильник
+Batteries	Батарейки
+Battery	Батарейка
+Battery Cables	Провода аккумулятора
+B. Cables	Провода акк
+Casette	Кассета
+Casette (Electrofolk)	Кассета (электрофолк)
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	Junna - Ruslana
+Junna - Vandringsman	Junna - Vandringsman
+Casette (Nomad)	Кассета (Nomad)
+Casette (OST)	Кассета (OST)
+OST - Alive	OST - Alive
+OST - Daybreak	OST - Daybreak
+OST - Far	OST - Far
+OST - Lost	OST - Lost
+OST - Rain	OST - Rain
+OST - Road	OST - Road
+OST - Trailer	OST - Trailer
+OST - Winds	OST - Winds
+Casette (Radio Hits)	Кассета (радиохиты)
+Casette (Symphony)	Кассета (симфония)
+Vostok Symphony	Vostok Symphony
+Casette Player	Кассетный плеер
+C. Player	Касс. плеер
+Coffeemaster	Кофемашина
+C. Master	Кофемаш
+Cooking Station	Кухонная станция
+C. Station	Кух. станция
+Hotplate	Электроплитка
+Inverter	Инвертор
+Narva	Narva
+Polaris	Polaris
+Fish	Рыба
+Fishing	Рыбалка
+Bream	Лещ
+Fishing Rod	Удочка
+F. Rod	Удочка
+Perch	Окунь
+Pike	Щука
+Roach	Плотва
+Grenade	Граната
+Helmet	Шлем
+Police Helmet (IIIA)	Полицейский шлем (IIIA)
+Police Helmet	Полицейский шлем
+P. Helmet	Пол. шлем
+Instrument	Инструмент
+Guitar	Гитара
+Harmonica	Губная гармошка
+Harmo.	Гармошка.
+Key	Ключ
+Attic Key	Ключ от чердака
+Attic K.	Ключ черд.
+Bunker Key	Ключ от бункера
+Bunker K.	Ключ бункера.
+Cellar Key	Ключ от подвала
+Cellar K.	Ключ подвала.
+Classroom Key	Ключ от класса
+Class. K.	Ключ класса.
+Gymnasium Key	Ключ от спортзала
+Gym. K.	Ключ спортз.
+Tunnel Key	Ключ от тоннеля
+Tunnel K.	Ключ тоннеля.
+Knife	Нож
+Jaeger 140	Jaeger 140
+Jaeger	Jaeger
+Skrama 200	Skrama 200
+Skrama	Skrama
+Skrama 240	Skrama 240
+Lore	Лор
+Cat	Кот
+Oil Sample	Образец масла
+Oil S.	Образец м.
+Patient Report	Карта пациента
+P. Report	Карта пац
+Heal	Лечить
+Spray	Распылить
+Medical	Медицинский
+Antibiotics	Антибиотики
+Antibio.	Антибиот.
+Antiseptic	Антисептик
+A. Septic	Антисептик
+Balm	Бальзам
+Bandage	Бинт
+Bandage (Improvised)	Бинт (самодельный)
+Cold Medicine	Лекарство от простуды
+C. Med.	Лек. от прост.
+Deodorant	Дезодорант
+Deodora.	Дезодор.
+Gum	Жвачка
+Lotion	Лосьон
+Medkit	Медаптечка
+Melatonin	Мелатонин
+Melaton.	Мелатонин.
+Painkill.	Обезбол.
+Saline	Физраствор
+Splint	Шина
+Splint (Improvised)	Шина (самодельная)
+Thermal Blanket	Термоодеяло
+Thermal	Термо
+Tissues	Салфетки
+Sneeze	Чихнуть
+Tourniquet	Жгут
+Tourni.	Жгут.
+Tourniquet (Improvised)	Жгут (самодельный)
+Wipes	Влажные салфетки
+Wipe	Салфетка
+Misc	Разное
+Blanket	Одеяло
+Board Game	Настольная игра
+B. Game	Наст. игра
+Bucket	Ведро
+Coffee Filter	Кофейный фильтр
+C. Filter	Кофе. фильтр
+Duct Tape	Скотч
+D. Tape	Скотч
+Happy Stove	Happy Stove
+H. Stove	H. Stove
+Jerry Can	Канистра
+Jerry C.	Канистра.
+Lumber	Пиломатериалы
+Map	Карта
+Map (Tactical)	Карта (тактическая)
+T. Map	Такт. карта
+Matches	Спички
+Mat.	Спич.
+Mattress	Матрас
+Mess Kit	Котелок
+Nails	Гвозди
+Oil Filter	Масляный фильтр
+O. Filter	Масл. фильтр
+Pillow	Подушка
+Rags	Тряпки
+Sleeping_Bag	Спальный_мешок
+Sleeping Bag	Спальный мешок
+S. Bag	Сп. мешок
+Sticks	Ветки
+Tackle Box	Ящик для снастей
+Tackle B.	Ящик снастей.
+Toilet Paper	Туалетная бумага
+T. Paper	Туал. бумага
+Toolbox	Ящик с инструментами
+Water Lock	Водяной замок
+W. Lock	Вод. замок
+Weapon Repair Kit	Ремкомплект оружия
+Repair Kit	Ремкомплект
+Rig	Разгрузка
+LVPC (Green)	LVPC (зелёный)
+LVPC (Winter)	LVPC (зимний)
+Fishing Vest	Рыболовный жилет
+F. Vest	Рыб. жилет
+Weapon	Оружие
+Mag.	Магаз.
+KA-12 Magazine	Магазин KA-12
+KA-M Magazine	Магазин KA-M
+KAS-74U Magazine	Магазин KAS-74U
+C1911 Magazine	Магазин C1911
+G7 Magazine	Магазин G7
+KAR-21 Magazine (.223)	Магазин KAR-21 (.223)
+KAR-21 Magazine (.308)	Магазин KAR-21 (.308)
+KAR-21 Barrel (.308)	Ствол KAR-21 (.308)
+KAR-21 Barrel	Ствол KAR-21
+Barrel	Ствол
+KP-31 Drum	Барабан KP-31
+Drum	Барабан
+STANAG Magazine	Магазин STANAG
+M78 Magazine	Магазин M78
+Karov	Karov
+Karov Magazine	Магазин Karov
+Mosin	Mosin
+PM5 Magazine	Магазин PM5
+MP7 Magazine	Магазин MP7
+P3 Magazine	Магазин P3
+RK Magazine	Магазин RK
+VSD Magazine	Магазин VSD
+SS Magazine	Магазин SS
+Ammo	Патроны
+Attachment	Обвес
+Hybrid	Hybrid
+Kobra	Kobra
+Leopard	Leopard
+Micro	Micro
+Monster	Monster
+Thor	Thor
 Compatibility	Совместимость
 Selected	Выбранные
 Press key to bind...	Нажмите клавишу для привязки...
@@ -97,38 +672,52 @@ Wood	Древесина
 Metal	Металл
 Concrete	Бетон
 Rock	Камень
-Inventory	Инвентарь
-Primary	Основное
-Secondary	Вторичное
-Vital	Показатель
-Task Notes empty	Заметки заданий пусты
-Task Notes not available (Tutorial)	Заметки заданий недоступны (Обучение)
-Map not equipped	Карта не надета
-Map not usable (Vostok)	Карта недоступна (Vostok)
-Casette Player not equipped	Кассетный плеер не надет
-Casette Player power 0%, recharge player	Кассетный плеер разряжен 0%, зарядите плеер
-Casette Player empty, insert casette	Кассетный плеер пуст, вставьте кассету
-Override Ambient Music [ON]	Заглушить фоновую музыку [ВКЛ]
-Override Ambient Music [OFF]	Заглушить фоновую музыку [ВЫКЛ]
-Sleep	Спать
-Level 2	Уровень 2
-Level 3	Уровень 3
-Level 4	Уровень 4
-Level 5	Уровень 5
-Heat required	Требуется источник тепла
-Workbench required	Требуется верстак
-Shelter required	Требуется укрытие
-Start Input	Начать загрузку
-Stop Input	Остановить загрузку
-Reset Input	Сбросить загрузку
-Start Delivery	Начать доставку
-Stop Delivery	Остановить доставку
-Delivered	Доставлено
-CBRN	РХБЯ
-Overweight	Перегрузка
-Explosion	Взрыв
-Fall	Падение
-Day	День
+New Furniture Added [Catalog]	Добавлена новая мебель [Каталог]
+Boss Killed	Босс убит
+Cat Rescued	Кошка спасена
+Cat Vital Activated	Показатели кота активированы
+Cat Died	Кошка умерла
+You have been spotted!	Вас заметили!
+Player Returned	Игрок возвращён
+Indoors	Внутри
+Indoor	В помещении
+Mine	Шахта
+Lure	Приманка
+(Military)	(Военное)
+Unload	Разгрузить
+Clear Chamber	Очистить патронник
+Unequip	Убрать
+Equip	Экипировать
+Show	Показать
+Hide	Скрыть
+Activated	Активировано
+Not active	Неактивно
+All maps & zones	Все карты и зоны
+Active	Активно
+Repair	Починить
+Craft	Изготовить
+Added	Добавлено
+Remove	Убрать
+Completed	Завершено
+Add to Notes	Добавить в Заметки
+Frozen	Заморожена
+Permadeath Zone	Зона безвозвратной потери
+[Open]	[Открыть]
+Door [Jammed]	Дверь [Заклинило]
+Door [Occupied]	Дверь [Занято]
+Door [Close]	Дверь [Закрыть]
+Door [Open]	Дверь [Откр.]
+Sleep (Random sleep: 6-12h)	Поспать (Случайная длительность: 6–12 ч.)
+Turn Off	Выключить
+Turn On	Включить
+Radio [Turn Off]	Радио [Выкл.]
+Radio [Turn On]	Радио [Вкл.]
+Television [Turn Off]	Телевизор [Выкл.]
+Television [Turn On]	Телевизор [Вкл.]
+Rescue Cat	Кошка-спасательница
+Cat is eating, do not disturb	Кошка ест, не беспокоить
+Fuel Tank [89%]	Бак [89%]
+Feed cat:	Покормить кошку:
 Easy	Лёгкий
 Intermediate	Средний
 Hard	Сложный
@@ -418,7 +1007,6 @@ It's never too late to start with an easier instrument, but I would need somethi
 Несколько лет назад я попробовал сыграть на своих старых инструментах, но для них нужны здоровые лёгкие, так что я даже не смог извлечь ни звука из этих чёртовых вещей. Моя страсть к губным гармошкам и музыкальные навыки никуда не делись, но думаю, сигары уже сделали своё дело.
 
 Никогда не поздно начать с более простого инструмента, но мне нужно что-то совсем маленькое, подходящее для такого старого любителя сигар, как я. Может, в следующей жизни."
-Patient Report	Карта пациента
 "When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
@@ -554,594 +1142,6 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 Время от времени этот тип появляется и требует чёртовых выплат по каким-то самодельным долгам. Обычно я бы отстреливал таких клоунов прямо у входной двери, но этот крепкий как орех. Каратель и его прихвостни недавно угнали полицейский фургон, так что теперь у них даже есть лёгкобронированный автомобиль.
 
 Кто-то должен положить конец этому цирку, так что мне, по сути, нужен наёмный убийца. Принеси мне его голову или что-нибудь ещё в доказательство того, что он мёртв, и я дам тебе ключи от моего бункера."
-Trader Event	Событие торговца
-Dynamic Event	Динамическое событие
-Special Event	Особое событие
-Dynamic	Динамический
-Special	Особое
-Guaranteed	Гарантировано
-Generalist returns to Village	Универсал возвращается в Деревню
-"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
-
-After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"Универсал — торговец на все руки, который держит небольшой магазин в гаражном здании Деревни в Зоне 05 и специализируется на товарах повседневного спроса.
-
-После небольшого ментального перерыва Универсал снова вернулся к делу и готов обслуживать своих постоянных клиентов по достойным ценам."
-Doctor returns to School	Доктор возвращается в Школу
-"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
-
-After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"Доктор — торговец, специализирующийся на медицине, и ведёт импровизированную клинику внутри заброшенного школьного здания в Зоне 05.
-
-После визита к Бабушке для «проверки благополучия» Доктор возвращается в свою клинику и готов оказывать медицинскую помощь пострадавшим."
-Fighter Jets	Истребители
-"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
-
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"После эвакуации Зоны 05 и демилитаризации Пограничной Зоны ситуация начала принимать неожиданный оборот, и потребовалась демонстрация силы.
-
-Финские военные начнут выполнять нелетальные показательные облёты на истребителях, которые будут часто появляться в небе."
-Missing Cat	Пропавшая кошка
-"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
-
-A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
-
-Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"Кошка Бабушки пропала после того, как звуковой удар истребителя напугал её, и она убежала.
-
-Несколько дней назад Кочевники нашли кошку, бродящую на Аванпосту, и сумели поймать её с помощью какой-то коробки. Когда Кочевники начали доставлять кошку обратно к Бабушке, на них устроили засаду Бандиты, которые, судя по всему, забрали коробку.
-
-Местные жители видели, как Бандиты жестоко перебрасывали коробку друг другу и в конце концов бросили её где-то."
-Punisher arrives to Area 05	Каратель прибывает в Зону 05
-"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
-
-Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"Каратель — бандитский босс и внушающий страх сборщик долгов в финском криминальном мире.
-
-Каратель и его приспешники угнали местный полицейский фургон и совершают регулярные объезды по Зоне 05."
-Airdrops are delivered to Area 05	Авиадесантные грузы доставлены в Зону 05
-"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
-
-Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"После долгой задержки финские военные снова начали доставлять авиадесантные грузы в Зону 05.
-
-Авиадесантные грузы обычно содержат гуманитарную помощь: медикаменты, расходные материалы и другое необходимое снаряжение для выживания."
-BTR Patrols	Патрули БТР
-"The military faction has started to use armored vehicles in the Vostok area.
-
-Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"Военная фракция начала использовать бронированные машины в районе Востока.
-
-Военные БТРы оснащены тяжёлыми пулемётами, и их патрули были замечены на основных дорогах и ключевых объектах."
-Attack Helicopters	Ударные вертолёты
-"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
-
-While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"Демилитаризация Пограничной Зоны начинает рушиться, и очевидно, что прежние правила больше не действуют.
-
-Хотя официальные источники заверяют, что ничего не изменилось, ударные вертолёты начали совершать частые патрульные облёты и нарушения воздушного пространства вблизи Пограничной Зоны."
-Helicopter Crash Sites	Места крушения вертолётов
-"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
-
-Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"После нарушений воздушного пространства авиационные инциденты стали неизбежны, и несколько ударных вертолётов было сбито по обе стороны границы.
-
-Места крушений вертолётов разбросаны по нескольким локациям и содержат ценный лут, что делает их горячими точками активности ИИ."
-Gunsmith returns to Outpost	Оружейник возвращается на Аванпост
-"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
-
-Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"Оружейник — торговец, который ведёт оружейный склад в одном из бункеров Аванпоста и специализируется на всём, что связано с огнестрельным оружием.
-
-Оружейника не было видно несколько месяцев, но по слухам, он совершал «деловую поездку» на другую сторону границы и теперь вернулся в свой любимый бункер в Зоне 05."
-Outpost gets compromised	Аванпост скомпрометирован
-"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
-
-Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
-
-News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"Учитывая предыдущие события, ситуация в Пограничной Зоне быстро обостряется, и прилегающие районы ощущают последствия.
-
-Военные БТРы теперь могут входить на карту Аванпоста, и Зона 05 больше не считается безопасной.
-
-Новости о событии быстро распространились среди местных жителей и торговцев Зоны 05, однако за её пределами средства массовой информации и власти считают это лишь слухами."
-Traders leave Area 05	Торговцы покидают Зону 05
-"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
-
-It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"После того как Аванпост был скомпрометирован, все торговцы начали готовиться к отъезду из Зоны 05.
-
-Похоже, торговцы делают это как временную меру и вернутся, если и когда обстановка успокоится."
-Traders return to Area 05	Торговцы возвращаются в Зону 05
-"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
-
-All traders are returning back to Area 05."	"Эскалация последних событий, похоже, остановилась, и Зона 05 не погрузилась в полный хаос.
-
-Все торговцы возвращаются в Зону 05."
-Transmission	Передача
-"The signal that started it all has suddenly reappeared.
-
-The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
-
-This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"Сигнал, с которого всё началось, внезапно появился снова.
-
-Передача мешает радиовещанию и слышна на всех общих частотах.
-
-Это последнее событие Раннего доступа [Build 1]. События и история продолжатся в следующих сборках."
-Common	Обычный
-Rare	Редкий
-Legendary	Легендарный
-Armor Plate	Бронепластина
-Armor	Броня
-Armor Plate {class}	Бронепластина {class}
-Armor Plate (II)	Бронепластина (II)
-Armor Plate (III+)	Бронепластина (III+)
-Armor Plate (III)	Бронепластина (III)
-Armor Plate (IIIA)	Бронепластина (IIIA)
-Armor Plate (IV)	Бронепластина (IV)
-Backpack	Рюкзак
-Jääkäri Backpack (Black)	Рюкзак Jääkäri (чёрный)
-Jääkäri BP.	Рюкз. Jääkäri.
-Jääkäri Backpack (Brown)	Рюкзак Jääkäri (коричневый)
-Jääkäri Backpack (Green)	Рюкзак Jääkäri (зелёный)
-Jääkäri Backpack (M05)	Рюкзак Jääkäri (M05)
-Nomad Backpack	Рюкзак Nomad
-Nomad BP.	Рюкз. Nomad.
-Patrol Backpack	Патрульный рюкзак
-Patrol BP.	Патр. рюкз.
-Duffel (Retro)	Дорожная сумка (ретро)
-R. Duffel	Рет. сумка
-Belt Pouch	Поясная сумка
-Kukkaro (Black)	Kukkaro (чёрный)
-Kukkaro	Kukkaro
-Kukkaro (Brown)	Kukkaro (коричневый)
-Kukkaro (Green)	Kukkaro (зелёный)
-Kukkaro (M05)	Kukkaro (M05)
-Literature	Литература
-Book (Children)	Книга (детская)
-Children	Детская
-Book (Cooking)	Книга (кулинарная)
-Cooking	Кулинария
-Book (Fishing)	Книга (рыбалка)
-Book (Religion)	Книга (религия)
-Religion	Религия
-Clothing	Одежда
-Flame Beanie	Шапка Flame
-F. Beanie	Шапка F
-Combat Boots	Берцы
-C. Boots	Берцы C
-M62 Cap	Кепка M62
-Tactical Fleece (Brown)	Тактический флис (коричневый)
-T. Fleece	Такт. флис
-Tactical Fleece (Green)	Тактический флис (зелёный)
-Leather Gloves	Кожаные перчатки
-L. Gloves	Кож. перч
-Work Gloves	Рабочие перчатки
-W. Gloves	Раб. перч
-Mosquito Hat	Шляпа от комаров
-M. Hat	Шляпа M
-Sauna Hat	Банная шапка
-S. Hat	Шапка S
-Hoodie (Border Zone)	Худи (Border Zone)
-Hoodie BZ.	Худи BZ.
-Hoodie B.	Худи B.
-Hoodie (Gray)	Худи (серое)
-Hoodie	Худи
-M62 Jacket	Куртка M62
-M62 J.	Куртка M62.
-Santa Jacket	Куртка Санты
-Santa J.	Куртка С.
-Winter Jacket (Blue)	Зимняя куртка (синяя)
-Winter Jacket	Зимняя куртка
-Winter Jacket (Red)	Зимняя куртка (красная)
-Winter J.	Зим. куртка.
-Jeans (Black)	Джинсы (чёрные)
-Jeans	Джинсы
-Hiking Pants	Треккинговые штаны
-Hiking P.	Трек. штаны.
-Windbreaker (Black)	Ветровка (чёрная)
-Windbreaker	Ветровка
-Windbr.	Ветровка.
-Windbreaker (Green)	Ветровка (зелёная)
-Consumables	Расходники
-Consumable	Расходник
-Drink	Выпить
-Eat	Съесть
-Eat Raw	Съесть сырым
-Eat (Raw)	Съесть (сырым)
-Chew	Жевать
-Smoke	Курить
-Use	Использовать
-Beer	Пиво
-Empty Can	Пустая банка
-Can	Банка
-Canned Meat	Мясные консервы
-Meat	Мясо
-Canned Meatballs	Консервированные фрикадельки
-Meatballs	Фрикадельки
-Canned Pea Soup	Консервированный гороховый суп
-Pea Soup	Гороховый суп
-Canned Peaches	Консервированные персики
-Peaches	Персики
-Canned Pear	Консервированная груша
-Pear	Груша
-Canned Peas	Консервированный горох
-Peas	Горох
-Canned Pineapple	Консервированный ананас
-Pineapple	Ананас
-Canned Tomatoes	Консервированные томаты
-Tomatoes	Томаты
-Canned Tuna	Консервированный тунец
-Tuna	Тунец
-Cat Food	Кошачий корм
-War Chocolate	Военный шоколад
-W. Choco	Воен. шокол
-Cigarettes	Сигареты
-Cigs	Сигар
-Cigars	Сигары
-Coffee	Кофе
-Coffee (Brewed)	Кофе (заваренный)
-C. Brewed	Кофе завар
-Fish Soup (Cooked)	Рыбный суп (приготовленный)
-F. Soup (Cooked)	Рыб. суп (пригот.)
-F. Soup	Рыб. суп
-Meatballs (Cooked)	Фрикадельки (приготовленные)
-M. Balls (Cooked)	Фрикад. (пригот.)
-M. Balls	Фрикадельки
-Pea Soup (Cooked)	Гороховый суп (приготовленный)
-P. Soup (Cooked)	Горох. суп (пригот.)
-P. Soup	Горох. суп
-Tomato Soup (Cooked)	Томатный суп (приготовленный)
-T. Soup (Cooked)	Томат. суп (пригот.)
-T. Soup	Томат. суп
-Crackers	Крекеры
-Energy Drink	Энергетик
-E. Drink	Энерг
-Energy Powder	Энергетический порошок
-E. Powder	Энерг. порошок
-Field Ration	Полевой паёк
-F. Ration	Пол. паёк
-Juice	Сок
-Juice (Orange)	Сок (апельсиновый)
-Juice O.	Сок апельс.
-Juice (Pear)	Сок (грушевый)
-Juice P.	Сок груш.
-Juice (Raspberry)	Сок (малиновый)
-Juice R.	Сок малин.
-Kilju	Kilju
-Kompot	Компот
-Mustard	Горчица
-Peanuts	Арахис
-Potato	Картофель
-Salty Liquorice	Солёная лакрица
-Salty Liq.	Сол. лакрица.
-Snus	Снюс
-Soda (Lemon)	Газировка (лимонная)
-Soda	Газировка
-Soda L.	Газир. лим.
-Sugar	Сахар
-Water Bottle	Бутылка воды
-Water	Вода
-Yeast	Дрожжи
-Electronics	Электроника
-Alarm Clock	Будильник
-A. Clock	Будильник
-Batteries	Батарейки
-Battery	Батарейка
-Battery Cables	Провода аккумулятора
-B. Cables	Провода акк
-Casette	Кассета
-Casette (Electrofolk)	Кассета (электрофолк)
-Junna - Haavakko	Junna - Haavakko
-Junna - Lempi	Junna - Lempi
-Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla
-Junna - Mukula	Junna - Mukula
-Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen
-Junna - Rautahepo	Junna - Rautahepo
-Junna - Ruslana	Junna - Ruslana
-Junna - Vandringsman	Junna - Vandringsman
-Casette (Nomad)	Кассета (Nomad)
-Casette (OST)	Кассета (OST)
-OST - Alive	OST - Alive
-OST - Daybreak	OST - Daybreak
-OST - Far	OST - Far
-OST - Lost	OST - Lost
-OST - Rain	OST - Rain
-OST - Road	OST - Road
-OST - Trailer	OST - Trailer
-OST - Winds	OST - Winds
-Casette (Radio Hits)	Кассета (радиохиты)
-Casette (Symphony)	Кассета (симфония)
-Vostok Symphony	Vostok Symphony
-Casette Player	Кассетный плеер
-C. Player	Касс. плеер
-Coffeemaster	Кофемашина
-C. Master	Кофемаш
-Cooking Station	Кухонная станция
-C. Station	Кух. станция
-Hotplate	Электроплитка
-Inverter	Инвертор
-Narva	Narva
-Polaris	Polaris
-Fish	Рыба
-Fishing	Рыбалка
-Bream	Лещ
-Fishing Rod	Удочка
-F. Rod	Удочка
-Perch	Окунь
-Pike	Щука
-Roach	Плотва
-Grenade	Граната
-Helmet	Шлем
-Police Helmet (IIIA)	Полицейский шлем (IIIA)
-Police Helmet	Полицейский шлем
-P. Helmet	Пол. шлем
-Instrument	Инструмент
-Guitar	Гитара
-Harmonica	Губная гармошка
-Harmo.	Гармошка.
-Key	Ключ
-Attic Key	Ключ от чердака
-Attic K.	Ключ черд.
-Bunker Key	Ключ от бункера
-Bunker K.	Ключ бункера.
-Cellar Key	Ключ от подвала
-Cellar K.	Ключ подвала.
-Classroom Key	Ключ от класса
-Class. K.	Ключ класса.
-Gymnasium Key	Ключ от спортзала
-Gym. K.	Ключ спортз.
-Tunnel Key	Ключ от тоннеля
-Tunnel K.	Ключ тоннеля.
-Knife	Нож
-Jaeger 140	Jaeger 140
-Jaeger	Jaeger
-Skrama 200	Skrama 200
-Skrama	Skrama
-Skrama 240	Skrama 240
-Lore	Лор
-Cat	Кот
-Oil Sample	Образец масла
-Oil S.	Образец м.
-P. Report	Карта пац
-Heal	Лечить
-Spray	Распылить
-Medical	Медицинский
-Antibiotics	Антибиотики
-Antibio.	Антибиот.
-Antiseptic	Антисептик
-A. Septic	Антисептик
-Balm	Бальзам
-Bandage	Бинт
-Bandage (Improvised)	Бинт (самодельный)
-Cold Medicine	Лекарство от простуды
-C. Med.	Лек. от прост.
-Deodorant	Дезодорант
-Deodora.	Дезодор.
-Gum	Жвачка
-Lotion	Лосьон
-Medkit	Медаптечка
-Melatonin	Мелатонин
-Melaton.	Мелатонин.
-Painkill.	Обезбол.
-Saline	Физраствор
-Splint	Шина
-Splint (Improvised)	Шина (самодельная)
-Thermal Blanket	Термоодеяло
-Thermal	Термо
-Tissues	Салфетки
-Sneeze	Чихнуть
-Tourniquet	Жгут
-Tourni.	Жгут.
-Tourniquet (Improvised)	Жгут (самодельный)
-Wipes	Влажные салфетки
-Wipe	Салфетка
-Misc	Разное
-Blanket	Одеяло
-Board Game	Настольная игра
-B. Game	Наст. игра
-Bucket	Ведро
-Coffee Filter	Кофейный фильтр
-C. Filter	Кофе. фильтр
-Duct Tape	Скотч
-D. Tape	Скотч
-Happy Stove	Happy Stove
-H. Stove	H. Stove
-Jerry Can	Канистра
-Jerry C.	Канистра.
-Lumber	Пиломатериалы
-Map	Карта
-Map (Tactical)	Карта (тактическая)
-T. Map	Такт. карта
-Matches	Спички
-Mat.	Спич.
-Mattress	Матрас
-Mess Kit	Котелок
-Nails	Гвозди
-Oil Filter	Масляный фильтр
-O. Filter	Масл. фильтр
-Pillow	Подушка
-Rags	Тряпки
-Sleeping_Bag	Спальный_мешок
-Sleeping Bag	Спальный мешок
-S. Bag	Сп. мешок
-Sticks	Ветки
-Tackle Box	Ящик для снастей
-Tackle B.	Ящик снастей.
-Toilet Paper	Туалетная бумага
-T. Paper	Туал. бумага
-Toolbox	Ящик с инструментами
-Water Lock	Водяной замок
-W. Lock	Вод. замок
-Weapon Repair Kit	Ремкомплект оружия
-Repair Kit	Ремкомплект
-Rig	Разгрузка
-LVPC (Green)	LVPC (зелёный)
-LVPC (Winter)	LVPC (зимний)
-Fishing Vest	Рыболовный жилет
-F. Vest	Рыб. жилет
-Weapon	Оружие
-Mag.	Магаз.
-KA-12 Magazine	Магазин KA-12
-KA-M Magazine	Магазин KA-M
-KAS-74U Magazine	Магазин KAS-74U
-C1911 Magazine	Магазин C1911
-G7 Magazine	Магазин G7
-KAR-21 Magazine (.223)	Магазин KAR-21 (.223)
-KAR-21 Magazine (.308)	Магазин KAR-21 (.308)
-KAR-21 Barrel (.308)	Ствол KAR-21 (.308)
-KAR-21 Barrel	Ствол KAR-21
-Barrel	Ствол
-KP-31 Drum	Барабан KP-31
-Drum	Барабан
-STANAG Magazine	Магазин STANAG
-M78 Magazine	Магазин M78
-Karov	Karov
-Karov Magazine	Магазин Karov
-Mosin	Mosin
-PM5 Magazine	Магазин PM5
-MP7 Magazine	Магазин MP7
-P3 Magazine	Магазин P3
-RK Magazine	Магазин RK
-VSD Magazine	Магазин VSD
-SS Magazine	Магазин SS
-Ammo	Патроны
-Attachment	Обвес
-Hybrid	Hybrid
-Kobra	Kobra
-Leopard	Leopard
-Micro	Micro
-Monster	Monster
-Thor	Thor
 Fire [Ignite]	Огонь [Поджечь]
 Fire [Matches not equipped]	Огонь [Спички не экипированы]
 Fire [Extinguish]	Огонь [Потушить]
-New Furniture Added [Catalog]	Добавлена новая мебель [Каталог]
-Boss Killed	Босс убит
-Cat Rescued	Кошка спасена
-Cat Vital Activated	Показатели кота активированы
-Cat Died	Кошка умерла
-You have been spotted!	Вас заметили!
-Player Returned	Игрок возвращён
-Airdrop	Аирдроп
-Tutorial Crate	Обучающий ящик
-Electric Box	Электрощиток
-Medical Cabinet	Медицинский шкаф
-Office Cabinet	Офисный шкаф
-Cabinet	Шкаф
-Corpse	Труп
-Bandit Corpse	Труп бандита
-Crate Military	Военный ящик
-Crate Special	Особый ящик
-Wooden Crate	Деревянный ящик
-Garbage	Мусор
-Fireplace	Камин
-Freezer	Морозилка
-Fridge	Холодильник
-Fusebox	Щиток с предохранителями
-Locker	Шкафчик
-Mailbox	Почтовый ящик
-Nightstand	Прикроватная тумбочка
-Boxes	Ящики
-Stove	Плита
-Furniture	Мебель
-Furnitures	Мебель
-Bed (Civilian)	Кровать (Гражданская)
-Bed C.	Гражд. кровать.
-Bed (Nomad)	Кровать (Кочевник)
-Bed N.	Кочев. кровать.
-Cabinet (Medical)	Шкаф (Медицинский)
-Cabinet M.	Мед. шкаф.
-Cabinet (Office)	Шкаф (Офисный)
-Cabinet. 0	Офис. шкаф. 0
-Cabinet (Wood)	Шкаф (Деревянный)
-Cabinet W.	Дерев. шкаф.
-Carpet (Persian)	Ковёр (Персидский)
-Carpet P.	Перс. ковёр.
-Carpet (Rag)	Ковёр (Лоскутный)
-Carpet R.	Лоскут. ковёр.
-Chair (Office)	Стул (Офисный)
-Chair O.	Офис. стул.
-Chair (School)	Стул (Школьный)
-Chair S.	Школ. стул.
-Sun Chair	Шезлонг
-S. Chair	Шезлонг
-Crate (Military)	Ящик (Военный)
-Crate M.	Воен. ящик.
-Crate (Special)	Ящик (Особый)
-Crate S.	Особ. ящик.
-Cupboard	Кухонный шкаф
-C. Board	Кух. шкаф
-Curtain (Long)	Штора (Длинная)
-Curtain L.	Длин. штора.
-Curtain (Mini)	Штора (Короткая)
-Curtain M.	Корот. штора.
-Dartboard	Мишень для дартса
-D. Board	Дартс
-N. Stand	Прикров. тумбочка
-Painting (Lake)	Картина (Озеро)
-Painting L.	Картина оз.
-Pallet	Поддон
-Poster (Posture)	Плакат (Осанка)
-Poster P.	Плакат осан.
-Rack (Coat)	Вешалка (пальто)
-Rack C.	Вешалка.
-Rya (Maria)	Рья (Мария)
-Rya M.	Рья М.
-Shelf (Metal)	Полка (Металлическая)
-Shelf M.	Металл. полка.
-Shelf (Wall)	Полка (Настенная)
-Shelf W.	Настен. полка.
-Shelf (Wood)	Полка (Деревянная)
-Sign (Border Zone)	Знак (Пограничная зона)
-Sign BZ.	Знак ПЗ.
-Sofa (Leather)	Диван (Кожаный)
-Sofa L.	Кожан. диван.
-Stool (Military)	Табурет (Военный)
-Stool M.	Воен. табурет.
-Stool (Padded)	Табурет (Мягкий)
-Stool P.	Мягк. табурет.
-Table (Cabin)	Стол (Каютный)
-Table C.	Каютн. стол.
-Table (Canteen)	Стол (Столовая)
-Table (Kitchen)	Стол (Кухонный)
-Table K.	Кухон. стол.
-Table (Office)	Стол (Офисный)
-Table. O	Офис. стол
-Target Stand	Стойка для мишени
-Target S.	Стойка мишени.
-Television	Телевизор
-TV	ТВ
-Trolley (Short)	Тележка (Низкая)
-Trolley S.	Тележка низк.
-Trolley (Tall)	Тележка (Высокая)
-Trolley T.	Тележка выс.
-Weapon Display	Стенд для оружия
-Weapon D.	Стенд оруж.
-Unload	Разгрузить
-Clear Chamber	Очистить патронник
-Unequip	Убрать
-Equip	Экипировать
-Show	Показать
-Hide	Скрыть
-Activated	Активировано
-Not active	Неактивно
-All maps & zones	Все карты и зоны
-Active	Активно
-Repair	Починить
-Craft	Изготовить
-Added	Добавлено
-Remove	Убрать
-Completed	Завершено
-Add to Notes	Добавить в Заметки
-Frozen	Заморожена
-Permadeath Zone	Зона безвозвратной потери
-[Open]	[Открыть]
-Door [Jammed]	Дверь [Заклинило]
-Door [Occupied]	Дверь [Занято]
-Door [Close]	Дверь [Закрыть]
-Door [Open]	Дверь [Откр.]
-Sleep (Random sleep: 6-12h)	Поспать (Случайная длительность: 6–12 ч.)
-Turn Off	Выключить
-Turn On	Включить
-Radio [Turn Off]	Радио [Выкл.]
-Radio [Turn On]	Радио [Вкл.]
-Television [Turn Off]	Телевизор [Выкл.]
-Television [Turn On]	Телевизор [Вкл.]
-Rescue Cat	Кошка-спасательница
-Cat is eating, do not disturb	Кошка ест, не беспокоить
-Fuel Tank [89%]	Бак [89%]
-Feed cat:	Покормить кошку:
-Indoors	Внутри
-Indoor	В помещении
-Mine	Шахта
-Lure	Приманка
-(Military)	(Военное)

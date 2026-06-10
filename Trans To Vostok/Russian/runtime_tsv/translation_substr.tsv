@@ -1,102 +1,105 @@
 text	translation
-Compatibility	Совместимость
-Selected	Выбранные
-Press key to bind...	Нажмите клавишу для привязки...
-Forward	Вперед
-Backward	Назад
-Left	Слева
-Right	Верно
-Crouch	Приседание
-Jump	Перейти
-Sprint	Спринт
-Lean Left	Немного влево
-Lean Right	Наклониться вправо
-Draw Primary	Нарисовать основной
-Draw Secondary	Нарисовать второстепенный
-Draw Knife	Нож для строгания
-Draw Grenade 1	Нарисовать гранату 1
-Draw Grenade 2	Нарисовать гранату 2
-Raise Weapon	Поднять оружие
-Lower Weapon	Нижнее оружие
-Aim	Цель
-Canted Aim	Наклонная прицельная линия
-Fire	Пожар
-Reload	Обновить
-Ammo Check	Проверка боеприпасов
-Firemode	Режим пожара
-Inspect Weapon	Проверить оружие
-Prepare Insert	Подготовить вставку
-Insert Cartridge	Вставить картридж
-Interact	Взаимодействовать
-Place	Место
-Decor Mode	Режим «Декор»
-Flashlight	Фонарик
-NVG	NVG
-Laser	Лазер
-Rail Movement	Движение по железной дороге
-Secondary Optic	Вторичная оптика
-Interface	Интерфейс
-Rotate Item	Повернуть элемент
-Fast Transfer	Быстрая передача
-Fast Equip	Быстрое снаряжение
-Fast Drop	Быстрое падение
-Left Mouse Button	Левая кнопка мыши
-Right Mouse Button	Правая кнопка мыши
-Middle Mouse Button	Средняя кнопка мыши
-Mouse Wheel Up	Прокрутка колесика мыши вверх
-Mouse Wheel Down	Прокрутка колесика мыши вниз
-Mouse Thumb Button 1	Кнопка 1 на большом пальце мыши
-Mouse Thumb Button 2	Вторая кнопка на мыши
-UI Scaling	Масштабирование интерфейса
-Loading...	Загрузка...
-Skip Intro [SPACE]	Пропустить вступление [ПРОБЕЛ]
-All save files deleted	Все файлы сохранений удалены
-Character died	Персонаж умер
-Menu	Меню
-Intro	Вступление
-Tutorial	Учебное пособие
-Tutorial Exit	Выйти из обучения
-Death	Смерть
-Template	Шаблон
-shaders	шейдеры
-Shelter	Укрытие
-Cabin	Убежище
-Attic	Чердак
-Classroom	Класс
-Tent	Палатка
-Bunker	Бункер
-Area 05	Зона 05
-Village	Деревня
-Highway	Шоссе
-School	Школа
-Border Zone	Пограничная зона
-Outpost	Аванпост
-Minefield	Минное поле
-Vostok	Vostok
-Apartments	Жилые комплексы
-Terminal	Терминал
-Trader	Торговец
-Generalist	Универсал
-Doctor	Доктор
-Gunsmith	Оружейник
-Driver	Водитель
-Grandma	Бабуля
-Shaman	Шаман
-Fisherman	Рыбак
-Scientist	Учёный
-Bandit	Бандит
-Guards	Охрана
-Military	Армия
-Punisher	Каратель
-Neutral	Нейтральный
-Overcast	Пасмурно
-Rain	Дождь
-Storm	Шторм
-Generic	Обычный
-Wood	Древесина
-Metal	Металл
-Concrete	Бетон
-Rock	Камень
+Airdrop	Аирдроп
+Tutorial Crate	Обучающий ящик
+Electric Box	Электрощиток
+Medical Cabinet	Медицинский шкаф
+Office Cabinet	Офисный шкаф
+Cabinet	Шкаф
+Corpse	Труп
+Bandit Corpse	Труп бандита
+Crate Military	Военный ящик
+Crate Special	Особый ящик
+Wooden Crate	Деревянный ящик
+Garbage	Мусор
+Fireplace	Камин
+Freezer	Морозилка
+Fridge	Холодильник
+Fusebox	Щиток с предохранителями
+Locker	Шкафчик
+Mailbox	Почтовый ящик
+Nightstand	Прикроватная тумбочка
+Boxes	Ящики
+Stove	Плита
+Furniture	Мебель
+Furnitures	Мебель
+Bed (Civilian)	Кровать (Гражданская)
+Bed C.	Гражд. кровать.
+Bed (Nomad)	Кровать (Кочевник)
+Bed N.	Кочев. кровать.
+Cabinet (Medical)	Шкаф (Медицинский)
+Cabinet M.	Мед. шкаф.
+Cabinet (Office)	Шкаф (Офисный)
+Cabinet. 0	Офис. шкаф. 0
+Cabinet (Wood)	Шкаф (Деревянный)
+Cabinet W.	Дерев. шкаф.
+Carpet (Persian)	Ковёр (Персидский)
+Carpet P.	Перс. ковёр.
+Carpet (Rag)	Ковёр (Лоскутный)
+Carpet R.	Лоскут. ковёр.
+Chair (Office)	Стул (Офисный)
+Chair O.	Офис. стул.
+Chair (School)	Стул (Школьный)
+Chair S.	Школ. стул.
+Sun Chair	Шезлонг
+S. Chair	Шезлонг
+Crate (Military)	Ящик (Военный)
+Crate M.	Воен. ящик.
+Crate (Special)	Ящик (Особый)
+Crate S.	Особ. ящик.
+Cupboard	Кухонный шкаф
+C. Board	Кух. шкаф
+Curtain (Long)	Штора (Длинная)
+Curtain L.	Длин. штора.
+Curtain (Mini)	Штора (Короткая)
+Curtain M.	Корот. штора.
+Dartboard	Мишень для дартса
+D. Board	Дартс
+N. Stand	Прикров. тумбочка
+Painting (Lake)	Картина (Озеро)
+Painting L.	Картина оз.
+Pallet	Поддон
+Poster (Posture)	Плакат (Осанка)
+Poster P.	Плакат осан.
+Rack (Coat)	Вешалка (пальто)
+Rack C.	Вешалка.
+Rya (Maria)	Рья (Мария)
+Rya M.	Рья М.
+Shelf (Metal)	Полка (Металлическая)
+Shelf M.	Металл. полка.
+Shelf (Wall)	Полка (Настенная)
+Shelf W.	Настен. полка.
+Shelf (Wood)	Полка (Деревянная)
+Sign (Border Zone)	Знак (Пограничная зона)
+Sign BZ.	Знак ПЗ.
+Sofa (Leather)	Диван (Кожаный)
+Sofa L.	Кожан. диван.
+Stool (Military)	Табурет (Военный)
+Stool M.	Воен. табурет.
+Stool (Padded)	Табурет (Мягкий)
+Stool P.	Мягк. табурет.
+Table (Cabin)	Стол (Каютный)
+Table C.	Каютн. стол.
+Table (Canteen)	Стол (Столовая)
+Table (Kitchen)	Стол (Кухонный)
+Table K.	Кухон. стол.
+Table (Office)	Стол (Офисный)
+Table. O	Офис. стол
+Target Stand	Стойка для мишени
+Target S.	Стойка мишени.
+Television	Телевизор
+TV	ТВ
+Trolley (Short)	Тележка (Низкая)
+Trolley S.	Тележка низк.
+Trolley (Tall)	Тележка (Высокая)
+Trolley T.	Тележка выс.
+Weapon Display	Стенд для оружия
+Weapon D.	Стенд оруж.
+Trader Event	Событие торговца
+Dynamic Event	Динамическое событие
+Special Event	Особое событие
+Dynamic	Динамический
+Special	Особое
+Guaranteed	Гарантировано
 Inventory	Инвентарь
 Primary	Основное
 Secondary	Вторичное
@@ -129,15 +132,6 @@ Overweight	Перегрузка
 Explosion	Взрыв
 Fall	Падение
 Day	День
-Easy	Лёгкий
-Intermediate	Средний
-Hard	Сложный
-Trader Event	Событие торговца
-Dynamic Event	Динамическое событие
-Special Event	Особое событие
-Dynamic	Динамический
-Special	Особое
-Guaranteed	Гарантировано
 Common	Обычный
 Rare	Редкий
 Legendary	Легендарный
@@ -484,6 +478,104 @@ Leopard	Leopard
 Micro	Micro
 Monster	Monster
 Thor	Thor
+Compatibility	Совместимость
+Selected	Выбранные
+Press key to bind...	Нажмите клавишу для привязки...
+Forward	Вперед
+Backward	Назад
+Left	Слева
+Right	Верно
+Crouch	Приседание
+Jump	Перейти
+Sprint	Спринт
+Lean Left	Немного влево
+Lean Right	Наклониться вправо
+Draw Primary	Нарисовать основной
+Draw Secondary	Нарисовать второстепенный
+Draw Knife	Нож для строгания
+Draw Grenade 1	Нарисовать гранату 1
+Draw Grenade 2	Нарисовать гранату 2
+Raise Weapon	Поднять оружие
+Lower Weapon	Нижнее оружие
+Aim	Цель
+Canted Aim	Наклонная прицельная линия
+Fire	Пожар
+Reload	Обновить
+Ammo Check	Проверка боеприпасов
+Firemode	Режим пожара
+Inspect Weapon	Проверить оружие
+Prepare Insert	Подготовить вставку
+Insert Cartridge	Вставить картридж
+Interact	Взаимодействовать
+Place	Место
+Decor Mode	Режим «Декор»
+Flashlight	Фонарик
+NVG	NVG
+Laser	Лазер
+Rail Movement	Движение по железной дороге
+Secondary Optic	Вторичная оптика
+Interface	Интерфейс
+Rotate Item	Повернуть элемент
+Fast Transfer	Быстрая передача
+Fast Equip	Быстрое снаряжение
+Fast Drop	Быстрое падение
+Left Mouse Button	Левая кнопка мыши
+Right Mouse Button	Правая кнопка мыши
+Middle Mouse Button	Средняя кнопка мыши
+Mouse Wheel Up	Прокрутка колесика мыши вверх
+Mouse Wheel Down	Прокрутка колесика мыши вниз
+Mouse Thumb Button 1	Кнопка 1 на большом пальце мыши
+Mouse Thumb Button 2	Вторая кнопка на мыши
+UI Scaling	Масштабирование интерфейса
+Loading...	Загрузка...
+Skip Intro [SPACE]	Пропустить вступление [ПРОБЕЛ]
+All save files deleted	Все файлы сохранений удалены
+Character died	Персонаж умер
+Menu	Меню
+Intro	Вступление
+Tutorial	Учебное пособие
+Tutorial Exit	Выйти из обучения
+Death	Смерть
+Template	Шаблон
+shaders	шейдеры
+Shelter	Укрытие
+Cabin	Убежище
+Attic	Чердак
+Classroom	Класс
+Tent	Палатка
+Bunker	Бункер
+Area 05	Зона 05
+Village	Деревня
+Highway	Шоссе
+School	Школа
+Border Zone	Пограничная зона
+Outpost	Аванпост
+Minefield	Минное поле
+Vostok	Vostok
+Apartments	Жилые комплексы
+Terminal	Терминал
+Trader	Торговец
+Generalist	Универсал
+Doctor	Доктор
+Gunsmith	Оружейник
+Driver	Водитель
+Grandma	Бабуля
+Shaman	Шаман
+Fisherman	Рыбак
+Scientist	Учёный
+Bandit	Бандит
+Guards	Охрана
+Military	Армия
+Punisher	Каратель
+Neutral	Нейтральный
+Overcast	Пасмурно
+Rain	Дождь
+Storm	Шторм
+Generic	Обычный
+Wood	Древесина
+Metal	Металл
+Concrete	Бетон
+Rock	Камень
 New Furniture Added [Catalog]	Добавлена новая мебель [Каталог]
 Boss Killed	Босс убит
 Cat Rescued	Кошка спасена
@@ -491,101 +583,11 @@ Cat Vital Activated	Показатели кота активированы
 Cat Died	Кошка умерла
 You have been spotted!	Вас заметили!
 Player Returned	Игрок возвращён
-Airdrop	Аирдроп
-Tutorial Crate	Обучающий ящик
-Electric Box	Электрощиток
-Medical Cabinet	Медицинский шкаф
-Office Cabinet	Офисный шкаф
-Cabinet	Шкаф
-Corpse	Труп
-Bandit Corpse	Труп бандита
-Crate Military	Военный ящик
-Crate Special	Особый ящик
-Wooden Crate	Деревянный ящик
-Garbage	Мусор
-Fireplace	Камин
-Freezer	Морозилка
-Fridge	Холодильник
-Fusebox	Щиток с предохранителями
-Locker	Шкафчик
-Mailbox	Почтовый ящик
-Nightstand	Прикроватная тумбочка
-Boxes	Ящики
-Stove	Плита
-Furniture	Мебель
-Furnitures	Мебель
-Bed (Civilian)	Кровать (Гражданская)
-Bed C.	Гражд. кровать.
-Bed (Nomad)	Кровать (Кочевник)
-Bed N.	Кочев. кровать.
-Cabinet (Medical)	Шкаф (Медицинский)
-Cabinet M.	Мед. шкаф.
-Cabinet (Office)	Шкаф (Офисный)
-Cabinet. 0	Офис. шкаф. 0
-Cabinet (Wood)	Шкаф (Деревянный)
-Cabinet W.	Дерев. шкаф.
-Carpet (Persian)	Ковёр (Персидский)
-Carpet P.	Перс. ковёр.
-Carpet (Rag)	Ковёр (Лоскутный)
-Carpet R.	Лоскут. ковёр.
-Chair (Office)	Стул (Офисный)
-Chair O.	Офис. стул.
-Chair (School)	Стул (Школьный)
-Chair S.	Школ. стул.
-Sun Chair	Шезлонг
-S. Chair	Шезлонг
-Crate (Military)	Ящик (Военный)
-Crate M.	Воен. ящик.
-Crate (Special)	Ящик (Особый)
-Crate S.	Особ. ящик.
-Cupboard	Кухонный шкаф
-C. Board	Кух. шкаф
-Curtain (Long)	Штора (Длинная)
-Curtain L.	Длин. штора.
-Curtain (Mini)	Штора (Короткая)
-Curtain M.	Корот. штора.
-Dartboard	Мишень для дартса
-D. Board	Дартс
-N. Stand	Прикров. тумбочка
-Painting (Lake)	Картина (Озеро)
-Painting L.	Картина оз.
-Pallet	Поддон
-Poster (Posture)	Плакат (Осанка)
-Poster P.	Плакат осан.
-Rack (Coat)	Вешалка (пальто)
-Rack C.	Вешалка.
-Rya (Maria)	Рья (Мария)
-Rya M.	Рья М.
-Shelf (Metal)	Полка (Металлическая)
-Shelf M.	Металл. полка.
-Shelf (Wall)	Полка (Настенная)
-Shelf W.	Настен. полка.
-Shelf (Wood)	Полка (Деревянная)
-Sign (Border Zone)	Знак (Пограничная зона)
-Sign BZ.	Знак ПЗ.
-Sofa (Leather)	Диван (Кожаный)
-Sofa L.	Кожан. диван.
-Stool (Military)	Табурет (Военный)
-Stool M.	Воен. табурет.
-Stool (Padded)	Табурет (Мягкий)
-Stool P.	Мягк. табурет.
-Table (Cabin)	Стол (Каютный)
-Table C.	Каютн. стол.
-Table (Canteen)	Стол (Столовая)
-Table (Kitchen)	Стол (Кухонный)
-Table K.	Кухон. стол.
-Table (Office)	Стол (Офисный)
-Table. O	Офис. стол
-Target Stand	Стойка для мишени
-Target S.	Стойка мишени.
-Television	Телевизор
-TV	ТВ
-Trolley (Short)	Тележка (Низкая)
-Trolley S.	Тележка низк.
-Trolley (Tall)	Тележка (Высокая)
-Trolley T.	Тележка выс.
-Weapon Display	Стенд для оружия
-Weapon D.	Стенд оруж.
+Indoors	Внутри
+Indoor	В помещении
+Mine	Шахта
+Lure	Приманка
+(Military)	(Военное)
 Unload	Разгрузить
 Clear Chamber	Очистить патронник
 Unequip	Убрать
@@ -620,8 +622,6 @@ Rescue Cat	Кошка-спасательница
 Cat is eating, do not disturb	Кошка ест, не беспокоить
 Fuel Tank [89%]	Бак [89%]
 Feed cat:	Покормить кошку:
-Indoors	Внутри
-Indoor	В помещении
-Mine	Шахта
-Lure	Приманка
-(Military)	(Военное)
+Easy	Лёгкий
+Intermediate	Средний
+Hard	Сложный

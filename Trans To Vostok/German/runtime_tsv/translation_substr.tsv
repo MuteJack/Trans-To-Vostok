@@ -1,102 +1,105 @@
 text	translation
-Compatibility	Kompatibilität
-Selected	Ausgewählt
-Press key to bind...	Drücke die Taste, um zu binden...
-Forward	Weiter
-Backward	Zurück
-Left	Links
-Right	Richtig
-Crouch	In die Hocke gehen
-Jump	Springen
-Sprint	Sprint
-Lean Left	Nach links neigen
-Lean Right	Nach rechts lehnen
-Draw Primary	Primärwahl
-Draw Secondary	Sekundär zeichnen
-Draw Knife	Ziehmesser
-Draw Grenade 1	Granate 1 ziehen
-Draw Grenade 2	Granate ziehen 2
-Raise Weapon	Waffe heben
-Lower Weapon	Waffe absenken
-Aim	Ziel
-Canted Aim	Schrägausrichtung
-Fire	Feuer
-Reload	Neu laden
-Ammo Check	Munition prüfen
-Firemode	Feuermodus
-Inspect Weapon	Waffe untersuchen
-Prepare Insert	Einfügen vorbereiten
-Insert Cartridge	Kassette einlegen
-Interact	Interagieren
-Place	Ort
-Decor Mode	Dekor-Modus
-Flashlight	Taschenlampe
-NVG	NVG
-Laser	Laser
-Rail Movement	Schienenverkehr
-Secondary Optic	Sekundäroptik
-Interface	Schnittstelle
-Rotate Item	Element drehen
-Fast Transfer	Schnelle Übertragung
-Fast Equip	Schnell ausrüsten
-Fast Drop	Schneller Fall
-Left Mouse Button	Linke Maustaste
-Right Mouse Button	Rechte Maustaste
-Middle Mouse Button	Mittlere Maustaste
-Mouse Wheel Up	Mausrad nach oben
-Mouse Wheel Down	Mausrad nach unten
-Mouse Thumb Button 1	Daumentaste 1 der Maus
-Mouse Thumb Button 2	Daumentaste 2 der Maus
-UI Scaling	Skalierung der Benutzeroberfläche
-Loading...	Wird geladen...
-Skip Intro [SPACE]	Einleitung überspringen [Leertaste]
-All save files deleted	Alle gespeicherten Dateien wurden gelöscht
-Character died	Der Charakter ist gestorben
-Menu	Menü
-Intro	Einleitung
-Tutorial	Anleitung
-Tutorial Exit	Tutorial beenden
-Death	Tod
-Template	Vorlage
-shaders	Shader
-Shelter	Unterkunft
-Cabin	Kabine
-Attic	Dachboden
-Classroom	Klassenzimmer
-Tent	Zelt
-Bunker	Bunker
-Area 05	Bereich 05
-Village	Dorf
-Highway	Autobahn
-School	Schule
-Border Zone	Grenzgebiet
-Outpost	Außenposten
-Minefield	Minenfeld
-Vostok	Wostok
-Apartments	Wohnungen
-Terminal	Terminal
-Trader	Händler
-Generalist	Allrounder
-Doctor	Arzt
-Gunsmith	Waffenschmied
-Driver	Fahrer
-Grandma	Oma
-Shaman	Schamane
-Fisherman	Fischer
-Scientist	Wissenschaftler
-Bandit	Bandit
-Guards	Wachen
-Military	Militär
-Punisher	Der Bestrafer
-Neutral	Neutral
-Overcast	Bewölkt
-Rain	Regen
-Storm	Sturm
-Generic	Allgemein
-Wood	Holz
-Metal	Metall
-Concrete	Beton
-Rock	Rock
+Airdrop	Airdrop
+Tutorial Crate	Tutorial-Kiste
+Electric Box	Schaltkasten
+Medical Cabinet	Medizinschrank
+Office Cabinet	Büroschrank
+Cabinet	Schrank
+Corpse	Leiche
+Bandit Corpse	Leiche eines Banditen
+Crate Military	Crate Military
+Crate Special	Kisten-Sonderangebot
+Wooden Crate	Holzkiste
+Garbage	Müll
+Fireplace	Kamin
+Freezer	Gefrierschrank
+Fridge	Kühlschrank
+Fusebox	Sicherungskasten
+Locker	Spind
+Mailbox	Postfach
+Nightstand	Nachttisch
+Boxes	Kisten
+Stove	Herd
+Furniture	Möbel
+Furnitures	Möbel
+Bed (Civilian)	Bett (für Zivilisten)
+Bed C.	Bett C.
+Bed (Nomad)	Bett (Nomad)
+Bed N.	Bett N.
+Cabinet (Medical)	Schrank (medizinisch)
+Cabinet M.	Schrank M.
+Cabinet (Office)	Kabinett (Büro)
+Cabinet. 0	Schrank. 0
+Cabinet (Wood)	Schrank (Holz)
+Cabinet W.	Schrank W.
+Carpet (Persian)	Teppich (persisch)
+Carpet P.	Teppich P.
+Carpet (Rag)	Teppich (Flickenteppich)
+Carpet R.	Carpet R.
+Chair (Office)	Stuhl (Büro)
+Chair O.	Vorsitzender O.
+Chair (School)	Lehrstuhl (Fakultät)
+Chair S.	Vorsitzender S.
+Sun Chair	Sonnenstuhl
+S. Chair	S. Vorsitzender
+Crate (Military)	Kiste (Militär)
+Crate M.	Crate M.
+Crate (Special)	Kiste (Spezial)
+Crate S.	Crate S.
+Cupboard	Schrank
+C. Board	C. Vorstand
+Curtain (Long)	Vorhang (lang)
+Curtain L.	Vorhang L.
+Curtain (Mini)	Vorhang (Mini)
+Curtain M.	Vorhang M.
+Dartboard	Dartscheibe
+D. Board	D. Vorstand
+N. Stand	N. Stand
+Painting (Lake)	Gemälde (See)
+Painting L.	Gemälde L.
+Pallet	Palette
+Poster (Posture)	Poster (Körperhaltung)
+Poster P.	Poster P.
+Rack (Coat)	Garderobe (Kleider)
+Rack C.	Regal C.
+Rya (Maria)	Rya (Maria)
+Rya M.	Rya M.
+Shelf (Metal)	Regal (Metall)
+Shelf M.	Regal M.
+Shelf (Wall)	Regal (Wand)
+Shelf W.	Regal W.
+Shelf (Wood)	Regal (Holz)
+Sign (Border Zone)	Schild (Grenzgebiet)
+Sign BZ.	Unterschreibe BZ.
+Sofa (Leather)	Sofa (Leder)
+Sofa L.	Sofa L.
+Stool (Military)	Hocker (Militär)
+Stool M.	Stuhl M.
+Stool (Padded)	Hocker (gepolstert)
+Stool P.	Stuhl P.
+Table (Cabin)	Tisch (Kabine)
+Table C.	Tabelle C.
+Table (Canteen)	Tisch (Kantine)
+Table (Kitchen)	Tisch (Küche)
+Table K.	Tabelle K.
+Table (Office)	Schreibtisch
+Table. O	Tabelle. O
+Target Stand	Zielständer
+Target S.	Ziel S.
+Television	Fernsehen
+TV	Fernsehen
+Trolley (Short)	Trolley (kurz)
+Trolley S.	Trolley S.
+Trolley (Tall)	Rollwagen (hoch)
+Trolley T.	Trolley T.
+Weapon Display	Waffenausstellung
+Weapon D.	Waffe D.
+Trader Event	Händlerveranstaltung
+Dynamic Event	Dynamisches Ereignis
+Special Event	Sonderveranstaltung
+Dynamic	Dynamisch
+Special	Besonderes
+Guaranteed	Garantiert
 Inventory	Bestand
 Primary	Grundschule
 Secondary	Sekundär
@@ -129,15 +132,6 @@ Overweight	Übergewicht
 Explosion	Explosion
 Fall	Herbst
 Day	Tag
-Easy	Einfach
-Intermediate	Mittelstufe
-Hard	Schwer
-Trader Event	Händlerveranstaltung
-Dynamic Event	Dynamisches Ereignis
-Special Event	Sonderveranstaltung
-Dynamic	Dynamisch
-Special	Besonderes
-Guaranteed	Garantiert
 Common	Allgemein
 Rare	Selten
 Legendary	Legendär
@@ -484,6 +478,104 @@ Leopard	Leopard
 Micro	Mikro
 Monster	Monster
 Thor	Thor
+Compatibility	Kompatibilität
+Selected	Ausgewählt
+Press key to bind...	Drücke die Taste, um zu binden...
+Forward	Weiter
+Backward	Zurück
+Left	Links
+Right	Richtig
+Crouch	In die Hocke gehen
+Jump	Springen
+Sprint	Sprint
+Lean Left	Nach links neigen
+Lean Right	Nach rechts lehnen
+Draw Primary	Primärwahl
+Draw Secondary	Sekundär zeichnen
+Draw Knife	Ziehmesser
+Draw Grenade 1	Granate 1 ziehen
+Draw Grenade 2	Granate ziehen 2
+Raise Weapon	Waffe heben
+Lower Weapon	Waffe absenken
+Aim	Ziel
+Canted Aim	Schrägausrichtung
+Fire	Feuer
+Reload	Neu laden
+Ammo Check	Munition prüfen
+Firemode	Feuermodus
+Inspect Weapon	Waffe untersuchen
+Prepare Insert	Einfügen vorbereiten
+Insert Cartridge	Kassette einlegen
+Interact	Interagieren
+Place	Ort
+Decor Mode	Dekor-Modus
+Flashlight	Taschenlampe
+NVG	NVG
+Laser	Laser
+Rail Movement	Schienenverkehr
+Secondary Optic	Sekundäroptik
+Interface	Schnittstelle
+Rotate Item	Element drehen
+Fast Transfer	Schnelle Übertragung
+Fast Equip	Schnell ausrüsten
+Fast Drop	Schneller Fall
+Left Mouse Button	Linke Maustaste
+Right Mouse Button	Rechte Maustaste
+Middle Mouse Button	Mittlere Maustaste
+Mouse Wheel Up	Mausrad nach oben
+Mouse Wheel Down	Mausrad nach unten
+Mouse Thumb Button 1	Daumentaste 1 der Maus
+Mouse Thumb Button 2	Daumentaste 2 der Maus
+UI Scaling	Skalierung der Benutzeroberfläche
+Loading...	Wird geladen...
+Skip Intro [SPACE]	Einleitung überspringen [Leertaste]
+All save files deleted	Alle gespeicherten Dateien wurden gelöscht
+Character died	Der Charakter ist gestorben
+Menu	Menü
+Intro	Einleitung
+Tutorial	Anleitung
+Tutorial Exit	Tutorial beenden
+Death	Tod
+Template	Vorlage
+shaders	Shader
+Shelter	Unterkunft
+Cabin	Kabine
+Attic	Dachboden
+Classroom	Klassenzimmer
+Tent	Zelt
+Bunker	Bunker
+Area 05	Bereich 05
+Village	Dorf
+Highway	Autobahn
+School	Schule
+Border Zone	Grenzgebiet
+Outpost	Außenposten
+Minefield	Minenfeld
+Vostok	Wostok
+Apartments	Wohnungen
+Terminal	Terminal
+Trader	Händler
+Generalist	Allrounder
+Doctor	Arzt
+Gunsmith	Waffenschmied
+Driver	Fahrer
+Grandma	Oma
+Shaman	Schamane
+Fisherman	Fischer
+Scientist	Wissenschaftler
+Bandit	Bandit
+Guards	Wachen
+Military	Militär
+Punisher	Der Bestrafer
+Neutral	Neutral
+Overcast	Bewölkt
+Rain	Regen
+Storm	Sturm
+Generic	Allgemein
+Wood	Holz
+Metal	Metall
+Concrete	Beton
+Rock	Rock
 New Furniture Added [Catalog]	Neue Möbel hinzugefügt [Katalog]
 Boss Killed	Chef getötet
 Cat Rescued	Katze gerettet
@@ -491,101 +583,11 @@ Cat Vital Activated	Cat Vital aktiviert
 Cat Died	Die Katze ist gestorben
 You have been spotted!	Du wurdest entdeckt!
 Player Returned	Spieler zurückgekehrt
-Airdrop	Airdrop
-Tutorial Crate	Tutorial-Kiste
-Electric Box	Schaltkasten
-Medical Cabinet	Medizinschrank
-Office Cabinet	Büroschrank
-Cabinet	Schrank
-Corpse	Leiche
-Bandit Corpse	Leiche eines Banditen
-Crate Military	Crate Military
-Crate Special	Kisten-Sonderangebot
-Wooden Crate	Holzkiste
-Garbage	Müll
-Fireplace	Kamin
-Freezer	Gefrierschrank
-Fridge	Kühlschrank
-Fusebox	Sicherungskasten
-Locker	Spind
-Mailbox	Postfach
-Nightstand	Nachttisch
-Boxes	Kisten
-Stove	Herd
-Furniture	Möbel
-Furnitures	Möbel
-Bed (Civilian)	Bett (für Zivilisten)
-Bed C.	Bett C.
-Bed (Nomad)	Bett (Nomad)
-Bed N.	Bett N.
-Cabinet (Medical)	Schrank (medizinisch)
-Cabinet M.	Schrank M.
-Cabinet (Office)	Kabinett (Büro)
-Cabinet. 0	Schrank. 0
-Cabinet (Wood)	Schrank (Holz)
-Cabinet W.	Schrank W.
-Carpet (Persian)	Teppich (persisch)
-Carpet P.	Teppich P.
-Carpet (Rag)	Teppich (Flickenteppich)
-Carpet R.	Carpet R.
-Chair (Office)	Stuhl (Büro)
-Chair O.	Vorsitzender O.
-Chair (School)	Lehrstuhl (Fakultät)
-Chair S.	Vorsitzender S.
-Sun Chair	Sonnenstuhl
-S. Chair	S. Vorsitzender
-Crate (Military)	Kiste (Militär)
-Crate M.	Crate M.
-Crate (Special)	Kiste (Spezial)
-Crate S.	Crate S.
-Cupboard	Schrank
-C. Board	C. Vorstand
-Curtain (Long)	Vorhang (lang)
-Curtain L.	Vorhang L.
-Curtain (Mini)	Vorhang (Mini)
-Curtain M.	Vorhang M.
-Dartboard	Dartscheibe
-D. Board	D. Vorstand
-N. Stand	N. Stand
-Painting (Lake)	Gemälde (See)
-Painting L.	Gemälde L.
-Pallet	Palette
-Poster (Posture)	Poster (Körperhaltung)
-Poster P.	Poster P.
-Rack (Coat)	Garderobe (Kleider)
-Rack C.	Regal C.
-Rya (Maria)	Rya (Maria)
-Rya M.	Rya M.
-Shelf (Metal)	Regal (Metall)
-Shelf M.	Regal M.
-Shelf (Wall)	Regal (Wand)
-Shelf W.	Regal W.
-Shelf (Wood)	Regal (Holz)
-Sign (Border Zone)	Schild (Grenzgebiet)
-Sign BZ.	Unterschreibe BZ.
-Sofa (Leather)	Sofa (Leder)
-Sofa L.	Sofa L.
-Stool (Military)	Hocker (Militär)
-Stool M.	Stuhl M.
-Stool (Padded)	Hocker (gepolstert)
-Stool P.	Stuhl P.
-Table (Cabin)	Tisch (Kabine)
-Table C.	Tabelle C.
-Table (Canteen)	Tisch (Kantine)
-Table (Kitchen)	Tisch (Küche)
-Table K.	Tabelle K.
-Table (Office)	Schreibtisch
-Table. O	Tabelle. O
-Target Stand	Zielständer
-Target S.	Ziel S.
-Television	Fernsehen
-TV	Fernsehen
-Trolley (Short)	Trolley (kurz)
-Trolley S.	Trolley S.
-Trolley (Tall)	Rollwagen (hoch)
-Trolley T.	Trolley T.
-Weapon Display	Waffenausstellung
-Weapon D.	Waffe D.
+Indoors	In Innenräumen
+Indoor	Innerhalb
+Mine	Meins
+Lure	Köder
+(Military)	(Militär)
 Unload	Entladen
 Clear Chamber	Klarsichtkammer
 Unequip	Ausrüsten
@@ -620,8 +622,6 @@ Rescue Cat	Rettungskatze
 Cat is eating, do not disturb	Die Katze frisst gerade, bitte nicht stören
 Fuel Tank [89%]	Kraftstofftank [89 %]
 Feed cat:	Katzenfutter:
-Indoors	In Innenräumen
-Indoor	Innerhalb
-Mine	Meins
-Lure	Köder
-(Military)	(Militär)
+Easy	Einfach
+Intermediate	Mittelstufe
+Hard	Schwer

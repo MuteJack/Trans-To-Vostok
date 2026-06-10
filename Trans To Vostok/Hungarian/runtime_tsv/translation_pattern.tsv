@@ -1,13 +1,13 @@
 text	translation
-Monitor: {idx}	Monitor: {idx}
-Window: {percent}%	Ablak: {percent}%
-Loading {scene}...	Betöltés folyamatban {scene}...
-Remove {name}	Eltávolítás {name}
-Level {no}	Szint {no}
 Day {str}	{str} Nap
 In {str} Days	{str} nap múlva
 {type} Event	{type} Esemény
 ~{str}% / map instance	~{str}% / az adott terület
+Remove {name}	Eltávolítás {name}
+Level {no}	Szint {no}
+Monitor: {idx}	Monitor: {idx}
+Window: {percent}%	Ablak: {percent}%
+Loading {scene}...	Betöltés folyamatban {scene}...
 You slept {str} hours	{str} órát aludtam
 Cat Fed ({name})	Megetettem a macskát ({name})
 Task Completed: {name}	A megbízás teljesítve: {name}

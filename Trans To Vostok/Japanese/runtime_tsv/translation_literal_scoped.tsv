@@ -1,4 +1,177 @@
 location	parent	name	type	text	translation
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	ジェネラリストがヴィレッジに復帰
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"ドクターは医療を専門とするトレーダーで、エリア05の廃校舎内に即席の診療所を開いている。
+
+「安否確認」のために老婆を訪ねた後、ドクターはこの診療所に戻り、負傷者への医療サービスを提供する準備を整えている。"
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	表示
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1日目
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10日後
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	トレーダーイベント
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	イベントの場所:
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	村
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	イベントの可能性：
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	マップインスタンスあたり約5%
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	ヘルス
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	エネルギー
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	水分補給
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	メンタル
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	酸素
+UI/HUD	Info	Map	Label	Shelter (Area 05)	シェルター（エリア05）
+UI/Interface	Container/Header	Label	Label	Container	コンテナ
+UI/Interface	Equipment/Header	Label	Label	Equipment	装備
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	バックパック
+UI/Interface	Equipment/Hints	Rig	Label	Rig	リグ
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	ヘルメット
+UI/Interface	Equipment/Hints	Head	Label	Head	頭
+UI/Interface	Equipment/Hints	Torso	Label	Torso	胴体
+UI/Interface	Equipment/Hints	Legs	Label	Legs	脚
+UI/Interface	Equipment/Hints	Belt	Label	Belt	ベルト
+UI/Interface	Equipment/Hints	Feet	Label	Feet	足
+UI/Interface	Equipment/Hints	Hands	Label	Hands	手
+UI/Interface	Equipment/Hints	Matches	Label	Matches	マッチ
+UI/Interface	Equipment/Hints	Light	Label	Light	ライト
+UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
+UI/Interface	Equipment/Hints	Time	Label	Time	時計
+UI/Interface	Equipment/Hints	Map	Label	Map	地図
+UI/Interface	Equipment/Hints	Player	Label	Player	プレイヤー
+UI/Interface	Character/Header	Label	Label	Character	キャラクター
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	ヘルス
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	エネルギー
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	水分補給
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	メンタル
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	猫
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	日
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	シェルター
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	タスク
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	クエスト
+UI/Interface	Tools/Header	Label	Label	Tools	ツール
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	イベント
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	クラフト
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	近接
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	タスクに関するメモ
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	タスクのメモは空です
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	タスクノートは利用できません（チュートリアル）
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	ワールドマップ
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	マップが装備されていません
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	マップは使用不可（ボストーク）
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"パン = [左クリック]
+ズーム = [スクロール]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	フォーカスマップ
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	カセットプレーヤー
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	カセットプレーヤーは搭載されていません
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	このカセットにはライセンス取得済みの楽曲が含まれています（コンテンツに関する注意）
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	カセット名
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	BGMの上書き [ON]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	BGMの上書き [OFF]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	ノマド
+UI/Interface	Trader/Header	Label	Label	Trader	トレーダー
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	供給
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	タスク
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	名前：
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	トレーダー
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	税金：
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	業務内容：
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	補給：
+UI/Interface	Deal/Header	Label	Label	Deal	取引
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	請求額　税 + (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	オファー金額（€）
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	リセット
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	同意する
+UI/Interface	Supply/Header	Label	Label	Supply	供給
+UI/Interface	Tasks/Header	Label	Label	Tasks	タスク
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	家具カタログ
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	カタログはキャラクターに紐付けられており、死亡するとカタログ内のアイテムも消滅します
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	使用
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	装備
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	装備解除
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	アンロード
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	分割
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	取る
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	睡眠
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	転送
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	ドロップ
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	場所
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	破壊する
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	[0] を削除
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	[1] を削除
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	[2] を削除
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	[3] を削除
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	コーヒーマスター
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	消耗品
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	レジェンダリー
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	アイテムとは、ゲームの世界内に存在し、プレイヤーが回収できるオブジェクトのことです。
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	装備：
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	小学校
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	状態：
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	重量：
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	値：
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	口径：
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	ダメージ：
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	浸透：
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	レベル1
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	レベル2
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	レベル3
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	レベル4
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	レベル5
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	保護：
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	レベル1
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	容量：
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	断熱材：
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	健康：
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	エネルギー：
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	水分補給：
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	精神面：
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	体温：
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	ネストされた：
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	治療法：
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	対応製品：
+UI/Elements/Item	Details	Abbreviation	Label	Item	品目
+UI/Profiler	Panel/Margin	Label	Label	Profiler	プロファイラー
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	表示
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	レシピ名
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	入力：
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	出力：
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	入力を開始
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	クラフト
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	義務が呼んでいる
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	メモに追加
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	削除
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	難易度：
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	簡単
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"先週、近所の廃校になった建物にいる医者のところへ行ったんだ。あいつは俺に「悪い癖」を全部やめるべきだなんて言うけど、あのクソジジイ、自分でもタバコを吸ってるくせに。ふん、知ったことか！
+
+君はたぶん、ピンチの時にミントの錠剤を舐めるだけの、いわゆる現代のヒッピーの一人なんだろうけど、もしこれを見つけたら、パックを一、二箱とマッチも持ってきてくれ。"
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	配信：
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	受信：
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ このタスクを完了すると、シェルター用家具が手に入ります
+→ 家具は「家具カタログ」[装飾モード] にあります"
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	配送を開始する
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	配達停止
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	納品済み
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	完了
 Scenes/Menu	Main/Buttons	New	Button	New game	新しくゲームを始める
 Scenes/Menu	Main/Buttons	Load	Button	Load game	ゲームを読み込む
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	チュートリアル
@@ -29,7 +202,8 @@ Scenes/Menu	Music	Header	Label	Menu Music	メニュー 音楽
 Scenes/Menu	Music/Buttons	Music_Off	Button	"Off
 "	オフ
 Scenes/Menu	Music/Buttons	Music_On	Button	"On
-"	オン
+"	"オン
+"
 Scenes/Menu	.	Copyright	Label	Road to Vostok ® is registered trademark of Road to Vostok Ltd. All rights reserved © 2026	「Road to Vostok ®」はRoad to Vostok Ltd.の登録商標です。無断転載を禁じます © 2026
 Scenes/Menu	.	Version	Label	Version: 0.1.1.3	バージョン: 0.1.1.3
 Scenes/Menu	Changelog/Header	Label	Label	Changelog	変更履歴
@@ -656,8 +830,8 @@ Scenes/Menu	Modes/Difficulty/Ironman	Details	Label	"- No start kit
 - ランダムな開始時の体力
 - 常にパーマネントデス"
 Scenes/Menu	Modes/Difficulty/Ironman	Select	Button	Select	選択
-Scenes/Menu	Modes/Season	Header	Label	Season	シーズン
-Scenes/Menu	Modes/Season/Header	Subheader	Label	Seasonal mode	季節モード
+Scenes/Menu	Modes/Season	Header	Label	Season	季節
+Scenes/Menu	Modes/Season/Header	Subheader	Label	Seasonal mode	四季モード
 Scenes/Menu	Modes/Season/Summer	Hint	Label	Recommended for new players	初心者におすすめ
 Scenes/Menu	Modes/Season/Summer	Name	Label	Summer	夏
 Scenes/Menu	Modes/Season/Summer	Details	Label	"- Summer (365 days)
@@ -707,7 +881,7 @@ Resources/Inputs	Modes/Settings/Lean_Options	Lean_Hold	Button	"Hold
 "	保留
 Resources/Inputs	Modes/Settings/Lean_Options	Lean_Toggle	Button	"Toggle
 "	切り替え
-Resources/Inputs	Modes/Settings	Aim	Label	Aim	目的
+Resources/Inputs	Modes/Settings	Aim	Label	Aim	照準
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Hold	Button	"Hold
 "	保留
 Resources/Inputs	Modes/Settings/Aim_Options	Aim_Toggle	Button	"Toggle
@@ -781,7 +955,8 @@ UI/Settings	Settings/Row_02/Water/Settings	Reflections_Off	Button	"Off
 UI/Settings	Settings/Row_02/AO	AO	Label	Ambient Occlusion	アンビエントオクルージョン
 UI/Settings	Settings/Row_02/AO/Settings	AO_On	Button	On	について
 UI/Settings	Settings/Row_02/AO/Settings	AO_Off	Button	"Off
-"	オフ
+"	"オフ
+"
 UI/Settings	Settings/Row_03/Display	Display	Label	Display	表示
 UI/Settings	Settings/Row_03/Display/Settings	Fullscreen	Button	Fullscreen	全画面表示
 UI/Settings	Settings/Row_03/Display/Settings	Windowed	Button	Windowed	ウィンドウ表示
@@ -907,7 +1082,7 @@ Scenes/Menu	About	Developer	Label	Developer	開発者
 Scenes/Menu	About	Country	Label	Country of origin	原産国
 Scenes/Menu	About/Country	Info	Label	Finland	フィンランド
 Scenes/Menu	About	Founding	Label	Founding date	設立日
-Scenes/Menu	About/Founding	Info	Label	Feb. 2022	2022年2月
+Scenes/Menu	About/Founding	Info	Label	Feb. 2022	2022年二月
 Scenes/Menu	About	Copyright	Label	Copyright & Legal	著作権および法的情報
 Scenes/Menu	About/Copyright	Info	Label	"1. Game Content
 Road to Vostok © 2026 Road to Vostok Ltd. All rights reserved.
@@ -951,17 +1126,17 @@ SOFTWARE."	"本ゲームはGodot Engineを使用しており、以下のライ�
 Copyright © 2014-現在 Godot Engine 貢献者。
 Copyright © 2007-2014 Juan Linietsky, Ariel Manzur。
 
-本ソフトウェアおよび関連するドキュメントファイル（以下「本ソフトウェア」という）の
+本ソフトウェアおよび関連するドキュメントファイル (以下「本ソフトウェア」という) の
 コピーを入手した者に対し、以下の条件に従うことを条件として、本ソフトウェアを
-制限なく利用する権利（本ソフトウェアのコピーを使用、複製、改変、統合、公開、
-頒布、サブライセンス、および／または販売する権利を含むが、これらに限定されない）
+制限なく利用する権利 。本ソフトウェアのコピーを使用、複製、改変、統合、公開、
+頒布、サブライセンス、および／または販売する権利を含むが、これらに限定されない。
 ならびに本ソフトウェアの提供を受けた者に対し同様の行為を許可する権利を、
 無償で付与する。
 
 本ソフトウェアのすべての複製物またはその主要な部分には、
 上記の著作権表示および本許諾表示を含めるものとします。
 
-本ソフトウェアは「現状有姿」で提供され、商品性、特定目的への適合性、および
+本ソフトウェアは現状のままで提供され、商品性、特定目的への適合性、および
 非侵害性を含むがこれらに限定されない、明示的または黙示的ないかなる種類の保証も
 行われません。 いかなる場合においても、
 著作者または著作権者は、契約、不法行為、その他いかなる法的根拠に基づくものであれ、
@@ -974,8 +1149,8 @@ Resources/Loader	Screen	Label	Label	Loading Cabin...	キャビンを読み込み
 Resources/Loader	Screen	Label	Label	Loading Tutorial...	チュートリアルを読み込んでいます...
 Resources/Loader	Screen	Label	Label	Loading Menu...	メニューを読み込み中...
 Resources/Loader	Screen	Label	Label	Loading Attic...	屋根裏部屋の読み込み中...
-Resources/Loader	Screen	Label	Label	Loading Death...	「死」を読み込み中...
-Resources/Loader	Screen	Label	Label	Loading Classroom...	教室を読み込み中...
+Resources/Loader	Screen	Label	Label	Loading Death...	「死」を読み込み中…
+Resources/Loader	Screen	Label	Label	Loading Classroom...	教室を読み込み中…
 Resources/Loader	Screen	Label	Label	Loading Tent...	テントを読み込み中...
 Resources/Loader	Screen	Label	Label	Loading Bunker...	バンカーを読み込み中...
 Resources/Loader	Screen	Label	Label	Loading Village...	村を読み込んでいます...
@@ -993,180 +1168,9 @@ Scenes/Death	Main/Buttons	Load	Button	Load game	ゲームを読み込む
 Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
 "	メインメニュー
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
-"	終了
-UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	ヘルス
-UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	エネルギー
-UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	水分補給
-UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	メンタル
-UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
-UI/HUD	Stats/Oxygen	Header	Label	Oxygen	酸素
-UI/HUD	Info	Map	Label	Shelter (Area 05)	シェルター（エリア05）
-UI/Interface	Container/Header	Label	Label	Container	コンテナ
-UI/Interface	Equipment/Header	Label	Label	Equipment	装備
-UI/Interface	Equipment/Hints	Backpack	Label	Backpack	バックパック
-UI/Interface	Equipment/Hints	Rig	Label	Rig	リグ
-UI/Interface	Equipment/Hints	Helmet	Label	Helmet	ヘルメット
-UI/Interface	Equipment/Hints	Head	Label	Head	頭
-UI/Interface	Equipment/Hints	Torso	Label	Torso	胴体
-UI/Interface	Equipment/Hints	Legs	Label	Legs	脚
-UI/Interface	Equipment/Hints	Belt	Label	Belt	ベルト
-UI/Interface	Equipment/Hints	Feet	Label	Feet	足
-UI/Interface	Equipment/Hints	Hands	Label	Hands	手
-UI/Interface	Equipment/Hints	Matches	Label	Matches	マッチ
-UI/Interface	Equipment/Hints	Light	Label	Light	ライト
-UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
-UI/Interface	Equipment/Hints	Time	Label	Time	時計
-UI/Interface	Equipment/Hints	Map	Label	Map	地図
-UI/Interface	Equipment/Hints	Player	Label	Player	プレイヤー
-UI/Interface	Character/Header	Label	Label	Character	キャラクター
-UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	ヘルス
-UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	エネルギー
-UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	水分補給
-UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	メンタル
-UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	体温
-UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	猫
-UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	日
-UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	シェルター
-UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	タスク
-UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	クエスト
-UI/Interface	Tools/Header	Label	Label	Tools	ツール
-UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	イベント
-UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	クラフト
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	近接
-UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	タスクに関するメモ
-UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	タスクのメモは空です
-UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	タスクノートは利用できません（チュートリアル）
-UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	ワールドマップ
-UI/Interface	Tools/Map	Hint	Label	Map not equipped	マップが装備されていません
-UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	マップは使用不可（ボストーク）
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
-Zoom = [SCROLL]"	"パン = [左クリック]
-ズーム = [スクロール]"
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	フォーカスマップ
-UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	カセットプレーヤー
-UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	カセットプレーヤーは搭載されていません
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	このカセットにはライセンス取得済みの楽曲が含まれています（コンテンツに関する注意）
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	カセット名
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	BGMの上書き [ON]
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	BGMの上書き [OFF]
-UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	ノマド
-UI/Interface	Trader/Header	Label	Label	Trader	トレーダー
-UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	供給
-UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	タスク
-UI/Interface	Trader/Panel/Stats	Name	Label	Name:	名前：
-UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	トレーダー
-UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	税金：
-UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	業務内容：
-UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	補給：
-UI/Interface	Deal/Header	Label	Label	Deal	取引
-UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	請求額（税込）（€）
-UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	オファー金額（€）
-UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	リセット
-UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	同意する
-UI/Interface	Supply/Header	Label	Label	Supply	供給
-UI/Interface	Tasks/Header	Label	Label	Tasks	タスク
-UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	家具カタログ
-UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	カタログはキャラクターに紐付けられており、死亡するとカタログ内のアイテムも消滅します
-UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	使用
-UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	装備
-UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	装備解除
-UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	アンロード
-UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	分割
-UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	取る
-UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	睡眠
-UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	転送
-UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	ドロップ
-UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	場所
-UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	破壊する
-UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	[0] を削除
-UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	[1] を削除
-UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	[2] を削除
-UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	[3] を削除
-UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	コーヒーマスター
-UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	消耗品
-UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	伝説の
-UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	アイテムとは、ゲームの世界内に存在し、プレイヤーが回収できるオブジェクトのことです。
-UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	機材：
-UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	小学校
-UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	状態：
-UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	重量：
-UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	値：
-UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	口径：
-UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	ダメージ：
-UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	浸透：
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	レベル1
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	レベル2
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	レベル3
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	レベル4
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	レベル5
-UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	保護：
-UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	レベル1
-UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	容量：
-UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	断熱材：
-UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	健康：
-UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	エネルギー：
-UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	水分補給：
-UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	精神面：
-UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	体温：
-UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	ネストされた：
-UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	治療法：
-UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	対応製品：
-UI/Elements/Item	Details	Abbreviation	Label	Item	品目
-UI/Profiler	Panel/Margin	Label	Label	Profiler	プロファイラー
-UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	表示
-UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	レシピ名
-UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	入力：
-UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	出力：
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	入力を開始
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	クラフト
-UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	義務が呼んでいる
-UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	メモに追加
-UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	削除
-UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	難易度：
-UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	簡単
-UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
-
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"先週、近所の廃校になった建物にいる医者のところへ行ったんだ。あいつは俺に「悪い癖」を全部やめるべきだなんて言うけど、あのクソジジイ、自分でもタバコを吸ってるくせに。ふん、知ったことか！
-
-君はたぶん、ピンチの時にミントの錠剤を舐めるだけの、いわゆる現代のヒッピーの一人なんだろうけど、もしこれを見つけたら、パックを1、2箱とマッチも持ってきてくれ。"
-UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	配信：
-UI/Elements/Task	Margin/Elements	Output	Label	Receive:	受信：
-UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ このタスクを完了すると、シェルター用家具が手に入ります
-→ 家具は「家具カタログ」[装飾モード] にあります"
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	配送を開始する
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	配達停止
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	納品済み
-UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	完了
-UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	ジェネラリストがヴィレッジに復帰
-UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
-
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"ドクターは医療を専門とするトレーダーで、エリア05の廃校舎内に即席の診療所を開いている。
-
-「安否確認」のために老婆を訪ねた後、ドクターはこの診療所に戻り、負傷者への医療サービスを提供する準備を整えている。"
-UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	表示
-UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1日目
-UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10日後
-UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	トレーダーイベント
-UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	イベントの場所:
-UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	村
-UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	イベントの可能性：
-UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	マップインスタンスあたり約5%
+"	"終了
+"
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  新しい家具を追加しました [カタログ]
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	銃が弾詰まり| [リロード]を押してください
 UI/HUD	Tooltip	Label	Label	Interaction	インタラクト
 UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 回転モード
@@ -1202,9 +1206,9 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Stack	Label	Max stack:	最大ス�
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Armor	Label	Armor:	防具：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Health	Label	Health:	ヘルス：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Energy	Label	"Energy:
-"	エネルギー：
+"	"エネルギー：
+"
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	水分補給：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	体温：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	治療：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	互換性：
-UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  新しい家具を追加しました [カタログ]

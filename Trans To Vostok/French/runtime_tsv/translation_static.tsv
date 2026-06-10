@@ -1,6 +1,4 @@
 location	parent	name	type	text	translation
-Scenes/Menu	.	Compatibility	Label	Compatibility	Compatibilité
-UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Mise à l'échelle de l'interface utilisateur [À venir]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	Couteau
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Grenade
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Grenade
@@ -606,3 +604,5 @@ La valeur de l'offre (€) est calculée à partir des articles en stock sélect
 
 La transaction peut être acceptée lorsque l'indicateur de balance se trouve dans la zone verte, ce qui signifie que la valeur de l'offre est égale ou supérieure à la valeur demandée + taxes."
 UI/Interface	Deal/Panel	Info		Deal Meter	Compteur de promotions
+Scenes/Menu	.	Compatibility	Label	Compatibility	Compatibilité
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Mise à l'échelle de l'interface utilisateur [À venir]

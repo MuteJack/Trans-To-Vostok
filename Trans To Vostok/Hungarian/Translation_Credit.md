@@ -2,7 +2,7 @@
 
 People who contributed to translating Road to Vostok into Hungarian. This includes both text translation and texture / image rework.
 
-_Translation last updated: 2026-06-09T20:20:37+09:00_
+_Translation last updated: 2026-06-11T00:03:06+09:00_
 
 ## Lead Translator(s)
 

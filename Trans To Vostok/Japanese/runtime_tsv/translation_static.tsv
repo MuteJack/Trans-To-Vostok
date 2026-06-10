@@ -1,6 +1,4 @@
 location	parent	name	type	text	translation
-Scenes/Menu	.	Compatibility	Label	Compatibility	互換性
-UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UIの拡大縮小 [近日公開予定]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	ナイフ
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	手榴弾
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	手榴弾
@@ -12,10 +10,10 @@ UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Workbech	Info		Proximity Requirement	近接要件
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Testbench	テストベンチ
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		A nearby crafting element which can be required for certain electronic-based recipes.	特定の電子機器関連のレシピで必要となる、近くにあるクラフト素材。
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	近接要件
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Testbench	Info		Proximity Requirement	近くに寄る
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Shelter	シェルター
 UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		A nearby crafting element which can be required for certain furniture-based recipes.	特定の家具のレシピに必要な、近くにあるクラフト素材。
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	近接要件
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons/Shelter	Info		Proximity Requirement	近くに寄る
 UI/Interface	Trader/Panel	Info		Trader	トレーダー
 UI/Interface	Inventory/Header/Capacity	Info		Carry Capacity	環境収容力
 UI/Interface	Inventory/Header/Capacity	Info		A capacity value (kg) of all equipment items.	全機器の容量値（kg）。
@@ -44,7 +42,7 @@ Carry Capacity by default is 10kg"	"持ち運び可能な荷物の重量上限�
 デフォルトの持ち運び可能重量は10kgです。"
 UI/Interface	Equipment/Stats/Elements/Capacity	Info		Equipment Stat	装備ステータス
 UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Value	設備の価値
-UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	すべての機器の価格（ユーロ）
+UI/Interface	Equipment/Stats/Elements/Value	Info		A price value (€) of all equipment items.	すべての装備の価格（ユーロ）。
 UI/Interface	Equipment/Stats/Elements/Value	Info		Equipment Stat	装備ステータス
 UI/Interface	Equipment/Stats/Elements/Insulation	Info		Insulation	断熱
 UI/Interface	Equipment/Stats/Elements/Insulation	Info		"A clothing-based thermal protection value against cold.
@@ -344,7 +342,7 @@ Cures:
 - 救急キット
 - IFAK / AFAK"
 UI/Interface	Character/Medical/Elements/Fracture	Info		Medical Condition	病状
-UI/Interface	Character/Medical/Elements/Burn	Info		Burn	バーン
+UI/Interface	Character/Medical/Elements/Burn	Info		Burn	火傷
 UI/Interface	Character/Medical/Elements/Burn	Info		"A condition where you have a tissue damage from intense heat or high-voltage electric current.
 
 Causes:
@@ -577,7 +575,7 @@ Then your last light disappears, the sky turns red and the silence breaks."	"す
 そして、最後の光が消え、空が赤く染まり、静寂が破られる。"
 UI/Interface	Character/Stats/Elements/?	Info		Special Event	特別イベント
 UI/Interface	Supply/Header/Value	Info		Supply Value	供給価値
-UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	すべての供給品目の価格（ユーロ）
+UI/Interface	Supply/Header/Value	Info		A price value (€) of all supply items.	すべての供給品目の価格（ユーロ）。
 UI/Interface	Supply/Header/Value	Info		Trader Stat	トレーダー統計
 UI/Interface	Trader/Panel	Info		"A friendly NPC with trading supply, tasks and specialized services.
 
@@ -606,3 +604,5 @@ Deal can be accepted when Deal Meter is within green area which means Offer Valu
 
 取引メーターが緑色の範囲内にある場合、取引は成立します。これは、提示額が要求額＋税額以上であることを意味します。"
 UI/Interface	Deal/Panel	Info		Deal Meter	取引メーター
+Scenes/Menu	.	Compatibility	Label	Compatibility	互換性
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UIの拡大縮小 [近日公開予定]

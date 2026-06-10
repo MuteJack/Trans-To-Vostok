@@ -1,6 +1,4 @@
 location	parent	name	type	text	translation
-Scenes/Menu	.	Compatibility	Label	Compatibility	Kompatibilitás
-UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UI Méretezés [hamarosan elérhető]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	Kés
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Gránát
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Gránát
@@ -614,3 +612,5 @@ Az ajánlati érték (€) a kiválasztott raktárkészlet-tételekből kerül k
 
 Az üzlet akkor fogadható el, ha az üzletkötési mérő a zöld tartományban van, ami azt jelenti, hogy az ajánlati érték megegyezik a kért értékkel vagy meghaladja azt az adóval együtt."
 UI/Interface	Deal/Panel	Info		Deal Meter	Ajánlatmérő
+Scenes/Menu	.	Compatibility	Label	Compatibility	Kompatibilitás
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	UI Méretezés [hamarosan elérhető]

@@ -1,102 +1,106 @@
 text	translation
-Compatibility	호환성
-Selected	선택됨
-Press key to bind...	키를 입력하세요...
-Forward	앞으로
-Backward	뒤로
-Left	왼쪽으로
-Right	오른쪽으로
-Crouch	웅크리기
-Jump	점프
-Sprint	달리기
-Lean Left	왼쪽으로 기울이기
-Lean Right	오른쪽으로 기울이기
-Draw Primary	주무기 꺼내기
-Draw Secondary	보조무기 꺼내기
-Draw Knife	칼 꺼내기
-Draw Grenade 1	수류탄 꺼내기 1
-Draw Grenade 2	수류탄 꺼내기 2
-Raise Weapon	무기 올리기
-Lower Weapon	무기 내리기
-Aim	조준
-Canted Aim	기울여 조준
-Fire	발사
-Reload	재장전
-Ammo Check	잔탄 확인
-Firemode	조정간 (사격 방식)
-Inspect Weapon	무기 살펴보기
-Prepare Insert	삽입 준비
-Insert Cartridge	탄창 삽입
-Interact	상호작용
-Place	배치
-Decor Mode	장식 모드
-Flashlight	손전등
-NVG	야간투시경
-Laser	레이저
-Rail Movement	레일 이동
-Secondary Optic	보조 조준경
-Interface	인터페이스
-Rotate Item	아이템 회전
-Fast Transfer	빠른 옮기기
-Fast Equip	빠른 장착
-Fast Drop	빠른 버리기
-Left Mouse Button	마우스 좌클릭
-Right Mouse Button	마우스 우클릭
-Middle Mouse Button	마우스 휠클릭
-Mouse Wheel Up	마우스 휠 위로
-Mouse Wheel Down	마우스 휠 아래로
-Mouse Thumb Button 1	마우스 엄지 버튼 1
-Mouse Thumb Button 2	마우스 엄지 버튼 2
-UI Scaling	UI 스케일링
-Loading...	로딩중...
-Skip Intro [SPACE]	인트로 스킵하기 [SPACE]
-All save files deleted	모든 세이브 파일이 삭제되었습니다
-Character died	캐릭터가 사망했습니다
-Menu	메뉴
-Intro	인트로
-Tutorial	튜토리얼
-Tutorial Exit	튜토리얼 나가기
-Death	죽음
-Template	템플릿
-shaders	셰이더
-Shelter	은신처
-Cabin	오두막
-Attic	다락방
-Classroom	교실
-Tent	텐트
-Bunker	벙커
-Area 05	05 구역
-Village	마을
-Highway	고속도로
-School	학교
-Border Zone	접경 지대
-Outpost	전초기지
-Minefield	지뢰지대
-Vostok	보스토크
-Apartments	아파트 단지
-Terminal	터미널
-Trader	상인
-Generalist	잡화상
-Doctor	의사
-Gunsmith	건스미스
-Driver	운전사
-Grandma	할머니
-Shaman	샤먼
-Fisherman	어부
-Scientist	과학자
-Bandit	밴디트
-Guards	경비병
-Military	군대
-Punisher	퍼니셔
-Neutral	보통
-Overcast	흐림
-Rain	비
-Storm	폭풍
-Generic	일반
-Wood	나무
-Metal	금속
-Concrete	콘크리트
-Rock	돌
+Airdrop	보급품
+Tutorial Crate	튜토리얼 상자
+Electric Box	배전함
+Medical Cabinet	의료 수납장
+Office Cabinet	사무용 수납장
+Cabinet	수납장
+Corpse	시체
+Bandit Corpse	밴디트 시체
+Crate Military	군용 상자
+Crate Special	특수 상자
+Wooden Crate	나무 상자
+Garbage	쓰레기
+Fireplace	화로
+Freezer	냉동고
+Fridge	냉장고
+Fusebox	퓨즈 박스
+Locker	사물함
+Mailbox	우편함
+Nightstand	협탁
+Boxes	박스
+Stove	스토브
+Furniture	가구
+Furnitures	가구
+Bed (Civilian)	침대 (민간용)
+Bed C.	침대 민간.
+Bed (Nomad)	침대 (방랑자)
+Bed N.	침대 방랑.
+Cabinet (Medical)	수납장 (의료용)
+Cabinet M.	수납장 의료.
+Cabinet (Office)	수납장 (사무용)
+Cabinet. 0	수납장 (사무)
+Cabinet (Wood)	수납장 (나무)
+Cabinet W.	수납장 (나무)
+Carpet (Persian)	카펫 (페르시안)
+Carpet P.	카펫 페르.
+Carpet (Rag)	카펫 (누더기)
+Carpet R.	카펫 (누더기)
+Chair (Office)	의자 (사무용)
+Chair O.	의자 사무.
+Chair (School)	의자 (학교용)
+Chair S.	의자 학교.
+Sun Chair	선베드
+S. Chair	선베드
+Crate (Military)	상자 (군용)
+Crate M.	상자 군용.
+Crate (Special)	상자 (특수)
+Crate S.	상자 특수.
+Cupboard	찬장
+C. Board	찬장
+Curtain (Long)	커튼 (대형)
+Curtain L.	커튼 대형.
+Curtain (Mini)	커튼 (소형)
+Curtain M.	커튼 소형.
+Dartboard	다트판
+D. Board	다트판
+N. Stand	협탁
+Painting (Lake)	그림 (호수)
+Painting L.	그림 호수.
+Pallet	팔레트
+Poster (Posture)	포스터 (바른자세)
+Poster P.	"포스터
+바른자세"
+Rack (Coat)	옷걸이 (코트)
+Rack C.	옷걸이
+Rya (Maria)	융단 (마리아)
+Rya M.	융단 마리아.
+Shelf (Metal)	선반 (철제)
+Shelf M.	선반 (철제)
+Shelf (Wall)	선반 (벽면)
+Shelf W.	선반
+Shelf (Wood)	선반 (나무)
+Sign (Border Zone)	표지판 (접경 지대)
+Sign BZ.	표지판 (접경 지대)
+Sofa (Leather)	소파 (가죽)
+Sofa L.	소파 (가죽)
+Stool (Military)	의자 (군용)
+Stool M.	의자 (군용)
+Stool (Padded)	의자 (쿠션)
+Stool P.	의자 (쿠션)
+Table (Cabin)	테이블 (오두막)
+Table C.	테이블 (오두막)
+Table (Canteen)	테이블 (식당)
+Table (Kitchen)	테이블 (주방)
+Table K.	테이블 (주방)
+Table (Office)	테이블 (사무용)
+Table. O	테이블 (사무용)
+Target Stand	표적 거치대
+Target S.	표적 거치대
+Television	텔레비전
+TV	TV
+Trolley (Short)	트롤리 (소형)
+Trolley S.	트롤리 (소형)
+Trolley (Tall)	트롤리 (대형)
+Trolley T.	트롤리 (대형)
+Weapon Display	무기 진열대
+Weapon D.	무기 진열대
+Trader Event	상인 이벤트
+Dynamic Event	동적 이벤트
+Special Event	특별 이벤트
+Dynamic	동적
+Special	특별
+Guaranteed	보장됨
 Inventory	인벤토리
 Primary	주무기
 Secondary	보조무기
@@ -129,15 +133,6 @@ Overweight	중량 초과
 Explosion	폭발
 Fall	낙하
 Day	일
-Easy	쉬움
-Intermediate	보통
-Hard	어려움
-Trader Event	상인 이벤트
-Dynamic Event	동적 이벤트
-Special Event	특별 이벤트
-Dynamic	동적
-Special	특별
-Guaranteed	보장됨
 Common	일반
 Rare	희귀
 Legendary	전설
@@ -486,6 +481,104 @@ Leopard	레오파드
 Micro	마이크로
 Monster	몬스터
 Thor	토르
+Compatibility	호환성
+Selected	선택됨
+Press key to bind...	키를 입력하세요...
+Forward	앞으로
+Backward	뒤로
+Left	왼쪽으로
+Right	오른쪽으로
+Crouch	웅크리기
+Jump	점프
+Sprint	달리기
+Lean Left	왼쪽으로 기울이기
+Lean Right	오른쪽으로 기울이기
+Draw Primary	주무기 꺼내기
+Draw Secondary	보조무기 꺼내기
+Draw Knife	칼 꺼내기
+Draw Grenade 1	수류탄 꺼내기 1
+Draw Grenade 2	수류탄 꺼내기 2
+Raise Weapon	무기 올리기
+Lower Weapon	무기 내리기
+Aim	조준
+Canted Aim	기울여 조준
+Fire	발사
+Reload	재장전
+Ammo Check	잔탄 확인
+Firemode	조정간 (사격 방식)
+Inspect Weapon	무기 살펴보기
+Prepare Insert	삽입 준비
+Insert Cartridge	탄창 삽입
+Interact	상호작용
+Place	배치
+Decor Mode	장식 모드
+Flashlight	손전등
+NVG	야간투시경
+Laser	레이저
+Rail Movement	레일 이동
+Secondary Optic	보조 조준경
+Interface	인터페이스
+Rotate Item	아이템 회전
+Fast Transfer	빠른 옮기기
+Fast Equip	빠른 장착
+Fast Drop	빠른 버리기
+Left Mouse Button	마우스 좌클릭
+Right Mouse Button	마우스 우클릭
+Middle Mouse Button	마우스 휠클릭
+Mouse Wheel Up	마우스 휠 위로
+Mouse Wheel Down	마우스 휠 아래로
+Mouse Thumb Button 1	마우스 엄지 버튼 1
+Mouse Thumb Button 2	마우스 엄지 버튼 2
+UI Scaling	UI 스케일링
+Loading...	로딩중...
+Skip Intro [SPACE]	인트로 스킵하기 [SPACE]
+All save files deleted	모든 세이브 파일이 삭제되었습니다
+Character died	캐릭터가 사망했습니다
+Menu	메뉴
+Intro	인트로
+Tutorial	튜토리얼
+Tutorial Exit	튜토리얼 나가기
+Death	죽음
+Template	템플릿
+shaders	셰이더
+Shelter	은신처
+Cabin	오두막
+Attic	다락방
+Classroom	교실
+Tent	텐트
+Bunker	벙커
+Area 05	05 구역
+Village	마을
+Highway	고속도로
+School	학교
+Border Zone	접경 지대
+Outpost	전초기지
+Minefield	지뢰지대
+Vostok	보스토크
+Apartments	아파트 단지
+Terminal	터미널
+Trader	상인
+Generalist	잡화상
+Doctor	의사
+Gunsmith	건스미스
+Driver	운전사
+Grandma	할머니
+Shaman	샤먼
+Fisherman	어부
+Scientist	과학자
+Bandit	밴디트
+Guards	경비병
+Military	군대
+Punisher	퍼니셔
+Neutral	보통
+Overcast	흐림
+Rain	비
+Storm	폭풍
+Generic	일반
+Wood	나무
+Metal	금속
+Concrete	콘크리트
+Rock	돌
 New Furniture Added [Catalog]	새 가구 추가됨 [카탈로그]
 Boss Killed	보스 처치됨
 Cat Rescued	고양이 구조됨
@@ -493,102 +586,11 @@ Cat Vital Activated	고양이 상태 활성화됨
 Cat Died	고양이가 사망했습니다
 You have been spotted!	적발되었습니다!
 Player Returned	플레이어 복귀 됨
-Airdrop	보급품
-Tutorial Crate	튜토리얼 상자
-Electric Box	배전함
-Medical Cabinet	의료 수납장
-Office Cabinet	사무용 수납장
-Cabinet	수납장
-Corpse	시체
-Bandit Corpse	밴디트 시체
-Crate Military	군용 상자
-Crate Special	특수 상자
-Wooden Crate	나무 상자
-Garbage	쓰레기
-Fireplace	화로
-Freezer	냉동고
-Fridge	냉장고
-Fusebox	퓨즈 박스
-Locker	사물함
-Mailbox	우편함
-Nightstand	협탁
-Boxes	박스
-Stove	스토브
-Furniture	가구
-Furnitures	가구
-Bed (Civilian)	침대 (민간용)
-Bed C.	침대 민간.
-Bed (Nomad)	침대 (방랑자)
-Bed N.	침대 방랑.
-Cabinet (Medical)	수납장 (의료용)
-Cabinet M.	수납장 의료.
-Cabinet (Office)	수납장 (사무용)
-Cabinet. 0	수납장 (사무)
-Cabinet (Wood)	수납장 (나무)
-Cabinet W.	수납장 (나무)
-Carpet (Persian)	카펫 (페르시안)
-Carpet P.	카펫 페르.
-Carpet (Rag)	카펫 (누더기)
-Carpet R.	카펫 (누더기)
-Chair (Office)	의자 (사무용)
-Chair O.	의자 사무.
-Chair (School)	의자 (학교용)
-Chair S.	의자 학교.
-Sun Chair	선베드
-S. Chair	선베드
-Crate (Military)	상자 (군용)
-Crate M.	상자 군용.
-Crate (Special)	상자 (특수)
-Crate S.	상자 특수.
-Cupboard	찬장
-C. Board	찬장
-Curtain (Long)	커튼 (대형)
-Curtain L.	커튼 대형.
-Curtain (Mini)	커튼 (소형)
-Curtain M.	커튼 소형.
-Dartboard	다트판
-D. Board	다트판
-N. Stand	협탁
-Painting (Lake)	그림 (호수)
-Painting L.	그림 호수.
-Pallet	팔레트
-Poster (Posture)	포스터 (바른자세)
-Poster P.	"포스터
-바른자세"
-Rack (Coat)	옷걸이 (코트)
-Rack C.	옷걸이
-Rya (Maria)	융단 (마리아)
-Rya M.	융단 마리아.
-Shelf (Metal)	선반 (철제)
-Shelf M.	선반 (철제)
-Shelf (Wall)	선반 (벽면)
-Shelf W.	선반
-Shelf (Wood)	선반 (나무)
-Sign (Border Zone)	표지판 (접경 지대)
-Sign BZ.	표지판 (접경 지대)
-Sofa (Leather)	소파 (가죽)
-Sofa L.	소파 (가죽)
-Stool (Military)	의자 (군용)
-Stool M.	의자 (군용)
-Stool (Padded)	의자 (쿠션)
-Stool P.	의자 (쿠션)
-Table (Cabin)	테이블 (오두막)
-Table C.	테이블 (오두막)
-Table (Canteen)	테이블 (식당)
-Table (Kitchen)	테이블 (주방)
-Table K.	테이블 (주방)
-Table (Office)	테이블 (사무용)
-Table. O	테이블 (사무용)
-Target Stand	표적 거치대
-Target S.	표적 거치대
-Television	텔레비전
-TV	TV
-Trolley (Short)	트롤리 (소형)
-Trolley S.	트롤리 (소형)
-Trolley (Tall)	트롤리 (대형)
-Trolley T.	트롤리 (대형)
-Weapon Display	무기 진열대
-Weapon D.	무기 진열대
+Indoors	실내
+Indoor	실내
+Mine	지뢰
+Lure	루어
+(Military)	(군용)
 Unload	탄 꺼내기
 Clear Chamber	약실 비우기
 Unequip	해제
@@ -623,8 +625,6 @@ Rescue Cat	고양이 구출
 Cat is eating, do not disturb	고양이는 밥을 먹고있습니다. 귀찮게 하지 말아주세요.
 Fuel Tank [89%]	연료 탱크 [89%]
 Feed cat:	고양이에게 먹이 주기:
-Indoors	실내
-Indoor	실내
-Mine	지뢰
-Lure	루어
-(Military)	(군용)
+Easy	쉬움
+Intermediate	보통
+Hard	어려움

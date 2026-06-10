@@ -1,6 +1,4 @@
 location	parent	name	type	text	translation
-Scenes/Menu	.	Compatibility	Label	Compatibility	Kompatibilität
-UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Skalierung der Benutzeroberfläche [In Kürze verfügbar]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	Messer
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Granate
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Granate
@@ -606,3 +604,5 @@ Der Angebotswert (€) wird aus den ausgewählten Lagerartikeln berechnet.
 
 Das Geschäft kann angenommen werden, wenn sich das Deal-Meter im grünen Bereich befindet, was bedeutet, dass der Angebotswert dem angeforderten Wert zuzüglich Steuern entspricht oder diesen übersteigt."
 UI/Interface	Deal/Panel	Info		Deal Meter	Deal-Anzeige
+Scenes/Menu	.	Compatibility	Label	Compatibility	Kompatibilität
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Skalierung der Benutzeroberfläche [In Kürze verfügbar]

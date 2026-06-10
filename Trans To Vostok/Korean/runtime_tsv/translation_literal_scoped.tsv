@@ -1,4 +1,192 @@
 location	parent	name	type	text	translation
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	잡화상이 마을에 복귀
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"의사는 약을 전문으로 하는 상인으로, 05 구역의 버려진 학교 건물 안에 임시 진료소를 운영하고 있습니다.
+
+할머니의 안부를 확인하러 다녀온 의사는 이 진료소로 돌아와 부상자들을 치료할 준비를 하고 있습니다."
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	보기
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1 일차
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10 일 후
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	상인 이벤트
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	이벤트 위치:
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	마을
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	발생 가능성:
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / 해당 지역
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	체력
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	기력
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	수분
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	정신력
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	체온
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	산소
+UI/HUD	Info	Map	Label	Shelter (Area 05)	은신처 (05 구역)
+UI/Interface	Container/Header	Label	Label	Container	컨테이너
+UI/Interface	Equipment/Header	Label	Label	Equipment	장비
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	배낭
+UI/Interface	Equipment/Hints	Rig	Label	Rig	조끼
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	헬멧
+UI/Interface	Equipment/Hints	Head	Label	Head	모자
+UI/Interface	Equipment/Hints	Torso	Label	Torso	외투
+UI/Interface	Equipment/Hints	Legs	Label	Legs	바지
+UI/Interface	Equipment/Hints	Belt	Label	Belt	벨트
+UI/Interface	Equipment/Hints	Feet	Label	Feet	신발
+UI/Interface	Equipment/Hints	Hands	Label	Hands	장갑
+UI/Interface	Equipment/Hints	Matches	Label	Matches	성냥
+UI/Interface	Equipment/Hints	Light	Label	Light	손전등
+UI/Interface	Equipment/Hints	NVG	Label	NVG	야투경
+UI/Interface	Equipment/Hints	Time	Label	Time	시계
+UI/Interface	Equipment/Hints	Map	Label	Map	지도
+UI/Interface	Equipment/Hints	Player	Label	Player	음악
+UI/Interface	Character/Header	Label	Label	Character	캐릭터
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	체력
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	기력
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	수분
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	정신력
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	체온
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	고양이
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	생존일
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	은신처
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	의뢰 수
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	퀘스트
+UI/Interface	Tools/Header	Label	Label	Tools	도구
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	이벤트
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	제작
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	근접 시설
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	의뢰 노트
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	의뢰 노트가 비어있습니다
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	월드맵
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	지도가 장착되지 않았습니다
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"이동 = [LMB]
+확대 = [SCROLL]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	현재 위치
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	카세트 플레이어
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	이 카세트에는 저작권이 있는 음악이 포함되어 있습니다 (콘텐츠 경고)
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	카세트 이름
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	방랑자
+UI/Interface	Trader/Header	Label	Label	Trader	상인
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	물자
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	의뢰
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	이름:
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	상인
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	세금:
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	의뢰:
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	재보급:
+UI/Interface	Deal/Header	Label	Label	Deal	거래
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	요구 가격 + 세금 (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	제안 가격(€)
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	초기화
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	수락
+UI/Interface	Supply/Header	Label	Label	Supply	물자
+UI/Interface	Tasks/Header	Label	Label	Tasks	의뢰
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	가구 카탈로그
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	"사용
+"
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	"장비
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	"해제
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	"탄 꺼내기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	"나누기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	"잡기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	"수면
+"
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	"이동
+"
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	"버리기
+"
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	"배치
+"
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	"파괴
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	"제거 [0]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	"제거 [1]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	"제거 [2]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	"제거 [3]
+"
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	커피 머신
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	소모품
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	전설
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	장비:
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	주무기
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	상태:
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	무게:
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	가치:
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	구경:
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	데미지:
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	관통 등급:
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	레벨 1
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	레벨 2
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	레벨 3
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	레벨 4
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	레벨 5
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	방어 등급:
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	레벨 1
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	용량:
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	보온:
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	체력:
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	기력:
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	수분:
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	정신력:
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	체온:
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	결합됨:
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	치료:
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	호환 아이템:
+UI/Elements/Item	Details	Abbreviation	Label	Item	아이템
+UI/Profiler	Panel/Margin	Label	Label	Profiler	프로파일러
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	보기
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	레시피 명
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	입력:
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	출력:
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	투입 시작
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	제작
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	국가의 부름
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	노트에 추가
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	제거
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	난이도:
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	쉬움
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"지난주에 근처 버려진 학교 건물에 있는 의사를 찾아갔어. 그는 내 ""나쁜 습관""들을 다 끊으라고 했지만, 그 늙은이는 담배도 피우니까 신경 안 써!
+
+넌 아마 힘든 일이 있을 때만 민트 사탕을 핥아먹는 현대판 히피 중 하나겠지. 하지만 혹시라도 이런 사탕을 발견하면 한두 갑이랑 성냥도 챙겨가."
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	배달:
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	보상:
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ 이 의뢰를 완료하면 쉼터용 가구를 획득하게 됩니다.
+→ 획득한 가구는 가구 카탈로그 [장식 모드]에서 확인할 수 있습니다."
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	배달 시작
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	배달 종료
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	배달됨
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	완료
 Scenes/Menu	Main/Buttons	New	Button	New game	새 게임
 Scenes/Menu	Main/Buttons	Load	Button	Load game	불러오기
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	튜토리얼
@@ -992,194 +1180,7 @@ Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
 "	메인 메뉴
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
 "	나가기
-UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	체력
-UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	기력
-UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	수분
-UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	정신력
-UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	체온
-UI/HUD	Stats/Oxygen	Header	Label	Oxygen	산소
-UI/HUD	Info	Map	Label	Shelter (Area 05)	은신처 (05 구역)
-UI/Interface	Container/Header	Label	Label	Container	컨테이너
-UI/Interface	Equipment/Header	Label	Label	Equipment	장비
-UI/Interface	Equipment/Hints	Backpack	Label	Backpack	배낭
-UI/Interface	Equipment/Hints	Rig	Label	Rig	조끼
-UI/Interface	Equipment/Hints	Helmet	Label	Helmet	헬멧
-UI/Interface	Equipment/Hints	Head	Label	Head	모자
-UI/Interface	Equipment/Hints	Torso	Label	Torso	외투
-UI/Interface	Equipment/Hints	Legs	Label	Legs	바지
-UI/Interface	Equipment/Hints	Belt	Label	Belt	벨트
-UI/Interface	Equipment/Hints	Feet	Label	Feet	신발
-UI/Interface	Equipment/Hints	Hands	Label	Hands	장갑
-UI/Interface	Equipment/Hints	Matches	Label	Matches	성냥
-UI/Interface	Equipment/Hints	Light	Label	Light	손전등
-UI/Interface	Equipment/Hints	NVG	Label	NVG	야투경
-UI/Interface	Equipment/Hints	Time	Label	Time	시계
-UI/Interface	Equipment/Hints	Map	Label	Map	지도
-UI/Interface	Equipment/Hints	Player	Label	Player	음악
-UI/Interface	Character/Header	Label	Label	Character	캐릭터
-UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	체력
-UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	기력
-UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	수분
-UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	정신력
-UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	체온
-UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	고양이
-UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	생존일
-UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	은신처
-UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	의뢰 수
-UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	퀘스트
-UI/Interface	Tools/Header	Label	Label	Tools	도구
-UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	이벤트
-UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	제작
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	근접 시설
-UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	의뢰 노트
-UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	의뢰 노트가 비어있습니다
-UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	의뢰 노트를 사용할 수 없습니다 (튜토리얼)
-UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	월드맵
-UI/Interface	Tools/Map	Hint	Label	Map not equipped	지도가 장착되지 않았습니다
-UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	지도를 사용할 수 없습니다 (보스토크)
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
-Zoom = [SCROLL]"	"이동 = [LMB]
-확대 = [SCROLL]"
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	현재 위치
-UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	카세트 플레이어
-UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	카세트 플레이어가 장착되지 않았습니다
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	이 카세트에는 저작권이 있는 음악이 포함되어 있습니다 (콘텐츠 경고)
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	카세트 이름
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	배경음악 덮어쓰기 [켜기]
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	배경음악 덮어쓰기 [끄기]
-UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	방랑자
-UI/Interface	Trader/Header	Label	Label	Trader	상인
-UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	물자
-UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	의뢰
-UI/Interface	Trader/Panel/Stats	Name	Label	Name:	이름:
-UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	상인
-UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	세금:
-UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	의뢰:
-UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	재보급:
-UI/Interface	Deal/Header	Label	Label	Deal	거래
-UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	요구 가격 + 세금 (€)
-UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	제안 가격(€)
-UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	초기화
-UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	수락
-UI/Interface	Supply/Header	Label	Label	Supply	물자
-UI/Interface	Tasks/Header	Label	Label	Tasks	의뢰
-UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	가구 카탈로그
-UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	카탈로그는 캐릭터와 연동되며, 사망 시 카탈로그에 있는 아이템도 모두 사라집니다.
-UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	"사용
-"
-UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	"장비
-"
-UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	"해제
-"
-UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	"탄 꺼내기
-"
-UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	"나누기
-"
-UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	"잡기
-"
-UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	"수면
-"
-UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	"이동
-"
-UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	"버리기
-"
-UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	"배치
-"
-UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	"파괴
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	"제거 [0]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	"제거 [1]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	"제거 [2]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	"제거 [3]
-"
-UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	커피 머신
-UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	소모품
-UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	전설
-UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	아이템은 게임 월드 내에서 플레이어가 수집할 수 있는 물체입니다.
-UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	장비:
-UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	주무기
-UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	상태:
-UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	무게:
-UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	가치:
-UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	구경:
-UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	데미지:
-UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	관통 등급:
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	레벨 1
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	레벨 2
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	레벨 3
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	레벨 4
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	레벨 5
-UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	방어 등급:
-UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	레벨 1
-UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	용량:
-UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	보온:
-UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	체력:
-UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	기력:
-UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	수분:
-UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	정신력:
-UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	체온:
-UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	결합됨:
-UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	치료:
-UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	호환 아이템:
-UI/Elements/Item	Details	Abbreviation	Label	Item	아이템
-UI/Profiler	Panel/Margin	Label	Label	Profiler	프로파일러
-UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	보기
-UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	레시피 명
-UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	입력:
-UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	출력:
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	투입 시작
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	제작
-UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	국가의 부름
-UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	노트에 추가
-UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	제거
-UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	난이도:
-UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	쉬움
-UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
-
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"지난주에 근처 버려진 학교 건물에 있는 의사를 찾아갔어. 그는 내 ""나쁜 습관""들을 다 끊으라고 했지만, 그 늙은이는 담배도 피우니까 신경 안 써!
-
-넌 아마 힘든 일이 있을 때만 민트 사탕을 핥아먹는 현대판 히피 중 하나겠지. 하지만 혹시라도 이런 사탕을 발견하면 한두 갑이랑 성냥도 챙겨가."
-UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	배달:
-UI/Elements/Task	Margin/Elements	Output	Label	Receive:	보상:
-UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ 이 의뢰를 완료하면 쉼터용 가구를 획득하게 됩니다.
-→ 획득한 가구는 가구 카탈로그 [장식 모드]에서 확인할 수 있습니다."
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	배달 시작
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	배달 종료
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	배달됨
-UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	완료
-UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	잡화상이 마을에 복귀
-UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
-
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"의사는 약을 전문으로 하는 상인으로, 05 구역의 버려진 학교 건물 안에 임시 진료소를 운영하고 있습니다.
-
-할머니의 안부를 확인하러 다녀온 의사는 이 진료소로 돌아와 부상자들을 치료할 준비를 하고 있습니다."
-UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	보기
-UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1 일차
-UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10 일 후
-UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	상인 이벤트
-UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	이벤트 위치:
-UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	마을
-UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	발생 가능성:
-UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / 해당 지역
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  새 가구 추가됨 [카탈로그]
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	총기 기능 고장 | [재장전] 버튼을 누르세요
 UI/HUD	Tooltip	Label	Label	Interaction	상호작용
 UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[우클릭] = 회전 모드
@@ -1220,4 +1221,3 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	수분:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	체온:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	치료:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	호환성:
-UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  새 가구 추가됨 [카탈로그]

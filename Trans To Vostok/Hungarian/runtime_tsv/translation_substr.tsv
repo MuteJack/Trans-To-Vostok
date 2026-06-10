@@ -1,102 +1,106 @@
 text	translation
-Compatibility	Kompatibilitás
-Selected	Kiválasztás
-Press key to bind...	Hozzárendelés...
-Forward	Előre
-Backward	Hátra
-Left	Balra
-Right	Jobbra
-Crouch	Guggolás
-Jump	Ugrás
-Sprint	Futás
-Lean Left	Kitekintés balra
-Lean Right	Kitekintés jobbra
-Draw Primary	Fő fegyver elővétele
-Draw Secondary	Másodlagos fegyver elővétele
-Draw Knife	Kés elővétele
-Draw Grenade 1	Gránát 1 elővétele
-Draw Grenade 2	Gránát 2 elővétele
-Raise Weapon	Fegyver felemelése
-Lower Weapon	Fegyver leengedése
-Aim	Célzás
-Canted Aim	Döntött célzás
-Fire	Tüzelés
-Reload	Újratöltés
-Ammo Check	Lőszer ellenőrzése
-Firemode	Tűzelési mód
-Inspect Weapon	Fegyverek áttekintése
-Prepare Insert	Előkészítés a behelyezéshez
-Insert Cartridge	A tár behelyezése
-Interact	Kölcsönhatás
-Place	Elengedés
-Decor Mode	Dekor mód
-Flashlight	Zseblámpa
-NVG	Éjjellátó
-Laser	Lézer
-Rail Movement	Sínmozgatás
-Secondary Optic	Kiegészítő célzó
-Interface	Felület
-Rotate Item	Tétel forgatása
-Fast Transfer	Gyors áthelyezés
-Fast Equip	Gyors felszerelés
-Fast Drop	Gyors eldobás
-Left Mouse Button	Bal egérgomb
-Right Mouse Button	Jobb egérgomb
-Middle Mouse Button	Középső egérgomb
-Mouse Wheel Up	Görgő fel
-Mouse Wheel Down	Görgő le
-Mouse Thumb Button 1	Egér hüvelykujj gomb 1
-Mouse Thumb Button 2	Egér hüvelykujj gomb 2
-UI Scaling	UI Méretezés
-Loading...	Betöltés...
-Skip Intro [SPACE]	Bevezető kihagyása [SPACE]
-All save files deleted	Minden mentési fájl törölve lett
-Character died	A karakter meghalt
-Menu	Menü
-Intro	Bevezető
-Tutorial	Kiképzés
-Tutorial Exit	Kilépés a kiképzésből
-Death	Halál
-Template	Készlet
-shaders	árnyékolók
-Shelter	Menedék
-Cabin	Faház
-Attic	Padlás
-Classroom	Osztályterem
-Tent	Sátor
-Bunker	Bunker
-Area 05	05-ös körzet
-Village	Falu
-Highway	Autópálya
-School	Iskola
-Border Zone	Határzóna
-Outpost	Előőrs
-Minefield	Aknamező
-Vostok	Vostok
-Apartments	Panellakások
-Terminal	Terminál
-Trader	Kereskedő
-Generalist	Szakember
-Doctor	Doktor
-Gunsmith	Fegyverkovács
-Driver	Sofőr
-Grandma	Nagymama
-Shaman	Sámán
-Fisherman	Halász
-Scientist	Tudós
-Bandit	Bandita
-Guards	Őrök
-Military	Hadsereg
-Punisher	A Megtorló
-Neutral	Semleges
-Overcast	Felhős
-Rain	Eső
-Storm	Vihar
-Generic	Általános
-Wood	Fa
-Metal	Fém
-Concrete	Beton
-Rock	Szikla
+Airdrop	Légi segélyszállítmány
+Tutorial Crate	Oktatóanyag
+Electric Box	Elektromos kapcsolódoboz
+Medical Cabinet	Gyógyszeres szekrény
+Office Cabinet	Irodai szekrény
+Cabinet	Szekrény
+Corpse	Holttest
+Bandit Corpse	Bandita holttest
+Crate Military	Katonai láda
+Crate Special	Speciális láda
+Wooden Crate	Faláda
+Garbage	Szemeteszsákok
+Fireplace	Kandalló
+Freezer	Fagyasztó
+Fridge	Hűtőszekrény
+Fusebox	Biztosítékdoboz
+Locker	Szekrény
+Mailbox	Postaláda
+Nightstand	Éjjeliszekrény
+Boxes	Kartondoboz
+Stove	Tűzhely
+Furniture	Bútor
+Furnitures	Bútorok
+Bed (Civilian)	Ágy (polgári)
+Bed C.	Ágy.
+Bed (Nomad)	Ágy (nomád)
+Bed N.	Ágy.
+Cabinet (Medical)	Szekrény (gyógyszeres)
+Cabinet M.	Szekrény.
+Cabinet (Office)	Szekrény (irodai)
+Cabinet. 0	Szekrény. 0
+Cabinet (Wood)	Szekrény (fa)
+Cabinet W.	Szekrény.
+Carpet (Persian)	Szőnyeg (perzsa)
+Carpet P.	Szőnyeg.
+Carpet (Rag)	Szőnyeg (rongy)
+Carpet R.	Szőnyeg.
+Chair (Office)	Szék (iroda)
+Chair O.	Szék i.
+Chair (School)	Szék (iskolai)
+Chair S.	Szék.
+Sun Chair	Napozószék
+S. Chair	Napozószék
+Crate (Military)	Láda (katonai)
+Crate M.	Láda.
+Crate (Special)	Láda (speciális)
+Crate S.	Láda.
+Cupboard	Szekrény
+C. Board	Szekrény
+Curtain (Long)	Függöny (hosszú)
+Curtain L.	Függöny h.
+Curtain (Mini)	Függöny (mini)
+Curtain M.	Függöny.
+Dartboard	Darts-tábla
+D. Board	Darts-tábla
+N. Stand	Kis asztal
+Painting (Lake)	Festmény (Tó)
+Painting L.	Festmény.
+Pallet	Raklap
+Poster (Posture)	Poszter (Helyes testtartás)
+Poster P.	"Poszter: Helyes 
+testtartás."
+Rack (Coat)	Ruhaakasztó (kabát)
+Rack C.	Ruhaakasztó.
+Rya (Maria)	(Maria)
+Rya M.	Maria.
+Shelf (Metal)	Polc (fém)
+Shelf M.	Polc.
+Shelf (Wall)	Polc (fali)
+Shelf W.	Polc.
+Shelf (Wood)	Polc (fa)
+Sign (Border Zone)	Tábla (határ)
+Sign BZ.	Tábla.
+Sofa (Leather)	Kanapé (bőr)
+Sofa L.	Kanapé.
+Stool (Military)	Szék (katonai)
+Stool M.	Szék.
+Stool (Padded)	Szék (párnázott)
+Stool P.	Szék.
+Table (Cabin)	Asztal (kabin)
+Table C.	Asztal.
+Table (Canteen)	Asztal (étkező)
+Table (Kitchen)	Asztal (konyha)
+Table K.	Asztal.
+Table (Office)	Asztal (iroda)
+Table. O	Asztal
+Target Stand	Célállvány
+Target S.	Célállvány.
+Television	Televizió
+TV	TV
+Trolley (Short)	Kocsi (rövid)
+Trolley S.	Kocsi.
+Trolley (Tall)	Kocsi (magas)
+Trolley T.	Kocsi.
+Weapon Display	Fegyvertartó
+Weapon D.	Fegyvertartó.
+Trader Event	Kereskedői esemény
+Dynamic Event	Dinamikus esemény
+Special Event	Különleges esemény
+Dynamic	Dinamikus
+Special	Különleges
+Guaranteed	Garantált
 Inventory	Készlet
 Primary	Elsődleges
 Secondary	Másodlagos
@@ -129,15 +133,6 @@ Overweight	Túlsúly
 Explosion	Robbanás
 Fall	Leesés/zuhanás
 Day	Nap
-Easy	Könnyű
-Intermediate	Átlagos
-Hard	Nehéz
-Trader Event	Kereskedői esemény
-Dynamic Event	Dinamikus esemény
-Special Event	Különleges esemény
-Dynamic	Dinamikus
-Special	Különleges
-Guaranteed	Garantált
 Common	Gyakori
 Rare	Ritka
 Legendary	Legendás
@@ -484,6 +479,104 @@ Leopard	Leopard
 Micro	Micro
 Monster	Monster
 Thor	Thor
+Compatibility	Kompatibilitás
+Selected	Kiválasztás
+Press key to bind...	Hozzárendelés...
+Forward	Előre
+Backward	Hátra
+Left	Balra
+Right	Jobbra
+Crouch	Guggolás
+Jump	Ugrás
+Sprint	Futás
+Lean Left	Kitekintés balra
+Lean Right	Kitekintés jobbra
+Draw Primary	Fő fegyver elővétele
+Draw Secondary	Másodlagos fegyver elővétele
+Draw Knife	Kés elővétele
+Draw Grenade 1	Gránát 1 elővétele
+Draw Grenade 2	Gránát 2 elővétele
+Raise Weapon	Fegyver felemelése
+Lower Weapon	Fegyver leengedése
+Aim	Célzás
+Canted Aim	Döntött célzás
+Fire	Tüzelés
+Reload	Újratöltés
+Ammo Check	Lőszer ellenőrzése
+Firemode	Tűzelési mód
+Inspect Weapon	Fegyverek áttekintése
+Prepare Insert	Előkészítés a behelyezéshez
+Insert Cartridge	A tár behelyezése
+Interact	Kölcsönhatás
+Place	Elengedés
+Decor Mode	Dekor mód
+Flashlight	Zseblámpa
+NVG	Éjjellátó
+Laser	Lézer
+Rail Movement	Sínmozgatás
+Secondary Optic	Kiegészítő célzó
+Interface	Felület
+Rotate Item	Tétel forgatása
+Fast Transfer	Gyors áthelyezés
+Fast Equip	Gyors felszerelés
+Fast Drop	Gyors eldobás
+Left Mouse Button	Bal egérgomb
+Right Mouse Button	Jobb egérgomb
+Middle Mouse Button	Középső egérgomb
+Mouse Wheel Up	Görgő fel
+Mouse Wheel Down	Görgő le
+Mouse Thumb Button 1	Egér hüvelykujj gomb 1
+Mouse Thumb Button 2	Egér hüvelykujj gomb 2
+UI Scaling	UI Méretezés
+Loading...	Betöltés...
+Skip Intro [SPACE]	Bevezető kihagyása [SPACE]
+All save files deleted	Minden mentési fájl törölve lett
+Character died	A karakter meghalt
+Menu	Menü
+Intro	Bevezető
+Tutorial	Kiképzés
+Tutorial Exit	Kilépés a kiképzésből
+Death	Halál
+Template	Készlet
+shaders	árnyékolók
+Shelter	Menedék
+Cabin	Faház
+Attic	Padlás
+Classroom	Osztályterem
+Tent	Sátor
+Bunker	Bunker
+Area 05	05-ös körzet
+Village	Falu
+Highway	Autópálya
+School	Iskola
+Border Zone	Határzóna
+Outpost	Előőrs
+Minefield	Aknamező
+Vostok	Vostok
+Apartments	Panellakások
+Terminal	Terminál
+Trader	Kereskedő
+Generalist	Szakember
+Doctor	Doktor
+Gunsmith	Fegyverkovács
+Driver	Sofőr
+Grandma	Nagymama
+Shaman	Sámán
+Fisherman	Halász
+Scientist	Tudós
+Bandit	Bandita
+Guards	Őrök
+Military	Hadsereg
+Punisher	A Megtorló
+Neutral	Semleges
+Overcast	Felhős
+Rain	Eső
+Storm	Vihar
+Generic	Általános
+Wood	Fa
+Metal	Fém
+Concrete	Beton
+Rock	Szikla
 New Furniture Added [Catalog]	Új bútorok hozzáadva [Katalógus]
 Boss Killed	Főellenség legyőzve
 Cat Rescued	Macska megmentve
@@ -491,102 +584,11 @@ Cat Vital Activated	Macsak életjelei aktíválva
 Cat Died	A macska elpusztult
 You have been spotted!	Észleltek!
 Player Returned	A játékos visszatért
-Airdrop	Légi segélyszállítmány
-Tutorial Crate	Oktatóanyag-csomag
-Electric Box	Elektromos kapcsolódoboz
-Medical Cabinet	Gyógyszeres szekrény
-Office Cabinet	Irodai szekrény
-Cabinet	Szekrény
-Corpse	Holttest
-Bandit Corpse	Bandita holttest
-Crate Military	Katonai láda
-Crate Special	Speciális láda
-Wooden Crate	Faláda
-Garbage	Szemeteszsákok
-Fireplace	Kandalló
-Freezer	Fagyasztó
-Fridge	Hűtőszekrény
-Fusebox	Biztosítékdoboz
-Locker	Szekrény
-Mailbox	Postaláda
-Nightstand	Éjjeliszekrény
-Boxes	Kartondoboz
-Stove	Tűzhely
-Furniture	Bútor
-Furnitures	Bútorok
-Bed (Civilian)	Ágy (polgári)
-Bed C.	Ágy.
-Bed (Nomad)	Ágy (nomád)
-Bed N.	Ágy.
-Cabinet (Medical)	Szekrény (gyógyszeres)
-Cabinet M.	Szekrény.
-Cabinet (Office)	Szekrény (irodai)
-Cabinet. 0	Szekrény. 0
-Cabinet (Wood)	Szekrény (fa)
-Cabinet W.	Szekrény.
-Carpet (Persian)	Szőnyeg (perzsa)
-Carpet P.	Szőnyeg.
-Carpet (Rag)	Szőnyeg (rongy)
-Carpet R.	Szőnyeg.
-Chair (Office)	Szék (iroda)
-Chair O.	Szék i.
-Chair (School)	Szék (iskolai)
-Chair S.	Szék.
-Sun Chair	Napozószék
-S. Chair	Napozószék
-Crate (Military)	Láda (katonai)
-Crate M.	Láda.
-Crate (Special)	Láda (speciális)
-Crate S.	Láda.
-Cupboard	Szekrény
-C. Board	Szekrény
-Curtain (Long)	Függöny (hosszú)
-Curtain L.	Függöny h.
-Curtain (Mini)	Függöny (mini)
-Curtain M.	Függöny.
-Dartboard	Darts-tábla
-D. Board	Darts-tábla
-N. Stand	Kis asztal
-Painting (Lake)	Festmény (Tó)
-Painting L.	Festmény.
-Pallet	Raklap
-Poster (Posture)	Poszter (Helyes testtartás)
-Poster P.	"Poszter: Helyes 
-testtartás."
-Rack (Coat)	Ruhaakasztó (kabát)
-Rack C.	Ruhaakasztó.
-Rya (Maria)	(Maria)
-Rya M.	Maria.
-Shelf (Metal)	Polc (fém)
-Shelf M.	Polc.
-Shelf (Wall)	Polc (fali)
-Shelf W.	Polc.
-Shelf (Wood)	Polc (fa)
-Sign (Border Zone)	Tábla (határ)
-Sign BZ.	Tábla.
-Sofa (Leather)	Kanapé (bőr)
-Sofa L.	Kanapé.
-Stool (Military)	Szék (katonai)
-Stool M.	Szék.
-Stool (Padded)	Szék (párnázott)
-Stool P.	Szék.
-Table (Cabin)	Asztal (kabin)
-Table C.	Asztal.
-Table (Canteen)	Asztal (étkező)
-Table (Kitchen)	Asztal (konyha)
-Table K.	Asztal.
-Table (Office)	Asztal (iroda)
-Table. O	Asztal
-Target Stand	Célállvány
-Target S.	Célállvány.
-Television	Televizió
-TV	TV
-Trolley (Short)	Kocsi (rövid)
-Trolley S.	Kocsi.
-Trolley (Tall)	Kocsi (magas)
-Trolley T.	Kocsi.
-Weapon Display	Fegyvertartó
-Weapon D.	Fegyvertartó.
+Indoors	Belső tér
+Indoor	Belső tér
+Mine	Bánya
+Lure	Csali
+(Military)	(Katonai)
 Unload	Kitárazás
 Clear Chamber	Cső ürítése
 Unequip	Leszerelés
@@ -621,8 +623,6 @@ Rescue Cat	Megmentett macska
 Cat is eating, do not disturb	A macska éppen eszik. Kérlek, ne zavard
 Fuel Tank [89%]	Üzemanyagtartály [89%]
 Feed cat:	A macska etetése:
-Indoors	Belső tér
-Indoor	Belső tér
-Mine	Bánya
-Lure	Csali
-(Military)	(Katonai)
+Easy	Könnyű
+Intermediate	Átlagos
+Hard	Nehéz

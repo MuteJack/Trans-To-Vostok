@@ -1,6 +1,4 @@
 location	parent	name	type	text	translation
-Scenes/Menu	.	Compatibility	Label	Compatibility	Совместимость
-UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Масштабирование интерфейса [Скоро будет доступно]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	Нож
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	Граната
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	Граната
@@ -606,3 +604,5 @@ Deal can be accepted when Deal Meter is within green area which means Offer Valu
 
 Сделку можно принять, когда измеритель находится в зелёной зоне — это означает, что предлагаемая стоимость соответствует или превышает запрашиваемую стоимость с налогом."
 UI/Interface	Deal/Panel	Info		Deal Meter	Измеритель сделки
+Scenes/Menu	.	Compatibility	Label	Compatibility	Совместимость
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	Масштабирование интерфейса [Скоро будет доступно]

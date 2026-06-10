@@ -95,7 +95,7 @@ _Translation last updated: 2026-05-30T03:27:52+09:00_
 
 ### Hungarian (`Translations/Hungarian/`)
 
-_Translation last updated: 2026-06-09T20:20:37+09:00_
+_Translation last updated: 2026-06-11T00:03:06+09:00_
 
 **Lead Translator(s):**
 - Mute Jack
@@ -112,7 +112,7 @@ _Translation last updated: 2026-06-09T20:20:37+09:00_
 
 ### Japanese (`Translations/Japanese/`)
 
-_Translation last updated: 2026-06-07T14:30:34+09:00_
+_Translation last updated: 2026-06-10T23:09:50+09:00_
 
 **Lead Translator(s):**
 - Mute Jack
@@ -120,14 +120,15 @@ _Translation last updated: 2026-06-07T14:30:34+09:00_
 **Translator(s):**
 - Nineblood
 
-**Translation Contributors:** _(none yet)_
+**Translation Contributors:**
+- SAY_U Gung-Ho (shera)
 
 **Texture Reworkers:**
 - MuteJack
 
 ### Korean (`Translations/Korean/`)
 
-_Translation last updated: 2026-06-10T01:40:09+09:00_
+_Translation last updated: 2026-06-10T21:41:50+09:00_
 
 **Lead Translator(s):**
 - Mute Jack

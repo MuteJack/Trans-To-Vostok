@@ -1,102 +1,105 @@
 text	translation
-Compatibility	兼容性
-Selected	已选中
-Press key to bind...	按键以绑定...
-Forward	前言
-Backward	上一页
-Left	左
-Right	对
-Crouch	克劳奇
-Jump	跳转
-Sprint	Sprint
-Lean Left	向左倾斜
-Lean Right	向右倾斜
-Draw Primary	绘制主图
-Draw Secondary	绘制辅助线
-Draw Knife	刨刀
-Draw Grenade 1	绘制手榴弹 1
-Draw Grenade 2	绘制手榴弹 2
-Raise Weapon	举起武器
-Lower Weapon	放下武器
-Aim	目的
-Canted Aim	倾斜瞄准
-Fire	火
-Reload	重新加载
-Ammo Check	弹药检查
-Firemode	火模式
-Inspect Weapon	检查武器
-Prepare Insert	准备插入
-Insert Cartridge	插入墨盒
-Interact	互动
-Place	地点
-Decor Mode	装饰模式
-Flashlight	手电筒
-NVG	NVG
-Laser	激光
-Rail Movement	轨道移动
-Secondary Optic	次级光学系统
-Interface	界面
-Rotate Item	旋转项目
-Fast Transfer	快速传输
-Fast Equip	快速装备
-Fast Drop	快速下拉
-Left Mouse Button	鼠标左键
-Right Mouse Button	鼠标右键
-Middle Mouse Button	鼠标中键
-Mouse Wheel Up	鼠标滚轮向上
-Mouse Wheel Down	鼠标滚轮向下
-Mouse Thumb Button 1	鼠标拇指键 1
-Mouse Thumb Button 2	鼠标拇指键 2
-UI Scaling	UI 缩放
-Loading...	正在加载...
-Skip Intro [SPACE]	跳过简介 [空格键]
-All save files deleted	所有保存文件已被删除
-Character died	角色死亡
-Menu	菜单
-Intro	简介
-Tutorial	教程
-Tutorial Exit	教程退出
-Death	死亡
-Template	模板
-shaders	着色器
-Shelter	庇护所
-Cabin	客舱
-Attic	阁楼
-Classroom	教室
-Tent	帐篷
-Bunker	掩体
-Area 05	05区
-Village	村庄
-Highway	高速公路
-School	学校
-Border Zone	边境地带
-Outpost	前哨站
-Minefield	雷区
-Vostok	沃斯托克
-Apartments	公寓
-Terminal	终端
-Trader	交易员
-Generalist	通才
-Doctor	医生
-Gunsmith	枪械师
-Driver	驾驶员
-Grandma	奶奶
-Shaman	萨满
-Fisherman	渔夫
-Scientist	科学家
-Bandit	强盗
-Guards	守卫
-Military	军事
-Punisher	惩罚者
-Neutral	中立
-Overcast	阴天
-Rain	雨
-Storm	风暴
-Generic	通用
-Wood	木
-Metal	金属
-Concrete	混凝土
-Rock	摇滚
+Airdrop	空投
+Tutorial Crate	教程箱
+Electric Box	配电箱
+Medical Cabinet	药柜
+Office Cabinet	办公柜
+Cabinet	内阁
+Corpse	尸体
+Bandit Corpse	强盗的尸体
+Crate Military	Crate Military
+Crate Special	木箱特惠
+Wooden Crate	木箱
+Garbage	垃圾
+Fireplace	壁炉
+Freezer	冷冻室
+Fridge	冰箱
+Fusebox	Fusebox
+Locker	储物柜
+Mailbox	邮箱
+Nightstand	床头柜
+Boxes	盒子
+Stove	炉子
+Furniture	家具
+Furnitures	家具
+Bed (Civilian)	床（民用）
+Bed C.	床 C.
+Bed (Nomad)	床（游牧者）
+Bed N.	床 N.
+Cabinet (Medical)	内阁（医疗）
+Cabinet M.	M型橱柜
+Cabinet (Office)	内阁（办公室）
+Cabinet. 0	内阁。0
+Cabinet (Wood)	橱柜（木制）
+Cabinet W.	W. 内阁
+Carpet (Persian)	地毯（波斯）
+Carpet P.	地毯 P.
+Carpet (Rag)	地毯（碎布）
+Carpet R.	地毯 R.
+Chair (Office)	椅子（办公用）
+Chair O.	O. 主席
+Chair (School)	系主任
+Chair S.	S. 主席
+Sun Chair	Sun Chair
+S. Chair	S. 主席
+Crate (Military)	军用箱
+Crate M.	克雷特·M.
+Crate (Special)	箱子（特殊）
+Crate S.	克雷特·S.
+Cupboard	橱柜
+C. Board	C. 董事会
+Curtain (Long)	窗帘（长款）
+Curtain L.	Curtain L.
+Curtain (Mini)	窗帘（迷你款）
+Curtain M.	Curtain M.
+Dartboard	飞镖靶
+D. Board	D. 董事会
+N. Stand	N. 展台
+Painting (Lake)	绘画（湖）
+Painting L.	绘画 L.
+Pallet	托盘
+Poster (Posture)	海报（姿势）
+Poster P.	P. 海报
+Rack (Coat)	衣架（挂衣）
+Rack C.	C型机架
+Rya (Maria)	Rya（玛丽亚）
+Rya M.	Rya M.
+Shelf (Metal)	金属架
+Shelf M.	Shelf M.
+Shelf (Wall)	壁挂式搁板
+Shelf W.	谢尔夫·W.
+Shelf (Wood)	木制书架
+Sign (Border Zone)	标志（边境区）
+Sign BZ.	请签署BZ。
+Sofa (Leather)	沙发（皮质）
+Sofa L.	L型沙发
+Stool (Military)	军用凳
+Stool M.	粪便 M.
+Stool (Padded)	带软垫的凳子
+Stool P.	粪便 P.
+Table (Cabin)	餐桌（客舱）
+Table C.	表C。
+Table (Canteen)	餐桌（食堂）
+Table (Kitchen)	餐桌（厨房用）
+Table K.	表 K.
+Table (Office)	表格（Office）
+Table. O	表 O
+Target Stand	靶架
+Target S.	目标 S.
+Television	电视
+TV	电视
+Trolley (Short)	手推车（短款）
+Trolley S.	Trolley S.
+Trolley (Tall)	高款手推车
+Trolley T.	Trolley T.
+Weapon Display	武器展示
+Weapon D.	武器D。
+Trader Event	交易者活动
+Dynamic Event	动态事件
+Special Event	特别活动
+Dynamic	动态
+Special	特别版
+Guaranteed	保证
 Inventory	库存
 Primary	小学
 Secondary	中学
@@ -129,15 +132,6 @@ Overweight	超重
 Explosion	爆炸
 Fall	秋季
 Day	天
-Easy	简单
-Intermediate	中级
-Hard	难
-Trader Event	交易者活动
-Dynamic Event	动态事件
-Special Event	特别活动
-Dynamic	动态
-Special	特别版
-Guaranteed	保证
 Common	常用
 Rare	稀有
 Legendary	传奇
@@ -484,6 +478,104 @@ Leopard	豹
 Micro	微型
 Monster	怪物
 Thor	雷神
+Compatibility	兼容性
+Selected	已选中
+Press key to bind...	按键以绑定...
+Forward	前言
+Backward	上一页
+Left	左
+Right	对
+Crouch	克劳奇
+Jump	跳转
+Sprint	Sprint
+Lean Left	向左倾斜
+Lean Right	向右倾斜
+Draw Primary	绘制主图
+Draw Secondary	绘制辅助线
+Draw Knife	刨刀
+Draw Grenade 1	绘制手榴弹 1
+Draw Grenade 2	绘制手榴弹 2
+Raise Weapon	举起武器
+Lower Weapon	放下武器
+Aim	目的
+Canted Aim	倾斜瞄准
+Fire	火
+Reload	重新加载
+Ammo Check	弹药检查
+Firemode	火模式
+Inspect Weapon	检查武器
+Prepare Insert	准备插入
+Insert Cartridge	插入墨盒
+Interact	互动
+Place	地点
+Decor Mode	装饰模式
+Flashlight	手电筒
+NVG	NVG
+Laser	激光
+Rail Movement	轨道移动
+Secondary Optic	次级光学系统
+Interface	界面
+Rotate Item	旋转项目
+Fast Transfer	快速传输
+Fast Equip	快速装备
+Fast Drop	快速下拉
+Left Mouse Button	鼠标左键
+Right Mouse Button	鼠标右键
+Middle Mouse Button	鼠标中键
+Mouse Wheel Up	鼠标滚轮向上
+Mouse Wheel Down	鼠标滚轮向下
+Mouse Thumb Button 1	鼠标拇指键 1
+Mouse Thumb Button 2	鼠标拇指键 2
+UI Scaling	UI 缩放
+Loading...	正在加载...
+Skip Intro [SPACE]	跳过简介 [空格键]
+All save files deleted	所有保存文件已被删除
+Character died	角色死亡
+Menu	菜单
+Intro	简介
+Tutorial	教程
+Tutorial Exit	教程退出
+Death	死亡
+Template	模板
+shaders	着色器
+Shelter	庇护所
+Cabin	客舱
+Attic	阁楼
+Classroom	教室
+Tent	帐篷
+Bunker	掩体
+Area 05	05区
+Village	村庄
+Highway	高速公路
+School	学校
+Border Zone	边境地带
+Outpost	前哨站
+Minefield	雷区
+Vostok	沃斯托克
+Apartments	公寓
+Terminal	终端
+Trader	交易员
+Generalist	通才
+Doctor	医生
+Gunsmith	枪械师
+Driver	驾驶员
+Grandma	奶奶
+Shaman	萨满
+Fisherman	渔夫
+Scientist	科学家
+Bandit	强盗
+Guards	守卫
+Military	军事
+Punisher	惩罚者
+Neutral	中立
+Overcast	阴天
+Rain	雨
+Storm	风暴
+Generic	通用
+Wood	木
+Metal	金属
+Concrete	混凝土
+Rock	摇滚
 New Furniture Added [Catalog]	新增家具 [产品目录]
 Boss Killed	老板被杀
 Cat Rescued	猫获救
@@ -491,101 +583,11 @@ Cat Vital Activated	Cat Vital 已激活
 Cat Died	猫死了
 You have been spotted!	你被发现了！
 Player Returned	球员回归
-Airdrop	空投
-Tutorial Crate	教程箱
-Electric Box	配电箱
-Medical Cabinet	药柜
-Office Cabinet	办公柜
-Cabinet	内阁
-Corpse	尸体
-Bandit Corpse	强盗的尸体
-Crate Military	Crate Military
-Crate Special	木箱特惠
-Wooden Crate	木箱
-Garbage	垃圾
-Fireplace	壁炉
-Freezer	冷冻室
-Fridge	冰箱
-Fusebox	Fusebox
-Locker	储物柜
-Mailbox	邮箱
-Nightstand	床头柜
-Boxes	盒子
-Stove	炉子
-Furniture	家具
-Furnitures	家具
-Bed (Civilian)	床（民用）
-Bed C.	床 C.
-Bed (Nomad)	床（游牧者）
-Bed N.	床 N.
-Cabinet (Medical)	内阁（医疗）
-Cabinet M.	M型橱柜
-Cabinet (Office)	内阁（办公室）
-Cabinet. 0	内阁。0
-Cabinet (Wood)	橱柜（木制）
-Cabinet W.	W. 内阁
-Carpet (Persian)	地毯（波斯）
-Carpet P.	地毯 P.
-Carpet (Rag)	地毯（碎布）
-Carpet R.	地毯 R.
-Chair (Office)	椅子（办公用）
-Chair O.	O. 主席
-Chair (School)	系主任
-Chair S.	S. 主席
-Sun Chair	Sun Chair
-S. Chair	S. 主席
-Crate (Military)	军用箱
-Crate M.	克雷特·M.
-Crate (Special)	箱子（特殊）
-Crate S.	克雷特·S.
-Cupboard	橱柜
-C. Board	C. 董事会
-Curtain (Long)	窗帘（长款）
-Curtain L.	Curtain L.
-Curtain (Mini)	窗帘（迷你款）
-Curtain M.	Curtain M.
-Dartboard	飞镖靶
-D. Board	D. 董事会
-N. Stand	N. 展台
-Painting (Lake)	绘画（湖）
-Painting L.	绘画 L.
-Pallet	托盘
-Poster (Posture)	海报（姿势）
-Poster P.	P. 海报
-Rack (Coat)	衣架（挂衣）
-Rack C.	C型机架
-Rya (Maria)	Rya（玛丽亚）
-Rya M.	Rya M.
-Shelf (Metal)	金属架
-Shelf M.	Shelf M.
-Shelf (Wall)	壁挂式搁板
-Shelf W.	谢尔夫·W.
-Shelf (Wood)	木制书架
-Sign (Border Zone)	标志（边境区）
-Sign BZ.	请签署BZ。
-Sofa (Leather)	沙发（皮质）
-Sofa L.	L型沙发
-Stool (Military)	军用凳
-Stool M.	粪便 M.
-Stool (Padded)	带软垫的凳子
-Stool P.	粪便 P.
-Table (Cabin)	餐桌（客舱）
-Table C.	表C。
-Table (Canteen)	餐桌（食堂）
-Table (Kitchen)	餐桌（厨房用）
-Table K.	表 K.
-Table (Office)	表格（Office）
-Table. O	表 O
-Target Stand	靶架
-Target S.	目标 S.
-Television	电视
-TV	电视
-Trolley (Short)	手推车（短款）
-Trolley S.	Trolley S.
-Trolley (Tall)	高款手推车
-Trolley T.	Trolley T.
-Weapon Display	武器展示
-Weapon D.	武器D。
+Indoors	室内
+Indoor	室内
+Mine	我的
+Lure	诱饵
+(Military)	（军事）
 Unload	卸载
 Clear Chamber	透明腔室
 Unequip	卸下
@@ -620,8 +622,6 @@ Rescue Cat	被救助的猫
 Cat is eating, do not disturb	猫正在吃饭，请勿打扰
 Fuel Tank [89%]	油箱 [89%]
 Feed cat:	给猫喂食：
-Indoors	室内
-Indoor	室内
-Mine	我的
-Lure	诱饵
-(Military)	（军事）
+Easy	简单
+Intermediate	中级
+Hard	难

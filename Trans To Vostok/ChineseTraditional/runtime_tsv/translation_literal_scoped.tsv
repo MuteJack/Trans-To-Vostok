@@ -1,4 +1,177 @@
 location	parent	name	type	text	translation
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	全能型選手重返村莊
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"「醫生」是一位專精於醫療的交易商，他在第05區一棟廢棄的校舍內開設了一間臨時診所。
+
+在前往探望「奶奶」進行「關懷訪視」後，醫生回到這間診所，準備為受傷的人們提供醫療服務。"
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	顯示
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	第 1 天
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10天後
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	交易者活動
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	活動地點：
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	村莊
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	活動可能性：
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	約 5% / 地圖實例
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	健康
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	能源
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	水分補充
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	心理
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	體溫
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	氧氣
+UI/HUD	Info	Map	Label	Shelter (Area 05)	庇護所（第05區）
+UI/Interface	Container/Header	Label	Label	Container	容器
+UI/Interface	Equipment/Header	Label	Label	Equipment	設備
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	後背包
+UI/Interface	Equipment/Hints	Rig	Label	Rig	鑽井平台
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	頭盔
+UI/Interface	Equipment/Hints	Head	Label	Head	標題
+UI/Interface	Equipment/Hints	Torso	Label	Torso	軀幹
+UI/Interface	Equipment/Hints	Legs	Label	Legs	腿
+UI/Interface	Equipment/Hints	Belt	Label	Belt	皮帶
+UI/Interface	Equipment/Hints	Feet	Label	Feet	腳
+UI/Interface	Equipment/Hints	Hands	Label	Hands	雙手
+UI/Interface	Equipment/Hints	Matches	Label	Matches	比賽
+UI/Interface	Equipment/Hints	Light	Label	Light	光
+UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
+UI/Interface	Equipment/Hints	Time	Label	Time	時間
+UI/Interface	Equipment/Hints	Map	Label	Map	地圖
+UI/Interface	Equipment/Hints	Player	Label	Player	玩家
+UI/Interface	Character/Header	Label	Label	Character	角色
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	健康
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	能源
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	水分補充
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	心理
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	體溫
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	貓
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	日
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	收容所
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	任務
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	任務
+UI/Interface	Tools/Header	Label	Label	Tools	工具
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	活動
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	手工藝
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	鄰近性
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	任務備註
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	任務備註為空
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	任務筆記無法使用（教學）
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	世界地圖
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	未裝備地圖
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	地圖無法使用（沃斯托克）
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"平移 = [左鍵]
+縮放 = [滾輪]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	焦點地圖
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	卡式錄音機
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	未配備卡式錄音機
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	本卡帶包含授權音樂（內容警示）
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	卡帶名稱
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	覆寫環境音樂 [開啟]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	覆寫環境音樂 [關閉]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	遊牧民族
+UI/Interface	Trader/Header	Label	Label	Trader	交易員
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	供應
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	任務
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	姓名：
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	交易員
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	稅務：
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	任務：
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	補給：
+UI/Interface	Deal/Header	Label	Label	Deal	交易
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	請求金額 + 稅金 (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	報價金額（歐元）
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	重設
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	接受
+UI/Interface	Supply/Header	Label	Label	Supply	供應
+UI/Interface	Tasks/Header	Label	Label	Tasks	任務
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	家具型錄
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	物品欄與您的角色綁定，死亡也會摧毀物品欄中的物品
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	使用
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	裝備
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	卸下
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	卸載
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	分裂
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	選取
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	睡眠
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	轉帳
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	放下
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	地點
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	摧毀
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	移除 [0]
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	移除 [1]
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	移除 [2]
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	移除 [3]
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	咖啡大師
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	耗材
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	傳奇
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	物品是指遊戲世界中玩家可以拾取的物件。
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	設備：
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	小學
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	狀況：
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	重量：
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	值：
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	口徑：
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	損害：
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	滲透率：
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	第 1 級
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	第 2 級
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	第 3 級
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	第 4 級
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	第 5 級
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	保護：
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	第 1 級
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	容量：
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	隔熱：
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	健康：
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	能源：
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	水分補充：
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	心理：
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	體溫：
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	嵌套：
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	治療方法：
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	相容項目：
+UI/Elements/Item	Details	Abbreviation	Label	Item	項目
+UI/Profiler	Panel/Margin	Label	Label	Profiler	分析工具
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	顯示
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	食譜名稱
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	輸入：
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	輸出：
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	開始輸入
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	工藝
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	職責在身
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	加入筆記
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	移除
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	難度：
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	簡單
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"上週我去附近那棟廢棄的校舍找醫生看病。他告訴我應該戒掉所有「壞習慣」，但那老混蛋自己卻抽菸，所以去他的！
+
+你大概只是那種遇到困難時只會舔薄荷糖的現代嬉皮，但如果你剛好找到這種東西，記得帶上一兩包，順便帶些火柴來。"
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	交付：
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	接收：
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ 完成此任務後，您將獲得庇護所家具
+→ 您的家具位於「家具目錄」[裝飾模式] 中"
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	開始配送
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	暫停配送
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	已送達
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	完成
 Scenes/Menu	Main/Buttons	New	Button	New game	新遊戲
 Scenes/Menu	Main/Buttons	Load	Button	Load game	載入遊戲
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	教學指南
@@ -995,179 +1168,7 @@ Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
 "	主選單
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
 "	退出
-UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	健康
-UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	能源
-UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	水分補充
-UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	心理
-UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	體溫
-UI/HUD	Stats/Oxygen	Header	Label	Oxygen	氧氣
-UI/HUD	Info	Map	Label	Shelter (Area 05)	庇護所（第05區）
-UI/Interface	Container/Header	Label	Label	Container	容器
-UI/Interface	Equipment/Header	Label	Label	Equipment	設備
-UI/Interface	Equipment/Hints	Backpack	Label	Backpack	後背包
-UI/Interface	Equipment/Hints	Rig	Label	Rig	鑽井平台
-UI/Interface	Equipment/Hints	Helmet	Label	Helmet	頭盔
-UI/Interface	Equipment/Hints	Head	Label	Head	標題
-UI/Interface	Equipment/Hints	Torso	Label	Torso	軀幹
-UI/Interface	Equipment/Hints	Legs	Label	Legs	腿
-UI/Interface	Equipment/Hints	Belt	Label	Belt	皮帶
-UI/Interface	Equipment/Hints	Feet	Label	Feet	腳
-UI/Interface	Equipment/Hints	Hands	Label	Hands	雙手
-UI/Interface	Equipment/Hints	Matches	Label	Matches	比賽
-UI/Interface	Equipment/Hints	Light	Label	Light	光
-UI/Interface	Equipment/Hints	NVG	Label	NVG	NVG
-UI/Interface	Equipment/Hints	Time	Label	Time	時間
-UI/Interface	Equipment/Hints	Map	Label	Map	地圖
-UI/Interface	Equipment/Hints	Player	Label	Player	玩家
-UI/Interface	Character/Header	Label	Label	Character	角色
-UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	健康
-UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	能源
-UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	水分補充
-UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	心理
-UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	體溫
-UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	貓
-UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	日
-UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	收容所
-UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	任務
-UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	任務
-UI/Interface	Tools/Header	Label	Label	Tools	工具
-UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	活動
-UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	手工藝
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	鄰近性
-UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	任務備註
-UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	任務備註為空
-UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	任務筆記無法使用（教學）
-UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	世界地圖
-UI/Interface	Tools/Map	Hint	Label	Map not equipped	未裝備地圖
-UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	地圖無法使用（沃斯托克）
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
-Zoom = [SCROLL]"	"平移 = [左鍵]
-縮放 = [滾輪]"
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	焦點地圖
-UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	卡式錄音機
-UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	未配備卡式錄音機
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	本卡帶包含授權音樂（內容警示）
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	卡帶名稱
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	覆寫環境音樂 [開啟]
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	覆寫環境音樂 [關閉]
-UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	遊牧民族
-UI/Interface	Trader/Header	Label	Label	Trader	交易員
-UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	供應
-UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	任務
-UI/Interface	Trader/Panel/Stats	Name	Label	Name:	姓名：
-UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	交易員
-UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	稅務：
-UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	任務：
-UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	補給：
-UI/Interface	Deal/Header	Label	Label	Deal	交易
-UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	請求金額 + 稅金 (€)
-UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	報價金額（歐元）
-UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	重設
-UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	接受
-UI/Interface	Supply/Header	Label	Label	Supply	供應
-UI/Interface	Tasks/Header	Label	Label	Tasks	任務
-UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	家具型錄
-UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	物品欄與您的角色綁定，死亡也會摧毀物品欄中的物品
-UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	使用
-UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	裝備
-UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	卸下
-UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	卸載
-UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	分裂
-UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	選取
-UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	睡眠
-UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	轉帳
-UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	放下
-UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	地點
-UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	摧毀
-UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	移除 [0]
-UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	移除 [1]
-UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	移除 [2]
-UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	移除 [3]
-UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	咖啡大師
-UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	耗材
-UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	傳奇
-UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	物品是指遊戲世界中玩家可以拾取的物件。
-UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	設備：
-UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	小學
-UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	狀況：
-UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	重量：
-UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	值：
-UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	口徑：
-UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	損害：
-UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	滲透率：
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	第 1 級
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	第 2 級
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	第 3 級
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	第 4 級
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	第 5 級
-UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	保護：
-UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	第 1 級
-UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	容量：
-UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	隔熱：
-UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	健康：
-UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	能源：
-UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	水分補充：
-UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	心理：
-UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	體溫：
-UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	嵌套：
-UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	治療方法：
-UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	相容項目：
-UI/Elements/Item	Details	Abbreviation	Label	Item	項目
-UI/Profiler	Panel/Margin	Label	Label	Profiler	分析工具
-UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	顯示
-UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	食譜名稱
-UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	輸入：
-UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	輸出：
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	開始輸入
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	工藝
-UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	職責在身
-UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	加入筆記
-UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	移除
-UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	難度：
-UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	簡單
-UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
-
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"上週我去附近那棟廢棄的校舍找醫生看病。他告訴我應該戒掉所有「壞習慣」，但那老混蛋自己卻抽菸，所以去他的！
-
-你大概只是那種遇到困難時只會舔薄荷糖的現代嬉皮，但如果你剛好找到這種東西，記得帶上一兩包，順便帶些火柴來。"
-UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	交付：
-UI/Elements/Task	Margin/Elements	Output	Label	Receive:	接收：
-UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ 完成此任務後，您將獲得庇護所家具
-→ 您的家具位於「家具目錄」[裝飾模式] 中"
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	開始配送
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	暫停配送
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	已送達
-UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	完成
-UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	全能型選手重返村莊
-UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
-
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"「醫生」是一位專精於醫療的交易商，他在第05區一棟廢棄的校舍內開設了一間臨時診所。
-
-在前往探望「奶奶」進行「關懷訪視」後，醫生回到這間診所，準備為受傷的人們提供醫療服務。"
-UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	顯示
-UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	第 1 天
-UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10天後
-UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	交易者活動
-UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	活動地點：
-UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	村莊
-UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	活動可能性：
-UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	約 5% / 地圖實例
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  新增家具 [型錄]
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	武器卡彈 | 按下 [重新裝彈]
 UI/HUD	Tooltip	Label	Label	Interaction	互動
 UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = 旋轉模式
@@ -1208,4 +1209,3 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	水分�
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	體溫：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	治療方法：
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	相容性：
-UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  新增家具 [型錄]

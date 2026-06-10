@@ -1,4 +1,579 @@
 text	translation
+Airdrop	Lanzamiento aéreo
+Tutorial Crate	Tutorial Crate
+Electric Box	Caja eléctrica
+Medical Cabinet	Botiquín
+Office Cabinet	Mueble de oficina
+Cabinet	Gabinete
+Corpse	Cadáver
+Bandit Corpse	Cadáver de bandido
+Crate Military	Crate Military
+Crate Special	Oferta especial de jaulas
+Wooden Crate	Caja de madera
+Garbage	Basura
+Fireplace	Chimenea
+Freezer	Congelador
+Fridge	Hielera
+Fusebox	Caja de fusibles
+Locker	Casillero
+Mailbox	Buzón
+Nightstand	Mesita de noche
+Boxes	Cajas
+Stove	Estufa
+Furniture	Muebles
+Furnitures	Muebles
+Bed (Civilian)	Cama (civil)
+Bed C.	Cama C.
+Bed (Nomad)	Cama (Nomad)
+Bed N.	Cama N.
+Cabinet (Medical)	Gabinete (Médico)
+Cabinet M.	Gabinete M.
+Cabinet (Office)	Gabinete (Oficina)
+Cabinet. 0	Gabinete. 0
+Cabinet (Wood)	Armario (de madera)
+Cabinet W.	Gabinete W.
+Carpet (Persian)	Alfombra (persa)
+Carpet P.	Carpet P.
+Carpet (Rag)	Alfombra (de trapo)
+Carpet R.	Carpet R.
+Chair (Office)	Silla (de oficina)
+Chair O.	Presidente O.
+Chair (School)	Cátedra (Facultad)
+Chair S.	Presidente S.
+Sun Chair	Silla Sun
+S. Chair	Presidente de EE. UU.
+Crate (Military)	Caja (militar)
+Crate M.	Crate M.
+Crate (Special)	Caja (especial)
+Crate S.	Crate S.
+Cupboard	Armario
+C. Board	C. Junta Directiva
+Curtain (Long)	Cortina (larga)
+Curtain L.	Cortina L.
+Curtain (Mini)	Cortina (Mini)
+Curtain M.	Curtain M.
+Dartboard	Diapositiva
+D. Board	D. Junta Directiva
+N. Stand	N. Stand
+Painting (Lake)	Pintura (Lago)
+Painting L.	Pintura L.
+Pallet	Palé
+Poster (Posture)	Cartel (Postura)
+Poster P.	Cartel P.
+Rack (Coat)	Perchero (para abrigos)
+Rack C.	Rack C.
+Rya (Maria)	Rya (María)
+Rya M.	Rya M.
+Shelf (Metal)	Estante (de metal)
+Shelf M.	Estante M.
+Shelf (Wall)	Estante (de pared)
+Shelf W.	Estante W.
+Shelf (Wood)	Estante (de madera)
+Sign (Border Zone)	Cartel (Zona fronteriza)
+Sign BZ.	Firma BZ.
+Sofa (Leather)	Sofá (de cuero)
+Sofa L.	Sofá L.
+Stool (Military)	Taburete (militar)
+Stool M.	M. Stool
+Stool (Padded)	Taburete (acolchado)
+Stool P.	Heces P.
+Table (Cabin)	Mesa (cabina)
+Table C.	Tabla C.
+Table (Canteen)	Mesa (comedor)
+Table (Kitchen)	Mesa (de cocina)
+Table K.	Tabla K.
+Table (Office)	Mesa (de oficina)
+Table. O	Tabla. O
+Target Stand	Soporte para dianas
+Target S.	Destino S.
+Television	Televisión
+TV	Televisión
+Trolley (Short)	Carrito (corto)
+Trolley S.	Trolley S.
+Trolley (Tall)	Carrito (alto)
+Trolley T.	Trolley T.
+Weapon Display	Exposición de armas
+Weapon D.	Arma D.
+Trader Event	Evento para traders
+Dynamic Event	Evento dinámico
+Special Event	Evento especial
+Dynamic	Dinámico
+Special	Especial
+Guaranteed	Garantizado
+Generalist returns to Village	Generalist vuelve a Village
+"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
+
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"Generalist es un comerciante «todoterreno» que regenta una pequeña tienda dentro del edificio del garaje del Village, en el Área 05, y se especializa en productos de uso común.
+
+Tras tomarse un breve descanso, Generalist ha vuelto al trabajo y está listo para atender a sus fieles clientes con precios razonables."
+Doctor returns to School	El médico regresa a la escuela
+"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
+
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"El Doctor es un comerciante especializado en medicina que tiene una clínica improvisada dentro de un edificio escolar abandonado en el Área 05.
+
+Tras visitar a la Abuela para ver cómo se encuentra, el Doctor regresa a su clínica y está listo para atender a los heridos."
+Fighter Jets	Aviones de combate
+"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
+
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"Tras la evacuación del Área 05 y la desmilitarización de la Zona Fronteriza, la situación ha empezado a torcerse y es necesario hacer una demostración de fuerza.
+
+Las Fuerzas Armadas finlandesas comenzarán a realizar vuelos de reconocimiento aéreos no letales y de gran visibilidad con aviones de combate que aparecerán con frecuencia en el cielo."
+Missing Cat	Gato desaparecido
+"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
+
+A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
+
+Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"El gato de la abuela se ha perdido después de que el estampido sónico de un avión de combate lo asustara y saliera corriendo.
+
+Hace unos días, los Nómadas encontraron al gato vagando por el Puesto Fronterizo y lograron capturarlo con una especie de caja. Cuando los Nómadas comenzaron a llevar al gato de regreso con la abuela, sufrieron una emboscada de los Bandidos, quienes aparentemente se llevaron la caja.
+
+Los lugareños vieron a los Bandidos zarandeando la caja de manera cruel y, finalmente, abandonándola en algún lugar."
+Punisher arrives to Area 05	El Castigador llega al Área 05
+"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
+
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"Punisher es un jefe de bandidos y un temido cobrador de deudas en el mundo del crimen finlandés.
+
+Punisher y sus secuaces han robado una camioneta de la policía local y están dando vueltas por la Zona 05."
+Airdrops are delivered to Area 05	Se realizan lanzamientos aéreos en el Área 05
+"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
+
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"Tras un largo retraso, el ejército finlandés ha reanudado los lanzamientos aéreos en el Área 05.
+
+Los lanzamientos aéreos suelen contener ayuda humanitaria, como suministros médicos, productos de consumo y otros artículos de supervivencia necesarios."
+BTR Patrols	Patrullas BTR
+"The military faction has started to use armored vehicles in the Vostok area.
+
+Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"La facción militar ha comenzado a utilizar vehículos blindados en la zona de Vostok.
+
+Los BTR militares están equipados con ametralladoras pesadas y se han visto patrullas en las carreteras principales y en puntos estratégicos."
+Attack Helicopters	Helicópteros de ataque
+"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
+
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"La desmilitarización de la zona fronteriza está empezando a desmoronarse y es evidente que las normas anteriores ya no se aplican.
+
+Aunque las fuentes oficiales aseguran que nada ha cambiado, los helicópteros de combate han comenzado a realizar patrullas frecuentes y a violar el espacio aéreo cerca de la zona fronteriza."
+Helicopter Crash Sites	Lugares donde se han producido accidentes de helicóptero
+"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
+
+Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"Tras las violaciones del espacio aéreo, los incidentes aéreos fueron inevitables y varios helicópteros de combate fueron derribados a ambos lados de la frontera.
+
+Los lugares donde se estrellaron los helicópteros se encuentran dispersos por múltiples ubicaciones y contienen botines de gran valor, lo que también los convierte en puntos clave para la actividad de la IA."
+Gunsmith returns to Outpost	El armero regresa al Puesto Fronterizo
+"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
+
+Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"El armero es un comerciante que tiene un almacén de armas dentro de uno de los búnkeres del Puesto Fronterizo y se especializa en todo lo relacionado con las armas de fuego.
+
+El armero estuvo desaparecido durante varios meses, pero, según los rumores, se había ido de «viaje de negocios» al otro lado de la frontera y ahora ha regresado a su querido búnker en el Área 05."
+Outpost gets compromised	El puesto avanzado queda comprometido
+"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
+
+Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
+
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"A la luz de los acontecimientos anteriores, la situación en la Zona Fronteriza se está agravando rápidamente y las áreas cercanas están sufriendo las consecuencias.
+
+Los BTR militares ya pueden entrar en el mapa del Puesto Fronterizo y el Área 05 ya no se considera segura.
+
+Las noticias sobre el suceso se difundieron rápidamente entre los habitantes y comerciantes del Área 05, pero los medios de comunicación y las autoridades fuera del Área 05 solo las consideran rumores."
+Traders leave Area 05	Los comerciantes abandonan el Área 05
+"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
+
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"Tras el asalto al puesto avanzado, todos los comerciantes comenzaron a prepararse y a abandonar el Área 05.
+
+Parece que los comerciantes están tomando esta medida de forma temporal y que volverán cuando la situación se calme."
+Traders return to Area 05	Los comerciantes regresan a la Zona 05
+"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
+
+All traders are returning back to Area 05."	"La escalada de los acontecimientos recientes parece haberse detenido y el Área 05 no ha caído en un caos total.
+
+Todos los comerciantes están regresando al Área 05."
+Transmission	Transmisión
+"The signal that started it all has suddenly reappeared.
+
+The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
+
+This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"La señal que lo inició todo ha reaparecido de repente.
+
+La transmisión está interfiriendo con las emisiones de radio y se puede escuchar en todas las frecuencias habituales.
+
+Este es el último evento del Acceso Anticipado [Build 1]. Los eventos y la historia continuarán en las próximas versiones."
+Inventory	Inventario
+Primary	Primaria
+Secondary	Secundaria
+Vital	Fundamental
+Task Notes empty	Notas de la tarea: vacías
+Task Notes not available (Tutorial)	Notas de la tarea no disponibles (Tutorial)
+Map not equipped	El mapa no está disponible
+Map not usable (Vostok)	Mapa no disponible (Vostok)
+Casette Player not equipped	No dispone de reproductor de casetes
+Casette Player power 0%, recharge player	El reproductor de casetes tiene un 0 % de batería, recárgalo
+Casette Player empty, insert casette	El reproductor de casetes está vacío, inserte una casete
+Override Ambient Music [ON]	Anular música ambiental [ACTIVADO]
+Override Ambient Music [OFF]	Anular música ambiental [DESACTIVADO]
+Sleep	Sueño
+Level 2	Nivel 2
+Level 3	Nivel 3
+Level 4	Nivel 4
+Level 5	Nivel 5
+Heat required	Calor necesario
+Workbench required	Se necesita un banco de trabajo
+Shelter required	Se necesita refugio
+Start Input	Introducción
+Stop Input	Detener la entrada
+Reset Input	Restablecer entrada
+Start Delivery	Iniciar entrega
+Stop Delivery	Suspender la entrega
+Delivered	Entregado
+CBRN	CBRN
+Overweight	Sobrepeso
+Explosion	Explosión
+Fall	Otoño
+Day	Día
+Common	Común
+Rare	Raro
+Legendary	Legendario
+Armor Plate	Placa de blindaje
+Armor	Armadura
+Armor Plate {class}	Placa de blindaje {class}
+Armor Plate (II)	Placa de armadura (II)
+Armor Plate (III+)	Placa de armadura (III+)
+Armor Plate (III)	Placa de armadura (III)
+Armor Plate (IIIA)	Placa de armadura (IIIA)
+Armor Plate (IV)	Placa de armadura (IV)
+Backpack	Mochila
+Jääkäri Backpack (Black)	Mochila Jääkäri (Negra)
+Jääkäri BP.	Jääkäri BP.
+Jääkäri Backpack (Brown)	Mochila Jääkäri (marrón)
+Jääkäri Backpack (Green)	Mochila Jääkäri (verde)
+Jääkäri Backpack (M05)	Mochila Jääkäri (M05)
+Nomad Backpack	Mochila Nomad
+Nomad BP.	Nomad BP.
+Patrol Backpack	Mochila de patrulla
+Patrol BP.	Patrulla BP.
+Duffel (Retro)	Bolsa de lona (Retro)
+R. Duffel	R. Duffel
+Belt Pouch	Riñonera
+Kukkaro (Black)	Kukkaro (Negro)
+Kukkaro	Kukkaro
+Kukkaro (Brown)	Kukkaro (marrón)
+Kukkaro (Green)	Kukkaro (Verde)
+Kukkaro (M05)	Kukkaro (M05)
+Literature	Bibliografía
+Book (Children)	Libro (infantil)
+Children	Niños
+Book (Cooking)	Libro (de cocina)
+Cooking	Cocina
+Book (Fishing)	Libro (Pesca)
+Book (Religion)	Libro (Religión)
+Religion	Religión
+Clothing	Ropa
+Flame Beanie	Gorro Flame
+F. Beanie	F. Gorro
+Combat Boots	Botas militares
+C. Boots	C. Botas
+M62 Cap	Gorra M62
+Tactical Fleece (Brown)	Forro polar táctico (marrón)
+T. Fleece	T. Fleece
+Tactical Fleece (Green)	Forro polar táctico (verde)
+Leather Gloves	Guantes de cuero
+L. Gloves	L. Guantes
+Work Gloves	Guantes de trabajo
+W. Gloves	W. Guantes
+Mosquito Hat	Gorro antimosquitos
+M. Hat	M. Hat
+Sauna Hat	Gorro de sauna
+S. Hat	S. Hat
+Hoodie (Border Zone)	Sudadera con capucha (Border Zone)
+Hoodie BZ.	Sudadera con capucha BZ.
+Hoodie B.	Hoodie B.
+Hoodie (Gray)	Sudadera con capucha (gris)
+Hoodie	Sudadera con capucha
+M62 Jacket	Chaqueta M62
+M62 J.	M62 J.
+Santa Jacket	Chaqueta de Papá Noel
+Santa J.	Santa J.
+Winter Jacket (Blue)	Chaqueta de invierno (azul)
+Winter Jacket	Chaqueta de invierno
+Winter Jacket (Red)	Chaqueta de invierno (roja)
+Winter J.	Winter J.
+Jeans (Black)	Pantalones de mezclilla (negros)
+Jeans	Pantalones de mezclilla
+Hiking Pants	Pantalones de senderismo
+Hiking P.	Senderismo P.
+Windbreaker (Black)	Cortavientos (negro)
+Windbreaker	Cortavientos
+Windbr.	Windbr.
+Windbreaker (Green)	Cortavientos (verde)
+Consumables	Consumibles
+Consumable	Consumible
+Drink	Bebida
+Eat	Comer
+Eat Raw	Come crudo
+Eat (Raw)	Comer (crudo)
+Chew	Masticar
+Smoke	Humo
+Use	Uso
+Beer	Cerveza
+Empty Can	Lata vacía
+Can	¿Se puede?
+Canned Meat	Carne enlatada
+Meat	Carne
+Canned Meatballs	Albóndigas enlatadas
+Meatballs	Albóndigas
+Canned Pea Soup	Sopa de guisantes en lata
+Pea Soup	Sopa de guisantes
+Canned Peaches	Melocotones en conserva
+Peaches	Melocotones
+Canned Pear	Pera en conserva
+Pear	Pera
+Canned Peas	Guisantes en lata
+Peas	Guisantes
+Canned Pineapple	Piña enlatada
+Pineapple	Piña
+Canned Tomatoes	Tomates en lata
+Tomatoes	Tomates
+Canned Tuna	Atún en lata
+Tuna	Atún
+Cat Food	Comida para gatos
+War Chocolate	Chocolate de guerra
+W. Choco	W. Choco
+Cigarettes	Cigarrillos
+Cigs	Cigarrillos
+Cigars	Cigarros
+Coffee	Café
+Coffee (Brewed)	Café (preparado)
+C. Brewed	C. Elaborado
+Fish Soup (Cooked)	Sopa de pescado (cocida)
+F. Soup (Cooked)	F. Sopa (cocinada)
+F. Soup	F. Sopa
+Meatballs (Cooked)	Albóndigas (cocidas)
+M. Balls (Cooked)	M. Bolas (cocidas)
+M. Balls	M. Balls
+Pea Soup (Cooked)	Sopa de guisantes (cocida)
+P. Soup (Cooked)	P. Sopa (cocida)
+P. Soup	P. Soup
+Tomato Soup (Cooked)	Sopa de tomate (cocida)
+T. Soup (Cooked)	Sopa (cocida)
+T. Soup	T. Soup
+Crackers	Galletas saladas
+Energy Drink	Bebida energética
+E. Drink	E. Bebida
+Energy Powder	Polvo energético
+E. Powder	E. Polvo
+Field Ration	Ración de campaña
+F. Ration	F. Ración
+Juice	Jugo
+Juice (Orange)	Jugo (de naranja)
+Juice O.	Juice O.
+Juice (Pear)	Jugo (de pera)
+Juice P.	Juice P.
+Juice (Raspberry)	Jugo (de frambuesa)
+Juice R.	Juice R.
+Kilju	Kilju
+Kompot	Kompot
+Mustard	Mostaza
+Peanuts	Cacahuetes
+Potato	Papa
+Salty Liquorice	Regaliz salado
+Salty Liq.	Salty Liq.
+Snus	Snus
+Soda (Lemon)	Refresco (de limón)
+Soda	Refresco
+Soda L.	Soda L.
+Sugar	Azúcar
+Water Bottle	Botella de agua
+Water	Agua
+Yeast	Levadura
+Electronics	Electrónica
+Alarm Clock	Despertador
+A. Clock	A. Reloj
+Batteries	Baterías
+Battery	Batería
+Battery Cables	Cables de batería
+B. Cables	B. Cables
+Casette	Casete
+Casette (Electrofolk)	Casette (Electrofolk)
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - ¿Cómo supiste que ibas a venir?
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - Papá le regaló un caballo
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	Junna - Ruslana
+Junna - Vandringsman	Junna - El vagabundo
+Casette (Nomad)	Casette (Nomad)
+Casette (OST)	Casete (banda sonora original)
+OST - Alive	Banda sonora - Alive
+OST - Daybreak	OST - Amanecer
+OST - Far	OST - Lejos
+OST - Lost	Banda sonora - Lost
+OST - Rain	OST - Lluvia
+OST - Road	OST - Carretera
+OST - Trailer	OST - Tráiler
+OST - Winds	OST - Vientos
+Casette (Radio Hits)	Casete (Éxitos de la radio)
+Casette (Symphony)	Casette (Sinfonía)
+Vostok Symphony	Sinfonía Vostok
+Casette Player	Reproductor de casetes
+C. Player	C. Jugador
+Coffeemaster	Coffeemaster
+C. Master	C. Máster
+Cooking Station	Estación de cocina
+C. Station	C. Estación
+Hotplate	Placa calefactora
+Inverter	Inversor
+Narva	Narva
+Polaris	Polaris
+Fish	Pescado
+Fishing	Pesca
+Bream	Bream
+Fishing Rod	Caña de pescar
+F. Rod	F. Rod
+Perch	Percha
+Pike	Lucio
+Roach	Cucaracha
+Grenade	Granada
+Helmet	Casco
+Police Helmet (IIIA)	Casco policial (IIIA)
+Police Helmet	Casco policial
+P. Helmet	P. Helmet
+Instrument	Instrumento
+Guitar	Guitarra
+Harmonica	Armónica
+Harmo.	Harmo.
+Key	Clave
+Attic Key	La llave del ático
+Attic K.	Ático K.
+Bunker Key	Bunker Key
+Bunker K.	Bunker K.
+Cellar Key	Cellar Key
+Cellar K.	Bodega K.
+Classroom Key	Clave del aula
+Class. K.	Clase K.
+Gymnasium Key	Clave del gimnasio
+Gym. K.	Gimnasio. K.
+Tunnel Key	Clave del túnel
+Tunnel K.	Túnel K.
+Knife	Cuchillo
+Jaeger 140	Jaeger 140
+Jaeger	Jaeger
+Skrama 200	Skrama 200
+Skrama	Skrama
+Skrama 240	Skrama 240
+Lore	Tradición
+Cat	Gato
+Oil Sample	Muestra de aceite
+Oil S.	Oil S.
+Patient Report	Informe del paciente
+P. Report	P. Informe
+Heal	Sanar
+Spray	Spray
+Medical	Médico
+Antibiotics	Antibióticos
+Antibio.	Antibio.
+Antiseptic	Antiséptico
+A. Septic	A. Fosa séptica
+Balm	Bálsamo
+Bandage	Vendaje
+Bandage (Improvised)	Vendaje (improvisado)
+Cold Medicine	Medicamentos para el resfriado
+C. Med.	Lic. en Medicina
+Deodorant	Desodorante
+Deodora.	Deodora.
+Gum	Chicle
+Lotion	Loción
+Medkit	Botiquín
+Melatonin	Melatonina
+Melaton.	Melatonina.
+Painkill.	Analgésico.
+Saline	Salina
+Splint	Férula
+Splint (Improvised)	Férula (improvisada)
+Thermal Blanket	Manta térmica
+Thermal	Térmico
+Tissues	Pañuelos de papel
+Sneeze	Estornudo
+Tourniquet	Torniquete
+Tourni.	Tourni.
+Tourniquet (Improvised)	Tornillo de hemostasia (improvisado)
+Wipes	Toallitas
+Wipe	Limpiar
+Misc	Varios
+Blanket	Manta
+Board Game	Juego de mesa
+B. Game	B. Juego
+Bucket	Cubo
+Coffee Filter	Filtro de café
+C. Filter	C. Filtro
+Duct Tape	Cinta adhesiva
+D. Tape	D. Cinta
+Happy Stove	Happy Stove
+H. Stove	H. Stove
+Jerry Can	Bidón
+Jerry C.	Jerry C.
+Lumber	Madera
+Map	Mapa
+Map (Tactical)	Mapa (táctico)
+T. Map	T. Mapa
+Matches	Partidos
+Mat.	Mat.
+Mattress	Colchón
+Mess Kit	Juego de utensilios de cocina
+Nails	Uñas
+Oil Filter	Filtro de aceite
+O. Filter	O. Filtro
+Pillow	Almohada
+Rags	Trapos
+Sleeping_Bag	Saco de dormir
+Sleeping Bag	Saco de dormir
+S. Bag	S. Bag
+Sticks	Palos
+Tackle Box	Caja de aparejos
+Tackle B.	Tackle B.
+Toilet Paper	Papel higiénico
+T. Paper	T. Papel
+Toolbox	Caja de herramientas
+Water Lock	Bloqueo de agua
+W. Lock	W. Lock
+Weapon Repair Kit	Kit de reparación de armas
+Repair Kit	Kit de reparación
+Rig	Plataforma
+LVPC (Green)	LVPC (Verde)
+LVPC (Winter)	LVPC (Invierno)
+Fishing Vest	Chaleco de pesca
+F. Vest	F. Vest
+Weapon	Arma
+Mag.	Mag.
+KA-12 Magazine	Revista KA-12
+KA-M Magazine	Revista KA-M
+KAS-74U Magazine	Revista KAS-74U
+C1911 Magazine	Revista C1911
+G7 Magazine	Revista G7
+KAR-21 Magazine (.223)	Cargador KAR-21 (.223)
+KAR-21 Magazine (.308)	Cargador KAR-21 (.308)
+KAR-21 Barrel (.308)	Cañón KAR-21 (.308)
+KAR-21 Barrel	Cañón del KAR-21
+Barrel	Cañón
+KP-31 Drum	Tambor KP-31
+Drum	Tambor
+STANAG Magazine	Revista STANAG
+M78 Magazine	Revista M78
+Karov	Karov
+Karov Magazine	Revista Karov
+Mosin	Mosin
+PM5 Magazine	Revista PM5
+MP7 Magazine	Revista MP7
+P3 Magazine	Revista P3
+RK Magazine	Revista RK
+VSD Magazine	Revista VSD
+SS Magazine	Revista SS
+Ammo	Munición
+Attachment	Archivo adjunto
+Hybrid	Híbrido
+Kobra	Kobra
+Leopard	Leopardo
+Micro	Micro
+Monster	Monstruo
+Thor	Thor
 Compatibility	Compatibilidad
 Selected	Seleccionado
 Press key to bind...	Presiona la tecla para asignar...
@@ -97,38 +672,52 @@ Wood	Madera
 Metal	Metal
 Concrete	Hormigón
 Rock	Rock
-Inventory	Inventario
-Primary	Primaria
-Secondary	Secundaria
-Vital	Fundamental
-Task Notes empty	Notas de la tarea: vacías
-Task Notes not available (Tutorial)	Notas de la tarea no disponibles (Tutorial)
-Map not equipped	El mapa no está disponible
-Map not usable (Vostok)	Mapa no disponible (Vostok)
-Casette Player not equipped	No dispone de reproductor de casetes
-Casette Player power 0%, recharge player	El reproductor de casetes tiene un 0 % de batería, recárgalo
-Casette Player empty, insert casette	El reproductor de casetes está vacío, inserte una casete
-Override Ambient Music [ON]	Anular música ambiental [ACTIVADO]
-Override Ambient Music [OFF]	Anular música ambiental [DESACTIVADO]
-Sleep	Sueño
-Level 2	Nivel 2
-Level 3	Nivel 3
-Level 4	Nivel 4
-Level 5	Nivel 5
-Heat required	Calor necesario
-Workbench required	Se necesita un banco de trabajo
-Shelter required	Se necesita refugio
-Start Input	Introducción
-Stop Input	Detener la entrada
-Reset Input	Restablecer entrada
-Start Delivery	Iniciar entrega
-Stop Delivery	Suspender la entrega
-Delivered	Entregado
-CBRN	CBRN
-Overweight	Sobrepeso
-Explosion	Explosión
-Fall	Otoño
-Day	Día
+New Furniture Added [Catalog]	Se han añadido nuevos muebles [Catálogo]
+Boss Killed	Asesinato del jefe
+Cat Rescued	Gato rescatado
+Cat Vital Activated	Cat Vital Activado
+Cat Died	Murió el gato
+You have been spotted!	¡Te han visto!
+Player Returned	Jugador devuelto
+Indoors	En interiores
+Indoor	En interiores
+Mine	Mío
+Lure	Señuelo
+(Military)	(Militar)
+Unload	Descargar
+Clear Chamber	Cámara transparente
+Unequip	Quitar
+Equip	Equipar
+Show	Mostrar
+Hide	Ocultar
+Activated	Activado
+Not active	No activo
+All maps & zones	Todos los mapas y zonas
+Active	Activo
+Repair	Reparación
+Craft	Artesanía
+Added	Añadido
+Remove	Eliminar
+Completed	Completado
+Add to Notes	Añadir a las notas
+Frozen	Frozen
+Permadeath Zone	Zona de muerte permanente
+[Open]	[Abrir]
+Door [Jammed]	Puerta [atascada]
+Door [Occupied]	Puerta [Ocupado]
+Door [Close]	Puerta [Cerrar]
+Door [Open]	Puerta [Abierta]
+Sleep (Random sleep: 6-12h)	Sueño (Sueño aleatorio: 6-12 h)
+Turn Off	Desactivar
+Turn On	Encender
+Radio [Turn Off]	Radio [Apagar]
+Radio [Turn On]	Radio [Encender]
+Television [Turn Off]	Televisión [Apagar]
+Television [Turn On]	Televisión [Encender]
+Rescue Cat	Gato rescatado
+Cat is eating, do not disturb	El gato está comiendo, no molestar
+Fuel Tank [89%]	Depósito de combustible [89 %]
+Feed cat:	Alimentar al gato:
 Easy	Fácil
 Intermediate	Nivel intermedio
 Hard	Difícil
@@ -418,7 +1007,6 @@ It's never too late to start with an easier instrument, but I would need somethi
 Intenté tocar mis viejos instrumentos hace unos años, pero se necesitan pulmones sanos para eso, así que ya ni siquiera podía sacar un sonido de esas malditas cosas. Mi pasión por las armónicas y mis habilidades musicales siguen ahí, pero creo que los cigarros ya han hecho su daño.
 
 Nunca es demasiado tarde para empezar con un instrumento más fácil, pero necesitaría algo realmente pequeño que sea adecuado para un viejo fumador de cigarros como yo. Quizás en la próxima vida."
-Patient Report	Informe del paciente
 "When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
@@ -554,594 +1142,6 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 De vez en cuando, este tipo aparece y exige el puto pago de alguna deuda inventada. Normalmente, les dispararía a estos payasos en la puerta principal, pero este es duro como una roca. El Castigador y sus secuaces también robaron recientemente una camioneta de la policía, así que ahora incluso tienen un vehículo ligeramente blindado.
 
 Alguien tiene que poner fin a este circo, así que básicamente necesito un sicario. Tráeme su cabeza o cualquier otra cosa que pruebe que está muerto y te daré las llaves de mi búnker de almacenamiento."
-Trader Event	Evento para traders
-Dynamic Event	Evento dinámico
-Special Event	Evento especial
-Dynamic	Dinámico
-Special	Especial
-Guaranteed	Garantizado
-Generalist returns to Village	Generalist vuelve a Village
-"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
-
-After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"Generalist es un comerciante «todoterreno» que regenta una pequeña tienda dentro del edificio del garaje del Village, en el Área 05, y se especializa en productos de uso común.
-
-Tras tomarse un breve descanso, Generalist ha vuelto al trabajo y está listo para atender a sus fieles clientes con precios razonables."
-Doctor returns to School	El médico regresa a la escuela
-"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
-
-After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"El Doctor es un comerciante especializado en medicina que tiene una clínica improvisada dentro de un edificio escolar abandonado en el Área 05.
-
-Tras visitar a la Abuela para ver cómo se encuentra, el Doctor regresa a su clínica y está listo para atender a los heridos."
-Fighter Jets	Aviones de combate
-"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
-
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"Tras la evacuación del Área 05 y la desmilitarización de la Zona Fronteriza, la situación ha empezado a torcerse y es necesario hacer una demostración de fuerza.
-
-Las Fuerzas Armadas finlandesas comenzarán a realizar vuelos de reconocimiento aéreos no letales y de gran visibilidad con aviones de combate que aparecerán con frecuencia en el cielo."
-Missing Cat	Gato desaparecido
-"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
-
-A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
-
-Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"El gato de la abuela se ha perdido después de que el estampido sónico de un avión de combate lo asustara y saliera corriendo.
-
-Hace unos días, los Nómadas encontraron al gato vagando por el Puesto Fronterizo y lograron capturarlo con una especie de caja. Cuando los Nómadas comenzaron a llevar al gato de regreso con la abuela, sufrieron una emboscada de los Bandidos, quienes aparentemente se llevaron la caja.
-
-Los lugareños vieron a los Bandidos zarandeando la caja de manera cruel y, finalmente, abandonándola en algún lugar."
-Punisher arrives to Area 05	El Castigador llega al Área 05
-"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
-
-Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"Punisher es un jefe de bandidos y un temido cobrador de deudas en el mundo del crimen finlandés.
-
-Punisher y sus secuaces han robado una camioneta de la policía local y están dando vueltas por la Zona 05."
-Airdrops are delivered to Area 05	Se realizan lanzamientos aéreos en el Área 05
-"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
-
-Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"Tras un largo retraso, el ejército finlandés ha reanudado los lanzamientos aéreos en el Área 05.
-
-Los lanzamientos aéreos suelen contener ayuda humanitaria, como suministros médicos, productos de consumo y otros artículos de supervivencia necesarios."
-BTR Patrols	Patrullas BTR
-"The military faction has started to use armored vehicles in the Vostok area.
-
-Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"La facción militar ha comenzado a utilizar vehículos blindados en la zona de Vostok.
-
-Los BTR militares están equipados con ametralladoras pesadas y se han visto patrullas en las carreteras principales y en puntos estratégicos."
-Attack Helicopters	Helicópteros de ataque
-"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
-
-While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"La desmilitarización de la zona fronteriza está empezando a desmoronarse y es evidente que las normas anteriores ya no se aplican.
-
-Aunque las fuentes oficiales aseguran que nada ha cambiado, los helicópteros de combate han comenzado a realizar patrullas frecuentes y a violar el espacio aéreo cerca de la zona fronteriza."
-Helicopter Crash Sites	Lugares donde se han producido accidentes de helicóptero
-"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
-
-Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"Tras las violaciones del espacio aéreo, los incidentes aéreos fueron inevitables y varios helicópteros de combate fueron derribados a ambos lados de la frontera.
-
-Los lugares donde se estrellaron los helicópteros se encuentran dispersos por múltiples ubicaciones y contienen botines de gran valor, lo que también los convierte en puntos clave para la actividad de la IA."
-Gunsmith returns to Outpost	El armero regresa al Puesto Fronterizo
-"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
-
-Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"El armero es un comerciante que tiene un almacén de armas dentro de uno de los búnkeres del Puesto Fronterizo y se especializa en todo lo relacionado con las armas de fuego.
-
-El armero estuvo desaparecido durante varios meses, pero, según los rumores, se había ido de «viaje de negocios» al otro lado de la frontera y ahora ha regresado a su querido búnker en el Área 05."
-Outpost gets compromised	El puesto avanzado queda comprometido
-"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
-
-Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
-
-News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"A la luz de los acontecimientos anteriores, la situación en la Zona Fronteriza se está agravando rápidamente y las áreas cercanas están sufriendo las consecuencias.
-
-Los BTR militares ya pueden entrar en el mapa del Puesto Fronterizo y el Área 05 ya no se considera segura.
-
-Las noticias sobre el suceso se difundieron rápidamente entre los habitantes y comerciantes del Área 05, pero los medios de comunicación y las autoridades fuera del Área 05 solo las consideran rumores."
-Traders leave Area 05	Los comerciantes abandonan el Área 05
-"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
-
-It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"Tras el asalto al puesto avanzado, todos los comerciantes comenzaron a prepararse y a abandonar el Área 05.
-
-Parece que los comerciantes están tomando esta medida de forma temporal y que volverán cuando la situación se calme."
-Traders return to Area 05	Los comerciantes regresan a la Zona 05
-"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
-
-All traders are returning back to Area 05."	"La escalada de los acontecimientos recientes parece haberse detenido y el Área 05 no ha caído en un caos total.
-
-Todos los comerciantes están regresando al Área 05."
-Transmission	Transmisión
-"The signal that started it all has suddenly reappeared.
-
-The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
-
-This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"La señal que lo inició todo ha reaparecido de repente.
-
-La transmisión está interfiriendo con las emisiones de radio y se puede escuchar en todas las frecuencias habituales.
-
-Este es el último evento del Acceso Anticipado [Build 1]. Los eventos y la historia continuarán en las próximas versiones."
-Common	Común
-Rare	Raro
-Legendary	Legendario
-Armor Plate	Placa de blindaje
-Armor	Armadura
-Armor Plate {class}	Placa de blindaje {class}
-Armor Plate (II)	Placa de armadura (II)
-Armor Plate (III+)	Placa de armadura (III+)
-Armor Plate (III)	Placa de armadura (III)
-Armor Plate (IIIA)	Placa de armadura (IIIA)
-Armor Plate (IV)	Placa de armadura (IV)
-Backpack	Mochila
-Jääkäri Backpack (Black)	Mochila Jääkäri (Negra)
-Jääkäri BP.	Jääkäri BP.
-Jääkäri Backpack (Brown)	Mochila Jääkäri (marrón)
-Jääkäri Backpack (Green)	Mochila Jääkäri (verde)
-Jääkäri Backpack (M05)	Mochila Jääkäri (M05)
-Nomad Backpack	Mochila Nomad
-Nomad BP.	Nomad BP.
-Patrol Backpack	Mochila de patrulla
-Patrol BP.	Patrulla BP.
-Duffel (Retro)	Bolsa de lona (Retro)
-R. Duffel	R. Duffel
-Belt Pouch	Riñonera
-Kukkaro (Black)	Kukkaro (Negro)
-Kukkaro	Kukkaro
-Kukkaro (Brown)	Kukkaro (marrón)
-Kukkaro (Green)	Kukkaro (Verde)
-Kukkaro (M05)	Kukkaro (M05)
-Literature	Bibliografía
-Book (Children)	Libro (infantil)
-Children	Niños
-Book (Cooking)	Libro (de cocina)
-Cooking	Cocina
-Book (Fishing)	Libro (Pesca)
-Book (Religion)	Libro (Religión)
-Religion	Religión
-Clothing	Ropa
-Flame Beanie	Gorro Flame
-F. Beanie	F. Gorro
-Combat Boots	Botas militares
-C. Boots	C. Botas
-M62 Cap	Gorra M62
-Tactical Fleece (Brown)	Forro polar táctico (marrón)
-T. Fleece	T. Fleece
-Tactical Fleece (Green)	Forro polar táctico (verde)
-Leather Gloves	Guantes de cuero
-L. Gloves	L. Guantes
-Work Gloves	Guantes de trabajo
-W. Gloves	W. Guantes
-Mosquito Hat	Gorro antimosquitos
-M. Hat	M. Hat
-Sauna Hat	Gorro de sauna
-S. Hat	S. Hat
-Hoodie (Border Zone)	Sudadera con capucha (Border Zone)
-Hoodie BZ.	Sudadera con capucha BZ.
-Hoodie B.	Hoodie B.
-Hoodie (Gray)	Sudadera con capucha (gris)
-Hoodie	Sudadera con capucha
-M62 Jacket	Chaqueta M62
-M62 J.	M62 J.
-Santa Jacket	Chaqueta de Papá Noel
-Santa J.	Santa J.
-Winter Jacket (Blue)	Chaqueta de invierno (azul)
-Winter Jacket	Chaqueta de invierno
-Winter Jacket (Red)	Chaqueta de invierno (roja)
-Winter J.	Winter J.
-Jeans (Black)	Pantalones de mezclilla (negros)
-Jeans	Pantalones de mezclilla
-Hiking Pants	Pantalones de senderismo
-Hiking P.	Senderismo P.
-Windbreaker (Black)	Cortavientos (negro)
-Windbreaker	Cortavientos
-Windbr.	Windbr.
-Windbreaker (Green)	Cortavientos (verde)
-Consumables	Consumibles
-Consumable	Consumible
-Drink	Bebida
-Eat	Comer
-Eat Raw	Come crudo
-Eat (Raw)	Comer (crudo)
-Chew	Masticar
-Smoke	Humo
-Use	Uso
-Beer	Cerveza
-Empty Can	Lata vacía
-Can	¿Se puede?
-Canned Meat	Carne enlatada
-Meat	Carne
-Canned Meatballs	Albóndigas enlatadas
-Meatballs	Albóndigas
-Canned Pea Soup	Sopa de guisantes en lata
-Pea Soup	Sopa de guisantes
-Canned Peaches	Melocotones en conserva
-Peaches	Melocotones
-Canned Pear	Pera en conserva
-Pear	Pera
-Canned Peas	Guisantes en lata
-Peas	Guisantes
-Canned Pineapple	Piña enlatada
-Pineapple	Piña
-Canned Tomatoes	Tomates en lata
-Tomatoes	Tomates
-Canned Tuna	Atún en lata
-Tuna	Atún
-Cat Food	Comida para gatos
-War Chocolate	Chocolate de guerra
-W. Choco	W. Choco
-Cigarettes	Cigarrillos
-Cigs	Cigarrillos
-Cigars	Cigarros
-Coffee	Café
-Coffee (Brewed)	Café (preparado)
-C. Brewed	C. Elaborado
-Fish Soup (Cooked)	Sopa de pescado (cocida)
-F. Soup (Cooked)	F. Sopa (cocinada)
-F. Soup	F. Sopa
-Meatballs (Cooked)	Albóndigas (cocidas)
-M. Balls (Cooked)	M. Bolas (cocidas)
-M. Balls	M. Balls
-Pea Soup (Cooked)	Sopa de guisantes (cocida)
-P. Soup (Cooked)	P. Sopa (cocida)
-P. Soup	P. Soup
-Tomato Soup (Cooked)	Sopa de tomate (cocida)
-T. Soup (Cooked)	Sopa (cocida)
-T. Soup	T. Soup
-Crackers	Galletas saladas
-Energy Drink	Bebida energética
-E. Drink	E. Bebida
-Energy Powder	Polvo energético
-E. Powder	E. Polvo
-Field Ration	Ración de campaña
-F. Ration	F. Ración
-Juice	Jugo
-Juice (Orange)	Jugo (de naranja)
-Juice O.	Juice O.
-Juice (Pear)	Jugo (de pera)
-Juice P.	Juice P.
-Juice (Raspberry)	Jugo (de frambuesa)
-Juice R.	Juice R.
-Kilju	Kilju
-Kompot	Kompot
-Mustard	Mostaza
-Peanuts	Cacahuetes
-Potato	Papa
-Salty Liquorice	Regaliz salado
-Salty Liq.	Salty Liq.
-Snus	Snus
-Soda (Lemon)	Refresco (de limón)
-Soda	Refresco
-Soda L.	Soda L.
-Sugar	Azúcar
-Water Bottle	Botella de agua
-Water	Agua
-Yeast	Levadura
-Electronics	Electrónica
-Alarm Clock	Despertador
-A. Clock	A. Reloj
-Batteries	Baterías
-Battery	Batería
-Battery Cables	Cables de batería
-B. Cables	B. Cables
-Casette	Casete
-Casette (Electrofolk)	Casette (Electrofolk)
-Junna - Haavakko	Junna - Haavakko
-Junna - Lempi	Junna - Lempi
-Junna - Mistä Sä Tiesit Tulla	Junna - ¿Cómo supiste que ibas a venir?
-Junna - Mukula	Junna - Mukula
-Junna - Pappa Se Antoi Hevosen	Junna - Papá le regaló un caballo
-Junna - Rautahepo	Junna - Rautahepo
-Junna - Ruslana	Junna - Ruslana
-Junna - Vandringsman	Junna - El vagabundo
-Casette (Nomad)	Casette (Nomad)
-Casette (OST)	Casete (banda sonora original)
-OST - Alive	Banda sonora - Alive
-OST - Daybreak	OST - Amanecer
-OST - Far	OST - Lejos
-OST - Lost	Banda sonora - Lost
-OST - Rain	OST - Lluvia
-OST - Road	OST - Carretera
-OST - Trailer	OST - Tráiler
-OST - Winds	OST - Vientos
-Casette (Radio Hits)	Casete (Éxitos de la radio)
-Casette (Symphony)	Casette (Sinfonía)
-Vostok Symphony	Sinfonía Vostok
-Casette Player	Reproductor de casetes
-C. Player	C. Jugador
-Coffeemaster	Coffeemaster
-C. Master	C. Máster
-Cooking Station	Estación de cocina
-C. Station	C. Estación
-Hotplate	Placa calefactora
-Inverter	Inversor
-Narva	Narva
-Polaris	Polaris
-Fish	Pescado
-Fishing	Pesca
-Bream	Bream
-Fishing Rod	Caña de pescar
-F. Rod	F. Rod
-Perch	Percha
-Pike	Lucio
-Roach	Cucaracha
-Grenade	Granada
-Helmet	Casco
-Police Helmet (IIIA)	Casco policial (IIIA)
-Police Helmet	Casco policial
-P. Helmet	P. Helmet
-Instrument	Instrumento
-Guitar	Guitarra
-Harmonica	Armónica
-Harmo.	Harmo.
-Key	Clave
-Attic Key	La llave del ático
-Attic K.	Ático K.
-Bunker Key	Bunker Key
-Bunker K.	Bunker K.
-Cellar Key	Cellar Key
-Cellar K.	Bodega K.
-Classroom Key	Clave del aula
-Class. K.	Clase K.
-Gymnasium Key	Clave del gimnasio
-Gym. K.	Gimnasio. K.
-Tunnel Key	Clave del túnel
-Tunnel K.	Túnel K.
-Knife	Cuchillo
-Jaeger 140	Jaeger 140
-Jaeger	Jaeger
-Skrama 200	Skrama 200
-Skrama	Skrama
-Skrama 240	Skrama 240
-Lore	Tradición
-Cat	Gato
-Oil Sample	Muestra de aceite
-Oil S.	Oil S.
-P. Report	P. Informe
-Heal	Sanar
-Spray	Spray
-Medical	Médico
-Antibiotics	Antibióticos
-Antibio.	Antibio.
-Antiseptic	Antiséptico
-A. Septic	A. Fosa séptica
-Balm	Bálsamo
-Bandage	Vendaje
-Bandage (Improvised)	Vendaje (improvisado)
-Cold Medicine	Medicamentos para el resfriado
-C. Med.	Lic. en Medicina
-Deodorant	Desodorante
-Deodora.	Deodora.
-Gum	Chicle
-Lotion	Loción
-Medkit	Botiquín
-Melatonin	Melatonina
-Melaton.	Melatonina.
-Painkill.	Analgésico.
-Saline	Salina
-Splint	Férula
-Splint (Improvised)	Férula (improvisada)
-Thermal Blanket	Manta térmica
-Thermal	Térmico
-Tissues	Pañuelos de papel
-Sneeze	Estornudo
-Tourniquet	Torniquete
-Tourni.	Tourni.
-Tourniquet (Improvised)	Tornillo de hemostasia (improvisado)
-Wipes	Toallitas
-Wipe	Limpiar
-Misc	Varios
-Blanket	Manta
-Board Game	Juego de mesa
-B. Game	B. Juego
-Bucket	Cubo
-Coffee Filter	Filtro de café
-C. Filter	C. Filtro
-Duct Tape	Cinta adhesiva
-D. Tape	D. Cinta
-Happy Stove	Happy Stove
-H. Stove	H. Stove
-Jerry Can	Bidón
-Jerry C.	Jerry C.
-Lumber	Madera
-Map	Mapa
-Map (Tactical)	Mapa (táctico)
-T. Map	T. Mapa
-Matches	Partidos
-Mat.	Mat.
-Mattress	Colchón
-Mess Kit	Juego de utensilios de cocina
-Nails	Uñas
-Oil Filter	Filtro de aceite
-O. Filter	O. Filtro
-Pillow	Almohada
-Rags	Trapos
-Sleeping_Bag	Saco de dormir
-Sleeping Bag	Saco de dormir
-S. Bag	S. Bag
-Sticks	Palos
-Tackle Box	Caja de aparejos
-Tackle B.	Tackle B.
-Toilet Paper	Papel higiénico
-T. Paper	T. Papel
-Toolbox	Caja de herramientas
-Water Lock	Bloqueo de agua
-W. Lock	W. Lock
-Weapon Repair Kit	Kit de reparación de armas
-Repair Kit	Kit de reparación
-Rig	Plataforma
-LVPC (Green)	LVPC (Verde)
-LVPC (Winter)	LVPC (Invierno)
-Fishing Vest	Chaleco de pesca
-F. Vest	F. Vest
-Weapon	Arma
-Mag.	Mag.
-KA-12 Magazine	Revista KA-12
-KA-M Magazine	Revista KA-M
-KAS-74U Magazine	Revista KAS-74U
-C1911 Magazine	Revista C1911
-G7 Magazine	Revista G7
-KAR-21 Magazine (.223)	Cargador KAR-21 (.223)
-KAR-21 Magazine (.308)	Cargador KAR-21 (.308)
-KAR-21 Barrel (.308)	Cañón KAR-21 (.308)
-KAR-21 Barrel	Cañón del KAR-21
-Barrel	Cañón
-KP-31 Drum	Tambor KP-31
-Drum	Tambor
-STANAG Magazine	Revista STANAG
-M78 Magazine	Revista M78
-Karov	Karov
-Karov Magazine	Revista Karov
-Mosin	Mosin
-PM5 Magazine	Revista PM5
-MP7 Magazine	Revista MP7
-P3 Magazine	Revista P3
-RK Magazine	Revista RK
-VSD Magazine	Revista VSD
-SS Magazine	Revista SS
-Ammo	Munición
-Attachment	Archivo adjunto
-Hybrid	Híbrido
-Kobra	Kobra
-Leopard	Leopardo
-Micro	Micro
-Monster	Monstruo
-Thor	Thor
 Fire [Ignite]	Fuego [Encender]
 Fire [Matches not equipped]	Fuego [Sin cerillas]
 Fire [Extinguish]	Fuego [Extinguir]
-New Furniture Added [Catalog]	Se han añadido nuevos muebles [Catálogo]
-Boss Killed	Asesinato del jefe
-Cat Rescued	Gato rescatado
-Cat Vital Activated	Cat Vital Activado
-Cat Died	Murió el gato
-You have been spotted!	¡Te han visto!
-Player Returned	Jugador devuelto
-Airdrop	Lanzamiento aéreo
-Tutorial Crate	Tutorial Crate
-Electric Box	Caja eléctrica
-Medical Cabinet	Botiquín
-Office Cabinet	Mueble de oficina
-Cabinet	Gabinete
-Corpse	Cadáver
-Bandit Corpse	Cadáver de bandido
-Crate Military	Crate Military
-Crate Special	Oferta especial de jaulas
-Wooden Crate	Caja de madera
-Garbage	Basura
-Fireplace	Chimenea
-Freezer	Congelador
-Fridge	Hielera
-Fusebox	Caja de fusibles
-Locker	Casillero
-Mailbox	Buzón
-Nightstand	Mesita de noche
-Boxes	Cajas
-Stove	Estufa
-Furniture	Muebles
-Furnitures	Muebles
-Bed (Civilian)	Cama (civil)
-Bed C.	Cama C.
-Bed (Nomad)	Cama (Nomad)
-Bed N.	Cama N.
-Cabinet (Medical)	Gabinete (Médico)
-Cabinet M.	Gabinete M.
-Cabinet (Office)	Gabinete (Oficina)
-Cabinet. 0	Gabinete. 0
-Cabinet (Wood)	Armario (de madera)
-Cabinet W.	Gabinete W.
-Carpet (Persian)	Alfombra (persa)
-Carpet P.	Carpet P.
-Carpet (Rag)	Alfombra (de trapo)
-Carpet R.	Carpet R.
-Chair (Office)	Silla (de oficina)
-Chair O.	Presidente O.
-Chair (School)	Cátedra (Facultad)
-Chair S.	Presidente S.
-Sun Chair	Silla Sun
-S. Chair	Presidente de EE. UU.
-Crate (Military)	Caja (militar)
-Crate M.	Crate M.
-Crate (Special)	Caja (especial)
-Crate S.	Crate S.
-Cupboard	Armario
-C. Board	C. Junta Directiva
-Curtain (Long)	Cortina (larga)
-Curtain L.	Cortina L.
-Curtain (Mini)	Cortina (Mini)
-Curtain M.	Curtain M.
-Dartboard	Diapositiva
-D. Board	D. Junta Directiva
-N. Stand	N. Stand
-Painting (Lake)	Pintura (Lago)
-Painting L.	Pintura L.
-Pallet	Palé
-Poster (Posture)	Cartel (Postura)
-Poster P.	Cartel P.
-Rack (Coat)	Perchero (para abrigos)
-Rack C.	Rack C.
-Rya (Maria)	Rya (María)
-Rya M.	Rya M.
-Shelf (Metal)	Estante (de metal)
-Shelf M.	Estante M.
-Shelf (Wall)	Estante (de pared)
-Shelf W.	Estante W.
-Shelf (Wood)	Estante (de madera)
-Sign (Border Zone)	Cartel (Zona fronteriza)
-Sign BZ.	Firma BZ.
-Sofa (Leather)	Sofá (de cuero)
-Sofa L.	Sofá L.
-Stool (Military)	Taburete (militar)
-Stool M.	M. Stool
-Stool (Padded)	Taburete (acolchado)
-Stool P.	Heces P.
-Table (Cabin)	Mesa (cabina)
-Table C.	Tabla C.
-Table (Canteen)	Mesa (comedor)
-Table (Kitchen)	Mesa (de cocina)
-Table K.	Tabla K.
-Table (Office)	Mesa (de oficina)
-Table. O	Tabla. O
-Target Stand	Soporte para dianas
-Target S.	Destino S.
-Television	Televisión
-TV	Televisión
-Trolley (Short)	Carrito (corto)
-Trolley S.	Trolley S.
-Trolley (Tall)	Carrito (alto)
-Trolley T.	Trolley T.
-Weapon Display	Exposición de armas
-Weapon D.	Arma D.
-Unload	Descargar
-Clear Chamber	Cámara transparente
-Unequip	Quitar
-Equip	Equipar
-Show	Mostrar
-Hide	Ocultar
-Activated	Activado
-Not active	No activo
-All maps & zones	Todos los mapas y zonas
-Active	Activo
-Repair	Reparación
-Craft	Artesanía
-Added	Añadido
-Remove	Eliminar
-Completed	Completado
-Add to Notes	Añadir a las notas
-Frozen	Frozen
-Permadeath Zone	Zona de muerte permanente
-[Open]	[Abrir]
-Door [Jammed]	Puerta [atascada]
-Door [Occupied]	Puerta [Ocupado]
-Door [Close]	Puerta [Cerrar]
-Door [Open]	Puerta [Abierta]
-Sleep (Random sleep: 6-12h)	Sueño (Sueño aleatorio: 6-12 h)
-Turn Off	Desactivar
-Turn On	Encender
-Radio [Turn Off]	Radio [Apagar]
-Radio [Turn On]	Radio [Encender]
-Television [Turn Off]	Televisión [Apagar]
-Television [Turn On]	Televisión [Encender]
-Rescue Cat	Gato rescatado
-Cat is eating, do not disturb	El gato está comiendo, no molestar
-Fuel Tank [89%]	Depósito de combustible [89 %]
-Feed cat:	Alimentar al gato:
-Indoors	En interiores
-Indoor	En interiores
-Mine	Mío
-Lure	Señuelo
-(Military)	(Militar)

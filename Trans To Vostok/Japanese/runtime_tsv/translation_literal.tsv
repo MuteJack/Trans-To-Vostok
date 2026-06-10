@@ -1,559 +1,99 @@
 text	translation
-Compatibility	互換性
-Selected	選択
-Press key to bind...	キーを押して割り当ててください...
-Forward	次へ
-Backward	戻る
-Left	左
-Right	その通り
-Crouch	クラウチ
-Jump	ジャンプ
-Sprint	スプリント
-Lean Left	左寄り
-Lean Right	右に傾く
-Draw Primary	プライマリの描画
-Draw Secondary	セカンダリを描画
-Draw Knife	引き鉋
-Draw Grenade 1	手榴弾1を投げる
-Draw Grenade 2	手榴弾を投げる 2
-Raise Weapon	武器を構える
-Lower Weapon	武器を下げる
-Aim	目的
-Canted Aim	傾斜した照準
-Fire	火
-Reload	再読み込み
-Ammo Check	弾薬確認
-Firemode	ファイアモード
-Inspect Weapon	武器を点検する
-Prepare Insert	挿入の準備
-Insert Cartridge	カートリッジを挿入してください
-Interact	交流する
-Place	場所
-Decor Mode	デコレーションモード
-Flashlight	懐中電灯
-NVG	NVG
-Laser	レーザー
-Rail Movement	レールの動き
-Secondary Optic	二次光学系
-Interface	インターフェース
-Rotate Item	アイテムを回転
-Fast Transfer	高速転送
-Fast Equip	即装備
-Fast Drop	ファスト・ドロップ
-Left Mouse Button	マウスの左ボタン
-Right Mouse Button	マウスの右ボタン
-Middle Mouse Button	マウスの中ボタン
-Mouse Wheel Up	マウスホイールを上にスクロール
-Mouse Wheel Down	マウスホイールを下にスクロール
-Mouse Thumb Button 1	マウスの親指ボタン 1
-Mouse Thumb Button 2	マウスの親指ボタン 2
-UI Scaling	UIの拡大縮小
-Loading...	読み込み中...
-Skip Intro [SPACE]	イントロをスキップ [スペース]
-All save files deleted	保存されたファイルがすべて削除されました
-Character died	キャラクターが死亡しました
-Menu	メニュー
-Intro	はじめに
-Tutorial	チュートリアル
-Tutorial Exit	チュートリアルの終了
-Death	死
-Template	テンプレート
-shaders	シェーダー
-Shelter	シェルター
-Cabin	キャビン
-Attic	屋根裏部屋
-Classroom	教室
-Tent	テント
-Bunker	バンカー
-Area 05	エリア05
-Village	村
-Highway	高速道路
-School	学校
-Border Zone	国境地帯
-Outpost	前哨基地
-Minefield	地雷原
-Vostok	ボストーク
-Apartments	アパート
-Terminal	ターミナル
-Trader	トレーダー
-Generalist	ジェネラリスト
-Doctor	医師
-Gunsmith	銃器職人
-Driver	ドライバー
-Grandma	おばあちゃん
-Shaman	シャーマン
-Fisherman	漁師
-Scientist	科学者
-Bandit	バンディット
-Guards	警備員
-Military	軍事
-Punisher	パニッシャー
-Neutral	中立
-Overcast	曇り
-Rain	雨
-Storm	嵐
-Generic	一般
-Wood	木材
-Metal	金属
-Concrete	コンクリート
-Rock	ロック
-Inventory	所持品
-Primary	小学校
-Secondary	セカンダリ
-Vital	バイタル
-Task Notes empty	タスクのメモは空です
-Task Notes not available (Tutorial)	タスクノートは利用できません（チュートリアル）
-Map not equipped	マップが装備されていません
-Map not usable (Vostok)	マップは使用不可（ボストーク）
-Casette Player not equipped	カセットプレーヤーは搭載されていません
-Casette Player power 0%, recharge player	カセットプレーヤーのバッテリー残量 0%、プレーヤーを充電してください
-Casette Player empty, insert casette	カセットプレーヤーにカセットが入っていません。カセットを入れてください。
-Override Ambient Music [ON]	BGMの上書き [ON]
-Override Ambient Music [OFF]	BGMの上書き [OFF]
-Sleep	睡眠
-Level 2	レベル2
-Level 3	レベル3
-Level 4	レベル4
-Level 5	レベル5
-Heat required	加熱が必要
-Workbench required	ワークベンチが必要です
-Shelter required	シェルターが必要
-Start Input	入力を開始
-Stop Input	入力を停止
-Reset Input	入力をリセット
-Start Delivery	配送を開始する
-Stop Delivery	配達停止
-Delivered	納品済み
-CBRN	CBRN
-Overweight	肥満
-Explosion	爆発
-Fall	秋
-Day	日
-Easy	簡単
-Intermediate	中級
-Hard	難しい
-Tutorial Task 1 (Simple)	チュートリアル課題1（初級）
-"Let's start with something simple.
-
-Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
-1. Press Start Delivery
-2. Select Canned Pea Soup
-3. Press Complete"	"まずは簡単なことから始めましょう。
-
-「アイテム」掲示板に行き、「缶詰のピーマンスープ」を受け取ってください。配達アイテムをインベントリに入れたら：
-1. 「配達開始」を押す
-2. 「缶詰のピーマンスープ」を選択する
-3. 「完了」を押す"
-Tutorial Task 2 (Complex)	チュートリアル課題2（上級）
-"Now let's add some complexity.
-
-Some tasks might require crafting-based delivery items, like this task requires Meatballs (Cooked), which can only be obtained through crafting.
-
-Go to the Items billboard, grab Canned Meatballs, Mess Kit and Water Bottle. You are also going to need matches, you can find those from the Equipment billboard.
-
-Next, find the Meatballs (Cooked) recipe from the Tools UI using the Crafting button. When you look at the recipe, it has a proximity requirement Heat, meaning you will need a heat source to unlock that recipe.
-
-In order to craft the Meatballs (Cooked), do the following:
-1. Go to the Firepot, equip matches and light the fire
-2. Open the Meatballs (Cooked) recipe and notice the heat symbol turned green
-3. Press Start Input
-4. Select Mess Kit, Canned Meatballs and Water Bottle
-5. Press Craft
-
-Now you have successfully crafted the required task item and you can complete the task."	"それでは、もう少し難易度を上げてみましょう。
-
-タスクによっては、クラフトで作ったアイテムが必要になる場合があります。例えば、このタスクでは「ミートボール（調理済み）」が必要ですが、これはクラフトでしか入手できません。
-
-「アイテム」パネルを開き、「ミートボールの缶詰」、「軍用飯盒」、「水筒」を選択してください。また、「マッチ」も必要になります。これは「装備」パネルから入手できます。
-
-次に、「ツール」UIの「クラフト」ボタンを使用して、「ミートボール（調理済み）」のレシピを探してください。レシピを確認すると、「熱」という近接要件が表示されています。つまり、このレシピをアンロックするには熱源が必要になります。
-
-「ミートボール（調理済み）」をクラフトするには、以下の手順に従ってください：
-1. ファイアポットに行き、マッチを装備して火をつけます
-2. 「ミートボール（調理済み）」のレシピを開き、熱のシンボルが緑色に変わっていることを確認します
-3. 「入力開始」を押します
-4. 軍用飯盒、ミートボール（缶詰）、水筒を選択します
-5. 「クラフト」を押します
-
-これで、タスクに必要なアイテムのクラフトに成功し、タスクを完了できます。"
-Tutorial Task 3 (Furniture)	チュートリアル課題3（家具）
-"There's one more thing to learn.
-
-Some items that you might receive from crafting, trading or tasks are Furniture items, which are used for shelter customization.
-
-Once you receive a Furniture item, it will be stored to a separate inventory called the Furniture Catalog, so it doesn't appear in your normal inventory.
-
-Furniture Catalog is only accessible when you are inside of shelters, but you will always receive a message ""New Furniture Added [Catalog]"" when the catalog is updated.
-
-Try getting new furniture by completing this task:
-1. Press Start Delivery
-2. Select Potato
-3. Press Complete
-4. Notice the message ""New Furniture Added [Catalog]""
-
-You can learn more about shelter customization and Furniture Catalog from the tutorial billboard called Shelters."	"もう一つ、知っておくべきことがあります。
-
-クラフトや取引、クエストなどで入手できるアイテムの中には、「家具」と呼ばれるものがあり、これらはシェルターのカスタマイズに使用されます。
-
-家具を入手すると、「家具カタログ」と呼ばれる別のインベントリに保管されるため、通常のインベントリには表示されません。
-
-「家具カタログ」にアクセスできるのはシェルター内のみですが、カタログが更新されると常に「新しい家具が追加されました [カタログ]」というメッセージが表示されます。
-
-次のクエストを完了して、新しい家具を手に入れてみましょう：
-1. 「配達開始」を押す
-2. 「ジャガイモ」を選択する
-3. 「完了」を押す
-4. 「新しい家具が追加されました [カタログ]」というメッセージが表示されるのを確認する
-
-シェルターのカスタマイズや家具カタログについて詳しくは、「シェルター」というチュートリアル看板をご覧ください。"
-Prime Time	プライムタイム
-"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
-
-Nevertheless, you’ve arrived at the prime time, because I’m out of toilet paper and the situation is getting urgent.
-
-Speaking of prime time, I just finished repairing some electronics and I have this fully functional TV ready to go. Mark my words, at the moment, this is the only working TV in Area 05.
-
-If you bring me that toilet paper, the TV is yours. It has all the channels pre-configured, vibrant colors and prime time shows are running as we speak."	"おや、おや……君は先週ノマドたちが拾ってきたあの男か。あの古くてちっぽけな小屋に泊まらせてもらったんじゃないのか？ 俺たちも昔はそこで酔っ払ってポーカーをやったりしたもんだが、あの場所にはいつも頭痛がしたよ。天井にアスベストか何かが入ってるに違いない。
-
-ともあれ、君は絶好のタイミングでやって来たな。というのも、俺のトイレットペーパーが切れてしまって、事態が切迫しているところだからだ。
-
-「絶好のタイミング」と言えば、ちょうど電子機器の修理を終えたところで、完全に機能するテレビが使える状態だ。言っておくが、今のところエリア05で動いているテレビはこれしかない。
-
-トイレットペーパーを持ってきてくれれば、そのテレビは君のものだ。チャンネルはすべて設定済みで、鮮やかな色合い、そして今まさにプライムタイムの番組が放送中だ。"
-Bad Habits	悪い習慣
-"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
-
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"少し前、近所の廃校にいるドクターのところへ行って来たんだ。あいつは俺に「悪い癖」を全部やめるべきだなんて言ってたけど、あのクソジジイ自身もタバコを吸ってるんだから、どうでもいいよ！
-
-君はたぶん、ピンチの時にミントの錠剤を舐めるだけの、いわゆる現代のヒッピーの一人なんだろうけど、もしこれを見つけたら、パックを1、2箱とマッチも持ってきてくれ。"
-Backpains	腰痛
-"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
-
-I usually don't complain, but my fucking back is killing me. Every morning when I wake up, it feels like a gunshot directly to my spine. It won't be long until you're just like me and those cursed French cars.
-
-If you happen to find something that could help with my back, I would highly appreciate it."	"この年になると、体のあちこちが痛むし、体なんてまるであのフランス車みたいだ。いつも何かしらのトラブルがあって、修理が必要なんだ。
-
-普段は文句なんて言わないんだけど、このクソみたいな背中の痛みには本当に参ってる。毎朝目が覚めるたびに、背骨に銃弾を撃ち込まれたような痛みが走るんだ。君もそう遠くないうちに、俺やあの忌々しいフランス車と同じようになるだろうね。
-
-もし、俺の背中の痛みに効くようなものを見つけたら、ぜひ教えてほしい。本当に助かるよ。"
-Coffee Reserve	コーヒーの備蓄
-"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
-
-If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
-
-As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	"人生において、絶対に譲れないものはいくつかある。朝6時のコーヒー、昼12時のコーヒー、そして夕方6時のコーヒーだ。肉体労働を伴う場合は、その合間のコーヒーブレイクも必須であり、事実上法律で定められているようなものだ。
-
-エリア05で生き延びたいなら、絶え間ないカフェインの摂取を最優先すべきだ。
-
-実のところ、最近の消費量が平均を上回っているため、戦略的なコーヒーの備蓄を少し増やしておいたほうが良さそうだ。"
-Sweaty Business	汗だくの仕事
-"The days out here are long and sweaty, especially in the summertime.
-
-Since air conditioning, showers and running water are just a faint memory from the past, it's important that you maintain personal hygiene and odor control for the sake of the others. You might wonder why not just go wash in the lake or sea? Well, let me tell you why that's a bad idea.
-
-After the initial explosion, these waters are far from refreshing and there's something nasty going on. I have seen so many dead fish lately that my ass is not going into that water, that's for sure and I highly recommend the same for you.
-
-It’s a sweaty business, but we just have to figure out some alternative methods to stay fresh."	"この辺りの日々は長く、汗だくになる。特に夏場はそうだ。
-
-エアコンやシャワー、水道水なんて、もはや遠い過去の思い出に過ぎないから、他の人たちのためにも、身だしなみを整え、体臭を気をつけることが大切だ。「湖や海で洗えばいいじゃないか」と思うかもしれない。でも、なぜそれが良くないのか、その理由を教えてあげよう。
-
-最初の爆発の後、この水は爽やかとは程遠く、何か不気味なことが起きている。最近、死んだ魚をあまりにも多く目にして、俺のケツがあの水に入ることは絶対にない。君にも同じことを強く勧めるよ。
-
-汗だくになる仕事だが、爽やかさを保つための別の方法を考え出すしかない。"
-Handyman	便利屋
-"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
-
-Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
-
-I'm getting tired of being her handyman, but I promised to help this one last time."	"国境地帯の近くに今も住んでいるあの年配の女性を知っているか？彼女は目が見えないのだが、電子機器について何度注意しても、いつもいろんなボタンをいじり回して、結局すべてをめちゃくちゃにしてしまう！
-
-今やコンロは壊れ、冷凍庫の中身は溶け出し、どうやらラジオもまた「調子がおかしい」らしい。さらに先週の嵐で、木が彼女のポーチの屋根に直撃して、屋根が一部崩れてしまった。だから今、私たちは山のような問題を抱えているんだ。
-
-彼女の便利屋役をするのにうんざりしてきたけど、今回が最後だと約束したから手伝うつもりだ。"
-Six Pack	シックスパック
-"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
-
-When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
-
-Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	"男には誰しも弱点があるものだが、僕の場合は温かい安ビールだ。特に、凍えるような冬の朝にはたまらない。
-
-冬が来たら、ビールは温かく、体に密着させておく必要がある。ちょっと気持ち悪い話に聞こえるかもしれないが、信じてほしい。寒い中を歩き回っている時に、小麦のシャーベットみたいなビールを飲みたいなんて思わないはずだ。 温めておくのに最適な場所は脇の下か股の間だ。そこからはかなりの熱が放出されるし、うまくやれば6本パックを丸ごと温めておくこともできる。
-
-6本パックといえば、ロードトリップに1パック持って行きたいな。「旅には6本」って言うしな。"
-Old Friend	旧友
-"Want to hear military stories?
-
-Back in the day, when I was doing my conscript service, we still had a few of those KP-31's lying around in the warehouse.
-
-One range day, we actually got a chance to test those. We were not allowed to use full-auto with those drum mags, but when it was my turn, I couldn't resist. I changed the fire mode, squeezed the trigger and 71 rounds of pure magic came out of my barrel.
-
-Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn, I miss that gun. Someday I will once again reunite with my magical old friend, someday..."	"軍隊のエピソードを聞いてみたいか？
-
-昔、俺が徴兵制の兵役をしていた頃、倉庫にはまだKP-31が数丁転がっていたんだ。
-
-ある射撃訓練の日、ついにそれを試す機会が巡ってきた。ドラムマガジンを使った全自動射撃は禁止されていたが、自分の番が回ってきた時、我慢できなかった。 射撃モードを切り替え、引き金を引くと、銃身から71発の「魔法」が飛び出した。
-
-今でも夢の中で、あの「パッ、パッ、パッ」という音がかすかに聞こえてくることがある。ああ、あの銃が恋しい。いつか、あの魔法のような古き友と再会できる日を、いつか……"
-Road Trip	ロードトリップ
-"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
-
-Have you ever visited the North? What a shame, that place has remained totally unaffected by all this bullshit. It's like nothing ever happened there. I'm talking about pristine nature, wildlife and crystal-clear rivers for catching those juicy arctic trouts.
-
-I would be already driving there, but those filthy Bandits stole my car battery and a bunch of other items from the trunk, so I'm still stuck here.
-
-Maybe you could help me with this? Bring back my stolen items and I have something special for you."	"このクソみたいな場所にはもううんざりだ。北へ向かう片道だけのロードトリップに出かけて、この惨めな日常をすべて置き去りにするつもりだ。
-
-北の方へ行ったことはあるか？　残念なことに、あそこはこうしたクソみたいな事態の影響をまったく受けていないんだ。まるで何も起きていないかのようだ。手つかずの自然や野生動物、そしてジューシーな北極マスを釣れる透き通った川のことだよ。
-
-今頃もう向かっているところなんだけど、あのクソ野郎のバンディットどもが車のバッテリーやトランクの中の荷物を盗んでいったせいで、まだここに足止めされてるんだ。
-
-君、手助けしてくれないか？盗まれた品を取り戻してくれれば、特別なものをあげるよ。"
-Homemade	手作り
-"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
-
-I already had a large batch for him, but since my trip was delayed, I had to make sure the product didn't spoil in my cellar. After a few ""product-quality"" sips, I got carried away and started drinking and now I have nothing left.
-
-I'm going to need a new batch, but I don't have time right now, so perhaps you can cook it. The recipe is really simple, but do not add too much sugar or you're going to ruin the whole thing. Keep it simple, keep it homemade.
-
-If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."	"北に着いたら、シャーマンを驚かせてやろうと思う。彼は私の手作りの砂糖酒が大好きなんだ。
-
-彼のために大量に用意していたんだけど、旅の予定が遅れたせいで、地下室で腐らないように気を使わなきゃいけなかったんだ。品質チェックと称して少し味見しただけだったのに、ついつい飲みすぎてしまって、もう残ってないんだ。
-
-新しい分を作る必要があるんだけど、今は時間が取れないから、君が作ってくれないかな。作り方はすごく簡単だけど、砂糖を入れすぎると台無しになっちゃうから気をつけて。シンプルに、手作り感を出してくれ。
-
-もし新しい分を作ってくれたら、屋根裏部屋の鍵をあげることを考えてみるよ。君のあの小さなアスベスト小屋より、ずいぶんマシな住処になるはずだ。"
-Nasty Draft	厄介なドラフト
-"I haven't seen you here before, you must be a new patient?
-
-Welcome to my improvised clinic. It ain't much, but with these limited resources, it's the best that we've got.
-
-I used to teach health education for elementary students in this school. It was a long time ago, but I have good memories of this place. The building is old and has seen better days, but I'm sure it can be restored when things settle down.
-
-Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	"ここであなたを見かけたことがありませんね。新しい患者さんでしょうか？
-
-私の即席の診療所へようこそ。大したものではありませんが、限られた資源の中では、これが精一杯なのです。
-
-私は以前、この学校で小学生に保健の授業をしていました。ずいぶん昔のことですが、この場所には良い思い出があります。 建物は古くて、かつての面影はありませんが、事態が落ち着けばきっと修復できるはずです。
-
-最近は、窓がほとんどないため、断熱が最大の悩みです。特に冬場は、患者さんにとって少し寒すぎるかもしれません。応急処置としては、ダクトテープでひどい隙間風を抑えるのが一番だと思います。"
-Steady Hands	確かな手
-"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
-
-Especially in surgeries and working with a scalpel, I often get the shakes and small mistakes here and there are unavoidable. I think it's mostly related to my age, but I have found that smoking a few cigars before the operation keeps my hands more steady.
-
-As a doctor, I do not recommend smoking, but desperate times require desperate actions.
-
-If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."	"正直なところ、手と目の協調性や細かい動作の器用さが、少し鈍ってきていることは認めざるを得ません。
-
-特に手術やメスを扱う際、手が震えてしまうことが多く、あちこちで小さなミスが避けられません。これは主に年齢のせいだと思いますが、手術前に葉巻を数本吸うと、手がより安定することを発見しました。
-
-医師として喫煙は推奨しませんが、非常時には非常の手段も必要です。
-
-もしどこかで葉巻を数本見つけたら、私に届けてもらえませんか？ただし、ジェネラリストには内緒にしておいてください。彼には禁煙するように言ったばかりなので、物議を醸すような指針を作らないようにしたいのです。これは私とあなただけの秘密にしておきましょう。"
-Bookworm	本の虫
-"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
-
-On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
-
-I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	"この辺りで医者をしていると、仕事は波があります。つまり、とてつもなく忙しい日もあれば、人影ひとつない日もあるということですね。
-
-そんな退屈で閑散とした日には、よく読書をして時間を過ごします。この辺りの読み物はかなりランダムで、読みたい本を選べるわけではないので、手に入る本に順応する術を身につけなければなりません。
-
-実は私は、ジャンルを問わず、あらゆる種類の古い本を読むのが好きです。童話であれ宗教書であれ、いつも興味深く感じます。私は生まれつき、少し本好きなのかもしれません。"
-Dice Master	ダイスマスター
-"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
-
-Just a few years ago, we often went fishing together, but that poor guy has multiple herniated disks, so fishing trips are no longer an option for him. We still have a few other common hobbies like horse races and gambling.
-
-Like you probably already guessed, only one of those is available nowadays, so our friendship is currently purely built on gambling with card and dice games. However, every time we play dice, he always magically wins and I'm starting to wonder if his dices are rigged somehow, since nobody is that lucky.
-
-You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	"僕とジェネラリストは子供の頃から知り合いです。彼は間違いなく不機嫌なおじいさんだけど、一度親しくなれば、まあまあ付き合える相手です。
-
-ほんの数年前まではよく一緒に釣りに行っていましたが、あいつは椎間板ヘルニアをいくつも患っているせいで、もう釣りに行くなんて無理な話。それでも、競馬やギャンブルなど、他にも共通の趣味がいくつかあります。
-
-もうお察しの通り、今やそのうちの1つしか楽しめないため、私たちの友情は現在、カードやサイコロを使ったギャンブルだけで成り立っています。しかし、サイコロゲームをするたびに、彼は魔法のように勝ってしまいます。誰もそこまで運が良いはずがないから、彼のサイコロは何か仕掛けがあるんじゃないかと思い始めています。
-
-ねえ、もしそういうサイコロゲームを見つけたら、僕にも一つ持ってきてくれませんか。次に遊ぶ時は、僕のセットでやるつもりです。そうすれば、不正の可能性を排除できるし、誰が真のサイコロの達人なのかがわかるでしょう。"
-Night Surgery	夜間診療
-"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
-
-Daytime operations are a walk in the park for me when there's enough light, but at night, it gets more tricky. Operating in dim lighting or sometimes even in total darkness relies more on hand-feel and intuition, but it's always riskier for the patient.
-
-Some sort of bright headlamp would probably solve this issue until the power grid is fully restored. I have tried to find one, but unfortunately no luck so far."	"私は外科手術の専門家ではありませんが、臓器や人体の解剖学に関しては、かなり手際よく扱えることに気づきました。
-
-日中の手術は、十分な光があれば朝飯前ですが、夜になると話は別です。薄暗い場所、時には完全な暗闇での手術は、手触りや直感に頼る部分が多くなりますが、患者さんにとっては常にリスクが高くなります。
-
-電力網が完全に復旧するまでは、明るいヘッドランプのようなものがあればこの問題は解決するでしょう。探してみたのですが、残念ながら今のところ見つかっていません。"
-Infections	感染症
-"You know what one of the most common issues is here? It's infections.
-
-When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
-
-I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."	"ここで最もよくある問題の一つが何か、ご存知ですか？それは感染症です。
-
-衛生状態が悪く、傷が清潔に保たれていないと、細菌や病原菌にとって絶好の環境となります。切り傷や擦り傷を負った患者がいる場合、ほぼ間違いなく感染症を引き起こします。
-
-感染症用の医療用品はまだ少し残っていますが、遅かれ早かれ底をついてしまうでしょう。そうなれば、ここの死亡率は深刻な事態を招くことになるでしょう。"
-Hypovolemia	血液量減少
-"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
-
-After taking a closer look, the reason was simpler than expected. Correct, it was dehydration and a thing that we doctors call hypovolemia.
-
-Hypovolemia is basically a loss of both salt and water content in your body and if it gets really bad, then you're screwed like those Nomads and met with a hypovolemic shock. Fortunately, the treatment for these symptoms is really simple, you just stick a saline solution into a peripheral vein and you're good to go.
-
-Whenever you find those saline bottles, always remember to bring them to me and we will surely find some deal that could work for both of us."	"水分補給は極めて重要です。つい先週も、森の中で丸まっていて、血圧が低下している青白いノマドたちを何人か見つけました。
-
-よく調べてみると、その原因は予想以上に単純でした。その通り、脱水症状と、私たち医師が「循環血液量減少」と呼ぶ状態でした。
-
-循環血液量減少とは、基本的に体内の塩分と水分が共に失われる状態のことです。これがひどくなると、あのノマドたちのようにお手上げ状態になり、血液量減少性ショックに陥ってしまいます。幸いなことに、この症状の治療法は実に簡単です。末梢静脈に生理食塩水を注入すれば、それで事足ります。
-
-もしあの生理食塩水のボトルを見つけたら、必ず私に持ってきてください。きっと双方にとってメリットのある取引が成立するはずです。"
-Mouth Organ	ハーモニカ
-"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
-
-I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
-
-It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."	"音楽は、この世で最高の抗うつ剤です。医学を学ぶ前は、実は海軍のオーケストラでサックスやホルンを演奏していて、あの豪華な金色の管楽器を携えて全国を回っていました。まさに、人生の大転換でしたね。
-
-数年前に昔の楽器を吹いてみたのですが、あれには肺が丈夫でないとダメなようで、もうあの忌々しい楽器からは音さえ出せなくなっていました。ハーモニカへの情熱や音楽の腕前は今も健在ですが、葉巻のせいですでに手遅れになってしまったようです。
-
-もっと簡単な楽器なら今から始めても遅くはないのですが、私のような年老いた葉巻好きには、本当に小さなものがいいでしょう。まあ、来世の話ですね。"
-Patient Report	患者報告
-"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
-
-I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
-
-Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	"事態が発生して間もなく、私たちの病院は1時間足らずで受け入れ上限を超えてしまいました。実際に、学校の体育館を緊急トリアージ会場として転用せざるを得なかったほどです。
-
-あの場所に、私が作成した初期の患者報告書の一つを置き忘れたような気がします。記憶力が以前ほどではなくなってしまったので、その報告書があれば記憶を呼び起こすのに役立つはずです。その報告書に記された症状や具体的な詳細が、だんだん曖昧になってきています。
-
-子供たちが遊んだり、ロープを登ったりしていた体育館を探してみてはいかがでしょうか。きっとどこかにあるはずです。"
-Substance	内容
-"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
-
-Acrylonitrile is definitely part of the compound, just as the officials claimed, but I have a theory that it’s only one piece of the puzzle. When burning, acrylonitrile releases toxic gases such as hydrogen cyanide and is classified as a C1 carcinogen, but let me explain my theory.
-
-These kinds of organic compounds have extremely pungent odors. Since we are talking about massive volumes, the smell should have been everywhere, but it wasn’t. On top of this, acrylonitrile alone shouldn’t have such long-lasting effects on the environment and water sources.
-
-This means we are looking at some kind of manufactured substance that is far more toxic. I know it’s just a theory, but there’s only one way to find out, we need to find the source.
-
-Since we know it was delivered in oil tank cars, I would visit the nearest oil terminal and check their samples to see if they really contain oil or something else. These oil sample containers are easy to spot, they look like golden milk jugs and there should be plenty of them."	"あのタンク車が爆発し、最初の火災が発生した際、そこには単なる一般的な工業用化学物質以外にも何かが関わっていたと私は確信しています。
-
-当局が主張した通り、アクリロニトリルは間違いなくその化合物の一部ですが、私はそれがパズルのほんの一部に過ぎないという仮説を持っています。アクリロニトリルは燃焼するとシアン化水素などの有毒ガスを発生させ、C1級発がん性物質に分類されていますが、私の仮説について説明させてください。
-
-この種の有機化合物は極めて刺激的な臭いを放ちます。膨大な量だったはずですから、その臭いは至る所に充満していたはずですが、実際にはそうではありませんでした。さらに、アクリロニトリルだけでは、環境や水源にこれほど長期にわたる影響を与えるはずがありません。
-
-つまり、我々が直面しているのは、はるかに毒性の強い何らかの合成物質であるということです。 単なる仮説に過ぎないことは承知していますが、真相を突き止める方法は一つしかありません。発生源を突き止める必要があるのです。
-
-それが石油タンク車で運ばれてきたことは分かっていますので、私は最寄りの石油ターミナルを訪れ、サンプルを検査して、本当に石油が含まれているのか、それとも何か別の物質が含まれているのかを確認します。これらの石油サンプルの容器はすぐに見分けがつきます。黄金色のミルクジャグのような形をしており、そこら中にたくさんあるはずです。"
-Bloodsuckers	吸血鬼
-"Ain't that something? A new man and a new rifle, always a welcome sight.
-
-Forget the small talk. You want something reliable and cheap? Sure, but a few favors first, since you don't climb the ranks immediately around here. Where should we start? There are definitely some supply runs you could do, but you look a bit flimsy, so maybe you need something simple first. Let me think a moment.
-
-Okay, I have an idea. You know in the summertime, those flying suckers start to piss me off. You would assume those bastards would not get into these bunkers, but trust me, they do. Every single summer, there's buzzing around the clock.
-
-Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."	"すごいな。新しい仲間と新しいライフル、いつだって歓迎だ。
-
-世間話はいい。信頼できて安いものが欲しいのか？　もちろんいいが、まずはいくつか頼み事を聞いてくれ。このあたりでは、いきなり出世なんてできないからな。どこから始めようか？　物資の調達任務ならいくつかあるが、お前はちょっと頼りない感じだから、まずは簡単な仕事からにしたほうがいいかもな。ちょっと考えさせてくれ。
-
-よし、いい案がある。夏になると、あの飛ぶクソ野郎たちが本当にうざくなるんだ。あいつらがこのバンカーの中に入ってくるなんて思わないだろうが、信じてくれ、入ってくるんだ。毎年夏になると、24時間ブーンと飛び回ってる。
-
-君にぴったりの仕事がある。あの吸血鬼どもを退治する手段を見つけてくれ。それができたら、また話をしよう。"
-Warm Meal	温かい食事
-"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
-
-Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
-
-It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."	"軍人として、私は通常、軍用食にこだわっているが、同じお粥や乾いたスナックを何週間も続けて食べるのには、私にも限界がある。
-
-昔は、こうした軍用食には少なくともまともな缶詰が入っていたが、近年のものは、不味い肉ペーストや現代風のアウトドア食品ばかりが入っている。そんな人工的なクソみたいなものを口にするつもりはない、それは確かだ。
-
-まともな温かい食事を口にしてから、ずいぶん時間が経ってしまった。今こそ君が活躍する時かもしれないし、我々の仕事上の関係も次の段階へ進むかもしれない。フィンランド風のエンスープをたっぷり盛り、横にマスタードを添えた食器セットがあれば、それで十分だろう。"
-Nordic Trade	ノルディック・トレード
-"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
-
-Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
-
-However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."	"スウェーデン人のことはよく分からないけれど、彼らには3つの長所がある。海軍が優秀で、車も良くて、タバコ製品も素晴らしい。それでもどこかおかしい。彼らはあまりにも幸せそうで、社交的すぎる。間違いなく不自然だ。
-
-誤解しないでほしい。彼らは良い隣人だし、そういう面もあるんだけど、どうにも分からない。たぶん、彼らは裕福すぎていつも身なりがきちんとしているからか、あるいは単にホッケーのせいなのかもしれない。
-
-とはいえ、良き隣人としての精神で、私たちにもできる公平な取引がある。私はこれを「デザートの交換」と呼んでいる。あのスウェーデンのごちそうをいくつか持ってきてくれれば、フィンランドのものを差し上げる。これは勝者しかいない取引であり、ある意味、ライバル意識のない北欧の貿易と言えるだろう。"
-Big Blades	ビッグ・ブレイズ
-"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
-
-When it comes to blades, the rule is the bigger, the better. I myself prefer machetes that are suitable for wood chopping and clearing obstructions in a dense forest. Even though we're not in a jungle here, you still need a big blade since there will be times when you'll wish you had one.
-
-Collecting blades is also an elegant hobby. I do have quite an extensive collection, but there are still a few big blades that I'm missing."	"その人がどんな刃物を持っているかを見れば、その人物について多くのことがわかるものだ。もし小さなポケットナイフを携帯している男を見かけたら、そんな連中には近づかないほうがいい。
-
-刃物に関しては、「大きければ大きいほど良い」というのが鉄則だ。 私自身は、薪割りや密林での障害物除去に適したマチェテを好んでいる。ここはジャングルではないが、大きな刃物があればよかったと後悔する場面が必ずあるのだから、やはり大きな刃物が必要だ。
-
-刃物の収集もまた、洗練された趣味だ。私はかなりのコレクションを持っているが、まだ手に入れていない大きな刃物がいくつかある。"
-Ammo Delivery	弾薬の配送
-"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
-
-When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. Sometimes there are still those annoying customers who seek something more exotic, but it's hard to maintain a stock for every weird request.
-
-Maybe you could do a quick ammo delivery run for me? We could expand the portfolio a bit, so to speak."	"当店では、ほとんどの種類の弾薬を扱っています。リス狩りであれ、人間狩りであれ、あらゆるニーズにお応えできる品揃えです。
-
-弾薬に関しては、7.62x39と.223が圧倒的に売れ筋です。たまに、もっと珍しいものを求める厄介な客もいますが、ありとあらゆる奇妙なリクエストに対応できる在庫を維持するのは難しいですね。
-
-ちょっと弾薬の買い出しを手伝ってくれませんか？ そうすれば、いわば品揃えを少し広げられるかもしれません。"
-Weapon Delivery	武器の配送
-"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
-
-This has led to a situation where I'm constantly out of stock of those Eastern weapons. It's a damn shame, since I always find their products more reliable compared to the Western ones. You see, in the West, we have an incurable disease of making everything tactical. We add rails, dingles and dongles to everything and the end result is a mess that has too many moving parts.
-
-Since I no longer have those networks active, a quick weapon delivery from the other side would be highly appreciated."	"以前は国境の向こう側で多くの取引をしていたが、最近は人脈が途絶えてしまった。
-
-その結果、東側の武器は常に在庫切れの状態だ。西側の製品に比べて、東側の製品の方がずっと信頼性が高いと常々思っているだけに、本当に残念なことだ。というのも、西側には、何でもかんでも「タクティカル」にしようとする、治らない病があるからだ。 何にでもレールやアタッチメント、ドングルを付けまくるせいで、結局は可動部が多すぎてごちゃごちゃした代物になってしまう。
-
-もうあちらとのつながりも途絶えてしまったので、国境の向こうから武器を早急に送ってもらえると大変助かる。"
-Medic	医療従事者
-"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
-
-I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
-
-My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	"軍隊において重要な役割は、ライフル兵と衛生兵の2つだけだ。指揮官や砲兵、その他の支援部隊は、私の考えでは単なる飾り物に過ぎない。
-
-実は、私専用の専属衛生兵がいる。彼は腕利きのノマドで、攻撃フェイズが必要になった時のためのシンプルな戦術を二人で決めている。 その戦術とは、私が撃ち、もし撃たれたら、彼が私の口にフェンタニルのロリポップを放り込み、戦列はそのまま前進し続けるというものだ。狂気を止めることなど決してない。ただ時折痛みを和らげ、突き進むだけだ。
-
-念のため、私の衛生兵にはロリポップがもう数本あってもいいかもしれない。あれはIFAKの中に入っているはずだから、もしいくつか見つけたら、また我々に取引のチャンスが巡ってくるだろう。"
-Home Collection	ホームコレクション
-"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
-
-My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
-
-Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	"ナイフの収集もさることながら、武器の収集とは、真に価値あるものとそうでないものを見極める芸術である。
-
-私の自宅のコレクションは、1500年代のマスケット銃から1990年代のライフルまで多岐にわたるが、それ以降のものは好ましくない。 今のところ、コレクションは150丁以上あると思う。中でも最も珍しいのは、1985年の休暇旅行で密かに持ち帰った数丁のトルコ製リボルバー式ショットガンだろう。
-
-現在は、サプレッサーが一体型になった銃に注力しているが、なかなか見つからない。特に東洋製の1丁に目をつけているのだが、なかなか手に入らない。"
-Everyman's Right	すべての人の権利
-"I recently took a hike out to the Border Zone and collected some mushrooms.
-
-In Finland, we have Everyman’s Rights, which grant us the right to use nature regardless of who owns or occupies the area. It’s probably the best law we have.
-
-However, I have to admit that sometimes I step into a grey area and collect stuff that isn't just mushrooms. For example, a few months ago, I found a fallen Border Zone sign in a ditch. Since it was covered in leaves and dirt, I figured it belonged to nature which makes it part of Everyman’s Rights in my mind.
-
-Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	"先日、ボーダーゾーンまでハイキングに出かけ、キノコをいくつか採ってきました。
-
-フィンランドには「万人の権利」という制度があり、土地の所有者や占有者が誰であろうと、自然を利用する権利が認められています。これはおそらく、フィンランドで最も素晴らしい法律でしょう。
-
-とはいえ、時にはグレーゾーンに足を踏み入れ、キノコ以外のものを拾ってしまうこともあるのは認めざるを得ません。例えば数ヶ月前、溝の中に倒れた「ボーダーゾーン」の標識を見つけました。葉や土で覆われていたので、もう自然の一部になったのだと思い、私の考えでは「万人の権利」の対象になると判断しました。
-
-この標識は素敵な装飾品ですが、私の好みとしては少し派手すぎます。あなたならこれを気に入ってくれそうな気がします。ちょっとした物々交換ができるかもしれませんが、安物で手放すつもりはありません。"
-Hitman	ヒットマン
-"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
-
-Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
-
-Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	"エリア05には、「パニッシャー」と呼ばれる男がいる。彼はフィンランドの犯罪組織出身で、ある大手バイカーギャングの取り立て屋だという噂もある。
-
-時折、この男が現れて、自分で作り上げた借金の返済を要求してくるんだ。 普段なら、こういう道化どもは玄関先で撃ち殺すところだが、こいつは鉄のようにタフだ。パニッシャーとその手下たちは最近、警察のバンを盗んだらしく、今では軽装甲車まで手に入れている。
-
-この茶番劇に終止符を打たなければならない。つまり、俺には殺し屋が必要なんだ。こいつの首か、死んだ証拠になる何かを持って来い。そうすれば、俺の隠れ家の鍵をやる。"
+Airdrop	エアドロップ
+Tutorial Crate	チュートリアル・クレート
+Electric Box	電動ボックス
+Medical Cabinet	メディカルキャビネット
+Office Cabinet	オフィス用キャビネット
+Cabinet	キャビネット
+Corpse	死体
+Bandit Corpse	盗賊の死体
+Crate Military	木箱（軍用）
+Crate Special	クレート（スペシャル）
+Wooden Crate	木箱
+Garbage	ゴミ
+Fireplace	たき火
+Freezer	冷凍庫
+Fridge	冷蔵庫
+Fusebox	ヒューズボックス
+Locker	ロッカー
+Mailbox	メールボックス
+Nightstand	ナイトスタンド
+Boxes	箱
+Stove	コンロ
+Furniture	家具
+Furnitures	家具
+Bed (Civilian)	ベッド（一般）
+Bed C.	ベッド C.
+Bed (Nomad)	ベッド（ノマド）
+Bed N.	ベッド N.
+Cabinet (Medical)	キャビネット（医療）
+Cabinet M.	キャビネット M.
+Cabinet (Office)	キャビネット（オフィス）
+Cabinet. 0	キャビネット 0.
+Cabinet (Wood)	キャビネット（木製）
+Cabinet W.	キャビネット W.
+Carpet (Persian)	カーペット（ペルシャ絨毯）
+Carpet P.	カーペット P.
+Carpet (Rag)	カーペット（ラグ）
+Carpet R.	カーペット R.
+Chair (Office)	椅子（オフィス）
+Chair O.	椅子 O.
+Chair (School)	チェア（学校）
+Chair S.	椅子 S.
+Sun Chair	サンチェア
+S. Chair	S.チェア
+Crate (Military)	木箱（軍用）
+Crate M.	木箱 M.
+Crate (Special)	クレート（スペシャル）
+Crate S.	クレート S.
+Cupboard	食器棚
+C. Board	C. 棚
+Curtain (Long)	カーテン（ロング）
+Curtain L.	カーテン・L.
+Curtain (Mini)	カーテン（ミニ）
+Curtain M.	カーテン・M.
+Dartboard	ダーツボード
+D. Board	D. ボード
+N. Stand	N. スタンド
+Painting (Lake)	絵画（湖）
+Painting L.	絵画 L.
+Pallet	パレット
+Poster (Posture)	ポスター（姿勢）
+Poster P.	ポスター P.
+Rack (Coat)	ラック（コート用）
+Rack C.	ラックC.
+Rya (Maria)	リイヤ（マリア）
+Rya M.	リイヤ M.
+Shelf (Metal)	棚（金属製）
+Shelf M.	棚・M.
+Shelf (Wall)	棚（壁掛け）
+Shelf W.	棚・W.
+Shelf (Wood)	棚（木製）
+Sign (Border Zone)	標識（境界区域）
+Sign BZ.	標識 BZ.
+Sofa (Leather)	ソファ（本革）
+Sofa L.	ソファ L。
+Stool (Military)	スツール（軍用）
+Stool M.	便 M.
+Stool (Padded)	スツール（クッション付き）
+Stool P.	便
+Table (Cabin)	テーブル（客室）
+Table C.	テーブルC。
+Table (Canteen)	テーブル（食堂用）
+Table (Kitchen)	テーブル（キッチン用）
+Table K.	表K.
+Table (Office)	テーブル（オフィス用）
+Table. O	テーブル O
+Target Stand	ターゲットスタンド
+Target S.	ターゲット・S
+Television	テレビ
+TV	テレビ
+Trolley (Short)	トロリー（ショート）
+Trolley S.	トロリー・S
+Trolley (Tall)	トロリー（背の高いタイプ）
+Trolley T.	トロリー・T。
+Weapon Display	武器展示
+Weapon D.	武器D。
 Trader Event	トレーダーイベント
 Dynamic Event	ダイナミック・イベント
 Special Event	特別イベント
@@ -656,6 +196,38 @@ This is the last event of Early Access [Build 1]. The events and story will cont
 この電波はラジオ放送に干渉しており、一般的な周波数帯すべてで受信できる。
 
 これはアーリーアクセス [ビルド 1] の最後のイベントです。イベントとストーリーは今後のビルドでも続きます。"
+Inventory	所持品
+Primary	小学校
+Secondary	セカンダリ
+Vital	バイタル
+Task Notes empty	タスクのメモは空です
+Task Notes not available (Tutorial)	タスクノートは利用できません（チュートリアル）
+Map not equipped	マップが装備されていません
+Map not usable (Vostok)	マップは使用不可（ボストーク）
+Casette Player not equipped	カセットプレーヤーは搭載されていません
+Casette Player power 0%, recharge player	カセットプレーヤーのバッテリー残量 0%、プレーヤーを充電してください
+Casette Player empty, insert casette	カセットプレーヤーにカセットが入っていません。カセットを入れてください。
+Override Ambient Music [ON]	BGMの上書き [ON]
+Override Ambient Music [OFF]	BGMの上書き [OFF]
+Sleep	睡眠
+Level 2	レベル2
+Level 3	レベル3
+Level 4	レベル4
+Level 5	レベル5
+Heat required	加熱が必要
+Workbench required	ワークベンチが必要です
+Shelter required	シェルターが必要
+Start Input	入力を開始
+Stop Input	入力を停止
+Reset Input	入力をリセット
+Start Delivery	配送を開始する
+Stop Delivery	配達停止
+Delivered	納品済み
+CBRN	CBRN
+Overweight	肥満
+Explosion	爆発
+Fall	秋
+Day	日
 Common	コモン
 Rare	レア
 Legendary	レジェンダリー
@@ -712,7 +284,7 @@ Sauna Hat	サウナ用帽子
 S. Hat	S. ハット
 Hoodie (Border Zone)	フーディー（ボーダーゾーン）
 Hoodie BZ.	フーディー BZ.
-Hoodie B.	フーディー・B.
+Hoodie B.	フーディー・B。
 Hoodie (Gray)	フーディ（グレー）
 Hoodie	フーディ
 M62 Jacket	M62ジャケット
@@ -722,7 +294,7 @@ Santa J.	サンタ・J
 Winter Jacket (Blue)	冬用ジャケット（ブルー）
 Winter Jacket	冬用ジャケット
 Winter Jacket (Red)	ウィンタージャケット（赤）
-Winter J.	ウィンター・J.
+Winter J.	ウィンター J。
 Jeans (Black)	ジーンズ（ブラック）
 Jeans	ジーンズ
 Hiking Pants	ハイキングパンツ
@@ -769,7 +341,7 @@ Cigs	タバコ
 Cigars	葉巻
 Coffee	コーヒー
 Coffee (Brewed)	コーヒー（ドリップ）
-C. Brewed	C. 醸造
+C. Brewed	C. ドリップ
 Fish Soup (Cooked)	魚のスープ（調理済み）
 F. Soup (Cooked)	F. スープ（調理済み）
 F. Soup	F. スープ
@@ -806,7 +378,7 @@ Salty Liq.	塩味のリキッド
 Snus	スヌース
 Soda (Lemon)	ソーダ（レモン）
 Soda	ソーダ
-Soda L.	ソーダ・L.
+Soda L.	ソーダ・L。
 Sugar	砂糖
 Water Bottle	水筒
 Water	水
@@ -844,21 +416,21 @@ Vostok Symphony	ボストーク交響楽団
 Casette Player	カセットプレーヤー
 C. Player	C. プレイヤー
 Coffeemaster	コーヒーマスター
-C. Master	C. 修士
+C. Master	C. マスター
 Cooking Station	調理ステーション
-C. Station	C. 駅
+C. Station	C. ステーション
 Hotplate	ホットプレート
 Inverter	インバータ
 Narva	ナルヴァ
 Polaris	ポラリス
 Fish	魚
 Fishing	釣り
-Bream	鯛
+Bream	タイ
 Fishing Rod	釣り竿
 F. Rod	F. ロッド
 Perch	スズキ
 Pike	パイク
-Roach	ゴキブリ
+Roach	ローチ
 Grenade	手榴弾
 Helmet	ヘルメット
 Police Helmet (IIIA)	警察用ヘルメット（IIIA）
@@ -874,9 +446,9 @@ Attic K.	アティック・K
 Bunker Key	バンカー・キー
 Bunker K.	バンカー・K
 Cellar Key	セラー・キー
-Cellar K.	セラーK.
+Cellar K.	セラーK。
 Classroom Key	教室の鍵
-Class. K.	クラスK
+Class. K.	クラスK。
 Gymnasium Key	体育館の鍵
 Gym. K.	ジム・K
 Tunnel Key	トンネルキー
@@ -891,6 +463,7 @@ Lore	伝承
 Cat	猫
 Oil Sample	石油サンプル
 Oil S.	オイル・S.
+Patient Report	患者報告
 P. Report	P. 報告書
 Heal	癒す
 Spray	スプレー
@@ -903,7 +476,7 @@ Balm	バーム
 Bandage	包帯
 Bandage (Improvised)	包帯（即席）
 Cold Medicine	風邪薬
-C. Med.	医学博士
+C. Med.	C.薬。
 Deodorant	デオドラント
 Deodora.	デオドラ。
 Gum	ガム
@@ -936,30 +509,30 @@ D. Tape	D. テープ
 Happy Stove	ハッピー・ストーブ
 H. Stove	H. ストーブ
 Jerry Can	ジェリー缶
-Jerry C.	ジェリー・C.
+Jerry C.	ジェリー・C。
 Lumber	木材
 Map	地図
 Map (Tactical)	地図（戦術用）
 T. Map	T. 地図
 Matches	試合
-Mat.	マテ。
+Mat.	マッ。
 Mattress	マットレス
 Mess Kit	食器セット
-Nails	ネイル
+Nails	釘
 Oil Filter	オイルフィルター
 O. Filter	O. フィルター
 Pillow	枕
-Rags	ぼろ
+Rags	布切れ
 Sleeping_Bag	寝袋
 Sleeping Bag	寝袋
 S. Bag	S. バッグ
 Sticks	棒
 Tackle Box	タックルボックス
-Tackle B.	タックルB.
+Tackle B.	タックルB。
 Toilet Paper	トイレットペーパー
 T. Paper	T. ペーパー
 Toolbox	ツールボックス
-Water Lock	水封
+Water Lock	ウォーターロック
 W. Lock	W. ロック
 Weapon Repair Kit	武器修理キット
 Repair Kit	修理キット
@@ -969,13 +542,13 @@ LVPC (Winter)	LVPC（冬）
 Fishing Vest	フィッシングベスト
 F. Vest	F. ベスト
 Weapon	武器
-Mag.	修士（Mag.）
+Mag.	弾倉。
 KA-12 Magazine	KA-12マガジン
 KA-M Magazine	KA-Mマガジン
-KAS-74U Magazine	KAS-74U 弾倉
+KAS-74U Magazine	KAS-74U マガジン
 C1911 Magazine	C1911マガジン
-G7 Magazine	G7マガジン
-KAR-21 Magazine (.223)	KAR-21 弾倉（.223）
+G7 Magazine	Glockマガジン
+KAR-21 Magazine (.223)	KAR-21 マガジン（.223）
 KAR-21 Magazine (.308)	KAR-21 弾倉（.308）
 KAR-21 Barrel (.308)	KAR-21 銃身（.308）
 KAR-21 Barrel	KAR-21 銃身
@@ -991,19 +564,114 @@ PM5 Magazine	PM5マガジン
 MP7 Magazine	MP7 マガジン
 P3 Magazine	P3マガジン
 RK Magazine	RKマガジン
-VSD Magazine	VSDマガジン
+VSD Magazine	SVDマガジン
 SS Magazine	SSマガジン
 Ammo	弾薬
 Attachment	添付ファイル
 Hybrid	ハイブリッド
 Kobra	コブラ
-Leopard	ヒョウ
+Leopard	レオパルド
 Micro	マイクロ
 Monster	モンスター
 Thor	トール
-Fire [Ignite]	火 [点火]
-Fire [Matches not equipped]	火 [マッチを持っていない]
-Fire [Extinguish]	火 [消火]
+Compatibility	互換性
+Selected	選択
+Press key to bind...	キーを押して割り当ててください...
+Forward	次へ
+Backward	戻る
+Left	左
+Right	その通り
+Crouch	クラウチ
+Jump	ジャンプ
+Sprint	スプリント
+Lean Left	左寄り
+Lean Right	右に傾く
+Draw Primary	プライマリの描画
+Draw Secondary	セカンダリを描画
+Draw Knife	引き鉋
+Draw Grenade 1	手榴弾1を投げる
+Draw Grenade 2	手榴弾を投げる 2
+Raise Weapon	武器を構える
+Lower Weapon	武器を下げる
+Aim	目的
+Canted Aim	傾斜した照準
+Fire	射撃
+Reload	再読み込み
+Ammo Check	弾薬確認
+Firemode	射撃モード
+Inspect Weapon	武器を点検する
+Prepare Insert	挿入の準備
+Insert Cartridge	カートリッジを挿入してください
+Interact	交流する
+Place	場所
+Decor Mode	デコレーションモード
+Flashlight	懐中電灯
+NVG	NVG
+Laser	レーザー
+Rail Movement	レールの動き
+Secondary Optic	二次光学系
+Interface	インターフェース
+Rotate Item	アイテムを回転
+Fast Transfer	高速転送
+Fast Equip	即装備
+Fast Drop	ファスト・ドロップ
+Left Mouse Button	マウスの左ボタン
+Right Mouse Button	マウスの右ボタン
+Middle Mouse Button	マウスの中ボタン
+Mouse Wheel Up	マウスホイールを上にスクロール
+Mouse Wheel Down	マウスホイールを下にスクロール
+Mouse Thumb Button 1	マウスの親指ボタン 1
+Mouse Thumb Button 2	マウスの親指ボタン 2
+UI Scaling	UIの拡大縮小
+Loading...	読み込み中...
+Skip Intro [SPACE]	イントロをスキップ [スペース]
+All save files deleted	保存されたファイルがすべて削除されました
+Character died	キャラクターが死亡しました
+Menu	メニュー
+Intro	はじめに
+Tutorial	チュートリアル
+Tutorial Exit	チュートリアルの終了
+Death	死
+Template	テンプレート
+shaders	シェーダー
+Shelter	シェルター
+Cabin	キャビン
+Attic	屋根裏部屋
+Classroom	教室
+Tent	テント
+Bunker	バンカー
+Area 05	エリア05
+Village	村
+Highway	高速道路
+School	学校
+Border Zone	国境地帯
+Outpost	前哨基地
+Minefield	地雷原
+Vostok	ボストーク
+Apartments	アパート
+Terminal	ターミナル
+Trader	トレーダー
+Generalist	ジェネラリスト
+Doctor	医師
+Gunsmith	ガンスミス
+Driver	ドライバー
+Grandma	おばあちゃん
+Shaman	シャーマン
+Fisherman	漁師
+Scientist	科学者
+Bandit	バンディット
+Guards	警備員
+Military	軍隊
+Punisher	パニッシャー
+Neutral	中立
+Overcast	曇り
+Rain	雨
+Storm	嵐
+Generic	一般
+Wood	木材
+Metal	金属
+Concrete	コンクリート
+Rock	ロック
 New Furniture Added [Catalog]	新しい家具を追加しました [カタログ]
 Boss Killed	ボスを倒した
 Cat Rescued	猫が救助された
@@ -1011,101 +679,11 @@ Cat Vital Activated	猫のバイタル有効
 Cat Died	猫が死んでしまった
 You have been spotted!	発見されました！
 Player Returned	プレイヤーが戻ってきた
-Airdrop	エアドロップ
-Tutorial Crate	チュートリアル・クレート
-Electric Box	電動ボックス
-Medical Cabinet	メディカルキャビネット
-Office Cabinet	オフィス用キャビネット
-Cabinet	キャビネット
-Corpse	死体
-Bandit Corpse	盗賊の死体
-Crate Military	木箱（軍用）
-Crate Special	クレート（スペシャル）
-Wooden Crate	木箱
-Garbage	ゴミ
-Fireplace	たき火
-Freezer	冷凍庫
-Fridge	冷蔵庫
-Fusebox	ヒューズボックス
-Locker	ロッカー
-Mailbox	メールボックス
-Nightstand	ナイトスタンド
-Boxes	箱
-Stove	コンロ
-Furniture	家具
-Furnitures	家具
-Bed (Civilian)	ベッド（一般）
-Bed C.	ベッド C.
-Bed (Nomad)	ベッド（ノマド）
-Bed N.	ベッド N.
-Cabinet (Medical)	キャビネット（医療）
-Cabinet M.	キャビネット M.
-Cabinet (Office)	キャビネット（オフィス）
-Cabinet. 0	キャビネット 0.
-Cabinet (Wood)	キャビネット（木製）
-Cabinet W.	キャビネット W.
-Carpet (Persian)	カーペット（ペルシャ絨毯）
-Carpet P.	カーペット P.
-Carpet (Rag)	カーペット（ラグ）
-Carpet R.	カーペット R.
-Chair (Office)	椅子（オフィス）
-Chair O.	椅子 O.
-Chair (School)	チェア（学校）
-Chair S.	椅子 S.
-Sun Chair	サンチェア
-S. Chair	S.チェア
-Crate (Military)	木箱（軍用）
-Crate M.	木箱 M.
-Crate (Special)	クレート（スペシャル）
-Crate S.	クレート S.
-Cupboard	食器棚
-C. Board	C. 棚
-Curtain (Long)	カーテン（ロング）
-Curtain L.	カーテン・L.
-Curtain (Mini)	カーテン（ミニ）
-Curtain M.	カーテン・M.
-Dartboard	ダーツボード
-D. Board	D. ボード
-N. Stand	N. スタンド
-Painting (Lake)	絵画（湖）
-Painting L.	絵画 L.
-Pallet	パレット
-Poster (Posture)	ポスター（姿勢）
-Poster P.	ポスター P.
-Rack (Coat)	ラック（コート用）
-Rack C.	ラックC.
-Rya (Maria)	リイヤ（マリア）
-Rya M.	リイヤ M.
-Shelf (Metal)	棚（金属製）
-Shelf M.	棚・M.
-Shelf (Wall)	棚（壁掛け）
-Shelf W.	棚・W.
-Shelf (Wood)	棚（木製）
-Sign (Border Zone)	標識（境界区域）
-Sign BZ.	標識 BZ.
-Sofa (Leather)	ソファ（本革）
-Sofa L.	ソファ L.
-Stool (Military)	スツール（軍用）
-Stool M.	便 M.
-Stool (Padded)	スツール（クッション付き）
-Stool P.	便
-Table (Cabin)	テーブル（客室）
-Table C.	表C.
-Table (Canteen)	テーブル（食堂用）
-Table (Kitchen)	テーブル（キッチン用）
-Table K.	表K.
-Table (Office)	テーブル（オフィス用）
-Table. O	表 O
-Target Stand	ターゲットスタンド
-Target S.	ターゲット・S
-Television	テレビ
-TV	テレビ
-Trolley (Short)	トロリー（ショート）
-Trolley S.	トロリー・S
-Trolley (Tall)	トロリー（背の高いタイプ）
-Trolley T.	トロリー・T
-Weapon Display	武器展示
-Weapon D.	武器D。
+Indoors	屋内
+Indoor	屋内
+Mine	地雷
+Lure	ルアー
+(Military)	（軍事）
 Unload	アンロード
 Clear Chamber	チャンバーをクリア
 Unequip	装備解除
@@ -1140,8 +718,430 @@ Rescue Cat	保護猫
 Cat is eating, do not disturb	猫が食事中なので、邪魔しないでください
 Fuel Tank [89%]	燃料タンク [89%]
 Feed cat:	猫に餌をあげる：
-Indoors	屋内
-Indoor	屋内
-Mine	地雷
-Lure	ルアー
-(Military)	（軍事）
+Easy	簡単
+Intermediate	中級
+Hard	難しい
+Tutorial Task 1 (Simple)	チュートリアル課題1（初級）
+"Let's start with something simple.
+
+Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery item in your inventory:
+1. Press Start Delivery
+2. Select Canned Pea Soup
+3. Press Complete"	"まずは簡単なことから始めましょう。
+
+「アイテム」掲示板に行き、「缶詰のピーマンスープ」を受け取ってください。配達アイテムをインベントリに入れたら：
+1. 「配達開始」を押す
+2. 「缶詰のピーマンスープ」を選択する
+3. 「完了」を押す"
+Tutorial Task 2 (Complex)	チュートリアル課題2（上級）
+"Now let's add some complexity.
+
+Some tasks might require crafting-based delivery items, like this task requires Meatballs (Cooked), which can only be obtained through crafting.
+
+Go to the Items billboard, grab Canned Meatballs, Mess Kit and Water Bottle. You are also going to need matches, you can find those from the Equipment billboard.
+
+Next, find the Meatballs (Cooked) recipe from the Tools UI using the Crafting button. When you look at the recipe, it has a proximity requirement Heat, meaning you will need a heat source to unlock that recipe.
+
+In order to craft the Meatballs (Cooked), do the following:
+1. Go to the Firepot, equip matches and light the fire
+2. Open the Meatballs (Cooked) recipe and notice the heat symbol turned green
+3. Press Start Input
+4. Select Mess Kit, Canned Meatballs and Water Bottle
+5. Press Craft
+
+Now you have successfully crafted the required task item and you can complete the task."	"それでは、もう少し難易度を上げてみましょう。
+
+タスクによっては、クラフトで作ったアイテムが必要になる場合があります。例えば、このタスクではミートボール缶(調理済)が必要ですが、これはクラフトでしか入手できません。
+
+「アイテム」パネルを開き、「ミートボールの缶詰」、「食事キット」、「水筒」を選択してください。また、「マッチ」も必要になります。これは「装備」パネルから入手できます。
+
+次に、「ツール」UIの「クラフト」ボタンを使用して、ミートボール(調理済)のレシピを探してください。レシピを確認すると、「熱」という近接要件が表示されています。つまり、このレシピをアンロックするには熱源が必要になります。
+
+ミートボール缶(調理済)をクラフトするには、以下の手順に従ってください：
+1. ファイアポットに行き、マッチを装備して火をつけます
+2. ミートボール缶(調理済)のレシピを開き、熱のシンボルが緑色に変わっていることを確認します
+3. 「入力開始」を押します
+4. 食事キット、ミートボールの缶詰、水筒を選択します
+5. 「クラフト」を押します
+
+これで、タスクに必要なアイテムのクラフトに成功し、タスクを完了できます。"
+Tutorial Task 3 (Furniture)	チュートリアル課題3（家具）
+"There's one more thing to learn.
+
+Some items that you might receive from crafting, trading or tasks are Furniture items, which are used for shelter customization.
+
+Once you receive a Furniture item, it will be stored to a separate inventory called the Furniture Catalog, so it doesn't appear in your normal inventory.
+
+Furniture Catalog is only accessible when you are inside of shelters, but you will always receive a message ""New Furniture Added [Catalog]"" when the catalog is updated.
+
+Try getting new furniture by completing this task:
+1. Press Start Delivery
+2. Select Potato
+3. Press Complete
+4. Notice the message ""New Furniture Added [Catalog]""
+
+You can learn more about shelter customization and Furniture Catalog from the tutorial billboard called Shelters."	"もう一つ、知っておくべきことがあります。
+
+クラフトや取引、クエストなどで入手できるアイテムの中には、「家具」と呼ばれるものがあり、これらはシェルターのカスタマイズに使用されます。
+
+家具を入手すると、「家具カタログ」と呼ばれる別のインベントリに保管されるため、通常のインベントリには表示されません。
+
+「家具カタログ」にアクセスできるのはシェルター内のみですが、カタログが更新されると常に「新しい家具が追加されました [カタログ]」というメッセージが表示されます。
+
+次のクエストを完了して、新しい家具を手に入れてみましょう：
+1. 「配達開始」を押す
+2. 「ジャガイモ」を選択する
+3. 「完了」を押す
+4. 「新しい家具が追加されました [カタログ]」というメッセージが表示されるのを確認する
+
+シェルターのカスタマイズや家具カタログについて詳しくは、「シェルター」というチュートリアル看板をご覧ください。"
+Prime Time	プライムタイム
+"Well, well... you must be that guy the Nomads found last week. Didn't they put you up in that old tiny cabin? We used to get drunk and play poker there sometimes, but that place always gave me a headache, I'm pretty sure there's asbestos in the ceiling or something.
+
+Nevertheless, you’ve arrived at the prime time, because I’m out of toilet paper and the situation is getting urgent.
+
+Speaking of prime time, I just finished repairing some electronics and I have this fully functional TV ready to go. Mark my words, at the moment, this is the only working TV in Area 05.
+
+If you bring me that toilet paper, the TV is yours. It has all the channels pre-configured, vibrant colors and prime time shows are running as we speak."	"おや、おや……君は先週ノマドたちが拾ってきたあの男か。あの古くてちっぽけな小屋に泊まらせてもらったんじゃないのか？ 俺たちも昔はそこで酔っ払ってポーカーをやったりしたもんだが、あの場所にはいつも頭痛がしたよ。天井にアスベストか何かが入ってるに違いない。
+
+ともあれ、君は絶好のタイミングでやって来たな。というのも、俺のトイレットペーパーが切れてしまって、事態が切迫しているところだからだ。
+
+「絶好のタイミング」と言えば、ちょうど電子機器の修理を終えたところで、完全に機能するテレビが使える状態だ。言っておくが、今のところエリア05で動いているテレビはこれしかない。
+
+トイレットペーパーを持ってきてくれれば、そのテレビは君のものだ。チャンネルはすべて設定済みで、鮮やかな色合い、そして今まさにプライムタイムの番組が放送中だ。"
+Bad Habits	悪い習慣
+"A while ago, I visited the Doctor in that abandoned school nearby. He told me that I should cut out all my ""bad habits,"" but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"少し前、近所の廃校にいるドクターのところへ行って来たんだ。あいつは俺に「悪い癖」を全部やめるべきだなんて言ってたけど、あのクソジジイ自身もタバコを吸ってるんだから、どうでもいいよ！
+
+君はたぶん、ピンチの時にミントの錠剤を舐めるだけの、いわゆる現代のヒッピーの一人なんだろうけど、もしこれを見つけたら、パックを1、2箱とマッチも持ってきてくれ。"
+Backpains	腰痛
+"When you get to my age, everything hurts and your body is like those French cars, constant issues and in need of repair.
+
+I usually don't complain, but my fucking back is killing me. Every morning when I wake up, it feels like a gunshot directly to my spine. It won't be long until you're just like me and those cursed French cars.
+
+If you happen to find something that could help with my back, I would highly appreciate it."	"この年になると、体のあちこちが痛むし、体なんてまるであのフランス車みたいだ。いつも何かしらのトラブルがあって、修理が必要なんだ。
+
+普段は文句なんて言わないんだけど、このクソみたいな背中の痛みには本当に参ってる。毎朝目が覚めるたびに、背骨に銃弾を撃ち込まれたような痛みが走るんだ。君もそう遠くないうちに、俺やあの忌々しいフランス車と同じようになるだろうね。
+
+もし、俺の背中の痛みに効くようなものを見つけたら、ぜひ教えてほしい。本当に助かるよ。"
+Coffee Reserve	コーヒーの備蓄
+"There are few things in life that are non-negotiable. There's morning coffee at 6:00, afternoon coffee at 12:00 and dinner coffee at 18:00. When manual labor is involved, coffee breaks in between are also mandatory and basically prescribed by law.
+
+If you want to remain alive here in Area 05, the constant flow of caffeine should be your primary goal.
+
+As a matter of fact, I should probably increase my strategic coffee reserve a bit, since the consumption lately has been above average."	"人生において、絶対に譲れないものはいくつかある。朝6時のコーヒー、昼12時のコーヒー、そして18時のコーヒーだ。肉体労働を伴う場合は、その合間のコーヒーブレイクも必須であり、事実上法律で定められているようなものだ。
+
+エリア05で生き延びたいなら、絶え間ないカフェインの摂取を最優先すべきだ。
+
+実のところ、最近の消費量が平均を上回っているため、戦略的なコーヒーの備蓄を少し増やしておいたほうが良さそうだ。"
+Sweaty Business	汗だくの仕事
+"The days out here are long and sweaty, especially in the summertime.
+
+Since air conditioning, showers and running water are just a faint memory from the past, it's important that you maintain personal hygiene and odor control for the sake of the others. You might wonder why not just go wash in the lake or sea? Well, let me tell you why that's a bad idea.
+
+After the initial explosion, these waters are far from refreshing and there's something nasty going on. I have seen so many dead fish lately that my ass is not going into that water, that's for sure and I highly recommend the same for you.
+
+It’s a sweaty business, but we just have to figure out some alternative methods to stay fresh."	"この辺りの日々は長く、汗だくになる。特に夏場はそうだ。
+
+エアコンやシャワー、水道水なんて、もはや遠い過去の思い出に過ぎないから、他の人たちのためにも、身だしなみを整え、体臭を気をつけることが大切だ。「湖や海で洗えばいいじゃないか」と思うかもしれない。でも、なぜそれが良くないのか、その理由を教えてあげよう。
+
+最初の爆発の後、この水は爽やかとは程遠く、何か不気味なことが起きている。最近、死んだ魚をあまりにも多く目にして、俺のケツがあの水に入ることは絶対にない。君にも同じことを強く勧めるよ。
+
+汗だくになる仕事だが、爽やかさを保つための別の方法を考え出すしかない。"
+Handyman	便利屋
+"You know that old lady who still lives near the Border Zone? Well, she's blind and no matter how many times I have warned her about electronics, she keeps fiddling around with different buttons and then everything gets messed up!
+
+Now there's a broken stove, the freezer has melted and apparently the radio is once again ""misbehaving."" On top of this, during a storm last week, a tree fell directly onto her porch roof and it has now somewhat collapsed, so we are dealing with a clusterfuck of issues.
+
+I'm getting tired of being her handyman, but I promised to help this one last time."	"国境地帯の近くに今も住んでいるあの年配の女性を知っているか？彼女は目が見えないのだが、電子機器について何度注意しても、いつもいろんなボタンをいじり回して、結局すべてをめちゃくちゃにしてしまう！
+
+今やコンロは壊れ、冷凍庫の中身は溶け出し、どうやらラジオもまた「調子がおかしい」らしい。さらに先週の嵐で、木が彼女のポーチの屋根に直撃して、屋根が一部崩れてしまった。だから今、私たちは山のような問題を抱えているんだ。
+
+彼女の便利屋役をするのにうんざりしてきたけど、今回が最後だと約束したから手伝うつもりだ。"
+Six Pack	シックスパック
+"Every man has a weak spot, mine is warm cheap beer, especially on a frosty winter morning.
+
+When winter comes, you have to keep them warm and close to your body. It may sound gross, but trust me, you don't want to drink a wheat sorbet when you're roaming around in the cold. Armpits or crotch are the best spots to keep them warm, you radiate a lot of heat from there and you can keep an entire six-pack warm if you can manage them right.
+
+Speaking of six-packs, I could definitely take one for my road trip, six for the road, as they say."	"男には誰しも弱点があるものだが、僕の場合は温かい安ビールだ。特に、凍えるような冬の朝にはたまらない。
+
+冬が来たら、ビールは温かく、体に密着させておく必要がある。ちょっと気持ち悪い話に聞こえるかもしれないが、信じてほしい。寒い中を歩き回っている時に、小麦のシャーベットみたいなビールを飲みたいなんて思わないはずだ。 温めておくのに最適な場所は脇の下か股の間だ。そこからはかなりの熱が放出されるし、うまくやれば六本パックを丸ごと温めておくこともできる。
+
+六本パックといえば、ロードトリップに一パック持って行きたいな。「旅には六本」って言うしな。"
+Old Friend	旧友
+"Want to hear military stories?
+
+Back in the day, when I was doing my conscript service, we still had a few of those KP-31's lying around in the warehouse.
+
+One range day, we actually got a chance to test those. We were not allowed to use full-auto with those drum mags, but when it was my turn, I couldn't resist. I changed the fire mode, squeezed the trigger and 71 rounds of pure magic came out of my barrel.
+
+Sometimes I still hear that ""prat-prat-prat"" sound faintly in my dreams. Damn, I miss that gun. Someday I will once again reunite with my magical old friend, someday..."	"軍隊のエピソードを聞いてみたいか？
+
+昔、俺が徴兵制の兵役をしていた頃、倉庫にはまだKP-31が数丁転がっていたんだ。
+
+ある射撃訓練の日、ついにそれを試す機会が巡ってきた。ドラムマガジンを使った全自動射撃は禁止されていたが、自分の番が回ってきた時、我慢できなかった。 射撃モードを切り替え、引き金を引くと、銃身から71発の「魔法」が飛び出した。
+
+今でも夢の中で、あの「パッ、パッ、パッ」という音がかすかに聞こえてくることがある。ああ、あの銃が恋しい。いつか、あの魔法のような古き友と再会できる日を、いつか…"
+Road Trip	ロードトリップ
+"I'm tired of this shithole. I'm planning to take a one-way road trip to the North and leave all this misery behind.
+
+Have you ever visited the North? What a shame, that place has remained totally unaffected by all this bullshit. It's like nothing ever happened there. I'm talking about pristine nature, wildlife and crystal-clear rivers for catching those juicy arctic trouts.
+
+I would be already driving there, but those filthy Bandits stole my car battery and a bunch of other items from the trunk, so I'm still stuck here.
+
+Maybe you could help me with this? Bring back my stolen items and I have something special for you."	"このクソみたいな場所にはもううんざりだ。北へ向かう片道だけのロードトリップに出かけて、この惨めな日常をすべて置き去りにするつもりだ。
+
+北の方へ行ったことはあるか？　残念なことに、あそこはこうしたクソみたいな事態の影響をまったく受けていないんだ。まるで何も起きていないかのようだ。手つかずの自然や野生動物、そしてジューシーな北極マスを釣れる透き通った川のことだよ。
+
+今頃もう向かっているところなんだけど、あのクソ野郎のバンディットどもが車のバッテリーやトランクの中の荷物を盗んでいったせいで、まだここに足止めされてるんだ。
+
+君、手助けしてくれないか？盗まれた品を取り戻してくれれば、特別なものをあげるよ。"
+Homemade	手作り
+"When I reach the North, I’m going to surprise the Shaman since he’s a big fan of my homemade sugar wine.
+
+I already had a large batch for him, but since my trip was delayed, I had to make sure the product didn't spoil in my cellar. After a few ""product-quality"" sips, I got carried away and started drinking and now I have nothing left.
+
+I'm going to need a new batch, but I don't have time right now, so perhaps you can cook it. The recipe is really simple, but do not add too much sugar or you're going to ruin the whole thing. Keep it simple, keep it homemade.
+
+If you can make this new batch for me, I will consider giving you a key to my attic, which would be quite an upgrade from your small asbestos cabin."	"北に着いたら、シャーマンを驚かせてやろうと思う。彼は私の手作りの砂糖酒が大好きなんだ。
+
+彼のために大量に用意していたんだけど、旅の予定が遅れたせいで、地下室で腐らないように気を使わなきゃいけなかったんだ。品質チェックと称して少し味見しただけだったのに、ついつい飲みすぎてしまって、もう残ってないんだ。
+
+新しい分を作る必要があるんだけど、今は時間が取れないから、君が作ってくれないかな。作り方はすごく簡単だけど、砂糖を入れすぎると台無しになっちゃうから気をつけて。シンプルに、手作り感を出してくれ。
+
+もし新しい分を作ってくれたら、屋根裏部屋の鍵をあげることを考えてみるよ。君のあの小さなアスベスト小屋より、ずいぶんマシな住処になるはずだ。"
+Nasty Draft	厄介なドラフト
+"I haven't seen you here before, you must be a new patient?
+
+Welcome to my improvised clinic. It ain't much, but with these limited resources, it's the best that we've got.
+
+I used to teach health education for elementary students in this school. It was a long time ago, but I have good memories of this place. The building is old and has seen better days, but I'm sure it can be restored when things settle down.
+
+Nowadays, my current concern is mostly related to heat insulation, since our windows are pretty much gone. Especially in winter, it's a bit chilly for my patients. I think an emergency solution would just require some duct tape to keep the nasty draft under control."	"ここであなたを見かけたことがありませんね。新しい患者さんでしょうか？
+
+私の即席の診療所へようこそ。大したものではありませんが、限られた資源の中では、これが精一杯なのです。
+
+私は以前、この学校で小学生に保健の授業をしていました。ずいぶん昔のことですが、この場所には良い思い出があります。 建物は古くて、かつての面影はありませんが、事態が落ち着けばきっと修復できるはずです。
+
+最近は、窓がほとんどないため、断熱が最大の悩みです。特に冬場は、患者さんにとって少し寒すぎるかもしれません。応急処置としては、ダクトテープでひどい隙間風を抑えるのが一番だと思います。"
+Steady Hands	確かな手
+"I do have to admit that sometimes my hand-eye coordination and fine motor skills are a bit rusty.
+
+Especially in surgeries and working with a scalpel, I often get the shakes and small mistakes here and there are unavoidable. I think it's mostly related to my age, but I have found that smoking a few cigars before the operation keeps my hands more steady.
+
+As a doctor, I do not recommend smoking, but desperate times require desperate actions.
+
+If you happen to find a few cigars somewhere, perhaps you could deliver those to me? But don't tell the Generalist, I just told him to stop smoking, so we don't create any controversial guidance. Let's keep this between me and you."	"正直なところ、手と目の協調性や細かい動作の器用さが、少し鈍ってきていることは認めざるを得ません。
+
+特に手術やメスを扱う際、手が震えてしまうことが多く、あちこちで小さなミスが避けられません。これは主に年齢のせいだと思いますが、手術前に葉巻を数本吸うと、手がより安定することを発見しました。
+
+医師として喫煙は推奨しませんが、非常時には非常の手段も必要です。
+
+もしどこかで葉巻を数本見つけたら、私に届けてもらえませんか？ただし、ジェネラリストには内緒にしておいてください。彼には禁煙するように言ったばかりなので、物議を醸すような指針を作らないようにしたいのです。これは私とあなただけの秘密にしておきましょう。"
+Bookworm	本の虫
+"Being a doctor around here is a cyclic job. What I mean by this is that there are days where it's extremely busy and days where no soul is in sight.
+
+On those boring, empty days, I often spend my time reading. The reading material around here is quite random, you cannot really pick what you read, so you must learn to adapt to the available literature.
+
+I actually like to read all kinds of old books, no matter the subject. Whether it's children's stories or religion, I always find it interesting. I think I'm a bit of a bookworm by nature."	"この辺りで医者をしていると、仕事は波があります。つまり、とてつもなく忙しい日もあれば、人影ひとつない日もあるということですね。
+
+そんな退屈で閑散とした日には、よく読書をして時間を過ごします。この辺りの読み物はかなりランダムで、読みたい本を選べるわけではないので、手に入る本に順応する術を身につけなければなりません。
+
+実は私は、ジャンルを問わず、あらゆる種類の古い本を読むのが好きです。童話であれ宗教書であれ、いつも興味深く感じます。私は生まれつき、少し本好きなのかもしれません。"
+Dice Master	ダイスマスター
+"Me and the Generalist have known each other since we were kids. He's a grumpy old man for sure, but once you get to know him, he's somewhat tolerable.
+
+Just a few years ago, we often went fishing together, but that poor guy has multiple herniated disks, so fishing trips are no longer an option for him. We still have a few other common hobbies like horse races and gambling.
+
+Like you probably already guessed, only one of those is available nowadays, so our friendship is currently purely built on gambling with card and dice games. However, every time we play dice, he always magically wins and I'm starting to wonder if his dices are rigged somehow, since nobody is that lucky.
+
+You know what, if you happen to find one of those dice games, bring one for me. Next time we play, it's going to be on my set. That way, I can rule out the possibility of cheating and we'll see who the true dice master is."	"僕とジェネラリストは子供の頃から知り合いです。彼は間違いなく不機嫌なおじいさんだけど、一度親しくなれば、まあまあ付き合える相手です。
+
+ほんの数年前まではよく一緒に釣りに行っていましたが、あいつは椎間板ヘルニアをいくつも患っているせいで、もう釣りに行くなんて無理な話。それでも、競馬やギャンブルなど、他にも共通の趣味がいくつかあります。
+
+もうお察しの通り、今やそのうちの一つしか楽しめないため、私たちの友情は現在、カードやサイコロを使ったギャンブルだけで成り立っています。しかし、サイコロゲームをするたびに、彼は魔法のように勝ってしまいます。誰もそこまで運が良いはずがないから、彼のサイコロは何か仕掛けがあるんじゃないかと思い始めています。
+
+ねえ、もしそういうサイコロゲームを見つけたら、僕にも一つ持ってきてくれませんか。次に遊ぶ時は、僕のセットでやるつもりです。そうすれば、不正の可能性を排除できるし、誰が真のサイコロの達人なのかがわかるでしょう。"
+Night Surgery	夜間診療
+"Even though I'm not specialized in surgery, I find myself quite skillful working with organs and human anatomy.
+
+Daytime operations are a walk in the park for me when there's enough light, but at night, it gets more tricky. Operating in dim lighting or sometimes even in total darkness relies more on hand-feel and intuition, but it's always riskier for the patient.
+
+Some sort of bright headlamp would probably solve this issue until the power grid is fully restored. I have tried to find one, but unfortunately no luck so far."	"私は外科手術の専門家ではありませんが、臓器や人体の解剖学に関しては、かなり手際よく扱えることに気づきました。
+
+日中の手術は、十分な光があれば朝飯前ですが、夜になると話は別です。薄暗い場所、時には完全な暗闇での手術は、手触りや直感に頼る部分が多くなりますが、患者さんにとっては常にリスクが高くなります。
+
+電力網が完全に復旧するまでは、明るいヘッドランプのようなものがあればこの問題は解決するでしょう。探してみたのですが、残念ながら今のところ見つかっていません。"
+Infections	感染症
+"You know what one of the most common issues is here? It's infections.
+
+When you have poor hygiene and uncleaned wounds, it's a perfect combo for bacteria and germs. Whenever there's a patient with any kind of cuts or scrapes, there's pretty much always an infection by default.
+
+I do still have some medical supplies left for infections, but those will run out sooner or later. Once that happens, the mortality rate here is going to take a dark turn."	"ここで最もよくある問題の一つが何か、ご存知ですか？それは感染症です。
+
+衛生状態が悪く、傷が清潔に保たれていないと、細菌や病原菌にとって絶好の環境となります。切り傷や擦り傷を負った患者がいる場合、ほぼ間違いなく感染症を引き起こします。
+
+感染症用の医療用品はまだ少し残っていますが、遅かれ早かれ底をついてしまうでしょう。そうなれば、ここの死亡率は深刻な事態を招くことになるでしょう。"
+Hypovolemia	血液量減少
+"Hydration is extremely important. Just last week, I found a few pale Nomads who were curled up in the forest with low blood pressure.
+
+After taking a closer look, the reason was simpler than expected. Correct, it was dehydration and a thing that we doctors call hypovolemia.
+
+Hypovolemia is basically a loss of both salt and water content in your body and if it gets really bad, then you're screwed like those Nomads and met with a hypovolemic shock. Fortunately, the treatment for these symptoms is really simple, you just stick a saline solution into a peripheral vein and you're good to go.
+
+Whenever you find those saline bottles, always remember to bring them to me and we will surely find some deal that could work for both of us."	"水分補給は極めて重要です。つい先週も、森の中で丸まっていて、血圧が低下している青白いノマドたちを何人か見つけました。
+
+よく調べてみると、その原因は予想以上に単純でした。その通り、脱水症状と、私たち医師が「循環血液量減少」と呼ぶ状態でした。
+
+循環血液量減少とは、基本的に体内の塩分と水分が共に失われる状態のことです。これがひどくなると、あのノマドたちのようにお手上げ状態になり、血液量減少性ショックに陥ってしまいます。幸いなことに、この症状の治療法は実に簡単です。末梢静脈に生理食塩水を注入すれば、それで事足ります。
+
+もしあの生理食塩水のボトルを見つけたら、必ず私に持ってきてください。きっと双方にとってメリットのある取引が成立するはずです。"
+Mouth Organ	ハーモニカ
+"Music is the best antidepressant there is. Before my medical studies, I actually used to play the saxophone and horns in our navy orchestra and traveled across the country with those fancy golden pipes. Quite a career shift indeed.
+
+I tried playing my old instruments a few years ago, but you need healthy lungs for those, so I couldn't even get a sound out of the damn things anymore. My passion for mouth organs and musical skills is still there, but I think the cigars have done their damage already.
+
+It's never too late to start with an easier instrument, but I would need something really tiny that is suitable for an old cigar man like me. Maybe in the next life."	"音楽は、この世で最高の抗うつ剤です。医学を学ぶ前は、実は海軍のオーケストラでサックスやホルンを演奏していて、あの豪華な金色の管楽器を携えて全国を回っていました。まさに、人生の大転換でしたね。
+
+数年前に昔の楽器を吹いてみたのですが、あれには肺が丈夫でないとダメなようで、もうあの忌々しい楽器からは音さえ出せなくなっていました。ハーモニカへの情熱や音楽の腕前は今も健在ですが、葉巻のせいですでに手遅れになってしまったようです。
+
+もっと簡単な楽器なら今から始めても遅くはないのですが、私のような年老いた葉巻好きには、本当に小さなものがいいでしょう。まあ、来世の話ですね。"
+"When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
+
+I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
+
+Maybe you could search the gymnasium, the place where the kids used to play and climb ropes. It should be there somewhere."	"事態が発生して間もなく、私たちの病院は一時間足らずで受け入れ上限を超えてしまいました。実際に、学校の体育館を緊急トリアージ会場として転用せざるを得なかったほどです。
+
+あの場所に、私が作成した初期の患者報告書の一つを置き忘れたような気がします。記憶力が以前ほどではなくなってしまったので、その報告書があれば記憶を呼び起こすのに役立つはずです。その報告書に記された症状や具体的な詳細が、だんだん曖昧になってきています。
+
+子供たちが遊んだり、ロープを登ったりしていた体育館を探してみてはいかがでしょうか。きっとどこかにあるはずです。"
+Substance	内容
+"When those tank railcars exploded and the initial fires started, I’m certain there was something else involved besides just standard industrial chemicals.
+
+Acrylonitrile is definitely part of the compound, just as the officials claimed, but I have a theory that it’s only one piece of the puzzle. When burning, acrylonitrile releases toxic gases such as hydrogen cyanide and is classified as a C1 carcinogen, but let me explain my theory.
+
+These kinds of organic compounds have extremely pungent odors. Since we are talking about massive volumes, the smell should have been everywhere, but it wasn’t. On top of this, acrylonitrile alone shouldn’t have such long-lasting effects on the environment and water sources.
+
+This means we are looking at some kind of manufactured substance that is far more toxic. I know it’s just a theory, but there’s only one way to find out, we need to find the source.
+
+Since we know it was delivered in oil tank cars, I would visit the nearest oil terminal and check their samples to see if they really contain oil or something else. These oil sample containers are easy to spot, they look like golden milk jugs and there should be plenty of them."	"あのタンク車が爆発し、最初の火災が発生した際、そこには単なる一般的な工業用化学物質以外にも何かが関わっていたと私は確信しています。
+
+当局が主張した通り、アクリロニトリルは間違いなくその化合物の一部ですが、私はそれがパズルのほんの一部に過ぎないという仮説を持っています。アクリロニトリルは燃焼するとシアン化水素などの有毒ガスを発生させ、C1級発がん性物質に分類されていますが、私の仮説について説明させてください。
+
+この種の有機化合物は極めて刺激的な臭いを放ちます。膨大な量だったはずですから、その臭いは至る所に充満していたはずですが、実際にはそうではありませんでした。さらに、アクリロニトリルだけでは、環境や水源にこれほど長期にわたる影響を与えるはずがありません。
+
+つまり、我々が直面しているのは、はるかに毒性の強い何らかの合成物質であるということです。 単なる仮説に過ぎないことは承知していますが、真相を突き止める方法は一つしかありません。発生源を突き止める必要があるのです。
+
+それが石油タンク車で運ばれてきたことは分かっていますので、私は最寄りの石油ターミナルを訪れ、サンプルを検査して、本当に石油が含まれているのか、それとも何か別の物質が含まれているのかを確認します。これらの石油サンプルの容器はすぐに見分けがつきます。黄金色のミルクジャグのような形をしており、そこら中にたくさんあるはずです。"
+Bloodsuckers	吸血鬼
+"Ain't that something? A new man and a new rifle, always a welcome sight.
+
+Forget the small talk. You want something reliable and cheap? Sure, but a few favors first, since you don't climb the ranks immediately around here. Where should we start? There are definitely some supply runs you could do, but you look a bit flimsy, so maybe you need something simple first. Let me think a moment.
+
+Okay, I have an idea. You know in the summertime, those flying suckers start to piss me off. You would assume those bastards would not get into these bunkers, but trust me, they do. Every single summer, there's buzzing around the clock.
+
+Here's a suitable task for you. Find me something to get rid of those bloodsuckers and then we'll talk more."	"すごいな。新しい仲間と新しいライフル、いつだって歓迎だ。
+
+世間話はいい。信頼できて安いものが欲しいのか？　もちろんいいが、まずはいくつか頼み事を聞いてくれ。このあたりでは、いきなり出世なんてできないからな。どこから始めようか？　物資の調達任務ならいくつかあるが、お前はちょっと頼りない感じだから、まずは簡単な仕事からにしたほうがいいかもな。ちょっと考えさせてくれ。
+
+よし、いい案がある。夏になると、あの飛ぶクソ野郎たちが本当にうざくなるんだ。あいつらがこのバンカーの中に入ってくるなんて思わないだろうが、信じてくれ、入ってくるんだ。毎年夏になると、一日中ブーンと飛び回ってる。
+
+君にぴったりの仕事がある。あの吸血鬼どもを退治する手段を見つけてくれ。それができたら、また話をしよう。"
+Warm Meal	温かい食事
+"As a military man, I like to stick with rations, but even I have a limit to eating the same porridge and dry snacks multiple weeks in a row.
+
+Back in the day, these rations at least had proper canned food, but nowadays most rations only have some nasty meat paste and modern outdoor food in them. I'm not putting that synthetic shit in my mouth, that's for sure.
+
+It has been a while since I have seen a proper warm meal. Maybe this is your moment to shine and our professional relationship could take the next step forward. Maybe a mess kit filled with proper Finnish pea soup with a bit of mustard on the side, would do the trick."	"軍人として、私は通常、軍用食にこだわっているが、同じお粥や乾いたスナックを何週間も続けて食べるのには、私にも限界がある。
+
+昔は、こうした軍用食には少なくともまともな缶詰が入っていたが、近年のものは、不味い肉ペーストや現代風のアウトドア食品ばかりが入っている。そんな人工的なクソみたいなものを口にするつもりはない、それは確かだ。
+
+まともな温かい食事を口にしてから、ずいぶん時間が経ってしまった。今こそ君が活躍する時かもしれないし、我々の仕事上の関係も次の段階へ進むかもしれない。フィンランド風のエンスープをたっぷり盛り、横にマスタードを添えた食器セットがあれば、それで十分だろう。"
+Nordic Trade	ノルディック・トレード
+"Even though I don't understand the Swedes, they do three things right. They have a good navy, good cars and good tobacco products. There's still something wrong with them, they seem too happy and social. It's definitely unnatural.
+
+Don't get me wrong, they are good neighbors and such, but I don't know. Maybe they are too rich and always well-dressed or maybe it's just the hockey thing.
+
+However, in the spirit of good neighbors, there's a fair trade we could do. I call this one ""switching the desserts"". Bring me some of those Swedish delicacies and I'll give you some Finnish ones. It's a deal where there are only winners, a Nordic trade in a way without any rivalry."	"スウェーデン人のことはよく分からないけれど、彼らには三つの長所がある。海軍が優秀で、車も良くて、タバコ製品も素晴らしい。それでもどこかおかしい。彼らはあまりにも幸せそうで、社交的すぎる。間違いなく不自然だ。
+
+誤解しないでほしい。彼らは良い隣人だし、そういう面もあるんだけど、どうにも分からない。たぶん、彼らは裕福すぎていつも身なりがきちんとしているからか、あるいは単にホッケーのせいなのかもしれない。
+
+とはいえ、良き隣人としての精神で、私たちにもできる公平な取引がある。私はこれを「デザートの交換」と呼んでいる。あのスウェーデンのごちそうをいくつか持ってきてくれれば、フィンランドのものを差し上げる。これは勝者しかいない取引であり、ある意味、ライバル意識のない北欧の貿易と言えるだろう。"
+Big Blades	ビッグ・ブレイズ
+"You can tell a lot about a man based on the blade he carries. If you ever see a guy with a small pocket knife, you don't want to be around those people.
+
+When it comes to blades, the rule is the bigger, the better. I myself prefer machetes that are suitable for wood chopping and clearing obstructions in a dense forest. Even though we're not in a jungle here, you still need a big blade since there will be times when you'll wish you had one.
+
+Collecting blades is also an elegant hobby. I do have quite an extensive collection, but there are still a few big blades that I'm missing."	"その人がどんな刃物を持っているかを見れば、その人物について多くのことがわかるものだ。もし小さなポケットナイフを携帯している男を見かけたら、そんな連中には近づかないほうがいい。
+
+刃物に関しては、「大きければ大きいほど良い」というのが鉄則だ。 私自身は、薪割りや密林での障害物除去に適したマチェテを好んでいる。ここはジャングルではないが、大きな刃物があればよかったと後悔する場面が必ずあるのだから、やはり大きな刃物が必要だ。
+
+刃物の収集もまた、洗練された趣味だ。私はかなりのコレクションを持っているが、まだ手に入れていない大きな刃物がいくつかある。"
+Ammo Delivery	弾薬の配送
+"You will find most of the ammo types in my stock. Whether you're into squirrel hunting or human hunting, there are options for all.
+
+When it comes to ammo, 7.62x39 and .223 are the best sellers by a big margin. Sometimes there are still those annoying customers who seek something more exotic, but it's hard to maintain a stock for every weird request.
+
+Maybe you could do a quick ammo delivery run for me? We could expand the portfolio a bit, so to speak."	"当店では、ほとんどの種類の弾薬を扱っています。リス狩りであれ、人間狩りであれ、あらゆるニーズにお応えできる品揃えです。
+
+弾薬に関しては、7.62x39と.223が圧倒的に売れ筋です。たまに、もっと珍しいものを求める厄介な客もいますが、ありとあらゆる奇妙なリクエストに対応できる在庫を維持するのは難しいですね。
+
+ちょっと弾薬の買い出しを手伝ってくれませんか？ そうすれば、いわば品揃えを少し広げられるかもしれません。"
+Weapon Delivery	武器の配送
+"I used to do a lot of business on the other side of the border, but nowadays my networks have dried up.
+
+This has led to a situation where I'm constantly out of stock of those Eastern weapons. It's a damn shame, since I always find their products more reliable compared to the Western ones. You see, in the West, we have an incurable disease of making everything tactical. We add rails, dingles and dongles to everything and the end result is a mess that has too many moving parts.
+
+Since I no longer have those networks active, a quick weapon delivery from the other side would be highly appreciated."	"以前は国境の向こう側で多くの取引をしていたが、最近は人脈が途絶えてしまった。
+
+その結果、東側の武器は常に在庫切れの状態だ。西側の製品に比べて、東側の製品の方がずっと信頼性が高いと常々思っているだけに、本当に残念なことだ。というのも、西側には、何でもかんでも「タクティカル」にしようとする、治らない病があるからだ。 何にでもレールやアタッチメント、ドングルを付けまくるせいで、結局は可動部が多すぎてごちゃごちゃした代物になってしまう。
+
+もうあちらとのつながりも途絶えてしまったので、国境の向こうから武器を早急に送ってもらえると大変助かる。"
+Medic	医療従事者
+"In the military, there are only two roles that matter, a rifleman and a medic. Leaders, artillery and other support elements are just extra fluff in my opinion.
+
+I actually have a personal medic just for myself. He’s a skillful Nomad and we have a simple tactic if an attack phase is needed. In our tactic, I shoot and if I get shot, he puts a fentanyl lollipop in my mouth and the train keeps moving. It’s never stop the madness, just occasional pain relief and push forward.
+
+My medic could actually use a few extra lollipops just in case. I think those can be found inside IFAKs, so if you happen to find a couple of those, there’s a deal opportunity for us once again."	"軍隊において重要な役割は、ライフル兵と衛生兵の二つだけだ。指揮官や砲兵、その他の支援部隊は、私の考えでは単なる飾り物に過ぎない。
+
+実は、私専用の専属衛生兵がいる。彼は腕利きのノマドで、攻撃フェイズが必要になった時のためのシンプルな戦術を二人で決めている。 その戦術とは、私が撃ち、もし撃たれたら、彼が私の口にフェンタニルのロリポップを放り込み、戦列はそのまま前進し続けるというものだ。狂気を止めることなど決してない。ただ時折痛みを和らげ、突き進むだけだ。
+
+念のため、私の衛生兵にはロリポップがもう数本あってもいいかもしれない。あれはIFAKの中に入っているはずだから、もしいくつか見つけたら、また我々に取引のチャンスが巡ってくるだろう。"
+Home Collection	ホームコレクション
+"Knife collection is one thing, but weapon collection is an art form where you separate the wheat from the chaff.
+
+My personal home collection starts from 1500s-era muskets all the way to 1990s rifles, but anything beyond that is distasteful. I think I have more than 150 guns so far in my collection. The most exotic ones are probably a few Turkish revolver shotguns that I smuggled back from a holiday trip in 1985.
+
+Currently, my main focus is on integrally suppressed pieces, but I've had a hard time finding those. There is especially one Eastern one that I have my eyes on, but it keeps hiding from me."	"ナイフの収集もさることながら、武器の収集とは、真に価値あるものとそうでないものを見極める芸術である。
+
+私の自宅のコレクションは、1500年代のマスケット銃から1990年代のライフルまで多岐にわたるが、それ以降のものは好ましくない。 今のところ、コレクションは150丁以上あると思う。中でも最も珍しいのは、1985年の休暇旅行で密かに持ち帰った数丁のトルコ製リボルバー式ショットガンだろう。
+
+現在は、サプレッサーが一体型になった銃に注力しているが、なかなか見つからない。特に東洋製の一丁に目をつけているのだが、なかなか手に入らない。"
+Everyman's Right	すべての人の権利
+"I recently took a hike out to the Border Zone and collected some mushrooms.
+
+In Finland, we have Everyman’s Rights, which grant us the right to use nature regardless of who owns or occupies the area. It’s probably the best law we have.
+
+However, I have to admit that sometimes I step into a grey area and collect stuff that isn't just mushrooms. For example, a few months ago, I found a fallen Border Zone sign in a ditch. Since it was covered in leaves and dirt, I figured it belonged to nature which makes it part of Everyman’s Rights in my mind.
+
+Even though this sign is a nice decorative piece, it’s a bit too colorful for my taste. You seem like a man who would appreciate this. Maybe we can do a small trade for it, but I'm not giving this away for anything cheap."	"先日、ボーダーゾーンまでハイキングに出かけ、キノコをいくつか採ってきました。
+
+フィンランドには「万人の権利」という制度があり、土地の所有者や占有者が誰であろうと、自然を利用する権利が認められています。これはおそらく、フィンランドで最も素晴らしい法律でしょう。
+
+とはいえ、時にはグレーゾーンに足を踏み入れ、キノコ以外のものを拾ってしまうこともあるのは認めざるを得ません。例えば数ヶ月前、溝の中に倒れた「ボーダーゾーン」の標識を見つけました。葉や土で覆われていたので、もう自然の一部になったのだと思い、私の考えでは「万人の権利」の対象になると判断しました。
+
+この標識は素敵な装飾品ですが、私の好みとしては少し派手すぎます。あなたならこれを気に入ってくれそうな気がします。ちょっとした物々交換ができるかもしれませんが、安物で手放すつもりはありません。"
+Hitman	ヒットマン
+"In Area 05, there’s a guy we call the Punisher. He comes from the Finnish criminal underworld, some say he’s a debt collector for one of the major biker gangs.
+
+Every now and then, this guy steps in and asks for fucking payments for some self-made debt. Usually, I would shoot these clowns at the front door but this one is as tough as nails. Punisher and his minions also recently stole a police van, so they even have a lightly armored vehicle now.
+
+Somebody has to put an end to this clown show, so I basically need a hitman. Bring me his head or something else to prove that he’s dead and I will give you the keys to my storage bunker."	"エリア05には、「パニッシャー」と呼ばれる男がいる。彼はフィンランドの犯罪組織出身で、ある大手バイカーギャングの取り立て屋だという噂もある。
+
+時折、この男が現れて、自分で作り上げた借金の返済を要求してくるんだ。 普段なら、こういう道化どもは玄関先で撃ち殺すところだが、こいつは鉄のようにタフだ。パニッシャーとその手下たちは最近、警察のバンを盗んだらしく、今では軽装甲車まで手に入れている。
+
+この茶番劇に終止符を打たなければならない。つまり、俺には殺し屋が必要なんだ。こいつの首か、死んだ証拠になる何かを持って来い。そうすれば、俺の隠れ家の鍵をやる。"
+Fire [Ignite]	火 [点火]
+Fire [Matches not equipped]	火 [マッチを持っていない]
+Fire [Extinguish]	火 [消火]

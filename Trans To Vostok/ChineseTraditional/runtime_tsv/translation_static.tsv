@@ -1,6 +1,4 @@
 location	parent	name	type	text	translation
-Scenes/Menu	.	Compatibility	Label	Compatibility	相容性
-UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	介面縮放 [即將推出]
 UI/Interface	Equipment/Hints	Knife	Label	Knife	刀
 UI/Interface	Equipment/Hints	Grenade_A	Label	Grenade	手榴彈
 UI/Interface	Equipment/Hints	Grenade_B	Label	Grenade	手榴彈
@@ -606,3 +604,5 @@ Deal can be accepted when Deal Meter is within green area which means Offer Valu
 
 當交易計量器位於綠色區域內時，即可接受該交易，這表示出價金額等於或高於請求金額加上稅金。"
 UI/Interface	Deal/Panel	Info		Deal Meter	交易計量表
+Scenes/Menu	.	Compatibility	Label	Compatibility	相容性
+UI/Settings	Settings/Row_01/Image	Image	Label	UI Scaling [Coming Soon]	介面縮放 [即將推出]

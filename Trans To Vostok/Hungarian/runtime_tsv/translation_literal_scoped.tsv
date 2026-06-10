@@ -1,4 +1,192 @@
 location	parent	name	type	text	translation
+UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	A szakember visszatért a faluba
+UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
+
+After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Doktor egy gyógyszerekre szakosodott kereskedő, aki a 05-ös körzetben egy elhagyatott iskolaépületben működtet egy rögtönzött rendelőt.
+
+Miután „jólét-ellenőrzés” céljából meglátogatta a nagymamát, a doktor visszatér a klinikára, és készen áll a sérültek ellátására."
+UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Bővebben
+UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1 nap
+UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10 nap múlva
+UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Kereskedői esemény
+UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Esemény helye:
+UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Falu
+UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Esemény lehetősége:
+UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / az adott régióban
+UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Életerő
+UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Energia
+UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Szomjúság
+UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Mentál
+UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Testhő
+UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Oxigén
+UI/HUD	Info	Map	Label	Shelter (Area 05)	Menedék (05-ös körzet)
+UI/Interface	Container/Header	Label	Label	Container	Konténer
+UI/Interface	Equipment/Header	Label	Label	Equipment	Felszerelés
+UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Hátizsák
+UI/Interface	Equipment/Hints	Rig	Label	Rig	Mellény
+UI/Interface	Equipment/Hints	Helmet	Label	Helmet	Sisak
+UI/Interface	Equipment/Hints	Head	Label	Head	Fej
+UI/Interface	Equipment/Hints	Torso	Label	Torso	Törzs
+UI/Interface	Equipment/Hints	Legs	Label	Legs	Lábak
+UI/Interface	Equipment/Hints	Belt	Label	Belt	Öv
+UI/Interface	Equipment/Hints	Feet	Label	Feet	Lábfejek
+UI/Interface	Equipment/Hints	Hands	Label	Hands	Kezek
+UI/Interface	Equipment/Hints	Matches	Label	Matches	Gyufa
+UI/Interface	Equipment/Hints	Light	Label	Light	Világítás
+UI/Interface	Equipment/Hints	NVG	Label	NVG	Éjjellátó
+UI/Interface	Equipment/Hints	Time	Label	Time	Idő
+UI/Interface	Equipment/Hints	Map	Label	Map	Térkép
+UI/Interface	Equipment/Hints	Player	Label	Player	Lejátszó
+UI/Interface	Character/Header	Label	Label	Character	Karakter
+UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Életerő
+UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Energia
+UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Szomjúság
+UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Mentál
+UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Testhőmérséklet
+UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Macska
+UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	Nap
+UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Menedékek
+UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	Feladatok
+UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	Küldetések
+UI/Interface	Tools/Header	Label	Label	Tools	Eszközök
+UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	Események
+UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	Készítés
+UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	Közelségi
+UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	Feladatok
+UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	Feladatok listája üres
+UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	Feladatok listája nem elérhető (Kiképzés)
+UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	Világ térkép
+UI/Interface	Tools/Map	Hint	Label	Map not equipped	Térkép nincs felszerelve
+UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	Térkép nincs felszerelve (Vostok)
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
+Zoom = [SCROLL]"	"Mozgás = [LMB]
+Nagyítás = [SCROLL]"
+UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	Jelenlegi hely
+UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	Kazetta lejátszó
+UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	Kazetta lejátszó nincs felszerelve
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	Ez a kazetta szerzői joggal védett zeneszámokat tartalmaz (tartalomra vonatkozó figyelmeztetés)
+UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	Kazetta neve
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	Háttérzene felülírása [BE]
+UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	Háttérzene felülírása [BE]
+UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	Nomádok
+UI/Interface	Trader/Header	Label	Label	Trader	Kereskedő
+UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	Kínálat
+UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	Feladatok
+UI/Interface	Trader/Panel/Stats	Name	Label	Name:	Név:
+UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	Kereskedő
+UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	Adó:
+UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	Feladatok:
+UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	Kínálat frissülése:
+UI/Interface	Deal/Header	Label	Label	Deal	Csere
+UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	Érték + adó (€)
+UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	Az ajánlat értéke(€)
+UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	Mégsem
+UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	Elfogadás
+UI/Interface	Supply/Header	Label	Label	Supply	Kínálat
+UI/Interface	Tasks/Header	Label	Label	Tasks	Feladatok
+UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Bútor katalógus
+UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	A katalógus a karakteredhez van kötve, a halálod esetén a katalógusban szereplő tárgyak is elvesznek
+UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
+"	"Használat
+"
+UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
+"	"Felszerelés
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
+"	"Leszerelés
+"
+UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
+"	"Kitárazás
+"
+UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
+"	"Elosztás
+"
+UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
+"	"Vedd
+"
+UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
+"	"Alvás
+"
+UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
+"	"Áthelyezés
+"
+UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
+"	"Eldobás
+"
+UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
+"	"Megfogás
+"
+UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
+"	"Megsemmisítés
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
+"	"Eltávolítás [0]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
+"	"Eltávolítás [1]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
+"	"Eltávolítás [2]
+"
+UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
+"	"Eltávolítás [3]
+"
+UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Kávémester
+UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Fogyóeszköz
+UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Legendás
+UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	Olyan tárgyak, amelyeket a játékos a játék világában gyűjthet össze.
+UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	Felszerelés:
+UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	Elsődleges
+UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	Állapot:
+UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	Súly:
+UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	Érték:
+UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	Kaliber:
+UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	Sebzés:
+UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	Áthatolás:
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	1. szint
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	2. szint
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	3. szint
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	4. szint
+UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	5. szint
+UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	Védelem:
+UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	1. szint
+UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Kapacitás:
+UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Szigetelés:
+UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Életerő:
+UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Energia:
+UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Szomjúság:
+UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Mentál:
+UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Testhő:
+UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Kiegészítők:
+UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Erre jó:
+UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Kompatibilis:
+UI/Elements/Item	Details	Abbreviation	Label	Item	Tétel
+UI/Profiler	Panel/Margin	Label	Label	Profiler	Profilok
+UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	Bővebben
+UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	Recept neve
+UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	Bevitel:
+UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	Megkap:
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	Összeállítás
+UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	Készítés
+UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	Hív a kötelesség
+UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	Jegyzethez adás
+UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	Eltávolítás
+UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	Nehézség:
+UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	Könnyű
+UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
+
+You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"A múlt héten felkerestem az orvost a közeli elhagyatott iskolaépületben. Azt mondta, hogy szüntessem be az összes „rossz szokásomat”, de az a vén rohadék maga is cigizik, úgyhogy bassza meg!
+
+Valószínűleg te is azok közé a mai hippik közé tartozol, akik csak akkor nyalogatnak mentolos cukorkát, ha bajba kerülnek, de ha véletlenül találsz ilyet, vigyél magaddal egy-két csomagot és gyufát is."
+UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	Átadva:
+UI/Elements/Task	Margin/Elements	Output	Label	Receive:	Átvéve:
+UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
+→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ Ebből a feladatból lakberendezési tárgyakat kapsz
+→ A bútoraid a Bútor katalógusban találhatók [Dekorációs mód]"
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Teljesítés indítása
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Teljesítés leállítása
+UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Teljesítve
+UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Kész
 Scenes/Menu	Main/Buttons	New	Button	New game	Új játék
 Scenes/Menu	Main/Buttons	Load	Button	Load game	Játék betöltése
 Scenes/Menu	Main/Buttons	Tutorial	Button	Tutorial	Kiképzés
@@ -959,194 +1147,7 @@ Scenes/Death	Main/Buttons	Menu	Button	"Main Menu
 Scenes/Death	Main/Buttons	Quit	Button	"Quit
 "	"Kilépés
 "
-UI/HUD	Stats/Vitals/Elements/Health	Header	Label	Health	Életerő
-UI/HUD	Stats/Vitals/Elements/Energy	Header	Label	Energy	Energia
-UI/HUD	Stats/Vitals/Elements/Hydration	Header	Label	Hydration	Szomjúság
-UI/HUD	Stats/Vitals/Elements/Mental	Header	Label	Mental	Mentál
-UI/HUD	Stats/Vitals/Elements/Temperature	Header	Label	Body Temp	Testhő
-UI/HUD	Stats/Oxygen	Header	Label	Oxygen	Oxigén
-UI/HUD	Info	Map	Label	Shelter (Area 05)	Menedék (05-ös körzet)
-UI/Interface	Container/Header	Label	Label	Container	Konténer
-UI/Interface	Equipment/Header	Label	Label	Equipment	Felszerelés
-UI/Interface	Equipment/Hints	Backpack	Label	Backpack	Hátizsák
-UI/Interface	Equipment/Hints	Rig	Label	Rig	Mellény
-UI/Interface	Equipment/Hints	Helmet	Label	Helmet	Sisak
-UI/Interface	Equipment/Hints	Head	Label	Head	Fej
-UI/Interface	Equipment/Hints	Torso	Label	Torso	Törzs
-UI/Interface	Equipment/Hints	Legs	Label	Legs	Lábak
-UI/Interface	Equipment/Hints	Belt	Label	Belt	Öv
-UI/Interface	Equipment/Hints	Feet	Label	Feet	Lábfejek
-UI/Interface	Equipment/Hints	Hands	Label	Hands	Kezek
-UI/Interface	Equipment/Hints	Matches	Label	Matches	Gyufa
-UI/Interface	Equipment/Hints	Light	Label	Light	Világítás
-UI/Interface	Equipment/Hints	NVG	Label	NVG	Éjjellátó
-UI/Interface	Equipment/Hints	Time	Label	Time	Idő
-UI/Interface	Equipment/Hints	Map	Label	Map	Térkép
-UI/Interface	Equipment/Hints	Player	Label	Player	Lejátszó
-UI/Interface	Character/Header	Label	Label	Character	Karakter
-UI/Interface	Character/Vitals/Elements/Health	Header	Label	Health	Életerő
-UI/Interface	Character/Vitals/Elements/Energy	Header	Label	Energy	Energia
-UI/Interface	Character/Vitals/Elements/Hydration	Header	Label	Hydration	Szomjúság
-UI/Interface	Character/Vitals/Elements/Mental	Header	Label	Mental	Mentál
-UI/Interface	Character/Vitals/Elements/Temperature	Header	Label	Body Temp	Testhőmérséklet
-UI/Interface	Character/Vitals/Elements/Cat	Header	Label	Cat	Macska
-UI/Interface	Character/Stats/Elements/Day	Header	Label	Day	Nap
-UI/Interface	Character/Stats/Elements/Shelters	Header	Label	Shelters	Menedékek
-UI/Interface	Character/Stats/Elements/Tasks	Header	Label	Tasks	Feladatok
-UI/Interface	Character/Stats/Elements/Quests	Header	Label	Quests	Küldetések
-UI/Interface	Tools/Header	Label	Label	Tools	Eszközök
-UI/Interface	Tools/Buttons/Margin/Buttons	Events	Button	Events	Események
-UI/Interface	Tools/Buttons/Margin/Buttons	Crafting	Button	Crafting	Készítés
-UI/Interface	Tools/Crafting/Types/Margin/Buttons/Proximity/Margin/Icons	Hint	Label	Proximity	Közelségi
-UI/Interface	Tools/Buttons/Margin/Buttons	Notes	Button	Task Notes	Feladatok
-UI/Interface	Tools/Notes	Hint	Label	Task Notes empty	Feladatok listája üres
-UI/Interface	Tools/Notes	Hint	Label	Task Notes not available (Tutorial)	Feladatok listája nem elérhető (Kiképzés)
-UI/Interface	Tools/Buttons/Margin/Buttons	Map	Button	World Map	Világ térkép
-UI/Interface	Tools/Map	Hint	Label	Map not equipped	Térkép nincs felszerelve
-UI/Interface	Tools/Map	Hint	Label	Map not usable (Vostok)	Térkép nincs felszerelve (Vostok)
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Controls	Label	"Pan = [LMB]
-Zoom = [SCROLL]"	"Mozgás = [LMB]
-Nagyítás = [SCROLL]"
-UI/Interface	Tools/Map/Elements/Controls/Margin/Elements	Focus	Button	Focus map	Jelenlegi hely
-UI/Interface	Tools/Buttons/Margin/Buttons	Casette	Button	Casette Player	Kazetta lejátszó
-UI/Interface	Tools/Casette	Hint	Label	Casette Player not equipped	Kazetta lejátszó nincs felszerelve
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview	Warning	Label	This casette includes licenced music (Content warning)	Ez a kazetta szerzői joggal védett zeneszámokat tartalmaz (tartalomra vonatkozó figyelmeztetés)
-UI/Interface	Tools/Casette/Elements/Header/Panel/Margin/Preview/Casette/Margin	Name	Label	Casette Name	Kazetta neve
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [ON]	Háttérzene felülírása [BE]
-UI/Interface	Tools/Casette/Elements/Volume/Panel/Margin/Settings	Override	Button	Override Ambient Music [OFF]	Háttérzene felülírása [BE]
-UI/Interface	Tools/Buttons/Margin/Buttons	Nomads	Button	Nomads	Nomádok
-UI/Interface	Trader/Header	Label	Label	Trader	Kereskedő
-UI/Interface	Trader/Panel/Buttons	Supply	Button	Supply	Kínálat
-UI/Interface	Trader/Panel/Buttons	Tasks	Button	Tasks	Feladatok
-UI/Interface	Trader/Panel/Stats	Name	Label	Name:	Név:
-UI/Interface	Trader/Panel/Stats/Name	Value	Label	Trader	Kereskedő
-UI/Interface	Trader/Panel/Stats	Tax	Label	Tax:	Adó:
-UI/Interface	Trader/Panel/Stats	Tasks	Label	Tasks:	Feladatok:
-UI/Interface	Trader/Panel/Stats	Resupply	Label	Resupply:	Kínálat frissülése:
-UI/Interface	Deal/Header	Label	Label	Deal	Csere
-UI/Interface	Deal/Panel/Indicator	Request	Label	Request Value + Tax (€)	Érték + adó (€)
-UI/Interface	Deal/Panel/Indicator	Offer	Label	Offer Value (€)	Az ajánlat értéke(€)
-UI/Interface	Deal/Panel/Buttons	Reset	Button	Reset	Mégsem
-UI/Interface	Deal/Panel/Buttons	Accept	Button	Accept	Elfogadás
-UI/Interface	Supply/Header	Label	Label	Supply	Kínálat
-UI/Interface	Tasks/Header	Label	Label	Tasks	Feladatok
-UI/Interface	Catalog/Header	Label	Label	Furniture Catalog	Bútor katalógus
-UI/Interface	Catalog/Header	Warning	Label	Catalog is linked to your character, death will also destroy your catalog items	A katalógus a karakteredhez van kötve, a halálod esetén a katalógusban szereplő tárgyak is elvesznek
-UI/Interface	Context/Panel/Margin/Buttons	Use	Button	"Use
-"	"Használat
-"
-UI/Interface	Context/Panel/Margin/Buttons	Equip	Button	"Equip
-"	"Felszerelés
-"
-UI/Interface	Context/Panel/Margin/Buttons	Unequip	Button	"Unequip
-"	"Leszerelés
-"
-UI/Interface	Context/Panel/Margin/Buttons	Unload	Button	"Unload
-"	"Kitárazás
-"
-UI/Interface	Context/Panel/Margin/Buttons	Split	Button	"Split
-"	"Elosztás
-"
-UI/Interface	Context/Panel/Margin/Buttons	Take	Button	"Take
-"	"Vedd
-"
-UI/Interface	Context/Panel/Margin/Buttons	Sleep	Button	"Sleep
-"	"Alvás
-"
-UI/Interface	Context/Panel/Margin/Buttons	Transfer	Button	"Transfer
-"	"Áthelyezés
-"
-UI/Interface	Context/Panel/Margin/Buttons	Drop	Button	"Drop
-"	"Eldobás
-"
-UI/Interface	Context/Panel/Margin/Buttons	Place	Button	"Place
-"	"Megfogás
-"
-UI/Interface	Context/Panel/Margin/Buttons	Destroy	Button	"Destroy
-"	"Megsemmisítés
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_0	Button	"Remove [0]
-"	"Eltávolítás [0]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_1	Button	"Remove [1]
-"	"Eltávolítás [1]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_2	Button	"Remove [2]
-"	"Eltávolítás [2]
-"
-UI/Interface	Context/Panel/Margin/Buttons	Remove_3	Button	"Remove [3]
-"	"Eltávolítás [3]
-"
-UI/Interface	Tooltip/Panel/Margin/Elements	Title	Label	Coffeemaster	Kávémester
-UI/Interface	Tooltip/Panel/Margin/Elements	Type	Label	Consumable	Fogyóeszköz
-UI/Interface	Tooltip/Panel/Margin/Elements/Type	Rarity	Label	Legendary	Legendás
-UI/Interface	Tooltip/Panel/Margin/Elements	Info	Label	An item is an object within the game world that can be collected by a player.	Olyan tárgyak, amelyeket a játékos a játék világában gyűjthet össze.
-UI/Interface	Tooltip/Panel/Margin/Elements	Equipment	Label	Equipment:	Felszerelés:
-UI/Interface	Tooltip/Panel/Margin/Elements/Equipment	Value	Label	Primary	Elsődleges
-UI/Interface	Tooltip/Panel/Margin/Elements	Condition	Label	Condition:	Állapot:
-UI/Interface	Tooltip/Panel/Margin/Elements	Weight	Label	Weight:	Súly:
-UI/Interface	Tooltip/Panel/Margin/Elements	Value	Label	Value:	Érték:
-UI/Interface	Tooltip/Panel/Margin/Elements	Caliber	Label	Caliber:	Kaliber:
-UI/Interface	Tooltip/Panel/Margin/Elements	Damage	Label	Damage:	Sebzés:
-UI/Interface	Tooltip/Panel/Margin/Elements	Penetration	Label	Penetration:	Áthatolás:
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 1	1. szint
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 2	2. szint
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 3	3. szint
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 4	4. szint
-UI/Interface	Tooltip/Panel/Margin/Elements/Penetration	Value	Label	Level 5	5. szint
-UI/Interface	Tooltip/Panel/Margin/Elements	Protection	Label	Protection:	Védelem:
-UI/Interface	Tooltip/Panel/Margin/Elements/Protection	Value	Label	Level 1	1. szint
-UI/Interface	Tooltip/Panel/Margin/Elements	Capacity	Label	Capacity:	Kapacitás:
-UI/Interface	Tooltip/Panel/Margin/Elements	Insulation	Label	Insulation:	Szigetelés:
-UI/Interface	Tooltip/Panel/Margin/Elements	Health	Label	Health:	Életerő:
-UI/Interface	Tooltip/Panel/Margin/Elements	Energy	Label	Energy:	Energia:
-UI/Interface	Tooltip/Panel/Margin/Elements	Hydration	Label	Hydration:	Szomjúság:
-UI/Interface	Tooltip/Panel/Margin/Elements	Mental	Label	Mental:	Mentál:
-UI/Interface	Tooltip/Panel/Margin/Elements	Temperature	Label	Body Temp:	Testhő:
-UI/Interface	Tooltip/Panel/Margin/Elements	Nested	Label	Nested:	Kiegészítők:
-UI/Interface	Tooltip/Panel/Margin/Elements	Cures	Label	Cures:	Erre jó:
-UI/Interface	Tooltip/Panel/Margin/Elements/Subpanel/Margin/Elements	Compatible	Label	Compatible Items:	Kompatibilis:
-UI/Elements/Item	Details	Abbreviation	Label	Item	Tétel
-UI/Profiler	Panel/Margin	Label	Label	Profiler	Profilok
-UI/Elements/Recipe	Margin/Elements/Header	Show	Button	Show	Bővebben
-UI/Elements/Recipe	Margin/Elements/Header	Title	Label	Recipe Name	Recept neve
-UI/Elements/Recipe	Margin/Elements/Content	Input	Label	Input:	Bevitel:
-UI/Elements/Recipe	Margin/Elements/Content	Output	Label	Output:	Megkap:
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Input	Button	Start Input	Összeállítás
-UI/Elements/Recipe	Margin/Elements/Content/Buttons	Complete	Button	Craft	Készítés
-UI/Elements/Task	Margin/Elements	Title	Label	Duty Calls	Hív a kötelesség
-UI/Elements/Task	Margin/Elements/Title	Add	Button	Add to Notes	Jegyzethez adás
-UI/Elements/Task	Margin/Elements/Title	Remove	Button	Remove	Eltávolítás
-UI/Elements/Task	Margin/Elements	Difficulty	Label	Difficulty:	Nehézség:
-UI/Elements/Task	Margin/Elements/Difficulty	Value	Label	Easy	Könnyű
-UI/Elements/Task	Margin/Elements	Description	Label	"Last week I visited the Doctor in that abandoned school building nearby. He told me that I should cut all my ""bad habits"", but the old fucker smokes himself, so screw him!
-
-You're probably just one of those modern-day hippies who only licks mint pastilles when things get rough, but if you happen to find one of these, bring a pack or two and some matches as well."	"A múlt héten felkerestem az orvost a közeli elhagyatott iskolaépületben. Azt mondta, hogy szüntessem be az összes „rossz szokásomat”, de az a vén rohadék maga is cigizik, úgyhogy bassza meg!
-
-Valószínűleg te is azok közé a mai hippik közé tartozol, akik csak akkor nyalogatnak mentolos cukorkát, ha bajba kerülnek, de ha véletlenül találsz ilyet, vigyél magaddal egy-két csomagot és gyufát is."
-UI/Elements/Task	Margin/Elements	Input	Label	Deliver:	Átadva:
-UI/Elements/Task	Margin/Elements	Output	Label	Receive:	Átvéve:
-UI/Elements/Task	Margin/Elements	Hint	Label	"→ You will receive shelter furniture from this task
-→ Your furniture is located in Furniture Catalog [Decor Mode]"	"→ Ebből a feladatból lakberendezési tárgyakat kapsz
-→ A bútoraid a Bútor katalógusban találhatók [Dekorációs mód]"
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Start Delivery	Teljesítés indítása
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Stop Delivery	Teljesítés leállítása
-UI/Elements/Task	Margin/Elements/Buttons	Input	Button	Delivered	Teljesítve
-UI/Elements/Task	Margin/Elements/Buttons	Complete	Button	Complete	Kész
-UI/Elements/Event	Margin/Elements/Header	Title	Label	Generalist returns to Village	A szakember visszatért a faluba
-UI/Elements/Event	Margin/Elements/Content	Description	Label	"Doctor is a trader specialized in medicine and holds an improvised clinic inside abandoned school building in Area 05.
-
-After visiting the Grandma for an ""welfare check"", Doctor returns to this clinic and is ready to provide medical services for the injured ones."	"Doktor egy gyógyszerekre szakosodott kereskedő, aki a 05-ös körzetben egy elhagyatott iskolaépületben működtet egy rögtönzött rendelőt.
-
-Miután „jólét-ellenőrzés” céljából meglátogatta a nagymamát, a doktor visszatér a klinikára, és készen áll a sérültek ellátására."
-UI/Elements/Event	Margin/Elements/Header	Show	Button	Show	Bővebben
-UI/Elements/Event	Margin/Elements/Header	Day	Label	Day 1	1 nap
-UI/Elements/Event	Margin/Elements/Header	Status	Label	In 10 days	10 nap múlva
-UI/Elements/Event	Margin/Elements/Content	Type	Label	Trader event	Kereskedői esemény
-UI/Elements/Event	Margin/Elements/Content	Location	Label	Event location:	Esemény helye:
-UI/Elements/Event	Margin/Elements/Content/Location	Value	Label	Village	Falu
-UI/Elements/Event	Margin/Elements/Content	Possibility	Label	Event possibility:	Esemény lehetősége:
-UI/Elements/Event	Margin/Elements/Content/Possibility	Value	Label	~5% / map instance	~5% / az adott régióban
+UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Új bútorok hozzáadva [Katalógus]
 UI/HUD	Malfunction	Label	Label	Weapon Jammed | Press [Reload]	Fegyver meghibásodott | Nyomja meg a gombot [Újratöltés]
 UI/HUD	Tooltip	Label	Label	Interaction	Kölcsönhatás
 UI/HUD	Decor/Margin/Elements	Switch	Label	[RMB] = Rotation Mode	[RMB] = Forgatás
@@ -1188,4 +1189,3 @@ UI/Elements/Tooltip	Content/Panel/Margin/VBox	Hydration	Label	Hydration:	Szomjú
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Temperature	Label	Body Temp:	Testhő:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Cures	Label	Cures:	Erre jó:
 UI/Elements/Tooltip	Content/Panel/Margin/VBox	Compatibility	Label	Compatibility:	Kompatibilitás:
-UI/Elements/Message	Panel/Margin	Info	Label	✓  New Furniture Added [Catalog]	✓  Új bútorok hozzáadva [Katalógus]

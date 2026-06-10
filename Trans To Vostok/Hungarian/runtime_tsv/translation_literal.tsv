@@ -1,4 +1,580 @@
 text	translation
+Airdrop	Légi segélyszállítmány
+Tutorial Crate	Oktatóanyag
+Electric Box	Elektromos kapcsolódoboz
+Medical Cabinet	Gyógyszeres szekrény
+Office Cabinet	Irodai szekrény
+Cabinet	Szekrény
+Corpse	Holttest
+Bandit Corpse	Bandita holttest
+Crate Military	Katonai láda
+Crate Special	Speciális láda
+Wooden Crate	Faláda
+Garbage	Szemeteszsákok
+Fireplace	Kandalló
+Freezer	Fagyasztó
+Fridge	Hűtőszekrény
+Fusebox	Biztosítékdoboz
+Locker	Szekrény
+Mailbox	Postaláda
+Nightstand	Éjjeliszekrény
+Boxes	Kartondoboz
+Stove	Tűzhely
+Furniture	Bútor
+Furnitures	Bútorok
+Bed (Civilian)	Ágy (polgári)
+Bed C.	Ágy.
+Bed (Nomad)	Ágy (nomád)
+Bed N.	Ágy.
+Cabinet (Medical)	Szekrény (gyógyszeres)
+Cabinet M.	Szekrény.
+Cabinet (Office)	Szekrény (irodai)
+Cabinet. 0	Szekrény. 0
+Cabinet (Wood)	Szekrény (fa)
+Cabinet W.	Szekrény.
+Carpet (Persian)	Szőnyeg (perzsa)
+Carpet P.	Szőnyeg.
+Carpet (Rag)	Szőnyeg (rongy)
+Carpet R.	Szőnyeg.
+Chair (Office)	Szék (iroda)
+Chair O.	Szék i.
+Chair (School)	Szék (iskolai)
+Chair S.	Szék.
+Sun Chair	Napozószék
+S. Chair	Napozószék
+Crate (Military)	Láda (katonai)
+Crate M.	Láda.
+Crate (Special)	Láda (speciális)
+Crate S.	Láda.
+Cupboard	Szekrény
+C. Board	Szekrény
+Curtain (Long)	Függöny (hosszú)
+Curtain L.	Függöny h.
+Curtain (Mini)	Függöny (mini)
+Curtain M.	Függöny.
+Dartboard	Darts-tábla
+D. Board	Darts-tábla
+N. Stand	Kis asztal
+Painting (Lake)	Festmény (Tó)
+Painting L.	Festmény.
+Pallet	Raklap
+Poster (Posture)	Poszter (Helyes testtartás)
+Poster P.	"Poszter: Helyes 
+testtartás."
+Rack (Coat)	Ruhaakasztó (kabát)
+Rack C.	Ruhaakasztó.
+Rya (Maria)	(Maria)
+Rya M.	Maria.
+Shelf (Metal)	Polc (fém)
+Shelf M.	Polc.
+Shelf (Wall)	Polc (fali)
+Shelf W.	Polc.
+Shelf (Wood)	Polc (fa)
+Sign (Border Zone)	Tábla (határ)
+Sign BZ.	Tábla.
+Sofa (Leather)	Kanapé (bőr)
+Sofa L.	Kanapé.
+Stool (Military)	Szék (katonai)
+Stool M.	Szék.
+Stool (Padded)	Szék (párnázott)
+Stool P.	Szék.
+Table (Cabin)	Asztal (kabin)
+Table C.	Asztal.
+Table (Canteen)	Asztal (étkező)
+Table (Kitchen)	Asztal (konyha)
+Table K.	Asztal.
+Table (Office)	Asztal (iroda)
+Table. O	Asztal
+Target Stand	Célállvány
+Target S.	Célállvány.
+Television	Televizió
+TV	TV
+Trolley (Short)	Kocsi (rövid)
+Trolley S.	Kocsi.
+Trolley (Tall)	Kocsi (magas)
+Trolley T.	Kocsi.
+Weapon Display	Fegyvertartó
+Weapon D.	Fegyvertartó.
+Trader Event	Kereskedői esemény
+Dynamic Event	Dinamikus esemény
+Special Event	Különleges esemény
+Dynamic	Dinamikus
+Special	Különleges
+Guaranteed	Garantált
+Generalist returns to Village	A vegyeskereskedő visszatért a faluba
+"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
+
+After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"A vegyeskereskedő egy sokoldalú kereskedő, aki a 05-ös körzet falujának garázsépületében egy kis boltot üzemeltet, és főként általános mindennapi cikkeket árul.
+
+Egy rövid szünet után a vegyeskereskedés újra megnyitotta kapuit, és készen áll arra, hogy törzsvásárlóinak kedvező áron kínálja áruját."
+Doctor returns to School	Az orvos visszatért az iskolába
+"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
+
+After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"Az orvos az orvostudományra szakosodott kereskedő, aki a 05-ös körzet elhagyatott iskolaépületében működtet egy ideiglenes rendelőt.
+
+Az orvos, aki elment megnézni, hogy van a nagymama, visszatért a rendelőbe, és befejezte a sérültek ellátására való felkészülést."
+Fighter Jets	Harci repülőgép
+"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
+
+The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"A 05-ös körzetből való kivonulás és a határvidék leszerelése után a helyzet romlani kezdett, ezért erődemonstrációra van szükség.
+
+A finn hadsereg harci repülőgépekkel magas kockázatú, nem halálos kimenetelű légi bemutató repüléseket fog tartani, amelyek során gyakran megjelennek a légtérben."
+Missing Cat	Eltűnt macska
+"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
+
+A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
+
+Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"A nagymama macskája megijedt a vadászgép robajától, elmenekült, és azóta eltűnt.
+
+Néhány napja a vándorok egy előőrsön találtak egy macskát, és egy dobozba zárták. Amikor a vándorok vissza akarták adni a macskát az öregasszonynak, rablók támadtak rájuk, és elvették a dobozt.
+
+A falubeliek látták, ahogy a banditák a ládákat ide-oda dobálták, majd végül valahol otthagyták őket."
+Punisher arrives to Area 05	A Punisher megérkezett a 05-ös körzetbe
+"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
+
+Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"A Punisher a finn alvilági körökben hírhedt bandavezér és behajtó.
+
+A Punisher és emberei elloptak egy helyi rendőrautót, és azzal járják be a 05-ös körzetet."
+Airdrops are delivered to Area 05	Légi utánpótlást dobtak le a 05-ös körzetre
+"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
+
+Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"Hosszú késedelem után a finn hadsereg újra megkezdte a légi segélyszállítmányok ledobását a 05-ös körzetbe.
+
+A légi segélyszállítmányok általában humanitárius segélycikkeket tartalmaznak, például gyógyszereket, fogyóeszközöket és egyéb túlélési felszereléseket."
+BTR Patrols	BTR őrjárat
+"The military faction has started to use armored vehicles in the Vostok area.
+
+Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"A katonai erők megkezdték a páncélozott járművek bevetését a Vostok térségében.
+
+A katonai BTR géppuskákkal vannak felszerelve, és látták őket járőrözni a főutakon és a kulcsfontosságú területeken."
+Attack Helicopters	Harci helikopter
+"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
+
+While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"A határvidék demilitarizációja kezd összeomlani, és egyre nyilvánvalóbbá válik, hogy a korábbi szabályok már nem érvényesek.
+
+A hivatalos források szerint nincs változás, de a harci helikopterek gyakori járőrözést és légtérsértéseket kezdtek a határvidék közelében."
+Helicopter Crash Sites	A helikopter-baleset helyszíne
+"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
+
+Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"A légtér megsértését követően a légi harc elkerülhetetlen volt, és a határ mindkét oldalán több harci helikoptert lelőttek.
+
+A helikopterek több helyen zuhantak le, és mivel értékes zsákmányt találtak ott, ezek a helyek az AI tevékenységének fő bázisaivá váltak."
+Gunsmith returns to Outpost	A fegyverkovács visszatért az Előőrsbe
+"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
+
+Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"A fegyverkovács egy előőrs bunkerében fegyverraktárat üzemeltet, és fegyverekkel kapcsolatos minden ügyben szakértő kereskedő.
+
+A fegyverkovácsnak hónapokig nyoma veszett, de a pletykák szerint „üzleti útra” indult a határon túlra, és most visszatért a 05-ös körzetben található kedves bunkerébe."
+Outpost gets compromised	Az Előőrs felfedezése
+"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
+
+Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
+
+News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"A közelmúltbeli események következtében a határvidék helyzete gyorsan romlik, és a környező térségek is érezni kezdik ennek hatását.
+
+Mostantól a katonai BTR -ek behatolhatnak az Előőrs területére, így a 05-ös körzet már nem tekinthető biztonságos övezetnek.
+
+Ez a hír gyorsan terjedt el a 05-ös körzet lakói és kereskedői körében, de a körzeten kívüli média és hatóságok egyszerű pletykának tekintik."
+Traders leave Area 05	A kereskedők elhagyják a 05-ös körzetet
+"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
+
+It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"Miután az Előőrsöt felfedezték, az összes kereskedő befejezte a készülődést, és elindult a 05-ös körzetből.
+
+A kereskedők ezt csak átmeneti megoldásként alkalmazzák, és várhatóan visszatérnek a normális kerékvágásba, amint a helyzet megnyugszik."
+Traders return to Area 05	A kereskedők visszatértek a 05-ös körzetbe
+"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
+
+All traders are returning back to Area 05."	"Úgy tűnik, a helyzet romlása megállt, és a 05-ös körzet nem süllyedt teljes káoszba.
+
+Minden kereskedő visszatér a 05-öskörzetbe."
+Transmission	Adás
+"The signal that started it all has suddenly reappeared.
+
+The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
+
+This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"Hirtelen újra megjelent az a jel, amely az egész helyzet kiindulópontját jelentette.
+
+Ez a jel zavarja a rádiós adást, és minden általános frekvencián fogható.
+
+Ez az Early Access [1. verzió] utolsó eseménye. Az események és a történet a következő verziókban folytatódnak."
+Inventory	Készlet
+Primary	Elsődleges
+Secondary	Másodlagos
+Vital	Vitalitás
+Task Notes empty	A feladatok listája üres
+Task Notes not available (Tutorial)	A feladatok jegyzete nem használható (Kiképzés)
+Map not equipped	Térkép nincs felszerelve
+Map not usable (Vostok)	A térkép nem használható ( Vostok)
+Casette Player not equipped	Nincs lejátszó felszerelve
+Casette Player power 0%, recharge player	A lejátszó lemerült 0%, töltse fel
+Casette Player empty, insert casette	Lejátszó üres, tegyen be egy kazettát
+Override Ambient Music [ON]	Háttérzene felülírása [Be]
+Override Ambient Music [OFF]	Háttérzene felülírása [Ki]
+Sleep	Alvás
+Level 2	2. szint
+Level 3	3. szint
+Level 4	4. szint
+Level 5	5. szint
+Heat required	Hőforrás szükséges
+Workbench required	Munkapad szükséges
+Shelter required	Menedék szükséges
+Start Input	Összeállítás
+Stop Input	Összeállítás leállítása
+Reset Input	Összeállítás törlése
+Start Delivery	Teljesítés indítása
+Stop Delivery	Teljesítés leállítása
+Delivered	Teljesítve
+CBRN	KBSN
+Overweight	Túlsúly
+Explosion	Robbanás
+Fall	Leesés/zuhanás
+Day	Nap
+Common	Gyakori
+Rare	Ritka
+Legendary	Legendás
+Armor Plate	Páncéllemez
+Armor	Páncél
+Armor Plate {class}	Páncéllemez {class}
+Armor Plate (II)	Páncéllemez (II)
+Armor Plate (III+)	Páncéllemez (III+)
+Armor Plate (III)	Páncéllemez (III)
+Armor Plate (IIIA)	Páncéllemez (IIIA)
+Armor Plate (IV)	Páncéllemez (IV)
+Backpack	Hátizsák
+Jääkäri Backpack (Black)	Jääkäri hátizsák (fekete)
+Jääkäri BP.	Jääkäri hátizsák.
+Jääkäri Backpack (Brown)	Jääkäri hátizsák (barna)
+Jääkäri Backpack (Green)	Jääkäri hátizsák (zöld)
+Jääkäri Backpack (M05)	Jääkäri hátizsák (M05)
+Nomad Backpack	Nomád hátizsák
+Nomad BP.	Nomád hátizsák.
+Patrol Backpack	Őrjárat hátiszák
+Patrol BP.	Őrjárat hátizsák.
+Duffel (Retro)	Duffel (retro)
+R. Duffel	R. Duffel
+Belt Pouch	Övtáska
+Kukkaro (Black)	Övtáska (fekete)
+Kukkaro	Övtáska
+Kukkaro (Brown)	Övtáska (barna)
+Kukkaro (Green)	Övtáska (zöld)
+Kukkaro (M05)	Övtáska (M05)
+Literature	Irodalom
+Book (Children)	Könyv (gyerekeknek)
+Children	Gyerek
+Book (Cooking)	Könyv (Főzés)
+Cooking	Főzés
+Book (Fishing)	Könyv (Horgászat)
+Book (Religion)	Könyv (Vallás)
+Religion	Vallás
+Clothing	Ruházat
+Flame Beanie	Flame sapka
+F. Beanie	F. Sapka
+Combat Boots	Bakancs
+C. Boots	Bakancs
+M62 Cap	M62 sapka
+Tactical Fleece (Brown)	Taktikai polár (barna)
+T. Fleece	T. polár
+Tactical Fleece (Green)	Taktikai polár (zöld)
+Leather Gloves	Bőrkesztyű
+L. Gloves	Bőr. k
+Work Gloves	Munkáskesztyű
+W. Gloves	M.kesztyű
+Mosquito Hat	Szúnyog kalap
+M. Hat	Sz. kalap
+Sauna Hat	Szauna sapka
+S. Hat	Sz. sapka
+Hoodie (Border Zone)	Kapucnis pulóver (határ)
+Hoodie BZ.	Kapucnis pulóver.
+Hoodie B.	Kapucnis pulóver.
+Hoodie (Gray)	Kapucnis pulóver (szürke)
+Hoodie	Kapucnis pulóver
+M62 Jacket	M62 Kabát
+M62 J.	M62 K.
+Santa Jacket	Mikuláskabát
+Santa J.	Mikulásk.
+Winter Jacket (Blue)	Téli kabát (kék)
+Winter Jacket	Téli kabát
+Winter Jacket (Red)	Téli kabát (piros)
+Winter J.	Téli k.
+Jeans (Black)	Farmer
+Jeans	Farmer
+Hiking Pants	Túra nadrág
+Hiking P.	Túra n.
+Windbreaker (Black)	Széldzseki (fekete)
+Windbreaker	Széldzseki
+Windbr.	Széldzseki.
+Windbreaker (Green)	Széldzseki (zöld)
+Consumables	Fogyóeszközök
+Consumable	Fogyóeszköz
+Drink	Megivás
+Eat	Megevés
+Eat Raw	Megevés nyersen
+Eat (Raw)	Megevés (nyers)
+Chew	Rágózás
+Smoke	Elszívni
+Use	Használ
+Beer	Sör
+Empty Can	Üres konzervdoboz
+Can	Doboz
+Canned Meat	Húskonzerv
+Meat	Hús
+Canned Meatballs	Húsgombóckonzerv
+Meatballs	Húsgombóc
+Canned Pea Soup	Borsóleveskonzerv
+Pea Soup	Borsóleves
+Canned Peaches	Őszibarackkonzerv
+Peaches	Őszibarack
+Canned Pear	Körtekonzerv
+Pear	Körte
+Canned Peas	Borsókonzerv
+Peas	Borsó
+Canned Pineapple	Ananászkonzerv
+Pineapple	Ananász
+Canned Tomatoes	Paradicsomkonzerv
+Tomatoes	Paradicsom
+Canned Tuna	Tonhalkonzerv
+Tuna	Tonhal
+Cat Food	Macskakaja
+War Chocolate	Háborús csokoládé
+W. Choco	Csoki
+Cigarettes	Cigaretta
+Cigs	Cigi
+Cigars	Szivarok
+Coffee	Kávé
+Coffee (Brewed)	Kávé (főzött)
+C. Brewed	Kávé
+Fish Soup (Cooked)	Halászlé (főtt)
+F. Soup (Cooked)	Halászlé (főtt)
+F. Soup	Halászlé
+Meatballs (Cooked)	Húsgombóc (főtt)
+M. Balls (Cooked)	H.gombóc (főtt)
+M. Balls	Húsgombóc
+Pea Soup (Cooked)	Borsóleves (főtt)
+P. Soup (Cooked)	Borsóleves (főtt)
+P. Soup	Borsóleves
+Tomato Soup (Cooked)	Paradicsomleves (főtt)
+T. Soup (Cooked)	P.leves (főtt)
+T. Soup	P.leves
+Crackers	Keksz
+Energy Drink	Energiaital
+E. Drink	E.ital
+Energy Powder	Energiapor
+E. Powder	E.por
+Field Ration	Hadi élelmiszer
+F. Ration	Hadi élelem
+Juice	Üdítő
+Juice (Orange)	Üdítő (Narancs)
+Juice O.	N.üdítő
+Juice (Pear)	Üdítő (Körte)
+Juice P.	K.üdítő
+Juice (Raspberry)	Üdítő (Málna)
+Juice R.	M.üdítő
+Kilju	Kilju
+Kompot	Kompót
+Mustard	Mustár
+Peanuts	Mogyoró
+Potato	Burgonya
+Salty Liquorice	Édesgyökér cukorka
+Salty Liq.	Édesgyökér c.
+Snus	Nasi
+Soda (Lemon)	Szóda (citrom)
+Soda	Szóda
+Soda L.	Szóda c.
+Sugar	Cukor
+Water Bottle	Vízespalack
+Water	Víz
+Yeast	Élesztő
+Electronics	Elektronika
+Alarm Clock	Ébresztő óra
+A. Clock	É.óra
+Batteries	Elemek
+Battery	Akkumulátor
+Battery Cables	Akkumulátor kábel
+B. Cables	Akksi kábel
+Casette	Kazetta
+Casette (Electrofolk)	Casette (Electrofolk)
+Junna - Haavakko	Junna - Haavakko
+Junna - Lempi	Junna - Lempi
+Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla
+Junna - Mukula	Junna - Mukula
+Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen
+Junna - Rautahepo	Junna - Rautahepo
+Junna - Ruslana	Junna - Ruslana
+Junna - Vandringsman	Junna - Vandringsman
+Casette (Nomad)	Kazetta (Nomád)
+Casette (OST)	Kazetta (OST)
+OST - Alive	OST - Alive
+OST - Daybreak	OST - Daybreak
+OST - Far	OST - Far
+OST - Lost	OST - Lost
+OST - Rain	OST - Rain
+OST - Road	OST - Road
+OST - Trailer	OST - Trailer
+OST - Winds	OST - Winds
+Casette (Radio Hits)	Kazetta (Radio Hits)
+Casette (Symphony)	Kazetta (Szimfónia)
+Vostok Symphony	Vostok szimfónia
+Casette Player	Kazetta lejátszó
+C. Player	K.lejátszó
+Coffeemaster	Kávémester
+C. Master	K.mester
+Cooking Station	Főzőpult
+C. Station	Főzőpult
+Hotplate	Rezsó
+Inverter	Inverter
+Narva	Zseblámpa
+Polaris	Polaris
+Fish	Hal
+Fishing	Horgászat
+Bream	Kövicsuka
+Fishing Rod	Horgászbot
+F. Rod	H.bot
+Perch	Sügér
+Pike	Csuka
+Roach	Csótány
+Grenade	Gránát
+Helmet	Sisak
+Police Helmet (IIIA)	Rendőr sisak (IIIA)
+Police Helmet	Rendőr sisak
+P. Helmet	R. sisak
+Instrument	Hangszer
+Guitar	Gitár
+Harmonica	Harmónika
+Harmo.	Harmó.
+Key	Kulcs
+Attic Key	Padlás kulcsa
+Attic K.	Padlás k.
+Bunker Key	Bunker kulcsa
+Bunker K.	Bunker k.
+Cellar Key	Pince kulcsa
+Cellar K.	Pince k.
+Classroom Key	Osztályterem kulcsa
+Class. K.	O.terem k.
+Gymnasium Key	Gimnázium kulcsa
+Gym. K.	Gimn. k.
+Tunnel Key	Alagút kulcsa
+Tunnel K.	Alagút k.
+Knife	Kés
+Jaeger 140	Jaeger 140
+Jaeger	Jaeger
+Skrama 200	Skrama 200
+Skrama	Skrama
+Skrama 240	Skrama 240
+Lore	Történelem
+Cat	Macska
+Oil Sample	Olajminta
+Oil S.	Olajminta.
+Patient Report	Betegjelentés
+P. Report	Beteg k.
+Heal	Gyógyítás
+Spray	Spray
+Medical	Spray
+Antibiotics	Antibiotikum
+Antibio.	Antibio.
+Antiseptic	Fertőtlenítő
+A. Septic	Fertőtl.
+Balm	Balzsam
+Bandage	Kötszer
+Bandage (Improvised)	Kötszer (rögtönzött)
+Cold Medicine	M.fázás ellen
+C. Med.	Mf. ellen
+Deodorant	Dezodor
+Deodora.	Dezodor
+Gum	Rágó
+Lotion	Testápoló
+Medkit	Elsősegélydoboz
+Melatonin	Melatonin
+Melaton.	Melaton.
+Painkill.	Fáj.csillapító
+Saline	Sóoldat
+Splint	Rögzítősin
+Splint (Improvised)	Rögzítősin (rögtönzött)
+Thermal Blanket	Hőtakaró
+Thermal	Hőtakaró
+Tissues	Papírzsebkendő
+Sneeze	Orrfújás
+Tourniquet	Érszorító
+Tourni.	Érszor.
+Tourniquet (Improvised)	Érszorító (rögtönzött)
+Wipes	Törlőkendő
+Wipe	Törlés
+Misc	Egyéb
+Blanket	Takaró
+Board Game	Táblajáték
+B. Game	T.játék
+Bucket	Vödör
+Coffee Filter	Kávészűrő
+C. Filter	Kávész.
+Duct Tape	Szigszalag
+D. Tape	Sz.szalag
+Happy Stove	Tűzhely
+H. Stove	Tűzhely
+Jerry Can	Kanna
+Jerry C.	Kanna
+Lumber	Deszka
+Map	Térkép
+Map (Tactical)	Térkép (taktikai)
+T. Map	T.térkép
+Matches	Gyufák
+Mat.	Gyufa
+Mattress	Matrac
+Mess Kit	Csajka
+Nails	Szegek
+Oil Filter	Olajszűrő
+O. Filter	O.szűrő
+Pillow	Párna
+Rags	Rongyok
+Sleeping_Bag	Hálózsák
+Sleeping Bag	Hálózsák
+S. Bag	Hálózsák
+Sticks	Botok
+Tackle Box	Horgászláda
+Tackle B.	Horgászláda
+Toilet Paper	WC-papír
+T. Paper	WC-p.
+Toolbox	Szerszámos
+Water Lock	Erjesztődugó
+W. Lock	Erj.dugó
+Weapon Repair Kit	Fegyver javítókészlet
+Repair Kit	Javítókészlet
+Rig	Mellény
+LVPC (Green)	LVPC (Zöld)
+LVPC (Winter)	LVPC (Téli)
+Fishing Vest	Horgászmellény
+F. Vest	Horgászmellény
+Weapon	Fegyver
+Mag.	Tár
+KA-12 Magazine	KA-12 tár
+KA-M Magazine	KA-M tár
+KAS-74U Magazine	KAS-74U tár
+C1911 Magazine	C1911 tár
+G7 Magazine	G7 tár
+KAR-21 Magazine (.223)	KAR-21 tár (.223)
+KAR-21 Magazine (.308)	KAR-21 tár (.308)
+KAR-21 Barrel (.308)	KAR-21 cső (.308)
+KAR-21 Barrel	KAR-21 cső
+Barrel	Cső
+KP-31 Drum	KP-31 dobtár
+Drum	Dobtár
+STANAG Magazine	STANAG tár
+M78 Magazine	M78 tár
+Karov	Karov
+Karov Magazine	Karov tár
+Mosin	Mosin
+PM5 Magazine	PM5 tár
+MP7 Magazine	MP7 tár
+P3 Magazine	P3 tár
+RK Magazine	RK tár
+VSD Magazine	VSD tár
+SS Magazine	SS tár
+Ammo	Lőszer
+Attachment	Kiegészítő
+Hybrid	Hibrid
+Kobra	Kobra
+Leopard	Leopard
+Micro	Micro
+Monster	Monster
+Thor	Thor
 Compatibility	Kompatibilitás
 Selected	Kiválasztás
 Press key to bind...	Hozzárendelés...
@@ -97,38 +673,52 @@ Wood	Fa
 Metal	Fém
 Concrete	Beton
 Rock	Szikla
-Inventory	Készlet
-Primary	Elsődleges
-Secondary	Másodlagos
-Vital	Vitalitás
-Task Notes empty	A feladatok listája üres
-Task Notes not available (Tutorial)	A feladatok jegyzete nem használható (Kiképzés)
-Map not equipped	Térkép nincs felszerelve
-Map not usable (Vostok)	A térkép nem használható ( Vostok)
-Casette Player not equipped	Nincs lejátszó felszerelve
-Casette Player power 0%, recharge player	A lejátszó lemerült 0%, töltse fel
-Casette Player empty, insert casette	Lejátszó üres, tegyen be egy kazettát
-Override Ambient Music [ON]	Háttérzene felülírása [Be]
-Override Ambient Music [OFF]	Háttérzene felülírása [Ki]
-Sleep	Alvás
-Level 2	2. szint
-Level 3	3. szint
-Level 4	4. szint
-Level 5	5. szint
-Heat required	Hőforrás szükséges
-Workbench required	Munkapad szükséges
-Shelter required	Menedék szükséges
-Start Input	Összeállítás
-Stop Input	Összeállítás leállítása
-Reset Input	Összeállítás törlése
-Start Delivery	Teljesítés indítása
-Stop Delivery	Teljesítés leállítása
-Delivered	Teljesítve
-CBRN	KBSN
-Overweight	Túlsúly
-Explosion	Robbanás
-Fall	Leesés/zuhanás
-Day	Nap
+New Furniture Added [Catalog]	Új bútorok hozzáadva [Katalógus]
+Boss Killed	Főellenség legyőzve
+Cat Rescued	Macska megmentve
+Cat Vital Activated	Macsak életjelei aktíválva
+Cat Died	A macska elpusztult
+You have been spotted!	Észleltek!
+Player Returned	A játékos visszatért
+Indoors	Belső tér
+Indoor	Belső tér
+Mine	Bánya
+Lure	Csali
+(Military)	(Katonai)
+Unload	Kitárazás
+Clear Chamber	Cső ürítése
+Unequip	Leszerelés
+Equip	Felszerelés
+Show	Bővebben
+Hide	Elrejtés
+Activated	Aktiválva
+Not active	Nincs aktiválva
+All maps & zones	Összes térkép és zóna
+Active	Aktív
+Repair	Javítás
+Craft	Barkácsolás
+Added	Hozzáadva
+Remove	Eltávolítás
+Completed	Befejezve
+Add to Notes	Jegyzetekhez adás
+Frozen	Fagyott
+Permadeath Zone	Permadeath zóna
+[Open]	[Nyitás]
+Door [Jammed]	Ajtó [beragadt]
+Door [Occupied]	Ajtó [Használatban]
+Door [Close]	Ajtó [Bezárás]
+Door [Open]	Ajtó [Nyitás]
+Sleep (Random sleep: 6-12h)	Alvás (véletlenszerű alvás: 6–12 óra)
+Turn Off	Kikapcsolás
+Turn On	Bekapcsolás
+Radio [Turn Off]	Rádió [Kikapcsolás]
+Radio [Turn On]	Rádió [Bekapcsolás]
+Television [Turn Off]	Televízió[Kikapcsolás]
+Television [Turn On]	Televízió [Bekapcsolás]
+Rescue Cat	Megmentett macska
+Cat is eating, do not disturb	A macska éppen eszik. Kérlek, ne zavard
+Fuel Tank [89%]	Üzemanyagtartály [89%]
+Feed cat:	A macska etetése:
 Easy	Könnyű
 Intermediate	Átlagos
 Hard	Nehéz
@@ -411,7 +1001,6 @@ It's never too late to start with an easier instrument, but I would need somethi
 Pár évvel ezelőtt megpróbáltam újra elővenni a régi hangszereimet, de mint tudod, ehhez elég jó tüdőkapacitás kell. Most már hangot sem tudok kihozni belőlük. A zene iránti szenvedélyem és tehetségem ugyan megmaradt, de talán a korom miatt már nem érzem úgy, mint régen.
 
 Soha nem késő újrakezdeni, de nekem, egy öreg dohányosnak, valószínűleg egy nagyon kicsi hangszerre lenne szükségem. Talán a következő életemben sikerülni fog."
-Patient Report	Betegjelentés
 "When the situation started, our hospitals were overbooked within the first hour. We actually had to convert the school's gymnasium into an emergency triage site.
 
 I think I left one of my earliest patient reports there. I need that report to help with my memory, since it isn't what it used to be. The symptoms and specific details from that report are starting to blur for me.
@@ -544,595 +1133,6 @@ Somebody has to put an end to this clown show, so I basically need a hitman. Bri
 Ez a fickó bármikor felbukkan, és olyan adósság miatt ordibál, ami nem is létezik. Általában az ilyen őrülteket az ajtó előtt lelőném, de ezek a rohadékok elképesztően kitartóak. Mostanában az a fickó és a csőcseléke ellopott egy rendőrségi kísérőautót, amivel járkálnak, szóval most már könnyűpáncélos járművel is rendelkeznek.
 
 Valakinek véget kell vetnie ennek a bohóckodásnak. Ennek fényében most szükségem van egy bérgyilkosra. Akár a fejét hozza el, akár mást, ha bizonyítékot hoz arra, hogy az a rohadék meghalt, átadom a raktáram kulcsát."
-Trader Event	Kereskedői esemény
-Dynamic Event	Dinamikus esemény
-Special Event	Különleges esemény
-Dynamic	Dinamikus
-Special	Különleges
-Guaranteed	Garantált
-Generalist returns to Village	A vegyeskereskedő visszatért a faluba
-"Generalist is a ""jack of all trades"" trader who runs a small shop inside the Village garage building in Area 05 and specializes in common goods.
-
-After taking a small mental break, Generalist is once again back in business and ready to serve his loyal customers with decent prices."	"A vegyeskereskedő egy sokoldalú kereskedő, aki a 05-ös körzet falujának garázsépületében egy kis boltot üzemeltet, és főként általános mindennapi cikkeket árul.
-
-Egy rövid szünet után a vegyeskereskedés újra megnyitotta kapuit, és készen áll arra, hogy törzsvásárlóinak kedvező áron kínálja áruját."
-Doctor returns to School	Az orvos visszatért az iskolába
-"Doctor is a trader who specializes in medicine and holds an improvised clinic inside an abandoned school building in Area 05.
-
-After visiting Grandma for a ""welfare check,"" Doctor returns to his clinic and is ready to provide medical services for the injured."	"Az orvos az orvostudományra szakosodott kereskedő, aki a 05-ös körzet elhagyatott iskolaépületében működtet egy ideiglenes rendelőt.
-
-Az orvos, aki elment megnézni, hogy van a nagymama, visszatért a rendelőbe, és befejezte a sérültek ellátására való felkészülést."
-Fighter Jets	Harci repülőgép
-"After the Area 05 evacuation and Border Zone demilitarization, things have started to take a wrong turn and a show of force is needed.
-
-The Finnish military will start performing non-lethal, high-visibility aerial flybys with fighter jets that appear in the sky frequently."	"A 05-ös körzetből való kivonulás és a határvidék leszerelése után a helyzet romlani kezdett, ezért erődemonstrációra van szükség.
-
-A finn hadsereg harci repülőgépekkel magas kockázatú, nem halálos kimenetelű légi bemutató repüléseket fog tartani, amelyek során gyakran megjelennek a légtérben."
-Missing Cat	Eltűnt macska
-"Grandma's cat has gone missing after a sonic boom from a fighter jet spooked the cat and it ran away.
-
-A few days ago, Nomads found the cat wandering in the Outpost and managed to capture it with some sort of box. Once the Nomads started to deliver the cat back to Grandma, they were ambushed by Bandits who apparently took the box.
-
-Locals saw the Bandits tossing the box around in a cruel way and eventually leaving the box somewhere."	"A nagymama macskája megijedt a vadászgép robajától, elmenekült, és azóta eltűnt.
-
-Néhány napja a vándorok egy előőrsön találtak egy macskát, és egy dobozba zárták. Amikor a vándorok vissza akarták adni a macskát az öregasszonynak, rablók támadtak rájuk, és elvették a dobozt.
-
-A falubeliek látták, ahogy a banditák a ládákat ide-oda dobálták, majd végül valahol otthagyták őket."
-Punisher arrives to Area 05	A Punisher megérkezett a 05-ös körzetbe
-"Punisher is a bandit boss and a feared debt collector in the Finnish criminal world.
-
-Punisher and his minions have stolen a local police van and are taking routine drives across Area 05."	"A Punisher a finn alvilági körökben hírhedt bandavezér és behajtó.
-
-A Punisher és emberei elloptak egy helyi rendőrautót, és azzal járják be a 05-ös körzetet."
-Airdrops are delivered to Area 05	Légi utánpótlást dobtak le a 05-ös körzetre
-"After a long delay, the Finnish military has once again started delivering airdrops to Area 05.
-
-Airdrops usually contain humanitarian aid such as medicals, consumables and other relevant survival gear."	"Hosszú késedelem után a finn hadsereg újra megkezdte a légi segélyszállítmányok ledobását a 05-ös körzetbe.
-
-A légi segélyszállítmányok általában humanitárius segélycikkeket tartalmaznak, például gyógyszereket, fogyóeszközöket és egyéb túlélési felszereléseket."
-BTR Patrols	BTR őrjárat
-"The military faction has started to use armored vehicles in the Vostok area.
-
-Military BTR's are equipped with heavy machine guns and patrols have been seen across main roads and key locations."	"A katonai erők megkezdték a páncélozott járművek bevetését a Vostok térségében.
-
-A katonai BTR géppuskákkal vannak felszerelve, és látták őket járőrözni a főutakon és a kulcsfontosságú területeken."
-Attack Helicopters	Harci helikopter
-"The Border Zone demilitarization is starting to crumble and it is obvious that previous rules no longer apply.
-
-While official sources ensure nothing has changed, attack helicopters have started making frequent patrols and airspace violations near the Border Zone."	"A határvidék demilitarizációja kezd összeomlani, és egyre nyilvánvalóbbá válik, hogy a korábbi szabályok már nem érvényesek.
-
-A hivatalos források szerint nincs változás, de a harci helikopterek gyakori járőrözést és légtérsértéseket kezdtek a határvidék közelében."
-Helicopter Crash Sites	A helikopter-baleset helyszíne
-"After airspace violations, aerial incidents were unavoidable and multiple attack helicopters were shot down on both sides of the border.
-
-Helicopter crash sites are scattered around multiple locations and contain high-value loot, which also makes them hotspots for AI activity."	"A légtér megsértését követően a légi harc elkerülhetetlen volt, és a határ mindkét oldalán több harci helikoptert lelőttek.
-
-A helikopterek több helyen zuhantak le, és mivel értékes zsákmányt találtak ott, ezek a helyek az AI tevékenységének fő bázisaivá váltak."
-Gunsmith returns to Outpost	A fegyverkovács visszatért az Előőrsbe
-"Gunsmith is a trader who maintains a weapon storage inside one of the Outpost bunkers and specializes in everything related to firearms.
-
-Gunsmith was nowhere to be seen for multiple months but according to rumors, he was taking a ""business trip"" to the other side of the border but has now returned to his beloved bunker in Area 05."	"A fegyverkovács egy előőrs bunkerében fegyverraktárat üzemeltet, és fegyverekkel kapcsolatos minden ügyben szakértő kereskedő.
-
-A fegyverkovácsnak hónapokig nyoma veszett, de a pletykák szerint „üzleti útra” indult a határon túlra, és most visszatért a 05-ös körzetben található kedves bunkerébe."
-Outpost gets compromised	Az Előőrs felfedezése
-"Given the previous events, the situation at the Border Zone is escalating quickly and nearby areas face the consequences.
-
-Military BTR's can now enter the Outpost map and Area 05 is no longer considered safe.
-
-News of the event spread quickly among Area 05 locals and traders, but it is only considered rumors by the media and authorities outside of Area 05."	"A közelmúltbeli események következtében a határvidék helyzete gyorsan romlik, és a környező térségek is érezni kezdik ennek hatását.
-
-Mostantól a katonai BTR -ek behatolhatnak az Előőrs területére, így a 05-ös körzet már nem tekinthető biztonságos övezetnek.
-
-Ez a hír gyorsan terjedt el a 05-ös körzet lakói és kereskedői körében, de a körzeten kívüli média és hatóságok egyszerű pletykának tekintik."
-Traders leave Area 05	A kereskedők elhagyják a 05-ös körzetet
-"After the Outpost was compromised, all traders started making preparations and leaving Area 05.
-
-It seems that the traders are doing this as a temporary measure and will return if and when things calm down."	"Miután az Előőrsöt felfedezték, az összes kereskedő befejezte a készülődést, és elindult a 05-ös körzetből.
-
-A kereskedők ezt csak átmeneti megoldásként alkalmazzák, és várhatóan visszatérnek a normális kerékvágásba, amint a helyzet megnyugszik."
-Traders return to Area 05	A kereskedők visszatértek a 05-ös körzetbe
-"The escalation of recent events has seemed to stop and Area 05 did not spiral into full chaos.
-
-All traders are returning back to Area 05."	"Úgy tűnik, a helyzet romlása megállt, és a 05-ös körzet nem süllyedt teljes káoszba.
-
-Minden kereskedő visszatér a 05-öskörzetbe."
-Transmission	Adás
-"The signal that started it all has suddenly reappeared.
-
-The transmission is interfering with radio broadcasts and can be heard on all common frequencies.
-
-This is the last event of Early Access [Build 1]. The events and story will continue in upcoming builds."	"Hirtelen újra megjelent az a jel, amely az egész helyzet kiindulópontját jelentette.
-
-Ez a jel zavarja a rádiós adást, és minden általános frekvencián fogható.
-
-Ez az Early Access [1. verzió] utolsó eseménye. Az események és a történet a következő verziókban folytatódnak."
-Common	Gyakori
-Rare	Ritka
-Legendary	Legendás
-Armor Plate	Páncéllemez
-Armor	Páncél
-Armor Plate {class}	Páncéllemez {class}
-Armor Plate (II)	Páncéllemez (II)
-Armor Plate (III+)	Páncéllemez (III+)
-Armor Plate (III)	Páncéllemez (III)
-Armor Plate (IIIA)	Páncéllemez (IIIA)
-Armor Plate (IV)	Páncéllemez (IV)
-Backpack	Hátizsák
-Jääkäri Backpack (Black)	Jääkäri hátizsák (fekete)
-Jääkäri BP.	Jääkäri hátizsák.
-Jääkäri Backpack (Brown)	Jääkäri hátizsák (barna)
-Jääkäri Backpack (Green)	Jääkäri hátizsák (zöld)
-Jääkäri Backpack (M05)	Jääkäri hátizsák (M05)
-Nomad Backpack	Nomád hátizsák
-Nomad BP.	Nomád hátizsák.
-Patrol Backpack	Őrjárat hátiszák
-Patrol BP.	Őrjárat hátizsák.
-Duffel (Retro)	Duffel (retro)
-R. Duffel	R. Duffel
-Belt Pouch	Övtáska
-Kukkaro (Black)	Övtáska (fekete)
-Kukkaro	Övtáska
-Kukkaro (Brown)	Övtáska (barna)
-Kukkaro (Green)	Övtáska (zöld)
-Kukkaro (M05)	Övtáska (M05)
-Literature	Irodalom
-Book (Children)	Könyv (gyerekeknek)
-Children	Gyerek
-Book (Cooking)	Könyv (Főzés)
-Cooking	Főzés
-Book (Fishing)	Könyv (Horgászat)
-Book (Religion)	Könyv (Vallás)
-Religion	Vallás
-Clothing	Ruházat
-Flame Beanie	Flame sapka
-F. Beanie	F. Sapka
-Combat Boots	Bakancs
-C. Boots	Bakancs
-M62 Cap	M62 sapka
-Tactical Fleece (Brown)	Taktikai polár (barna)
-T. Fleece	T. polár
-Tactical Fleece (Green)	Taktikai polár (zöld)
-Leather Gloves	Bőrkesztyű
-L. Gloves	Bőr. k
-Work Gloves	Munkáskesztyű
-W. Gloves	M.kesztyű
-Mosquito Hat	Szúnyog kalap
-M. Hat	Sz. kalap
-Sauna Hat	Szauna sapka
-S. Hat	Sz. sapka
-Hoodie (Border Zone)	Kapucnis pulóver (határ)
-Hoodie BZ.	Kapucnis pulóver.
-Hoodie B.	Kapucnis pulóver.
-Hoodie (Gray)	Kapucnis pulóver (szürke)
-Hoodie	Kapucnis pulóver
-M62 Jacket	M62 Kabát
-M62 J.	M62 K.
-Santa Jacket	Mikuláskabát
-Santa J.	Mikulásk.
-Winter Jacket (Blue)	Téli kabát (kék)
-Winter Jacket	Téli kabát
-Winter Jacket (Red)	Téli kabát (piros)
-Winter J.	Téli k.
-Jeans (Black)	Farmer
-Jeans	Farmer
-Hiking Pants	Túra nadrág
-Hiking P.	Túra n.
-Windbreaker (Black)	Széldzseki (fekete)
-Windbreaker	Széldzseki
-Windbr.	Széldzseki.
-Windbreaker (Green)	Széldzseki (zöld)
-Consumables	Fogyóeszközök
-Consumable	Fogyóeszköz
-Drink	Megivás
-Eat	Megevés
-Eat Raw	Megevés nyersen
-Eat (Raw)	Megevés (nyers)
-Chew	Rágózás
-Smoke	Elszívni
-Use	Használ
-Beer	Sör
-Empty Can	Üres konzervdoboz
-Can	Doboz
-Canned Meat	Húskonzerv
-Meat	Hús
-Canned Meatballs	Húsgombóckonzerv
-Meatballs	Húsgombóc
-Canned Pea Soup	Borsóleveskonzerv
-Pea Soup	Borsóleves
-Canned Peaches	Őszibarackkonzerv
-Peaches	Őszibarack
-Canned Pear	Körtekonzerv
-Pear	Körte
-Canned Peas	Borsókonzerv
-Peas	Borsó
-Canned Pineapple	Ananászkonzerv
-Pineapple	Ananász
-Canned Tomatoes	Paradicsomkonzerv
-Tomatoes	Paradicsom
-Canned Tuna	Tonhalkonzerv
-Tuna	Tonhal
-Cat Food	Macskakaja
-War Chocolate	Háborús csokoládé
-W. Choco	Csoki
-Cigarettes	Cigaretta
-Cigs	Cigi
-Cigars	Szivarok
-Coffee	Kávé
-Coffee (Brewed)	Kávé (főzött)
-C. Brewed	Kávé
-Fish Soup (Cooked)	Halászlé (főtt)
-F. Soup (Cooked)	Halászlé (főtt)
-F. Soup	Halászlé
-Meatballs (Cooked)	Húsgombóc (főtt)
-M. Balls (Cooked)	H.gombóc (főtt)
-M. Balls	Húsgombóc
-Pea Soup (Cooked)	Borsóleves (főtt)
-P. Soup (Cooked)	Borsóleves (főtt)
-P. Soup	Borsóleves
-Tomato Soup (Cooked)	Paradicsomleves (főtt)
-T. Soup (Cooked)	P.leves (főtt)
-T. Soup	P.leves
-Crackers	Keksz
-Energy Drink	Energiaital
-E. Drink	E.ital
-Energy Powder	Energiapor
-E. Powder	E.por
-Field Ration	Hadi élelmiszer
-F. Ration	Hadi élelem
-Juice	Üdítő
-Juice (Orange)	Üdítő (Narancs)
-Juice O.	N.üdítő
-Juice (Pear)	Üdítő (Körte)
-Juice P.	K.üdítő
-Juice (Raspberry)	Üdítő (Málna)
-Juice R.	M.üdítő
-Kilju	Kilju
-Kompot	Kompót
-Mustard	Mustár
-Peanuts	Mogyoró
-Potato	Burgonya
-Salty Liquorice	Édesgyökér cukorka
-Salty Liq.	Édesgyökér c.
-Snus	Nasi
-Soda (Lemon)	Szóda (citrom)
-Soda	Szóda
-Soda L.	Szóda c.
-Sugar	Cukor
-Water Bottle	Vízespalack
-Water	Víz
-Yeast	Élesztő
-Electronics	Elektronika
-Alarm Clock	Ébresztő óra
-A. Clock	É.óra
-Batteries	Elemek
-Battery	Akkumulátor
-Battery Cables	Akkumulátor kábel
-B. Cables	Akksi kábel
-Casette	Kazetta
-Casette (Electrofolk)	Casette (Electrofolk)
-Junna - Haavakko	Junna - Haavakko
-Junna - Lempi	Junna - Lempi
-Junna - Mistä Sä Tiesit Tulla	Junna - Mistä Sä Tiesit Tulla
-Junna - Mukula	Junna - Mukula
-Junna - Pappa Se Antoi Hevosen	Junna - Pappa Se Antoi Hevosen
-Junna - Rautahepo	Junna - Rautahepo
-Junna - Ruslana	Junna - Ruslana
-Junna - Vandringsman	Junna - Vandringsman
-Casette (Nomad)	Kazetta (Nomád)
-Casette (OST)	Kazetta (OST)
-OST - Alive	OST - Alive
-OST - Daybreak	OST - Daybreak
-OST - Far	OST - Far
-OST - Lost	OST - Lost
-OST - Rain	OST - Rain
-OST - Road	OST - Road
-OST - Trailer	OST - Trailer
-OST - Winds	OST - Winds
-Casette (Radio Hits)	Kazetta (Radio Hits)
-Casette (Symphony)	Kazetta (Szimfónia)
-Vostok Symphony	Vostok szimfónia
-Casette Player	Kazetta lejátszó
-C. Player	K.lejátszó
-Coffeemaster	Kávémester
-C. Master	K.mester
-Cooking Station	Főzőpult
-C. Station	Főzőpult
-Hotplate	Rezsó
-Inverter	Inverter
-Narva	Zseblámpa
-Polaris	Polaris
-Fish	Hal
-Fishing	Horgászat
-Bream	Kövicsuka
-Fishing Rod	Horgászbot
-F. Rod	H.bot
-Perch	Sügér
-Pike	Csuka
-Roach	Csótány
-Grenade	Gránát
-Helmet	Sisak
-Police Helmet (IIIA)	Rendőr sisak (IIIA)
-Police Helmet	Rendőr sisak
-P. Helmet	R. sisak
-Instrument	Hangszer
-Guitar	Gitár
-Harmonica	Harmónika
-Harmo.	Harmó.
-Key	Kulcs
-Attic Key	Padlás kulcsa
-Attic K.	Padlás k.
-Bunker Key	Bunker kulcsa
-Bunker K.	Bunker k.
-Cellar Key	Pince kulcsa
-Cellar K.	Pince k.
-Classroom Key	Osztályterem kulcsa
-Class. K.	O.terem k.
-Gymnasium Key	Gimnázium kulcsa
-Gym. K.	Gimn. k.
-Tunnel Key	Alagút kulcsa
-Tunnel K.	Alagút k.
-Knife	Kés
-Jaeger 140	Jaeger 140
-Jaeger	Jaeger
-Skrama 200	Skrama 200
-Skrama	Skrama
-Skrama 240	Skrama 240
-Lore	Történelem
-Cat	Macska
-Oil Sample	Olajminta
-Oil S.	Olajminta.
-P. Report	Beteg k.
-Heal	Gyógyítás
-Spray	Spray
-Medical	Spray
-Antibiotics	Antibiotikum
-Antibio.	Antibio.
-Antiseptic	Fertőtlenítő
-A. Septic	Fertőtl.
-Balm	Balzsam
-Bandage	Kötszer
-Bandage (Improvised)	Kötszer (rögtönzött)
-Cold Medicine	M.fázás ellen
-C. Med.	Mf. ellen
-Deodorant	Dezodor
-Deodora.	Dezodor
-Gum	Rágó
-Lotion	Testápoló
-Medkit	Elsősegélydoboz
-Melatonin	Melatonin
-Melaton.	Melaton.
-Painkill.	Fáj.csillapító
-Saline	Sóoldat
-Splint	Rögzítősin
-Splint (Improvised)	Rögzítősin (rögtönzött)
-Thermal Blanket	Hőtakaró
-Thermal	Hőtakaró
-Tissues	Papírzsebkendő
-Sneeze	Orrfújás
-Tourniquet	Érszorító
-Tourni.	Érszor.
-Tourniquet (Improvised)	Érszorító (rögtönzött)
-Wipes	Törlőkendő
-Wipe	Törlés
-Misc	Egyéb
-Blanket	Takaró
-Board Game	Táblajáték
-B. Game	T.játék
-Bucket	Vödör
-Coffee Filter	Kávészűrő
-C. Filter	Kávész.
-Duct Tape	Szigszalag
-D. Tape	Sz.szalag
-Happy Stove	Tűzhely
-H. Stove	Tűzhely
-Jerry Can	Kanna
-Jerry C.	Kanna
-Lumber	Deszka
-Map	Térkép
-Map (Tactical)	Térkép (taktikai)
-T. Map	T.térkép
-Matches	Gyufák
-Mat.	Gyufa
-Mattress	Matrac
-Mess Kit	Csajka
-Nails	Szegek
-Oil Filter	Olajszűrő
-O. Filter	O.szűrő
-Pillow	Párna
-Rags	Rongyok
-Sleeping_Bag	Hálózsák
-Sleeping Bag	Hálózsák
-S. Bag	Hálózsák
-Sticks	Botok
-Tackle Box	Horgászláda
-Tackle B.	Horgászláda
-Toilet Paper	WC-papír
-T. Paper	WC-p.
-Toolbox	Szerszámos
-Water Lock	Erjesztődugó
-W. Lock	Erj.dugó
-Weapon Repair Kit	Fegyver javítókészlet
-Repair Kit	Javítókészlet
-Rig	Mellény
-LVPC (Green)	LVPC (Zöld)
-LVPC (Winter)	LVPC (Téli)
-Fishing Vest	Horgászmellény
-F. Vest	Horgászmellény
-Weapon	Fegyver
-Mag.	Tár
-KA-12 Magazine	KA-12 tár
-KA-M Magazine	KA-M tár
-KAS-74U Magazine	KAS-74U tár
-C1911 Magazine	C1911 tár
-G7 Magazine	G7 tár
-KAR-21 Magazine (.223)	KAR-21 tár (.223)
-KAR-21 Magazine (.308)	KAR-21 tár (.308)
-KAR-21 Barrel (.308)	KAR-21 cső (.308)
-KAR-21 Barrel	KAR-21 cső
-Barrel	Cső
-KP-31 Drum	KP-31 dobtár
-Drum	Dobtár
-STANAG Magazine	STANAG tár
-M78 Magazine	M78 tár
-Karov	Karov
-Karov Magazine	Karov tár
-Mosin	Mosin
-PM5 Magazine	PM5 tár
-MP7 Magazine	MP7 tár
-P3 Magazine	P3 tár
-RK Magazine	RK tár
-VSD Magazine	VSD tár
-SS Magazine	SS tár
-Ammo	Lőszer
-Attachment	Kiegészítő
-Hybrid	Hibrid
-Kobra	Kobra
-Leopard	Leopard
-Micro	Micro
-Monster	Monster
-Thor	Thor
 Fire [Ignite]	Tűz [Megyújtás]
 Fire [Matches not equipped]	Tűz [Nincs gyufa]
 Fire [Extinguish]	Tűz [Eloltás]
-New Furniture Added [Catalog]	Új bútorok hozzáadva [Katalógus]
-Boss Killed	Főellenség legyőzve
-Cat Rescued	Macska megmentve
-Cat Vital Activated	Macsak életjelei aktíválva
-Cat Died	A macska elpusztult
-You have been spotted!	Észleltek!
-Player Returned	A játékos visszatért
-Airdrop	Légi segélyszállítmány
-Tutorial Crate	Oktatóanyag-csomag
-Electric Box	Elektromos kapcsolódoboz
-Medical Cabinet	Gyógyszeres szekrény
-Office Cabinet	Irodai szekrény
-Cabinet	Szekrény
-Corpse	Holttest
-Bandit Corpse	Bandita holttest
-Crate Military	Katonai láda
-Crate Special	Speciális láda
-Wooden Crate	Faláda
-Garbage	Szemeteszsákok
-Fireplace	Kandalló
-Freezer	Fagyasztó
-Fridge	Hűtőszekrény
-Fusebox	Biztosítékdoboz
-Locker	Szekrény
-Mailbox	Postaláda
-Nightstand	Éjjeliszekrény
-Boxes	Kartondoboz
-Stove	Tűzhely
-Furniture	Bútor
-Furnitures	Bútorok
-Bed (Civilian)	Ágy (polgári)
-Bed C.	Ágy.
-Bed (Nomad)	Ágy (nomád)
-Bed N.	Ágy.
-Cabinet (Medical)	Szekrény (gyógyszeres)
-Cabinet M.	Szekrény.
-Cabinet (Office)	Szekrény (irodai)
-Cabinet. 0	Szekrény. 0
-Cabinet (Wood)	Szekrény (fa)
-Cabinet W.	Szekrény.
-Carpet (Persian)	Szőnyeg (perzsa)
-Carpet P.	Szőnyeg.
-Carpet (Rag)	Szőnyeg (rongy)
-Carpet R.	Szőnyeg.
-Chair (Office)	Szék (iroda)
-Chair O.	Szék i.
-Chair (School)	Szék (iskolai)
-Chair S.	Szék.
-Sun Chair	Napozószék
-S. Chair	Napozószék
-Crate (Military)	Láda (katonai)
-Crate M.	Láda.
-Crate (Special)	Láda (speciális)
-Crate S.	Láda.
-Cupboard	Szekrény
-C. Board	Szekrény
-Curtain (Long)	Függöny (hosszú)
-Curtain L.	Függöny h.
-Curtain (Mini)	Függöny (mini)
-Curtain M.	Függöny.
-Dartboard	Darts-tábla
-D. Board	Darts-tábla
-N. Stand	Kis asztal
-Painting (Lake)	Festmény (Tó)
-Painting L.	Festmény.
-Pallet	Raklap
-Poster (Posture)	Poszter (Helyes testtartás)
-Poster P.	"Poszter: Helyes 
-testtartás."
-Rack (Coat)	Ruhaakasztó (kabát)
-Rack C.	Ruhaakasztó.
-Rya (Maria)	(Maria)
-Rya M.	Maria.
-Shelf (Metal)	Polc (fém)
-Shelf M.	Polc.
-Shelf (Wall)	Polc (fali)
-Shelf W.	Polc.
-Shelf (Wood)	Polc (fa)
-Sign (Border Zone)	Tábla (határ)
-Sign BZ.	Tábla.
-Sofa (Leather)	Kanapé (bőr)
-Sofa L.	Kanapé.
-Stool (Military)	Szék (katonai)
-Stool M.	Szék.
-Stool (Padded)	Szék (párnázott)
-Stool P.	Szék.
-Table (Cabin)	Asztal (kabin)
-Table C.	Asztal.
-Table (Canteen)	Asztal (étkező)
-Table (Kitchen)	Asztal (konyha)
-Table K.	Asztal.
-Table (Office)	Asztal (iroda)
-Table. O	Asztal
-Target Stand	Célállvány
-Target S.	Célállvány.
-Television	Televizió
-TV	TV
-Trolley (Short)	Kocsi (rövid)
-Trolley S.	Kocsi.
-Trolley (Tall)	Kocsi (magas)
-Trolley T.	Kocsi.
-Weapon Display	Fegyvertartó
-Weapon D.	Fegyvertartó.
-Unload	Kitárazás
-Clear Chamber	Cső ürítése
-Unequip	Leszerelés
-Equip	Felszerelés
-Show	Bővebben
-Hide	Elrejtés
-Activated	Aktiválva
-Not active	Nincs aktiválva
-All maps & zones	Összes térkép és zóna
-Active	Aktív
-Repair	Javítás
-Craft	Barkácsolás
-Added	Hozzáadva
-Remove	Eltávolítás
-Completed	Befejezve
-Add to Notes	Jegyzetekhez adás
-Frozen	Fagyott
-Permadeath Zone	Permadeath zóna
-[Open]	[Nyitás]
-Door [Jammed]	Ajtó [beragadt]
-Door [Occupied]	Ajtó [Használatban]
-Door [Close]	Ajtó [Bezárás]
-Door [Open]	Ajtó [Nyitás]
-Sleep (Random sleep: 6-12h)	Alvás (véletlenszerű alvás: 6–12 óra)
-Turn Off	Kikapcsolás
-Turn On	Bekapcsolás
-Radio [Turn Off]	Rádió [Kikapcsolás]
-Radio [Turn On]	Rádió [Bekapcsolás]
-Television [Turn Off]	Televízió[Kikapcsolás]
-Television [Turn On]	Televízió [Bekapcsolás]
-Rescue Cat	Megmentett macska
-Cat is eating, do not disturb	A macska éppen eszik. Kérlek, ne zavard
-Fuel Tank [89%]	Üzemanyagtartály [89%]
-Feed cat:	A macska etetése:
-Indoors	Belső tér
-Indoor	Belső tér
-Mine	Bánya
-Lure	Csali
-(Military)	(Katonai)
