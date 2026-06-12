@@ -2,7 +2,7 @@ WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type
 Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		38	Easy	2786	쉬움		
 Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		40	Intermediate	2788	보통		
 Tasks	/	difficulty	0	substr	Scripts/Task	gd			difficulty.text	compare		42	Hard	2790	어려움		
-Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	2792	튜토리얼 의뢰 1 (간단함)		
+Tasks	Generalist/Tutorial/01	name	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					name		Tutorial Task 1 (Simple)	2792	튜토리얼 의뢰 1 (쉬움)		
 Tasks	Generalist/Tutorial/01	difficulty	0	ignore	Traders/Generalist/Tutorial/01_Tutorial	tres					difficulty		Easy		쉬움		
 Tasks	Generalist/Tutorial/01	description	0	literal	Traders/Generalist/Tutorial/01_Tutorial	tres					description		"Let's start with something simple.
 
@@ -11,14 +11,14 @@ Go to the Items billboard and grab Canned Pea Soup. Once you have the delivery i
 2. Select Canned Pea Soup
 3. Press Complete"	2794	"간단한 것부터 시작해 볼까요?
 
-아이템 게시판으로 가서 통조림 완두콩 수프를 가져오세요. 배달할 아이템을 인벤토리에 넣었으면 다음 단계를 따르세요.
-1. '배달 시작'을 누르세요.
-2. '완두콩 스프 통조림'를 선택하세요.
-3. '완료'를 누르세요."	"Please pay attention to the following points when translating:
+아이템 게시판으로 가서 통조림 완두콩 수프를 가져오세요. 배달할 아이템을 인벤토리에 넣었으면 다음 단계를 따르세요:
+1. '배달 시작'을 누르세요
+2. '완두콩 스프 통조림'를 선택하세요
+3. '완료'를 누르세요"	"Please pay attention to the following points when translating:
 - 'Canned Pea Soup'
 - 'Start Delivery'
 - 'Complete'"	
-Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	튜토리얼 의뢰 2 (복잡함)		
+Tasks	Generalist/Tutorial/02	name	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					name		Tutorial Task 2 (Complex)	2796	튜토리얼 의뢰 2 (어려움)		
 Tasks	Generalist/Tutorial/02	difficulty	0	ignore	Traders/Generalist/Tutorial/02_Tutorial	tres					difficulty		Intermediate		보통		
 Tasks	Generalist/Tutorial/02	description	0	literal	Traders/Generalist/Tutorial/02_Tutorial	tres					description		"Now let's add some complexity.
 
@@ -35,7 +35,7 @@ In order to craft the Meatballs (Cooked), do the following:
 4. Select Mess Kit, Canned Meatballs and Water Bottle
 5. Press Craft
 
-Now you have successfully crafted the required task item and you can complete the task."	2798	"이제 좀 더 복잡하게 만들어 볼게요.
+Now you have successfully crafted the required task item and you can complete the task."	2798	"자, 이제 좀 더 복잡한걸 시도해보죠.
 
 일부 임무는 '미트볼 (조리됨)'과 같이 '제작'을 통해서만 얻을 수 있는 특정 재료를 필요로 합니다.
 

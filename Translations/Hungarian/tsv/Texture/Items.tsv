@@ -259,56 +259,56 @@ Items	Consumables	Consumables	ignore			\Items\Consumables\Kilju\Files	TX_Kilju_A
 Items	Consumables	Consumables	ignore			\Items\Consumables\Kompot\Files	Icon_Kompot.png	28026	8ac9aed9eecd0a016e8d3853973ebcda1b428547ca0c9e00d1dbef4344615917						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Kompot\Files	TX_Kompot_AL.png	233338	9d06eb805638222e163d8c6ee4973fb06d6c6a56e3493a8dd4a11a636fe1443b						
 Items	Consumables	Consumables	pending	"Sinappia
-SENAP"	"Sinappia
+SENAP"	"Mustár
 SENAP"	\Items\Consumables\Mustard\Files	Icon_Mustard.png	11350	2739f6d6bde6720dd7736bd669decc3660f9239254479219869608f89a1a74e3	3097					
 Items	Consumables	Consumables	pending	"Sinappia
-SENAP"	"Sinappia
+SENAP"	"Mustár
 SENAP"	\Items\Consumables\Mustard\Files	TX_Mustard_AL.png	113185	fa675714ab8ea10c0339da63cc21699287aaa375c9dfe4ea570230ea5cf068d4	3099					
 Items	Consumables	Consumables	pending	"Suolapähkinät
 Roasted & Salted
 
 # 3 Lines of Instruction: Can not read
 
-Rapearmakupala"	"Suolapähkinät
-Roasted & Salted
+Rapearmakupala"	"Sós mogyoró
+Pörkölt és sózott
 
-# 3 Lines of Instruction: Can not read
+# 3 Utasítások: Nem olvasható
 
-Rapearmakupala"	\Items\Consumables\Peanuts\Files	Icon_Peanuts.png	14286	0ec125d98a94855844abcfc27bcf2706de35373b8508faa944d247301aeee9e0	3101					
+Ropogós falatkák"	\Items\Consumables\Peanuts\Files	Icon_Peanuts.png	14286	0ec125d98a94855844abcfc27bcf2706de35373b8508faa944d247301aeee9e0	3101					
 Items	Consumables	Consumables	pending	"Suolapähkinät
 Roasted & Salted
 
 # 3 Lines of Instruction: Can not read
 
-Rapearmakupala"	"Suolapähkinät
-Roasted & Salted
+Rapearmakupala"	"Sós mogyoró
+Pörkölt és sózott
 
-# 3 Lines of Instruction: Can not read
+# 3 Utasítások: Nem olvasható
 
-Rapearmakupala"	\Items\Consumables\Peanuts\Files	TX_Peanuts_AL.png	181366	bf597fa4bcea42d6cfb1f00ac5107234b681eaf17fac929993c8494006347ab4	3103					
+Ropogós falatkák"	\Items\Consumables\Peanuts\Files	TX_Peanuts_AL.png	181366	bf597fa4bcea42d6cfb1f00ac5107234b681eaf17fac929993c8494006347ab4	3103					
 Items	Consumables	Consumables	ignore			\Items\Consumables\Potato\Files	Icon_Potato.png	9095	1180548f95973143eb1ddd2680f2846fc5ff1ed1c90138c1f70d6361db8c1561						
 Items	Consumables	Consumables	ignore			\Items\Consumables\Potato\Files	TX_Potato_AL.png	69861	98b7a1e16c7a24529cb04a908f1df5b063f518f28d2b161e76d40980d0844b82						
 Items	Consumables	Consumables	pending	"SALMIAKKI
 SALMIAK
 
 ORIGINAL"	"SALMIAKKI
-Salty liquorice
+Sós édesgyökér
 
-ORIGINAL"	\Items\Consumables\Salty_Liquorice\Files	Icon_Salty_Liquorice.png	7650	e2ab0a588304a096b78f8f96539ab2124b8bde03dc45e0550c9509938a11ebbe	3105					
+EREDETI"	\Items\Consumables\Salty_Liquorice\Files	Icon_Salty_Liquorice.png	7650	e2ab0a588304a096b78f8f96539ab2124b8bde03dc45e0550c9509938a11ebbe	3105					
 Items	Consumables	Consumables	pending	"SALMIAKKI
 SALMIAK
 
 ORIGINAL"	"SALMIAKKI
-Salty liquorice
+Sós édesgyökér
 
-ORIGINAL"	\Items\Consumables\Salty_Liquorice\Files	TX_Salty_Liquorice_AL.png	172317	9b6d3235362daff3ec1426e95e1a2812905202f59b045016c0e3323e208eca0a	3107					
+EREDETI"	\Items\Consumables\Salty_Liquorice\Files	TX_Salty_Liquorice_AL.png	172317	9b6d3235362daff3ec1426e95e1a2812905202f59b045016c0e3323e208eca0a	3107					
 Items	Consumables	Consumables	pending	"NORDENS KUNG
 
 ORIGINAL
-VIT PORTION"	"NORDENS KUNG
+VIT PORTION"	"A SKANDINÁVIA KIRÁLYA
 
-ORIGINAL
-VIT PORTION"	\Items\Consumables\Snus\Files	Icon_Snus.png	8363	87ec007311eea87bf8c836a14addac3fba4e3271550087f1456106319dd3625e	3109					
+ORIGINÁLIS
+FEHÉR ADAG"	\Items\Consumables\Snus\Files	Icon_Snus.png	8363	87ec007311eea87bf8c836a14addac3fba4e3271550087f1456106319dd3625e	3109					
 Items	Consumables	Consumables	pending	"NORDENS KUNG
 
 ORIGINAL
@@ -322,12 +322,12 @@ beroendeframkallande
 NORDENS KUNG"	"NORDENS KUNG
 
 ORIGINAL
-VIT PORTION
+FEHÉR ADAG
 
-Denna
-tobaksvara
-skadar hälsan och är
-beroendeframkallande
+Ez a
+dohánytermék
+káros az egészségre és
+függőséget okoz
 
 NORDENS KUNG"	\Items\Consumables\Snus\Files	TX_Snus_AL.png	126656	c05768924428a58dc16d9419d12d8fb02b069899c90f7fe9cb516c3726a74ee6	3111					
 Items	Consumables	Consumables	pending	"RAKASTA KUPLAJUOMAA
@@ -336,18 +336,18 @@ LIMONADI
 
 NÄKISEN VIRVOITUSJUOMATEHDAS"	"RAKASTA KUPLAJUOMAA
 
-LIMONADI
+LIMONÁDÉ
 
-NÄKISEN VIRVOITUSJUOMATEHDAS"	\Items\Consumables\Soda_Lemon\Files	Icon_Soda_Lemon.png	10509	4a105969fc611f47c2d884053feb1748be098038a4a063aea375428aa7c3b550	3113					
+NÄKISEN ÜDÍTŐGYÁR"	\Items\Consumables\Soda_Lemon\Files	Icon_Soda_Lemon.png	10509	4a105969fc611f47c2d884053feb1748be098038a4a063aea375428aa7c3b550	3113					
 Items	Consumables	Consumables	pending	"RAKASTA KUPLAJUOMAA
 
 LIMONADI
 
 NÄKISEN VIRVOITUSJUOMATEHDAS"	"RAKASTA KUPLAJUOMAA
 
-LIMONADI
+LIMONÁDÉ
 
-NÄKISEN VIRVOITUSJUOMATEHDAS"	\Items\Consumables\Soda_Lemon\Files	TX_Soda_Lemon_AL.png	221378	8f9e5da969eb17f9de7a7a245eb58783e62fc9680418ae7d31b264f1ccc749aa	3115					
+NÄKISEN ÜDÍTŐGYÁR"	\Items\Consumables\Soda_Lemon\Files	TX_Soda_Lemon_AL.png	221378	8f9e5da969eb17f9de7a7a245eb58783e62fc9680418ae7d31b264f1ccc749aa	3115					
 Items	Consumables	Consumables	pending	"TALOUS
 SOKERI
 
@@ -357,14 +357,14 @@ Viljelty,
 valmistettu
 ja pakattu
 Suomessa"	"TALOUS
-SOKERI
+CUKOR
 
 STROOSENHE
 
-Viljelty,
-valmistettu
-ja pakattu
-Suomessa"	\Items\Consumables\Sugar\Files	Icon_Sugar.png	17392	1ae6f402979e533060bbb184b469a1bf926a8bb6c5d829fb5a64ee20a07d96cf	3117					
+Termesztve,
+előállítva
+és csomagolva
+Finnországban"	\Items\Consumables\Sugar\Files	Icon_Sugar.png	17392	1ae6f402979e533060bbb184b469a1bf926a8bb6c5d829fb5a64ee20a07d96cf	3117					
 Items	Consumables	Consumables	pending	"TALOUS
 SOKERI
 
@@ -374,32 +374,32 @@ Viljelty,
 valmistettu
 ja pakattu
 Suomessa"	"TALOUS
-SOKERI
+CUKOR
 
 STROOSENHE
 
-Viljelty,
-valmistettu
-ja pakattu
-Suomessa"	\Items\Consumables\Sugar\Files	TX_Sugar_AL.png	125407	0ee099dc7a0b3d73fa3e99c8e3e3cca6d5f1e543421cbda1b9a43f0b253ae904	3119					
+Termesztve,
+előállítva
+és csomagolva
+Finnországban"	\Items\Consumables\Sugar\Files	TX_Sugar_AL.png	125407	0ee099dc7a0b3d73fa3e99c8e3e3cca6d5f1e543421cbda1b9a43f0b253ae904	3119					
 Items	Consumables	Consumables	pending	"SUOMALAINEN
 LÄHDE-
-VESI"	"SUOMALAINEN
-LÄHDE-
-VESI"	\Items\Consumables\Water_Bottle\Files	Icon_Water_Bottle.png	20840	d54ce56cf2956dc219c4bf3c7eca47c27035819f45f6dc630c3ff01f13fb9ec3	3121					
+VESI"	"FINN
+FORRÁS-
+VÍZ"	\Items\Consumables\Water_Bottle\Files	Icon_Water_Bottle.png	20840	d54ce56cf2956dc219c4bf3c7eca47c27035819f45f6dc630c3ff01f13fb9ec3	3121					
 Items	Consumables	Consumables	pending	"SUOMALAINEN
 LÄHDE-
-VESI"	"SUOMALAINEN
-LÄHDE-
-VESI"	\Items\Consumables\Water_Bottle\Files	TX_Water_Bottle_AL.png	132791	98565ff7640c1f2d571589c92ea0b2bc4fdf4b2b80888f8df88fdab1d1440bd1	3123					
+VESI"	"FINN
+FORRÁS-
+VÍZ"	\Items\Consumables\Water_Bottle\Files	TX_Water_Bottle_AL.png	132791	98565ff7640c1f2d571589c92ea0b2bc4fdf4b2b80888f8df88fdab1d1440bd1	3123					
 Items	Consumables	Consumables	pending	"Kotileipurin
 
 Kuivahiiva
 Torrjäst
 
-4 x 11 g"	"Kotileipurin
+4 x 11 g"	"Házi süteményekhez
 
-Kuivahiiva
+Száraz élesztő
 Torrjäst
 
 4 x 11 g"	\Items\Consumables\Yeast\Files	Icon_Yeast.png	9600	9474174633c3f0693ca6fb3c5054262dc32251db9c80ba07a579a78758a925de	3125					
@@ -408,9 +408,9 @@ Items	Consumables	Consumables	pending	"Kotileipurin
 Kuivahiiva
 Torrjäst
 
-4 x 11 g"	"Kotileipurin
+4 x 11 g"	"Házi süteményekhez
 
-Kuivahiiva
+Száraz élesztő
 Torrjäst
 
 4 x 11 g"	\Items\Consumables\Yeast\Files	TX_Yeast_AL.png	195759	bf5a7ec64817543ef1091f8ee2f7a43efddff20738adce1b6302570a0d0732c0	3127					
@@ -421,8 +421,7 @@ Items	Electronics		pending	"VIRTA+
 ALKALIPARISTO / ALKALISKT BATTERI
 ALKALISK BATTERI"	"VIRTA+
 
-ALKALIPARISTO / ALKALISKT BATTERI
-ALKALISK BATTERI"	\Items\Electronics\Batteries\Files	Icon_Batteries.png	10286	52073e2235a8197a8b5aa75618462c69d7ffeb947c4207b6fca39a0e91a2b21e	3129					
+ ALKÁLI ELEM"	\Items\Electronics\Batteries\Files	Icon_Batteries.png	10286	52073e2235a8197a8b5aa75618462c69d7ffeb947c4207b6fca39a0e91a2b21e	3129					
 Items	Electronics		pending	"VIRTA+
 
 ALKALIPARISTO / ALKALISKT BATTERI
@@ -820,41 +819,41 @@ Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, et
 elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
 
 Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
-STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	"Havainnot
+STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	"Észrevételek
 
-Potilaalla havaittavissa voimakasta hengitysteiden ärsytystä (bronkiaalinen)
-sekä merkittävää pahoinvointia. RR 160/95, p 110, SpO2 88% (huoneilmalla).
+A betegnél erős légúti irritáció (bronchiális)
+és jelentős hányinger figyelhető meg. RR 160/95, pulzus 110, SpO2 88% (szobahőmérsékleten).
 
-Verenkuvassa viitteitä asidoosista. Epäily altistumisesta akryylinitriilille
-sekä sen palamisprosessissa vapautuneelle syaanivedylle (HCN).
+A vérképben az acidózisra utaló jelek. Gyanú akrilnitrilnek
+valamint annak égési folyamatában felszabaduló cianhidrogénnek (HCN) való expozícióra.
 
-Oirekuvaus
+Tünetleírás
 
-Hengitystiet: Voimakas yskä, hengenahdistus (dyspnea).
-Keuhkoissa kuultavissa rahinaa.
+Légutak: Erős köhögés, légszomj (dyspnea).
+A tüdőben hörgés hallható.
 
-Neurologiset oireet: Huimaus, sekavuus ja päänsärky.
-Potilas valittaa ”metallista makua” suussa.
+Neurológiai tünetek: Szédülés, zavartság és fejfájás.
+A beteg „fémes ízről” panaszkodik a szájában.
 
-Iho: Lievää syanoosia raajoissa, vaikka iho tuntuu lämpimältä.
+Bőr: Enyhe cianózis a végtagokon, bár a bőr melegnek tűnik.
 
-Hoitosuunnitelma
+Kezelési terv
 
-Välitön happihoito aloitettu. Seurataan mahdollisia sydänoireita.
-Mikäli tila heikkenee, harkittava vasta-ainemyrkytykseen varalta.
+Azonnali oxigénkezelés megkezdve. Figyeljük az esetleges szívtüneteket.
+Ha az állapot romlik, fontolóra kell venni az antitest-mérgezés lehetőségét.
 
-Alueen vesistöjen ja ympäristön tila tarkistettava lisäaltistumisen estämiseksi.
+Ellenőrizni kell a környék vizeinek és környezetének állapotát a további expozíció megelőzése érdekében.
 
-Poikkeavat löydökset
+Rendellenes leletek
 
-Vaikka akryylinitriili ja syaanivety selittävät osan oireista, potilaan lihasjäykkyys ja pupillien
-poikkeuksellinen supistuminen (mioosi) viittaavat myös johonkin muuhun.
+Bár az akrilnitril és a cianhidrogén a tünetek egy részét magyarázza, a beteg izommerevsége és a pupillák
+szokatlan összehúzódása (miozis) másra is utal.
 
-Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, että potilaan
-elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
+Ezek nem jellemző tünetei a nitril-mérgezésnek. Úgy tűnik, hogy a beteg
+szervezetében vannak ismeretlen, az idegrendszerre ható anyagok is.
 
-Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
-STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	\Items\Lore\Patient_Report\Files	Icon_Patient_Report.png	28691	e85cf06f64eb4641562a13146ea26526e78d7c852e5a302eeb39ed818e8cf642	3207				Reason for ignoring: Low Resolution	
+Lehet, hogy egy bonyolultabb, esetleg szintetikusan módosított vegyületről van szó.
+A STUK-ot értesítették (sürgősen), és segítségkérést küldtek a PV-nek."	\Items\Lore\Patient_Report\Files	Icon_Patient_Report.png	28691	e85cf06f64eb4641562a13146ea26526e78d7c852e5a302eeb39ed818e8cf642	3207				Reason for ignoring: Low Resolution	
 Items	Lore		pending	"Havainnot
 
 Potilaalla havaittavissa voimakasta hengitysteiden ärsytystä (bronkiaalinen)
@@ -889,54 +888,54 @@ Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, et
 elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
 
 Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
-STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	"Havainnot
+STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	"Észrevételek
 
-Potilaalla havaittavissa voimakasta hengitysteiden ärsytystä (bronkiaalinen)
-sekä merkittävää pahoinvointia. RR 160/95, p 110, SpO2 88% (huoneilmalla).
+A betegnél erős légúti irritáció (bronchiális)
+és jelentős hányinger figyelhető meg. RR 160/95, pulzus 110, SpO2 88% (szobahőmérsékleten).
 
-Verenkuvassa viitteitä asidoosista. Epäily altistumisesta akryylinitriilille
-sekä sen palamisprosessissa vapautuneelle syaanivedylle (HCN).
+A vérképben az acidózisra utaló jelek. Gyanú akrilnitrilnek
+valamint annak égési folyamatában felszabaduló cianhidrogénnek (HCN) való expozícióra.
 
-Oirekuvaus
+Tünetleírás
 
-Hengitystiet: Voimakas yskä, hengenahdistus (dyspnea).
-Keuhkoissa kuultavissa rahinaa.
+Légutak: Erős köhögés, légszomj (dyspnea).
+A tüdőben hörgés hallható.
 
-Neurologiset oireet: Huimaus, sekavuus ja päänsärky.
-Potilas valittaa ”metallista makua” suussa.
+Neurológiai tünetek: Szédülés, zavartság és fejfájás.
+A beteg „fémes ízről” panaszkodik a szájában.
 
-Iho: Lievää syanoosia raajoissa, vaikka iho tuntuu lämpimältä.
+Bőr: Enyhe cianózis a végtagokon, bár a bőr melegnek tűnik.
 
-Hoitosuunnitelma
+Kezelési terv
 
-Välitön happihoito aloitettu. Seurataan mahdollisia sydänoireita.
-Mikäli tila heikkenee, harkittava vasta-ainemyrkytykseen varalta.
+Azonnali oxigénkezelés megkezdve. Figyeljük az esetleges szívtüneteket.
+Ha az állapot romlik, fontolóra kell venni az antitest-mérgezés lehetőségét.
 
-Alueen vesistöjen ja ympäristön tila tarkistettava lisäaltistumisen estämiseksi.
+Ellenőrizni kell a környék vizeinek és környezetének állapotát a további expozíció megelőzése érdekében.
 
-Poikkeavat löydökset
+Rendellenes leletek
 
-Vaikka akryylinitriili ja syaanivety selittävät osan oireista, potilaan lihasjäykkyys ja pupillien
-poikkeuksellinen supistuminen (mioosi) viittaavat myös johonkin muuhun.
+Bár az akrilnitril és a cianhidrogén a tünetek egy részét magyarázza, a beteg izommerevsége és a pupillák
+szokatlan összehúzódása (miozis) másra is utal.
 
-Nämä eivät ole tyypillisiä nitriilimyrkytyksen oireita. Vaikuttaa siltä, että potilaan
-elimistössä on myös tuntemattomia hermostoon vaikuttavia aineita.
+Ezek nem jellemző tünetei a nitril-mérgezésnek. Úgy tűnik, hogy a beteg
+szervezetében vannak ismeretlen, az idegrendszerre ható anyagok is.
 
-Kyseessä voi olla monimutkaisempi, mahdollisesti synteettisesti muokattu yhdiste.
-STUK informoitu (kiireellinen) ja virka-apupyyntö lähetetty PV."	\Items\Lore\Patient_Report\Files	TX_Patient_Report_AL.png	736092	1b1571a9866b579c794fca02f65d09e56a689130bd5f2aa8240479f2d58107ad	3209					
-Items	Medical		pending	MEDICAL	MEDICAL	\Items\Medical\AFAK\Files	Icon_AFAK.png	55283	e0cc6985d035a50e8b41a38db4733f357fbab46627d8c03dda89d29081e880e3	3211					
-Items	Medical		pending	MEDICAL	MEDICAL	\Items\Medical\AFAK\Files	TX_AFAK_AL.png	1674849	8e5b2108b2466d753cd18e83ec06f3349187b997830e2dd8066839bda46453a1	3213					
+Lehet, hogy egy bonyolultabb, esetleg szintetikusan módosított vegyületről van szó.
+A STUK-ot értesítették (sürgősen), és segítségkérést küldtek a PV-nek."	\Items\Lore\Patient_Report\Files	TX_Patient_Report_AL.png	736092	1b1571a9866b579c794fca02f65d09e56a689130bd5f2aa8240479f2d58107ad	3209					
+Items	Medical		pending	MEDICAL	ORVOSI	\Items\Medical\AFAK\Files	Icon_AFAK.png	55283	e0cc6985d035a50e8b41a38db4733f357fbab46627d8c03dda89d29081e880e3	3211					
+Items	Medical		pending	MEDICAL	ORVOSI	\Items\Medical\AFAK\Files	TX_AFAK_AL.png	1674849	8e5b2108b2466d753cd18e83ec06f3349187b997830e2dd8066839bda46453a1	3213					
 Items	Medical		pending	"14 tabl.
 
 Amoxpro 500 mg
 
 kalvopäällysteiset tabletit / filmdragerade tabletter
 
-amoxicillin."	"14 tabl.
+amoxicillin."	"14 tabletta
 
 Amoxpro 500 mg
 
-kalvopäällysteiset tabletit / filmdragerade tabletter
+filmbevonatú tabletták
 
 amoxicillin."	\Items\Medical\Antibiotics\Files	Icon_Antibiotics.png	6834	cfc321a242c52455c1c48d3f7b1bb30aec815048e65c836dadcd0827b929a86f	3215					
 Items	Medical		pending	"14 tabl.
@@ -955,23 +954,19 @@ Säilytä alkuperäispakkauksessa alle 25 °C.
 
 Läs bipacksedeln före användning.
 Förvaras utom syn- och räckhåll för barn.
-Förvaras i originalförpackningen vid högst 25 °C."	"14 tabl.
+Förvaras i originalförpackningen vid högst 25 °C."	"14 tabletta
 
 Amoxpro 500 mg
 
-kalvopäällysteiset tabletit / filmdragerade tabletter
+filmbevonatú tabletták
 amoxicillin.
 
-1 tabl. sisältää / innehåller
-amoxicillinum trihydricum prod. amoxicillinum 500 mg
+1 tabletta tartalmaz
+amoxicillinum trihydricum, amoxicillin formájában 500 mg
 
-Lue pakkausseloste ennen käyttöä.
-Ei lasten ulottuville eikä näkyville.
-Säilytä alkuperäispakkauksessa alle 25 °C.
-
-Läs bipacksedeln före användning.
-Förvaras utom syn- och räckhåll för barn.
-Förvaras i originalförpackningen vid högst 25 °C."	\Items\Medical\Antibiotics\Files	TX_Antibiotics_AL.png	137648	5e1cc0545ba0dc23a87d093e3df10a9b4d20b42023a62dca787d35dc86f606bc	3217					
+Használat előtt olvassa el a betegtájékoztatót.
+Gyermekektől elzárva, biztonságos helyen tárolandó.
+Az eredeti csomagolásban, 25 °C alatt tárolandó."	\Items\Medical\Antibiotics\Files	TX_Antibiotics_AL.png	137648	5e1cc0545ba0dc23a87d093e3df10a9b4d20b42023a62dca787d35dc86f606bc	3217					
 Items	Medical		ignore	"Hydrogen peroxide 3%
 
 FINAMEDI
@@ -979,12 +974,12 @@ CHEMICAL
 
 Not for injection
 
-250 ml"	"Hydrogen peroxide 3%
+250 ml"	"3%-os hidrogén-peroxid
 
 FINAMEDI
-CHEMICAL
+KÉMIAI TERMÉK
 
-Not for injection
+Injekcióhoz nem alkalmas
 
 250 ml"	\Items\Medical\Antiseptic\Files	Icon_Antiseptic.png	8798	3e65a36f5960e1045279e14429148a17c9f28674f86ac4fca46853df050cc8d9	3219				Reason for ignoring: Low Resolution	
 Items	Medical		pending	"Hydrogen peroxide 3%
@@ -994,23 +989,23 @@ CHEMICAL
 
 Not for injection
 
-250 ml"	"Hydrogen peroxide 3%
+250 ml"	"3%-os hidrogén-peroxid
 
 FINAMEDI
-CHEMICAL
+KÉMIAI TERMÉK
 
-Not for injection
+Injekcióhoz nem alkalmas
 
 250 ml"	\Items\Medical\Antiseptic\Files	TX_Antiseptic_AL.png	100308	8b19a39a1b7c5c5f93236b343f3cb3717bd0833f66228afd76b0dde833eb59a4	3221					
 Items	Medical		ignore	"ViTAL
 HUULILLE KÄSILLE KYNSINAUHOILLE"	"ViTAL
-HUULILLE KÄSILLE KYNSINAUHOILLE"	\Items\Medical\Balm\Files	Icon_Balm.png	6979	ef048e04f2ee33c90f9c3e2a5d7ee8baa62b07cdc75b25cb095068ca3bc499f4	3223				Reason for ignoring: Low Resolution	
+AJKAKRA, KÉZRE, KÖRMÖK KÖRÜL"	\Items\Medical\Balm\Files	Icon_Balm.png	6979	ef048e04f2ee33c90f9c3e2a5d7ee8baa62b07cdc75b25cb095068ca3bc499f4	3223				Reason for ignoring: Low Resolution	
 Items	Medical		pending	"ViTAL
 HUULILLE KÄSILLE KYNSINAUHOILLE"	"ViTAL
-HUULILLE KÄSILLE KYNSINAUHOILLE"	\Items\Medical\Balm\Files	TX_Balm_AL.png	100801	0aa7b920a1977d42b2f7c8113f93357dcc533e110fb0d57b1dab8600e2c83315	3225				Some texture is unreadable (low resolution)	
+AJKAKRA, KÉZRE, KÖRMÖK KÖRÜL"	\Items\Medical\Balm\Files	TX_Balm_AL.png	100801	0aa7b920a1977d42b2f7c8113f93357dcc533e110fb0d57b1dab8600e2c83315	3225				Some texture is unreadable (low resolution)	
 Items	Medical		pending	"ENSISIDE
-FÖRSTA FÖRBAND"	"ENSISIDE
-FÖRSTA FÖRBAND"	\Items\Medical\Bandage\Files	Icon_Bandage.png	7941	733b72578e281523c8689e6fcdb8003ce99999213efc5468aa4dd6c332aa297e	3227					
+FÖRSTA FÖRBAND"	"ELSŐSEGÉLY
+ELSŐSEGÉLYKÖTÉS"	\Items\Medical\Bandage\Files	Icon_Bandage.png	7941	733b72578e281523c8689e6fcdb8003ce99999213efc5468aa4dd6c332aa297e	3227					
 Items	Medical		pending	"ENSISIDE
 FÖRSTA FÖRBAND
 
@@ -1025,21 +1020,21 @@ KÄYTTÖ RUNSAASSA
 VERENVUODOSSA PAINESITEENÄ:
 PEITÄ HAAVA RULLAA TOINEN TYYNYOSA
 PETINSITEEN PÄÄLLE.
-KIINNITÄ TUKEVASTI SITEELLÄ."	"ENSISIDE
-FÖRSTA FÖRBAND
+KIINNITÄ TUKEVASTI SITEELLÄ."	"ELSŐSEGÉLY
+ELSŐSEGÉLYKÖTÉS
 
-TAI
+VAGY
 
-KÄYTTÖ HAAVAN PETINSITEENÄ:
-KOHDISTA RAAJA.
-PEITÄ HAAVA SOPIVASTI TAITETULLA
-TYYNYOSALLA JA KIINNITÄ SITEELLÄ.
+HASZNÁLATA SEBKÖTÉSKÉNT:
+HELYEZZE A VÉGTAJAT A HELYÉRE.
+FEDJE LE A SEBET A MEGFELELŐEN ÖSSZEHAJTOTT
+PÁRNA RÉSZÉVEL, ÉS RÖGZÍTSE KÖTÉSSEL.
 
-KÄYTTÖ RUNSAASSA
-VERENVUODOSSA PAINESITEENÄ:
-PEITÄ HAAVA RULLAA TOINEN TYYNYOSA
-PETINSITEEN PÄÄLLE.
-KIINNITÄ TUKEVASTI SITEELLÄ."	\Items\Medical\Bandage\Files	TX_Bandage_AL.png	339170	e3033ab0f84f97b5f33603a413c5f35b26ed57b1f9da93d7e4b0f14f5605ca7d	3229					
+HASZNÁLATA ERŐS
+VÉRZÉS ESETÉN NYOMÓKÖTÉSKÉNT:
+FEDJE LE A SEBET A PÓLYA
+MÁSIK RÉSZÉVEL A SEBKÖTÉS FELETT.
+RÖGZÍTSE SZILÁRDAN KÖTÉSSEL."	\Items\Medical\Bandage\Files	TX_Bandage_AL.png	339170	e3033ab0f84f97b5f33603a413c5f35b26ed57b1f9da93d7e4b0f14f5605ca7d	3229					
 Items	Medical		ignore			\Items\Medical\Bandage_Improvised\Files	Icon_Bandage_Improvised.png	5696	1c50fda67cc668f882c62127bc627da5cec5e1eb7731c51918f85fd3dcbe9a2f						
 Items	Medical		pending			\Items\Medical\Cold_Medicine\Files	Icon_Cold_Medicine.png	8366	b51d619a3951279c0d9445333eefe21d8ab2a8b9d2bbedad5911d38dd2d9c719						
 Items	Medical		pending			\Items\Medical\Cold_Medicine\Files	TX_Cold_Medicine_AL.png	148774	40322486b1cb2e34a25e9515e737f43aa1b50eaddbce1c10211f889eaedb2922						
