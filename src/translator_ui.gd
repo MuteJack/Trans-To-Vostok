@@ -269,23 +269,16 @@ func _show_language_ui(is_startup: bool) -> void:
 	root.add_child(tabs)
 
 	# ============ General 탭 ============
-	var body: HBoxContainer = HBoxContainer.new()
+	var body: VBoxContainer = VBoxContainer.new()
 	body.name = "General"
-	body.add_theme_constant_override("separation", 12)
+	body.add_theme_constant_override("separation", 8)
 	body.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	tabs.add_child(body)
-
-	# 왼쪽: 언어 목록 + Substr 모드
-	var left: VBoxContainer = VBoxContainer.new()
-	left.add_theme_constant_override("separation", 8)
-	left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	left.size_flags_stretch_ratio = 2.0
-	body.add_child(left)
 
 	var lang_title: Label = Label.new()
 	lang_title.text = "Languages"
 	lang_title.add_theme_font_size_override("font_size", 14)
-	left.add_child(lang_title)
+	body.add_child(lang_title)
 
 	# 언어 목록 (ItemList, 스크롤 가능)
 	var item_list: ItemList = ItemList.new()
@@ -317,7 +310,7 @@ func _show_language_ui(is_startup: bool) -> void:
 
 	item_list.select(pre_select)
 	item_list.ensure_current_is_visible()
-	left.add_child(item_list)
+	body.add_child(item_list)
 
 	# Substr 모드 체크박스 (선택된 locale 의 substr_mode_label 텍스트 사용)
 	var substr_check: CheckBox = CheckBox.new()
@@ -331,7 +324,7 @@ func _show_language_ui(is_startup: bool) -> void:
 	substr_check.text = "  " + _substr_texts[pre_select] if pre_select < _substr_texts.size() else substr_default
 	substr_check.button_pressed = _substr_mode
 	substr_check.add_theme_font_size_override("font_size", 12)
-	left.add_child(substr_check)
+	body.add_child(substr_check)
 
 	# 언어 선택 변경 시 체크박스 텍스트 갱신
 	item_list.item_selected.connect(func(idx):
@@ -339,111 +332,10 @@ func _show_language_ui(is_startup: bool) -> void:
 			substr_check.text = "  " + _substr_texts[idx]
 	)
 
-	# 세로 구분선
-	body.add_child(VSeparator.new())
-
-	# 오른쪽: 성능 설정 패널
-	var right: VBoxContainer = VBoxContainer.new()
-	right.add_theme_constant_override("separation", 8)
-	right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	right.size_flags_stretch_ratio = 1.0
-	right.custom_minimum_size = Vector2(200, 0)
-	body.add_child(right)
-
-	var perf_title: Label = Label.new()
-	perf_title.text = "Performance"
-	perf_title.add_theme_font_size_override("font_size", 14)
-	right.add_child(perf_title)
-
-	# Batch Size
-	var size_label: Label = Label.new()
-	size_label.text = "Batch Size"
-	size_label.add_theme_font_size_override("font_size", 11)
-	size_label.modulate = Color(0.7, 0.7, 0.7)
-	right.add_child(size_label)
-
-	var size_row: HBoxContainer = HBoxContainer.new()
-	size_row.add_theme_constant_override("separation", 8)
-	right.add_child(size_row)
-
-	var size_spin: SpinBox = SpinBox.new()
-	size_spin.min_value = 1
-	size_spin.max_value = 4096
-	size_spin.step = 1
-	size_spin.value = _batch_size
-	size_spin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	size_row.add_child(size_spin)
-
-	var size_rec: Label = Label.new()
-	size_rec.text = "Default: %d" % DEFAULT_BATCH_SIZE
-	size_rec.add_theme_font_size_override("font_size", 10)
-	size_rec.modulate = Color(0.5, 0.5, 0.5)
-	size_rec.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	size_row.add_child(size_rec)
-
-	var size_desc: Label = Label.new()
-	size_desc.text = " - Number of Properties checked per tick.\n"
-	size_desc.add_theme_font_size_override("font_size", 10)
-	size_desc.modulate = Color(0.45, 0.45, 0.45)
-	size_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	right.add_child(size_desc)
-
-	# Intervals [s]
-	var interval_label: Label = Label.new()
-	interval_label.text = "Intervals [s]"
-	interval_label.add_theme_font_size_override("font_size", 11)
-	interval_label.modulate = Color(0.7, 0.7, 0.7)
-	right.add_child(interval_label)
-
-	var interval_row: HBoxContainer = HBoxContainer.new()
-	interval_row.add_theme_constant_override("separation", 8)
-	right.add_child(interval_row)
-
-	var interval_spin: SpinBox = SpinBox.new()
-	interval_spin.min_value = 0.005
-	interval_spin.max_value = 1.0
-	interval_spin.step = 0.005
-	interval_spin.value = _batch_interval
-	interval_spin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	interval_row.add_child(interval_spin)
-
-	var interval_rec: Label = Label.new()
-	interval_rec.text = "Default: %.2f" % DEFAULT_BATCH_INTERVAL
-	interval_rec.add_theme_font_size_override("font_size", 10)
-	interval_rec.modulate = Color(0.5, 0.5, 0.5)
-	interval_rec.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
-	interval_row.add_child(interval_rec)
-
-	var interval_desc: Label = Label.new()
-	interval_desc.text = "  - Delay between each tick.\n"
-	interval_desc.add_theme_font_size_override("font_size", 10)
-	interval_desc.modulate = Color(0.45, 0.45, 0.45)
-	interval_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	right.add_child(interval_desc)
-
-	# 가로줄 + 종합 설명
-	right.add_child(HSeparator.new())
-
-	var perf_hint: Label = Label.new()
-	perf_hint.text = "Larger Batch Size, Smaller Interval will make translation faster, but may cause performance issue."
-	perf_hint.add_theme_font_size_override("font_size", 10)
-	perf_hint.modulate = Color(0.45, 0.45, 0.45)
-	perf_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-	right.add_child(perf_hint)
-
-	# 기본값 복원 버튼
-	var spacer: Control = Control.new()
-	spacer.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	right.add_child(spacer)
-
-	var reset_btn: Button = Button.new()
-	reset_btn.text = "Reset Defaults"
-	reset_btn.add_theme_font_size_override("font_size", 11)
-	reset_btn.pressed.connect(func():
-		size_spin.value = DEFAULT_BATCH_SIZE
-		interval_spin.value = DEFAULT_BATCH_INTERVAL
-	)
-	right.add_child(reset_btn)
+	# ============ Settings 탭 ============
+	var settings_nodes: Dictionary = _build_settings_tab(tabs)
+	var size_spin: SpinBox = settings_nodes["size_spin"] as SpinBox
+	var interval_spin: SpinBox = settings_nodes["interval_spin"] as SpinBox
 
 	# ============ Whitelist 탭 ============
 	var wl_checks: Dictionary = _build_whitelist_tab(tabs)
@@ -537,6 +429,149 @@ func _show_language_ui(is_startup: bool) -> void:
 	win.queue_free()
 	_language_window = null
 	_ok_button = null
+
+
+# ==========================================
+# Settings 탭 빌더
+# ==========================================
+#
+# 왼쪽: 성능 설정 (Batch Size / Interval / Reset Defaults)
+# 오른쪽: 향후 추가 예정 영역 (Will be Updated placeholder)
+# 반환값: {size_spin: SpinBox, interval_spin: SpinBox}
+func _build_settings_tab(tabs: TabContainer) -> Dictionary:
+	var tab_body: HBoxContainer = HBoxContainer.new()
+	tab_body.name = "Settings"
+	tab_body.add_theme_constant_override("separation", 12)
+	tab_body.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	tabs.add_child(tab_body)
+
+	# --- 왼쪽: 성능 설정 ---
+	var left: VBoxContainer = VBoxContainer.new()
+	left.add_theme_constant_override("separation", 8)
+	left.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	left.size_flags_stretch_ratio = 1.0
+	left.custom_minimum_size = Vector2(200, 0)
+	tab_body.add_child(left)
+
+	var perf_title: Label = Label.new()
+	perf_title.text = "Performance"
+	perf_title.add_theme_font_size_override("font_size", 14)
+	left.add_child(perf_title)
+
+	# Batch Size
+	var size_label: Label = Label.new()
+	size_label.text = "Batch Size"
+	size_label.add_theme_font_size_override("font_size", 11)
+	size_label.modulate = Color(0.7, 0.7, 0.7)
+	left.add_child(size_label)
+
+	var size_row: HBoxContainer = HBoxContainer.new()
+	size_row.add_theme_constant_override("separation", 8)
+	left.add_child(size_row)
+
+	var size_spin: SpinBox = SpinBox.new()
+	size_spin.min_value = 1
+	size_spin.max_value = 4096
+	size_spin.step = 1
+	size_spin.value = _batch_size
+	size_spin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	size_row.add_child(size_spin)
+
+	var size_rec: Label = Label.new()
+	size_rec.text = "Default: %d" % DEFAULT_BATCH_SIZE
+	size_rec.add_theme_font_size_override("font_size", 10)
+	size_rec.modulate = Color(0.5, 0.5, 0.5)
+	size_rec.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	size_row.add_child(size_rec)
+
+	var size_desc: Label = Label.new()
+	size_desc.text = " - Number of Properties checked per tick.\n"
+	size_desc.add_theme_font_size_override("font_size", 10)
+	size_desc.modulate = Color(0.45, 0.45, 0.45)
+	size_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	left.add_child(size_desc)
+
+	# Intervals [s]
+	var interval_label: Label = Label.new()
+	interval_label.text = "Intervals [s]"
+	interval_label.add_theme_font_size_override("font_size", 11)
+	interval_label.modulate = Color(0.7, 0.7, 0.7)
+	left.add_child(interval_label)
+
+	var interval_row: HBoxContainer = HBoxContainer.new()
+	interval_row.add_theme_constant_override("separation", 8)
+	left.add_child(interval_row)
+
+	var interval_spin: SpinBox = SpinBox.new()
+	interval_spin.min_value = 0.005
+	interval_spin.max_value = 1.0
+	interval_spin.step = 0.005
+	interval_spin.value = _batch_interval
+	interval_spin.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	interval_row.add_child(interval_spin)
+
+	var interval_rec: Label = Label.new()
+	interval_rec.text = "Default: %.2f" % DEFAULT_BATCH_INTERVAL
+	interval_rec.add_theme_font_size_override("font_size", 10)
+	interval_rec.modulate = Color(0.5, 0.5, 0.5)
+	interval_rec.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+	interval_row.add_child(interval_rec)
+
+	var interval_desc: Label = Label.new()
+	interval_desc.text = "  - Delay between each tick.\n"
+	interval_desc.add_theme_font_size_override("font_size", 10)
+	interval_desc.modulate = Color(0.45, 0.45, 0.45)
+	interval_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	left.add_child(interval_desc)
+
+	left.add_child(HSeparator.new())
+
+	var perf_hint: Label = Label.new()
+	perf_hint.text = "Larger Batch Size, Smaller Interval will make translation faster, but may cause performance issue."
+	perf_hint.add_theme_font_size_override("font_size", 10)
+	perf_hint.modulate = Color(0.45, 0.45, 0.45)
+	perf_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	left.add_child(perf_hint)
+
+	var spacer_left: Control = Control.new()
+	spacer_left.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	left.add_child(spacer_left)
+
+	var reset_btn: Button = Button.new()
+	reset_btn.text = "Reset Defaults"
+	reset_btn.add_theme_font_size_override("font_size", 11)
+	reset_btn.pressed.connect(func():
+		size_spin.value = DEFAULT_BATCH_SIZE
+		interval_spin.value = DEFAULT_BATCH_INTERVAL
+	)
+	left.add_child(reset_btn)
+
+	# --- 세로 구분선 ---
+	tab_body.add_child(VSeparator.new())
+
+	# --- 오른쪽: 향후 추가 예정 ---
+	var right: VBoxContainer = VBoxContainer.new()
+	right.add_theme_constant_override("separation", 8)
+	right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	right.size_flags_stretch_ratio = 1.0
+	tab_body.add_child(right)
+
+	var spacer_top: Control = Control.new()
+	spacer_top.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	right.add_child(spacer_top)
+
+	var placeholder: Label = Label.new()
+	placeholder.text = "Will be Updated"
+	placeholder.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+	placeholder.add_theme_font_size_override("font_size", 12)
+	placeholder.modulate = Color(0.45, 0.45, 0.45)
+	right.add_child(placeholder)
+
+	var spacer_bot: Control = Control.new()
+	spacer_bot.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	right.add_child(spacer_bot)
+
+	return {"size_spin": size_spin, "interval_spin": interval_spin}
 
 
 # ==========================================
