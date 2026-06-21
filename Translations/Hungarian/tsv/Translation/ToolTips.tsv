@@ -1,10 +1,10 @@
 WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type	property	unique_id	text	identifier	translation	DESCRIPTION	max_length
-Weapon	Weapon	String	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]	2924	Fegyver meghibásodott | Nyomja meg a gombot [Újratöltés]		
+Weapon	Weapon	String	0	literal	UI/HUD	tscn	UI/HUD	Malfunction	Label	Label	text	1954678705	Weapon Jammed | Press [Reload]	2924	Fegyver meghibásodott | Nyomja meg az [Újratöltés gombot]		
 Weapon	Weapon	Number	1	literal	UI/HUD	tscn	UI/HUD	Magazine/Panel	Count	Label	text	1565790634	0				
 Weapon	Weapon	Number	1	literal	UI/HUD	tscn	UI/HUD	Chamber/Panel	Count	Label	text	343236737	0				
 Interaction	/	String	0	literal	UI/HUD	tscn	UI/HUD	Tooltip	Label	Label	text	35341605	Interaction	2926	Kölcsönhatás		
 Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		87	Fire [Ignite]	2928	Tűz [Megyújtás]		
-Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]	2930	Tűz [Nincs gyufa]		
+Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		89	Fire [Matches not equipped]	2930	Tűz [Gyufa nincs felszerelve]		
 Interaction	Fire	String	0	literal	Scripts/Fire	gd			gameData.tooltip	literal		93	Fire [Extinguish]	2932	Tűz [Eloltás]		
 Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Switch	Label	text	566327047	[RMB] = Rotation Mode	2934	[RMB] = Forgatás		
 Interaction	Placement	String	0	literal	UI/HUD	tscn	UI/HUD	Decor/Margin/Elements	Add	Label	text	1516803336	[MMB] = Add to Catalog	2936	[MMB] = Hozzáadás a katalógushoz		

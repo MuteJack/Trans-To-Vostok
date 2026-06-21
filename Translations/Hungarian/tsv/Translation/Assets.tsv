@@ -6,7 +6,7 @@ Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboa
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special		containerName	1043332703	Tutorial Crate				
 Assets	Containers/Billboard_Weapons		0	ignore	Assets/Tutorial/Billboards/Billboard_Weapons	tscn	Assets/Tutorial/Billboards/Billboard_Weapons	.	Crate_Special_2		containerName	1992722119	Tutorial Crate				
 Assets	Containers/Crate_Wood_Tutorial		0	ignore	Assets/Crate_Wood/Crate_Wood_Tutorial	tscn	Assets/Crate_Wood/Crate_Wood_Tutorial		Crate_Wood_Tutorial	Node3D	containerName	238444265	Tutorial Crate				
-Assets	Containers/Box_Electric		0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	466	Elektromos kapcsolódoboz		
+Assets	Containers/Box_Electric		0	substr	Assets/Box_Electric/Box_Electric	tscn	Assets/Box_Electric/Box_Electric		Box_Electric	Node3D	containerName	2095355101	Electric Box	466	Elektromos kapcsolószekrény		
 Assets	Containers/Cabinet_Medical		0	substr	Assets/Cabinet_Medical/Cabinet_Medical	tscn	Assets/Cabinet_Medical/Cabinet_Medical		Cabinet_Medical	Node3D	containerName	1146557850	Medical Cabinet	468	Gyógyszeres szekrény		
 Assets	Containers/Cabinet_Medical_F		0	ignore	Assets/Cabinet_Medical/Cabinet_Medical_F	tscn	Assets/Cabinet_Medical/Cabinet_Medical_F		Cabinet_Medical_F	Node3D	containerName	2092602420	Medical Cabinet				
 Assets	Containers/Cabinet_Office		0	substr	Assets/Cabinet_Office/Cabinet_Office	tscn	Assets/Cabinet_Office/Cabinet_Office		Cabinet_Office	Node3D	containerName	1131051434	Office Cabinet	470	Irodai szekrény		

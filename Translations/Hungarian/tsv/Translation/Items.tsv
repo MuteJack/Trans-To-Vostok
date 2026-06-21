@@ -487,7 +487,7 @@ Items	Consumables/Salty_Liquorice	name	0	ignore	Items/Consumables/Salty_Liquoric
 Items	Consumables/Salty_Liquorice	name	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					display		Salty Liq.				
 Items	Consumables/Salty_Liquorice	action	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					phrase		Eat				
 Items	Consumables/Salty_Liquorice	type	0	ignore	Items/Consumables/Salty_Liquorice/Salty_Liquorice	tres					type		Consumables				
-Items	Consumables/Snus	name	0	substr	Items/Consumables/Snus/Snus	tres					name		Snus	1632	Nasi		
+Items	Consumables/Snus	name	0	substr	Items/Consumables/Snus/Snus	tres					name		Snus	1632	Dohány		
 Items	Consumables/Snus	name	0	ignore	Items/Consumables/Snus/Snus	tres					inventory		Snus				
 Items	Consumables/Snus	name	0	ignore	Items/Consumables/Snus/Snus	tres					rotated		Snus				
 Items	Consumables/Snus	name	0	ignore	Items/Consumables/Snus/Snus	tres					equipment		Snus				
@@ -548,7 +548,7 @@ Items	Electronics/Battery_Cables	name	0	ignore	Items/Electronics/Battery_Cables/
 Items	Electronics/Battery_Cables	name	0	ignore	Items/Electronics/Battery_Cables/Battery_Cables	tres					display		B. Cables				
 Items	Electronics/Battery_Cables	type	0	ignore	Items/Electronics/Battery_Cables/Battery_Cables	tres					type		Electronics				
 Items	Electronics	type	0	substr									Casette	1662	Kazetta		
-Items	Electronics/Casette_Electrofolk	name	0	substr	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					name		Casette (Electrofolk)	1664	Casette (Electrofolk)		
+Items	Electronics/Casette_Electrofolk	name	0	substr	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					name		Casette (Electrofolk)	1664	Kazetta (Electrofolk)		
 Items	Electronics/Casette_Electrofolk	name	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					inventory		Casette				
 Items	Electronics/Casette_Electrofolk	name	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					rotated		Casette				
 Items	Electronics/Casette_Electrofolk	name	0	ignore	Items/Electronics/Casette_Electrofolk/Casette_Electrofolk	tres					equipment		Casette				
@@ -609,7 +609,7 @@ Items	Electronics/Coffeemaster	name	0	substr	Items/Electronics/Coffeemaster/Coff
 Items	Electronics/Coffeemaster	name	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					inventory		Coffeemaster				
 Items	Electronics/Coffeemaster	name	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					rotated		Coffeemaster				
 Items	Electronics/Coffeemaster	name	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					equipment		Coffeemaster				
-Items	Electronics/Coffeemaster	name	0	substr	Items/Electronics/Coffeemaster/Coffeemaster	tres					display		C. Master	1714	K.mester		
+Items	Electronics/Coffeemaster	name	0	substr	Items/Electronics/Coffeemaster/Coffeemaster	tres					display		C. Master	1714	Kávé. m		
 Items	Electronics/Coffeemaster	type	0	ignore	Items/Electronics/Coffeemaster/Coffeemaster	tres					type		Electronics				
 Items	Electronics/Cooking_Station	name	0	substr	Items/Electronics/Cooking_Station/Cooking_Station	tres					name		Cooking Station	1716	Főzőpult		
 Items	Electronics/Cooking_Station	name	0	ignore	Items/Electronics/Cooking_Station/Cooking_Station	tres					inventory		Cooking Station				
@@ -635,7 +635,7 @@ Items	Electronics/Narva	name	0	ignore	Items/Electronics/Narva/Narva	tres					rot
 Items	Electronics/Narva	name	0	ignore	Items/Electronics/Narva/Narva	tres					equipment		Narva				
 Items	Electronics/Narva	name	0	ignore	Items/Electronics/Narva/Narva	tres					display		Narva				
 Items	Electronics/Narva	type	0	ignore	Items/Electronics/Narva/Narva	tres					type		Electronics				
-Items	Electronics/Polaris	name	0	substr	Items/Electronics/Polaris/Polaris	tres					name		Polaris	1726	Polaris		
+Items	Electronics/Polaris	name	0	substr	Items/Electronics/Polaris/Polaris	tres					name		Polaris	1726	Fejlámpa		
 Items	Electronics/Polaris	name	0	ignore	Items/Electronics/Polaris/Polaris	tres					inventory		Polaris				
 Items	Electronics/Polaris	name	0	ignore	Items/Electronics/Polaris/Polaris	tres					rotated		Polaris				
 Items	Electronics/Polaris	name	0	ignore	Items/Electronics/Polaris/Polaris	tres					equipment		Polaris				
@@ -901,7 +901,7 @@ Items	Medical/Melatonin	name	0	ignore	Items/Medical/Melatonin/Melatonin	tres				
 Items	Medical/Melatonin	name	0	ignore	Items/Medical/Melatonin/Melatonin	tres					equipment		Melaton.				
 Items	Medical/Melatonin	name	0	ignore	Items/Medical/Melatonin/Melatonin	tres					display		Melaton.				
 Items	Medical/Melatonin	type	0	ignore	Items/Medical/Melatonin/Melatonin	tres					type		Medical				
-Items	Medical/Painkillers	name	0	substr	Items/Medical/Painkillers/Painkillers	tres					name		Painkill.	1850	Fáj.csillapító		
+Items	Medical/Painkillers	name	0	substr	Items/Medical/Painkillers/Painkillers	tres					name		Painkill.	1850	Fáj. csillap.		
 Items	Medical/Painkillers	name	0	ignore	Items/Medical/Painkillers/Painkillers	tres					inventory		Painkill.				
 Items	Medical/Painkillers	name	0	ignore	Items/Medical/Painkillers/Painkillers	tres					rotated		Painkill.				
 Items	Medical/Painkillers	name	0	ignore	Items/Medical/Painkillers/Painkillers	tres					equipment		Painkill.				
@@ -988,17 +988,17 @@ Items	Misc/Coffee_Filter	name	0	ignore	Items/Misc/Coffee_Filter/Coffee_Filter	tr
 Items	Misc/Coffee_Filter	name	0	ignore	Items/Misc/Coffee_Filter/Coffee_Filter	tres					equipment		Coffee Filter				
 Items	Misc/Coffee_Filter	name	0	substr	Items/Misc/Coffee_Filter/Coffee_Filter	tres					display		C. Filter	1888	Kávész.		
 Items	Misc/Coffee_Filter	type	0	ignore	Items/Misc/Coffee_Filter/Coffee_Filter	tres					type		Misc				
-Items	Misc/Duct_Tape	name	0	substr	Items/Misc/Duct_Tape/Duct_Tape	tres					name		Duct Tape	1890	Szigszalag		
+Items	Misc/Duct_Tape	name	0	substr	Items/Misc/Duct_Tape/Duct_Tape	tres					name		Duct Tape	1890	Szigetelőszalag		
 Items	Misc/Duct_Tape	name	0	substr	Items/Misc/Duct_Tape/Duct_Tape	tres					inventory		D. Tape	1892	Sz.szalag		
 Items	Misc/Duct_Tape	name	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					rotated		D. Tape				
 Items	Misc/Duct_Tape	name	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					equipment		D. Tape				
 Items	Misc/Duct_Tape	name	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					display		D. Tape				
 Items	Misc/Duct_Tape	type	0	ignore	Items/Misc/Duct_Tape/Duct_Tape	tres					type		Misc				
-Items	Misc/Happy_Stove	name	0	substr	Items/Misc/Happy_Stove/Happy_Stove	tres					name		Happy Stove	1894	Tűzhely		
+Items	Misc/Happy_Stove	name	0	substr	Items/Misc/Happy_Stove/Happy_Stove	tres					name		Happy Stove	1894	Kültéri űzhely		
 Items	Misc/Happy_Stove	name	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					inventory		Happy Stove				
 Items	Misc/Happy_Stove	name	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					rotated		Happy Stove				
 Items	Misc/Happy_Stove	name	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					equipment		Happy Stove				
-Items	Misc/Happy_Stove	name	0	substr	Items/Misc/Happy_Stove/Happy_Stove	tres					display		H. Stove	1896	Tűzhely		
+Items	Misc/Happy_Stove	name	0	substr	Items/Misc/Happy_Stove/Happy_Stove	tres					display		H. Stove	1896	K. tűzhely		
 Items	Misc/Happy_Stove	type	0	ignore	Items/Misc/Happy_Stove/Happy_Stove	tres					type		Misc				
 Items	Misc/Jerry_Can	name	0	substr	Items/Misc/Jerry_Can/Jerry_Can	tres					name		Jerry Can	1898	Kanna		
 Items	Misc/Jerry_Can	name	0	ignore	Items/Misc/Jerry_Can/Jerry_Can	tres					inventory		Jerry Can				
@@ -1091,7 +1091,7 @@ Items	Misc/Toilet_Paper	name	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres	
 Items	Misc/Toilet_Paper	name	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres					equipment		T. Paper				
 Items	Misc/Toilet_Paper	name	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres					display		T. Paper				
 Items	Misc/Toilet_Paper	type	0	ignore	Items/Misc/Toilet_Paper/Toilet_Paper	tres					type		Misc				
-Items	Misc/Toolbox	name	0	substr	Items/Misc/Toolbox/Toolbox	tres					name		Toolbox	1944	Szerszámos		
+Items	Misc/Toolbox	name	0	substr	Items/Misc/Toolbox/Toolbox	tres					name		Toolbox	1944	Szerszámosláda		
 Items	Misc/Toolbox	name	0	ignore	Items/Misc/Toolbox/Toolbox	tres					inventory		Toolbox				
 Items	Misc/Toolbox	name	0	ignore	Items/Misc/Toolbox/Toolbox	tres					rotated		Toolbox				
 Items	Misc/Toolbox	name	0	ignore	Items/Misc/Toolbox/Toolbox	tres					equipment		Toolbox				

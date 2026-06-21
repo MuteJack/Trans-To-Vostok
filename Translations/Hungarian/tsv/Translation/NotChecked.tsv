@@ -14,8 +14,8 @@ WHERE	SUB	KIND	untranslatable	method	filename	filetype	location	parent	name	type
 			1	ignore	Loot/Simulations/LS_Civilian	tscn	Loot/Simulations/LS_Civilian	.	Label	Label3D	text	10457625	LS_CIVILIAN			For Debug Only		
 			1	ignore	Loot/Simulations/LS_Industrial	tscn	Loot/Simulations/LS_Industrial	.	Label	Label3D	text	10457625	LS_INDUSTRIAL			For Debug Only		
 			1	ignore	Loot/Simulations/LS_Military	tscn	Loot/Simulations/LS_Military	.	Label	Label3D	text	796229169	LS_MILITARY			For Debug Only		
-			0	substr									Indoors	2690	Belső tér			
-			0	substr									Indoor	2692	Belső tér			
+			0	substr									Indoors	2690	Belterek			
+			0	substr									Indoor	2692	Beltér			
 			0	substr									Mine	2694	Bánya			
 			0	substr									Lure	2696	Csali			
 			0	substr									(Military)	2698	(Katonai)			
