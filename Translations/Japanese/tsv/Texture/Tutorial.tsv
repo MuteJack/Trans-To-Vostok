@@ -72,7 +72,7 @@ Open container and try Context Menu with items"	"3. 戦利品とアイテム
 操作可能な戦利品コンテナです
 
 戦利品はこれらのコンテナに生成され、アイテムは
-ゲームワールド内に物理的に散らばります
+ゲームワールド内に物理的（地面等）に散らばります
 
 
 [MMB]でコンテナを開いたり、アイテムを拾ったり、操作したりできます
@@ -360,7 +360,7 @@ AIは3つの敵対勢力に分かれており、
 マップインスタンスには最大10体のAIが出現します
 すべてを倒せば、平和が訪れます
 
-* マップを移動すると、AIがジャスポンされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
+* マップを移動すると、AIがリセットされます"	\Assets\Tutorial\Billboards\Files	TX_Tutorial_AI.png	98910	fdbf6662a31205aec7eb0980e1b8f6d5c4d08a096d2a97b1b21c207a962bf582	450					
 Tutorial	Billboard	13. Maps & Transitions	replace	"13. Maps & Transitions
 
 Like AI, game world is divided into three zones which have different maps and loot pools
