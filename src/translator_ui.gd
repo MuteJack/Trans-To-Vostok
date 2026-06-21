@@ -22,6 +22,7 @@ var _current_locale: String = DEFAULT_LOCALE
 var _substr_mode: bool = false
 var _batch_size: int = DEFAULT_BATCH_SIZE
 var _batch_interval: float = DEFAULT_BATCH_INTERVAL
+var _texture_replace: bool = true
 var _translator_node: Node = null
 var _texture_loader_node: Node = null
 var _enabled_whitelist: Dictionary = {}   # {"hud/info/map": true, ...}
@@ -81,6 +82,7 @@ func _save_config() -> void:
 	config.set_value("translation", "substr_mode", _substr_mode)
 	config.set_value("performance", "batch_size", _batch_size)
 	config.set_value("performance", "batch_interval", _batch_interval)
+	config.set_value("features", "texture_replace", _texture_replace)
 	for key in _enabled_whitelist:
 		config.set_value("whitelist", key, _enabled_whitelist[key])
 	for key in _enabled_addons:
@@ -103,6 +105,7 @@ func _load_config() -> void:
 			_substr_mode = config.get_value("translation", "substr_mode", false)
 		_batch_size = config.get_value("performance", "batch_size", DEFAULT_BATCH_SIZE)
 		_batch_interval = config.get_value("performance", "batch_interval", DEFAULT_BATCH_INTERVAL)
+		_texture_replace = config.get_value("features", "texture_replace", true)
 	# whitelist: translator.gd 의 WHITELIST_PRESETS 를 순회, config 값이 없으면 preset default 사용
 	_enabled_whitelist.clear()
 	var presets: Dictionary = _load_whitelist_presets()
@@ -336,6 +339,7 @@ func _show_language_ui(is_startup: bool) -> void:
 	var settings_nodes: Dictionary = _build_settings_tab(tabs)
 	var size_spin: SpinBox = settings_nodes["size_spin"] as SpinBox
 	var interval_spin: SpinBox = settings_nodes["interval_spin"] as SpinBox
+	var texture_check: CheckButton = settings_nodes["texture_check"] as CheckButton
 
 	# ============ Whitelist 탭 ============
 	var wl_checks: Dictionary = _build_whitelist_tab(tabs)
@@ -392,11 +396,13 @@ func _show_language_ui(is_startup: bool) -> void:
 	var prev_substr: bool = _substr_mode
 	var prev_batch_size: int = _batch_size
 	var prev_batch_interval: float = _batch_interval
+	var prev_texture_replace: bool = _texture_replace
 	var prev_whitelist: Dictionary = _enabled_whitelist.duplicate()
 	var prev_addons: Dictionary = _enabled_addons.duplicate()
 	_substr_mode = substr_check.button_pressed
 	_batch_size = int(size_spin.value)
 	_batch_interval = float(interval_spin.value)
+	_texture_replace = texture_check.button_pressed
 	# whitelist 체크박스 상태 수집
 	for key in wl_checks:
 		_enabled_whitelist[key] = (wl_checks[key] as CheckBox).button_pressed
@@ -405,6 +411,7 @@ func _show_language_ui(is_startup: bool) -> void:
 		_enabled_addons[key] = (addon_checks[key] as CheckBox).button_pressed
 	var batch_changed: bool = (_batch_size != prev_batch_size
 		or not is_equal_approx(_batch_interval, prev_batch_interval))
+	var texture_changed: bool = (_texture_replace != prev_texture_replace)
 	var whitelist_changed: bool = (_enabled_whitelist.hash() != prev_whitelist.hash())
 	var addons_changed: bool = (_enabled_addons.hash() != prev_addons.hash())
 
@@ -415,12 +422,12 @@ func _show_language_ui(is_startup: bool) -> void:
 			var selected_locale: String = enabled_locales[sel_idx].get("dir", DEFAULT_LOCALE)
 			var locale_changed: bool = selected_locale != _current_locale
 			var substr_changed: bool = _substr_mode != prev_substr
-			if locale_changed or substr_changed or batch_changed or whitelist_changed or addons_changed or is_startup:
+			if locale_changed or substr_changed or batch_changed or texture_changed or whitelist_changed or addons_changed or is_startup:
 				_current_locale = selected_locale
 				_save_config()
 				if not is_startup:
 					# 배치 파라미터만 바뀌었으면 재초기화 없이 즉시 반영
-					if batch_changed and not locale_changed and not substr_changed and not whitelist_changed and not addons_changed:
+					if batch_changed and not locale_changed and not substr_changed and not texture_changed and not whitelist_changed and not addons_changed:
 						if _translator_node != null and _translator_node.has_method("set_batch_params"):
 							_translator_node.set_batch_params(_batch_size, _batch_interval)
 					else:
@@ -527,7 +534,7 @@ func _build_settings_tab(tabs: TabContainer) -> Dictionary:
 	left.add_child(HSeparator.new())
 
 	var perf_hint: Label = Label.new()
-	perf_hint.text = "Larger Batch Size, Smaller Interval will make translation faster, but may cause performance issue."
+	perf_hint.text = "Larger Batch Size, Smaller Interval will make translation faster,\nbut may cause performance issue."
 	perf_hint.add_theme_font_size_override("font_size", 10)
 	perf_hint.modulate = Color(0.45, 0.45, 0.45)
 	perf_hint.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -549,29 +556,50 @@ func _build_settings_tab(tabs: TabContainer) -> Dictionary:
 	# --- 세로 구분선 ---
 	tab_body.add_child(VSeparator.new())
 
-	# --- 오른쪽: 향후 추가 예정 ---
+	# --- 오른쪽: Features ---
 	var right: VBoxContainer = VBoxContainer.new()
 	right.add_theme_constant_override("separation", 8)
 	right.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 	right.size_flags_stretch_ratio = 1.0
 	tab_body.add_child(right)
 
-	var spacer_top: Control = Control.new()
-	spacer_top.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	right.add_child(spacer_top)
+	var feat_title: Label = Label.new()
+	feat_title.text = "Features"
+	feat_title.add_theme_font_size_override("font_size", 14)
+	right.add_child(feat_title)
 
-	var placeholder: Label = Label.new()
-	placeholder.text = "Will be Updated"
-	placeholder.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	placeholder.add_theme_font_size_override("font_size", 12)
-	placeholder.modulate = Color(0.45, 0.45, 0.45)
-	right.add_child(placeholder)
+	right.add_child(HSeparator.new())
+
+	# Texture 기능 행
+	var tex_row: HBoxContainer = HBoxContainer.new()
+	tex_row.add_theme_constant_override("separation", 8)
+	right.add_child(tex_row)
+
+	var tex_label_col: VBoxContainer = VBoxContainer.new()
+	tex_label_col.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+	tex_row.add_child(tex_label_col)
+
+	var tex_name: Label = Label.new()
+	tex_name.text = "Replace to TranslatedTexture"
+	tex_name.add_theme_font_size_override("font_size", 12)
+	tex_label_col.add_child(tex_name)
+
+	var tex_desc: Label = Label.new()
+	tex_desc.text = "Replace Texture to translated textures"
+	tex_desc.add_theme_font_size_override("font_size", 10)
+	tex_desc.modulate = Color(0.45, 0.45, 0.45)
+	tex_desc.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+	tex_label_col.add_child(tex_desc)
+
+	var texture_check: CheckButton = CheckButton.new()
+	texture_check.button_pressed = _texture_replace
+	tex_row.add_child(texture_check)
 
 	var spacer_bot: Control = Control.new()
 	spacer_bot.size_flags_vertical = Control.SIZE_EXPAND_FILL
 	right.add_child(spacer_bot)
 
-	return {"size_spin": size_spin, "interval_spin": interval_spin}
+	return {"size_spin": size_spin, "interval_spin": interval_spin, "texture_check": texture_check}
 
 
 # ==========================================
@@ -892,19 +920,20 @@ func _apply_locale() -> void:
 	_translator_node = node
 	print("[TransToVostok UI] Locale: %s — translator loaded" % _current_locale)
 
-	# 2. 텍스처 교체 엔진 (이미지 폴더가 있는 로케일만 동작)
-	var tex_script: GDScript = load(TEXTURE_LOADER_SCRIPT) as GDScript
-	if tex_script == null:
-		push_warning("[TransToVostok UI] Cannot load: " + TEXTURE_LOADER_SCRIPT)
-		return
+	# 2. 텍스처 교체 엔진 (이미지 폴더가 있는 로케일만 동작, Features > Texture 가 ON일 때만)
+	if _texture_replace:
+		var tex_script: GDScript = load(TEXTURE_LOADER_SCRIPT) as GDScript
+		if tex_script == null:
+			push_warning("[TransToVostok UI] Cannot load: " + TEXTURE_LOADER_SCRIPT)
+			return
 
-	var tex_node: Node = Node.new()
-	tex_node.name = "TextureLoader"
-	tex_node.set_script(tex_script)
-	tex_node._locale = _current_locale
-	add_child(tex_node)
-	tex_node._initialize()
-	_texture_loader_node = tex_node
+		var tex_node: Node = Node.new()
+		tex_node.name = "TextureLoader"
+		tex_node.set_script(tex_script)
+		tex_node._locale = _current_locale
+		add_child(tex_node)
+		tex_node._initialize()
+		_texture_loader_node = tex_node
 
 
 # ==========================================
